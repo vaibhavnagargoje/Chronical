@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ chapter.name }} - Statistical Chapter</title>
+</head>
+<body>
+    <h1>{{ chapter.name }}</h1>
+    <p>
+        District: <a href="/{{ state.slug }}/{{ district.slug }}/">{{ district.name }}</a>
+        <br>
+        State: <a href="/{{ state.slug }}/">{{ state.name }}</a>
+    </p>
+
+    {% for section in sections %}
+        {% if section.section_type == 'heading' %}
+            <h2>{{ section.title }}</h2>
+        {% elif section.section_type == 'subheading' %}
+            <h3>{{ section.title }}</h3>
+        {% elif section.section_type == 'text' %}
+            <p>{{ section.content }}</p>
+        {% elif section.section_type == 'image' %}
+            {% if section.image %}
+                <img src="{{ section.image.url }}" alt="Chapter Image">
+                {% endif %}
+            {% if section.content %}
+                <p>{{ section.content }}</p>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</body>
+</html>

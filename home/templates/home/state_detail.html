@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ state.name }} - State Detail</title>
+</head>
+<body>
+    <h1>State: {{ state.name }}</h1>
+
+    <h2>Districts in {{ state.name }}</h2>
+    <ul>
+        {% for dist in districts %}
+            <li>
+                <a href="/{{ state.slug }}/{{ dist.slug }}/">
+                    {{ dist.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

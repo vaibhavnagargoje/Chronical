@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ district.name }} - District Detail</title>
+</head>
+<body>
+    <h1>District: {{ district.name }}</h1>
+    <p>{{ district.introduction }}</p>
+
+    <p>State: <a href="/{{ state.slug }}/">{{ state.name }}</a></p>
+
+    <!-- Link to cultural chapters -->
+    <h2>Cultural Chapters</h2>
+    <ul>
+        {% for cchapter in district.cultural_chapters.all %}
+            <li>
+                <a href="/cultural/{{ state.slug }}/{{ district.slug }}/{{ cchapter.slug }}/">
+                    {{ cchapter.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Link to statistical chapters -->
+    <h2>Statistical Chapters</h2>
+    <ul>
+        {% for schapter in district.statistical_chapters.all %}
+            <li>
+                <a href="/statistical/{{ state.slug }}/{{ district.slug }}/{{ schapter.slug }}/">
+                    {{ schapter.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

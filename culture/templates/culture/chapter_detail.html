@@ -1,0 +1,24 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container-xxl py-5">
+    <div class="container px-3">
+        <div class="mt-5 mb-5 wow fadeInUp mx-auto" data-wow-delay="0.1s" style="max-width: 800px;">
+            <a href="{% static 'contribute.html' %}">
+                <p class="txtfooter" style="float: right;"></p>
+                <span class="item-text">
+                    <img src="{% static 'img/icons/edit.png' %}" style="height:16px;width: 16px;float: right;">
+                </span>
+            </a>
+            <p class="txtcitynm">KOLHAPUR</p>
+            <a id="intro" class="scrollbehv"></a>
+            <h1 class="txtheading">Food</h1>
+            <p class="txtconhd">Introduction</p>
+            <p class="txtinfo">No story about Kolhapur can be narrated without mentioning its scrumptious food. Equally popular for its sweet dishes and spicy ones, the locals, despite knowing that meat is responsible for causing heart disease, are also avid consumers of meats. A significant proportion of the population does not eat meat on Thursdays however, as a mark of respect for the God Jai Gurudev Datta. </p>
+            <!-- Add other content similarly -->
+        </div>
+    </div>
+</div>
+{% endblock %}
