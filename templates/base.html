@@ -43,69 +43,7 @@
     </div>
     <!-- Spinner End --> {% endcomment %}
 
-    <!-- Navbar Start -->
-    <div class="sidebar-nav">
-        <nav class="navbar navbar-dark bg-white fixed-top border-bottom">
-            <div class="container">
-                <!-- Mobile Menu Toggle Button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon">
-                        <i class="bi bi-list" style="color:#000; font-size:28px;"></i>
-                    </span>
-                </button>
-
-                <!-- Menus List -->
-                <div class="offcanvas offcanvas-start shadow" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav">
-                            <h5 class="sidebarhd">Culture</h5>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/food.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Food </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/people.png' %}" style="height:32px;width: 32px;margin-right: 10px;">People </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/languages.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Languages </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/artforms.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Artforms </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/stories.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Stories </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/cultural_sites.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Cultural Sites </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/architecture.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Architecture </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/sports_games.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Sports & Games  </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/fair_festivals.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Festivals & Fairs </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/political_history.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Political History</span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/market.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Markets</span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/local_politics.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Local Politics </span></a></li>
-                            <hr>
-                            <h5 class="sidebarhd">Statistics</h5>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/food.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Food </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/people.png' %}" style="height:32px;width: 32px;margin-right: 10px;">People </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/languages.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Languages </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/artforms.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Artforms </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/stories.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Stories </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/cultural_sites.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Cultural Sites </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/architecture.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Architecture </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/sports_games.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Sports & Games  </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/fair_festivals.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Festivals & Fairs </span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/political_history.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Political History</span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/market.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Markets</span></a></li>
-                            <li><a href="#"><span class="item-text"><img src="{% static 'img/icons/local_politics.png' %}" style="height:32px;width: 32px;margin-right: 10px;">Local Politics </span></a></li>
-
-                            <!-- Add other menu items similarly -->
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="btn-group">
-                    <a href="#" class="dropdown-toggle text-decoration-none black" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="coloryel">Kolhapur</span> | <span class="colorburg">Food</span>
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end scrollable-menu">
-                        <li><button class="dropdown-item" type="button"><a href="#intro">Introduction</a></button></li>
-                        <!-- Add other dropdown items similarly -->
-                    </ul>
-                </div>
-                <a href="https://indiandistricts.in/"><img src="{% static 'img/logo.png' %}" class="img-toplogo" /></a>
-            </div>
-        </nav>
-    </div>
-    <!-- Navbar End -->
-
+    
     <!-- Content Block -->
     {% block content %}
     

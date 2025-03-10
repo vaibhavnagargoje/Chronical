@@ -1,23 +1,100 @@
-
 {% extends 'base.html' %}
 {% load static %}
 
 {% block content %}
+<!-- Navbar Start -->
+<div class="sidebar-nav">
+    <nav class="navbar navbar-dark bg-white fixed-top border-bottom">
+        <div class="container">
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon">
+                    <i class="bi bi-list" style="color:#000; font-size:28px;"></i>
+                </span>
+            </button>
+
+            <!-- Menus List -->
+            <div class="offcanvas offcanvas-start shadow" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <h5 class="sidebarhd">Culture</h5>
+                        {% for chapter in chapter.district.cultural_chapters.all %}
+                        <li>
+                            <a href="{% url 'cultural_chapter_detail' state_slug=state.slug district_slug=district.slug chapter_slug=chapter.slug %}">
+                                <span class="item-text">
+                                    <img src="{% static 'img/icons/'|add:chapter.name|lower|add:'.png' %}" style="height:32px;width: 32px;margin-right: 10px;">
+                                    {{ chapter.name }}
+                                </span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                        <hr>
+                        <h5 class="sidebarhd">Statistics</h5>
+                        <!-- Add statistical chapters similarly -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="dropdown-toggle text-decoration-none black" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="coloryel">{{ district.name }}</span> | <span class="colorburg">{{ chapter.name }}</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end scrollable-menu">
+                    {% for item in combined_content %}
+                    {% if item.type == 'heading' or item.type == 'subheading' %}
+                    <li>
+                        <button class="dropdown-item" type="button">
+                            <a href="#{{ item.data.text|slugify }}">{{ item.data.text }}</a>
+                        </button>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <a href="https://indiandistricts.in/"><img src="{% static 'img/logo.png' %}" class="img-toplogo" /></a>
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+
 <div class="container-xxl py-5">
     <div class="container px-3">
         <div class="mt-5 mb-5 wow fadeInUp mx-auto" data-wow-delay="0.1s" style="max-width: 800px;">
-            <a href="{% static 'contribute.html' %}">
-                <p class="txtfooter" style="float: right;"></p>
-                <span class="item-text">
-                    <img src="{% static 'img/icons/edit.png' %}" style="height:16px;width: 16px;float: right;">
-                </span>
-            </a>
-            <p class="txtcitynm">KOLHAPUR</p>
-            <a id="intro" class="scrollbehv"></a>
-            <h1 class="txtheading">Food</h1>
-            <p class="txtconhd">Introduction</p>
-            <p class="txtinfo">No story about Kolhapur can be narrated without mentioning its scrumptious food. Equally popular for its sweet dishes and spicy ones, the locals, despite knowing that meat is responsible for causing heart disease, are also avid consumers of meats. A significant proportion of the population does not eat meat on Thursdays however, as a mark of respect for the God Jai Gurudev Datta. </p>
-            <!-- Add other content similarly -->
+            <p class="txtcitynm">{{ district.name }}</p>
+            <h1 class="txtheading">{{ chapter.name }}</h1>
+            
+            <!-- Iterate over combined content -->
+            {% for item in combined_content %}
+                {% if item.type == 'heading' %}
+                    <a id="{{ item.data.text|slugify }}" class="scrollbehv"></a>
+                    <p class="txtconhd">{{ item.data.text }}</p>
+                
+                {% elif item.type == 'subheading' %}
+                    <a id="{{ item.data.text|slugify }}" class="scrollbehv"></a>
+                    <p class="txtconhd">{{ item.data.text }}</p>
+                
+                {% elif item.type == 'text' %}
+                    <p class="txtinfo">{{ item.data.content }}</p>
+                
+                {% elif item.type == 'image' %}
+                    <img src="{{ item.data.image.url }}" class="img-fluid" width="800px">
+                    {% if item.data.description %}
+                        <p class="txtimginfo">{{ item.data.description }}</p>
+                    {% endif %}
+                
+                {% elif item.type == 'table' %}
+                    <a id="{{ item.data.title|slugify }}" class="scrollbehv"></a>
+                    <p class="txtconhd">{{ item.data.title }}</p>
+                    <pre class="txtinfo">{{ item.data.table_data }}</pre>
+                
+                {% elif item.type == 'list' %}
+                    <a id="{{ item.data.content|slugify }}" class="scrollbehv"></a>
+                    <p class="txtconhd">{{ item.data.content }}</p>
+                
+                {% elif item.type == 'reference' %}
+                    <p class="txtfooter">{{ item.data.text }} {% if item.data.link %}<a href="{{ item.data.link }}">{{ item.data.link }}</a>{% endif %}</p>
+                {% endif %}
+            {% endfor %}
         </div>
     </div>
 </div>
