@@ -36,16 +36,18 @@
             </div>
 
             <div class="btn-group">
-                <a href="#" class="dropdown-toggle text-decoration-none black" data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#" class="dropdown-toggle district-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     <span class="coloryel">{{ district.name }}</span> | <span class="colorburg">{{ chapter.name }}</span>
+                    <i class="fa-solid fa-chevron-down district-arrow"></i>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end scrollable-menu">
+                <ul class="dropdown-menu dropdown-menu-end">
                     {% for item in combined_content %}
                     {% if item.type == 'heading' or item.type == 'subheading' %}
                     <li>
-                        <button class="dropdown-item" type="button">
-                            <a href="#{{ item.data.text|slugify }}">{{ item.data.text }}</a>
-                        </button>
+                        
+                            <a href="#{{ item.data.text|slugify }}" class="item-text">{{ item.data.text }}</a>
+                            
+                      
                     </li>
                     {% endif %}
                     {% endfor %}
