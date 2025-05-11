@@ -23,10 +23,10 @@ class CulturalChapter(models.Model):
     district = models.ForeignKey(District, on_delete=models.CASCADE, related_name='cultural_chapters', blank=True, null=True)
     cityname = models.CharField(max_length=100, blank=True, null=True)
     name = models.CharField(max_length=50, choices=CHAPTER_CHOICES, blank=True, null=True)
-    slug = models.SlugField(max_length=200, blank=True, unique=True)
+    slug = models.SlugField(max_length=200, blank=True, unique=False)
 
     class Meta:
-        unique_together = ('district', 'name')
+        unique_together = ('district','name')
 
     def save(self, *args, **kwargs):
         if not self.slug:

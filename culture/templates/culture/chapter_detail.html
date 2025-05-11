@@ -21,7 +21,7 @@
                         {% for chapter in chapter.district.cultural_chapters.all %}
                         <li>
                             <a href="{% url 'cultural_chapter_detail' state_slug=state.slug district_slug=district.slug chapter_slug=chapter.slug %}">
-                                <span class="item-text">
+                                <span class="">
                                     <img src="{% static 'img/icons/'|add:chapter.name|lower|add:'.png' %}" style="height:32px;width: 32px;margin-right: 10px;">
                                     {{ chapter.name }}
                                 </span>
