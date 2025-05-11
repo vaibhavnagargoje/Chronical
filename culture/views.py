@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
 from home.models import State
-from .models import CulturalChapter, CulturalSection, Heading, Subheading, Text, Image, Table, List, Reference
+from .models import CulturalChapter, CulturalSection, Heading, Subheading, Text, Image, Reference
 
 def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
     state = get_object_or_404(State, slug=state_slug)
@@ -42,17 +42,6 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
             for i in section.images.all().order_by('order')
         )
         
-        # Add tables
-        section_content.extend(
-            {'type': 'table', 'data': tbl} 
-            for tbl in section.tables.all().order_by('order')
-        )
-        
-        # Add lists
-        section_content.extend(
-            {'type': 'list', 'data': lst} 
-            for lst in section.lists.all().order_by('order')
-        )
         
         # Add references
         section_content.extend(

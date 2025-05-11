@@ -104,29 +104,6 @@ class Image(models.Model):
         return f"Image"
 
 
-class Table(models.Model):
-    section = models.ForeignKey(CulturalSection, on_delete=models.CASCADE, related_name='tables', blank=True, null=True)
-    title = models.CharField(max_length=255, blank=True, null=True)
-    table_data = models.TextField(blank=True, null=True)
-    order = models.PositiveIntegerField(default=0, blank=True, null=True)
-
-    class Meta:
-        ordering = ['order']
-
-    def __str__(self):
-        return f"Table: {self.title if self.title else 'Untitled'}"
-
-
-class List(models.Model):
-    section = models.ForeignKey(CulturalSection, on_delete=models.CASCADE, related_name='lists', blank=True, null=True)
-    content = models.TextField(blank=True, null=True)
-    order = models.PositiveIntegerField(default=0, blank=True, null=True)
-
-    class Meta:
-        ordering = ['order']
-
-    def __str__(self):
-        return f"List: {self.content[:50] if self.content else 'No Content'}"
 
 
 class Reference(models.Model):

@@ -3,7 +3,7 @@ from django.utils.html import format_html
 from .models import (
     CulturalChapter, CulturalSection,
     Heading, Subheading, Text,
-    Image, Table, List, Reference
+    Image, Reference
 )
 
 # -----------------------------------------------
@@ -40,16 +40,6 @@ class ImageInline(admin.TabularInline):
 
 
 
-class TableInline(admin.TabularInline):
-    model = Table
-    extra = 0
-
-
-class ListInline(admin.TabularInline):
-    model = List
-    extra = 0
-
-
 class ReferenceInline(admin.TabularInline):
     model = Reference
     extra = 0
@@ -73,7 +63,7 @@ class CulturalSectionAdmin(admin.ModelAdmin):
     search_fields = ('chapter__name',)
     inlines = [
         HeadingInline, SubheadingInline, TextInline,
-        ImageInline, TableInline, ListInline, ReferenceInline
+        ImageInline, ReferenceInline
     ]
 
 
