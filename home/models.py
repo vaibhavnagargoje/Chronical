@@ -1,8 +1,8 @@
-from django.db import models
-
 # Create your models here.
 from django.db import models
 from django.utils.text import slugify
+from django.core.validators import FileExtensionValidator
+from tinymce.models import HTMLField
 
 class State(models.Model):
     """
@@ -20,10 +20,6 @@ class State(models.Model):
         return self.name
 
 
-from django.core.validators import FileExtensionValidator
-
-
-
 class District(models.Model):
     """
     Represents a District belonging to a specific State.
@@ -31,7 +27,7 @@ class District(models.Model):
     state = models.ForeignKey(State, on_delete=models.CASCADE, related_name='districts')
     name = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100, blank=True)
-    introduction = models.TextField(blank=True, null=True)  # Brief introduction text
+    introduction = HTMLField(blank=True, null=True, verbose_name="Introduction")  # Properly configure HTMLField with default configuration
     
     # Ensure uniqueness of (state, name)
     class Meta:
@@ -51,7 +47,7 @@ class DistrictParagraph(models.Model):
     Additional paragraphs for district introduction
     """
     district = models.ForeignKey(District, on_delete=models.CASCADE, related_name='paragraphs')
-    content = models.TextField()
+    content = HTMLField(blank=True, null=True, verbose_name="Content")  # Update HTMLField with proper configuration
     
     
     def __str__(self):
@@ -118,7 +114,7 @@ class SectionParagraph(models.Model):
     Paragraphs within a section
     """
     section = models.ForeignKey(DistrictSection, on_delete=models.CASCADE, related_name='paragraphs')
-    content = models.TextField()
+    content = HTMLField(blank=True, null=True, verbose_name="Content")  # Update HTMLField with proper configuration
     
     
     

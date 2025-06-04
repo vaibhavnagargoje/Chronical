@@ -33,8 +33,19 @@ def district_detail(request, state_slug, district_slug):
     """
     state = get_object_or_404(State, slug=state_slug)
     district = get_object_or_404(state.districts, slug=district_slug)
+    
+    # Get related data with prefetch_related for optimization
+    district_images = district.images.all()
+    district_paragraphs = district.paragraphs.all()
+    district_quick_facts = district.quick_facts.all()
+    district_sections = district.sections.all().prefetch_related('paragraphs', 'images')
+    
     context = {
         'state': state,
         'district': district,
+        'district_images': district_images,
+        'district_paragraphs': district_paragraphs,
+        'district_quick_facts': district_quick_facts,
+        'district_sections': district_sections,
     }
     return render(request, 'home/district_detail.html', context)

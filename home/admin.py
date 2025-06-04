@@ -1,4 +1,3 @@
-
 from django.contrib import admin
 from .models import State
 
@@ -71,6 +70,7 @@ class DistrictSectionAdmin(admin.ModelAdmin):
         css = {
             'all': ('admin/css/custom_admin.css',)
         }
+        js = ('tinymce/tinymce.min.js',)
 
 
 @admin.register(models.District)
@@ -91,7 +91,8 @@ class DistrictAdmin(admin.ModelAdmin):
         }),
         ('Introduction', {
             'fields': ('introduction',),
-            'description': 'Basic introduction paragraph. You can add more paragraphs using the section below.'
+            'description': 'Basic introduction paragraph. You can add more paragraphs using the section below.',
+            'classes': ('wide',),
         }),
     )
     
@@ -99,5 +100,5 @@ class DistrictAdmin(admin.ModelAdmin):
         css = {
             'all': ('admin/css/custom_admin.css',)
         }
-        js = ('admin/js/custom_admin.js',)
+        js = ('admin/js/custom_admin.js', 'tinymce/tinymce.min.js',)
 
