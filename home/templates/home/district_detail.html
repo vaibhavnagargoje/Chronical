@@ -1,36 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{ district.name }} - District Detail</title>
-</head>
-<body>
-    <h1>District: {{ district.name }}</h1>
-    <p>{{ district.introduction }}</p>
+{% extends 'base.html' %}
+{% load static %}
 
-    <p>State: <a href="/{{ state.slug }}/">{{ state.name }}</a></p>
 
-    <!-- Link to cultural chapters -->
-    <h2>Cultural Chapters</h2>
-    <ul>
-        {% for cchapter in district.cultural_chapters.all %}
-            <li>
-                <a href="/cultural/{{ state.slug }}/{{ district.slug }}/{{ cchapter.slug }}/">
-                    {{ cchapter.name }}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
 
-    <!-- Link to statistical chapters -->
-    <h2>Statistical Chapters</h2>
-    <ul>
-        {% for schapter in district.statistical_chapters.all %}
-            <li>
-                <a href="/statistical/{{ state.slug }}/{{ district.slug }}/{{ schapter.slug }}/">
-                    {{ schapter.name }}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
-</body>
-</html>
+{% block title %}{{ state.name }} | {{ district.name }} District{% endblock title %}
+
+
+{% block content %}
+
+<!-- Breadcrumbs -->
+<div class="bg-white border-b">
+    <div class="container mx-auto px-4 py-3">
+        <div class="flex items-center text-sm">
+            <a href="{% url 'index' %}" class="text-gray-600 hover:text-primary">Home</a>
+            <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
+            <a href="{% url 'state_detail' state.slug %}" class="text-gray-600 hover:text-primary">{{ state.name }}</a>
+            <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
+            <span class="text-primary font-medium">{{ district.name }}</span>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock content %}

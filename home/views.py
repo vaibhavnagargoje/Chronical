@@ -4,6 +4,16 @@ from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404
 from .models import State, District
 
+
+
+def index(request):
+    """
+    Display the homepage with a list of all States.
+    """
+    
+    return render(request, 'home/index.html',)
+
+
 def state_detail(request, state_slug):
     """
     Display information about a State and its Districts.
