@@ -1,8 +1,12 @@
-# Create your models here.
+
 from django.db import models
 from django.utils.text import slugify
 from django.core.validators import FileExtensionValidator
 from tinymce.models import HTMLField
+
+
+
+
 
 class State(models.Model):
     """
@@ -10,6 +14,7 @@ class State(models.Model):
     """
     name = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=100, unique=True, blank=True)
+    state_code = models.CharField(max_length=5, unique=True, null=True, blank=True)    
 
     def save(self, *args, **kwargs):
         if not self.slug:
@@ -21,13 +26,13 @@ class State(models.Model):
 
 
 class District(models.Model):
-    """
-    Represents a District belonging to a specific State.
+    """Represents a District belonging to a specific State.
     """
     state = models.ForeignKey(State, on_delete=models.CASCADE, related_name='districts')
     name = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100, blank=True)
     introduction = HTMLField(blank=True, null=True, verbose_name="Introduction")  # Properly configure HTMLField with default configuration
+
     
     # Ensure uniqueness of (state, name)
     class Meta:
@@ -41,6 +46,18 @@ class District(models.Model):
 
     def __str__(self):
         return f"{self.name}, {self.state.name}"
+    
+class DistrictSVG(models.Model):
+    """
+    SVG representation of a district
+    """
+    district = models.OneToOneField(District, on_delete=models.CASCADE, related_name='districtsvg')
+    svg_content = models.TextField(verbose_name="SVG Content")  # Store SVG content as text
+    district_code = models.CharField(max_length=10, unique=True, null=True, blank=True) 
+    
+    def __str__(self):
+        return f"SVG for {self.district.name}"
+
 
 class DistrictParagraph(models.Model):
     """

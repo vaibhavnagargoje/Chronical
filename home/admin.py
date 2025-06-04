@@ -1,5 +1,10 @@
 from django.contrib import admin
-from .models import State
+from .models import State,DistrictSVG
+
+admin.site.register(DistrictSVG)
+
+
+
 
 @admin.register(State)
 class StateAdmin(admin.ModelAdmin):
@@ -87,7 +92,7 @@ class DistrictAdmin(admin.ModelAdmin):
     
     fieldsets = (
         (None, {
-            'fields': ('state', 'name', 'slug')
+            'fields': ('state', 'name', 'slug',)
         }),
         ('Introduction', {
             'fields': ('introduction',),
@@ -102,3 +107,28 @@ class DistrictAdmin(admin.ModelAdmin):
         }
         js = ('admin/js/custom_admin.js', 'tinymce/tinymce.min.js',)
 
+
+
+
+
+
+
+# @admin.register(models.DistrictSVG)
+# class DistrictSVGAdmin(admin.ModelAdmin):
+#     list_display = ('district', 'district_code')
+#     search_fields = ('district__name', 'district_code')
+#     readonly_fields = ('svg_content',)
+#     fieldsets = (
+#         (None, {
+#             'fields': ('district', 'district_code', 'svg_content',)
+#         }),
+#     )
+
+#     class Media:
+#         css = {
+#             'all': ('admin/css/custom_admin.css',)
+#         }
+#         js = ('admin/js/custom_admin.js', 'tinymce/tinymce.min.js',)
+
+    
+    

@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.shortcuts import render, get_object_or_404
-from .models import State, District
+from .models import State, District, DistrictSVG
 
 
 
@@ -20,9 +20,14 @@ def state_detail(request, state_slug):
     """
     state = get_object_or_404(State, slug=state_slug)
     districts = state.districts.all()  # All districts in this state
+    
+    # Get SVG content for districts in this state
+    district_svgs = DistrictSVG.objects.filter(district__state=state)
+    
     context = {
         'state': state,
         'districts': districts,
+        'district_svgs': district_svgs,
     }
     return render(request, 'home/state_detail.html', context)
 
@@ -40,6 +45,7 @@ def district_detail(request, state_slug, district_slug):
     district_quick_facts = district.quick_facts.all()
     district_sections = district.sections.all().prefetch_related('paragraphs', 'images')
     
+    
     context = {
         'state': state,
         'district': district,
@@ -47,5 +53,6 @@ def district_detail(request, state_slug, district_slug):
         'district_paragraphs': district_paragraphs,
         'district_quick_facts': district_quick_facts,
         'district_sections': district_sections,
+        
     }
     return render(request, 'home/district_detail.html', context)
