@@ -45,7 +45,7 @@ class ContentBlockInline(StackedPolymorphicInline):
 # The SortableAdminMixin (from django-admin-sortable2) provides drag-and-drop.
 @admin.register(CulturalChapter)
 class CulturalChapterAdmin(PolymorphicInlineSupportMixin, admin.ModelAdmin):
-    list_display = ('name', 'district')
+    list_display = ('name', 'district','updated_at',)
     list_filter = ('district__name', 'district__state__name')
     search_fields = ('name', 'district__name')
     prepopulated_fields = {'slug': ('name',)}

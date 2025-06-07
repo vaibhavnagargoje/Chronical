@@ -36,6 +36,8 @@ class CulturalChapter(models.Model):
     district = models.ForeignKey(District, on_delete=models.CASCADE, related_name='cultural_chapters',null=True, blank=True)
     name = models.CharField(max_length=50, choices=CHAPTER_CHOICES)
     slug = models.SlugField(max_length=200, blank=True)
+    updated_at = models.DateTimeField(auto_now=True, verbose_name="Last Updated",blank=True, null=True)
+    
 
     def get_absolute_url(self):
         return reverse('culture:cultural_chapter_detail', kwargs={

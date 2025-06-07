@@ -2,14 +2,9 @@
 
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
-from itertools import chain
-from .models import CulturalChapter, HeadingBlockOne, HeadingBlockTwo, ParagraphBlock, ImageBlock, ReferenceBlock
+from .models import CulturalChapter, ContentBlock, HeadingBlockOne, HeadingBlockTwo
 
 def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
-    """
-    A robust view that manually fetches all subclassed content blocks to ensure
-    it works with any version of django-polymorphic.
-    """
     chapter = get_object_or_404(
         CulturalChapter.objects.select_related('district__state'),
         slug=chapter_slug,
@@ -17,31 +12,13 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
         district__state__slug=state_slug
     )
 
-    # --- NEW, ROBUST LOGIC TO GET CONTENT BLOCKS ---
-    # We will fetch each type of block separately as a standard Django queryset.
-    h1s = HeadingBlockOne.objects.filter(chapter=chapter)
-    h2s = HeadingBlockTwo.objects.filter(chapter=chapter)
-    paras = ParagraphBlock.objects.filter(chapter=chapter)
-    imgs = ImageBlock.objects.filter(chapter=chapter)
-    refs = ReferenceBlock.objects.filter(chapter=chapter)
+    # CORRECT: Just filter the base model - polymorphic will handle the rest
+    content_blocks = ContentBlock.objects.filter(chapter=chapter)
 
-    # Combine all the querysets into a single list.
-    # The `chain` function from `itertools` is efficient for this.
-    all_blocks_list = list(chain(h1s, h2s, paras, imgs, refs))
-
-    # Manually sort the combined list by the 'order' attribute.
-    all_blocks_list.sort(key=lambda x: x.order)
-    
-    # We now have the correctly typed and ordered blocks in `all_blocks_list`.
-    # Let's rename it for consistency with the rest of the code.
-    content_blocks = all_blocks_list
-
-    # --- The rest of the view logic is the same and already correct ---
-    # It relies on `content_blocks` being a list of correctly-typed subclass objects.
-
-    # Generate the Table of Contents from the heading blocks
+    # Generate Table of Contents
     table_of_contents = []
     for block in content_blocks:
+        # This will now work correctly with concrete subclasses
         if isinstance(block, HeadingBlockOne):
             table_of_contents.append({
                 'text': block.text,
@@ -54,7 +31,6 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
                 'slug': slugify(block.text),
                 'level': 2,
             })
-
     # Get all chapters in the current district for the "Change Chapter" dropdown
     all_chapters_in_district = chapter.district.cultural_chapters.all().order_by('name')
 
