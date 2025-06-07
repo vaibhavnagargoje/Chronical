@@ -35,63 +35,85 @@
 <body class="bg-white">
     <!-- Navbar -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="flex items-center">
-            <img src="{% static 'img/cka_logo.png' %}" alt="Logo" class="h-7 md:h-10" />
-          </a>
-                </div>
-                
-                <div class="hidden md:flex items-center space-x-4">
-                    <div class="relative">
-                        <input type="text" placeholder="Search districts, states..." class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary">
-                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
-                    </div>
-                    <a href="login.html" class="px-4 py-2 rounded-md text-primary border border-primary hover:bg-primary hover:text-white transition-colors">Login</a>
-                </div>
-                
-                <!-- Mobile Menu and Search -->
-                <div class="md:hidden flex items-center space-x-3 relative">
-                    <!-- Mobile Search -->
-                    <div class="relative">
-                        <!-- Search Icon Button -->
-                        <button id="mobile-search-button" class="text-gray-600 hover:text-primary transition-colors duration-200 p-2">
-                            <i class="fas fa-search text-xl"></i>
-                        </button>
-                        
-                        <!-- Expandable Search Container -->
-                        <div id="mobile-search-container" class="absolute top-0 right-0 transform transition-all duration-300 ease-out opacity-0 scale-x-0 origin-right">
-                            <div class="flex items-center bg-white border border-gray-300 rounded-sm ">
-                                <input 
-                                    type="text" 
-                                    id="mobile-search-input"
-                                    placeholder="Search..." 
-                                    class="pl-4 pr-2 py-2 rounded-l-full focus:outline-none w-28"
-                                >
-                                <button id="search-submit-button" class="px-3 py-2 text-primary hover:text-primary-dark transition-colors">
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
-                                <button id="search-close-button" class="px-3 py-2 text-gray-400 hover:text-gray-600 transition-colors border-l border-gray-200">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
+    <div class="mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <div class="flex items-center space-x-4">
+                <a href="{% url 'home:index' %}" class="flex items-center"> {# Changed to dynamic URL #}
+                    <img src="{% static 'img/cka_logo.png' %}" alt="Logo" class="h-7 md:h-10" />
+                </a>
+            </div>
+
+            <!-- ============================================= -->
+            <!-- ==         DESKTOP SEARCH (MODIFIED)       == -->
+            <!-- ============================================= -->
+            <div class="hidden md:flex items-center space-x-4">
+                <!-- Wrap the input in a form that points to your search URL -->
+                <form method="GET" action="{% url 'search:query' %}" class="relative">
+                    <input
+                        type="search"
+                        name="q" {# The 'name' attribute is essential #}
+                        placeholder="Search districts, states..."
+                        class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                        value="{{ request.GET.q }}" {# Pre-fills the search box with the current query #}
+                    >
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                    {# Note: A submit button isn't strictly necessary as pressing Enter works, but you can add one if you like #}
+                </form>
+                <a href="#" class="px-4 py-2 rounded-md text-primary border border-primary hover:bg-primary hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
+            </div>
+
+            <!-- ============================================= -->
+            <!-- ==         MOBILE MENU & SEARCH (MODIFIED) == -->
+            <!-- ============================================= -->
+            <div class="md:hidden flex items-center space-x-3 relative">
+                <!-- Mobile Search: Now a form -->
+                <form id="mobile-search-form" method="GET" action="{% url 'search:query' %}" class="relative">
+                    <!-- Search Icon Button (remains the same) -->
+                    <button id="mobile-search-button" type="button" class="text-gray-600 hover:text-primary transition-colors duration-200 p-2">
+                        <i class="fas fa-search text-xl"></i>
+                    </button>
+                    
+                    <!-- Expandable Search Container -->
+                    <div id="mobile-search-container" class="absolute top-0 right-0 transform transition-all duration-300 ease-out opacity-0 scale-x-0 origin-right">
+                        <div class="flex items-center bg-white border border-gray-300 rounded-sm">
+                            <input 
+                                type="search"
+                                name="q" {# The 'name' attribute is essential #}
+                                id="mobile-search-input"
+                                placeholder="Search..." 
+                                class="pl-4 pr-2 py-2 rounded-l-full focus:outline-none w-28"
+                                value="{{ request.GET.q }}" {# Pre-fills search box #}
+                            >
+                            <!-- This button now SUBMITS the form -->
+                            <button id="search-submit-button" type="submit" class="px-3 py-2 text-primary hover:text-primary-dark transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <!-- This button now CLOSES the search bar (type="button") -->
+                            <button id="search-close-button" type="button" class="px-3 py-2 text-gray-400 hover:text-gray-600 transition-colors border-l border-gray-200">
+                                <i class="fas fa-times"></i>
+                            </button>
                         </div>
                     </div>
-                    
-                    <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-primary transition-colors duration-200 p-2">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden hidden pb-4">
-                <a href="login.html" class="block py-2 px-4 text-center rounded-md text-primary border border-primary hover:bg-primary hover:text-white transition-colors">Login</a>
+                </form>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" type="button" class="text-gray-600 hover:text-primary transition-colors duration-200 p-2">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
             </div>
         </div>
-    </nav>
+        
+        <!-- Mobile Menu (remains the same) -->
+        <div id="mobile-menu" class="md:hidden hidden pb-4">
+            <a href="#" class="block py-2 px-4 text-center rounded-md text-primary border border-primary hover:bg-primary hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
+        </div>
+    </div>
+</nav>
+
+
+
+
+
 
     <!-- Main Content -->
     <main>
@@ -166,7 +188,7 @@
 
 
 
-    <!-- JavaScript for mobile menu toggle -->
+    {% comment %} <!-- JavaScript for mobile menu toggle -->
     <script>
         // Mobile menu toggle
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
@@ -176,7 +198,48 @@
 
        
     </script>
-   
+    {% endcomment %}
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileSearchButton = document.getElementById('mobile-search-button');
+    const mobileSearchContainer = document.getElementById('mobile-search-container');
+    const mobileSearchInput = document.getElementById('mobile-search-input');
+    const searchCloseButton = document.getElementById('search-close-button');
+
+    // Function to open the mobile search bar
+    mobileSearchButton.addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevents click from closing it immediately
+        mobileSearchContainer.classList.remove('opacity-0', 'scale-x-0');
+        mobileSearchContainer.classList.add('opacity-100', 'scale-x-100');
+        mobileSearchInput.focus(); // Automatically focus the input field
+    });
+
+    // Function to close the mobile search bar
+    function closeSearch() {
+        mobileSearchContainer.classList.add('opacity-0', 'scale-x-0');
+        mobileSearchContainer.classList.remove('opacity-100', 'scale-x-100');
+    }
+
+    searchCloseButton.addEventListener('click', closeSearch);
+
+    // Close the search bar if user clicks outside of it
+    document.addEventListener('click', function (event) {
+        const isClickInside = mobileSearchContainer.contains(event.target) || mobileSearchButton.contains(event.target);
+        if (!isClickInside) {
+            closeSearch();
+        }
+    });
+
+    // Handle form submission via the search icon button
+    const searchSubmitButton = document.getElementById('search-submit-button');
+    const mobileSearchForm = document.getElementById('mobile-search-form');
+
+    // The arrow button will now submit the form it's inside
+    // No extra JS needed for this if it's type="submit"
+});
+</script>
+
 
 </body>
 </html>

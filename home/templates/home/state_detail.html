@@ -9,14 +9,11 @@
 /* style2.css */
 /* Container styles */
 .container-xxl {
-    width: 100%;
-    padding: 15px;
+    width: 80%;
+    padding: 150px;
   }
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+ 
   
   /* Map container */
   .map-container {
@@ -88,7 +85,7 @@
     <div class="bg-white border-b">
         <div class="container mx-auto px-4 py-3">
             <div class="flex items-center text-sm">
-                <a href="{% url 'index' %}" class="text-gray-600 hover:text-primary">Home</a>
+                <a href="{% url 'home:index' %}" class="text-gray-600 hover:text-primary">Home</a>
                 <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
                 <span class="text-primary font-medium">{{state.name}}</span>
             </div>
@@ -124,7 +121,7 @@
                         <!-- This is a placeholder for the SVG map of India -->
                         <svg viewBox="0 0 750 600" class="svg-map">
                             {% for district_svg in district_svgs %}
-                            <a xlink:title="{{ district_svg.district.name }}" xlink:href="{% url 'district_detail' state.slug district_svg.district.slug %}">
+                            <a xlink:title="{{ district_svg.district.name }}" xlink:href="{% url 'home:district_detail' state.slug district_svg.district.slug %}">
                                 {{ district_svg.svg_content|safe }}
                             </a>
                             {% endfor %}

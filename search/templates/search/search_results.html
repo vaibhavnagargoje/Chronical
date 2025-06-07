@@ -1,0 +1,173 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block title %}Search Results for "{{ query }}"{% endblock title %}
+
+{% block content %}
+
+<!-- Search Results Header -->
+<div class="bg-white py-4 md:py-8 border-b">
+    <div class="container mx-auto px-4">
+        <!-- The form should wrap the search inputs -->
+        <form method="GET" action="{% url 'search:query' %}">
+            <h1 class="text-2xl md:text-3xl font-bold text-primary mb-2 md:mb-4">Search Results for "{{ query }}"</h1>
+            <p class="text-gray-700 text-sm md:text-base">Found {{ total_results }} results</p>
+
+            <div class="mt-4 md:mt-6">
+                <!-- Desktop Search Bar -->
+                <div class="relative max-w-2xl hidden md:block">
+                    <input type="search" name="q" value="{{ query }}" class="w-full pl-10 pr-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search Encyclopedia...">
+                    <i class="fas fa-search absolute left-4 top-4 text-gray-400"></i>
+                    <button type="submit" class="absolute right-3 top-3 bg-primary text-white px-4 py-1 rounded-full hover:bg-opacity-90 transition-colors">Search</button>
+                </div>
+                
+                <!-- ... Mobile Search Bar with Filters ... This part of the form needs all filter inputs to be inside the <form> tag -->
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Search Results -->
+<div class="bg-white py-8">
+    <div class="container mx-auto px-4">
+        <form method="GET" action="{% url 'search:query' %}" class="flex flex-col lg:flex-row gap-8">
+            <!-- This is important: pass the search query 'q' along when filtering -->
+            <input type="hidden" name="q" value="{{ query }}">
+
+            <!-- Filters Sidebar (Desktop Only) -->
+            <div class="lg:w-64 flex-shrink-0 hidden lg:block">
+                <div class="bg-white rounded-lg border border-gray-200 p-4">
+                    <h3 class="text-lg font-semibold text-primary mb-4">Filter Results</h3>
+                    
+                    <!-- Content Type Filter -->
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-800 mb-2">Content Type</h4>
+                        <div class="space-y-2">
+                            {% for type, count in facets.content_types.items %}
+                                {% if count > 0 %}
+                                <label class="flex items-center">
+                                    <input type="checkbox" name="content_type" value="{{ type }}" class="rounded text-primary focus:ring-primary" {% if type in selected_filters.content_types %}checked{% endif %}>
+                                    <span class="ml-2 text-gray-700">{{ type }} ({{ count }})</span>
+                                </label>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <!-- State Filter -->
+                    <div class="mb-4">
+                        <h4 class="font-medium text-gray-800 mb-2">State</h4>
+                        <div class="space-y-2">
+                           {% for state, count in facets.states.items %}
+                                <label class="flex items-center">
+                                    <input type="checkbox" name="state" value="{{ state }}" class="rounded text-primary focus:ring-primary" {% if state in selected_filters.states %}checked{% endif %}>
+                                    <span class="ml-2 text-gray-700">{{ state }} ({{ count }})</span>
+                                </label>
+                           {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <!-- Last Updated Filter -->
+                    <div>
+                        <h4 class="font-medium text-gray-800 mb-2">Last Updated</h4>
+                        <select name="last_updated" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary">
+                            <option value="">Any time</option>
+                            <option value="week" {% if selected_filters.last_updated == 'week' %}selected{% endif %}>Last week</option>
+                            <option value="month" {% if selected_filters.last_updated == 'month' %}selected{% endif %}>Last month</option>
+                            <option value="year" {% if selected_filters.last_updated == 'year' %}selected{% endif %}>Last year</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mt-6 pt-3 border-t">
+                        <button type="submit" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-opacity-90 transition-colors text-sm">Apply Filters</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results List -->
+            <div class="flex-grow">
+                {% for item in page_obj.object_list %}
+                <div class="mb-6 pb-6 border-b border-gray-200">
+                    <h3 class="text-xl font-semibold mb-2">
+                        <a href="{{ item.url }}" class="text-primary hover:underline">{{ item.title }}</a>
+                    </h3>
+                    <p class="text-gray-600 mb-2">{{ item.type }} | {{ item.state_name }}</p>
+                    <p class="text-gray-700 mb-2">
+                        {# Use `safe` if description contains HTML and `truncatewords` for summary #}
+                        {{ item.description|striptags|truncatewords:40|safe }}
+                    </p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        {# Use `date` filter to format the datetime object #}
+                        <span>Last updated: {{ item.updated_at|date:"F j, Y" }}</span>
+                        <span class="mx-2">•</span>
+                        <a href="{{ item.url }}" class="text-primary hover:underline">View full page</a>
+                    </div>
+                </div>
+                {% empty %}
+                <p>No results match your search and filter criteria.</p>
+                {% endfor %}
+                
+                <!-- Pagination -->
+                {% if page_obj.has_other_pages %}
+                <div class="mt-8 flex justify-center">
+                    <nav class="inline-flex rounded-md shadow">
+                        {% if page_obj.has_previous %}
+                            <a href="?page={{ page_obj.previous_page_number }}&q={{ query }}&{{ request.GET.urlencode | cut:'page=' }}" class="px-3 py-2 rounded-l-md border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">
+                                <i class="fas fa-chevron-left text-xs"></i>
+                            </a>
+                        {% endif %}
+
+                        {% for num in page_obj.paginator.page_range %}
+                          {% if page_obj.number == num %}
+                            <span class="px-4 py-2 border-t border-b border-gray-300 bg-primary text-white font-medium">{{ num }}</span>
+                          {% else %}
+                            <a href="?page={{ num }}&q={{ query }}&{{ request.GET.urlencode | cut:'page=' }}" class="px-4 py-2 border-t border-b border-gray-300 bg-white text-gray-700 hover:bg-gray-50">{{ num }}</a>
+                          {% endif %}
+                        {% endfor %}
+
+                        {% if page_obj.has_next %}
+                            <a href="?page={{ page_obj.next_page_number }}&q={{ query }}&{{ request.GET.urlencode | cut:'page=' }}" class="px-3 py-2 rounded-r-md border border-gray-300 bg-white text-gray-500 hover:bg-gray-50">
+                                <i class="fas fa-chevron-right text-xs"></i>
+                            </a>
+                        {% endif %}
+                    </nav>
+                </div>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+</div>
+
+ <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Mobile filter toggle
+        document.getElementById('mobile-filter-toggle').addEventListener('click', function() {
+            const filtersPanel = document.getElementById('mobile-filters-panel');
+            const filterIcon = this.querySelector('i');
+            
+            filtersPanel.classList.toggle('hidden');
+            
+            // Toggle icon between filter and close
+            if (filtersPanel.classList.contains('hidden')) {
+                filterIcon.className = 'fas fa-filter text-gray-600 text-sm';
+            } else {
+                filterIcon.className = 'fas fa-times text-gray-600 text-sm';
+            }
+        });
+        
+        // Clear filters
+        document.getElementById('clear-filters').addEventListener('click', function() {
+            const checkboxes = document.querySelectorAll('#mobile-filters-panel input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        });
+    </script>
+
+
+{% endblock content %}

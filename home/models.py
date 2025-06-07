@@ -3,7 +3,8 @@ from django.db import models
 from django.utils.text import slugify
 from django.core.validators import FileExtensionValidator
 from tinymce.models import HTMLField
-
+from django.db import models
+from django.urls import reverse
 
 
 
@@ -55,6 +56,12 @@ class DistrictSVG(models.Model):
     svg_content = models.TextField(verbose_name="SVG Content")  # Store SVG content as text
     district_code = models.CharField(max_length=10, unique=True, null=True, blank=True) 
     
+    def get_absolute_url(self):
+        # This allows us to use `district.get_absolute_url` in templates
+        return reverse('home:district_detail', kwargs={
+            'state_slug': self.state.slug,
+            'district_slug': self.slug
+        })
     def __str__(self):
         return f"SVG for {self.district.name}"
 

@@ -1,103 +1,179 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block title %}{{ chapter.name }} - {{ district.name }}{% endblock title %}
+
+{% block header%}
+<style type="text/tailwind">
+    @layer utilities {
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .highlight {
+        text-decoration: underline;
+        text-decoration-color: theme("colors.secondary");
+        text-decoration-thickness: 2px;
+        color: theme("colors.primary");
+        cursor: pointer;
+      }
+    }
+</style>
+{% endblock header %}
+
 {% block content %}
-<!-- Navbar Start -->
-<div class="sidebar-nav">
-    <nav class="navbar navbar-dark bg-white fixed-top border-bottom">
-        <div class="container">
-            <!-- Mobile Menu Toggle Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon">
-                    <i class="bi bi-list" style="color:#000; font-size:28px;"></i>
-                </span>
-            </button>
-
-            <!-- Menus List -->
-            <div class="offcanvas offcanvas-start shadow" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav">
-                        <h5 class="sidebarhd">Culture</h5>
-                        {% for chapter in chapter.district.cultural_chapters.all %}
-                        <li>
-                            <a href="{% url 'cultural_chapter_detail' state_slug=state.slug district_slug=district.slug chapter_slug=chapter.slug %}">
-                                <span class="">
-                                    <img src="{% static 'img/icons/'|add:chapter.name|lower|add:'.png' %}" style="height:32px;width: 32px;margin-right: 10px;">
-                                    {{ chapter.name }}
-                                </span>
-                            </a>
-                        </li>
-                        {% endfor %}
-                        <hr>
-                        <h5 class="sidebarhd">Statistics</h5>
-                        <!-- Add statistical chapters similarly -->
-                    </ul>
-                </div>
-            </div>
-
-            <div class="btn-group">
-                <a href="#" class="dropdown-toggle district-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="coloryel">{{ district.name }}</span> | <span class="colorburg">{{ chapter.name }}</span>
-                    <i class="fa-solid fa-chevron-down district-arrow"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                    {% for item in combined_content %}
-                    {% if item.type == 'heading' or item.type == 'subheading' %}
-                    <li>
-                        
-                            <a href="#{{ item.data.text|slugify }}" class="item-text">{{ item.data.text }}</a>
-                            
-                      
-                    </li>
-                    {% endif %}
-                    {% endfor %}
-                </ul>
-            </div>
-            <a href="https://indiandistricts.in/"><img src="{% static 'img/logo.png' %}" class="img-toplogo" /></a>
-        </div>
-    </nav>
-</div>
-<!-- Navbar End -->
-
-<div class="container-xxl py-5">
-    <div class="container px-3">
-        <div class="mt-5 mb-5 wow fadeInUp mx-auto" data-wow-delay="0.1s" style="max-width: 800px;">
-            <p class="txtcitynm">{{ district.name }}</p>
-            <h1 class="txtheading">{{ chapter.name }}</h1>
-            
-            <!-- Iterate over combined content -->
-            {% for item in combined_content %}
-                {% if item.type == 'heading' %}
-                    <a id="{{ item.data.text|slugify }}" class="scrollbehv"></a>
-                    <p class="txtconhd">{{ item.data.text }}</p>
-                
-                {% elif item.type == 'subheading' %}
-                    <a id="{{ item.data.text|slugify }}" class="scrollbehv"></a>
-                    <p class="txtconhd">{{ item.data.text }}</p>
-                
-                {% elif item.type == 'text' %}
-                    <p class="txtinfo">{{ item.data.content }}</p>
-                
-                {% elif item.type == 'image' %}
-                    <img src="{{ item.data.image.url }}" class="img-fluid" width="800px">
-                    {% if item.data.description %}
-                        <p class="txtimginfo">{{ item.data.description }}</p>
-                    {% endif %}
-                
-                {% elif item.type == 'table' %}
-                    <a id="{{ item.data.title|slugify }}" class="scrollbehv"></a>
-                    <p class="txtconhd">{{ item.data.title }}</p>
-                    <pre class="txtinfo">{{ item.data.table_data }}</pre>
-                
-                {% elif item.type == 'list' %}
-                    <a id="{{ item.data.content|slugify }}" class="scrollbehv"></a>
-                    <p class="txtconhd">{{ item.data.content }}</p>
-                
-                {% elif item.type == 'reference' %}
-                    <p class="txtfooter">{{ item.data.text }} {% if item.data.link %}<a href="{{ item.data.link }}">{{ item.data.link }}</a>{% endif %}</p>
-                {% endif %}
-            {% endfor %}
-        </div>
+<!-- Breadcrumbs -->
+<div class="bg-white border-b">
+  <div class="container mx-auto px-4 py-3">
+    <div class="flex items-center text-sm overflow-x-auto whitespace-nowrap">
+      <a href="{% url 'home:index' %}" class="text-gray-600 hover:text-primary">Home</a>
+      <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
+      <a href="{% url 'home:state_detail' state.slug %}" class="text-gray-600 hover:text-primary">{{ state.name }}</a>
+      <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
+      <a href="{% url 'home:district_detail' state.slug district.slug %}" class="text-gray-600 hover:text-primary">{{ district.name }}</a>
+      <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
+      <span class="text-primary font-medium">{{ chapter.name }}</span>
     </div>
+  </div>
 </div>
-{% endblock %}
+
+<!-- District Navigation -->
+<div class="bg-white border-b sticky top-16 z-40">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between py-3">
+      <div class="flex items-center space-x-4 overflow-x-auto">
+        <!-- Change Chapter Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center space-x-1 text-primary font-medium whitespace-nowrap">
+            <span>Change Chapter</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </button>
+          <div class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md p-2 hidden group-hover:block w-64 z-50">
+            <div class="grid grid-cols-1 gap-1">
+              {% for chap in all_chapters_in_district %}
+                <a href="{{ chap.get_absolute_url }}" class="px-3 py-2 hover:bg-gray-100 rounded text-sm {% if chap == chapter %}bg-gray-100 text-primary{% endif %}">{{ chap.name }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <!-- Change District Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center space-x-1 text-gray-700 whitespace-nowrap">
+            <span>Change District</span>
+            <i class="fas fa-chevron-down text-xs"></i>
+          </button>
+          <div class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md p-2 hidden group-hover:block w-64 z-50">
+            <div class="grid grid-cols-1 gap-1">
+                {# This links to the main district page #}
+                {% for dist in all_districts_in_state %}
+                  <a href="{{ dist.get_absolute_url }}" class="px-3 py-2 hover:bg-gray-100 rounded text-sm {% if dist == district %}bg-gray-100 text-primary{% endif %}">{{ dist.name }}</a>
+                {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="toc-button" class="flex items-center space-x-1 text-gray-700 lg:hidden p-2 ml-2">
+        <i class="fas fa-list text-lg"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content with Sidebar -->
+<div class="container mx-auto px-4 py-6 md:py-8">
+  <div class="flex flex-col lg:flex-row">
+    <!-- Table of Contents Sidebar (Desktop) -->
+    <div class="hidden lg:block w-60 flex-shrink-0 pr-6 order-1">
+      <div class="sticky top-36">
+        <h3 class="text-lg font-semibold text-primary mb-4">Table of Contents</h3>
+        <ul class="space-y-2 text-sm">
+          {% for item in table_of_contents %}
+            <li class="{% if item.level == 2 %}pl-4{% endif %}">
+              <a href="#{{ item.slug }}" class="text-gray-700 hover:text-primary transition-colors">{{ item.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-grow order-2 px-0 md:px-4">
+      <div class="mb-6 md:mb-8">
+        <h1 class="text-4xl font-bold text-primary mb-2">{{ district.name | upper }}</h1>
+        <h2 class="text-3xl font-semibold text-gray-800">{{ chapter.name }}</h2>
+        <div class="mt-4">
+          <button class="text-sm text-gray-600 hover:text-primary flex items-center">
+            <i class="fas fa-edit mr-1"></i> Suggest Edit
+          </button>
+        </div>
+      </div>
+
+      <!-- Chapter Content Loop -->
+      <div class="prose prose-lg max-w-none">
+          {% for block in content_blocks %}
+              {% if block.polymorphic_ctype.model == 'headingblockone' %}
+                  <h2 id="{{ block.text|slugify }}" class="text-2xl font-bold text-primary mb-4 pt-4">{{ block.text }}</h2>
+
+              {% elif block.polymorphic_ctype.model == 'headingblocktwo' %}
+                  <h3 id="{{ block.text|slugify }}" class="text-xl font-semibold text-gray-800 mb-3 pt-2">{{ block.text }}</h3>
+
+              {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
+                  <p class="text-gray-700 mb-6">{{ block.content|safe }}</p>
+
+              {% elif block.polymorphic_ctype.model == 'imageblock' %}
+                  <figure class="mb-6 max-w-2xl mx-auto">
+                      <img src="{{ block.image.url }}" alt="{{ block.alt_text }}" class="mx-auto max-h-[400px] w-auto rounded-lg shadow-md object-scale-down" />
+                      {% if block.caption %}
+                          <p class="text-sm text-gray-600 italic text-center">{{ block.caption }}</p>
+                      {% endif %}
+                  </figure>
+
+              {% elif block.polymorphic_ctype.model == 'referenceblock' %}
+                  {# This would go inside a 'References' section at the end #}
+                  <p class="text-gray-700 mb-2">
+                    {% if block.link %}<a href="{{ block.link }}" target="_blank">{{ block.text }}</a>{% else %}{{ block.text }}{% endif %}
+                  </p>
+              {% endif %}
+          {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Table of Contents (Overlay) -->
+<div id="mobile-toc" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden lg:hidden">
+  <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[90vw] bg-white p-4 overflow-y-auto">
+    <div class="flex justify-between items-center mb-4">
+      <h3 class="text-lg font-semibold text-primary">Table of Contents</h3>
+      <button id="close-toc" class="text-gray-500 hover:text-gray-700 p-2"><i class="fas fa-times text-xl"></i></button>
+    </div>
+    <ul class="space-y-3 text-sm">
+        {% for item in table_of_contents %}
+          <li><a href="#{{ item.slug }}" class="text-gray-700 hover:text-primary block py-1 toc-link {% if item.level == 2 %}pl-4{% endif %}">{{ item.text }}</a></li>
+        {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<!-- Chapter Navigation -->
+<div class="bg-white border-t py-5">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col sm:flex-row justify-between items-center">
+      {% if prev_chapter %}
+        <a href="{{ prev_chapter.get_absolute_url }}" class="flex items-center text-gray-700 hover:text-primary mb-4 sm:mb-0 transition-transform duration-300 hover:-translate-x-1">
+          <i class="fas fa-arrow-left mr-2"></i>
+          <span>Previous: {{ prev_chapter.name }}</span>
+        </a>
+      {% else %}
+        <span></span> {# This empty span helps with flexbox alignment #}
+      {% endif %}
+
+      {% if next_chapter %}
+        <a href="{{ next_chapter.get_absolute_url }}" class="flex items-center text-gray-700 hover:text-primary transition-transform duration-300 hover:translate-x-1">
+          <span>Next: {{ next_chapter.name }}</span>
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock content %}

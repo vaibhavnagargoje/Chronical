@@ -42,6 +42,9 @@ INSTALLED_APPS = [
     'home',
     'culture',
     'statistic',
+    'polymorphic',        # Add this
+    'adminsortable2', 
+    'search',
 
 ]
 

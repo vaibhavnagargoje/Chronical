@@ -1,8 +1,10 @@
 from django.urls import path
 from .views import state_detail, district_detail, index
 
+app_name = 'home'
+
 urlpatterns = [
-    path('',index, name='index'), 
+    path('',index, name='index'),
     # e.g - /maharashtra/
     path('<slug:state_slug>/', state_detail, name='state_detail'),
 
