@@ -51,10 +51,11 @@ INSTALLED_APPS = [
     'home',
     'culture',
     'statistic',
-    'polymorphic',        # Add this
-    'adminsortable2', 
     'search',
+    'editor',
 
+    'adminsortable2', 
+    'polymorphic',        
 ]
 
 MIDDLEWARE = [

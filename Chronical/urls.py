@@ -8,6 +8,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
 
+    path('editor/', include('editor.urls', namespace='editor')),
     path('search/', include('search.urls', namespace='search')),
     path('cultural/', include('culture.urls', namespace='culture')),
     path('statistical/', include('statistic.urls')), # Also adding namespace for best practice
