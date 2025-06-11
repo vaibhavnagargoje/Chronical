@@ -1,0 +1,10 @@
+<div class="p-4 bg-white rounded-lg shadow editor-block" data-block-type="heading1" data-id="{{ id|default:'' }}">
+    <div class="flex items-center gap-4">
+        <span class="drag-handle text-gray-400 hover:text-gray-600"><i class="fas fa-grip-vertical"></i></span>
+        <div class="flex-grow">
+            <label class="block text-sm font-medium text-gray-500 mb-1">Heading 1</label>
+            <input type="text" class="w-full text-2xl font-bold border-gray-300 rounded-md" value="{{ value|default:'' }}" placeholder="Enter Heading 1 text...">
+        </div>
+        <button type="button" class="delete-block-btn text-red-500 hover:text-red-700"><i class="fas fa-trash-alt"></i></button>
+    </div>
+</div>

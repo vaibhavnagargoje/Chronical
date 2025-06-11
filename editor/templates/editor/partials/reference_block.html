@@ -1,0 +1,11 @@
+<div class="p-4 bg-white rounded-lg shadow editor-block" data-block-type="reference" data-id="{{ id|default:'' }}">
+    <div class="flex items-start gap-4">
+        <span class="drag-handle text-gray-400 hover:text-gray-600 mt-2"><i class="fas fa-grip-vertical"></i></span>
+        <div class="flex-grow space-y-3">
+            <label class="block text-sm font-medium text-gray-500">Reference</label>
+            <input type="text" name="text" class="w-full border-gray-300 rounded-md text-sm" value="{{ text|default:'' }}" placeholder="Reference text (e.g., 'Source: The Times of India')">
+            <input type="url" name="link" class="w-full border-gray-300 rounded-md text-sm" value="{{ link|default:'' }}" placeholder="https://... (optional link)">
+        </div>
+        <button type="button" class="delete-block-btn text-red-500 hover:text-red-700 mt-2"><i class="fas fa-trash-alt"></i></button>
+    </div>
+</div>
