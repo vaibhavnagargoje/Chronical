@@ -26,9 +26,17 @@ SECRET_KEY = 'django-insecure-s6!vqqqfjev2rvkww_7y!0scts+fd%8u4!m6v9pawy7-+&jlxw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://a741-2402-3a80-c8c-60b3-bd6e-b30c-85cc-1248.ngrok-free.app/','a741-2402-3a80-c8c-60b3-bd6e-b30c-85cc-1248.ngrok-free.app','localhost','127.0.0.1']
 
 
+CORS_ALLOW_CREDENTIALS = True  #
+CORS_ORIGIN_ALLOW_ALL = True  # ⚠️ Only for local testing
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+    'https://a741-2402-3a80-c8c-60b3-bd6e-b30c-85cc-1248.ngrok-free.app',
+    'https://9e09-49-248-175-215.ngrok-free.app'
+]
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tinymce',
+    'corsheaders',
     'home',
     'culture',
     'statistic',
@@ -49,6 +58,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -59,6 +69,19 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'Chronical.urls'
+
+# Allow frontend to send cookies (important for session + CSRF)
+CORS_ALLOW_CREDENTIALS = True
+
+# For CSRF: allow frontend domains to be trusted
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",
+    "https://a741-2402-3a80-c8c-60b3-bd6e-b30c-85cc-1248.ngrok-free.app"
+]
+
+
+CORS_ALLOW_CREDENTIALS = True  #
+
 
 TEMPLATES = [
     {
@@ -125,35 +148,16 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 
-# TinyMCE Configuration
 TINYMCE_DEFAULT_CONFIG = {
-    'height': 360,
-    'width': 'auto',
-    'cleanup_on_startup': True,
-    'custom_undo_redo_levels': 20,
-    'selector': 'textarea',
-    'theme': 'silver',
-    'plugins': '''
-        textcolor save link image media preview codesample contextmenu
-        table code lists fullscreen insertdatetime nonbreaking
-        contextmenu directionality searchreplace wordcount visualblocks
-        visualchars code fullscreen autolink lists charmap print hr
-        anchor pagebreak
-    ''',
-    'toolbar1': '''
-        fullscreen preview bold italic underline | fontselect,
-        fontsizeselect | forecolor backcolor | alignleft alignright |
-        aligncenter alignjustify | indent outdent | bullist numlist table |
-        | link image media | codesample |
-    ''',
-    'toolbar2': '''
-        visualblocks visualchars |
-        charmap hr pagebreak nonbreaking anchor | code |
-    ''',
-    'contextmenu': 'formats | link image',
-    'menubar': True,
-    'statusbar': True,
+    'height': 300,
+    'width': 900,
+    'menubar': False,
+    'plugins': 'lists link code table',
+    'toolbar': 'bold italic underline | bullist numlist | link | code | table',
+    
 }
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
@@ -169,6 +173,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = 'static/'
 
@@ -179,10 +184,6 @@ STATICFILES_DIRS = [
 STATIC_ROOT= os.path.join(BASE_DIR,'staticfiles')
 
 
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
-
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 

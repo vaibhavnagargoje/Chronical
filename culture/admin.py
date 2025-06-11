@@ -4,10 +4,11 @@ from django.contrib import admin
 from polymorphic.admin import (
     PolymorphicInlineSupportMixin, StackedPolymorphicInline
 )
+
 # Import your new models
 from .models import (
     CulturalChapter, ContentBlock, HeadingBlockOne, HeadingBlockTwo,
-    ParagraphBlock, ImageBlock, ReferenceBlock
+ HeadingBlockThree, ParagraphBlock, ImageBlock, ReferenceBlock
 )
 
 # This inline manager is the key to the admin interface.
@@ -18,6 +19,9 @@ class ContentBlockInline(StackedPolymorphicInline):
         model = HeadingBlockOne
     class HeadingBlockTwoInline(StackedPolymorphicInline.Child):
         model = HeadingBlockTwo
+    
+    class HeadingBlockThreeInline(StackedPolymorphicInline.Child):
+        model = HeadingBlockThree 
 
     class ParagraphBlockInline(StackedPolymorphicInline.Child):
         model = ParagraphBlock
@@ -28,11 +32,12 @@ class ContentBlockInline(StackedPolymorphicInline):
     class ReferenceBlockInline(StackedPolymorphicInline.Child):
         model = ReferenceBlock
 
-    # Define the parent model and the available child types
+   
     model = ContentBlock
     child_inlines = (
         HeadingBlockOneInline,
         HeadingBlockTwoInline,
+        HeadingBlockThreeInline,
         ParagraphBlockInline,
         ImageBlockInline,
         ReferenceBlockInline,
@@ -55,5 +60,6 @@ class CulturalChapterAdmin(PolymorphicInlineSupportMixin, admin.ModelAdmin):
     # edit, and reorder all content blocks.
     inlines = [ContentBlockInline]
 
+    
     def get_inline_instances(self, request, obj=None):
         return [inline(self.model, self.admin_site) for inline in self.inlines]

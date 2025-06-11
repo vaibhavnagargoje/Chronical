@@ -17,6 +17,42 @@
         cursor: pointer;
       }
     }
+    
+</style>
+<style>
+   /* TinyMCE Table Styling - Horizontal Lines Only */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: none !important;
+        margin: 20px 0; /* Increased spacing around table */
+        font-family: inherit; /* Match your site's font */
+    }
+    /* Top/bottom borders for the entire table */
+    table {
+        border-top: 1px solid #999 !important;
+        border-bottom: 1px solid #999 !important;
+    }
+    /* Table headers (th) - Bold + Darker line */
+    table th {
+        border: none !important;
+        border-bottom: 2px solid #666 !important; /* Darker line */
+        padding: 10px 8px; /* Slightly taller padding */
+        font-weight: 700 !important; /* Bold (600=semibold, 700=bold) */
+        text-align: left; /* Align left (or center if preferred) */
+        background-color: #f8f8f8; /* Light gray background (optional) */
+    }
+    /* Table cells (td) - Lighter lines */
+    table td {
+        border: none !important;
+        border-bottom: 1px solid #e0e0e0 !important;
+        padding: 8px;
+        vertical-align: top; /* Align content to top (better for multi-line cells) */
+    }
+    /* Remove last row's bottom border */
+    table tr: td {
+       
+    }
 </style>
 {% endblock header %}
 

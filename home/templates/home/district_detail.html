@@ -40,11 +40,7 @@
     <div class="container mx-auto px-4 md:px-6">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-2xl font-bold text-primary mb-4">About {{district.name}}</h2>
-            <p class="text-gray-700 mb-6">
-                {{district.introduction|safe}}
-            </p>
-            
-           
+
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <div>
@@ -90,31 +86,34 @@
                 </div>
             </div>
 
-            <!-- District Sections -->
-            {% for section in district_sections %}
-            <div class="bg-light rounded-lg p-6 mb-8">
-                <h3 class="text-xl font-semibold text-primary mb-4">{{ section.title }}</h3>
-                
-                {% for paragraph in section.paragraphs.all %}
-                <p class="text-gray-700 mb-4">
-                    {{ paragraph.content|safe }}
-                </p>
-                {% endfor %}
-                
-                {% if section.images.all %}
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                    {% for image in section.images.all %}
-                    <div>
-                        <img src="{{ image.image.url }}" alt="{{ image.alt_text|default:section.title }}" class="w-full h-auto object-cover items-center rounded-lg shadow-md">
-                        
-                    </div>
-                    {% endfor %}
-                </div>
-                {% endif %}
-            </div>
-            {% endfor %}
+            <p class="text-gray-700 mb-6">
+                {{district.introduction|safe}}
+            </p>
             
-            <!-- Additional District Images Gallery -->
+           
+            
+<!-- District Sections -->
+{% for section in district_sections %}
+<div class="mb-8">  <!-- Removed background and padding classes -->
+    
+    {% if section.images.all %}
+    <div class="-mx-6">  <!-- Negative horizontal margin to counter parent padding -->
+        {% for image in section.images.all %}
+        <div class="mb-4 last:mb-0">  <!-- Added margin between images -->
+            <img 
+                src="{{ image.image.url }}" 
+                alt="{{ image.alt_text|default:section.title }}" 
+                class="w-full h-auto object-cover rounded-sm"
+            >
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
+
+
+            {% comment %} <!-- Additional District Images Gallery -->
             {% if district_images|length > 1 %}
             <div class="mt-8">
                 <h3 class="text-xl font-semibold text-primary mb-4">Gallery</h3>
@@ -131,7 +130,7 @@
                     {% endfor %}
                 </div>
             </div>
-            {% endif %}
+            {% endif %} {% endcomment %}
         </div>
     </div>
 </div>

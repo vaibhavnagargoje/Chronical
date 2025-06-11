@@ -2,7 +2,7 @@
 
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
-from .models import CulturalChapter, ContentBlock, HeadingBlockOne, HeadingBlockTwo
+from .models import CulturalChapter, ContentBlock, HeadingBlockOne, HeadingBlockTwo,HeadingBlockThree
 
 def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
     chapter = get_object_or_404(
@@ -31,6 +31,16 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
                 'slug': slugify(block.text),
                 'level': 2,
             })
+
+        # # --- Uncomment this if you have HeadingBlockThree in Table of contents
+        # elif isinstance(block, HeadingBlockThree):
+        #     table_of_contents.append({
+        #         'text': block.text,
+        #         'slug': slugify(block.text),
+        #         'level': 3,
+        #     })
+      
+
     # Get all chapters in the current district for the "Change Chapter" dropdown
     all_chapters_in_district = chapter.district.cultural_chapters.all().order_by('name')
 

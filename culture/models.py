@@ -3,16 +3,39 @@
 from django.db import models
 from django.utils.text import slugify
 from polymorphic.models import PolymorphicModel
-
+from tinymce.models import HTMLField
 from django.urls import reverse
-
-# This is the crucial link. We are importing the District model
-# from your existing 'home' app.
+import os
+import uuid
 from home.models import District
 
-# -----------------------------------------------
-# Main Chapter Model (The Page Container)
-# -----------------------------------------------
+def get_seo_image_path(instance, filename):
+    """
+    Generates a unique, SEO-friendly path for an uploaded image.
+    Example: culture/images/mango-image-for-boy-a1b2c3d4.jpg
+    """
+    # 1. Start with a fallback name in case the caption is empty
+    base_name = uuid.uuid4().hex
+
+    # 2. Use the caption to create a clean, URL-friendly slug
+    # We check the instance's caption first, as it's the most descriptive.
+    if instance.caption:
+        base_name = slugify(instance.caption)
+   
+    elif instance.alt_text:
+        base_name = slugify(instance.alt_text)
+    
+   
+    ext = os.path.splitext(filename)[1]
+
+
+    unique_id = uuid.uuid4().hex[:8]
+    new_filename = f"{base_name}-{unique_id}{ext}"
+    
+
+    return os.path.join('culture', 'images', new_filename)
+
+
 class CulturalChapter(models.Model):
     """
     Represents a specific chapter (like Food, Artforms) for a District.
@@ -32,7 +55,7 @@ class CulturalChapter(models.Model):
         ('Markets', 'Markets'),
         ('Local Politics', 'Local Politics'),
     ]
-    # The direct relationship to your existing District model
+
     district = models.ForeignKey(District, on_delete=models.CASCADE, related_name='cultural_chapters',null=True, blank=True)
     name = models.CharField(max_length=50, choices=CHAPTER_CHOICES)
     slug = models.SlugField(max_length=200, blank=True)
@@ -46,7 +69,7 @@ class CulturalChapter(models.Model):
             'chapter_slug': self.slug
         })
     class Meta:
-        # Ensures you can only have one "Food" chapter for the "Kolhapur" district.
+        
         unique_together = ('district', 'name')
         verbose_name = "Cultural Chapter"
         ordering = ['name']
@@ -59,9 +82,9 @@ class CulturalChapter(models.Model):
     def __str__(self):
         return f"{self.name} - {self.district.name}"
 
-# -----------------------------------------------
-# Polymorphic Content Blocks
-# -----------------------------------------------
+
+# Polymorphic Content Blocks for the Cultural Chapter
+
 class ContentBlock(PolymorphicModel):
     """
     The generic, orderable base model for all content elements.
@@ -71,38 +94,47 @@ class ContentBlock(PolymorphicModel):
     order = models.PositiveIntegerField(default=0, db_index=True)
 
     class Meta:
-        # This is vital! It ensures all blocks are fetched in the correct order.
+        #Fatching Block in the correct order.
         ordering = ['order']
 
     def __str__(self):
         return f"Block #{self.order} on {self.chapter}"
 
-# ---- Specific, concrete block types ----
+# ---- Specific, concrete block types 
 # Each one inherits from ContentBlock and adds its own specific fields.
 
 class HeadingBlockOne(ContentBlock):
     text = models.CharField(max_length=255)
     class Meta:
         verbose_name = "Heading 1"
-    def __str__(self): return f"Heading: {self.text}"
+    def __str__(self): return f"Heading 1: {self.text}"
 
 class HeadingBlockTwo(ContentBlock):
     text = models.CharField(max_length=255)
     class Meta:
         verbose_name = "Heading 2"
-    def __str__(self): return f"Heading: {self.text}"
+    def __str__(self): return f"Heading 2: {self.text}"
+
+
+class HeadingBlockThree(ContentBlock):
+    text = models.CharField(max_length=255)
+    class Meta:
+        verbose_name = "Heading 3"
+    
+    def __str__(self):
+        return f"Heading 3: {self.text}"
 
 class ParagraphBlock(ContentBlock):
-    # This field uses the tinymce.models.HTMLField you already have
-    content = models.TextField(help_text="Formatted text, lists, and tables go here.")
+    # this Html Field  fom tinymce allows for rich text editing
+    content = HTMLField(help_text="Formatted text, lists, and tables go here.")
     class Meta:
         verbose_name = "Paragraph Block"
-    def __str__(self): return f"Paragraph: {self.content[:60]}..."
+    def __str__(self): return f"Paragraph: {self.content[:40]}..."
 
 class ImageBlock(ContentBlock):
-    image = models.ImageField(upload_to='culture/images/')
-    caption = models.CharField(max_length=255, blank=True)
-    alt_text = models.CharField(max_length=255, help_text="Accessibility text for screen readers.")
+    image = models.ImageField(upload_to=get_seo_image_path)
+    caption = models.CharField(max_length=4000, blank=True)
+    alt_text = models.CharField(max_length=4000, help_text="Accessibility text for screen readers.")
     class Meta:
         verbose_name = "Image Block"
     def __str__(self): return f"Image: {self.caption or self.alt_text}"

@@ -5,9 +5,9 @@ app_name = 'home'
 
 urlpatterns = [
     path('',index, name='index'),
-    # e.g - /maharashtra/
+    #  /maharashtra/
     path('<slug:state_slug>/', state_detail, name='state_detail'),
 
-    # e.g-  /maharashtra/kolhapur/
+    #   /maharashtra/kolhapur/
     path('<slug:state_slug>/<slug:district_slug>/', district_detail, name='district_detail'),
 ]
