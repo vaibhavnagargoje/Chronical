@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'statistic',
     'search',
     'editor',
+    'sidepanal',
 
     'adminsortable2', 
     'polymorphic',        
