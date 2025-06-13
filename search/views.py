@@ -4,18 +4,16 @@ from django.shortcuts import render
 from django.db.models import Q, Count
 from django.core.paginator import Paginator
 from django.utils import timezone
+from django.utils.text import slugify
 from datetime import timedelta
+import re
 
 from home.models import District
-# =========================================================================
-# THE FIX IS ON THIS LINE:
-from culture.models import CulturalChapter, ParagraphBlock
-# =========================================================================
+from culture.models import CulturalChapter, ParagraphBlock, HeadingBlockOne, HeadingBlockTwo
 
 # This is a constant we can use to identify result types
 DISTRICT_TYPE = 'District Overview'
 CULTURE_TYPE = 'Cultural Chapter'
-# Add other types here later, e.g., STATISTICAL_TYPE = 'Statistical Chapter'
 
 def search_view(request):
     """
@@ -88,29 +86,81 @@ def search_view(request):
             district_results = district_results.filter(updated_at__gte=cutoff_date)
             culture_results = culture_results.filter(updated_at__gte=cutoff_date)
 
+    # --- Helper function to find matching content and generate anchor ---
+    def find_content_anchor(chapter, search_query):
+        """Find the specific block containing the search query and return anchor"""
+        if not search_query:
+            return ''
+            
+        content_blocks = chapter.content_blocks.select_related().all()
+        
+        for block in content_blocks:
+            model_name = block.polymorphic_ctype.model
+            
+            if model_name == 'headingblockone':
+                heading_block = HeadingBlockOne.objects.get(pk=block.pk)
+                if search_query.lower() in heading_block.text.lower():
+                    return f"#{slugify(heading_block.text)}"
+                    
+            elif model_name == 'headingblocktwo':
+                heading_block = HeadingBlockTwo.objects.get(pk=block.pk)
+                if search_query.lower() in heading_block.text.lower():
+                    return f"#{slugify(heading_block.text)}"
+                    
+            elif model_name == 'paragraphblock':
+                paragraph_block = ParagraphBlock.objects.get(pk=block.pk)
+                if search_query.lower() in paragraph_block.content.lower():
+                    previous_blocks = content_blocks.filter(order__lt=block.order).order_by('-order')
+                    for prev_block in previous_blocks:
+                        prev_model = prev_block.polymorphic_ctype.model
+                        if prev_model in ['headingblockone', 'headingblocktwo']:
+                            if prev_model == 'headingblockone':
+                                prev_heading = HeadingBlockOne.objects.get(pk=prev_block.pk)
+                                return f"#{slugify(prev_heading.text)}"
+                            elif prev_model == 'headingblocktwo':
+                                prev_heading = HeadingBlockTwo.objects.get(pk=prev_block.pk)
+                                return f"#{slugify(prev_heading.text)}"
+                    return ''
+        return ''
+
+    # --- Helper function to highlight search terms ---
+    def highlight_text(text, search_query):
+        """Highlight search terms in text"""
+        if not search_query or not text:
+            return text
+        pattern = re.compile(re.escape(search_query), re.IGNORECASE)
+        return pattern.sub(f'<mark class="bg-yellow-200 px-1 rounded">{search_query}</mark>', text)
+
     # --- Combine and Format Results ---
     # We transform our querysets into a unified list of dictionaries for easy rendering.
     final_results = []
     for district in district_results.select_related('state'):
+        description = highlight_text(district.introduction, query)
         final_results.append({
             'type': DISTRICT_TYPE,
-            'title': f"{district.name} District Overview",
-            'description': district.introduction,
+            'title': highlight_text(f"{district.name} District Overview", query),
+            'description': description,
             'url': district.get_absolute_url(),
             'state_name': district.state.name,
             'updated_at': district.updated_at,
         })
 
-    for chapter in culture_results.select_related('district__state'):
-        # For description, get the first paragraph block if possible
+    for chapter in culture_results.select_related('district__state').prefetch_related('content_blocks'):
+        # Find specific anchor for the matching content
+        anchor = find_content_anchor(chapter, query)
+        base_url = chapter.get_absolute_url()
+        full_url = f"{base_url}{anchor}" if anchor else base_url
+        
+        # Get description from first paragraph or matching content
         first_paragraph = chapter.content_blocks.instance_of(ParagraphBlock).first()
         description = first_paragraph.content if first_paragraph else "..."
+        description = highlight_text(description, query)
 
         final_results.append({
             'type': CULTURE_TYPE,
-            'title': f"{chapter.district.name} - {chapter.name}",
+            'title': highlight_text(f"{chapter.district.name} - {chapter.name}", query),
             'description': description,
-            'url': chapter.get_absolute_url(),
+            'url': full_url,
             'state_name': chapter.district.state.name,
             'updated_at': chapter.updated_at,
         })

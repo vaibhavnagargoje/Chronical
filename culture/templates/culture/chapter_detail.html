@@ -59,7 +59,7 @@
 {% block content %}
 <!-- Breadcrumbs -->
 <div class="bg-white border-b">
-  <div class="container mx-auto px-4 py-3">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-3">
     <div class="flex items-center text-sm overflow-x-auto whitespace-nowrap">
       <a href="{% url 'home:index' %}" class="text-gray-600 hover:text-primary">Home</a>
       <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
@@ -74,7 +74,7 @@
 
 <!-- District Navigation -->
 <div class="bg-white border-b sticky top-16 z-40">
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
     <div class="flex items-center justify-between py-3">
       <div class="flex items-center space-x-4 overflow-x-auto">
         <!-- Change Chapter Dropdown -->
@@ -115,7 +115,7 @@
 </div>
 
 <!-- Main Content with Sidebar -->
-<div class="container mx-auto px-4 py-6 md:py-8">
+<div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-8">
   <div class="flex flex-col lg:flex-row">
     <!-- Table of Contents Sidebar (Desktop) -->
     <div class="hidden lg:block w-60 flex-shrink-0 pr-6 order-1">
@@ -302,6 +302,43 @@
         mobileMenu.classList.add("hidden");
       }
     });
+
+    // Highlight search terms if coming from search
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check if user came from search
+        const fromSearch = localStorage.getItem('fromSearch');
+        const searchQuery = localStorage.getItem('searchQuery');
+        
+        if (fromSearch === 'true' && searchQuery) {
+            // Highlight search terms on the page
+            highlightSearchTerms(searchQuery);
+            
+            // Clear the localStorage
+            localStorage.removeItem('fromSearch');
+            localStorage.removeItem('searchQuery');
+            
+            // If there's a hash in URL, scroll to it
+            if (window.location.hash) {
+                setTimeout(() => {
+                    const targetElement = document.querySelector(window.location.hash);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                }, 100);
+            }
+        }
+    });
+
+    function highlightSearchTerms(query) {
+        const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');
+        const regex = new RegExp(`(${query})`, 'gi');
+        
+        elements.forEach(element => {
+            if (element.innerHTML.toLowerCase().includes(query.toLowerCase())) {
+                element.innerHTML = element.innerHTML.replace(regex, '<mark class="bg-yellow-200 px-1 rounded">$1</mark>');
+            }
+        });
+    }
   </script>
 
 {% endblock content %}

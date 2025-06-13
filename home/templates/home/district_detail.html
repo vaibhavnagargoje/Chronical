@@ -7,7 +7,7 @@
 
 <!-- Breadcrumbs -->
 <div class="bg-white border-b">
-    <div class="container mx-auto px-4 py-3">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-3">
         <div class="flex items-center text-sm">
             <a href="{% url 'home:index' %}" class="text-gray-600 hover:text-primary">Home</a>
             <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
@@ -20,7 +20,7 @@
 
 <!-- District Header -->
 <div class="bg-white py-6 md:py-8 border-b">
-    <div class="container mx-auto px-4 md:px-6">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div class="flex flex-col md:flex-row items-start md:items-center justify-between">
             <div>
                 <h1 class="text-4xl font-bold text-primary mb-2">{{district.name}} District</h1>
@@ -37,7 +37,7 @@
 
 <!-- District Introduction -->
 <div class="bg-white py-6 md:py-8">
-    <div class="container mx-auto px-4 md:px-6">
+     <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div class="max-w-5xl mx-auto">
             <h2 class="text-2xl font-bold text-primary mb-4">About {{district.name}}</h2>
 
@@ -90,27 +90,27 @@
                 {{district.introduction|safe}}
             </p>
             
-           
-            
-<!-- District Sections -->
-{% for section in district_sections %}
-<div class="mb-8">  <!-- Removed background and padding classes -->
-    
-    {% if section.images.all %}
-    <div class="-mx-6">  <!-- Negative horizontal margin to counter parent padding -->
-        {% for image in section.images.all %}
-        <div class="mb-4 last:mb-0">  <!-- Added margin between images -->
-            <img 
-                src="{{ image.image.url }}" 
-                alt="{{ image.alt_text|default:section.title }}" 
-                class="w-full h-auto object-cover rounded-sm"
-            >
-        </div>
-        {% endfor %}
-    </div>
-    {% endif %}
-</div>
-{% endfor %}
+            <!-- District Sections -->
+            {% for section in district_sections %}
+            <div class="mb-12">
+                {% if section.images.all %}
+                <div class="space-y-6">
+                    {% for image in section.images.all %}
+                    <div class="w-full">
+                        <img 
+                            src="{{ image.image.url }}" 
+                            alt="{{ image.alt_text|default:section.title }}" 
+                            class="w-full h-auto max-h-96 md:max-h-[800px] object-cover rounded-lg shadow-md"
+                        >
+                        {% if image.caption %}
+                        {% comment %} <p class="text-sm text-gray-600 mt-2 text-center">{{ image.caption }}</p> {% endcomment %}
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
 
 
             {% comment %} <!-- Additional District Images Gallery -->
@@ -140,7 +140,7 @@
 <!-- District chapter -->
   <!-- Chapters Section -->
     <div class="bg-white py-8 md:py-12">
-        <div class="container mx-auto px-4 md:px-6">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
             <h2 class="text-3xl font-bold text-center text-primary mb-10 md:mb-12">Explore Pune District</h2>
             
             <div class="flex flex-col lg:flex-row gap-8">
@@ -151,8 +151,8 @@
                         {% for chapter_data in cultural_chapters %}
                             <a href="{{ chapter_data.object.get_absolute_url }}" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
                                 <div class="p-4 flex items-center">
-                                    <div class="w-12 h-12 flex-shrink-0 bg-primary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                        <img src="{% static 'img/icons/' %}{{ chapter_data.icon }}" alt="{{ chapter_data.object.name }}" class="w-10 h-10 object-cover rounded-full">
+                                    <div class="w-12 h-12 flex-shrink-0 bg-primary bg-opacity-5 rounded-full flex items-center justify-center mr-4">
+                                        <img src="{% static 'img/icons/' %}{{ chapter_data.icon }}" alt="{{ chapter_data.object.name }}" class="w-10 h-10 object-cover ">
                                     </div>
                                     <div>
                                         <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">{{ chapter_data.object.name }}</h4>

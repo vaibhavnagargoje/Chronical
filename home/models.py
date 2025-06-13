@@ -1,4 +1,3 @@
-
 from django.db import models
 from django.utils.text import slugify
 from django.core.validators import FileExtensionValidator
@@ -48,6 +47,12 @@ class District(models.Model):
     def __str__(self):
         return f"{self.name}, {self.state.name}"
     
+    def get_absolute_url(self):
+        return reverse('home:district_detail', kwargs={
+            'state_slug': self.state.slug,
+            'district_slug': self.slug
+        })
+
 class DistrictSVG(models.Model):
     """
     SVG representation of a district
