@@ -303,42 +303,7 @@
       }
     });
 
-    // Highlight search terms if coming from search
-    document.addEventListener('DOMContentLoaded', function() {
-        // Check if user came from search
-        const fromSearch = localStorage.getItem('fromSearch');
-        const searchQuery = localStorage.getItem('searchQuery');
-        
-        if (fromSearch === 'true' && searchQuery) {
-            // Highlight search terms on the page
-            highlightSearchTerms(searchQuery);
-            
-            // Clear the localStorage
-            localStorage.removeItem('fromSearch');
-            localStorage.removeItem('searchQuery');
-            
-            // If there's a hash in URL, scroll to it
-            if (window.location.hash) {
-                setTimeout(() => {
-                    const targetElement = document.querySelector(window.location.hash);
-                    if (targetElement) {
-                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                }, 100);
-            }
-        }
-    });
 
-    function highlightSearchTerms(query) {
-        const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');
-        const regex = new RegExp(`(${query})`, 'gi');
-        
-        elements.forEach(element => {
-            if (element.innerHTML.toLowerCase().includes(query.toLowerCase())) {
-                element.innerHTML = element.innerHTML.replace(regex, '<mark class="bg-yellow-200 px-1 rounded">$1</mark>');
-            }
-        });
-    }
   </script>
 
 {% endblock content %}
