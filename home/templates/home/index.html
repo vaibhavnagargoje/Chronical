@@ -7,38 +7,6 @@
 
 {% block header %}
 <style>
-    
-
-.container-xxl {
-    width: 100%;
-    padding: 15px;
-  }
-  
-
-
-
-
-  /* Map container */
-  .map-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  /* SVG Wrapper */
-  .svg-scroll-wrapper {
-    width: 100%;
-    position: relative;
-  }
-  
-  /* SVG styles */
-  svg {
-    width: 100%;
-    height: auto;
-    max-height: 80vh;
-  }
-  
   /* State paths */
   svg path {
     fill: white;
@@ -47,13 +15,9 @@
     transition: fill 0.3s ease;
   }
   
-  /* svg path:hover {
-    fill: #863F3F;
-    cursor: pointer;
-  } */
-  
+
 #maharashtra path {
-  fill: #863f3f60;;
+  fill: #863f3f60;
 }
 
 #maharashtra path:hover {
@@ -66,39 +30,6 @@
   color: white;
   font-size: 20px;
 }
-/* 
-@keyframes quickBlink {
-  
-  0%, 100% { fill: #863f3f60; } 
-  50% { fill: transparent; } 
-} */
-
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    .svg-scroll-wrapper {
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-      height: 70vh; /* Fixed height for scrollable area */
-    }
-  
-    svg {
-      width: 150%;  /* Enlarge SVG for better mobile interaction */
-      height: 120%; /* Maintain aspect ratio while allowing scroll */
-      min-width: 1000px; /* Match SVG viewBox width */
-      min-height: 1043px; /* Match SVG viewBox height */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .svg-scroll-wrapper {
-      height: 80vh; /* Smaller height for very small devices */
-    }
-    
-    svg {
-      width: 180%; /* Further enlarge for better readability */
-      height: 150%;
-    }
-  }
 
 
 
@@ -110,7 +41,7 @@
 
     <!-- Hero Section -->
     <div class="bg-white py-12">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto  px-4 md:px-6 lg:px-8 xl:px12 2xl:px-16">
             <div class="text-center max-w-4xl mx-auto">
                 <h1 class="text-4xl md:text-5xl font-bold text-primary mb-4">INDIAN DISTRICTS CULTURE & STATISTICS</h1>
                 <p class="text-lg text-gray-700 mb-8">Welcome to the most comprehensive encylopedia of Indian districts.
@@ -125,8 +56,8 @@ Explore India one district at a time...<br>
     </div>
 
  <!-- India Map Section -->
-    <div class="py-12 bg-white">
-      <div class="container mx-auto px-4">
+    <div class="py-6 bg-white">
+      <div class="container mx-auto  px-1 md:px-6 lg:px-8 xl:px12 2xl:px-16">
           <h2 class="text-3xl font-bold text-center text-primary mb-8">India</h2>
           <div class="max-w-4xl mx-auto relative">
               <!-- Scrollable container for mobile -->
@@ -283,44 +214,44 @@ Explore India one district at a time...<br>
     
     
                           
-                          <text id="maharashtra-text" x="550" y="1740" font-family="Arial" font-size="30" fill="#252525">Maharashtra</text>
-                          <text x="860" y="1880" font-family="Arial" font-size="30" fill="#252525">Telangana</text>
-                          <text x="730" y="1400" font-family="Arial" font-size="30" fill="#252525">Madhya Pradesh</text>
-                          <text x="1100" y="1540" font-family="Arial" font-size="30" fill="#252525">Chhattisgarh</text>
-                          <text x="1365" y="1350" font-family="Arial" font-size="30" fill="#252525">Jharkhand</text>
-                          <text x="1580" y="1400" font-family="Arial" font-size="30" fill="#252525">West Bengal</text>
-                          <text x="1460" y="1160" font-family="Arial" font-size="30" fill="#252525">Bihar</text>
-                          <text x="1900" y="1170" font-family="Arial" font-size="30" fill="#252525">Meghalaya</text>
-                          <text x="1870" y="1370" font-family="Arial" font-size="30" fill="#252525">Tripura</text>
-                          <text x="2150" y="1450" font-family="Arial" font-size="30" fill="#252525">Mizoram</text>
-                          <text x="2250" y="1290" font-family="Arial" font-size="30" fill="#252525">Manipur</text>
-                          <text x="2070" y="1090" font-family="Arial" font-size="30" fill="#252525">Assam</text>
-                          <text x="2315" y="1110" font-family="Arial" font-size="30" fill="#252525">Nagaland</text>
-                          <text x="1615" y="950" font-family="Arial" font-size="30" fill="#252525">Sikkim</text>
-                          <text x="2150" y="912" font-family="Arial" font-size="30" fill="#252525">Arunachal Pradesh</text>
-                          <text x="1000" y="1050" font-family="Arial" font-size="30" fill="#252525">Uttar Pradesh</text>
-                          <text x="420" y="1055" font-family="Arial" font-size="30" fill="#252525">Rajasthan</text>
-                          <text x="640" y="810" font-family="Arial" font-size="30" fill="#252525">Haryana</text>
-                          <text x="782" y="865" font-family="Arial" font-size="30" fill="#252525">Delhi</text>
-                          <text x="570" y="660" font-family="Arial" font-size="30" fill="#252525">Punjab</text>
-                          <text x="860" y="710" font-family="Arial" font-size="30" fill="#252525">Uttarakhand</text>
-                          <text x="718" y="535" font-family="Arial" font-size="30" fill="#252525">Himachal
+                          <text id="maharashtra-text" x="550" y="1740" font-family="Arial" font-size="39" fill="#252525">Maharashtra</text>
+                          <text x="860" y="1880" font-family="Arial" font-size="39" fill="#252525">Telangana</text>
+                          <text x="730" y="1400" font-family="Arial" font-size="39" fill="#252525">Madhya Pradesh</text>
+                          <text x="1100" y="1540" font-family="Arial" font-size="39" fill="#252525">Chhattisgarh</text>
+                          <text x="1365" y="1350" font-family="Arial" font-size="39" fill="#252525">Jharkhand</text>
+                          <text x="1580" y="1400" font-family="Arial" font-size="39" fill="#252525">West Bengal</text>
+                          <text x="1460" y="1160" font-family="Arial" font-size="39" fill="#252525">Bihar</text>
+                          <text x="1900" y="1170" font-family="Arial" font-size="39" fill="#252525">Meghalaya</text>
+                          <text x="1870" y="1370" font-family="Arial" font-size="39" fill="#252525">Tripura</text>
+                          <text x="2150" y="1450" font-family="Arial" font-size="39" fill="#252525">Mizoram</text>
+                          <text x="2250" y="1290" font-family="Arial" font-size="39" fill="#252525">Manipur</text>
+                          <text x="2070" y="1090" font-family="Arial" font-size="39" fill="#252525">Assam</text>
+                          <text x="2315" y="1110" font-family="Arial" font-size="39" fill="#252525">Nagaland</text>
+                          <text x="1615" y="950" font-family="Arial" font-size="39" fill="#252525">Sikkim</text>
+                          <text x="2150" y="912" font-family="Arial" font-size="39" fill="#252525">Arunachal Pradesh</text>
+                          <text x="1000" y="1050" font-family="Arial" font-size="39" fill="#252525">Uttar Pradesh</text>
+                          <text x="420" y="1055" font-family="Arial" font-size="39" fill="#252525">Rajasthan</text>
+                          <text x="640" y="810" font-family="Arial" font-size="39" fill="#252525">Haryana</text>
+                          <text x="782" y="865" font-family="Arial" font-size="39" fill="#252525">Delhi</text>
+                          <text x="570" y="660" font-family="Arial" font-size="39" fill="#252525">Punjab</text>
+                          <text x="860" y="710" font-family="Arial" font-size="39" fill="#252525">Uttarakhand</text>
+                          <text x="718" y="535" font-family="Arial" font-size="39" fill="#252525">Himachal
                               <tspan x="724" y="570">Pradesh</tspan>    
                           </text>
-                          <text x="500" y="370" font-family="Arial" font-size="30" fill="#252525">
+                          <text x="500" y="370" font-family="Arial" font-size="39" fill="#252525">
                               Jammu &amp; 
                               <tspan x="550" dy="30">Kashmir</tspan>
                               </text>
-                          <text x="700" y="270" font-family="Arial" font-size="30" fill="#252525">Ladakh</text>
-                          <text x="580" y="2200" font-family="Arial" font-size="30" fill="#252525">Karnataka</text>
-                          <text x="790" y="2500" font-family="Arial" font-size="30" fill="#252525">Tamil Nadu</text>
-                          <text x="570" y="2520" font-family="Arial" font-size="30" fill="#252525">Kerala</text>
-                          <text x="270" y="2570" font-family="Arial" font-size="30" fill="#252525">Lakshadweep</text>
-                          <text x="1870" y="2600" font-family="Arial" font-size="30" fill="#252525">Andaman &amp Nicobar Island</text>
-                          <text x="780" y="2150" font-family="Arial" font-size="30" fill="#252525">Andhra Pradesh</text>
-                          <text x="415" y="2100" font-family="Arial" font-size="30" fill="#252525">Goa</text>
-                          <text x="250" y="1400" font-family="Arial" font-size="30" fill="#252525">Gujrat</text>
-                          <text x="1350" y="1620" font-family="Arial" font-size="30" fill="#252525">Odisha</text>
+                          <text x="700" y="270" font-family="Arial" font-size="39" fill="#252525">Ladakh</text>
+                          <text x="580" y="2200" font-family="Arial" font-size="39" fill="#252525">Karnataka</text>
+                          <text x="790" y="2500" font-family="Arial" font-size="39" fill="#252525">Tamil Nadu</text>
+                          <text x="570" y="2520" font-family="Arial" font-size="39" fill="#252525">Kerala</text>
+                          <text x="270" y="2570" font-family="Arial" font-size="39" fill="#252525">Lakshadweep</text>
+                          <text x="1870" y="2600" font-family="Arial" font-size="39" fill="#252525">Andaman &amp Nicobar Island</text>
+                          <text x="780" y="2150" font-family="Arial" font-size="39" fill="#252525">Andhra Pradesh</text>
+                          <text x="415" y="2100" font-family="Arial" font-size="39" fill="#252525">Goa</text>
+                          <text x="250" y="1400" font-family="Arial" font-size="39" fill="#252525">Gujrat</text>
+                          <text x="1350" y="1620" font-family="Arial" font-size="39" fill="#252525">Odisha</text>
       
                       </g>
                     </svg>
