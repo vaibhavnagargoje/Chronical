@@ -303,7 +303,24 @@
       }
     });
 
-
+    // Handle search navigation with smooth scrolling
+    document.addEventListener('DOMContentLoaded', function() {
+        // Check if user came from search and has anchor in URL
+        if (window.location.hash) {
+            setTimeout(() => {
+                const targetElement = document.querySelector(window.location.hash);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Add a temporary highlight to the target section
+                    targetElement.style.backgroundColor = '#fff3cd';
+                    targetElement.style.transition = 'background-color 3s ';
+                    setTimeout(() => {
+                        targetElement.style.backgroundColor = '';
+                    }, 3000);
+                }
+            }, 300);
+        }
+    });
   </script>
 
 {% endblock content %}
