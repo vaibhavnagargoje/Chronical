@@ -61,7 +61,7 @@ INSTALLED_APPS = [
 
     'tailwind',
     'theme',
-    'django_browser_reload',
+    # 'django_browser_reload',
 ]
 
 TAILWIND_APP_NAME = 'theme'
@@ -80,7 +80,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
      # #for hot reloding 
-    "django_browser_reload.middleware.BrowserReloadMiddleware",
+    # "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = 'Chronical.urls'

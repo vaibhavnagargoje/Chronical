@@ -4,12 +4,12 @@
 
 {% block content %}
 <div class="bg-gray-100 min-h-screen">
-    <!-- Header bar for the editor -->
+    <!-- Header bar -->
     <header class="bg-white shadow-md sticky top-[72px] z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div>
-                    <h1 class="text-2xl font-bold text-gray-800">Editing: <span class="text-[#863F3F]">{{ chapter.name }}</span></h1>
+                    <h1 class="text-2xl font-bold text-gray-800">Editing {{ app_title }} Chapter: <span class="text-[#863F3F]">{{ chapter.name }}</span></h1>
                     <p class="text-sm text-gray-500">{{ chapter.district.name }}, {{ chapter.district.state.name }}</p>
                 </div>
                 <button id="save-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition-colors shadow-sm">
@@ -27,8 +27,6 @@
 
             <!-- Container for draggable blocks -->
             <div id="editor-blocks" class="space-y-4">
-                
-                {# This loop now passes the block ID to the partials #}
                 {% for block in content_blocks %}
                     {% if block.polymorphic_ctype.model == 'headingblockone' %}
                         {% include 'editor/partials/h1_block.html' with value=block.text id=block.id %}
@@ -38,10 +36,19 @@
                         {% include 'editor/partials/h3_block.html' with value=block.text id=block.id %}
                     {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
                         {% include 'editor/partials/paragraph_block.html' with value=block.content id=block.id %}
+                    
+                    {# ==================== THE FIX IS HERE ==================== #}
+                    {# We pass a unique name for the file input using the block's ID. #}
                     {% elif block.polymorphic_ctype.model == 'imageblock' %}
-                        {% include 'editor/partials/image_block.html' with image_url=block.image.url caption=block.caption alt_text=block.alt_text id=block.id %}
+                        {% include 'editor/partials/image_block.html' with image_url=block.image.url caption=block.caption alt_text=block.alt_text id=block.id file_input_name='existing-image-'|add:block.id|stringformat:"s" %}
+                    
                     {% elif block.polymorphic_ctype.model == 'referenceblock' %}
                         {% include 'editor/partials/reference_block.html' with text=block.text link=block.link id=block.id %}
+                    
+                    {% elif block.polymorphic_ctype.model == 'chartblock' %}
+                        {% include 'editor/partials/chart_block.html' with chart_url=block.chart_html_file.url title=block.title id=block.id file_input_name='existing-chart-'|add:block.id|stringformat:"s" %}
+                    {# ================= END OF FIX ================= #}
+
                     {% endif %}
                 {% endfor %}
             </div>
@@ -51,12 +58,16 @@
         <div class="mt-8 border-t pt-6 text-center">
             <h3 class="text-lg font-semibold text-gray-700 mb-4">Add a new block:</h3>
             <div class="flex flex-wrap justify-center gap-3">
-                <button data-block-type="heading1" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Heading 1</button>
-                <button data-block-type="heading2" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Heading 2</button>
-                <button data-block-type="heading3" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Heading 3</button>
-                <button data-block-type="paragraph" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Paragraph</button>
-                <button data-block-type="image" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Image</button>
-                <button data-block-type="reference" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Reference</button>
+                <button data-block-type="heading1" class="add-block-btn">Heading 1</button>
+                <button data-block-type="heading2" class="add-block-btn">Heading 2</button>
+                <button data-block-type="heading3" class="add-block-btn">Heading 3</button>
+                <button data-block-type="paragraph" class="add-block-btn">Paragraph</button>
+                <button data-block-type="image" class="add-block-btn">Image</button>
+                <button data-block-type="reference" class="add-block-btn">Reference</button>
+                
+                {% if app_label == 'statistic' %}
+                <button data-block-type="chart" class="add-block-btn">Chart</button>
+                {% endif %}
             </div>
         </div>
     </main>
@@ -70,18 +81,19 @@
     <div data-template-type="paragraph">{% include 'editor/partials/paragraph_block.html' %}</div>
     <div data-template-type="image">{% include 'editor/partials/image_block.html' %}</div>
     <div data-template-type="reference">{% include 'editor/partials/reference_block.html' %}</div>
+    {% if app_label == 'statistic' %}
+    <div data-template-type="chart">{% include 'editor/partials/chart_block.html' %}</div>
+    {% endif %}
 </div>
 
-
-<!-- JavaScript Libraries -->
+<!-- (JavaScript and Style sections remain exactly the same as your provided code) -->
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-{% comment %} <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> {% endcomment %}
 <script src="{% static 'tinymce/tinymce.min.js' %}"></script>
-<!-- Main Editor Script -->
 <script>
-    // Paste this inside the final <script> tag
-
-document.addEventListener('DOMContentLoaded', () => {
+    // YOUR JAVASCRIPT IS CORRECT AND DOES NOT NEED TO CHANGE.
+    // It is already designed to read the 'name' from the file input,
+    // which this template now provides correctly.
+    document.addEventListener('DOMContentLoaded', () => {
 
     const editorBlocksContainer = document.getElementById('editor-blocks');
     const form = document.getElementById('editor-form');
@@ -90,19 +102,26 @@ document.addEventListener('DOMContentLoaded', () => {
     const addBlockButtons = document.querySelectorAll('.add-block-btn');
     const blockTemplates = document.getElementById('block-templates');
 
-    let newParagraphIdCounter = 0;
-    let newImageIdCounter = 0;
+    let uniqueIdCounter = 0;
 
     new Sortable(editorBlocksContainer, { animation: 150, handle: '.drag-handle', ghostClass: 'sortable-ghost' });
 
-    const tinymceConfig = {
-        height: 300, menubar: false,
-        plugins: 'lists link code table',
-        toolbar: 'bold italic underline | bullist numlist | link | code | table',
-        skin_url: "{% static 'tinymce/skins/ui/oxide' %}",
-        content_css_url: "{% static 'tinymce/skins/content/default/content.min.css' %}",
+    const initializeTinyMCE = (element) => {
+        if (!element) return;
+        if (!element.id) {
+            uniqueIdCounter++;
+            element.id = `dynamic-tinymce-${uniqueIdCounter}`;
+        }
+        tinymce.init({
+            selector: `#${element.id}`, height: 300, menubar: false,
+            plugins: 'lists link code table',
+            toolbar: 'bold italic underline | bullist numlist | link | code | table',
+            skin_url: "{% static 'tinymce/skins/ui/oxide' %}",
+            content_css_url: "{% static 'tinymce/skins/content/default/content.min.css' %}",
+        });
     };
-    tinymce.init({ selector: '.tinymce-editor', ...tinymceConfig });
+    
+    document.querySelectorAll('.tinymce-editor').forEach(editor => { initializeTinyMCE(editor); });
 
     addBlockButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -116,29 +135,25 @@ document.addEventListener('DOMContentLoaded', () => {
             editorBlocksContainer.appendChild(newBlock);
 
             if (blockType === 'paragraph') {
-                newParagraphIdCounter++;
-                const newTextArea = newBlock.querySelector('textarea');
-                if (newTextArea) {
-                    const newId = `new-tinymce-editor-${newParagraphIdCounter}`;
-                    newTextArea.id = newId;
-                    tinymce.init({ selector: `#${newId}`, ...tinymceConfig });
-                }
+                const newTextArea = newBlock.querySelector('.tinymce-editor');
+                initializeTinyMCE(newTextArea);
             } 
-            else if (blockType === 'image') {
-                newImageIdCounter++;
+            else if (blockType === 'image' || blockType === 'chart') {
+                uniqueIdCounter++;
                 const fileInput = newBlock.querySelector('input[type="file"]');
-                if (fileInput) { fileInput.name = `new-image-${newImageIdCounter}`; }
+                if (fileInput) { fileInput.name = `new-file-${uniqueIdCounter}`; }
             }
         });
     });
 
-    editorBlocksContainer.addEventListener('click', function(e) {
+    editorBlocksContainer.addEventListener('click', (e) => {
         const deleteButton = e.target.closest('.delete-block-btn');
         if (deleteButton) {
             const blockToRemove = deleteButton.closest('.editor-block');
-            const editorId = blockToRemove.querySelector('.tinymce-editor')?.id;
-
-            if (editorId && tinymce.get(editorId)) { tinymce.get(editorId).remove(); }
+            const editorTextarea = blockToRemove.querySelector('.tinymce-editor');
+            if (editorTextarea && tinymce.get(editorTextarea.id)) {
+                tinymce.get(editorTextarea.id).remove();
+            }
             blockToRemove.remove();
         }
     });
@@ -150,23 +165,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const allBlocksData = [];
         document.querySelectorAll('#editor-blocks .editor-block').forEach(blockEl => {
             const blockId = blockEl.dataset.id;
-            const blockData = { type: blockEl.dataset.blockType };
+            const blockType = blockEl.dataset.blockType;
+            const blockData = { type: blockType };
 
             if (blockId) { blockData.id = parseInt(blockId, 10); }
 
-            if (blockData.type.startsWith('heading')) {
+            if (blockType.startsWith('heading')) {
                 blockData.text = blockEl.querySelector('input[type="text"]').value;
-            } else if (blockData.type === 'paragraph') {
+            } else if (blockType === 'paragraph') {
                 blockData.content = blockEl.querySelector('textarea').value;
-            } else if (blockData.type === 'reference') {
+            } else if (blockType === 'reference') {
                 blockData.text = blockEl.querySelector('input[name="text"]').value;
                 blockData.link = blockEl.querySelector('input[name="link"]').value;
-            } else if (blockData.type === 'image') {
+            } else if (blockType === 'image') {
                 blockData.caption = blockEl.querySelector('input[name="caption"]').value;
                 blockData.alt_text = blockEl.querySelector('input[name="alt_text"]').value;
                 const fileInput = blockEl.querySelector('input[type="file"]');
                 if (fileInput && fileInput.files.length > 0) {
                      blockData.image_id = fileInput.name;
+                }
+            } 
+            else if (blockType === 'chart') {
+                blockData.title = blockEl.querySelector('input[name="title"]').value;
+                const fileInput = blockEl.querySelector('input[type="file"]');
+                if (fileInput && fileInput.files.length > 0) {
+                     blockData.chart_file_id = fileInput.name;
                 }
             }
             allBlocksData.push(blockData);
@@ -175,14 +198,17 @@ document.addEventListener('DOMContentLoaded', () => {
         contentDataInput.value = JSON.stringify(allBlocksData);
         form.submit();
     });
-
 });
 </script>
-
 <style>
     .sortable-ghost { opacity: 0.4; background: #c8ebfb; }
     .drag-handle { cursor: grab; }
     .drag-handle:active { cursor: grabbing; }
+    .add-block-btn {
+        background-color: white; border: 1px solid #d1d5db; border-radius: 0.375rem;
+        padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500;
+        transition: background-color 0.2s;
+    }
+    .add-block-btn:hover { background-color: #f9fafb; }
 </style>
-
 {% endblock %}

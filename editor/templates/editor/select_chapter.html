@@ -1,24 +1,33 @@
+
+
+
+
+
+
 {% extends 'base.html' %}
 
-{% block title %}Select Cultural Chapter to Edit{% endblock %}
+{% block title %}Select {{ app_title }} Chapter to Edit{% endblock %}
 
 {% block content %}
 <div class="max-w-2xl mx-auto py-10 px-4">
-    <h1 class="text-3xl font-bold text-[#863F3F] mb-6">Edit Cultural Chapter Content</h1>
+    <h1 class="text-3xl font-bold text-[#863F3F] mb-6">Edit {{ app_title }} Chapter Content</h1>
     <p class="text-gray-600 mb-8">
         First, choose the district and the specific chapter you wish to edit or create content for.
     </p>
 
-    <form method="post" action="{% url 'editor:select_chapter' %}" class="space-y-6 bg-white p-8 rounded-lg shadow-lg">
+    {# The form action now points to the correct app-specific URL #}
+    <form method="post" action="{% url 'editor:select_chapter' app_label=app_label %}" class="space-y-6 bg-white p-8 rounded-lg shadow-lg">
         {% csrf_token %}
         <div>
             <label for="{{ form.district.id_for_label }}" class="block text-sm font-medium text-gray-700">District</label>
             {{ form.district }}
+            {% if form.district.errors %}<p class="text-red-500 text-xs mt-1">{{ form.district.errors|first }}</p>{% endif %}
         </div>
 
         <div>
             <label for="{{ form.chapter_name.id_for_label }}" class="block text-sm font-medium text-gray-700">Chapter</label>
             {{ form.chapter_name }}
+            {% if form.chapter_name.errors %}<p class="text-red-500 text-xs mt-1">{{ form.chapter_name.errors|first }}</p>{% endif %}
         </div>
 
         <div class="pt-4">
@@ -28,4 +37,4 @@
         </div>
     </form>
 </div>
-{% endblock %}
+{% endblock %} 

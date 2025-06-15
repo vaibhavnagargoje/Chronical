@@ -1,901 +1,188 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pune - Livestock & Fisheries | Indian District</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              primary: "#863F3F",
-              secondary: "#DAB20C",
-              light: "#F5F5F5",
-            },
-          },
-        },
-      };
-    </script>
-    <style type="text/tailwind">
-      @layer utilities {
-        .text-shadow {
-          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-        .highlight {
-          text-decoration: underline;
-          text-decoration-color: theme("colors.secondary");
-          text-decoration-thickness: 2px;
-          color: theme("colors.primary");
-          cursor: pointer;
-        }
-        .scrollable-content {
-          scrollbar-width: none; /* Firefox */
-          -ms-overflow-style: none; /* IE and Edge */
-        }
-        .scrollable-content::-webkit-scrollbar {
-          display: none; /* Chrome, Safari, Opera */
-        }
-      }
-    </style>
-  </head>
-  <body class="bg-white">
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-          <div class="flex items-center space-x-4">
-            <a href="index.html" class="flex items-center">
-              <img src="/logo.png" alt="Logo" class="h-7 md:h-10" />
-            </a>
-          </div>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Editing: {{ chapter.name }} - {{ chapter.district.name }}{% endblock %}
 
-          <div class="hidden md:flex items-center space-x-4">
-            <div class="relative">
-              <input
-                type="text"
-                placeholder="Search districts, states..."
-                class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+{% block content %}
+<div class="bg-gray-100 min-h-screen">
+    <!-- Header bar for the editor -->
+    <header class="bg-white shadow-md sticky top-[72px] z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-800">Editing: <span class="text-[#863F3F]">{{ chapter.name }}</span></h1>
+                    <p class="text-sm text-gray-500">{{ chapter.district.name }}, {{ chapter.district.state.name }}</p>
+                </div>
+                <button id="save-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition-colors shadow-sm">
+                    <i class="fas fa-save mr-2"></i> Save Changes
+                </button>
             </div>
-            <a
-              href="login.html"
-              class="px-4 py-2 rounded-md text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
-              >Login</a
-            >
-          </div>
-
-          <div class="md:hidden">
-            <button
-              id="mobile-menu-button"
-              class="text-gray-600 hover:text-primary"
-            >
-              <i class="fas fa-bars text-2xl"></i>
-            </button>
-          </div>
         </div>
+    </header>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden pb-4">
-          <div class="relative my-4">
-            <input
-              type="text"
-              placeholder="Search districts, states..."
-              class="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
-            />
-            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
-          </div>
-          <a
-            href="login.html"
-            class="block py-2 px-4 text-center rounded-md text-primary border border-primary hover:bg-primary hover:text-white transition-colors"
-            >Login</a
-          >
+    <main class="max-w-4xl mx-auto py-8 px-4">
+        <!-- Main Form -->
+        <form id="editor-form" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="hidden" name="content_data" id="content-data-input">
+
+            <!-- Container for draggable blocks -->
+            <div id="editor-blocks" class="space-y-4">
+                
+                {# This loop now passes the block ID to the partials #}
+                {% for block in content_blocks %}
+                    {% if block.polymorphic_ctype.model == 'headingblockone' %}
+                        {% include 'editor/partials/h1_block.html' with value=block.text id=block.id %}
+                    {% elif block.polymorphic_ctype.model == 'headingblocktwo' %}
+                        {% include 'editor/partials/h2_block.html' with value=block.text id=block.id %}
+                    {% elif block.polymorphic_ctype.model == 'headingblockthree' %}
+                        {% include 'editor/partials/h3_block.html' with value=block.text id=block.id %}
+                    {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
+                        {% include 'editor/partials/paragraph_block.html' with value=block.content id=block.id %}
+                    {% elif block.polymorphic_ctype.model == 'imageblock' %}
+                        {% include 'editor/partials/image_block.html' with image_url=block.image.url caption=block.caption alt_text=block.alt_text id=block.id %}
+                    {% elif block.polymorphic_ctype.model == 'referenceblock' %}
+                        {% include 'editor/partials/reference_block.html' with text=block.text link=block.link id=block.id %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </form>
+
+        <!-- Buttons to add new content blocks -->
+        <div class="mt-8 border-t pt-6 text-center">
+            <h3 class="text-lg font-semibold text-gray-700 mb-4">Add a new block:</h3>
+            <div class="flex flex-wrap justify-center gap-3">
+                <button data-block-type="heading1" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Heading 1</button>
+                <button data-block-type="heading2" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Heading 2</button>
+                <button data-block-type="heading3" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Heading 3</button>
+                <button data-block-type="paragraph" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Paragraph</button>
+                <button data-block-type="image" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Image</button>
+                <button data-block-type="reference" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Reference</button>
+            </div>
         </div>
-      </div>
-    </nav>
+    </main>
+</div>
 
-    <!-- Breadcrumbs -->
-    <div class="bg-white border-b">
-      <div class="container mx-auto px-4 py-3">
-        <div
-          class="flex items-center text-sm overflow-x-auto whitespace-nowrap"
-        >
-          <a href="index.html" class="text-gray-600 hover:text-primary">Home</a>
-          <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
-          <a href="state.html" class="text-gray-600 hover:text-primary"
-            >Maharashtra</a
-          >
-          <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
-          <a
-            href="district-overview.html"
-            class="text-gray-600 hover:text-primary"
-            >Pune</a
-          >
-          <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
-          <span class="text-primary font-medium">Livestock & Fisheries</span>
-        </div>
-      </div>
-    </div>
+<!-- TEMPLATES FOR NEW BLOCKS -->
+<div id="block-templates" class="hidden">
+    <div data-template-type="heading1">{% include 'editor/partials/h1_block.html' %}</div>
+    <div data-template-type="heading2">{% include 'editor/partials/h2_block.html' %}</div>
+    <div data-template-type="heading3">{% include 'editor/partials/h3_block.html' %}</div>
+    <div data-template-type="paragraph">{% include 'editor/partials/paragraph_block.html' %}</div>
+    <div data-template-type="image">{% include 'editor/partials/image_block.html' %}</div>
+    <div data-template-type="reference">{% include 'editor/partials/reference_block.html' %}</div>
+</div>
 
-    <!-- District Navigation -->
-    <div class="bg-white border-b sticky top-16 z-40">
-      <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between py-3 overflow-x-auto">
-          <div class="flex items-center space-x-4">
-            <div class="relative group">
-              <button
-                class="flex items-center space-x-1 text-primary font-medium"
-              >
-                <span>Change Chapter</span>
-                <i class="fas fa-chevron-down text-xs"></i>
-              </button>
-              <div
-                class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md p-2 hidden group-hover:block w-64 z-50"
-              >
-                <div class="grid grid-cols-1 gap-1">
-                  <a
-                    href="#"
-                    class="px-3 py-2 hover:bg-gray-100 rounded text-sm"
-                    >Overview</a
-                  >
-                  <a
-                    href="#"
-                    class="px-3 py-2 hover:bg-gray-100 rounded text-sm"
-                    >Agriculture</a
-                  >
-                  <a
-                    href="#"
-                    class="px-3 py-2 hover:bg-gray-100 rounded text-sm bg-gray-100 text-primary"
-                    >Livestock & Fisheries</a
-                  >
-                  <a
-                    href="#"
-                    class="px-3 py-2 hover:bg-gray-100 rounded text-sm"
-                    >Industry</a
-                  >
-                  <!-- More chapter links would go here -->
-                </div>
-              </div>
-            </div>
 
-            <div class="relative group">
-              <button class="flex items-center space-x-1 text-gray-700">
-                <span>Change District</span>
-                <i class="fas fa-chevron-down text-xs"></i>
-              </button>
-              <div
-                class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md p-2 hidden group-hover:block w-64 z-50"
-              >
-                <div class="grid grid-cols-1 gap-1">
-                  <a
-                    href="#"
-                    class="px-3 py-2 hover:bg-gray-100 rounded text-sm bg-gray-100 text-primary"
-                    >Pune</a
-                  >
-                  <a
-                    href="#"
-                    class="px-3 py-2 hover:bg-gray-100 rounded text-sm"
-                    >Bhandara</a
-                  >
-                  <a
-                    href="#"
-                    class="px-3 py-2 hover:bg-gray-100 rounded text-sm"
-                    >Nagpur</a
-                  >
-                  <a
-                    href="#"
-                    class="px-3 py-2 hover:bg-gray-100 rounded text-sm"
-                    >Mumbai</a
-                  >
-                  <!-- More district links would go here -->
-                </div>
-              </div>
-            </div>
-          </div>
+<!-- JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+{% comment %} <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> {% endcomment %}
+<script src="{% static 'tinymce/tinymce.min.js' %}"></script>
+<!-- Main Editor Script -->
+<script>
+    // Paste this inside the final <script> tag
 
-          <button
-            id="toc-button"
-            class="flex items-center space-x-1 text-gray-700 md:hidden p-2"
-          >
-            <i class="fas fa-list text-lg"></i>
-          </button>
-        </div>
-      </div>
-    </div>
+document.addEventListener('DOMContentLoaded', () => {
 
-    <!-- Main Content with Sidebar -->
-    <div class="container mx-auto px-4 py-6 md:py-8">
-      <div class="flex flex-col lg:flex-row">
-        <!-- Table of Contents Sidebar (Desktop) - On the left side -->
-        <div class="hidden lg:block w-60 flex-shrink-0 pr-6 order-1">
-          <div class="sticky top-36">
-            <h3 class="text-lg font-semibold text-primary mb-4">
-              Table of Contents
-            </h3>
-            <ul class="space-y-2 text-sm">
-              <li>
-                <a
-                  href="#introduction"
-                  class="text-gray-700 hover:text-primary transition-colors"
-                  >Introduction</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#commonly_reared_livestock"
-                  class="text-gray-700 hover:text-primary transition-colors"
-                  >Commonly Reared Livestock</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#changing_practices_in_livestock_rearing"
-                  class="text-gray-700 hover:text-primary transition-colors"
-                  >Changing Practices in Livestock Rearing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#communityowned_land_for_pasturesgrazing"
-                  class="text-gray-700 hover:text-primary transition-colors"
-                  >Community-Owned Land for Pastures/Grazing</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#pastoralist_communities_in_the_district"
-                  class="text-gray-700 hover:text-primary transition-colors"
-                  >Pastoralist Communities in the District</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#veterinary_hospitals_and_doctors"
-                  class="text-gray-700 hover:text-primary transition-colors"
-                  >Veterinary Hospitals and Doctors</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#fisheries_statistics"
-                  class="text-gray-700 hover:text-primary transition-colors"
-                  >Fisheries Statistics</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
+    const editorBlocksContainer = document.getElementById('editor-blocks');
+    const form = document.getElementById('editor-form');
+    const contentDataInput = document.getElementById('content-data-input');
+    const saveButton = document.getElementById('save-button');
+    const addBlockButtons = document.querySelectorAll('.add-block-btn');
+    const blockTemplates = document.getElementById('block-templates');
 
-        <!-- Main Content -->
-        <div class="flex-grow order-2 px-0 md:px-4 scrollable-content">
-          <!-- Chapter Header -->
-          <div class="mb-6 md:mb-8">
-            <h1 class="text-4xl font-bold text-primary mb-2" id="introduction">PUNE</h1>
-            <h2 class="text-3xl font-semibold text-gray-800">
-              Livestock & Fisheries
-            </h2>
-            <div class="mt-4">
-              <button
-                class="text-sm text-gray-600 hover:text-primary flex items-center"
-              >
-                <i class="fas fa-edit mr-1"></i> Suggest Edit
-              </button>
-            </div>
-          </div>
+    let newParagraphIdCounter = 0;
+    let newImageIdCounter = 0;
 
-          <!-- Chapter Content -->
+    new Sortable(editorBlocksContainer, { animation: 150, handle: '.drag-handle', ghostClass: 'sortable-ghost' });
 
-          <div class="prose prose-lg max-w-none">
-            <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-              <div
-                class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-              >
-                <iframe
-                  class="w-full h-full border-0 block"
-                  src="/Livestock/Artificial_Insemination_Numbers.html?district=Pune"
-                  title="Artificial Insemination Numbers Chart"
-                ></iframe>
-              </div>
-            </div>
-            <br />
+    const tinymceConfig = {
+        height: 300, menubar: false,
+        plugins: 'lists link code table',
+        toolbar: 'bold italic underline | bullist numlist | link | code | table',
+        skin_url: "{% static 'tinymce/skins/ui/oxide' %}",
+        content_css_url: "{% static 'tinymce/skins/content/default/content.min.css' %}",
+    };
+    tinymce.init({ selector: '.tinymce-editor', ...tinymceConfig });
 
-            <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-              <div
-                class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-              >
-                <iframe
-                  class="w-full h-full border-0 block"
-                  src="/Livestock/Artificial_Insemination_Target_vs_Actual_Numbers.html?district=Pune"
-                  title="Artificial Insemination Target vs Actual Numbers Chart"
-                ></iframe>
-              </div>
-            </div>
+    addBlockButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const blockType = button.dataset.blockType;
+            const template = blockTemplates.querySelector(`[data-template-type="${blockType}"]`);
+            if (!template) return;
+            
+            const newBlockWrapper = document.createElement('div');
+            newBlockWrapper.innerHTML = template.innerHTML;
+            const newBlock = newBlockWrapper.firstElementChild;
+            editorBlocksContainer.appendChild(newBlock);
 
-            <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-              <div
-                class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-              >
-                <iframe
-                  class="w-full h-full border-0 block"
-                  src="/Livestock/Number_of_Buffalo.html?district=Pune"
-                  title="Number of Buffalo Chart"
-                ></iframe>
-              </div>
-            </div>
-
-            <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-              <div
-                class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-              >
-                <iframe
-                  class="w-full h-full border-0 block"
-                  src="/Livestock/Number_of_Hybrid_Cows.html?district=Pune"
-                  title="Number of Hybrid Cows Chart"
-                ></iframe>
-              </div>
-            </div>
-
-            <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-              <div
-                class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-              >
-                <iframe
-                  class="w-full h-full border-0 block"
-                  src="/Livestock/Number_of_Native_Cows.html?district=Pune"
-                  title="Number of Native Cows Chart"
-                ></iframe>
-              </div>
-            </div>
-
-            <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-              <div
-                class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-              >
-                <iframe
-                  class="w-full h-full border-0 block"
-                  src="/Livestock/Total_Number_of_Livestock.html?district=Pune"
-                  title="Total Number of Livestock Chart"
-                ></iframe>
-              </div>
-            </div>
-
-            <div id="commonly_reared_livestock" class="pt-4">
-              <h2 class="text-2xl font-bold text-primary mb-4">
-                Commonly Reared Livestock
-              </h2>
-              <p class="text-gray-700 mb-4">
-                Livestock rearing remains a major occupation in the rural areas
-                of Pune district, with cattle, buffalo, sheep, goats, and pigs
-                being the most commonly reared animals. Locals say bovine
-                breeding, particularly for dairy and agricultural purposes,
-                plays a crucial role in the district's economy. The
-                <span class="highlight">Central Research Station</span> (CRS) at
-                Uruli Kanchan is a key institution for livestock development,
-                focusing on breed conservation, genetic improvement, and
-                <span class="highlight">artificial insemination</span> programs.
-                It maintains indigenous cattle breeds like Sahiwal, Gir,
-                Tharparkar, Khillar, and Dangi, along with buffalo breeds such
-                as Murrah, Pandharpuri, and Surti. The facility follows strict
-                biosecurity protocols to ensure the health and genetic purity of
-                livestock. Additionally, the Semen Freezing Laboratories and the
-                Goat Semen Laboratory in Wagholi support breeding programs by
-                preserving genetic material from high-quality breeds.
-              </p>
-              <p class="text-gray-700 mb-4">
-                Breed characterization and registration efforts in Pune focus on
-                preserving traditional cattle breeds, with in-situ breeding
-                programs for rare breeds like Dangi, Lalkandhari, and Gaulao.
-                Locals say ex-situ conservation through semen storage from elite
-                bulls further supports Maharashtra's bovine diversity. These
-                initiatives aim to sustain traditional livestock farming while
-                improving productivity.
-              </p>
-              <p class="text-gray-700 mb-4">
-                Pune also has notable poultry and rearing farms, such as Manjri
-                and Poonawalla Stud Farms, which specialize in horse breeding
-                but also offer services for other livestock. The Krishi Vigyan
-                Kendra in Baramati, established in 1992, serves as a farm
-                science center promoting improved agricultural and livestock
-                practices. The Central Hatchery in Khadki, operated by the
-                Maharashtra government, plays a crucial role in supplying
-                quality poultry stock.
-              </p>
-              <p class="text-gray-700 mb-4">
-                Poultry farming has evolved from a supplementary source of
-                income to a primary occupation. Locals say that traditionally,
-                farmers raised deshi hens with low egg production and high
-                mortality due to diseases like Ranikhet. However, initiatives by
-                the Krishi Vigyan Kendra have promoted vaccination programs and
-                the introduction of Vanaraja, a hardier, high-yield breed.
-                Modern poultry practices now include vaccination protocols,
-                controlled brooding environments, and improved feed management
-                to enhance egg and meat production.
-              </p>
-              <p class="text-gray-700 mb-4">
-                Integrated livestock-fish farming has also gained traction,
-                utilizing poultry waste to support fish culture. Additionally,
-                biofloc technology in fish farming, which uses microbial protein
-                to improve water quality and reduce costs, is becoming
-                increasingly popular.
-              </p>
-              <p class="text-gray-700 mb-4">
-                The growing demand for poultry meat, which locals say accounts
-                for 60% of total meat consumption in the district, has led to
-                the modernization of poultry farms. Ethical farming practices,
-                including adequate space, climate control, and hygiene
-                management, have improved poultry health and productivity. With
-                advancements in breeding techniques, disease prevention, and
-                sustainable practices, livestock and poultry farming in Pune
-                continue to evolve, ensuring long-term viability for farmers in
-                the region.
-              </p>
-
-              <!-- Dairy Charts Section - Wrapped in a grid -->
-              <div class="prose prose-lg max-w-none">
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Average_Milk_Collected_Per_Day.html?district=Pune"
-                      title="Average Milk Collected Per Day Chart"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Cold_Storage_Capacity.html?district=Pune"
-                      title="Cold Storage Capacity Chart"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Cold_Storage_Units.html?district=Pune"
-                      title="Cold Storage Units Chart"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Dairy_Development_Cooperative_Societies.html?district=Pune"
-                      title="Dairy Development Cooperative Societies Chart"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Memberships_in_Dairy_Development_Cooperative_Societies.html?district=Pune"
-                      title="Memberships in Dairy Development Cooperative Societies Chart"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Milk_Collected_Across_the_Year.html?district=Pune"
-                      title="Milk Collected Across the Year Chart"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="changing_practices_in_livestock_rearing" class="pt-4">
-              <h2 class="text-2xl font-bold text-primary mb-4">
-                Changing Practices in Livestock Rearing
-              </h2>
-              <p class="text-gray-700 mb-4">
-                Poultry farming has transitioned from a secondary income source
-                to a primary occupation in the district. Traditionally, farmers
-                raised 'desi hens' that produced only 60 to 70 eggs per year and
-                were highly susceptible to diseases like Ranikhet and fowl pox,
-                resulting in a mortality rate of up to 100% during summer. To
-                address this, the Krishi Vigyan Kendra (KVK) promoted
-                vaccinations and encouraged farmers to adopt the Vanaraja breed,
-                developed by ICAR for rural backyard farming. Vanaraja chickens
-                have better immunity, higher egg production, and improved meat
-                yield.
-              </p>
-              <p class="text-gray-700 mb-4">
-                Advancements in poultry farming include integrating poultry with
-                fish farming by using droppings as feed, implementing
-                vaccination schedules to strengthen immunity, and establishing
-                guidelines for brooding and feeding to enhance egg production.
-                Biofloc technology has also gained popularity in fish farming,
-                utilizing microorganisms to convert fish waste into microbial
-                protein, improving water quality, and reducing costs. The Dr.
-                B.V. Rao Institute of Poultry Management and Technology in Uruli
-                Kanchan offers scientific training on disease diagnosis, poultry
-                management, and feed formulation. These developments have
-                significantly improved poultry farming practices, emphasizing
-                productivity and sustainability.
-              </p>
-            </div>
-
-            <div id="communityowned_land_for_pasturesgrazing" class="pt-4">
-              <h2 class="text-2xl font-bold text-primary mb-4">
-                Community-Owned Land for Pastures/Grazing
-              </h2>
-              <p class="text-gray-700 mb-4">
-                The banks of the Mula-Mutha River are essential for the Dhangar
-                community, who rely on these areas to nourish their cattle. They
-                graze their livestock along the riverbanks and often allow them
-                to take dips in the water. Other groups, such as worm
-                collectors, vegetable and herb gatherers, and fisherfolk, also
-                depend on these regions for their livelihoods. However, a
-                significant threat to this communal land is the Pune Municipal
-                Corporation's Riverfront Development Project, which aims to
-                enhance accessibility and reduce pollution in the Mula-Mutha
-                River by constructing a promenade along its banks. The project
-                includes plans to control river flow, build barrages, and
-                beautify the area, but environmentalists have raised concerns
-                that it could harm the natural ecosystem that supports many
-                communities. Currently, the project is on hold pending a court
-                decision.
-              </p>
-              <p class="text-gray-700 mb-4">
-                As the monsoon season ends each year, the nomadic Dhangars begin
-                their migration to the Konkan region, which benefits from
-                abundant rainfall due to its location on the windward side of
-                the Western Ghats. The lush pastures that emerge after the
-                monsoons attract the Dhangars, who are invited by local farmers
-                to camp in their fields. In exchange for providing natural
-                manure from their livestock, they receive payment and fodder.
-              </p>
-              <p class="text-gray-700 mb-4">
-                Additionally, the Saswad grassland in Indapur taluka is rapidly
-                depleting. This dry, deciduous scrubland serves as a breeding
-                ground for various small to mid-sized wildlife, despite being
-                labeled a "semi-arid wasteland" by Maharashtra's revenue
-                department. Villagers and nearby poultry farms often use these
-                grasslands as dumping grounds for chicken and cattle carcasses,
-                providing food for local wildlife such as wolves, foxes, and
-                hyenas. The Grasslands Trust based in Pune is working to restore
-                this area and monitor its endangered wildlife. This grassland is
-                also a popular grazing pasture for pastoralists like the
-                Dhangars, particularly those with sheep.
-              </p>
-            </div>
-
-            <div id="pastoralist_communities_in_the_district" class="pt-4">
-              <h2 class="text-2xl font-bold text-primary mb-4">
-                Pastoralist Communities in the District
-              </h2>
-              <p class="text-gray-700 mb-4">
-                The Dhangar community, who have traditionally relied on
-                livestock rearing, have been significantly impacted by climate
-                change and its effects on their cattle. According to locals,
-                unpredictable rainfall patterns have led to frequent cattle
-                deaths, and the lack of government support or compensation has
-                further exacerbated their struggles. The rapidly changing
-                environment in Pune district, characterized by diminishing
-                grazing pastures, increased urbanization, and pollution, has
-                discouraged many Dhangars from continuing their occupation.
-              </p>
-              <p class="text-gray-700 mb-4">
-                As a result, locals say some Dhangars have chosen to migrate to
-                more suitable areas in the Konkan region, while others have
-                opted to sell their livestock entirely and start anew. The
-                younger generation of Dhangars has been strongly discouraged
-                from following in their parents' footsteps, leading to a shift
-                away from their nomadic lifestyle.
-              </p>
-            </div>
-
-            <div id="veterinary_hospitals_and_doctors" class="pt-4">
-              <h2 class="text-2xl font-bold text-primary mb-4">
-                Veterinary Hospitals and Doctors
-              </h2>
-              <p class="text-gray-700 mb-4">
-                Veterinary care in Pune district is provided by a mix of
-                government hospitals, private clinics, and NGOs, ensuring
-                comprehensive healthcare services for pets, livestock, and stray
-                animals. Some of the veterinary facilities include:
-              </p>
-              <ul class="list-disc pl-6 mb-4 text-gray-700">
-                <li>Dr. Gorhe's Pet Clinic, Kothrud</li>
-                <li>
-                  Raintree Veterinary Clinic & Rehabilitation Centre, Uday Baug
-                </li>
-                <li>Vetic Pune clinic, Aund</li>
-                <li>Pune Small Animal Clinic, Baner</li>
-                <li>Pet World Clinic, Magarpatta City & Pimpri</li>
-                <li>Pune Municipal Corporation Veterinary Hospital, Aundh</li>
-              </ul>
-              <p class="text-gray-700 mb-4">
-                Additionally, Anthra, an NGO founded by women veterinarians,
-                works with marginalized communities such as small farmers,
-                pastoralists, adivasis, dalits, and women, helping them improve
-                livestock health and management.
-              </p>
-            </div>
-
-            <div id="fisheries_statistics" class="pt-4">
-              <h2 class="text-2xl font-bold text-primary mb-4">
-                Fisheries Statistics
-              </h2>
-
-              <!-- Fisheries Charts Section - Wrapped in a grid -->
-              <div class="prose prose-lg max-w-none">
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Groundwater_Fish_Production.html?district=Pune"
-                      title="Groundwater Fish Production Chart"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Members_in_Fish_Business_Co-operatives.html?district=Pune"
-                      title="Members in Fish Business Co-operatives Chart"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Number_of_Fish_Business_Co-operatives.html?district=Pune"
-                      title="Number of Fish Business Co-operatives Chart"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Price_Received_by_Fishermen_for_Fish_Caught.html?district=Pune"
-                      title="Price Received by Fishermen for Fish Caught Chart"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Total_Area_of_Fishing_Fields.html?district=Pune"
-                      title="Total Area of Fishing Fields Chart"
-                    ></iframe>
-                  </div>
-                </div>
-
-                <div class="w-full max-w-[1200px] mx-auto p-0 box-border">
-                  <div
-                    class="w-full overflow-hidden rounded-md h-[430px] md:h-[550px] p-1 transition-all duration-300 ease-in-out"
-                  >
-                    <iframe
-                      class="w-full h-full border-0 block"
-                      src="/Livestock/Total_Area_Used_for_Fisheries.html?district=Pune"
-                      title="Total Area Used for Fisheries Chart"
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Mobile Table of Contents (Overlay) -->
-    <div id="mobile-toc" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden lg:hidden">
-      <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[90vw] bg-white p-4 overflow-y-auto">
-        <div class="flex justify-between items-center mb-4">
-          <h3 class="text-lg font-semibold text-primary">Table of Contents</h3>
-          <button id="close-toc" class="text-gray-500 hover:text-gray-700 p-2">
-            <i class="fas fa-times text-xl"></i>
-          </button>
-        </div>
-        <ul class="space-y-3 text-sm">
-          <li>
-            <a href="#introduction" class="text-gray-700 hover:text-primary block py-1 toc-link">Introduction</a>
-          </li>
-          <li>
-            <a href="#commonly_reared_livestock" class="text-gray-700 hover:text-primary block py-1 toc-link">Commonly Reared Livestock</a>
-          </li>
-          <li>
-            <a href="#changing_practices_in_livestock_rearing" class="text-gray-700 hover:text-primary block py-1 toc-link">Changing Practices in Livestock Rearing</a>
-          </li>
-          <li>
-            <a href="#communityowned_land_for_pasturesgrazing" class="text-gray-700 hover:text-primary block py-1 toc-link">Community-Owned Land for Pastures/Grazing</a>
-          </li>
-          <li>
-            <a href="#pastoralist_communities_in_the_district" class="text-gray-700 hover:text-primary block py-1 toc-link">Pastoralist Communities in the District</a>
-          </li>
-          <li>
-            <a href="#veterinary_hospitals_and_doctors" class="text-gray-700 hover:text-primary block py-1 toc-link">Veterinary Hospitals and Doctors</a>
-          </li>
-          <li>
-            <a href="#fisheries_statistics" class="text-gray-700 hover:text-primary block py-1 toc-link">Fisheries Statistics</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Word Definition Popup (Mobile) -->
-    <div
-      id="definition-popup"
-      class="hidden fixed bottom-4 left-4 right-4 bg-white p-4 rounded-lg shadow-lg z-50 border border-gray-200"
-    >
-      <div class="flex justify-between items-center mb-2">
-        <h3 class="text-lg font-semibold text-primary">Word Definition</h3>
-        <button id="close-definition" class="text-gray-500 hover:text-gray-700">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="text-sm">
-        <p class="mb-2">
-          <span class="font-semibold text-primary">Word:</span>
-          <span id="definition-word"></span>
-        </p>
-        <p>
-          <span class="font-semibold text-primary">Meaning:</span>
-          <span id="definition-meaning"></span>
-        </p>
-      </div>
-    </div>
-
-    <!-- Chapter Navigation -->
-    <div class="bg-white border-t py-5">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col sm:flex-row justify-between items-center">
-          <a
-            href="#"
-            class="flex items-center text-gray-700 hover:text-primary mb-4 sm:mb-0 transition-transform duration-300 hover:-translate-x-1"
-          >
-            <i class="fas fa-arrow-left mr-2"></i>
-            <span>Previous: Agriculture</span>
-          </a>
-          <a
-            href="#"
-            class="flex items-center text-gray-700 hover:text-primary transition-transform duration-300 hover:translate-x-1"
-          >
-            <span>Next: Industry</span>
-            <i class="fas fa-arrow-right ml-2"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    
-    <!-- JavaScript -->
-    <script>
-      // Mobile menu toggle
-      document
-        .getElementById("mobile-menu-button")
-        .addEventListener("click", function () {
-          const mobileMenu = document.getElementById("mobile-menu");
-          mobileMenu.classList.toggle("hidden");
+            if (blockType === 'paragraph') {
+                newParagraphIdCounter++;
+                const newTextArea = newBlock.querySelector('textarea');
+                if (newTextArea) {
+                    const newId = `new-tinymce-editor-${newParagraphIdCounter}`;
+                    newTextArea.id = newId;
+                    tinymce.init({ selector: `#${newId}`, ...tinymceConfig });
+                }
+            } 
+            else if (blockType === 'image') {
+                newImageIdCounter++;
+                const fileInput = newBlock.querySelector('input[type="file"]');
+                if (fileInput) { fileInput.name = `new-image-${newImageIdCounter}`; }
+            }
         });
+    });
 
-      // Table of Contents toggle for mobile
-      document
-        .getElementById("toc-button")
-        .addEventListener("click", function () {
-          const mobileToc = document.getElementById("mobile-toc");
-          mobileToc.classList.remove("hidden");
-          // Prevent body scroll when TOC is open
-          document.body.style.overflow = 'hidden';
-        });
+    editorBlocksContainer.addEventListener('click', function(e) {
+        const deleteButton = e.target.closest('.delete-block-btn');
+        if (deleteButton) {
+            const blockToRemove = deleteButton.closest('.editor-block');
+            const editorId = blockToRemove.querySelector('.tinymce-editor')?.id;
 
-      document
-        .getElementById("close-toc")
-        .addEventListener("click", function () {
-          const mobileToc = document.getElementById("mobile-toc");
-          mobileToc.classList.add("hidden");
-          // Restore body scroll
-          document.body.style.overflow = 'auto';
-        });
-
-      // TOC link clicks
-      document.querySelectorAll('.toc-link').forEach(link => {
-        link.addEventListener('click', function() {
-          const mobileToc = document.getElementById("mobile-toc");
-          mobileToc.classList.add("hidden");
-          document.body.style.overflow = 'auto';
-        });
-      });
-
-      // Smooth scrolling for table of contents links
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          const targetId = this.getAttribute("href");
-          const targetElement = document.querySelector(targetId);
-
-          if (targetElement) {
-            window.scrollTo({
-              top: targetElement.offsetTop - 120, // Offset for fixed header
-              behavior: "smooth",
-            });
-          }
-        });
-      });
-
-      // Close mobile TOC when clicking outside
-      document.addEventListener("click", function (event) {
-        const mobileToc = document.getElementById("mobile-toc");
-        const tocButton = document.getElementById("toc-button");
-        const tocContent = document.querySelector("#mobile-toc .absolute");
-
-        if (
-          mobileToc &&
-          !mobileToc.classList.contains("hidden") &&
-          event.target !== tocButton &&
-          !tocButton.contains(event.target) &&
-          !tocContent.contains(event.target)
-        ) {
-          mobileToc.classList.add("hidden");
-          document.body.style.overflow = 'auto';
+            if (editorId && tinymce.get(editorId)) { tinymce.get(editorId).remove(); }
+            blockToRemove.remove();
         }
-      });
+    });
 
-      // Close mobile menu when clicking outside
-      document.addEventListener("click", function (event) {
-        const mobileMenu = document.getElementById("mobile-menu");
-        const mobileMenuButton = document.getElementById("mobile-menu-button");
+    saveButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        tinymce.triggerSave();
 
-        if (
-          mobileMenu &&
-          !mobileMenu.classList.contains("hidden") &&
-          !mobileMenu.contains(event.target) &&
-          !mobileMenuButton.contains(event.target)
-        ) {
-          mobileMenu.classList.add("hidden");
-        }
-      });
-    </script>
-  </body>
-</html>
+        const allBlocksData = [];
+        document.querySelectorAll('#editor-blocks .editor-block').forEach(blockEl => {
+            const blockId = blockEl.dataset.id;
+            const blockData = { type: blockEl.dataset.blockType };
+
+            if (blockId) { blockData.id = parseInt(blockId, 10); }
+
+            if (blockData.type.startsWith('heading')) {
+                blockData.text = blockEl.querySelector('input[type="text"]').value;
+            } else if (blockData.type === 'paragraph') {
+                blockData.content = blockEl.querySelector('textarea').value;
+            } else if (blockData.type === 'reference') {
+                blockData.text = blockEl.querySelector('input[name="text"]').value;
+                blockData.link = blockEl.querySelector('input[name="link"]').value;
+            } else if (blockData.type === 'image') {
+                blockData.caption = blockEl.querySelector('input[name="caption"]').value;
+                blockData.alt_text = blockEl.querySelector('input[name="alt_text"]').value;
+                const fileInput = blockEl.querySelector('input[type="file"]');
+                if (fileInput && fileInput.files.length > 0) {
+                     blockData.image_id = fileInput.name;
+                }
+            }
+            allBlocksData.push(blockData);
+        });
+        
+        contentDataInput.value = JSON.stringify(allBlocksData);
+        form.submit();
+    });
+
+});
+</script>
+
+<style>
+    .sortable-ghost { opacity: 0.4; background: #c8ebfb; }
+    .drag-handle { cursor: grab; }
+    .drag-handle:active { cursor: grabbing; }
+</style>
+
+{% endblock %}

@@ -1,0 +1,1257 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <style>
+        body { 
+            font-family: Lato; 
+            
+            background-color: #f5f5f5;
+        }
+        .chart-container { 
+            max-width: 1000px; 
+            margin: 0 auto 20px auto; 
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .chart-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            flex-grow: 1;
+            text-align: center;
+            margin-left: 90px;
+        }
+        .chart-logo {
+            width: 90px;
+            height: auto;
+        }
+        .chart-filter-controls {
+            display: flex;
+            align-items: center;
+            padding: 8px 8px 0px 8px;
+            border-radius: 4px;
+        }
+        .chart-filter-group {
+            display: flex;
+            align-items: center;
+            margin-left:45px;
+
+        }
+        .chart-filter-group label {
+            margin-right: 5px;
+            font-size: 12px;
+            color: black;
+        }
+        .chart-filter-group select {
+            padding: 2px 5px;
+            color:rgb(0, 0, 0);
+            border: 1px solid #863F3F;
+            border-radius:6px;
+            font-size: 12px;
+            min-width: 100px;
+        }
+        .chart-canvas-container {
+            height: 500px;
+            width: 100%;
+        }
+        .chart-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            padding-top: 5px;
+            border-top: 1px solid #e9ecef;
+        }
+        .chart-info {
+            flex: 1;
+        }
+        .chart-description {
+            margin-top: 0;
+            padding: 2px;
+            font-size: 10px;
+            padding-left: 53px;
+        }
+        .chart-additional-info {
+            margin-top: 2px;
+            padding: 2px;
+            font-size: 10px;
+            padding-left: 53px;
+        }
+        .chart-actions {
+            display: flex;
+            align-items: flex-start;
+            margin-left: 15px;
+        }
+        .chart-date {
+            font-size: 12px;
+            color: #6c757d;
+        }
+        .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #6c757d;
+            padding: 0;
+            margin: 0;
+            margin-top: 7px;
+        }
+        .icon-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+            
+         @media (max-width: 767px) {
+            .chart-container {
+            max-width: 1000px; 
+            width: 95%; 
+            margin: 0  auto; 
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* border-radius: 8px; */
+            padding: 8px;
+            position: relative;
+            }
+            
+            .chart-logo {
+                width: 60px;
+            }
+            
+            .chart-title {
+                font-size: 16px;
+                margin-left: 64px;
+            }
+            
+            .chart-filter-group {
+                margin-left: 0;
+                justify-content: left;
+                width: 100%;
+            }
+            
+            .chart-filter-controls {
+                justify-content: center;
+            }
+            
+            .chart-canvas-container {
+                height: 300px;
+            }
+            
+            .chart-description, .chart-additional-info {
+                font-size: 9px;
+                padding-left: 0;
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 991px) {
+            .chart-canvas-container {
+                height: 400px;
+            }
+            
+            .chart-title {
+                font-size: 18px;
+            }
+            
+            .chart-filter-group {
+                margin-left: 20px;
+            }
+        }  
+    </style>
+</head>
+<body>
+    <!-- ChartFlask Chart Data -->
+    <script type="application/json" id="chart-filter-data">
+        {"chartTitle":"Untitled Chart","mainFilterColumn":"Mother Tongue","mainFilterValue":"","filterColumn":"Year","selectedFilterValue":"","filterColumn2":"","selectedFilterValue2":"","chartType":"bar","showFilters":true}
+    </script>
+    
+    <div class="chart-container" id="chartContainer">
+        <div class="chart-header">
+            <div class="chart-title">Untitled Chart</div>
+            <img class="chart-logo" src="logo.png" alt="ChartFlask Logo">
+        </div>
+        
+        <div class="chart-filter-controls">
+            
+            <div class="chart-filter-group">
+                <label for="chartFilter">Year:</label>
+                <select id="chartFilter" onchange="filterChartData()">
+                    <option value="">All</option>
+                    <option value="2001" >2001</option><option value="2011" >2011</option>
+                </select>
+            </div>
+            
+            
+        </div>
+        
+        <div class="chart-canvas-container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="chart-footer">
+        <div class="chart-info">
+        
+        
+            </div>
+            <div class="chart-actions">
+                <button id="downloadChartBtn" class="icon-btn" title="Download Chart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Script to control filter dropdown visibility
+        let isDropdownVisible = true; // Set from checkbox value
+        
+        // Function to handle dropdown visibility
+        function handleDropdownVisibility() {
+            const dropdownControls = document.querySelector('.chart-filter-controls');
+            if (!isDropdownVisible && dropdownControls) {
+                dropdownControls.remove();
+            }
+        }
+        
+        // When DOM is loaded
+        document.addEventListener('DOMContentLoaded', handleDropdownVisibility);
+        
+        // Optional: Function to dynamically change visibility later
+        function toggleDropdownVisibility(visible) {
+            isDropdownVisible = visible;
+            handleDropdownVisibility();
+        }
+        
+        // // Indian number formatting function
+        // function formatIndianNumber(num) {
+        //     if (num === null || num === undefined || isNaN(num)) return '';  // Return empty string for null values
+            
+        //     let isNegative = false;
+        //     if (num < 0) {
+        //         isNegative = true;
+        //         num = Math.abs(num);
+        //     }
+                
+        //     // Check if the number has decimal places and format accordingly
+        //     const hasDecimal = num % 1 !== 0;
+        //     if (hasDecimal) {
+        //         // Format with exactly 2 decimal places if there are decimals
+        //         num = parseFloat(num.toFixed(2));
+        //     }
+
+
+        //     let formattedNumber;
+        //     if (num < 1000) {
+        //         formattedNumber = num.toString();
+        //     } else {
+        //         const parts = num.toString().split('.');
+        //         let integerPart = parts[0];
+                
+        //         const lastThree = integerPart.substring(integerPart.length - 3);
+        //         const remaining = integerPart.substring(0, integerPart.length - 3);
+                
+        //         let formattedRemaining = '';
+        //         if (remaining) {
+        //             formattedRemaining = remaining.replace(/\B(?=(\d{2})+(?!\d))/g, ',');
+        //         }
+                
+        //         formattedNumber = formattedRemaining ? formattedRemaining + ',' + lastThree : lastThree;
+                
+        //         if (parts.length > 1) {
+        //             formattedNumber += '.' + parts[1];
+        //         }
+        //     }
+            
+        //     return isNegative ? '-' + formattedNumber : formattedNumber;
+        // }
+
+
+
+        
+
+         // Indian number formatting function in Cr,L,K
+        // Indian number formatting function
+        function formatIndianNumber(num) {
+            if (num === null || num === undefined || isNaN(num)) return '';  // Return empty string for null values
+            
+            let isNegative = false;
+            if (num < 0) {
+                isNegative = true;
+                num = Math.abs(num);
+            }
+            
+            let formattedNumber;
+            
+            // For numbers >= 10,000,000, display in crores format
+            if (num >= 10000000) {
+                formattedNumber = (num / 10000000).toFixed(1) + 'Cr';
+                // Remove .0 if the decimal is zero
+                formattedNumber = formattedNumber.replace('.0Cr', 'Cr');
+            }
+            // For numbers >= 100,000, display in lakhs format
+            else if (num >= 100000) {
+                formattedNumber = (num / 100000).toFixed(1) + 'L';
+                // Remove .0 if the decimal is zero
+                formattedNumber = formattedNumber.replace('.0L', 'L');
+            }
+            // For numbers >= 1,000, display in thousands format
+            else if (num >= 1000) {
+                formattedNumber = (num / 1000).toFixed(1) + 'K';
+                // Remove .0 if the decimal is zero
+                formattedNumber = formattedNumber.replace('.0K', 'K');
+            }
+            else {
+                formattedNumber = num.toString();
+            }
+            
+            return isNegative ? '-' + formattedNumber : formattedNumber;
+        }
+
+        // Mobile-friendly number formatting function (now identical to formatIndianNumber)
+        function formatMobileNumber(num) {
+            return formatIndianNumber(num);
+        }
+
+        // Function to check if device is mobile
+        function isMobileDevice() {
+            return window.innerWidth < 768;
+        }
+
+        // Function to get the appropriate number formatter based on device
+        function getFormatter() {
+            return formatIndianNumber; // Now we can just use formatIndianNumber for all devices
+        }
+
+
+
+        // Store original chart data for filtering
+        const originalChartData = {
+  "datasets": [
+    {
+      "backgroundColor": "#1a4570",
+      "barPercentage": 0.8,
+      "borderColor": "#1a4570",
+      "borderWidth": 1,
+      "categoryPercentage": 0.8,
+      "data": [
+        8583801,
+        3444145,
+        5495605,
+        4746299,
+        2336480,
+        4818738,
+        4275408,
+        6598295,
+        3144162,
+        3758809,
+        2043236,
+        2523214,
+        2164505,
+        7912607,
+        3572026,
+        7399163,
+        4534481,
+        9761473,
+        26637800,
+        8721207,
+        6237551,
+        2960004,
+        11100983,
+        3363801,
+        16661963,
+        4842129,
+        3311846,
+        5405667,
+        5812735,
+        1718476,
+        8167299,
+        19191997,
+        2537510,
+        2217376,
+        5230619
+      ],
+      "label": "Total Persons"
+    }
+  ],
+  "labels": [
+    "Ahilyanagar",
+    "Akola",
+    "Amravati",
+    "Beed",
+    "Bhandara",
+    "Buldhana",
+    "Chandrapur",
+    "Chhatrapati Sambhaji Nagar",
+    "Dharashiv",
+    "Dhule",
+    "Gadchiroli",
+    "Gondia",
+    "Hingoli",
+    "Jalgaon",
+    "Jalna",
+    "Kolhapur",
+    "Latur",
+    "Mumbai",
+    "Mumbai (Suburban)",
+    "Nagpur",
+    "Nanded",
+    "Nandurbar",
+    "Nashik",
+    "Parbhani",
+    "Pune",
+    "Raigad",
+    "Ratnagiri",
+    "Sangli",
+    "Satara",
+    "Sindhudurg",
+    "Solapur",
+    "Thane",
+    "Wardha",
+    "Washim",
+    "Yavatmal"
+  ]
+};
+        
+        // Pre-filtered data for each district
+        const preFilteredData = {
+  "2001": {
+    "datasets": [],
+    "labels": []
+  },
+  "2011": {
+    "datasets": [],
+    "labels": []
+  }
+};
+        
+        // Function to get URL query parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        
+        // Function to aggregate data for all talukas in a district while preserving original dataset labels
+        function getDistrictAggregateData(district) {
+            if (!preFilteredData[district]) return null;
+            
+            const talukas = Object.keys(preFilteredData[district]);
+            if (talukas.length === 0) return null;
+            
+            // Use the first taluka to get the labels and structure
+            const firstTaluka = talukas[0];
+            const labels = [...preFilteredData[district][firstTaluka].labels];
+            const datasetCount = preFilteredData[district][firstTaluka].datasets.length;
+            
+            // Initialize aggregated datasets with same structure as original
+            const aggregatedDatasets = [];
+            
+            for (let datasetIndex = 0; datasetIndex < datasetCount; datasetIndex++) {
+                // Create a new dataset with same properties as original
+                const originalDataset = originalChartData.datasets[datasetIndex] || 
+                                       preFilteredData[district][firstTaluka].datasets[datasetIndex];
+                
+                const newDataset = {
+                    ...originalDataset,
+                    data: new Array(labels.length).fill(0)
+                };
+                
+                // Ensure we're keeping the original label
+                newDataset.label = originalDataset.label;
+                
+                aggregatedDatasets.push(newDataset);
+            }
+            
+            // Sum data from all talukas for each category and dataset
+            talukas.forEach(taluka => {
+                const talukaData = preFilteredData[district][taluka];
+                if (talukaData && talukaData.datasets) {
+                    talukaData.datasets.forEach((dataset, datasetIndex) => {
+                        if (datasetIndex < aggregatedDatasets.length && dataset.data) {
+                            dataset.data.forEach((value, valueIndex) => {
+                                // Handle null/undefined values as 0 for aggregation
+                                if (value !== null && value !== undefined && !isNaN(value)) {
+                                    aggregatedDatasets[datasetIndex].data[valueIndex] += value;
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+            
+            // Return the aggregated data
+            return {
+                labels: labels,
+                datasets: aggregatedDatasets
+            };
+        }
+        
+        // Function to populate taluka dropdown based on selected district
+        function populateTalukaDropdown(district) {
+            const talukaDropdown = document.getElementById('chartFilter');
+            if (!talukaDropdown) return;
+            
+            // Clear existing options except the "All" option
+            while (talukaDropdown.options.length > 1) {
+                talukaDropdown.remove(1);
+            }
+            
+            if (!district || !preFilteredData[district]) {
+                // If no district specified or invalid district, show all talukas
+                const allTalukas = [];
+                
+                // Collect all talukas from all districts
+                Object.keys(preFilteredData).forEach(districtName => {
+                    // Make sure this is a district object with taluka children, not a flat structure
+                    if (typeof preFilteredData[districtName] === 'object' && !preFilteredData[districtName].labels) {
+                        Object.keys(preFilteredData[districtName]).forEach(talukaName => {
+                            if (!allTalukas.includes(talukaName)) {
+                                allTalukas.push(talukaName);
+                            }
+                        });
+                    }
+                });
+                
+                // Sort talukas alphabetically
+                allTalukas.sort();
+                
+                // Add all talukas to dropdown
+                allTalukas.forEach(taluka => {
+                    const option = document.createElement('option');
+                    option.value = taluka;
+                    option.text = taluka;
+                    talukaDropdown.add(option);
+                });
+            } else {
+                // Show only talukas for the specified district
+                const districtTalukas = Object.keys(preFilteredData[district]);
+                
+                // Sort talukas alphabetically
+                districtTalukas.sort();
+                
+                // Add district's talukas to dropdown
+                districtTalukas.forEach(taluka => {
+                    const option = document.createElement('option');
+                    option.value = taluka;
+                    option.text = taluka;
+                    talukaDropdown.add(option);
+                });
+                
+                // Update filter data JSON
+                const chartFilterData = document.getElementById('chart-filter-data');
+                if (chartFilterData) {
+                    const filterDataObj = JSON.parse(chartFilterData.textContent);
+                    filterDataObj.mainFilterValue = district;
+                    chartFilterData.textContent = JSON.stringify(filterDataObj);
+                }
+            }
+        }
+        
+        // Determine if we're using district-taluka hierarchy
+        const isHierarchicalData = false;
+
+        // Chart configuration
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const chartData = {
+  "datasets": [
+    {
+      "backgroundColor": "#1a4570",
+      "barPercentage": 0.8,
+      "borderColor": "#1a4570",
+      "borderWidth": 1,
+      "categoryPercentage": 0.8,
+      "data": [
+        8583801,
+        3444145,
+        5495605,
+        4746299,
+        2336480,
+        4818738,
+        4275408,
+        6598295,
+        3144162,
+        3758809,
+        2043236,
+        2523214,
+        2164505,
+        7912607,
+        3572026,
+        7399163,
+        4534481,
+        9761473,
+        26637800,
+        8721207,
+        6237551,
+        2960004,
+        11100983,
+        3363801,
+        16661963,
+        4842129,
+        3311846,
+        5405667,
+        5812735,
+        1718476,
+        8167299,
+        19191997,
+        2537510,
+        2217376,
+        5230619
+      ],
+      "label": "Total Persons"
+    }
+  ],
+  "labels": [
+    "Ahilyanagar",
+    "Akola",
+    "Amravati",
+    "Beed",
+    "Bhandara",
+    "Buldhana",
+    "Chandrapur",
+    "Chhatrapati Sambhaji Nagar",
+    "Dharashiv",
+    "Dhule",
+    "Gadchiroli",
+    "Gondia",
+    "Hingoli",
+    "Jalgaon",
+    "Jalna",
+    "Kolhapur",
+    "Latur",
+    "Mumbai",
+    "Mumbai (Suburban)",
+    "Nagpur",
+    "Nanded",
+    "Nandurbar",
+    "Nashik",
+    "Parbhani",
+    "Pune",
+    "Raigad",
+    "Ratnagiri",
+    "Sangli",
+    "Satara",
+    "Sindhudurg",
+    "Solapur",
+    "Thane",
+    "Wardha",
+    "Washim",
+    "Yavatmal"
+  ]
+};
+        const chartOptions = {
+  "responsive": true,
+  "maintainAspectRatio": false,
+  "animation": {
+    "duration": 750,
+    "easing": "easeInOutQuart"
+  },
+  "plugins": {
+    "legend": {
+      "display": false
+    },
+    "tooltip": {
+      "animation": {
+        "duration": 50,
+        "easing": "easeOutQuart"
+      },
+      "callbacks": {}
+    }
+  },
+  "scales": {
+    "x": {
+      "axis": "x",
+      "grid": {
+        "display": false,
+        "drawBorder": true,
+        "offset": true,
+        "lineWidth": 1,
+        "drawOnChartArea": true,
+        "drawTicks": true,
+        "tickLength": 8,
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "type": "category",
+      "offset": true,
+      "ticks": {
+        "minRotation": 0,
+        "maxRotation": 50,
+        "mirror": false,
+        "textStrokeWidth": 0,
+        "textStrokeColor": "",
+        "padding": 3,
+        "display": true,
+        "autoSkip": true,
+        "autoSkipPadding": 3,
+        "labelOffset": 0,
+        "minor": {},
+        "major": {},
+        "align": "center",
+        "crossAlign": "near",
+        "showLabelBackdrop": false,
+        "backdropColor": "rgba(255, 255, 255, 0.75)",
+        "backdropPadding": 2,
+        "color": "#666"
+      },
+      "display": true,
+      "reverse": false,
+      "beginAtZero": false,
+      "bounds": "ticks",
+      "clip": true,
+      "grace": 0,
+      "border": {
+        "display": true,
+        "dash": [],
+        "dashOffset": 0,
+        "width": 1,
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "title": {
+        "display": false,
+        "text": "",
+        "padding": {
+          "top": 4,
+          "bottom": 4
+        },
+        "color": "#666"
+      },
+      "id": "x",
+      "position": "bottom"
+    },
+    "y": {
+      "axis": "y",
+      "beginAtZero": true,
+      "grid": {
+        "drawBorder": false,
+        "display": true,
+        "lineWidth": 1,
+        "drawOnChartArea": true,
+        "drawTicks": true,
+        "tickLength": 8,
+        "offset": false,
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "ticks": {
+        "maxTicksLimit": 6,
+        "color": "#333",
+        "minRotation": 0,
+        "maxRotation": 50,
+        "mirror": false,
+        "textStrokeWidth": 0,
+        "textStrokeColor": "",
+        "padding": 3,
+        "display": true,
+        "autoSkip": true,
+        "autoSkipPadding": 3,
+        "labelOffset": 0,
+        "minor": {},
+        "major": {},
+        "align": "center",
+        "crossAlign": "near",
+        "showLabelBackdrop": false,
+        "backdropColor": "rgba(255, 255, 255, 0.75)",
+        "backdropPadding": 2
+      },
+      "type": "linear",
+      "display": true,
+      "offset": false,
+      "reverse": false,
+      "bounds": "ticks",
+      "clip": true,
+      "grace": 0,
+      "border": {
+        "display": true,
+        "dash": [],
+        "dashOffset": 0,
+        "width": 1,
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "title": {
+        "display": false,
+        "text": "",
+        "padding": {
+          "top": 4,
+          "bottom": 4
+        },
+        "color": "#666"
+      },
+      "id": "y",
+      "position": "left"
+    }
+  }
+};
+        const hasOnlyOneDataset = chartData.datasets.length === 1;
+        const isMobile = window.innerWidth < 768;
+        
+
+        // Create chart with exact same configuration but remove redundant title
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: chartData,
+            options: {
+                ...chartOptions,
+                interaction: {
+                    mode: 'index',
+                    intersect: false
+                },
+                plugins: {
+                    ...chartOptions.plugins,
+                    // Remove title from chart as it's now in the header
+                    title: {
+                        display: false
+                    },
+                    tooltip: {
+                        backgroundColor: 'white', // White tooltip background
+                        titleColor: 'black',
+                        bodyColor: 'black',
+                        animation: {
+                            duration: 50, // milliseconds (default is 400)
+                            easing: 'easeOutQuart' // easing function
+                        },
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                
+                                if (context.parsed.y !== null && context.parsed.y !== undefined) {
+                                    label += formatIndianNumber(context.parsed.y);
+                                } else {
+                                    label += 'No data'; // For null values, show 'No data' in tooltip
+                                }
+                                return label;
+                            }
+                        }
+                    },
+                    legend: {
+                        display: !hasOnlyOneDataset, // Only display legend when we have 2+ datasets
+                        position: 'top',
+                        labels: {
+                            boxWidth: 20,        // Width of the color box
+                            boxHeight: 20,       // Height of the color box
+                            usePointStyle: true, // Makes it more like a round dot or checkbox
+                            pointStyle: 'rect',  // Use 'circle', 'rect', 'rectRounded', 'cross', etc.
+                            padding: 15,
+                            color: '#333',       // Label text color
+                            font: {
+                                size: isMobile ? 10 : 12,
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    ...chartOptions.scales,
+                    x: {
+                        ...chartOptions.scales?.x,
+                        grid: {
+                            display: true,
+                            drawOnChartArea: false,
+                        },
+                        ticks: {
+                            color: '#333',       // Optional: customize tick color
+                            maxTicksLimit: isMobile ? 4 : 15,
+                             font: {
+                                size: isMobile ? 10 : 12, // Adjust font size dynamically                                        
+                            }
+                        }
+                    },
+                    y: {
+                        ...chartOptions.scales?.y,
+                        beginAtZero: true,
+                        grid: {
+                            drawBorder: false,
+                            color: 'rgba(0,0,0,0.06)', // Optional: customize grid color
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return formatIndianNumber(value);
+                            },
+                            maxTicksLimit: 6,
+                            color: '#333',       // Optional: customize tick color
+                            font: {
+                                size: isMobile ? 10 : 12, // Adjust font size dynamically            
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        
+        // Function to check if preFilteredData has hierarchical structure
+        function hasHierarchicalStructure() {
+            if (!preFilteredData) return false;
+            
+            // Check if the first level keys contain data objects with labels and datasets properties
+            const firstLevelKeys = Object.keys(preFilteredData);
+            if (firstLevelKeys.length === 0) return false;
+            
+            // Check first key - if it has labels/datasets, it's flat; if it has child objects, it's hierarchical
+            const firstKey = firstLevelKeys[0];
+            const firstValue = preFilteredData[firstKey];
+            
+            // Check if this is a data object (has labels and datasets)
+            if (firstValue && firstValue.labels && firstValue.datasets) {
+                return false; // Flat structure
+            }
+            
+            // Check if this is a district with taluka children
+            if (firstValue && typeof firstValue === 'object') {
+                const childKeys = Object.keys(firstValue);
+                if (childKeys.length > 0) {
+                    const childValue = firstValue[childKeys[0]];
+                    // If child has labels and datasets, this is hierarchical
+                    if (childValue && childValue.labels && childValue.datasets) {
+                        return true; // Hierarchical structure
+                    }
+                }
+            }
+            
+            return false;
+        }
+        
+        // Function to filter chart data based on selected value
+        function filterChartData() {
+            const filterValue = document.getElementById('chartFilter') ? document.getElementById('chartFilter').value : '';
+            const filterValue2 = document.getElementById('chartFilter2') ? document.getElementById('chartFilter2').value : '';
+            
+            // Get the district from URL or filter data
+            const district = getQueryParam('district') || 
+                            (document.getElementById('chart-filter-data') ? 
+                             JSON.parse(document.getElementById('chart-filter-data').textContent).mainFilterValue : '');
+            
+            // Update the chart filter data in the JSON
+            const chartFilterData = document.getElementById('chart-filter-data');
+            if (chartFilterData) {
+                const filterDataObj = JSON.parse(chartFilterData.textContent);
+                filterDataObj.selectedFilterValue = filterValue;
+                filterDataObj.selectedFilterValue2 = filterValue2;
+                chartFilterData.textContent = JSON.stringify(filterDataObj);
+            }
+            
+            if (!chart || !chart.data) return;
+            
+            try {
+                // Store current dataset visibility
+                const visibility = [];
+                chart.data.datasets.forEach((dataset, index) => {
+                    visibility.push(!chart.getDatasetMeta(index).hidden);
+                });
+                
+                // Handle the "All Values" option for both filters
+                if (!filterValue && !filterValue2) {
+                    // If district is specified, check for district-specific data
+                    if (district && preFilteredData[district]) {
+                        // Check if this district has direct data or is a container for talukas
+                        if (preFilteredData[district].labels) {
+                            // District has direct data (not talukas)
+                            chart.data.labels = preFilteredData[district].labels;
+                            preFilteredData[district].datasets.forEach((dataset, i) => {
+                                if (i < chart.data.datasets.length) {
+                                    chart.data.datasets[i].data = dataset.data;
+                                    // Preserve original label
+                                    if (dataset.label) {
+                                        chart.data.datasets[i].label = dataset.label;
+                                    }
+                                }
+                            });
+                        } else {
+                            // District has talukas - show aggregate data for all talukas
+                            const districtData = getDistrictAggregateData(district);
+                            if (districtData) {
+                                chart.data.labels = districtData.labels;
+                                districtData.datasets.forEach((dataset, i) => {
+                                    if (i < chart.data.datasets.length) {
+                                        chart.data.datasets[i].data = dataset.data;
+                                        // Preserve original labels from the datasets
+                                        if (originalChartData.datasets[i] && originalChartData.datasets[i].label) {
+                                            chart.data.datasets[i].label = originalChartData.datasets[i].label;
+                                        }
+                                    }
+                                });
+                            } else {
+                                // Reset to full data if aggregation fails
+                                chart.data.labels = originalChartData.labels;
+                                chart.data.datasets.forEach((dataset, i) => {
+                                    dataset.data = originalChartData.datasets[i].data;
+                                    dataset.label = originalChartData.datasets[i].label;
+                                });
+                            }
+                        }
+                    } else {
+                        // Reset to full data when no district is specified
+                        chart.data.labels = originalChartData.labels;
+                        chart.data.datasets.forEach((dataset, i) => {
+                            dataset.data = originalChartData.datasets[i].data;
+                            dataset.label = originalChartData.datasets[i].label;
+                        });
+                    }
+                } 
+                // Check for first filter - look for taluka in district if district is specified
+                else if (filterValue && district && preFilteredData[district] && preFilteredData[district][filterValue]) {
+                    // Use pre-filtered data from the specified district
+                    const filteredData = preFilteredData[district][filterValue];
+                    
+                    // Check if we have valid data
+                    if (filteredData && filteredData.labels && filteredData.datasets) {
+                        // Update labels and datasets
+                        chart.data.labels = filteredData.labels;
+                        
+                        // Update each dataset's data while preserving other properties including label
+                        filteredData.datasets.forEach((dataset, i) => {
+                            if (i < chart.data.datasets.length) {
+                                chart.data.datasets[i].data = dataset.data;
+                                // Preserve original label or use dataset label if provided
+                                if (dataset.label) {
+                                    chart.data.datasets[i].label = dataset.label;
+                                } else if (originalChartData.datasets[i] && originalChartData.datasets[i].label) {
+                                    chart.data.datasets[i].label = originalChartData.datasets[i].label;
+                                }
+                            }
+                        });
+                    }
+                }
+                // Check for first filter across all districts if hierarchical
+                else if (filterValue && hasHierarchicalStructure()) {
+                    // Search for the taluka across all districts
+                    let filteredData = null;
+                    let foundDistrict = '';
+                    
+                    // Iterate through districts to find the filtered taluka
+                    for (const districtName in preFilteredData) {
+                        if (preFilteredData[districtName][filterValue]) {
+                            filteredData = preFilteredData[districtName][filterValue];
+                            foundDistrict = districtName;
+                            break;
+                        }
+                    }
+                    
+                    if (filteredData) {
+                        // Update labels and datasets
+                        chart.data.labels = filteredData.labels;
+                        filteredData.datasets.forEach((dataset, i) => {
+                            if (i < chart.data.datasets.length) {
+                                chart.data.datasets[i].data = dataset.data;
+                                // Preserve original label or use dataset label if provided
+                                if (dataset.label) {
+                                    chart.data.datasets[i].label = dataset.label;
+                                } else if (originalChartData.datasets[i] && originalChartData.datasets[i].label) {
+                                    chart.data.datasets[i].label = originalChartData.datasets[i].label;
+                                }
+                            }
+                        });
+                    } else {
+                        // If not found in hierarchy, try flat structure as fallback
+                        if (preFilteredData[filterValue]) {
+                            const flatData = preFilteredData[filterValue];
+                            chart.data.labels = flatData.labels;
+                            flatData.datasets.forEach((dataset, i) => {
+                                if (i < chart.data.datasets.length) {
+                                    chart.data.datasets[i].data = dataset.data;
+                                    // Use appropriate label
+                                    chart.data.datasets[i].label = dataset.label || originalChartData.datasets[i].label;
+                                }
+                            });
+                        } else {
+                            // No data found, display message
+                            displayFilterMessage(filterValue);
+                        }
+                    }
+                }
+                // Check for regular first filter (non-hierarchical)
+                else if (filterValue && !filterValue2 && preFilteredData[filterValue]) {
+                    // Use pre-filtered data from the server for filter 1
+                    const filteredData = preFilteredData[filterValue];
+                    
+                    // Check if we have valid data
+                    if (filteredData && filteredData.labels && filteredData.datasets) {
+                        // Update labels and datasets
+                        chart.data.labels = filteredData.labels;
+                        
+                        // Update each dataset's data while preserving other properties
+                        filteredData.datasets.forEach((dataset, i) => {
+                            if (i < chart.data.datasets.length) {
+                                chart.data.datasets[i].data = dataset.data;
+                                // Use appropriate label
+                                chart.data.datasets[i].label = dataset.label || originalChartData.datasets[i].label;
+                            }
+                        });
+                    }
+                } 
+                // Check for second filter
+                else if (!filterValue && filterValue2 && preFilteredData.filter2 && preFilteredData.filter2[filterValue2]) {
+                    // Use pre-filtered data from the server for filter 2
+                    const filteredData = preFilteredData.filter2[filterValue2];
+                    
+                    // Check if we have valid data
+                    if (filteredData && filteredData.labels && filteredData.datasets) {
+                        // Update labels and datasets
+                        chart.data.labels = filteredData.labels;
+                        
+                        // Update each dataset's data while preserving other properties
+                        filteredData.datasets.forEach((dataset, i) => {
+                            if (i < chart.data.datasets.length) {
+                                chart.data.datasets[i].data = dataset.data;
+                                chart.data.datasets[i].label = dataset.label || originalChartData.datasets[i].label;
+                            }
+                        });
+                    }
+                }
+                // If both filters have values, use the second one (simplification)
+                else if (filterValue && filterValue2 && preFilteredData.filter2 && preFilteredData.filter2[filterValue2]) {
+                    // Use pre-filtered data from the server for filter 2
+                    const filteredData = preFilteredData.filter2[filterValue2];
+                    
+                    // Check if we have valid data
+                    if (filteredData && filteredData.labels && filteredData.datasets) {
+                        // Update labels and datasets
+                        chart.data.labels = filteredData.labels;
+                        
+                        // Update each dataset's data while preserving other properties
+                        filteredData.datasets.forEach((dataset, i) => {
+                            if (i < chart.data.datasets.length) {
+                                chart.data.datasets[i].data = dataset.data;
+                                chart.data.datasets[i].label = dataset.label || originalChartData.datasets[i].label;
+                            }
+                        });
+                    }
+                } else {
+                    // Fallback to client-side filtering if no pre-filtered data is available
+                    console.log("No pre-filtered data available, using fallback filter");
+                    
+                    // Try exact match in x-axis labels (categorical data)
+                    const matchingIndices = [];
+                    originalChartData.labels.forEach((label, i) => {
+                        if ((filterValue && String(label).toLowerCase() === String(filterValue).toLowerCase()) ||
+                            (filterValue2 && String(label).toLowerCase() === String(filterValue2).toLowerCase())) {
+                            matchingIndices.push(i);
+                        }
+                    });
+                    
+                    if (matchingIndices.length > 0) {
+                        // Filter data to only show matching categories
+                        chart.data.labels = matchingIndices.map(i => originalChartData.labels[i]);
+                        chart.data.datasets.forEach((dataset, dsIndex) => {
+                            dataset.data = matchingIndices.map(i => originalChartData.datasets[dsIndex].data[i]);
+                        });
+                    } else {
+                        // No exact matches found, show message
+                        displayFilterMessage(filterValue || filterValue2);
+                    }
+                }
+                
+                // Restore dataset visibility that wasn't specifically changed
+                chart.data.datasets.forEach((dataset, index) => {
+                    if (chart.getDatasetMeta(index).hidden === undefined) {
+                        chart.getDatasetMeta(index).hidden = !visibility[index];
+                    }
+                });
+                
+                // Update the chart
+                chart.update();
+            } catch (error) {
+                console.error("Error filtering chart:", error);
+                // Show error message and reset to full data
+                displayFilterMessage(filterValue || filterValue2, true);
+                
+                // Reset to full data
+                chart.data.labels = originalChartData.labels;
+                chart.data.datasets.forEach((dataset, i) => {
+                    dataset.data = originalChartData.datasets[i].data;
+                    dataset.label = originalChartData.datasets[i].label;
+                });
+                chart.update();
+            }
+        }
+        
+        // Helper function to display filter messages
+        function displayFilterMessage(filterValue, isError = false) {
+            const messageDiv = document.createElement('div');
+            
+            if (isError) {
+                messageDiv.style.cssText = 'padding: 10px; margin: 10px 0; background-color: #f8d7da; color: #721c24; border-radius: 4px; border-left: 4px solid #f5c6cb;';
+                messageDiv.innerHTML = '<strong>Error:</strong> Could not filter data for "' + filterValue + 
+                    '". Showing all values.';
+            } else {
+                messageDiv.style.cssText = 'padding: 10px; margin: 10px 0; background-color: #cfe8ff; color: #084298; border-radius: 4px; border-left: 4px solid #084298;';
+                messageDiv.innerHTML = '<strong>Note:</strong> No filter data available for "' + filterValue + 
+                    '". Showing all values.';
+            }
+            
+            messageDiv.className = 'filter-message';
+            
+            const chartContainer = document.querySelector('.chart-container');
+            const existingMessage = chartContainer.querySelector('.filter-message');
+            if (existingMessage) {
+                chartContainer.removeChild(existingMessage);
+            }
+            
+            const canvasContainer = document.querySelector('.chart-canvas-container');
+            chartContainer.insertBefore(messageDiv, canvasContainer);
+            
+            // Auto-remove after 4 seconds
+            setTimeout(() => {
+                if (messageDiv.parentNode) {
+                    messageDiv.parentNode.removeChild(messageDiv);
+                }
+            }, 4000);
+        }
+        
+
+document.getElementById('downloadChartBtn').addEventListener('click', function() {
+    // Target the container div instead of the canvas
+    const element = document.getElementById('chartContainer');
+    
+    html2canvas(element, {
+        allowTaint: true,
+        useCORS: true,  // Use this if you have external images (like logo.png)
+        scale: 2       // Increase for better image quality
+    }).then(canvas => {
+        const image = canvas.toDataURL('image/jpeg', 1.0);
+        const link = document.createElement('a');
+        link.download = 'Title.jpg';
+        link.href = image;
+        link.click();
+    });
+});
+        
+        // Initialize the page based on URL parameters
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check for district in URL parameters
+            const district = getQueryParam('district');
+            
+            // Populate the taluka dropdown based on the district
+            populateTalukaDropdown(district);
+            
+            // If there's a taluka parameter, select it in the dropdown
+            const taluka = getQueryParam('taluka');
+            if (taluka) {
+                const talukaDropdown = document.getElementById('chartFilter');
+                if (talukaDropdown) {
+                    // Find and select the option
+                    for (let i = 0; i < talukaDropdown.options.length; i++) {
+                        if (talukaDropdown.options[i].value === taluka) {
+                            talukaDropdown.selectedIndex = i;
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            // Ensure chart is fully initialized before any filtering
+            setTimeout(function() {
+                // Apply the filter based on URL parameters
+                filterChartData();
+            }, 100);
+        });
+    </script>
+</body>
+</html>
