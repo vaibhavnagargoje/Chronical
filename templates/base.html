@@ -1,3 +1,4 @@
+{% load static tailwind_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -8,26 +9,9 @@
     
         {% block title %}Indian Districts {% endblock title %}
     </title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    {% comment %} <script src="https://cdn.tailwindcss.com"></script> {% endcomment %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#863F3F',
-                        secondary: '#DAB20C',
-                        light: '#F5F5F5',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        
-    </style>
+   {% tailwind_css %}
 </head>
 
 
@@ -53,13 +37,13 @@
                         type="search"
                         name="q" {# The 'name' attribute is essential #}
                         placeholder="Search districts, states..."
-                        class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                        class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#863F3F]"
                         value="{{ request.GET.q }}" {# Pre-fills the search box with the current query #}
                     >
                     <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
                     {# Note: A submit button isn't strictly necessary as pressing Enter works, but you can add one if you like #}
                 </form>
-                <a href="#" class="px-4 py-2 rounded-md text-primary border border-primary hover:bg-primary hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
+                <a href="#" class="px-4 py-2 rounded-md text-[#863F3F] border border-[#863F3F] hover:bg-[#863F3F] hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
             </div>
 
             <!-- ============================================= -->
@@ -69,7 +53,7 @@
                 <!-- Mobile Search: Now a form -->
                 <form id="mobile-search-form" method="GET" action="{% url 'search:query' %}" class="relative">
                     <!-- Search Icon Button (remains the same) -->
-                    <button id="mobile-search-button" type="button" class="text-gray-600 hover:text-primary transition-colors duration-200 p-2">
+                    <button id="mobile-search-button" type="button" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-200 p-2">
                         <i class="fas fa-search text-xl"></i>
                     </button>
                     
@@ -85,7 +69,7 @@
                                 value="{{ request.GET.q }}" {# Pre-fills search box #}
                             >
                             <!-- This button now SUBMITS the form -->
-                            <button id="search-submit-button" type="submit" class="px-3 py-2 text-primary hover:text-primary-dark transition-colors">
+                            <button id="search-submit-button" type="submit" class="px-3 py-2 text-[#863F3F] hover:text-[#863F3F]-dark transition-colors">
                                 <i class="fas fa-arrow-right"></i>
                             </button>
                             <!-- This button now CLOSES the search bar (type="button") -->
@@ -97,7 +81,7 @@
                 </form>
                 
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" type="button" class="text-gray-600 hover:text-primary transition-colors duration-200 p-2">
+                <button id="mobile-menu-button" type="button" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-200 p-2">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
@@ -105,7 +89,7 @@
         
         <!-- Mobile Menu (remains the same) -->
         <div id="mobile-menu" class="md:hidden hidden pb-4">
-            <a href="#" class="block py-2 px-4 text-center rounded-md text-primary border border-primary hover:bg-primary hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
+            <a href="#" class="block py-2 px-4 text-center rounded-md text-[#863F3F] border border-[#863F3F] hover:bg-[#863F3F] hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
         </div>
     </div>
 </nav>
@@ -135,40 +119,40 @@
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold text-primary mb-4">Quick Links</h4>
+                    <h4 class="text-lg font-semibold text-[#863F3F] mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block">Project</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block">People</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block">Suggest Edits</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block">Partnerships</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block">Careers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Project</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">People</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Suggest Edits</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Partnerships</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Careers</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold text-primary mb-4">About</h4>
+                    <h4 class="text-lg font-semibold text-[#863F3F] mb-4">About</h4>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block">About Centre for Knowledge Alternatives</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block">About FLAME University</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block">Subscribe</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block">Terms & Conditions</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-primary transition-colors duration-300 hover:translate-x-1 inline-block">Disclaimers</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">About Centre for Knowledge Alternatives</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">About FLAME University</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Subscribe</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Disclaimers</a></li>
                     </ul>
                 </div>
                 
                 <div>
-                    <h4 class="text-lg font-semibold text-primary mb-4">Contact</h4>
+                    <h4 class="text-lg font-semibold text-[#863F3F] mb-4">Contact</h4>
                     <ul class="space-y-2">
                         <li class="flex">
-                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-2"></i>
+                            <i class="fas fa-map-marker-alt text-[#863F3F] mt-1 mr-2"></i>
                             <span class="text-gray-600">Centre for Knowledge Alternatives,<br>FLAME University,<br>Lavale, Pune 412115, India</span>
                         </li>
                         <li class="flex">
-                            <i class="fas fa-envelope text-primary mt-1 mr-2"></i>
+                            <i class="fas fa-envelope text-[#863F3F] mt-1 mr-2"></i>
                             <span class="text-gray-600">cka@flame.edu.in</span>
                         </li>
                         <li class="flex">
-                            <i class="fas fa-phone-alt text-primary mt-1 mr-2"></i>
+                            <i class="fas fa-phone-alt text-[#863F3F] mt-1 mr-2"></i>
                             <span class="text-gray-600">+91-20-67906000</span>
                         </li>
                     </ul>

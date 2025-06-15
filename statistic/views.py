@@ -1,20 +1,19 @@
+# statistic/views.py
+
 from django.shortcuts import render, get_object_or_404
-from home.models import State
 from .models import StatisticalChapter
 
 def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug):
-    """
-    Show a particular statistical chapter and all its sections.
-    """
-    state = get_object_or_404(State, slug=state_slug)
-    district = get_object_or_404(state.districts, slug=district_slug)
-    chapter = get_object_or_404(district.statistical_chapters, slug=chapter_slug)
-    sections = chapter.sections.all()
-    
+    # Fetch the chapter, pre-fetching the polymorphic content blocks for efficiency
+    chapter = get_object_or_404(
+        StatisticalChapter.objects.select_related('district__state'),
+        district__state__slug=state_slug,
+        district__slug=district_slug,
+        slug=chapter_slug
+    )
+
+    # The content_blocks related manager will fetch all block types correctly
     context = {
-        'state': state,
-        'district': district,
         'chapter': chapter,
-        'sections': sections,
     }
-    return render(request, 'statistics/chapter_detail.html', context)
+    return render(request, 'statistic/statistical_chapter_detail.html', context)

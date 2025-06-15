@@ -9,11 +9,11 @@
 <div class="bg-white border-b">
     <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-3">
         <div class="flex items-center text-sm">
-            <a href="{% url 'home:index' %}" class="text-gray-600 hover:text-primary">Home</a>
+            <a href="{% url 'home:index' %}" class="text-gray-600 hover:text-[#863F3F]">Home</a>
             <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
-            <a href="{% url 'home:state_detail' state.slug %}" class="text-gray-600 hover:text-primary">{{ state.name }}</a>
+            <a href="{% url 'home:state_detail' state.slug %}" class="text-gray-600 hover:text-[#863F3F]">{{ state.name }}</a>
             <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
-            <span class="text-primary font-medium">{{ district.name }}</span>
+            <span class="text-[#863F3F] font-medium">{{ district.name }}</span>
         </div>
     </div>
 </div>
@@ -23,11 +23,11 @@
     <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div class="flex flex-col md:flex-row items-start md:items-center justify-between">
             <div>
-                <h1 class="text-4xl font-bold text-primary mb-2">{{district.name}} District</h1>
+                <h1 class="text-4xl font-bold text-[#863F3F] mb-2">{{district.name}} District</h1>
                 <p class="text-lg text-gray-700">Explore the cultural and statistical data of {{district.name}}</p>
             </div>
             <div class="mt-4 md:mt-0">
-                <button class="text-sm text-gray-600 hover:text-primary flex items-center">
+                <button class="text-sm text-gray-600 hover:text-[#863F3F] flex items-center">
                     <i class="fas fa-edit mr-1"></i> Suggest Edit
                 </button>
             </div>
@@ -39,7 +39,7 @@
 <div class="bg-white py-6 md:py-8">
      <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-2xl font-bold text-primary mb-4">About {{district.name}}</h2>
+            <h2 class="text-2xl font-bold text-[#863F3F] mb-4">About {{district.name}}</h2>
 
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -54,13 +54,13 @@
                     {% endif %}
                 </div>
                 <div>
-                    <h3 class="text-xl font-semibold text-primary mb-4">Quick Facts</h3>
+                    <h3 class="text-xl font-semibold text-[#863F3F] mb-4">Quick Facts</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="space-y-3">
                             {% for fact in district_quick_facts %}
                                 {% if forloop.counter0|divisibleby:2 %}
                                 <div class="flex items-start">
-                                    <i class="fas fa-info-circle text-secondary mt-1 mr-3 flex-shrink-0"></i>
+                                    <i class="fas fa-info-circle text-[#DAB20C] mt-1 mr-3 flex-shrink-0"></i>
                                     <div>
                                         <span class="text-sm font-medium text-gray-800">{{ fact.title }}</span>
                                         <p class="text-gray-600 text-sm">{{ fact.content }}</p>
@@ -73,7 +73,7 @@
                             {% for fact in district_quick_facts %}
                                 {% if not forloop.counter0|divisibleby:2 %}
                                 <div class="flex items-start">
-                                    <i class="fas fa-info-circle text-secondary mt-1 mr-3 flex-shrink-0"></i>
+                                    <i class="fas fa-info-circle text-[#DAB20C] mt-1 mr-3 flex-shrink-0"></i>
                                     <div>
                                         <span class="text-sm font-medium text-gray-800">{{ fact.title }}</span>
                                         <p class="text-gray-600 text-sm">{{ fact.content }}</p>
@@ -116,7 +116,7 @@
             {% comment %} <!-- Additional District Images Gallery -->
             {% if district_images|length > 1 %}
             <div class="mt-8">
-                <h3 class="text-xl font-semibold text-primary mb-4">Gallery</h3>
+                <h3 class="text-xl font-semibold text-[#863F3F] mb-4">Gallery</h3>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {% for image in district_images %}
                         {% if not forloop.first %}
@@ -141,7 +141,7 @@
   <!-- Chapters Section -->
     <div class="bg-white py-8 md:py-12">
         <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
-            <h2 class="text-3xl font-bold text-center text-primary mb-10 md:mb-12">Explore Pune District</h2>
+            <h2 class="text-3xl font-bold text-center text-[#863F3F] mb-10 md:mb-12">Explore Pune District</h2>
             
             <div class="flex flex-col lg:flex-row gap-8">
                 <!-- Cultural Chapters -->
@@ -149,13 +149,13 @@
                     <h3 class="text-2xl font-semibold text-center mb-6 md:mb-8">Cultural Chapters</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {% for chapter_data in cultural_chapters %}
-                            <a href="{{ chapter_data.object.get_absolute_url }}" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
+                            <a href="{{ chapter_data.object.get_absolute_url }}" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-[#863F3F]">
                                 <div class="p-4 flex items-center">
-                                    <div class="w-12 h-12 flex-shrink-0 bg-primary bg-opacity-5 rounded-full flex items-center justify-center mr-4">
+                                    <div class="w-12 h-12 flex-shrink-0  rounded-full flex items-center justify-center mr-4">
                                         <img src="{% static 'img/icons/' %}{{ chapter_data.icon }}" alt="{{ chapter_data.object.name }}" class="w-10 h-10 object-cover ">
                                     </div>
                                     <div>
-                                        <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">{{ chapter_data.object.name }}</h4>
+                                        <h4 class="text-lg font-semibold text-gray-800 group-hover:text-[#863F3F] transition-colors">{{ chapter_data.object.name }}</h4>
                                         <p class="text-sm text-gray-600">{{ chapter_data.desc }}</p>
                                     </div>
                                 </div>
@@ -169,137 +169,19 @@
                     <h3 class="text-2xl font-semibold text-center mb-6 md:mb-8">Statistical Chapters</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <!-- Chapter Card -->
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
+                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-[#863F3F]">
                             <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
+                                <div class="w-12 h-12 flex-shrink-0  rounded-full flex items-center justify-center mr-4">
                                     <img src="img/icons/agriculture.png" alt="Agriculture" class="w-10 h-10 object-cover rounded-full">
                                 </div>
                                 <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Agriculture</h4>
+                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-[#863F3F] transition-colors">Agriculture</h4>
                                     <p class="text-sm text-gray-600">Farming practices and crops</p>
                                 </div>
                             </div>
                         </a>
                         
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/demography.png" alt="Demography" class="w-10 h-10 object-cover rounded-full">
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Demography</h4>
-                                    <p class="text-sm text-gray-600">Population and social statistics</p>
-                                </div>
-                            </div>
-                        </a>
                         
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/education.png" alt="Education" class="w-10 h-10 object-cover rounded-full">
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Education</h4>
-                                    <p class="text-sm text-gray-600">Schools and higher education</p>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/environment.png" alt="Environment" class="w-10 h-10 object-cover rounded-full">
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Environment</h4>
-                                    <p class="text-sm text-gray-600">Climate and ecological data</p>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/health.png" alt="Health" class="w-10 h-10 object-cover rounded-full">
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Health</h4>
-                                    <p class="text-sm text-gray-600">Medical facilities and wellness</p>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/industry.png" alt="Industry" class="w-10 h-10 object-cover rounded-full">
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Industry</h4>
-                                    <p class="text-sm text-gray-600">IT, automotive, manufacturing</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/labour.png" alt="Labour" class="w-10 h-10 object-cover rounded-full">
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Labour</h4>
-                                    <p class="text-sm text-gray-600">Employment and workforce data</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="statistical.html" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/livestock_fisheries.png" alt="Livestock & Fisheries" class="w-10 h-10 object-cover rounded-full">
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Livestock & Fisheries</h4>
-                                    <p class="text-sm text-gray-600">Animal husbandry and aquaculture</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/police_judiciary.png" alt="Police & Judiciary" class="w-10 h-10 object-cover rounded-full">
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Police & Judiciary</h4>
-                                    <p class="text-sm text-gray-600">Law enforcement and justice system</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/revenue.png" alt="Revenue & Expenditure" class="w-10 h-10 object-cover rounded-full">
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Revenue & Expenditure</h4>
-                                    <p class="text-sm text-gray-600">Financial and budget data</p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-primary">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0 bg-secondary bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/transcomm.png" alt="Transport & Communication" class="w-10 h-10 object-cover rounded-full">
-                                </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-primary transition-colors">Transport & Communication</h4>
-                                    <p class="text-sm text-gray-600">Infrastructure and connectivity</p>
-                                </div>
-                            </div>
-                        </a>
                     </div>
                 </div>
                 

@@ -56,8 +56,18 @@ INSTALLED_APPS = [
     'sidepanal',
 
     'adminsortable2', 
-    'polymorphic',        
+    'polymorphic',
+
+
+    'tailwind',
+    'theme',
+    'django_browser_reload',
 ]
+
+TAILWIND_APP_NAME = 'theme'
+INTERNAL_IPS = ["127.0.0.1"]
+
+NPM_BIN_PATH = r"C:\Users\ue\AppData\Roaming\npm\npm.cmd"
 
 MIDDLEWARE = [
     
@@ -68,6 +78,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+     # #for hot reloding 
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
 ]
 
 ROOT_URLCONF = 'Chronical.urls'
