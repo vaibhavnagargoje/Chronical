@@ -167,13 +167,18 @@ This template is for the Statistical Chapter detail page.
                       {% endif %}
                       <div class="w-full overflow-hidden rounded-lg border shadow-md h-[450px] md:h-[550px] p-1">
                           <iframe 
-                              class="w-full h-full border-0 block"
-                              src="{{ block.chart_html_file.url }}"
-                              title="{{ block.title|default:'Statistical Chart' }}"
-                              frameborder="0"
-                              scrolling="no">
-                              Your browser does not support iframes. Please view the chart directly at <a href="{{ block.chart_html_file.url }}">this link</a>.
-                          </iframe>
+                                class="w-full h-full border-0 block"
+                                
+                                {# ========================================================== #}
+                                {#  THIS IS THE KEY CHANGE. Use the new method.               #}
+                                {# ========================================================== #}
+                                src="{{ block.get_chart_url }}"  {# <--- CHANGE THIS LINE #}
+                                
+                                title="{{ block.title|default:'Statistical Chart' }}"
+                                frameborder="0"
+                                scrolling="no">
+                                Your browser does not support iframes.
+                            </iframe>
                       </div>
                   </div>
               {% endif %}

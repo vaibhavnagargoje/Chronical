@@ -2,9 +2,12 @@
 
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
-
+from django.http import HttpResponse
 # Import the models from the statistic app
-from .models import StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree
+from .models import StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree,ChartBlock
+from django.views.decorators.clickjacking import xframe_options_exempt
+
+
 
 def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug):
     # Fetch the correct StatisticalChapter using the URL slugs
@@ -76,3 +79,19 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
     
     # Render the response using a new template for the statistic detail page
     return render(request, 'statistic/chapter_detail.html', context)
+
+
+@xframe_options_exempt
+def serve_chart_html(request, chart_block_id):
+    """
+    This view finds a ChartBlock by its ID, reads its associated HTML file,
+    and returns it as an HTTP response that can be safely embedded in an iframe.
+    """
+
+    chart_block = get_object_or_404(ChartBlock, pk=chart_block_id)
+    try:
+        html_content = chart_block.chart_html_file.read()
+        return HttpResponse(html_content, content_type='text/html')
+    except Exception as e:
+        return HttpResponse("<h1>Chart file not found.</h1>", status=404, content_type='text/html')
+    

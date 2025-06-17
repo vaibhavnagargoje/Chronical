@@ -87,6 +87,7 @@ ROOT_URLCONF = 'Chronical.urls'
 
 # Allow frontend to send cookies (important for session + CSRF)
 CORS_ALLOW_CREDENTIALS = True
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # For CSRF: allow frontend domains to be trusted
 CSRF_TRUSTED_ORIGINS = [

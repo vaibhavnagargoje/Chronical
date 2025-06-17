@@ -163,7 +163,7 @@ from django.db import transaction
 from django.http import Http404
 from django.contrib.auth.decorators import login_required
 import json
-
+from django.conf import settings
 from .forms import ChapterSelectForm
 
 # Import models from BOTH apps
@@ -265,13 +265,10 @@ def chapter_editor_view(request, app_label, chapter_id):
                 for order_index, block_data in enumerate(content_data):
                     block_id = block_data.pop('id', None)
                     block_type_str = block_data.get('type')
-
-                    # --- UPDATE an existing block ---
+                
                     if block_id:
                         submitted_block_ids.add(int(block_id))
                         try:
-                            # Use the dynamic BaseBlockModel and get the REAL instance
-                            # so that isinstance checks work correctly.
                             block_instance = BaseBlockModel.objects.get(id=block_id, chapter=chapter).get_real_instance()
                             block_instance.order = order_index
                             
@@ -350,4 +347,7 @@ def chapter_editor_view(request, app_label, chapter_id):
         'app_label': app_label,
         'app_title': config['title'],
     }
+     # Clean up TinyMCE instances before rendering
+    if hasattr(settings, 'TINYMCE_JS_URL'):
+        settings.TINYMCE_JS_URL = settings.STATIC_URL + 'tinymce/tinymce.min.js'
     return render(request, 'editor/chapter_editor.html', context)

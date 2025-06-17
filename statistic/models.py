@@ -164,6 +164,12 @@ class ChartBlock(StatisticContentBlock):
         upload_to=get_statistic_chart_path,
         help_text= "Upload on The PreGenrated  .html File for the Chart"
  )
+    
+    def get_chart_url(self):
+        """
+        Returns the URL for the dedicated serving view, not the raw media URL.
+        """
+        return reverse('statistic:serve_chart_html', args=[self.id])
     class Meta:
         verbose_name = "Chart Block (HTML Upload)"
     def __str__(self):

@@ -1,0 +1,2280 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: Lato; 
+            
+            background-color: #f5f5f5;
+        }
+        .chart-container { 
+            max-width: 1000px; 
+            margin: 0 auto 20px auto; 
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .chart-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            flex-grow: 1;
+            text-align: center;
+            margin-left: 90px;
+        }
+        .chart-logo {
+            width: 90px;
+            height: auto;
+        }
+        .chart-filter-controls {
+            display: flex;
+            align-items: center;
+            padding: 8px 8px 0px 8px;
+            border-radius: 4px;
+        }
+        .chart-filter-group {
+            display: flex;
+            align-items: center;
+            margin-left:45px;
+            margin-right: 20px;
+        }
+        .chart-filter-group label {
+            margin-right: 5px;
+            font-size: 12px;
+            color: black;
+        }
+        .chart-filter-group select {
+            padding: 2px 5px;
+            color:rgb(0, 0, 0);
+            border: 1px solid #863F3F;
+            border-radius:6px;
+            font-size: 12px;
+            min-width: 100px;
+        }
+        .chart-canvas-container {
+            height: 500px;
+            width: 100%;
+        }
+        .chart-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            padding-top: 5px;
+            border-top: 1px solid #e9ecef;
+        }
+        .chart-info {
+            flex: 1;
+        }
+        .chart-description {
+            margin-top: 0;
+            padding: 2px;
+            font-size: 10px;
+            padding-left: 53px;
+        }
+        .chart-additional-info {
+            margin-top: 2px;
+            padding: 2px;
+            font-size: 10px;
+            padding-left: 53px;
+        }
+        .chart-actions {
+            display: flex;
+            align-items: flex-start;
+            margin-left: 15px;
+        }
+        .chart-date {
+            font-size: 12px;
+            color: #6c757d;
+        }
+        .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #6c757d;
+            padding: 0;
+            margin: 0;
+            margin-top: 7px;
+        }
+        .icon-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        select#chartFilter2,select#chartFilter {
+          margin-left: 1px;
+          width: 80px;  /* Decreased width from the default */
+          min-width: 85px; /* Override the min-width from the parent class */
+        }
+
+        @media (max-width: 767px) {
+            .chart-container {
+            max-width: 1000px; 
+            width: 95%; 
+            margin: 0  auto; 
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* border-radius: 8px; */
+            padding: 8px;
+            position: relative;
+            }
+            
+            .chart-logo {
+                width: 60px;
+            }
+            
+            .chart-title {
+                font-size: 16px;
+                margin-left: 64px;
+            }
+            
+            .chart-filter-group {
+                margin-left: 0;
+                justify-content: left;
+                width: 100%;
+            }
+            
+            .chart-filter-controls {
+                justify-content: center;
+            }
+            
+            .chart-canvas-container {
+                height: 300px;
+            }
+            
+            .chart-description, .chart-additional-info {
+                font-size: 9px;
+                padding-left: 0;
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 991px) {
+            .chart-canvas-container {
+                height: 400px;
+            }
+            
+            .chart-title {
+                font-size: 18px;
+            }
+            
+            .chart-filter-group {
+                margin-left: 20px;
+            }
+        }  
+
+    </style>
+</head>
+<body>
+    <!-- ChartFlask Chart Data -->
+    <script type="application/json" id="chart-filter-data">
+        {"chartTitle":"Untitled Chart","mainFilterColumn":"District","mainFilterValue":"","filterColumn":"Taluka","selectedFilterValue":"","filterColumn2":"","selectedFilterValue2":"","chartType":"line","showFilters":true,"columnMetadata":{"filter1Column":"Taluka","filter2Column":""}}
+    </script>
+    
+    <div class="chart-container">
+        <div class="chart-header">
+            <div class="chart-title">Untitled Chart</div>
+            <img class="chart-logo" src="logo.png" alt="ChartFlask Logo">
+        </div>
+        
+        <div class="chart-filter-controls">
+            
+            <div class="chart-filter-group">
+                <label for="chartFilter">Taluka:</label>
+                <select id="chartFilter" onchange="filterChartData()">
+                    <option value="">All</option>
+                    <option value="Aambegaon" >Aambegaon</option><option value="Aamgaon" >Aamgaon</option><option value="Aarni" >Aarni</option><option value="Aarvi" >Aarvi</option><option value="Achalpur" >Achalpur</option><option value="Adheri" >Adheri</option><option value="Ahamadpur" >Ahamadpur</option><option value="Aheri" >Aheri</option><option value="Ajara" >Ajara</option><option value="Akalkot" >Akalkot</option><option value="Akkalkot" >Akkalkot</option><option value="Akkalkuva" >Akkalkuva</option><option value="Akola" >Akola</option><option value="Akole" >Akole</option><option value="Akot" >Akot</option><option value="Akrani" >Akrani</option><option value="Amalner" >Amalner</option><option value="Ambad" >Ambad</option><option value="Ambajogai" >Ambajogai</option><option value="Ambarnath" >Ambarnath</option><option value="Amravati" >Amravati</option><option value="Anjangaon Su" >Anjangaon Su</option><option value="Aosa" >Aosa</option><option value="Arjuni Morgaon" >Arjuni Morgaon</option><option value="Ashti" >Ashti</option><option value="Atpadi" >Atpadi</option><option value="Aundha na" >Aundha na</option><option value="Aurangabad" >Aurangabad</option><option value="Babhulgaon" >Babhulgaon</option><option value="Badnapur" >Badnapur</option><option value="Baglan" >Baglan</option><option value="Balapur" >Balapur</option><option value="Ballarpur" >Ballarpur</option><option value="Baramati" >Baramati</option><option value="Barshi" >Barshi</option><option value="Barshitakali" >Barshitakali</option><option value="Barsi" >Barsi</option><option value="Beed" >Beed</option><option value="Bhadgaon" >Bhadgaon</option><option value="Bhadravati" >Bhadravati</option><option value="Bhamragad" >Bhamragad</option><option value="Bhandara" >Bhandara</option><option value="Bhatkuli" >Bhatkuli</option><option value="Bhivandi" >Bhivandi</option><option value="Bhiwapur" >Bhiwapur</option><option value="Bhokardan" >Bhokardan</option><option value="Bhor" >Bhor</option><option value="Bhudargad" >Bhudargad</option><option value="Bhum" >Bhum</option><option value="Bhusawal" >Bhusawal</option><option value="Bodvad" >Bodvad</option><option value="Borivali" >Borivali</option><option value="Bramhapuri" >Bramhapuri</option><option value="Buldana" >Buldana</option><option value="Cage" >Cage</option><option value="Chakur" >Chakur</option><option value="Chalisgaon" >Chalisgaon</option><option value="Chandgad" >Chandgad</option><option value="Chandrapur" >Chandrapur</option><option value="Chandur Railway" >Chandur Railway</option><option value="Chandurbazar" >Chandurbazar</option><option value="Chandwad" >Chandwad</option><option value="Chikhali" >Chikhali</option><option value="Chikhraldara" >Chikhraldara</option><option value="Chimur" >Chimur</option><option value="Chiplun" >Chiplun</option><option value="Chomoshi" >Chomoshi</option><option value="Chopda" >Chopda</option><option value="Dahanu" >Dahanu</option><option value="Dapoli" >Dapoli</option><option value="Darvha" >Darvha</option><option value="Daryapur" >Daryapur</option><option value="Daund" >Daund</option><option value="Desaiganj" >Desaiganj</option><option value="Deulgaon Raja" >Deulgaon Raja</option><option value="Devala" >Devala</option><option value="Devali" >Devali</option><option value="Devani" >Devani</option><option value="Devari" >Devari</option><option value="Devgad" >Devgad</option><option value="Dhamangaon Re" >Dhamangaon Re</option><option value="Dhanora" >Dhanora</option><option value="Dharangaon" >Dharangaon</option><option value="Dharani" >Dharani</option><option value="Dharur" >Dharur</option><option value="Dhule" >Dhule</option><option value="Digras" >Digras</option><option value="Dindori" >Dindori</option><option value="Dodamarg" >Dodamarg</option><option value="Erandol" >Erandol</option><option value="Etapalli" >Etapalli</option><option value="Gadchiroli" >Gadchiroli</option><option value="Gadhinglaj" >Gadhinglaj</option><option value="Gaganbavada" >Gaganbavada</option><option value="Gangakhed" >Gangakhed</option><option value="Gangapur" >Gangapur</option><option value="Gevrai" >Gevrai</option><option value="Ghansawangi" >Ghansawangi</option><option value="Ghantaji" >Ghantaji</option><option value="Gondia" >Gondia</option><option value="Gondpipari" >Gondpipari</option><option value="Goregaon" >Goregaon</option><option value="Guhagar" >Guhagar</option><option value="Hatkanangale" >Hatkanangale</option><option value="Haveli" >Haveli</option><option value="Himalay nagar" >Himalay nagar</option><option value="Hingana" >Hingana</option><option value="Hinganghat" >Hinganghat</option><option value="Hingoli" >Hingoli</option><option value="Igatpuri" >Igatpuri</option><option value="Indapur" >Indapur</option><option value="Jaffrabad" >Jaffrabad</option><option value="Jalgaon" >Jalgaon</option><option value="Jalgaon Jamod" >Jalgaon Jamod</option><option value="Jalkot" >Jalkot</option><option value="Jalna" >Jalna</option><option value="Jamkhed" >Jamkhed</option><option value="Jamner" >Jamner</option><option value="Jat" >Jat</option><option value="Javhar" >Javhar</option><option value="Javli" >Javli</option><option value="Jintur" >Jintur</option><option value="Jivati" >Jivati</option><option value="Junnar" >Junnar</option><option value="Kadegaon" >Kadegaon</option><option value="Kagal" >Kagal</option><option value="Kalamanuri" >Kalamanuri</option><option value="Kalamb" >Kalamb</option><option value="Kalameshwar" >Kalameshwar</option><option value="Kalwan" >Kalwan</option><option value="Kalyan" >Kalyan</option><option value="Kamathi" >Kamathi</option><option value="Kankavali" >Kankavali</option><option value="Kankawali" >Kankawali</option><option value="Kannad" >Kannad</option><option value="Karad" >Karad</option><option value="Karanja" >Karanja</option><option value="Karjat" >Karjat</option><option value="Karmala" >Karmala</option><option value="Karveer" >Karveer</option><option value="Katol" >Katol</option><option value="Kavathe Mahakal" >Kavathe Mahakal</option><option value="Kelapur" >Kelapur</option><option value="Khamgaon" >Khamgaon</option><option value="Khanapur" >Khanapur</option><option value="Khandala" >Khandala</option><option value="Khatav" >Khatav</option><option value="Khed" >Khed</option><option value="Khultabad" >Khultabad</option><option value="Kinvat" >Kinvat</option><option value="Kopargaon" >Kopargaon</option><option value="Korachi" >Korachi</option><option value="Koregaon" >Koregaon</option><option value="Korpana" >Korpana</option><option value="Kudal" >Kudal</option><option value="Kuhi" >Kuhi</option><option value="Kurkheda" >Kurkheda</option><option value="Kurla" >Kurla</option><option value="Lakhandur" >Lakhandur</option><option value="Lakhani" >Lakhani</option><option value="Lanja" >Lanja</option><option value="Latur" >Latur</option><option value="Lohara" >Lohara</option><option value="Lonar" >Lonar</option><option value="Madha" >Madha</option><option value="Mahableshwar" >Mahableshwar</option><option value="Mahagaon" >Mahagaon</option><option value="Mahur" >Mahur</option><option value="Majalgaon" >Majalgaon</option><option value="Malegaon" >Malegaon</option><option value="Malkapur" >Malkapur</option><option value="Malshiras" >Malshiras</option><option value="Malsiras" >Malsiras</option><option value="Malvan" >Malvan</option><option value="Malwan" >Malwan</option><option value="Man" >Man</option><option value="Mandangad" >Mandangad</option><option value="Mangal Vedha" >Mangal Vedha</option><option value="Mangalvedha" >Mangalvedha</option><option value="Mangrulpir" >Mangrulpir</option><option value="Manora" >Manora</option><option value="Mantha" >Mantha</option><option value="Manvat" >Manvat</option><option value="Maregaon" >Maregaon</option><option value="Mauda" >Mauda</option><option value="Maval" >Maval</option><option value="Mehkar" >Mehkar</option><option value="Miraj" >Miraj</option><option value="Mohadi" >Mohadi</option><option value="Mohol" >Mohol</option><option value="Mokhada" >Mokhada</option><option value="Morshi" >Morshi</option><option value="Motala" >Motala</option><option value="Mudkhed" >Mudkhed</option><option value="Mukhed" >Mukhed</option><option value="Muktainagar (Edlabad)" >Muktainagar (Edlabad)</option><option value="Mul" >Mul</option><option value="Mulashi" >Mulashi</option><option value="Mulchera" >Mulchera</option><option value="Mumbai City" >Mumbai City</option><option value="Murbad" >Murbad</option><option value="Murtijapur" >Murtijapur</option><option value="Nagar" >Nagar</option><option value="Nagbhid" >Nagbhid</option><option value="Nagpur (Gra)" >Nagpur (Gra)</option><option value="Nagpur (Sh)" >Nagpur (Sh)</option><option value="Nanded" >Nanded</option><option value="Nandgaon" >Nandgaon</option><option value="Nandgaon Kh" >Nandgaon Kh</option><option value="Nandura" >Nandura</option><option value="Nandurbar" >Nandurbar</option><option value="Narkhed" >Narkhed</option><option value="Nashik" >Nashik</option><option value="Navapur" >Navapur</option><option value="Ner" >Ner</option><option value="Nevasa" >Nevasa</option><option value="Nifad" >Nifad</option><option value="Nilanga" >Nilanga</option><option value="North Solapur" >North Solapur</option><option value="Osmanabad" >Osmanabad</option><option value="Pachora" >Pachora</option><option value="Paithan" >Paithan</option><option value="Palam" >Palam</option><option value="Palghar" >Palghar</option><option value="Palus" >Palus</option><option value="Pandharpur" >Pandharpur</option><option value="Panhala" >Panhala</option><option value="Panwel" >Panwel</option><option value="Paranda" >Paranda</option><option value="Parashivani" >Parashivani</option><option value="Parbhani" >Parbhani</option><option value="Parli" >Parli</option><option value="Parner" >Parner</option><option value="Parola" >Parola</option><option value="Partur" >Partur</option><option value="Patan" >Patan</option><option value="Pathardi" >Pathardi</option><option value="Pathari" >Pathari</option><option value="Patoda" >Patoda</option><option value="Patur" >Patur</option><option value="Pavani" >Pavani</option><option value="Peth" >Peth</option><option value="Phaltan" >Phaltan</option><option value="Phulambri" >Phulambri</option><option value="Ponbhurna" >Ponbhurna</option><option value="Pune City" >Pune City</option><option value="Purandar" >Purandar</option><option value="Purna" >Purna</option><option value="Pusad" >Pusad</option><option value="Radhanagari" >Radhanagari</option><option value="Rahata" >Rahata</option><option value="Rahuri" >Rahuri</option><option value="Rajapur" >Rajapur</option><option value="Rajura" >Rajura</option><option value="Ralegaon" >Ralegaon</option><option value="Ramtech" >Ramtech</option><option value="Ratnagiri" >Ratnagiri</option><option value="Raver" >Raver</option><option value="Renapur" >Renapur</option><option value="Resod" >Resod</option><option value="Sadak Arjuni" >Sadak Arjuni</option><option value="Sakoli" >Sakoli</option><option value="Sakri" >Sakri</option><option value="Salekasa" >Salekasa</option><option value="Samudrapur" >Samudrapur</option><option value="Sangameshwar" >Sangameshwar</option><option value="Sangamner" >Sangamner</option><option value="Sangola" >Sangola</option><option value="Sangrampur" >Sangrampur</option><option value="Satara" >Satara</option><option value="Savali" >Savali</option><option value="Savantwadi" >Savantwadi</option><option value="Sawantwadi" >Sawantwadi</option><option value="Sawner" >Sawner</option><option value="Selu" >Selu</option><option value="Sengaon" >Sengaon</option><option value="Shahada" >Shahada</option><option value="Shahapur" >Shahapur</option><option value="Shahuwadi" >Shahuwadi</option><option value="Shegaon" >Shegaon</option><option value="Shevgaon" >Shevgaon</option><option value="Shindkheda" >Shindkheda</option><option value="Shirala" >Shirala</option><option value="Shirol" >Shirol</option><option value="Shirpur" >Shirpur</option><option value="Shirur" >Shirur</option><option value="Shirur Kasar" >Shirur Kasar</option><option value="Shirur-Anantpal" >Shirur-Anantpal</option><option value="Sillod" >Sillod</option><option value="Sindevahi" >Sindevahi</option><option value="Sindkhed Raja" >Sindkhed Raja</option><option value="Sinner" >Sinner</option><option value="Sironcha" >Sironcha</option><option value="Sonpeth" >Sonpeth</option><option value="South Solapur" >South Solapur</option><option value="Soyegaon" >Soyegaon</option><option value="Srigonda" >Srigonda</option><option value="Srirampur" >Srirampur</option><option value="Surgana" >Surgana</option><option value="Talasari" >Talasari</option><option value="Taloda" >Taloda</option><option value="Tasgaon" >Tasgaon</option><option value="Telhara" >Telhara</option><option value="Thane" >Thane</option><option value="Tiroda" >Tiroda</option><option value="Tivas" >Tivas</option><option value="Trimbak" >Trimbak</option><option value="Tuljapur" >Tuljapur</option><option value="Tumsar" >Tumsar</option><option value="Udgir" >Udgir</option><option value="Ulhasnagar" >Ulhasnagar</option><option value="Umaraga" >Umaraga</option><option value="Umarkhed" >Umarkhed</option><option value="Umred" >Umred</option><option value="Uran" >Uran</option><option value="Vaibhavwadi" >Vaibhavwadi</option><option value="Vaijapur" >Vaijapur</option><option value="Vani" >Vani</option><option value="Varora" >Varora</option><option value="Vasai" >Vasai</option><option value="Vengurla" >Vengurla</option><option value="Vikramgad" >Vikramgad</option><option value="Wada" >Wada</option><option value="Wadwani" >Wadwani</option><option value="Wai" >Wai</option><option value="Walwa" >Walwa</option><option value="Wardha" >Wardha</option><option value="Warud" >Warud</option><option value="Washi" >Washi</option><option value="Washim" >Washim</option><option value="Welhe" >Welhe</option><option value="Yavatmal" >Yavatmal</option><option value="Yawal" >Yawal</option><option value="Yewala" >Yewala</option><option value="Zari Jamani" >Zari Jamani</option><option value="alibag" >alibag</option><option value="andhrapur" >andhrapur</option><option value="bhokar" >bhokar</option><option value="biloli" >biloli</option><option value="deglur" >deglur</option><option value="dharmabad" >dharmabad</option><option value="hadgaon" >hadgaon</option><option value="kandhar" >kandhar</option><option value="karjat" >karjat</option><option value="khalapur" >khalapur</option><option value="loha" >loha</option><option value="mahad" >mahad</option><option value="mangaon" >mangaon</option><option value="mhasala" >mhasala</option><option value="murud" >murud</option><option value="naygaon" >naygaon</option><option value="pen" >pen</option><option value="poladpur" >poladpur</option><option value="rmori" >rmori</option><option value="roha" >roha</option><option value="shreevardhan" >shreevardhan</option><option value="sudhagad" >sudhagad</option><option value="tala" >tala</option><option value="umari" >umari</option><option value="vasamat" >vasamat</option>
+                </select>
+            </div>
+            
+            
+        </div>
+        
+        <div class="chart-canvas-container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="chart-footer">
+            <div class="chart-info">
+            
+                
+            </div>
+            <div class="chart-actions">
+                <button id="downloadChartBtn" class="icon-btn" title="Download Chart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Script to control filter dropdown visibility
+        let isDropdownVisible = true; // Set from checkbox value
+        
+        // Function to handle dropdown visibility
+        function handleDropdownVisibility() {
+            const dropdownControls = document.querySelector('.chart-filter-controls');
+            if (!isDropdownVisible && dropdownControls) {
+                dropdownControls.remove();
+            }
+        }
+        
+        // When DOM is loaded
+        document.addEventListener('DOMContentLoaded', handleDropdownVisibility);
+        
+        // Optional: Function to dynamically change visibility later
+        function toggleDropdownVisibility(visible) {
+            isDropdownVisible = visible;
+            handleDropdownVisibility();
+        }
+
+        // Optimized Indian number formatting function
+        function formatIndianNumber(num) {
+            if (num === null || num === undefined || isNaN(num)) return '';
+            
+            let isNegative = false;
+            if (num < 0) {
+                isNegative = true;
+                num = Math.abs(num);
+            }
+            
+            let formattedNumber;
+            
+            // Use more efficient formatting for different ranges
+            if (num >= 10000000) {
+                formattedNumber = (num / 10000000).toFixed(1).replace('.0', '') + 'Cr';
+            } else if (num >= 100000) {
+                formattedNumber = (num / 100000).toFixed(1).replace('.0', '') + 'L';
+            } else if (num >= 1000) {
+                formattedNumber = (num / 1000).toFixed(1).replace('.0', '') + 'K';
+            } else {
+                formattedNumber = num.toString();
+            }
+            
+            return isNegative ? '-' + formattedNumber : formattedNumber;
+        }
+
+        // Mobile-friendly number formatting function (now identical to formatIndianNumber)
+        function formatMobileNumber(num) {
+            return formatIndianNumber(num);
+        }
+
+        // Function to check if device is mobile
+        function isMobileDevice() {
+            return window.innerWidth < 768;
+        }
+
+        // Function to get the appropriate number formatter based on device
+        function getFormatter() {
+            return formatIndianNumber; // Now we can just use formatIndianNumber for all devices
+        }
+
+
+
+
+
+
+
+        // Store original chart data for filtering
+        const originalChartData = {
+  "datasets": [
+    {
+      "backgroundColor": "#1a4570",
+      "borderColor": "#1a4570",
+      "borderWidth": 1,
+      "data": [
+        9331021,
+        637478,
+        null,
+        1732090,
+        1051307,
+        435593,
+        1370377,
+        1216842,
+        954150,
+        182191,
+        136513,
+        650612,
+        12357508,
+        1481844,
+        4398232,
+        1711565,
+        7860317,
+        1037944,
+        1797183,
+        3136151,
+        228103,
+        4260838,
+        1396689,
+        850151,
+        3349218,
+        35663979,
+        170119,
+        null,
+        2001574,
+        4880432,
+        413304,
+        6789741.290000001,
+        1282216,
+        null,
+        874400,
+        1088562
+      ],
+      "fill": false,
+      "label": "Agriculture Loans",
+      "pointHoverRadius": 3,
+      "pointRadius": 0,
+      "spanGaps": false,
+      "tension": 0,
+      "pointBackgroundColor": "#1a4570"
+    },
+    {
+      "backgroundColor": "#e9ba5d",
+      "borderColor": "#e9ba5d",
+      "borderWidth": 1,
+      "data": [
+        12121715,
+        953692,
+        null,
+        5491505,
+        2917547,
+        420690,
+        1385683,
+        2070802,
+        1406668,
+        526302,
+        297554,
+        301284,
+        8891885,
+        1277333,
+        11270583,
+        3946871,
+        759704367,
+        93858103,
+        13815613,
+        1664665,
+        269786,
+        8088242,
+        1163354,
+        4707419,
+        2785019,
+        113150904,
+        4331559,
+        null,
+        2490306,
+        2871872,
+        1383749,
+        5591104.18,
+        61249282,
+        null,
+        318439,
+        1003890
+      ],
+      "fill": false,
+      "label": "Non-Agriculture Loans",
+      "pointHoverRadius": 3,
+      "pointRadius": 0,
+      "spanGaps": false,
+      "tension": 0,
+      "pointBackgroundColor": "#e9ba5d"
+    },
+    {
+      "backgroundColor": "#e46e53",
+      "borderColor": "#e46e53",
+      "borderWidth": 1,
+      "data": [
+        21452736,
+        1591170,
+        0,
+        7223597,
+        3968854,
+        856283,
+        2756059,
+        3287642,
+        2360818,
+        708490,
+        434067,
+        900159,
+        21249393,
+        2759178,
+        15668815,
+        5658436,
+        767564684,
+        94896047,
+        15612796,
+        4800816,
+        497890,
+        12349077,
+        2560043,
+        5557570,
+        6134234,
+        148814883,
+        4501678,
+        0,
+        4491880,
+        7752303,
+        1797053,
+        12333107,
+        62531498,
+        0,
+        1192841,
+        2092452
+      ],
+      "fill": false,
+      "label": "Total Loan",
+      "pointHoverRadius": 3,
+      "pointRadius": 0,
+      "spanGaps": false,
+      "tension": 0,
+      "pointBackgroundColor": "#e46e53"
+    }
+  ],
+  "labels": [
+    "Ahmadnagar",
+    "Akola",
+    "Amravati",
+    "Aurangabad",
+    "Beed",
+    "Bhandara",
+    "Buldhana",
+    "Chandrapur",
+    "Dhule",
+    "Gadchiroli",
+    "Gondia",
+    "Hingoli",
+    "Jalgaon",
+    "Jalna",
+    "Kolhapur",
+    "Latur",
+    "Mumbai (City)",
+    "Mumbai Suburban",
+    "Nagpur",
+    "Nanded",
+    "Nandurbar",
+    "Nashik",
+    "Osmanabad",
+    "Palghar",
+    "Parbhani",
+    "Pune",
+    "Raigad",
+    "Ratnagiri",
+    "Sangli",
+    "Satara",
+    "Sindhudurg",
+    "Solapur",
+    "Thane",
+    "Wardha",
+    "Washim",
+    "Yavatmal"
+  ]
+};
+        
+        // Store original dataset labels
+        const originalDatasetLabels = originalChartData.datasets.map(dataset => dataset.label);
+        
+        // Pre-filtered data for each filter value
+        const preFilteredData = {
+  "Aambegaon": {
+    "datasets": [
+      {
+        "backgroundColor": "#1a4570",
+        "borderColor": "#1a4570",
+        "borderWidth": 1,
+        "data": [
+          2201002
+        ],
+        "fill": false,
+        "label": "Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e9ba5d",
+        "borderColor": "#e9ba5d",
+        "borderWidth": 1,
+        "data": [
+          3142896
+        ],
+        "fill": false,
+        "label": "Non-Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e46e53",
+        "borderColor": "#e46e53",
+        "borderWidth": 1,
+        "data": [
+          5343898
+        ],
+        "fill": false,
+        "label": "Total Loan",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      }
+    ],
+    "labels": [
+      "Pune"
+    ],
+    "_filterColumn": "Taluka",
+    "_filterValue": "Aambegaon"
+  },
+  "Aarvi": {
+    "datasets": [
+      {
+        "backgroundColor": "#1a4570",
+        "borderColor": "#1a4570",
+        "borderWidth": 1,
+        "data": [
+          null
+        ],
+        "fill": false,
+        "label": "Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e9ba5d",
+        "borderColor": "#e9ba5d",
+        "borderWidth": 1,
+        "data": [
+          null
+        ],
+        "fill": false,
+        "label": "Non-Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e46e53",
+        "borderColor": "#e46e53",
+        "borderWidth": 1,
+        "data": [
+          0
+        ],
+        "fill": false,
+        "label": "Total Loan",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      }
+    ],
+    "labels": [
+      "Wardha"
+    ],
+    "_filterColumn": "Taluka",
+    "_filterValue": "Aarvi"
+  },
+  "Aamgaon": {
+    "datasets": [
+      {
+        "backgroundColor": "#1a4570",
+        "borderColor": "#1a4570",
+        "borderWidth": 1,
+        "data": [
+          11709
+        ],
+        "fill": false,
+        "label": "Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e9ba5d",
+        "borderColor": "#e9ba5d",
+        "borderWidth": 1,
+        "data": [
+          27452
+        ],
+        "fill": false,
+        "label": "Non-Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e46e53",
+        "borderColor": "#e46e53",
+        "borderWidth": 1,
+        "data": [
+          39161
+        ],
+        "fill": false,
+        "label": "Total Loan",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      }
+    ],
+    "labels": [
+      "Gondia"
+    ],
+    "_filterColumn": "Taluka",
+    "_filterValue": "Aamgaon"
+  },
+  "Achalpur": {
+    "datasets": [
+      {
+        "backgroundColor": "#1a4570",
+        "borderColor": "#1a4570",
+        "borderWidth": 1,
+        "data": [
+          null
+        ],
+        "fill": false,
+        "label": "Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e9ba5d",
+        "borderColor": "#e9ba5d",
+        "borderWidth": 1,
+        "data": [
+          null
+        ],
+        "fill": false,
+        "label": "Non-Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e46e53",
+        "borderColor": "#e46e53",
+        "borderWidth": 1,
+        "data": [
+          0
+        ],
+        "fill": false,
+        "label": "Total Loan",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      }
+    ],
+    "labels": [
+      "Amravati"
+    ],
+    "_filterColumn": "Taluka",
+    "_filterValue": "Achalpur"
+  },
+  "Aarni": {
+    "datasets": [
+      {
+        "backgroundColor": "#1a4570",
+        "borderColor": "#1a4570",
+        "borderWidth": 1,
+        "data": [
+          69668
+        ],
+        "fill": false,
+        "label": "Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e9ba5d",
+        "borderColor": "#e9ba5d",
+        "borderWidth": 1,
+        "data": [
+          33428
+        ],
+        "fill": false,
+        "label": "Non-Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e46e53",
+        "borderColor": "#e46e53",
+        "borderWidth": 1,
+        "data": [
+          103096
+        ],
+        "fill": false,
+        "label": "Total Loan",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      }
+    ],
+    "labels": [
+      "Yavatmal"
+    ],
+    "_filterColumn": "Taluka",
+    "_filterValue": "Aarni"
+  },
+  "Ahamadpur": {
+    "datasets": [
+      {
+        "backgroundColor": "#1a4570",
+        "borderColor": "#1a4570",
+        "borderWidth": 1,
+        "data": [
+          146855
+        ],
+        "fill": false,
+        "label": "Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e9ba5d",
+        "borderColor": "#e9ba5d",
+        "borderWidth": 1,
+        "data": [
+          338993
+        ],
+        "fill": false,
+        "label": "Non-Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e46e53",
+        "borderColor": "#e46e53",
+        "borderWidth": 1,
+        "data": [
+          485848
+        ],
+        "fill": false,
+        "label": "Total Loan",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      }
+    ],
+    "labels": [
+      "Latur"
+    ],
+    "_filterColumn": "Taluka",
+    "_filterValue": "Ahamadpur"
+  },
+  "Ajara": {
+    "datasets": [
+      {
+        "backgroundColor": "#1a4570",
+        "borderColor": "#1a4570",
+        "borderWidth": 1,
+        "data": [
+          218287
+        ],
+        "fill": false,
+        "label": "Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e9ba5d",
+        "borderColor": "#e9ba5d",
+        "borderWidth": 1,
+        "data": [
+          480149
+        ],
+        "fill": false,
+        "label": "Non-Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e46e53",
+        "borderColor": "#e46e53",
+        "borderWidth": 1,
+        "data": [
+          698436
+        ],
+        "fill": false,
+        "label": "Total Loan",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      }
+    ],
+    "labels": [
+      "Kolhapur"
+    ],
+    "_filterColumn": "Taluka",
+    "_filterValue": "Ajara"
+  },
+  "Adheri": {
+    "datasets": [
+      {
+        "backgroundColor": "#1a4570",
+        "borderColor": "#1a4570",
+        "borderWidth": 1,
+        "data": [
+          1037944
+        ],
+        "fill": false,
+        "label": "Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e9ba5d",
+        "borderColor": "#e9ba5d",
+        "borderWidth": 1,
+        "data": [
+          93858103
+        ],
+        "fill": false,
+        "label": "Non-Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e46e53",
+        "borderColor": "#e46e53",
+        "borderWidth": 1,
+        "data": [
+          94896047
+        ],
+        "fill": false,
+        "label": "Total Loan",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      }
+    ],
+    "labels": [
+      "Mumbai Suburban"
+    ],
+    "_filterColumn": "Taluka",
+    "_filterValue": "Adheri"
+  },
+  "Akalkot": {
+    "datasets": [
+      {
+        "backgroundColor": "#1a4570",
+        "borderColor": "#1a4570",
+        "borderWidth": 1,
+        "data": [
+          172715
+        ],
+        "fill": false,
+        "label": "Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e9ba5d",
+        "borderColor": "#e9ba5d",
+        "borderWidth": 1,
+        "data": [
+          162512
+        ],
+        "fill": false,
+        "label": "Non-Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e46e53",
+        "borderColor": "#e46e53",
+        "borderWidth": 1,
+        "data": [
+          335227
+        ],
+        "fill": false,
+        "label": "Total Loan",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      }
+    ],
+    "labels": [
+      "Solapur"
+    ],
+    "_filterColumn": "Taluka",
+    "_filterValue": "Akalkot"
+  },
+  "Aheri": {
+    "datasets": [
+      {
+        "backgroundColor": "#1a4570",
+        "borderColor": "#1a4570",
+        "borderWidth": 1,
+        "data": [
+          12495
+        ],
+        "fill": false,
+        "label": "Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e9ba5d",
+        "borderColor": "#e9ba5d",
+        "borderWidth": 1,
+        "data": [
+          45961
+        ],
+        "fill": false,
+        "label": "Non-Agriculture Loans",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      },
+      {
+        "backgroundColor": "#e46e53",
+        "borderColor": "#e46e53",
+        "borderWidth": 1,
+        "data": [
+          58455
+        ],
+        "fill": false,
+        "label": "Total Loan",
+        "pointHoverRadius": 3,
+        "pointRadius": 0,
+        "spanGaps": false,
+        "tension": 0
+      }
+    ],
+    "labels": [
+      "Gadchiroli"
+    ],
+    "_filterColumn": "Taluka",
+    "_filterValue": "Aheri"
+  }
+};
+        
+        // Column metadata to identify filter types
+        const columnMetadata = {
+  "filter1Column": "Taluka",
+  "filter2Column": ""
+};
+        
+        // Function to get URL query parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        
+        // Function to aggregate data for all talukas in a district
+        function getDistrictAggregateData(district) {
+            if (!preFilteredData[district]) return null;
+            
+            const talukas = Object.keys(preFilteredData[district]);
+            if (talukas.length === 0) return null;
+            
+            // Find a valid taluka that has labels and datasets
+            let validTaluka = null;
+            for (const taluka of talukas) {
+                if (preFilteredData[district][taluka] && 
+                    preFilteredData[district][taluka].labels && 
+                    preFilteredData[district][taluka].datasets) {
+                    validTaluka = taluka;
+                    break;
+                }
+            }
+            
+            if (!validTaluka) return null; // No valid taluka found
+            
+            // Use the valid taluka to get the labels
+            const labels = [...preFilteredData[district][validTaluka].labels];
+            
+            // Initialize aggregated datasets array
+            let aggregatedDatasets = [];
+            
+            // Get the number of datasets from the valid taluka's data
+            const numDatasets = preFilteredData[district][validTaluka].datasets.length;
+            
+            // Initialize aggregated datasets with empty arrays
+            for (let i = 0; i < numDatasets; i++) {
+                const datasetTemplate = preFilteredData[district][validTaluka].datasets[i];
+                aggregatedDatasets.push({
+                    backgroundColor: datasetTemplate.backgroundColor,
+                    borderColor: datasetTemplate.borderColor,
+                    borderWidth: datasetTemplate.borderWidth || 1,
+                    data: new Array(labels.length).fill(0),
+                    fill: datasetTemplate.fill || false,
+                    label: originalDatasetLabels[i] || datasetTemplate.label,  // Preserve original label
+                    pointHoverRadius: datasetTemplate.pointHoverRadius || 3,
+                    pointRadius: datasetTemplate.pointRadius || 0,
+                    spanGaps: datasetTemplate.spanGaps || false,
+                    tension: datasetTemplate.tension || 0,
+                    pointBackgroundColor: datasetTemplate.pointBackgroundColor || datasetTemplate.borderColor
+                });
+            }
+            
+            // Sum data from all talukas for each year and each dataset
+            talukas.forEach(taluka => {
+                const talukaData = preFilteredData[district][taluka];
+                if (talukaData && talukaData.datasets) {
+                    talukaData.datasets.forEach((dataset, datasetIndex) => {
+                        if (dataset && dataset.data && datasetIndex < aggregatedDatasets.length) {
+                            dataset.data.forEach((value, index) => {
+                                // Handle null/undefined values as 0 for aggregation
+                                if (value !== null && value !== undefined && !isNaN(value)) {
+                                    aggregatedDatasets[datasetIndex].data[index] += value;
+                                }
+                            });
+                        }
+                    });
+                }
+            });
+            
+            // Create a final data object with the aggregated datasets
+            return {
+                labels: labels,
+                datasets: aggregatedDatasets
+            };
+        }
+        
+        // Function to populate taluka dropdown based on selected district
+        function populateTalukaDropdown(district) {
+            const talukaDropdown = document.getElementById('chartFilter');
+            if (!talukaDropdown) return; // Exit if dropdown doesn't exist
+            
+            // Clear existing options except the "All" option
+            while (talukaDropdown.options.length > 1) {
+                talukaDropdown.remove(1);
+            }
+            
+            // Create set to track unique taluka names to avoid duplicates
+            const uniqueTalukas = new Set();
+            
+            if (!district || !preFilteredData[district]) {
+                // If no district specified or invalid district, show all talukas
+                const allTalukas = [];
+                
+                // Collect all talukas from all districts
+                Object.keys(preFilteredData).forEach(districtName => {
+                    // Check if this is a proper district with taluka objects
+                    if (typeof preFilteredData[districtName] === 'object' && 
+                        !preFilteredData[districtName].labels) {
+                        Object.keys(preFilteredData[districtName]).forEach(talukaName => {
+                            // Only add if not already in the set and it looks like a valid taluka name
+                            if (!uniqueTalukas.has(talukaName) && 
+                                talukaName !== 'datasets' && 
+                                talukaName !== 'labels' && 
+                                talukaName.indexOf('+') === -1 && 
+                                !talukaName.match(/^\d+$/)) {
+                                
+                                // Check if this entry has filter metadata and matches the expected filter column
+                                const entry = preFilteredData[districtName][talukaName];
+                                if (entry && entry._filterColumn === columnMetadata.filter1Column) {
+                                    uniqueTalukas.add(talukaName);
+                                    allTalukas.push(talukaName);
+                                } else if (!entry._filterColumn) {
+                                    // If no metadata, add it as a fallback
+                                    uniqueTalukas.add(talukaName);
+                                    allTalukas.push(talukaName);
+                                }
+                            }
+                        });
+                    } else if (typeof preFilteredData[districtName] === 'object' && 
+                               preFilteredData[districtName]._filterColumn === columnMetadata.filter1Column) {
+                        // This is a filter1 value at the top level
+                        if (!uniqueTalukas.has(districtName) && 
+                            districtName !== 'datasets' && 
+                            districtName !== 'labels' && 
+                            districtName.indexOf('+') === -1 && 
+                            !districtName.match(/^\d+$/)) {
+                            uniqueTalukas.add(districtName);
+                            allTalukas.push(districtName);
+                        }
+                    }
+                });
+                
+                // Sort talukas alphabetically
+                allTalukas.sort();
+                
+                // Add all talukas to dropdown
+                allTalukas.forEach(taluka => {
+                    const option = document.createElement('option');
+                    option.value = taluka;
+                    option.text = taluka;
+                    talukaDropdown.add(option);
+                });
+            } else {
+                // Show only talukas for the specified district
+                const districtTalukas = [];
+                
+                Object.keys(preFilteredData[district]).forEach(key => {
+                    // Check if this key appears to be a taluka name
+                    if (key !== 'datasets' && key !== 'labels' && 
+                        key.indexOf('+') === -1 && !key.match(/^\d+$/)) {
+                        
+                        // Check if this entry has filter metadata and matches the expected filter column
+                        const entry = preFilteredData[district][key];
+                        if (entry && entry._filterColumn === columnMetadata.filter1Column) {
+                            if (!uniqueTalukas.has(key)) {
+                                uniqueTalukas.add(key);
+                                districtTalukas.push(key);
+                            }
+                        } else if (!entry || !entry._filterColumn) {
+                            // If no metadata, add it as a fallback
+                            if (!uniqueTalukas.has(key)) {
+                                uniqueTalukas.add(key);
+                                districtTalukas.push(key);
+                            }
+                        }
+                    }
+                });
+                
+                // Sort talukas alphabetically
+                districtTalukas.sort();
+                
+                // Add district's talukas to dropdown
+                districtTalukas.forEach(taluka => {
+                    const option = document.createElement('option');
+                    option.value = taluka;
+                    option.text = taluka;
+                    talukaDropdown.add(option);
+                });
+                
+                // Update filter data JSON
+                const chartFilterData = document.getElementById('chart-filter-data');
+                if (chartFilterData) {
+                    const filterDataObj = JSON.parse(chartFilterData.textContent);
+                    filterDataObj.mainFilterValue = district;
+                    chartFilterData.textContent = JSON.stringify(filterDataObj);
+                }
+            }
+        }
+        
+        // Function to populate second filter dropdown
+        function populateSecondFilterDropdown() {
+            const filter2Dropdown = document.getElementById('chartFilter2');
+            if (!filter2Dropdown) return; // Exit if dropdown doesn't exist
+            
+            // Clear existing options except the "All" option
+            while (filter2Dropdown.options.length > 1) {
+                filter2Dropdown.remove(1);
+            }
+            
+            // Create set to track unique values to avoid duplicates
+            const uniqueValues = new Set();
+            const filter2Values = [];
+            
+            // Collect values that match filter2 column
+            Object.keys(preFilteredData).forEach(key => {
+                const entry = preFilteredData[key];
+                
+                // Check if this entry has filter metadata and matches filter2 column
+                if (entry && entry._filterColumn === columnMetadata.filter2Column) {
+                    if (!uniqueValues.has(key) && 
+                        key !== 'datasets' && 
+                        key !== 'labels' && 
+                        key.indexOf('+') === -1 && 
+                        !key.match(/^\d+$/)) {
+                        uniqueValues.add(key);
+                        filter2Values.push(key);
+                    }
+                }
+                
+                // Also check nested entries
+                if (typeof entry === 'object' && !entry.labels) {
+                    Object.keys(entry).forEach(nestedKey => {
+                        const nestedEntry = entry[nestedKey];
+                        if (nestedEntry && nestedEntry._filterColumn === columnMetadata.filter2Column) {
+                            if (!uniqueValues.has(nestedKey) && 
+                                nestedKey !== 'datasets' && 
+                                nestedKey !== 'labels' && 
+                                nestedKey.indexOf('+') === -1 && 
+                                !nestedKey.match(/^\d+$/)) {
+                                uniqueValues.add(nestedKey);
+                                filter2Values.push(nestedKey);
+                            }
+                        }
+                    });
+                }
+            });
+            
+            // Sort values alphabetically
+            filter2Values.sort();
+            
+            // Add values to dropdown
+            filter2Values.forEach(value => {
+                const option = document.createElement('option');
+                option.value = value;
+                option.text = value;
+                filter2Dropdown.add(option);
+            });
+        }
+        
+        // Function to check if preFilteredData has hierarchical structure
+        function hasHierarchicalStructure() {
+            if (!preFilteredData) return false;
+            
+            // Check if the first level keys contain data objects with labels and datasets properties
+            const firstLevelKeys = Object.keys(preFilteredData);
+            if (firstLevelKeys.length === 0) return false;
+            
+            // Check first key - if it has labels/datasets, it's flat; if it has child objects, it's hierarchical
+            const firstKey = firstLevelKeys[0];
+            const firstValue = preFilteredData[firstKey];
+            
+            // Check if this is a data object (has labels and datasets)
+            if (firstValue && firstValue.labels && firstValue.datasets) {
+                return false; // Flat structure
+            }
+            
+            // Check if this is a district with taluka children
+            if (firstValue && typeof firstValue === 'object') {
+                const childKeys = Object.keys(firstValue);
+                if (childKeys.length > 0) {
+                    const childValue = firstValue[childKeys[0]];
+                    // If child has labels and datasets, this is hierarchical
+                    if (childValue && childValue.labels && childValue.datasets) {
+                        return true; // Hierarchical structure
+                    }
+                }
+            }
+            
+            return false;
+        }
+        
+        // Determine if we're using district-taluka hierarchy
+        const isHierarchicalData = true;
+        
+        // Chart configuration
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const chartData = {
+  "datasets": [
+    {
+      "backgroundColor": "#1a4570",
+      "borderColor": "#1a4570",
+      "borderWidth": 1,
+      "data": [
+        9331021,
+        637478,
+        null,
+        1732090,
+        1051307,
+        435593,
+        1370377,
+        1216842,
+        954150,
+        182191,
+        136513,
+        650612,
+        12357508,
+        1481844,
+        4398232,
+        1711565,
+        7860317,
+        1037944,
+        1797183,
+        3136151,
+        228103,
+        4260838,
+        1396689,
+        850151,
+        3349218,
+        35663979,
+        170119,
+        null,
+        2001574,
+        4880432,
+        413304,
+        6789741.290000001,
+        1282216,
+        null,
+        874400,
+        1088562
+      ],
+      "fill": false,
+      "label": "Agriculture Loans",
+      "pointHoverRadius": 3,
+      "pointRadius": 0,
+      "spanGaps": false,
+      "tension": 0,
+      "pointBackgroundColor": "#1a4570"
+    },
+    {
+      "backgroundColor": "#e9ba5d",
+      "borderColor": "#e9ba5d",
+      "borderWidth": 1,
+      "data": [
+        12121715,
+        953692,
+        null,
+        5491505,
+        2917547,
+        420690,
+        1385683,
+        2070802,
+        1406668,
+        526302,
+        297554,
+        301284,
+        8891885,
+        1277333,
+        11270583,
+        3946871,
+        759704367,
+        93858103,
+        13815613,
+        1664665,
+        269786,
+        8088242,
+        1163354,
+        4707419,
+        2785019,
+        113150904,
+        4331559,
+        null,
+        2490306,
+        2871872,
+        1383749,
+        5591104.18,
+        61249282,
+        null,
+        318439,
+        1003890
+      ],
+      "fill": false,
+      "label": "Non-Agriculture Loans",
+      "pointHoverRadius": 3,
+      "pointRadius": 0,
+      "spanGaps": false,
+      "tension": 0,
+      "pointBackgroundColor": "#e9ba5d"
+    },
+    {
+      "backgroundColor": "#e46e53",
+      "borderColor": "#e46e53",
+      "borderWidth": 1,
+      "data": [
+        21452736,
+        1591170,
+        0,
+        7223597,
+        3968854,
+        856283,
+        2756059,
+        3287642,
+        2360818,
+        708490,
+        434067,
+        900159,
+        21249393,
+        2759178,
+        15668815,
+        5658436,
+        767564684,
+        94896047,
+        15612796,
+        4800816,
+        497890,
+        12349077,
+        2560043,
+        5557570,
+        6134234,
+        148814883,
+        4501678,
+        0,
+        4491880,
+        7752303,
+        1797053,
+        12333107,
+        62531498,
+        0,
+        1192841,
+        2092452
+      ],
+      "fill": false,
+      "label": "Total Loan",
+      "pointHoverRadius": 3,
+      "pointRadius": 0,
+      "spanGaps": false,
+      "tension": 0,
+      "pointBackgroundColor": "#e46e53"
+    }
+  ],
+  "labels": [
+    "Ahmadnagar",
+    "Akola",
+    "Amravati",
+    "Aurangabad",
+    "Beed",
+    "Bhandara",
+    "Buldhana",
+    "Chandrapur",
+    "Dhule",
+    "Gadchiroli",
+    "Gondia",
+    "Hingoli",
+    "Jalgaon",
+    "Jalna",
+    "Kolhapur",
+    "Latur",
+    "Mumbai (City)",
+    "Mumbai Suburban",
+    "Nagpur",
+    "Nanded",
+    "Nandurbar",
+    "Nashik",
+    "Osmanabad",
+    "Palghar",
+    "Parbhani",
+    "Pune",
+    "Raigad",
+    "Ratnagiri",
+    "Sangli",
+    "Satara",
+    "Sindhudurg",
+    "Solapur",
+    "Thane",
+    "Wardha",
+    "Washim",
+    "Yavatmal"
+  ]
+};
+        const chartOptions = {
+  "responsive": true,
+  "maintainAspectRatio": false,
+  "animation": {
+    "duration": 50,
+    "easing": "easeInOutQuart"
+  },
+  "interaction": {
+    "mode": "index",
+    "intersect": false,
+    "axis": "x"
+  },
+  "plugins": {
+    "legend": {
+      "display": true,
+      "position": "top",
+      "align": "center",
+      "labels": {
+        "boxWidth": 20,
+        "boxHeight": 20,
+        "padding": 15,
+        "usePointStyle": true,
+        "pointStyle": "rect",
+        "font": {
+          "size": 12
+        },
+        "color": "#333"
+      }
+    },
+    "tooltip": {
+      "backgroundColor": "white",
+      "titleColor": "black",
+      "bodyColor": "black",
+      "animation": {
+        "duration": 50,
+        "easing": "easeOutQuart"
+      },
+      "mode": "index",
+      "intersect": false,
+      "position": "nearest",
+      "callbacks": {}
+    }
+  },
+  "scales": {
+    "x": {
+      "axis": "x",
+      "offset": true,
+      "grid": {
+        "display": false,
+        "drawBorder": true,
+        "lineWidth": 1,
+        "drawOnChartArea": true,
+        "drawTicks": true,
+        "tickLength": 8,
+        "offset": false,
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "type": "category",
+      "ticks": {
+        "minRotation": 0,
+        "maxRotation": 50,
+        "mirror": false,
+        "textStrokeWidth": 0,
+        "textStrokeColor": "",
+        "padding": 3,
+        "display": true,
+        "autoSkip": true,
+        "autoSkipPadding": 3,
+        "labelOffset": 0,
+        "minor": {},
+        "major": {},
+        "align": "center",
+        "crossAlign": "near",
+        "showLabelBackdrop": false,
+        "backdropColor": "rgba(255, 255, 255, 0.75)",
+        "backdropPadding": 2,
+        "color": "#666"
+      },
+      "display": true,
+      "reverse": false,
+      "beginAtZero": false,
+      "bounds": "ticks",
+      "clip": true,
+      "grace": 0,
+      "border": {
+        "display": true,
+        "dash": [],
+        "dashOffset": 0,
+        "width": 1,
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "title": {
+        "display": false,
+        "text": "",
+        "padding": {
+          "top": 4,
+          "bottom": 4
+        },
+        "color": "#666"
+      },
+      "id": "x",
+      "position": "bottom"
+    },
+    "y": {
+      "axis": "y",
+      "beginAtZero": true,
+      "grid": {
+        "drawBorder": false,
+        "display": true,
+        "lineWidth": 1,
+        "drawOnChartArea": true,
+        "drawTicks": true,
+        "tickLength": 8,
+        "offset": false,
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "ticks": {
+        "precision": 0,
+        "maxTicksLimit": 7,
+        "color": "#333",
+        "minRotation": 0,
+        "maxRotation": 50,
+        "mirror": false,
+        "textStrokeWidth": 0,
+        "textStrokeColor": "",
+        "padding": 3,
+        "display": true,
+        "autoSkip": true,
+        "autoSkipPadding": 3,
+        "labelOffset": 0,
+        "minor": {},
+        "major": {},
+        "align": "center",
+        "crossAlign": "near",
+        "showLabelBackdrop": false,
+        "backdropColor": "rgba(255, 255, 255, 0.75)",
+        "backdropPadding": 2
+      },
+      "type": "linear",
+      "display": true,
+      "offset": false,
+      "reverse": false,
+      "bounds": "ticks",
+      "clip": true,
+      "grace": 0,
+      "border": {
+        "display": true,
+        "dash": [],
+        "dashOffset": 0,
+        "width": 1,
+        "color": "rgba(0,0,0,0.1)"
+      },
+      "title": {
+        "display": false,
+        "text": "",
+        "padding": {
+          "top": 4,
+          "bottom": 4
+        },
+        "color": "#666"
+      },
+      "id": "y",
+      "position": "left"
+    }
+  },
+  "spanGaps": false
+};
+
+        // Create chart with exact same configuration but remove redundant title
+        const hasMin = chartOptions?.scales?.y?.min !== undefined;
+
+        const hasOnlyOneDataset = chartData.datasets.length === 1;
+
+        const isMobile = window.innerWidth < 768;
+
+        let chart;
+        try {
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: chartData,
+                options: {
+                    ...chartOptions,
+                    interaction: {
+                        mode: 'index',
+                        intersect: false,
+                        axis: 'x'
+                    },
+                    plugins: {
+                        ...chartOptions.plugins,
+                        // Remove title from chart as it's now in the header
+                        title: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: 'white', // White tooltip background
+                            titleColor: 'black',
+                            bodyColor: 'black',
+                            animation: {
+                                duration: 50, // milliseconds (default is 400)
+                                easing: 'easeOutQuart' // easing function
+                            },
+                            mode: 'index',
+                            intersect: false,
+                            position: 'nearest',
+                            callbacks: {
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    
+                                    if (context.parsed.y !== null && context.parsed.y !== undefined) {
+                                        label += formatIndianNumber(context.parsed.y);
+                                    } else {
+                                        label += 'No data'; // For null values, show 'No data' in tooltip
+                                    }
+                                    return label;
+                                }
+                            }
+                        },
+                        legend: {
+                            display: !hasOnlyOneDataset,
+                            labels: {
+                                boxWidth: 20,        // Width of the color box
+                                boxHeight: 20,       // Height of the color box
+                                usePointStyle: true, // Makes it more like a round dot or checkbox
+                                pointStyle: 'rect',  // Use 'circle', 'rect', 'rectRounded', 'cross', etc.
+                                padding: 15,
+                                color: '#333',       // Label text color
+                                font: {
+                                 size: isMobile ? 10 : 12,
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        ...chartOptions.scales,
+                        x: {
+                            ...chartOptions.scales?.x,
+                            offset: true,
+                            grid: {
+                                drawTicks: true,
+                                drawOnChartArea: false,
+                            },
+                            ticks: {
+                                color: '#333',       // Optional: customize tick color
+                            
+                                maxTicksLimit: isMobile ? 4 : 15,
+                             font: {
+                                size: isMobile ? 10 : 12, // Adjust font size dynamically                                        
+                                }
+                            }
+                        },
+                        y: {
+                            min: 0,
+                            ...chartOptions.scales?.y,
+                            offset: hasMin,
+                            grid: {
+                                color: 'rgba(0,0,0,0.06)', // Optional: customize grid color
+                                drawBorder: false     // ✅ Show tick marks
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return formatIndianNumber(value);
+                                },
+                                precision: 0,  // No decimals
+                                maxTicksLimit: 7,  // Maximum 7 ticks
+                                color: '#333',      // Optional: customize tick color
+                            font: {
+                                size: isMobile ? 10 : 12, // Adjust font size dynamically            
+                                }
+                            }
+                        }
+                    },
+                    spanGaps: false, // Don't connect points across null values for line charts
+                    onHover: (event, activeElements, chart) => {
+                        // Timeline follow tooltip functionality
+                        if (chart.canvas) {
+                            const rect = chart.canvas.getBoundingClientRect();
+                            const x = event.native ? event.native.clientX - rect.left : event.x;
+                            
+                            // Get the chart area
+                            const chartArea = chart.chartArea;
+                            
+                            // Only show tooltip when mouse is within chart area
+                            if (x >= chartArea.left && x <= chartArea.right) {
+                                // Calculate which data point index corresponds to this x position
+                                const canvasPosition = Chart.helpers.getRelativePosition(event, chart);
+                                const dataX = chart.scales.x.getValueForPixel(canvasPosition.x);
+                                
+                                // Find the closest data point index
+                                const labels = chart.data.labels;
+                                let closestIndex = 0;
+                                let minDistance = Math.abs(dataX - 0);
+                                
+                                for (let i = 1; i < labels.length; i++) {
+                                    const distance = Math.abs(dataX - i);
+                                    if (distance < minDistance) {
+                                        minDistance = distance;
+                                        closestIndex = i;
+                                    }
+                                }
+                                
+                                // Create tooltip elements for all datasets at this x position
+                                const tooltipElements = [];
+                                chart.data.datasets.forEach((dataset, datasetIndex) => {
+                                    if (!chart.getDatasetMeta(datasetIndex).hidden && 
+                                        dataset.data[closestIndex] !== null && 
+                                        dataset.data[closestIndex] !== undefined) {
+                                        tooltipElements.push({
+                                            datasetIndex: datasetIndex,
+                                            index: closestIndex
+                                        });
+                                    }
+                                });
+                                
+                                // Update tooltip
+                                if (tooltipElements.length > 0) {
+                                    chart.tooltip.setActiveElements(tooltipElements, {x: canvasPosition.x, y: canvasPosition.y});
+                                    chart.update('none');
+                                }
+                            } else {
+                                // Hide tooltip when outside chart area
+                                chart.tooltip.setActiveElements([], {x: 0, y: 0});
+                                chart.update('none');
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Store original dataset labels for reference during filtering
+            chart.originalLabels = originalDatasetLabels;
+        } catch (e) {
+            console.error("Error creating chart:", e);
+            // Create an error message element
+            const errorDiv = document.createElement('div');
+            errorDiv.style.padding = '20px';
+            errorDiv.style.color = 'red';
+            errorDiv.style.textAlign = 'center';
+            errorDiv.innerHTML = '<strong>Error creating chart:</strong> ' + e.message + 
+                '<br><br>Please try reloading the page or contact support.';
+            
+            // Insert error message in the canvas container
+            const container = document.querySelector('.chart-canvas-container');
+            if (container) {
+                container.appendChild(errorDiv);
+            }
+        }
+        
+        // Initialize filters when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Pre-process data to separate filter values by their columns
+            preprocessFilterData();
+            
+            // Check for district in URL parameters
+            const district = getQueryParam('district');
+            
+            // Populate the filter dropdowns
+            populateTalukaDropdown(district);
+            populateSecondFilterDropdown();
+            
+            // If there's a taluka parameter, select it in the dropdown
+            const taluka = getQueryParam('taluka');
+            if (taluka) {
+                const talukaDropdown = document.getElementById('chartFilter');
+                if (talukaDropdown) {
+                    // Find and select the option
+                    for (let i = 0; i < talukaDropdown.options.length; i++) {
+                        if (talukaDropdown.options[i].value === taluka) {
+                            talukaDropdown.selectedIndex = i;
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            // If there's a filter2 parameter, select it in the dropdown
+            const filter2 = getQueryParam('filter2');
+            if (filter2) {
+                const filter2Dropdown = document.getElementById('chartFilter2');
+                if (filter2Dropdown) {
+                    // Find and select the option
+                    for (let i = 0; i < filter2Dropdown.options.length; i++) {
+                        if (filter2Dropdown.options[i].value === filter2) {
+                            filter2Dropdown.selectedIndex = i;
+                            break;
+                        }
+                    }
+                }
+            }
+            
+            // Apply the filter based on URL parameters
+            filterChartData();
+        });
+        
+        // Pre-process the filter data to ensure we can easily identify which values belong to which filter
+        function preprocessFilterData() {
+            // Get metadata from stored JSON
+            const chartFilterData = document.getElementById('chart-filter-data');
+            let metadata = {};
+            
+            if (chartFilterData) {
+                try {
+                    const filterDataObj = JSON.parse(chartFilterData.textContent);
+                    metadata = filterDataObj.columnMetadata || {};
+                } catch (e) {
+                    console.error("Error parsing chart filter data:", e);
+                }
+            }
+            
+            // If we don't have proper metadata, try to infer it
+            if (!metadata.filter1Column || !metadata.filter2Column) {
+                // Look through the data to see what metadata is already there
+                Object.keys(preFilteredData).forEach(key => {
+                    const entry = preFilteredData[key];
+                    if (entry && entry._filterColumn && !metadata.filter1Column) {
+                        metadata.filter1Column = entry._filterColumn;
+                    } else if (entry && entry._filterColumn && entry._filterColumn !== metadata.filter1Column && !metadata.filter2Column) {
+                        metadata.filter2Column = entry._filterColumn;
+                    }
+                });
+            }
+            
+            // Store the updated metadata
+            if (chartFilterData) {
+                try {
+                    const filterDataObj = JSON.parse(chartFilterData.textContent);
+                    filterDataObj.columnMetadata = metadata;
+                    chartFilterData.textContent = JSON.stringify(filterDataObj);
+                } catch (e) {
+                    console.error("Error updating chart filter data:", e);
+                }
+            }
+        }
+        
+        // Function to filter chart data based on selected value
+        function filterChartData() {
+            try {
+                const filterValue = document.getElementById('chartFilter') ? document.getElementById('chartFilter').value : '';
+                const filterValue2 = document.getElementById('chartFilter2') ? document.getElementById('chartFilter2').value : '';
+                
+                // Get the district from URL or filter data
+                const district = getQueryParam('district') || 
+                                (document.getElementById('chart-filter-data') ? 
+                                 JSON.parse(document.getElementById('chart-filter-data').textContent).mainFilterValue : '');
+                
+                // Update the chart filter data in the JSON
+                const chartFilterData = document.getElementById('chart-filter-data');
+                if (chartFilterData) {
+                    const filterDataObj = JSON.parse(chartFilterData.textContent);
+                    filterDataObj.selectedFilterValue = filterValue;
+                    filterDataObj.selectedFilterValue2 = filterValue2;
+                    chartFilterData.textContent = JSON.stringify(filterDataObj);
+                }
+                
+                if (!chart || !chart.data) return;
+                
+                // Store current dataset visibility
+                const visibility = [];
+                chart.data.datasets.forEach((dataset, index) => {
+                    visibility.push(!chart.getDatasetMeta(index).hidden);
+                });
+                
+                // Handle the "All Values" option for both filters
+                if (!filterValue && !filterValue2) {
+                    // If district is specified, show aggregate data for all talukas in that district
+                    if (district && preFilteredData[district]) {
+                        const districtData = getDistrictAggregateData(district);
+                        if (districtData) {
+                            chart.data.labels = districtData.labels;
+                            districtData.datasets.forEach((dataset, i) => {
+                                if (i < chart.data.datasets.length) {
+                                    chart.data.datasets[i].data = dataset.data;
+                                    // Preserve original label
+                                    chart.data.datasets[i].label = chart.originalLabels[i] || originalDatasetLabels[i] || dataset.label;
+                                }
+                            });
+                        } else {
+                            // Reset to full data if aggregation fails
+                            chart.data.labels = originalChartData.labels;
+                            chart.data.datasets.forEach((dataset, i) => {
+                                dataset.data = originalChartData.datasets[i].data;
+                                dataset.label = originalDatasetLabels[i] || dataset.label;
+                            });
+                        }
+                    } else {
+                        // Reset to full data when no district is specified
+                        chart.data.labels = originalChartData.labels;
+                        chart.data.datasets.forEach((dataset, i) => {
+                            dataset.data = originalChartData.datasets[i].data;
+                            dataset.label = originalDatasetLabels[i] || dataset.label;
+                        });
+                    }
+                } 
+                // Check for first filter only
+                else if (filterValue && !filterValue2) {
+                    // If we have a district specified, look directly in that district
+                    if (district && preFilteredData[district] && preFilteredData[district][filterValue]) {
+                        const filteredData = preFilteredData[district][filterValue];
+                        chart.data.labels = filteredData.labels;
+                        filteredData.datasets.forEach((dataset, i) => {
+                            if (i < chart.data.datasets.length) {
+                                chart.data.datasets[i].data = dataset.data;
+                                // Preserve original label or use the filter value in the label if needed
+                                chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                            }
+                        });
+                    }
+                    // Otherwise use the existing logic to search all districts
+                    else if (hasHierarchicalStructure()) {
+                        // If hierarchical, we need to find which district contains this taluka
+                        let filteredData = null;
+                        let foundDistrict = '';
+                        
+                        // Iterate through districts to find the filtered taluka
+                        for (const districtName in preFilteredData) {
+                            if (preFilteredData[districtName][filterValue]) {
+                                filteredData = preFilteredData[districtName][filterValue];
+                                foundDistrict = districtName;
+                                break;
+                            }
+                        }
+                        
+                        if (filteredData) {
+                            // Update labels and datasets
+                            chart.data.labels = filteredData.labels;
+                            filteredData.datasets.forEach((dataset, i) => {
+                                if (i < chart.data.datasets.length) {
+                                    chart.data.datasets[i].data = dataset.data;
+                                    // Preserve original label
+                                    chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                                }
+                            });
+                        } else {
+                            // If not found in hierarchy, try flat structure as fallback
+                            if (preFilteredData[filterValue]) {
+                                const flatData = preFilteredData[filterValue];
+                                chart.data.labels = flatData.labels;
+                                flatData.datasets.forEach((dataset, i) => {
+                                    if (i < chart.data.datasets.length) {
+                                        chart.data.datasets[i].data = dataset.data;
+                                        chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                                    }
+                                });
+                            } else {
+                                // No data found, display message
+                                displayFilterMessage(filterValue);
+                            }
+                        }
+                    } else {
+                        // Use flat structure (original behavior)
+                        if (preFilteredData[filterValue]) {
+                            const filteredData = preFilteredData[filterValue];
+                            
+                            if (filteredData && filteredData.labels && filteredData.datasets) {
+                                chart.data.labels = filteredData.labels;
+                                filteredData.datasets.forEach((dataset, i) => {
+                                    if (i < chart.data.datasets.length) {
+                                        chart.data.datasets[i].data = dataset.data;
+                                        chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                                    }
+                                });
+                            }
+                        } else {
+                            displayFilterMessage(filterValue);
+                        }
+                    }
+                }
+                // Check for second filter only
+                else if (!filterValue && filterValue2) {
+                    // Look for the second filter value across all data
+                    if (preFilteredData[filterValue2]) {
+                        const filteredData = preFilteredData[filterValue2];
+                        if (filteredData && filteredData.labels && filteredData.datasets) {
+                            chart.data.labels = filteredData.labels;
+                            filteredData.datasets.forEach((dataset, i) => {
+                                if (i < chart.data.datasets.length) {
+                                    chart.data.datasets[i].data = dataset.data;
+                                    chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                                }
+                            });
+                        }
+                    } else {
+                        // Try looking in hierarchical structure
+                        let foundData = false;
+                        for (const parentKey in preFilteredData) {
+                            if (preFilteredData[parentKey] && preFilteredData[parentKey][filterValue2]) {
+                                const filteredData = preFilteredData[parentKey][filterValue2];
+                                chart.data.labels = filteredData.labels;
+                                filteredData.datasets.forEach((dataset, i) => {
+                                    if (i < chart.data.datasets.length) {
+                                        chart.data.datasets[i].data = dataset.data;
+                                        chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                                    }
+                                });
+                                foundData = true;
+                                break;
+                            }
+                        }
+                        
+                        if (!foundData) {
+                            // Look for combination keys
+                            for (const key in preFilteredData) {
+                                if (key.includes(filterValue2)) {
+                                    const filteredData = preFilteredData[key];
+                                    if (filteredData && filteredData.labels && filteredData.datasets) {
+                                        chart.data.labels = filteredData.labels;
+                                        filteredData.datasets.forEach((dataset, i) => {
+                                            if (i < chart.data.datasets.length) {
+                                                chart.data.datasets[i].data = dataset.data;
+                                                chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                                            }
+                                        });
+                                        foundData = true;
+                                        break;
+                                    }
+                                }
+                            }
+                            
+                            if (!foundData) {
+                                displayFilterMessage(filterValue2);
+                            }
+                        }
+                    }
+                }
+                // Both filters selected
+                else if (filterValue && filterValue2) {
+                    // Try to find data with the combined filter key
+                    const combinedKey = filterValue + "+" + filterValue2;
+                    
+                    if (preFilteredData[combinedKey]) {
+                        // Direct match with combined key
+                        const filteredData = preFilteredData[combinedKey];
+                        chart.data.labels = filteredData.labels;
+                        filteredData.datasets.forEach((dataset, i) => {
+                            if (i < chart.data.datasets.length) {
+                                chart.data.datasets[i].data = dataset.data;
+                                chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                            }
+                        });
+                    } else if (district && preFilteredData[district] && 
+                              preFilteredData[district][combinedKey]) {
+                        // Combined key within district
+                        const filteredData = preFilteredData[district][combinedKey];
+                        chart.data.labels = filteredData.labels;
+                        filteredData.datasets.forEach((dataset, i) => {
+                            if (i < chart.data.datasets.length) {
+                                chart.data.datasets[i].data = dataset.data;
+                                chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                            }
+                        });
+                    } else if (preFilteredData[filterValue] && 
+                              preFilteredData[filterValue][filterValue2]) {
+                        // Hierarchical structure with first filter as parent
+                        const filteredData = preFilteredData[filterValue][filterValue2];
+                        chart.data.labels = filteredData.labels;
+                        filteredData.datasets.forEach((dataset, i) => {
+                            if (i < chart.data.datasets.length) {
+                                chart.data.datasets[i].data = dataset.data;
+                                chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                            }
+                        });
+                    } else {
+                        // Check all possible combinations in the hierarchy
+                        let foundData = false;
+                        
+                        // Try to find the data in any hierarchical structure
+                        for (const parentKey in preFilteredData) {
+                            // Check if the parent key matches first filter
+                            if (parentKey === filterValue && preFilteredData[parentKey][filterValue2]) {
+                                const filteredData = preFilteredData[parentKey][filterValue2];
+                                chart.data.labels = filteredData.labels;
+                                filteredData.datasets.forEach((dataset, i) => {
+                                    if (i < chart.data.datasets.length) {
+                                        chart.data.datasets[i].data = dataset.data;
+                                        chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                                    }
+                                });
+                                foundData = true;
+                                break;
+                            }
+                            
+                            // Check if the parent is an object and might contain combinations
+                            if (typeof preFilteredData[parentKey] === 'object' && 
+                                preFilteredData[parentKey] !== null) {
+                                // Check for a combined key in the second level
+                                if (preFilteredData[parentKey][combinedKey]) {
+                                    const filteredData = preFilteredData[parentKey][combinedKey];
+                                    chart.data.labels = filteredData.labels;
+                                    filteredData.datasets.forEach((dataset, i) => {
+                                        if (i < chart.data.datasets.length) {
+                                            chart.data.datasets[i].data = dataset.data;
+                                            chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                                        }
+                                    });
+                                    foundData = true;
+                                    break;
+                                }
+                                
+                                // Check if second level keys match filter values
+                                for (const childKey in preFilteredData[parentKey]) {
+                                    if ((parentKey === filterValue && childKey === filterValue2) ||
+                                        (childKey === filterValue && parentKey === filterValue2)) {
+                                        const filteredData = preFilteredData[parentKey][childKey];
+                                        if (filteredData && filteredData.labels && filteredData.datasets) {
+                                            chart.data.labels = filteredData.labels;
+                                            filteredData.datasets.forEach((dataset, i) => {
+                                                if (i < chart.data.datasets.length) {
+                                                    chart.data.datasets[i].data = dataset.data;
+                                                    chart.data.datasets[i].label = originalDatasetLabels[i] || dataset.label;
+                                                }
+                                            });
+                                            foundData = true;
+                                            break;
+                                        }
+                                    }
+                                }
+                                
+                                if (foundData) break;
+                            }
+                        }
+                        
+                        if (!foundData) {
+                            // No matching data found for the combination
+                            displayFilterMessage(filterValue + " and " + filterValue2);
+                        }
+                    }
+                }
+                
+                // Restore dataset visibility
+                chart.data.datasets.forEach((dataset, index) => {
+                    if (chart.getDatasetMeta(index).hidden === undefined) {
+                        chart.getDatasetMeta(index).hidden = !visibility[index];
+                    }
+                });
+                
+                // Update the chart
+                chart.update();
+            } catch (error) {
+                console.error("Error filtering chart:", error);
+                // Show error message and reset to full data
+                displayFilterMessage(filterValue || filterValue2, true);
+                
+                // Reset to full data
+                chart.data.labels = originalChartData.labels;
+                chart.data.datasets.forEach((dataset, i) => {
+                    dataset.data = originalChartData.datasets[i].data;
+                    dataset.label = originalDatasetLabels[i] || dataset.label;
+                });
+                chart.update();
+            }
+        }
+        
+        // Helper function to display filter messages
+        function displayFilterMessage(filterValue, isError = false) {
+            const messageDiv = document.createElement('div');
+            
+            if (isError) {
+                messageDiv.style.cssText = 'padding: 10px; margin: 10px 0; background-color: #f8d7da; color: #721c24; border-radius: 4px; border-left: 4px solid #f5c6cb;';
+                messageDiv.innerHTML = '<strong>Error:</strong> Could not filter data for "' + filterValue + 
+                    '". Showing all values.';
+            } else {
+                messageDiv.style.cssText = 'padding: 10px; margin: 10px 0; background-color: #cfe8ff; color: #084298; border-radius: 4px; border-left: 4px solid #084298;';
+                messageDiv.innerHTML = '<strong>Note:</strong> No filter data available for "' + filterValue + 
+                    '". Showing all values.';
+            }
+            
+            messageDiv.className = 'filter-message';
+            
+            const chartContainer = document.querySelector('.chart-container');
+            const existingMessage = chartContainer.querySelector('.filter-message');
+            if (existingMessage) {
+                chartContainer.removeChild(existingMessage);
+            }
+            
+            const canvasContainer = document.querySelector('.chart-canvas-container');
+            chartContainer.insertBefore(messageDiv, canvasContainer);
+            
+            // Auto-remove after 4 seconds
+            setTimeout(() => {
+                if (messageDiv.parentNode) {
+                    messageDiv.parentNode.removeChild(messageDiv);
+                }
+            }, 4000);
+        }
+
+        // Add download functionality
+        document.getElementById('downloadChartBtn').addEventListener('click', function() {
+            const canvas = document.getElementById('myChart');
+            const image = canvas.toDataURL('image/png');
+            const link = document.createElement('a');
+            link.download = 'Untitled_Chart.png';
+            link.href = image;
+            link.click();
+        });
+    </script>
+</body>
+</html>

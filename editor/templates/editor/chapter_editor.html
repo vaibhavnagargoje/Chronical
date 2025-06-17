@@ -86,15 +86,10 @@
     {% endif %}
 </div>
 
-<!-- (JavaScript and Style sections remain exactly the same as your provided code) -->
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 <script src="{% static 'tinymce/tinymce.min.js' %}"></script>
 <script>
-    // YOUR JAVASCRIPT IS CORRECT AND DOES NOT NEED TO CHANGE.
-    // It is already designed to read the 'name' from the file input,
-    // which this template now provides correctly.
-    document.addEventListener('DOMContentLoaded', () => {
-
+document.addEventListener('DOMContentLoaded', () => {
     const editorBlocksContainer = document.getElementById('editor-blocks');
     const form = document.getElementById('editor-form');
     const contentDataInput = document.getElementById('content-data-input');
@@ -102,64 +97,218 @@
     const addBlockButtons = document.querySelectorAll('.add-block-btn');
     const blockTemplates = document.getElementById('block-templates');
 
-    let uniqueIdCounter = 0;
+    let uniqueIdCounter = Date.now();
+    let tinyMCEInitialized = new Set(); // Track initialized editors
 
-    new Sortable(editorBlocksContainer, { animation: 150, handle: '.drag-handle', ghostClass: 'sortable-ghost' });
+    new Sortable(editorBlocksContainer, { 
+        animation: 150, 
+        handle: '.drag-handle', 
+        ghostClass: 'sortable-ghost' 
+    });
 
     const initializeTinyMCE = (element) => {
         if (!element) return;
+        
+        // Check if already initialized
+        if (tinyMCEInitialized.has(element)) {
+            return;
+        }
+        
+        // Generate unique ID if not present
         if (!element.id) {
             uniqueIdCounter++;
-            element.id = `dynamic-tinymce-${uniqueIdCounter}`;
+            element.id = `tinymce-editor-${uniqueIdCounter}`;
         }
+        
+        // Mark as initialized
+        tinyMCEInitialized.add(element);
+        
+        // Initialize TinyMCE
         tinymce.init({
-            selector: `#${element.id}`, height: 300, menubar: false,
+            target: element, // Use target instead of selector
+            height: 300,
+            menubar: false,
             plugins: 'lists link code table',
             toolbar: 'bold italic underline | bullist numlist | link | code | table',
             skin_url: "{% static 'tinymce/skins/ui/oxide' %}",
-            content_css_url: "{% static 'tinymce/skins/content/default/content.min.css' %}",
+            content_css: "{% static 'tinymce/skins/content/default/content.min.css' %}",
+            
+            setup: function(editor) {
+                editor.on('init', function() {
+                    console.log('TinyMCE initialized for:', element.id);
+                });
+            },
+            
+            // Ensure proper initialization
+            branding: false,
+            resize: false,
+            statusbar: false
         });
     };
     
-    document.querySelectorAll('.tinymce-editor').forEach(editor => { initializeTinyMCE(editor); });
+    // Initialize existing TinyMCE editors
+    document.querySelectorAll('.tinymce-editor').forEach(editor => { 
+        initializeTinyMCE(editor); 
+    });
 
+    // Block templates with proper HTML structure
+    const blockTemplatesHTML = {
+        heading1: `
+            <div class="p-4 bg-white rounded-lg shadow editor-block" data-block-type="heading1" data-id="">
+                <div class="flex items-start gap-4">
+                    <span class="drag-handle text-gray-400 hover:text-gray-600 mt-2"><i class="fas fa-grip-vertical"></i></span>
+                    <div class="flex-grow">
+                        <label class="block text-sm font-medium text-gray-500 mb-1">Heading 1</label>
+                        <input type="text" class="w-full border-gray-300 rounded-md" placeholder="Enter heading...">
+                    </div>
+                    <button type="button" class="delete-block-btn text-red-500 hover:text-red-700 mt-2"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        `,
+        heading2: `
+            <div class="p-4 bg-white rounded-lg shadow editor-block" data-block-type="heading2" data-id="">
+                <div class="flex items-start gap-4">
+                    <span class="drag-handle text-gray-400 hover:text-gray-600 mt-2"><i class="fas fa-grip-vertical"></i></span>
+                    <div class="flex-grow">
+                        <label class="block text-sm font-medium text-gray-500 mb-1">Heading 2</label>
+                        <input type="text" class="w-full border-gray-300 rounded-md" placeholder="Enter heading...">
+                    </div>
+                    <button type="button" class="delete-block-btn text-red-500 hover:text-red-700 mt-2"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        `,
+        heading3: `
+            <div class="p-4 bg-white rounded-lg shadow editor-block" data-block-type="heading3" data-id="">
+                <div class="flex items-start gap-4">
+                    <span class="drag-handle text-gray-400 hover:text-gray-600 mt-2"><i class="fas fa-grip-vertical"></i></span>
+                    <div class="flex-grow">
+                        <label class="block text-sm font-medium text-gray-500 mb-1">Heading 3</label>
+                        <input type="text" class="w-full border-gray-300 rounded-md" placeholder="Enter heading...">
+                    </div>
+                    <button type="button" class="delete-block-btn text-red-500 hover:text-red-700 mt-2"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        `,
+        paragraph: `
+            <div class="p-4 bg-white rounded-lg shadow editor-block" data-block-type="paragraph" data-id="">
+                <div class="flex items-start gap-4">
+                    <span class="drag-handle text-gray-400 hover:text-gray-600 mt-2"><i class="fas fa-grip-vertical"></i></span>
+                    <div class="flex-grow">
+                        <label class="block text-sm font-medium text-gray-500 mb-1">Paragraph</label>
+                        <textarea class="w-full border-gray-300 rounded-md tinymce-editor" placeholder="Enter your text..."></textarea>
+                    </div>
+                    <button type="button" class="delete-block-btn text-red-500 hover:text-red-700 mt-2"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        `,
+        image: `
+            <div class="p-4 bg-white rounded-lg shadow editor-block" data-block-type="image" data-id="">
+                <div class="flex items-start gap-4">
+                    <span class="drag-handle text-gray-400 hover:text-gray-600 mt-2"><i class="fas fa-grip-vertical"></i></span>
+                    <div class="flex-grow">
+                        <label class="block text-sm font-medium text-gray-500 mb-1">Image</label>
+                        <input type="file" class="w-full border-gray-300 rounded-md mb-2" accept="image/*">
+                        <input type="text" name="caption" class="w-full border-gray-300 rounded-md mb-2" placeholder="Caption...">
+                        <input type="text" name="alt_text" class="w-full border-gray-300 rounded-md" placeholder="Alt text...">
+                    </div>
+                    <button type="button" class="delete-block-btn text-red-500 hover:text-red-700 mt-2"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        `,
+        reference: `
+            <div class="p-4 bg-white rounded-lg shadow editor-block" data-block-type="reference" data-id="">
+                <div class="flex items-start gap-4">
+                    <span class="drag-handle text-gray-400 hover:text-gray-600 mt-2"><i class="fas fa-grip-vertical"></i></span>
+                    <div class="flex-grow">
+                        <label class="block text-sm font-medium text-gray-500 mb-1">Reference</label>
+                        <input type="text" name="text" class="w-full border-gray-300 rounded-md mb-2" placeholder="Reference text...">
+                        <input type="url" name="link" class="w-full border-gray-300 rounded-md" placeholder="Reference link...">
+                    </div>
+                    <button type="button" class="delete-block-btn text-red-500 hover:text-red-700 mt-2"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        `,
+        chart: `
+            <div class="p-4 bg-white rounded-lg shadow editor-block" data-block-type="chart" data-id="">
+                <div class="flex items-start gap-4">
+                    <span class="drag-handle text-gray-400 hover:text-gray-600 mt-2"><i class="fas fa-grip-vertical"></i></span>
+                    <div class="flex-grow">
+                        <label class="block text-sm font-medium text-gray-500 mb-1">Chart</label>
+                        <input type="text" name="title" class="w-full border-gray-300 rounded-md mb-2" placeholder="Chart title...">
+                        <input type="file" class="w-full border-gray-300 rounded-md" accept=".html">
+                    </div>
+                    <button type="button" class="delete-block-btn text-red-500 hover:text-red-700 mt-2"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+        `
+    };
+
+    // Handle adding new blocks
     addBlockButtons.forEach(button => {
         button.addEventListener('click', () => {
             const blockType = button.dataset.blockType;
-            const template = blockTemplates.querySelector(`[data-template-type="${blockType}"]`);
-            if (!template) return;
             
-            const newBlockWrapper = document.createElement('div');
-            newBlockWrapper.innerHTML = template.innerHTML;
-            const newBlock = newBlockWrapper.firstElementChild;
+            if (!blockTemplatesHTML[blockType]) {
+                console.error('Template not found for block type:', blockType);
+                return;
+            }
+            
+            // Create new block element
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = blockTemplatesHTML[blockType].trim();
+            const newBlock = tempDiv.firstElementChild;
+            
+            // Add the new block to the container
             editorBlocksContainer.appendChild(newBlock);
 
+            // Initialize TinyMCE for paragraph blocks
             if (blockType === 'paragraph') {
                 const newTextArea = newBlock.querySelector('.tinymce-editor');
-                initializeTinyMCE(newTextArea);
+                if (newTextArea) {
+                    // Small delay to ensure DOM is properly rendered
+                    setTimeout(() => {
+                        initializeTinyMCE(newTextArea);
+                    }, 100);
+                }
             } 
             else if (blockType === 'image' || blockType === 'chart') {
                 uniqueIdCounter++;
                 const fileInput = newBlock.querySelector('input[type="file"]');
-                if (fileInput) { fileInput.name = `new-file-${uniqueIdCounter}`; }
+                if (fileInput) { 
+                    fileInput.name = `new-file-${uniqueIdCounter}`; 
+                }
             }
+
+            // Scroll to the new block
+            newBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
     });
 
+    // Handle block deletion
     editorBlocksContainer.addEventListener('click', (e) => {
         const deleteButton = e.target.closest('.delete-block-btn');
         if (deleteButton) {
             const blockToRemove = deleteButton.closest('.editor-block');
             const editorTextarea = blockToRemove.querySelector('.tinymce-editor');
-            if (editorTextarea && tinymce.get(editorTextarea.id)) {
-                tinymce.get(editorTextarea.id).remove();
+            
+            // Properly remove TinyMCE instance
+            if (editorTextarea) {
+                if (editorTextarea.id && tinymce.get(editorTextarea.id)) {
+                    tinymce.get(editorTextarea.id).remove();
+                }
+                // Remove from tracking set
+                tinyMCEInitialized.delete(editorTextarea);
             }
+            
             blockToRemove.remove();
         }
     });
 
+    // Handle form submission
     saveButton.addEventListener('click', (e) => {
         e.preventDefault();
+        
+        // Trigger save for all TinyMCE instances
         tinymce.triggerSave();
 
         const allBlocksData = [];
@@ -168,7 +317,9 @@
             const blockType = blockEl.dataset.blockType;
             const blockData = { type: blockType };
 
-            if (blockId) { blockData.id = parseInt(blockId, 10); }
+            if (blockId) { 
+                blockData.id = parseInt(blockId, 10); 
+            }
 
             if (blockType.startsWith('heading')) {
                 blockData.text = blockEl.querySelector('input[type="text"]').value;
@@ -205,10 +356,34 @@
     .drag-handle { cursor: grab; }
     .drag-handle:active { cursor: grabbing; }
     .add-block-btn {
-        background-color: white; border: 1px solid #d1d5db; border-radius: 0.375rem;
-        padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 500;
+        background-color: white; 
+        border: 1px solid #d1d5db; 
+        border-radius: 0.375rem;
+        padding: 0.5rem 1rem; 
+        font-size: 0.875rem; 
+        font-weight: 500;
         transition: background-color 0.2s;
+        cursor: pointer;
     }
-    .add-block-btn:hover { background-color: #f9fafb; }
+    .add-block-btn:hover { 
+        background-color: #f9fafb; 
+        border-color: #9ca3af;
+    }
+    
+    /* Ensure TinyMCE editors are properly styled */
+    .tox-tinymce {
+        border: 1px solid #d1d5db !important;
+        border-radius: 0.375rem !important;
+    }
+    
+    /* Ensure content is clickable */
+    .tox-edit-area {
+        cursor: text !important;
+    }
+    
+    /* Smooth transitions for new blocks */
+    .editor-block {
+        transition: all 0.3s ease;
+    }
 </style>
 {% endblock %}
