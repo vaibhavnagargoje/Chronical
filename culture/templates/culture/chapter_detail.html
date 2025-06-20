@@ -64,47 +64,98 @@
   </div>
 </div>
 
+
+
 <!-- District Navigation -->
 <div class="bg-white border-b sticky top-16 z-40">
   <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
-    <div class="flex items-center justify-between py-3">
-      <div class="flex items-center space-x-4 overflow-x-auto">
-        <!-- Change Chapter Dropdown -->
-        <div class="relative group">
-          <button class="flex items-center space-x-1 text-[#863F3F] font-medium whitespace-nowrap">
-            <span>Change Chapter</span>
-            <i class="fas fa-chevron-down text-xs"></i>
-          </button>
-          <div class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md p-2 hidden group-hover:block w-64 z-50">
-            <div class="grid grid-cols-1 gap-1">
-              {% for chap in all_chapters_in_district %}
-                <a href="{{ chap.get_absolute_url }}" class="px-3 py-2 hover:bg-gray-100 rounded text-sm {% if chap == chapter %}bg-gray-100 text-[#863F3F]{% endif %}">{{ chap.name }}</a>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
+    <div class="flex items-center justify-center py-3 relative">
+      <!-- Centered container for dropdowns -->
+      <div class="flex items-center justify-center space-x-2 md:space-x-5">
         <!-- Change District Dropdown -->
-        <div class="relative group">
-          <button class="flex items-center space-x-1 text-gray-700 whitespace-nowrap">
+        <div class="relative" x-data="{ open: false }">
+          <button 
+            @click="open = !open"
+            class="flex items-center space-x-1 text-gray-700 whitespace-nowrap px-1 py-1 rounded-md transition-all duration-300 hover:bg-gray-100 focus:outline-none"
+            >
             <span>Change District</span>
-            <i class="fas fa-chevron-down text-xs"></i>
+            <i 
+            class="fas fa-chevron-down text-xs transition-transform duration-300" 
+            :class="{'rotate-180': open}"
+            ></i>
           </button>
-          <div class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md p-2 hidden group-hover:block w-64 z-50">
-            <div class="grid grid-cols-1 gap-1">
-                {# This links to the main district page #}
-                {% for dist in all_districts_in_state %}
-                  <a href="{{ dist.get_absolute_url }}" class="px-3 py-2 hover:bg-gray-100 rounded text-sm {% if dist == district %}bg-gray-100 text-[#863F3F]{% endif %}">{{ dist.name }}</a>
+          <div 
+            x-show="open"
+            @click.outside="open = false"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+            class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200"
+            >
+            <div class="grid grid-cols-1 gap-1 max-h-60 overflow-y-auto">
+              {% for dist in all_districts_in_state %}
+              <a 
+                  href="{{ dist.get_absolute_url }}" 
+                  class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if dist == district %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}"
+                >
+                <span class="truncate">{{ dist.name }}</span>
+                </a>
                 {% endfor %}
             </div>
           </div>
         </div>
+        <div class="relative" x-data="{ open: false }">
+          <button 
+          @click="open = !open"
+          class="flex items-center space-x-1 text-[#863F3F] font-medium whitespace-nowrap px-3 py-1 rounded-md transition-all duration-300 hover:bg-[#863F3F]/10 focus:outline-none"
+          >
+          <!-- Change Chapter Dropdown -->
+            <span>Change Chapter</span>
+            <i 
+              class="fas fa-chevron-down text-xs transition-transform duration-300" 
+              :class="{'rotate-180': open}"
+            ></i>
+          </button>
+          <div 
+            x-show="open"
+            @click.outside="open = false"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+            class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200"
+          >
+            <div class="grid grid-cols-1 gap-1 max-h-60 overflow-y-auto">
+              {% for chap in all_chapters_in_district %}
+                <a 
+                  href="{{ chap.get_absolute_url }}" 
+                  class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if chap == chapter %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}"
+                >
+                  <span class="truncate">{{ chap.name }}</span>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        
       </div>
-      <button id="toc-button" class="flex items-center space-x-1 text-gray-700 lg:hidden p-2 ml-2">
+
+      <!-- TOC button remains on the right -->
+      <button id="toc-button" class="flex items-center space-x-1 text-gray-700 lg:hidden p-2 ml-2 absolute right-0">
         <i class="fas fa-list text-lg"></i>
       </button>
     </div>
   </div>
 </div>
+
+<!-- Include Alpine.js for interactivity -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 
 <!-- Main Content with Sidebar -->
 <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-8">
@@ -136,7 +187,7 @@
       </div>
 
       <!-- Chapter Content Loop -->
-      <div class="prose prose-sm max-w-none">
+<div class="prose prose-sm max-w-none">
           {% for block in content_blocks %}
               {% if block.polymorphic_ctype.model == 'headingblockone' %}
                   <h2 id="{{ block.text|slugify }}" class="text-2xl font-bold text-[#863F3F] mb-4 pt-4">{{ block.text }}</h2>
@@ -155,7 +206,7 @@
 
               {% elif block.polymorphic_ctype.model == 'imageblock' %}
                   <figure class="mb-6 max-w-2xl mx-auto">
-                      <img src="{{ block.image.url }}" alt="{{ block.alt_text }}" class="mx-auto max-h-[400px] w-auto rounded-lg shadow-md object-scale-down" />
+                      <img src="{{ block.image.url }}" alt="{{ block.alt_text }}" class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover" style="aspect-ratio: auto;" />
                       {% if block.caption %}
                           <p class="text-sm text-gray-600 italic text-center">{{ block.caption }}</p>
                       {% endif %}
@@ -169,6 +220,7 @@
               {% endif %}
           {% endfor %}
       </div>
+
     </div>
   </div>
 </div>
@@ -176,7 +228,7 @@
 <!-- Mobile Table of Contents (Overlay) -->
 <div id="mobile-toc" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden lg:hidden">
   <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[90vw] bg-white p-4 overflow-y-auto">
-    <div class="flex justify-between items-center mb-4">
+    <div class="flex justify-between items-right mb-4">
       <h3 class="text-lg font-semibold text-[#863F3F]">Table of Contents</h3>
       <button id="close-toc" class="text-gray-500 hover:text-gray-700 p-2"><i class="fas fa-times text-xl"></i></button>
     </div>
@@ -190,7 +242,7 @@
 
 <!-- Chapter Navigation -->
 <div class="bg-white border-t py-5">
-  <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-8">
     <div class="flex flex-col sm:flex-row justify-between items-center">
       {% if prev_chapter %}
         <a href="{{ prev_chapter.get_absolute_url }}" class="flex items-center text-gray-700 hover:text-[#863F3F] mb-4 sm:mb-0 transition-transform duration-300 hover:-translate-x-1">
@@ -214,6 +266,7 @@
 
 
  <!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> 
   <script>
     // Mobile menu toggle
     document
