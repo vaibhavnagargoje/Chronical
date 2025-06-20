@@ -40,7 +40,7 @@ def district_detail(request, state_slug, district_slug):
     district = get_object_or_404(state.districts, slug=district_slug)
     cultural_chapters_qs = district.cultural_chapters.all().order_by('name')
 
-    # statistical_chapters_qs = district.statistical_chapters.all().order_by('name')   # Uncomment if you have statistical chapters
+    statistical_chapters_qs = district.statistical_chapters.all().order_by('name')   # Uncomment if you have statistical chapters
     
     # Get related data with prefetch_related for optimization
     district_images = district.images.all()
@@ -58,7 +58,6 @@ def district_detail(request, state_slug, district_slug):
             'Language': {'icon': 'languages.png', 'desc': 'Marathi and linguistic heritage'},
             'Local Politics': {'icon': 'local_politics.png', 'desc': 'Governance and civic affairs'},
             'Markets': {'icon': 'market.png', 'desc': 'Traditional bazaars and commerce'},
-            'People': {'icon': 'people.png', 'desc': 'Demographics and communities'},
             'Political History': {'icon': 'political_history.png', 'desc': 'Maratha Empire to modern times'},
             'Sports & Games': {'icon': 'sports_games.png', 'desc': 'Traditional and modern sports'},
             'Stories': {'icon': 'stories.png', 'desc': 'Folk tales and local narratives'},
@@ -87,14 +86,16 @@ def district_detail(request, state_slug, district_slug):
             'desc': meta.get('desc', 'No description available.'),
         })
         
-    # statistical_chapters_list = []
-    # for chapter in statistical_chapters_qs:
-    #     meta = CHAPTER_META['Statistical'].get(chapter.name, {})
-    #     statistical_chapters_list.append({
-    #         'object': chapter,
-    #         'icon': meta.get('icon', 'default.png'),
-    #         'desc': meta.get('desc', 'No description available.'),
-    #     })
+
+
+    statistical_chapters_list = []
+    for chapter in statistical_chapters_qs:
+        meta = CHAPTER_META['Statistical'].get(chapter.name, {})
+        statistical_chapters_list.append({
+            'object': chapter,
+            'icon': meta.get('icon', 'default.png'),
+            'desc': meta.get('desc', 'No description available.'),
+        })
 
 
 
@@ -102,6 +103,7 @@ def district_detail(request, state_slug, district_slug):
         'state': state,
         'district': district,
         'cultural_chapters': cultural_chapters_list, # Pass the new processed list
+        'statistical_chapters': statistical_chapters_list, # Pass the new processed list
         'district_images': district_images,
         'district_paragraphs': district_paragraphs,
         'district_quick_facts': district_quick_facts,

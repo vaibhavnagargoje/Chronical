@@ -35,18 +35,17 @@ def get_seo_image_path(instance, filename):
 class StatisticalChapter(models.Model):
     
     CHAPTER_CHOICES = [
-        ('Demography', 'Demography'),
         ('Agriculture', 'Agriculture'),
-        ('Livestock & Fisheries', 'Livestock & Fisheries'),
+        ('Demography', 'Demography'),
         ('Education', 'Education'),
-        ('Health', 'Health'),
         ('Environment', 'Environment'),
+        ('Health', 'Health'),
         ('Industry', 'Industry'),
         ('Labour', 'Labour'),
+        ('Livestock & Fisheries', 'Livestock & Fisheries'),
         ('Police & Judiciary', 'Police & Judiciary'),
-        ('Transport & Communication', 'Transport & Communication'),
         ('Revenue & Expenditure', 'Revenue & Expenditure'),
-        ('Schemes', 'Schemes'),
+        ('Transport & Communication', 'Transport & Communication'),
     ]
 
     district = models.ForeignKey(District, on_delete=models.CASCADE, related_name='statistical_chapters')

@@ -42,18 +42,17 @@ class CulturalChapter(models.Model):
     This is the parent object for all content on the page.
     """
     CHAPTER_CHOICES = [
-        ('Food', 'Food'),
-        ('People', 'People'),
-        ('Language', 'Language'),
-        ('Artforms', 'Artforms'),
-        ('Stories', 'Stories'),
-        ('Cultural Sites', 'Cultural Sites'),
         ('Architecture', 'Architecture'),
-        ('Sports & Games', 'Sports & Games'),
+        ('Artforms', 'Artforms'),
+        ('Cultural Sites', 'Cultural Sites'),
         ('Festivals & Fairs', 'Festivals & Fairs'),
-        ('Political History', 'Political History'),
-        ('Markets', 'Markets'),
+        ('Food', 'Food'),
+        ('Language', 'Language'),
         ('Local Politics', 'Local Politics'),
+        ('Markets', 'Markets'),
+        ('Political History', 'Political History'),
+        ('Sports & Games', 'Sports & Games'),
+        ('Stories', 'Stories'),
     ]
 
     district = models.ForeignKey(District, on_delete=models.CASCADE, related_name='cultural_chapters',null=True, blank=True)

@@ -141,8 +141,8 @@
   <!-- Chapters Section -->
     <div class="bg-white py-8 md:py-12">
         <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
-            <h2 class="text-3xl font-bold text-center text-[#863F3F] mb-10 md:mb-12">Explore Pune District</h2>
-            
+            <h2 class="text-3xl font-bold text-center text-[#863F3F] mb-10 md:mb-12">Explore {{ district.name }} District</h2>
+
             <div class="flex flex-col lg:flex-row gap-8">
                 <!-- Cultural Chapters -->
                 <div class="lg:w-1/2 mt-10 lg:mt-0">
@@ -169,17 +169,19 @@
                     <h3 class="text-2xl font-semibold text-center mb-6 md:mb-8">Statistical Chapters</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <!-- Chapter Card -->
-                        <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-[#863F3F]">
-                            <div class="p-4 flex items-center">
-                                <div class="w-12 h-12 flex-shrink-0  rounded-full flex items-center justify-center mr-4">
-                                    <img src="img/icons/agriculture.png" alt="Agriculture" class="w-10 h-10 object-cover rounded-full">
+                        {% for chapter_data in statistical_chapters %}
+                            <a href="{{ chapter_data.object.get_absolute_url }}" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-[#863F3F]">
+                                <div class="p-4 flex items-center">
+                                    <div class="w-12 h-12 flex-shrink-0  rounded-full flex items-center justify-center mr-4">
+                                        <img src="{% static 'img/icons/' %}{{ chapter_data.icon }}" alt="{{ chapter_data.object.name }}" class="w-10 h-10 object-cover ">
+                                    </div>
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-gray-800 group-hover:text-[#863F3F] transition-colors">{{ chapter_data.object.name }}</h4>
+                                        <p class="text-sm text-gray-600">{{ chapter_data.desc }}</p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h4 class="text-lg font-semibold text-gray-800 group-hover:text-[#863F3F] transition-colors">Agriculture</h4>
-                                    <p class="text-sm text-gray-600">Farming practices and crops</p>
-                                </div>
-                            </div>
-                        </a>
+                            </a>
+                        {% endfor %}
                         
                         
                     </div>
