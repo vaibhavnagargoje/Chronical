@@ -28,7 +28,11 @@ def get_seo_image_path(instance, filename):
     unique_id = uuid.uuid4().hex[:8]
     new_filename = f"{base_name}-{unique_id}{ext}"
 
-    return os.path.join('statistic', 'images', new_filename)
+    state_slug = instance.chapter.district.state.slug if instance.chapter.district.state else 'unknown-state'
+    district_slug = instance.chapter.district.slug if instance.chapter.district else 'unknown-district'
+    chapter_slug = instance.chapter.slug
+
+    return os.path.join('statistic', 'images', state_slug, district_slug, chapter_slug, new_filename)
 
 
 
@@ -152,7 +156,12 @@ def get_statistic_chart_path(instance, filename):
     ext = os.path.splitext(filename)[1] or '.html'  # Ensure it has a .html extension
     unique_id = uuid.uuid4().hex[8]
     new_filename = f"{base_name}-{unique_id}{ext}"
-    return os.path.join('statistic', 'charts', new_filename)
+
+    
+    state_slug = instance.chapter.district.state.slug if instance.chapter.district.state else 'unknown-state'
+    district_slug = instance.chapter.district.slug if instance.chapter.district else 'unknown-district'
+    chapter_slug = instance.chapter.slug
+    return os.path.join('statistic', 'charts', state_slug, district_slug, chapter_slug, new_filename)
 
 class ChartBlock(StatisticContentBlock):
     """
