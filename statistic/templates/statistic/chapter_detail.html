@@ -154,7 +154,7 @@ This template is for the Statistical Chapter detail page.
 
               {% elif block.polymorphic_ctype.model == 'referenceblock' %}
                   <p class="text-gray-700 mb-2 text-sm">
-                    {% if block.link %}<a href="{{ block.link }}" target="_blank" class="text-blue-600 hover:underline">{{ block.text }}</a>{% else %}{{ block.text }}{% endif %}
+                    {% if block.link %}<a href="{{ block.link }}" target="_blank" class=" hover:underline">{{ block.text }}</a>{% else %}{{ block.text }}{% endif %}
                   </p>
 
               {# ========================================================== #}

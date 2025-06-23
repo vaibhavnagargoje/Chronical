@@ -47,12 +47,10 @@ class DistrictQuickFactInline(admin.TabularInline):
     extra = 1
 
 
-class SectionParagraphInline(admin.StackedInline):
-    model = models.SectionParagraph
-    extra = 1
 
-class SectionImageInline(admin.TabularInline):
-    model = models.SectionImage
+
+class GIFImageInline(admin.TabularInline):
+    model = models.GIFImage
     extra = 1
     fields = ('image', 'caption', 'alt_text', 'preview')
     readonly_fields = ('preview',)
@@ -60,22 +58,10 @@ class SectionImageInline(admin.TabularInline):
     def preview(self, obj):
         if obj.image:
             return format_html('<img src="{}" width="150" height="auto" />', obj.image.url)
-        return "No image"
+        return "No GIF image"
     
-    preview.short_description = 'Image Preview'
+    preview.short_description = 'Gif Image Preview'
 
-@admin.register(models.DistrictSection)
-class DistrictSectionAdmin(admin.ModelAdmin):
-    list_display = ('title', 'section_type', 'district',)
-    list_filter = ('section_type', 'district__state', 'district')
-    search_fields = ('title', 'district__name')
-    inlines = [SectionParagraphInline, SectionImageInline]
-    
-    class Media:
-        css = {
-            'all': ('admin/css/custom_admin.css',)
-        }
-        js = ('tinymce/tinymce.min.js',)
 
 
 @admin.register(models.District)
@@ -88,6 +74,8 @@ class DistrictAdmin(admin.ModelAdmin):
         DistrictParagraphInline,
         DistrictImageInline,
         DistrictQuickFactInline,
+        GIFImageInline
+        
     ]
     
     fieldsets = (

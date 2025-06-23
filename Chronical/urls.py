@@ -18,7 +18,7 @@ urlpatterns = [
     path('', include('home.urls', namespace='home')),
 
     #  #last for reloading bcz its to heavy path
-    # path("__reload__/", include("django_browser_reload.urls")),
+    path("__reload__/", include("django_browser_reload.urls")),
 ]
 
 # For serving media files in development (only):

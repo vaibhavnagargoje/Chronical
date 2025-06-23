@@ -31,15 +31,16 @@
             <!-- ==         DESKTOP SEARCH (MODIFIED)       == -->
             <!-- ============================================= -->
             <div class="hidden md:flex items-center space-x-4">
-                <!-- Wrap the input in a form that points to your search URL -->
-                <form method="GET" action="{% url 'search:query' %}" class="relative">
+                <!-- Wrap the input in a form that points to your search URL -->                
+                 <form method="GET" action="{% url 'search:query' %}" class="relative">
                     <input
                         type="search"
                         name="q" {# The 'name' attribute is essential #}
                         placeholder="Search districts, states..."
-                        class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#863F3F]"
+                        class="search-input pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#863F3F] focus:border-[#863F3F]"
                         value="{{ request.GET.q }}" {# Pre-fills the search box with the current query #}
                     >
+                    
                     <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
                     {# Note: A submit button isn't strictly necessary as pressing Enter works, but you can add one if you like #}
                 </form>
@@ -53,19 +54,19 @@
                 <!-- Mobile Search: Now a form -->
                 <form id="mobile-search-form" method="GET" action="{% url 'search:query' %}" class="relative">
                     <!-- Search Icon Button (remains the same) -->
-                    <button id="mobile-search-button" type="button" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-200 p-2">
+                    <button id="mobile-search-button" type="button" class="text-gray-600 hover:text-[#863F3F]  transition-colors duration-200 p-2">
                         <i class="fas fa-search text-xl"></i>
                     </button>
                     
                     <!-- Expandable Search Container -->
                     <div id="mobile-search-container" class="absolute top-0 right-0 transform transition-all duration-300 ease-out opacity-0 scale-x-0 origin-right">
-                        <div class="flex items-center bg-white border border-gray-300 rounded-sm">
+                        <div class="flex items-center bg-white border border-gray-300 ">                            
                             <input 
                                 type="search"
                                 name="q" {# The 'name' attribute is essential #}
                                 id="mobile-search-input"
                                 placeholder="Search..." 
-                                class="pl-4 pr-2 py-2 rounded-l-full focus:outline-none w-28"
+                                class="search-input pl-4 pr-2 py-2 focus:outline-none focus:border-[#863F3F] w-28"
                                 value="{{ request.GET.q }}" {# Pre-fills search box #}
                             >
                             <!-- This button now SUBMITS the form -->
@@ -89,7 +90,7 @@
         
         <!-- Mobile Menu (remains the same) -->
         <div id="mobile-menu" class="md:hidden hidden pb-4">
-            <a href="#" class="block py-2 px-4 text-center rounded-md text-[#863F3F] border border-[#863F3F] hover:bg-[#863F3F] hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
+            <a href="#" class="block py-2 px-4 text-center  text-[#863F3F] border border-[#863F3F] hover:bg-[#863F3F] hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
         </div>
     </div>
 </nav>
@@ -172,7 +173,7 @@
 
 
 
-    {% comment %} <!-- JavaScript for mobile menu toggle -->
+  <!-- JavaScript for mobile menu toggle -->
     <script>
         // Mobile menu toggle
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
@@ -182,7 +183,7 @@
 
        
     </script>
-    {% endcomment %}
+   
 
     <script>
 document.addEventListener('DOMContentLoaded', function () {

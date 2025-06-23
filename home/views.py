@@ -46,7 +46,8 @@ def district_detail(request, state_slug, district_slug):
     district_images = district.images.all()
     district_paragraphs = district.paragraphs.all()
     district_quick_facts = district.quick_facts.all()
-    district_sections = district.sections.all().prefetch_related('paragraphs', 'images')
+    district_gif_images = district.gif_images.all()  # Fetch GIF images related to the district
+    # district_sections = district.sections.all().prefetch_related('paragraphs', 'images')
     
     CHAPTER_META = {
         'Cultural': {
@@ -107,7 +108,8 @@ def district_detail(request, state_slug, district_slug):
         'district_images': district_images,
         'district_paragraphs': district_paragraphs,
         'district_quick_facts': district_quick_facts,
-        'district_sections': district_sections,
+        'district_gif_images': district_gif_images,  # Pass GIF images to the template
+        # 'district_sections': district_sections,
         
     }
     return render(request, 'home/district_detail.html', context)

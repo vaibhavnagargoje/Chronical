@@ -5,7 +5,7 @@
             <label class="block text-sm font-medium text-gray-500">Chart (HTML Upload)</label>
             {% if chart_url %}
             <p class="text-xs text-gray-500">
-                Current file: <a href="{{ chart_url }}" target="_blank" class="text-blue-600">{{ chart_url|slice:":50" }}...</a>
+                Current file: <a href="{{ chart_url }}" target="_blank">{{ chart_url|slice:":50" }}...</a>
                 <br>To replace this chart, choose a new file below.
             </p>
             {% endif %}

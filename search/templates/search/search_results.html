@@ -10,15 +10,15 @@
     <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <!-- The form should wrap the search inputs -->
         <form method="GET" action="{% url 'search:query' %}">
-            <h1 class="text-2xl md:text-3xl font-bold text-primary mb-2 md:mb-4">Search Results for "{{ query }}"</h1>
+            <h1 class="text-2xl md:text-3xl font-bold text-[#863F3F] mb-2 md:mb-4">Search Results for "{{ query }}"</h1>
             <p class="text-gray-700 text-sm md:text-base">Found {{ total_results }} results</p>
 
             <div class="mt-4 md:mt-6">
                 <!-- Desktop Search Bar -->
                 <div class="relative max-w-2xl hidden md:block">
-                    <input type="search" name="q" value="{{ query }}" class="w-full pl-10 pr-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Search Encyclopedia...">
+                    <input type="search" name="q" value="{{ query }}" class="w-full pl-10 pr-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#863F3F] shadow-sm" placeholder="Search Encyclopedia...">
                     <i class="fas fa-search absolute left-4 top-4 text-gray-400"></i>
-                    <button type="submit" class="absolute right-3 top-3 bg-primary text-white px-4 py-1 rounded-full hover:bg-opacity-90 transition-colors">Search</button>
+                    <button type="submit" class="absolute right-3 top-3 bg-[#863F3F] text-white px-4 py-1 rounded-full hover:bg-opacity-90 transition-colors">Search</button>
                 </div>
                 
                 <!-- ... Mobile Search Bar with Filters ... This part of the form needs all filter inputs to be inside the <form> tag -->
@@ -37,7 +37,7 @@
             <!-- Filters Sidebar (Desktop Only) -->
             <div class="lg:w-64 flex-shrink-0 hidden lg:block">
                 <div class="bg-white rounded-lg border border-gray-200 p-4">
-                    <h3 class="text-lg font-semibold text-primary mb-4">Filter Results</h3>
+                    <h3 class="text-lg font-semibold text-[#863F3F] mb-4">Filter Results</h3>
                     
                     <!-- Content Type Filter -->
                     <div class="mb-4">
@@ -46,7 +46,7 @@
                             {% for type, count in facets.content_types.items %}
                                 {% if count > 0 %}
                                 <label class="flex items-center">
-                                    <input type="checkbox" name="content_type" value="{{ type }}" class="rounded text-primary focus:ring-primary" {% if type in selected_filters.content_types %}checked{% endif %}>
+                                    <input type="checkbox" name="content_type" value="{{ type }}" class="rounded text-[#863F3F] focus:ring-[#863F3F]" {% if type in selected_filters.content_types %}checked{% endif %}>
                                     <span class="ml-2 text-gray-700">{{ type }} ({{ count }})</span>
                                 </label>
                                 {% endif %}
@@ -60,7 +60,7 @@
                         <div class="space-y-2">
                            {% for state, count in facets.states.items %}
                                 <label class="flex items-center">
-                                    <input type="checkbox" name="state" value="{{ state }}" class="rounded text-primary focus:ring-primary" {% if state in selected_filters.states %}checked{% endif %}>
+                                    <input type="checkbox" name="state" value="{{ state }}" class="rounded text-[#863F3F] focus:ring-[#863F3F]" {% if state in selected_filters.states %}checked{% endif %}>
                                     <span class="ml-2 text-gray-700">{{ state }} ({{ count }})</span>
                                 </label>
                            {% endfor %}
@@ -70,7 +70,7 @@
                     <!-- Last Updated Filter -->
                     <div>
                         <h4 class="font-medium text-gray-800 mb-2">Last Updated</h4>
-                        <select name="last_updated" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary">
+                        <select name="last_updated" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-[#863F3F] focus:border-[#863F3F]">
                             <option value="">Any time</option>
                             <option value="week" {% if selected_filters.last_updated == 'week' %}selected{% endif %}>Last week</option>
                             <option value="month" {% if selected_filters.last_updated == 'month' %}selected{% endif %}>Last month</option>
@@ -79,7 +79,7 @@
                     </div>
                     
                     <div class="mt-6 pt-3 border-t">
-                        <button type="submit" class="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-opacity-90 transition-colors text-sm">Apply Filters</button>
+                        <button type="submit" class="w-full bg-[#863F3F] text-white py-2 px-4 rounded-md hover:bg-opacity-90 transition-colors text-sm">Apply Filters</button>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                 {% for item in page_obj.object_list %}
                 <div class="mb-6 pb-6 border-b border-gray-200">
                     <h3 class="text-xl font-semibold mb-2">
-                        <a href="{{ item.url }}" class="text-primary hover:underline">{{ item.title }}</a>
+                        <a href="{{ item.url }}" class="text-[#863F3F] hover:underline">{{ item.title }}</a>
                     </h3>
                     <p class="text-gray-600 mb-2">{{ item.type }} | {{ item.state_name }}</p>
                     <p class="text-gray-700 mb-2">
@@ -98,7 +98,7 @@
                     <div class="flex items-center text-sm text-gray-500">
                         <span>Last updated: {{ item.updated_at|date:"F j, Y" }}</span>
                         <span class="mx-2">•</span>
-                        <a href="{{ item.url }}" class="text-primary hover:underline">View full page</a>
+                        <a href="{{ item.url }}" class="text-[#863F3F] hover:underline">View full page</a>
                     </div>
                 </div>
                 {% empty %}
@@ -117,7 +117,7 @@
 
                         {% for num in page_obj.paginator.page_range %}
                           {% if page_obj.number == num %}
-                            <span class="px-4 py-2 border-t border-b border-gray-300 bg-primary text-white font-medium">{{ num }}</span>
+                            <span class="px-4 py-2 border-t border-b border-gray-300 bg-[#863F3F] text-white font-medium">{{ num }}</span>
                           {% else %}
                             <a href="?page={{ num }}&q={{ query }}&{{ request.GET.urlencode | cut:'page=' }}" class="px-4 py-2 border-t border-b border-gray-300 bg-white text-gray-700 hover:bg-gray-50">{{ num }}</a>
                           {% endif %}

@@ -45,6 +45,15 @@
       margin-top: 5px !important;
       margin-bottom: 5px !important;
     }
+
+    /* Hide scrollbar for TOC */
+    .toc-scroll {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* Internet Explorer 10+ */
+    }
+    .toc-scroll::-webkit-scrollbar {
+        display: none; /* WebKit */
+    }
 </style>
 {% endblock header %}
 
@@ -162,8 +171,8 @@
   <div class="flex flex-col lg:flex-row">
     <!-- Table of Contents Sidebar (Desktop) -->
     <div class="hidden lg:block w-60 flex-shrink-0 pr-6 order-1">
-      <div class="sticky top-36">
-        <h3 class="text-lg font-semibold text-[#863F3F] mb-4">Table of Contents</h3>
+      <div class="sticky top-36 max-h-[calc(100vh-10rem)] overflow-y-auto toc-scroll">
+        <h3 class="text-lg font-semibold text-[#863F3F] mb-4 sticky top-0 bg-white pb-2">Table of Contents</h3>
         <ul class="space-y-2 text-sm">
           {% for item in table_of_contents %}
             <li class="{% if item.level == 2 %}pl-4{% endif %}">
@@ -174,17 +183,22 @@
       </div>
     </div>
 
+    <!-- Vertical Divider (Desktop Only) -->
+    <div class="hidden lg:block w-px bg-gray-300 flex-shrink-0 order-2"></div>
+
     <!-- Main Content -->
-    <div class="flex-grow order-2 px-0 md:px-4">
-      <div class="mb-6 md:mb-8">
-        <h1 class="text-4xl font-bold text-[#863F3F] mb-2">{{ district.name | upper }}</h1>
-        <h2 class="text-3xl font-semibold text-gray-800">{{ chapter.name }}</h2>
+    <div class="flex-grow order-3 px-0 md:px-4 lg:pl-6">
+      
+      
+     <div class="mb-6 md:mb-8">
+        <h1 class="text-3xl font-semibold text-[#DAB20C] mb-2">{{ district.name | upper }}</h1>
+        <h2 class="text-5xl font-bold text-[#863F3F]">{{ chapter.name }}</h2>
         <div class="mt-4">
           <button class="text-sm text-gray-600 hover:text-[#863F3F] flex items-center">
             <i class="fas fa-edit mr-1"></i> Suggest Edit
           </button>
         </div>
-      </div>
+      </div> 
 
       <!-- Chapter Content Loop -->
 <div class="prose prose-sm max-w-none">
@@ -195,12 +209,6 @@
               {% elif block.polymorphic_ctype.model == 'headingblocktwo' %}
                   <h3 id="{{ block.text|slugify }}" class="text-xl font-semibold text-gray-800 mb-3 pt-2">{{ block.text }}</h3>
               
-              {% comment %} 
-                THE FIX IS HERE.
-                The wrapping <p> tag has been removed. 
-                The `prose` class on the parent div is designed to style the raw HTML from TinyMCE directly.
-                This prevents the invalid nesting of <p><ul>...</ul></p> and allows Tailwind to correctly style your lists.
-              {% endcomment %}
               {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
                   {{ block.content|safe }}
 
@@ -214,8 +222,8 @@
 
               {% elif block.polymorphic_ctype.model == 'referenceblock' %}
                   {# This would go inside a 'References' section at the end #}
-                  <p class="text-gray-700 mb-2">
-                    {% if block.link %}<a href="{{ block.link }}" target="_blank">{{ block.text }}</a>{% else %}{{ block.text }}{% endif %}
+                  <p class="text-gray-700 mb-1">
+                    {% if block.link %}<a href="{{ block.link }}" target="_blank" class="text-gray-500" >{{ block.text }}<i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>{% else %}{{ block.text }}{% endif %}
                   </p>
               {% endif %}
           {% endfor %}
@@ -266,7 +274,7 @@
 
 
  <!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> 
+{% comment %} <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>  {% endcomment %}
   <script>
     // Mobile menu toggle
     document
@@ -354,24 +362,6 @@
       }
     });
 
-    // Handle search navigation with smooth scrolling
-    document.addEventListener('DOMContentLoaded', function() {
-        // Check if user came from search and has anchor in URL
-        if (window.location.hash) {
-            setTimeout(() => {
-                const targetElement = document.querySelector(window.location.hash);
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    // Add a temporary highlight to the target section
-                    targetElement.style.backgroundColor = '#fff3cd';
-                    targetElement.style.transition = 'background-color 3s ';
-                    setTimeout(() => {
-                        targetElement.style.backgroundColor = '';
-                    }, 3000);
-                }
-            }, 300);
-        }
-    });
   </script>
 
 {% endblock content %}

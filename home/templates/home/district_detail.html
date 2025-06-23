@@ -90,25 +90,19 @@
                 {{district.introduction|safe}}
             </p>
             
-            <!-- District Sections -->
-            {% for section in district_sections %}
+           <!-- District Gif -->
+            {% for gif_image in district_gif_images %}
             <div class="mb-12">
-                {% if section.images.all %}
-                <div class="space-y-6">
-                    {% for image in section.images.all %}
-                    <div class="w-full">
-                        <img 
-                            src="{{ image.image.url }}" 
-                            alt="{{ image.alt_text|default:section.title }}" 
-                            class="w-full h-auto max-h-96 md:max-h-[800px] object-cover rounded-lg shadow-md"
-                        >
-                        {% if image.caption %}
-                        {% comment %} <p class="text-sm text-gray-600 mt-2 text-center">{{ image.caption }}</p> {% endcomment %}
-                        {% endif %}
-                    </div>
-                    {% endfor %}
+                <div class="w-full">
+                    <img 
+                        src="{{ gif_image.image.url }}" 
+                        alt="{{ gif_image.alt_text|default:gif_image.caption }}" 
+                        class="w-full h-auto max-h-96 md:max-h-[800px] object-cover rounded-lg shadow-md"
+                    >
+                    {% if gif_image.caption %}
+                    <p class="mt-2 text-sm text-gray-600">{{ gif_image.caption }}</p>
+                    {% endif %}
                 </div>
-                {% endif %}
             </div>
             {% endfor %}
 

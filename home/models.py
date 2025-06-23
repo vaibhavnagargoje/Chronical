@@ -114,49 +114,14 @@ class DistrictQuickFact(models.Model):
     def __str__(self):
         return f"{self.title} - {self.district.name}"
 
-class DistrictSection(models.Model):
-    """
-    Sections like Geography, Heritage, etc.
-    """
-    SECTION_TYPES = [
-        ('geography', 'Geography'),
-        ('heritage', 'Heritage'),
-        ('culture', 'Culture'),
-        ('economy', 'Economy'),
-        ('tourism', 'Tourism'),
-        ('other', 'Other'),
-    ]
-    
-    district = models.ForeignKey(District, on_delete=models.CASCADE, related_name='sections')
-    section_type = models.CharField(max_length=20, choices=SECTION_TYPES)
-    title = models.CharField(max_length=100)
-    
-    class Meta:
-        
-        unique_together = ('district', 'section_type')
-    
-    def __str__(self):
-        return f"{self.title} - {self.district.name}"
 
-class SectionParagraph(models.Model):
-    """
-    Paragraphs within a section
-    """
-    section = models.ForeignKey(DistrictSection, on_delete=models.CASCADE, related_name='paragraphs')
-    content = HTMLField(blank=True, null=True, verbose_name="Content")  # Update HTMLField with proper configuration
-    
-    
-    
-    def __str__(self):
-        return f"Paragraph for {self.section.title}"
-
-class SectionImage(models.Model):
+class GIFImage(models.Model):     #SectionImage 
     """
     Images related to a section
     """
-    section = models.ForeignKey(DistrictSection, on_delete=models.CASCADE, related_name='images')
+    gifimage = models.ForeignKey(District, on_delete=models.CASCADE, related_name='gif_images')
     image = models.ImageField(
-        upload_to='section_images/',
+        upload_to='gif_images/',
         validators=[FileExtensionValidator(['jpg', 'jpeg', 'png', 'gif'])]
     )
     caption = models.CharField(max_length=255, blank=True)
@@ -165,4 +130,4 @@ class SectionImage(models.Model):
     
     
     def __str__(self):
-        return f"Image for {self.section.title} "
+        return f"Image for {self.gifimage.name} "
