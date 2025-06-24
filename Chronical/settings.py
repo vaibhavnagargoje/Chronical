@@ -57,6 +57,7 @@ INSTALLED_APPS = [
 
     'adminsortable2', 
     'polymorphic',
+    'imagekit',
 
 
     'tailwind',
@@ -69,6 +70,9 @@ TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = ["127.0.0.1"]
 
 NPM_BIN_PATH = r"C:\Users\ue\AppData\Roaming\npm\npm.cmd"
+# settings.py
+FFMPEG_PATH = r'C:\Users\ue\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-7.1.1-full_build\bin\ffmpeg.exe'
+
 
 MIDDLEWARE = [
     
@@ -204,8 +208,8 @@ STATIC_ROOT= os.path.join(BASE_DIR,'staticfiles')
 
 
 
-import os
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# import os
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

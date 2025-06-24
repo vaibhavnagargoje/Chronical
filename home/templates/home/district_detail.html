@@ -46,7 +46,19 @@
                 <div>
                     {% if district_images %}
                         {% with district_images.0 as featured_image %}
-                            <img src="{{ featured_image.image.url }}" alt="{{ featured_image.alt_text|default:district.name }}" class="w-auto h-auto object-cover rounded-lg shadow-md">
+                            <picture>
+                                <!-- Serves large WebP for screens > 800px -->
+                                <source media="(min-width: 801px)" srcset="{{ featured_image.webp_large.url }}" type="image/webp">
+                                <!-- Serves medium WebP for screens <= 800px -->
+                                <source media="(max-width: 800px)" srcset="{{ featured_image.webp_medium.url }}" type="image/webp">
+                                
+                                <!-- Fallback <img> tag. It uses the original Tailwind classes. -->
+                                <img src="{{ featured_image.webp_medium.url }}" 
+                                     alt="{{ featured_image.alt_text|default:district.name }}" 
+                                     class="w-auto h-auto object-cover rounded-lg shadow-md"
+                                     loading="lazy">
+                            </picture>
+
                             {% if featured_image.caption %}
                                 <p class="text-sm text-gray-600 mt-2">{{ featured_image.caption }}</p>
                             {% endif %}
@@ -91,20 +103,28 @@
             </p>
             
            <!-- District Gif -->
-            {% for gif_image in district_gif_images %}
-            <div class="mb-12">
-                <div class="w-full">
-                    <img 
-                        src="{{ gif_image.image.url }}" 
-                        alt="{{ gif_image.alt_text|default:gif_image.caption }}" 
-                        class="w-full h-auto max-h-96 md:max-h-[800px] object-cover rounded-lg shadow-md"
-                    >
-                    {% if gif_image.caption %}
-                    <p class="mt-2 text-sm text-gray-600">{{ gif_image.caption }}</p>
-                    {% endif %}
-                </div>
-            </div>
-            {% endfor %}
+             {% for gif_asset in district_gif_images %}
+                <!-- Check if the optimized video has been generated -->
+                {% if gif_asset.optimized_video %}
+                    <div class="mb-12">
+                        <div class="w-full">
+                            <!-- Use a <video> tag for super-efficient animations -->
+                            <video 
+                                src="{{ gif_asset.optimized_video.url }}" 
+                                autoplay 
+                                muted 
+                                loop 
+                                playsinline
+                                aria-label="{{ gif_asset.alt_text|default:gif_asset.caption }}"
+                                class="w-full h-auto max-h-96 md:max-h-[800px] object-cover rounded-lg shadow-md">
+                            </video>
+                            {% if gif_asset.caption %}
+                                <p class="mt-2 text-sm text-gray-600">{{ gif_asset.caption }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+           {% endfor %}
 
 
             {% comment %} <!-- Additional District Images Gallery -->
