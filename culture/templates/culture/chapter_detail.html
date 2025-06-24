@@ -214,11 +214,26 @@
 
               {% elif block.polymorphic_ctype.model == 'imageblock' %}
                   <figure class="mb-6 max-w-2xl mx-auto">
-                      <img src="{{ block.image.url }}" alt="{{ block.alt_text }}" class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover" style="aspect-ratio: auto;" />
-                      {% if block.caption %}
-                          <p class="text-sm text-gray-600 italic text-center">{{ block.caption }}</p>
-                      {% endif %}
-                  </figure>
+                <!-- Updated image block with WebP support -->
+                <picture>
+                    <source 
+                        srcset="{{ block.webp_large.url }}" 
+                        type="image/webp"
+                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover"
+                        style="aspect-ratio: auto;"
+                    >
+                    <img 
+                        src="{{ block.image.url }}" 
+                        alt="{{ block.alt_text }}" 
+                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover" 
+                        style="aspect-ratio: auto;"
+                        loading="lazy"
+                    >
+                </picture>
+                {% if block.caption %}
+                    <p class="text-sm text-gray-600 italic text-center">{{ block.caption }}</p>
+                {% endif %}
+            </figure>
 
               {% elif block.polymorphic_ctype.model == 'referenceblock' %}
                   {# This would go inside a 'References' section at the end #}

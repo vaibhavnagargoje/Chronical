@@ -145,10 +145,25 @@ This template is for the Statistical Chapter detail page.
                   {{ block.content|safe }}
 
               {% elif block.polymorphic_ctype.model == 'imageblock' %}
-                  <figure class="my-6 max-w-2xl mx-auto">
-                      <img src="{{ block.image.url }}" alt="{{ block.alt_text }}" class="mx-auto max-h-[500px] w-auto rounded-lg shadow-md object-scale-down" />
+                  <figure class="mb-6 max-w-2xl mx-auto">
+                      <!-- Updated image block with WebP support -->
+                      <picture>
+                          <source 
+                              srcset="{{ block.webp_large.url }}" 
+                              type="image/webp"
+                              class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover"
+                              style="aspect-ratio: auto;"
+                          >
+                          <img 
+                              src="{{ block.image.url }}" 
+                              alt="{{ block.alt_text }}" 
+                              class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover" 
+                              style="aspect-ratio: auto;"
+                              loading="lazy"
+                          >
+                      </picture>
                       {% if block.caption %}
-                          <figcaption class="text-sm text-gray-600 italic text-center mt-2">{{ block.caption }}</figcaption>
+                          <p class="text-sm text-gray-600 italic text-center">{{ block.caption }}</p>
                       {% endif %}
                   </figure>
 

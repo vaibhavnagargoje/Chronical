@@ -8,6 +8,10 @@ import os
 import uuid
 
 
+from imagekit.models import ImageSpecField
+from imagekit.processors import ResizeToFit
+from django.core.validators import FileExtensionValidator
+
 def get_seo_image_path(instance, filename):
     """
     Generates a unique, SEO-friendly path for an uploaded image.
@@ -131,9 +135,32 @@ class ParagraphBlock(StatisticContentBlock):
         return f"Paragraph Block: {self.content[:40]}..."
     
 class ImageBlock(StatisticContentBlock):
-    image = models.ImageField(upload_to=get_seo_image_path)
+    image = models.ImageField(upload_to=get_seo_image_path,verbose_name="Original Image")
     caption = models.CharField(max_length=4000, blank=True)
     alt_text = models.CharField(max_length=4000, help_text="Accessibility text for screen readers.")
+    
+
+    webp_large = ImageSpecField(
+        source='image',  # Point to the existing image field
+        processors=[ResizeToFit(1200, 1200)],
+        format='WEBP',
+        options={'quality': 80}
+    )
+
+    webp_medium = ImageSpecField(
+        source='image',
+        processors=[ResizeToFit(800, 800)],
+        format='WEBP',
+        options={'quality': 75}
+    )
+
+    webp_small = ImageSpecField(
+        source='image',
+        processors=[ResizeToFit(400, 400)],
+        format='WEBP',
+        options={'quality': 70}
+    )
+
     class Meta:
         verbose_name = "Image Block"
     def __str__(self): return f"Image: {self.caption or self.alt_text}"
