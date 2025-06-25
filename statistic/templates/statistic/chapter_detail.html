@@ -148,8 +148,15 @@ This template is for the Statistical Chapter detail page.
                   <figure class="mb-6 max-w-2xl mx-auto">
                       <!-- Updated image block with WebP support -->
                       <picture>
-                          <source 
+                          <source media="(min-width: 801px)"
                               srcset="{{ block.webp_large.url }}" 
+                              type="image/webp"
+                              class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover"
+                              style="aspect-ratio: auto;"
+                          >
+                          <source 
+                              media="(max-width: 800px)"
+                              srcset="{{ block.webp_medium.url }}" 
                               type="image/webp"
                               class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover"
                               style="aspect-ratio: auto;"
