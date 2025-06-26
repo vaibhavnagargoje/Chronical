@@ -88,6 +88,11 @@ class CulturalChapter(models.Model):
     def __str__(self):
         return f"{self.name} - {self.district.name}"
 
+    def delete(self, *args, **kwargs):
+        # Manually delete all content blocks first to handle polymorphic deletion
+        for block in self.content_blocks.all():
+            block.delete()
+        super().delete(*args, **kwargs)
 
 # Polymorphic Content Blocks for the Cultural Chapter
 
@@ -187,8 +192,14 @@ class ImageBlock(ContentBlock):
 
 
 class ReferenceBlock(ContentBlock):
-    text = models.CharField(max_length=255)
-    link = models.URLField(blank=True, null=True)
+    text = models.TextField()
+    link = models.URLField(max_length=2000, blank=True, null=True) # <- After
+    
     class Meta:
         verbose_name = "Reference Block"
-    def __str__(self): return f"Reference: {self.text}"
+
+    def __str__(self): 
+        return f"Reference: {self.text[:75]}..."
+
+
+

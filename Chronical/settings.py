@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'search',
     'editor',
     'sidepanal',
+    'importdata',
 
     'adminsortable2', 
     'polymorphic',
@@ -138,15 +139,28 @@ DATABASES = {
     'default': {  
         'ENGINE': 'django.db.backends.mysql',  
         'NAME': 'chronical',  
-        'USER': 'root',  
-        'PASSWORD': '8806',  
-        'HOST': '127.0.0.1',  
+        'USER': 'chronical',  
+        'PASSWORD': 'Vaibhav@8806Vaibhav',  
+        'HOST': '159.65.158.177',  
         'PORT': '3306',  
          'OPTIONS': {  
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
         }          
     }  
 }  
+# DATABASES = {  
+#     'default': {  
+#         'ENGINE': 'django.db.backends.mysql',  
+#         'NAME': 'chronical',  
+#         'USER': 'root',  
+#         'PASSWORD': '8806',  
+#         'HOST': '127.0.0.1',  
+#         'PORT': '3306',  
+#          'OPTIONS': {  
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+#         }          
+#     }  
+# }  
 
 
 # Password validation

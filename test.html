@@ -1,188 +1,3659 @@
-{% extends 'base.html' %}
-{% load static %}
-{% block title %}Editing: {{ chapter.name }} - {{ chapter.district.name }}{% endblock %}
-
-{% block content %}
-<div class="bg-gray-100 min-h-screen">
-    <!-- Header bar for the editor -->
-    <header class="bg-white shadow-md sticky top-[72px] z-40">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div>
-                    <h1 class="text-2xl font-bold text-gray-800">Editing: <span class="text-[#863F3F]">{{ chapter.name }}</span></h1>
-                    <p class="text-sm text-gray-500">{{ chapter.district.name }}, {{ chapter.district.state.name }}</p>
-                </div>
-                <button id="save-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition-colors shadow-sm">
-                    <i class="fas fa-save mr-2"></i> Save Changes
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <main class="max-w-4xl mx-auto py-8 px-4">
-        <!-- Main Form -->
-        <form id="editor-form" method="post" enctype="multipart/form-data">
-            {% csrf_token %}
-            <input type="hidden" name="content_data" id="content-data-input">
-
-            <!-- Container for draggable blocks -->
-            <div id="editor-blocks" class="space-y-4">
-                
-                {# This loop now passes the block ID to the partials #}
-                {% for block in content_blocks %}
-                    {% if block.polymorphic_ctype.model == 'headingblockone' %}
-                        {% include 'editor/partials/h1_block.html' with value=block.text id=block.id %}
-                    {% elif block.polymorphic_ctype.model == 'headingblocktwo' %}
-                        {% include 'editor/partials/h2_block.html' with value=block.text id=block.id %}
-                    {% elif block.polymorphic_ctype.model == 'headingblockthree' %}
-                        {% include 'editor/partials/h3_block.html' with value=block.text id=block.id %}
-                    {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
-                        {% include 'editor/partials/paragraph_block.html' with value=block.content id=block.id %}
-                    {% elif block.polymorphic_ctype.model == 'imageblock' %}
-                        {% include 'editor/partials/image_block.html' with image_url=block.image.url caption=block.caption alt_text=block.alt_text id=block.id %}
-                    {% elif block.polymorphic_ctype.model == 'referenceblock' %}
-                        {% include 'editor/partials/reference_block.html' with text=block.text link=block.link id=block.id %}
-                    {% endif %}
-                {% endfor %}
-            </div>
-        </form>
-
-        <!-- Buttons to add new content blocks -->
-        <div class="mt-8 border-t pt-6 text-center">
-            <h3 class="text-lg font-semibold text-gray-700 mb-4">Add a new block:</h3>
-            <div class="flex flex-wrap justify-center gap-3">
-                <button data-block-type="heading1" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Heading 1</button>
-                <button data-block-type="heading2" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Heading 2</button>
-                <button data-block-type="heading3" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Heading 3</button>
-                <button data-block-type="paragraph" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Paragraph</button>
-                <button data-block-type="image" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Image</button>
-                <button data-block-type="reference" class="add-block-btn bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-sm font-medium">Reference</button>
-            </div>
-        </div>
-    </main>
-</div>
-
-<!-- TEMPLATES FOR NEW BLOCKS -->
-<div id="block-templates" class="hidden">
-    <div data-template-type="heading1">{% include 'editor/partials/h1_block.html' %}</div>
-    <div data-template-type="heading2">{% include 'editor/partials/h2_block.html' %}</div>
-    <div data-template-type="heading3">{% include 'editor/partials/h3_block.html' %}</div>
-    <div data-template-type="paragraph">{% include 'editor/partials/paragraph_block.html' %}</div>
-    <div data-template-type="image">{% include 'editor/partials/image_block.html' %}</div>
-    <div data-template-type="reference">{% include 'editor/partials/reference_block.html' %}</div>
-</div>
-
-
-<!-- JavaScript Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
-{% comment %} <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> {% endcomment %}
-<script src="{% static 'tinymce/tinymce.min.js' %}"></script>
-<!-- Main Editor Script -->
-<script>
-    // Paste this inside the final <script> tag
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    const editorBlocksContainer = document.getElementById('editor-blocks');
-    const form = document.getElementById('editor-form');
-    const contentDataInput = document.getElementById('content-data-input');
-    const saveButton = document.getElementById('save-button');
-    const addBlockButtons = document.querySelectorAll('.add-block-btn');
-    const blockTemplates = document.getElementById('block-templates');
-
-    let newParagraphIdCounter = 0;
-    let newImageIdCounter = 0;
-
-    new Sortable(editorBlocksContainer, { animation: 150, handle: '.drag-handle', ghostClass: 'sortable-ghost' });
-
-    const tinymceConfig = {
-        height: 300, menubar: false,
-        plugins: 'lists link code table',
-        toolbar: 'bold italic underline | bullist numlist | link | code | table',
-        skin_url: "{% static 'tinymce/skins/ui/oxide' %}",
-        content_css_url: "{% static 'tinymce/skins/content/default/content.min.css' %}",
-    };
-    tinymce.init({ selector: '.tinymce-editor', ...tinymceConfig });
-
-    addBlockButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const blockType = button.dataset.blockType;
-            const template = blockTemplates.querySelector(`[data-template-type="${blockType}"]`);
-            if (!template) return;
-            
-            const newBlockWrapper = document.createElement('div');
-            newBlockWrapper.innerHTML = template.innerHTML;
-            const newBlock = newBlockWrapper.firstElementChild;
-            editorBlocksContainer.appendChild(newBlock);
-
-            if (blockType === 'paragraph') {
-                newParagraphIdCounter++;
-                const newTextArea = newBlock.querySelector('textarea');
-                if (newTextArea) {
-                    const newId = `new-tinymce-editor-${newParagraphIdCounter}`;
-                    newTextArea.id = newId;
-                    tinymce.init({ selector: `#${newId}`, ...tinymceConfig });
-                }
-            } 
-            else if (blockType === 'image') {
-                newImageIdCounter++;
-                const fileInput = newBlock.querySelector('input[type="file"]');
-                if (fileInput) { fileInput.name = `new-image-${newImageIdCounter}`; }
-            }
-        });
-    });
-
-    editorBlocksContainer.addEventListener('click', function(e) {
-        const deleteButton = e.target.closest('.delete-block-btn');
-        if (deleteButton) {
-            const blockToRemove = deleteButton.closest('.editor-block');
-            const editorId = blockToRemove.querySelector('.tinymce-editor')?.id;
-
-            if (editorId && tinymce.get(editorId)) { tinymce.get(editorId).remove(); }
-            blockToRemove.remove();
-        }
-    });
-
-    saveButton.addEventListener('click', (e) => {
-        e.preventDefault();
-        tinymce.triggerSave();
-
-        const allBlocksData = [];
-        document.querySelectorAll('#editor-blocks .editor-block').forEach(blockEl => {
-            const blockId = blockEl.dataset.id;
-            const blockData = { type: blockEl.dataset.blockType };
-
-            if (blockId) { blockData.id = parseInt(blockId, 10); }
-
-            if (blockData.type.startsWith('heading')) {
-                blockData.text = blockEl.querySelector('input[type="text"]').value;
-            } else if (blockData.type === 'paragraph') {
-                blockData.content = blockEl.querySelector('textarea').value;
-            } else if (blockData.type === 'reference') {
-                blockData.text = blockEl.querySelector('input[name="text"]').value;
-                blockData.link = blockEl.querySelector('input[name="link"]').value;
-            } else if (blockData.type === 'image') {
-                blockData.caption = blockEl.querySelector('input[name="caption"]').value;
-                blockData.alt_text = blockEl.querySelector('input[name="alt_text"]').value;
-                const fileInput = blockEl.querySelector('input[type="file"]');
-                if (fileInput && fileInput.files.length > 0) {
-                     blockData.image_id = fileInput.name;
-                }
-            }
-            allBlocksData.push(blockData);
-        });
-        
-        contentDataInput.value = JSON.stringify(allBlocksData);
-        form.submit();
-    });
-
-});
-</script>
-
-<style>
-    .sortable-ghost { opacity: 0.4; background: #c8ebfb; }
-    .drag-handle { cursor: grab; }
-    .drag-handle:active { cursor: grabbing; }
-</style>
-
-{% endblock %}
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <style type="text/css">
+      .lst-kix_761abf453hf3-3 > li {
+        counter-increment: lst-ctn-kix_761abf453hf3-3;
+      }
+      .lst-kix_3erlrxw55l1v-1 > li {
+        counter-increment: lst-ctn-kix_3erlrxw55l1v-1;
+      }
+      ol.lst-kix_3erlrxw55l1v-2.start {
+        counter-reset: lst-ctn-kix_3erlrxw55l1v-2 0;
+      }
+      .lst-kix_3erlrxw55l1v-0 > li {
+        counter-increment: lst-ctn-kix_3erlrxw55l1v-0;
+      }
+      ol.lst-kix_3erlrxw55l1v-5.start {
+        counter-reset: lst-ctn-kix_3erlrxw55l1v-5 0;
+      }
+      ol.lst-kix_761abf453hf3-3.start {
+        counter-reset: lst-ctn-kix_761abf453hf3-3 0;
+      }
+      .lst-kix_ef7hdw27g1g7-7 > li {
+        counter-increment: lst-ctn-kix_ef7hdw27g1g7-7;
+      }
+      .lst-kix_761abf453hf3-4 > li {
+        counter-increment: lst-ctn-kix_761abf453hf3-4;
+      }
+      ol.lst-kix_761abf453hf3-0.start {
+        counter-reset: lst-ctn-kix_761abf453hf3-0 0;
+      }
+      .lst-kix_ef7hdw27g1g7-5 > li {
+        counter-increment: lst-ctn-kix_ef7hdw27g1g7-5;
+      }
+      ol.lst-kix_ef7hdw27g1g7-2.start {
+        counter-reset: lst-ctn-kix_ef7hdw27g1g7-2 0;
+      }
+      ol.lst-kix_3erlrxw55l1v-7.start {
+        counter-reset: lst-ctn-kix_3erlrxw55l1v-7 0;
+      }
+      .lst-kix_761abf453hf3-1 > li {
+        counter-increment: lst-ctn-kix_761abf453hf3-1;
+      }
+      .lst-kix_761abf453hf3-0 > li {
+        counter-increment: lst-ctn-kix_761abf453hf3-0;
+      }
+      .lst-kix_3erlrxw55l1v-4 > li:before {
+        content: "(" counter(lst-ctn-kix_3erlrxw55l1v-4, lower-roman) ") ";
+      }
+      .lst-kix_3erlrxw55l1v-5 > li:before {
+        content: "(" counter(lst-ctn-kix_3erlrxw55l1v-5, decimal) ") ";
+      }
+      .lst-kix_ef7hdw27g1g7-8 > li {
+        counter-increment: lst-ctn-kix_ef7hdw27g1g7-8;
+      }
+      .lst-kix_3erlrxw55l1v-7 > li:before {
+        content: "" counter(lst-ctn-kix_3erlrxw55l1v-7, lower-roman) ". ";
+      }
+      .lst-kix_3erlrxw55l1v-6 > li:before {
+        content: "" counter(lst-ctn-kix_3erlrxw55l1v-6, lower-latin) ". ";
+      }
+      .lst-kix_ef7hdw27g1g7-4 > li {
+        counter-increment: lst-ctn-kix_ef7hdw27g1g7-4;
+      }
+      ol.lst-kix_3erlrxw55l1v-8.start {
+        counter-reset: lst-ctn-kix_3erlrxw55l1v-8 0;
+      }
+      .lst-kix_761abf453hf3-6 > li {
+        counter-increment: lst-ctn-kix_761abf453hf3-6;
+      }
+      .lst-kix_3erlrxw55l1v-8 > li:before {
+        content: "" counter(lst-ctn-kix_3erlrxw55l1v-8, decimal) ". ";
+      }
+      ol.lst-kix_ef7hdw27g1g7-8.start {
+        counter-reset: lst-ctn-kix_ef7hdw27g1g7-8 0;
+      }
+      ol.lst-kix_3erlrxw55l1v-8 {
+        list-style-type: none;
+      }
+      ol.lst-kix_3erlrxw55l1v-7 {
+        list-style-type: none;
+      }
+      ol.lst-kix_3erlrxw55l1v-6 {
+        list-style-type: none;
+      }
+      ol.lst-kix_3erlrxw55l1v-5 {
+        list-style-type: none;
+      }
+      ul.lst-kix_1b1tjjflc2jl-8 {
+        list-style-type: none;
+      }
+      ol.lst-kix_3erlrxw55l1v-4 {
+        list-style-type: none;
+      }
+      ul.lst-kix_1b1tjjflc2jl-7 {
+        list-style-type: none;
+      }
+      ol.lst-kix_3erlrxw55l1v-3 {
+        list-style-type: none;
+      }
+      ol.lst-kix_3erlrxw55l1v-3.start {
+        counter-reset: lst-ctn-kix_3erlrxw55l1v-3 0;
+      }
+      ul.lst-kix_1b1tjjflc2jl-6 {
+        list-style-type: none;
+      }
+      ol.lst-kix_3erlrxw55l1v-2 {
+        list-style-type: none;
+      }
+      ol.lst-kix_3erlrxw55l1v-1 {
+        list-style-type: none;
+      }
+      ol.lst-kix_ef7hdw27g1g7-1.start {
+        counter-reset: lst-ctn-kix_ef7hdw27g1g7-1 0;
+      }
+      ol.lst-kix_761abf453hf3-8.start {
+        counter-reset: lst-ctn-kix_761abf453hf3-8 0;
+      }
+      ol.lst-kix_3erlrxw55l1v-0 {
+        list-style-type: none;
+      }
+      .lst-kix_3erlrxw55l1v-3 > li:before {
+        content: "(" counter(lst-ctn-kix_3erlrxw55l1v-3, lower-latin) ") ";
+      }
+      .lst-kix_3erlrxw55l1v-5 > li {
+        counter-increment: lst-ctn-kix_3erlrxw55l1v-5;
+      }
+      .lst-kix_3erlrxw55l1v-2 > li {
+        counter-increment: lst-ctn-kix_3erlrxw55l1v-2;
+      }
+      .lst-kix_3erlrxw55l1v-2 > li:before {
+        content: "" counter(lst-ctn-kix_3erlrxw55l1v-2, decimal) ") ";
+      }
+      .lst-kix_3erlrxw55l1v-1 > li:before {
+        content: "" counter(lst-ctn-kix_3erlrxw55l1v-1, lower-roman) ") ";
+      }
+      ol.lst-kix_ef7hdw27g1g7-7.start {
+        counter-reset: lst-ctn-kix_ef7hdw27g1g7-7 0;
+      }
+      ul.lst-kix_1b1tjjflc2jl-5 {
+        list-style-type: none;
+      }
+      ul.lst-kix_1b1tjjflc2jl-4 {
+        list-style-type: none;
+      }
+      ul.lst-kix_1b1tjjflc2jl-3 {
+        list-style-type: none;
+      }
+      ul.lst-kix_1b1tjjflc2jl-2 {
+        list-style-type: none;
+      }
+      ul.lst-kix_1b1tjjflc2jl-1 {
+        list-style-type: none;
+      }
+      ul.lst-kix_1b1tjjflc2jl-0 {
+        list-style-type: none;
+      }
+      ol.lst-kix_761abf453hf3-2.start {
+        counter-reset: lst-ctn-kix_761abf453hf3-2 0;
+      }
+      .lst-kix_3erlrxw55l1v-0 > li:before {
+        content: "" counter(lst-ctn-kix_3erlrxw55l1v-0, lower-latin) ") ";
+      }
+      .lst-kix_3erlrxw55l1v-8 > li {
+        counter-increment: lst-ctn-kix_3erlrxw55l1v-8;
+      }
+      .lst-kix_3erlrxw55l1v-7 > li {
+        counter-increment: lst-ctn-kix_3erlrxw55l1v-7;
+      }
+      ol.lst-kix_ef7hdw27g1g7-0 {
+        list-style-type: none;
+      }
+      .lst-kix_ef7hdw27g1g7-3 > li:before {
+        content: "(" counter(lst-ctn-kix_ef7hdw27g1g7-3, lower-latin) ") ";
+      }
+      .lst-kix_ef7hdw27g1g7-4 > li:before {
+        content: "(" counter(lst-ctn-kix_ef7hdw27g1g7-4, lower-roman) ") ";
+      }
+      ol.lst-kix_ef7hdw27g1g7-2 {
+        list-style-type: none;
+      }
+      ol.lst-kix_ef7hdw27g1g7-1 {
+        list-style-type: none;
+      }
+      ol.lst-kix_ef7hdw27g1g7-0.start {
+        counter-reset: lst-ctn-kix_ef7hdw27g1g7-0 0;
+      }
+      .lst-kix_ef7hdw27g1g7-1 > li:before {
+        content: "" counter(lst-ctn-kix_ef7hdw27g1g7-1, lower-roman) ") ";
+      }
+      .lst-kix_ef7hdw27g1g7-2 > li:before {
+        content: "" counter(lst-ctn-kix_ef7hdw27g1g7-2, decimal) ") ";
+      }
+      .lst-kix_ef7hdw27g1g7-5 > li:before {
+        content: "(" counter(lst-ctn-kix_ef7hdw27g1g7-5, decimal) ") ";
+      }
+      .lst-kix_ef7hdw27g1g7-6 > li:before {
+        content: "" counter(lst-ctn-kix_ef7hdw27g1g7-6, lower-latin) ". ";
+      }
+      .lst-kix_ef7hdw27g1g7-0 > li {
+        counter-increment: lst-ctn-kix_ef7hdw27g1g7-0;
+      }
+      ol.lst-kix_761abf453hf3-4.start {
+        counter-reset: lst-ctn-kix_761abf453hf3-4 0;
+      }
+      ol.lst-kix_761abf453hf3-1.start {
+        counter-reset: lst-ctn-kix_761abf453hf3-1 0;
+      }
+      ol.lst-kix_ef7hdw27g1g7-3.start {
+        counter-reset: lst-ctn-kix_ef7hdw27g1g7-3 0;
+      }
+      .lst-kix_3erlrxw55l1v-6 > li {
+        counter-increment: lst-ctn-kix_3erlrxw55l1v-6;
+      }
+      .lst-kix_ef7hdw27g1g7-1 > li {
+        counter-increment: lst-ctn-kix_ef7hdw27g1g7-1;
+      }
+      .lst-kix_ef7hdw27g1g7-0 > li:before {
+        content: "" counter(lst-ctn-kix_ef7hdw27g1g7-0, lower-latin) ") ";
+      }
+      .lst-kix_1b1tjjflc2jl-4 > li:before {
+        content: "\0025cb   ";
+      }
+      .lst-kix_1b1tjjflc2jl-3 > li:before {
+        content: "\0025cf   ";
+      }
+      .lst-kix_1b1tjjflc2jl-5 > li:before {
+        content: "\0025a0   ";
+      }
+      .lst-kix_761abf453hf3-7 > li {
+        counter-increment: lst-ctn-kix_761abf453hf3-7;
+      }
+      .lst-kix_1b1tjjflc2jl-6 > li:before {
+        content: "\0025cf   ";
+      }
+      ol.lst-kix_ef7hdw27g1g7-6.start {
+        counter-reset: lst-ctn-kix_ef7hdw27g1g7-6 0;
+      }
+      .lst-kix_1b1tjjflc2jl-7 > li:before {
+        content: "\0025cb   ";
+      }
+      ol.lst-kix_761abf453hf3-7.start {
+        counter-reset: lst-ctn-kix_761abf453hf3-7 0;
+      }
+      .lst-kix_1b1tjjflc2jl-8 > li:before {
+        content: "\0025a0   ";
+      }
+      .lst-kix_ef7hdw27g1g7-2 > li {
+        counter-increment: lst-ctn-kix_ef7hdw27g1g7-2;
+      }
+      ol.lst-kix_3erlrxw55l1v-1.start {
+        counter-reset: lst-ctn-kix_3erlrxw55l1v-1 0;
+      }
+      .lst-kix_ef7hdw27g1g7-7 > li:before {
+        content: "" counter(lst-ctn-kix_ef7hdw27g1g7-7, lower-roman) ". ";
+      }
+      .lst-kix_ef7hdw27g1g7-8 > li:before {
+        content: "" counter(lst-ctn-kix_ef7hdw27g1g7-8, decimal) ". ";
+      }
+      ol.lst-kix_3erlrxw55l1v-4.start {
+        counter-reset: lst-ctn-kix_3erlrxw55l1v-4 0;
+      }
+      ol.lst-kix_ef7hdw27g1g7-5.start {
+        counter-reset: lst-ctn-kix_ef7hdw27g1g7-5 0;
+      }
+      .lst-kix_ef7hdw27g1g7-3 > li {
+        counter-increment: lst-ctn-kix_ef7hdw27g1g7-3;
+      }
+      .lst-kix_3erlrxw55l1v-4 > li {
+        counter-increment: lst-ctn-kix_3erlrxw55l1v-4;
+      }
+      ol.lst-kix_3erlrxw55l1v-0.start {
+        counter-reset: lst-ctn-kix_3erlrxw55l1v-0 0;
+      }
+      .lst-kix_3erlrxw55l1v-3 > li {
+        counter-increment: lst-ctn-kix_3erlrxw55l1v-3;
+      }
+      ol.lst-kix_761abf453hf3-6.start {
+        counter-reset: lst-ctn-kix_761abf453hf3-6 0;
+      }
+      .lst-kix_1b1tjjflc2jl-1 > li:before {
+        content: "\0025cb   ";
+      }
+      .lst-kix_1b1tjjflc2jl-0 > li:before {
+        content: "\0025cf   ";
+      }
+      .lst-kix_1b1tjjflc2jl-2 > li:before {
+        content: "\0025a0   ";
+      }
+      .lst-kix_761abf453hf3-0 > li:before {
+        content: "" counter(lst-ctn-kix_761abf453hf3-0, decimal) ") ";
+      }
+      .lst-kix_761abf453hf3-2 > li:before {
+        content: "" counter(lst-ctn-kix_761abf453hf3-2, lower-roman) ") ";
+      }
+      ol.lst-kix_761abf453hf3-0 {
+        list-style-type: none;
+      }
+      .lst-kix_761abf453hf3-3 > li:before {
+        content: "(" counter(lst-ctn-kix_761abf453hf3-3, decimal) ") ";
+      }
+      ol.lst-kix_761abf453hf3-5.start {
+        counter-reset: lst-ctn-kix_761abf453hf3-5 0;
+      }
+      .lst-kix_761abf453hf3-2 > li {
+        counter-increment: lst-ctn-kix_761abf453hf3-2;
+      }
+      li.li-bullet-0:before {
+        margin-left: -18pt;
+        white-space: nowrap;
+        display: inline-block;
+        min-width: 18pt;
+      }
+      .lst-kix_761abf453hf3-1 > li:before {
+        content: "" counter(lst-ctn-kix_761abf453hf3-1, lower-latin) ") ";
+      }
+      .lst-kix_761abf453hf3-8 > li:before {
+        content: "" counter(lst-ctn-kix_761abf453hf3-8, lower-roman) ". ";
+      }
+      ol.lst-kix_3erlrxw55l1v-6.start {
+        counter-reset: lst-ctn-kix_3erlrxw55l1v-6 0;
+      }
+      .lst-kix_761abf453hf3-8 > li {
+        counter-increment: lst-ctn-kix_761abf453hf3-8;
+      }
+      .lst-kix_761abf453hf3-6 > li:before {
+        content: "" counter(lst-ctn-kix_761abf453hf3-6, decimal) ". ";
+      }
+      .lst-kix_761abf453hf3-5 > li {
+        counter-increment: lst-ctn-kix_761abf453hf3-5;
+      }
+      .lst-kix_761abf453hf3-7 > li:before {
+        content: "" counter(lst-ctn-kix_761abf453hf3-7, lower-latin) ". ";
+      }
+      ol.lst-kix_761abf453hf3-2 {
+        list-style-type: none;
+      }
+      .lst-kix_761abf453hf3-4 > li:before {
+        content: "(" counter(lst-ctn-kix_761abf453hf3-4, lower-latin) ") ";
+      }
+      ol.lst-kix_ef7hdw27g1g7-8 {
+        list-style-type: none;
+      }
+      ol.lst-kix_761abf453hf3-1 {
+        list-style-type: none;
+      }
+      ol.lst-kix_ef7hdw27g1g7-7 {
+        list-style-type: none;
+      }
+      ol.lst-kix_761abf453hf3-4 {
+        list-style-type: none;
+      }
+      .lst-kix_ef7hdw27g1g7-6 > li {
+        counter-increment: lst-ctn-kix_ef7hdw27g1g7-6;
+      }
+      ol.lst-kix_761abf453hf3-3 {
+        list-style-type: none;
+      }
+      ol.lst-kix_ef7hdw27g1g7-4.start {
+        counter-reset: lst-ctn-kix_ef7hdw27g1g7-4 0;
+      }
+      ol.lst-kix_761abf453hf3-6 {
+        list-style-type: none;
+      }
+      ol.lst-kix_ef7hdw27g1g7-4 {
+        list-style-type: none;
+      }
+      ol.lst-kix_761abf453hf3-5 {
+        list-style-type: none;
+      }
+      ol.lst-kix_ef7hdw27g1g7-3 {
+        list-style-type: none;
+      }
+      .lst-kix_761abf453hf3-5 > li:before {
+        content: "(" counter(lst-ctn-kix_761abf453hf3-5, lower-roman) ") ";
+      }
+      ol.lst-kix_761abf453hf3-8 {
+        list-style-type: none;
+      }
+      ol.lst-kix_ef7hdw27g1g7-6 {
+        list-style-type: none;
+      }
+      ol.lst-kix_761abf453hf3-7 {
+        list-style-type: none;
+      }
+      ol.lst-kix_ef7hdw27g1g7-5 {
+        list-style-type: none;
+      }
+      ol {
+        margin: 0;
+        padding: 0;
+      }
+      table td,
+      table th {
+        padding: 0;
+      }
+      .c44 {
+        -webkit-text-decoration-skip: none;
+        color: #000000;
+        font-weight: 700;
+        text-decoration: underline;
+        vertical-align: baseline;
+        text-decoration-skip-ink: none;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      .c13 {
+        padding-top: 10pt;
+        padding-bottom: 10pt;
+        line-height: 1.5;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: center;
+      }
+      .c7 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: justify;
+        height: 11pt;
+      }
+      .c8 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 11pt;
+        font-family: "Arial";
+        font-style: normal;
+      }
+      .c14 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 16pt;
+        font-family: "Arial";
+        font-style: normal;
+      }
+      .c15 {
+        padding-top: 14pt;
+        padding-bottom: 4pt;
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: center;
+      }
+      .c17 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 20pt;
+        font-family: "Arial";
+        font-style: normal;
+      }
+      .c0 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 10pt;
+        font-family: "Arial";
+        font-style: normal;
+      }
+      .c20 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 9.5pt;
+        font-family: "Times New Roman";
+        font-style: normal;
+      }
+      .c18 {
+        padding-top: 10pt;
+        padding-bottom: 14pt;
+        line-height: 1.5;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: center;
+      }
+      .c35 {
+        padding-top: 20pt;
+        padding-bottom: 6pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: justify;
+      }
+      .c26 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: center;
+      }
+      .c5 {
+        padding-top: 12pt;
+        padding-bottom: 12pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: center;
+      }
+      .c42 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c45 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 26pt;
+        font-family: "Arial";
+      }
+      .c39 {
+        padding-top: 0pt;
+        padding-bottom: 3pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: center;
+      }
+      .c1 {
+        padding-top: 12pt;
+        padding-bottom: 12pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: justify;
+      }
+      .c37 {
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      .c36 {
+        color: #434343;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 14pt;
+        font-family: "Arial";
+      }
+      .c6 {
+        color: #666666;
+        font-weight: 400;
+        text-decoration: none;
+        vertical-align: baseline;
+        font-size: 12pt;
+        font-family: "Arial";
+      }
+      .c9 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: justify;
+      }
+      .c22 {
+        padding-top: 12pt;
+        padding-bottom: 12pt;
+        line-height: 1.15;
+        orphans: 2;
+        widows: 2;
+        text-align: center;
+      }
+      .c43 {
+        padding-top: 18pt;
+        padding-bottom: 6pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c4 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1;
+        orphans: 2;
+        widows: 2;
+        text-align: justify;
+      }
+      .c23 {
+        padding-top: 18pt;
+        padding-bottom: 6pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: justify;
+      }
+      .c28 {
+        padding-top: 14pt;
+        padding-bottom: 4pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: center;
+      }
+      .c16 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.5;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .c3 {
+        padding-top: 0pt;
+        padding-bottom: 0pt;
+        line-height: 1.15;
+        orphans: 2;
+        widows: 2;
+        text-align: center;
+      }
+      .c34 {
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 12pt;
+        font-family: "Arial";
+      }
+      .c24 {
+        text-decoration-skip-ink: none;
+        -webkit-text-decoration-skip: none;
+        color: #1155cc;
+        text-decoration: underline;
+      }
+      .c32 {
+        -webkit-text-decoration-skip: none;
+        color: #0000ff;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+      }
+      .c41 {
+        background-color: #ffffff;
+        max-width: 468pt;
+        padding: 72pt 72pt 72pt 72pt;
+      }
+      .c27 {
+        font-size: 9.5pt;
+        font-weight: 400;
+        font-family: "Times New Roman";
+      }
+      .c12 {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      .c38 {
+        padding: 0;
+        margin: 0;
+      }
+      .c11 {
+        page-break-after: avoid;
+        height: 14pt;
+      }
+      .c29 {
+        color: #0070c0;
+        vertical-align: super;
+      }
+      .c30 {
+        width: 33%;
+        height: 1px;
+      }
+      .c19 {
+        margin-left: 36pt;
+        padding-left: 0pt;
+      }
+      .c31 {
+        vertical-align: super;
+      }
+      .c40 {
+        background-color: #ffff00;
+      }
+      .c21 {
+        page-break-after: avoid;
+      }
+      .c33 {
+        font-style: normal;
+      }
+      .c25 {
+        height: 11pt;
+      }
+      .c10 {
+        font-size: 10pt;
+      }
+      .c2 {
+        font-style: italic;
+      }
+      .title {
+        padding-top: 0pt;
+        color: #000000;
+        font-size: 26pt;
+        padding-bottom: 3pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      .subtitle {
+        padding-top: 0pt;
+        color: #666666;
+        font-size: 15pt;
+        padding-bottom: 16pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      li {
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      p {
+        margin: 0;
+        color: #000000;
+        font-size: 11pt;
+        font-family: "Arial";
+      }
+      h1 {
+        padding-top: 20pt;
+        color: #000000;
+        font-size: 20pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h2 {
+        padding-top: 18pt;
+        color: #000000;
+        font-size: 16pt;
+        padding-bottom: 6pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h3 {
+        padding-top: 16pt;
+        color: #434343;
+        font-size: 14pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h4 {
+        padding-top: 14pt;
+        color: #666666;
+        font-size: 12pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h5 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+      h6 {
+        padding-top: 12pt;
+        color: #666666;
+        font-size: 11pt;
+        padding-bottom: 4pt;
+        font-family: "Arial";
+        line-height: 1.15;
+        page-break-after: avoid;
+        font-style: italic;
+        orphans: 2;
+        widows: 2;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body class="c41 doc-content">
+    <p class="c21 c39 title" id="h.c0btlbnmc0ep">
+      <span class="c33 c45">Architecture: Pune</span>
+    </p>
+    <p class="c1">
+      <span class="c10"
+        >Architecture does more than reflect history, it shapes how people live,
+        connect, and experience the world around them. Sigfried Giedion, an art
+        historian and one of the most influential thinkers in modern
+        architectural theory, writes in </span
+      ><span class="c10 c2">Space, Time and Architecture</span
+      ><span class="c0"
+        >&nbsp;(1941) that architecture is &ldquo;so bound up with the life of a
+        period as a whole&rdquo; that it inevitably reveals how societies
+        function and evolve. Buildings are not just the backdrop to human life;
+        they are part of how society works, remembers, and changes. They hold
+        meaning, in many ways, not only because of who built them or when, but
+        because of how people have used and lived with them over time.</span
+      >
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >In Pune, architecture has served as both a witness to and participant
+        in historical change. The district&rsquo;s built landscape tells the
+        story of shifting power, belief, and identity. Each structure carries
+        traces of the time it was built, the people who shaped it, and the
+        communities that gave it purpose.</span
+      >
+    </p>
+    <h1 class="c35 c21" id="h.dar2lir5h111">
+      <span class="c17">Architecture of Prominent Sites </span>
+    </h1>
+    <p class="c9">
+      <span class="c0"
+        >From early medieval mandirs like Bhimashankar Mandir, which showcases
+        Nagara and Maratha architectural styles, to Peshwa-era wadas and vibrant
+        peths, Pune&#39;s architecture reflects a layered coexistence of
+        indigenous and imperial influences. The arrival of the British
+        introduced new typologies, such as military barracks, Gothic churches,
+        and civic buildings like the Mahatma Phule Mandai. Post-independence,
+        the city saw the emergence of Art Deco and modernist forms, especially
+        in institutional and residential buildings. These shifts reveal not just
+        stylistic changes but the evolving social fabric and aspirations of a
+        growing urban centre.</span
+      >
+    </p>
+    <h2 class="c23 c21" id="h.70j8uneiccga">
+      <span class="c14">Bhimashankar Mandir</span>
+    </h2>
+    <p class="c9">
+      <span class="c0"
+        >The Bhimashankar Mandir, located in the Khed taluka of Pune district,
+        is a notable example of the Nagara style of mandir architecture, a
+        tradition rooted in northern India and adapted in the Deccan over
+        centuries. Though the exact date of its original construction is
+        uncertain, literary and inscriptional sources suggest the Mandir dates
+        back to the early 13th century. Over the centuries, it has seen several
+        additions and renovations, particularly under the patronage of Maratha
+        leaders such as Chimaji Antaji Nayik Bhinde and Nana Phadnavis. The
+        Mandir is one of the twelve Jyotirlinga shrines of Bhagwan Shiv in
+        India.
+      </span>
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >Architecturally, Bhimashankar Mandir preserves an archaic Nagara form
+        rarely found in the Deccan, with subtle influences from the Hemadpanthi
+        style visible in the stone masonry and structural techniques. Built
+        primarily from indigenous stone, the Mandir reflects an older form of
+        the Nagara tradition, evident in its simple yet elegant proportions and
+        simple ornamentation. The Mandir is best known for its shikhara, rising
+        above the garbhagriha (sanctum), crowned by an amalaka and kalasha, both
+        hallmark features of the Nagara style. Elements such as devakoshtas,
+        dome-shaped roofs, and traces of lime-sand sculptures further reflect
+        the Mandir&rsquo;s layered architectural history.</span
+      >
+    </p>
+    <h4 class="c15" id="h.gcwso43q41v9">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 400.78px;
+          height: 580.5px;
+        "
+        ><img
+          alt=""
+          src="images/image13.png"
+          style="
+            width: 400.78px;
+            height: 580.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </h4>
+    <h4 class="c15" id="h.s0bdlx56y9a8">
+      <span class="c2"
+        >Shikhara of Bhimashankar Mandir showcasing Nagara mandir architecture,
+        marked by a tiered vertical form.</span
+      ><sup class="c2"><a href="#ftnt1" id="ftnt_ref1">[1]</a></sup
+      ><span class="c6 c2">&nbsp;</span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >The Mandir complex includes a sabhamandap added during the 18th century
+        Peshwa period and a Portuguese bell believed to have been brought from
+        Vasai after the Maratha victory in 1739. The Mandir features a
+        garbhagriha, gudhamandap, and mukhamandap, with carved pillars, court
+        spaces, and carvings that are tied to epic stories. The garbhagriha
+        houses a swayambhu Jyotirlinga, placed at a slightly lower level,
+        directly beneath the shikhara. The garbhagriha connects to an antarala
+        and a gudhamandap, both supported by carved stone pillars. The pillars
+        and door frames display carvings of Devis, Devtas and narrative figures,
+        showing influence from Jain mandir art.</span
+      >
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >Situated on a high platform amidst the forested hills of the
+        Bhimashankar Wildlife Sanctuary, the Mandir integrates sacred
+        architecture with its natural surroundings. Bhimashankar Mandir&rsquo;s
+        architecture preserves an early form of Nagara style, with a simple
+        exterior. Its design shows continuity with northern mandir forms,
+        adapted with local materials and techniques, making it a notable
+        architectural example in the district.</span
+      >
+    </p>
+    <h2 class="c23 c21" id="h.ob4ptn9y2vcl">
+      <span class="c14">Shaniwar Wada </span>
+    </h2>
+    <p class="c1">
+      <span class="c0"
+        >In the 18th century, Pune emerged as a prominent urban center under the
+        leadership of the Peshwas (1730&ndash;1818). Their rule was marked by
+        extensive infrastructural and civic development, including the
+        construction of mandirs, bridges, and residential zones. The
+        Peshwas&rsquo; cultural and religious values, in many ways, imparted a
+        Brahmanical character to the city, which became a defining feature of
+        its identity during this period.</span
+      >
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >Among the architectural landmarks of this period was Shaniwar Wada, a
+        notable example of wada architecture. Built in 1732 by Peshwa Bajirao I
+        as his official residence, it served as the seat of Peshwa power and
+        stands as a symbol of 18th-century Maratha administration, culture, and
+        architectural vision.
+      </span>
+    </p>
+    <p class="c1">
+      <span class="c10"
+        >Wada architecture refers to large courtyard houses constructed using
+        local materials and techniques, influenced by Maratha, Mughal,
+        Rajasthani, and Gujarati styles. Originally designed to house single or
+        multiple families, wadas typically featured central courtyards that
+        allowed for light and ventilation, with thick walls and minimal exterior
+        openings suited to Pune&rsquo;s tropical climate. The layouts reflected
+        social hierarchies and domestic life, prioritizing privacy and climate
+        responsiveness, while incorporating ornate wooden facades and carved
+        detailing. Unlike fortified </span
+      ><span class="c10 c2">garhis</span
+      ><span class="c0"
+        >, wadas were often more ornamented externally, with decorated openings
+        across structural bays.</span
+      >
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >Shaniwar Wada followed this traditional layout, with rooms arranged
+        around courtyards, supported by carved wooden pillars, balconies, and
+        richly decorated limestone niches. The palace once rose to seven storeys
+        and featured four major courts, each dedicated to specific functions
+        such as administration or celebration. Key halls like the Ganapati
+        Rangmahal and Nachacha Diwan showcased elaborate woodwork with enamel
+        and gold detailing, along with ornate fountains. Special rooms in the
+        palace served as a treasury, library, armoury, picture gallery, and
+        more.</span
+      >
+    </p>
+    <p class="c18">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 454.83px;
+          height: 255.84px;
+        "
+        ><img
+          alt="D:\Photos\2023\15.03.2023-Shaniwar Wada+-RN,KN,DS,SS\5-Kareena Shaniwar Wada\IMG_20230315_141611.jpg"
+          src="images/image15.jpg"
+          style="
+            width: 454.83px;
+            height: 255.84px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c13" id="h.sq0dpk4i05p6">
+      <span>The anterior view of Shaniwar Wada (Source: CKA Archives)</span>
+    </h4>
+    <p class="c9">
+      <span class="c0"
+        >The wada was enclosed by 20-foot-high walls, five ft. of stone topped
+        with fifteen feet of brick. The wada has five massive wooden doors:
+        Delhi Darwaza (the main gate facing Delhi), Mastani Darwaza, Khidki
+        Darwaza, Ganesh Darwaza, and Narayan Darwaza. These were flanked by nine
+        bastions. Within its walls were gardens, fountains, and the Hazari
+        Karanje, a Mughal-influenced ornamental fountain with a thousand spouts.
+        Above the main gate stood the Nagarkhana, where drums and shehnais were
+        played each day&mdash;announcing the grandeur of the Peshwa court.
+      </span>
+    </p>
+    <p class="c18">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 511.6px;
+          height: 228.78px;
+        "
+        ><img
+          alt="D:\Photos\2023\15.03.2023-Shaniwar Wada+-RN,KN,DS,SS\5-Kareena Shaniwar Wada\IMG_20230315_130653.jpg"
+          src="images/image36.jpg"
+          style="
+            width: 548.14px;
+            height: 282.22px;
+            margin-left: -23.41px;
+            margin-top: -28.22px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c13" id="h.anko8mzde7xo">
+      <span class="c6 c33"
+        >There are various ruins of reservoirs, fountains and residential
+        palaces for the Maratha officials and Peshwas within Shaniwar Wada
+        (Source: CKA Archives)</span
+      >
+    </h4>
+    <h2 class="c23 c21" id="h.2q5nlo7vg3hy">
+      <span class="c14">Parvati Hill Complex </span>
+    </h2>
+    <p class="c9">
+      <span class="c0"
+        >The Parvati Hill Complex, constructed by Nanasaheb Peshwa in the
+        mid-18th century, is a prominent example of religious architecture from
+        the Peshwa period. One of Pune&#39;s oldest heritage sites, it served
+        both as a place of worship and as a strategic observation point due to
+        its elevated position overlooking the city.</span
+      >
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >Built in the traditional Peshwa-era architectural style, the complex
+        displays stone masonry and carved shikharas that are distinct from the
+        stucco shikharas seen in later Mandir styles. The fortified complex
+        consists of five principal mandirs and is flanked by arched landings and
+        retaining walls.</span
+      >
+    </p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 272.38px;
+          height: 327.12px;
+        "
+        ><img
+          alt="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Parvati_Hill_Temple_%282810969410%29.jpg/800px-Parvati_Hill_Temple_%282810969410%29.jpg"
+          src="images/image20.jpg"
+          style="
+            width: 272.38px;
+            height: 363.4px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c13" id="h.exash34v3h88">
+      <span>The Devadeveshwar Mandir in the Parvati Hill mandir complex</span
+      ><sup class="c29"><a href="#ftnt2" id="ftnt_ref2">[2]</a></sup>
+    </h4>
+    <h2 class="c23 c21" id="h.h3cacdj679v">
+      <span class="c14">St. Paul&rsquo;s Church</span>
+    </h2>
+    <p class="c1">
+      <span class="c0"
+        >Following the decline of Peshwa rule and the British victory in the
+        Battle of Kirkee (1817), Pune began transitioning into a colonial
+        administrative and military hub. This shift led to the establishment of
+        the British Cantonment outside the old city, introducing European
+        spatial planning and architectural styles to the region.
+      </span>
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >One such example of British architectural influence is St. Paul&rsquo;s
+        Church, located on Agarkar Road and constructed in 1867. Designed by
+        Rev. F. Gell, the church reflects early English Gothic architectural
+        elements, inspired by Sainte-Chapelle in Paris. Its features include
+        narrow pointed arches, a bell tower, gargoyles, and, originally, a
+        high-pitched roof of corrugated iron that was later destroyed in a
+        fire.</span
+      >
+    </p>
+    <p class="c9">
+      <span class="c0"
+        >Gothic architecture, which originated in medieval Europe, is
+        characterized by pointed arches, soaring spires, flying buttresses, and
+        stained-glass windows. These elements were adopted in several
+        colonial-era buildings in Pune, particularly religious and educational
+        institutions, as part of a broader cultural shift introduced by the
+        British.</span
+      >
+    </p>
+    <p class="c13">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 570.73px;
+          height: 487.5px;
+        "
+        ><img
+          alt=""
+          src="images/image2.png"
+          style="
+            width: 570.73px;
+            height: 487.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c13" id="h.rfdqgsd1w808">
+      <span class="c2"
+        >St. Paul&rsquo;s Church featuring distinctive English Gothic style
+        architecture</span
+      ><sup class="c2 c29"><a href="#ftnt3" id="ftnt_ref3">[3]</a></sup>
+    </h4>
+    <p class="c9">
+      <span class="c0"
+        >In addition to St. Paul&rsquo;s, many other churches were established
+        across the growing city during this time, incorporating Gothic and
+        Neo-Gothic design principles. Notable examples include St.
+        Xavier&rsquo;s Church in Camp, All Saints&rsquo; Church in Khadki, St.
+        Crispin&rsquo;s Church in Erandwane, and St. Patrick&rsquo;s Cathedral,
+        which prominently reflects Neo-Gothic architecture. These structures
+        collectively demonstrate the colonial imprint on Pune&rsquo;s
+        architectural identity.
+      </span>
+    </p>
+    <h2 class="c21 c23" id="h.eum2r4altcj4">
+      <span class="c14">College of Engineering, Pune</span>
+    </h2>
+    <p class="c9">
+      <span class="c0"
+        >The College of Engineering, Pune was established in 1854 and is among
+        the earliest technical institutions in India. It was originally formed
+        as the Poona Engineering Class and Mechanical School and was later
+        developed as a college.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >The main building, designed by W.S. Howard is an important example of
+        Gothic Revival architecture in Pune, reflecting the broader British
+        architectural influence that shaped much of the city&rsquo;s
+        19th-century institutional landscape. The style features classic Gothic
+        elements like pointed arches, vaulted ceilings, and symmetrical stone
+        fa&ccedil;ades, adapted to suit the academic setting and tropical
+        climate. The imposing structure uses load-bearing stone walls, slender
+        windows, and prominent arches to create a sense of formality and
+        grandeur.
+      </span>
+    </p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 330px;
+          height: 495px;
+        "
+        ><img
+          alt=""
+          src="images/image32.png"
+          style="
+            width: 330px;
+            height: 495px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c28 c21" id="h.1anyty5ssuxt">
+      <span class="c2"
+        >College of Engineering Pune is an example of European Gothic revival
+        architecture.</span
+      ><sup class="c2"><a href="#ftnt4" id="ftnt_ref4">[4]</a></sup>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <h2 class="c23 c21" id="h.7vso2enujgn1">
+      <span class="c14">Fergusson College</span>
+    </h2>
+    <p class="c1">
+      <span class="c0"
+        >Fergusson College, built in 1885, is one of Pune&rsquo;s most prominent
+        educational institutions from the colonial period. Established by the
+        Deccan Education Society and led by visionaries like Lokmanya Tilak,
+        Gopal Ganesh Agarkar, and Gopal Krishna Gokhale, it was named after Sir
+        James Fergusson, then Governor of Bombay. The main college building was
+        designed and executed by Rao Bahadur Vasudev Balwant Kanitkar.</span
+      >
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >The main building showcases Victorian-Gothic architectural features
+        such as pointed arches, exposed stone masonry, sloping tiled roofs, and
+        arched verandas. These elements reflect a colonial-era adaptation of
+        European styles, set within a 65-acre, tree-lined campus that blends
+        formal British planning with regional construction methods.</span
+      >
+    </p>
+    <p class="c16">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 624px;
+          height: 468px;
+        "
+        ><img
+          alt=""
+          src="images/image7.png"
+          style="
+            width: 624px;
+            height: 468px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c28 c21" id="h.z903luhgyfdw">
+      <span class="c2"
+        >Fergusson College is a prominent landmark in Pune featuring
+        Gothic-style architecture.</span
+      ><sup class="c2"><a href="#ftnt5" id="ftnt_ref5">[5]</a></sup>
+    </h4>
+    <h2 class="c23 c21" id="h.ywzkecfxjpnl">
+      <span class="c14">Mahatma Phule Mandai </span>
+    </h2>
+    <p class="c9">
+      <span class="c0"
+        >Among the most notable civic structures from the British era is the
+        Mahatma Phule Mandai, originally known as Reay Market. Constructed
+        between 1882 and 1886 in a Gothic architectural style, the market is
+        located in Shukrawar Peth and features a distinctive octagonal central
+        tower and eight arched entrances. Designed to serve as a retail and
+        wholesale vegetable market, it was named after Lord Reay, then Governor
+        of Bombay.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >Following independence, the market was renamed in honour of Mahatma
+        Jyotirao Phule, the prominent social reformer from Pune. Even today,
+        Mahatma Phule Mandai functions as the city&rsquo;s largest vegetable
+        market with over 520 stalls. Notably, the structure remains a symbol of
+        Pune&rsquo;s colonial past and is a relic of British civic architecture.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 419.42px;
+          height: 559.5px;
+        "
+        ><img
+          alt=""
+          src="images/image34.png"
+          style="
+            width: 419.42px;
+            height: 559.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c28 c21" id="h.i88gdb2n6372">
+      <span class="c2"
+        >Mahatma Phule Mandai is built in a distinctive Gothic architectural
+        style and is a notable symbol of Pune&rsquo;s colonial past</span
+      ><sup class="c2"><a href="#ftnt6" id="ftnt_ref6">[6]</a></sup>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <h2 class="c23 c21" id="h.hxmti2wopwxd">
+      <span class="c14">Aga Khan Palace </span>
+    </h2>
+    <p class="c9">
+      <span class="c0"
+        >The Aga Khan Palace, featuring the Indo-Saracenic architectural style,
+        is a prominent example of British-era architecture in Pune. Constructed
+        in 1892 by Sir Sultan Muhammed Shah Aga Khan III, the palace was
+        originally intended as a charitable project during a famine, but later
+        functioned as a seasonal residence. The architectural style blends
+        Islamic and Indian influences with colonial-British elements. The
+        building follows a barrack-style plan, with barn-like chambers connected
+        through arcaded verandas rather than interior corridors. Its stuccoed
+        brick walls, stone base, and pitched roof supported by decorative iron
+        cantilevers define its structural composition.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >Key features include Italian arches, wooden beams, stone and wood
+        flooring, and an entrance hall with clerestory windows, Gothic tracery,
+        and rose windows. The porch, adorned with medallions marked
+        &lsquo;H.H.A.K.&rsquo;, is supported by ornate arches and flanked by
+        corner pavilions with hipped tiled roofs. The verandas across each level
+        feature black stone columns below and white balustraded columns above,
+        divided into bays by pilasters. The building&rsquo;s form and
+        ornamentation exemplify the colonial-era aesthetic while reflecting a
+        blend of Indian and European traditions.</span
+      >
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c18">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 522.85px;
+          height: 392.13px;
+        "
+        ><img
+          alt="D:\Photos\2023\16.03.2023-Aga Khan Palace-RN,DS,SS\1-RN\20230316_130332.jpg"
+          src="images/image4.jpg"
+          style="
+            width: 522.85px;
+            height: 392.13px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c13" id="h.5vakoh2u0659">
+      <span class="c6 c2"
+        >The anterior view of the Aga Khan Palace (Source: CKA Archives)</span
+      >
+    </h4>
+    <h2 class="c23 c21" id="h.la75noctf5do">
+      <span class="c14">Bank of Maharashtra Building</span>
+    </h2>
+    <p class="c9">
+      <span class="c0"
+        >Following the British colonial period, Pune&rsquo;s architectural
+        landscape began to reflect new aspirations shaped by independence and
+        modernity. The mid-20th century saw the emergence of Art Deco
+        influences, marking a shift from colonial styles toward contemporary
+        forms.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >A notable example of this transition is the Bank of Maharashtra
+        building on Bajirao Road in Budhwar Peth, a prominent Art Deco structure
+        in Pune. This building, designed by architect U. M. Apte was constructed
+        in two phases&mdash;1954 and 1969. It is inspired by Hamam Street in
+        Fort, Mumbai, and reflects a unique blend of Art Deco and traditional
+        Indian elements. While advances in construction technology progressed
+        more slowly than aesthetic developments, the building is a notable
+        example of Pune&rsquo;s evolving architectural ambitions during this
+        period.</span
+      >
+    </p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 531.33px;
+          height: 398.5px;
+        "
+        ><img
+          alt=""
+          src="images/image14.png"
+          style="
+            width: 531.33px;
+            height: 398.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c21 c28" id="h.ndnjtk3fb1e0">
+      <span class="c2"
+        >The Bank of Maharashtra building in Budhwar Peth is an example of Art
+        Deco architecture.</span
+      ><sup class="c2"><a href="#ftnt7" id="ftnt_ref7">[7]</a></sup>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >The building&rsquo;s central tower is topped with a chhatri, stylized
+        in an austere, octagonal shape. The facade of the wings flanking on
+        either side of the tower is organised in a uniform, geometric grid,
+        divided by long buttresses. The structure avoids the typical horizontal
+        streamlining seen in most Art Deco designs and instead emphasizes
+        verticality through painted bands that contrast with the stone
+        fa&ccedil;ade. These elements create a monumental effect and have come
+        to define the visual identity of Pune&rsquo;s Art Deco movement.</span
+      >
+    </p>
+    <h1 class="c21 c35" id="h.yup0tldypq0g">
+      <span class="c17">Residential Architecture </span>
+    </h1>
+    <p class="c9">
+      <span class="c10"
+        >Homes are spaces we occupy daily, yet few reflect on how they are built
+        or the stories embedded within them. While monumental structures capture
+        the grandeur of dynasties and broader societal patterns across eras;
+        domestic spaces, such as one&rsquo;s house, arguably, preserve the
+        subtler ways in which culture and history have shaped everyday life
+        through generations. Architectural theorist Amos Rapoport explores this
+        aspect of domestic spaces in his book, </span
+      ><span class="c10 c2">House, Form, and Culture</span
+      ><span class="c0"
+        >&nbsp;(1969), noting, &ldquo;The house is an institution...influenced
+        by the cultural milieu to which it belongs.&rdquo; Thus, residential
+        spaces become archives, shaped by the values, needs, and traditions of
+        their inhabitants.</span
+      >
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >In Pune, the architecture of homes has seen a temporal change over the
+        centuries. Each residential structure carries the imprint of local
+        history, community life, and a distinctive cultural identity of the
+        district&rsquo;s many inhabitants in the representative era. As time
+        passes, it is fascinating to see how the private space of
+        &lsquo;home&rsquo; has been reimagined across different eras, often
+        affected by the larger &lsquo;public&rsquo; trends that take place
+        outside of it. Traditional wadas, representative of architecture trends
+        rooted in Peshwa and Maratha culture, have gradually given way to
+        townships built according to contemporary architecture practices,
+        reflecting shifts in lifestyle and construction techniques. These
+        changes mirror broader patterns of urbanization, population growth, and
+        evolving cultural dynamics across the district, shaping not only the
+        built environment but also the lived experiences of its residents.</span
+      >
+    </p>
+    <h2 class="c23 c21" id="h.h8jcrrzd8p58">
+      <span class="c14"
+        >Residences from the 1860s on the Rajwada Road in Bhor Village
+      </span>
+    </h2>
+    <p class="c1">
+      <span class="c0"
+        >Bhor, once a princely state, is a historical village in Maharashtra
+        known for its scenic beauty and historical sites. The village is home to
+        the Bhor Rajwada, the official, royal residence and seat of the Rajas of
+        the princely state. Royal residences offer a window into the lives of
+        those who once ruled, reflecting their tastes, traditions, and the
+        architectural styles of their time. The areas surrounding the wadas,
+        too, bear remnants of their historical past. The Bhor Rajwada, built in
+        1869 by Raja Chimnaji Raghunathrao III (ninth ruler of Bhor), stands as
+        a testament to a legacy within the Maratha tradition and borrows from
+        European Renaissance Architecture with a blend of Indian Vernacular and
+        Gothic styles.
+      </span>
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >Surrounding the palace are old wadas, once home to families connected
+        to the royal household, some of which now house government offices and
+        shops. These wadas, like many in Pune&rsquo;s historic core, embody the
+        architectural and cultural influences of the Maratha and Peshwa periods.
+      </span>
+    </p>
+    <h4 class="c15" id="h.3s5zdt5ss1uh">
+      <span class="c6 c2"
+        >Area around the Bhor Rajwada with narrow lanes and old wadas which
+        housed families associated with the royal household. (Source: CKA
+        Archives)</span
+      ><span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 354.78px;
+          height: 472.71px;
+        "
+        ><img
+          alt=""
+          src="images/image9.jpg"
+          style="
+            width: 354.78px;
+            height: 472.71px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >These typically housed multiple families in a joint family system.
+        However, some were later rented out, which altered their original living
+        arrangements. The surrounding area, in many ways, is characteristic of a
+        village settlement with homes tightly packed together and narrow lanes
+        called &ldquo;bolas&rdquo; weaving between them. These bolas served as
+        pathways leading to small aangans (courtyards) where a few houses were
+        grouped together.
+      </span>
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >As a central architectural feature of wadas, courtyards were designed
+        to accommodate multiple families or a single household, serving both
+        ruling classes and commoners. These homes often included open verandahs
+        and spacious courtyards, which provided ventilation and functioned as
+        communal spaces for daily interactions. The narrow streets and aangans
+        offer a sense of community by encouraging social interaction and
+        building a close-knit community.
+      </span>
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 304.5px;
+          height: 406.31px;
+        "
+        ><img
+          alt=""
+          src="images/image29.jpg"
+          style="
+            width: 304.5px;
+            height: 406.31px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.x9dg20qwc8m2">
+      <span class="c6 c2"
+        >The narrow lanes called &ldquo;bolas&rdquo; between old residential
+        structures that lend them their intimacy and community engagement.
+        (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 313.5px;
+          height: 420.18px;
+        "
+        ><img
+          alt=""
+          src="images/image48.jpg"
+          style="
+            width: 313.5px;
+            height: 420.18px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.m8qhwft1ynfe">
+      <span class="c6 c2"
+        >Narrow lanes or &ldquo;bolas&rdquo; leading to shared courtyards
+        between houses. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 409px;
+          height: 305.87px;
+        "
+        ><img
+          alt=""
+          src="images/image43.jpg"
+          style="
+            width: 409px;
+            height: 305.87px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.fokechftjq2j">
+      <span class="c6 c2"
+        >A shared courtyard between houses which serves as a common space for
+        social interactions fostering a close-knit community. (Source: CKA
+        Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >The old residences in this area follow a distinct architectural pattern
+        characteristic of the period. The residences feature double shutter
+        windows and doors, crafted from wood with panelled designs, though some
+        doors are made of metal, which is perhaps a more recent addition.
+      </span>
+    </p>
+    <p class="c5">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 366px;
+          height: 274.8px;
+        "
+        ><img
+          alt=""
+          src="images/image28.jpg"
+          style="
+            width: 366px;
+            height: 274.8px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c21 c22" id="h.ypq67c2v96qu">
+      <span class="c2"
+        >An old residential building featuring double-shuttered windows and a
+        door, estimated to be built in the 1860s, with brick making up its
+        composite structure. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >In this Wada, the windows are proportionate to the doors, nearly
+        matching them in height, creating a sense of uniformity in the
+        structure. Small, high-placed windows with iron grills allow for
+        ventilation while maintaining privacy within the house. The residences
+        are built using a combination of materials, primarily cement and
+        bricks.</span
+      >
+    </p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 382.5px;
+          height: 285.91px;
+        "
+        ><img
+          alt=""
+          src="images/image49.jpg"
+          style="
+            width: 382.5px;
+            height: 285.91px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.qad7e15b35eq">
+      <span class="c6 c2"
+        >An old residence estimated to have been built in the 1860s, featuring a
+        double-shuttered, panelled wooden door and small windows for
+        ventilation. (Source: CKA Archives)</span
+      >
+    </h4>
+    <h2 class="c23 c21" id="h.1iogmy1j5ho1">
+      <span class="c14">Bhausaheb Rangari Wada in Budhwar Peth</span>
+    </h2>
+    <p class="c9">
+      <span class="c0"
+        >The central city areas of Pune, the peths, form the city&rsquo;s
+        original urban settlement from the Peshwa period. During this time,
+        wadas were a common style of residential architecture. Notably, many of
+        the wadas in the Peth areas today are from this era.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >Under British rule, Pune was part of the Bombay Presidency and became a
+        center for anti-colonial activities. Many freedom fighters and social
+        reformers, including Tilak, Gokhale, Ranade, Agarkar, Phule, and Karve,
+        were active in the city. Alongside them were lesser-known figures whose
+        homes became gathering places for discussions and planning. One such
+        place was Bhausaheb Rangari Bhavan.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >Bhausaheb Rangari aka Shrimant Bhausaheb Laxman Javale (1851-1905) was
+        one of the great revolutionaries of Pune. It is estimated that he built
+        his residence, the &ldquo;Bhausaheb Rangari Wada&rdquo;, in 1883 as a
+        space for the community to come together with a common vision of
+        freedom.</span
+      >
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 255.47px;
+          height: 317.22px;
+        "
+        ><img
+          alt=""
+          src="images/image25.jpg"
+          style="
+            width: 255.47px;
+            height: 317.22px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.3p5o6r4nd8rv">
+      <span class="c6 c2"
+        >Bhausaheb Rangari Wada, a 19th-century residence in Pune. Notice its
+        wooden construction - is said to be a characteristic feature of Wada
+        architecture of the Peth areas in which it lies. (Source: CKA
+        Archives)</span
+      >
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >An Ayurvedic vaidya by profession, he dreamt of an independent India
+        free from the British and was among the first to advocate for a
+        sarvajanik (public) celebration of the Ganpati festival as a medium to
+        rally people to the cause of freedom in Pune. In remembrance of this
+        legacy, the wada continues to feature the main chariot of the Bhau
+        Rangari Ganpati which was used initially by the trust to take out a
+        public Ganeshotsava procession in Pune. It is still used today and has
+        been maintained in its original form.
+      </span>
+    </p>
+    <p class="c16 c25"><span class="c8"></span></p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 442.2px;
+          height: 548.5px;
+        "
+        ><img
+          alt=""
+          src="images/image50.jpg"
+          style="
+            width: 442.2px;
+            height: 548.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.wg135kemksa">
+      <span class="c6 c2"
+        >The Bhau Rangari Ganpati chariot, maintained in its original form, has
+        been used for several years to lead public Ganeshotsava processions.
+        (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c10">The </span><span class="c10 c2">wada</span
+      ><span class="c10"
+        >&nbsp;bears many quiet traces of Bhausahabe&rsquo;s legacy and his
+        connections to the Freedom Movement. Above the </span
+      ><span class="c10 c2">devghar</span
+      ><span class="c10"
+        >, a concealed compartment was built to hide weapons, swords and pistols
+        said to have been taken from British police. In its own way, the house
+        became part of a larger story, reflecting how residential spaces were
+        tied into the currents of resistance.</span
+      >
+    </p>
+    <p class="c1 c25"><span class="c0"></span></p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 397.42px;
+          height: 530.5px;
+        "
+        ><img
+          alt=""
+          src="images/image31.jpg"
+          style="
+            width: 397.42px;
+            height: 530.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.ctiz02ni1zo8">
+      <span class="c6 c2"
+        >A concealed space above the Devghar used by freedom fighters and social
+        reformers to hide weapons seized from the British police. (Source: CKA
+        Archives)</span
+      >
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >The residence is a mix of wood and modern composite materials such as
+        cement and bricks. The wada retains its original wooden features, such
+        as staircases, doors, and windows. The Pune Municipal Corporation (PMC),
+        with the help of its patron, Puneet Balan, restored the old wada in
+        2022, leaving its original features untouched.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >The staircase leading to the first floor is narrow and made of wood. It
+        has no central landing and is steeper than modern staircases.
+      </span>
+    </p>
+    <p class="c16 c25"><span class="c8"></span></p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 284.25px;
+          height: 368.5px;
+        "
+        ><img
+          alt=""
+          src="images/image46.jpg"
+          style="
+            width: 284.25px;
+            height: 368.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.s52t6klkr89t">
+      <span class="c6 c2"
+        >A narrow wooden staircase inside the wada, with a photograph of
+        Bhausaheb Laxman Javale displayed at the landing. (Source: CKA
+        Archives)</span
+      >
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >The architectural details and elements of the residence are striking,
+        and the use of wood is noticeable at first glance. The wada retains its
+        original construction using bricks, wooden balconies, elongated
+        rectangular windows and sloping roofs. The doors are constructed from
+        wooden planks arranged in panel patterns. The main entrance door
+        features a dark brown color with golden metal embellishments.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >Traditionally, it is said that the doors of a wada represented the
+        wealth and social status of the family residing within. While wadas of
+        wealthier families would have heavily decorated doors as a show of their
+        affluence while wadas belonging to the middle-class featured simpler
+        wooden doors. The main entrance door of this residence follows that
+        tradition, featuring a dark brown color with golden metal
+        embellishments.</span
+      >
+    </p>
+    <p class="c26">
+      <span>&nbsp;</span
+      ><span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 237.71px;
+          height: 317.22px;
+        "
+        ><img
+          alt=""
+          src="images/image42.jpg"
+          style="
+            width: 237.71px;
+            height: 317.22px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.ri8cohan2gaw">
+      <span class="c6 c2"
+        >A deep-brown wooden door with golden embellishments at the main
+        entrance of the wada. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >To the left of the entrance, there is a passage bordered by wooden
+        railings. Below is a concealed underground passage which was used by the
+        wada&rsquo;s inhabitants to escape and hide from the British. While the
+        tunnel appears to extend in both directions, a mirror has been placed at
+        one end to mislead intruders.</span
+      >
+    </p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 415.86px;
+          height: 512.5px;
+        "
+        ><img
+          alt=""
+          src="images/image3.jpg"
+          style="
+            width: 415.86px;
+            height: 512.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.gnsnf4hvenfy">
+      <span class="c6 c2"
+        >A concealed underground passage used by inhabitants of the wada to flee
+        from the British enclosed by a wooden railing. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >On the second storey, each window is divided into three sections: an
+        upper portion with stained glass, a middle portion for ventilation, and
+        a bottom portion with railings. The latter two with panes that open
+        outward to allow light entry. The windows on the top storey, too, are
+        divided into two parts: the bottom is enclosed with grills while the top
+        portion has panes that open outward to allow light and ventilation.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 276.17px;
+          height: 353.5px;
+        "
+        ><img
+          alt=""
+          src="images/image1.jpg"
+          style="
+            width: 276.17px;
+            height: 353.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.mb6zz36kv00b">
+      <span class="c6 c2"
+        >A three-piece window featuring a stained-glass top, a ventilated middle
+        section, and a grilled bottom, with double-door shutters that open
+        outward. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 275.18px;
+          height: 354.5px;
+        "
+        ><img
+          alt=""
+          src="images/image22.jpg"
+          style="
+            width: 275.18px;
+            height: 354.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.5kvsc0ihefhn">
+      <span class="c6 c2"
+        >Box windows on the third storey featuring double-door shutters in the
+        top half that open outward and metal railings enclosing the bottom half.
+        (Source: CKA Archives)</span
+      >
+    </h4>
+    <h2 class="c23 c21" id="h.d5l8wpy6qxdi">
+      <span class="c14">A Residence from the mid-20th Century in Velhe </span>
+    </h2>
+    <p class="c9">
+      <span class="c0"
+        >Rajgad taluka in Pune district is home to several villages where local
+        building traditions are tied closely to the landscape, climate, and
+        materials found in the region. One such village is Velhe, where this
+        residence, built around 80 years ago, sits at the edge of the main
+        market street on contoured land.</span
+      >
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 255.53px;
+          height: 341.5px;
+        "
+        ><img
+          alt=""
+          src="images/image12.png"
+          style="
+            width: 255.53px;
+            height: 341.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title="" /></span
+      ><span class="c0">&nbsp;</span>
+    </p>
+    <h4 class="c15" id="h.yet1zbdgkla">
+      <span class="c6 c2"
+        >The exterior of the residence shows distinct building material-basalt
+        stone plinth and walls made from bamboo sheets, coated with mud plaster
+        and lime. (Source: CKA Archives)</span
+      >
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >The house rests on a plinth constructed from basalt stone on a perhaps
+        uneven terrain. The exterior walls are made of bamboo sheets, coated
+        with mud plaster and lime, blending the house with its surroundings
+        while keeping the interior cool. The construction perhaps building
+        practices typical to the region at the time.</span
+      >
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >The roof is made of a bamboo framework covered with metal sheets.
+        Wooden columns serve as vertical supports, reinforcing the framework and
+        complementing the rustic aesthetic of the house. The flooring, made from
+        basalt stone, is left in its natural state, lending an earthy character
+        to the space.
+      </span>
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c26">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 322.88px;
+          height: 430.5px;
+        "
+        ><img
+          alt=""
+          src="images/image19.png"
+          style="
+            width: 322.88px;
+            height: 430.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.ev49kpf8btfb">
+      <span class="c6 c2"
+        >A rustic interior featuring basalt stone in its natural form, adding an
+        earthy and timeless character to the space. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c9">
+      <span class="c0"
+        >Very notably, the spatial layout of the house appears to reflect the
+        agrarian setting of the village and the occupational needs of its
+        residents. It includes a cattle shed and storage areas for agricultural
+        produce, along with a living room, a swayampak ghar (kitchen), and
+        private rooms. A drain runs along the periphery of the structure to
+        manage both rainwater and wastewater.</span
+      >
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <h2 class="c21 c43" id="h.tkbyivtc1hv9">
+      <span class="c14">A Residence from the late 20th Century in Velhe</span>
+    </h2>
+    <p class="c1">
+      <span class="c0"
+        >The main market street of Velhe bears remnants of past architectural
+        features among the newer constructions. Built around the mid-1990s, this
+        residence demonstrates a mix of old and recent architectural features
+        with a structure of wooden framework and brickwork. Originally, locals
+        say that the residences in the main market street of Velhe had a
+        structure of wooden frameworks which burnt down in a fire in the market.
+        More recently, residences are being constructed with composite materials
+        such as bricks and cement. The below residence shares features from both
+        eras &ndash; a partial wooden framework supplemented by brickwork.</span
+      >
+    </p>
+    <p class="c5">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 372px;
+          height: 277.33px;
+        "
+        ><img
+          alt=""
+          src="images/image44.jpg"
+          style="
+            width: 372px;
+            height: 277.33px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.d3srwth6q76a">
+      <span class="c6 c2"
+        >An old residence blending traditional wooden frameworks with modern
+        brickwork. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >The ground floor of the residence has a wooden verandah with stone
+        tiling in the front of the house. Double-shuttered wooden doors open up
+        to form a small convenience store in the centre and steps leading up to
+        the second floor of the house where the family resides. The steps are
+        concrete while the railings have a typical wooden top rail with vertical
+        metal rod grills. The residence has a neutral color scheme with a pop of
+        blue that highlights the convenience store.</span
+      >
+    </p>
+    <p class="c5">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 425.33px;
+          height: 318.67px;
+        "
+        ><img
+          alt=""
+          src="images/image45.jpg"
+          style="
+            width: 425.33px;
+            height: 318.67px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.jd9ar4vewc69">
+      <span class="c6 c2"
+        >A neutral-colored wooden verandah with a pop of blue highlighting the
+        convenience store. (Source: CKA Archives)</span
+      >
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c5">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 345.33px;
+          height: 461.33px;
+        "
+        ><img
+          alt=""
+          src="images/image47.jpg"
+          style="
+            width: 345.33px;
+            height: 461.33px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.tb40g8yd55s9">
+      <span class="c6 c2"
+        >Railing with concrete steps and blue-colored wood and metal railings
+        leading up to the private residences on the second storey. (Source: CKA
+        Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >The house is built on a wooden framework with brick walls. The flooring
+        is made of Shahabad stone tiles and the edges are of a granite finish.
+        The wooden framework on the roof is covered with metal sheets to form a
+        sloping roof.</span
+      >
+    </p>
+    <p class="c5">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 265.33px;
+          height: 353.33px;
+        "
+        ><img
+          alt=""
+          src="images/image21.jpg"
+          style="
+            width: 265.33px;
+            height: 353.33px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title="" /></span
+      ><span class="c0">&nbsp;</span>
+    </p>
+    <h4 class="c22 c21" id="h.rgzl6r4s6rhs">
+      <span class="c6 c2"
+        >Shahabad stone tile flooring with granite finishing. (Source: CKA
+        Archives)
+      </span>
+    </h4>
+    <h2 class="c1 c21" id="h.smwn6yjtqyum">
+      <span class="c14">A Residential Building from 2000s in Bibwewadi </span>
+    </h2>
+    <p class="c1">
+      <span class="c10"
+        >As time passes, one can usually see how new architectural styles
+        gradually begin to reshape the region&rsquo;s landscape. Bibwewadi, a
+        locality in the south of Pune city often described as a
+        &ldquo;developing area,&rdquo; is evidence of this transition. Over the
+        21</span
+      ><span class="c10 c31">st</span
+      ><span class="c0"
+        >&nbsp;Century, mid-rise buildings have increasingly become part of the
+        locality&rsquo;s built environment (a technical term for the human-made
+        surroundings that make up a community). Among them is Tejashree Society,
+        a residential society built in phases and completed around 2001.</span
+      >
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 500.63px;
+          height: 667.5px;
+        "
+        ><img
+          alt=""
+          src="images/image23.jpg"
+          style="
+            width: 500.63px;
+            height: 667.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.1pnwsyj2z2aq">
+      <span class="c6 c2"
+        >The interior of the residential society with a stone-tiled pathway in
+        front of the building. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c1 c25"><span class="c0"></span></p>
+    <h3 class="c1 c11" id="h.ttyqztvimyvc"><span class="c36 c33"></span></h3>
+    <p class="c1">
+      <span class="c0"
+        >The composite structure of the building very much aligns with urban
+        mainstream practices of the current day. The building has a reinforced
+        cement concrete (RCC) column structure with brick walls and a plaster
+        finish. The project has been developed in phases with Phase II, III and
+        IV within the same compound. Within Phase IV, there are two buildings,
+        each of four storeys.</span
+      >
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >The main entrance has a mild steel grill door on the outside followed
+        by an inside door which is wood and polish.</span
+      >
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 306px;
+          height: 407.5px;
+        "
+        ><img
+          alt=""
+          src="images/image30.jpg"
+          style="
+            width: 306px;
+            height: 407.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.zc38wmmvs6ym">
+      <span class="c6 c2"
+        >Main entrance with a metal outer door and wooden inner door. (Source:
+        CKA Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >Notice, some windows of the building have a &lsquo;Chajja&rsquo;, a
+        projected element just above the window, which shades the opening, stops
+        rain from entering the room, and reduces sky glare while looking out of
+        the room. Interestingly, the feature was popularized post-independence,
+        and formal adoption was encouraged by standards set by the Public Works
+        Department. Most other windows on the building are recessed windows and
+        are fitted with metal grills and sliding glass panels.
+      </span>
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 474.5px;
+          height: 355.88px;
+        "
+        ><img
+          alt=""
+          src="images/image6.jpg"
+          style="
+            width: 474.5px;
+            height: 355.88px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.ta3ux6ocv5ih">
+      <span class="c6 c2"
+        >Windows with a &ldquo;chajja&rdquo; for shade, to prevent rain from
+        entering and reduce sky glare. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 465.87px;
+          height: 349.18px;
+        "
+        ><img
+          alt=""
+          src="images/image27.jpg"
+          style="
+            width: 465.87px;
+            height: 349.18px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.t0fpom76fo0w">
+      <span class="c6 c2"
+        >Recessed windows with outer metal grills and sliding glass panels.
+        (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >The Phase IV buildings have an interesting modular color scheme with
+        contrasting colors. The buildings appear to use contrasting rectangular
+        sections of white, dark green and light brown while supporting columns
+        in the garage have been painted olive green.</span
+      >
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 481.5px;
+          height: 642px;
+        "
+        ><img
+          alt=""
+          src="images/image33.jpg"
+          style="
+            width: 481.5px;
+            height: 642px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c28 c21" id="h.or4wx63q1rf2">
+      <span class="c6 c2"
+        >A closer view of the residential building which has an interesting
+        modular color panel design. The building appears to use contrasting
+        rectangular sections of white, dark green and light brown. (Source: CKA
+        Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >The society features two landscaped garden areas, accessible
+        exclusively to its residents, fostering a shared community space within
+        the modern residential complex. The first garden, located behind Phase
+        IV, is densely covered with plants and features a natural stream, though
+        its upkeep poses challenges.
+      </span>
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >The second garden, situated near the society&rsquo;s entrance, serves
+        as a gathering space for residents. These common spaces may serve as a
+        modern reinterpretation of traditional courtyards found in wadas across
+        the city, preserving their role as a focal point for social engagement.
+        Semi-public gardens in residential societies offer a sense of community,
+        much like common courtyards did in wadas.
+      </span>
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 337.5px;
+          height: 253.98px;
+        "
+        ><img
+          alt=""
+          src="images/image38.jpg"
+          style="
+            width: 337.5px;
+            height: 253.98px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.y5urrex3vjeu">
+      <span class="c6 c2"
+        >Densely covered garden behind Phase IV with a variety of plants.
+        (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c3 c25"><span class="c8"></span></p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 287.57px;
+          height: 384.14px;
+        "
+        ><img
+          alt=""
+          src="images/image11.jpg"
+          style="
+            width: 287.57px;
+            height: 384.14px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.pr14hbhrh23x">
+      <span class="c6 c2"
+        >Common space near the entry to the residential society serving as a
+        space for social interaction. (Source: CKA Archives)
+      </span>
+    </h4>
+    <h2 class="c23 c21" id="h.bz43lgmtrjwt">
+      <span class="c14">A Residential Building from 2010s in Dhankawadi</span>
+    </h2>
+    <p class="c1">
+      <span class="c0"
+        >Dhankawadi, another &ldquo;developing area&rdquo; in south Pune, shares
+        a similar transformation journey as Bibwewadi. The area reflects
+        coexistence between older low-rise structures and newer mid-rise
+        buildings. Once a predominantly residential area, it has gradually
+        incorporated commercial spaces, shaping its evolving built environment.
+        Among the vast number of residential spaces is Kumar Panchsheel, a
+        residential society, whose construction was completed in 2013.</span
+      >
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 414.04px;
+          height: 310.53px;
+        "
+        ><img
+          alt=""
+          src="images/image18.jpg"
+          style="
+            width: 414.04px;
+            height: 310.53px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.58whgl2e4nap">
+      <span class="c6 c2"
+        >Entrance to Kumar Panchsheel through the bungalow society which sits
+        amidst a relatively wide concrete road which leads to its residential
+        buildings. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >The building&rsquo;s design significantly differs from older homes of
+        the district. It features a larger scale and a relatively more
+        contemporary architectural approach which can typically be seen across
+        many semi-urban and urban regions in the district. The composite
+        structure of the building very much aligns with the mainstream practices
+        of the current day.
+      </span>
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >The residential society is composed of two buildings, each of nine
+        storeys and is located within the compounds of a bungalow society with
+        an interior road leading to Kumar Panchsheel. The buildings feature a
+        modular design with contrasting cream, light brown and grey panels.
+      </span>
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 422.05px;
+          height: 563.5px;
+        "
+        ><img
+          alt=""
+          src="images/image35.jpg"
+          style="
+            width: 422.05px;
+            height: 563.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.nl3359hyqe4k">
+      <span class="c6 c2"
+        >Internal road within the bungalow society leading to the residential
+        society which is maintained and under the purview of the community.
+        (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 448.88px;
+          height: 598.5px;
+        "
+        ><img
+          alt=""
+          src="images/image8.jpg"
+          style="
+            width: 448.88px;
+            height: 598.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.x0icea267271">
+      <span class="c6 c2"
+        >A closer view of the residential building which has a modular design
+        featuring contrasting rectangular panels of cream, light brown and grey.
+        (Source: CKA Archives)
+      </span>
+    </h4>
+    <h3 class="c1 c11" id="h.n064hu5wotsr"><span class="c33 c36"></span></h3>
+    <p class="c1">
+      <span class="c0"
+        >The main entrance is a recessed door of polished wood with steel
+        fittings.</span
+      >
+    </p>
+    <p class="c5">
+      <span class="c10">&nbsp;</span
+      ><span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 444.38px;
+          height: 592.5px;
+        "
+        ><img
+          alt=""
+          src="images/image39.jpg"
+          style="
+            width: 444.38px;
+            height: 592.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.1xblqr1k8p5h">
+      <span class="c6 c2"
+        >A recessed, polished wood door fitted with steel attachment. (Source:
+        CKA Archives)</span
+      >
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >Metal and glass has been used primarily for the design of the windows.
+        The shutters are glass and have a sliding design, while the grills are
+        metal and are painted white.</span
+      >
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 406.5px;
+          height: 304.88px;
+        "
+        ><img
+          alt=""
+          src="images/image17.jpg"
+          style="
+            width: 406.5px;
+            height: 304.88px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.8e5oh6tk3pmk">
+      <span class="c6 c2"
+        >Rectangular window featuring sliding glass shutters and metal grills.
+        (Source: CKA Archives)</span
+      >
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <h2 class="c23 c21" id="h.q43n7dbrad1a">
+      <span class="c14"
+        >A Residential Township from the early 21st Century in Hinjewadi</span
+      >
+    </h2>
+    <p class="c1">
+      <span class="c0"
+        >Over the first few decades of the 21st century, Pune has seen the rise
+        of integrated townships as a distinct phase in its urban development.
+        These large, plotted settlements combine residential units with
+        commercial, educational, and recreational infrastructure, emerging in
+        response to rapid population growth and the pressures it placed on the
+        city&rsquo;s older housing models. By 2015, it has been noted that Pune
+        had more such townships than any other city in Maharashtra, reflecting a
+        broader shift toward planned, self-contained environments on its urban
+        periphery.</span
+      >
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >Their growing appeal, in many ways, lies in the architectural promise
+        of convenience with amenities, workplaces, and public spaces arranged
+        within a single, planned compound. These townships are largely
+        concentrated in Pune&rsquo;s suburbs, where land is more readily
+        available for large, plotted developments. One of the most prominent
+        examples is Hinjawadi, a suburb whose transformation began around 2010
+        and is closely tied to the expansion of Pune&rsquo;s tech industry. The
+        Rajiv Gandhi Infotech Park, planned and developed by the Maharashtra
+        Industrial Development Corporation (MIDC), was set up in phases and
+        brought a wave of companies and jobs to the area.The influx of new
+        employment opportunities created a growing demand for housing in the
+        area, prompting the development of large-scale townships.
+      </span>
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >One of the earliest among them was Blue Ridge Township, which began
+        construction in 2007. Situated within Phase I of the Rajiv Gandhi
+        Infotech Park, it was designed to include not only residential towers
+        but also a school, a shopping centre, sports facilities, and office
+        spaces. Nearby are major IT companies like Wipro, Infosys, and
+        Accenture, making it easier for many residents to live close to where
+        they work.</span
+      >
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 327.5px;
+          height: 245.39px;
+        "
+        ><img
+          alt=""
+          src="images/image26.jpg"
+          style="
+            width: 327.5px;
+            height: 245.39px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.11yanj56frwf">
+      <span class="c6 c2"
+        >Entrance to the Blue Ridge Township via a wide cement road.
+        Interestingly, note the coexistence of commercial and residential spaces
+        within the same compound. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 286.2px;
+          height: 490.5px;
+        "
+        ><img
+          alt=""
+          src="images/image41.jpg"
+          style="
+            width: 286.2px;
+            height: 490.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.po1pm1ugmznh">
+      <span class="c6 c2"
+        >The building rises to a non-human scale at a height above other
+        buildings in the area. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c1">
+      <span class="c0"
+        >The building&rsquo;s design significantly differs from older
+        constructions prevalent in the city and instead features a more
+        contemporary architectural approach. Glass, cement, brick and metal
+        makes up the composite structure of the residential towers, each around
+        25 storeys high which is taller than other construction projects in the
+        vicinity.
+      </span>
+    </p>
+    <p class="c1">
+      <span class="c0"
+        >The township offers one, two, three, four, and five BHK flats. The
+        amenities and residential spaces are connected by a wide, cemented,
+        two-way internal road shaded on either side by trees. Additionally,
+        stone-tiled footpaths have been constructed within the township which
+        are also shaded by trees.</span
+      >
+    </p>
+    <p class="c5">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 277.33px;
+          height: 594.67px;
+        "
+        ><img
+          alt=""
+          src="images/image10.jpg"
+          style="
+            width: 277.33px;
+            height: 594.67px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.nq1e7z5f43b">
+      <span class="c6 c2"
+        >Wide, cemented internal roads of the township bordered by trees on both
+        sides. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 205.5px;
+          height: 444.03px;
+        "
+        ><img
+          alt=""
+          src="images/image24.jpg"
+          style="
+            width: 205.5px;
+            height: 444.03px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.o6cq1xjci1cd">
+      <span class="c6 c2"
+        >Stone-tiled footpaths in the township shaded by trees. (Source: CKA
+        Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >The buildings are painted in a neutral palette featuring grey and white
+        with a pop of yellow color mainly seen on the exterior of the top
+        floors.</span
+      >
+    </p>
+    <p class="c5">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 401.36px;
+          height: 538.5px;
+        "
+        ><img
+          alt=""
+          src="images/image5.jpg"
+          style="
+            width: 401.36px;
+            height: 538.5px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.no52uav0urpc">
+      <span class="c6 c2"
+        >&nbsp;Residential buildings with a neutral color palette of grey and
+        white with pops of yellow color. (Source: CKA Archives)
+      </span>
+    </h4>
+    <h3 class="c1 c11" id="h.fy7p4z3h5pt"><span class="c36 c33"></span></h3>
+    <p class="c1">
+      <span class="c0"
+        >The main entrance door is a flush door with laminate on both sides and
+        a digital locking system. Internal doors, too, are flush with laminate
+        on both sides. The windows slide open and have powder coated aluminum
+        frames with glass panels. The windows have no grills. The balcony doors,
+        too, have powder coated aluminum frames with glass panels and have metal
+        grills on the bottom half.</span
+      >
+    </p>
+    <p class="c5">
+      <span class="c10">&nbsp;</span
+      ><span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 203.8px;
+          height: 398.54px;
+        "
+        ><img
+          alt=""
+          src="images/image16.jpg"
+          style="
+            width: 203.8px;
+            height: 398.54px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.90ickxjbh1hx">
+      <span class="c6 c2"
+        >Powdered aluminum window shutters with glass panes. (Source: CKA
+        Archives)
+      </span>
+    </h4>
+    <p class="c1">
+      <span class="c0"
+        >The balconies in the apartments are noticeably narrow, with only enough
+        room for storage or keeping plants. The design, in many ways, acts as a
+        compact extension of the living space.
+      </span>
+    </p>
+    <p class="c3">
+      <span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 260.64px;
+          height: 347.52px;
+        "
+        ><img
+          alt=""
+          src="images/image40.jpg"
+          style="
+            width: 260.64px;
+            height: 347.52px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c15" id="h.m3zc6m9gipj7">
+      <span class="c6 c2"
+        >Narrow balcony attached to the living room of the apartment. The
+        balcony has a wooden floor and a cluster of plants have been kept in it,
+        leaving little space for outdoor seating. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c1">
+      <span class="c0"
+        >The flooring across the apartments are vitrified tiles with only the
+        master bedroom having wooden floorboards.</span
+      >
+    </p>
+    <p class="c5">
+      <span class="c10">&nbsp;</span
+      ><span
+        style="
+          overflow: hidden;
+          display: inline-block;
+          margin: 0px 0px;
+          border: 0px solid #000000;
+          transform: rotate(0rad) translateZ(0px);
+          -webkit-transform: rotate(0rad) translateZ(0px);
+          width: 452px;
+          height: 335.85px;
+        "
+        ><img
+          alt=""
+          src="images/image37.jpg"
+          style="
+            width: 452px;
+            height: 335.85px;
+            margin-left: 0px;
+            margin-top: 0px;
+            transform: rotate(0rad) translateZ(0px);
+            -webkit-transform: rotate(0rad) translateZ(0px);
+          "
+          title=""
+      /></span>
+    </p>
+    <h4 class="c22 c21" id="h.ytjrzfrgi8vd">
+      <span class="c6 c2"
+        >Vitrified cream-colored tiles in the apartments with grout filling at
+        the edges. (Source: CKA Archives)
+      </span>
+    </h4>
+    <p class="c9">
+      <span class="c0"
+        >These new developments and changes in the architectural character of
+        this space from the elements that one can find within the houses or the
+        spatial layout of the whole township, in many ways, reflects how life in
+        Pune is changing. The way these spaces are built, with everything
+        carefully planned out, marks a new chapter in how the city is
+        growing.</span
+      >
+    </p>
+    <p class="c7"><span class="c0"></span></p>
+    <h1 class="c1 c21" id="h.9fcprqeta7ai">
+      <span class="c17">References</span>
+    </h1>
+    <ul class="c38 lst-kix_1b1tjjflc2jl-0 start">
+      <li class="c9 c19 li-bullet-0">
+        <span class="c0"
+          >Sigfried Giedion. 1959. Space, Time, &amp; Architecture. 3rd ed.
+          Harvard University Press.
+        </span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10">Amos Rapoport. 1969. </span
+        ><span class="c10 c2">House, Form, and Culture.</span
+        ><span class="c0">&nbsp;Prentice-Hall, Englewood Cliffs, NJ.</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Art Deco Pune. 2022. Bank of Maharashtra building, Bajirao Road,
+          Budhwar Peth. Instagram. Accessed on April 16, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://www.instagram.com/p/CeBY9A1DiDp/?img_index%3D1&amp;sa=D&amp;source=editors&amp;ust=1747751947448259&amp;usg=AOvVaw1OisykeNlBZACqyic1G7X_"
+            >https://www.instagram.com/p/CeBY9A1DiDp/?img_index=1</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Behind Every Temple. n.d. Bhimashankar Temple. Behind Every Temple.
+          Accessed on April 23, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://behindeverytemple.org/hindu-temples/shiva/bhimashankar-jyotirlinga-temple/&amp;sa=D&amp;source=editors&amp;ust=1747751947449096&amp;usg=AOvVaw34KIAzjHxRaQL_ZC0Ee7zx"
+            >https://behindeverytemple.org/hindu-temples/shiva/bhimashankar-jyotirlinga-temple/</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Dipanitha Nath. 2023. Know Your City: How COEP retains its status as
+          a premier institute in India. The Indian Express. Accessed on April
+          16, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://indianexpress.com/article/cities/pune/how-coep-retains-its-status-as-a-premier-institute-in-india-8518360/&amp;sa=D&amp;source=editors&amp;ust=1747751947450032&amp;usg=AOvVaw1dJMdDuYFCfy7F40GudTnf"
+            >https://indianexpress.com/article/cities/pune/how-coep-retains-its-status-as-a-premier-institute-in-india-8518360/</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Gaurav Kadam. 2023. Exploring Pune&#39;s Gothic Heritage: A Journey
+          Through Architectural Splendour. The Free Press Journal. Accessed on
+          April 15, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://www.freepressjournal.in/pune/exploring-punes-gothic-heritage-a-journey-through-architectural-splendour&amp;sa=D&amp;source=editors&amp;ust=1747751947450882&amp;usg=AOvVaw1fvWqIEc9Mc5-ya5v8pk02"
+            >https://www.freepressjournal.in/pune/exploring-punes-gothic-heritage-a-journey-through-architectural-splendour</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Government of India. n.d. Shaniwarwada. Indian Culture. Accessed on
+          &nbsp;April 15, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://indianculture.gov.in/snippets/shaniwarwada%23:~:text%3DBuilt%2520in%2520the%2520year%25201732,wall%2520niches%2520and%2520the%2520Mughal&amp;sa=D&amp;source=editors&amp;ust=1747751947451609&amp;usg=AOvVaw3jJXmXoKHZFlugnaURkmno"
+            >https://indianculture.gov.in/snippets/shaniwarwada#:~:text=Built%20in%20the%20year%201732,wall%20niches%20and%20the%20Mughal</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Heritage Temples. n.d. Bhimashankar Temple, Talegaon-Dhamdhere.
+          Heritage Temples Accessed on April 23, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://heritagetemples.org/pune-project/bhimashankar-temple&amp;sa=D&amp;source=editors&amp;ust=1747751947452261&amp;usg=AOvVaw39JPcp_AJkqONaVVGJIcvW"
+            >https://heritagetemples.org/pune-project/bhimashankar-temple</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Mi Punekar. 2021. Bhor Rajwada. Instagram. Accessed on April 15,
+          2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://www.instagram.com/mipunekar.in/?hl%3Den&amp;sa=D&amp;source=editors&amp;ust=1747751947452775&amp;usg=AOvVaw0OY-RTa-swIyMzb2gziT39"
+            >https://www.instagram.com/mipunekar.in/?hl=en</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Nikita Mahajani. 2024. Art Deco Architecture in Pune from the 1940s
+          to the 1960s. Vol 16, no. 2, &nbsp;Rupkatha Journal on
+          Interdisciplinary Studies in Humanities. Accessed on April 15, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://rupkatha.com/V16/n2/v16n207g.pdf&amp;sa=D&amp;source=editors&amp;ust=1747751947453426&amp;usg=AOvVaw1f71jtSkFASJ6ZhqkRjaIj"
+            >https://rupkatha.com/V16/n2/v16n207g.pdf</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Nisha Nambiar. 2025. Panel to inspect all integrated townships in
+          Maha next year. The Times of India. Accessed on April 15, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://timesofindia.indiatimes.com/city/pune/panel-to-inspect-all-integrated-townships-in-maha-next-year/articleshow/116840241.cms&amp;sa=D&amp;source=editors&amp;ust=1747751947454248&amp;usg=AOvVaw3_vxv_CDqMOupfSxNdDrE_"
+            >https://timesofindia.indiatimes.com/city/pune/panel-to-inspect-all-integrated-townships-in-maha-next-year/articleshow/116840241.cms</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c0"
+          >Ramakrishna Nallathiga, Khyati Tewari, Susan Varghese, &amp; Anshal
+          Saboo. 2021. From Satellite Townships to Smart Townships: Evolution of
+          Township Development in Pune, India. Vol. 16, no. 1. &nbsp;Theoretical
+          and Empirical Researches in Urban Management.
+        </span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Rishika Sood. n.d. Architecture of Indian Cities Pune- Queen of the
+          Deccan. Rethinking The Future. Accessed on April 15, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://www.re-thinkingthefuture.com/rtf-fresh-perspectives/a1251-architecture-of-indian-cities-pune-queen-of-the-deccan/%23google_vignette&amp;sa=D&amp;source=editors&amp;ust=1747751947455612&amp;usg=AOvVaw2CcV_KIIRn7rMjP6bPkJXv"
+            >https://www.re-thinkingthefuture.com/rtf-fresh-perspectives/a1251-architecture-of-indian-cities-pune-queen-of-the-deccan/#google_vignette</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Samanata Kumar. 2022. The Architecture of Wadas of Maharashtra.
+          Rethinking the Future. Accessed on April 15, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://www.re-thinkingthefuture.com/rtf-fresh-perspectives/a828-the-architecture-of-wadas-of-maharashtra/%23google_vignette&amp;sa=D&amp;source=editors&amp;ust=1747751947456451&amp;usg=AOvVaw38HUwUC4c4wE0KFjDx09j7"
+            >https://www.re-thinkingthefuture.com/rtf-fresh-perspectives/a828-the-architecture-of-wadas-of-maharashtra/#google_vignette</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Saurabh Agashe. 2019. Venerable trees and a gothic market:
+          heritage-hunting in fast-changing Pune. The Guardian. Accessed on
+          April 15, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://www.theguardian.com/cities/2019/aug/02/from-ancient-trees-to-a-gothic-market-hunting-for-heritage-in-fast-changing-pune-saurabh-agashe&amp;sa=D&amp;source=editors&amp;ust=1747751947457335&amp;usg=AOvVaw3Zl-IaqE0v0zVdWTUrKi-8"
+            >https://www.theguardian.com/cities/2019/aug/02/from-ancient-trees-to-a-gothic-market-hunting-for-heritage-in-fast-changing-pune-saurabh-agashe</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Shoumojit Bannerjee. 2015. Fergusson College wins heritage status.
+          The Hindu. Accessed on April 16, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://www.thehindu.com/news/national/other-states/punes-fergusson-college-wins-ugc-heritage-status/article7396108.ece&amp;sa=D&amp;source=editors&amp;ust=1747751947458032&amp;usg=AOvVaw2wKl_HC0yGNKSvG80cSZE4"
+            >https://www.thehindu.com/news/national/other-states/punes-fergusson-college-wins-ugc-heritage-status/article7396108.ece</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Sushant Kulkarni. 2022. Know Your City: How the Army&rsquo;s Southern
+          Command became an integral part of Pune&rsquo;s history. Indian
+          Express. Accessed on April 15, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://indianexpress.com/article/cities/pune/pune-know-your-city-army-southern-command-history-7837197/&amp;sa=D&amp;source=editors&amp;ust=1747751947458609&amp;usg=AOvVaw0wKg8JUpd--78ixyOJG9ZG"
+            >https://indianexpress.com/article/cities/pune/pune-know-your-city-army-southern-command-history-7837197/</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+      <li class="c9 c19 li-bullet-0">
+        <span class="c10"
+          >Adminhhsa. 2021. Know more about Chajja. Healthy Homes. Accessed on
+          April 15, 2025. </span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://healthyhomes.co.in/know-more-about-chajja/&amp;sa=D&amp;source=editors&amp;ust=1747751947458986&amp;usg=AOvVaw0ab8oTp1g-XQTj83tG_AaT"
+            >https://healthyhomes.co.in/know-more-about-chajja/</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </li>
+    </ul>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c7"><span class="c0"></span></p>
+    <p class="c25 c42"><span class="c8"></span></p>
+    <hr class="c30" />
+    <div>
+      <p class="c4">
+        <a href="#ftnt_ref1" id="ftnt1">[1]</a><span class="c10">&nbsp;</span
+        ><span class="c10 c24"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://shreebhimashankar.com/en/bhimashankar-temple-history/&amp;sa=D&amp;source=editors&amp;ust=1747751947459441&amp;usg=AOvVaw2rqdUVR_1ffhDRLXWyyLar"
+            >https://shreebhimashankar.com/en/bhimashankar-temple-history/</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </p>
+    </div>
+    <div>
+      <p class="c16">
+        <a href="#ftnt_ref2" id="ftnt2">[2]</a><span class="c27">&nbsp;</span
+        ><span class="c32 c27"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://commons.wikimedia.org/wiki/Category:Parvati_Hill&amp;sa=D&amp;source=editors&amp;ust=1747751947459743&amp;usg=AOvVaw0Fsy_lly5D9Jr0G5OHqwI-"
+            >https://commons.wikimedia.org/wiki/Category:Parvati_Hill</a
+          ></span
+        ><span class="c20">&nbsp;</span>
+      </p>
+    </div>
+    <div>
+      <p class="c16">
+        <a href="#ftnt_ref3" id="ftnt3">[3]</a><span class="c27">&nbsp;</span
+        ><span class="c27 c32"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://www.stpaulspune.in/&amp;sa=D&amp;source=editors&amp;ust=1747751947460008&amp;usg=AOvVaw238qswqi93-yQyimb31A_y"
+            >https://www.stpaulspune.in/</a
+          ></span
+        ><span class="c20">&nbsp;</span>
+      </p>
+    </div>
+    <div>
+      <p class="c4">
+        <a href="#ftnt_ref4" id="ftnt4">[4]</a><span class="c10">&nbsp;</span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/College_of_Engineering,_Pune&amp;sa=D&amp;source=editors&amp;ust=1747751947460286&amp;usg=AOvVaw1iOZH_zKbIsk0hwgpY_3gI"
+            >https://en.wikipedia.org/wiki/College_of_Engineering,_Pune</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </p>
+    </div>
+    <div>
+      <p class="c4">
+        <a href="#ftnt_ref5" id="ftnt5">[5]</a><span class="c10">&nbsp;</span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://mr.m.wikipedia.org/wiki/%25E0%25A4%259A%25E0%25A4%25BF%25E0%25A4%25A4%25E0%25A5%258D%25E0%25A4%25B0:Fergusson_college_campus_buildings1-Pune-Maharashtra.jpg&amp;sa=D&amp;source=editors&amp;ust=1747751947460649&amp;usg=AOvVaw1y280HNlPIiqvuRFj45GrT"
+            >https://mr.m.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Fergusson_college_campus_buildings1-Pune-Maharashtra.jpg</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </p>
+    </div>
+    <div>
+      <p class="c4">
+        <a href="#ftnt_ref6" id="ftnt6">[6]</a><span class="c10">&nbsp;</span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://en.wikipedia.org/wiki/Mahathma_Phule_Mandai&amp;sa=D&amp;source=editors&amp;ust=1747751947460895&amp;usg=AOvVaw0I_AiVThMS5HK0xlaU9ToK"
+            >https://en.wikipedia.org/wiki/Mahathma_Phule_Mandai</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </p>
+    </div>
+    <div>
+      <p class="c4">
+        <a href="#ftnt_ref7" id="ftnt7">[7]</a><span class="c10">&nbsp;</span
+        ><span class="c24 c10"
+          ><a
+            class="c12"
+            href="https://www.google.com/url?q=https://commons.wikimedia.org/wiki/File:Bank_of_Maharashtra_,_Bajirao_Road.jpg&amp;sa=D&amp;source=editors&amp;ust=1747751947461161&amp;usg=AOvVaw1oD6j_O__LhEjWwwD6_Iyr"
+            >https://commons.wikimedia.org/wiki/File:Bank_of_Maharashtra_,_Bajirao_Road.jpg</a
+          ></span
+        ><span class="c0">&nbsp;</span>
+      </p>
+    </div>
+  </body>
+</html>

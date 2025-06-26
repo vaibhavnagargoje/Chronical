@@ -1,6 +1,7 @@
 # culture/admin.py
 
 from django.contrib import admin
+from django.contrib import messages
 from polymorphic.admin import (
     PolymorphicInlineSupportMixin, StackedPolymorphicInline
 )
@@ -59,7 +60,47 @@ class CulturalChapterAdmin(PolymorphicInlineSupportMixin, admin.ModelAdmin):
     # This will create a single section in the admin where you can add,
     # edit, and reorder all content blocks.
     inlines = [ContentBlockInline]
+    actions = ['delete_selected_chapters']
 
+    def get_actions(self, request):
+        """Override to remove the default delete action and use our custom one"""
+        actions = super().get_actions(request)
+        if 'delete_selected' in actions:
+            del actions['delete_selected']
+        return actions
+
+    def delete_selected_chapters(self, request, queryset):
+        """Custom bulk delete action to handle polymorphic content blocks"""
+        count = 0
+        for chapter in queryset:
+            # Delete content blocks first
+            for block in chapter.content_blocks.all():
+                block.delete()
+            chapter.delete()
+            count += 1
+        
+        self.message_user(
+            request,
+            f'Successfully deleted {count} cultural chapter(s) and their content blocks.',
+            messages.SUCCESS
+        )
     
+    delete_selected_chapters.short_description = "Delete selected cultural chapters"
+
+    def delete_model(self, request, obj):
+        """Override single delete to handle polymorphic content blocks"""
+        # Delete content blocks first
+        for block in obj.content_blocks.all():
+            block.delete()
+        obj.delete()
+
+    def delete_queryset(self, request, queryset):
+        """Override bulk delete from admin interface"""
+        for obj in queryset:
+            # Delete content blocks first
+            for block in obj.content_blocks.all():
+                block.delete()
+            obj.delete()
+
     def get_inline_instances(self, request, obj=None):
         return [inline(self.model, self.admin_site) for inline in self.inlines]

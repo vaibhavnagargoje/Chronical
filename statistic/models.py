@@ -75,6 +75,12 @@ class StatisticalChapter(models.Model):
         ordering = ['name']
 
 
+    def delete(self, *args, **kwargs):
+        # Manually delete all content blocks first to handle polymorphic deletion
+        for block in self.content_blocks.all():
+            block.delete()
+        super().delete(*args, **kwargs)
+
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.name)
