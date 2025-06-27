@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-s6!vqqqfjev2rvkww_7y!0scts+fd%8u4!m6v9pawy7-+&jlxw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://a741-2402-3a80-c8c-60b3-bd6e-b30c-85cc-1248.ngrok-free.app/','a741-2402-3a80-c8c-60b3-bd6e-b30c-85cc-1248.ngrok-free.app','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['https://a666-49-248-175-215.ngrok-free.app/','a666-49-248-175-215.ngrok-free.app','localhost','127.0.0.1']
 
 
 CORS_ALLOW_CREDENTIALS = True  #
@@ -34,8 +34,8 @@ CORS_ORIGIN_ALLOW_ALL = True  # ⚠️ Only for local testing
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    'https://a741-2402-3a80-c8c-60b3-bd6e-b30c-85cc-1248.ngrok-free.app',
-    'https://9e09-49-248-175-215.ngrok-free.app'
+    'https://a666-49-248-175-215.ngrok-free.app',
+    'https://a666-49-248-175-215.ngrok-free.app'
 ]
 # Application definition
 
@@ -70,9 +70,9 @@ INSTALLED_APPS = [
 TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = ["127.0.0.1"]
 
-NPM_BIN_PATH = r"C:\Users\ue\AppData\Roaming\npm\npm.cmd"
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 # settings.py
-FFMPEG_PATH = r'C:\Users\ue\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-7.1.1-full_build\bin\ffmpeg.exe'
+FFMPEG_PATH = r'C:\ProgramData\chocolatey\bin\ffmpeg.exe'
 
 
 MIDDLEWARE = [
@@ -135,32 +135,32 @@ WSGI_APPLICATION = 'Chronical.wsgi.application'
 # }
 
 
-DATABASES = {  
-    'default': {  
-        'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'chronical',  
-        'USER': 'chronical',  
-        'PASSWORD': 'Vaibhav@8806Vaibhav',  
-        'HOST': '159.65.158.177',  
-        'PORT': '3306',  
-         'OPTIONS': {  
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
-        }          
-    }  
-}  
 # DATABASES = {  
 #     'default': {  
 #         'ENGINE': 'django.db.backends.mysql',  
 #         'NAME': 'chronical',  
-#         'USER': 'root',  
-#         'PASSWORD': '8806',  
-#         'HOST': '127.0.0.1',  
+#         'USER': 'chronical',  
+#         'PASSWORD': 'Vaibhav@8806Vaibhav',  
+#         'HOST': '159.65.158.177',  
 #         'PORT': '3306',  
 #          'OPTIONS': {  
 #             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
 #         }          
 #     }  
 # }  
+DATABASES = {  
+    'default': {  
+        'ENGINE': 'django.db.backends.mysql',  
+        'NAME': 'chronical',  
+        'USER': 'root',  
+        'PASSWORD': '8806',  
+        'HOST': '127.0.0.1',  
+        'PORT': '3306',  
+         'OPTIONS': {  
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+        }          
+    }  
+}  
 
 
 # Password validation

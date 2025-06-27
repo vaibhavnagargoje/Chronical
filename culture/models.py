@@ -154,7 +154,7 @@ class ImageBlock(ContentBlock):
                     )
     caption = models.CharField(max_length=4000, blank=True)
     alt_text = models.CharField(max_length=4000, help_text="Accessibility text for screen readers.")
-
+    
     # Add WebP versions with new names
     webp_large = ImageSpecField(
         source='image',  # Point to the existing image field

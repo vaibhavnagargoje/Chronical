@@ -77,7 +77,7 @@
 
 <!-- District Navigation -->
 <div class="bg-white border-b sticky top-16 z-40">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-20 2xl:px-40">
     <div class="flex items-center justify-center py-3 relative">
       <!-- Centered container for dropdowns -->
       <div class="flex items-center justify-center space-x-2 md:space-x-5">
@@ -190,7 +190,7 @@
     <div class="flex-grow order-3 px-0 md:px-4 lg:pl-6">
       
       
-     <div class="mb-6 md:mb-8">
+     <div class="mb-6 md:mb-8 pl-4 md:pl-6 lg:pl-8">
         <h1 class="text-3xl font-semibold text-[#DAB20C] mb-2">{{ district.name | upper }}</h1>
         <h2 class="text-5xl font-bold text-[#863F3F]">{{ chapter.name }}</h2>
         <div class="mt-4">
@@ -201,52 +201,62 @@
       </div> 
 
       <!-- Chapter Content Loop -->
-<div class="prose prose-sm max-w-none">
+<div class="prose prose-sm max-w-none pl-4 md:pl-6 lg:pl-8 pr-4 md:pr-6">
           {% for block in content_blocks %}
               {% if block.polymorphic_ctype.model == 'headingblockone' %}
-                  <h2 id="{{ block.text|slugify }}" class="text-2xl font-bold text-[#863F3F] mb-4 pt-4">{{ block.text }}</h2>
+                  <h2 id="{{ block.text|slugify }}" class="text-2xl font-bold text-[#863F3F] mb-6 mt-8 pt-4 leading-tight">{{ block.text }}</h2>
 
               {% elif block.polymorphic_ctype.model == 'headingblocktwo' %}
-                  <h3 id="{{ block.text|slugify }}" class="text-xl font-semibold text-gray-800 mb-3 pt-2">{{ block.text }}</h3>
+                  <h3 id="{{ block.text|slugify }}" class="text-xl font-bold text-gray-800 mb-4 mt-6 pt-2 leading-tight">{{ block.text }}</h3>
               
+              {% elif block.polymorphic_ctype.model == 'headingblockthree' %}
+                  <h3 id="{{ block.text|slugify }}" class="text-xl font-semibold text-gray-700 mb-4 mt-6 pt-2 leading-tight">{{ block.text }}</h3>
+              
+
               {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
-                  {{ block.content|safe }}
+                  <div class="mb-6 text-justify leading-relaxed text-gray-800 max-w-4xl">{{ block.content|safe }}</div>
 
               {% elif block.polymorphic_ctype.model == 'imageblock' %}
-                  <figure class="mb-6 max-w-2xl mx-auto">
+                  <figure class="mb-8 mt-8 max-w-3xl ">
                 <!-- Updated image block with WebP support -->
                 <picture>
                     <source 
                         media="(min-width: 801px)"
                         srcset="{{ block.webp_large.url }}" 
                         type="image/webp"
-                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover"
+                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-lg object-cover"
                         style="aspect-ratio: auto;"
                     >
                     <source 
                         media="(max-width: 800px)"
                         srcset="{{ block.webp_medium.url }}" 
                         type="image/webp"
-                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover"
+                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-lg object-cover"
                         style="aspect-ratio: auto;"
                     >
                     <img 
                         src="{{ block.image.url }}" 
                         alt="{{ block.alt_text }}" 
-                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover" 
+                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-lg object-cover" 
                         style="aspect-ratio: auto;"
                         loading="lazy"
                     >
                 </picture>
                 {% if block.caption %}
-                    <p class="text-sm text-gray-600 italic text-center">{{ block.caption }}</p>
+                    <figcaption class="text-sm text-gray-600 italic text-center mt-3 px-4">{{ block.caption }}</figcaption>
                 {% endif %}
             </figure>
 
               {% elif block.polymorphic_ctype.model == 'referenceblock' %}
                   {# This would go inside a 'References' section at the end #}
-                  <p class="text-gray-700 mb-1">
-                    {% if block.link %}<a href="{{ block.link }}" target="_blank" class="text-gray-500" >{{ block.text }}<i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>{% else %}{{ block.text }}{% endif %}
+                  <p class="text-gray-700 mb-3  leading-relaxed max-w-full md:max-w-4xl break-words">
+                    {% if block.link %}
+                      <a href="{{ block.link }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" >
+                        {{ block.text }}
+                        <i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
+                    {% else %}
+                        {{ block.text }}
+                    {% endif %}
                   </p>
               {% endif %}
           {% endfor %}

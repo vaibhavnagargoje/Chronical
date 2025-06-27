@@ -44,8 +44,10 @@
                     <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
                     {# Note: A submit button isn't strictly necessary as pressing Enter works, but you can add one if you like #}
                 </form>
-                <a href="#" class="px-4 py-2 rounded-md text-[#863F3F] border border-[#863F3F] hover:bg-[#863F3F] hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
-            </div>
+                <a href="#" class="user-icon" >
+                    <i class="fas fa-user usericon colorburg"></i>&nbsp;&nbsp;
+                </a> 
+    </div>
 
             <!-- ============================================= -->
             <!-- ==         MOBILE MENU & SEARCH (MODIFIED) == -->
@@ -81,17 +83,20 @@
                     </div>
                 </form>
                 
-                <!-- Mobile Menu Button -->
+                {% comment %} <!-- Mobile Menu Button -->
                 <button id="mobile-menu-button" type="button" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-200 p-2">
                     <i class="fas fa-bars text-xl"></i>
-                </button>
+                </button> {% endcomment %}
+                <a href="#" class="user-icon" >
+                    <i class="fas fa-user usericon colorburg"></i>&nbsp;&nbsp;
+                </a> 
             </div>
         </div>
         
-        <!-- Mobile Menu (remains the same) -->
+        {% comment %} <!-- Mobile Menu (remains the same) -->
         <div id="mobile-menu" class="md:hidden hidden pb-4">
             <a href="#" class="block py-2 px-4 text-center  text-[#863F3F] border border-[#863F3F] hover:bg-[#863F3F] hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
-        </div>
+        </div> {% endcomment %}
     </div>
 </nav>
 
@@ -173,7 +178,7 @@
 
 
 
-  <!-- JavaScript for mobile menu toggle -->
+  {% comment %} <!-- JavaScript for mobile menu toggle -->
     <script>
         // Mobile menu toggle
         document.getElementById('mobile-menu-button').addEventListener('click', function() {
@@ -182,7 +187,7 @@
         });
 
        
-    </script>
+    </script> {% endcomment %}
    
 
     <script>
