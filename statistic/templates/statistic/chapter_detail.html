@@ -252,28 +252,57 @@ This template is for the Statistical Chapter detail page.
 
 {# The JS is copied from your culture template and should work out-of-the-box #}
 <script>
-  // Mobile menu toggle is assumed to be in base.html or a site-wide JS file.
-  // If not, it needs to be included here.
-
   // Table of Contents toggle for mobile
-  document.getElementById("toc-button").addEventListener("click", function () {
+  document.addEventListener('DOMContentLoaded', function() {
+    const tocButton = document.getElementById("toc-button");
     const mobileToc = document.getElementById("mobile-toc");
-    mobileToc.classList.remove("hidden");
-    document.body.style.overflow = 'hidden';
-  });
+    const closeToc = document.getElementById("close-toc");
 
-  document.getElementById("close-toc").addEventListener("click", function () {
-    const mobileToc = document.getElementById("mobile-toc");
-    mobileToc.classList.add("hidden");
-    document.body.style.overflow = 'auto';
-  });
+    if (tocButton && mobileToc) {
+      tocButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        mobileToc.classList.remove("hidden");
+        // Prevent body scroll when TOC is open
+        document.body.style.overflow = 'hidden';
+      });
+    }
 
-  // Close TOC when a link is clicked
-  document.querySelectorAll('.toc-link').forEach(link => {
-    link.addEventListener('click', function() {
-      const mobileToc = document.getElementById("mobile-toc");
-      mobileToc.classList.add("hidden");
-      document.body.style.overflow = 'auto';
+    if (closeToc && mobileToc) {
+      closeToc.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        mobileToc.classList.add("hidden");
+        // Restore body scroll
+        document.body.style.overflow = 'auto';
+      });
+    }
+
+    // TOC link clicks
+    document.querySelectorAll('.toc-link').forEach(link => {
+      link.addEventListener('click', function() {
+        if (mobileToc) {
+          mobileToc.classList.add("hidden");
+          document.body.style.overflow = 'auto';
+        }
+      });
+    });
+
+    // Close mobile TOC when clicking outside
+    document.addEventListener("click", function (event) {
+      const tocContent = document.querySelector("#mobile-toc > div");
+
+      if (
+        mobileToc &&
+        !mobileToc.classList.contains("hidden") &&
+        event.target !== tocButton &&
+        !tocButton.contains(event.target) &&
+        tocContent &&
+        !tocContent.contains(event.target)
+      ) {
+        mobileToc.classList.add("hidden");
+        document.body.style.overflow = 'auto';
+      }
     });
   });
 
@@ -294,24 +323,6 @@ This template is for the Statistical Chapter detail page.
         console.warn('Could not scroll to element:', targetId);
       }
     });
-  });
-
-  // Close mobile TOC when clicking outside
-  document.addEventListener("click", function (event) {
-    const mobileToc = document.getElementById("mobile-toc");
-    const tocButton = document.getElementById("toc-button");
-    const tocContent = document.querySelector("#mobile-toc > div"); // More robust selector
-
-    if (
-      mobileToc &&
-      !mobileToc.classList.contains("hidden") &&
-      event.target !== tocButton &&
-      !tocButton.contains(event.target) &&
-      !tocContent.contains(event.target)
-    ) {
-      mobileToc.classList.add("hidden");
-      document.body.style.overflow = 'auto';
-    }
   });
 </script>
 
