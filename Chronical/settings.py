@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-s6!vqqqfjev2rvkww_7y!0scts+fd%8u4!m6v9pawy7-+&jlxw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://a666-49-248-175-215.ngrok-free.app/','a666-49-248-175-215.ngrok-free.app','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['https://ead3-49-248-175-215.ngrok-free.app/','ead3-49-248-175-215.ngrok-free.app','localhost','127.0.0.1']
 
 
 CORS_ALLOW_CREDENTIALS = True  #
@@ -34,8 +34,7 @@ CORS_ORIGIN_ALLOW_ALL = True  # ⚠️ Only for local testing
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    'https://a666-49-248-175-215.ngrok-free.app',
-    'https://a666-49-248-175-215.ngrok-free.app'
+    'https://ead3-49-248-175-215.ngrok-free.app',
 ]
 # Application definition
 

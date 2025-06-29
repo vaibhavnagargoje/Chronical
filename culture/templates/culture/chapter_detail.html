@@ -243,7 +243,7 @@
                     >
                 </picture>
                 {% if block.caption %}
-                    <figcaption class="text-sm text-gray-600 italic text-center mt-3 px-4">{{ block.caption }}</figcaption>
+                    <figcaption class="text-sm text-gray-600 italic text-center mt-3 px-10">{{ block.caption }}</figcaption>
                 {% endif %}
             </figure>
 
@@ -251,8 +251,8 @@
                   {# This would go inside a 'References' section at the end #}
                   <p class="text-gray-700 mb-3  leading-relaxed max-w-full md:max-w-4xl break-words">
                     {% if block.link %}
+                    {{ block.text }}
                       <a href="{{ block.link }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" >
-                        {{ block.text }}
                         <i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
                     {% else %}
                         {{ block.text }}
@@ -307,7 +307,7 @@
 
 
  <!-- JavaScript -->
-{% comment %} <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>  {% endcomment %}
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> 
   <script>
     // Mobile menu toggle
     document
