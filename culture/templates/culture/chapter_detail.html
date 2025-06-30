@@ -405,5 +405,7 @@
     });
 
   </script>
+  {{ side_panel_data|json_script:"side-panel-data" }}
+  <script src="{% static 'js/side-panel.js' %}"></script>
 
 {% endblock content %}

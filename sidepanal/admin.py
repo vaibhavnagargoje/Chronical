@@ -110,18 +110,3 @@ class CulturalSidePanelManagerAdmin(admin.ModelAdmin):
 
 
 
-# # --- Part 3: (Optional but Recommended) Keep the original view for searching all entries ---
-# # This is the admin from my previous answer. It's still very useful for
-# # searching or editing a specific word across ALL chapters at once.
-
-# @admin.register(StatisticalSidePanal)
-# class StatisticalSidePanalAdmin(admin.ModelAdmin):
-#     list_display = ('word', 'statistical_chapter', 'updated_at')
-#     search_fields = ('word', 'definition', 'statistical_chapter__name')
-#     autocomplete_fields = ['statistical_chapter']
-
-# @admin.register(CulturalSidePanal)
-# class CulturalSidePanalAdmin(admin.ModelAdmin):
-#     list_display = ('word', 'cultural_chapter', 'updated_at')
-#     search_fields = ('word', 'definition', 'cultural_chapter__name')
-#     autocomplete_fields = ['cultural_chapter']

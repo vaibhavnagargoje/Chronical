@@ -56,6 +56,9 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
     except ValueError:
         current_index, prev_chapter, next_chapter = -1, None, None
 
+    side_panels = chapter.cultural_chapters.all()
+    side_panel_data = {entry.word: entry.definition for entry in side_panels}
+
     # Build the final context dictionary
     context = {
         'state': chapter.district.state,
@@ -67,6 +70,7 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
         'all_districts_in_state': all_districts_in_state,
         'prev_chapter': prev_chapter,
         'next_chapter': next_chapter,
+        'side_panel_data': side_panel_data,
     }
     
     return render(request, 'culture/chapter_detail.html', context)
