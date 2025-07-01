@@ -88,10 +88,15 @@ if DEBUG:
 TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = ["127.0.0.1"]
 
-NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+if DEBUG:
+    NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
+else:
+    NPM_BIN_PATH = "/usr/bin/npm"
 # settings.py
-FFMPEG_PATH = r'C:\ProgramData\chocolatey\bin\ffmpeg.exe'
-
+if DEBUG:
+    FFMPEG_PATH = r'C:\ProgramData\chocolatey\bin\ffmpeg.exe'
+else:
+    FFMPEG_PATH = '/usr/bin/ffmpeg'
 
 MIDDLEWARE = [
     
