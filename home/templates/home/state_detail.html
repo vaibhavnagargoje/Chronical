@@ -39,27 +39,59 @@
     </div>
 
     <!-- State Header -->
-    <div class="bg-white py-8 border-b">
+    <div class="bg-white py-8 ">
         <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
-            <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="flex flex-col md:flex-row items-center justify-between mb-4">
                 <div>
-                    <h1 class="text-4xl font-bold text-[#863F3F] mb-2">Maharashtra</h1>
-                    <p class="text-lg text-gray-700">Explore the districts of Maharashtra</p>
+                    <h1 class="text-4xl font-bold text-[#000000] mb-2">{{ state.name|upper }}</h1>
+                   
                 </div>
-                <div class="mt-4 md:mt-0">
-                    <div class="relative">
-                        <input type="text" placeholder="Search districts in Maharashtra..." class="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#863F3F]">
-                        <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
-                    </div>
+                
+            
+            <!-- District Selector Section -->
+        
+            <div class="flex gap-1">
+                <div class="flex-1 relative">
+                    <select id="districtSelect" class="w-full px-1 py-1 border border-gray-300 rounded-sm focus:ring-1 focus:ring-[#863F3F] focus:border-[#863F3F] bg-white text-gray-900 shadow-sm transition-all duration-200">
+                        <option value="" disabled selected>Choose a district...</option>
+                        {% for district in districts %}
+                        <option value="{% url 'home:district_detail' state.slug district.slug %}">{{ district.name }}</option>
+                        {% endfor %}
+                    </select>
                 </div>
+                <button type="button" onclick="navigateToDistrict()" class="px-3 py-1 bg-[#863F3F] text-white font-medium hover:bg-[#6d2f2f] focus:ring-2 focus:ring-[#863F3F] focus:ring-offset-2 transition-all duration-200 shadow-sm flex items-center justify-center gap-1 flex-shrink-0">
+                    <i class="fas fa-arrow-right text-sm"></i>
+                </button>
             </div>
-        </div>
-    </div>
+
+            <script>
+            function navigateToDistrict() {
+                const select = document.getElementById('districtSelect');
+                const selectedUrl = select.value;
+                if (selectedUrl) {
+                    window.location.href = selectedUrl;
+                }
+            }
+
+            
+            document.getElementById('districtSelect').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    navigateToDistrict();
+                }
+            });
+            </script>
+                
+            </div>
+            </div>
+            </div>
+
+
+  
 
     <!-- State Map Section -->
     <div class="py-8 bg-white">
         <div class="container mx-auto px-1 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
-            <h2 class="text-3xl font-bold text-center text-[#863F3F] mb-8">{{ state.name}}</h2>
+            {% comment %} <h2 class="text-3xl font-bold text-center text-[#863F3F] mb-8">{{ state.name|upper}}</h2> {% endcomment %}
             <div class="max-w-4xl mx-auto relative">
                 <!-- Scrollable container for mobile -->
                 <div class="svg-container overflow-hidden relative">
@@ -446,7 +478,7 @@
         </div>
     </div>
 
-    <!-- Districts List -->
+    {% comment %} <!-- Districts List -->
     <div class="py-12 bg-white">
         <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
             <h2 class="text-3xl font-bold text-center text-[#863F3F] mb-8">All Districts</h2>
@@ -470,7 +502,7 @@
                 <!-- More district links would go here -->
             </div>
         </div>
-    </div>
+    </div> {% endcomment %}
 
 {% endblock content  %}
 
