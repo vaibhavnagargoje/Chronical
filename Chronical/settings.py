@@ -30,6 +30,7 @@ DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 
 # ALLOWED_HOSTS = ['https://ead3-49-248-175-215.ngrok-free.app/','ead3-49-248-175-215.ngrok-free.app','localhost','127.0.0.1']
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
+print(f"ALLOWED_HOSTS: {ALLOWED_HOSTS}")
 
 
 CORS_ALLOW_CREDENTIALS = True  
@@ -218,9 +219,9 @@ TINYMCE_DEFAULT_CONFIG = {
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-IN'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
