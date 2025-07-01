@@ -40,7 +40,7 @@
                     {# ==================== THE FIX IS HERE ==================== #}
                     {# We pass a unique name for the file input using the block's ID. #}
                     {% elif block.polymorphic_ctype.model == 'imageblock' %}
-                        {% include 'editor/partials/image_block.html' with image_url=block.image.url caption=block.caption alt_text=block.alt_text id=block.id file_input_name='existing-image-'|add:block.id|stringformat:"s" %}
+                        {% include 'editor/partials/image_block.html' with image_url=block.image.url caption=block.caption alt_text=block.alt_text img_ref=block.img_ref id=block.id file_input_name='existing-image-'|add:block.id|stringformat:"s" %}
                     
                     {% elif block.polymorphic_ctype.model == 'referenceblock' %}
                         {% include 'editor/partials/reference_block.html' with text=block.text link=block.link id=block.id %}
@@ -209,7 +209,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         <label class="block text-sm font-medium text-gray-500 mb-1">Image</label>
                         <input type="file" class="w-full border-gray-300 rounded-md mb-2" accept="image/*">
                         <input type="text" name="caption" class="w-full border-gray-300 rounded-md mb-2" placeholder="Caption...">
-                        <input type="text" name="alt_text" class="w-full border-gray-300 rounded-md" placeholder="Alt text...">
+                        <input type="text" name="alt_text" class="w-full border-gray-300 rounded-md mb-2" placeholder="Alt text...">
+                        <input type="text" name="img_ref" class="w-full border-gray-300 rounded-md" placeholder="Image reference/source...">
                     </div>
                     <button type="button" class="delete-block-btn text-red-500 hover:text-red-700 mt-2"><i class="fas fa-trash-alt"></i></button>
                 </div>
@@ -331,6 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (blockType === 'image') {
                 blockData.caption = blockEl.querySelector('input[name="caption"]').value;
                 blockData.alt_text = blockEl.querySelector('input[name="alt_text"]').value;
+                blockData.img_ref = blockEl.querySelector('input[name="img_ref"]').value;
                 const fileInput = blockEl.querySelector('input[type="file"]');
                 if (fileInput && fileInput.files.length > 0) {
                      blockData.image_id = fileInput.name;

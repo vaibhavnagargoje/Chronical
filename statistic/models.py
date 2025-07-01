@@ -144,7 +144,7 @@ class ImageBlock(StatisticContentBlock):
     image = models.ImageField(upload_to=get_seo_image_path,verbose_name="Original Image")
     caption = models.CharField(max_length=4000, blank=True)
     alt_text = models.CharField(max_length=4000, help_text="Accessibility text for screen readers.")
-   
+    img_ref = models.CharField(max_length=4000, blank=True, null=True, help_text="Reference for the image source")
 
     webp_large = ImageSpecField(
         source='image',  # Point to the existing image field

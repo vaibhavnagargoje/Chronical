@@ -12,25 +12,40 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+load_dotenv(os.path.join(BASE_DIR, '.env'))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-s6!vqqqfjev2rvkww_7y!0scts+fd%8u4!m6v9pawy7-+&jlxw'
+SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-s6!vqqqfjev2rvkww_7y!0scts+fd%8u4!m6v9pawy7-+&jlxw')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 
-ALLOWED_HOSTS = ['https://ead3-49-248-175-215.ngrok-free.app/','ead3-49-248-175-215.ngrok-free.app','localhost','127.0.0.1']
+# ALLOWED_HOSTS = ['https://ead3-49-248-175-215.ngrok-free.app/','ead3-49-248-175-215.ngrok-free.app','localhost','127.0.0.1']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
 
 
-CORS_ALLOW_CREDENTIALS = True  #
-CORS_ORIGIN_ALLOW_ALL = True  # ⚠️ Only for local testing
+CORS_ALLOW_CREDENTIALS = True  
+CORS_ORIGIN_ALLOW_ALL = False if not DEBUG else True
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+]
+
+if not DEBUG:
+    # Add your production domain
+    CSRF_TRUSTED_ORIGINS.append(f"https://{os.getenv('DOMAIN_NAME')}")
+    CSRF_TRUSTED_ORIGINS.append(f"http://{os.getenv('DOMAIN_NAME')}")
+
+
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
@@ -63,8 +78,11 @@ INSTALLED_APPS = [
     'tailwind',
     'theme',  # Your Tailwind app name
     
-    'django_browser_reload',
 ]
+
+if DEBUG:
+    INSTALLED_APPS.append('django_browser_reload')
+
 
 TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = ["127.0.0.1"]
@@ -77,6 +95,7 @@ FFMPEG_PATH = r'C:\ProgramData\chocolatey\bin\ffmpeg.exe'
 MIDDLEWARE = [
     
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -84,9 +103,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
-     # #for hot reloding 
-    "django_browser_reload.middleware.BrowserReloadMiddleware",
+    
 ]
+
+if DEBUG:
+    MIDDLEWARE.append("django_browser_reload.middleware.BrowserReloadMiddleware")
 
 ROOT_URLCONF = 'Chronical.urls'
 
@@ -134,32 +155,33 @@ WSGI_APPLICATION = 'Chronical.wsgi.application'
 # }
 
 
+DATABASES = {  
+    'default': {  
+        'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST', '127.0.0.1'),
+        'PORT': os.getenv('DB_PORT', '3306'),
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }           
+    }  
+}  
+
 # DATABASES = {  
 #     'default': {  
 #         'ENGINE': 'django.db.backends.mysql',  
 #         'NAME': 'chronical',  
-#         'USER': 'chronical',  
-#         'PASSWORD': 'Vaibhav@8806Vaibhav',  
-#         'HOST': '159.65.158.177',  
+#         'USER': 'root',  
+#         'PASSWORD': '8806',  
+#         'HOST': '127.0.0.1',  
 #         'PORT': '3306',  
 #          'OPTIONS': {  
 #             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
 #         }          
 #     }  
 # }  
-DATABASES = {  
-    'default': {  
-        'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'chronical',  
-        'USER': 'root',  
-        'PASSWORD': '8806',  
-        'HOST': '127.0.0.1',  
-        'PORT': '3306',  
-         'OPTIONS': {  
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
-        }          
-    }  
-}  
 
 
 # Password validation
@@ -210,19 +232,26 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATIC_URL = 'static/'
-
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     ]
 
 STATIC_ROOT= os.path.join(BASE_DIR,'staticfiles')
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-
-
-
-# import os
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+if not DEBUG:
+    SECURE_BROWSER_XSS_FILTER = True
+    SECURE_CONTENT_TYPE_NOSNIFF = True
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_SECONDS = 31536000
+    SECURE_REDIRECT_EXEMPT = []
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_HSTS_PRELOAD = True

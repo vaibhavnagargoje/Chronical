@@ -284,6 +284,7 @@ def chapter_editor_view(request, app_label, chapter_id):
                             elif isinstance(block_instance, (CulturalImg, StatImg)):
                                 block_instance.caption = block_data.get('caption', '')
                                 block_instance.alt_text = block_data.get('alt_text', '')
+                                block_instance.img_ref = block_data.get('img_ref', '')
                                 image_file_id = block_data.get('image_id')
                                 if image_file_id and request.FILES.get(image_file_id):
                                     block_instance.image = request.FILES[image_file_id]

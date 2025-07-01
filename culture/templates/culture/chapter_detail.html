@@ -243,7 +243,12 @@
                     >
                 </picture>
                 {% if block.caption %}
-                    <figcaption class="text-sm text-gray-600 italic text-center mt-3 px-10">{{ block.caption }}</figcaption>
+                    <figcaption class="text-sm text-gray-600 italic text-center mt-3 px-10">{{ block.caption }}
+                        {% if block.img_ref %}
+                            <a href="{{ block.img_ref }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" >
+                        <i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
+                        {% endif %}
+                    </figcaption>
                 {% endif %}
             </figure>
 
