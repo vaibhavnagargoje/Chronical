@@ -59,9 +59,9 @@
                                      loading="lazy">
                             </picture>
 
-                            {% if featured_image.caption %}
+                            {% comment %} {% if featured_image.caption %}
                                 <p class="text-sm text-gray-600 mt-2">{{ featured_image.caption }}</p>
-                            {% endif %}
+                            {% endif %} {% endcomment %}
                         {% endwith %}
                     {% endif %}
                 </div>
@@ -118,9 +118,9 @@
                                 aria-label="{{ gif_asset.alt_text|default:gif_asset.caption }}"
                                 class="w-full h-auto max-h-96 md:max-h-[800px] object-cover rounded-lg shadow-md">
                             </video>
-                            {% if gif_asset.caption %}
+                            {% comment %} {% if gif_asset.caption %}
                                 <p class="mt-2 text-sm text-gray-600">{{ gif_asset.caption }}</p>
-                            {% endif %}
+                            {% endif %} {% endcomment %}
                         </div>
                     </div>
                 {% endif %}
