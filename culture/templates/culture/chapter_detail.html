@@ -216,39 +216,39 @@
               {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
                   <div class="mb-6 text-justify leading-relaxed text-gray-800 max-w-4xl">{{ block.content|safe }}</div>
 
-              {% elif block.polymorphic_ctype.model == 'imageblock' %}
+                {% elif block.polymorphic_ctype.model == 'imageblock' %}
                   <figure class="mb-8 mt-8 max-w-3xl ">
                 <!-- Updated image block with WebP support -->
                 <picture>
-                    <source 
-                        media="(min-width: 801px)"
-                        srcset="{{ block.webp_large.url }}" 
-                        type="image/webp"
-                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-lg object-cover"
-                        style="aspect-ratio: auto;"
-                    >
-                    <source 
-                        media="(max-width: 800px)"
-                        srcset="{{ block.webp_medium.url }}" 
-                        type="image/webp"
-                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-lg object-cover"
-                        style="aspect-ratio: auto;"
-                    >
-                    <img 
-                        src="{{ block.image.url }}" 
-                        alt="{{ block.alt_text }}" 
-                        class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-lg object-cover" 
-                        style="aspect-ratio: auto;"
-                        loading="lazy"
-                    >
+                  <source 
+                    media="(min-width: 801px)"
+                    srcset="{{ block.webp_large.url }}" 
+                    type="image/webp"
+                    class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-lg object-cover"
+                    style="aspect-ratio: auto;"
+                  >
+                  <source 
+                    media="(max-width: 800px)"
+                    srcset="{{ block.webp_medium.url }}" 
+                    type="image/webp"
+                    class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-lg object-cover"
+                    style="aspect-ratio: auto;"
+                  >
+                  <img 
+                    src="{{ block.image.url }}" 
+                    alt="{{ block.alt_text }}" 
+                    class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-lg object-cover" 
+                    style="aspect-ratio: auto;"
+                    loading="lazy"
+                  >
                 </picture>
-                {% if block.caption %}
-                    <figcaption class="text-sm text-gray-600 italic text-center mt-3 px-10">{{ block.caption }}
-                        {% if block.img_ref %}
-                            <a href="{{ block.img_ref }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" >
-                        <i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
-                        {% endif %}
-                    </figcaption>
+                {% if block.caption and block.caption != "Image (no caption)" %}
+                  <figcaption class="text-sm text-gray-600 italic text-center mt-3 px-10">{{ block.caption }}
+                    {% if block.img_ref %}
+                      <a href="{{ block.img_ref }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" >
+                    <i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
+                    {% endif %}
+                  </figcaption>
                 {% endif %}
             </figure>
 
