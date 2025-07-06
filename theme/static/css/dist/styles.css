@@ -1802,6 +1802,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .block {
   display: block;
 }
@@ -2425,6 +2429,14 @@ video {
   padding-top: 1.5rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2874,6 +2886,11 @@ video {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2965,6 +2982,11 @@ video {
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:pl-6 {

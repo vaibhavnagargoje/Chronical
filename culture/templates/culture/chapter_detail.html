@@ -190,7 +190,7 @@
     <div class="flex-grow order-3 px-0 md:px-4 lg:pl-6">
       
       
-     <div class="mb-6 md:mb-8 pl-4 md:pl-6 lg:pl-8">
+     <div class="mb-6 md:mb-8 pl-2 md:pl-6 lg:pl-8">
         <h1 class="text-3xl font-semibold text-[#DAB20C] mb-2">{{ district.name | upper }}</h1>
         <h2 class="text-5xl font-bold text-[#863F3F]">{{ chapter.name }}</h2>
         <div class="mt-4">
@@ -201,7 +201,7 @@
       </div> 
 
       <!-- Chapter Content Loop -->
-<div class="prose prose-sm max-w-none pl-4 md:pl-6 lg:pl-8 pr-4 md:pr-6">
+<div class="prose prose-sm max-w-none pl-2 md:pl-6 lg:pl-8 pr-2 md:pr-6">
           {% for block in content_blocks %}
               {% if block.polymorphic_ctype.model == 'headingblockone' %}
                   <h2 id="{{ block.text|slugify }}" class="text-2xl font-bold text-[#863F3F] mb-6 mt-8 pt-4 leading-tight">{{ block.text }}</h2>
@@ -214,10 +214,10 @@
               
 
               {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
-                  <div class="mb-6 leading-relaxed text-gray-800 max-w-4xl">{{ block.content|safe }}</div>
+                  <div class="mb-2 leading-relaxed text-gray-800 max-w-4xl">{{ block.content|safe }}</div>
 
                 {% elif block.polymorphic_ctype.model == 'imageblock' %}
-                  <figure class="mb-8 mt-8 max-w-4xl  text-center">
+                  <figure class="mb-2 mt-2 max-w-4xl text-center">
                 <!-- Updated image block with WebP support -->
                 <picture class="block">
                   <source 
@@ -239,7 +239,7 @@
                   >
                 </picture>
                 {% if block.caption and block.caption != "Image (no caption)" %}
-                  <figcaption class="text-sm text-gray-600 italic text-center mt-3 px-10">{{ block.caption }}
+                  <figcaption class="text-sm text-gray-600 italic text-center mt-1 mb-6 px-2 sm:px-4 md:px-10 max-w-4xl mx-auto leading-relaxed">{{ block.caption }}
                     {% if block.img_ref %}
                       <a href="{{ block.img_ref }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" >
                     <i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
@@ -250,7 +250,7 @@
 
               {% elif block.polymorphic_ctype.model == 'referenceblock' %}
                   {# This would go inside a 'References' section at the end #}
-                  <p class="text-gray-700 mb-3  leading-relaxed max-w-full md:max-w-4xl break-words">
+                  <p class="text-gray-700 mb-2  leading-relaxed max-w-full md:max-w-4xl break-words">
                     {% if block.link %}
                     {{ block.text }}
                       <a href="{{ block.link }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" >
