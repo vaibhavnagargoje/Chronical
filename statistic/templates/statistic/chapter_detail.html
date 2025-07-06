@@ -17,25 +17,48 @@ This template is for the Statistical Chapter detail page.
     table {
         width: 100%;
         border-collapse: collapse;
-        margin: 1.5rem 0;
+        border: none !important;
+        margin: 10px 0;
         font-family: inherit;
     }
-    table, table th, table td {
-        border: none !important;
+   
+    table {
+        border-top: 1px solid #999 !important;
+        border-bottom: 1px solid #999 !important;
     }
+    
     table th {
+        border: none !important;
         border-bottom: 2px solid #666 !important; 
-        padding: 12px 4px;
+        padding: 10px 1px;
         font-weight: 700 !important;
         text-align: left;
+        background-color: #f8f8f8;
     }
+    
     table td {
+        border: none !important;
         border-bottom: 1px solid #e0e0e0 !important;
-        padding: 10px 4px;
+        padding: 1px;
         vertical-align: top;
     }
+   
+    .prose table td, .prose table th {
+      margin: 1px 1px !important;
+      padding: 1px 1px !important;
+    }
     .prose table td p, .prose table th p {
-        margin: 0 !important;
+      margin-top: 5px !important;
+      margin-bottom: 5px !important;
+    }
+
+    /* Hide scrollbar for TOC */
+    .toc-scroll {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .toc-scroll::-webkit-scrollbar {
+        display: none;
     }
 </style>
 {% endblock header %}
@@ -58,56 +81,103 @@ This template is for the Statistical Chapter detail page.
 
 <!-- District Navigation -->
 <div class="bg-white border-b sticky top-16 z-40">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
-    <div class="flex items-center justify-between py-3">
-      <div class="flex items-center space-x-4 overflow-x-auto">
-        <!-- Change Chapter Dropdown -->
-        <div class="relative group">
-          <button class="flex items-center space-x-1 text-[#863F3F] font-medium whitespace-nowrap">
-            <span>Change Chapter</span>
-            <i class="fas fa-chevron-down text-xs"></i>
-          </button>
-          <div class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md p-2 hidden group-hover:block w-64 z-50">
-            <div class="grid grid-cols-1 gap-1">
-              {% for chap in all_chapters_in_district %}
-                <a href="{{ chap.get_absolute_url }}" class="px-3 py-2 hover:bg-gray-100 rounded text-sm {% if chap == chapter %}bg-gray-100 text-[#863F3F]{% endif %}">{{ chap.name }}</a>
-              {% endfor %}
-            </div>
-          </div>
-        </div>
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-20 2xl:px-40">
+    <div class="flex items-center justify-center py-3 relative">
+      <!-- Centered container for dropdowns -->
+      <div class="flex items-center justify-center space-x-2 md:space-x-5">
         <!-- Change District Dropdown -->
-        <div class="relative group">
-          <button class="flex items-center space-x-1 text-gray-700 whitespace-nowrap">
+        <div class="relative" x-data="{ open: false }">
+          <button 
+            @click="open = !open"
+            class="flex items-center space-x-1 text-gray-700 whitespace-nowrap px-1 py-1 rounded-md transition-all duration-300 hover:bg-gray-100 focus:outline-none"
+            >
             <span>Change District</span>
-            <i class="fas fa-chevron-down text-xs"></i>
+            <i 
+            class="fas fa-chevron-down text-xs transition-transform duration-300" 
+            :class="{'rotate-180': open}"
+            ></i>
           </button>
-          <div class="absolute left-0 top-full mt-1 bg-white shadow-lg rounded-md p-2 hidden group-hover:block w-64 z-50">
-            <div class="grid grid-cols-1 gap-1">
-                {% for dist in all_districts_in_state %}
-                  {# Links to the main district page (e.g., Overview) #}
-                  <a href="{{ dist.get_absolute_url }}" class="px-3 py-2 hover:bg-gray-100 rounded text-sm {% if dist == district %}bg-gray-100 text-[#863F3F]{% endif %}">{{ dist.name }}</a>
+          <div 
+            x-show="open"
+            @click.outside="open = false"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+            class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200"
+            >
+            <div class="grid grid-cols-1 gap-1 max-h-60 overflow-y-auto">
+              {% for dist in all_districts_in_state %}
+              <a 
+                  href="{{ dist.get_absolute_url }}" 
+                  class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if dist == district %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}"
+                >
+                <span class="truncate">{{ dist.name }}</span>
+                </a>
                 {% endfor %}
             </div>
           </div>
         </div>
+        <div class="relative" x-data="{ open: false }">
+          <button 
+          @click="open = !open"
+          class="flex items-center space-x-1 text-[#863F3F] font-medium whitespace-nowrap px-3 py-1 rounded-md transition-all duration-300 hover:bg-[#863F3F]/10 focus:outline-none"
+          >
+          <!-- Change Chapter Dropdown -->
+            <span>Change Chapter</span>
+            <i 
+              class="fas fa-chevron-down text-xs transition-transform duration-300" 
+              :class="{'rotate-180': open}"
+            ></i>
+          </button>
+          <div 
+            x-show="open"
+            @click.outside="open = false"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+            class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200"
+          >
+            <div class="grid grid-cols-1 gap-1 max-h-60 overflow-y-auto">
+              {% for chap in all_chapters_in_district %}
+                <a 
+                  href="{{ chap.get_absolute_url }}" 
+                  class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if chap == chapter %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}"
+                >
+                  <span class="truncate">{{ chap.name }}</span>
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
       </div>
-      <button id="toc-button" class="flex items-center space-x-1 text-gray-700 lg:hidden p-2 ml-2">
+
+      <!-- TOC button remains on the right -->
+      <button id="toc-button" class="flex items-center space-x-1 text-gray-700 lg:hidden p-2 ml-2 absolute right-0">
         <i class="fas fa-list text-lg"></i>
       </button>
     </div>
   </div>
 </div>
 
+<!-- Include Alpine.js for interactivity -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 <!-- Main Content with Sidebar -->
 <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-8">
   <div class="flex flex-col lg:flex-row">
     <!-- Table of Contents Sidebar (Desktop) -->
     <div class="hidden lg:block w-60 flex-shrink-0 pr-6 order-1">
-      <div class="sticky top-36">
-        <h3 class="text-lg font-semibold text-[#863F3F] mb-4">Table of Contents</h3>
+      <div class="sticky top-36 max-h-[calc(100vh-10rem)] overflow-y-auto toc-scroll">
+        <h3 class="text-lg font-semibold text-[#863F3F] mb-4 sticky top-0 bg-white pb-2">Table of Contents</h3>
         <ul class="space-y-2 text-sm">
           {% for item in table_of_contents %}
-            <li class="{% if item.level >= 2 %}pl-4{% endif %} {% if item.level == 3 %}pl-8{% endif %}">
+            <li class="{% if item.level == 2 %}pl-4{% endif %}">
               <a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] transition-colors">{{ item.text }}</a>
             </li>
           {% empty %}
@@ -117,11 +187,14 @@ This template is for the Statistical Chapter detail page.
       </div>
     </div>
 
+    <!-- Vertical Divider (Desktop Only) -->
+    <div class="hidden lg:block w-px bg-gray-300 flex-shrink-0 order-2"></div>
+
     <!-- Main Content -->
-    <div class="flex-grow order-2 px-0 md:px-4">
-      <div class="mb-6 md:mb-8">
-        <h1 class="text-4xl font-bold text-[#863F3F] mb-2">{{ district.name | upper }}</h1>
-        <h2 class="text-3xl font-semibold text-gray-800">{{ chapter.name }}</h2>
+    <div class="flex-grow order-3 px-0 md:px-4 lg:pl-6">
+      <div class="mb-6 md:mb-8 pl-2 md:pl-6 lg:pl-8">
+        <h1 class="text-3xl font-semibold text-[#DAB20C] mb-2">{{ district.name | upper }}</h1>
+        <h2 class="text-5xl font-bold text-[#863F3F]">{{ chapter.name }}</h2>
         <div class="mt-4">
           <button class="text-sm text-gray-600 hover:text-[#863F3F] flex items-center">
             <i class="fas fa-edit mr-1"></i> Suggest Edit
@@ -130,53 +203,60 @@ This template is for the Statistical Chapter detail page.
       </div>
 
       <!-- Chapter Content Loop -->
-      <div class="prose prose-lg max-w-none">
+      <div class="prose prose-sm max-w-none pl-2 md:pl-6 lg:pl-8 pr-2 md:pr-6">
           {% for block in content_blocks %}
               {% if block.polymorphic_ctype.model == 'headingblockone' %}
-                  <h2 id="{{ block.text|slugify }}" class="text-2xl font-bold text-[#863F3F] mb-4 pt-4">{{ block.text }}</h2>
+                  <h2 id="{{ block.text|slugify }}" class="text-2xl font-bold text-[#863F3F] mb-6 mt-8 pt-4 leading-tight">{{ block.text }}</h2>
 
               {% elif block.polymorphic_ctype.model == 'headingblocktwo' %}
-                  <h3 id="{{ block.text|slugify }}" class="text-xl font-semibold text-gray-800 mb-3 pt-2">{{ block.text }}</h3>
+                  <h3 id="{{ block.text|slugify }}" class="text-xl font-bold text-gray-800 mb-4 mt-6 pt-2 leading-tight">{{ block.text }}</h3>
 
               {% elif block.polymorphic_ctype.model == 'headingblockthree' %}
-                  <h4 id="{{ block.text|slugify }}" class="text-lg font-semibold text-gray-700 mb-2 pt-2">{{ block.text }}</h4>
+                  <h3 id="{{ block.text|slugify }}" class="text-xl font-semibold text-gray-700 mb-4 mt-6 pt-2 leading-tight">{{ block.text }}</h3>
               
               {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
-                  {{ block.content|safe }}
+                  <div class="mb-2 leading-relaxed text-gray-800 max-w-4xl">{{ block.content|safe }}</div>
 
               {% elif block.polymorphic_ctype.model == 'imageblock' %}
-                  <figure class="mb-6 max-w-2xl mx-auto">
-                      <!-- Updated image block with WebP support -->
-                      <picture>
-                          <source media="(min-width: 801px)"
-                              srcset="{{ block.webp_large.url }}" 
-                              type="image/webp"
-                              class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover"
-                              style="aspect-ratio: auto;"
+                  <figure class="mb-2 mt-2 max-w-4xl text-center">
+                      <picture class="block">
+                          <source 
+                            media="(min-width: 801px)"
+                            srcset="{{ block.webp_large.url }}" 
+                            type="image/webp"
                           >
                           <source 
-                              media="(max-width: 800px)"
-                              srcset="{{ block.webp_medium.url }}" 
-                              type="image/webp"
-                              class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover"
-                              style="aspect-ratio: auto;"
+                            media="(max-width: 800px)"
+                            srcset="{{ block.webp_medium.url }}" 
+                            type="image/webp"
                           >
                           <img 
-                              src="{{ block.image.url }}" 
-                              alt="{{ block.alt_text }}" 
-                              class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-md object-cover" 
-                              style="aspect-ratio: auto;"
-                              loading="lazy"
+                            src="{{ block.image.url }}" 
+                            alt="{{ block.alt_text }}" 
+                            class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg shadow-lg object-cover block" 
+                            style="aspect-ratio: auto;"
+                            loading="lazy"
                           >
                       </picture>
-                      {% if block.caption %}
-                          <p class="text-sm text-gray-600 italic text-center">{{ block.caption }}</p>
+                      {% if block.caption and block.caption != "Image (no caption)" %}
+                          <figcaption class="text-sm text-gray-600 italic text-center mt-1 mb-6 px-2 sm:px-4 md:px-10 max-w-4xl mx-auto leading-relaxed">{{ block.caption }}
+                            {% if block.img_ref %}
+                              <a href="{{ block.img_ref }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" >
+                            <i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
+                            {% endif %}
+                          </figcaption>
                       {% endif %}
                   </figure>
 
               {% elif block.polymorphic_ctype.model == 'referenceblock' %}
-                  <p class="text-gray-700 mb-2 text-sm">
-                    {% if block.link %}<a href="{{ block.link }}" target="_blank" class=" hover:underline">{{ block.text }}</a>{% else %}{{ block.text }}{% endif %}
+                  <p class="text-gray-700 mb-2 leading-relaxed max-w-full md:max-w-4xl break-words">
+                    {% if block.link %}
+                    {{ block.text }}
+                      <a href="{{ block.link }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" >
+                        <i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
+                    {% else %}
+                        {{ block.text }}
+                    {% endif %}
                   </p>
 
               {# ========================================================== #}
@@ -187,15 +267,10 @@ This template is for the Statistical Chapter detail page.
                       {% if block.title %}
                         <h3 class="text-xl font-semibold text-center text-gray-800 mb-4">{{ block.title }}</h3>
                       {% endif %}
-                      <div class="w-full overflow-hidden rounded-lg border shadow-md h-[450px] md:h-[550px] p-1">
+                      <div class="w-full overflow-hidden rounded-lg border  h-[450px] md:h-[550px] p-1">
                           <iframe 
                                 class="w-full h-full border-0 block"
-                                
-                                {# ========================================================== #}
-                                {#  THIS IS THE KEY CHANGE. Use the new method.               #}
-                                {# ========================================================== #}
-                                src="{{ block.get_chart_url }}"  {# <--- CHANGE THIS LINE #}
-                                
+                                src="{{ block.get_chart_url }}"
                                 title="{{ block.title|default:'Statistical Chart' }}"
                                 frameborder="0"
                                 scrolling="no">
@@ -213,13 +288,13 @@ This template is for the Statistical Chapter detail page.
 <!-- Mobile Table of Contents (Overlay) -->
 <div id="mobile-toc" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden lg:hidden">
   <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[90vw] bg-white p-4 overflow-y-auto">
-    <div class="flex justify-between items-center mb-4">
+    <div class="flex justify-between items-right mb-4">
       <h3 class="text-lg font-semibold text-[#863F3F]">Table of Contents</h3>
       <button id="close-toc" class="text-gray-500 hover:text-gray-700 p-2"><i class="fas fa-times text-xl"></i></button>
     </div>
     <ul class="space-y-3 text-sm">
         {% for item in table_of_contents %}
-          <li><a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] block py-1 toc-link {% if item.level == 2 %}pl-4{% elif item.level == 3 %}pl-8{% endif %}">{{ item.text }}</a></li>
+          <li><a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] block py-1 toc-link {% if item.level == 2 %}pl-4{% endif %}">{{ item.text }}</a></li>
         {% empty %}
           <li><p class="text-gray-500">No headings on this page.</p></li>
         {% endfor %}
@@ -228,8 +303,8 @@ This template is for the Statistical Chapter detail page.
 </div>
 
 <!-- Chapter Navigation -->
-<div class="bg-white border-t py-5 mt-8">
-  <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
+<div class="bg-white border-t py-5">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-8">
     <div class="flex flex-col sm:flex-row justify-between items-center">
       {% if prev_chapter %}
         <a href="{{ prev_chapter.get_absolute_url }}" class="flex items-center text-gray-700 hover:text-[#863F3F] mb-4 sm:mb-0 transition-transform duration-300 hover:-translate-x-1">
@@ -250,7 +325,8 @@ This template is for the Statistical Chapter detail page.
   </div>
 </div>
 
-{# The JS is copied from your culture template and should work out-of-the-box #}
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script> 
 <script>
   // Table of Contents toggle for mobile
   document.addEventListener('DOMContentLoaded', function() {
@@ -290,7 +366,7 @@ This template is for the Statistical Chapter detail page.
 
     // Close mobile TOC when clicking outside
     document.addEventListener("click", function (event) {
-      const tocContent = document.querySelector("#mobile-toc > div");
+      const tocContent = document.querySelector("#mobile-toc .absolute");
 
       if (
         mobileToc &&
