@@ -233,27 +233,3 @@ class ChartBlock(StatisticContentBlock):
 
 
 
-
-# old models for statistical section
-# class StatisticalSection(models.Model):
-#     """
-#     A flexible model for repeated content blocks in a StatisticalChapter.
-#     """
-#     SECTION_TYPE_CHOICES = [
-#         ('heading', 'Heading'),
-#         ('subheading', 'Subheading'),
-#         ('text', 'Text'),
-#         ('image', 'Image'),
-#     ]
-#     chapter = models.ForeignKey(StatisticalChapter, on_delete=models.CASCADE, related_name='sections')
-#     section_type = models.CharField(max_length=20, choices=SECTION_TYPE_CHOICES)
-#     title = models.CharField(max_length=255, blank=True, null=True)
-#     content = models.TextField(blank=True, null=True)
-#     image = models.ImageField(upload_to='statistical_images/', blank=True, null=True)
-#     order = models.PositiveIntegerField(default=0)
-
-#     class Meta:
-#         ordering = ['order']
-
-#     def __str__(self):
-#         return f"{self.chapter.name} - {self.section_type} - {self.order}"

@@ -1,5 +1,3 @@
-
-
 import logging
 import zipfile
 import io
@@ -11,25 +9,54 @@ from django.db import transaction
 from django.utils.text import slugify
 from urllib.parse import urlparse, parse_qs
 from django.core.files.base import ContentFile
+from django.http import JsonResponse
 
 from .forms import DataImportForm
 from culture.models import (
     CulturalChapter, ContentBlock, HeadingBlockOne, HeadingBlockTwo,
     HeadingBlockThree, ParagraphBlock, ImageBlock, ReferenceBlock
 )
+# Import statistic models
+from statistic.models import (
+    StatisticalChapter, StatisticContentBlock, HeadingBlockOne as StatHeadingBlockOne,
+    HeadingBlockTwo as StatHeadingBlockTwo, HeadingBlockThree as StatHeadingBlockThree,
+    ParagraphBlock as StatParagraphBlock, ImageBlock as StatImageBlock,
+    ReferenceBlock as StatReferenceBlock
+)
 
 logger = logging.getLogger(__name__)
 
-def _parse_and_save_blocks(html_content, chapter, image_data_map):
+def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='culture'):
     """
     Parses HTML content, attaching images from the provided map and merging paragraphs.
+    Now handles both culture and statistic blocks.
     """
     soup = BeautifulSoup(html_content, 'html.parser')
     body = soup.find('body')
 
     if not body: raise ValueError("Invalid HTML file: No <body> tag found.")
 
-    ContentBlock.objects.filter(chapter=chapter).delete()
+    # Choose the correct models based on app_type
+    if app_type == 'culture':
+        ContentBlockClass = ContentBlock
+        HeadingOne = HeadingBlockOne
+        HeadingTwo = HeadingBlockTwo
+        HeadingThree = HeadingBlockThree
+        Paragraph = ParagraphBlock
+        Image = ImageBlock
+        Reference = ReferenceBlock
+        # Clear existing blocks
+        ContentBlock.objects.filter(chapter=chapter).delete()
+    else:  # statistic
+        ContentBlockClass = StatisticContentBlock
+        HeadingOne = StatHeadingBlockOne
+        HeadingTwo = StatHeadingBlockTwo
+        HeadingThree = StatHeadingBlockThree
+        Paragraph = StatParagraphBlock
+        Image = StatImageBlock
+        Reference = StatReferenceBlock
+        # Clear existing blocks
+        StatisticContentBlock.objects.filter(chapter=chapter).delete()
     
     elements = body.find_all(recursive=False)
     consumed_elements, order, in_references_section = set(), 0, False
@@ -39,7 +66,7 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map):
         nonlocal order
         if paragraph_html_buffer:
             full_html_content = "\n".join(paragraph_html_buffer)
-            ParagraphBlock.objects.create(chapter=chapter, order=order, content=full_html_content)
+            Paragraph.objects.create(chapter=chapter, order=order, content=full_html_content)
             order += 1
             paragraph_html_buffer.clear()
             logger.info("Saved one combined ParagraphBlock.")
@@ -51,7 +78,7 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map):
         if not in_references_section and element.name == 'h1' and 'references' in element.get_text(strip=True).lower():
             save_buffered_paragraphs()
             # Save the References heading first
-            HeadingBlockOne.objects.create(chapter=chapter, order=order, text=element.get_text(strip=True))
+            HeadingOne.objects.create(chapter=chapter, order=order, text=element.get_text(strip=True))
             order += 1
             in_references_section = True
             logger.info("----> Saved References heading and switched to References parsing mode.")
@@ -82,7 +109,7 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map):
                         real_url = parse_qs(urlparse(raw_link).query).get('q', [None])[0]
                         if real_url: clean_link = real_url
                     
-                    ReferenceBlock.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
+                    Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
                     order += 1
         else:
             tag_name = element.name
@@ -99,7 +126,7 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map):
                         consumed_elements.add(caption_tag)
                     
                     # Create the instance but don't save to the DB yet.
-                    image_block = ImageBlock(chapter=chapter, order=order, caption=caption_text, alt_text=caption_text)
+                    image_block = Image(chapter=chapter, order=order, caption=caption_text, alt_text=caption_text)
                     
                     # Try to find and attach the image from the zip file.
                     img_src = img_tag.get('src')
@@ -116,7 +143,7 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map):
                     image_block.save()
                     order += 1
                 else:
-                    model_map = {'h1': HeadingBlockOne, 'h2': HeadingBlockTwo, 'h3': HeadingBlockThree}
+                    model_map = {'h1': HeadingOne, 'h2': HeadingTwo, 'h3': HeadingThree}
                     model_map[tag_name].objects.create(chapter=chapter, order=order, text=element.get_text(strip=True))
                     order += 1
             elif tag_name in ['p', 'ul', 'ol', 'table']:
@@ -134,6 +161,7 @@ def import_data_view(request):
         form = DataImportForm(request.POST, request.FILES)
         if form.is_valid():
             chapter_name = form.cleaned_data['chapter_name']
+            app_choice = form.cleaned_data['app_choice']
             try:
                 # --- PROCESS THE ZIP FILE (if provided) ---
                 image_data_map = {}
@@ -150,13 +178,25 @@ def import_data_view(request):
                     except zipfile.BadZipFile:
                         messages.error(request, "The provided image file was not a valid ZIP archive. No images were processed.")
 
-                # Find or create the chapter
-                chapter, _ = CulturalChapter.objects.get_or_create(district=form.cleaned_data['district'], name=chapter_name, defaults={'slug': slugify(chapter_name)})
+                # Find or create the chapter based on app_choice
+                if app_choice == 'culture':
+                    chapter, _ = CulturalChapter.objects.get_or_create(
+                        district=form.cleaned_data['district'], 
+                        name=chapter_name, 
+                        defaults={'slug': slugify(chapter_name)}
+                    )
+                else:  # statistic
+                    chapter, _ = StatisticalChapter.objects.get_or_create(
+                        district=form.cleaned_data['district'], 
+                        name=chapter_name, 
+                        defaults={'slug': slugify(chapter_name)}
+                    )
+                
                 messages.warning(request, f"Found/created chapter '{chapter}'. Old content will be replaced.")
                 
-                # Call the parser, now with the image map
+                # Call the parser, now with the image map and app_choice
                 html_content = form.cleaned_data['html_file'].read().decode('utf-8')
-                blocks_count = _parse_and_save_blocks(html_content, chapter, image_data_map)
+                blocks_count = _parse_and_save_blocks(html_content, chapter, image_data_map, app_choice)
                 
                 messages.success(request, f"Successfully imported {blocks_count} content blocks.")
                 return redirect(chapter.get_absolute_url())
@@ -170,3 +210,15 @@ def import_data_view(request):
 
     context = {'form': form, 'title': "Import Chapter Data and Images"}
     return render(request, 'importdata/import_form.html', context)
+
+def get_chapter_options(request):
+    """API endpoint to get chapter options for both culture and statistic apps"""
+    from culture.models import CulturalChapter
+    from statistic.models import StatisticalChapter
+    
+    data = {
+        'culture': list(CulturalChapter.CHAPTER_CHOICES),
+        'statistic': list(StatisticalChapter.CHAPTER_CHOICES)
+    }
+    
+    return JsonResponse(data)
