@@ -10,6 +10,7 @@ from django.utils.text import slugify
 from urllib.parse import urlparse, parse_qs
 from django.core.files.base import ContentFile
 from django.http import JsonResponse
+import re
 
 from .forms import DataImportForm
 from culture.models import (
@@ -59,6 +60,30 @@ def _clear_existing_blocks(chapter, app_type='culture'):
     except Exception as e:
         logger.error(f"Error clearing existing blocks for chapter {chapter.name}: {e}")
         return False
+
+def _is_footnote_reference(element):
+    """
+    Check if an element is a footnote reference (like [1], [2], etc.)
+    Returns True if it's a footnote, False otherwise.
+    """
+    text = element.get_text(strip=True)
+    
+    # Check if the text starts with a footnote pattern like [1], [2], etc.
+    if re.match(r'^\[\d+\]', text):
+        return True
+    
+    # Check if the element contains footnote-related links
+    link_tag = element.find('a')
+    if link_tag:
+        href = link_tag.get('href', '')
+        link_id = link_tag.get('id', '')
+        
+        # Check for footnote reference patterns in href or id
+        if (href.startswith('#ftnt_ref') or href.startswith('#ftnt') or 
+            link_id.startswith('ftnt') or 'ftnt_ref' in href):
+            return True
+    
+    return False
 
 def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='culture'):
     """
@@ -118,6 +143,120 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
             paragraph_html_buffer.clear()
             logger.info("Saved one combined ParagraphBlock.")
 
+    def process_reference_list(list_element):
+        """
+        Process both <ul> (bullet points) and <ol> (numbered lists) for references.
+        """
+        nonlocal order
+        
+        list_type = "bullet" if list_element.name == 'ul' else "numbered"
+        logger.info(f"Processing {list_type} list for references")
+        
+        for li in list_element.find_all('li'):
+            # Skip if this is a footnote reference
+            if _is_footnote_reference(li):
+                logger.info(f"Skipping footnote reference: {li.get_text(strip=True)[:30]}...")
+                continue
+            
+            # Get the full text and extract link
+            full_text = li.get_text(strip=True)
+            link_tag = li.find('a')
+            raw_link = link_tag.get('href') if link_tag else None
+            
+            # Extract only the reference text (excluding link text)
+            if link_tag:
+                link_text = link_tag.get_text(strip=True)
+                # Remove the link text from the full text to get just the reference text
+                ref_text = full_text.replace(link_text, '').strip()
+                # Clean up any extra spaces or punctuation
+                ref_text = ' '.join(ref_text.split())
+            else:
+                ref_text = full_text
+            
+            # Clean the link URL
+            clean_link = raw_link
+            if raw_link and 'google.com/url' in raw_link:
+                real_url = parse_qs(urlparse(raw_link).query).get('q', [None])[0]
+                if real_url: 
+                    clean_link = real_url
+            
+            Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
+            order += 1
+            logger.info(f"Saved Reference block from {list_type} list: '{ref_text[:30]}...' with link: {clean_link}")
+
+    def process_reference_paragraph(paragraph_element):
+        """
+        Process paragraph elements in references section to extract individual references.
+        Handles complex paragraph structures with spans and links.
+        """
+        nonlocal order
+        
+        # Skip if this is a footnote reference
+        if _is_footnote_reference(paragraph_element):
+            logger.info(f"Skipping footnote reference: {paragraph_element.get_text(strip=True)[:30]}...")
+            return
+        
+        # Get the full text content of the paragraph
+        full_text = paragraph_element.get_text(strip=True)
+        
+        if not full_text:
+            return
+        
+        # Find the first link in the paragraph
+        link_tag = paragraph_element.find('a')
+        
+        if link_tag:
+            # Extract the raw link
+            raw_link = link_tag.get('href')
+            link_text = link_tag.get_text(strip=True)
+            
+            # Clean the link URL (handle Google redirects)
+            clean_link = raw_link
+            if raw_link and 'google.com/url' in raw_link:
+                real_url = parse_qs(urlparse(raw_link).query).get('q', [None])[0]
+                if real_url: 
+                    clean_link = real_url
+                    logger.info(f"Cleaned Google redirect link: {raw_link} -> {clean_link}")
+            
+            # For the reference text, use the full paragraph text
+            # This preserves the complete citation including author, title, etc.
+            ref_text = full_text.strip()
+            
+            # Clean up any extra spaces
+            ref_text = ' '.join(ref_text.split())
+            
+            # Create the reference block
+            Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
+            order += 1
+            logger.info(f"Saved Reference block from paragraph: '{ref_text[:50]}...' with link: {clean_link}")
+            
+        else:
+            # No links found, treat the entire paragraph as a reference without link
+            ref_text = full_text.strip()
+            ref_text = ' '.join(ref_text.split())
+            
+            Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=None)
+            order += 1
+            logger.info(f"Saved Reference block from paragraph (no link): '{ref_text[:50]}...'")
+
+    def process_reference_div(div_element):
+        """
+        Process div elements in references section, specifically handling nested paragraphs.
+        """
+        nonlocal order
+        
+        # Look for paragraph elements within the div
+        paragraphs = div_element.find_all('p')
+        
+        if paragraphs:
+            # Process each paragraph in the div
+            for p in paragraphs:
+                process_reference_paragraph(p)
+        else:
+            # If no paragraphs, treat the div itself as a reference
+            if not _is_footnote_reference(div_element):
+                process_reference_paragraph(div_element)
+
     for element in elements:
         if element in consumed_elements or not isinstance(element, Tag): 
             continue
@@ -134,33 +273,25 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
         
         if in_references_section:
             save_buffered_paragraphs()
-            if element.name == 'ul':
-                for li in element.find_all('li'):
-                    # Get the full text and extract link
-                    full_text = li.get_text(strip=True)
-                    link_tag = li.find('a')
-                    raw_link = link_tag.get('href') if link_tag else None
-                    
-                    # Extract only the reference text (excluding link text)
-                    if link_tag:
-                        link_text = link_tag.get_text(strip=True)
-                        # Remove the link text from the full text to get just the reference text
-                        ref_text = full_text.replace(link_text, '').strip()
-                        # Clean up any extra spaces or punctuation
-                        ref_text = ' '.join(ref_text.split())
-                    else:
-                        ref_text = full_text
-                    
-                    # Clean the link URL
-                    clean_link = raw_link
-                    if raw_link and 'google.com/url' in raw_link:
-                        real_url = parse_qs(urlparse(raw_link).query).get('q', [None])[0]
-                        if real_url: 
-                            clean_link = real_url
-                    
-                    Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
-                    order += 1
-                    logger.info(f"Saved Reference block: '{ref_text[:30]}...' with link: {clean_link}")
+            # Handle lists (bullet points and numbered lists)
+            if element.name in ['ul', 'ol']:
+                process_reference_list(element)
+            # Handle div elements that might contain references
+            elif element.name == 'div':
+                process_reference_div(element)
+            # Handle paragraph elements in references section
+            elif element.name == 'p':
+                process_reference_paragraph(element)
+            # Handle other elements that might contain references
+            elif element.name in ['span'] and element.get_text(strip=True):
+                # Treat other elements with text as reference paragraphs
+                if not _is_footnote_reference(element):
+                    process_reference_paragraph(element)
+            # Skip empty elements or elements with no meaningful content
+            elif element.get_text(strip=True):
+                # Fallback: treat any other element with text as a reference
+                if not _is_footnote_reference(element):
+                    process_reference_paragraph(element)
         else:
             tag_name = element.name
             img_tag = element.find('img')
