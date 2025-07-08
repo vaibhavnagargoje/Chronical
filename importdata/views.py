@@ -66,7 +66,23 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
         nonlocal order
         if paragraph_html_buffer:
             full_html_content = "\n".join(paragraph_html_buffer)
-            Paragraph.objects.create(chapter=chapter, order=order, content=full_html_content)
+            
+            # Process any reference links in the paragraphs to make sure they work
+            soup_para = BeautifulSoup(full_html_content, 'html.parser')
+            
+            # Find all links and process them
+            for link in soup_para.find_all('a'):
+                href = link.get('href', '')
+                
+                # Clean Google redirected links
+                if href and 'google.com/url' in href:
+                    real_url = parse_qs(urlparse(href).query).get('q', [None])[0]
+                    if real_url: 
+                        link['href'] = real_url
+                        logger.info(f"Cleaned Google redirect link: {href} -> {real_url}")
+            
+            # Save the updated paragraph with cleaned links
+            Paragraph.objects.create(chapter=chapter, order=order, content=str(soup_para))
             order += 1
             paragraph_html_buffer.clear()
             logger.info("Saved one combined ParagraphBlock.")
@@ -111,6 +127,7 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
                     
                     Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
                     order += 1
+                    logger.info(f"Saved Reference block: '{ref_text[:30]}...' with link: {clean_link}")
         else:
             tag_name = element.name
             img_tag = element.find('img')
@@ -130,12 +147,22 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
                     
                     # Try to find and attach the image from the zip file.
                     img_src = img_tag.get('src')
-                    if img_src and image_data_map.get(img_src):
+                    basename = os.path.basename(img_src) if img_src else ""
+                    
+                    # Try different ways to match the image
+                    image_bytes = None
+                    if img_src and img_src in image_data_map:
                         image_bytes = image_data_map[img_src]
-                        file_name = os.path.basename(img_src)
+                        logger.info(f"Found image using full path: '{img_src}'")
+                    elif basename and basename in image_data_map:
+                        image_bytes = image_data_map[basename]
+                        logger.info(f"Found image using basename: '{basename}'")
+                    
+                    if image_bytes:
+                        file_name = basename or "image.jpg"
                         # Attach the in-memory file to the ImageField
                         image_block.image.save(file_name, ContentFile(image_bytes), save=False)
-                        logger.info(f"Attached '{img_src}' to new ImageBlock.")
+                        logger.info(f"Attached image to new ImageBlock.")
                     else:
                         logger.warning(f"Image '{img_src}' found in HTML but NOT in the zip file. Block created without an image.")
                     
@@ -173,8 +200,14 @@ def import_data_view(request):
                             for file_name in zip_ref.namelist():
                                 # Avoid mac-specific junk files and directories
                                 if not file_name.startswith('__MACOSX') and not file_name.endswith('/'):
-                                    image_data_map[file_name] = zip_ref.read(file_name)
-                        messages.info(request, f"Processed {len(image_data_map)} images from the zip file.")
+                                    image_data = zip_ref.read(file_name)
+                                    # Store both by full path and basename for flexible lookup
+                                    image_data_map[file_name] = image_data
+                                    image_data_map[os.path.basename(file_name)] = image_data
+                        
+                        # Count unique images (not counting duplicates from basename storage)
+                        unique_images = set(os.path.basename(name) for name in image_data_map.keys())
+                        messages.info(request, f"Processed {len(unique_images)} images from the zip file.")
                     except zipfile.BadZipFile:
                         messages.error(request, "The provided image file was not a valid ZIP archive. No images were processed.")
 
@@ -194,9 +227,22 @@ def import_data_view(request):
                 
                 messages.warning(request, f"Found/created chapter '{chapter}'. Old content will be replaced.")
                 
-                # Call the parser, now with the image map and app_choice
+                # Process the HTML content
                 html_content = form.cleaned_data['html_file'].read().decode('utf-8')
-                blocks_count = _parse_and_save_blocks(html_content, chapter, image_data_map, app_choice)
+                
+                # Pre-process HTML to improve reference parsing
+                soup = BeautifulSoup(html_content, 'html.parser')
+                
+                # Fix links in the document to ensure they're clean
+                for link in soup.find_all('a'):
+                    href = link.get('href', '')
+                    if href and 'google.com/url' in href:
+                        real_url = parse_qs(urlparse(href).query).get('q', [None])[0]
+                        if real_url:
+                            link['href'] = real_url
+                
+                # Process the modified HTML content
+                blocks_count = _parse_and_save_blocks(str(soup), chapter, image_data_map, app_choice)
                 
                 messages.success(request, f"Successfully imported {blocks_count} content blocks.")
                 return redirect(chapter.get_absolute_url())
