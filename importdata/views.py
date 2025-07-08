@@ -26,6 +26,40 @@ from statistic.models import (
 
 logger = logging.getLogger(__name__)
 
+def _clear_existing_blocks(chapter, app_type='culture'):
+    """
+    Safely clear all existing content blocks for a chapter.
+    Handles polymorphic deletion properly.
+    """
+    try:
+        if app_type == 'culture':
+            # Get all content blocks for this chapter
+            existing_blocks = ContentBlock.objects.filter(chapter=chapter)
+            count = existing_blocks.count()
+            
+            # Delete each block individually to ensure proper polymorphic deletion
+            for block in existing_blocks:
+                block.delete()
+            
+            logger.info(f"Deleted {count} existing content blocks for culture chapter: {chapter.name}")
+            
+        else:  # statistic
+            # Get all content blocks for this chapter
+            existing_blocks = StatisticContentBlock.objects.filter(chapter=chapter)
+            count = existing_blocks.count()
+            
+            # Delete each block individually to ensure proper polymorphic deletion
+            for block in existing_blocks:
+                block.delete()
+            
+            logger.info(f"Deleted {count} existing content blocks for statistic chapter: {chapter.name}")
+            
+        return True
+        
+    except Exception as e:
+        logger.error(f"Error clearing existing blocks for chapter {chapter.name}: {e}")
+        return False
+
 def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='culture'):
     """
     Parses HTML content, attaching images from the provided map and merging paragraphs.
@@ -34,7 +68,8 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
     soup = BeautifulSoup(html_content, 'html.parser')
     body = soup.find('body')
 
-    if not body: raise ValueError("Invalid HTML file: No <body> tag found.")
+    if not body: 
+        raise ValueError("Invalid HTML file: No <body> tag found.")
 
     # Choose the correct models based on app_type
     if app_type == 'culture':
@@ -45,8 +80,6 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
         Paragraph = ParagraphBlock
         Image = ImageBlock
         Reference = ReferenceBlock
-        # Clear existing blocks
-        ContentBlock.objects.filter(chapter=chapter).delete()
     else:  # statistic
         ContentBlockClass = StatisticContentBlock
         HeadingOne = StatHeadingBlockOne
@@ -55,8 +88,6 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
         Paragraph = StatParagraphBlock
         Image = StatImageBlock
         Reference = StatReferenceBlock
-        # Clear existing blocks
-        StatisticContentBlock.objects.filter(chapter=chapter).delete()
     
     elements = body.find_all(recursive=False)
     consumed_elements, order, in_references_section = set(), 0, False
@@ -88,7 +119,8 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
             logger.info("Saved one combined ParagraphBlock.")
 
     for element in elements:
-        if element in consumed_elements or not isinstance(element, Tag): continue
+        if element in consumed_elements or not isinstance(element, Tag): 
+            continue
 
         # Handle References Section as a breaker
         if not in_references_section and element.name == 'h1' and 'references' in element.get_text(strip=True).lower():
@@ -123,7 +155,8 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
                     clean_link = raw_link
                     if raw_link and 'google.com/url' in raw_link:
                         real_url = parse_qs(urlparse(raw_link).query).get('q', [None])[0]
-                        if real_url: clean_link = real_url
+                        if real_url: 
+                            clean_link = real_url
                     
                     Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
                     order += 1
@@ -189,6 +222,7 @@ def import_data_view(request):
         if form.is_valid():
             chapter_name = form.cleaned_data['chapter_name']
             app_choice = form.cleaned_data['app_choice']
+            
             try:
                 # --- PROCESS THE ZIP FILE (if provided) ---
                 image_data_map = {}
@@ -213,19 +247,27 @@ def import_data_view(request):
 
                 # Find or create the chapter based on app_choice
                 if app_choice == 'culture':
-                    chapter, _ = CulturalChapter.objects.get_or_create(
+                    chapter, created = CulturalChapter.objects.get_or_create(
                         district=form.cleaned_data['district'], 
                         name=chapter_name, 
                         defaults={'slug': slugify(chapter_name)}
                     )
                 else:  # statistic
-                    chapter, _ = StatisticalChapter.objects.get_or_create(
+                    chapter, created = StatisticalChapter.objects.get_or_create(
                         district=form.cleaned_data['district'], 
                         name=chapter_name, 
                         defaults={'slug': slugify(chapter_name)}
                     )
                 
-                messages.warning(request, f"Found/created chapter '{chapter}'. Old content will be replaced.")
+                # Handle existing vs new chapter
+                if created:
+                    messages.info(request, f"Created new chapter '{chapter}'.")
+                else:
+                    messages.warning(request, f"Chapter '{chapter}' already exists. Replacing all content with new data.")
+                    
+                    # Clear existing blocks before adding new ones
+                    if not _clear_existing_blocks(chapter, app_choice):
+                        raise Exception("Failed to clear existing content blocks")
                 
                 # Process the HTML content
                 html_content = form.cleaned_data['html_file'].read().decode('utf-8')
@@ -244,7 +286,11 @@ def import_data_view(request):
                 # Process the modified HTML content
                 blocks_count = _parse_and_save_blocks(str(soup), chapter, image_data_map, app_choice)
                 
-                messages.success(request, f"Successfully imported {blocks_count} content blocks.")
+                if created:
+                    messages.success(request, f"Successfully created new chapter with {blocks_count} content blocks.")
+                else:
+                    messages.success(request, f"Successfully replaced chapter content with {blocks_count} new content blocks.")
+                
                 return redirect(chapter.get_absolute_url())
 
             except Exception as e:
