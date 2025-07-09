@@ -61,6 +61,45 @@ def _clear_existing_blocks(chapter, app_type='culture'):
         logger.error(f"Error clearing existing blocks for chapter {chapter.name}: {e}")
         return False
 
+def _truncate_heading_text(text, max_length=250):
+    """
+    Truncate heading text to fit database constraints.
+    Leaves a small buffer from the 255 character limit.
+    """
+    if not text:
+        return ""
+    
+    text = text.strip()
+    if len(text) <= max_length:
+        return text
+    
+    # Truncate at word boundary
+    truncated = text[:max_length]
+    last_space = truncated.rfind(' ')
+    if last_space > 0:
+        truncated = truncated[:last_space]
+    
+    return truncated + "..."
+
+def _truncate_text(text, max_length=3000):
+    """
+    Truncate text to a maximum length while preserving word boundaries.
+    """
+    if not text:
+        return ""
+    
+    text = text.strip()
+    if len(text) <= max_length:
+        return text
+    
+    # Truncate at word boundary
+    truncated = text[:max_length]
+    last_space = truncated.rfind(' ')
+    if last_space > 0:
+        truncated = truncated[:last_space]
+    
+    return truncated + "..."
+
 def _is_footnote_reference(element):
     """
     Check if an element is a footnote reference (like [1], [2], etc.)
@@ -180,9 +219,16 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
                 if real_url: 
                     clean_link = real_url
             
-            Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
-            order += 1
-            logger.info(f"Saved Reference block from {list_type} list: '{ref_text[:30]}...' with link: {clean_link}")
+            # Truncate reference text if needed
+            ref_text = _truncate_text(ref_text, 2000)
+            
+            try:
+                Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
+                order += 1
+                logger.info(f"Saved Reference block from {list_type} list: '{ref_text[:30]}...' with link: {clean_link}")
+            except Exception as e:
+                logger.error(f"Error saving reference from {list_type} list: {e}")
+                logger.error(f"Reference text length: {len(ref_text)}")
 
     def process_reference_paragraph(paragraph_element):
         """
@@ -225,19 +271,33 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
             # Clean up any extra spaces
             ref_text = ' '.join(ref_text.split())
             
-            # Create the reference block
-            Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
-            order += 1
-            logger.info(f"Saved Reference block from paragraph: '{ref_text[:50]}...' with link: {clean_link}")
+            # Truncate reference text if needed
+            ref_text = _truncate_text(ref_text, 2000)
+            
+            try:
+                # Create the reference block
+                Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=clean_link)
+                order += 1
+                logger.info(f"Saved Reference block from paragraph: '{ref_text[:50]}...' with link: {clean_link}")
+            except Exception as e:
+                logger.error(f"Error saving reference from paragraph: {e}")
+                logger.error(f"Reference text length: {len(ref_text)}")
             
         else:
             # No links found, treat the entire paragraph as a reference without link
             ref_text = full_text.strip()
             ref_text = ' '.join(ref_text.split())
             
-            Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=None)
-            order += 1
-            logger.info(f"Saved Reference block from paragraph (no link): '{ref_text[:50]}...'")
+            # Truncate reference text if needed
+            ref_text = _truncate_text(ref_text, 2000)
+            
+            try:
+                Reference.objects.create(chapter=chapter, order=order, text=ref_text, link=None)
+                order += 1
+                logger.info(f"Saved Reference block from paragraph (no link): '{ref_text[:50]}...'")
+            except Exception as e:
+                logger.error(f"Error saving reference from paragraph (no link): {e}")
+                logger.error(f"Reference text length: {len(ref_text)}")
 
     def process_reference_div(div_element):
         """
@@ -264,8 +324,9 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
         # Handle References Section as a breaker
         if not in_references_section and element.name == 'h1' and 'references' in element.get_text(strip=True).lower():
             save_buffered_paragraphs()
-            # Save the References heading first
-            HeadingOne.objects.create(chapter=chapter, order=order, text=element.get_text(strip=True))
+            # Save the References heading first (with text truncation)
+            heading_text = _truncate_heading_text(element.get_text(strip=True))
+            HeadingOne.objects.create(chapter=chapter, order=order, text=heading_text)
             order += 1
             in_references_section = True
             logger.info("----> Saved References heading and switched to References parsing mode.")
@@ -334,9 +395,18 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
                     image_block.save()
                     order += 1
                 else:
+                    # Truncate heading text to fit database constraints
+                    heading_text = _truncate_heading_text(element.get_text(strip=True))
                     model_map = {'h1': HeadingOne, 'h2': HeadingTwo, 'h3': HeadingThree}
-                    model_map[tag_name].objects.create(chapter=chapter, order=order, text=element.get_text(strip=True))
-                    order += 1
+                    
+                    try:
+                        model_map[tag_name].objects.create(chapter=chapter, order=order, text=heading_text)
+                        order += 1
+                        logger.info(f"Saved {tag_name} heading: '{heading_text[:50]}...'")
+                    except Exception as e:
+                        logger.error(f"Error saving {tag_name} heading: {e}")
+                        logger.error(f"Heading text length: {len(heading_text)}")
+                        logger.error(f"Heading text: {heading_text[:100]}...")
             elif tag_name in ['p', 'ul', 'ol', 'table']:
                 text_content = element.get_text(strip=True)
                 if text_content and not (text_content.startswith('<Insert') and text_content.endswith('>')):
