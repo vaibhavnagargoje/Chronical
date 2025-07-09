@@ -91,12 +91,12 @@ INTERNAL_IPS = ["127.0.0.1"]
 if DEBUG:
     NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 else:
-    NPM_BIN_PATH = "/usr/bin/npm"
+    NPM_BIN_PATH = r"/usr/bin/npm"
 # settings.py
 if DEBUG:
     FFMPEG_PATH = r'C:\ProgramData\chocolatey\bin\ffmpeg.exe'
 else:
-    FFMPEG_PATH = '/usr/bin/ffmpeg'
+    FFMPEG_PATH = r'/usr/bin/ffmpeg'
 
 MIDDLEWARE = [
     
