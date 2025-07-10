@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     'tinymce',
     'corsheaders',
     'home',
+    'users',
     'culture',
     'statistic',
     'search',
@@ -77,7 +78,7 @@ INSTALLED_APPS = [
 
 
     'tailwind',
-    'theme',  # Your Tailwind app name
+    'theme',  #Tailwind app name
     
 ]
 
@@ -263,3 +264,5 @@ if not DEBUG:
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     SECURE_HSTS_PRELOAD = True
+
+LOGIN_URL = 'users:login'

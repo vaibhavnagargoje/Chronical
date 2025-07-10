@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block title %}
+Login - Indian Districts
+{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full space-y-8">
+        <div>
+            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                Sign In 
+            </h2>
+            <p class="mt-2 text-center text-sm text-gray-600">
+                Welcome to Indian Districts !
+            </p>
+        </div>
+        {% if messages %}
+            {% for message in messages %}
+                {% if message.tags == 'error' %}
+                    <div class="alert alert-error bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded" role="alert">
+                        <strong>{{ message }}</strong>
+                    </div>
+                {% elif message.tags == 'success' %}
+                    <div class="alert alert-success bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded" role="alert">
+                        <strong>{{ message }}</strong>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+
+        <form class="mt-8 space-y-6" method="post">
+            {% csrf_token %}
+            <div class="space-y-4">
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input id="email" name="email" type="" autocomplete="email" required class="mt-1 appearance-none relative block w-full px-3 py-2 border borde-gray-300 placeholder-gray-500 text-gray-900 rounded-sm focus:outline-none focus:ring[##863F3F] focus:z-10 sm:text-sm" placeholder:"Email">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <input id="password" name="password" type="password" autocomplete="current-password" required class="mt-1 appearance-none relative block w-full px-3 py-2 border borde-gray-300 placeholder-gray-500 text-gray-900 rounded-sm focus:outline-none focus:ring[##863F3F] focus:z-10 sm:text-sm" placeholder:"Password">
+                </div>
+
+            </div>
+
+        <div>
+            <button type="submit"
+                class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-sm text-white bg-[#863F3F] hover:bg-dark-brown focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors duration-300" >
+                Sign In
+            </button>
+        </div>
+
+            <div class="text-center">
+                <a href="{% url 'users:forgot_password' %}" 
+                   class="text-sm font-medium text-primary hover:text-dark-brown transition-colors duration-300">
+                    Forgot your password?
+                </a>
+            </div>
+
+            <div class="text-center">
+                <p class="text-sm text-gray-600">
+                    Don't have an account? 
+                    <a href="{% url 'users:register' %}" class="font-medium text-primary hover:text-dark-brown transition-colors duration-300">
+                        Register here
+                    </a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+

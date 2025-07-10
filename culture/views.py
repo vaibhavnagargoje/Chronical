@@ -1,9 +1,10 @@
 # culture/views.py
-
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
 from .models import CulturalChapter, ContentBlock, HeadingBlockOne, HeadingBlockTwo,HeadingBlockThree
 
+@login_required
 def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
     chapter = get_object_or_404(
         CulturalChapter.objects.select_related('district__state'),

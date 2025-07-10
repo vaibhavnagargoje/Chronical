@@ -6,9 +6,10 @@ from django.http import HttpResponse
 # Import the models from the statistic app
 from .models import StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree,ChartBlock
 from django.views.decorators.clickjacking import xframe_options_exempt
+from django.contrib.auth.decorators import login_required
 
 
-
+@login_required
 def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug):
     # Fetch the correct StatisticalChapter using the URL slugs
     chapter = get_object_or_404(

@@ -11,6 +11,7 @@ urlpatterns = [
 
     path('editor/', include('editor.urls', namespace='editor')),
     path('search/', include('search.urls', namespace='search')),
+    path('users/', include('users.urls', namespace='users')),  
     path('cultural/', include('culture.urls', namespace='culture')),
     path('statistical/', include('statistic.urls')), # Also adding namespace for best practice
     # path('sidepanal/', include('sidepanal.urls', namespace='sidepanal')),

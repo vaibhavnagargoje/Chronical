@@ -6,6 +6,7 @@ from django.core.paginator import Paginator
 from django.utils import timezone
 from django.utils.text import slugify
 from datetime import timedelta
+from django.contrib.auth.decorators import login_required
 
 from home.models import District
 from culture.models import CulturalChapter, ParagraphBlock, HeadingBlockOne, HeadingBlockTwo
@@ -14,6 +15,7 @@ from culture.models import CulturalChapter, ParagraphBlock, HeadingBlockOne, Hea
 DISTRICT_TYPE = 'District Overview'
 CULTURE_TYPE = 'Cultural Chapter'
 
+@login_required
 def search_view(request):
     """
     A comprehensive search view that handles querying, filtering, pagination,
