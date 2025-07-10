@@ -41,10 +41,45 @@
                     <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
                     {# Note: A submit button isn't strictly necessary as pressing Enter works, but you can add one if you like #}
                 </form>
-                <a href="#" class="user-icon" >
-                    <i class="fas fa-user usericon colorburg"></i>&nbsp;&nbsp;
-                </a> 
-    </div>
+                
+                <!-- User Icon with Dropdown -->
+                <div class="relative">
+                    <button id="user-menu-button" class="user-icon flex items-center p-2 rounded-full hover:bg-gray-100 transition-colors duration-200">
+                        <i class="fas fa-user text-xl text-[#863F3F]"></i>
+                    </button>
+                    
+                    <!-- Dropdown Menu -->
+                    <div id="user-dropdown" class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transform scale-95 transition-all duration-200 origin-top-right z-50">
+                        {% if user.is_authenticated %}
+                            <div class="px-4 py-3 border-b border-gray-100">
+                                <span class="block text-sm text-gray-500">Welcome back!</span>
+                                <span class="block text-base font-semibold text-gray-800 truncate">{{ user.first_name|default:user.username }}</span>
+                            </div>
+                            <div class="py-2">
+                                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
+                                    <i class="fas fa-user w-5 mr-3 text-gray-400"></i>
+                                    <span>Profile</span>
+                                </a>
+                                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors duration-200">
+                                    <i class="fas fa-sign-out-alt w-5 mr-3 text-gray-400"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </div>
+                        {% else %}
+                            <div class="py-2">
+                                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
+                                    <i class="fas fa-sign-in-alt w-5 mr-3 text-gray-400"></i>
+                                    <span>Login</span>
+                                </a>
+                                <a href="{% url 'register' %}" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
+                                    <i class="fas fa-user-plus w-5 mr-3 text-gray-400"></i>
+                                    <span>Register</span>
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
 
             <!-- ============================================= -->
             <!-- ==         MOBILE MENU & SEARCH (MODIFIED) == -->
@@ -80,20 +115,47 @@
                     </div>
                 </form>
                 
-                {% comment %} <!-- Mobile Menu Button -->
-                <button id="mobile-menu-button" type="button" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-200 p-2">
-                    <i class="fas fa-bars text-xl"></i>
-                </button> {% endcomment %}
-                <a href="#" class="user-icon" >
-                    <i class="fas fa-user usericon colorburg"></i>&nbsp;&nbsp;
-                </a> 
+                <!-- Mobile User Icon with Dropdown -->
+                <div class="relative">
+                    <button id="mobile-user-menu-button" class="user-icon flex items-center p-2 rounded-full hover:bg-gray-100 transition-colors duration-200">
+                        <i class="fas fa-user text-xl text-[#863F3F]"></i>
+                    </button>
+                    
+                    <!-- Mobile Dropdown Menu -->
+                    <div id="mobile-user-dropdown" class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transform scale-95 transition-all duration-200 origin-top-right z-50">
+                        {% if user.is_authenticated %}
+                            <div class="px-4 py-3 border-b border-gray-100">
+                                <span class="block text-sm text-gray-500">Welcome back!</span>
+                                <span class="block text-base font-semibold text-gray-800 truncate">{{ user.first_name|default:user.username }}</span>
+                            </div>
+                            <div class="py-2">
+                                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
+                                    <i class="fas fa-user w-5 mr-3 text-gray-400"></i>
+                                    <span>Profile</span>
+                                </a>
+                                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors duration-200">
+                                    <i class="fas fa-sign-out-alt w-5 mr-3 text-gray-400"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </div>
+                        {% else %}
+                            <div class="py-2">
+                                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
+                                    <i class="fas fa-sign-in-alt w-5 mr-3 text-gray-400"></i>
+                                    <span>Login</span>
+                                </a>
+                                <a href="{% url 'register' %}" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
+                                    <i class="fas fa-user-plus w-5 mr-3 text-gray-400"></i>
+                                    <span>Register</span>
+                                </a>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
         
-        {% comment %} <!-- Mobile Menu (remains the same) -->
-        <div id="mobile-menu" class="md:hidden hidden pb-4">
-            <a href="#" class="block py-2 px-4 text-center  text-[#863F3F] border border-[#863F3F] hover:bg-[#863F3F] hover:text-white transition-colors">Login</a> {# Changed href to # for now #}
-        </div> {% endcomment %}
+    
     </div>
 </nav>
 
@@ -171,24 +233,9 @@
         </div>
     </footer>
 
-
-
-
-
-  {% comment %} <!-- JavaScript for mobile menu toggle -->
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
-
-       
-    </script> {% endcomment %}
-   
-
     <script>
 document.addEventListener('DOMContentLoaded', function () {
+    // Mobile search functionality
     const mobileSearchButton = document.getElementById('mobile-search-button');
     const mobileSearchContainer = document.getElementById('mobile-search-container');
     const mobileSearchInput = document.getElementById('mobile-search-input');
@@ -218,12 +265,60 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Handle form submission via the search icon button
-    const searchSubmitButton = document.getElementById('search-submit-button');
-    const mobileSearchForm = document.getElementById('mobile-search-form');
+    // User dropdown functionality (Desktop)
+    const userMenuButton = document.getElementById('user-menu-button');
+    const userDropdown = document.getElementById('user-dropdown');
 
-    // The arrow button will now submit the form it's inside
-    // No extra JS needed for this if it's type="submit"
+    if (userMenuButton && userDropdown) {
+        userMenuButton.addEventListener('click', function (event) {
+            event.stopPropagation();
+            toggleDropdown(userDropdown);
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function (event) {
+            if (!userDropdown.contains(event.target) && !userMenuButton.contains(event.target)) {
+                closeDropdown(userDropdown);
+            }
+        });
+    }
+
+    // User dropdown functionality (Mobile)
+    const mobileUserMenuButton = document.getElementById('mobile-user-menu-button');
+    const mobileUserDropdown = document.getElementById('mobile-user-dropdown');
+
+    if (mobileUserMenuButton && mobileUserDropdown) {
+        mobileUserMenuButton.addEventListener('click', function (event) {
+            event.stopPropagation();
+            toggleDropdown(mobileUserDropdown);
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function (event) {
+            if (!mobileUserDropdown.contains(event.target) && !mobileUserMenuButton.contains(event.target)) {
+                closeDropdown(mobileUserDropdown);
+            }
+        });
+    }
+
+    // Helper functions for dropdown
+    function toggleDropdown(dropdown) {
+        if (dropdown.classList.contains('opacity-0')) {
+            openDropdown(dropdown);
+        } else {
+            closeDropdown(dropdown);
+        }
+    }
+
+    function openDropdown(dropdown) {
+        dropdown.classList.remove('opacity-0', 'invisible', 'scale-95');
+        dropdown.classList.add('opacity-100', 'visible', 'scale-100');
+    }
+
+    function closeDropdown(dropdown) {
+        dropdown.classList.add('opacity-0', 'invisible', 'scale-95');
+        dropdown.classList.remove('opacity-100', 'visible', 'scale-100');
+    }
 });
 </script>
 
