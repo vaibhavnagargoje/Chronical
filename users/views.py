@@ -34,6 +34,17 @@ def user_login(request):
     return render(request, 'users/login.html')
 
 
+
+def custom_logout(request):
+    if request.user.is_authenticated:
+        logout(request)
+        messages.success(request, "You have been logged out successfully.")
+        return redirect('users:login')
+    else:
+        messages.warning(request, "You are not logged in.")
+
+
+
 def forgot_password(request):
     return render(request, 'users/forgot_password.html')
 

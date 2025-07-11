@@ -133,14 +133,14 @@
                                     <i class="fas fa-user w-5 mr-3 text-gray-400"></i>
                                     <span>Profile</span>
                                 </a>
-                                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors duration-200">
+                                <a href="{% url 'users:custom_logout' %}" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-red-600 transition-colors duration-200">
                                     <i class="fas fa-sign-out-alt w-5 mr-3 text-gray-400"></i>
                                     <span>Logout</span>
                                 </a>
                             </div>
                         {% else %}
                             <div class="py-2">
-                                <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
+                                <a href="{% url 'users:login' %}" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
                                     <i class="fas fa-sign-in-alt w-5 mr-3 text-gray-400"></i>
                                     <span>Login</span>
                                 </a>
