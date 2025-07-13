@@ -107,7 +107,7 @@ def register(request):
     return render(request,'users/register.html')
 
 
-def verity_otp(request):
+def verify_otp(request):
     email = request.session.get('otp_email')
     if not email:
         messages.error(request,"No pending Verification found. Please register again.")
@@ -141,7 +141,12 @@ def verity_otp(request):
             return redirect('users:register')
     return render(request, 'users/verify_otp.html', {'email': email})
             
-                
+
+
+
+def registration_success(request):
+    return render(request, 'users/register_success.html')
+
 
 def custom_logout(request):
     if request.user.is_authenticated:
@@ -169,3 +174,5 @@ def user_profile(request):
         'user': user,
     }
     return render(request, 'users/user_profile.html', context)
+
+

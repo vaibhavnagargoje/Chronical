@@ -1,1 +1,55 @@
 {% extends "base.html" %}
+
+{% block title %}Verify OTP - Indian Districts{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center  py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full space-y-8">
+        <div>
+            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                Verify Your Email
+            </h2>
+            <p class="mt-2 text-center text-sm text-gray-600">
+                We've sent a 4-digit OTP to <span class="font-medium text-[#863F3F]">{{ email }}</span>
+            </p>
+            <p class="mt-1 text-center text-xs text-red-600">
+                OTP expires in 5 minute
+            </p>
+        </div>
+        
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }} bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded" role="alert">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+        
+        <form class="mt-8 space-y-6" method="post">
+            {% csrf_token %}
+            <div>
+                <label for="otp" class="block text-sm font-medium text-gray-700 mb-2">Enter OTP</label>
+                <input id="otp" name="otp" type="text" required maxlength="6" 
+                       class="appearance-none relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F] focus:z-10 text-center text-lg tracking-widest" 
+                       placeholder="0000">
+            </div>
+
+            <div>
+                <button type="submit" 
+                        class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#863F3F] hover:bg-dark-brown focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#863F3F] transition-colors duration-300">
+                    Verify OTP
+                </button>
+            </div>
+            
+            <div class="text-center">
+                <p class="text-sm text-gray-600">
+                    Didn't receive the code? 
+                    <a href="{% url 'users:register' %}" class="font-medium text-[#863F3F] hover:text-dark-brown transition-colors duration-300">
+                        Register again
+                    </a>
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

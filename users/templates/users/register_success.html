@@ -1,1 +1,34 @@
 {% extends "base.html" %}
+
+{% block title %}Registration Successful - Indian Districts{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center  py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full space-y-8 text-center">
+        <div>
+            <div class="mx-auto h-20 w-20 bg-green-100 rounded-full flex items-center justify-center">
+                <i class="fas fa-check-circle text-green-600 text-3xl"></i>
+            </div>
+            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                Registration Successful!
+            </h2>
+            <p class="mt-2 text-center text-sm text-gray-600">
+                Your account has been created successfully.
+            </p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-lg font-medium text-gray-900 mb-4">Next Steps</h3>
+            
+        </div>
+        
+        <div>
+            <a href="{% url 'users:login' %}" 
+               class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-[#863F3F] hover:bg-dark-brown focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#863F3F] transition-colors duration-300">
+                Sign In Now
+            </a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
