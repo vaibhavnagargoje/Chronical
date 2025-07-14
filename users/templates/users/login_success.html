@@ -1,1 +1,44 @@
 {% extends "base.html" %}
+
+
+{% block title %}Welcome - Indian District{% endblock %}
+
+{% block content %}
+<div class="min-h-screen flex items-center justify-center  py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-md w-full space-y-8 text-center">
+        <div>
+            <div class="mx-auto h-20 w-20 bg-green-100 rounded-full flex items-center justify-center">
+                <i class="fas fa-check text-green-600 text-3xl"></i>
+            </div>
+            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+                Welcome, {{ user.first_name|default:user.username }}!
+            </h2>
+            <p class="mt-2 text-center text-sm text-gray-600">
+                You have successfully logged in to Indian Districts.
+            </p>
+        </div>
+        
+        <div class="space-y-4">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h3 class="text-lg font-medium text-gray-900 mb-2">Account Information</h3>
+                <div class="text-left space-y-2">
+                    <p class="text-sm text-gray-600"><span class="font-medium">Username:</span> {{ user.username }}</p>
+                    <p class="text-sm text-gray-600"><span class="font-medium">Email:</span> {{ user.email }}</p>
+                    <p class="text-sm text-gray-600"><span class="font-medium">Member since:</span> {{ user.date_joined|date:"F d, Y" }}</p>
+                </div>
+            </div>
+            
+            <div class="flex space-x-4">
+                <a href="{% url 'home:index' %}" 
+                   class="flex-1 bg-[#863F3F] text-white py-2 px-4 rounded-md hover:bg-dark-brown transition-colors duration-300 text-center">
+                    Go to Home
+                </a>
+                <a href="{% url 'users:custom_logout' %}" 
+                   class="flex-1 bg-gray-600 text-white py-2 px-4 rounded-md hover:bg-gray-700 transition-colors duration-300 text-center">
+                    Logout
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

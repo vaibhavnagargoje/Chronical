@@ -9,6 +9,8 @@ import random
 from .models import OTPVerification, PasswordResetToken
 from django.contrib.auth.hashers import make_password
 from django.core.mail import send_mail
+from django.urls import reverse
+from django.conf import settings
 # Create your views here.
 
 
@@ -35,10 +37,22 @@ def user_login(request):
                 return redirect(next_url)
             
             messages.success(request, f"Login successful. {user.first_name or user.email}")
-            return redirect('users:user_profile')
+            return redirect('users:login_success')
         else:
             messages.error(request, "Invalid email or password.")
     return render(request, 'users/login.html')
+
+
+def login_success(request):
+    if not request.user.is_authenticated:
+        messages.error(request, "You need to be logged in to view this page.")
+        return redirect('users:login')
+    
+    user = request.user
+    context = {
+        'user': user,
+    }
+    return render(request, 'users/login_success.html', context)
 
 
 def register(request):
@@ -159,7 +173,121 @@ def custom_logout(request):
 
 
 def forgot_password(request):
+    if request.method=="POST":
+        email = request.POST.get('email', '').strip()
+        if not email:
+            messages.error(request, "Email is required.")
+            return render(request, 'users/forgot_password.html')
+        
+        try:
+            validate_email(email)
+        except ValidationError:
+            messages.error(request, "Invalid email address.")
+            return render(request, 'users/forgot_password.html')
+        
+        try:
+            user = User.objects.get(email=email)
+            PasswordResetToken.objects.filter(email=email, used=False).update(used=True)
+            reset_token = PasswordResetToken.objects.create(email=email)
+            
+            reset_url = request.build_absolute_uri(
+                reverse('users:reset_password', kwargs={'token': reset_token.token})
+            )
+
+            try:
+                # Correct usage of Django's send_mail
+                subject = 'Password Reset Request'
+                message = f"""
+                Hello {user.first_name or user.email},
+                
+                You requested a password reset. Please click the link below to reset your password:
+                
+                {reset_url}
+                
+                If you did not request this password reset, please ignore this email.
+                """
+                from_email = settings.EMAIL_HOST_USER
+                recipient_list = [email]
+                
+                success = send_mail(
+                    subject=subject,
+                    message=message,
+                    from_email=from_email,
+                    recipient_list=recipient_list,
+                    fail_silently=False,
+                )
+                
+                if success:
+                    messages.success(request, "Password reset link has been sent to your registered email.")
+                    return redirect('users:login')
+                else:
+                    messages.error(request, "Failed to send password reset link. Please try again later.")
+                    return render(request, 'users/forgot_password.html')
+            
+            except Exception as e:
+                messages.error(request, f"Failed to send password reset email. Please try again")
+                return render(request, 'users/forgot_password.html')
+        except User.DoesNotExist:
+            messages.success(request, "If an account with this email exists, a password reset link will be sent to it." )
+
+            return redirect('users:login')
+        
+
     return render(request, 'users/forgot_password.html')
+
+
+def reset_password(request, token):
+    """Handle password reset with token."""
+    try:
+        reset_token = PasswordResetToken.objects.get(token=token)
+        
+        if not reset_token.is_valid():
+            messages.error(request, "This password reset link has expired or is invalid. Please request a new one.")
+            return redirect('users:forgot_password')
+        
+        try:
+            user = User.objects.get(email=reset_token.email)
+        except User.DoesNotExist:
+            messages.error(request, "Invalid reset link.")
+            return redirect('users:forgot_password')
+        
+        if request.method == 'POST':
+            new_password = request.POST.get('new_password')
+            confirm_password = request.POST.get('confirm_password')
+            
+            # Validation
+            if not all([new_password, confirm_password]):
+                messages.error(request, "Both password fields are required")
+                return render(request, 'users/reset_password.html', {'token': token})
+            
+            if new_password != confirm_password:
+                messages.error(request, "Passwords don't match")
+                return render(request, 'users/reset_password.html', {'token': token})
+            
+            if len(new_password) < 6:
+                messages.error(request, "Password must be at least 6 characters long")
+                return render(request, 'users/reset_password.html', {'token': token})
+            
+            # Update password
+            user.set_password(new_password)
+            user.save()
+            
+            # Mark token as used
+            reset_token.used = True
+            reset_token.save()
+            
+            messages.success(request, "Your password has been reset successfully! Please login with your new password.")
+            return redirect('users:login')
+        
+        return render(request, 'users/reset_password.html', {
+            'token': token,
+            'user_email': user.email
+        })
+        
+    except PasswordResetToken.DoesNotExist:
+        messages.error(request, "Invalid password reset link.")
+        return redirect('users:forgot_password')
+
 
 
 
