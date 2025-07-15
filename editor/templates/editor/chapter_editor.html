@@ -100,10 +100,127 @@ document.addEventListener('DOMContentLoaded', () => {
     let uniqueIdCounter = Date.now();
     let tinyMCEInitialized = new Set(); // Track initialized editors
 
+    // Initialize Sortable
     new Sortable(editorBlocksContainer, { 
         animation: 150, 
         handle: '.drag-handle', 
-        ghostClass: 'sortable-ghost' 
+        ghostClass: 'sortable-ghost',
+        onEnd: function() {
+            // After sorting, we need to update insertion points
+            updateInsertionPoints();
+        }
+    });
+
+    // Function to add insertion points between blocks
+    function updateInsertionPoints() {
+        // First remove all existing insertion points
+        document.querySelectorAll('.block-insertion-point').forEach(point => point.remove());
+        
+        // Add new insertion point at the beginning
+        const firstInsertionPoint = createInsertionPoint();
+        editorBlocksContainer.insertBefore(firstInsertionPoint, editorBlocksContainer.firstChild);
+        
+        // Add insertion points after each block
+        document.querySelectorAll('#editor-blocks .editor-block').forEach(block => {
+            const insertionPoint = createInsertionPoint();
+            block.insertAdjacentElement('afterend', insertionPoint);
+        });
+    }
+    
+    // Create an insertion point element
+    function createInsertionPoint() {
+        const insertionPoint = document.createElement('div');
+        insertionPoint.className = 'block-insertion-point';
+        insertionPoint.innerHTML = `
+            <div class="insertion-line"></div>
+            <div class="insertion-button-container">
+                <button type="button" class="insertion-button">
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="insertion-menu">
+                    <div class="insertion-menu-item" data-block-type="heading1">Heading 1</div>
+                    <div class="insertion-menu-item" data-block-type="heading2">Heading 2</div>
+                    <div class="insertion-menu-item" data-block-type="heading3">Heading 3</div>
+                    <div class="insertion-menu-item" data-block-type="paragraph">Paragraph</div>
+                    <div class="insertion-menu-item" data-block-type="image">Image</div>
+                    <div class="insertion-menu-item" data-block-type="reference">Reference</div>
+                    ${document.querySelector('[data-block-type="chart"]') ? 
+                      '<div class="insertion-menu-item" data-block-type="chart">Chart</div>' : ''}
+                </div>
+            </div>
+        `;
+        
+        // Add event listeners for the insertion button
+        const insertionButton = insertionPoint.querySelector('.insertion-button');
+        insertionButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeAllInsertionMenus();
+            insertionPoint.querySelector('.insertion-menu').classList.toggle('active');
+        });
+        
+        // Add event listeners for menu items
+        insertionPoint.querySelectorAll('.insertion-menu-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const blockType = item.dataset.blockType;
+                insertNewBlock(blockType, insertionPoint);
+                closeAllInsertionMenus();
+            });
+        });
+        
+        return insertionPoint;
+    }
+    
+    // Close all open insertion menus
+    function closeAllInsertionMenus() {
+        document.querySelectorAll('.insertion-menu.active').forEach(menu => {
+            menu.classList.remove('active');
+        });
+    }
+    
+    // Insert a new block at the specified insertion point
+    function insertNewBlock(blockType, insertionPoint) {
+        if (!blockTemplatesHTML[blockType]) {
+            console.error('Template not found for block type:', blockType);
+            return;
+        }
+        
+        // Create new block element
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = blockTemplatesHTML[blockType].trim();
+        const newBlock = tempDiv.firstElementChild;
+        
+        // Insert the new block after the insertion point
+        insertionPoint.insertAdjacentElement('afterend', newBlock);
+
+        // Initialize TinyMCE for paragraph blocks
+        if (blockType === 'paragraph') {
+            const newTextArea = newBlock.querySelector('.tinymce-editor');
+            if (newTextArea) {
+                // Small delay to ensure DOM is properly rendered
+                setTimeout(() => {
+                    initializeTinyMCE(newTextArea);
+                }, 100);
+            }
+        } 
+        else if (blockType === 'image' || blockType === 'chart') {
+            uniqueIdCounter++;
+            const fileInput = newBlock.querySelector('input[type="file"]');
+            if (fileInput) { 
+                fileInput.name = `new-file-${uniqueIdCounter}`; 
+            }
+        }
+
+        // Scroll to the new block
+        newBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Update insertion points to include one after the new block
+        updateInsertionPoints();
+    }
+    
+    // Close insertion menus when clicking outside
+    document.addEventListener('click', () => {
+        closeAllInsertionMenus();
     });
 
     const initializeTinyMCE = (element) => {
@@ -244,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `
     };
 
-    // Handle adding new blocks
+    // Handle adding new blocks at the end
     addBlockButtons.forEach(button => {
         button.addEventListener('click', () => {
             const blockType = button.dataset.blockType;
@@ -282,6 +399,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Scroll to the new block
             newBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // Update insertion points
+            updateInsertionPoints();
         });
     });
 
@@ -302,8 +422,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             
             blockToRemove.remove();
+            
+            // Update insertion points after deletion
+            updateInsertionPoints();
         }
     });
+
+    // Initialize insertion points
+    updateInsertionPoints();
 
     // Handle form submission
     saveButton.addEventListener('click', (e) => {
@@ -370,6 +496,95 @@ document.addEventListener('DOMContentLoaded', () => {
     .add-block-btn:hover { 
         background-color: #f9fafb; 
         border-color: #9ca3af;
+    }
+    
+    /* Block insertion styling - updated for horizontal line with right-aligned button */
+    .block-insertion-point {
+        position: relative;
+        height: 8px;
+        margin: 8px 0;
+        transition: height 0.1s;
+    }
+    
+    
+    
+    .insertion-line {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: rgba(203, 213, 225, 0.3); /* Very light color by default */
+        transform: translateY(-50%);
+        transition: background-color 0.2s;
+    }
+    
+    .block-insertion-point:hover .insertion-line {
+        background-color: rgba(203, 213, 225, 0.8); /* Darker on hover */
+    }
+    
+    .insertion-button-container {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
+    
+    .insertion-button {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: rgba(79, 70, 229, 0.5); /* Semi-transparent by default */
+        color: white;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        opacity: 0.2;
+        transition: opacity 0.2s, transform 0.2s, background-color 0.2s;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .block-insertion-point:hover .insertion-button {
+        opacity: 1;
+        transform: scale(1.1);
+        background: rgba(79, 70, 229, 1); /* Solid on hover */
+    }
+    
+    .insertion-button:hover {
+        background: #6366f1;
+    }
+    
+    .insertion-menu {
+        position: absolute;
+        right: 100%;
+        top: 0;
+        margin-right: 8px;
+        background: white;
+        border-radius: 6px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        padding: 8px 0;
+        min-width: 120px;
+        z-index: 100;
+        display: none;
+    }
+    
+    .insertion-menu.active {
+        display: block;
+    }
+    
+    .insertion-menu-item {
+        padding: 8px 16px;
+        cursor: pointer;
+        transition: background 0.1s;
+        font-size: 14px;
+    }
+    
+    .insertion-menu-item:hover {
+        background: #f3f4f6;
+        color: #4f46e5;
     }
     
     /* Ensure TinyMCE editors are properly styled */
