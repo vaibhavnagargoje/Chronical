@@ -1,18 +1,20 @@
-<div class="p-4 bg-white rounded-lg shadow editor-block" data-block-type="image" data-id="{{ id|default:'' }}">
-    <div class="flex items-start gap-4">
-        <span class="drag-handle text-gray-400 hover:text-gray-600 mt-2"><i class="fas fa-grip-vertical"></i></span>
-        <div class="flex-grow space-y-3">
-            <label class="block text-sm font-medium text-gray-500">Image</label>
+<div class="p-3 bg-white rounded-lg shadow-sm editor-block" data-block-type="image" data-id="{{ id|default:'' }}">
+    <div class="flex items-start gap-3">
+        <span class="drag-handle text-gray-400 hover:text-gray-600 mt-1"><i class="fas fa-grip-vertical"></i></span>
+        <div class="flex-grow space-y-2">
+            <label class="block text-xs font-medium text-gray-400 uppercase tracking-wide">Image</label>
             {% if image_url %}
-            <img src="{{ image_url }}" class="max-w-xs rounded-md">
-            <p class="text-xs text-gray-500">To replace this image, choose a new file below.</p>
+            <div class="inline-block">
+                <img src="{{ image_url }}" class="max-w-full h-auto rounded border shadow-sm" style="max-height: 300px;">
+            </div>
+            <p class="text-xs text-gray-400">To replace this image, choose a new file below.</p>
             {% endif %}
-            <input type="file" name="{{ file_input_name|default:'image_file' }}" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100"/>
+            <input type="file" name="{{ file_input_name|default:'image_file' }}" class="block w-full text-sm text-gray-500 file:mr-4 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-medium file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"/>
             
-            <input type="text" name="caption" class="w-full border-gray-300 rounded-md text-sm" value="{{ caption|default:'' }}" placeholder="Image Caption (optional)">
-            <input type="text" name="alt_text" class="w-full border-gray-300 rounded-md text-sm" value="{{ alt_text|default:'' }}" placeholder="Alt Text (for accessibility)">
-            <input type="text" name="img_ref" class="w-full border-gray-300 rounded-md text-sm" value="{{ img_ref|default:'' }}" placeholder="Image Reference/Source (optional)">
+            <input type="text" name="caption" class="w-full border-gray-200 rounded text-sm py-1.5 px-2" value="{{ caption|default:'' }}" placeholder="Image Caption (optional)">
+            <input type="hidden" name="alt_text" value="{{ alt_text|default:'' }}">
+            <input type="text" name="img_ref" class="w-full border-gray-200 rounded text-sm py-1.5 px-2" value="{{ img_ref|default:'' }}" placeholder="Image Reference/Source (optional)">
         </div>
-        <button type="button" class="delete-block-btn text-red-500 hover:text-red-700 mt-2"><i class="fas fa-trash-alt"></i></button>
+        <button type="button" class="delete-block-btn text-gray-400 hover:text-red-500 mt-1"><i class="fas fa-times text-sm"></i></button>
     </div>
 </div>
