@@ -144,6 +144,19 @@ This template is for the Statistical Chapter detail page.
             class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200"
           >
             <div class="grid grid-cols-1 gap-1 max-h-60 overflow-y-auto">
+              <!-- Statistical Chapters -->
+              {% for chap in all_cultural_chapters_in_district %}
+                <a 
+                  href="{{ chap.get_absolute_url }}" 
+                  class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if chap == chapter %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}"
+                >
+                  <span class="truncate">{{chap.name }}</span>
+                </a>
+              {% endfor %}
+              <!-- Separator -->
+              {% if all_statistical_chapters_in_district %}
+                <div class="border-t border-gray-300 my-1"></div>
+              {% endif %}
               {% for chap in all_chapters_in_district %}
                 <a 
                   href="{{ chap.get_absolute_url }}" 
@@ -267,7 +280,7 @@ This template is for the Statistical Chapter detail page.
                       {% if block.title %}
                         <h3 class="text-xl font-semibold text-center text-gray-800 mb-4">{{ block.title }}</h3>
                       {% endif %}
-                      <div class="w-full overflow-hidden rounded-lg border  h-[450px] md:h-[550px] p-1">
+                      <div class="w-full overflow-hidden rounded-lg border  h-[420px] md:h-[550px] p-1">
                           <iframe 
                                 class="w-full h-full border-0 block"
                                 src="{{ block.get_chart_url }}"

@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
 from .models import CulturalChapter, ContentBlock, HeadingBlockOne, HeadingBlockTwo,HeadingBlockThree
+from statistic.models import StatisticalChapter
 
 @login_required
 def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
@@ -42,8 +43,9 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
         #     })
       
 
-    # Get all chapters in the current district for the "Change Chapter" dropdown
+    # Get all chapters in the current district for the "Change Chapter" dropdown for culture and statistic
     all_chapters_in_district = chapter.district.cultural_chapters.all().order_by('name')
+    all_statistical_chapters_in_district = chapter.district.statistical_chapters.all().order_by('name')
 
     # Get all districts in the current state for the "Change District" dropdown
     all_districts_in_state = chapter.district.state.districts.all().order_by('name')
@@ -68,6 +70,7 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
         'content_blocks': content_blocks,
         'table_of_contents': table_of_contents,
         'all_chapters_in_district': all_chapters_in_district,
+        'all_statistical_chapters_in_district': all_statistical_chapters_in_district,
         'all_districts_in_state': all_districts_in_state,
         'prev_chapter': prev_chapter,
         'next_chapter': next_chapter,

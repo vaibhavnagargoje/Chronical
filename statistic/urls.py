@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import statistical_chapter_detail,serve_chart_html
+from .views import statistical_chapter_detail, serve_chart_html
 
 app_name = 'statistic'
 urlpatterns = [

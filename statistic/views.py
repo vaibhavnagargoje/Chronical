@@ -5,8 +5,10 @@ from django.utils.text import slugify
 from django.http import HttpResponse
 # Import the models from the statistic app
 from .models import StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree,ChartBlock
+from culture.models import CulturalChapter
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.contrib.auth.decorators import login_required
+import os
 
 
 @login_required
@@ -51,6 +53,7 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
     # Get all chapters in the current district for the "Change Chapter" dropdown
     # Note the use of the `related_name` 'statistical_chapters'
     all_chapters_in_district = chapter.district.statistical_chapters.all().order_by('name')
+    all_cultural_chapters_in_district = chapter.district.cultural_chapters.all().order_by('name')
 
     # Get all districts in the current state for the "Change District" dropdown
     all_districts_in_state = chapter.district.state.districts.all().order_by('name')
@@ -76,6 +79,7 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
         'content_blocks': content_blocks,
         'table_of_contents': table_of_contents,
         'all_chapters_in_district': all_chapters_in_district,
+        'all_cultural_chapters_in_district': all_cultural_chapters_in_district,
         'all_districts_in_state': all_districts_in_state,
         'prev_chapter': prev_chapter,
         'next_chapter': next_chapter,
@@ -92,11 +96,18 @@ def serve_chart_html(request, chart_block_id):
     This view finds a ChartBlock by its ID, reads its associated HTML file,
     and returns it as an HTTP response that can be safely embedded in an iframe.
     """
-
+    from django.templatetags.static import static
+    
     chart_block = get_object_or_404(ChartBlock, pk=chart_block_id)
     try:
-        html_content = chart_block.chart_html_file.read()
+        html_content = chart_block.chart_html_file.read().decode('utf-8')
+        
+        # Replace relative logo.png with static file URL
+        logo_url = static('logo.png')
+        # Build absolute URL for iframe context
+        logo_absolute_url = request.build_absolute_uri(logo_url)
+        html_content = html_content.replace('src="logo.png"', f'src="{logo_absolute_url}"')
+        
         return HttpResponse(html_content, content_type='text/html')
     except Exception as e:
         return HttpResponse("<h1>Chart file not found.</h1>", status=404, content_type='text/html')
-    
