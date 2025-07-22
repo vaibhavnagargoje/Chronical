@@ -861,7 +861,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Create the popup
     const popup = document.createElement('div');
     popup.id = 'definition-popup';
-    popup.className = 'absolute z-50';
+    popup.className = 'absolute z-1';
     popup.style.cssText = `
       background: white;
       border: 1px solid #863F3F;

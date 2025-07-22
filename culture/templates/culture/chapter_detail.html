@@ -24,9 +24,10 @@
         border: none !important;
         border-bottom: 2px solid #666 !important; 
         padding: 10px 1px; /* Slightly taller padding */
-        font-weight: 700 !important; /* Bold (600=semibold, 700=bold) */
+        font-weight: 800 !important; /* Extra bold for better identification */
         text-align: left; /* Align left (or center if preferred) */
         background-color: #f8f8f8; /* Light gray background (optional) */
+        font-size: 1.1em !important; /* Slightly larger font size */
     }
     /* Table cells (td) - Lighter lines */
     table td {
@@ -53,6 +54,34 @@
     }
     .toc-scroll::-webkit-scrollbar {
         display: none; /* WebKit */
+    }
+
+    /* More specific selectors for TinyMCE tables */
+    .prose table th,
+    .prose div table th,
+    div table th,
+    table th {
+        border: none !important;
+        border-bottom: 2px solid #666 !important; 
+        padding: 5px 1px !important; /* Slightly taller padding */
+        font-weight: 700 !important; /* Maximum bold weight */
+        text-align: left !important; /* Align left (or center if preferred) */
+        background-color: #f8f8f8 !important; /* Light gray background (optional) */
+        font-size: 1.1em !important; /* Slightly larger font size */
+    }
+    
+    /* Target first row cells in case they are td instead of th */
+    .prose table tr:first-child td,
+    .prose div table tr:first-child td,
+    div table tr:first-child td,
+    table tr:first-child td {
+        border: none !important;
+        border-bottom: 1px solid #666 !important; 
+        padding: 5px 1px !important;
+        font-weight: 600 !important; /* Maximum bold weight */
+        text-align: left !important;
+        background-color: #f8f8f8 !important;
+        font-size: 1.1em !important;
     }
 </style>
 {% endblock header %}
