@@ -1,0 +1,33 @@
+<div class="p-4 bg-white rounded-lg shadow-sm editor-block" data-block-type="bulk-chart" data-id="{{ id|default:'' }}">
+    <div class="flex items-start gap-3">
+        <span class="drag-handle text-gray-400 hover:text-gray-600 mt-1"><i class="fas fa-grip-vertical text-sm"></i></span>
+        <div class="flex-grow space-y-3">
+            <label class="block text-sm font-medium text-gray-500 uppercase tracking-wide">Bulk Chart Upload</label>
+            
+            <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center" id="bulk-chart-dropzone">
+                <div class="flex flex-col items-center">
+                    <i class="fas fa-chart-bar text-3xl text-gray-400 mb-2"></i>
+                    <p class="text-sm text-gray-500 mb-2">Drag and drop multiple HTML chart files here</p>
+                    <p class="text-xs text-gray-400 mb-4">or</p>
+                    <label class="cursor-pointer bg-green-50 hover:bg-green-100 text-green-700 font-medium py-2 px-4 rounded-full transition-colors">
+                        <span>Select Files</span>
+                        <input type="file" name="bulk_chart_files" multiple accept=".html" class="hidden" id="bulk-chart-input">
+                    </label>
+                </div>
+                <div id="bulk-chart-preview" class="mt-4 hidden">
+                    <p class="text-sm font-medium text-gray-600">Selected files: <span id="bulk-chart-count">0</span></p>
+                    <div id="bulk-chart-file-list" class="mt-2 text-left max-h-40 overflow-y-auto text-xs text-gray-500">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 p-3 rounded-lg">
+                <h4 class="text-sm font-medium text-gray-600 mb-2">Common Title Prefix (Optional)</h4>
+                <input type="text" name="bulk_title_prefix" class="w-full border-gray-200 rounded text-sm py-1.5 px-2" 
+                       placeholder="Title prefix for all charts (e.g., 'Population Chart')">
+                <p class="text-xs text-gray-400 mt-1">Filenames will be appended to this prefix to create titles</p>
+            </div>
+        </div>
+        <button type="button" class="delete-block-btn text-gray-400 hover:text-red-400 mt-1"><i class="fas fa-times text-sm"></i></button>
+    </div>
+</div>

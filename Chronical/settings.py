@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'django-insecure-s6!vqqqfjev2rvkww_7y!0scts
 DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 
 # ALLOWED_HOSTS = ['https://ead3-49-248-175-215.ngrok-free.app/','ead3-49-248-175-215.ngrok-free.app','localhost','127.0.0.1']
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1,70b28e62b524.ngrok-free.app').split(',')
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1,1c5ad8409813.ngrok-free.app').split(',')
 
 
 CORS_ALLOW_CREDENTIALS = True  
@@ -39,8 +39,8 @@ CORS_ORIGIN_ALLOW_ALL = False if not DEBUG else True
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    '70b28e62b524.ngrok-free.app',
-    'https://70b28e62b524.ngrok-free.app',
+    '1c5ad8409813.ngrok-free.app',
+    'https://1c5ad8409813.ngrok-free.app',
 ]
 
 if not DEBUG:
@@ -123,7 +123,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 # For CSRF: allow frontend domains to be trusted
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
-    "https://70b28e62b524.ngrok-free.app",
+    "https://1c5ad8409813.ngrok-free.app",
 ]
 
 

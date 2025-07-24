@@ -1,5 +1,3 @@
-
-
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
 from django.db import transaction
@@ -105,18 +103,53 @@ def chapter_editor_view(request, app_label, chapter_id):
                 existing_block_ids = set(chapter.content_blocks.values_list('id', flat=True))
                 submitted_block_ids = set()
 
-                for order_index, block_data in enumerate(content_data):
+                order_index = 0  # Initialize the order counter outside the loop
+                
+                for block_data in content_data:
                     block_id = block_data.pop('id', None)
                     block_type_str = block_data.get('type')
+                    
+                    # Handle bulk chart upload - process multiple files
+                    if block_type_str == 'bulk-chart' and block_data.get('is_bulk_upload'):
+                        bulk_file_id = block_data.get('bulk_chart_files_id')
+                        title_prefix = block_data.get('title_prefix', '')
+                        
+                        if bulk_file_id and bulk_file_id in request.FILES:
+                            # Get all files with this name (multiple file upload)
+                            files = request.FILES.getlist(bulk_file_id)
+                            
+                            # Sort files by name
+                            files.sort(key=lambda f: f.name)
+                            
+                            # Create a chart block for each file
+                            for chart_file in files:
+                                # Create a title from prefix and filename
+                                file_name = chart_file.name
+                                # Remove .html extension for display in title
+                                base_name = file_name.rsplit('.', 1)[0] if '.' in file_name else file_name
+                                # Create title with prefix (if provided)
+                                chart_title = f"{title_prefix} {base_name}" if title_prefix else base_name
+                                
+                                # Create a new chart block
+                                ChartBlock.objects.create(
+                                    chapter=chapter,
+                                    order=order_index,
+                                    title=chart_title,
+                                    chart_html_file=chart_file
+                                )
+                                order_index += 1
+                        
+                        # Skip the rest of the loop for bulk uploads
+                        continue
                 
+                    # Handle existing blocks (unchanged from your original code)
                     if block_id:
                         submitted_block_ids.add(int(block_id))
                         try:
                             block_instance = BaseBlockModel.objects.get(id=block_id, chapter=chapter).get_real_instance()
                             block_instance.order = order_index
                             
-                            # Your original logic is preserved perfectly here.
-                            # We just added the `elif` for ChartBlock.
+                            # Your original block update logic remains unchanged
                             if isinstance(block_instance, (CulturalH1, StatH1, CulturalH2, StatH2, CulturalH3, StatH3)):
                                 block_instance.text = block_data.get('text', '')
                             elif isinstance(block_instance, (CulturalP, StatP)):
@@ -138,10 +171,11 @@ def chapter_editor_view(request, app_label, chapter_id):
                                     block_instance.chart_html_file = request.FILES[chart_file_id]
 
                             block_instance.save()
+                            order_index += 1
                         except BaseBlockModel.DoesNotExist:
                             continue 
                     
-                    # --- CREATE a new block ---
+                    # Create new blocks (unchanged from your original code)
                     else:
                         BlockModelClass = BLOCK_TYPE_MAP.get(block_type_str)
                         if not BlockModelClass: continue
@@ -165,14 +199,15 @@ def chapter_editor_view(request, app_label, chapter_id):
                             else: continue
 
                         BlockModelClass.objects.create(**block_data)
+                        order_index += 1
 
                 # --- DELETE blocks removed on the frontend ---
+                # Unchanged from your original code
                 ids_to_delete = existing_block_ids - submitted_block_ids
                 if ids_to_delete:
-                    # Your original loop structure, preserved
                     for block_id in ids_to_delete:
                         try:
-                           BaseBlockModel.objects.get(id=block_id).delete()
+                            BaseBlockModel.objects.get(id=block_id).delete()
                         except BaseBlockModel.DoesNotExist:
                             continue
 
