@@ -150,6 +150,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="insertion-menu-item" data-block-type="reference">Reference</div>
                     ${document.querySelector('[data-block-type="chart"]') ? 
                       '<div class="insertion-menu-item" data-block-type="chart">Chart</div>' : ''}
+                    ${document.querySelector('[data-block-type="bulk-chart"]') ? 
+                      '<div class="insertion-menu-item" data-block-type="bulk-chart">Bulk Charts</div>' : ''}
                 </div>
             </div>
         `;
@@ -214,6 +216,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 fileInput.name = `new-file-${uniqueIdCounter}`; 
             }
         }
+        else if (blockType === 'bulk-chart') {
+            uniqueIdCounter++;
+            const fileInput = newBlock.querySelector('input[type="file"]');
+            if (fileInput) { 
+                fileInput.name = `new-file-${uniqueIdCounter}`; 
+                // Initialize drag and drop for the new bulk chart block
+                initializeBulkChartDragDrop(newBlock, uniqueIdCounter);
+            }
+        }
 
         // Scroll to the new block
         newBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -222,6 +233,81 @@ document.addEventListener('DOMContentLoaded', () => {
         updateInsertionPoints();
     }
     
+    // Function to initialize bulk chart drag and drop
+    function initializeBulkChartDragDrop(blockElement, blockId) {
+        const dropzone = blockElement.querySelector('#bulk-chart-dropzone') || blockElement.querySelector('.bulk-chart-dropzone');
+        const fileInput = blockElement.querySelector('input[type="file"]');
+        const preview = blockElement.querySelector('#bulk-chart-preview') || blockElement.querySelector('.bulk-chart-preview');
+        const count = blockElement.querySelector('#bulk-chart-count') || blockElement.querySelector('.bulk-chart-count');
+        const fileList = blockElement.querySelector('#bulk-chart-file-list') || blockElement.querySelector('.bulk-chart-file-list');
+        
+        if (!dropzone || !fileInput) return;
+        
+        // Update IDs to be unique
+        if (blockId) {
+            dropzone.id = `bulk-chart-dropzone-${blockId}`;
+            fileInput.id = `bulk-chart-input-${blockId}`;
+            if (preview) preview.id = `bulk-chart-preview-${blockId}`;
+            if (count) count.id = `bulk-chart-count-${blockId}`;
+            if (fileList) fileList.id = `bulk-chart-file-list-${blockId}`;
+        }
+        
+        // Drag and drop events
+        dropzone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropzone.classList.add('border-green-400', 'bg-green-50');
+        });
+        
+        dropzone.addEventListener('dragleave', (e) => {
+            e.preventDefault();
+            dropzone.classList.remove('border-green-400', 'bg-green-50');
+        });
+        
+        dropzone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropzone.classList.remove('border-green-400', 'bg-green-50');
+            
+            const files = Array.from(e.dataTransfer.files).filter(file => 
+                file.name.toLowerCase().endsWith('.html')
+            );
+            
+            if (files.length > 0) {
+                // Create a new FileList-like object
+                const dt = new DataTransfer();
+                files.forEach(file => dt.items.add(file));
+                fileInput.files = dt.files;
+                
+                updateBulkChartPreview(blockElement, files);
+            }
+        });
+        
+        // File input change event
+        fileInput.addEventListener('change', (e) => {
+            const files = Array.from(e.target.files);
+            updateBulkChartPreview(blockElement, files);
+        });
+    }
+    
+    // Function to update bulk chart preview
+    function updateBulkChartPreview(blockElement, files) {
+        const preview = blockElement.querySelector('.bulk-chart-preview') || blockElement.querySelector('[id*="bulk-chart-preview"]');
+        const count = blockElement.querySelector('.bulk-chart-count') || blockElement.querySelector('[id*="bulk-chart-count"]');
+        const fileList = blockElement.querySelector('.bulk-chart-file-list') || blockElement.querySelector('[id*="bulk-chart-file-list"]');
+        
+        if (!preview || !count || !fileList) return;
+        
+        if (files.length > 0) {
+            preview.classList.remove('hidden');
+            count.textContent = files.length;
+            
+            fileList.innerHTML = files.map(file => 
+                `<div class="py-1 px-2 bg-gray-100 rounded mb-1">${file.name}</div>`
+            ).join('');
+        } else {
+            preview.classList.add('hidden');
+        }
+    }
+
     // Close insertion menus when clicking outside
     document.addEventListener('click', () => {
         closeAllInsertionMenus();
@@ -431,6 +517,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     fileInput.name = `new-file-${uniqueIdCounter}`; 
                 }
             }
+            else if (blockType === 'bulk-chart') {
+                uniqueIdCounter++;
+                const fileInput = newBlock.querySelector('input[type="file"]');
+                if (fileInput) { 
+                    fileInput.name = `new-file-${uniqueIdCounter}`; 
+                    // Initialize drag and drop for the new bulk chart block
+                    initializeBulkChartDragDrop(newBlock, uniqueIdCounter);
+                }
+            }
 
             // Scroll to the new block
             newBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -465,6 +560,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize insertion points
     updateInsertionPoints();
+    
+    // Initialize existing bulk chart blocks
+    document.querySelectorAll('.editor-block[data-block-type="bulk-chart"]').forEach((block, index) => {
+        initializeBulkChartDragDrop(block, index + 1);
+    });
 
     // Handle form submission
     saveButton.addEventListener('click', (e) => {
