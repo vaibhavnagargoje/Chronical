@@ -129,7 +129,7 @@ def _is_footnote_reference(element):
 def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='culture'):
     """
     Parses HTML content, attaching images from the provided map and merging paragraphs.
-    Now handles both culture and statistic blocks.
+    Now handles both culture and statistic blocks and captures footnote references in image captions.
     """
     soup = BeautifulSoup(html_content, 'html.parser')
     body = soup.find('body')
@@ -158,6 +158,75 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
     elements = body.find_all(recursive=False)
     consumed_elements, order, in_references_section = set(), 0, False
     paragraph_html_buffer = []
+    
+    # Store footnote mappings and image references
+    footnote_links_map = {}  # Maps footnote IDs to actual URLs
+    pending_image_references = []  # Store images with footnote references to update later
+
+    def extract_footnote_references_from_caption(caption_element):
+        """
+        Extract footnote references from image caption and return cleaned caption text and footnote IDs.
+        """
+        if not caption_element:
+            return "", []
+        
+        caption_soup = BeautifulSoup(str(caption_element), 'html.parser')
+        footnote_ids = []
+        
+        # Find all footnote reference links
+        for link in caption_soup.find_all('a'):
+            href = link.get('href', '')
+            link_id = link.get('id', '')
+            
+            # Check if this is a footnote reference
+            if href.startswith('#ftnt') and not href.startswith('#ftnt_ref'):
+                # Extract footnote ID (e.g., "#ftnt1" -> "ftnt1")
+                footnote_id = href[1:]  # Remove the '#'
+                footnote_ids.append(footnote_id)
+                logger.info(f"Found footnote reference in image caption: {footnote_id}")
+                
+                # Remove the footnote link from caption text
+                link.decompose()
+        
+        # Get clean caption text without footnote references
+        clean_caption = caption_soup.get_text(strip=True)
+        return clean_caption, footnote_ids
+
+    def process_footnotes_section():
+        """
+        Pre-process the document to extract all footnote links and map them to IDs.
+        """
+        # Look for footnote definitions in the entire document
+        for element in soup.find_all(['p', 'div']):
+            # Look for footnote definition links
+            for link in element.find_all('a'):
+                link_id = link.get('id', '')
+                href = link.get('href', '')
+                
+                # Check if this is a footnote definition (e.g., id="ftnt1")
+                if link_id.startswith('ftnt') and not link_id.endswith('_ref'):
+                    # Look for the actual URL link in the same paragraph
+                    parent = link.find_parent(['p', 'div'])
+                    if parent:
+                        # Find the next link that contains the actual URL
+                        url_links = parent.find_all('a')
+                        for url_link in url_links:
+                            url_href = url_link.get('href', '')
+                            # Skip if it's another footnote reference
+                            if not url_href.startswith('#ftnt') and url_href.startswith('http'):
+                                # Clean Google redirect links
+                                clean_url = url_href
+                                if 'google.com/url' in url_href:
+                                    real_url = parse_qs(urlparse(url_href).query).get('q', [None])[0]
+                                    if real_url:
+                                        clean_url = real_url
+                                
+                                footnote_links_map[link_id] = clean_url
+                                logger.info(f"Mapped footnote {link_id} to URL: {clean_url}")
+                                break
+
+    # Pre-process footnotes before parsing main content
+    process_footnotes_section()
 
     def save_buffered_paragraphs():
         nonlocal order
@@ -362,11 +431,16 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
 
             if is_breaker_tag:
                 save_buffered_paragraphs()
-                # --- THIS IS THE NEW, DETAILED IMAGE HANDLING LOGIC ---
+                # --- ENHANCED IMAGE HANDLING LOGIC WITH FOOTNOTE REFERENCES ---
                 if img_tag:
-                    caption_text, caption_tag = "Image (no caption)", element.find_next_sibling('h4')
+                    caption_text = "Image (no caption)"
+                    footnote_ids = []
+                    caption_tag = element.find_next_sibling('h4')
+                    
                     if caption_tag:
-                        caption_text = caption_tag.get_text(strip=True)
+                        # Extract footnote references from caption
+                        clean_caption, footnote_ids = extract_footnote_references_from_caption(caption_tag)
+                        caption_text = clean_caption if clean_caption else "Image (no caption)"
                         consumed_elements.add(caption_tag)
                     
                     # Create the instance but don't save to the DB yet.
@@ -395,6 +469,12 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
                     
                     # Save the complete instance (with or without the image file).
                     image_block.save()
+                    
+                    # Store image with footnote references for later processing
+                    if footnote_ids:
+                        pending_image_references.append((image_block, footnote_ids))
+                        logger.info(f"Image block saved with footnote references: {footnote_ids}")
+                    
                     order += 1
                 else:
                     # Truncate heading text to fit database constraints
@@ -416,6 +496,26 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
                     paragraph_html_buffer.append(content_html)
     
     save_buffered_paragraphs()
+    
+    # Update image blocks with footnote reference links
+    for image_block, footnote_ids in pending_image_references:
+        reference_links = []
+        for footnote_id in footnote_ids:
+            if footnote_id in footnote_links_map:
+                reference_links.append(footnote_links_map[footnote_id])
+                logger.info(f"Added reference link to image: {footnote_links_map[footnote_id]}")
+        
+        if reference_links:
+            # Store the reference link in the img_ref field
+            if len(reference_links) == 1:
+                image_block.img_ref = reference_links[0]
+            else:
+                # If multiple references, combine them with line breaks
+                image_block.img_ref = '\n'.join(reference_links)
+            
+            image_block.save()
+            logger.info(f"Updated image block with reference link(s) in img_ref field: {image_block.img_ref}")
+    
     return order
 
 def is_superuser(user):
