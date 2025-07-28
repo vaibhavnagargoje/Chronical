@@ -10,6 +10,8 @@ from django.utils.text import slugify
 from urllib.parse import urlparse, parse_qs
 from django.core.files.base import ContentFile
 from django.http import JsonResponse
+from django.contrib.auth.decorators import user_passes_test
+from django.core.exceptions import PermissionDenied
 import re
 
 from .forms import DataImportForm
@@ -416,6 +418,11 @@ def _parse_and_save_blocks(html_content, chapter, image_data_map, app_type='cult
     save_buffered_paragraphs()
     return order
 
+def is_superuser(user):
+    """Check if user is a superuser"""
+    return user.is_authenticated and user.is_superuser
+
+@user_passes_test(is_superuser, login_url='users:login')
 @transaction.atomic
 def import_data_view(request):
     if request.method == 'POST':
@@ -504,6 +511,7 @@ def import_data_view(request):
     context = {'form': form, 'title': "Import Chapter Data and Images"}
     return render(request, 'importdata/import_form.html', context)
 
+@user_passes_test(is_superuser, login_url='users:login')
 def get_chapter_options(request):
     """API endpoint to get chapter options for both culture and statistic apps"""
     from culture.models import CulturalChapter

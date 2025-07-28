@@ -181,10 +181,10 @@ This template is for the Statistical Chapter detail page.
                   <span class="truncate">{{ chap.name }}</span>
                 </a>
               {% endfor %}
-              {% if all_statistical_chapters_in_district %}
+              {% if all_chapters_in_district %}
                 <div class="border-t border-gray-300 my-1"></div>
               {% endif %}
-              {% for chap in all_statistical_chapters_in_district %}
+              {% for chap in all_chapters_in_district %}
                 <a 
                   href="{{ chap.get_absolute_url }}" 
                   class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if chap == chapter %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}"
