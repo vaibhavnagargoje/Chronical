@@ -32,4 +32,7 @@ urlpatterns = [
     # The editor URL also specifies the app context
     # e.g., /editor/culture/edit/123/
     path('<str:app_label>/edit/<int:chapter_id>/', views.chapter_editor_view, name='chapter_editor'),
+
+    # suggest edit url (handles both chapters and districts)
+    path('<str:app_label>/suggest_edit/<int:chapter_id>/', views.suggest_edit_view, name='suggest_edit'),
 ]

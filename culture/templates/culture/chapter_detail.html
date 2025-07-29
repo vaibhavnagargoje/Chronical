@@ -235,9 +235,9 @@
         <h1 class="text-3xl font-semibold text-[#DAB20C] mb-2">{{ district.name | upper }}</h1>
         <h2 class="text-5xl font-bold text-[#863F3F]">{{ chapter.name }}</h2>
         <div class="mt-4">
-          <button class="text-sm text-gray-600 hover:text-[#863F3F] flex items-center">
+          <a href="{% url 'editor:suggest_edit' app_label='culture' chapter_id=chapter.id %}" class="text-sm text-gray-600 hover:text-[#863F3F] flex items-center">
             <i class="fas fa-edit mr-1"></i> Suggest Edit
-          </button>
+          </a>
         </div>
       </div> 
 

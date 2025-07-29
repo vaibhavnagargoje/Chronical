@@ -26,11 +26,11 @@
                 <h1 class="text-4xl font-bold text-[#863F3F] mb-2">{{district.name}} District</h1>
                 <p class="text-lg text-gray-700">Explore the cultural and statistical data of {{district.name}}</p>
             </div>
-            <div class="mt-4 md:mt-0">
+            {% comment %} <div class="mt-4 md:mt-0">
                 <button class="text-sm text-gray-600 hover:text-[#863F3F] flex items-center">
                     <i class="fas fa-edit mr-1"></i> Suggest Edit
                 </button>
-            </div>
+            </div> {% endcomment %}
         </div>
     </div>
 </div>
@@ -39,7 +39,7 @@
 <div class="bg-white py-6 md:py-8">
      <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div class="max-w-5xl mx-auto">
-            <h2 class="text-2xl font-bold text-[#863F3F] mb-4">About {{district.name}}</h2>
+            {% comment %} <h2 class="text-2xl font-bold text-[#863F3F] mb-4">About {{district.name}}</h2> {% endcomment %}
 
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">

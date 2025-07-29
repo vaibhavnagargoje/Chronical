@@ -3,9 +3,12 @@ from django.urls import reverse
 from django.db import transaction
 from django.http import Http404
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 import json
 from django.conf import settings
 from .forms import ChapterSelectForm
+from .models import SuggestEdit
+from django.utils.text import slugify
 
 # Import models from BOTH apps
 from culture.models import (
@@ -230,3 +233,68 @@ def chapter_editor_view(request, app_label, chapter_id):
     if hasattr(settings, 'TINYMCE_JS_URL'):
         settings.TINYMCE_JS_URL = settings.STATIC_URL + 'tinymce/tinymce.min.js'
     return render(request, 'editor/chapter_editor.html', context)
+
+@login_required
+def suggest_edit_view(request, app_label, chapter_id):
+    """View for suggesting edits to a chapter"""
+    config = get_app_config(app_label)
+    ChapterModel = config['ChapterModel']
+    BaseBlockModel = config['BaseBlockModel']
+    
+    chapter = get_object_or_404(
+        ChapterModel.objects.select_related('district__state'),
+        id=chapter_id
+    )
+    
+    if request.method == 'POST':
+        # Create suggestion from form data
+        suggestion = SuggestEdit(
+            name=request.POST.get('name'),
+            email=request.POST.get('email'),
+            user=request.user if request.user.is_authenticated else None,
+            app_label=app_label,
+            chapter_id=chapter_id,
+            section=request.POST.get('section', ''),
+            edit_type=request.POST.get('edit_type'),
+            current_text=request.POST.get('current_text', ''),
+            suggested_text=request.POST.get('suggested_text'),
+            reason=request.POST.get('reason'),
+            sources=request.POST.get('sources', ''),
+            notify_on_review=request.POST.get('notification') == 'on',
+        )
+        
+        # Handle file upload
+        if request.FILES.get('file-upload'):
+            suggestion.supporting_file = request.FILES['file-upload']
+        
+        suggestion.save()
+        
+        messages.success(request, 'Your edit suggestion has been submitted successfully!')
+        return redirect(chapter.get_absolute_url())
+    
+    # Get content blocks for this chapter and generate section options dynamically
+    content_blocks = chapter.content_blocks.all().get_real_instances()
+    
+    # Generate section options from HeadingBlockOne content
+    section_options = []
+    for block in content_blocks:
+        if block.polymorphic_ctype.model == 'headingblockone':
+            section_options.append((
+                slugify(block.text),
+                block.text
+            ))
+    
+    # Add a default "Other" option if no headings found or for general edits
+    if not section_options:
+        section_options = [('other', 'Other')]
+    else:
+        section_options.append(('other', 'Other'))
+    
+    context = {
+        'chapter': chapter,
+        'app_label': app_label,
+        'app_title': config['title'],
+        'section_options': section_options,
+    }
+    
+    return render(request, 'editor/suggest_edit.html', context)
