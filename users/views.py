@@ -298,8 +298,41 @@ def user_profile(request):
         return redirect('users:login')
     
     user = request.user
+    profile = user.profile
+    
+    if request.method == 'POST':
+        # Update User model fields
+        user.first_name = request.POST.get('first_name', '')
+        user.last_name = request.POST.get('last_name', '')
+        user.save()
+        
+        # Update Profile model fields
+        profile.phone_number = request.POST.get('phone_number', '')
+        profile.address = request.POST.get('address', '')
+        profile.city = request.POST.get('city', '')
+        profile.state = request.POST.get('state', '')
+        profile.country = request.POST.get('country', '')
+        profile.pin_code = request.POST.get('pin_code', '')
+        profile.bio = request.POST.get('bio', '')
+        profile.website = request.POST.get('website', '')
+        profile.gender = request.POST.get('gender', '')
+        
+        # Handle date of birth
+        dob = request.POST.get('date_of_birth')
+        if dob:
+            profile.date_of_birth = dob
+        
+        # Handle profile picture
+        if 'profile_picture' in request.FILES:
+            profile.profile_picture = request.FILES['profile_picture']
+        
+        profile.save()
+        messages.success(request, "Profile updated successfully!")
+        return redirect('users:user_profile')
+    
     context = {
         'user': user,
+        'profile': profile,
     }
     return render(request, 'users/user_profile.html', context)
 

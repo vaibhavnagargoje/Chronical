@@ -1,11 +1,573 @@
 {% extends "base.html" %}
+{% load static %}
+
 {% block title %}
-    Profile | {{ user.username }}
-{% endblock title %}
+Profile - {{ user.first_name|default:user.username }} | Indian Districts
+{% endblock %}
 
 {% block content %}
-    <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
-        <h1 class="text-2xl font-semibold mb-4">User Profile</h1>
-        <p class="text-gray-600">Welcome to your profile page, {{ user.username }}!</p>
+<!-- Breadcrumbs -->
+<div class="bg-white border-b">
+  <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-3">
+    <div class="flex items-center text-sm overflow-x-auto whitespace-nowrap">
+      <a href="{% url 'home:index' %}" class="text-gray-600 hover:text-[#863F3F]">Home</a>
+      <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
+      <span class="text-[#863F3F] font-medium">Profile</span>
     </div>
-{% endblock content %}
+  </div>
+</div>
+
+<!-- Main Content with Sidebar -->
+<div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-8">
+    <!-- Messages -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="mb-6">
+                {% if message.tags == 'error' %}
+                    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg" role="alert">
+                        <div class="flex items-center">
+                            <i class="fas fa-exclamation-circle mr-2"></i>
+                            <span>{{ message }}</span>
+                        </div>
+                    </div>
+                {% elif message.tags == 'success' %}
+                    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg" role="alert">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle mr-2"></i>
+                            <span>{{ message }}</span>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <div class="flex flex-col lg:flex-row">
+        <!-- Sidebar (Desktop and Mobile) -->
+        <div class="w-full lg:w-80 flex-shrink-0 lg:pr-6 order-1">
+            <!-- Mobile menu button -->
+            <div class="lg:hidden mb-4">
+                <button onclick="toggleMobileSidebar()" class="bg-[#863F3F] text-white px-4 py-2 rounded-lg shadow-md flex items-center w-full justify-center">
+                    <i id="mobile-menu-icon" class="fas fa-bars mr-2"></i>
+                    <span>Profile Menu</span>
+                </button>
+            </div>
+
+            <!-- Desktop Sidebar -->
+            <div class="hidden lg:block bg-white rounded-lg shadow-md overflow-hidden sticky top-24">
+                <!-- Profile Header in Sidebar -->
+                <div class="bg-gradient-to-r from-[#863F3F] to-[#a04f4f] p-6 text-white">
+                    <div class="flex items-center space-x-4">
+                        {% if profile.profile_picture %}
+                            <img src="{{ profile.profile_picture.url }}" alt="Profile Picture" class="w-16 h-16 rounded-full border-2 border-white object-cover">
+                        {% else %}
+                            <div class="w-16 h-16 rounded-full border-2 border-white bg-white bg-opacity-20 flex items-center justify-center">
+                                <i class="fas fa-user text-2xl text-white"></i>
+                            </div>
+                        {% endif %}
+                        <div>
+                            <h2 class="text-xl font-semibold">{{ user.first_name }} {{ user.last_name }}</h2>
+                            <p class="text-[#863F3F]-100 text-sm">{{ user.email }}</p>
+                            {% if profile.is_verified %}
+                                <span class="inline-flex items-center text-xs text-green-200">
+                                    <i class="fas fa-check-circle mr-1"></i>Verified
+                                </span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="p-4">
+                    <ul class="space-y-2">
+                        <li>
+                            <button onclick="showSection('profile')" class="nav-item w-full text-left px-4 py-3 rounded-lg transition-colors duration-200 flex items-center space-x-3">
+                                <i class="fas fa-user text-gray-500"></i>
+                                <span>Profile Information</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="showSection('edits')" class="nav-item w-full text-left px-4 py-3 rounded-lg transition-colors duration-200 flex items-center space-x-3">
+                                <i class="fas fa-edit text-gray-500"></i>
+                                <span>Your Edits</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="showSection('quick-links')" class="nav-item w-full text-left px-4 py-3 rounded-lg transition-colors duration-200 flex items-center space-x-3">
+                                <i class="fas fa-link text-gray-500"></i>
+                                <span>Quick Links</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Account Status in Sidebar -->
+                <div class="p-4 border-t">
+                    <h3 class="text-sm font-semibold text-gray-700 mb-3">Account Status</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-600">Status</span>
+                            <span class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-100 text-green-800">
+                                <i class="fas fa-circle text-green-400 mr-1" style="font-size: 6px;"></i>Active
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-600">Member Since</span>
+                            <span class="text-gray-800">{{ user.date_joined|date:"M Y" }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Sidebar Overlay -->
+        <div id="mobile-sidebar-overlay" class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-50 hidden">
+            <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-white shadow-xl overflow-y-auto">
+                <!-- Mobile Sidebar Header -->
+                <div class="bg-gradient-to-r from-[#863F3F] to-[#a04f4f] p-6 text-white">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-4">
+                            {% if profile.profile_picture %}
+                                <img src="{{ profile.profile_picture.url }}" alt="Profile Picture" class="w-12 h-12 rounded-full border-2 border-white object-cover">
+                            {% else %}
+                                <div class="w-12 h-12 rounded-full border-2 border-white bg-white bg-opacity-20 flex items-center justify-center">
+                                    <i class="fas fa-user text-lg text-white"></i>
+                                </div>
+                            {% endif %}
+                            <div>
+                                <h2 class="text-lg font-semibold">{{ user.first_name }} {{ user.last_name }}</h2>
+                                <p class="text-sm opacity-90">{{ user.email }}</p>
+                                {% if profile.is_verified %}
+                                    <span class="inline-flex items-center text-xs text-green-200">
+                                        <i class="fas fa-check-circle mr-1"></i>Verified
+                                    </span>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <button onclick="toggleMobileSidebar()" class="text-white hover:text-gray-200 p-2">
+                            <i class="fas fa-times text-xl"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Navigation Menu -->
+                <nav class="p-4">
+                    <ul class="space-y-2">
+                        <li>
+                            <button onclick="showSection('profile')" class="mobile-nav-item w-full text-left px-4 py-3 rounded-lg transition-colors duration-200 flex items-center space-x-3">
+                                <i class="fas fa-user text-gray-500"></i>
+                                <span>Profile Information</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="showSection('edits')" class="mobile-nav-item w-full text-left px-4 py-3 rounded-lg transition-colors duration-200 flex items-center space-x-3">
+                                <i class="fas fa-edit text-gray-500"></i>
+                                <span>Your Edits</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button onclick="showSection('quick-links')" class="mobile-nav-item w-full text-left px-4 py-3 rounded-lg transition-colors duration-200 flex items-center space-x-3">
+                                <i class="fas fa-link text-gray-500"></i>
+                                <span>Quick Links</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Account Status -->
+                <div class="p-4 border-t">
+                    <h3 class="text-sm font-semibold text-gray-700 mb-3">Account Status</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-600">Status</span>
+                            <span class="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-100 text-green-800">
+                                <i class="fas fa-circle text-green-400 mr-1" style="font-size: 6px;"></i>Active
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-gray-600">Member Since</span>
+                            <span class="text-gray-800">{{ user.date_joined|date:"M Y" }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vertical Divider (Desktop Only) -->
+        <div class="hidden lg:block w-px bg-gray-300 flex-shrink-0 order-2"></div>
+
+        <!-- Main Content -->
+        <div class="flex-grow order-3 px-0 md:px-4 lg:pl-6 mt-6 lg:mt-0">
+            <!-- Profile Information Section -->
+            <div id="profile-section" class="content-section">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-2xl font-semibold text-gray-900">Profile Information</h2>
+                        <div id="view-mode-buttons" class="space-x-2">
+                            <button onclick="toggleEditMode()" class="bg-[#863F3F] text-white px-4 py-2 rounded-md hover:bg-[#732d2d] transition-colors duration-200">
+                                <i class="fas fa-edit mr-2"></i>Edit Profile
+                            </button>
+                        </div>
+                        <div id="edit-mode-buttons" class="space-x-2 hidden">
+                            <button onclick="saveProfile()" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-colors duration-200">
+                                <i class="fas fa-save mr-2"></i>Save Changes
+                            </button>
+                            <button onclick="cancelEdit()" class="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors duration-200">
+                                <i class="fas fa-times mr-2"></i>Cancel
+                            </button>
+                        </div>
+                    </div>
+
+                    <form id="profile-form" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        
+                        <!-- Personal Information -->
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-4">Personal Information</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                        <div id="first_name_view" class="view-field p-3 bg-gray-50 rounded-md">{{ user.first_name|default:"Not provided" }}</div>
+                                        <input id="first_name_edit" name="first_name" type="text" value="{{ user.first_name }}" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                        <div id="last_name_view" class="view-field p-3 bg-gray-50 rounded-md">{{ user.last_name|default:"Not provided" }}</div>
+                                        <input id="last_name_edit" name="last_name" type="text" value="{{ user.last_name }}" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                                        <div id="phone_view" class="view-field p-3 bg-gray-50 rounded-md">{{ profile.phone_number|default:"Not provided" }}</div>
+                                        <input id="phone_edit" name="phone_number" type="tel" value="{{ profile.phone_number }}" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Date of Birth</label>
+                                        <div id="dob_view" class="view-field p-3 bg-gray-50 rounded-md">{{ profile.date_of_birth|date:"F d, Y"|default:"Not provided" }}</div>
+                                        <input id="dob_edit" name="date_of_birth" type="date" value="{{ profile.date_of_birth|date:'Y-m-d' }}" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                    </div>
+                                    
+                                    <div class="md:col-span-2">
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Gender</label>
+                                        <div id="gender_view" class="view-field p-3 bg-gray-50 rounded-md">{{ profile.get_gender_display|default:"Not specified" }}</div>
+                                        <select id="gender_edit" name="gender" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                            <option value="">Choose...</option>
+                                            {% for value, label in profile.GENDER_CHOICES %}
+                                                <option value="{{ value }}" {% if profile.gender == value %}selected{% endif %}>{{ label }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Address Information -->
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-4">Address Information</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Address</label>
+                                        <div id="address_view" class="view-field p-3 bg-gray-50 rounded-md">{{ profile.address|default:"Not provided" }}</div>
+                                        <textarea id="address_edit" name="address" rows="3" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">{{ profile.address }}</textarea>
+                                    </div>
+                                    
+                                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">City</label>
+                                            <div id="city_view" class="view-field p-3 bg-gray-50 rounded-md">{{ profile.city|default:"Not provided" }}</div>
+                                            <input id="city_edit" name="city" type="text" value="{{ profile.city }}" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                        </div>
+                                        
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">State</label>
+                                            <div id="state_view" class="view-field p-3 bg-gray-50 rounded-md">{{ profile.state|default:"Not provided" }}</div>
+                                            <input id="state_edit" name="state" type="text" value="{{ profile.state }}" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                        </div>
+                                        
+                                        <div>
+                                            <label class="block text-sm font-medium text-gray-700 mb-2">PIN Code</label>
+                                            <div id="pin_view" class="view-field p-3 bg-gray-50 rounded-md">{{ profile.pin_code|default:"Not provided" }}</div>
+                                            <input id="pin_edit" name="pin_code" type="text" value="{{ profile.pin_code }}" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Country</label>
+                                        <div id="country_view" class="view-field p-3 bg-gray-50 rounded-md">{{ profile.country|default:"Not provided" }}</div>
+                                        <input id="country_edit" name="country" type="text" value="{{ profile.country }}" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Information -->
+                            <div>
+                                <h3 class="text-lg font-medium text-gray-900 mb-4">Additional Information</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Bio</label>
+                                        <div id="bio_view" class="view-field p-3 bg-gray-50 rounded-md min-h-[100px]">{{ profile.bio|default:"No bio provided" }}</div>
+                                        <textarea id="bio_edit" name="bio" rows="4" maxlength="500" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]" placeholder="Tell us about yourself...">{{ profile.bio }}</textarea>
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Website</label>
+                                        <div id="website_view" class="view-field p-3 bg-gray-50 rounded-md">
+                                            {% if profile.website %}
+                                                <a href="{{ profile.website }}" target="_blank" class="text-[#863F3F] hover:underline">{{ profile.website }}</a>
+                                            {% else %}
+                                                Not provided
+                                            {% endif %}
+                                        </div>
+                                        <input id="website_edit" name="website" type="url" value="{{ profile.website }}" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]" placeholder="https://example.com">
+                                    </div>
+                                    
+                                    <div>
+                                        <label class="block text-sm font-medium text-gray-700 mb-2">Profile Picture</label>
+                                        <input id="profile_picture_edit" name="profile_picture" type="file" accept="image/*" class="edit-field hidden w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Your Edits Section -->
+            <div id="edits-section" class="content-section hidden">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-6">Your Edits</h2>
+                    <div class="text-center py-12">
+                        <i class="fas fa-edit text-4xl text-gray-300 mb-4"></i>
+                        <p class="text-gray-500 text-lg">No edits yet</p>
+                        <p class="text-gray-400 text-sm mt-2">Your contributions will appear here</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div id="quick-links-section" class="content-section hidden">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-semibold text-gray-900 mb-6">Quick Links</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-[#863F3F] text-white p-2 rounded-lg">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">Change Password</h3>
+                                    <p class="text-sm text-gray-500">Update your password</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-[#863F3F] text-white p-2 rounded-lg">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">Notifications</h3>
+                                    <p class="text-sm text-gray-500">Manage your preferences</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-[#863F3F] text-white p-2 rounded-lg">
+                                    <i class="fas fa-download"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">Download Data</h3>
+                                    <p class="text-sm text-gray-500">Export your information</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-[#863F3F] text-white p-2 rounded-lg">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">Privacy Settings</h3>
+                                    <p class="text-sm text-gray-500">Control your privacy</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-[#863F3F] text-white p-2 rounded-lg">
+                                    <i class="fas fa-question-circle"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">Help & Support</h3>
+                                    <p class="text-sm text-gray-500">Get assistance</p>
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="bg-[#863F3F] text-white p-2 rounded-lg">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-900">Dashboard</h3>
+                                    <p class="text-sm text-gray-500">View your dashboard</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Mobile sidebar toggle
+function toggleMobileSidebar() {
+    const overlay = document.getElementById('mobile-sidebar-overlay');
+    const icon = document.getElementById('mobile-menu-icon');
+    
+    if (overlay.classList.contains('hidden')) {
+        // Show sidebar
+        overlay.classList.remove('hidden');
+        icon.className = 'fas fa-times mr-2';
+        document.body.style.overflow = 'hidden';
+    } else {
+        // Hide sidebar
+        overlay.classList.add('hidden');
+        icon.className = 'fas fa-bars mr-2';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Show different sections
+function showSection(sectionName) {
+    // Hide all sections
+    document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.add('hidden');
+    });
+    
+    // Remove active state from all nav items (both desktop and mobile)
+    document.querySelectorAll('.nav-item, .mobile-nav-item').forEach(item => {
+        item.classList.remove('bg-[#863F3F]', 'text-white');
+        item.classList.add('text-gray-700', 'hover:bg-gray-50');
+    });
+    
+    // Show selected section
+    document.getElementById(sectionName + '-section').classList.remove('hidden');
+    
+    // Add active state to clicked nav item (find the clicked button)
+    const clickedButton = event.target.closest('.nav-item, .mobile-nav-item');
+    if (clickedButton) {
+        clickedButton.classList.add('bg-[#863F3F]', 'text-white');
+        clickedButton.classList.remove('text-gray-700', 'hover:bg-gray-50');
+    }
+    
+    // Close mobile sidebar after selection
+    if (window.innerWidth < 1024) {
+        const overlay = document.getElementById('mobile-sidebar-overlay');
+        overlay.classList.add('hidden');
+        document.getElementById('mobile-menu-icon').className = 'fas fa-bars mr-2';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Close mobile sidebar when clicking outside
+document.addEventListener('click', function(event) {
+    const overlay = document.getElementById('mobile-sidebar-overlay');
+    const sidebar = overlay.querySelector('div');
+    const menuButton = event.target.closest('button[onclick="toggleMobileSidebar()"]');
+    
+    if (!overlay.classList.contains('hidden') && 
+        !sidebar.contains(event.target) && 
+        !menuButton) {
+        overlay.classList.add('hidden');
+        document.getElementById('mobile-menu-icon').className = 'fas fa-bars mr-2';
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Initialize - show profile section by default
+document.addEventListener('DOMContentLoaded', function() {
+    // Simulate click on profile button for both desktop and mobile
+    const profileButton = document.querySelector('button[onclick="showSection(\'profile\')"]');
+    if (profileButton) {
+        // Manually trigger the section display
+        document.getElementById('profile-section').classList.remove('hidden');
+        profileButton.classList.add('bg-[#863F3F]', 'text-white');
+        profileButton.classList.remove('text-gray-700', 'hover:bg-gray-50');
+        
+        // Also update mobile nav
+        const mobileProfileButton = document.querySelector('.mobile-nav-item[onclick="showSection(\'profile\')"]');
+        if (mobileProfileButton) {
+            mobileProfileButton.classList.add('bg-[#863F3F]', 'text-white');
+            mobileProfileButton.classList.remove('text-gray-700', 'hover:bg-gray-50');
+        }
+    }
+    
+    // Auto-resize textarea
+    const bioTextarea = document.getElementById('bio_edit');
+    if (bioTextarea) {
+        bioTextarea.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        });
+    }
+});
+
+function toggleEditMode() {
+    const viewFields = document.querySelectorAll('.view-field');
+    const editFields = document.querySelectorAll('.edit-field');
+    const viewButtons = document.getElementById('view-mode-buttons');
+    const editButtons = document.getElementById('edit-mode-buttons');
+    
+    const isEditMode = !editButtons.classList.contains('hidden');
+    
+    if (isEditMode) {
+        // Switch to view mode
+        viewFields.forEach(field => field.classList.remove('hidden'));
+        editFields.forEach(field => field.classList.add('hidden'));
+        viewButtons.classList.remove('hidden');
+        editButtons.classList.add('hidden');
+    } else {
+        // Switch to edit mode
+        viewFields.forEach(field => field.classList.add('hidden'));
+        editFields.forEach(field => field.classList.remove('hidden'));
+        viewButtons.classList.add('hidden');
+        editButtons.classList.remove('hidden');
+    }
+}
+
+function saveProfile() {
+    const form = document.getElementById('profile-form');
+    const formData = new FormData(form);
+    
+    // Add first_name and last_name to form data since they're User model fields
+    formData.append('first_name', document.getElementById('first_name_edit').value);
+    formData.append('last_name', document.getElementById('last_name_edit').value);
+    
+    // Show loading state
+    const saveBtn = document.querySelector('button[onclick="saveProfile()"]');
+    const originalText = saveBtn.innerHTML;
+    saveBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Saving...';
+    saveBtn.disabled = true;
+    
+    // Submit the form
+    form.submit();
+}
+
+function cancelEdit() {
+    // Reload the page to reset all fields
+    location.reload();
+}
+</script>
+
+{% endblock %}
