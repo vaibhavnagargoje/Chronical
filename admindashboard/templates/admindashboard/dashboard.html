@@ -1,0 +1,254 @@
+{% extends "admindashboard/base.html" %}
+
+{% block title %}Dashboard | Admin Panel{% endblock title %}
+
+{% block content %}
+<div class="py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <!-- Page Header -->
+        <div class="flex justify-between items-center mb-6">
+            <h1 class="text-2xl font-semibold text-gray-900">Dashboard Overview</h1>
+            <div class="flex items-center space-x-3">
+                <button class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#863F3F]">
+                    <i class="fas fa-download mr-2"></i>
+                    Export Report
+                </button>
+                <button class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#863F3F] hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#863F3F]">
+                    <i class="fas fa-plus mr-2"></i>
+                    New District
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <!-- Total States -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="p-5">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-green-100">
+                            <i class="fas fa-flag text-green-600 text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dl>
+                                <dt class="text-sm font-medium text-gray-500 truncate">Total States</dt>
+                                <dd class="flex items-baseline">
+                                    <div class="text-2xl font-semibold text-gray-900">{{ total_states }}</div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Districts -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="p-5">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-[#863F3F] bg-opacity-10">
+                            <i class="fas fa-map-marked-alt text-[#863F3F] text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dl>
+                                <dt class="text-sm font-medium text-gray-500 truncate">Total Districts</dt>
+                                <dd class="flex items-baseline">
+                                    <div class="text-2xl font-semibold text-gray-900">{{ total_districts }}</div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-5 py-3">
+                    <div class="text-sm">
+                        <a href="{% url 'admindashboard:districts' %}" class="font-medium text-[#863F3F] hover:text-[#863F3F]-dark flex items-center">
+                            View all
+                            <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total Chapters -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="p-5">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-[#DAB20C] bg-opacity-10">
+                            <i class="fas fa-book text-[#DAB20C] text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dl>
+                                <dt class="text-sm font-medium text-gray-500 truncate">Total Chapters</dt>
+                                <dd class="flex items-baseline">
+                                    <div class="text-2xl font-semibold text-gray-900">{{ total_chapters }}</div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-5 py-3">
+                    <div class="text-sm">
+                        <a href="{% url 'admindashboard:chapters' %}" class="font-medium text-[#863F3F] hover:text-[#863F3F]-dark flex items-center">
+                            View all
+                            <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cultural vs Statistical Chapters -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="p-5">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-purple-100">
+                            <i class="fas fa-chart-pie text-purple-600 text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dl>
+                                <dt class="text-sm font-medium text-gray-500 truncate">Chapter Types</dt>
+                                <dd class="flex items-baseline">
+                                    <div class="text-lg font-semibold text-gray-900">
+                                        {{ total_cultural_chapters }}C / {{ total_statistical_chapters }}S
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-5 py-3">
+                    <div class="text-sm">
+                        <span class="font-medium text-purple-600">Cultural vs Statistical</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="mt-8 grid grid-cols-1 gap-5 lg:grid-cols-2">
+            <!-- User Activity Chart -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900 mb-4">User Activity</h3>
+                    <div class="relative h-64">
+                        <canvas id="userActivityChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Distribution Chart -->
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="px-4 py-5 sm:p-6">
+                    <h3 class="text-lg leading-6 font-medium text-gray-900 mb-4">Content Distribution</h3>
+                    <div class="relative h-64">
+                        <canvas id="contentDistributionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Activities -->
+        <div class="mt-8">
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-lg font-medium text-gray-900">Recent Activities</h2>
+                <a href="#" class="text-sm font-medium text-[#863F3F] hover:text-[#863F3F]-dark">View all</a>
+            </div>
+            <div class="bg-white shadow overflow-hidden sm:rounded-md">
+                <ul class="divide-y divide-gray-200">
+                    {% for district in recent_districts %}
+                    <li>
+                        <div class="px-4 py-4 flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="flex-shrink-0 h-10 w-10">
+                                    <div class="h-10 w-10 rounded-full bg-[#863F3F] bg-opacity-10 flex items-center justify-center">
+                                        <i class="fas fa-map-marked-alt text-[#863F3F]"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <div class="text-sm font-medium text-gray-900">
+                                        New district added: {{ district.name }}
+                                    </div>
+                                    <div class="text-sm text-gray-500">
+                                        {{ district.state.name }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-sm text-gray-500">
+                                Recently added
+                            </div>
+                        </div>
+                    </li>
+                    {% empty %}
+                    <li class="px-4 py-4 text-center text-gray-500">
+                        No recent activities
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block extra_js %}
+<script>
+    // User Activity Chart
+    const userActivityCtx = document.getElementById('userActivityChart').getContext('2d');
+    new Chart(userActivityCtx, {
+        type: 'line',
+        data: {
+            labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+            datasets: [{
+                label: 'Active Users',
+                data: [65, 59, 80, 81, 56, 55, 40],
+                fill: true,
+                borderColor: '#863F3F',
+                backgroundColor: 'rgba(134, 63, 63, 0.1)',
+                tension: 0.4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+    // Content Distribution Chart
+    const contentDistributionCtx = document.getElementById('contentDistributionChart').getContext('2d');
+    new Chart(contentDistributionCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Statistical', 'Cultural', 'Historical', 'Other'],
+            datasets: [{
+                data: [{{ total_statistical_chapters }}, {{ total_cultural_chapters }}, 20, 10],
+                backgroundColor: [
+                    '#863F3F',
+                    '#DAB20C',
+                    '#2563EB',
+                    '#9CA3AF'
+                ]
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                }
+            }
+        }
+    });
+</script>
+{% endblock extra_js %}
+

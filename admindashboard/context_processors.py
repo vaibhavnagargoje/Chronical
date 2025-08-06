@@ -1,0 +1,21 @@
+from home.models import State, District
+from culture.models import CulturalChapter
+from statistic.models import StatisticalChapter
+from django.contrib.auth.models import User
+
+def dashboard_context(request):
+    """
+    Context processor to provide common dashboard data to all templates
+    """
+    if request.user.is_authenticated and request.user.is_staff:
+        return {
+            'total_states': State.objects.count(),
+            'total_districts': District.objects.count(),
+            'total_cultural_chapters': CulturalChapter.objects.count(),
+            'total_statistical_chapters': StatisticalChapter.objects.count(),
+            'total_chapters': CulturalChapter.objects.count() + StatisticalChapter.objects.count(),
+            'total_users': User.objects.count(),
+            'pending_edit_requests': 0,  # Placeholder for future implementation
+            'total_comments': 0,  # Placeholder for future implementation
+        }
+    return {}

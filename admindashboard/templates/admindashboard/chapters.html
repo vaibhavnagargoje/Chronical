@@ -1,0 +1,343 @@
+{% extends "admindashboard/base.html" %}
+
+{% block title %}Chapters | Admin Panel{% endblock title %}
+
+{% block content %}
+<div class="py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <!-- Page Header -->
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-2xl font-semibold text-gray-900">Chapters Management</h1>
+                <p class="mt-1 text-sm text-gray-600">Manage cultural and statistical chapters</p>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#863F3F]">
+                    <i class="fas fa-filter mr-2"></i>
+                    Filter
+                </button>
+                <button class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#863F3F]">
+                    <i class="fas fa-download mr-2"></i>
+                    Export
+                </button>
+                <div class="relative inline-block text-left">
+                    <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#863F3F] hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#863F3F]" id="add-chapter-menu-button">
+                        <i class="fas fa-plus mr-2"></i>
+                        Add Chapter
+                        <i class="fas fa-chevron-down ml-2"></i>
+                    </button>
+                    <div class="hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" id="add-chapter-menu">
+                        <div class="py-1">
+                            <a href="#" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                <i class="fas fa-palette text-blue-500 mr-3"></i>
+                                Cultural Chapter
+                            </a>
+                            <a href="#" class="group flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                                <i class="fas fa-chart-bar text-green-500 mr-3"></i>
+                                Statistical Chapter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Cards -->
+        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8">
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="p-5">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-[#DAB20C] bg-opacity-10">
+                            <i class="fas fa-book text-[#DAB20C] text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dl>
+                                <dt class="text-sm font-medium text-gray-500 truncate">Total Chapters</dt>
+                                <dd class="text-2xl font-semibold text-gray-900">{{ total_chapters }}</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="p-5">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-blue-100">
+                            <i class="fas fa-palette text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dl>
+                                <dt class="text-sm font-medium text-gray-500 truncate">Cultural</dt>
+                                <dd class="text-2xl font-semibold text-gray-900">{{ total_cultural_chapters }}</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="p-5">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-green-100">
+                            <i class="fas fa-chart-bar text-green-600 text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dl>
+                                <dt class="text-sm font-medium text-gray-500 truncate">Statistical</dt>
+                                <dd class="text-2xl font-semibold text-gray-900">{{ total_statistical_chapters }}</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white overflow-hidden shadow rounded-lg">
+                <div class="p-5">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0 p-3 rounded-md bg-yellow-100">
+                            <i class="fas fa-clock text-yellow-600 text-xl"></i>
+                        </div>
+                        <div class="ml-5 w-0 flex-1">
+                            <dl>
+                                <dt class="text-sm font-medium text-gray-500 truncate">Pending Review</dt>
+                                <dd class="text-2xl font-semibold text-gray-900">{{ pending_chapters }}</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapter Type Tabs -->
+        <div class="mb-6">
+            <div class="sm:hidden">
+                <label for="tabs" class="sr-only">Select a tab</label>
+                <select id="tabs" name="tabs" class="block w-full focus:ring-[#863F3F] focus:border-[#863F3F] border-gray-300 rounded-md">
+                    <option selected>All Chapters</option>
+                    <option>Cultural Chapters</option>
+                    <option>Statistical Chapters</option>
+                </select>
+            </div>
+            <div class="hidden sm:block">
+                <div class="border-b border-gray-200">
+                    <nav class="-mb-px flex space-x-8">
+                        <a href="#" class="border-[#863F3F] text-[#863F3F] whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                            All Chapters
+                            <span class="bg-[#863F3F] bg-opacity-10 text-[#863F3F] ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_chapters }}</span>
+                        </a>
+                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                            Cultural
+                            <span class="bg-gray-100 text-gray-900 ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_cultural_chapters }}</span>
+                        </a>
+                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                            Statistical
+                            <span class="bg-gray-100 text-gray-900 ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_statistical_chapters }}</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="bg-white shadow rounded-lg mb-6">
+            <div class="px-4 py-5 sm:p-6">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <div class="flex-1">
+                        <label for="search" class="sr-only">Search chapters</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fas fa-search text-gray-400"></i>
+                            </div>
+                            <input type="text" name="search" id="search" 
+                                   class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm" 
+                                   placeholder="Search chapters...">
+                        </div>
+                    </div>
+                    <div class="sm:w-48">
+                        <select name="district_filter" 
+                                class="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm">
+                            <option value="">All Districts</option>
+                            {% for district in districts %}
+                            <option value="{{ district.id }}">{{ district.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="sm:w-32">
+                        <select name="type_filter" 
+                                class="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm">
+                            <option value="">All Types</option>
+                            <option value="cultural">Cultural</option>
+                            <option value="statistical">Statistical</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chapters Grid -->
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {% for chapter in chapters %}
+            <div class="bg-white overflow-hidden shadow rounded-lg hover:shadow-lg transition-shadow duration-200">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            {% if chapter.chapter_type == 'cultural' %}
+                            <div class="flex-shrink-0 p-2 rounded-md bg-blue-100">
+                                <i class="fas fa-palette text-blue-600"></i>
+                            </div>
+                            {% else %}
+                            <div class="flex-shrink-0 p-2 rounded-md bg-green-100">
+                                <i class="fas fa-chart-bar text-green-600"></i>
+                            </div>
+                            {% endif %}
+                            <div class="ml-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {% if chapter.chapter_type == 'cultural' %}bg-blue-100 text-blue-800{% else %}bg-green-100 text-green-800{% endif %}">
+                                    {{ chapter.chapter_type|title }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="text-gray-400 hover:text-gray-600">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="text-red-400 hover:text-red-600">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">{{ chapter.title }}</h3>
+                        <p class="text-sm text-gray-600 line-clamp-3">{{ chapter.description|truncatechars:120 }}</p>
+                    </div>
+                    
+                    <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-1"></i>
+                            <span>{{ chapter.district.name }}, {{ chapter.district.state.name }}</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-calendar mr-1"></i>
+                            <span>{{ chapter.updated_at|date:"M d" }}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center space-x-2">
+                            {% if chapter.status == 'published' %}
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                <i class="fas fa-check-circle mr-1"></i>
+                                Published
+                            </span>
+                            {% elif chapter.status == 'draft' %}
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                <i class="fas fa-edit mr-1"></i>
+                                Draft
+                            </span>
+                            {% else %}
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                <i class="fas fa-clock mr-1"></i>
+                                Pending
+                            </span>
+                            {% endif %}
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <a href="#" class="text-[#863F3F] hover:text-[#863F3F]-dark text-sm font-medium">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-span-full">
+                <div class="text-center py-12">
+                    <i class="fas fa-book text-4xl text-gray-300 mb-4"></i>
+                    <h3 class="text-lg font-medium text-gray-900 mb-2">No chapters found</h3>
+                    <p class="text-sm text-gray-500 mb-4">Get started by creating your first chapter.</p>
+                    <button class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#863F3F] hover:bg-opacity-90">
+                        <i class="fas fa-plus mr-2"></i>
+                        Add Chapter
+                    </button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Pagination -->
+        {% if chapters.has_other_pages %}
+        <div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6 mt-6 rounded-lg shadow">
+            <div class="flex-1 flex justify-between sm:hidden">
+                {% if chapters.has_previous %}
+                <a href="?page={{ chapters.previous_page_number }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                    Previous
+                </a>
+                {% endif %}
+                {% if chapters.has_next %}
+                <a href="?page={{ chapters.next_page_number }}" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                    Next
+                </a>
+                {% endif %}
+            </div>
+            <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                <div>
+                    <p class="text-sm text-gray-700">
+                        Showing
+                        <span class="font-medium">{{ chapters.start_index }}</span>
+                        to
+                        <span class="font-medium">{{ chapters.end_index }}</span>
+                        of
+                        <span class="font-medium">{{ chapters.paginator.count }}</span>
+                        results
+                    </p>
+                </div>
+                <div>
+                    <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px">
+                        {% if chapters.has_previous %}
+                        <a href="?page={{ chapters.previous_page_number }}" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        {% endif %}
+                        
+                        {% for num in chapters.paginator.page_range %}
+                        {% if chapters.number == num %}
+                        <span class="relative inline-flex items-center px-4 py-2 border border-[#863F3F] bg-[#863F3F] bg-opacity-10 text-sm font-medium text-[#863F3F]">
+                            {{ num }}
+                        </span>
+                        {% else %}
+                        <a href="?page={{ num }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                            {{ num }}
+                        </a>
+                        {% endif %}
+                        {% endfor %}
+                        
+                        {% if chapters.has_next %}
+                        <a href="?page={{ chapters.next_page_number }}" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                        {% endif %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}
+
+{% block extra_js %}
+<script>
+    // Add Chapter dropdown menu
+    document.getElementById('add-chapter-menu-button').addEventListener('click', function() {
+        document.getElementById('add-chapter-menu').classList.toggle('hidden');
+    });
+
+    // Close dropdown when clicking outside
+    window.addEventListener('click', function(event) {
+        if (!event.target.closest('#add-chapter-menu-button') && !event.target.closest('#add-chapter-menu')) {
+            document.getElementById('add-chapter-menu').classList.add('hidden');
+        }
+    });
+</script>
+{% endblock extra_js %}
