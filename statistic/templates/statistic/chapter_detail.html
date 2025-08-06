@@ -119,7 +119,7 @@ This template is for the Statistical Chapter detail page.
             @click="open = !open"
             class="flex items-center space-x-1 text-gray-700 whitespace-nowrap px-1 py-1 rounded-md transition-all duration-300 hover:bg-gray-100 focus:outline-none"
             >
-            <span>Change District</span>
+            <span>{{district.name}}</span>
             <i 
             class="fas fa-chevron-down text-xs transition-transform duration-300" 
             :class="{'rotate-180': open}"
@@ -154,7 +154,7 @@ This template is for the Statistical Chapter detail page.
           class="flex items-center space-x-1 text-[#863F3F] font-medium whitespace-nowrap px-3 py-1 rounded-md transition-all duration-300 hover:bg-[#863F3F]/10 focus:outline-none"
           >
           <!-- Change Chapter Dropdown -->
-            <span>Change Chapter</span>
+            <span>{{chapter.name}}</span>
             <i 
               class="fas fa-chevron-down text-xs transition-transform duration-300" 
               :class="{'rotate-180': open}"
