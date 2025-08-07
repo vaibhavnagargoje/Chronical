@@ -39,8 +39,8 @@ CORS_ORIGIN_ALLOW_ALL = False if not DEBUG else True
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    '238567e30c5d.ngrok-free.app',
-    'https://238567e30c5d.ngrok-free.app',
+    # '238567e30c5d.ngrok-free.app',
+    # 'https://238567e30c5d.ngrok-free.app',
 ]
 
 if not DEBUG:
