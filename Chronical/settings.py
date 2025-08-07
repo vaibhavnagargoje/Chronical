@@ -176,6 +176,18 @@ if DEBUG:
             }          
         }  
     }  
+
+#     DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'chronical',
+#         'USER': 'postgres',
+#         'PASSWORD': '8806',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
 else:
     DATABASES = {  
         'default': {  
