@@ -39,8 +39,8 @@ CORS_ORIGIN_ALLOW_ALL = False if not DEBUG else True
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    '238567e30c5d.ngrok-free.app',
-    'https://238567e30c5d.ngrok-free.app',
+    # '238567e30c5d.ngrok-free.app',
+    # 'https://238567e30c5d.ngrok-free.app',
 ]
 
 if not DEBUG:
@@ -286,3 +286,12 @@ EMAIL_PORT = int(os.getenv('EMAIL_PORT', '587'))
 EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', 'True').lower() == 'true'
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+
+
+
+# CSRF_TRUSTED_ORIGINS = [
+#     'http://localhost:8000',
+#     'http://127.0.0.1:8000',
+#     # '238567e30c5d.ngrok-free.app',
+#     # 'https://238567e30c5d.ngrok-free.app',
+# ]
