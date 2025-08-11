@@ -1,6 +1,5 @@
-
-
 document.addEventListener('DOMContentLoaded', function () {
+    // Word definitions dictionary
     // Word definitions dictionary
   const wordDefinitions = {
   "Improved sources of drinking water": "Include piped water, public taps, standpipes, tube wells, boreholes, protected dug wells and springs, rainwater, and community reverse osmosis (RO) plants.",
@@ -636,22 +635,73 @@ document.addEventListener('DOMContentLoaded', function () {
 
 };
 
-  // Function to find and highlight all words in the content
+  // Function to find and highlight all words in the content - FIXED VERSION
   function highlightWords() {
-    const paragraphs = document.querySelectorAll('.prose p');
+    // Expand selector to include all text containers in prose
+    const containers = document.querySelectorAll('.prose p, .prose div, .prose li, .prose td, .prose th, .prose span');
 
-    paragraphs.forEach(paragraph => {
-      let content = paragraph.innerHTML;
-      content = content.replace(/<span class="word-highlight(.*?)>(.*?)<\/span>/gi, '$2');
+    containers.forEach(container => {
+      // Skip if this container already has highlighted words to avoid double processing
+      if (container.querySelector('.word-highlight')) return;
+      
+      highlightWordsInNode(container);
+    });
+  }
 
+  // Helper function to safely highlight words in a node
+  function highlightWordsInNode(node) {
+    const walker = document.createTreeWalker(
+      node,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode: function(textNode) {
+          // Skip text nodes that are inside already highlighted spans
+          const parent = textNode.parentNode;
+          if (parent && parent.classList && parent.classList.contains('word-highlight')) {
+            return NodeFilter.FILTER_REJECT;
+          }
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      }
+    );
+
+    const textNodes = [];
+    let currentNode;
+    
+    // Collect all text nodes first
+    while (currentNode = walker.nextNode()) {
+      textNodes.push(currentNode);
+    }
+
+    // Process each text node
+    textNodes.forEach(textNode => {
+      let content = textNode.textContent;
+      let hasMatch = false;
+      let newContent = content;
+
+      // Check if any defined words exist in this text node
       Object.keys(wordDefinitions).forEach(word => {
         const regex = new RegExp(`\\b(${word})\\b`, 'gi');
-        content = content.replace(regex, function (match) {
-          return `<span class="word-highlight" data-word="${word}" style="color: #863F3F; font-weight: 500; text-decoration: underline; text-decoration-color: #DAB20C; text-decoration-thickness: 2px; cursor: pointer; transition: all 0.2s ease;">${match}</span>`;
-        });
+        if (regex.test(content)) {
+          hasMatch = true;
+          newContent = newContent.replace(regex, function (match) {
+            return `<span class="word-highlight" data-word="${word}" style="color: #863F3F; font-weight: 500; text-decoration: underline; text-decoration-color: #DAB20C; text-decoration-thickness: 2px; cursor: pointer; transition: all 0.2s ease;">${match}</span>`;
+          });
+        }
       });
 
-      paragraph.innerHTML = content;
+      // Only replace if we found matches
+      if (hasMatch) {
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = newContent;
+        
+        // Replace the text node with the new content
+        const parent = textNode.parentNode;
+        while (tempDiv.firstChild) {
+          parent.insertBefore(tempDiv.firstChild, textNode);
+        }
+        parent.removeChild(textNode);
+      }
     });
   }
 
