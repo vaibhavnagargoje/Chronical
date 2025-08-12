@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Word definitions dictionary
-    // Word definitions dictionary
+  // Word definitions dictionary
   const wordDefinitions = {
   "Improved sources of drinking water": "Include piped water, public taps, standpipes, tube wells, boreholes, protected dug wells and springs, rainwater, and community reverse osmosis (RO) plants.",
 "Improved toilet facilities": "Include any non-shared toilet of the following types: flush/pour flush toilets to piped sewer systems, septic tanks, and pit latrines; ventilated improved pit (VIP)/biogas latrines; pit latrines with slabs; and twin pit/composting toilets.",
@@ -637,71 +636,103 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Function to find and highlight all words in the content - FIXED VERSION
   function highlightWords() {
-    // Expand selector to include all text containers in prose
-    const containers = document.querySelectorAll('.prose p, .prose div, .prose li, .prose td, .prose th, .prose span');
+    // Inject CSS once (same styling as previous inline style)
+    if (!document.getElementById('word-highlight-style')) {
+      const style = document.createElement('style');
+      style.id = 'word-highlight-style';
+      style.textContent = `
+        .word-highlight {
+          color: #863F3F;
+          font-weight: 500;
+          text-decoration: underline;
+          text-decoration-color: #DAB20C;
+          text-decoration-thickness: 2px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+        .word-highlight:hover {
+          background-color: rgba(218, 178, 12, 0.1);
+          text-decoration-thickness: 3px;
+        }
+      `;
+      document.head.appendChild(style);
+    }
 
+    const containers = document.querySelectorAll('.prose p, .prose div, .prose li, .prose td, .prose th, .prose span');
     containers.forEach(container => {
-      // Skip if this container already has highlighted words to avoid double processing
       if (container.querySelector('.word-highlight')) return;
-      
       highlightWordsInNode(container);
     });
   }
 
-  // Helper function to safely highlight words in a node
-  function highlightWordsInNode(node) {
+  // Helper: escape regex special chars
+  function escapeRegex(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  // Build one combined regex (longest phrases first to avoid partial overshadow)
+  const highlightPhrases = Object.keys(wordDefinitions).sort((a,b)=> b.length - a.length);
+  const combinedPattern = highlightPhrases.map(escapeRegex).join('|');
+  const hasHighlightable = combinedPattern ? new RegExp(combinedPattern, 'i') : null;
+
+  // Safe DOM-based highlighter (no innerHTML mutation)
+  function highlightWordsInNode(root) {
+    if (!hasHighlightable) return;
+
     const walker = document.createTreeWalker(
-      node,
+      root,
       NodeFilter.SHOW_TEXT,
       {
         acceptNode: function(textNode) {
-          // Skip text nodes that are inside already highlighted spans
           const parent = textNode.parentNode;
-          if (parent && parent.classList && parent.classList.contains('word-highlight')) {
-            return NodeFilter.FILTER_REJECT;
-          }
+            // Skip if inside existing highlight or script/style/pre/code
+          if (!parent) return NodeFilter.FILTER_REJECT;
+          const tag = parent.nodeName.toLowerCase();
+          if (parent.classList && parent.classList.contains('word-highlight')) return NodeFilter.FILTER_REJECT;
+          if (['script','style','code','pre','noscript'].includes(tag)) return NodeFilter.FILTER_REJECT;
+          if (!hasHighlightable.test(textNode.textContent)) return NodeFilter.FILTER_REJECT;
           return NodeFilter.FILTER_ACCEPT;
         }
       }
     );
 
-    const textNodes = [];
-    let currentNode;
-    
-    // Collect all text nodes first
-    while (currentNode = walker.nextNode()) {
-      textNodes.push(currentNode);
+    const toProcess = [];
+    let node;
+    while ((node = walker.nextNode())) {
+      toProcess.push(node);
     }
 
-    // Process each text node
-    textNodes.forEach(textNode => {
-      let content = textNode.textContent;
-      let hasMatch = false;
-      let newContent = content;
+    toProcess.forEach(textNode => {
+      const original = textNode.textContent;
+      // Fresh regex per node to avoid lastIndex side effects
+      const regex = new RegExp(`\\b(${combinedPattern})\\b`, 'gi');
+      let matchFound = false;
+      const frag = document.createDocumentFragment();
+      let lastIndex = 0;
 
-      // Check if any defined words exist in this text node
-      Object.keys(wordDefinitions).forEach(word => {
-        const regex = new RegExp(`\\b(${word})\\b`, 'gi');
-        if (regex.test(content)) {
-          hasMatch = true;
-          newContent = newContent.replace(regex, function (match) {
-            return `<span class="word-highlight" data-word="${word}" style="color: #863F3F; font-weight: 500; text-decoration: underline; text-decoration-color: #DAB20C; text-decoration-thickness: 2px; cursor: pointer; transition: all 0.2s ease;">${match}</span>`;
-          });
+      original.replace(regex, (match, p1, offset) => {
+        matchFound = true;
+        if (offset > lastIndex) {
+          frag.appendChild(document.createTextNode(original.slice(lastIndex, offset)));
         }
+        const span = document.createElement('span');
+        // Retrieve canonical key (case-insensitive match)
+        const key = highlightPhrases.find(k => k.toLowerCase() === match.toLowerCase());
+        span.className = 'word-highlight';
+        span.dataset.word = key || match;
+        span.textContent = match;
+        frag.appendChild(span);
+        lastIndex = offset + match.length;
+        return match;
       });
 
-      // Only replace if we found matches
-      if (hasMatch) {
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = newContent;
-        
-        // Replace the text node with the new content
-        const parent = textNode.parentNode;
-        while (tempDiv.firstChild) {
-          parent.insertBefore(tempDiv.firstChild, textNode);
-        }
-        parent.removeChild(textNode);
+      if (!matchFound) return;
+
+      if (lastIndex < original.length) {
+        frag.appendChild(document.createTextNode(original.slice(lastIndex)));
       }
+
+      textNode.parentNode.replaceChild(frag, textNode);
     });
   }
 
@@ -770,12 +801,8 @@ document.addEventListener('DOMContentLoaded', function () {
           from { opacity: 0; transform: translateY(-10px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        .word-highlight:hover {
-          background-color: rgba(218, 178, 12, 0.1) !important;
-          text-decoration-thickness: 3px !important;
-        }
         #definition-content {
-          padding-right: 12px; /* Add padding to prevent text from being hidden by scrollbar */
+          padding-right: 12px;
           box-sizing: border-box;
         }
         #definition-content::-webkit-scrollbar {
@@ -784,7 +811,7 @@ document.addEventListener('DOMContentLoaded', function () {
         #definition-content::-webkit-scrollbar-track {
           background: #f1f1f1;
           border-radius: 3px;
-          margin: 4px 0; /* Add space at top and bottom of track */
+          margin: 4px 0;
         }
         #definition-content::-webkit-scrollbar-thumb {
           background: #DAB20C;
