@@ -19,6 +19,20 @@
     fill: #863F3F;
     cursor: pointer;
   }
+
+  /* Nested dropdown styles */
+  .nested-dropdown {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  
+  .state-toggle-btn:hover .chevron {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  .districts-container.expanded .chevron {
+    transform: translateY(-50%) rotate(180deg);
+  }
   
 
 </style>
@@ -47,40 +61,87 @@
                    
                 </div>
                 
-            
-            <!-- District Selector Section -->
-        
-            <div class="flex gap-1">
-                <div class="flex-1 relative">
-                    <select id="districtSelect" class="w-full px-1 py-1 border border-gray-300 rounded-sm focus:ring-1 focus:ring-[#863F3F] focus:border-[#863F3F] bg-white text-gray-900 shadow-sm transition-all duration-200">
-                        <option value="" disabled selected>Choose a district...</option>
-                        {% for district in districts %}
-                        <option value="{% url 'home:district_detail' state.slug district.slug %}">{{ district.name }}</option>
-                        {% endfor %}
-                    </select>
+                <!-- Nested District Selector -->
+                <div class="mb-8 max-w-xs w-full md:w-auto">
+                    <div class="relative">
+                        <div class="shadow-md hover:shadow-xl rounded-xl overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                            <button id="districtNavigationBtn" 
+                                    class="w-full px-4 py-4 sm:px-6 bg-white hover:bg-gray-50 text-left transition-colors duration-200 flex items-center justify-between focus:outline-none focus:bg-gray-50">
+                                <div class="text-left flex-1 min-w-0 pr-4">
+                                    <span id="selectedDistrictText" class="text-base sm:text-lg font-medium text-gray-800">Select State & District...</span>
+                                </div>
+                                <div class="flex-shrink-0">
+                                    <svg class="w-5 h-5 text-gray-400 transform transition-transform duration-200" id="districtNavigationArrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                        
+                        <!-- Dropdown Content -->
+                        <div id="districtNavigationDropdown" class="absolute top-full left-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-20 hidden w-full nested-dropdown">
+                            <!-- Search Input -->
+                            <div class="sticky top-0 background-white z-10 p-3 border-b border-gray-200 bg-gray-50 rounded-t-lg">
+                                <div class="relative">
+                                    <input type="text" 
+                                           id="districtSearchInput" 
+                                           placeholder="Search states and districts..." 
+                                           class="w-full px-3 py-2 pl-9 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#863F3F] focus:border-transparent bg-white">
+                                    <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"></i>
+                                    <button id="clearDistrictSearch" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 text-sm hidden">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <!-- Results Container -->
+                            <div id="districtSearchResults" class="overflow-y-auto">
+                                {% for state_item in all_states %}
+                                <div class="district-navigation-item border-b last:border-b-0" data-state="{{ state_item.name|lower }}" data-state-slug="{{ state_item.slug }}">
+                                    <!-- State Header with Dropdown Toggle -->
+                                    <div class="state-header px-3 py-2 bg-gray-50 border-b hover:bg-gray-100 transition-colors duration-200">
+                                        <div class="flex items-center justify-between">
+                                            <button class="state-toggle-btn flex-1 text-left bg-transparent border-none p-0 hover:bg-transparent focus:outline-none font-medium text-gray-800" 
+                                                    data-state-slug="{{ state_item.slug }}"
+                                                    onclick="toggleStateDistricts('{{ state_item.slug }}')">
+                                                {{ state_item.name }}
+                                                {% if state_item.slug == state.slug %}
+                                                <span class="ml-2 text-xs bg-[#863F3F] text-white px-2 py-1 rounded">Current</span>
+                                                {% endif %}
+                                            </button>
+                                            <button class="state-toggle-btn ml-2 p-1 hover:bg-gray-200 rounded transition-colors duration-200" 
+                                                    data-state-slug="{{ state_item.slug }}"
+                                                    onclick="toggleStateDistricts('{{ state_item.slug }}')">
+                                                <i class="fas fa-chevron-down text-xs text-gray-500 transition-transform duration-200 chevron"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- Districts under this state -->
+                                    <div class="districts-container hidden px-2 py-1" data-state-slug="{{ state_item.slug }}">
+                                        {% for district in state_item.districts.all|dictsort:"name" %}
+                                        <div class="district-link block text-sm text-gray-600 hover:text-[#863F3F] hover:bg-gray-50 py-2 px-2 rounded transition-colors duration-200 cursor-pointer"
+                                             data-district="{{ district.name|lower }}" 
+                                             data-state="{{ state_item.name|lower }}"
+                                             onclick="navigateToDistrict('{% url 'home:district_detail' state_item.slug district.slug %}')">
+                                            {{ district.name }}
+                                        </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                {% empty %}
+                                <div class="text-sm text-gray-500 py-4 px-3 text-center">No states available</div>
+                                {% endfor %}
+                            </div>
+                            
+                            <!-- No Results Message -->
+                            <div id="noDistrictResults" class="hidden py-8 px-3 text-center">
+                                <i class="fas fa-search text-gray-300 text-2xl mb-2"></i>
+                                <p class="text-sm text-gray-500">No states or districts found</p>
+                                <p class="text-xs text-gray-400 mt-1">Try adjusting your search terms</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button type="button" onclick="navigateToDistrict()" class="px-3 py-1 bg-[#863F3F] text-white font-medium hover:bg-[#6d2f2f] focus:ring-2 focus:ring-[#863F3F] focus:ring-offset-2 transition-all duration-200 shadow-sm flex items-center justify-center gap-1 flex-shrink-0">
-                    <i class="fas fa-arrow-right text-sm"></i>
-                </button>
-            </div>
-
-            <script>
-            function navigateToDistrict() {
-                const select = document.getElementById('districtSelect');
-                const selectedUrl = select.value;
-                if (selectedUrl) {
-                    window.location.href = selectedUrl;
-                }
-            }
-
-            
-            document.getElementById('districtSelect').addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    navigateToDistrict();
-                }
-            });
-            </script>
-                
             </div>
             </div>
             </div>
@@ -91,12 +152,11 @@
     <!-- State Map Section -->
     <div class="py-8 bg-white">
         <div class="container mx-auto px-1 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
-            {% comment %} <h2 class="text-3xl font-bold text-center text-[#863F3F] mb-8">{{ state.name|upper}}</h2> {% endcomment %}
             <div class="max-w-4xl mx-auto relative">
                 <!-- Scrollable container for mobile -->
                 <div class="svg-container overflow-hidden relative">
                     <div class="svg-scroll overflow-x-auto overflow-y-auto">
-                        <!-- This is a placeholder for the SVG map of India -->
+                        <!-- SVG map content -->
                         <svg viewBox="0 0 750 600" class="svg-map">
                             {% for district_svg in district_svgs %}
                             <a xlink:title="{{ district_svg.district.name }}" xlink:href="{% url 'home:district_detail' state.slug district_svg.district.slug %}">
@@ -478,31 +538,104 @@
         </div>
     </div>
 
-    {% comment %} <!-- Districts List -->
-    <div class="py-12 bg-white">
-        <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
-            <h2 class="text-3xl font-bold text-center text-[#863F3F] mb-8">All Districts</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <a href="district-overview.html" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow flex items-center space-x-3 border border-transparent hover:border-[#863F3F]">
-                    <div class="w-3 h-3 rounded-full bg-[#863F3F]"></div>
-                    <span class="text-gray-800 hover:text-[#863F3F] transition-colors">Bhandara</span>
-                </a>
-                <a href="#" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow flex items-center space-x-3 border border-transparent hover:border-[#863F3F]">
-                    <div class="w-3 h-3 rounded-full bg-[#863F3F]"></div>
-                    <span class="text-gray-800 hover:text-[#863F3F] transition-colors">Nagpur</span>
-                </a>
-                <a href="#" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow flex items-center space-x-3 border border-transparent hover:border-[#863F3F]">
-                    <div class="w-3 h-3 rounded-full bg-[#863F3F]"></div>
-                    <span class="text-gray-800 hover:text-[#863F3F] transition-colors">Pune</span>
-                </a>
-                <a href="#" class="bg-white p-4 rounded-lg shadow hover:shadow-md transition-shadow flex items-center space-x-3 border border-transparent hover:border-[#863F3F]">
-                    <div class="w-3 h-3 rounded-full bg-[#863F3F]"></div>
-                    <span class="text-gray-800 hover:text-[#863F3F] transition-colors">Mumbai</span>
-                </a>
-                <!-- More district links would go here -->
-            </div>
-        </div>
-    </div> {% endcomment %}
+    <script>
+    // Toggle dropdown visibility
+    document.getElementById('districtNavigationBtn').addEventListener('click', function() {
+        const dropdown = document.getElementById('districtNavigationDropdown');
+        const arrow = document.getElementById('districtNavigationArrow');
+        
+        dropdown.classList.toggle('hidden');
+        arrow.classList.toggle('rotate-180');
+        
+        if (!dropdown.classList.contains('hidden')) {
+            document.getElementById('districtSearchInput').focus();
+        }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('districtNavigationDropdown');
+        const button = document.getElementById('districtNavigationBtn');
+        
+        if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+            dropdown.classList.add('hidden');
+            document.getElementById('districtNavigationArrow').classList.remove('rotate-180');
+        }
+    });
+
+    // Toggle state districts
+    function toggleStateDistricts(stateSlug) {
+        const container = document.querySelector(`[data-state-slug="${stateSlug}"].districts-container`);
+        const chevron = document.querySelector(`[data-state-slug="${stateSlug}"] .chevron`);
+        
+        if (container) {
+            container.classList.toggle('hidden');
+            container.classList.toggle('expanded');
+        }
+    }
+
+    // Navigate to district
+    function navigateToDistrict(url) {
+        window.location.href = url;
+    }
+
+    // Search functionality
+    document.getElementById('districtSearchInput').addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        const clearBtn = document.getElementById('clearDistrictSearch');
+        const items = document.querySelectorAll('.district-navigation-item');
+        const noResults = document.getElementById('noDistrictResults');
+        let hasResults = false;
+
+        // Show/hide clear button
+        clearBtn.classList.toggle('hidden', searchTerm === '');
+
+        items.forEach(item => {
+            const stateName = item.getAttribute('data-state');
+            const districts = item.querySelectorAll('.district-link');
+            let stateMatch = stateName.includes(searchTerm);
+            let hasDistrictMatch = false;
+
+            districts.forEach(district => {
+                const districtName = district.getAttribute('data-district');
+                const districtMatch = districtName.includes(searchTerm);
+                
+                if (districtMatch || (searchTerm === '' || stateMatch)) {
+                    district.style.display = 'block';
+                    if (districtMatch) hasDistrictMatch = true;
+                } else {
+                    district.style.display = 'none';
+                }
+            });
+
+            if (stateMatch || hasDistrictMatch || searchTerm === '') {
+                item.style.display = 'block';
+                hasResults = true;
+                
+                // Auto-expand if there's a match
+                if (searchTerm && (stateMatch || hasDistrictMatch)) {
+                    const container = item.querySelector('.districts-container');
+                    if (container) {
+                        container.classList.remove('hidden');
+                        container.classList.add('expanded');
+                    }
+                }
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+        noResults.classList.toggle('hidden', hasResults);
+    });
+
+    // Clear search
+    document.getElementById('clearDistrictSearch').addEventListener('click', function() {
+        const searchInput = document.getElementById('districtSearchInput');
+        searchInput.value = '';
+        searchInput.dispatchEvent(new Event('input'));
+        searchInput.focus();
+    });
+    </script>
 
 {% endblock content  %}
 

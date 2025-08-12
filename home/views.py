@@ -25,10 +25,14 @@ def state_detail(request, state_slug):
     # Get SVG content for districts in this state
     district_svgs = DistrictSVG.objects.filter(district__state=state)
     
+    # Get all states with their districts for the nested dropdown
+    all_states = State.objects.prefetch_related('districts').all().order_by('name')
+    
     context = {
         'state': state,
         'districts': districts,
         'district_svgs': district_svgs,
+        'all_states': all_states,  # Add all states for nested dropdown
     }
     return render(request, 'home/state_detail.html', context)
 

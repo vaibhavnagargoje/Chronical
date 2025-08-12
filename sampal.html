@@ -1,0 +1,76 @@
+<div class="mb-8 max-w-xs">
+            <div class="relative">
+                <div class="shadow-md hover:shadow-xl rounded-xl overflow-hidden transform hover:-translate-y-1 transition-all duration-300">
+                    <button id="districtNavigationBtn" 
+                            class="w-full px-4 py-4 sm:px-6 bg-white hover:bg-gray-50 text-left transition-colors duration-200 flex items-center justify-between focus:outline-none focus:bg-gray-50">
+                        <div class="text-left flex-1 min-w-0 pr-4">
+                            <span id="selectedDistrictText" class="text-base sm:text-lg font-medium text-gray-800">Select State & District...</span>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <svg class="w-5 h-5 text-gray-400 transform transition-transform duration-200" id="districtNavigationArrow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                
+                <!-- Dropdown Content -->
+                <div id="districtNavigationDropdown" class="absolute top-full left-0 mt-1 bg-white border border-gray-300 rounded-lg shadow-lg z-20 hidden w-full" style="max-height: 70vh; overflow-y: auto;">
+                    <!-- Search Input -->
+                    <div class="sticky top-0 bg-white z-10 p-3 border-b border-gray-200 bg-gray-50 rounded-t-lg">
+                        <div class="relative">
+                            <input type="text" 
+                                   id="districtSearchInput" 
+                                   placeholder="Search states and districts..." 
+                                   class="w-full px-3 py-2 pl-9 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-primary focus:border-transparent bg-white">
+                            <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-sm"></i>
+                            <button id="clearDistrictSearch" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 text-sm hidden">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Results Container -->
+                    <div id="districtSearchResults" class="overflow-y-auto">
+                        {% for state in states_with_districts %}
+                        <div class="district-navigation-item border-b last:border-b-0" data-state="{{ state.name|lower }}" data-state-code="{{ state.state_code }}">
+                            <!-- State Header with Dropdown Toggle -->
+                            <div class="state-header px-3 py-2 bg-gray-50 border-b hover:bg-gray-100 transition-colors duration-200">
+                                <div class="flex items-center justify-between">
+                                    <button class="state-toggle-btn flex-1 text-left bg-transparent border-none p-0 hover:bg-transparent focus:outline-none" 
+                                            data-state-code="{{ state.state_code }}"
+                                            onclick="event.preventDefault(); event.stopPropagation();">
+                                        {{ state.name }}
+                                    </button>
+                                    <button class="state-toggle-btn ml-2 p-1 hover:bg-gray-200 rounded transition-colors duration-200" 
+                                            data-state-code="{{ state.state_code }}"
+                                            onclick="event.preventDefault(); event.stopPropagation();">
+                                        <i class="fas fa-chevron-down text-xs text-gray-500 transition-transform duration-200"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Districts under this state (initially collapsed) -->
+                            <div class="districts-container hidden px-2 py-1" data-state-code="{{ state.state_code }}">
+                                {% for district in state.district_set.all|dictsort:"name" %}
+                                <div class="district-link block text-sm text-gray-600 hover:text-primary hover:bg-gray-50 py-2 px-2 rounded transition-colors duration-200 cursor-pointer"
+                                     data-district="{{ district.name|lower }}" 
+                                     data-state="{{ state.name|lower }}"
+                                     data-district-url="{% url 'district_detail' state.state_code district.district_code %}">
+                                    {{ district.name }}
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% empty %}
+                        <div class="text-sm text-gray-500 py-4 px-3 text-center">No districts available</div>
+                        {% endfor %}
+                    </div>
+                    
+                    <!-- No Results Message -->
+                    <div id="noDistrictResults" class="hidden py-8 px-3 text-center">
+                        <i class="fas fa-search text-gray-300 text-2xl mb-2"></i>
+                        <p class="text-sm text-gray-500">No states or districts found</p>
+                        <p class="text-xs text-gray-400 mt-1">Try adjusting your search terms</p>
+                    </div>
+                </div>
+            </div>
