@@ -221,6 +221,15 @@
             </li>
           {% endfor %}
         </ul>
+        {% if user.is_authenticated and user.profile.is_reviewer_user %}
+          <div class="mt-6 pt-4 border-t border-gray-200">
+            <a href="{% url 'editor:chapter_editor' app_label='culture' chapter_id=chapter.id %}" 
+               class="flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-[#863F3F] rounded-md hover:bg-[#863F3F]/90 transition-colors duration-200">
+              <i class="fas fa-edit mr-2"></i>
+              Edit Chapter
+            </a>
+          </div>
+        {% endif %}
       </div>
     </div>
 
@@ -321,6 +330,15 @@
           <li><a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] block py-1 toc-link {% if item.level == 2 %}pl-4{% endif %}">{{ item.text }}</a></li>
         {% endfor %}
     </ul>
+    {% if user.is_authenticated and user.profile.is_reviewer_user %}
+      <div class="mt-6 pt-4 border-t border-gray-200">
+        <a href="{% url 'editor:chapter_editor' app_label='culture' chapter_id=chapter.id %}" 
+           class="flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-[#863F3F] rounded-md hover:bg-[#863F3F]/90 transition-colors duration-200">
+          <i class="fas fa-edit mr-2"></i>
+          Edit Chapter
+        </a>
+      </div>
+    {% endif %}
   </div>
 </div>
 

@@ -4,6 +4,7 @@ from django.db import transaction
 from django.http import Http404
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from django.core.exceptions import PermissionDenied
 import json
 from django.conf import settings
 from .forms import ChapterSelectForm
@@ -53,7 +54,21 @@ def get_app_config(app_label):
         raise Http404(f"Editor not configured for app: '{app_label}'")
     return config
 
+def reviewer_required(view_func):
+    """Decorator to check if user has reviewer permissions"""
+    def _wrapped_view(request, *args, **kwargs):
+        if not request.user.is_authenticated:
+            return redirect('login')  # Redirect to login page
+        
+        # Check if user has reviewer or super admin permissions
+        if not (hasattr(request.user, 'profile') and request.user.profile.is_reviewer_user()):
+            raise PermissionDenied("You don't have permission to access the editor.")
+        
+        return view_func(request, *args, **kwargs)
+    return _wrapped_view
+
 @login_required
+@reviewer_required
 def select_chapter_view(request, app_label):
     """View to select a district and chapter, now aware of the app."""
     config = get_app_config(app_label)
@@ -82,6 +97,7 @@ def select_chapter_view(request, app_label):
 
 
 @login_required
+@reviewer_required
 def chapter_editor_view(request, app_label, chapter_id):
     """ The main editor view, now using a config to support both apps."""
     config = get_app_config(app_label)

@@ -140,6 +140,10 @@ class Profile(models.Model):
         ]
         return ", ".join([part for part in address_parts if part])
     
+    def is_reviewer_user(self):
+        """Check if user has reviewer permissions"""
+        return self.is_reviewer or self.is_super_admin
+    
     class Meta:
         db_table = 'user_profile'
         verbose_name = 'User Profile'
