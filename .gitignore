@@ -21,3 +21,4 @@ venv/
 Thumbs.db
 media/
 gunicorn_config.py
+importdata/
