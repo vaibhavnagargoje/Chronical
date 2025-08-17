@@ -4,6 +4,7 @@ from django.core.validators import FileExtensionValidator
 from tinymce.models import HTMLField
 from django.db import models
 from django.urls import reverse
+from django.contrib.auth.models import User
 
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFit
@@ -217,4 +218,144 @@ class GIFImage(models.Model):     #SectionImage
 
     def __str__(self):
         return f"Animation for {self.district.name}"
+
+
+class DeveloperCheck(models.Model):
+    """
+    Developer review status for Cultural and Statistical chapters
+    """
+    # Reference to existing chapters
+    cultural_chapter = models.OneToOneField(
+        'culture.CulturalChapter', 
+        on_delete=models.CASCADE, 
+        null=True, blank=True,
+        related_name='developer_check'
+    )
+    statistical_chapter = models.OneToOneField(
+        'statistic.StatisticalChapter', 
+        on_delete=models.CASCADE, 
+        null=True, blank=True,
+        related_name='developer_check'
+    )
     
+    # Developer checkboxes
+    ready_for_review = models.BooleanField(default=False, verbose_name="Ready for Review")
+    reviewed = models.BooleanField(default=False, verbose_name="Developer Reviewed")
+    
+    # User tracking
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='dev_created_reviews')
+    reviewed_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='dev_reviewed_chapters')
+    
+    # Timestamps
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    reviewed_at = models.DateTimeField(null=True, blank=True)
+    
+    class Meta:
+        verbose_name = "Developer Check"
+        verbose_name_plural = "Developer Checks"
+        ordering = ['-updated_at']
+    
+    def clean(self):
+        from django.core.exceptions import ValidationError
+        if self.cultural_chapter and self.statistical_chapter:
+            raise ValidationError("Cannot select both cultural and statistical chapter.")
+        if not self.cultural_chapter and not self.statistical_chapter:
+            raise ValidationError("Must select either a cultural or statistical chapter.")
+    
+    def save(self, *args, **kwargs):
+        if self.reviewed and not self.reviewed_at:
+            from django.utils import timezone
+            self.reviewed_at = timezone.now()
+        super().save(*args, **kwargs)
+    
+    @property
+    def chapter_name(self):
+        if self.cultural_chapter:
+            return self.cultural_chapter.name
+        elif self.statistical_chapter:
+            return self.statistical_chapter.name
+        return "No Chapter"
+    
+    @property
+    def district(self):
+        if self.cultural_chapter:
+            return self.cultural_chapter.district
+        elif self.statistical_chapter:
+            return self.statistical_chapter.district
+        return None
+    
+    def __str__(self):
+        status = "✅ Dev Reviewed" if self.reviewed else ("📋 Dev Ready" if self.ready_for_review else "📝 Dev Draft")
+        return f"{status} | {self.chapter_name} - {self.district.name if self.district else 'No District'}"
+
+
+
+class FinalCheck(models.Model):
+    """
+    Final review status for Cultural and Statistical chapters
+    """
+    # Reference to existing chapters
+    cultural_chapter = models.OneToOneField(
+        'culture.CulturalChapter', 
+        on_delete=models.CASCADE, 
+        null=True, blank=True,
+        related_name='final_check'
+    )
+    statistical_chapter = models.OneToOneField(
+        'statistic.StatisticalChapter', 
+        on_delete=models.CASCADE, 
+        null=True, blank=True,
+        related_name='final_check'
+    )
+    
+    # Final checkboxes
+    ready_for_review = models.BooleanField(default=False, verbose_name="Ready for Final Review")
+    reviewed = models.BooleanField(default=False, verbose_name="Final Reviewed")
+    
+    # User tracking
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='final_created_reviews')
+    reviewed_by = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, related_name='final_reviewed_chapters')
+    
+    # Timestamps
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    reviewed_at = models.DateTimeField(null=True, blank=True)
+    
+    class Meta:
+        verbose_name = "Final Check"
+        verbose_name_plural = "Final Checks"
+        ordering = ['-updated_at']
+    
+    def clean(self):
+        from django.core.exceptions import ValidationError
+        if self.cultural_chapter and self.statistical_chapter:
+            raise ValidationError("Cannot select both cultural and statistical chapter.")
+        if not self.cultural_chapter and not self.statistical_chapter:
+            raise ValidationError("Must select either a cultural or statistical chapter.")
+    
+    def save(self, *args, **kwargs):
+        if self.reviewed and not self.reviewed_at:
+            from django.utils import timezone
+            self.reviewed_at = timezone.now()
+        super().save(*args, **kwargs)
+    
+    @property
+    def chapter_name(self):
+        if self.cultural_chapter:
+            return self.cultural_chapter.name
+        elif self.statistical_chapter:
+            return self.statistical_chapter.name
+        return "No Chapter"
+    
+    @property
+    def district(self):
+        if self.cultural_chapter:
+            return self.cultural_chapter.district
+        elif self.statistical_chapter:
+            return self.statistical_chapter.district
+        return None
+    
+    def __str__(self):
+        status = "✅ Final Reviewed" if self.reviewed else ("📋 Final Ready" if self.ready_for_review else "📝 Final Draft")
+        return f"{status} | {self.chapter_name} - {self.district.name if self.district else 'No District'}"
