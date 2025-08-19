@@ -180,37 +180,6 @@
             {% for chapter in chapters %}
             <div class="bg-white overflow-hidden shadow rounded-lg hover:shadow-lg transition-shadow duration-200">
                 <div class="p-6">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-center">
-                            {% if chapter.chapter_type == 'cultural' %}
-                            <div class="flex-shrink-0 p-2 rounded-md bg-blue-100">
-                                <i class="fas fa-palette text-blue-600"></i>
-                            </div>
-                            {% else %}
-                            <div class="flex-shrink-0 p-2 rounded-md bg-green-100">
-                                <i class="fas fa-chart-bar text-green-600"></i>
-                            </div>
-                            {% endif %}
-                            <div class="ml-3">
-                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {% if chapter.chapter_type == 'cultural' %}bg-blue-100 text-blue-800{% else %}bg-green-100 text-green-800{% endif %}">
-                                    {{ chapter.chapter_type|title }}
-                                </span>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <button class="text-gray-400 hover:text-gray-600">
-                                <i class="fas fa-edit"></i>
-                            </button>
-                            <button class="text-red-400 hover:text-red-600">
-                                <i class="fas fa-trash"></i>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="mb-4">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">{{ chapter.title }}</h3>
-                        <p class="text-sm text-gray-600 line-clamp-3">{{ chapter.description|truncatechars:120 }}</p>
-                    </div>
                     
                     <div class="flex items-center justify-between text-sm text-gray-500 mb-4">
                         <div class="flex items-center">
@@ -222,6 +191,31 @@
                             <span>{{ chapter.updated_at|date:"M d" }}</span>
                         </div>
                     </div>
+
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            
+                            <div class="ml-3">
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {% if chapter.chapter_type == 'cultural' %}bg-blue-100 text-blue-800{% else %}bg-green-100 text-green-800{% endif %}">
+                                    {{ chapter.chapter_type|title }}
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <button class="text-gray-400 hover:text-gray-600">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="text-red-400 hover:text-red-600">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">{{ chapter.title }}</h3>
+                        <p class="text-sm text-gray-600 line-clamp-3">{{ chapter.description|truncatechars:120 }}</p>
+                    </div>
+                    
                     
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-2">
