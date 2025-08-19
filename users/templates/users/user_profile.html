@@ -351,7 +351,7 @@ Profile - {{ user.first_name|default:user.username }} | Indian Districts
                 <div class="bg-white rounded-lg shadow-md p-6">
                     <h2 class="text-2xl font-semibold text-gray-900 mb-6">Quick Links</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
+                        <a href="{% url 'users:change_password' %}" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
                             <div class="flex items-center space-x-3">
                                 <div class="bg-[#863F3F] text-white p-2 rounded-lg">
                                     <i class="fas fa-key"></i>
@@ -374,43 +374,8 @@ Profile - {{ user.first_name|default:user.username }} | Indian Districts
                                 </div>
                             </div>
                         </a>
-                        
-                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
-                            <div class="flex items-center space-x-3">
-                                <div class="bg-[#863F3F] text-white p-2 rounded-lg">
-                                    <i class="fas fa-download"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-medium text-gray-900">Download Data</h3>
-                                    <p class="text-sm text-gray-500">Export your information</p>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
-                            <div class="flex items-center space-x-3">
-                                <div class="bg-[#863F3F] text-white p-2 rounded-lg">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-medium text-gray-900">Privacy Settings</h3>
-                                    <p class="text-sm text-gray-500">Control your privacy</p>
-                                </div>
-                            </div>
-                        </a>
-                        
-                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
-                            <div class="flex items-center space-x-3">
-                                <div class="bg-[#863F3F] text-white p-2 rounded-lg">
-                                    <i class="fas fa-question-circle"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-medium text-gray-900">Help & Support</h3>
-                                    <p class="text-sm text-gray-500">Get assistance</p>
-                                </div>
-                            </div>
-                        </a>
-                        
+
+                        {% if user.profile.is_super_admin or user.profile.is_admin %}
                         <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
                             <div class="flex items-center space-x-3">
                                 <div class="bg-[#863F3F] text-white p-2 rounded-lg">
@@ -422,6 +387,7 @@ Profile - {{ user.first_name|default:user.username }} | Indian Districts
                                 </div>
                             </div>
                         </a>
+                        {% endif %}
                     </div>
                 </div>
             </div>

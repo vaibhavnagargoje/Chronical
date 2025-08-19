@@ -300,10 +300,6 @@ def user_profile(request):
     user = request.user
     profile = user.profile
     
-    # Check if user is admin or super admin and redirect to admin dashboard
-    if profile.is_super_admin or profile.is_admin:
-        return redirect('admindashboard:dashboard')  # Adjust the URL name as needed
-    
     if request.method == 'POST':
         # Update User model fields
         user.first_name = request.POST.get('first_name', '')
@@ -339,5 +335,55 @@ def user_profile(request):
         'profile': profile,
     }
     return render(request, 'users/user_profile.html', context)
+
+
+def change_password(request):
+    if not request.user.is_authenticated:
+        messages.error(request, "You need to be logged in to change your password.")
+        return redirect('users:login')
+    
+    if request.method == 'POST':
+        current_password = request.POST.get('current_password')
+        new_password = request.POST.get('new_password')
+        confirm_password = request.POST.get('confirm_password')
+        
+        # Validation
+        if not all([current_password, new_password, confirm_password]):
+            messages.error(request, "All password fields are required.")
+            return render(request, 'users/change_password.html')
+        
+        # Check if current password is correct
+        if not request.user.check_password(current_password):
+            messages.error(request, "Current password is incorrect.")
+            return render(request, 'users/change_password.html')
+        
+        # Check if new passwords match
+        if new_password != confirm_password:
+            messages.error(request, "New passwords don't match.")
+            return render(request, 'users/change_password.html')
+        
+        # Check password length
+        if len(new_password) < 8:
+            messages.error(request, "New password must be at least 8 characters long.")
+            return render(request, 'users/change_password.html')
+        
+        # Check if new password is different from current
+        if current_password == new_password:
+            messages.error(request, "New password must be different from current password.")
+            return render(request, 'users/change_password.html')
+        
+        # Update password
+        request.user.set_password(new_password)
+        request.user.save()
+        
+        # Re-authenticate user to keep them logged in
+        user = authenticate(request, username=request.user.email, password=new_password)
+        if user:
+            login(request, user)
+        
+        messages.success(request, "Password changed successfully!")
+        return redirect('users:user_profile')
+    
+    return render(request, 'users/change_password.html')
 
 
