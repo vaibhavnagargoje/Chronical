@@ -198,9 +198,7 @@
 
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center">
-                            <div class="flex-shrink-0 p-2 rounded-md {% if chapter.chapter_type == 'cultural' %}bg-blue-100{% else %}bg-green-100{% endif %}">
-                                <i class="{% if chapter.chapter_type == 'cultural' %}fas fa-palette text-blue-600{% else %}fas fa-chart-bar text-green-600{% endif %} text-lg"></i>
-                            </div>
+                            
                             <div class="ml-3">
                                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {% if chapter.chapter_type == 'cultural' %}bg-blue-100 text-blue-800{% else %}bg-green-100 text-green-800{% endif %}">
                                     {{ chapter.chapter_type|title }}
@@ -208,31 +206,47 @@
                             </div>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <button class="text-gray-400 hover:text-gray-600">
+                            <a href="{% url 'editor:chapter_editor' app_label='culture' chapter_id=chapter.id %}" class="text-gray-400 hover:text-gray-600">
                                 <i class="fas fa-edit"></i>
-                            </button>
-                            <button class="text-red-400 hover:text-red-600">
-                                <i class="fas fa-eye"></i>
-                            </button>
+                            </a>
                         </div>
                     </div>
                     
                     <div class="mb-4">
                         <h3 class="text-lg font-medium text-gray-900 mb-2">{{ chapter.name }}</h3>
-                        <p class="text-sm text-gray-600 line-clamp-3">{{ chapter.description|truncatechars:120 }}</p>
+                        {% comment %} <p class="text-sm text-gray-600 line-clamp-3">{{ chapter.description|truncatechars:120 }}</p> {% endcomment %}
                     </div>
                     
                     
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-2">
+                            {% if chapter.status == 'reviewed' %}
                             <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
                                 <i class="fas fa-check-circle mr-1"></i>
-                                Published
+                                {{ chapter.status_display }}
                             </span>
+                            {% elif chapter.status == 'pending' %}
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                <i class="fas fa-clock mr-1"></i>
+                                {{ chapter.status_display }}
+                            </span>
+                            {% else %}
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                                <i class="fas fa-edit mr-1"></i>
+                                {{ chapter.status_display }}
+                            </span>
+                            {% endif %}
+                            
+                            {% if chapter.final_check and chapter.final_check.reviewed_at %}
+                            <span class="text-xs text-gray-500">
+                                <i class="fas fa-calendar-check mr-1"></i>
+                                {{ chapter.final_check.reviewed_at|date:"M d, Y" }}
+                            </span>
+                            {% endif %}
                         </div>
                         <div class="flex items-center space-x-2">
                             <a href="#" class="text-[#863F3F] hover:text-[#863F3F]-dark text-sm font-medium">
-                                View Details
+                                View Page
                             </a>
                         </div>
                     </div>
@@ -294,7 +308,19 @@
                         </a>
                         {% endif %}
                         
+                        {% if chapters.number > 3 %}
+                        <a href="?page=1{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}&type_filter={{ type_filter }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                            1
+                        </a>
+                        {% if chapters.number > 4 %}
+                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
+                            ...
+                        </span>
+                        {% endif %}
+                        {% endif %}
+                        
                         {% for num in chapters.paginator.page_range %}
+                        {% if num >= chapters.number|add:"-2" and num <= chapters.number|add:"2" %}
                         {% if chapters.number == num %}
                         <span class="relative inline-flex items-center px-4 py-2 border border-[#863F3F] bg-[#863F3F] bg-opacity-10 text-sm font-medium text-[#863F3F]">
                             {{ num }}
@@ -304,7 +330,19 @@
                             {{ num }}
                         </a>
                         {% endif %}
+                        {% endif %}
                         {% endfor %}
+                        
+                        {% if chapters.number < chapters.paginator.num_pages|add:"-2" %}
+                        {% if chapters.number < chapters.paginator.num_pages|add:"-3" %}
+                        <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
+                            ...
+                        </span>
+                        {% endif %}
+                        <a href="?page={{ chapters.paginator.num_pages }}{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}&type_filter={{ type_filter }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                            {{ chapters.paginator.num_pages }}
+                        </a>
+                        {% endif %}
                         
                         {% if chapters.has_next %}
                         <a href="?page={{ chapters.next_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}&type_filter={{ type_filter }}" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">

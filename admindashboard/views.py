@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
 from django.views.decorators.csrf import csrf_exempt
-from home.models import State, District
+from home.models import State, District, FinalCheck
 from culture.models import CulturalChapter
 from statistic.models import StatisticalChapter
 from users.models import Profile
@@ -128,36 +128,71 @@ def chapters(request):
     # Prepare combined chapters list
     chapters_list = []
     
-    # Get cultural chapters
-    cultural_chapters = CulturalChapter.objects.select_related('district', 'district__state').all()
+    # Get cultural chapters with review status
+    cultural_chapters = CulturalChapter.objects.select_related('district', 'district__state').prefetch_related('final_check').all()
     for chapter in cultural_chapters:
+        # Get review status from FinalCheck
+        final_check = getattr(chapter, 'final_check', None)
+        if final_check:
+            if final_check.reviewed:
+                status = 'reviewed'
+                status_display = 'Reviewed'
+            
+                
+            else:
+                status = 'pending'
+                status_display = 'Pending Review'
+        else:
+            status = 'draft'
+            status_display = 'Draft'
+        
         chapters_list.append({
             'id': chapter.id,
             'name': chapter.name,
-            'title': chapter.name,  # Using name as title for cultural chapters
+            'title': chapter.name,
             'description': f"Cultural chapter covering {chapter.name.lower()} of {chapter.district.name}",
             'district': chapter.district,
             'chapter_type': 'cultural',
             'updated_at': chapter.updated_at,
-            'status': 'published',  # Assuming published status
+            'status': status,
+            'status_display': status_display,
             'model_type': 'cultural',
             'slug': chapter.slug,
+            'final_check': final_check,
         })
     
-    # Get statistical chapters
-    statistical_chapters = StatisticalChapter.objects.select_related('district', 'district__state').all()
+    # Get statistical chapters with review status
+    statistical_chapters = StatisticalChapter.objects.select_related('district', 'district__state').prefetch_related('final_check').all()
     for chapter in statistical_chapters:
+        # Get review status from FinalCheck
+        final_check = getattr(chapter, 'final_check', None)
+        if final_check:
+            if final_check.reviewed:
+                status = 'reviewed'
+                status_display = 'Reviewed'
+            elif final_check.ready_for_review:
+                status = 'pending'
+                status_display = 'Pending Review'
+            else:
+                status = 'draft'
+                status_display = 'Draft'
+        else:
+            status = 'draft'
+            status_display = 'Draft'
+        
         chapters_list.append({
             'id': chapter.id,
             'name': chapter.name,
-            'title': chapter.name,  # Using name as title for statistical chapters
+            'title': chapter.name,
             'description': f"Statistical data and analysis for {chapter.name.lower()} in {chapter.district.name}",
             'district': chapter.district,
             'chapter_type': 'statistical',
             'updated_at': chapter.updated_at,
-            'status': 'published',  # Assuming published status
+            'status': status,
+            'status_display': status_display,
             'model_type': 'statistical',
             'slug': chapter.slug,
+            'final_check': final_check,
         })
     
     # Apply search filter
@@ -203,7 +238,21 @@ def chapters(request):
     total_cultural_chapters = CulturalChapter.objects.count()
     total_statistical_chapters = StatisticalChapter.objects.count()
     total_chapters = total_cultural_chapters + total_statistical_chapters
-    pending_chapters = 0  # Placeholder
+    
+    # Count pending chapters based on FinalCheck status
+    pending_cultural = FinalCheck.objects.filter(
+        cultural_chapter__isnull=False,
+        ready_for_review=True,
+        reviewed=False
+    ).count()
+    
+    pending_statistical = FinalCheck.objects.filter(
+        statistical_chapter__isnull=False,
+        ready_for_review=True,
+        reviewed=False
+    ).count()
+    
+    pending_chapters = pending_cultural + pending_statistical
     
     # Get all districts for filter dropdown
     districts = District.objects.select_related('state').order_by('state__name', 'name')
