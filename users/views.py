@@ -300,6 +300,10 @@ def user_profile(request):
     user = request.user
     profile = user.profile
     
+    # Check if user is admin or super admin and redirect to admin dashboard
+    if profile.is_super_admin or profile.is_admin:
+        return redirect('admindashboard:dashboard')  # Adjust the URL name as needed
+    
     if request.method == 'POST':
         # Update User model fields
         user.first_name = request.POST.get('first_name', '')
