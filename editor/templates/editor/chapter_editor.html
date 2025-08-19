@@ -21,7 +21,7 @@
                                data-check-type="developer" 
                                {% if developer_check.reviewed %}checked{% endif %}>
                         <label for="developer-check" class="text-sm font-medium text-gray-700">
-                            <i class="fas fa-code text-blue-600"></i> Dev Reviewed
+                            Dev Reviewed
                         </label>
                     </div>
                     
@@ -31,7 +31,7 @@
                                data-check-type="final" 
                                {% if final_check.reviewed %}checked{% endif %}>
                         <label for="final-check" class="text-sm font-medium text-gray-700">
-                            <i class="fas fa-check-circle text-green-600"></i> Final Reviewed
+                            Final Reviewed
                         </label>
                     </div>
                     
@@ -669,20 +669,8 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())
             .then(data => {
                 if (data.success) {
-                    // Show success feedback
+                    // Show success feedback - no icon manipulation needed
                     const label = this.nextElementSibling;
-                    const icon = label.querySelector('i');
-                    if (isChecked) {
-                        icon.classList.add('text-green-600');
-                        icon.classList.remove('text-blue-600', 'text-gray-400');
-                    } else {
-                        if (checkType === 'developer') {
-                            icon.classList.add('text-blue-600');
-                        } else {
-                            icon.classList.add('text-gray-400');
-                        }
-                        icon.classList.remove('text-green-600');
-                    }
                 } else {
                     // Revert checkbox on error
                     this.checked = !isChecked;

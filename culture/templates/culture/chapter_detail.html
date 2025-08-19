@@ -195,10 +195,28 @@
         
       </div>
 
-      <!-- TOC button remains on the right -->
-      <button id="toc-button" class="flex items-center space-x-1 text-gray-700 lg:hidden p-2 ml-2 absolute right-0">
-        <i class="fas fa-list text-lg"></i>
-      </button>
+      <!-- Suggest Edit Button (Desktop) -->
+      <div class="hidden md:block absolute right-0 mr-32">
+        <a href="{% url 'editor:suggest_edit' app_label='culture' chapter_id=chapter.id %}" 
+           class="flex items-center space-x-1 text-gray-600 hover:text-[#863F3F] px-3 py-1 rounded-md transition-colors duration-200 text-sm">
+          <i class="fas fa-edit"></i>
+          <span>Suggest Edit</span>
+        </a>
+      </div>
+
+      <!-- Mobile buttons container -->
+      <div class="flex items-center space-x-2 absolute right-0 md:hidden">
+        <!-- Suggest Edit Button (Mobile - Icon only) -->
+        <a href="{% url 'editor:suggest_edit' app_label='culture' chapter_id=chapter.id %}" 
+           class="flex items-center text-gray-600 hover:text-[#863F3F] p-2 rounded-md transition-colors duration-200">
+          <i class="fas fa-edit text-lg"></i>
+        </a>
+        
+        <!-- TOC button -->
+        <button id="toc-button" class="flex items-center space-x-1 text-gray-700 p-2">
+          <i class="fas fa-list text-lg"></i>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -243,11 +261,6 @@
      <div class="mb-6 md:mb-8 pl-2 md:pl-6 lg:pl-8">
         <h1 class="text-3xl font-semibold text-[#DAB20C] mb-2">{{ district.name | upper }}</h1>
         <h2 class="text-5xl font-bold text-[#863F3F]">{{ chapter.name }}</h2>
-        <div class="mt-4">
-          <a href="{% url 'editor:suggest_edit' app_label='culture' chapter_id=chapter.id %}" class="text-sm text-gray-600 hover:text-[#863F3F] flex items-center">
-            <i class="fas fa-edit mr-1"></i> Suggest Edit
-          </a>
-        </div>
       </div> 
 
       <!-- Chapter Content Loop -->
