@@ -376,7 +376,7 @@ Profile - {{ user.first_name|default:user.username }} | Indian Districts
                         </a>
 
                         {% if user.profile.is_super_admin or user.profile.is_admin %}
-                        <a href="#" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
+                        <a href="{% url 'admindashboard:dashboard' %}" class="block p-4 border border-gray-200 rounded-lg hover:border-[#863F3F] hover:shadow-md transition-all duration-200">
                             <div class="flex items-center space-x-3">
                                 <div class="bg-[#863F3F] text-white p-2 rounded-lg">
                                     <i class="fas fa-tachometer-alt"></i>
