@@ -52,8 +52,8 @@
                     <div id="user-dropdown" class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transform scale-95 transition-all duration-200 origin-top-right z-50">
                         {% if user.is_authenticated %}
                             <div class="px-4 py-3 border-b border-gray-100">
-                                <span class="block text-sm text-gray-500">Welcome back!</span>
-                                <span class="block text-base font-semibold text-gray-800 truncate">{{ user.first_name|default:user.username }}</span>
+                                <span class="block text-sm text-gray-500">Welcome <b>{{user.first_name|default:user.username}}</b></span>
+                                {% comment %} <span class="block text-base font-semibold text-gray-800 truncate">{{ user.first_name|default:user.username }}</span> {% endcomment %}
                             </div>
                             <div class="py-2">
                                 <a href="{% url 'users:user_profile' %}" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
@@ -125,8 +125,7 @@
                     <div id="mobile-user-dropdown" class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transform scale-95 transition-all duration-200 origin-top-right z-50">
                         {% if user.is_authenticated %}
                             <div class="px-4 py-3 border-b border-gray-100">
-                                <span class="block text-sm text-gray-500">Welcome back!</span>
-                                <span class="block text-base font-semibold text-gray-800 truncate">{{ user.first_name|default:user.username }}</span>
+                                <span class="block text-sm text-gray-500">Welcome <b> {{user.first_name|default:user.username}}</b></span>
                             </div>
                             <div class="py-2">
                                 <a href="{% url 'users:user_profile' %}" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">

@@ -98,31 +98,35 @@
         <div class="mb-6">
             <div class="sm:hidden">
                 <label for="tabs" class="sr-only">Select a tab</label>
-                <select id="tabs" name="tabs" class="block w-full focus:ring-[#863F3F] focus:border-[#863F3F] border-gray-300 rounded-md">
-                    <option selected>All Users</option>
-                    <option>Admin Users</option>
-                    <option>Regular Users</option>
-                    <option>Inactive Users</option>
+                <select id="tabs" name="tabs" class="block w-full focus:ring-[#863F3F] focus:border-[#863F3F] border-gray-300 rounded-md" onchange="changeTab(this.value)">
+                    <option value="all" {% if tab_filter == 'all' %}selected{% endif %}>All Users</option>
+                    <option value="admin" {% if tab_filter == 'admin' %}selected{% endif %}>Admin Users</option>
+                    <option value="regular" {% if tab_filter == 'regular' %}selected{% endif %}>Regular Users</option>
+                    <option value="inactive" {% if tab_filter == 'inactive' %}selected{% endif %}>Inactive Users</option>
                 </select>
             </div>
             <div class="hidden sm:block">
                 <div class="border-b border-gray-200">
                     <nav class="-mb-px flex space-x-8">
-                        <a href="#" class="border-[#863F3F] text-[#863F3F] whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                        <a href="?tab=all{% if search_query %}&search={{ search_query }}{% endif %}" 
+                           class="{% if tab_filter == 'all' %}border-[#863F3F] text-[#863F3F]{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %} whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
                             All Users
-                            <span class="bg-[#863F3F] bg-opacity-10 text-[#863F3F] ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_users }}</span>
+                            <span class="{% if tab_filter == 'all' %}bg-[#863F3F] bg-opacity-10 text-[#863F3F]{% else %}bg-gray-100 text-gray-900{% endif %} ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_users }}</span>
                         </a>
-                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                        <a href="?tab=admin{% if search_query %}&search={{ search_query }}{% endif %}" 
+                           class="{% if tab_filter == 'admin' %}border-[#863F3F] text-[#863F3F]{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %} whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
                             Admins
-                            <span class="bg-gray-100 text-gray-900 ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ admin_users }}</span>
+                            <span class="{% if tab_filter == 'admin' %}bg-[#863F3F] bg-opacity-10 text-[#863F3F]{% else %}bg-gray-100 text-gray-900{% endif %} ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ admin_users }}</span>
                         </a>
-                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                        <a href="?tab=regular{% if search_query %}&search={{ search_query }}{% endif %}" 
+                           class="{% if tab_filter == 'regular' %}border-[#863F3F] text-[#863F3F]{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %} whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
                             Regular
-                            <span class="bg-gray-100 text-gray-900 ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ regular_users }}</span>
+                            <span class="{% if tab_filter == 'regular' %}bg-[#863F3F] bg-opacity-10 text-[#863F3F]{% else %}bg-gray-100 text-gray-900{% endif %} ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ regular_users }}</span>
                         </a>
-                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                        <a href="?tab=inactive{% if search_query %}&search={{ search_query }}{% endif %}" 
+                           class="{% if tab_filter == 'inactive' %}border-[#863F3F] text-[#863F3F]{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %} whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
                             Inactive
-                            <span class="bg-gray-100 text-gray-900 ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ inactive_users }}</span>
+                            <span class="{% if tab_filter == 'inactive' %}bg-[#863F3F] bg-opacity-10 text-[#863F3F]{% else %}bg-gray-100 text-gray-900{% endif %} ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ inactive_users }}</span>
                         </a>
                     </nav>
                 </div>
@@ -132,14 +136,15 @@
         <!-- Search and Filter -->
         <div class="bg-white shadow rounded-lg mb-6">
             <div class="px-4 py-5 sm:p-6">
-                <div class="flex flex-col sm:flex-row gap-4">
+                <form method="GET" class="flex flex-col sm:flex-row gap-4">
+                    <input type="hidden" name="tab" value="{{ tab_filter }}">
                     <div class="flex-1">
                         <label for="search" class="sr-only">Search users</label>
                         <div class="relative">
                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                 <i class="fas fa-search text-gray-400"></i>
                             </div>
-                            <input type="text" name="search" id="search" 
+                            <input type="text" name="search" id="search" value="{{ search_query }}"
                                    class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm" 
                                    placeholder="Search users...">
                         </div>
@@ -148,20 +153,23 @@
                         <select name="role_filter" 
                                 class="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm">
                             <option value="">All Roles</option>
-                            <option value="admin">Admin</option>
-                            <option value="editor">Editor</option>
-                            <option value="user">User</option>
+                            <option value="admin" {% if role_filter == 'admin' %}selected{% endif %}>Admin</option>
+                            <option value="user" {% if role_filter == 'user' %}selected{% endif %}>User</option>
                         </select>
                     </div>
                     <div class="sm:w-32">
                         <select name="status_filter" 
                                 class="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm">
                             <option value="">All Status</option>
-                            <option value="active">Active</option>
-                            <option value="inactive">Inactive</option>
+                            <option value="active" {% if status_filter == 'active' %}selected{% endif %}>Active</option>
+                            <option value="inactive" {% if status_filter == 'inactive' %}selected{% endif %}>Inactive</option>
                         </select>
                     </div>
-                </div>
+                    <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#863F3F] hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#863F3F]">
+                        <i class="fas fa-search mr-2"></i>
+                        Search
+                    </button>
+                </form>
             </div>
         </div>
 
@@ -303,12 +311,12 @@
         <div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6 mt-6 rounded-lg shadow">
             <div class="flex-1 flex justify-between sm:hidden">
                 {% if users.has_previous %}
-                <a href="?page={{ users.previous_page_number }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                <a href="?page={{ users.previous_page_number }}&tab={{ tab_filter }}{% if search_query %}&search={{ search_query }}{% endif %}{% if role_filter %}&role_filter={{ role_filter }}{% endif %}{% if status_filter %}&status_filter={{ status_filter }}{% endif %}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
                     Previous
                 </a>
                 {% endif %}
                 {% if users.has_next %}
-                <a href="?page={{ users.next_page_number }}" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                <a href="?page={{ users.next_page_number }}&tab={{ tab_filter }}{% if search_query %}&search={{ search_query }}{% endif %}{% if role_filter %}&role_filter={{ role_filter }}{% endif %}{% if status_filter %}&status_filter={{ status_filter }}{% endif %}" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
                     Next
                 </a>
                 {% endif %}
@@ -328,7 +336,7 @@
                 <div>
                     <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px">
                         {% if users.has_previous %}
-                        <a href="?page={{ users.previous_page_number }}" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <a href="?page={{ users.previous_page_number }}&tab={{ tab_filter }}{% if search_query %}&search={{ search_query }}{% endif %}{% if role_filter %}&role_filter={{ role_filter }}{% endif %}{% if status_filter %}&status_filter={{ status_filter }}{% endif %}" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
                             <i class="fas fa-chevron-left"></i>
                         </a>
                         {% endif %}
@@ -339,14 +347,14 @@
                             {{ num }}
                         </span>
                         {% else %}
-                        <a href="?page={{ num }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                        <a href="?page={{ num }}&tab={{ tab_filter }}{% if search_query %}&search={{ search_query }}{% endif %}{% if role_filter %}&role_filter={{ role_filter }}{% endif %}{% if status_filter %}&status_filter={{ status_filter }}{% endif %}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
                             {{ num }}
                         </a>
                         {% endif %}
                         {% endfor %}
                         
                         {% if users.has_next %}
-                        <a href="?page={{ users.next_page_number }}" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <a href="?page={{ users.next_page_number }}&tab={{ tab_filter }}{% if search_query %}&search={{ search_query }}{% endif %}{% if role_filter %}&role_filter={{ role_filter }}{% endif %}{% if status_filter %}&status_filter={{ status_filter }}{% endif %}" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         {% endif %}
@@ -357,4 +365,13 @@
         {% endif %}
     </div>
 </div>
+
+<script>
+function changeTab(tabValue) {
+    const url = new URL(window.location);
+    url.searchParams.set('tab', tabValue);
+    url.searchParams.delete('page'); // Reset to first page when changing tabs
+    window.location.href = url.toString();
+}
+</script>
 {% endblock content %}

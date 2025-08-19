@@ -185,6 +185,7 @@ def users(request):
     search_query = request.GET.get('search', '')
     role_filter = request.GET.get('role_filter', '')
     status_filter = request.GET.get('status_filter', '')
+    tab_filter = request.GET.get('tab', 'all')  # New tab parameter
     
     # Base queryset
     users_list = User.objects.all()
@@ -198,16 +199,25 @@ def users(request):
             Q(email__icontains=search_query)
         )
     
-    # Apply role filter
-    if role_filter == 'admin':
+    # Apply tab filter (overrides role_filter if tab is specified)
+    if tab_filter == 'admin':
+        users_list = users_list.filter(is_staff=True)
+    elif tab_filter == 'regular':
+        users_list = users_list.filter(is_staff=False, is_active=True)
+    elif tab_filter == 'inactive':
+        users_list = users_list.filter(is_active=False)
+    # 'all' shows all users, so no additional filter needed
+    
+    # Apply role filter (only if no tab filter is active)
+    elif role_filter == 'admin':
         users_list = users_list.filter(is_staff=True)
     elif role_filter == 'user':
         users_list = users_list.filter(is_staff=False)
     
-    # Apply status filter
-    if status_filter == 'active':
+    # Apply status filter (only if not using inactive tab)
+    if status_filter == 'active' and tab_filter != 'inactive':
         users_list = users_list.filter(is_active=True)
-    elif status_filter == 'inactive':
+    elif status_filter == 'inactive' and tab_filter != 'inactive':
         users_list = users_list.filter(is_active=False)
     
     # Order by date joined (newest first)
@@ -222,7 +232,7 @@ def users(request):
     total_users = User.objects.count()
     active_users = User.objects.filter(is_active=True).count()
     admin_users = User.objects.filter(is_staff=True).count()
-    regular_users = User.objects.filter(is_staff=False).count()
+    regular_users = User.objects.filter(is_staff=False, is_active=True).count()
     inactive_users = User.objects.filter(is_active=False).count()
     
     # Users joined this month
@@ -240,6 +250,7 @@ def users(request):
         'search_query': search_query,
         'role_filter': role_filter,
         'status_filter': status_filter,
+        'tab_filter': tab_filter,  # Add tab filter to context
     }
     
     return render(request, 'admindashboard/users.html', context)
