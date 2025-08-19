@@ -35,4 +35,7 @@ urlpatterns = [
 
     # suggest edit url (handles both chapters and districts)
     path('<str:app_label>/suggest_edit/<int:chapter_id>/', views.suggest_edit_view, name='suggest_edit'),
+
+    # URL to update review status of a chapter
+    path('<str:app_label>/<int:chapter_id>/update-review/', views.update_review_status, name='update_review_status'),
 ]

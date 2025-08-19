@@ -1,10 +1,13 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
 from django.db import transaction
-from django.http import Http404
+from django.http import Http404, JsonResponse
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.core.exceptions import PermissionDenied
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
+from django.utils import timezone
 import json
 from django.conf import settings
 from .forms import ChapterSelectForm
@@ -23,6 +26,9 @@ from statistic.models import (
     ParagraphBlock as StatP, ImageBlock as StatImg, ReferenceBlock as StatRef,
     ChartBlock # Import the new block
 )
+
+# Import review models
+from home.models import DeveloperCheck, FinalCheck
 
 # A central configuration to make views generic without rewriting the logic.
 APP_CONFIG = {
@@ -109,6 +115,29 @@ def chapter_editor_view(request, app_label, chapter_id):
         ChapterModel.objects.select_related('district__state'),
         id=chapter_id
     )
+
+    # Get or create review checks
+    developer_check = None
+    final_check = None
+    
+    if app_label == 'culture':
+        developer_check, _ = DeveloperCheck.objects.get_or_create(
+            cultural_chapter=chapter,
+            defaults={'created_by': request.user}
+        )
+        final_check, _ = FinalCheck.objects.get_or_create(
+            cultural_chapter=chapter,
+            defaults={'created_by': request.user}
+        )
+    elif app_label == 'statistic':
+        developer_check, _ = DeveloperCheck.objects.get_or_create(
+            statistical_chapter=chapter,
+            defaults={'created_by': request.user}
+        )
+        final_check, _ = FinalCheck.objects.get_or_create(
+            statistical_chapter=chapter,
+            defaults={'created_by': request.user}
+        )
 
     if request.method == 'POST':
         content_data_json = request.POST.get('content_data')
@@ -244,11 +273,76 @@ def chapter_editor_view(request, app_label, chapter_id):
         'content_blocks': content_blocks,
         'app_label': app_label,
         'app_title': config['title'],
+        'developer_check': developer_check,
+        'final_check': final_check,
     }
      # Clean up TinyMCE instances before rendering
     if hasattr(settings, 'TINYMCE_JS_URL'):
         settings.TINYMCE_JS_URL = settings.STATIC_URL + 'tinymce/tinymce.min.js'
     return render(request, 'editor/chapter_editor.html', context)
+
+@login_required
+@reviewer_required
+def update_review_status(request, app_label, chapter_id):
+    """AJAX view to update review status"""
+    if request.method != 'POST':
+        return JsonResponse({'success': False, 'error': 'Only POST method allowed'})
+    
+    try:
+        config = get_app_config(app_label)
+        ChapterModel = config['ChapterModel']
+        
+        chapter = get_object_or_404(
+            ChapterModel.objects.select_related('district__state'),
+            id=chapter_id
+        )
+        
+        data = json.loads(request.body)
+        check_type = data.get('check_type')
+        reviewed = data.get('reviewed', False)
+        
+        if check_type not in ['developer', 'final']:
+            return JsonResponse({'success': False, 'error': 'Invalid check type'})
+        
+        # Get or create the appropriate check object
+        if check_type == 'developer':
+            if app_label == 'culture':
+                check_obj, _ = DeveloperCheck.objects.get_or_create(
+                    cultural_chapter=chapter,
+                    defaults={'created_by': request.user}
+                )
+            else:  # statistic
+                check_obj, _ = DeveloperCheck.objects.get_or_create(
+                    statistical_chapter=chapter,
+                    defaults={'created_by': request.user}
+                )
+        else:  # final
+            if app_label == 'culture':
+                check_obj, _ = FinalCheck.objects.get_or_create(
+                    cultural_chapter=chapter,
+                    defaults={'created_by': request.user}
+                )
+            else:  # statistic
+                check_obj, _ = FinalCheck.objects.get_or_create(
+                    statistical_chapter=chapter,
+                    defaults={'created_by': request.user}
+                )
+        
+        # Update the review status
+        check_obj.reviewed = reviewed
+        check_obj.reviewed_by = request.user if reviewed else None
+        check_obj.reviewed_at = timezone.now() if reviewed else None
+        check_obj.save()
+        
+        return JsonResponse({
+            'success': True,
+            'reviewed': reviewed,
+            'reviewed_by': request.user.get_full_name() or request.user.username,
+            'reviewed_at': check_obj.reviewed_at.isoformat() if check_obj.reviewed_at else None
+        })
+        
+    except Exception as e:
+        return JsonResponse({'success': False, 'error': str(e)})
 
 @login_required
 def suggest_edit_view(request, app_label, chapter_id):

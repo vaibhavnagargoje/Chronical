@@ -12,9 +12,33 @@
                     <h1 class="text-2xl font-bold text-gray-800">Editing {{ app_title }} Chapter: <span class="text-[#863F3F]">{{ chapter.name }}</span></h1>
                     <p class="text-sm text-gray-500">{{ chapter.district.name }}, {{ chapter.district.state.name }}</p>
                 </div>
-                <button id="save-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition-colors shadow-sm">
-                    <i class="fas fa-save mr-2"></i> Save Changes
-                </button>
+                
+                <!-- Review Checkboxes and Save Button -->
+                <div class="flex items-center gap-4">
+                    <!-- Developer Check -->
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="developer-check" class="review-checkbox" 
+                               data-check-type="developer" 
+                               {% if developer_check.reviewed %}checked{% endif %}>
+                        <label for="developer-check" class="text-sm font-medium text-gray-700">
+                            <i class="fas fa-code text-blue-600"></i> Dev Reviewed
+                        </label>
+                    </div>
+                    
+                    <!-- Final Check -->
+                    <div class="flex items-center gap-2">
+                        <input type="checkbox" id="final-check" class="review-checkbox" 
+                               data-check-type="final" 
+                               {% if final_check.reviewed %}checked{% endif %}>
+                        <label for="final-check" class="text-sm font-medium text-gray-700">
+                            <i class="fas fa-check-circle text-green-600"></i> Final Reviewed
+                        </label>
+                    </div>
+                    
+                    <button id="save-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition-colors shadow-sm">
+                        <i class="fas fa-save mr-2"></i> Save Changes
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -622,6 +646,56 @@ document.addEventListener('DOMContentLoaded', () => {
         
         contentDataInput.value = JSON.stringify(allBlocksData);
         form.submit();
+    });
+
+    // Handle review checkbox changes
+    document.querySelectorAll('.review-checkbox').forEach(checkbox => {
+        checkbox.addEventListener('change', function() {
+            const checkType = this.dataset.checkType;
+            const isChecked = this.checked;
+            
+            // Send AJAX request to update review status
+            fetch(`{% url 'editor:update_review_status' app_label chapter.id %}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': document.querySelector('[name=csrfmiddlewaretoken]').value
+                },
+                body: JSON.stringify({
+                    check_type: checkType,
+                    reviewed: isChecked
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Show success feedback
+                    const label = this.nextElementSibling;
+                    const icon = label.querySelector('i');
+                    if (isChecked) {
+                        icon.classList.add('text-green-600');
+                        icon.classList.remove('text-blue-600', 'text-gray-400');
+                    } else {
+                        if (checkType === 'developer') {
+                            icon.classList.add('text-blue-600');
+                        } else {
+                            icon.classList.add('text-gray-400');
+                        }
+                        icon.classList.remove('text-green-600');
+                    }
+                } else {
+                    // Revert checkbox on error
+                    this.checked = !isChecked;
+                    alert('Error updating review status: ' + (data.error || 'Unknown error'));
+                }
+            })
+            .catch(error => {
+                // Revert checkbox on error
+                this.checked = !isChecked;
+                alert('Network error updating review status');
+                console.error('Error:', error);
+            });
+        });
     });
 });
 </script>

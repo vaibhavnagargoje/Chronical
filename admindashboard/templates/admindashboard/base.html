@@ -79,7 +79,7 @@
                             <a href="{% url 'admindashboard:comments' %}" 
                                class="{% if request.resolver_match.url_name == 'comments' %}bg-[#863F3F] bg-opacity-10 text-[#863F3F]{% else %}text-gray-600 hover:bg-gray-50 hover:text-[#863F3F]{% endif %} group flex items-center px-3 py-2.5 text-sm font-medium rounded-lg transition-all duration-200">
                                 <i class="fas fa-comments w-5 h-5 mr-3 {% if request.resolver_match.url_name == 'comments' %}text-[#863F3F]{% else %}text-gray-400 group-hover:text-[#863F3F]{% endif %}"></i>
-                                Comments
+                                Contact Us
                                 <span class="ml-auto bg-[#DAB20C] bg-opacity-20 text-[#DAB20C] px-2 py-0.5 rounded-full text-xs">
                                     {{ total_comments|default:0 }}
                                 </span>
