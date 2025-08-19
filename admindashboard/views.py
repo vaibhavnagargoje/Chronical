@@ -123,39 +123,79 @@ def chapters(request):
     # Get search and filter parameters
     search_query = request.GET.get('search', '')
     district_filter = request.GET.get('district_filter', '')
-    type_filter = request.GET.get('type_filter', '')
+    type_filter = request.GET.get('type_filter', 'all')
     
-    # Combine cultural and statistical chapters (you might want to create a proper unified model)
-    cultural_chapters = CulturalChapter.objects.select_related('district', 'district__state').annotate(
-        chapter_type=Value('cultural', output_field=CharField())
-    )
-    statistical_chapters = StatisticalChapter.objects.select_related('district', 'district__state').annotate(
-        chapter_type=Value('statistical', output_field=CharField())
-    )
+    # Prepare combined chapters list
+    chapters_list = []
     
-    # For now, let's work with cultural chapters as primary example
-    chapters_list = cultural_chapters
+    # Get cultural chapters
+    cultural_chapters = CulturalChapter.objects.select_related('district', 'district__state').all()
+    for chapter in cultural_chapters:
+        chapters_list.append({
+            'id': chapter.id,
+            'name': chapter.name,
+            'title': chapter.name,  # Using name as title for cultural chapters
+            'description': f"Cultural chapter covering {chapter.name.lower()} of {chapter.district.name}",
+            'district': chapter.district,
+            'chapter_type': 'cultural',
+            'updated_at': chapter.updated_at,
+            'status': 'published',  # Assuming published status
+            'model_type': 'cultural',
+            'slug': chapter.slug,
+        })
+    
+    # Get statistical chapters
+    statistical_chapters = StatisticalChapter.objects.select_related('district', 'district__state').all()
+    for chapter in statistical_chapters:
+        chapters_list.append({
+            'id': chapter.id,
+            'name': chapter.name,
+            'title': chapter.name,  # Using name as title for statistical chapters
+            'description': f"Statistical data and analysis for {chapter.name.lower()} in {chapter.district.name}",
+            'district': chapter.district,
+            'chapter_type': 'statistical',
+            'updated_at': chapter.updated_at,
+            'status': 'published',  # Assuming published status
+            'model_type': 'statistical',
+            'slug': chapter.slug,
+        })
     
     # Apply search filter
     if search_query:
-        chapters_list = chapters_list.filter(
-            Q(title__icontains=search_query) |
-            Q(description__icontains=search_query) |
-            Q(district__name__icontains=search_query)
-        )
+        chapters_list = [
+            chapter for chapter in chapters_list
+            if (search_query.lower() in chapter['name'].lower() or
+                search_query.lower() in chapter['description'].lower() or
+                search_query.lower() in chapter['district'].name.lower() or
+                search_query.lower() in chapter['district'].state.name.lower())
+        ]
     
     # Apply district filter
     if district_filter:
-        chapters_list = chapters_list.filter(district_id=district_filter)
+        chapters_list = [
+            chapter for chapter in chapters_list
+            if chapter['district'].id == int(district_filter)
+        ]
     
     # Apply type filter
     if type_filter == 'cultural':
-        chapters_list = cultural_chapters
+        chapters_list = [chapter for chapter in chapters_list if chapter['chapter_type'] == 'cultural']
     elif type_filter == 'statistical':
-        chapters_list = statistical_chapters
+        chapters_list = [chapter for chapter in chapters_list if chapter['chapter_type'] == 'statistical']
+    
+    # Sort by updated_at (newest first)
+    chapters_list.sort(key=lambda x: x['updated_at'] or timezone.now(), reverse=True)
+    
+    # Convert to objects for template compatibility
+    class ChapterObject:
+        def __init__(self, data):
+            for key, value in data.items():
+                setattr(self, key, value)
+    
+    chapters_objects = [ChapterObject(chapter) for chapter in chapters_list]
     
     # Pagination
-    paginator = Paginator(chapters_list, 18)  # Show 18 chapters per page (3x6 grid)
+    paginator = Paginator(chapters_objects, 18)  # Show 18 chapters per page (3x6 grid)
     page_number = request.GET.get('page')
     chapters_paginated = paginator.get_page(page_number)
     

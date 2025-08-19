@@ -113,65 +113,69 @@
         <div class="mb-6">
             <div class="sm:hidden">
                 <label for="tabs" class="sr-only">Select a tab</label>
-                <select id="tabs" name="tabs" class="block w-full focus:ring-[#863F3F] focus:border-[#863F3F] border-gray-300 rounded-md">
-                    <option selected>All Chapters</option>
-                    <option>Cultural Chapters</option>
-                    <option>Statistical Chapters</option>
+                <select id="mobile-tabs" name="tabs" class="block w-full focus:ring-[#863F3F] focus:border-[#863F3F] border-gray-300 rounded-md">
+                    <option value="all" {% if type_filter == 'all' %}selected{% endif %}>All Chapters</option>
+                    <option value="cultural" {% if type_filter == 'cultural' %}selected{% endif %}>Cultural Chapters</option>
+                    <option value="statistical" {% if type_filter == 'statistical' %}selected{% endif %}>Statistical Chapters</option>
                 </select>
             </div>
             <div class="hidden sm:block">
                 <div class="border-b border-gray-200">
                     <nav class="-mb-px flex space-x-8">
-                        <a href="#" class="border-[#863F3F] text-[#863F3F] whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                        <a href="?type_filter=all{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}" 
+                           class="{% if type_filter == 'all' %}border-[#863F3F] text-[#863F3F]{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %} whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
                             All Chapters
-                            <span class="bg-[#863F3F] bg-opacity-10 text-[#863F3F] ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_chapters }}</span>
+                            <span class="{% if type_filter == 'all' %}bg-[#863F3F] bg-opacity-10 text-[#863F3F]{% else %}bg-gray-100 text-gray-900{% endif %} ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_chapters }}</span>
                         </a>
-                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                        <a href="?type_filter=cultural{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}" 
+                           class="{% if type_filter == 'cultural' %}border-[#863F3F] text-[#863F3F]{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %} whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
                             Cultural
-                            <span class="bg-gray-100 text-gray-900 ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_cultural_chapters }}</span>
+                            <span class="{% if type_filter == 'cultural' %}bg-[#863F3F] bg-opacity-10 text-[#863F3F]{% else %}bg-gray-100 text-gray-900{% endif %} ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_cultural_chapters }}</span>
                         </a>
-                        <a href="#" class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                        <a href="?type_filter=statistical{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}" 
+                           class="{% if type_filter == 'statistical' %}border-[#863F3F] text-[#863F3F]{% else %}border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300{% endif %} whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
                             Statistical
-                            <span class="bg-gray-100 text-gray-900 ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_statistical_chapters }}</span>
+                            <span class="{% if type_filter == 'statistical' %}bg-[#863F3F] bg-opacity-10 text-[#863F3F]{% else %}bg-gray-100 text-gray-900{% endif %} ml-2 py-0.5 px-2.5 rounded-full text-xs font-medium">{{ total_statistical_chapters }}</span>
                         </a>
                     </nav>
                 </div>
             </div>
         </div>
 
-        <!-- Search and Filter -->
+        <!-- Search and Filter Form -->
         <div class="bg-white shadow rounded-lg mb-6">
             <div class="px-4 py-5 sm:p-6">
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <div class="flex-1">
-                        <label for="search" class="sr-only">Search chapters</label>
-                        <div class="relative">
-                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                <i class="fas fa-search text-gray-400"></i>
+                <form method="GET" action="">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="flex-1">
+                            <label for="search" class="sr-only">Search chapters</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <i class="fas fa-search text-gray-400"></i>
+                                </div>
+                                <input type="text" name="search" id="search" value="{{ search_query }}"
+                                       class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm" 
+                                       placeholder="Search chapters by name, description, district...">
                             </div>
-                            <input type="text" name="search" id="search" 
-                                   class="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:ring-1 focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm" 
-                                   placeholder="Search chapters...">
                         </div>
+                        <div class="sm:w-48">
+                            <select name="district_filter" 
+                                    class="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm">
+                                <option value="">All Districts</option>
+                                {% for district in districts %}
+                                <option value="{{ district.id }}" {% if district_filter == district.id|stringformat:"s" %}selected{% endif %}>
+                                    {{ district.name }}, {{ district.state.name }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <input type="hidden" name="type_filter" value="{{ type_filter }}">
+                        <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#863F3F] hover:bg-opacity-90">
+                            <i class="fas fa-search mr-2"></i>
+                            Search
+                        </button>
                     </div>
-                    <div class="sm:w-48">
-                        <select name="district_filter" 
-                                class="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm">
-                            <option value="">All Districts</option>
-                            {% for district in districts %}
-                            <option value="{{ district.id }}">{{ district.name }}</option>
-                            {% endfor %}
-                        </select>
-                    </div>
-                    <div class="sm:w-32">
-                        <select name="type_filter" 
-                                class="block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#863F3F] focus:border-[#863F3F] sm:text-sm">
-                            <option value="">All Types</option>
-                            <option value="cultural">Cultural</option>
-                            <option value="statistical">Statistical</option>
-                        </select>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
 
@@ -194,7 +198,9 @@
 
                     <div class="flex items-center justify-between mb-4">
                         <div class="flex items-center">
-                            
+                            <div class="flex-shrink-0 p-2 rounded-md {% if chapter.chapter_type == 'cultural' %}bg-blue-100{% else %}bg-green-100{% endif %}">
+                                <i class="{% if chapter.chapter_type == 'cultural' %}fas fa-palette text-blue-600{% else %}fas fa-chart-bar text-green-600{% endif %} text-lg"></i>
+                            </div>
                             <div class="ml-3">
                                 <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium {% if chapter.chapter_type == 'cultural' %}bg-blue-100 text-blue-800{% else %}bg-green-100 text-green-800{% endif %}">
                                     {{ chapter.chapter_type|title }}
@@ -212,29 +218,17 @@
                     </div>
                     
                     <div class="mb-4">
-                        <h3 class="text-lg font-medium text-gray-900 mb-2">{{ chapter.title }}</h3>
+                        <h3 class="text-lg font-medium text-gray-900 mb-2">{{ chapter.name }}</h3>
                         <p class="text-sm text-gray-600 line-clamp-3">{{ chapter.description|truncatechars:120 }}</p>
                     </div>
                     
                     
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-2">
-                            {% if chapter.status == 'published' %}
                             <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
                                 <i class="fas fa-check-circle mr-1"></i>
                                 Published
                             </span>
-                            {% elif chapter.status == 'draft' %}
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
-                                <i class="fas fa-edit mr-1"></i>
-                                Draft
-                            </span>
-                            {% else %}
-                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
-                                <i class="fas fa-clock mr-1"></i>
-                                Pending
-                            </span>
-                            {% endif %}
                         </div>
                         <div class="flex items-center space-x-2">
                             <a href="#" class="text-[#863F3F] hover:text-[#863F3F]-dark text-sm font-medium">
@@ -249,7 +243,13 @@
                 <div class="text-center py-12">
                     <i class="fas fa-book text-4xl text-gray-300 mb-4"></i>
                     <h3 class="text-lg font-medium text-gray-900 mb-2">No chapters found</h3>
-                    <p class="text-sm text-gray-500 mb-4">Get started by creating your first chapter.</p>
+                    <p class="text-sm text-gray-500 mb-4">{% if search_query %}No chapters match your search criteria.{% else %}Get started by creating your first chapter.{% endif %}</p>
+                    {% if search_query %}
+                    <a href="?" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 mr-3">
+                        <i class="fas fa-times mr-2"></i>
+                        Clear Search
+                    </a>
+                    {% endif %}
                     <button class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#863F3F] hover:bg-opacity-90">
                         <i class="fas fa-plus mr-2"></i>
                         Add Chapter
@@ -264,12 +264,12 @@
         <div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6 mt-6 rounded-lg shadow">
             <div class="flex-1 flex justify-between sm:hidden">
                 {% if chapters.has_previous %}
-                <a href="?page={{ chapters.previous_page_number }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                <a href="?page={{ chapters.previous_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}&type_filter={{ type_filter }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
                     Previous
                 </a>
                 {% endif %}
                 {% if chapters.has_next %}
-                <a href="?page={{ chapters.next_page_number }}" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                <a href="?page={{ chapters.next_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}&type_filter={{ type_filter }}" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
                     Next
                 </a>
                 {% endif %}
@@ -289,7 +289,7 @@
                 <div>
                     <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px">
                         {% if chapters.has_previous %}
-                        <a href="?page={{ chapters.previous_page_number }}" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <a href="?page={{ chapters.previous_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}&type_filter={{ type_filter }}" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
                             <i class="fas fa-chevron-left"></i>
                         </a>
                         {% endif %}
@@ -300,14 +300,14 @@
                             {{ num }}
                         </span>
                         {% else %}
-                        <a href="?page={{ num }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                        <a href="?page={{ num }}{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}&type_filter={{ type_filter }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
                             {{ num }}
                         </a>
                         {% endif %}
                         {% endfor %}
                         
                         {% if chapters.has_next %}
-                        <a href="?page={{ chapters.next_page_number }}" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <a href="?page={{ chapters.next_page_number }}{% if search_query %}&search={{ search_query }}{% endif %}{% if district_filter %}&district_filter={{ district_filter }}{% endif %}&type_filter={{ type_filter }}" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
                             <i class="fas fa-chevron-right"></i>
                         </a>
                         {% endif %}
@@ -332,6 +332,15 @@
         if (!event.target.closest('#add-chapter-menu-button') && !event.target.closest('#add-chapter-menu')) {
             document.getElementById('add-chapter-menu').classList.add('hidden');
         }
+    });
+
+    // Mobile tabs functionality
+    document.getElementById('mobile-tabs').addEventListener('change', function() {
+        const typeFilter = this.value;
+        const currentUrl = new URL(window.location);
+        currentUrl.searchParams.set('type_filter', typeFilter);
+        currentUrl.searchParams.delete('page'); // Reset to first page
+        window.location.href = currentUrl.toString();
     });
 </script>
 {% endblock extra_js %}
