@@ -32,15 +32,15 @@ DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 # ALLOWED_HOSTS = ['https://ead3-49-248-175-215.ngrok-free.app/','ead3-49-248-175-215.ngrok-free.app','localhost','127.0.0.1']
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', 'localhost,127.0.0.1,4ff93c538fab.ngrok-free.app').split(',')
 
-
 CORS_ALLOW_CREDENTIALS = True  
-CORS_ORIGIN_ALLOW_ALL = False if not DEBUG else True
+CORS_ORIGIN_ALLOW_ALL = DEBUG
 
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
-    '4ff93c538fab.ngrok-free.app',
+    'http://localhost:3000',
     'https://4ff93c538fab.ngrok-free.app',
+    'http://4ff93c538fab.ngrok-free.app',
 ]
 
 if not DEBUG:
@@ -88,15 +88,11 @@ INSTALLED_APPS = [
 TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = ["127.0.0.1"]
 
-if DEBUG:
-    NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
-else:
-    NPM_BIN_PATH = r"/usr/bin/npm"
-# settings.py
-if DEBUG:
-    FFMPEG_PATH = r'C:\ProgramData\chocolatey\bin\ffmpeg.exe'
-else:
-    FFMPEG_PATH = r'/usr/bin/ffmpeg'
+# NPM path configuration
+NPM_BIN_PATH = os.getenv('NPM_BIN_PATH', r"C:\Program Files\nodejs\npm.cmd")
+
+# FFMPEG path configuration  
+FFMPEG_PATH = os.getenv('FFMPEG_PATH', r'C:\ProgramData\chocolatey\bin\ffmpeg.exe')
 
 MIDDLEWARE = [
     
@@ -118,7 +114,6 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'Chronical.urls'
 
 # Allow frontend to send cookies (important for session + CSRF)
-CORS_ALLOW_CREDENTIALS = True
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # For CSRF: allow frontend domains to be trusted
@@ -150,60 +145,20 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Chronical.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-if DEBUG:
-
-    DATABASES = {  
-        'default': {  
-            'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
-            'NAME': os.getenv('DB_NAME'),
-            'USER': os.getenv('DB_USER'),
-            'PASSWORD': os.getenv('DB_PASSWORD'),
-            'HOST': os.getenv('DB_HOST', '127.0.0.1'),
-            'PORT': os.getenv('DB_PORT', '3306'),
-            'OPTIONS': {
-                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-            }           
-        }
+# Database - works for both debug and production
+DATABASES = {  
+    'default': {  
+        'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST', '127.0.0.1'),
+        'PORT': os.getenv('DB_PORT', '3306'),
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }           
     }
-
-#     DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'chronical',
-#         'USER': 'postgres',
-#         'PASSWORD': '8806',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
-
-else:
-    DATABASES = {  
-        'default': {  
-            'ENGINE': os.getenv('DB_ENGINE', 'django.db.backends.mysql'),
-            'NAME': os.getenv('DB_NAME'),
-            'USER': os.getenv('DB_USER'),
-            'PASSWORD': os.getenv('DB_PASSWORD'),
-            'HOST': os.getenv('DB_HOST', '127.0.0.1'),
-            'PORT': os.getenv('DB_PORT', '3306'),
-            'OPTIONS': {
-                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-            }           
-        }  
-    }  
-
-
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -265,17 +220,28 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# Security settings - properly configured for debug/production
+if DEBUG:
+    # Development settings - no SSL enforcement
+    SECURE_SSL_REDIRECT = False
+    SESSION_COOKIE_SECURE = False
+    CSRF_COOKIE_SECURE = False
+    SECURE_HSTS_SECONDS = 0
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = False
+    SECURE_HSTS_PRELOAD = False
+else:
+    # Production settings - enforce SSL
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
+    SECURE_HSTS_SECONDS = 31536000
+    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+    SECURE_HSTS_PRELOAD = True
 
-
+# Common security settings for both modes
 SECURE_BROWSER_XSS_FILTER = True
 SECURE_CONTENT_TYPE_NOSNIFF = True
-SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-SECURE_HSTS_SECONDS = 31536000
 SECURE_REDIRECT_EXEMPT = []
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
-SECURE_HSTS_PRELOAD = True
 
 LOGIN_URL = 'users:login'
 
