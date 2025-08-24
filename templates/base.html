@@ -28,18 +28,34 @@
             </div>
 
             <div class="hidden md:flex items-center space-x-4">
-                <!-- Wrap the input in a form that points to your search URL -->                
-                 <form method="GET" action="{% url 'search:query' %}" class="relative">
-                    <input
-                        type="search"
-                        name="q" {# The 'name' attribute is essential #}
-                        placeholder="Search..."
-                        class="search-input pl-10 pr-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-[#863F3F] focus:border-[#863F3F]"
-                        value="{{ request.GET.q }}" {# Pre-fills the search box with the current query #}
-                    >
+                <!-- Desktop Search: Now expandable like mobile -->
+                <form id="desktop-search-form" method="GET" action="{% url 'search:query' %}" class="relative">
+                    <!-- Search Icon Button -->
+                    <button id="desktop-search-button" type="button" class="text-gray-600 hover:text-[#863F3F] transition-colors duration-200 p-2">
+                        <i class="fas fa-search text-xl"></i>
+                    </button>
                     
-                    <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
-                    {# Note: A submit button isn't strictly necessary as pressing Enter works, but you can add one if you like #}
+                    <!-- Expandable Search Container -->
+                    <div id="desktop-search-container" class="absolute top-0 right-0 transform transition-all duration-300 ease-out opacity-0 scale-x-0 origin-right">
+                        <div class="flex items-center bg-white border border-gray-300 rounded-md shadow-lg">                            
+                            <input 
+                                type="text"
+                                name="q"
+                                id="desktop-search-input"
+                                placeholder="Search..." 
+                                class="search-input pl-4 pr-2 py-2 focus:outline-none focus:ring-1 focus:ring-[#863F3F] focus:border-[#863F3F] w-64 rounded-l-md"
+                                value="{{ request.GET.q }}"
+                            >
+                            <!-- Submit button -->
+                            <button id="desktop-search-submit-button" type="submit" class="px-3 py-2 text-[#863F3F] hover:text-[#863F3F]-dark transition-colors">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                            <!-- Close button -->
+                            <button id="desktop-search-close-button" type="button" class="px-3 py-2 text-gray-400 hover:text-gray-600 transition-colors border-l border-gray-200 rounded-r-md">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
                 </form>
                 
                 <!-- User Icon with Dropdown -->
@@ -96,7 +112,7 @@
                     <div id="mobile-search-container" class="absolute top-0 right-0 transform transition-all duration-300 ease-out opacity-0 scale-x-0 origin-right">
                         <div class="flex items-center bg-white border border-gray-300 ">                            
                             <input 
-                                type="search"
+                                type="text"
                                 name="q" {# The 'name' attribute is essential #}
                                 id="mobile-search-input"
                                 placeholder="Search..." 
@@ -234,6 +250,36 @@
 
     <script>
 document.addEventListener('DOMContentLoaded', function () {
+    // Desktop search functionality
+    const desktopSearchButton = document.getElementById('desktop-search-button');
+    const desktopSearchContainer = document.getElementById('desktop-search-container');
+    const desktopSearchInput = document.getElementById('desktop-search-input');
+    const desktopSearchCloseButton = document.getElementById('desktop-search-close-button');
+
+    // Function to open the desktop search bar
+    desktopSearchButton.addEventListener('click', function (event) {
+        event.stopPropagation();
+        desktopSearchContainer.classList.remove('opacity-0', 'scale-x-0');
+        desktopSearchContainer.classList.add('opacity-100', 'scale-x-100');
+        desktopSearchInput.focus();
+    });
+
+    // Function to close the desktop search bar
+    function closeDesktopSearch() {
+        desktopSearchContainer.classList.add('opacity-0', 'scale-x-0');
+        desktopSearchContainer.classList.remove('opacity-100', 'scale-x-100');
+    }
+
+    desktopSearchCloseButton.addEventListener('click', closeDesktopSearch);
+
+    // Close the desktop search bar if user clicks outside of it
+    document.addEventListener('click', function (event) {
+        const isClickInside = desktopSearchContainer.contains(event.target) || desktopSearchButton.contains(event.target);
+        if (!isClickInside) {
+            closeDesktopSearch();
+        }
+    });
+
     // Mobile search functionality
     const mobileSearchButton = document.getElementById('mobile-search-button');
     const mobileSearchContainer = document.getElementById('mobile-search-container');
