@@ -21,6 +21,6 @@ venv/
 Thumbs.db
 media/
 gunicorn_config.py
-importdata
+
 media.zip
 chronical_dump.sql
