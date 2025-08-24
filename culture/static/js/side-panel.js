@@ -643,16 +643,16 @@ document.addEventListener('DOMContentLoaded', function () {
       style.textContent = `
         .word-highlight {
           color: #863F3F;
-          font-weight: 500;
-          text-decoration: underline;
-          text-decoration-color: #DAB20C;
-          text-decoration-thickness: 2px;
+          font-weight: 400;
+          // text-decoration: underline;
+          // text-decoration-color: #DAB20C;
+          text-decoration-thickness: 1px;
           cursor: pointer;
           transition: all 0.2s ease;
         }
         .word-highlight:hover {
-          background-color: rgba(218, 178, 12, 0.1);
-          text-decoration-thickness: 3px;
+          // background-color: rgba(218, 178, 12, 0.1);
+          // text-decoration-thickness: 3px;
         }
       `;
       document.head.appendChild(style);
