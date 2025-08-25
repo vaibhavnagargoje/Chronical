@@ -650,10 +650,10 @@ document.addEventListener('DOMContentLoaded', function () {
           cursor: pointer;
           transition: all 0.2s ease;
         }
-        .word-highlight:hover {
-          // background-color: rgba(218, 178, 12, 0.1);
-          // text-decoration-thickness: 3px;
-        }
+        // .word-highlight:hover {
+        //   // background-color: rgba(218, 178, 12, 0.1);
+        //   // text-decoration-thickness: 3px;
+        // }
       `;
       document.head.appendChild(style);
     }

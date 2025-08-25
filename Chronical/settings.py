@@ -121,11 +121,7 @@ ROOT_URLCONF = 'Chronical.urls'
 CORS_ALLOW_CREDENTIALS = True
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-# For CSRF: allow frontend domains to be trusted
-CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:3000",
-    "https://5dea8d3a149a.ngrok-free.app",
-]
+
 
 
 CORS_ALLOW_CREDENTIALS = True  #
