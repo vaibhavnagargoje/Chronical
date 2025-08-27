@@ -43,6 +43,7 @@ def district_detail(request, state_slug, district_slug):
     """
     state = get_object_or_404(State, slug=state_slug)
     district = get_object_or_404(state.districts, slug=district_slug)
+    all_districts_in_state = state.districts.all()
     cultural_chapters_qs = district.cultural_chapters.all().order_by('name')
 
     statistical_chapters_qs = district.statistical_chapters.all().order_by('name')   # Uncomment if you have statistical chapters
@@ -114,6 +115,7 @@ def district_detail(request, state_slug, district_slug):
         'district_paragraphs': district_paragraphs,
         'district_quick_facts': district_quick_facts,
         'district_gif_images': district_gif_images,  # Pass GIF images to the template
+        'all_districts_in_state': all_districts_in_state,
         # 'district_sections': district_sections,
         
     }
