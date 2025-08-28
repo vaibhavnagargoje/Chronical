@@ -13,16 +13,7 @@
             <h1 class="text-2xl md:text-3xl font-bold text-[#863F3F] mb-2 md:mb-4">Search Results for "{{ query }}"</h1>
             <p class="text-gray-700 text-sm md:text-base">Found {{ total_results }} results</p>
 
-            <div class="mt-4 md:mt-6">
-                <!-- Desktop Search Bar -->
-                <div class="relative max-w-2xl hidden md:block">
-                    <input type="search" name="q" value="{{ query }}" class="w-full pl-10 pr-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#863F3F] shadow-sm" placeholder="Search Encyclopedia...">
-                    <i class="fas fa-search absolute left-4 top-4 text-gray-400"></i>
-                    <button type="submit" class="absolute right-3 top-3 bg-[#863F3F] text-white px-4 py-1 rounded-full hover:bg-opacity-90 transition-colors">Search</button>
-                </div>
-                
-                <!-- ... Mobile Search Bar with Filters ... This part of the form needs all filter inputs to be inside the <form> tag -->
-            </div>
+            <!-- Search bar removed as requested -->
         </form>
     </div>
 </div>
@@ -52,30 +43,6 @@
                                 {% endif %}
                             {% endfor %}
                         </div>
-                    </div>
-                    
-                    <!-- State Filter -->
-                    <div class="mb-4">
-                        <h4 class="font-medium text-gray-800 mb-2">State</h4>
-                        <div class="space-y-2">
-                           {% for state, count in facets.states.items %}
-                                <label class="flex items-center">
-                                    <input type="checkbox" name="state" value="{{ state }}" class="rounded text-[#863F3F] focus:ring-[#863F3F]" {% if state in selected_filters.states %}checked{% endif %}>
-                                    <span class="ml-2 text-gray-700">{{ state }} ({{ count }})</span>
-                                </label>
-                           {% endfor %}
-                        </div>
-                    </div>
-                    
-                    <!-- Last Updated Filter -->
-                    <div>
-                        <h4 class="font-medium text-gray-800 mb-2">Last Updated</h4>
-                        <select name="last_updated" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-[#863F3F] focus:border-[#863F3F]">
-                            <option value="">Any time</option>
-                            <option value="week" {% if selected_filters.last_updated == 'week' %}selected{% endif %}>Last week</option>
-                            <option value="month" {% if selected_filters.last_updated == 'month' %}selected{% endif %}>Last month</option>
-                            <option value="year" {% if selected_filters.last_updated == 'year' %}selected{% endif %}>Last year</option>
-                        </select>
                     </div>
                     
                     <div class="mt-6 pt-3 border-t">
@@ -151,6 +118,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+ <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Mobile filter toggle
+        document.getElementById('mobile-filter-toggle').addEventListener('click', function() {
+            const filtersPanel = document.getElementById('mobile-filters-panel');
+            const filterIcon = this.querySelector('i');
+            
+            filtersPanel.classList.toggle('hidden');
+            
+            // Toggle icon between filter and close
+            if (filtersPanel.classList.contains('hidden')) {
+                filterIcon.className = 'fas fa-filter text-gray-600 text-sm';
+            } else {
+                filterIcon.className = 'fas fa-times text-gray-600 text-sm';
+            }
+        });
+        
+        // Clear filters
+        document.getElementById('clear-filters').addEventListener('click', function() {
+            const checkboxes = document.querySelectorAll('#mobile-filters-panel input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+        });
+    </script>
+
+
 
  <!-- JavaScript for mobile menu toggle -->
     <script>
