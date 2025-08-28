@@ -5,6 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} add favicon for this {% endcomment %}
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
     <title>
     
         {% block title %}Indian Districts {% endblock title %}
@@ -23,7 +25,8 @@
         <div class="flex justify-between items-center py-4">
             <div class="flex items-center space-x-4">
                 <a href="{% url 'home:index' %}" class="flex items-center"> {# Changed to dynamic URL #}
-                    <img src="{% static 'img/cka_logo.png' %}" alt="Logo" class="h-7 md:h-10" />
+                    <img src="{% static 'img/flame-logo.png' %}" alt="Logo" class="h-7 md:h-10 mr-1" />
+                    <img src="{% static 'img/cka_logo.png' %}" alt="Logo" class="h-7 md:h-9" />
                 </a>
             </div>
 
