@@ -307,7 +307,7 @@
                     alt="{{ block.alt_text }}" 
                     class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg  object-cover block" 
                     style="aspect-ratio: auto;"
-                    loading="lazy"
+                    {% comment %} loading="lazy" {% endcomment %}
                   >
                 </picture>
                 {% if block.caption and block.caption != "Image (no caption)" %}
