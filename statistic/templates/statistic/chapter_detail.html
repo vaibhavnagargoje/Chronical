@@ -198,11 +198,20 @@ This template is for the Statistical Chapter detail page.
       </div>
 
       <!-- Suggest Edit Button (Desktop) -->
-      <div class="hidden md:block absolute right-0 mr-32">
+      <div class="hidden lg:block absolute right-0 mr-32">
         <a href="{% url 'editor:suggest_edit' app_label='statistic' chapter_id=chapter.id %}" 
            class="flex items-center space-x-1 text-gray-600 hover:text-[#863F3F] px-3 py-1 rounded-md transition-colors duration-200 text-sm">
           <i class="fas fa-edit"></i>
           <span>Suggest Edit</span>
+        </a>
+      </div>
+
+      <!-- Suggest Edit Button (Medium screens) -->
+      <div class="hidden md:block lg:hidden absolute right-0 mr-4">
+        <a href="{% url 'editor:suggest_edit' app_label='statistic' chapter_id=chapter.id %}" 
+           class="flex items-center text-gray-600 hover:text-[#863F3F] p-2 rounded-md transition-colors duration-200">
+          <i class="fas fa-edit text-lg"></i>
+          <span >Suggest Edit</span>
         </a>
       </div>
 
@@ -228,9 +237,9 @@ This template is for the Statistical Chapter detail page.
 
 <!-- Main Content with Sidebar -->
 <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-8">
-  <div class="flex flex-col lg:flex-row">
-    <!-- Table of Contents Sidebar (Desktop) -->
-    <div class="hidden lg:block w-60 flex-shrink-0 pr-6 order-1">
+  <div class="flex flex-col md:flex-row">
+    <!-- Table of Contents Sidebar (Desktop and Tablet) -->
+    <div class="hidden md:block w-48 lg:w-60 flex-shrink-0 pr-4 lg:pr-6 order-1">
       <div class="sticky top-36 max-h-[calc(100vh-10rem)] overflow-y-auto toc-scroll">
         <h3 class="text-lg font-semibold text-[#863F3F] mb-4 sticky top-0 bg-white pb-2">Contents</h3>
         <ul class="space-y-2 text-sm">
@@ -254,12 +263,12 @@ This template is for the Statistical Chapter detail page.
       </div>
     </div>
 
-    <!-- Vertical Divider (Desktop Only) -->
-    <div class="hidden lg:block w-px bg-gray-300 flex-shrink-0 order-2"></div>
+    <!-- Vertical Divider (Medium screens and up) -->
+    <div class="hidden md:block w-px bg-gray-300 flex-shrink-0 order-2"></div>
 
     <!-- Main Content -->
     <div class="flex-grow order-3 px-0 md:px-4 lg:pl-6">
-      <div class="mb-6 md:mb-8 pl-2 md:pl-6 lg:pl-8">
+      <div class="mb-6 md:mb-8 pl-2 md:pl-6 lg:pl-8 pr-2 md:pr-6">
         <h1 class="text-3xl font-semibold text-[#DAB20C] mb-2">{{ district.name | upper }}</h1>
         <h2 class="text-5xl font-bold text-[#863F3F]">{{ chapter.name }}</h2>
       </div>
@@ -339,7 +348,7 @@ This template is for the Statistical Chapter detail page.
 </div>
 
 <!-- Mobile Table of Contents (Overlay) -->
-<div id="mobile-toc" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden lg:hidden">
+<div id="mobile-toc" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden md:hidden">
   <div class="absolute right-0 top-0 bottom-0 w-80 max-w-[90vw] bg-white p-4 overflow-y-auto">
     <div class="flex justify-between items-right mb-4">
       <h3 class="text-lg font-semibold text-[#863F3F]">Contents</h3>
