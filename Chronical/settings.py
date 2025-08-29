@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'sidepanal',
     'importdata',
     'admindashboard',
+    'footersection',
 
     'adminsortable2', 
     'polymorphic',

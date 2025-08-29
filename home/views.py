@@ -121,3 +121,8 @@ def district_detail(request, state_slug, district_slug):
     }
     return render(request, 'home/district_detail.html', context)
 
+
+
+
+def people(request):
+    return render(request, 'home/people.html')

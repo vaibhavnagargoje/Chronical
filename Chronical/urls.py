@@ -17,6 +17,7 @@ urlpatterns = [
     # path('sidepanal/', include('sidepanal.urls', namespace='sidepanal')),
     path('importdata/', include('importdata.urls', namespace='importdata')),
     path('admindashboard/', include('admindashboard.urls', namespace='admindashboard')),
+    path('footersection/', include('footersection.urls', namespace='footersection')),
 
     
     path('', include('home.urls', namespace='home')),
