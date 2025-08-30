@@ -28,7 +28,7 @@ from statistic.models import (
 )
 
 # Import review models
-from home.models import DeveloperCheck, FinalCheck
+from home.models import DeveloperCheck, FinalCheck, District, DistrictQuickFact
 
 # A central configuration to make views generic without rewriting the logic.
 APP_CONFIG = {
@@ -67,7 +67,7 @@ def reviewer_required(view_func):
             return redirect('login')  # Redirect to login page
         
         # Check if user has reviewer or super admin permissions
-        if not (hasattr(request.user, 'profile') and request.user.profile.is_reviewer_user()):
+        if not (hasattr(request.user, 'profile') and request.user.profile.is_reviewer):
             raise PermissionDenied("You don't have permission to access the editor.")
         
         return view_func(request, *args, **kwargs)
@@ -408,3 +408,71 @@ def suggest_edit_view(request, app_label, chapter_id):
     }
     
     return render(request, 'editor/suggest_edit.html', context)
+
+@login_required
+@reviewer_required
+def district_intro_edit(request, district_id):
+    """View for editing district introduction and quick facts"""
+    district = get_object_or_404(District.objects.select_related('state'), id=district_id)
+    
+    if request.method == 'POST':
+        try:
+            with transaction.atomic():
+                # Update district introduction
+                district.introduction = request.POST.get('introduction', '')
+                district.save()
+                
+                # Handle quick facts
+                # First, get existing quick facts
+                existing_facts = list(district.quick_facts.all())
+                
+                # Get submitted quick facts data
+                fact_ids = request.POST.getlist('fact_id[]')
+                fact_titles = request.POST.getlist('fact_title[]')
+                fact_contents = request.POST.getlist('fact_content[]')
+                
+                # Track which facts were submitted
+                submitted_fact_ids = []
+                
+                # Update or create facts
+                for i, (fact_id, title, content) in enumerate(zip(fact_ids, fact_titles, fact_contents)):
+                    if title.strip():  # Only process if title is not empty
+                        if fact_id and fact_id.isdigit():
+                            # Update existing fact
+                            fact_id = int(fact_id)
+                            try:
+                                fact = DistrictQuickFact.objects.get(id=fact_id, district=district)
+                                fact.title = title
+                                fact.content = content
+                                fact.save()
+                                submitted_fact_ids.append(fact_id)
+                            except DistrictQuickFact.DoesNotExist:
+                                pass
+                        else:
+                            # Create new fact
+                            new_fact = DistrictQuickFact.objects.create(
+                                district=district,
+                                title=title,
+                                content=content
+                            )
+                            submitted_fact_ids.append(new_fact.id)
+                
+                # Delete facts that weren't submitted
+                facts_to_delete = district.quick_facts.exclude(id__in=submitted_fact_ids)
+                facts_to_delete.delete()
+                
+            messages.success(request, 'District information updated successfully!')
+            return redirect(district.get_absolute_url())
+            
+        except Exception as e:
+            messages.error(request, f'Error updating district information: {str(e)}')
+    
+    # Get existing quick facts
+    quick_facts = district.quick_facts.all()
+    
+    context = {
+        'district': district,
+        'quick_facts': quick_facts,
+    }
+    
+    return render(request, 'editor/introedit.html', context)

@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Edit {{ district.name }} Introduction{% endblock title %}
+
+{% block content %}
+<div class="bg-white min-h-screen">
+    <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-8">
+        <div class="max-w-6xl mx-auto">
+            <!-- Header -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between">
+                    <h1 class="text-3xl font-bold text-[#863F3F]">Edit {{ district.name }} Introduction</h1>
+                    <a href="{{ district.get_absolute_url }}" 
+                       class="bg-gray-500 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors">
+                        <i class="fas fa-arrow-left mr-2"></i>Back to District
+                    </a>
+                </div>
+                <p class="text-gray-600 mt-2">{{ district.state.name }} State</p>
+            </div>
+
+            <!-- Edit Form -->
+            <form method="post" class="space-y-8">
+                {% csrf_token %}
+                  <!-- Quick Facts Section -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">Quick Facts</h2>
+                    
+                    
+                    
+                    <div id="quick-facts-container">
+                        {% for fact in quick_facts %}
+                        <div class="border border-gray-200 rounded-lg p-4 mb-4 bg-gray-50" data-fact-id="{{ fact.id }}">
+                            <input type="hidden" name="fact_id[]" value="{{ fact.id }}">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Title</label>
+                                    <input type="text" 
+                                           name="fact_title[]" 
+                                           value="{{ fact.title }}" 
+                                           class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent"
+                                           required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-2">Content</label>
+                                    <input type="text" 
+                                           name="fact_content[]" 
+                                           value="{{ fact.content }}" 
+                                           class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <!-- District Introduction Section -->
+               
+                    <h2 class="text-xl font-semibold text-gray-800 mb-4">District Introduction</h2>
+                    <div>
+                        <textarea 
+                            name="introduction" 
+                            id="id_introduction" 
+                            class="w-full border border-gray-300 rounded-lg">{{ district.introduction|default:"" }}</textarea>
+                    </div>
+           
+
+              
+
+                <!-- Save Button -->
+                <div class="text-center">
+                    <button type="submit" 
+                            class="bg-[#863F3F] hover:bg-[#863F3F]/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
+                        <i class="fas fa-save mr-2"></i>Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Fact Template for JavaScript -->
+<template id="quick-fact-template">
+    <div class="border border-gray-200 rounded-lg p-4 mb-4 bg-gray-50" data-fact-id="">
+        <input type="hidden" name="fact_id[]" value="">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Title</label>
+                <input type="text" 
+                       name="fact_title[]" 
+                       value="" 
+                       class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent"
+                       required>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Content</label>
+                <input type="text" 
+                       name="fact_content[]" 
+                       value="" 
+                       class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent">
+            </div>
+        </div>
+        <div class="mt-4 text-right">
+            <button type="button" class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 rounded-lg text-sm font-medium transition-colors" onclick="removeFact(this)">
+                <i class="fas fa-trash mr-2"></i>Delete
+            </button>
+        </div>
+    </div>
+</template>
+
+
+           
+
+
+<script src="{% static 'tinymce/tinymce.min.js' %}"></script>
+<script>
+    // Initialize TinyMCE
+    tinymce.init({
+        selector: '#id_introduction',
+        plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking save table contextmenu directionality emoticons template paste textcolor colorpicker textpattern imagetools codesample toc',
+        toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        toolbar2: 'print preview media | forecolor backcolor emoticons | codesample',
+        image_advtab: true,
+        content_css: "{% static 'css/tinymce-content.css' %}",
+        width: '100%',
+        height: 600,
+        menubar: false,
+        branding: false,
+        resize: true,
+        content_style: `body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }`,
+        setup: function (editor) {
+            editor.on('init', function () {
+                editor.getContainer().style.border = '1px solid #d1d5db';
+                editor.getContainer().style.borderRadius = '8px';
+            });
+        }
+    });
+
+    // Quick Facts JavaScript
+    document.getElementById('add-fact-btn').addEventListener('click', function() {
+        const template = document.getElementById('quick-fact-template');
+        const container = document.getElementById('quick-facts-container');
+        const clone = template.content.cloneNode(true);
+        container.appendChild(clone);
+    });
+
+    function removeFact(button) {
+        const factItem = button.closest('.quick-fact-item');
+        factItem.remove();
+    }
+</script>
+
+
+{% endblock content %}
+

@@ -38,4 +38,7 @@ urlpatterns = [
 
     # URL to update review status of a chapter
     path('<str:app_label>/<int:chapter_id>/update-review/', views.update_review_status, name='update_review_status'),
+
+    # District intro editor URL
+    path('district/<int:district_id>/intro/', views.district_intro_edit, name='district_intro_edit'),
 ]
