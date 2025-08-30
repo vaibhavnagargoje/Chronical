@@ -22,7 +22,8 @@ def super_admin_required(view_func):
     return _wrapped_view
 
 
-    
+@login_required
+@super_admin_required
 def people(request):
     return render(request, 'footersection/people.html')
 
