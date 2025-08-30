@@ -1,67 +1,73 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Partnerships | Centre For Knowledge Alternatives{% endblock title %}
+{% block title %} Partnership | Centre For Knowledge Alternatives{% endblock title %}
 
 {% block content %}
 
   <!-- Top Pic -->
   <div class="relative mt-0">
-    <img src="{% static 'img/project-cover.jpg' %}" class="w-full" alt="Project Cover">
+    <img src="{% static 'img/partnership-cover.jpg' %}" class="w-full" alt="Partnership Cover">
     <h2 class="absolute font-bold uppercase text-[#dab20c] bottom-5 left-[5%] text-[calc(1.5rem_+_1vw)]">
-      PARTNERSHIPS
+      PARTNERSHIP
     </h2>
   </div>
 
   <!-- CONTENT CONTAINER -->
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <div class="container mx-auto">
-      <h1 class="text-4xl font-bold text-[#863F3F] mb-6">Partnerships</h1>
-      
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Collaborate With Us</h2>
-      <p class="text-base leading-relaxed mb-4">
-        We welcome partnerships with academic institutions, government bodies, NGOs, and local organizations that share our commitment to documenting and understanding India's districts. Being an ambitious project, we hope to cover all Indian districts over time and recognize the sheer scale of this work.
-      </p>
-      
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Why Partner With Us?</h2>
-      <p class="text-base leading-relaxed mb-4">
-        We hugely welcome collaborations to achieve this exercise of documentation and curation for more effective information dissemination and nation building. Our project aims to create decentralized repositories of knowledge in our ever-so-diverse country, moving beyond traditional ways of knowledge production and consumption.
-      </p>
-      
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Types of Partnerships</h2>
-      <div class="bg-gray-50 p-8 rounded-lg mb-8">
-        <ul class="list-disc list-inside ml-4 mb-4 text-black space-y-2">
-          <li><strong>Research Collaborations:</strong> Joint fieldwork and data collection initiatives</li>
-          <li><strong>Data Sharing Agreements:</strong> Access to government surveys and district-level statistics</li>
-          <li><strong>District Documentation Projects:</strong> Comprehensive mapping of local culture and development</li>
-          <li><strong>Educational Partnerships:</strong> Academic institutions contributing research and students</li>
-          <li><strong>Technology Collaborations:</strong> Digital platforms and data visualization tools</li>
-          <li><strong>Local Partnerships:</strong> Working with district administrations and local intellectuals</li>
-        </ul>
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-4xl font-bold text-[#863F3F]">Partnership</h1>
+        {% if user.is_authenticated and user.profile.is_super_admin and not editing %}
+          <a href="{% url 'footersection:edit_partnership' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Edit Partnership
+          </a>
+        {% endif %}
       </div>
       
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">What We Offer Partners</h2>
-      <p class="text-base leading-relaxed mb-4">
-        This portal hopes to assist local administration in better policymaking. It will help familiarize new bureaucrats and local government officials with the district they govern, giving insightful information for better policy planning, allowing for data-based management of the district.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The portal is also likely to be of great utility for local entrepreneurs and businesses for richer market information. If the next level of development is hinged on small town aspirations, the portal will offer useful starting points.
-      </p>
-      
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Our Approach to Collaboration</h2>
-      <p class="text-base leading-relaxed mb-4">
-        We believe that small is beautiful (in the E.F. Schumacher way, but more closely in a Gandhian way). We believe that decentralized, polycentric thinking is the desirable attitude to not only understand but also govern India. We work with local partners who are storehouses of knowledge about their place.
-      </p>
-      
-      <div class="bg-gray-50 p-8 rounded-lg">
-        <h3 class="text-xl font-semibold text-[#863F3F] mb-3">Get in Touch</h3>
-        <p class="text-base leading-relaxed mb-4">
-          If you're interested in partnering with us to document your district or contribute to our research, please reach out to discuss potential collaboration opportunities. We need to give each place the power to define their identity and their own development agenda.
-        </p>
-        <p class="text-base leading-relaxed">
-          If you would like to partner with us for your district(s), please do write to us. Together, we can build our knowledge, the way we collectively want.
-        </p>
-      </div>
+      {% if editing %}
+        <form method="post" action="{% url 'footersection:edit_partnership' %}">
+          {% csrf_token %}
+          <div class="mb-4">
+            <textarea name="text" id="id_text" class="w-full">{{ partnership.text|default:'' }}</textarea>
+          </div>
+          <div class="flex gap-4">
+            <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              Save Changes
+            </button>
+            <a href="{% url 'footersection:partnership' %}" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+              Cancel
+            </a>
+          </div>
+        </form>
+      {% else %}
+        {% if partnership and partnership.text %}
+          <div class="max-w-none text-black">
+            {{ partnership.text|safe }}
+          </div>
+        {% else %}
+          <p class="text-gray-500 italic">No partnership content available. Please contact the administrator to add content.</p>
+        {% endif %}
+      {% endif %}
     </div>
   </div>
+
+  {% if editing %}
+    <!-- TinyMCE Integration -->
+    <script src="{% static 'tinymce/tinymce.min.js' %}"></script>
+    <script>
+      tinymce.init({
+        selector: '#id_text',
+        plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking save table contextmenu directionality emoticons template paste textcolor colorpicker textpattern imagetools codesample toc',
+        toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        toolbar2: 'print preview media | forecolor backcolor emoticons | codesample',
+        image_advtab: true,
+        content_css: "{% static 'css/tinymce-content.css' %}",
+        height: 400,
+        menubar: false,
+        branding: false,
+        content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }'
+      });
+    </script>
+  {% endif %}
 
 {% endblock %}

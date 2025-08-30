@@ -1,82 +1,73 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %} Disclaimers | Centre For Knowledge Alternatives{% endblock title %}
+{% block title %} Disclaimer | Centre For Knowledge Alternatives{% endblock title %}
 
 {% block content %}
 
   <!-- Top Pic -->
   <div class="relative mt-0">
-    <img src="{% static 'img/project-cover.jpg' %}" class="w-full" alt="Project Cover">
+    <img src="{% static 'img/disclaimer-cover.jpg' %}" class="w-full" alt="Disclaimer Cover">
     <h2 class="absolute font-bold uppercase text-[#dab20c] bottom-5 left-[5%] text-[calc(1.5rem_+_1vw)]">
-      DISCLAIMERS
+      DISCLAIMER
     </h2>
   </div>
 
   <!-- CONTENT CONTAINER -->
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <div class="container mx-auto">
-      <h1 class="text-4xl font-bold text-[#863F3F] mb-6">Disclaimers</h1>
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-4xl font-bold text-[#863F3F]">Disclaimer</h1>
+        {% if user.is_authenticated and user.profile.is_super_admin and not editing %}
+          <a href="{% url 'footersection:edit_disclaimer' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Edit Disclaimer
+          </a>
+        {% endif %}
+      </div>
       
-      <p class="text-base leading-relaxed mb-4">
-        We are Centre for Knowledge Alternatives (the CKA hereinafter), a research centre of FLAME University. FLAME University (the University hereinafter) has been established as state private university, vide the FLAME University Act 2014 (Maharashtra Act No. II of 2015) passed by the Government of Maharashtra. The registered address of FLAME University is FLAME University, Gat No. 1270, Lavale, Pune 412115.   
-      </p>
-      <p class="text-base leading-relaxed mb-8">
-        The www.indiandistricts.in (the Portal hereinafter) is a project (the Project hereinafter) of CKA.  
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Methodology</h2>
-      <p class="text-base leading-relaxed mb-4">
-        All the statistical and quantitative data that is displayed on the Portal is sourced from one or the other sources of the government of India. The explicit sources are generally mentioned against the data. Wherever not mentioned, we encourage you to bring it to our attention. The secondary sources used (for e.g., the gazetteers of British India) are mentioned at the end of each page. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The qualitative information comes from our own fieldwork, narratives by local partners and people from the respective districts, and even secondary (even vernacular literature). None of the ideas, narratives, explanations, documentation reflects the opinions or viewpoints of CKA or anyone employed within the CKA. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We also collect information from many of our users, who contribute to the information in the Portal. For the contribution that comes from our users, we conduct a quality check, and basic audit before we publish the information on the Portal. We do not conduct a due diligence or verify the content in detail if we do not have reasons to believe that the information is incorrect. 
-      </p>
-      <p class="text-base leading-relaxed mb-8">
-        For correction of information on the Portal, we rely on users themselves to alert us to inconsistency, errors, or inaccuracies. We request the users to bring to our notice any discrepancy found in the Portal.
-      </p>
-      
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Data Sources</h2>
-      <p class="text-base leading-relaxed mb-4">
-        There are two types of information on the Portal, namely (a) Data and (b) Culture. The source of the former is government's publicly produced data, and that of the former is our own primary and secondary research. While information sources are reasonably believed to be reliable, we cannot offer any warranty or make any representation, express or implied, regarding accuracy, fitness, completeness, adequacy, usefulness or legality of such information. We also do not warrant that the data is updated frequently.
-      </p>                
-      <p class="text-base leading-relaxed mb-8">
-        This is a collaborative Project. Some of the content on the Portal comes from the users or people from the districts. The users may encounter materials that may be objectionable, offensive, misleading, mislabeled. We request the users to bring this to our notice, even though we do not claim that all such material will be removed from the Portal. The users are advised caution, and expected to use common sense, and proper, mature and informed judgment while accessing such content on the Portal. We are not responsible if some content hurts the feeling of users.
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Translations</h2>
-      <p class="text-base leading-relaxed mb-4">
-        We work with large amount of vernacular materials. Material in the Portal may be translated. While we have taken efforts to ensure that the translations are as accurate, we do not take any responsibility for errors in translations that may have crept in, in the Portal. We encourage the users to alert us of any translation errors that they encounter. 
-      </p>                
-      <p class="text-base leading-relaxed mb-4">
-        For many words that we think do not carry an appropriate translation into English, we have chosen to keep them in the vernacular language itself. This is done in the perspective of the researcher or editor who is working on that particular section. These perspectives do not reflect the view of CKA or the University but of individual researchers. CKA or the University shall not be liable for any errors attributed to incorrect or inappropriate translations.
-      </p>
-      <p class="text-base leading-relaxed mb-8">
-        We reserve the right to modify, discontinue (temporarily or permanently) or edit the contents of the Portal, and any means of accessing or utilizing the Portal and/or its contents from time to time at our sole discretion with or without prior notice. 
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Republishing Guidelines</h2>
-      <p class="text-base leading-relaxed mb-4">
-        CKA is committed to foster freedom of information and encourages creating new knowledge and its dissemination without any cost. We promote the ideas of Creative Commons. The Portal is an effort to build meaningful and huge data and culture repositories of Indian districts, and CKA encourages the use of the Portal for various purposes in creating knowledge and advancing societies. 
-      </p>                
-      <p class="text-base leading-relaxed mb-4">
-        Users are free to use, download, copy, extract, print and republish (online or print) the content from the Portal as long as CKA and the Portal is expressly cited and credited for the respective Users are required to add the hyperlink of the original page on the Portal which is the source of the content being used or imported. For any image, appropriate credits to CKA must be given in full and not abbreviated form. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Material and content from the Portal, whether in full or part, direct or derivative cannot be sold or used for any commercial or monetary gains without the express, written permission from the CKA. Material and content from the Portal cannot be put behind a paywall anywhere.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Users cannot systematically republish the Portal elsewhere. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        If the original page in the Portal contains authorship details, the same should be cited and credited whenever part of whole of the content on that page or its idea or ideas are being reproduced elsewhere in exact or different words. The same applies to non-text media.
-      </p>
-      <p class="text-base leading-relaxed">
-        We encourage users to inform us when they use our work for their purposes. 
-      </p>
+      {% if editing %}
+        <form method="post" action="{% url 'footersection:edit_disclaimer' %}">
+          {% csrf_token %}
+          <div class="mb-4">
+            <textarea name="text" id="id_text" class="w-full">{{ disclaimer.text|default:'' }}</textarea>
+          </div>
+          <div class="flex gap-4">
+            <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              Save Changes
+            </button>
+            <a href="{% url 'footersection:disclaimer' %}" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+              Cancel
+            </a>
+          </div>
+        </form>
+      {% else %}
+        {% if disclaimer and disclaimer.text %}
+          <div class="max-w-none text-black">
+            {{ disclaimer.text|safe }}
+          </div>
+        {% else %}
+          <p class="text-gray-500 italic">No disclaimer content available. Please contact the administrator to add content.</p>
+        {% endif %}
+      {% endif %}
     </div>
   </div>
+
+  {% if editing %}
+    <!-- TinyMCE Integration -->
+    <script src="{% static 'tinymce/tinymce.min.js' %}"></script>
+    <script>
+      tinymce.init({
+        selector: '#id_text',
+        plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking save table contextmenu directionality emoticons template paste textcolor colorpicker textpattern imagetools codesample toc',
+        toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        toolbar2: 'print preview media | forecolor backcolor emoticons | codesample',
+        image_advtab: true,
+        content_css: "{% static 'css/tinymce-content.css' %}",
+        height: 400,
+        menubar: false,
+        branding: false,
+        content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }'
+      });
+    </script>
+  {% endif %}
 
 {% endblock %}

@@ -15,112 +15,59 @@
   <!-- CONTENT CONTAINER -->
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <div class="container mx-auto">
-      <h1 class="text-4xl font-bold text-[#863F3F] mb-6">Project</h1>
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-4xl font-bold text-[#863F3F]">Project</h1>
+        {% if user.is_authenticated and user.profile.is_super_admin and not editing %}
+          <a href="{% url 'footersection:edit_project' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Edit Project
+          </a>
+        {% endif %}
+      </div>
       
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">What do we do?</h2>
-      <p class="text-base leading-relaxed mb-4">
-        The project aims to create knowledge about India by documenting its places, at the district level. We do not build large-scale theories about India. We zoom in into its towns, villages and cities and study their unique stories of culture and development.We do comprehensive mapping of district-level statistics and culture.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        In some ways, we try to understand India bit by bit.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We collect, synthesize and meaningfully represent information about Indian districts. Through this website, we disseminate our findings and research free of cost to everyone.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        For each district, we categorize all its information in two broad heads (twelve chapters in each), namely:
-      </p>
-      <ul class="list-disc list-inside ml-4 mb-4 text-black">
-        <li>Culture (local stories, handicrafts, political history etc.)</li>
-        <li>Data (health, education, agriculture etc.).</li>
-      </ul>
-      <p class="text-base leading-relaxed mb-4">
-        As these names suggest, chapters in culture are more qualitative and those in data, quantitative.
-      </p>
-      <p class="text-base leading-relaxed mb-8">
-        Being an ambitious project, we hope to cover all Indian districts over time. We also recognize the sheer scale of this work, and will welcome collaborations to achieve this exercise of documentation and curation for more effective information dissemination and nation building. If you would like to partner with us for your district(s), please do write to us.
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Why are we doing it?</h2>
-      <p class="text-base leading-relaxed mb-4">
-        We may know a lot about India but how much do we know about it at the local level? For instance, how many cars are there in Sitapur? What stories do people in Latur tell each other, their children and grandchildren? How many girls study in schools in Guntur? Simple information at district level is difficult to access, let aside make sense of. If one really needs it, they have to go to the RTO office in Sitapur, spend weeks chatting with villagers in Latur and the district’s Basic Shiksha Adhikari’s office in Guntur to find such information.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        If you set aside a few metropolitan cities, we can’t easily find regional and local level information in India. District administrations’ websites are woefully inadequate and tedious to navigate.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Does this need to be this way? Must we rely on Wikipedia’s nominal entries or Lonely Planet’s tourist-centric information to find out more about our local cultures and development? More importantly, can we afford to not have decentralized repositories of knowledge in our ever-so-diverse country?
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        In this world of information, it is embarrassing how little we have mapped our own places. The British had undertaken a mammoth effort of writing district gazetteers of India, documenting every little detail about our local customs, wealth and geographies. Except in some states, this process has fallen into disrepair. We need to go beyond traditional ways of knowledge production and consumption. It is important that we dissolve colonial frames of knowledge creation and evolve new ones that truly reflect models of self-discovery.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        This can be done by creating new imaginations of documenting ourselves. We need to develop participative, collaborative and non-theoretical accounts of India. To develop a framework for this, we want to collect and synthesize knowledge about ourselves in our own way, the way we experience ourselves.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        This curation has to be done locally. If decentralization is the future of governance, then local-level knowledges and information is a prerequisite. This portal hopes to assist local administration in better policymaking. It will help familiarize new bureaucrats and local government officials with the district they govern, giving insightful information for better policy planning, allowing for data based management of the district.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The portal is also likely to be of great utility for local entrepreneurs and businesses for richer market information. If the next level of development is hinged on small town aspirations, the portal will offer useful starting points. Finally, the portal may also become a favourite dwelling space for curious minds. The aim is that students, scholars and ordinary citizens will perhaps learn to make ingenious ways to use the portal, and even enrich it. Narrating local histories and cultures will instill the much-needed pride amongst people in their own lands, regarding their heritage and traditions.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        In fact quite frankly, we have not envisaged a particular set of beneficiaries here. The project is a result of our own curiosity about India and its districts, and we are sure there are people like us who will enjoy digging and knowing more.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        As we move from one century to the next, we must shed anxieties about our futures and ignorance about our past. We need to ride in a vehicle of co-produced knowledge. We need to give each place the power to define their identity and their own development agenda. The project is then, a powerful promise of democracy.
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">How do we do it?</h2>
-      <p class="text-base leading-relaxed mb-4">
-        We find people with fire in their belly, an insatiable curiosity about our own lands and freedom to excavate information, and put them together. This is where the magic starts.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        What they then do is map the length and breadth of the district, in both primary and secondary data collection. For quantitative work, we rely on data from the government. India has comprehensive systems of data collection in place. The machinery of district-level departments and bureaucracies collect information relevant to their departments. We rely government surveys at the district level (including Census, NFHS, PLFS, AISHE, UDISE, HMIS, NJDG etc.), publicly available data found in various reports and commissions. We sieve through this vast swathe of data, work closely with district level officials and painstakingly (ok joyously!) work with it. We collect this raw information, translate it, clean it, integrate it, and finally develop usable spreadsheets. The data is then visualized graphically.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        For qualitative information, we go and spend time in the respective districts, undertaking extensive fieldwork, collecting stories and narratives. We explore vernacular texts and study old gazetteers extensively. We find and work with local partners and intellectuals who are storehouses of knowledge about their place. We also spend a lot of time talking to ordinary people on the street, snowballing into new networks and new information.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Niels Bohr, the famous theoretical physicist used to say that we only see that part of nature, which is exposed to our lines of questions. For qualitative work, therefore do not go with any question in mind. There is no systematic investigation, testing or proving any hypothesis. We allow the place to open itself to us on its own as we collect diverse experiences of people who agree to talk to us.We then return enriched and inspired. This humbling process is not just a discovery of the place, but of oneself too.
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">User Participation</h2>
-      <p class="text-base leading-relaxed mb-4">
-        The most exciting aspect of this project is, that it is never over. We do not claim to complete the project or a district at any time. It will always be a work-in-progress. New information will continue to be added, errors rectified and imaginations evolved.We hugely welcome users’ participation.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        And this is where you come in.Users can actively send us new content that we may have missed. Each page has a link to supply new information: clicking on it will open a window and users can upload pictures, data, stories or any information that they would like to bring to our notice. We will indeed welcome such enrichment, and even acknowledge the contributions.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Therefore, the project will keep growing, evolving and refining. This is an ambitious movement and we hope we can together build our knowledge, the way we collectively want.
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">A Note on Project's Philosophy</h2>
-      <p class="text-base leading-relaxed mb-4">At the core, we are motivated by the following four principles:</p>
-      <p class="text-base leading-relaxed mb-4">
-        <i>Firstly</i>, we believe that small is beautiful (in the E.F. Schumacher way, but more closely in a Gandhian way). We believe that decentralized, polycentric thinking is the desirable attitude to not only understand but also govern India. In fact, this is the primary motivation for us to go deeper into each district.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        <i>Secondly</i>, we do not theorize. India is not a theory-based culture, rather an empirical one. For far too long people have come up with theories to fit India into, and have miserably failed. We try to document India as it is. (Surely we observe through our own lenses, but at least these are native lenses.) This also means that we regard learning-by-doing and trial-and-error as the most desirable way of knowledge creation.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        <i>Thirdly</i>, we are doing this for ordinary Indians, not just for scholars or academics. Hence, we do not use anthropological frames, or scholarly vocabulary to write about our lands. We do not italicize vernacular words, nor do we use, say, Hunterian transliteration. For native cultural terms that most Indians understand, we also avoid translating them – for instance, we simply write ‘aarti’, and not ‘Hindu ritual with light/flame offered to deities.’
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        <i>Fourthly</i>, despite recognizing its limitations (and even danger), we believe data is the cornerstone of policymaking and necessary for meeting developmental challenges.
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">About the Centre for Knowledge Alternatives</h2>
-      <p class="text-base leading-relaxed mb-4">
-        The project is the flagship initiative of the Centre for Knowledge Alternatives.The Centre conducts research on public policy and culture.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Working on the two fascinating fields of inquiry, we try to make sense of Indian-ness (without a theory of course). This allows new knowledge frameworks to emerge. And all of them coexist. There is no hierarchy of knowledge here. We are working with forests of knowledge, and not manicured gardens.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The story of elephant and the blind men is relevant to our purpose and philosophy. Several blind men touch different parts of the elephant and claim to have found something different. Of course, they are limited by their senses. But who isn’t? Everyone is correct and incorrect at the same time.The Centre’s logo celebrates this very story.
-      </p>
+      {% if editing %}
+        <form method="post" action="{% url 'footersection:edit_project' %}">
+          {% csrf_token %}
+          <div class="mb-4">
+            <textarea name="text" id="id_text" class="w-full">{{ project.text|default:'' }}</textarea>
+          </div>
+          <div class="flex gap-4">
+            <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              Save Changes
+            </button>
+            <a href="{% url 'footersection:project' %}" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+              Cancel
+            </a>
+          </div>
+        </form>
+      {% else %}
+        {% if project and project.text %}
+          <div class="max-w-none text-black">
+            {{ project.text|safe }}
+          </div>
+        {% else %}
+          <p class="text-gray-500 italic">No project content available. Please contact the administrator to add content.</p>
+        {% endif %}
+      {% endif %}
     </div>
   </div>
+
+  {% if editing %}
+    <!-- TinyMCE Integration -->
+    <script src="{% static 'tinymce/tinymce.min.js' %}"></script>
+    <script>
+      tinymce.init({
+        selector: '#id_text',
+        plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking save table contextmenu directionality emoticons template paste textcolor colorpicker textpattern imagetools codesample toc',
+        toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        toolbar2: 'print preview media | forecolor backcolor emoticons | codesample',
+        image_advtab: true,
+        content_css: "{% static 'css/tinymce-content.css' %}",
+        height: 400,
+        menubar: false,
+        branding: false,
+        content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }'
+      });
+    </script>
+  {% endif %}
 
 {% endblock %}

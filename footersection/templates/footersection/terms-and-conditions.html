@@ -6,7 +6,7 @@
 
   <!-- Top Pic -->
   <div class="relative mt-0">
-    <img src="{% static 'img/project-cover.jpg' %}" class="w-full" alt="Project Cover">
+    <img src="{% static 'img/terms-cover.jpg' %}" class="w-full" alt="Terms Cover">
     <h2 class="absolute font-bold uppercase text-[#dab20c] bottom-5 left-[5%] text-[calc(1.5rem_+_1vw)]">
       TERMS & CONDITIONS
     </h2>
@@ -15,287 +15,59 @@
   <!-- CONTENT CONTAINER -->
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <div class="container mx-auto">
-      <h1 class="text-4xl font-bold text-[#863F3F] mb-6">Terms & Conditions</h1>
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-4xl font-bold text-[#863F3F]">Terms & Conditions</h1>
+        {% if user.is_authenticated and user.profile.is_super_admin and not editing %}
+          <a href="{% url 'footersection:edit_terms' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Edit Terms
+          </a>
+        {% endif %}
+      </div>
       
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Overview</h2>
-      <p class="text-base leading-relaxed mb-4">
-        We are Centre for Knowledge Alternatives (the CKA hereinafter), a research centre of FLAME University. FLAME University (the University hereinafter) has been established as state private university, vide the FLAME University Act 2014 (Maharashtra Act No. II of 2015) passed by the Government of Maharashtra. The registered address of FLAME University is FLAME University, Gat No. 1270, Lavale, Pune 412115, which is also the address of CKA.   
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The www.indiandistricts.in (the Portal hereinafter) is a project (the Project hereinafter) of CKA.  
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        This document outlines our relationship with users like you, our legal obligations, rights and responsibilities and expectations that are governed not just by the laws of India but also basic tenets of responsible and ethical behavior. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Unless otherwise stated, a 'user' in this agreement is anyone who interacts with the Portal online or engages with CKA regarding the Portal online or offline.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        These terms and conditions are applied when users use, subscribe, register or consume content from the Portal, when they contribute content to it or use information from the Portal elsewhere. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        These Terms and Conditions do not apply for users' relationship with parent organization, namely, FLAME University. 
-      </p>
-      <p class="text-base leading-relaxed mb-8">
-        Please read these Terms and Conditions carefully before using the Portal. If your access to the Portal is through an organization's subscription agreement, or if you have partnered with CKA through another agreement in an individual or organizational capacity, then that agreement will govern your relationship with the Portal or CKA.
-      </p>
-
-      <!-- Continue with all sections using the same pattern -->
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Subscription/Registration</h2>
-      <p class="text-base leading-relaxed mb-4">
-        A subscriber is someone who has subscribed to the Portal. Subscription is also known as registration. While anyone is entitled to access the Portal, those users who would like to contribute to the Project, or access some value added services/information of the Portal would need to subscribe/register.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The subscription on the Portal is free of cost. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Subscribers agree that we may provide them with notifications by email, regular mail, or postings on the Project or CKA’s new projects.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Subscribers shall be responsible for their accounts and passwords. They shall use the Portal for lawful purposes only and under the relevant IT rules and regulations of India.
-      </p>
-      <p class="text-base leading-relaxed mb-8">
-        We have the right to discontinue the subscriber’s account at any time without notice or information. This will not happen without reason, but we are not bound to explain our action in this case. 
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Contributing or Submitting Content</h2>
-      <p class="text-base leading-relaxed mb-4">                    
-        We hugely welcome users’ participation and their contribution of content and material to enrich the Portal. Users can contribute to the Portal by subscribing, by writing to CKA or by informing us orally. Anyone who submits us any material with the purpose of being considered for being uploaded on the Portal in any form shall be called ‘contributor.’ Each provision in this section is applicable for submissions made to us in any form.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We value our contributors immensely and we are proud to associate with them. The guiding principle of such coproduced knowledge is the creation and distribution of knowledge to all, with no instrumental reward for doing it. We admire the spirit in which our contributors engage with us and affirm their faith in the idea that a world with free knowledge is a desirable one.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We are committed to allow for co-creation of the Portal and hence contributors are allowed to submit new material or convey information to fix errors, omissions or repetitions. CKA has the right to decline, revise, edit or adapt the contribution from the contributors. CKA may choose to offer an explanation, or ask for more information or clarification from the contributors, but it is not bound to do so. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        CKA shall have the editorial discretion. Regarding any dispute about any content, CKA’s decision shall be binding and final. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        All material shared by the contributors shall be governed under Creative Commons. Contributors agree to license all their contributions to CKA under the governing framework of <u>Creative Commons License</u> (“CC BY-SA”) and <u>GNU Free Documentation License</u> (“GFDL”), except for the provisions of attribution which shall be governed by this agreement. While the text of these license agreements must be understood from their respective links, in essence, this allows the content to be free for anyone and from anyone. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We shall not be able to observe the provisions of Creative Commons License and GNU Free Documentation License for the purposes of attribution. This does not mean no reference, citation or attribution will be given. It means that even though general acknowledgments and attributions to the contributor may be given at the end of the respective page where the content supplied is used, the same cannot be warranted. The decision to give acknowledgment to the contribution is the sole right of CKA and will depend upon the quality, quantity, value and scope of the content provided. CKA shall not be obligated to explain the reasons for not attributing the contributor in cases it chooses to. This may be due to many reasons including but not limited to the needlessness of attribution in cases of generality or commonness of the information submitted, information that helps rectify errors, information that would ordinarily not attract any copyright, or even when it is important to protect the identity of the contributor. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The above implies that users are expected to contribute without the expectation of them being cited or attributed to. The Portal instills the promise and principles of knowledge creation as an intrinsically valuable goal by itself, and not instrumental to a larger reward of attribution. The Project’s primary focus is to use the powers of collective wisdom and build knowledge, rather than become a medium of visibility for contributors. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        CKA can however, upon request, consider giving an e-certificate in form of recognition to someone who has made notable contribution to the Portal.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        If contributors import text, which has not been co-authored by them, they warrant that the text is available under terms that are compatible with CC BY-SA 3.0. This also implies that contributors must credit the authors in reasonable manner if they import or borrow text from another source not co-authored by them. This applies to contributions in form of text or non-text media.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Contributors can submit information and content that is in the public domain. It is important however that contributors confirm the public domain status of the content.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Contributors can make modifications or additions to a text that they may submit to us, and shall agree to license the modified or added content under CC BY-SA 3.0 or later. When modifying or making additions to any non-text media that they have obtained from somewhere, the Contributor shall license the modified or added content in accordance with whatever license under which the work has been made available. With both text content and non-text media, the Contributor agrees to clearly indicate that the original work has been modified. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Contributors are responsible for ensuring that the content and material they submit to the Portal is not copyrighted. This is particularly true in case of non-text media. Contributors shall not submit any material, which is protected by copyright, trademark or other proprietary right without the express permission of the owner of the copyright, trademark or other proprietary right. The burden of determining that any material is not protected by copyright rests with the contributor. CKA is not liable to verify the content and material supplied. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        In event there is a copyright infringement in the content and material submitted by the contributor and published on the Portal, the contributor alone shall be responsible, and CKA is absolved from any liability of copyrights arising therefrom. Contributors shall be solely liable for any damage arising out of any infringement of copyrights, proprietary rights, violating any other rights or of any other harm that occurs from content and material submitted by them.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Contributors agree that they will not unilaterally revoke or seek invalidation of any license that they have granted us under this agreement for text content or non-text media contributed to us, even if they discontinue or terminate use of our services through subscription or otherwise.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Contributions, unless otherwise expressly agreed to in writing with the contributor, shall be submitted without any expectation of compensation for it.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Contributors agree to grant us the right (but not an obligation) unlimited in time to publish, re-use, archive, delete, modify or use in any other way their contributions whole or in part as we see fit, without any requirement to pay the contributor or without attribution. We reserve the sole right to keep, edit, translate, remove or add to the material provided by the contributors. If the contributors disagree with the way the material provided by them has been used, we encourage them to reach out to us, even though CKA’s decision of whether to accept the contributor’s request shall be final. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        By submitting content and material, the contributors automatically grants the CKA, royalty fee, perpetual, irrevocable, non-exclusive right and license to use, reproduce, modify, adapt, publish, translate and distribute such material (in whole or in part) and/or to incorporate it in other works in any form, media or technology now known or hereafter developed. Contributors also perpetually waive off any copyright over the content provided by them. Contributors also agree to waive any moral rights in their contribution for the purposes of their submissions. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Contributors cannot derive any monetary or pecuniary benefits by contributing to the content on the Portal. This can be in any form, including (not limited to) by promotion of paid contribution. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        If contributors receive or expect to receive compensation for their contribution, they must expressly disclose their employer, client, and affiliation with respect to that contribution. If there is any potential conflict of interest, that must be explicitly mentioned. These disclosures must be made along with the contribution itself. While we cannot verify or evaluate the veracity of these disclosures, if need be, we will reach out to the contributors for clarification on this matter. The decision to publish such a contribution shall be decided by us.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Contributors/Users/Subscribers cannot use the Portal to advertise or solicit any product or services or act as commercial influencer of certain service or product without disclosure.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Contributors shall not post, transmit or submit through the Portal, any unlawful material, or material which violates or infringes in any way rights of others. They shall refrain from submitting or posting abusive, defamatory, vulgar, obscene, content or otherwise legally objectionable content through or to the Portal. Content, which encourages conduct that constitutes criminal offence, creates civil liability or violation of someone’s privacy or any other law has to be avoided. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We cannot fully monitor, verify or evaluate the veracity or value of each of the contributions. Whenever we receive notice of any content that is potentially misleading, untrue, unlawful, infringes third party rights or is potentially in breach of these Terms and Conditions, we will review the content and decide whether to remove it from the Portal and act accordingly.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Contributors represent and warrant that they have lawfully collected any personal information that is provided to us either in subscription or in contribution, and that the personal information has been collected with all required consents that would legally or ordinarily be expected before sharing it with us. Contributors also represent and warrant that our use of such personal information in accordance with the purposes for which you have provided us will not violate, misappropriate or infringe someone else’s any rights (including rights of privacy and intellectual property) and will not cause us to violate any applicable laws. Further, in event of a willful or unintentional violation of rights of anyone of any kind, contributors warrant that CKA or the University will not be liable for such an action. 
-      </p>
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Privacy</h2>
-      <p class="text-base leading-relaxed mb-4">
-        We respect privacy of our users. For us, protecting users’ personal data is an honor and a great responsibility.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        While you interact with our Portal, we gain access to some data about you that you directly share with us, or through automated technologies like cookies or from other sources. We may receive or collect personally identifiable information upon your registration on our site or when you use our services and visit our pages. We may also receive personally identifiable information from third parties.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We collect information that includes but not limited to the IP address of your computer, operating system and browser software you are using while interacting with the Portal, date and time of visiting, pages visited, information downloaded and data requested. We collect such information to enhance user experience, understand and measure visitor traffic, rectify system errors, even customize the content users see and fulfill certain requests. However, we do not identify you based on any information that is not provided with the explicit intent of subscription/registration. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        When users register or subscribe on the Portal, and sign in, we ask for some identifiable information about them, including but not limited to name, email address, phone number, occupation, affiliation. This information is used to improve user experience and share with the content that the user has expressed interest in. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The Portal may use third-party cookies of Google Analytics to understand the geographic spread and behavior of traffic on the Portal as well as data of footfall. These cookies are used to understand and improve the user experience. Cookies are collected and stored on users’ local device browser. These cookies are also anonymized, and they do not collect any personally identifiable data or any personal information.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Note that Google uses the data collected to track and monitor the use of the Portal, and hence this data is shared with other Google services, who may in turn use the data to personalize the adverts on its own network. For more information on the privacy practices of Google, please read the <u>Google Privacy Terms</u>. Please also review Google’s policy for safeguarding your data.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        CKA may want to keep users posted of useful information for its users, which includes but not limited to e-brochures, e-newsletters etc. on a regular basis. We will use Mailchimp to manage such communication. For more information on the privacy practices of Mailchimp, please review their <u>Policy</u>. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        CKA will never share users’ information with anyone outside the CKA or the University. We shall never sell or rent users’ information to third parties. We will only send personally identifiable information when we have users’ consent, or when we have to respond to legal orders or court proceedings, or when users’ actions violate the Terms & Conditions on our site.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We recognize the importance of security, integrity, and confidentiality of your personal data. Most of your information is stored in computer systems and databases operated by us, or our service providers. We have technical and administrative security measures in place designed to protect personal data throughout our systems from unauthorized access, disclosure, use, and modification. Please be aware that, despite our best efforts, no security measures are perfect or impenetrable.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The Portal may include links to third-party websites, hyperlinks, references (including but not limited to adverts or sponsors) which and not controlled or owned by us. We have no control over third party websites and accept no legal responsibility for any products, content, material, service or information contained in them. Their display does not mean that we endorse that third party’s website or work, products, services or information. Please also note that any third-party website is subject to its own privacy and data protection policies and is not covered under this Agreement. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        If at any point you wish to unsubscribe, you can opt-out of our services by using the unsubscribe option or by emailing us. Please note that you may still receive some communications from us that we think is necessary.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We will keep on periodically updating our privacy policy in accordance with new laws or changing data paradigms of our times. Any change to this policy will be posted on the page and will become effective as of the date the edit has been made. We encourage you to periodically review this page for the latest information on our privacy practices.
-      </p>
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Copyrights</h2>
-      <p class="text-base leading-relaxed mb-4">
-        All content included on this site, including but not limited to text, graphs, graphics, icons, images, audio clips, videos, clip arts, icons, digital downloads, data compilations, software is the property of CKA and the University and protected by Copyright Act 1957. Users have no ownership rights on the information downloaded or collected from the Portal.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We do not and shall not use the copyright for any commercial gains. We are committed to keep all the information on the Portal free of cost to everyone. Our copyright respects the hard work we put in, and helps recognize the efforts of so many of our contributors by ensuring there is appropriate attribution to the Portal when its information is being used.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Any copying, reproduction, republishing, broadcasting, importing, downloading, posting, or transmitting in any way must be done by users for their own personal non-commercial use only. For any other use, a prior written permission is required from us. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The logos and information about CKA and the University are the copyrights of the respective organizations and are not to be reused for any purpose without official consent from us.
-      </p>
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Informational not to be construed as advice</h2>
-      <p class="text-base leading-relaxed mb-4">
-        The Portal contains vast amount of information that can potentially be used for decisions that may have material or emotional impact. For instance, users can make use of the information on the Portal for better policymaking, for market research, for setting up or expanding their businesses. Please note that all the content on the Portal is for informational purposes only and should not be taken as professional advice. We are not responsible for any omissions or errors or for any decision taken or results obtained from the use of information on the Portal by the users. None of the information contained in the Portal constitutes a professional advice and users should consult appropriate qualified, licensed or expert advisors for taking any decision that may arise from their use of the Portal.
-      </p>
-      <p class="text-base leading-relaxed mb-8">
-        Use of or Portal is at users’ sole risk. Users expressly agree that the content posted on the Portal is provided “as is” and “as available” without warranties of any kind, express or implied. We do not represent or warrant that the information on the Portal is accurate, complete, reliable, current or error-free. We may also provide information about third-party products, services, activities or events, or we may allow third-parties to allow make their content available on our Portal but we do not control or endorse, and we make no representations or warranties regarding any third-party content. 
-      </p>
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Indemnification</h2>
-      <p class="text-base leading-relaxed mb-4">
-        Users will indemnify, defend and hold harmless CKA and the University, and their directors, employees, creditors, donors, agents, partners, students from and against any losses, liabilities, claims, demands, damages, expenses or costs (Claims) arising out of or related to users’ violation, misappropriation or infringement of any rights of someone else (including privacy and intellectual property) or any violation of the law. You agree to promptly notify us of any third-party Claims, cooperate with Medium Parties in defending such Claims and pay all fees, costs and expenses associated with defending such Claims (including attorneys’ fees). Users also agree that we will have control of the defense or settlement, at Medium’s sole option, of any third-party Claims
-      </p>
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Limitation of Liability</h2>
-      <p class="text-base leading-relaxed mb-4">
-        Users agree explicitly that use of the Portal is at the their sole risk. The CKA, the University, its affiliates or any of its respective employees, agents, third party content providers or licensors do not warrant that the information on the Portal shall be error-free, complete or uninterrupted. They also do not make any warranty towards the reliability, accuracy or recentness of the results that may be obtained or derived from the information on the Portal.  
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        The disclaimer regarding the liability here applies to any damage or injury, caused by the information on the Portal by reasons that may include (but not limited to) any assumption, error, omission, interruption, deletion, defect, delay in operation or transmission of any type. Further, we do not make any warranty that the Portal shall be free of a possibility of any cybercrime, computer virus, communication line failure, theft or destruction or unauthorized access to, alteration of, or use of record, whether for breach of contract, tortious behavior, negligence, cybercrime, ignorance or under any other cause of action. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Users also acknowledges that CKA or the University is not liable for the defamatory, offensive or illegal information that may be found on the Portal and that the risk of injury from the foregoing rests entirely with subscriber(s). 
-
-        In no event will CKA or the University, or any person or entity involved in creating, producing or distributing the Portal be liable for any damages, including, without limitation, direct, indirect, incidental, special, consequential or punitive damages arising out of the use of or inability to use the Portal. 
-
-        Further, CKA, the University or its affiliates, employees, researchers, information providers or content partners shall not be liable regardless of the cause or duration, for any errors, inaccuracies, omissions, or other defects in, or untimeliness or inauthenticity of, the information contained in the Portal, or for any delay or interruption in the transmission thereof to the user, or for any claims or losses arising therefrom or occasioned thereby. Users also absolve us from any third-party claims or losses of any nature, including, but not limited to, lost profits, punitive or consequential damages. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We also have no liability for investment, policy or scholarly decisions based on the information provided in the Portal. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Users agree that they download any material from the Portal or use any of our services at their own discretion and risk, and will be solely responsible for any damage to their computer system or loss of data or any other technical malfunction that results from using the Portal. We have no responsibility or liability for any harm that may come to your device, software, hardware or any security breach that may occur through the Portal. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        We shall not be liable or legally responsible in any way (whether in contract, tort (including negligence) or otherwise) for the following even when we have been advised that such damages may arise:
-      </p>
-      <ol class="list-decimal list-inside ml-4 mb-8 text-black">
-        <li>Any loss that was not foreseeable to the user or us when the agreement was formed, </li>
-        <li>Any loss that was not caused by any breach on our part,</li>
-        <li>Any business loss (including business interruption, or loss of revenues, sales or business opportunity),</li>
-        <li>Any loss of profits, anticipated savings, goodwill, reputation, or data,</li>
-        <li>Any loss of use or corruption of software or technical equipment, and</li>
-        <li>Any indirect or consequential loss.</li>
-      </ol>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Harmful Activity Prohibited</h2>
-      <p class="text-base leading-relaxed mb-4">
-        Users, contributors or subscribers are expressly prohibited from engaging in one or more of the following actions:
-      </p>
-      <ol class="list-decimal list-inside ml-4 mb-8 text-black">
-        <li>Violating someone else’s rights, including privacy,</li>
-        <li>Engaging in a fraud through the Portal,</li>
-        <li>Knowingly or intentionally posting content that constitutes libel or defamation,</li>
-        <li>Contributing content that is known to the contributor to be false or inaccurate, </li>
-        <li>Contributing something an intention to deceive,</li>
-        <li>Impersonating another user or individual, misrepresenting one’s affiliation with any individual or entity, or using the username of another user with the intent to deceive,</li>
-        <li>Harassing, threatening, stalking, vandalizing other users,</li>
-        <li>Spamming, trolling or transmitting chain mail, or junk mail through the Portal to anyone or other users,</li>
-        <li>Infringing copyrights, trademarks, patents, or other proprietary rights under the applicable law,</li>
-        <li>Posting obscene or vulgar content unlawful under applicable law, </li>
-        <li>Posting, contributing or distributing through the Portal, content that carries viruses, malware, worms, Trojan horses, malicious code, or other devices or programmes that could harm our technical infrastructure or system or that of our users,</li>
-        <li>Disrupting the services by placing an undue burden on the Portal or the networks or servers connected with the Portal,</li>
-        <li>Disrupting the services by inundating the Portal with communications or other traffic that suggests no serious intent to use the Portal for its stated purpose,</li>
-        <li>Bypassing any measures placed by CKA to restrict or prevent access to the Portal, </li>
-        <li>Knowingly accessing, tampering with, or using any of our non-public areas in our computer systems without authorization,</li>
-        <li>Probing, scanning, or testing the vulnerability of any of our technical systems or networks unless reporting our technical vulnerabilities to us,</li>
-        <li>Using any automated means, including robots, scrapers, spiders, robots, crawlers, data mining tools or the like to download data or content from the Portal.</li>
-      </ol>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Advertisements</h2>
-      <p class="text-base leading-relaxed mb-4">
-        No information on the Portal, which is published by us must be construed as an advertisement of any kind. We do not endorse, recommend or signal anything against monetary or any other kind of payment. All the information that even remotely looks like an endorsement is done freely of our own accord and we do not publish paid content. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        While there is no desire for us to allow advertising on the Portal, one cannot deny the possibility in future. Should that happen, it must be clear that we do not represent or endorse the accuracy or reliability of any information, including advertisements that appear on the Portal. 
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Enforcement</h2>
-      <p class="text-base leading-relaxed mb-4">
-        The terms and conditions shall be governed by and construed in accordance with the laws of India, and any legal dispute shall be subjected to the exclusive jurisdiction of the courts of Pune. 
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Amendment</h2>
-      <p class="text-base leading-relaxed mb-4">
-        We may amend these terms and conditions from time to time at our sole discretion that may or may not be notified to users or subscribers. We expect those who use or visit the Portal to periodically review these changes. CKA or the University shall not be liable if anyone is relying on an older version of these terms and conditions.
-      </p>
-      <p class="text-base leading-relaxed mb-8">
-        By continuing to use the Portal, users acknowledge, agree and consent to all the amendments to the terms and conditions that may take place here
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Severability</h2>
-      <p class="text-base leading-relaxed mb-4">
-        If any provision or part of a provision of these Terms and Conditions is unlawful, void or unenforceable, that provision will deemed to be severable from these Terms and Conditions and shall not affect the validity and enforceability of any remaining provisions. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Further, if any provision of these Terms and Conditions is found to be invalid by any court having competent jurisdiction, the invalidity of that provision will not affect the validity of the remaining provisions of these Terms and Conditions, which will remain in full force and effect.
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Other</h2>
-      <p class="text-base leading-relaxed mb-4">
-        These Terms and Conditions do not create an employment, agency, partnership, or joint venture relationship between users and us. If you have not signed a separate agreement with us, these Terms and Conditions are the entire agreement between users and us. If there is any conflict between these Terms and Conditions and a signed written agreement between users and us, the signed agreement will be held.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Failure by anyone (users or us) to exercise any right or remedy under these Terms and Conditions does not constitute a waiver of that right or remedy. 
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Please note that headings in these Terms and Conditions are for convenience only and will have no legal meaning or effect.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        These Terms and Conditions constitute the entire agreement between the user and CKA/University relating to your use of the Portal. They supersede all previous communications, representations and arrangements, either written or oral.
-      </p>
-      <p class="text-base leading-relaxed mb-4">
-        Users cannot license or transfer any of their rights under these Terms and Conditions. We may transfer any of our rights or obligations under these Terms and Conditions to another entity, but if we do so we will ensure that any entity to who we transfer our rights or obligations will continue to honor your rights under them.
-      </p>
-
-      <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Republishing Guidelines</h2>
-      <p class="text-base leading-relaxed">
-        Please visit <a href="{% url 'footersection:disclaimers' %}" class="text-blue-600 underline">Disclaimers</a> page of the Portal. 
-      </p>
+      {% if editing %}
+        <form method="post" action="{% url 'footersection:edit_terms' %}">
+          {% csrf_token %}
+          <div class="mb-4">
+            <textarea name="text" id="id_text" class="w-full">{{ terms.text|default:'' }}</textarea>
+          </div>
+          <div class="flex gap-4">
+            <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+              Save Changes
+            </button>
+            <a href="{% url 'footersection:terms' %}" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+              Cancel
+            </a>
+          </div>
+        </form>
+      {% else %}
+        {% if terms and terms.text %}
+          <div class="max-w-none text-black">
+            {{ terms.text|safe }}
+          </div>
+        {% else %}
+          <p class="text-gray-500 italic">No terms content available. Please contact the administrator to add content.</p>
+        {% endif %}
+      {% endif %}
     </div>
   </div>
+
+  {% if editing %}
+    <!-- TinyMCE Integration -->
+    <script src="{% static 'tinymce/tinymce.min.js' %}"></script>
+    <script>
+      tinymce.init({
+        selector: '#id_text',
+        plugins: 'advlist autolink lists link image charmap print preview hr anchor pagebreak searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking save table contextmenu directionality emoticons template paste textcolor colorpicker textpattern imagetools codesample toc',
+        toolbar1: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
+        toolbar2: 'print preview media | forecolor backcolor emoticons | codesample',
+        image_advtab: true,
+        content_css: "{% static 'css/tinymce-content.css' %}",
+        height: 400,
+        menubar: false,
+        branding: false,
+        content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }'
+      });
+    </script>
+  {% endif %}
 
 {% endblock %}
