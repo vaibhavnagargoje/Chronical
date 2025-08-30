@@ -1,83 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Subscribe | Centre For Knowledge Alternatives{% endblock title %}
 
-<head>
-    <meta charset="utf-8">
-    <title>Subscribe | Centre For Knowledge Alternatives</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+{% block content %}
 
-    <!-- Favicon -->
-    <link href="/img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/hamburger.css" rel="stylesheet">
-    <link href="/css/offcanvas.css" rel="stylesheet">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-</head>
-
-<body>
-    <!-- Header Start -->
-  <%- include('partials/_header') %>
-  <!-- Header End -->
-
-
-    <!-- Service Start -->
-<!-- Top Pic -->
-<div class="container-fluid px-0 position-relative mt-5">
-    <img src="/img/project-cover.jpg" style="width: 100%;">
-    <h2 class="position-absolute fw-bold text-uppercase"
-        style="color: #dab20c; bottom: 20px; left: 5%; font-size: calc(1.5rem + 1vw);">
-      
+  <!-- Top Pic -->
+  <div class="relative mt-0">
+    <img src="{% static 'img/project-cover.jpg' %}" class="w-full" alt="Project Cover">
+    <h2 class="absolute font-bold uppercase text-[#dab20c] bottom-5 left-[5%] text-[calc(1.5rem_+_1vw)]">
+      SUBSCRIBE
     </h2>
   </div>
-  
-  
-  
+
   <!-- CONTENT CONTAINER -->
-  <div class="container-xxl py-5">
-    <div class="container">
-        <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <h1 class="txtheading">Subscribe</h1>
-
-        </div>
-    </div>
-</div>
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-[#863F3F] mb-6">Subscribe</h1>
+      
+      <!-- Add subscription form or content here -->
+      <div class="bg-gray-50 p-8 rounded-lg">
+        <p class="text-base leading-relaxed mb-4">
+          Stay updated with our latest research and district documentation. Subscribe to our newsletter to receive updates about new districts, research findings, and project developments.
+        </p>
         
+        <form class="space-y-4">
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#863F3F] focus:ring-[#863F3F]" placeholder="Enter your email">
+          </div>
           
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-[#863F3F] focus:ring-[#863F3F]" placeholder="Enter your name">
+          </div>
+          
+          <button type="submit" class="bg-[#863F3F] text-white px-6 py-2 rounded-md hover:bg-[#6d2f2f] transition duration-300">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 
-  <!-- Subscribe Page Content End -->
-
-            
-        
-  
-    <!-- Footer Start -->
-    <%- include('partials/_footer') %>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top 
-    <a href="#" class="btn btn-lg btn-top btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>-->
-
-
-    <!-- JavaScript Libraries -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+{% endblock %}

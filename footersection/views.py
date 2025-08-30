@@ -10,15 +10,15 @@ def careers(request):
 
 
 def disclaimer(request):
-    return render(request, 'footersection/disclaimer.html')
+    return render(request, 'footersection/disclaimers.html')
 
 
 def partnerships(request):
-    return render(request, 'footersection/partnerships.html')
+    return render(request, 'footersection/partnership.html')
 
 
 def projects(request):
-    return render(request, 'footersection/projects.html')
+    return render(request, 'footersection/project.html')
 
 
 def subscribe(request):

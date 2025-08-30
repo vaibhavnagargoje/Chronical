@@ -1,83 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Careers | Centre For Knowledge Alternatives{% endblock title %}
 
-<head>
-    <meta charset="utf-8">
-    <title>Careers | Centre For Knowledge Alternatives</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+{% block content %}
 
-    <!-- Favicon -->
-    <link href="/img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/hamburger.css" rel="stylesheet">
-    <link href="/css/offcanvas.css" rel="stylesheet">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-</head>
-
-<body>
-    <!-- Header Start -->
-  <%- include('partials/_header') %>
-  <!-- Header End -->
-
-
-    <!-- Service Start -->
-<!-- Top Pic -->
-<div class="container-fluid px-0 position-relative mt-5">
-    <img src="/img/project-cover.jpg" style="width: 100%;">
-    <h2 class="position-absolute fw-bold text-uppercase"
-        style="color: #dab20c; bottom: 20px; left: 5%; font-size: calc(1.5rem + 1vw);">
-      
+  <!-- Top Pic -->
+  <div class="relative mt-0">
+    <img src="{% static 'img/project-cover.jpg' %}" class="w-full" alt="Project Cover">
+    <h2 class="absolute font-bold uppercase text-[#dab20c] bottom-5 left-[5%] text-[calc(1.5rem_+_1vw)]">
+      CAREERS
     </h2>
   </div>
-  
-  
-  
+
   <!-- CONTENT CONTAINER -->
-  <div class="container-xxl py-5">
-    <div class="container">
-        <div class="wow fadeInUp" data-wow-delay="0.1s">
-            <h1 class="txtheading">Careers</h1>
-
-        </div>
-    </div>
-</div>
-        
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold text-[#863F3F] mb-6">Careers</h1>
+      
+      <div class="space-y-8">
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <h2 class="text-2xl font-bold text-[#863F3F] mb-4">Join Our Team</h2>
+          <p class="text-base leading-relaxed mb-4">
+            We are always looking for passionate researchers, data analysts, and content creators who share our vision of documenting India's rich cultural and developmental landscape at the district level.
+          </p>
           
+          <h3 class="text-xl font-semibold text-[#863F3F] mb-3">What We Look For</h3>
+          <p class="text-base leading-relaxed mb-4">
+            We find people with fire in their belly, an insatiable curiosity about our own lands and freedom to excavate information, and put them together. This is where the magic starts.
+          </p>
+          <ul class="list-disc list-inside ml-4 mb-4 text-black space-y-2">
+            <li>Researchers passionate about local cultures and development</li>
+            <li>Data analysts skilled in government data interpretation</li>
+            <li>Content creators who can tell compelling local stories</li>
+            <li>Field workers comfortable with extensive district-level research</li>
+            <li>Local partners and intellectuals with deep knowledge of their places</li>
+          </ul>
+          
+          <h3 class="text-xl font-semibold text-[#863F3F] mb-3">Our Work Culture</h3>
+          <p class="text-base leading-relaxed mb-4">
+            We believe in decentralized, polycentric thinking. We don't theorize - we document India as it is. Our work involves extensive fieldwork, collecting stories and narratives, exploring vernacular texts, and working with local partners who are storehouses of knowledge about their place.
+          </p>
+          
+          <h3 class="text-xl font-semibold text-[#863F3F] mb-3">Current Opportunities</h3>
+          <p class="text-base leading-relaxed mb-4">
+            Please check back regularly for new opportunities or reach out to us if you're interested in contributing to our mission of creating knowledge about India by documenting its places at the district level.
+          </p>
+          
+          <h3 class="text-xl font-semibold text-[#863F3F] mb-3">How to Apply</h3>
+          <p class="text-base leading-relaxed">
+            Send your resume and a cover letter explaining your interest in our work to our recruitment team. We value curiosity, research skills, and a passion for understanding India's diverse districts. Tell us about your connection to local cultures and your experience with fieldwork or data analysis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- Patnerships Page Content End -->
-
-            
-        
-  
-    <!-- Footer Start -->
-    <%- include('partials/_footer') %>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top 
-    <a href="#" class="btn btn-lg btn-top btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>-->
-
-
-    <!-- JavaScript Libraries -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+{% endblock %}

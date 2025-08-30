@@ -7,8 +7,8 @@ urlpatterns = [
     path('people/',people, name='people'),
     path('careers/', careers, name='careers'),
     path('disclaimer/', disclaimer, name='disclaimer'),
-    path('partnerships/', partnerships, name='partnerships'),
-    path('projects/', projects, name='projects'),
+    path('partnerships/', partnerships, name='partnership'),
+    path('projects/', projects, name='project'),
     path('subscribe/', subscribe, name='subscribe'),
     path('terms/', terms, name='terms'),
 
