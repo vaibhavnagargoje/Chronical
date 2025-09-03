@@ -18,13 +18,14 @@ from django.utils.text import slugify
 from culture.models import (
     CulturalChapter, ContentBlock as CulturalContentBlock, HeadingBlockOne as CulturalH1,
     HeadingBlockTwo as CulturalH2, HeadingBlockThree as CulturalH3,
-    ParagraphBlock as CulturalP, ImageBlock as CulturalImg, ReferenceBlock as CulturalRef
+    ParagraphBlock as CulturalP, ImageBlock as CulturalImg, ReferenceBlock as CulturalRef,
+    ChartBlock as CulturalChartBlock  # Renamed to avoid conflict
 )
 from statistic.models import (
     StatisticalChapter, StatisticContentBlock, HeadingBlockOne as StatH1,
     HeadingBlockTwo as StatH2, HeadingBlockThree as StatH3,
     ParagraphBlock as StatP, ImageBlock as StatImg, ReferenceBlock as StatRef,
-    ChartBlock # Import the new block
+    ChartBlock as StatChartBlock  # Renamed to avoid conflict
 )
 
 # Import review models
@@ -39,6 +40,7 @@ APP_CONFIG = {
         'BLOCK_TYPE_MAP': {
             'heading1': CulturalH1, 'heading2': CulturalH2, 'heading3': CulturalH3,
             'paragraph': CulturalP, 'image': CulturalImg, 'reference': CulturalRef,
+            'chart': CulturalChartBlock  # Updated to use renamed import
         }
     },
     'statistic': {
@@ -48,7 +50,7 @@ APP_CONFIG = {
         'BLOCK_TYPE_MAP': {
             'heading1': StatH1, 'heading2': StatH2, 'heading3': StatH3,
             'paragraph': StatP, 'image': StatImg, 'reference': StatRef,
-            'chart': ChartBlock, # The new ChartBlock is mapped here
+            'chart': StatChartBlock  # Updated to use renamed import
         }
     }
 }
@@ -169,6 +171,9 @@ def chapter_editor_view(request, app_label, chapter_id):
                             # Sort files by name
                             files.sort(key=lambda f: f.name)
                             
+                            # Get the correct ChartBlock class based on app_label
+                            ChartBlockClass = CulturalChartBlock if app_label == 'culture' else StatChartBlock
+                            
                             # Create a chart block for each file
                             for chart_file in files:
                                 # Create a title from prefix and filename
@@ -179,7 +184,7 @@ def chapter_editor_view(request, app_label, chapter_id):
                                 chart_title = f"{title_prefix} {base_name}" if title_prefix else base_name
                                 
                                 # Create a new chart block
-                                ChartBlock.objects.create(
+                                ChartBlockClass.objects.create(
                                     chapter=chapter,
                                     order=order_index,
                                     title=chart_title,
@@ -212,7 +217,7 @@ def chapter_editor_view(request, app_label, chapter_id):
                                 image_file_id = block_data.get('image_id')
                                 if image_file_id and request.FILES.get(image_file_id):
                                     block_instance.image = request.FILES[image_file_id]
-                            elif isinstance(block_instance, ChartBlock):
+                            elif isinstance(block_instance, (CulturalChartBlock, StatChartBlock)):  # Updated to use renamed imports
                                 block_instance.title = block_data.get('title', '')
                                 chart_file_id = block_data.get('chart_file_id')
                                 if chart_file_id and request.FILES.get(chart_file_id):

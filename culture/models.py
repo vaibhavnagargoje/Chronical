@@ -202,4 +202,32 @@ class ReferenceBlock(ContentBlock):
         return f"Reference: {self.text[:75]}..."
 
 
+def get_culture_chart_path(instance, filename):
+    """
+    Generates a unique path for uploaded chart HTML files.
+    Example: culture/charts/population-growth-a1b2c3d4.html
+    """
+    base_name = slugify(instance.title or uuid.uuid4().hex)
+    ext = os.path.splitext(filename)[1] or '.html'  # Ensure it has a .html extension
+    unique_id = uuid.uuid4().hex[8]
+    new_filename = f"{base_name}-{unique_id}{ext}"
 
+    
+    state_slug = instance.chapter.district.state.slug if instance.chapter.district.state else 'unknown-state'
+    district_slug = instance.chapter.district.slug if instance.chapter.district else 'unknown-district'
+    chapter_slug = instance.chapter.slug
+    return os.path.join('culture', 'charts', state_slug, district_slug, chapter_slug, new_filename)
+
+class ChartBlock(ContentBlock):
+    title = models.CharField(max_length=255, help_text="Title of the chart e.g., 'Population Growth'", blank=True, null=True)
+    chart_html_file = models.FileField(
+        upload_to=get_culture_chart_path,
+        help_text= "Upload on The PreGenrated  .html File for the Chart"
+ )
+    
+    def get_chart_url(self):
+        return reverse('culture:serve_chart_html', args=[self.id])
+    class Meta:
+        verbose_name = "Chart Block (HTML Upload)"
+    def __str__(self):
+        return f'Chart Block: {self.title or "Untitled"}'

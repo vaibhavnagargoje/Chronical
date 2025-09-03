@@ -9,7 +9,7 @@ from polymorphic.admin import (
 # Import your new models
 from .models import (
     CulturalChapter, ContentBlock, HeadingBlockOne, HeadingBlockTwo,
- HeadingBlockThree, ParagraphBlock, ImageBlock, ReferenceBlock
+ HeadingBlockThree, ParagraphBlock, ImageBlock, ReferenceBlock, ChartBlock
 )
 
 # This inline manager is the key to the admin interface.
@@ -33,7 +33,9 @@ class ContentBlockInline(StackedPolymorphicInline):
     class ReferenceBlockInline(StackedPolymorphicInline.Child):
         model = ReferenceBlock
 
-   
+    class ChartBlockInline(StackedPolymorphicInline.Child):
+        model = ChartBlock
+
     model = ContentBlock
     child_inlines = (
         HeadingBlockOneInline,
@@ -42,6 +44,7 @@ class ContentBlockInline(StackedPolymorphicInline):
         ParagraphBlockInline,
         ImageBlockInline,
         ReferenceBlockInline,
+        ChartBlockInline,
     )
     extra = 0 # Don't show any empty forms by default
 

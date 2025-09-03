@@ -91,10 +91,10 @@
                 <button data-block-type="image" class="add-block-btn">Image</button>
                 <button data-block-type="reference" class="add-block-btn">Reference</button>
                 
-                {% if app_label == 'statistic' %}
+                <!-- Chart blocks for both apps -->
                 <button data-block-type="chart" class="add-block-btn">Chart</button>
                 <button data-block-type="bulk-chart" class="add-block-btn">Bulk Charts</button>
-                {% endif %}
+                
             </div>
         </div>
     </main>
@@ -108,10 +108,9 @@
     <div data-template-type="paragraph">{% include 'editor/partials/paragraph_block.html' %}</div>
     <div data-template-type="image">{% include 'editor/partials/image_block.html' %}</div>
     <div data-template-type="reference">{% include 'editor/partials/reference_block.html' %}</div>
-    {% if app_label == 'statistic' %}
+    <!-- Chart templates for both apps -->
     <div data-template-type="chart">{% include 'editor/partials/chart_block.html' %}</div>
     <div data-template-type="bulk-chart">{% include 'editor/partials/bulk_chart_block.html' %}</div>
-    {% endif %}
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
@@ -172,10 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="insertion-menu-item" data-block-type="paragraph">Paragraph</div>
                     <div class="insertion-menu-item" data-block-type="image">Image</div>
                     <div class="insertion-menu-item" data-block-type="reference">Reference</div>
-                    ${document.querySelector('[data-block-type="chart"]') ? 
-                      '<div class="insertion-menu-item" data-block-type="chart">Chart</div>' : ''}
-                    ${document.querySelector('[data-block-type="bulk-chart"]') ? 
-                      '<div class="insertion-menu-item" data-block-type="bulk-chart">Bulk Charts</div>' : ''}
+                    <div class="insertion-menu-item" data-block-type="chart">Chart</div>
+                    <div class="insertion-menu-item" data-block-type="bulk-chart">Bulk Charts</div>
                 </div>
             </div>
         `;

@@ -9,4 +9,5 @@ urlpatterns = [
         views.cultural_chapter_detail,
         name='cultural_chapter_detail'
     ),
+    path('chart/<int:chart_block_id>/', views.serve_chart_html, name='serve_chart_html'),
 ]
