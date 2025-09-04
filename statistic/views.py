@@ -69,9 +69,7 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
         current_index, prev_chapter, next_chapter = -1, None, None
 
 
-    side_panels= chapter.statistical_chapters.all()
-    side_panel_data = {entry.word: entry.definition for entry in side_panels}
-    
+
     context = {
         'state': chapter.district.state,
         'district': chapter.district,
@@ -83,7 +81,6 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
         'all_districts_in_state': all_districts_in_state,
         'prev_chapter': prev_chapter,
         'next_chapter': next_chapter,
-        'side_panel_data': side_panel_data
     }
     
     # Render the response using a new template for the statistic detail page
