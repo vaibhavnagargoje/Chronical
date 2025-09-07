@@ -107,16 +107,16 @@
 <!-- District Navigation -->
 <div class="bg-white border-b sticky top-16 z-40">
   <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-20 2xl:px-40">
-    <div class="flex items-center justify-center py-3 relative">
-      <!-- Centered container for dropdowns -->
-      <div class="flex items-center justify-center space-x-2 md:space-x-5">
+    <div class="flex items-center justify-between md:justify-center py-3 relative">
+      <!-- Container for dropdowns -->
+      <div class="flex items-center space-x-2 md:space-x-5">
         <!-- Change District Dropdown -->
         <div class="relative" x-data="{ open: false }">
           <button 
             @click="open = !open"
             class="flex items-center space-x-1 text-yellow-600 font-semibold  whitespace-nowrap px-1 py-1 rounded-md transition-all duration-300 hover:bg-gray-100 focus:outline-none"
             >
-            <span>{{district.name}}</span>
+            <span>{{district.name|slice:":14"}}</span>
             <i 
             class="fas fa-chevron-down text-xs transition-transform duration-300" 
             :class="{'rotate-180': open}"
@@ -151,7 +151,7 @@
           class="flex items-center space-x-1 text-[#863F3F] font-medium whitespace-nowrap px-3 py-1 rounded-md transition-all duration-300 hover:bg-[#863F3F]/10 focus:outline-none"
           >
           <!-- Change Chapter Dropdown -->
-            <span>{{chapter.name}}</span>
+            <span>{{chapter.name|slice:":18"}}</span>
             <i 
               class="fas fa-chevron-down text-xs transition-transform duration-300" 
               :class="{'rotate-180': open}"
@@ -217,7 +217,7 @@
       <div class="flex items-center space-x-2 absolute right-0 md:hidden">
         <!-- Suggest Edit Button (Mobile - Icon only) -->
         <a href="{% url 'editor:suggest_edit' app_label='culture' chapter_id=chapter.id %}" 
-           class="flex items-center text-gray-600 hover:text-[#863F3F] p-2 rounded-md transition-colors duration-200">
+           class="flex items-center text-gray-600 hover:text-[#863F3F] pl-5 rounded-md transition-colors duration-200">
           <i class="fas fa-edit text-lg"></i>
         </a>
         
