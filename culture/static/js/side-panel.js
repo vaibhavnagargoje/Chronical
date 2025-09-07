@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Word definitions dictionary
-  const wordDefinitions = {
-  "11th Major Rock Edict": "The Major Rock Edicts of Ashoka, inscribed in the 3rd century BCE, are a set of official proclamations engraved on natural rock surfaces at key frontier and administrative locations across the Mauryan Empire. Found at sites such as Sopara (Maharashtra), Girnar (Gujarat), Kalsi (Uttarakhand), Shahbazgarhi and Mansehra (Pakistan), these edicts conveyed Ashoka’s ethical and political ideals directly to his subjects. Among Ashoka’s Major Rock Edicts, the 11th articulates Dhamma as a framework of moral governance. It proclaims that “there is no such gift as the gift of morality... and kinship through morality (Dhamma Niti),” elevating ethical behavior—respect for parents, kindness to dependents, support for ascetics, and non-violence—as the highest civic ideal.",
+  
+const wordDefinitions = {
+"11th Major Rock Edict": "The Major Rock Edicts of Ashoka, inscribed in the 3rd century BCE, are a set of official proclamations engraved on natural rock surfaces at key frontier and administrative locations across the Mauryan Empire. Found at sites such as Sopara (Maharashtra), Girnar (Gujarat), Kalsi (Uttarakhand), Shahbazgarhi and Mansehra (Pakistan), these edicts conveyed Ashoka’s ethical and political ideals directly to his subjects. Among Ashoka’s Major Rock Edicts, the 11th articulates Dhamma as a framework of moral governance. It proclaims that “there is no such gift as the gift of morality... and kinship through morality (Dhamma Niti),” elevating ethical behavior—respect for parents, kindness to dependents, support for ascetics, and non-violence—as the highest civic ideal.",
 "1857 Revolt": "The War of Independence of 1857—also called the uprising, revolt, or mutiny—was a major armed insurrection against British rule. Sparked by discontent among sepoys of the East India Company’s army, it began at Meerut and spread to Delhi, Kanpur, Lucknow, and Jhansi. Leaders such as Bahadur Shah Zafar, Rani Lakshmibai, Nana Sahib, and Tatya Tope spearheaded the resistance. Once termed the “Sepoy Mutiny” in colonial accounts, it is now widely remembered in India as the First War of Independence.",
 "Aadhaar": "Aadhaar is a 12-digit unique identification number assigned to Indian residents. It is generated based on biometric and demographic data and serves as a universal identity proof. It is issued by the Unique Identification Authority of India (UIDAI).",
 "Abaji Sondev": "Abaji Sondev was a prominent Maratha military leader in the 17th century and a close associate of Chhatrapati Shivaji Maharaj. Renowned for his strategic skill and leadership, he played a key role in the early expansion of the Maratha Swarajya (self-rule). He is known for leading a successful surprise attack to capture Kalyan from the Adil Shahis. He also contributed to early Maratha naval efforts, overseeing shipbuilding along the western coast under Shivaji’s direction.",
@@ -991,7 +992,7 @@ document.addEventListener('DOMContentLoaded', function () {
 "Zulfikar Khan Nasrat Jung": "Zulfiqar Khan Nasrat Jung (born Muhammad Ismail, 1649/1657 – 11 February 1713) was a prominent Mughal noble, military commander, and statesman, best known for his powerful role in the late Mughal Empire and for being considered the empire’s first kingmaker. The son of Asad Khan, a long-serving wazir (prime minister) under Emperor Aurangzeb, Zulfiqar Khan rose through the ranks to become mir bakhshi (paymaster general) and governor of the Deccan. He played a central role in Mughal military campaigns in South India, most notably during the protracted Siege of Jinji, which earned him the title Nasrat Jung. During Emperor Bahadur Shah I’s reign, Zulfiqar Khan became one of the most powerful men in the empire, gaining influence over mansab (rank) assignments and key appointments. In 1712, he engineered the accession of the relatively weak Jahandar Shah after a succession war, establishing himself as the de facto ruler while serving as wazir. His conciliatory policies toward the Rajputs, Marathas, and Sikhs, as well as his efforts to centralize power, marked a brief period of reform and political consolidation. However, his dominance at court bred resentment among other nobles and even the emperor. He was soon executed on 11 February 1713 in Delhi",
 
 
-};
+  };
 
   // Function to find and highlight all words in the content - FIXED VERSION
   function highlightWords() {
@@ -1019,6 +1020,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const containers = document.querySelectorAll('.prose p, .prose div, .prose li, .prose td, .prose th, .prose span');
     containers.forEach(container => {
+      if (container.classList.contains('no-highlight') || container.closest('.no-highlight')) {
+        return;
+      }
       if (container.querySelector('.word-highlight')) return;
       highlightWordsInNode(container);
     });
