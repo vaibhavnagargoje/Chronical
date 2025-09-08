@@ -23,5 +23,4 @@ media/
 gunicorn_config.py
 
 media.zip
-chronical_dump.sql*/migrations/*.py
-*/migrations/*.py >> .gitignore/migrations/__init__.py
+chronical_dump.sql
