@@ -4,6 +4,9 @@ __pycache__/
 *.pyc
 *.sqlite3
 
+# Ignore Django migrations
+*/migrations/
+!*/migrations/__init__.py
 
 # Ignore env
 venv/
@@ -20,4 +23,5 @@ media/
 gunicorn_config.py
 
 media.zip
-chronical_dump.sql
+chronical_dump.sql*/migrations/*.py
+*/migrations/*.py >> .gitignore/migrations/__init__.py
