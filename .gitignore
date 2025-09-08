@@ -4,9 +4,6 @@ __pycache__/
 *.pyc
 *.sqlite3
 
-# Ignore Django migrations
-*/migrations/
-!*/migrations/__init__.py
 
 # Ignore env
 venv/

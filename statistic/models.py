@@ -49,7 +49,7 @@ class StatisticalChapter(models.Model):
         ('Environment', 'Environment'),
         ('Health', 'Health'),
         ('Industry', 'Industry'),
-        ('Labour', 'Labour'),
+        ('Labor', 'Labor'),
         ('Livestock & Fisheries', 'Livestock & Fisheries'),
         ('Police & Judiciary', 'Police & Judiciary'),
         ('Revenue & Expenditure', 'Revenue & Expenditure'),
