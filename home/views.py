@@ -76,7 +76,7 @@ def district_detail(request, state_slug, district_slug):
             'Environment': {'icon': 'environment.png', 'desc': 'Climate and ecological data'},
             'Health': {'icon': 'health.png', 'desc': 'Medical facilities and wellness'},
             'Industry': {'icon': 'industry.png', 'desc': 'IT, automotive, manufacturing'},
-            'Labour': {'icon': 'labour.png', 'desc': 'Employment and workforce data'},
+            'Labor': {'icon': 'labor.png', 'desc': 'Employment and workforce data'},
             'Livestock & Fisheries': {'icon': 'livestock_fisheries.png', 'desc': 'Animal husbandry and aquaculture'},
             'Police & Judiciary': {'icon': 'police_judiciary.png', 'desc': 'Law enforcement and justice system'},
             'Revenue & Expenditure': {'icon': 'revenue.png', 'desc': 'Financial and budget data'},
