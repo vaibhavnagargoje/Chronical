@@ -96,7 +96,7 @@ def register(request):
         otp_record = OTPVerification.objects.create(
             email=email,
             username=email,
-            password=make_password(password),
+            password=password,  # Store the raw password temporarily
             first_name=first_name,
             last_name=last_name,
             otp=otp
@@ -132,7 +132,7 @@ def verify_otp(request):
         try:
             otp_record = OTPVerification.objects.get(email=email)
             if otp_record.is_expired():
-                del (request)
+                del request.session['otp_email']
                 messages.error(request,"OTP has expired. Please request a new one.")
                 return redirect('users:register')
             
@@ -140,12 +140,12 @@ def verify_otp(request):
                 user = User.objects.create_user(
                     username=email,
                     email=email,
-                    password=otp_record.password,
+                    password=otp_record.password,  # Django will hash this password properly
                     first_name=otp_record.first_name,
                     last_name=otp_record.last_name
                 )
 
-                otp_record.delete() 
+                otp_record.delete()
                 messages.success(request, "Registration successful. You can now log in.")
                 return redirect('users:registration_success')
             else:
