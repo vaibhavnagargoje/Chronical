@@ -1,0 +1,210 @@
+{% extends "admindashboard/base.html" %}
+
+{% block title %}{{ form_title }} | Admin Panel{% endblock title %}
+
+{% block content %}
+<div class="p-6">
+    <!-- Header -->
+    <div class="mb-6">
+        <div class="flex items-center">
+            <a href="{% url 'sidepanal:sidepanel_terms' %}" 
+               class="text-[#863F3F] hover:text-[#6B2F2F] mr-4">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <div>
+                <h1 class="text-2xl font-bold text-gray-900">{{ form_title }}</h1>
+                <p class="text-gray-600 mt-1">
+                    {% if form_action == 'create' %}
+                        Create a new side panel term with its default definition
+                    {% else %}
+                        Edit the side panel term and its default definition
+                    {% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Messages -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="mb-4 p-4 rounded-lg {% if message.tags == 'error' %}bg-red-50 text-red-700 border border-red-200{% else %}bg-green-50 text-green-700 border border-green-200{% endif %}">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        {% if message.tags == 'error' %}
+                            <i class="fas fa-exclamation-circle"></i>
+                        {% else %}
+                            <i class="fas fa-check-circle"></i>
+                        {% endif %}
+                    </div>
+                    <div class="ml-3">
+                        {{ message }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <!-- Form -->
+    <div class="bg-white rounded-lg shadow">
+        <form method="POST" class="p-6">
+            {% csrf_token %}
+            
+            <!-- Term Field -->
+            <div class="mb-6">
+                <label for="term" class="block text-sm font-medium text-gray-700 mb-2">
+                    Term <span class="text-red-500">*</span>
+                </label>
+                <input type="text" 
+                       id="term" 
+                       name="term" 
+                       value="{{ term.term|default:'' }}"
+                       required
+                       class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#863F3F] focus:border-transparent"
+                       placeholder="Enter the term or phrase">
+                <p class="mt-1 text-sm text-gray-500">
+                    The exact word or phrase that will be highlighted on the site. Case is ignored during search.
+                </p>
+            </div>
+
+            <!-- Default Definition Field -->
+            <div class="mb-6">
+                <label for="default_definition" class="block text-sm font-medium text-gray-700 mb-2">
+                    Default Definition <span class="text-red-500">*</span>
+                </label>
+                <textarea id="default_definition" 
+                          name="default_definition" 
+                          rows="6"
+                          required
+                          class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#863F3F] focus:border-transparent"
+                          placeholder="Enter the default definition for this term">{{ term.default_definition|default:'' }}</textarea>
+                <p class="mt-1 text-sm text-gray-500">
+                    This definition will be shown by default. You can create chapter-specific overrides later.
+                </p>
+            </div>
+
+            {% if form_action == 'edit' %}
+            <!-- Auto-generated fields display -->
+            <div class="mb-6 p-4 bg-gray-50 rounded-lg">
+                <h3 class="text-sm font-medium text-gray-700 mb-2">System Information</h3>
+                <div class="text-sm text-gray-600">
+                    <p><strong>Term ID:</strong> {{ term.id }}</p>
+                    <p><strong>Contextual Overrides:</strong> {{ term.contextual_definitions.count }}</p>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Form Actions -->
+            <div class="flex justify-end space-x-3 pt-6 border-t border-gray-200">
+                <a href="{% url 'sidepanal:sidepanel_terms' %}" 
+                   class="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors duration-200">
+                    Cancel
+                </a>
+                <button type="submit" 
+                        class="px-6 py-2 bg-[#863F3F] text-white rounded-lg hover:bg-[#6B2F2F] transition-colors duration-200">
+                    {% if form_action == 'create' %}
+                        <i class="fas fa-plus mr-2"></i>Create Term
+                    {% else %}
+                        <i class="fas fa-save mr-2"></i>Update Term
+                    {% endif %}
+                </button>
+            </div>
+        </form>
+    </div>
+
+    {% if form_action == 'edit' and term %}
+    <!-- Contextual Overrides Quick View -->
+    <div class="mt-6 bg-white rounded-lg shadow">
+        <div class="p-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-lg font-medium text-gray-900">Contextual Overrides</h2>
+                <a href="{% url 'sidepanal:sidepanel_term_detail' term.id %}" 
+                   class="text-[#863F3F] hover:text-[#6B2F2F] text-sm">
+                    View All Overrides <i class="fas fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+            
+            {% if term.contextual_definitions.count > 0 %}
+                <div class="space-y-3">
+                    {% for override in term.contextual_definitions.all|slice:":3" %}
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <div>
+                                <span class="text-sm font-medium text-gray-900">
+                                    {{ override.cultural_chapter|default:override.statistical_chapter }}
+                                </span>
+                                <span class="ml-2 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium 
+                                           {% if override.is_active %}bg-green-100 text-green-800{% else %}bg-red-100 text-red-800{% endif %}">
+                                    {% if override.is_active %}Active{% else %}Inactive{% endif %}
+                                </span>
+                            </div>
+                            <div class="text-sm text-gray-500">
+                                {% if override.override_definition %}
+                                    Custom Definition
+                                {% else %}
+                                    Hidden in Chapter
+                                {% endif %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+                    {% if term.contextual_definitions.count > 3 %}
+                        <div class="text-center pt-2">
+                            <span class="text-sm text-gray-500">
+                                And {{ term.contextual_definitions.count|add:"-3" }} more override{{ term.contextual_definitions.count|add:"-3"|pluralize }}...
+                            </span>
+                        </div>
+                    {% endif %}
+                </div>
+            {% else %}
+                <div class="text-center py-6 text-gray-500">
+                    <i class="fas fa-info-circle mb-2"></i>
+                    <p>No contextual overrides created yet.</p>
+                    <a href="{% url 'sidepanal:sidepanel_override_create' %}" 
+                       class="text-[#863F3F] hover:text-[#6B2F2F] text-sm">
+                        Create the first override
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<script>
+// Auto-resize textarea
+document.getElementById('default_definition').addEventListener('input', function() {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
+});
+
+// Character counter
+const definitionTextarea = document.getElementById('default_definition');
+const termInput = document.getElementById('term');
+
+// Add character counters
+function addCharacterCounter(element, maxLength = null) {
+    const counter = document.createElement('div');
+    counter.className = 'text-xs text-gray-500 mt-1 text-right';
+    element.parentNode.appendChild(counter);
+    
+    function updateCounter() {
+        const length = element.value.length;
+        if (maxLength) {
+            counter.textContent = `${length}/${maxLength} characters`;
+            if (length > maxLength) {
+                counter.className = 'text-xs text-red-500 mt-1 text-right';
+            } else {
+                counter.className = 'text-xs text-gray-500 mt-1 text-right';
+            }
+        } else {
+            counter.textContent = `${length} characters`;
+        }
+    }
+    
+    element.addEventListener('input', updateCounter);
+    updateCounter();
+}
+
+addCharacterCounter(termInput, 230);
+addCharacterCounter(definitionTextarea);
+</script>
+{% endblock content %}

@@ -1,0 +1,565 @@
+{% extends "admindashboard/base.html" %}
+
+{% block title %}Side Panel Terms | Admin Panel{% endblock title %}
+
+{% block content %}
+<div class="p-4">
+    <!-- Compact Header with Navigation Buttons -->
+    <div class="mb-4">
+        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4">
+            <div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-list-alt text-[#863F3F] text-lg"></i>
+                    <h1 class="text-xl font-bold text-gray-900">Side Panel Management</h1>
+                </div>
+                <p class="text-sm text-gray-500 mt-1">Efficiently manage thousands of terms and definitions</p>
+            </div>
+            
+            <!-- Admin Navigation Buttons -->
+            <div class="flex flex-wrap gap-2">
+                <a href="{% url 'sidepanal:sidepanel_term_create' %}" 
+                   class="bg-[#863F3F] text-white px-4 py-2 rounded-md hover:bg-[#6B2F2F] transition-colors text-sm font-medium flex items-center gap-2">
+                    <i class="fas fa-plus text-xs"></i>
+                    Add New Term
+                </a>
+                <a href="{% url 'sidepanal:sidepanel_overrides' %}" 
+                   class="bg-[#412424] text-white px-4 py-2 rounded-md transition-colors text-sm font-medium flex items-center gap-2">
+                    <i class="fas fa-cog text-xs"></i>
+                    Manage Overrides
+                </a>
+                <button onclick="showImportModal()" 
+                        class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-colors text-sm font-medium flex items-center gap-2">
+                    <i class="fas fa-upload text-xs"></i>
+                    Import Bulk
+                </button>
+                <button onclick="exportTerms()" 
+                        class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors text-sm font-medium flex items-center gap-2">
+                    <i class="fas fa-download text-xs"></i>
+                    Export Terms
+                </button>
+                <button onclick="toggleBulkActions()" 
+                        class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-colors text-sm font-medium flex items-center gap-2">
+                    <i class="fas fa-tasks text-xs"></i>
+                    Bulk Actions
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compact Statistics Cards -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
+        <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Total Terms</p>
+                    <p class="text-lg font-bold text-gray-900">{{ total_terms }}</p>
+                </div>
+                <div class="p-2 rounded-full bg-blue-50">
+                    <i class="fas fa-list text-blue-600 text-sm"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Overrides</p>
+                    <p class="text-lg font-bold text-gray-900">{{ total_overrides }}</p>
+                </div>
+                <div class="p-2 rounded-full bg-green-50">
+                    <i class="fas fa-edit text-green-600 text-sm"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Active</p>
+                    <p class="text-lg font-bold text-green-700">{{ active_overrides }}</p>
+                </div>
+                <div class="p-2 rounded-full bg-yellow-50">
+                    <i class="fas fa-check-circle text-yellow-600 text-sm"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-200">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 font-medium uppercase tracking-wide">Inactive</p>
+                    <p class="text-lg font-bold text-red-700">{{ total_overrides|add:'-'|add:active_overrides }}</p>
+                </div>
+                <div class="p-2 rounded-full bg-red-50">
+                    <i class="fas fa-times-circle text-red-600 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compact Search and Filters -->
+    <div class="bg-white p-3 rounded-lg shadow-sm border border-gray-200 mb-4">
+        <form method="GET" class="flex flex-col lg:flex-row gap-3">
+            <div class="flex-1">
+                <div class="relative">
+                    <input type="text" 
+                           id="search" 
+                           name="search" 
+                           value="{{ search_query }}"
+                           placeholder="Search terms and definitions..." 
+                           class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#863F3F] focus:border-transparent text-sm">
+                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <i class="fas fa-search text-gray-400 text-sm"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex gap-2">
+                <select name="sort" class="border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#863F3F]">
+                    <option value="term">Sort A-Z</option>
+                    <option value="-term">Sort Z-A</option>
+                    <option value="overrides_count">Fewest Overrides</option>
+                    <option value="-overrides_count">Most Overrides</option>
+                </select>
+                
+                <button type="submit" 
+                        class="bg-[#863F3F] text-white px-4 py-2 rounded-md hover:bg-[#6B2F2F] transition-colors text-sm">
+                    Search
+                </button>
+                
+                {% if search_query %}
+                <a href="{% url 'sidepanal:sidepanel_terms' %}" 
+                   class="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors text-sm">
+                    Clear
+                </a>
+                {% endif %}
+            </div>
+        </form>
+    </div>
+
+    <!-- Bulk Actions Bar (Hidden by default) -->
+    <div id="bulkActionsBar" class="hidden bg-yellow-50 border border-yellow-200 border-l-4 border-l-yellow-400 p-3 mb-4 rounded-md">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center">
+                <i class="fas fa-info-circle text-yellow-500 mr-2"></i>
+                <span class="text-sm font-medium text-yellow-800">Bulk Actions Mode Active</span>
+            </div>
+            <div class="flex gap-2">
+                <button onclick="bulkDelete()" class="bg-red-600 text-white px-3 py-1 rounded-md text-sm hover:bg-red-700">
+                    Delete Selected
+                </button>
+                <button onclick="bulkExport()" class="bg-blue-600 text-white px-3 py-1 rounded-md text-sm hover:bg-blue-700">
+                    Export Selected
+                </button>
+                <button onclick="toggleBulkActions()" class="bg-gray-500 text-white px-3 py-1 rounded-md text-sm hover:bg-gray-600">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compact Terms Table -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+        <div class="overflow-x-auto">
+            <table class="min-w-full">
+                <thead class="bg-gray-50 border-b border-gray-200">
+                    <tr>
+                        <th class="w-10 px-3 py-2 text-left">
+                            <input type="checkbox" id="selectAll" onchange="toggleSelectAll()" 
+                                   class="rounded border-gray-300 text-[#863F3F] focus:ring-[#863F3F] hidden">
+                        </th>
+                        <th class="px-3 py-2 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Term</th>
+                        <th class="px-3 py-2 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">Definition</th>
+                        <th class="px-3 py-2 text-center text-xs font-semibold text-gray-700 uppercase tracking-wider">Overrides</th>
+                        <th class="px-3 py-2 text-center text-xs font-semibold text-gray-700 uppercase tracking-wider">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-100">
+                    {% for term in terms %}
+                    <tr class="hover:bg-gray-50 transition-colors">
+                        <td class="px-3 py-2">
+                            <input type="checkbox" name="selected_terms" value="{{ term.id }}" 
+                                   class="rounded border-gray-300 text-[#863F3F] focus:ring-[#863F3F] bulk-checkbox hidden">
+                        </td>
+                        <td class="px-3 py-2">
+                            <div class="flex flex-col">
+                                <span class="text-sm font-medium text-gray-900 truncate max-w-xs" title="{{ term.term }}">
+                                    {{ term.term }}
+                                </span>
+                                <span class="text-xs text-gray-500">ID: {{ term.id }}</span>
+                            </div>
+                        </td>
+                        <td class="px-3 py-2">
+                            <div class="text-sm text-gray-700 max-w-md">
+                                <p class="line-clamp-2" title="{{ term.default_definition }}">
+                                    {{ term.default_definition|truncatewords:20 }}
+                                </p>
+                            </div>
+                        </td>
+                        <td class="px-3 py-2 text-center">
+                            {% if term.overrides_count > 0 %}
+                                <span class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium 
+                                           {% if term.overrides_count > 10 %}bg-red-100 text-red-800{% elif term.overrides_count > 5 %}bg-yellow-100 text-yellow-800{% else %}bg-green-100 text-green-800{% endif %}">
+                                    {{ term.overrides_count }}
+                                </span>
+                            {% else %}
+                                <span class="text-gray-400 text-xs">0</span>
+                            {% endif %}
+                        </td>
+                        <td class="px-3 py-2">
+                            <div class="flex justify-center gap-1">
+                                <a href="{% url 'sidepanal:sidepanel_term_detail' term.id %}" 
+                                   class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-medium hover:bg-blue-200 transition-colors">
+                                    View
+                                </a>
+                                <a href="{% url 'sidepanal:sidepanel_term_edit' term.id %}" 
+                                   class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-medium hover:bg-green-200 transition-colors">
+                                    Edit
+                                </a>
+                                {% if term.overrides_count > 0 %}
+                                <a href="{% url 'sidepanal:sidepanel_overrides' %}?term={{ term.id }}" 
+                                   class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs font-medium hover:bg-purple-200 transition-colors">
+                                    Overrides
+                                </a>
+                                {% endif %}
+                                <button onclick="deleteItem({{ term.id }}, '{{ term.term|escapejs }}')" 
+                                        class="bg-red-100 text-red-700 px-2 py-1 rounded text-xs font-medium hover:bg-red-200 transition-colors">
+                                    Delete
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="5" class="px-6 py-8 text-center text-gray-500">
+                            <div class="flex flex-col items-center">
+                                <i class="fas fa-search text-gray-300 text-2xl mb-3"></i>
+                                <p class="text-lg font-medium text-gray-400 mb-2">No terms found</p>
+                                {% if search_query %}
+                                    <p class="text-sm text-gray-500 mb-4">Try adjusting your search criteria</p>
+                                    <a href="{% url 'sidepanal:sidepanel_terms' %}" class="bg-gray-500 text-white px-4 py-2 rounded-md text-sm hover:bg-gray-600">
+                                        Clear search
+                                    </a>
+                                {% else %}
+                                    <a href="{% url 'sidepanal:sidepanel_term_create' %}" 
+                                       class="bg-[#863F3F] text-white px-4 py-2 rounded-md hover:bg-[#6B2F2F] transition-colors text-sm">
+                                        Create First Term
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Import Bulk Modal -->
+<div id="importModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 hidden z-50">
+    <div class="flex items-center justify-center min-h-screen px-4">
+        <div class="bg-white rounded-lg shadow-lg max-w-lg w-full p-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="text-lg font-medium text-gray-900">Import Terms in Bulk</h3>
+                <button onclick="hideImportModal()" class="text-gray-400 hover:text-gray-600">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Import Instructions -->
+            <div class="mb-4 p-4 bg-blue-50 rounded-lg border border-blue-200">
+                <h4 class="font-medium text-blue-900 mb-2">CSV Format Instructions:</h4>
+                <ul class="text-sm text-blue-800 list-disc list-inside space-y-1">
+                    <li>First column: Term/Phrase</li>
+                    <li>Second column: Definition</li>
+                    <li>Include header row (Term, Definition)</li>
+                    <li>Save as UTF-8 CSV file</li>
+                </ul>
+                <div class="mt-2">
+                    <button onclick="downloadTemplate()" class="text-blue-600 hover:text-blue-800 text-sm font-medium">
+                        <i class="fas fa-download mr-1"></i>Download CSV Template
+                    </button>
+                </div>
+            </div>
+            
+            <form id="importForm" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="mb-4">
+                    <label for="csvFile" class="block text-sm font-medium text-gray-700 mb-2">
+                        Choose CSV File
+                    </label>
+                    <input type="file" 
+                           id="csvFile" 
+                           name="file" 
+                           accept=".csv"
+                           required
+                           class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#863F3F] focus:border-transparent">
+                </div>
+                
+                <!-- Progress Bar -->
+                <div id="uploadProgress" class="hidden mb-4">
+                    <div class="bg-gray-200 rounded-full h-2">
+                        <div id="progressBar" class="bg-[#863F3F] h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                    </div>
+                    <p id="progressText" class="text-sm text-gray-600 mt-1">Uploading...</p>
+                </div>
+                
+                <!-- Results -->
+                <div id="importResults" class="hidden mb-4"></div>
+                
+                <div class="flex justify-end gap-2">
+                    <button type="button" onclick="hideImportModal()" 
+                            class="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50">
+                        Cancel
+                    </button>
+                    <button type="submit" 
+                            class="px-4 py-2 bg-[#863F3F] text-white rounded-md hover:bg-[#6B2F2F]">
+                        <i class="fas fa-upload mr-2"></i>Import Terms
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Enhanced JavaScript -->
+<script>
+let bulkMode = false;
+
+function toggleBulkActions() {
+    bulkMode = !bulkMode;
+    const bar = document.getElementById('bulkActionsBar');
+    const checkboxes = document.querySelectorAll('.bulk-checkbox');
+    const selectAll = document.getElementById('selectAll');
+    
+    if (bulkMode) {
+        bar.classList.remove('hidden');
+        checkboxes.forEach(cb => cb.classList.remove('hidden'));
+        selectAll.classList.remove('hidden');
+    } else {
+        bar.classList.add('hidden');
+        checkboxes.forEach(cb => {
+            cb.checked = false;
+            cb.classList.add('hidden');
+        });
+        selectAll.classList.add('hidden');
+        selectAll.checked = false;
+    }
+}
+
+function toggleSelectAll() {
+    const selectAll = document.getElementById('selectAll');
+    const checkboxes = document.querySelectorAll('.bulk-checkbox');
+    checkboxes.forEach(cb => cb.checked = selectAll.checked);
+}
+
+function bulkDelete() {
+    const selected = Array.from(document.querySelectorAll('.bulk-checkbox:checked'));
+    if (selected.length === 0) {
+        alert('Please select terms to delete.');
+        return;
+    }
+    
+    if (confirm(`Are you sure you want to delete ${selected.length} selected term(s)? This action cannot be undone.`)) {
+        // Implementation for bulk delete would go here
+        console.log('Bulk delete:', selected.map(cb => cb.value));
+        alert('Bulk delete functionality to be implemented.');
+    }
+}
+
+function bulkExport() {
+    const selected = Array.from(document.querySelectorAll('.bulk-checkbox:checked'));
+    if (selected.length === 0) {
+        // Export all if none selected
+        window.location.href = '{% url "sidepanal:export_terms" %}';
+    } else {
+        // For now, export all - can be enhanced to export only selected
+        alert(`Exporting ${selected.length} selected terms. Note: Currently exports all terms - selective export coming soon.`);
+        window.location.href = '{% url "sidepanal:export_terms" %}';
+    }
+}
+
+function exportTerms() {
+    window.location.href = '{% url "sidepanal:export_terms" %}';
+}
+
+function showImportModal() {
+    document.getElementById('importModal').classList.remove('hidden');
+    // Reset form
+    document.getElementById('importForm').reset();
+    document.getElementById('uploadProgress').classList.add('hidden');
+    document.getElementById('importResults').classList.add('hidden');
+}
+
+function hideImportModal() {
+    document.getElementById('importModal').classList.add('hidden');
+}
+
+function downloadTemplate() {
+    // Create CSV template
+    const csvContent = 'Term,Definition\nExample Term,This is an example definition for the term.\nAnother Term,Another definition goes here.';
+    const blob = new Blob([csvContent], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.style.display = 'none';
+    a.href = url;
+    a.download = 'terms_template.csv';
+    document.body.appendChild(a);
+    a.click();
+    window.URL.revokeObjectURL(url);
+    document.body.removeChild(a);
+}
+
+// Handle import form submission
+document.getElementById('importForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const fileInput = document.getElementById('csvFile');
+    const file = fileInput.files[0];
+    
+    if (!file) {
+        alert('Please select a CSV file to upload.');
+        return;
+    }
+    
+    if (!file.name.endsWith('.csv')) {
+        alert('Please select a valid CSV file.');
+        return;
+    }
+    
+    // Show progress bar
+    const progressContainer = document.getElementById('uploadProgress');
+    const progressBar = document.getElementById('progressBar');
+    const progressText = document.getElementById('progressText');
+    const resultsContainer = document.getElementById('importResults');
+    
+    progressContainer.classList.remove('hidden');
+    resultsContainer.classList.add('hidden');
+    progressBar.style.width = '0%';
+    progressText.textContent = 'Preparing upload...';
+    
+    // Create form data
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('csrfmiddlewaretoken', document.querySelector('[name=csrfmiddlewaretoken]').value);
+    
+    try {
+        // Simulate progress
+        progressBar.style.width = '30%';
+        progressText.textContent = 'Uploading file...';
+        
+        const response = await fetch('{% url "sidepanal:import_terms_bulk" %}', {
+            method: 'POST',
+            body: formData
+        });
+        
+        progressBar.style.width = '80%';
+        progressText.textContent = 'Processing data...';
+        
+        const result = await response.json();
+        
+        progressBar.style.width = '100%';
+        progressText.textContent = 'Complete!';
+        
+        // Show results
+        setTimeout(() => {
+            progressContainer.classList.add('hidden');
+            resultsContainer.classList.remove('hidden');
+            
+            if (result.success) {
+                resultsContainer.innerHTML = `
+                    <div class="p-4 bg-green-50 border border-green-200 rounded-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-green-600 mr-2"></i>
+                            <h4 class="font-medium text-green-900">Import Successful!</h4>
+                        </div>
+                        <div class="mt-2 text-sm text-green-800">
+                            <p>${result.message}</p>
+                            ${result.created ? `<p>• Created: ${result.created} terms</p>` : ''}
+                            ${result.updated ? `<p>• Updated: ${result.updated} terms</p>` : ''}
+                            ${result.errors ? `<p>• Errors: ${result.errors} rows</p>` : ''}
+                        </div>
+                        ${result.error_details && result.error_details.length > 0 ? `
+                            <details class="mt-2">
+                                <summary class="cursor-pointer text-sm font-medium text-green-700">View Error Details</summary>
+                                <ul class="mt-1 text-xs text-red-600 list-disc list-inside">
+                                    ${result.error_details.map(error => `<li>${error}</li>`).join('')}
+                                </ul>
+                            </details>
+                        ` : ''}
+                        <div class="mt-3">
+                            <button onclick="location.reload()" class="bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700">
+                                Refresh Page
+                            </button>
+                        </div>
+                    </div>
+                `;
+            } else {
+                resultsContainer.innerHTML = `
+                    <div class="p-4 bg-red-50 border border-red-200 rounded-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-exclamation-circle text-red-600 mr-2"></i>
+                            <h4 class="font-medium text-red-900">Import Failed</h4>
+                        </div>
+                        <p class="mt-2 text-sm text-red-800">${result.error}</p>
+                    </div>
+                `;
+            }
+        }, 500);
+        
+    } catch (error) {
+        progressContainer.classList.add('hidden');
+        resultsContainer.classList.remove('hidden');
+        resultsContainer.innerHTML = `
+            <div class="p-4 bg-red-50 border border-red-200 rounded-lg">
+                <div class="flex items-center">
+                    <i class="fas fa-exclamation-circle text-red-600 mr-2"></i>
+                    <h4 class="font-medium text-red-900">Network Error</h4>
+                </div>
+                <p class="mt-2 text-sm text-red-800">Failed to upload file. Please try again.</p>
+            </div>
+        `;
+    }
+});
+
+function deleteItem(termId, termName) {
+    if (confirm(`Are you sure you want to delete "${termName}"? This will also delete all its overrides.`)) {
+        // Create form and submit
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = '{% url "sidepanal:sidepanel_term_delete" %}';
+        
+        const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]')?.value || '{{ csrf_token }}';
+        if (csrfToken) {
+            const csrfInput = document.createElement('input');
+            csrfInput.type = 'hidden';
+            csrfInput.name = 'csrfmiddlewaretoken';
+            csrfInput.value = csrfToken;
+            form.appendChild(csrfInput);
+        }
+        
+        const termInput = document.createElement('input');
+        termInput.type = 'hidden';
+        termInput.name = 'term_id';
+        termInput.value = termId;
+        form.appendChild(termInput);
+        
+        document.body.appendChild(form);
+        form.submit();
+    }
+}
+
+// Initialize page
+document.addEventListener('DOMContentLoaded', function() {
+    // Hide bulk elements initially
+    const checkboxes = document.querySelectorAll('.bulk-checkbox');
+    const selectAll = document.getElementById('selectAll');
+    
+    checkboxes.forEach(cb => cb.classList.add('hidden'));
+    selectAll.classList.add('hidden');
+});
+</script>
+
+{% endblock content %}

@@ -1,0 +1,817 @@
+{% extends "admindashboard/base.html" %}
+{% load static %}
+
+{% block title %}{{ form_title }} | Admin Panel{% endblock title %}
+
+{% block extra_css %}
+<style>
+/* Searchable Dropdown Styles */
+.term-option.highlighted {
+    background-color: #863F3F !important;
+    color: white;
+}
+
+.term-option.highlighted .text-gray-500 {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Smooth animations */
+.term-option {
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Custom scrollbar for dropdown */
+#term_dropdown {
+    scrollbar-width: thin;
+    scrollbar-color: #e5e7eb #f9fafb;
+}
+
+#term_dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+#term_dropdown::-webkit-scrollbar-track {
+    background: #f9fafb;
+}
+
+#term_dropdown::-webkit-scrollbar-thumb {
+    background: #e5e7eb;
+    border-radius: 3px;
+}
+
+#term_dropdown::-webkit-scrollbar-thumb:hover {
+    background: #d1d5db;
+}
+</style>
+{% endblock extra_css %}
+
+{% block content %}
+<div class="p-4 max-w-4xl mx-auto">
+    <!-- Breadcrumb Navigation -->
+    <nav class="flex items-center text-sm text-gray-500 mb-6">
+        <a href="{% url 'sidepanal:sidepanel_overrides' %}" class="hover:text-[#863F3F] transition-colors">Overrides</a>
+        <i class="fas fa-chevron-right mx-2 text-xs"></i>
+        <span class="text-gray-900 font-medium">{{ form_title }}</span>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-white rounded-lg shadow-sm border mb-6">
+        <div class="p-6">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gradient-to-br from-[#863F3F] to-[#6B2F2F] rounded-lg flex items-center justify-center">
+                    <i class="fas fa-layer-group text-white text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold text-gray-900">{{ form_title }}</h1>
+                    <p class="text-gray-600 mt-1">
+                        {% if form_action == 'create' %}
+                            Create chapter-specific term definitions with district-based organization
+                        {% else %}
+                            Modify the contextual override settings for this term
+                        {% endif %}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Messages -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="mb-4 p-4 rounded-lg {% if message.tags == 'error' %}bg-red-50 text-red-700 border border-red-200{% else %}bg-green-50 text-green-700 border border-green-200{% endif %}">
+                <div class="flex items-center">
+                    <i class="{% if message.tags == 'error' %}fas fa-exclamation-circle{% else %}fas fa-check-circle{% endif %} mr-3 text-sm"></i>
+                    <span>{{ message }}</span>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <!-- Form -->
+    <div class="bg-white rounded-lg shadow-sm border">
+        <form method="POST" class="p-6" id="overrideForm">
+            {% csrf_token %}
+            
+            <div class="space-y-8">
+                {% if form_action == 'create' %}
+                <!-- Term Selection -->
+                <div class="bg-blue-50 rounded-lg p-6 border border-blue-200">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-tag text-white text-sm"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Select Term</h3>
+                    </div>
+                    
+                    <div>
+                        <label for="term_search" class="block text-sm font-medium text-gray-700 mb-3">
+                            Choose the term to create an override for <span class="text-red-500">*</span>
+                        </label>
+                        
+                        <!-- Searchable Dropdown Container -->
+                        <div class="relative">
+                            <!-- Search Input -->
+                            <input type="text" 
+                                   id="term_search" 
+                                   placeholder="Type to search terms..."
+                                   autocomplete="off"
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent text-sm">
+                            
+                            <!-- Dropdown Icon -->
+                            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                                <i class="fas fa-chevron-down text-gray-400 text-sm"></i>
+                            </div>
+                            
+                            <!-- Hidden Select (for form submission) -->
+                            <select id="term_id" name="term_id" required class="hidden">
+                                <option value="">Select a term...</option>
+                                {% for term in terms %}
+                                <option value="{{ term.id }}" 
+                                        {% if request.GET.term_id == term.id|stringformat:"s" %}selected{% endif %}
+                                        data-definition="{{ term.default_definition }}"
+                                        data-term="{{ term.term }}">
+                                    {{ term.term }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                            
+                            <!-- Dropdown Options -->
+                            <div id="term_dropdown" 
+                                 class="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto hidden">
+                                <div id="term_options">
+                                    {% for term in terms %}
+                                    <div class="term-option px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-b-0"
+                                         data-value="{{ term.id }}" 
+                                         data-definition="{{ term.default_definition }}"
+                                         data-term="{{ term.term }}">
+                                        <div class="font-medium text-gray-900">{{ term.term }}</div>
+                                        <div class="text-sm text-gray-500 mt-1 line-clamp-2">{{ term.default_definition|truncatechars:100 }}</div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                
+                                <!-- No Results Message -->
+                                <div id="no_results" class="px-4 py-3 text-gray-500 text-center hidden">
+                                    <i class="fas fa-search text-gray-400 mb-2"></i>
+                                    <div>No terms found matching your search</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Default Definition Preview -->
+                        <div id="defaultDefinitionPreview" class="mt-4 p-4 bg-gray-50 rounded-lg border hidden">
+                            <h4 class="font-semibold text-gray-900 mb-2 flex items-center">
+                                <i class="fas fa-book text-gray-600 mr-2"></i>
+                                Default Definition:
+                            </h4>
+                            <p id="defaultDefinitionText" class="text-gray-700 leading-relaxed"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- District and Chapter Selection -->
+                <div class="bg-purple-50 rounded-lg p-6 border border-purple-200">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-map-marker-alt text-white text-sm"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Select Location & Chapter</h3>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <!-- District Selection -->
+                        <div>
+                            <label for="district_id" class="block text-sm font-medium text-gray-700 mb-3">
+                                Choose District <span class="text-red-500">*</span>
+                            </label>
+                            <select id="district_id" name="district_id"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent text-sm">
+                                <option value="">Select a district first...</option>
+                                {% for district in districts %}
+                                <option value="{{ district.id }}">
+                                    {{ district.name }}, {{ district.state.name }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                            <p class="mt-2 text-xs text-gray-500">Select the district to see available chapters</p>
+                        </div>
+
+                        <!-- Chapter Type Selection -->
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-3">
+                                Chapter Type <span class="text-red-500">*</span>
+                            </label>
+                            <div class="space-y-3">
+                                <label class="flex items-center p-3 bg-white rounded-lg border hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="radio" id="cultural_type" name="chapter_type" value="cultural" 
+                                           class="h-4 w-4 text-[#863F3F] focus:ring-[#863F3F] border-gray-300">
+                                    <div class="ml-3">
+                                        <div class="flex items-center">
+                                            <i class="fas fa-landmark text-purple-600 mr-2"></i>
+                                            <span class="font-medium text-gray-900">Cultural Chapter</span>
+                                        </div>
+                                        <p class="text-xs text-gray-500">Arts, festivals, food, language, etc.</p>
+                                    </div>
+                                </label>
+                                <label class="flex items-center p-3 bg-white rounded-lg border hover:bg-gray-50 cursor-pointer transition-colors">
+                                    <input type="radio" id="statistical_type" name="chapter_type" value="statistical" 
+                                           class="h-4 w-4 text-[#863F3F] focus:ring-[#863F3F] border-gray-300">
+                                    <div class="ml-3">
+                                        <div class="flex items-center">
+                                            <i class="fas fa-chart-bar text-orange-600 mr-2"></i>
+                                            <span class="font-medium text-gray-900">Statistical Chapter</span>
+                                        </div>
+                                        <p class="text-xs text-gray-500">Demographics, economy, infrastructure, etc.</p>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chapter Selection -->
+                    <div id="chapterSelectionSection" class="hidden mt-6">
+                        <label for="chapter_id" class="block text-sm font-medium text-gray-700 mb-3">
+                            Select Specific Chapter <span class="text-red-500">*</span>
+                        </label>
+                        <select id="chapter_id" name="chapter_id"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent text-sm">
+                            <option value="">Choose a chapter...</option>
+                        </select>
+                        <div id="loadingChapters" class="hidden mt-2 text-sm text-gray-500">
+                            <i class="fas fa-spinner fa-spin mr-2"></i>
+                            Loading available chapters...
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <!-- Edit Mode - Show Current Override Info -->
+                <div class="bg-blue-50 rounded-lg p-6 border border-blue-200">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-info-circle text-white text-sm"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-blue-900">Override Information</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <p class="text-blue-800"><strong>Term:</strong> {{ override.term.term }}</p>
+                            <p class="text-blue-800"><strong>Chapter:</strong> {{ override.chapter_name }}</p>
+                        </div>
+                        <div>
+                            <p class="text-blue-800"><strong>Type:</strong> {{ override.chapter_type }}</p>
+                            <p class="text-blue-800"><strong>District:</strong> {{ override.district_info }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Default Definition for Edit -->
+                <div class="bg-gray-50 rounded-lg p-6 border">
+                    <div class="flex items-center gap-2 mb-3">
+                        <div class="w-8 h-8 bg-gray-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-book text-white text-sm"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-900">Default Definition</h4>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">{{ override.term.default_definition }}</p>
+                </div>
+                {% endif %}
+
+                <!-- Override Definition -->
+                <div class="bg-green-50 rounded-lg p-6 border border-green-200">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-edit text-white text-sm"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Custom Definition</h3>
+                    </div>
+                    
+                    <div>
+                        <label for="override_definition" class="block text-sm font-medium text-gray-700 mb-3">
+                            Override Definition (Optional)
+                        </label>
+                        <textarea id="override_definition" name="override_definition" rows="6"
+                                  placeholder="Enter a custom definition for this term in the selected chapter. Leave blank to use the default definition."
+                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent text-sm">{% if form_action == 'edit' %}{{ override.override_definition }}{% endif %}</textarea>
+                        <p class="mt-2 text-xs text-gray-500">
+                            💡 <strong>Tip:</strong> If left blank, the default definition will be used. Enter a custom definition only if this term has a different meaning in this specific chapter.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Status and Options -->
+                <div class="bg-yellow-50 rounded-lg p-6 border border-yellow-200">
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-8 h-8 bg-yellow-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-toggle-on text-white text-sm"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-900">Status & Visibility</h3>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <label class="flex items-start p-4 bg-white rounded-lg border hover:bg-gray-50 cursor-pointer transition-colors">
+                            <input type="checkbox" id="is_active" name="is_active" 
+                                   {% if form_action == 'create' or override.is_active %}checked{% endif %}
+                                   class="h-5 w-5 text-[#863F3F] focus:ring-[#863F3F] border-gray-300 rounded mt-1">
+                            <div class="ml-3">
+                                <span class="font-medium text-gray-900 block">Active Override</span>
+                                <span class="text-sm text-gray-600">
+                                    When checked, this override will be active and visible. When unchecked, the term will be completely hidden in this chapter.
+                                </span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="mt-8 flex flex-col sm:flex-row justify-end gap-3 pt-6 border-t border-gray-200">
+                <a href="{% url 'sidepanal:sidepanel_overrides' %}" 
+                   class="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors text-center font-medium">
+                    Cancel Changes
+                </a>
+                <button type="submit" 
+                        class="px-8 py-3 bg-gradient-to-r from-[#863F3F] to-[#6B2F2F] text-white rounded-lg hover:from-[#6B2F2F] hover:to-[#863F3F] transition-all duration-200 font-medium flex items-center justify-center">
+                    {% if form_action == 'create' %}
+                        <i class="fas fa-plus mr-2"></i>Create Override
+                    {% else %}
+                        <i class="fas fa-save mr-2"></i>Update Override
+                    {% endif %}
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Form elements
+    const termSearch = document.getElementById('term_search');
+    const termSelect = document.getElementById('term_id');
+    const termDropdown = document.getElementById('term_dropdown');
+    const termOptions = document.getElementById('term_options');
+    const noResults = document.getElementById('no_results');
+    const districtSelect = document.getElementById('district_id');
+    const culturalRadio = document.getElementById('cultural_type');
+    const statisticalRadio = document.getElementById('statistical_type');
+    const chapterSection = document.getElementById('chapterSelectionSection');
+    const chapterSelect = document.getElementById('chapter_id');
+    const loadingIndicator = document.getElementById('loadingChapters');
+    const defaultDefinitionPreview = document.getElementById('defaultDefinitionPreview');
+    const defaultDefinitionText = document.getElementById('defaultDefinitionText');
+    const overrideForm = document.getElementById('overrideForm');
+
+    // Searchable Term Dropdown Functionality
+    let allTermOptions = [];
+    
+    // Initialize term options array
+    if (termOptions) {
+        allTermOptions = Array.from(termOptions.querySelectorAll('.term-option')).map(option => ({
+            element: option,
+            value: option.dataset.value,
+            term: option.dataset.term.toLowerCase(),
+            definition: option.dataset.definition.toLowerCase(),
+            html: option.outerHTML
+        }));
+    }
+
+    // Show dropdown when search input is focused
+    if (termSearch) {
+        termSearch.addEventListener('focus', function() {
+            if (termDropdown) {
+                termDropdown.classList.remove('hidden');
+                filterTermOptions('');
+            }
+        });
+
+        // Filter options as user types
+        termSearch.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            filterTermOptions(query);
+        });
+
+        // Handle search input keydown for navigation
+        termSearch.addEventListener('keydown', function(e) {
+            const visibleOptions = termOptions.querySelectorAll('.term-option:not(.hidden)');
+            const highlighted = termOptions.querySelector('.term-option.highlighted');
+            
+            switch(e.key) {
+                case 'ArrowDown':
+                    e.preventDefault();
+                    if (highlighted) {
+                        highlighted.classList.remove('highlighted');
+                        const next = highlighted.nextElementSibling;
+                        if (next && !next.classList.contains('hidden')) {
+                            next.classList.add('highlighted');
+                            next.scrollIntoView({ block: 'nearest' });
+                        } else if (visibleOptions.length > 0) {
+                            visibleOptions[0].classList.add('highlighted');
+                            visibleOptions[0].scrollIntoView({ block: 'nearest' });
+                        }
+                    } else if (visibleOptions.length > 0) {
+                        visibleOptions[0].classList.add('highlighted');
+                        visibleOptions[0].scrollIntoView({ block: 'nearest' });
+                    }
+                    break;
+                    
+                case 'ArrowUp':
+                    e.preventDefault();
+                    if (highlighted) {
+                        highlighted.classList.remove('highlighted');
+                        const prev = highlighted.previousElementSibling;
+                        if (prev && !prev.classList.contains('hidden')) {
+                            prev.classList.add('highlighted');
+                            prev.scrollIntoView({ block: 'nearest' });
+                        } else if (visibleOptions.length > 0) {
+                            visibleOptions[visibleOptions.length - 1].classList.add('highlighted');
+                            visibleOptions[visibleOptions.length - 1].scrollIntoView({ block: 'nearest' });
+                        }
+                    } else if (visibleOptions.length > 0) {
+                        visibleOptions[visibleOptions.length - 1].classList.add('highlighted');
+                        visibleOptions[visibleOptions.length - 1].scrollIntoView({ block: 'nearest' });
+                    }
+                    break;
+                    
+                case 'Enter':
+                    e.preventDefault();
+                    if (highlighted) {
+                        selectTermOption(highlighted);
+                    }
+                    break;
+                    
+                case 'Escape':
+                    e.preventDefault();
+                    termDropdown.classList.add('hidden');
+                    break;
+            }
+        });
+    }
+
+    // Filter term options based on search query
+    function filterTermOptions(query) {
+        if (!termOptions || !noResults) return;
+        
+        let visibleCount = 0;
+        
+        allTermOptions.forEach(option => {
+            const matches = query === '' || 
+                          option.term.includes(query) || 
+                          option.definition.includes(query);
+            
+            if (matches) {
+                option.element.classList.remove('hidden');
+                visibleCount++;
+            } else {
+                option.element.classList.add('hidden');
+                option.element.classList.remove('highlighted');
+            }
+        });
+        
+        // Show/hide no results message
+        if (visibleCount === 0 && query !== '') {
+            noResults.classList.remove('hidden');
+        } else {
+            noResults.classList.add('hidden');
+        }
+    }
+
+    // Handle term option selection
+    function selectTermOption(optionElement) {
+        const value = optionElement.dataset.value;
+        const term = optionElement.dataset.term;
+        const definition = optionElement.dataset.definition;
+        
+        // Update search input
+        termSearch.value = term;
+        
+        // Update hidden select
+        termSelect.value = value;
+        
+        // Show definition preview
+        if (definition) {
+            defaultDefinitionText.textContent = definition;
+            defaultDefinitionPreview.classList.remove('hidden');
+            
+            // Add smooth reveal animation
+            defaultDefinitionPreview.style.opacity = '0';
+            defaultDefinitionPreview.style.transform = 'translateY(-10px)';
+            setTimeout(() => {
+                defaultDefinitionPreview.style.transition = 'all 0.3s ease';
+                defaultDefinitionPreview.style.opacity = '1';
+                defaultDefinitionPreview.style.transform = 'translateY(0)';
+            }, 10);
+        }
+        
+        // Hide dropdown
+        termDropdown.classList.add('hidden');
+        
+        // Remove all highlights
+        termOptions.querySelectorAll('.term-option').forEach(opt => {
+            opt.classList.remove('highlighted');
+        });
+    }
+
+    // Handle clicking on term options
+    if (termOptions) {
+        termOptions.addEventListener('click', function(e) {
+            const optionElement = e.target.closest('.term-option');
+            if (optionElement) {
+                selectTermOption(optionElement);
+            }
+        });
+        
+        // Add hover highlighting
+        termOptions.addEventListener('mouseover', function(e) {
+            const optionElement = e.target.closest('.term-option');
+            if (optionElement) {
+                // Remove existing highlights
+                termOptions.querySelectorAll('.term-option').forEach(opt => {
+                    opt.classList.remove('highlighted');
+                });
+                // Add highlight to hovered option
+                optionElement.classList.add('highlighted');
+            }
+        });
+    }
+
+    // Hide dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (termSearch && termDropdown && 
+            !termSearch.contains(e.target) && 
+            !termDropdown.contains(e.target)) {
+            termDropdown.classList.add('hidden');
+        }
+    });
+
+    // Initialize with pre-selected value if any
+    if (termSelect && termSelect.value) {
+        const selectedOption = termSelect.options[termSelect.selectedIndex];
+        if (selectedOption && selectedOption.dataset.term) {
+            termSearch.value = selectedOption.dataset.term;
+            showDefaultDefinition();
+        }
+    }
+
+    // Show default definition when term is selected
+    function showDefaultDefinition() {
+        if (!termSelect) return;
+        
+        const selectedOption = termSelect.options[termSelect.selectedIndex];
+        if (selectedOption.value && selectedOption.dataset.definition) {
+            defaultDefinitionText.textContent = selectedOption.dataset.definition;
+            defaultDefinitionPreview.classList.remove('hidden');
+            
+            // Add smooth reveal animation
+            defaultDefinitionPreview.style.opacity = '0';
+            defaultDefinitionPreview.style.transform = 'translateY(-10px)';
+            setTimeout(() => {
+                defaultDefinitionPreview.style.transition = 'all 0.3s ease';
+                defaultDefinitionPreview.style.opacity = '1';
+                defaultDefinitionPreview.style.transform = 'translateY(0)';
+            }, 10);
+        } else {
+            defaultDefinitionPreview.classList.add('hidden');
+        }
+    }
+
+    // Load chapters based on district and type selection
+    async function loadChapters() {
+        const districtId = districtSelect.value;
+        const chapterType = culturalRadio.checked ? 'cultural' : (statisticalRadio.checked ? 'statistical' : '');
+        
+        if (!districtId || !chapterType) {
+            chapterSection.classList.add('hidden');
+            return;
+        }
+
+        // Show loading state
+        loadingIndicator.classList.remove('hidden');
+        loadingIndicator.style.display = 'block';
+        chapterSelect.innerHTML = '<option value="">Loading chapters...</option>';
+        chapterSelect.disabled = true;
+        
+        try {
+            const response = await fetch(`{% url 'sidepanal:get_chapters_by_district' %}?district_id=${districtId}&type=${chapterType}`);
+            const data = await response.json();
+            
+            // Clear and populate chapter select
+            chapterSelect.innerHTML = '<option value="">Choose a chapter...</option>';
+            
+            if (data.chapters && data.chapters.length > 0) {
+                data.chapters.forEach(chapter => {
+                    const option = document.createElement('option');
+                    option.value = chapter.id;
+                    option.textContent = chapter.name;
+                    chapterSelect.appendChild(option);
+                });
+                chapterSection.classList.remove('hidden');
+                
+                // Add smooth reveal animation
+                chapterSection.style.opacity = '0';
+                chapterSection.style.transform = 'translateY(-10px)';
+                setTimeout(() => {
+                    chapterSection.style.transition = 'all 0.3s ease';
+                    chapterSection.style.opacity = '1';
+                    chapterSection.style.transform = 'translateY(0)';
+                }, 10);
+            } else {
+                chapterSelect.innerHTML = '<option value="">No chapters available for this district</option>';
+                chapterSection.classList.remove('hidden');
+            }
+        } catch (error) {
+            console.error('Error loading chapters:', error);
+            chapterSelect.innerHTML = '<option value="">Error loading chapters</option>';
+            chapterSection.classList.remove('hidden');
+        } finally {
+            loadingIndicator.classList.add('hidden');
+            loadingIndicator.style.display = 'none';
+            chapterSelect.disabled = false;
+        }
+    }
+
+    // Event listeners
+    if (termSelect) {
+        termSelect.addEventListener('change', showDefaultDefinition);
+        // Show definition if term is pre-selected
+        showDefaultDefinition();
+    }
+
+    if (districtSelect) {
+        districtSelect.addEventListener('change', loadChapters);
+    }
+
+    if (culturalRadio && statisticalRadio) {
+        culturalRadio.addEventListener('change', loadChapters);
+        statisticalRadio.addEventListener('change', loadChapters);
+    }
+
+    // Form validation with enhanced UX
+    if (overrideForm) {
+        overrideForm.addEventListener('submit', function(e) {
+            {% if form_action == 'create' %}
+            let isValid = true;
+            const errors = [];
+
+            // Validate term selection
+            if (!termSelect.value) {
+                errors.push('Please select a term');
+                termSelect.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                termSelect.classList.remove('border-red-500');
+            }
+
+            // Validate district selection
+            if (!districtSelect.value) {
+                errors.push('Please select a district');
+                districtSelect.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                districtSelect.classList.remove('border-red-500');
+            }
+
+            // Validate chapter type
+            if (!culturalRadio.checked && !statisticalRadio.checked) {
+                errors.push('Please select a chapter type');
+                isValid = false;
+            }
+
+            // Validate chapter selection
+            if (!chapterSelect.value) {
+                errors.push('Please select a specific chapter');
+                chapterSelect.classList.add('border-red-500');
+                isValid = false;
+            } else {
+                chapterSelect.classList.remove('border-red-500');
+            }
+
+            if (!isValid) {
+                e.preventDefault();
+                
+                // Show error message
+                const errorContainer = document.createElement('div');
+                errorContainer.className = 'mb-4 p-4 rounded-lg bg-red-50 text-red-700 border border-red-200';
+                errorContainer.innerHTML = `
+                    <div class="flex items-center">
+                        <i class="fas fa-exclamation-circle mr-3"></i>
+                        <div>
+                            <p class="font-medium">Please fix the following errors:</p>
+                            <ul class="mt-2 list-disc list-inside text-sm">
+                                ${errors.map(error => `<li>${error}</li>`).join('')}
+                            </ul>
+                        </div>
+                    </div>
+                `;
+                
+                // Remove existing error messages
+                const existingErrors = document.querySelectorAll('.validation-error');
+                existingErrors.forEach(error => error.remove());
+                
+                // Add new error message
+                errorContainer.classList.add('validation-error');
+                overrideForm.insertBefore(errorContainer, overrideForm.firstChild);
+                
+                // Scroll to top
+                errorContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                
+                return false;
+            }
+
+            // Update form fields for submission
+            if (culturalRadio.checked) {
+                const culturalInput = document.createElement('input');
+                culturalInput.type = 'hidden';
+                culturalInput.name = 'cultural_chapter_id';
+                culturalInput.value = chapterSelect.value;
+                overrideForm.appendChild(culturalInput);
+            } else if (statisticalRadio.checked) {
+                const statisticalInput = document.createElement('input');
+                statisticalInput.type = 'hidden';
+                statisticalInput.name = 'statistical_chapter_id';
+                statisticalInput.value = chapterSelect.value;
+                overrideForm.appendChild(statisticalInput);
+            }
+            {% endif %}
+        });
+    }
+
+    // Add hover effects and focus improvements
+    const formSections = document.querySelectorAll('.bg-blue-50, .bg-purple-50, .bg-green-50, .bg-yellow-50');
+    formSections.forEach(section => {
+        section.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-1px)';
+            this.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            this.style.transition = 'all 0.2s ease';
+        });
+        
+        section.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '';
+        });
+    });
+
+    // Keyboard shortcuts
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey || e.metaKey) {
+            switch(e.key) {
+                case 's':
+                    e.preventDefault();
+                    overrideForm.submit();
+                    break;
+                case 'Escape':
+                    e.preventDefault();
+                    window.location.href = '{% url "sidepanal:sidepanel_overrides" %}';
+                    break;
+            }
+        }
+    });
+
+    // Auto-save draft functionality (optional)
+    let draftTimeout;
+    const overrideTextarea = document.getElementById('override_definition');
+    
+    if (overrideTextarea) {
+        overrideTextarea.addEventListener('input', function() {
+            clearTimeout(draftTimeout);
+            draftTimeout = setTimeout(() => {
+                // Save to localStorage
+                const draftKey = `override_draft_${termSelect.value || 'new'}`;
+                localStorage.setItem(draftKey, this.value);
+                
+                // Show saved indicator
+                const savedIndicator = document.getElementById('draftSaved') || document.createElement('div');
+                savedIndicator.id = 'draftSaved';
+                savedIndicator.className = 'text-xs text-green-600 mt-1';
+                savedIndicator.textContent = '✓ Draft saved automatically';
+                
+                if (!document.getElementById('draftSaved')) {
+                    overrideTextarea.parentNode.appendChild(savedIndicator);
+                }
+                
+                setTimeout(() => {
+                    savedIndicator.style.opacity = '0';
+                    setTimeout(() => savedIndicator.remove(), 300);
+                }, 2000);
+            }, 1000);
+        });
+        
+        // Load draft on page load
+        if (termSelect.value) {
+            const draftKey = `override_draft_${termSelect.value}`;
+            const savedDraft = localStorage.getItem(draftKey);
+            if (savedDraft && !overrideTextarea.value) {
+                overrideTextarea.value = savedDraft;
+            }
+        }
+    }
+});
+</script>
+{% endblock extra_js %}

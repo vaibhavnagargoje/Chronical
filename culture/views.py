@@ -52,6 +52,7 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
 
     # Get all districts in the current state for the "Change District" dropdown
     all_districts_in_state = chapter.district.state.districts.all().order_by('name')
+    side_panel_data = get_definitions_for_chapter(chapter, 'culture')
 
     # Get Previous and Next Chapters for bottom navigation
     chapter_list = list(all_chapters_in_district)
@@ -76,6 +77,8 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
         'all_districts_in_state': all_districts_in_state,
         'prev_chapter': prev_chapter,
         'next_chapter': next_chapter,
+        'side_panel_data': side_panel_data, # Pass the data to the template
+
     }
     
     return render(request, 'culture/chapter_detail.html', context)
@@ -104,3 +107,41 @@ def serve_chart_html(request, chart_block_id):
         return HttpResponse(html_content, content_type='text/html')
     except Exception as e:
         return HttpResponse("<h1>Chart file not found.</h1>", status=404, content_type='text/html')
+
+
+
+
+# culture/views.py
+# Add this import at the top
+from sidepanal.models import SidePanelTerm
+
+def get_definitions_for_chapter(chapter_instance, chapter_type):
+    """
+    Helper function to get the final, context-aware dictionary of definitions.
+    """
+    all_terms = SidePanelTerm.objects.all()
+    # 1. Start with all default definitions. Use the original term case for the key.
+    final_definitions = {term.term: term.default_definition for term in all_terms}
+
+    # 2. Find overrides for this specific chapter
+    if chapter_type == 'culture':
+        context_filter = {'cultural_chapter': chapter_instance}
+    else: # statistic
+        context_filter = {'statistical_chapter': chapter_instance}
+
+    contextual_defs = chapter_instance.contextual_definitions.select_related('term').all()
+
+    # 3. Apply the overrides
+    for c_def in contextual_defs:
+        term_key = c_def.term.term
+        if not c_def.is_active:
+            # If marked inactive, remove it from the final list
+            if term_key in final_definitions:
+                del final_definitions[term_key]
+        elif c_def.override_definition:
+            # If an override exists, use it
+            final_definitions[term_key] = c_def.override_definition
+            
+    return final_definitions
+
+

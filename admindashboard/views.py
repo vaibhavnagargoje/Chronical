@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.core.paginator import Paginator
 from django.db.models import Q, Count, Value, CharField
 from django.contrib.auth.decorators import login_required, user_passes_test
@@ -10,6 +10,7 @@ from home.models import State, District, FinalCheck
 from culture.models import CulturalChapter
 from statistic.models import StatisticalChapter
 from users.models import Profile
+from sidepanal.models import SidePanelTerm, ContextualDefinition
 from django.utils import timezone
 from datetime import datetime, timedelta
 import json
@@ -31,6 +32,7 @@ def dashboard(request):
     total_statistical_chapters = StatisticalChapter.objects.count()
     total_chapters = total_cultural_chapters + total_statistical_chapters
     total_users = User.objects.count()
+    total_sidepanel_terms = SidePanelTerm.objects.count()
     
     # Get recent activities (latest districts and chapters)
     recent_districts = District.objects.select_related('state').order_by('-id')[:5]
@@ -44,6 +46,7 @@ def dashboard(request):
         'total_cultural_chapters': total_cultural_chapters,
         'total_statistical_chapters': total_statistical_chapters,
         'total_users': total_users,
+        'total_sidepanel_terms': total_sidepanel_terms,
         'recent_districts': recent_districts,
         'recent_cultural_chapters': recent_cultural_chapters,
         'recent_statistical_chapters': recent_statistical_chapters,

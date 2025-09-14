@@ -503,7 +503,15 @@
     });
 
   </script>
-  {{ side_panel_data|json_script:"side-panel-data" }}
-  <script src="{% static 'js/side-panel.js' %}"></script>
+ 
+
+ 
+{% block extra_scripts %}
+    {# This safely embeds your dictionary data into the HTML #}
+    {{ side_panel_data|json_script:"side-panel-definitions" }}
+
+    {# Link to your JavaScript file #}
+    <script src="{% static 'js/side-panel.js' %}"></script>
+{% endblock extra_scripts %}
 
 {% endblock content %}

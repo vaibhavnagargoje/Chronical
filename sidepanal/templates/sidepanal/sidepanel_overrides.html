@@ -1,0 +1,448 @@
+{% extends "admindashboard/base.html" %}
+{% load static %}
+
+{% block title %}Contextual Overrides Management | Admin Panel{% endblock title %}
+
+{% block content %}
+<div class="p-4">
+    <!-- Compact Header with Navigation -->
+    <div class="mb-4">
+        <div class="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4">
+            <div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-layer-group text-[#863F3F] text-lg"></i>
+                    <h1 class="text-xl font-bold text-gray-900">Contextual Overrides Management</h1>
+                </div>
+                <p class="text-sm text-gray-500 mt-1">Manage chapter-specific term definitions efficiently</p>
+            </div>
+            
+            <!-- Admin Navigation Buttons -->
+            <div class="flex flex-wrap gap-2">
+                <a href="{% url 'sidepanal:sidepanel_terms' %}" 
+                   class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 transition-colors text-sm font-medium flex items-center gap-2">
+                    <i class="fas fa-list text-xs"></i>
+                    Back to Terms
+                </a>
+                <a href="{% url 'sidepanal:sidepanel_override_create' %}" 
+                   class="bg-[#863F3F] text-white px-4 py-2 rounded-md hover:bg-[#6B2F2F] transition-colors text-sm font-medium flex items-center gap-2">
+                    <i class="fas fa-plus text-xs"></i>
+                    Add New Override
+                </a>
+               
+                <button onclick="toggleBulkActions()" 
+                        class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition-colors text-sm font-medium flex items-center gap-2">
+                    <i class="fas fa-tasks text-xs"></i>
+                    Bulk Actions
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Messages -->
+    {% if messages %}
+        {% for message in messages %}
+            <div class="mb-4 p-3 rounded-md {% if message.tags == 'error' %}bg-red-50 text-red-700 border border-red-200{% else %}bg-green-50 text-green-700 border border-green-200{% endif %}">
+                <div class="flex items-center">
+                    <i class="{% if message.tags == 'error' %}fas fa-exclamation-circle{% else %}fas fa-check-circle{% endif %} mr-2 text-sm"></i>
+                    <span class="text-sm">{{ message }}</span>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <!-- Compact Statistics Cards -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
+        <div class="bg-white p-3 rounded-lg shadow-sm border">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 font-medium">TOTAL</p>
+                    <p class="text-lg font-bold text-gray-900">{{ total_overrides }}</p>
+                </div>
+                <div class="p-2 rounded-full bg-blue-50">
+                    <i class="fas fa-layer-group text-blue-600 text-sm"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-3 rounded-lg shadow-sm border">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 font-medium">ACTIVE</p>
+                    <p class="text-lg font-bold text-green-700">{{ active_overrides }}</p>
+                </div>
+                <div class="p-2 rounded-full bg-green-50">
+                    <i class="fas fa-toggle-on text-green-600 text-sm"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-3 rounded-lg shadow-sm border">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 font-medium">CULTURAL</p>
+                    <p class="text-lg font-bold text-purple-700">{{ cultural_overrides }}</p>
+                </div>
+                <div class="p-2 rounded-full bg-purple-50">
+                    <i class="fas fa-landmark text-purple-600 text-sm"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-3 rounded-lg shadow-sm border">
+            <div class="flex items-center justify-between">
+                <div>
+                    <p class="text-xs text-gray-500 font-medium">STATISTICAL</p>
+                    <p class="text-lg font-bold text-orange-700">{{ statistical_overrides }}</p>
+                </div>
+                <div class="p-2 rounded-full bg-orange-50">
+                    <i class="fas fa-chart-bar text-orange-600 text-sm"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search and Filters -->
+    <div class="bg-white rounded-lg shadow mb-6">
+        <div class="p-6">
+            <form method="GET" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div>
+                        <label for="search" class="block text-sm font-medium text-gray-700 mb-1">Search</label>
+                        <input type="text" 
+                               id="search"
+                               name="search" 
+                               value="{{ search_query }}" 
+                               placeholder="Search terms, chapters, or definitions..."
+                               class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent">
+                    </div>
+                    
+                    <div>
+                        <label for="chapter_type" class="block text-sm font-medium text-gray-700 mb-1">Chapter Type</label>
+                        <select id="chapter_type" name="chapter_type" 
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent">
+                            <option value="all" {% if chapter_type == 'all' %}selected{% endif %}>All Types</option>
+                            <option value="cultural" {% if chapter_type == 'cultural' %}selected{% endif %}>Cultural</option>
+                            <option value="statistical" {% if chapter_type == 'statistical' %}selected{% endif %}>Statistical</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label for="status" class="block text-sm font-medium text-gray-700 mb-1">Status</label>
+                        <select id="status" name="status" 
+                                class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent">
+                            <option value="all" {% if status_filter == 'all' %}selected{% endif %}>All Status</option>
+                            <option value="active" {% if status_filter == 'active' %}selected{% endif %}>Active</option>
+                            <option value="inactive" {% if status_filter == 'inactive' %}selected{% endif %}>Inactive</option>
+                        </select>
+                    </div>
+                    
+                    <div class="flex items-end space-x-2">
+                        <button type="submit" 
+                                class="bg-[#863F3F] text-white px-4 py-2 rounded-lg hover:bg-[#6d3232] transition-colors text-sm font-medium">
+                            Filter Results
+                        </button>
+                        {% if search_query or chapter_type != 'all' or status_filter != 'all' %}
+                        <a href="{% url 'sidepanal:sidepanel_overrides' %}" 
+                           class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors text-sm font-medium">
+                            Clear Filters
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Overrides Table -->
+    <div class="bg-white rounded-lg shadow overflow-hidden">
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead class="bg-gray-50">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Term</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Chapter</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">District</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Override Definition</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    {% for override in overrides %}
+                    <tr class="hover:bg-gray-50">
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-sm font-medium text-gray-900">
+                                <a href="{% url 'sidepanal:sidepanel_term_detail' override.term.id %}" 
+                                   class="text-[#863F3F] hover:text-[#6d3232]">
+                                    {{ override.term.term }}
+                                </a>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-sm text-gray-900">
+                                {{ override.chapter_name }}
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+                                {% if override.cultural_chapter %}bg-purple-100 text-purple-800{% else %}bg-orange-100 text-orange-800{% endif %}">
+                                {% if override.cultural_chapter %}
+                                    <i class="fas fa-landmark mr-1"></i>Cultural
+                                {% else %}
+                                    <i class="fas fa-chart-bar mr-1"></i>Statistical
+                                {% endif %}
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="text-sm text-gray-900">
+                                {{ override.district_info }}
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-sm text-gray-900 max-w-xs">
+                                {% if override.override_definition %}
+                                    {{ override.override_definition|truncatechars:80 }}
+                                {% else %}
+                                    <span class="text-gray-500 italic">Uses default definition</span>
+                                {% endif %}
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            {% if override.is_active %}
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                    <i class="fas fa-check-circle mr-1"></i>Active
+                                </span>
+                            {% else %}
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                                    <i class="fas fa-times-circle mr-1"></i>Inactive
+                                </span>
+                            {% endif %}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                            <div class="flex flex-wrap gap-1">
+                                <a href="{% url 'sidepanal:sidepanel_override_edit' override.id %}" 
+                                   class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-medium hover:bg-yellow-200 transition-colors">
+                                    Edit
+                                </a>
+                                <a href="{% url 'sidepanal:sidepanel_override_detail' override.id %}" 
+                                   class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium hover:bg-blue-200 transition-colors">
+                                    View Details
+                                </a>
+                                <button onclick="deleteOverride({{ override.id }}, '{{ override.term.term|escapejs }}', '{{ override.chapter_name|escapejs }}')" 
+                                        class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-medium hover:bg-red-200 transition-colors">
+                                    Delete
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="7" class="px-6 py-12 text-center text-gray-500">
+                            <i class="fas fa-inbox text-4xl mb-4"></i>
+                            <p class="text-lg">No overrides found</p>
+                            {% if search_query or chapter_type != 'all' or status_filter != 'all' %}
+                            <p class="text-sm">Try adjusting your filters</p>
+                            {% else %}
+                            <p class="text-sm">Start by adding your first contextual override</p>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        {% if overrides.has_other_pages %}
+        <div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+            <div class="flex-1 flex justify-between sm:hidden">
+                {% if overrides.has_previous %}
+                    <a href="?{% if search_query %}search={{ search_query }}&{% endif %}{% if chapter_type != 'all' %}chapter_type={{ chapter_type }}&{% endif %}{% if status_filter != 'all' %}status={{ status_filter }}&{% endif %}page={{ overrides.previous_page_number }}" 
+                       class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        Previous
+                    </a>
+                {% endif %}
+                {% if overrides.has_next %}
+                    <a href="?{% if search_query %}search={{ search_query }}&{% endif %}{% if chapter_type != 'all' %}chapter_type={{ chapter_type }}&{% endif %}{% if status_filter != 'all' %}status={{ status_filter }}&{% endif %}page={{ overrides.next_page_number }}" 
+                       class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                        Next
+                    </a>
+                {% endif %}
+            </div>
+            <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+                <div>
+                    <p class="text-sm text-gray-700">
+                        Showing <span class="font-medium">{{ overrides.start_index }}</span> to <span class="font-medium">{{ overrides.end_index }}</span> of <span class="font-medium">{{ overrides.paginator.count }}</span> results
+                    </p>
+                </div>
+                <div>
+                    <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px">
+                        {% if overrides.has_previous %}
+                            <a href="?{% if search_query %}search={{ search_query }}&{% endif %}{% if chapter_type != 'all' %}chapter_type={{ chapter_type }}&{% endif %}{% if status_filter != 'all' %}status={{ status_filter }}&{% endif %}page={{ overrides.previous_page_number }}" 
+                               class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        {% endif %}
+                        
+                        {% for num in overrides.paginator.page_range %}
+                            {% if overrides.number == num %}
+                                <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-[#863F3F] text-sm font-medium text-white">
+                                    {{ num }}
+                                </span>
+                            {% elif num > overrides.number|add:'-3' and num < overrides.number|add:'3' %}
+                                <a href="?{% if search_query %}search={{ search_query }}&{% endif %}{% if chapter_type != 'all' %}chapter_type={{ chapter_type }}&{% endif %}{% if status_filter != 'all' %}status={{ status_filter }}&{% endif %}page={{ num }}" 
+                                   class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                                    {{ num }}
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                        
+                        {% if overrides.has_next %}
+                            <a href="?{% if search_query %}search={{ search_query }}&{% endif %}{% if chapter_type != 'all' %}chapter_type={{ chapter_type }}&{% endif %}{% if status_filter != 'all' %}status={{ status_filter }}&{% endif %}page={{ overrides.next_page_number }}" 
+                               class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        {% endif %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div id="deleteModal" class="fixed inset-0 z-50 hidden overflow-y-auto">
+    <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75"></div>
+        <div class="inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:align-middle sm:max-w-lg sm:w-full sm:p-6">
+            <div class="sm:flex sm:items-start">
+                <div class="flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto bg-red-100 rounded-full sm:mx-0 sm:h-10 sm:w-10">
+                    <i class="fas fa-exclamation-triangle text-red-600"></i>
+                </div>
+                <div class="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 class="text-lg font-medium leading-6 text-gray-900">Delete Override</h3>
+                    <div class="mt-2">
+                        <p class="text-sm text-gray-500" id="deleteMessage"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
+                <button type="button" onclick="confirmDelete()" 
+                        class="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-red-600 border border-transparent rounded-md shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm">
+                    Delete
+                </button>
+                <button type="button" onclick="closeDeleteModal()" 
+                        class="inline-flex justify-center w-full px-4 py-2 mt-3 text-base font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block extra_js %}
+<script>
+let overrideToDelete = null;
+
+function deleteOverride(overrideId, termName, chapterName) {
+    overrideToDelete = overrideId;
+    if (confirm(`Are you sure you want to delete the override for term "${termName}" in chapter "${chapterName}"? This action cannot be undone.`)) {
+        // Create form and submit
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = '{% url "sidepanal:sidepanel_override_delete" %}';
+        
+        const csrfInput = document.createElement('input');
+        csrfInput.type = 'hidden';
+        csrfInput.name = 'csrfmiddlewaretoken';
+        csrfInput.value = '{{ csrf_token }}';
+        
+        const overrideInput = document.createElement('input');
+        overrideInput.type = 'hidden';
+        overrideInput.name = 'override_id';
+        overrideInput.value = overrideId;
+        
+        form.appendChild(csrfInput);
+        form.appendChild(overrideInput);
+        document.body.appendChild(form);
+        form.submit();
+    }
+}
+
+function toggleBulkActions() {
+    const bulkBar = document.getElementById('bulkActionsBar');
+    if (bulkBar) {
+        bulkBar.classList.toggle('hidden');
+    } else {
+        // Create bulk actions bar dynamically
+        const container = document.querySelector('.bg-white.rounded-lg.shadow.overflow-hidden');
+        const bulkBar = document.createElement('div');
+        bulkBar.id = 'bulkActionsBar';
+        bulkBar.className = 'bg-gray-50 border-b p-4 hidden';
+        bulkBar.innerHTML = `
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <label class="flex items-center">
+                        <input type="checkbox" id="selectAll" class="mr-2 rounded">
+                        <span class="text-sm font-medium">Select All</span>
+                    </label>
+                    <span id="selectedCount" class="text-sm text-gray-600">0 selected</span>
+                </div>
+                <div class="flex gap-2">
+                    <button onclick="bulkActivate()" class="bg-green-600 text-white px-3 py-1 rounded text-sm hover:bg-green-700">
+                        Activate Selected
+                    </button>
+                    <button onclick="bulkDeactivate()" class="bg-yellow-600 text-white px-3 py-1 rounded text-sm hover:bg-yellow-700">
+                        Deactivate Selected
+                    </button>
+                    <button onclick="bulkDelete()" class="bg-red-600 text-white px-3 py-1 rounded text-sm hover:bg-red-700">
+                        Delete Selected
+                    </button>
+                </div>
+            </div>
+        `;
+        container.insertBefore(bulkBar, container.firstChild);
+        bulkBar.classList.remove('hidden');
+    }
+}
+
+function showFilterModal() {
+    alert('Advanced filtering coming soon! Use the basic filters above for now.');
+}
+
+
+
+function bulkActivate() {
+    alert('Bulk activate functionality will be implemented soon.');
+}
+
+function bulkDeactivate() {
+    alert('Bulk deactivate functionality will be implemented soon.');
+}
+
+function bulkDelete() {
+    if (confirm('Are you sure you want to delete all selected overrides? This action cannot be undone.')) {
+        alert('Bulk delete functionality will be implemented soon.');
+    }
+}
+
+// Keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+    if (e.ctrlKey || e.metaKey) {
+        switch(e.key) {
+            case 'n':
+                e.preventDefault();
+                window.location.href = '{% url "sidepanal:sidepanel_override_create" %}';
+                break;
+            case 'f':
+                e.preventDefault();
+                document.querySelector('input[name="search"]').focus();
+                break;
+        }
+    }
+});
+</script>
+{% endblock extra_js %}
