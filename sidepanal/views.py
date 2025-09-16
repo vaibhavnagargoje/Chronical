@@ -352,13 +352,24 @@ def sidepanel_override_detail(request, override_id):
     # Get related information
     related_overrides = ContextualDefinition.objects.filter(
         term=override.term
-    ).exclude(id=override.id)[:5]
+    ).exclude(id=override.id).select_related(
+        'cultural_chapter__district__state',
+        'statistical_chapter__district__state'
+    )[:5]
+    
+    # Get chapter info
+    chapter = override.cultural_chapter or override.statistical_chapter
+    chapter_type = 'Cultural' if override.cultural_chapter else 'Statistical'
+    
+    # Get district info
+    district_info = f"{chapter.district.name}, {chapter.district.state.name}" if chapter.district else "Unknown District"
     
     context = {
         'override': override,
         'related_overrides': related_overrides,
-        'chapter_name': override.cultural_chapter.name if override.cultural_chapter else override.statistical_chapter.name,
-        'chapter_type': 'Cultural' if override.cultural_chapter else 'Statistical',
+        'chapter_name': chapter.name if chapter else "Unknown Chapter",
+        'chapter_type': chapter_type,
+        'district_info': district_info,
     }
     
     return render(request, 'sidepanal/sidepanel_override_detail.html', context)

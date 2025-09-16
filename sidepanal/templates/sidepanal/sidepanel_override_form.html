@@ -3,91 +3,33 @@
 
 {% block title %}{{ form_title }} | Admin Panel{% endblock title %}
 
-{% block extra_css %}
-<style>
-/* Searchable Dropdown Styles */
-.term-option.highlighted {
-    background-color: #863F3F !important;
-    color: white;
-}
-
-.term-option.highlighted .text-gray-500 {
-    color: rgba(255, 255, 255, 0.7) !important;
-}
-
-.line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-/* Smooth animations */
-.term-option {
-    transition: background-color 0.15s ease, color 0.15s ease;
-}
-
-/* Custom scrollbar for dropdown */
-#term_dropdown {
-    scrollbar-width: thin;
-    scrollbar-color: #e5e7eb #f9fafb;
-}
-
-#term_dropdown::-webkit-scrollbar {
-    width: 6px;
-}
-
-#term_dropdown::-webkit-scrollbar-track {
-    background: #f9fafb;
-}
-
-#term_dropdown::-webkit-scrollbar-thumb {
-    background: #e5e7eb;
-    border-radius: 3px;
-}
-
-#term_dropdown::-webkit-scrollbar-thumb:hover {
-    background: #d1d5db;
-}
-</style>
-{% endblock extra_css %}
-
 {% block content %}
-<div class="p-4 max-w-4xl mx-auto">
+<div class="p-6 max-w-4xl mx-auto">
     <!-- Breadcrumb Navigation -->
-    <nav class="flex items-center text-sm text-gray-500 mb-6">
-        <a href="{% url 'sidepanal:sidepanel_overrides' %}" class="hover:text-[#863F3F] transition-colors">Overrides</a>
+    <nav class="flex items-center text-sm text-gray-500 mb-4">
+        <a href="{% url 'sidepanal:sidepanel_overrides' %}" class="hover:text-blue-600">Overrides</a>
         <i class="fas fa-chevron-right mx-2 text-xs"></i>
-        <span class="text-gray-900 font-medium">{{ form_title }}</span>
+        <span class="text-gray-900">{{ form_title }}</span>
     </nav>
 
     <!-- Header -->
-    <div class="bg-white rounded-lg shadow-sm border mb-6">
-        <div class="p-6">
-            <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-gradient-to-br from-[#863F3F] to-[#6B2F2F] rounded-lg flex items-center justify-center">
-                    <i class="fas fa-layer-group text-white text-lg"></i>
-                </div>
-                <div>
-                    <h1 class="text-2xl font-bold text-gray-900">{{ form_title }}</h1>
-                    <p class="text-gray-600 mt-1">
-                        {% if form_action == 'create' %}
-                            Create chapter-specific term definitions with district-based organization
-                        {% else %}
-                            Modify the contextual override settings for this term
-                        {% endif %}
-                    </p>
-                </div>
-            </div>
-        </div>
+    <div class="mb-6">
+        <h1 class="text-2xl font-bold text-gray-900 mb-2">{{ form_title }}</h1>
+        <p class="text-gray-600">
+            {% if form_action == 'create' %}
+                Create chapter-specific term definitions
+            {% else %}
+                Modify the contextual override settings for this term
+            {% endif %}
+        </p>
     </div>
 
     <!-- Messages -->
     {% if messages %}
         {% for message in messages %}
-            <div class="mb-4 p-4 rounded-lg {% if message.tags == 'error' %}bg-red-50 text-red-700 border border-red-200{% else %}bg-green-50 text-green-700 border border-green-200{% endif %}">
+            <div class="mb-4 p-3 rounded-md {% if message.tags == 'error' %}bg-red-50 text-red-700 border border-red-200{% else %}bg-green-50 text-green-700 border border-green-200{% endif %}">
                 <div class="flex items-center">
-                    <i class="{% if message.tags == 'error' %}fas fa-exclamation-circle{% else %}fas fa-check-circle{% endif %} mr-3 text-sm"></i>
+                    <i class="{% if message.tags == 'error' %}fas fa-exclamation-circle{% else %}fas fa-check-circle{% endif %} mr-2"></i>
                     <span>{{ message }}</span>
                 </div>
             </div>
@@ -95,23 +37,18 @@
     {% endif %}
 
     <!-- Form -->
-    <div class="bg-white rounded-lg shadow-sm border">
+    <div class="bg-white rounded-lg shadow border">
         <form method="POST" class="p-6" id="overrideForm">
             {% csrf_token %}
             
-            <div class="space-y-8">
+            <div class="space-y-6">
                 {% if form_action == 'create' %}
                 <!-- Term Selection -->
-                <div class="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-tag text-white text-sm"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900">Select Term</h3>
-                    </div>
+                <div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Select Term</h3>
                     
                     <div>
-                        <label for="term_search" class="block text-sm font-medium text-gray-700 mb-3">
+                        <label for="term_search" class="block text-sm font-medium text-gray-700 mb-2">
                             Choose the term to create an override for <span class="text-red-500">*</span>
                         </label>
                         
@@ -122,7 +59,7 @@
                                    id="term_search" 
                                    placeholder="Type to search terms..."
                                    autocomplete="off"
-                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent text-sm">
+                                   class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                             
                             <!-- Dropdown Icon -->
                             <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
@@ -144,104 +81,82 @@
                             
                             <!-- Dropdown Options -->
                             <div id="term_dropdown" 
-                                 class="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto hidden">
+                                 class="absolute z-50 w-full mt-1 bg-white border border-gray-300 rounded-md shadow-lg max-h-60 overflow-y-auto hidden">
                                 <div id="term_options">
                                     {% for term in terms %}
-                                    <div class="term-option px-4 py-3 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-b-0"
+                                    <div class="term-option px-3 py-2 hover:bg-gray-50 cursor-pointer border-b border-gray-100 last:border-b-0"
                                          data-value="{{ term.id }}" 
                                          data-definition="{{ term.default_definition }}"
                                          data-term="{{ term.term }}">
                                         <div class="font-medium text-gray-900">{{ term.term }}</div>
-                                        <div class="text-sm text-gray-500 mt-1 line-clamp-2">{{ term.default_definition|truncatechars:100 }}</div>
+                                        <div class="text-sm text-gray-500 mt-1 truncate">{{ term.default_definition|truncatechars:80 }}</div>
                                     </div>
                                     {% endfor %}
                                 </div>
                                 
                                 <!-- No Results Message -->
-                                <div id="no_results" class="px-4 py-3 text-gray-500 text-center hidden">
-                                    <i class="fas fa-search text-gray-400 mb-2"></i>
+                                <div id="no_results" class="px-3 py-2 text-gray-500 text-center hidden">
                                     <div>No terms found matching your search</div>
                                 </div>
                             </div>
                         </div>
                         
                         <!-- Default Definition Preview -->
-                        <div id="defaultDefinitionPreview" class="mt-4 p-4 bg-gray-50 rounded-lg border hidden">
-                            <h4 class="font-semibold text-gray-900 mb-2 flex items-center">
-                                <i class="fas fa-book text-gray-600 mr-2"></i>
-                                Default Definition:
-                            </h4>
-                            <p id="defaultDefinitionText" class="text-gray-700 leading-relaxed"></p>
+                        <div id="defaultDefinitionPreview" class="mt-3 p-3 bg-gray-50 rounded-md border hidden">
+                            <h4 class="font-medium text-gray-900 mb-2">Default Definition:</h4>
+                            <p id="defaultDefinitionText" class="text-gray-700 text-sm"></p>
                         </div>
                     </div>
                 </div>
 
                 <!-- District and Chapter Selection -->
-                <div class="bg-purple-50 rounded-lg p-6 border border-purple-200">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-map-marker-alt text-white text-sm"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900">Select Location & Chapter</h3>
-                    </div>
+                <div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Select Location & Chapter</h3>
                     
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                         <!-- District Selection -->
                         <div>
-                            <label for="district_id" class="block text-sm font-medium text-gray-700 mb-3">
-                                Choose District <span class="text-red-500">*</span>
+                            <label for="district_id" class="block text-sm font-medium text-gray-700 mb-2">
+                                District <span class="text-red-500">*</span>
                             </label>
                             <select id="district_id" name="district_id"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent text-sm">
-                                <option value="">Select a district first...</option>
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Select a district...</option>
                                 {% for district in districts %}
                                 <option value="{{ district.id }}">
                                     {{ district.name }}, {{ district.state.name }}
                                 </option>
                                 {% endfor %}
                             </select>
-                            <p class="mt-2 text-xs text-gray-500">Select the district to see available chapters</p>
                         </div>
 
                         <!-- Chapter Type Selection -->
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-3">
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
                                 Chapter Type <span class="text-red-500">*</span>
                             </label>
-                            <div class="space-y-3">
-                                <label class="flex items-center p-3 bg-white rounded-lg border hover:bg-gray-50 cursor-pointer transition-colors">
+                            <div class="space-y-2">
+                                <label class="flex items-center p-2 border rounded-md hover:bg-gray-50 cursor-pointer">
                                     <input type="radio" id="cultural_type" name="chapter_type" value="cultural" 
-                                           class="h-4 w-4 text-[#863F3F] focus:ring-[#863F3F] border-gray-300">
-                                    <div class="ml-3">
-                                        <div class="flex items-center">
-                                            <i class="fas fa-landmark text-purple-600 mr-2"></i>
-                                            <span class="font-medium text-gray-900">Cultural Chapter</span>
-                                        </div>
-                                        <p class="text-xs text-gray-500">Arts, festivals, food, language, etc.</p>
-                                    </div>
+                                           class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span class="ml-2 text-sm">Cultural Chapter</span>
                                 </label>
-                                <label class="flex items-center p-3 bg-white rounded-lg border hover:bg-gray-50 cursor-pointer transition-colors">
+                                <label class="flex items-center p-2 border rounded-md hover:bg-gray-50 cursor-pointer">
                                     <input type="radio" id="statistical_type" name="chapter_type" value="statistical" 
-                                           class="h-4 w-4 text-[#863F3F] focus:ring-[#863F3F] border-gray-300">
-                                    <div class="ml-3">
-                                        <div class="flex items-center">
-                                            <i class="fas fa-chart-bar text-orange-600 mr-2"></i>
-                                            <span class="font-medium text-gray-900">Statistical Chapter</span>
-                                        </div>
-                                        <p class="text-xs text-gray-500">Demographics, economy, infrastructure, etc.</p>
-                                    </div>
+                                           class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300">
+                                    <span class="ml-2 text-sm">Statistical Chapter</span>
                                 </label>
                             </div>
                         </div>
                     </div>
 
                     <!-- Chapter Selection -->
-                    <div id="chapterSelectionSection" class="hidden mt-6">
-                        <label for="chapter_id" class="block text-sm font-medium text-gray-700 mb-3">
+                    <div id="chapterSelectionSection" class="hidden mt-4">
+                        <label for="chapter_id" class="block text-sm font-medium text-gray-700 mb-2">
                             Select Specific Chapter <span class="text-red-500">*</span>
                         </label>
                         <select id="chapter_id" name="chapter_id"
-                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent text-sm">
+                                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                             <option value="">Choose a chapter...</option>
                         </select>
                         <div id="loadingChapters" class="hidden mt-2 text-sm text-gray-500">
@@ -252,92 +167,70 @@
                 </div>
                 {% else %}
                 <!-- Edit Mode - Show Current Override Info -->
-                <div class="bg-blue-50 rounded-lg p-6 border border-blue-200">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-info-circle text-white text-sm"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-blue-900">Override Information</h3>
-                    </div>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                <div class="bg-blue-50 rounded-md p-4 border border-blue-200">
+                    <h3 class="text-lg font-medium text-blue-900 mb-2">Override Information</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
                         <div>
-                            <p class="text-blue-800"><strong>Term:</strong> {{ override.term.term }}</p>
-                            <p class="text-blue-800"><strong>Chapter:</strong> {{ override.chapter_name }}</p>
+                            <p><strong>Term:</strong> {{ override.term.term }}</p>
+                            <p><strong>Chapter:</strong> {{ override.chapter_name }}</p>
                         </div>
                         <div>
-                            <p class="text-blue-800"><strong>Type:</strong> {{ override.chapter_type }}</p>
-                            <p class="text-blue-800"><strong>District:</strong> {{ override.district_info }}</p>
+                            <p><strong>Type:</strong> {{ override.chapter_type }}</p>
+                            <p><strong>District:</strong> {{ override.district_info }}</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Default Definition for Edit -->
-                <div class="bg-gray-50 rounded-lg p-6 border">
-                    <div class="flex items-center gap-2 mb-3">
-                        <div class="w-8 h-8 bg-gray-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-book text-white text-sm"></i>
-                        </div>
-                        <h4 class="font-semibold text-gray-900">Default Definition</h4>
-                    </div>
-                    <p class="text-gray-700 leading-relaxed">{{ override.term.default_definition }}</p>
+                <div class="bg-gray-50 rounded-md p-4 border">
+                    <h4 class="font-medium text-gray-900 mb-2">Default Definition</h4>
+                    <p class="text-gray-700 text-sm">{{ override.term.default_definition }}</p>
                 </div>
                 {% endif %}
 
                 <!-- Override Definition -->
-                <div class="bg-green-50 rounded-lg p-6 border border-green-200">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-edit text-white text-sm"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900">Custom Definition</h3>
-                    </div>
+                <div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Custom Definition</h3>
                     
                     <div>
-                        <label for="override_definition" class="block text-sm font-medium text-gray-700 mb-3">
+                        <label for="override_definition" class="block text-sm font-medium text-gray-700 mb-2">
                             Override Definition (Optional)
                         </label>
-                        <textarea id="override_definition" name="override_definition" rows="6"
+                        <textarea id="override_definition" name="override_definition" rows="4"
                                   placeholder="Enter a custom definition for this term in the selected chapter. Leave blank to use the default definition."
-                                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#863F3F] focus:border-transparent text-sm">{% if form_action == 'edit' %}{{ override.override_definition }}{% endif %}</textarea>
-                        <p class="mt-2 text-xs text-gray-500">
-                            💡 <strong>Tip:</strong> If left blank, the default definition will be used. Enter a custom definition only if this term has a different meaning in this specific chapter.
+                                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">{% if form_action == 'edit' %}{{ override.override_definition }}{% endif %}</textarea>
+                        <p class="mt-1 text-xs text-gray-500">
+                            Leave blank to use the default definition. Enter a custom definition only if this term has a different meaning in this specific chapter.
                         </p>
                     </div>
                 </div>
 
-                <!-- Status and Options -->
-                <div class="bg-yellow-50 rounded-lg p-6 border border-yellow-200">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-8 h-8 bg-yellow-600 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-toggle-on text-white text-sm"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900">Status & Visibility</h3>
-                    </div>
+                <!-- Status -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Status</h3>
                     
-                    <div class="space-y-4">
-                        <label class="flex items-start p-4 bg-white rounded-lg border hover:bg-gray-50 cursor-pointer transition-colors">
-                            <input type="checkbox" id="is_active" name="is_active" 
-                                   {% if form_action == 'create' or override.is_active %}checked{% endif %}
-                                   class="h-5 w-5 text-[#863F3F] focus:ring-[#863F3F] border-gray-300 rounded mt-1">
-                            <div class="ml-3">
-                                <span class="font-medium text-gray-900 block">Active Override</span>
-                                <span class="text-sm text-gray-600">
-                                    When checked, this override will be active and visible. When unchecked, the term will be completely hidden in this chapter.
-                                </span>
-                            </div>
-                        </label>
-                    </div>
+                    <label class="flex items-start p-3 border rounded-md hover:bg-gray-50 cursor-pointer">
+                        <input type="checkbox" id="is_active" name="is_active" 
+                               {% if form_action == 'create' or override.is_active %}checked{% endif %}
+                               class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded mt-0.5">
+                        <div class="ml-3">
+                            <span class="font-medium text-gray-900">Active Override</span>
+                            <p class="text-sm text-gray-600">
+                                When checked, this override will be active and visible. When unchecked, the term will be hidden in this chapter.
+                            </p>
+                        </div>
+                    </label>
                 </div>
             </div>
 
             <!-- Form Actions -->
-            <div class="mt-8 flex flex-col sm:flex-row justify-end gap-3 pt-6 border-t border-gray-200">
+            <div class="mt-6 flex flex-col sm:flex-row justify-end gap-3 pt-4 border-t border-gray-200">
                 <a href="{% url 'sidepanal:sidepanel_overrides' %}" 
-                   class="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors text-center font-medium">
-                    Cancel Changes
+                   class="px-4 py-2 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-50 text-center">
+                    Cancel
                 </a>
                 <button type="submit" 
-                        class="px-8 py-3 bg-gradient-to-r from-[#863F3F] to-[#6B2F2F] text-white rounded-lg hover:from-[#6B2F2F] hover:to-[#863F3F] transition-all duration-200 font-medium flex items-center justify-center">
+                        class="px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 flex items-center justify-center">
                     {% if form_action == 'create' %}
                         <i class="fas fa-plus mr-2"></i>Create Override
                     {% else %}
@@ -401,23 +294,23 @@ document.addEventListener('DOMContentLoaded', function() {
         // Handle search input keydown for navigation
         termSearch.addEventListener('keydown', function(e) {
             const visibleOptions = termOptions.querySelectorAll('.term-option:not(.hidden)');
-            const highlighted = termOptions.querySelector('.term-option.highlighted');
+            const highlighted = termOptions.querySelector('.term-option.bg-blue-100');
             
             switch(e.key) {
                 case 'ArrowDown':
                     e.preventDefault();
                     if (highlighted) {
-                        highlighted.classList.remove('highlighted');
+                        highlighted.classList.remove('bg-blue-100');
                         const next = highlighted.nextElementSibling;
                         if (next && !next.classList.contains('hidden')) {
-                            next.classList.add('highlighted');
+                            next.classList.add('bg-blue-100');
                             next.scrollIntoView({ block: 'nearest' });
                         } else if (visibleOptions.length > 0) {
-                            visibleOptions[0].classList.add('highlighted');
+                            visibleOptions[0].classList.add('bg-blue-100');
                             visibleOptions[0].scrollIntoView({ block: 'nearest' });
                         }
                     } else if (visibleOptions.length > 0) {
-                        visibleOptions[0].classList.add('highlighted');
+                        visibleOptions[0].classList.add('bg-blue-100');
                         visibleOptions[0].scrollIntoView({ block: 'nearest' });
                     }
                     break;
@@ -425,17 +318,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'ArrowUp':
                     e.preventDefault();
                     if (highlighted) {
-                        highlighted.classList.remove('highlighted');
+                        highlighted.classList.remove('bg-blue-100');
                         const prev = highlighted.previousElementSibling;
                         if (prev && !prev.classList.contains('hidden')) {
-                            prev.classList.add('highlighted');
+                            prev.classList.add('bg-blue-100');
                             prev.scrollIntoView({ block: 'nearest' });
                         } else if (visibleOptions.length > 0) {
-                            visibleOptions[visibleOptions.length - 1].classList.add('highlighted');
+                            visibleOptions[visibleOptions.length - 1].classList.add('bg-blue-100');
                             visibleOptions[visibleOptions.length - 1].scrollIntoView({ block: 'nearest' });
                         }
                     } else if (visibleOptions.length > 0) {
-                        visibleOptions[visibleOptions.length - 1].classList.add('highlighted');
+                        visibleOptions[visibleOptions.length - 1].classList.add('bg-blue-100');
                         visibleOptions[visibleOptions.length - 1].scrollIntoView({ block: 'nearest' });
                     }
                     break;
@@ -471,7 +364,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 visibleCount++;
             } else {
                 option.element.classList.add('hidden');
-                option.element.classList.remove('highlighted');
+                option.element.classList.remove('bg-blue-100');
             }
         });
         
@@ -499,15 +392,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (definition) {
             defaultDefinitionText.textContent = definition;
             defaultDefinitionPreview.classList.remove('hidden');
-            
-            // Add smooth reveal animation
-            defaultDefinitionPreview.style.opacity = '0';
-            defaultDefinitionPreview.style.transform = 'translateY(-10px)';
-            setTimeout(() => {
-                defaultDefinitionPreview.style.transition = 'all 0.3s ease';
-                defaultDefinitionPreview.style.opacity = '1';
-                defaultDefinitionPreview.style.transform = 'translateY(0)';
-            }, 10);
         }
         
         // Hide dropdown
@@ -515,7 +399,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Remove all highlights
         termOptions.querySelectorAll('.term-option').forEach(opt => {
-            opt.classList.remove('highlighted');
+            opt.classList.remove('bg-blue-100');
         });
     }
 
@@ -534,10 +418,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (optionElement) {
                 // Remove existing highlights
                 termOptions.querySelectorAll('.term-option').forEach(opt => {
-                    opt.classList.remove('highlighted');
+                    opt.classList.remove('bg-blue-100');
                 });
                 // Add highlight to hovered option
-                optionElement.classList.add('highlighted');
+                optionElement.classList.add('bg-blue-100');
             }
         });
     }
@@ -568,15 +452,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (selectedOption.value && selectedOption.dataset.definition) {
             defaultDefinitionText.textContent = selectedOption.dataset.definition;
             defaultDefinitionPreview.classList.remove('hidden');
-            
-            // Add smooth reveal animation
-            defaultDefinitionPreview.style.opacity = '0';
-            defaultDefinitionPreview.style.transform = 'translateY(-10px)';
-            setTimeout(() => {
-                defaultDefinitionPreview.style.transition = 'all 0.3s ease';
-                defaultDefinitionPreview.style.opacity = '1';
-                defaultDefinitionPreview.style.transform = 'translateY(0)';
-            }, 10);
         } else {
             defaultDefinitionPreview.classList.add('hidden');
         }
@@ -594,7 +469,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Show loading state
         loadingIndicator.classList.remove('hidden');
-        loadingIndicator.style.display = 'block';
         chapterSelect.innerHTML = '<option value="">Loading chapters...</option>';
         chapterSelect.disabled = true;
         
@@ -613,15 +487,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     chapterSelect.appendChild(option);
                 });
                 chapterSection.classList.remove('hidden');
-                
-                // Add smooth reveal animation
-                chapterSection.style.opacity = '0';
-                chapterSection.style.transform = 'translateY(-10px)';
-                setTimeout(() => {
-                    chapterSection.style.transition = 'all 0.3s ease';
-                    chapterSection.style.opacity = '1';
-                    chapterSection.style.transform = 'translateY(0)';
-                }, 10);
             } else {
                 chapterSelect.innerHTML = '<option value="">No chapters available for this district</option>';
                 chapterSection.classList.remove('hidden');
@@ -632,7 +497,6 @@ document.addEventListener('DOMContentLoaded', function() {
             chapterSection.classList.remove('hidden');
         } finally {
             loadingIndicator.classList.add('hidden');
-            loadingIndicator.style.display = 'none';
             chapterSelect.disabled = false;
         }
     }
@@ -640,7 +504,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners
     if (termSelect) {
         termSelect.addEventListener('change', showDefaultDefinition);
-        // Show definition if term is pre-selected
         showDefaultDefinition();
     }
 
@@ -653,75 +516,36 @@ document.addEventListener('DOMContentLoaded', function() {
         statisticalRadio.addEventListener('change', loadChapters);
     }
 
-    // Form validation with enhanced UX
+    // Form validation
     if (overrideForm) {
         overrideForm.addEventListener('submit', function(e) {
             {% if form_action == 'create' %}
             let isValid = true;
             const errors = [];
 
-            // Validate term selection
             if (!termSelect.value) {
                 errors.push('Please select a term');
-                termSelect.classList.add('border-red-500');
                 isValid = false;
-            } else {
-                termSelect.classList.remove('border-red-500');
             }
 
-            // Validate district selection
             if (!districtSelect.value) {
                 errors.push('Please select a district');
-                districtSelect.classList.add('border-red-500');
                 isValid = false;
-            } else {
-                districtSelect.classList.remove('border-red-500');
             }
 
-            // Validate chapter type
             if (!culturalRadio.checked && !statisticalRadio.checked) {
                 errors.push('Please select a chapter type');
                 isValid = false;
             }
 
-            // Validate chapter selection
             if (!chapterSelect.value) {
                 errors.push('Please select a specific chapter');
-                chapterSelect.classList.add('border-red-500');
                 isValid = false;
-            } else {
-                chapterSelect.classList.remove('border-red-500');
             }
 
             if (!isValid) {
                 e.preventDefault();
-                
-                // Show error message
-                const errorContainer = document.createElement('div');
-                errorContainer.className = 'mb-4 p-4 rounded-lg bg-red-50 text-red-700 border border-red-200';
-                errorContainer.innerHTML = `
-                    <div class="flex items-center">
-                        <i class="fas fa-exclamation-circle mr-3"></i>
-                        <div>
-                            <p class="font-medium">Please fix the following errors:</p>
-                            <ul class="mt-2 list-disc list-inside text-sm">
-                                ${errors.map(error => `<li>${error}</li>`).join('')}
-                            </ul>
-                        </div>
-                    </div>
-                `;
-                
-                // Remove existing error messages
-                const existingErrors = document.querySelectorAll('.validation-error');
-                existingErrors.forEach(error => error.remove());
-                
-                // Add new error message
-                errorContainer.classList.add('validation-error');
-                overrideForm.insertBefore(errorContainer, overrideForm.firstChild);
-                
-                // Scroll to top
-                errorContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                
+                alert('Please fix the following errors:\n' + errors.join('\n'));
                 return false;
             }
 
@@ -741,76 +565,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             {% endif %}
         });
-    }
-
-    // Add hover effects and focus improvements
-    const formSections = document.querySelectorAll('.bg-blue-50, .bg-purple-50, .bg-green-50, .bg-yellow-50');
-    formSections.forEach(section => {
-        section.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-1px)';
-            this.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
-            this.style.transition = 'all 0.2s ease';
-        });
-        
-        section.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0)';
-            this.style.boxShadow = '';
-        });
-    });
-
-    // Keyboard shortcuts
-    document.addEventListener('keydown', function(e) {
-        if (e.ctrlKey || e.metaKey) {
-            switch(e.key) {
-                case 's':
-                    e.preventDefault();
-                    overrideForm.submit();
-                    break;
-                case 'Escape':
-                    e.preventDefault();
-                    window.location.href = '{% url "sidepanal:sidepanel_overrides" %}';
-                    break;
-            }
-        }
-    });
-
-    // Auto-save draft functionality (optional)
-    let draftTimeout;
-    const overrideTextarea = document.getElementById('override_definition');
-    
-    if (overrideTextarea) {
-        overrideTextarea.addEventListener('input', function() {
-            clearTimeout(draftTimeout);
-            draftTimeout = setTimeout(() => {
-                // Save to localStorage
-                const draftKey = `override_draft_${termSelect.value || 'new'}`;
-                localStorage.setItem(draftKey, this.value);
-                
-                // Show saved indicator
-                const savedIndicator = document.getElementById('draftSaved') || document.createElement('div');
-                savedIndicator.id = 'draftSaved';
-                savedIndicator.className = 'text-xs text-green-600 mt-1';
-                savedIndicator.textContent = '✓ Draft saved automatically';
-                
-                if (!document.getElementById('draftSaved')) {
-                    overrideTextarea.parentNode.appendChild(savedIndicator);
-                }
-                
-                setTimeout(() => {
-                    savedIndicator.style.opacity = '0';
-                    setTimeout(() => savedIndicator.remove(), 300);
-                }, 2000);
-            }, 1000);
-        });
-        
-        // Load draft on page load
-        if (termSelect.value) {
-            const draftKey = `override_draft_${termSelect.value}`;
-            const savedDraft = localStorage.getItem(draftKey);
-            if (savedDraft && !overrideTextarea.value) {
-                overrideTextarea.value = savedDraft;
-            }
-        }
     }
 });
 </script>
