@@ -349,6 +349,14 @@
                   </figure>
               {% endif %}
           {% endfor %}
+          <!-- Last Updated Section -->
+          {% if chapter.updated_at %}
+          <div class="mt-2 pt-2 border-t border-gray-200">
+            <p class="text-sm text-gray-600 italic">
+              Last updated: {{ chapter.updated_at|date:"F j, Y" }}
+            </p>
+          </div>
+          {% endif %}
       </div>
 
     </div>
