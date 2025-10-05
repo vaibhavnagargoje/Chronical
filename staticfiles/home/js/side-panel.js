@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Word definitions dictionary
+  console.log("Side panel script loaded");
   
+  // Word definitions dictionary
+  // home side panel
 const definitionsDataElement = document.getElementById('side-panel-definitions');
   const wordDefinitions = definitionsDataElement
     ? JSON.parse(definitionsDataElement.textContent)
     : {};
+  
+  console.log("Word definitions loaded:", Object.keys(wordDefinitions).length, "terms");
+
   // Function to find and highlight all words in the content - FIXED VERSION
   function highlightWords() {
     // Inject CSS once (same styling as previous inline style)
@@ -29,7 +34,7 @@ const definitionsDataElement = document.getElementById('side-panel-definitions')
       document.head.appendChild(style);
     }
 
-    const containers = document.querySelectorAll('.prose p, .prose div, .prose li, .prose td, .prose th, .prose span');
+    const containers = document.querySelectorAll('.district-intro');
     containers.forEach(container => {
       if (container.classList.contains('no-highlight') || container.closest('.no-highlight')) {
         return;

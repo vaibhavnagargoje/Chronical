@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 from django.shortcuts import render, get_object_or_404
 from .models import State, District, DistrictSVG
-
+from sidepanal.models import SidePanelTerm
 
 @login_required
 def index(request):
@@ -54,6 +54,11 @@ def district_detail(request, state_slug, district_slug):
     district_quick_facts = district.quick_facts.all()
     district_gif_images = district.gif_images.all()  # Fetch GIF images related to the district
     # district_sections = district.sections.all().prefetch_related('paragraphs', 'images')
+    all_terms = SidePanelTerm.objects.all()
+    
+    final_definitions = {term.term: term.default_definition for term in all_terms}
+    
+
     
     CHAPTER_META = {
         'Cultural': {
@@ -116,6 +121,7 @@ def district_detail(request, state_slug, district_slug):
         'district_quick_facts': district_quick_facts,
         'district_gif_images': district_gif_images,  # Pass GIF images to the template
         'all_districts_in_state': all_districts_in_state,
+        'side_panel_data': final_definitions,
         # 'district_sections': district_sections,
         
     }
