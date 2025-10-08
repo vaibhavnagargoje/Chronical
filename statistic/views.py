@@ -43,13 +43,13 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
                 'level': 2,
             })
 
-        ## Uncomment this if you have HeadingBlockThree in Table of contents   
-        # elif isinstance(block, HeadingBlockThree):
-        #      table_of_contents.append({
-        #         'text': block.text,
-        #         'slug': slugify(block.text),
-        #         'level': 3,
-        #     })
+        # Uncomment this if you have HeadingBlockThree in Table of contents   
+        elif isinstance(block, HeadingBlockThree):
+             table_of_contents.append({
+                'text': block.text,
+                'slug': slugify(block.text),
+                'level': 3,
+            })
 
     # Get all chapters in the current district for the "Change Chapter" dropdown
     # Note the use of the `related_name` 'statistical_chapters'
