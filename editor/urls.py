@@ -41,4 +41,7 @@ urlpatterns = [
 
     # District intro editor URL
     path('district/<int:district_id>/intro/', views.district_intro_edit, name='district_intro_edit'),
+    
+    # District intro suggest edit URL
+    path('district/<int:district_id>/suggest-intro/', views.suggest_intro_view, name='suggest_intro'),
 ]

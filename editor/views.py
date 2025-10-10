@@ -11,7 +11,7 @@ from django.utils import timezone
 import json
 from django.conf import settings
 from .forms import ChapterSelectForm
-from .models import SuggestEdit
+from .models import SuggestEdit, IntroductionEdit
 from django.utils.text import slugify
 
 # Import models from BOTH apps
@@ -481,3 +481,42 @@ def district_intro_edit(request, district_id):
     }
     
     return render(request, 'editor/introedit.html', context)
+
+
+def suggest_intro_view(request, district_id):
+    """View for suggesting edits to district introduction"""
+    district = get_object_or_404(
+        District.objects.select_related('state'),
+        id=district_id
+    )
+    
+    if request.method == 'POST':
+        # Create suggestion from form data
+        suggestion = IntroductionEdit(
+            name=request.POST.get('name'),
+            email=request.POST.get('email'),
+            user=request.user if request.user.is_authenticated else None,
+            district=district,
+            section=request.POST.get('section', 'introduction'),
+            edit_type=request.POST.get('edit_type'),
+            current_text=request.POST.get('current_text', ''),
+            suggested_text=request.POST.get('suggested_text'),
+            reason=request.POST.get('reason'),
+            sources=request.POST.get('sources', ''),
+            notify_on_review=request.POST.get('notification') == 'on',
+        )
+        
+        # Handle file upload
+        if request.FILES.get('file-upload'):
+            suggestion.supporting_file = request.FILES['file-upload']
+        
+        suggestion.save()
+        
+        messages.success(request, 'Your edit suggestion has been submitted successfully!')
+        return redirect('home:district_detail', state_slug=district.state.slug, district_slug=district.slug)
+    
+    context = {
+        'district': district,
+    }
+    
+    return render(request, 'editor/suggest_intro.html', context)

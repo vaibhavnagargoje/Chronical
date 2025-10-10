@@ -107,6 +107,37 @@
           </div>
         </div>
       </div>
+      <!-- Suggest Edit Button (Desktop) -->
+      <div class="hidden lg:block absolute right-0 mr-32">
+        <a href="{% url 'editor:suggest_intro' district.id %}" 
+           class="flex items-center space-x-1 text-gray-600 hover:text-[#863F3F] px-3 py-1 rounded-md transition-colors duration-200 text-sm">
+          <i class="fas fa-edit"></i>
+          <span>Suggest Edit</span>
+        </a>
+      </div>
+
+      <!-- Suggest Edit Button (Medium screens) -->
+      <div class="hidden md:block lg:hidden absolute right-0 mr-4">
+        <a href="{% url 'editor:suggest_intro' district.id %}" 
+           class="flex items-center text-gray-600 hover:text-[#863F3F] p-2 rounded-md transition-colors duration-200">
+          <i class="fas fa-edit text-lg"></i>
+          <span>Suggest Edit</span>
+        </a>
+      </div>
+
+      <!-- Mobile buttons container -->
+      <div class="flex items-center space-x-2 absolute right-0 md:hidden">
+        <!-- Suggest Edit Button (Mobile - Icon only) -->
+        <a href="{% url 'editor:suggest_intro' district.id %}" 
+           class="flex items-center text-gray-600 hover:text-[#863F3F] pl-5 rounded-md transition-colors duration-200">
+          <i class="fas fa-edit text-lg"></i>
+        </a>
+        
+        <!-- TOC button -->
+        <button id="toc-button" class="flex items-center space-x-1 text-gray-700 p-2">
+          <i class="fas fa-list text-lg"></i>
+        </button>
+      </div>
     </div>
   </div>
 </div>
