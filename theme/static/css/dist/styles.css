@@ -2152,11 +2152,6 @@ video {
   row-gap: 0.75rem;
 }
 
-.gap-x-10 {
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
-}
-
 .-space-x-px > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(-1px * var(--tw-space-x-reverse));
@@ -3506,6 +3501,21 @@ video {
   outline-offset: 2px;
 }
 
+.focus-within\:ring-2:focus-within {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus-within\:ring-\[\#863F3F\]:focus-within {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(134 63 63 / var(--tw-ring-opacity, 1));
+}
+
+.focus-within\:ring-offset-2:focus-within {
+  --tw-ring-offset-width: 2px;
+}
+
 .hover\:-translate-x-1:hover {
   --tw-translate-x: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3701,6 +3711,10 @@ video {
 .hover\:text-\[\#863F3F\]:hover {
   --tw-text-opacity: 1;
   color: rgb(134 63 63 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-\[\#863F3F\]\/90:hover {
+  color: rgb(134 63 63 / 0.9);
 }
 
 .hover\:text-blue-600:hover {
@@ -4272,10 +4286,6 @@ video {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-5 {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-6 {
