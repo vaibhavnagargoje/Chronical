@@ -148,7 +148,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="mb-6 md:mb-6 pl-2 md:pl-4 lg:pl-16 flex items-center justify-between">
                 <h2 class="text-5xl font-bold text-[#863F3F]">{{ district.name }}</h2>
-                {% if user.is_superuser %}
+                {% if user.profile.is_reviewer %}
                     <a href="{% url 'editor:district_intro_edit' district.id %}" 
                        class="bg-[#863F3F] hover:bg-[#863F3F]/90 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center space-x-2">
                         <i class="fas fa-edit"></i>
