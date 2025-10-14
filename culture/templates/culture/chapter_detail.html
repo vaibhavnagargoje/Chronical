@@ -243,8 +243,8 @@
         <h3 class="text-lg font-semibold text-[#863F3F] mb-4 sticky top-0 bg-white pb-2">Contents</h3>
         <ul class="space-y-2 text-sm">
           {% for item in table_of_contents %}
-            <li class="{% if item.level == 2 %}pl-4{% endif %}">
-              <a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] text-[12px] transition-colors">{{ item.text }}</a>
+            <li class="{% if item.level == 2 %}pl-4{% endif %} leading-tight">
+              <a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] text-[12px] leading-tight transition-colors">{{ item.text }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -286,7 +286,7 @@
               
 
               {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
-                  <div class="mb-2 leading-relaxed text-gray-800 max-w-4xl">{{ block.content|safe }}</div>
+                  <div class="mb-1 leading-relaxed text-gray-800 max-w-4xl">{{ block.content|safe }}</div>
 
                 {% elif block.polymorphic_ctype.model == 'imageblock' %}
                   <figure class="mb-2 mt-2 max-w-4xl text-center">
@@ -311,10 +311,7 @@
                   >
                 </picture>
                 {% if block.caption and block.caption != "Image (no caption)" %}
-                  <figcaption class="text-sm text-gray-600 italic text-[12px] text-center mt-1 mb-6 px-2 sm:px-4 md:px-10 max-w-4xl mx-auto leading-relaxed">{{ block.caption }}
-                    {% if block.img_ref %}
-                      <a href="{{ block.img_ref }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" >
-                    <i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
+                  <figcaption class=" text-gray-600 italic text-[12px] text-center mt-1 mb-6 px-2 sm:px-4 md:px-10 max-w-4xl mx-auto leading-relaxed">{{ block.caption }}{% if block.img_ref %}<a href="{{ block.img_ref }}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words"><i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7);"></i></a>
                     {% endif %}
                   </figcaption>
                 {% endif %}
@@ -324,7 +321,7 @@
                   {# Render reference text as plain text (escaped) to avoid broken / partial HTML showing on page #}
                   <p class="text-gray-700 mb-2 text-[12px] leading-relaxed max-w-full md:max-w-4xl break-words no-highlight">
                     {% if block.link%}
-                      {{block.text}}<a href="{{block.link}}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words"><i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i>
+                      {{block.text}}<a href="{{block.link}}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words "><i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 0.1px;"></i>
                       </a>
                     {% else %}
                       {{ block.text }}
@@ -351,9 +348,9 @@
           {% endfor %}
           <!-- Last Updated Section -->
           {% if chapter.updated_at %}
-          <div class="mt-2 pt-2 border-t border-gray-200">
-            <p class="text-sm text-gray-600 italic">
-              Last updated: {{ chapter.updated_at|date:"F j, Y" }}
+          <div class="mt-4 border-t border-gray-200">
+            <p class="text-[12px] text-gray-600 italic">
+              Last updated on: {{ chapter.updated_at|date:"j F Y" }}
             </p>
           </div>
           {% endif %}
@@ -372,7 +369,7 @@
     </div>
     <ul class="space-y-3 text-sm">
         {% for item in table_of_contents %}
-          <li><a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] text-[12px] block py-1 toc-link {% if item.level == 2 %}pl-4{% endif %}">{{ item.text }}</a></li>
+          <li><a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] text-[11px] leading-tight block py-1 toc-link {% if item.level == 2 %}pl-4{% endif %}">{{ item.text }}</a></li>
         {% endfor %}
     </ul>
     {% if user.is_authenticated and user.profile.is_reviewer_user %}

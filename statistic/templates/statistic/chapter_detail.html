@@ -244,8 +244,8 @@ This template is for the Statistical Chapter detail page.
         <h3 class="text-lg font-semibold text-[#863F3F] mb-4 sticky top-0 bg-white pb-2">Contents</h3>
         <ul class="space-y-2 text-sm">
           {% for item in table_of_contents %}
-            <li class="{% if item.level == 2 %}pl-4{% endif %}">
-              <a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] text-[12px] transition-colors">{{ item.text }}</a>
+            <li class="{% if item.level == 2 %}pl-4{% endif %} leading-tight">
+              <a href="#{{ item.slug }}" class="text-gray-700 leading-tight hover:text-[#863F3F] text-[12px] transition-colors">{{ item.text }}</a>
             </li>
           {% empty %}
             <li><p class="text-gray-500">No headings on this page.</p></li>
@@ -286,7 +286,7 @@ This template is for the Statistical Chapter detail page.
                   <h3 id="{{ block.text|slugify }}" class="text-xl font-semibold text-gray-700 mb-1 mt-2 pt-2 leading-tight">{{ block.text }}</h3>
               
               {% elif block.polymorphic_ctype.model == 'paragraphblock' %}
-                  <div class="mb-2 leading-relaxed text-gray-800 max-w-4xl">{{ block.content|safe }}</div>
+                  <div class="mb-1 leading-relaxed text-gray-800 max-w-4xl">{{ block.content|safe }}</div>
 
               {% elif block.polymorphic_ctype.model == 'imageblock' %}
                   <figure class="mb-2 mt-2 max-w-4xl text-center">
@@ -310,8 +310,7 @@ This template is for the Statistical Chapter detail page.
                           >
                       </picture>
                       {% if block.caption and block.caption != "Image (no caption)" %}
-                          <figcaption class="text-sm text-gray-600 italic text-[12px] text-center mt-1 mb-6 px-2 sm:px-4 md:px-10 max-w-4xl mx-auto leading-relaxed">{{block.caption}}
-                            {% if block.img_ref%}<a href="{{block.img_ref}}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" ><i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
+                          <figcaption class= "text-gray-600 italic text-[12px] text-center mt-1 mb-6 px-2 sm:px-4 md:px-10 max-w-4xl mx-auto leading-relaxed">{{block.caption}}{% if block.img_ref%}<a href="{{block.img_ref}}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" ><i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7);"></i></a>
                             {% endif %}
                           </figcaption>
                       {% endif %}
@@ -319,7 +318,7 @@ This template is for the Statistical Chapter detail page.
 
               {% elif block.polymorphic_ctype.model == 'referenceblock'%}
                   <p class="text-gray-700 mb-2 text-[12px] leading-relaxed max-w-full md:max-w-4xl break-words no-highlight">
-                    {% if block.link%}{{block.text}}<a href="{{block.link}}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" ><i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 4px;"></i></a>
+                    {% if block.link%}{{block.text}}<a href="{{block.link}}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words" ><i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7);"></i></a>
                     {% else %}{{block.text}}
                     {% endif %}
                   </p>
@@ -343,9 +342,9 @@ This template is for the Statistical Chapter detail page.
               {% endif %}
           {% endfor %}
           {% if chapter.updated_at %}
-          <div class="mt-2 pt-2 border-t border-gray-200">
-            <p class="text-sm text-gray-600 italic">
-              Last updated: {{ chapter.updated_at|date:"F j, Y" }}
+          <div class="border-t border-gray-200 mt-4">
+            <p class="text-[12px] text-gray-600 italic">
+              Last updated: {{ chapter.updated_at|date:"j F Y" }}
             </p>
           </div>
           {% endif %}
@@ -363,7 +362,7 @@ This template is for the Statistical Chapter detail page.
     </div>
     <ul class="space-y-3 text-sm">
         {% for item in table_of_contents %}
-          <li><a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] text-[12px] block py-1 toc-link {% if item.level == 2 %}pl-4{% endif %}">{{ item.text }}</a></li>
+          <li><a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] text-[11px] leading-tight block  toc-link {% if item.level == 2 %}pl-4{% endif %}">{{ item.text }}</a></li>
         {% empty %}
           <li><p class="text-gray-500">No headings on this page.</p></li>
         {% endfor %}
