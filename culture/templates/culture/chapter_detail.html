@@ -169,6 +169,9 @@
             class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200"
           >
             <div class="grid grid-cols-1 gap-1 max-h-60 overflow-y-auto">
+              <a href="{{ district.get_absolute_url }}" class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700">
+                  <span class="truncate">Introduction</span>
+              </a>
               {% for chap in all_chapters_in_district %}
                 <a 
                   href="{{ chap.get_absolute_url }}" 
