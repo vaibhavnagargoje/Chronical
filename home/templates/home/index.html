@@ -15,6 +15,11 @@
     transition: fill 0.3s ease;
   }
   
+    /* Make map labels click-through and non-selectable */
+    .svg-map text {
+        pointer-events: none;
+        user-select: none;
+    }
 
 #maharashtra path {
   fill: #863f3f60;
