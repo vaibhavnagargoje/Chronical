@@ -56,6 +56,13 @@
         display: none; /* WebKit */
     }
 
+    /* Active TOC link styling */
+    .toc-link.active {
+        color: #863F3F !important;
+        font-weight: 600 !important;
+        border-radius: 4px !important;
+    }
+
     /* More specific selectors for TinyMCE tables */
     .prose table th,
     .prose div table th,
@@ -247,7 +254,7 @@
         <ul class="space-y-2 text-sm">
           {% for item in table_of_contents %}
             <li class="{% if item.level == 2 %}pl-4{% endif %} leading-tight">
-              <a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] text-[12px] leading-tight transition-colors">{{ item.text }}</a>
+              <a href="#{{ item.slug }}" class="toc-link text-gray-700 hover:text-[#863F3F] text-[12px] leading-tight transition-colors" data-target="{{ item.slug }}">{{ item.text }}</a>
             </li>
           {% endfor %}
         </ul>
@@ -270,9 +277,18 @@
     <div class="flex-grow order-3 px-0 md:px-4 lg:pl-6">
       
       
-     <div class="mb-6 md:mb-8 pl-2 md:pl-6 lg:pl-8">
+     <div class="mb-6 md:mb-4 pl-2 md:pl-6 lg:pl-8">
         <h1 class="text-3xl font-semibold text-[#DAB20C] mb-2">{{ district.name | upper }}</h1>
         <h2 class="text-5xl font-bold text-[#863F3F]">{{ chapter.name }}</h2>
+          <!-- Last Updated Section -->
+          {% if chapter.updated_at %}
+          <div class="mt-2">
+            <p class="text-[12px] text-gray-600 italic">
+              Last updated on: {{ chapter.updated_at|date:"j F Y" }}.
+              Help us improve the information on this page by clicking on Suggest Edits or emailing us here.
+            </p>
+          </div>
+          {% endif %}
       </div> 
 
       <!-- Chapter Content Loop -->
@@ -322,7 +338,7 @@
 
               {% elif block.polymorphic_ctype.model == 'referenceblock' %}
                   {# Render reference text as plain text (escaped) to avoid broken / partial HTML showing on page #}
-                  <p class="text-gray-700 mb-2 text-[12px] leading-relaxed max-w-full md:max-w-4xl break-words no-highlight">
+                  <p class="text-gray-700 mb-0.5 text-[12px] leading-tight max-w-full md:max-w-4xl break-words no-highlight">
                     {% if block.link%}
                       {{block.text}}<a href="{{block.link}}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words "><i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 0.1px;"></i>
                       </a>
@@ -350,13 +366,7 @@
               {% endif %}
           {% endfor %}
           <!-- Last Updated Section -->
-          {% if chapter.updated_at %}
-          <div class="mt-4 border-t border-gray-200">
-            <p class="text-[12px] text-gray-600 italic">
-              Last updated on: {{ chapter.updated_at|date:"j F Y" }}
-            </p>
-          </div>
-          {% endif %}
+          
       </div>
 
     </div>
@@ -372,7 +382,7 @@
     </div>
     <ul class="space-y-3 text-sm">
         {% for item in table_of_contents %}
-          <li><a href="#{{ item.slug }}" class="text-gray-700 hover:text-[#863F3F] text-[11px] leading-tight block py-1 toc-link {% if item.level == 2 %}pl-4{% endif %}">{{ item.text }}</a></li>
+          <li><a href="#{{ item.slug }}" class="toc-link text-gray-700 hover:text-[#863F3F] text-[11px] leading-tight block py-1 {% if item.level == 2 %}pl-4{% endif %}" data-target="{{ item.slug }}">{{ item.text }}</a></li>
         {% endfor %}
     </ul>
     {% if user.is_authenticated and user.profile.is_reviewer_user %}
@@ -467,6 +477,33 @@
           document.body.style.overflow = 'auto';
         }
       });
+    });
+
+    // Active section highlighting
+    document.addEventListener('DOMContentLoaded', function() {
+      const tocLinks = document.querySelectorAll('.toc-link');
+      
+      function updateActiveSection() {
+        let current = '';
+        const headings = document.querySelectorAll('h2[id], h3[id]');
+        
+        headings.forEach(heading => {
+          const rect = heading.getBoundingClientRect();
+          if (rect.top <= 150) {
+            current = heading.id;
+          }
+        });
+
+        tocLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('data-target') === current) {
+            link.classList.add('active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateActiveSection);
+      updateActiveSection(); // Initial check
     });
 
     // Mobile menu toggle (if mobile menu button exists)

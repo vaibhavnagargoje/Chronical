@@ -1662,6 +1662,10 @@ video {
   margin-top: 2rem;
 }
 
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -3001,6 +3005,18 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[1px\] {
+  font-size: 1px;
+}
+
+.text-\[14px\] {
+  font-size: 14px;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
 }
 
 .font-bold {
