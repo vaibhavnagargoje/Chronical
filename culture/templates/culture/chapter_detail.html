@@ -90,6 +90,14 @@
         background-color: #f8f8f8 !important;
         font-size: 1.1em !important;
     }
+
+    /* Remove margins from reference blocks */
+    .prose p.no-highlight,
+    p.no-highlight {
+        margin: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 5px !important;
+    }
 </style>
 {% endblock header %}
 
@@ -179,6 +187,7 @@
               <a href="{{ district.get_absolute_url }}" class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700">
                   <span class="truncate">Introduction</span>
               </a>
+              <div class="border-t border-gray-300"></div>
               {% for chap in all_chapters_in_district %}
                 <a 
                   href="{{ chap.get_absolute_url }}" 
@@ -210,7 +219,7 @@
         <a href="{% url 'editor:suggest_edit' app_label='culture' chapter_id=chapter.id %}" 
            class="flex items-center space-x-1 text-gray-600 hover:text-[#863F3F] px-3 py-1 rounded-md transition-colors duration-200 text-sm">
           <i class="fas fa-edit"></i>
-          <span>Suggest Edit</span>
+          <span>Suggest Edits</span>
         </a>
       </div>
 
@@ -219,7 +228,7 @@
         <a href="{% url 'editor:suggest_edit' app_label='culture' chapter_id=chapter.id %}" 
            class="flex items-center text-gray-600 hover:text-[#863F3F] p-2 rounded-md transition-colors duration-200">
           <i class="fas fa-edit text-lg"></i>
-          <span>Suggest Edit</span>
+          <span>Suggest Edits</span>
         </a>
       </div>
 
@@ -283,9 +292,9 @@
           <!-- Last Updated Section -->
           {% if chapter.updated_at %}
           <div class="mt-2">
-            <p class="text-[12px] text-gray-600 italic">
-              Last updated on: {{ chapter.updated_at|date:"j F Y" }}.
-              Help us improve the information on this page by clicking on Suggest Edits or emailing us here.
+            <p class="text-[12px] text-gray-400 italic">
+              Last updated on {{ chapter.updated_at|date:"j F Y" }}.
+              Help us improve the information on this page by clicking on Suggest Edits or <a href="mailto:centre.knowledgealternatives@flame.edu.in" class="text-gray-600 hover:text-[#863F3F] underline">emailing us</a> here.
             </p>
           </div>
           {% endif %}
@@ -338,7 +347,7 @@
 
               {% elif block.polymorphic_ctype.model == 'referenceblock' %}
                   {# Render reference text as plain text (escaped) to avoid broken / partial HTML showing on page #}
-                  <p class="text-gray-700 mb-0.5 text-[12px] leading-tight max-w-full md:max-w-4xl break-words no-highlight">
+                  <p class="text-gray-700 text-[11px] leading-tight max-w-full md:max-w-4xl break-words no-highlight m-0 mb-2">
                     {% if block.link%}
                       {{block.text}}<a href="{{block.link}}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words "><i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 0.1px;"></i>
                       </a>
