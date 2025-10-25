@@ -62,7 +62,7 @@ Profile - {{ user.first_name|default:user.username }} | Indian Districts
                             <img src="{{ profile.profile_picture.url }}" alt="Profile Picture" class="w-16 h-16 rounded-full border-2 border-white object-cover">
                         {% else %}
                             <div class="w-16 h-16 rounded-full border-2 border-white bg-white bg-opacity-20 flex items-center justify-center">
-                                <i class="fas fa-user text-2xl text-white"></i>
+                                <span class="text-2xl font-bold text-white">{{ user.first_name.0|default:user.username.0|upper }}</span>
                             </div>
                         {% endif %}
                         <div>
@@ -131,7 +131,7 @@ Profile - {{ user.first_name|default:user.username }} | Indian Districts
                                 <img src="{{ profile.profile_picture.url }}" alt="Profile Picture" class="w-12 h-12 rounded-full border-2 border-white object-cover">
                             {% else %}
                                 <div class="w-12 h-12 rounded-full border-2 border-white bg-white bg-opacity-20 flex items-center justify-center">
-                                    <i class="fas fa-user text-lg text-white"></i>
+                                    <span class="text-lg font-bold text-white">{{ user.first_name.0|default:user.username.0|upper }}</span>
                                 </div>
                             {% endif %}
                             <div>
