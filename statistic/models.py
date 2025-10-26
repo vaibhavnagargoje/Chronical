@@ -46,6 +46,7 @@ class StatisticalChapter(models.Model):
         ('Agriculture', 'Agriculture'),
         ('Demography', 'Demography'),
         ('Education', 'Education'),
+        ('Elections', 'Elections'),
         ('Environment', 'Environment'),
         ('Health', 'Health'),
         ('Industry', 'Industry'),

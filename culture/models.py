@@ -54,10 +54,10 @@ class CulturalChapter(models.Model):
         ('Cultural Sites', 'Cultural Sites'),
         ('Festivals & Fairs', 'Festivals & Fairs'),
         ('Food', 'Food'),
+        ('History', 'History'),
         ('Language', 'Language'),
         ('Local Politics', 'Local Politics'),
         ('Markets', 'Markets'),
-        ('Political History', 'Political History'),
         ('Sports & Games', 'Sports & Games'),
         ('Stories', 'Stories'),
     ]
