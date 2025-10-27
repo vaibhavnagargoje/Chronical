@@ -194,12 +194,17 @@
     <footer class="bg-white border-t border-gray-200 mt-8">
         <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 pt-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="flex flex-col items-center justify-center space-y-6">
+                <div class="flex flex-col items-center justify-center space-y-6 mb-4">
                     <div class="flex justify-center">
-                        <img src="{% static 'img/cka_logo.png' %}" alt=" Centre for Knowledge Alternatives" class="h-10 transition-transform duration-300 hover:scale-110">
+                        <a href="https://www.flame.edu.in/cka/" target="_blank">
+
+                            <img src="{% static 'img/cka_logo.png' %}" alt=" Centre for Knowledge Alternatives" class="h-6 transition-transform duration-100 hover:scale-105">
+                        </a>
                     </div>
                     <div class="flex justify-center">
-                        <img src="{% static 'img/flame-logo.png' %}" alt="FLAME University" class="h-10 transition-transform duration-300 hover:scale-110">
+                        <a href="https://www.flame.edu.in/" target="_blank">
+                            <img src="{% static 'img/flame-logo.png' %}" alt="FLAME University" class="h-6 transition-transform duration-100 hover:scale-105">
+                        </a>    
                     </div>
                 </div>
                 
@@ -208,38 +213,43 @@
                     <ul class="text-xs space-y-1">
                         <li><a href="{% url 'footersection:project' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Project</a></li>
                         <li><a href="{% url 'footersection:people' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">People</a></li>
-                        <li><a href="#" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Suggest Edits</a></li>
-                        <li><a href="{% url 'footersection:partnership' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Partnerships</a></li>
-                        <li><a href="{% url 'footersection:careers' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Careers</a></li>
+                        <li><a href="{% url 'footersection:partnership' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Partnerships & Careers</a></li>
+                        
                     </ul>
                 </div>
                 
                 <div>
                     {% comment %} <h4 class="text-base font-semibold text-[#863F3F] mb-3">About</h4> {% endcomment %}
                     <ul class="text-xs space-y-1">
-                        <li><a href="https://www.flame.edu.in/cka/" target="_blank" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">About Centre for Knowledge Alternatives</a></li>
-                        <li><a href="https://www.flame.edu.in/" target="_blank" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">About FLAME University</a></li>
-                        <li><a href="{% url 'footersection:subscribe' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Subscribe</a></li>
+                        {% comment %} <li><a href="https://www.flame.edu.in/cka/" target="_blank" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">About Centre for Knowledge Alternatives</a></li>
+                        <li><a href="https://www.flame.edu.in/" target="_blank" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">About FLAME University</a></li> {% endcomment %}
+                        {% comment %} <li><a href="{% url 'footersection:subscribe' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Leave us a message</a></li> {% endcomment %}
                         <li><a href="{% url 'footersection:terms' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Terms & Conditions</a></li>
                         <li><a href="{% url 'footersection:disclaimers' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Disclaimers</a></li>
+                        <li><a href="#" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Suggest Edits</a></li>
                     </ul>
                 </div>
                 
                 <div>
                     {% comment %} <h4 class="text-base font-semibold text-[#863F3F] mb-3">Contact</h4> {% endcomment %}
-                    <ul class="">
+                    <ul class="text-xs space-y-[1px]">
                         <li class="flex">
                             <i class="fas fa-map-marker-alt text-[#863F3F] mt-1 mr-2 text-xs"></i>
-                            <span class="text-gray-600 text-xs">Centre for Knowledge Alternatives,<br>FLAME University,<br>Lavale, Pune 412115, India</span>
+                            <span class="text-gray-600 text-xs">Centre for Knowledge Alternatives,<br>FLAME University,Lavale, Pune 412115, India</span>
                         </li>
                         <li class="flex">
-                            <i class="fas fa-envelope text-[#863F3F] mt-1 mr-2 text-xs"></i>
+                            <i class="fas fa-envelope text-[#863F3F] mt-1 mr-1  text-xs"></i>
                             <span class="text-gray-600 text-xs">cka@flame.edu.in</span>
                         </li>
                         <li class="flex">
-                            <i class="fas fa-phone-alt text-[#863F3F] mt-1 mr-2 text-xs"></i>
+                            <i class="fas fa-phone-alt text-[#863F3F] mt-1 mr-1 text-xs"></i>
                             <span class="text-gray-600 text-xs">+91-20-67906000</span>
                         </li>
+                        <li>
+                            <i class="fas fa-comment-dots text-[#863F3F] text-xs"></i>
+
+                            <a href="{% url 'footersection:subscribe' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Leave us a message</a></li>
+
                     </ul>
                 </div>
             </div>

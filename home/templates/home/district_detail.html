@@ -240,10 +240,10 @@
             
            <!-- District Gif -->
              {% for gif_asset in district_gif_images %}
-                <!-- Check if the optimized video has been generated -->
-                {% if gif_asset.optimized_video %}
-                    <div class="mb-1">
-                        <div class="w-full">
+                <div class="mb-1">
+                    <div class="w-full">
+                        <!-- Check if optimized video is available and valid -->
+                        {% if gif_asset.has_valid_video %}
                             <!-- Use a <video> tag for super-efficient animations -->
                             <video 
                                 src="{{ gif_asset.optimized_video.url }}" 
@@ -254,12 +254,19 @@
                                 aria-label="{{ gif_asset.alt_text|default:gif_asset.caption }}"
                                 class="w-full h-auto max-h-96 md:max-h-[800px] object-cover rounded-lg shadow-md">
                             </video>
-                            {% comment %} {% if gif_asset.caption %}
-                                <p class="mt-2 text-sm text-gray-600">{{ gif_asset.caption }}</p>
-                            {% endif %} {% endcomment %}
-                        </div>
+                        {% elif gif_asset.original_file %}
+                            <!-- Fallback to original GIF when video processing failed -->
+                            <img 
+                                src="{{ gif_asset.original_file.url }}" 
+                                alt="{{ gif_asset.alt_text|default:gif_asset.caption }}"
+                                class="w-full h-auto max-h-96 md:max-h-[800px] object-cover rounded-lg shadow-md"
+                                loading="lazy">
+                        {% endif %}
+                        {% comment %} {% if gif_asset.caption %}
+                            <p class="mt-2 text-sm text-gray-600">{{ gif_asset.caption }}</p>
+                        {% endif %} {% endcomment %}
                     </div>
-                {% endif %}
+                </div>
            {% endfor %}
 
 

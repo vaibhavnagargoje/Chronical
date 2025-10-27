@@ -165,6 +165,16 @@ class GIFImage(models.Model):     #SectionImage
     caption = models.CharField(max_length=255, blank=True)
     alt_text = models.CharField(max_length=255, blank=True)
     
+    @property
+    def has_valid_video(self):
+        """Check if optimized video exists and is accessible"""
+        if not self.optimized_video:
+            return False
+        try:
+            return os.path.exists(self.optimized_video.path)
+        except (ValueError, AttributeError):
+            return False
+    
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
         
@@ -211,10 +221,13 @@ class GIFImage(models.Model):     #SectionImage
             except subprocess.CalledProcessError as e:
                 print(f"❌ FFmpeg Error (code {e.returncode}):")
                 print(e.stderr)
+                print("Will fallback to original GIF in template")
             except FileNotFoundError:
                 print(f"🔥 FFmpeg executable not found at: {settings.FFMPEG_PATH}")
+                print("Will fallback to original GIF in template")
             except Exception as e:
                 print(f"🚨 Unexpected error: {str(e)}")
+                print("Will fallback to original GIF in template")
 
     def __str__(self):
         return f"Animation for {self.district.name}"

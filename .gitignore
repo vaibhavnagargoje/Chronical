@@ -24,3 +24,4 @@ gunicorn_config.py
 
 media.zip
 chronical_dump.sql
+chronical_dump_before chapter move.sql
