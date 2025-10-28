@@ -1,12 +1,12 @@
 from django.urls import path
-from .views import people, careers, disclaimer, partnerships, projects, subscribe, terms, edit_project, edit_partnership, edit_careers, edit_terms, edit_disclaimer
+from .views import people, careers, disclaimer, partnerships, projects, subscribe, terms, edit_project, edit_partnership, edit_careers, edit_terms, edit_disclaimer, leave_us_a_message
 
 app_name = 'footersection'
 
 urlpatterns = [
     path('people/',people, name='people'),
-    path('careers/', careers, name='careers'),
-    path('careers/edit/', edit_careers, name='edit_careers'),
+    path('suggest-edits/', careers, name='suggest_edits'),
+    path('suggest-edits/edit/', edit_careers, name='edit_suggest_edits'),
     path('disclaimer/', disclaimer, name='disclaimers'),
     path('disclaimer/edit/', edit_disclaimer, name='edit_disclaimer'),
     path('partnerships/', partnerships, name='partnership'),
@@ -16,4 +16,5 @@ urlpatterns = [
     path('subscribe/', subscribe, name='subscribe'),
     path('terms/', terms, name='terms'),
     path('terms/edit/', edit_terms, name='edit_terms'),
+    path('leave-us-a-message/', leave_us_a_message, name='leave_us_a_message')
 ]

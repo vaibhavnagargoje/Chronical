@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %} Careers | Centre For Knowledge Alternatives{% endblock title %}
+{% block title %} Suggest Edits | Centre For Knowledge Alternatives{% endblock title %}
 
 {% block content %}
 
@@ -8,7 +8,7 @@
   <div class="relative mt-0">
     <img src="{% static 'footersection/img/Team/project-cover.jpg' %}" class="w-full" alt="Careers Cover">
     <h2 class="absolute font-bold uppercase text-[#dab20c] bottom-5 left-[5%] text-[calc(1.5rem_+_1vw)]">
-      CAREERS
+      Suggest Edits
     </h2>
   </div>
 
@@ -16,16 +16,16 @@
   <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <div class="container mx-auto">
       <div class="flex justify-between items-center mb-6">
-        <h1 class="text-4xl font-bold text-[#863F3F]">Careers</h1>
+        <h1 class="text-4xl font-bold text-[#863F3F]">Suggest Edits</h1>
         {% if user.is_authenticated and user.profile.is_super_admin and not editing %}
-          <a href="{% url 'footersection:edit_careers' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Edit Careers
+          <a href="{% url 'footersection:edit_suggest_edits' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Edit 
           </a>
         {% endif %}
       </div>
       
       {% if editing %}
-        <form method="post" action="{% url 'footersection:edit_careers' %}">
+        <form method="post" action="{% url 'footersection:edit_suggest_edits' %}">
           {% csrf_token %}
           <div class="mb-4">
             <textarea name="text" id="id_text" class="w-full">{{ career.text|default:'' }}</textarea>
@@ -34,7 +34,7 @@
             <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
               Save Changes
             </button>
-            <a href="{% url 'footersection:careers' %}" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
+            <a href="{% url 'footersection:suggest_edits' %}" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded">
               Cancel
             </a>
           </div>

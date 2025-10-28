@@ -226,7 +226,7 @@
                         {% comment %} <li><a href="{% url 'footersection:subscribe' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Leave us a message</a></li> {% endcomment %}
                         <li><a href="{% url 'footersection:terms' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Terms & Conditions</a></li>
                         <li><a href="{% url 'footersection:disclaimers' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Disclaimers</a></li>
-                        <li><a href="#" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Suggest Edits</a></li>
+                        <li><a href="{% url 'footersection:suggest_edits' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Suggest Edits</a></li>
                     </ul>
                 </div>
                 
@@ -248,7 +248,7 @@
                         <li>
                             <i class="fas fa-comment-dots text-[#863F3F] text-xs"></i>
 
-                            <a href="{% url 'footersection:subscribe' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Leave us a message</a></li>
+                            <a href="{% url 'footersection:leave_us_a_message' %}" class="text-gray-600 text-xs hover:text-[#863F3F] transition-colors duration-300 hover:translate-x-1 inline-block">Leave us a message</a></li>
 
                     </ul>
                 </div>

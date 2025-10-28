@@ -294,7 +294,7 @@
           <div class="mt-2">
             <p class="text-[12px] text-gray-400 italic">
               Last updated on {{ chapter.updated_at|date:"j F Y" }}.
-              Help us improve the information on this page by clicking on Suggest Edits or <a href="mailto:centre.knowledgealternatives@flame.edu.in" class="text-gray-600 hover:text-[#863F3F] underline">emailing us</a> here.
+              Help us improve the information on this page by clicking on Suggest Edits or <a href="{% url 'footersection:leave_us_a_message' %}" class="text-gray-600 hover:text-[#863F3F] underline">Writing to us</a> here.
             </p>
           </div>
           {% endif %}
