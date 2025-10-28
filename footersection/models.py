@@ -67,18 +67,3 @@ class Disclaimer(models.Model):
     text = HTMLField(help_text="Enter the disclaimer text here.",blank=True, null=True)
 
 
-class Message(models.Model):
-    name = models.CharField(max_length=100, help_text="Full name of the person")
-    email = models.EmailField(help_text="Email address")
-    subject = models.CharField(max_length=200, help_text="Message subject")
-    message = models.TextField(help_text="Message content")
-    created_at = models.DateTimeField(auto_now_add=True)
-    is_read = models.BooleanField(default=False, help_text="Has this message been read?")
-    
-    class Meta:
-        ordering = ['-created_at']
-        verbose_name = "Message"
-        verbose_name_plural = "Messages"
-    
-    def __str__(self):
-        return f"{self.name} - {self.subject[:50]}"
