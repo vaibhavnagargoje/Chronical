@@ -16,7 +16,7 @@
             <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
             <a href="{{ chapter.get_absolute_url }}" class="text-gray-600 hover:text-[#863F3F]">{{ chapter.name }}</a>
             <i class="fas fa-chevron-right text-gray-400 mx-2 text-xs"></i>
-            <span class="text-[#863F3F] font-medium">Suggest Edit</span>
+            <span class="text-[#863F3F] font-medium">Suggest Edits</span>
         </div>
     </div>
 </div>
@@ -25,7 +25,7 @@
 <div class="bg-white py-8">
     <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16">
         <div class="max-w-3xl mx-auto">
-            <h1 class="text-3xl font-bold text-[#863F3F] mb-2">Suggest an Edit</h1>
+            <h1 class="text-3xl font-bold text-[#863F3F] mb-2">Suggest an Edits</h1>
             <p class="text-gray-700 mb-6 mt-8 text-[14px]">
                 You are editing <span class="font-medium">{{ chapter.name }}</span> in <span class="font-medium">{{ chapter.district.name }} </span>. If you wish to edit another page, please navigate to that page and click on "Suggest Edit".
             </p>
@@ -35,8 +35,8 @@
                     <form method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         
-                        <div class="mb-6">
-                            <label for="section" class="block text-gray-700 font-medium mb-2">Section to Edit</label>
+                        <div class="mb-6 hidden">
+                            <label for="section" class="block text-gray-700 font-medium mb-2">Section to Edits</label>
                             <select id="section" name="section" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#863F3F]">
                                 <option value="">Select a section</option>
                                 {% for value, label in section_options %}
@@ -46,7 +46,7 @@
                         </div>
                         
                         <div class="mb-6">
-                            <label for="edit_type" class="block text-gray-700 font-medium mb-2">Type of Edit</label>
+                            <label for="edit_type" class="block text-gray-700 font-medium mb-2">Type of Edits</label>
                             <select id="edit_type" name="edit_type" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#863F3F]" required>
                                 <option value="correction">Correction of factual error</option>
                                 <option value="addition">Addition of new information</option>
