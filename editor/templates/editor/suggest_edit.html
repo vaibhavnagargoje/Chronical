@@ -120,7 +120,7 @@
                 </div>
             </div>
             
-            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
+            {% comment %} <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-8">
                 <div class="flex">
                     <div class="flex-shrink-0">
                         <i class="fas fa-exclamation-circle text-yellow-400"></i>
@@ -131,10 +131,10 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> {% endcomment %}
             
             <div class="text-center">
-                <p class="text-gray-700 mb-4">Thank you for contributing to the Indian Districts!</p>
+                <p class="text-gray-400 text[11px] mb-4">Please ensure your suggestions are accurate and properly sourced.  We will review your suggestions before including it. Thank you for your contribution.</p>
                 <a href="{{ chapter.get_absolute_url }}" class="text-[#863F3F] hover:underline">Return to {{ chapter.name }} chapter</a>
             </div>
         </div>
