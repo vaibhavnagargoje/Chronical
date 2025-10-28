@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.exceptions import PermissionDenied
 
 from django.contrib import messages
-from .models import Project, Partnership, Careers, Terms, Disclaimer
+from .models import Project, Partnership, Careers, Terms, Disclaimer, Message
 
 
 
@@ -187,3 +187,23 @@ def edit_terms(request):
     return render(request, 'footersection/terms-and-conditions.html', context)
 
 
+
+def leave_us_a_message(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        subject = request.POST.get('subject')
+        message_content = request.POST.get('message')
+        
+        # Create and save the message
+        Message.objects.create(
+            name=name,
+            email=email,
+            subject=subject,
+            message=message_content
+        )
+        
+        messages.success(request, 'Thank you for your message! We will get back to you soon.')
+        return redirect('footersection:leave_us_a_message')
+    
+    return render(request, 'footersection/leave_us_a_message.html')
