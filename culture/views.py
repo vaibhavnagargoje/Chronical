@@ -8,7 +8,7 @@ from django.views.decorators.clickjacking import xframe_options_exempt
 from django.http import HttpResponse
 import os
 
-@login_required
+
 def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
     chapter = get_object_or_404(
         CulturalChapter.objects.select_related('district__state'),

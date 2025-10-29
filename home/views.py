@@ -6,7 +6,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import State, District, DistrictSVG
 from sidepanal.models import SidePanelTerm
 
-@login_required
+
 def index(request):
     """
     Display the homepage with a list of all States.
@@ -36,7 +36,7 @@ def state_detail(request, state_slug):
     }
     return render(request, 'home/state_detail.html', context)
 
-@login_required
+
 def district_detail(request, state_slug, district_slug):
     """
     Display information about a particular District, including its introduction.

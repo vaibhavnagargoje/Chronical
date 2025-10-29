@@ -12,7 +12,7 @@ import os
 from sidepanal.models import SidePanelTerm
 
 
-@login_required
+
 def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug):
     # Fetch the correct StatisticalChapter using the URL slugs
     chapter = get_object_or_404(

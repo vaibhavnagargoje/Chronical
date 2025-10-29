@@ -27,7 +27,7 @@ def super_admin_required(view_func):
 def people(request):
     return render(request, 'footersection/people.html')
 
-@login_required
+
 def careers(request):
     career = Careers.objects.first()
     if not career:
@@ -58,7 +58,7 @@ def edit_careers(request):
     }
     return render(request, 'footersection/suggest-edits.html', context)
 
-@login_required
+
 def disclaimer(request):
     disclaimer_obj = Disclaimer.objects.first()
     if not disclaimer_obj:
@@ -89,7 +89,7 @@ def edit_disclaimer(request):
     }
     return render(request, 'footersection/disclaimers.html', context)
 
-@login_required
+
 def partnerships(request):
     partnership = Partnership.objects.first()
     if not partnership:
@@ -120,7 +120,7 @@ def edit_partnership(request):
     }
     return render(request, 'footersection/partnership.html', context)
 
-@login_required
+
 def projects(request):
     project = Project.objects.first()  # Get the first project entry
     if not project:
@@ -151,11 +151,11 @@ def edit_project(request):
     }
     return render(request, 'footersection/project.html', context)
 
-@login_required
+
 def subscribe(request):
     return render(request, 'footersection/subscribe.html')
 
-@login_required
+
 def terms(request):
     terms_obj = Terms.objects.first()
     if not terms_obj:

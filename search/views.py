@@ -236,7 +236,7 @@ def get_facet_counts(query):
     cache.set(facets_cache_key, facets, COUNT_CACHE_TIMEOUT)
     return facets
 
-@login_required
+
 def search_view(request):
     """
     Highly optimized search view with multi-level caching and efficient concurrency.
