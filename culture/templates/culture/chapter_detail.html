@@ -148,7 +148,7 @@
             x-transition:leave-end="opacity-0 scale-95"
             class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200"
             >
-            <div class="grid grid-cols-1 gap-1 max-h-60 overflow-y-auto">
+            <div class="grid grid-cols-1 gap-1 max-h-96 overflow-y-auto">
               {% for dist in all_districts_in_state %}
               <a 
                   href="{{ dist.get_absolute_url }}" 
@@ -183,7 +183,7 @@
             x-transition:leave-end="opacity-0 scale-95"
             class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200"
           >
-            <div class="grid grid-cols-1 gap-1 max-h-60 overflow-y-auto">
+            <div class="grid grid-cols-1 gap-1 max-h-96 overflow-y-auto">
               <a href="{{ district.get_absolute_url }}" class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700">
                   <span class="truncate">Introduction</span>
               </a>
