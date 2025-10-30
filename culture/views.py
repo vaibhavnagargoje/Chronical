@@ -2,7 +2,7 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
-from .models import CulturalChapter, ContentBlock, HeadingBlockOne, HeadingBlockTwo,HeadingBlockThree,ChartBlock
+from .models import CulturalChapter, ContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree, ChartBlock, ReferenceBlock
 from statistic.models import StatisticalChapter
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.http import HttpResponse

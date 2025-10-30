@@ -262,8 +262,8 @@ This template is for the Statistical Chapter detail page.
         <h3 class="text-lg font-semibold text-[#863F3F] mb-4 sticky top-0 bg-white pb-2">Contents</h3>
         <ul class="space-y-2 text-sm">
           {% for item in table_of_contents %}
-            <li class="{% if item.level == 2 %}pl-4{% endif %} leading-tight">
-              <a href="#{{ item.slug }}" class="toc-link text-gray-700 leading-tight hover:text-[#863F3F] text-[12px] transition-colors" data-target="{{ item.slug }}">{{ item.text }}</a>
+            <li class="{% if item.level == 2 %}pl-3 text-[11px] {% elif item.level == 3 %} pl-5 text-[10px] {% else%} text-[12px] {% endif %} leading-tight">
+              <a href="#{{ item.slug }}" class="toc-link text-gray-700 leading-tight hover:text-[#863F3F]  transition-colors" data-target="{{ item.slug }}">{{ item.text }}</a>
             </li>
           {% empty %}
             <li><p class="text-gray-500">No headings on this page.</p></li>
@@ -352,7 +352,7 @@ This template is for the Statistical Chapter detail page.
                   </p>
 
               {% elif block.polymorphic_ctype.model == 'chartblock' %}
-                  <figure class="mb-2 mt-2 max-w-4xl text-center">
+                  <figure id="{% if block.title %}{{ block.title|slugify }}{% else %}chart-{{ block.pk }}{% endif %}" class="mb-2 mt-2 max-w-4xl text-center">
                       {% comment %} {% if block.title %}
                         <h3 class="text-xl font-semibold text-center text-gray-800 mb-4">{{ block.title }}</h3>
                       {% endif %} {% endcomment %}
@@ -384,7 +384,7 @@ This template is for the Statistical Chapter detail page.
     </div>
     <ul class="space-y-3 text-sm">
         {% for item in table_of_contents %}
-          <li><a href="#{{ item.slug }}" class="toc-link text-gray-700 hover:text-[#863F3F] text-[11px] leading-tight block {% if item.level == 2 %}pl-4{% endif %}" data-target="{{ item.slug }}">{{ item.text }}</a></li>
+          <li><a href="#{{ item.slug }}" class="toc-link text-gray-700 hover:text-[#863F3F] leading-tight block {% if item.level == 2 %}pl-3 text-[11px] {% elif item.level == 3 %} pl-5 text-[10px] {% else%} text-[12px] {% endif %}" data-target="{{ item.slug }}">{{ item.text }}</a></li>
         {% empty %}
           <li><p class="text-gray-500">No headings on this page.</p></li>
         {% endfor %}
@@ -484,23 +484,28 @@ This template is for the Statistical Chapter detail page.
   // Active section highlighting
   document.addEventListener('DOMContentLoaded', function() {
     const tocLinks = document.querySelectorAll('.toc-link');
-    
+    const tocAnchors = Array.from(tocLinks, link => {
+      const targetId = link.getAttribute('data-target');
+      const element = targetId ? document.getElementById(targetId) : null;
+      return element ? { targetId, element } : null;
+    }).filter(Boolean);
+
     function updateActiveSection() {
-      let current = '';
-      const headings = document.querySelectorAll('h2[id], h3[id]');
-      
-      headings.forEach(heading => {
-        const rect = heading.getBoundingClientRect();
+      if (!tocAnchors.length) {
+        tocLinks.forEach(link => link.classList.remove('active'));
+        return;
+      }
+
+      let current = tocAnchors[0].targetId;
+      tocAnchors.forEach(({ targetId, element }) => {
+        const rect = element.getBoundingClientRect();
         if (rect.top <= 150) {
-          current = heading.id;
+          current = targetId;
         }
       });
 
       tocLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('data-target') === current) {
-          link.classList.add('active');
-        }
+        link.classList.toggle('active', link.getAttribute('data-target') === current);
       });
     }
 

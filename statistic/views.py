@@ -4,11 +4,12 @@ from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
 from django.http import HttpResponse
 # Import the models from the statistic app
-from .models import StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree,ChartBlock
+from .models import StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree, ChartBlock, ReferenceBlock
 from culture.models import CulturalChapter
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.contrib.auth.decorators import login_required
 import os
+import re
 from sidepanal.models import SidePanelTerm
 
 
@@ -50,6 +51,14 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
                 'slug': slugify(block.text),
                 'level': 3,
             })
+        elif isinstance(block, ChartBlock):
+            chart_title = _ensure_chart_title(block)
+            if chart_title:
+                table_of_contents.append({
+                    'text': chart_title,
+                    'slug': slugify(chart_title),
+                    'level': 3,
+                })
 
     # Get all chapters in the current district for the "Change Chapter" dropdown
     # Note the use of the `related_name` 'statistical_chapters'
@@ -101,14 +110,15 @@ def serve_chart_html(request, chart_block_id):
     
     chart_block = get_object_or_404(ChartBlock, pk=chart_block_id)
     try:
-        html_content = chart_block.chart_html_file.read().decode('utf-8')
-        
-        # Replace relative logo.png with static file URL
+        with chart_block.chart_html_file.open('rb') as chart_file:
+            raw_html = chart_file.read().decode('utf-8', errors='ignore')
+        extracted_title = _extract_chart_title(raw_html)
+        if extracted_title and chart_block.title != extracted_title:
+            chart_block.title = extracted_title
+            chart_block.save(update_fields=['title'])
         logo_url = static('logo.png')
-        # Build absolute URL for iframe context
         logo_absolute_url = request.build_absolute_uri(logo_url)
-        html_content = html_content.replace('src="logo.png"', f'src="{logo_absolute_url}"')
-        
+        html_content = raw_html.replace('src="logo.png"', f'src="{logo_absolute_url}"')
         return HttpResponse(html_content, content_type='text/html')
     except Exception as e:
         return HttpResponse("<h1>Chart file not found.</h1>", status=404, content_type='text/html')
@@ -143,3 +153,20 @@ def get_definitions_for_chapter(chapter_instance, chapter_type):
             final_definitions[term_key] = c_def.override_definition
             
     return final_definitions
+
+
+def _extract_chart_title(html_content):
+    match = re.search(r'<title>\s*(.*?)\s*</title>', html_content, flags=re.IGNORECASE | re.DOTALL)
+    return re.sub(r'\s+', ' ', match.group(1)).strip() if match else None
+
+def _ensure_chart_title(block):
+    try:
+        with block.chart_html_file.open('rb') as chart_file:
+            html_content = chart_file.read().decode('utf-8', errors='ignore')
+    except Exception:
+        return None
+    extracted_title = _extract_chart_title(html_content)
+    if extracted_title and block.title != extracted_title:
+        block.title = extracted_title
+        block.save(update_fields=['title'])
+    return block.title
