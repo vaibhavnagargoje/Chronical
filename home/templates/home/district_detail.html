@@ -141,10 +141,6 @@
           <i class="fas fa-edit text-lg"></i>
         </a>
         
-        <!-- TOC button -->
-        <button id="toc-button" class="flex items-center space-x-1 text-gray-700 p-2">
-          <i class="fas fa-list text-lg"></i>
-        </button>
       </div>
     </div>
   </div>
@@ -304,11 +300,11 @@
                 <!-- Cultural Chapters -->
                 <div class="lg:w-1/2 mt-10 lg:mt-0">
                     <h3 class="text-2xl font-semibold text-center mb-6 md:mb-8">Cultures</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-2 sm:grid-cols-2 gap-4">
                         {% for chapter_data in cultural_chapters %}
                             <a href="{{ chapter_data.object.get_absolute_url }}" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-[#863F3F]">
-                                <div class="p-4 flex items-center">
-                                    <div class="w-12 h-12 flex-shrink-0  rounded-full flex items-center justify-center mr-4">
+                                <div class="p-4 flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left">
+                                    <div class="w-12 h-12 flex-shrink-0 rounded-full flex items-center justify-center mb-2 sm:mb-0 sm:mr-4">
                                         <img src="{% static 'img/icons/' %}{{ chapter_data.icon }}" alt="{{ chapter_data.object.name }}" class="w-12 h-12 object-cover ">
                                     </div>
                                     <div>
@@ -324,12 +320,12 @@
                 <!-- Statistical Chapters -->
                 <div class="lg:w-1/2">
                     <h3 class="text-2xl font-semibold text-center mb-6 md:mb-8">Statistics</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-2 sm:grid-cols-2 gap-4">
                         <!-- Chapter Card -->
                         {% for chapter_data in statistical_chapters %}
                             <a href="{{ chapter_data.object.get_absolute_url }}" class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group border border-transparent hover:border-[#863F3F]">
-                                <div class="p-4 flex items-center">
-                                    <div class="w-12 h-12 flex-shrink-0  rounded-full flex items-center justify-center mr-4">
+                                <div class="p-4 flex flex-col items-center text-center sm:flex-row sm:items-center sm:text-left">
+                                    <div class="w-12 h-12 flex-shrink-0 rounded-full flex items-center justify-center mb-2 sm:mb-0 sm:mr-4">
                                         <img src="{% static 'img/icons/' %}{{ chapter_data.icon }}" alt="{{ chapter_data.object.name }}" class="w-12 h-12 object-cover ">
                                     </div>
                                     <div>
