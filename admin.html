@@ -1,4 +1,4 @@
-# Fetch all the polymorphic content blocks for this chapter
+# Fetch all the polymorphic content blocks for this statistic chapter
     content_blocks_qs = StatisticContentBlock.objects.filter(chapter=chapter)
     content_blocks = list(content_blocks_qs)
     reference_blocks = sorted(
@@ -10,7 +10,7 @@
 
 
 
-culture alphabetically sorded code and above is  statistic 
+culture alphabetically sorded code and above is culture chapter 
 # CORRECT: Just filter the base model - polymorphic will handle the rest
     content_blocks_qs = ContentBlock.objects.filter(chapter=chapter)
     content_blocks = list(content_blocks_qs)

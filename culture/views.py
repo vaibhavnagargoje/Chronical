@@ -17,8 +17,18 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
         district__state__slug=state_slug
     )
 
-    # CORRECT: Just filter the base model - polymorphic will handle the rest
-    content_blocks = ContentBlock.objects.filter(chapter=chapter)
+    # # CORRECT: Just filter the base model - polymorphic will handle the rest
+    # content_blocks = ContentBlock.objects.filter(chapter=chapter)
+    
+    ## CORRECT: Just filter the base model - polymorphic will handle the rest
+    content_blocks_qs = ContentBlock.objects.filter(chapter=chapter)
+    content_blocks = list(content_blocks_qs)
+    reference_blocks = sorted(
+        (block for block in content_blocks if isinstance(block, ReferenceBlock)),
+        key=lambda block: (block.text or '').lower()
+    )
+    non_reference_blocks = [block for block in content_blocks if not isinstance(block, ReferenceBlock)]
+    content_blocks = non_reference_blocks + reference_blocks
 
     # Generate Table of Contents
     table_of_contents = []
@@ -37,13 +47,13 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
                 'level': 2,
             })
 
-        # # --- Uncomment this if you have HeadingBlockThree in Table of contents
-        # elif isinstance(block, HeadingBlockThree):
-        #     table_of_contents.append({
-        #         'text': block.text,
-        #         'slug': slugify(block.text),
-        #         'level': 3,
-        #     })
+        # --- Uncomment this if you have HeadingBlockThree in Table of contents
+        elif isinstance(block, HeadingBlockThree):
+            table_of_contents.append({
+                'text': block.text,
+                'slug': slugify(block.text),
+                'level': 3,
+            })
       
 
     # Get all chapters in the current district for the "Change Chapter" dropdown for culture and statistic

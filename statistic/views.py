@@ -23,9 +23,17 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
         district__state__slug=state_slug
     )
 
+    # # Fetch all the polymorphic content blocks for this chapter
+    # content_blocks = StatisticContentBlock.objects.filter(chapter=chapter)
     # Fetch all the polymorphic content blocks for this chapter
-    content_blocks = StatisticContentBlock.objects.filter(chapter=chapter)
-
+    content_blocks_qs = StatisticContentBlock.objects.filter(chapter=chapter)
+    content_blocks = list(content_blocks_qs)
+    reference_blocks = sorted(
+        (block for block in content_blocks if isinstance(block, ReferenceBlock)),
+        key=lambda block: (block.text or '').lower()
+    )
+    non_reference_blocks = [block for block in content_blocks if not isinstance(block, ReferenceBlock)]
+    content_blocks = non_reference_blocks + reference_blocks
     # Generate Table of Contents from heading blocks
     table_of_contents = []
     
