@@ -3017,6 +3017,10 @@ video {
   line-height: 1rem;
 }
 
+.text-\[1px\] {
+  font-size: 1px;
+}
+
 .font-bold {
   font-weight: 700;
 }
