@@ -2,6 +2,16 @@
 {% load static %}
 {% block title %} Terms & Conditions | Centre For Knowledge Alternatives{% endblock title %}
 
+{% block header %}
+<style>
+    /* Restore indentation for nested lists */
+    .terms-content ul ul, .terms-content ul ol,
+    .terms-content ol ul, .terms-content ol ol {
+        padding-left: 1.5rem; /* Adjust as needed */
+    }
+</style>
+{% endblock header %}
+
 {% block content %}
 
   <!-- Top Pic -->
@@ -41,7 +51,7 @@
         </form>
       {% else %}
         {% if terms and terms.text %}
-          <div class="max-w-none text-black">
+          <div class="max-w-none text-black terms-content">
             {{ terms.text|safe }}
           </div>
         {% else %}
@@ -65,7 +75,7 @@
         height: 400,
         menubar: false,
         branding: false,
-        content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }'
+        content_style: 'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; } ul ul, ul ol, ol ul, ol ol { padding-left: 1.5rem; }'
       });
     </script>
   {% endif %}
