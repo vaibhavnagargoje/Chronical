@@ -29,9 +29,9 @@ class StaticAuthMiddleware:
         csrf_token = get_token(request)
         
         return HttpResponse(f'''
-        <div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#f5f5f5;font-family:Arial">
+        <div style="display:flex;justify-content:center;align-items:center;height:100vh;background-image:url('/static/img/ckabackground.png');background-size:cover;background-position:center;font-family:Arial">
             <div style="background:white;padding:30px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,0.1)">
-                <h2 style="color:#863F3F;text-align:center">Launching Soon</h2>
+                <h2 style="color:#863F3F;text-align:center">Launching Soon !</h2>
                 <form method="post">
                     <input type="hidden" name="csrfmiddlewaretoken" value="{csrf_token}">
                     <input type="text" name="username" placeholder="Username" required style="width:250px;padding:10px;margin:5px 0;border:1px solid #ddd;border-radius:4px"><br>
