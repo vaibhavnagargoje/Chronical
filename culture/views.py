@@ -32,28 +32,35 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
 
     # Generate Table of Contents
     table_of_contents = []
+    num = 0
     for block in content_blocks:
-        # This will now work correctly with concrete subclasses
         if isinstance(block, HeadingBlockOne):
+            anchor_slug = f"{slugify(block.text)}-{num}"
+            block.anchor_slug = anchor_slug
             table_of_contents.append({
                 'text': block.text,
-                'slug': slugify(block.text),
+                'slug': anchor_slug,
                 'level': 1,
             })
+            num += 1
         elif isinstance(block, HeadingBlockTwo):
+            anchor_slug = f"{slugify(block.text)}-{num}"
+            block.anchor_slug = anchor_slug
             table_of_contents.append({
                 'text': block.text,
-                'slug': slugify(block.text),
+                'slug': anchor_slug,
                 'level': 2,
             })
-
-        # --- Uncomment this if you have HeadingBlockThree in Table of contents
+            num += 1
         elif isinstance(block, HeadingBlockThree):
+            anchor_slug = f"{slugify(block.text)}-{num}"
+            block.anchor_slug = anchor_slug
             table_of_contents.append({
                 'text': block.text,
-                'slug': slugify(block.text),
+                'slug': anchor_slug,
                 'level': 3,
             })
+            num += 1
       
 
     # Get all chapters in the current district for the "Change Chapter" dropdown for culture and statistic

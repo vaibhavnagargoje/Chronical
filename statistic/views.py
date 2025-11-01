@@ -37,36 +37,47 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
     # Generate Table of Contents from heading blocks
     table_of_contents = []
     
+    num=0
     for block in content_blocks: # .select_subclasses() is efficient
-       
         if isinstance(block, HeadingBlockOne):
+            anchor_slug = f"{slugify(block.text)}-{num}"
+            block.anchor_slug = anchor_slug
             table_of_contents.append({
                 'text': block.text,
-                'slug': slugify(block.text),
+                'slug': anchor_slug,
                 'level': 1,
             })
+            num+=1
         elif isinstance(block, HeadingBlockTwo):
+            anchor_slug = f"{slugify(block.text)}-{num}"
+            block.anchor_slug = anchor_slug
             table_of_contents.append({
                 'text': block.text,
-                'slug': slugify(block.text),
+                'slug': anchor_slug,
                 'level': 2,
             })
-
+            num+=1
         # Uncomment this if you have HeadingBlockThree in Table of contents   
         elif isinstance(block, HeadingBlockThree):
+             anchor_slug = f"{slugify(block.text)}-{num}"
+             block.anchor_slug = anchor_slug
              table_of_contents.append({
                 'text': block.text,
-                'slug': slugify(block.text),
+                'slug': anchor_slug,
                 'level': 3,
             })
+             num+=1
         elif isinstance(block, ChartBlock):
             chart_title = _ensure_chart_title(block)
             if chart_title:
+                anchor_slug = f"{slugify(chart_title)}-{num}"
+                block.anchor_slug = anchor_slug
                 table_of_contents.append({
                     'text': chart_title,
-                    'slug': slugify(chart_title),
+                    'slug': anchor_slug,
                     'level': 3,
                 })
+                num+=1
 
     # Get all chapters in the current district for the "Change Chapter" dropdown
     # Note the use of the `related_name` 'statistical_chapters'
