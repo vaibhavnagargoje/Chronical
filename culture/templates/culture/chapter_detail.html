@@ -353,7 +353,7 @@
           <div class="mt-2">
             <p class="text-[12px] text-gray-400 italic">
               Last updated on {{ chapter.updated_at|date:"j F Y" }}.
-              Help us improve the information on this page by clicking on Suggest Edits or <a href="{% url 'footersection:leave_us_a_message' %}" class="text-gray-600 hover:text-[#863F3F] underline">Writing to us</a>.
+              Help us improve the information on this page by clicking on Suggest Edits or <a href="{% url 'footersection:leave_us_a_message' %}" class="text-gray-600 hover:text-[#863F3F] underline">writing to us</a>.
             </p>
           </div>
           {% endif %}
@@ -406,7 +406,7 @@
 
               {% elif block.polymorphic_ctype.model == 'referenceblock' %}
                   {# Render reference text as plain text (escaped) to avoid broken / partial HTML showing on page #}
-                  <p class="text-gray-700 text-[11px] leading-tight max-w-full md:max-w-4xl break-words no-highlight m-0 mb-2">
+                  <p class="text-gray-700 text-[11px] leading-normal max-w-full md:max-w-4xl break-words no-highlight m-0 ">
                     {% if block.link%}
                       {{block.text}}<a href="{{block.link}}" target="_blank" class="text-gray-800 hover:text-[#863F3F] break-words reference-tooltip "><i class="fa-solid fa-arrow-up-right-from-square colorburg text-[#863F3F]" style="transform: scale(0.7); margin-left: 0.1px;"></i><span class="reference-tooltip-content">{{ block.link|truncatechars:45 }}</span>
                       </a>
