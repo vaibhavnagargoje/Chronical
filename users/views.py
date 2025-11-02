@@ -103,8 +103,8 @@ def register(request):
         )
 
         try:
-            send_mail("Centre for Knowledge Alternatives, FLAME University",
-                'OTP Verification for Registration',
+            send_mail(
+                '"Centre for Knowledge Alternatives, FLAME University"',
                 f'Thanks for your interest in registering to the Chronicle Project. Your OTP is {otp}',
                 'from@example.com',
                 [email],

@@ -65,13 +65,12 @@
                 
                 <!-- User Icon with Dropdown -->
                 <div class="relative">
-                    <button id="user-menu-button" class="user-icon flex items-center p-2 rounded-full hover:bg-gray-100 transition-colors duration-200">
-                        <i class="fas fa-user text-xl text-[#863F3F]"></i>
-                    </button>
-                    
-                    <!-- Dropdown Menu -->
-                    <div id="user-dropdown" class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transform scale-95 transition-all duration-200 origin-top-right z-50">
-                        {% if user.is_authenticated %}
+                    {% if user.is_authenticated %}
+                        <button id="user-menu-button" class="flex items-center justify-center w-8 h-8 rounded-full bg-[#863F3F] text-white text-sm font-semibold transition-colors duration-200">
+                            {{ user.first_name|default:user.username|slice:":1"|upper }}
+                        </button>
+                        <div id="user-dropdown" class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transform scale-95 transition-all duration-200 origin-top-right z-50">
+                            {% if user.is_authenticated %}
                             <div class="px-4 py-3 border-b border-gray-100">
                                 <span class="block text-sm text-gray-500">Welcome <b>{{user.first_name|default:user.username}}</b></span>
                                 {% comment %} <span class="block text-base font-semibold text-gray-800 truncate">{{ user.first_name|default:user.username }}</span> {% endcomment %}
@@ -86,19 +85,13 @@
                                     <span>Logout</span>
                                 </a>
                             </div>
-                        {% else %}
-                            <div class="py-2">
-                                <a href="{% url 'users:login' %}" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
-                                    <i class="fas fa-sign-in-alt w-5 mr-3 text-gray-400"></i>
-                                    <span>Login</span>
-                                </a>
-                                <a href="{% url 'users:register' %}" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
-                                    <i class="fas fa-user-plus w-5 mr-3 text-gray-400"></i>
-                                    <span>Register</span>
-                                </a>
-                            </div>
-                        {% endif %}
-                    </div>
+                            {% endif %}
+                        </div>
+                    {% else %}
+                        <a href="{% url 'users:login' %}" class="px-3 py-1.5 border border-[#863F3F] text-[#863F3F] rounded-full text-xs font-semibold hover:bg-[#863F3F] hover:text-white transition-colors duration-200">
+                            Login
+                        </a>
+                    {% endif %}
                 </div>
             </div>
 
@@ -138,13 +131,12 @@
                 
                 <!-- Mobile User Icon with Dropdown -->
                 <div class="relative">
-                    <button id="mobile-user-menu-button" class="user-icon flex items-center p-2 rounded-full hover:bg-gray-100 transition-colors duration-200">
-                        <i class="fas fa-user text-xl text-[#863F3F]"></i>
-                    </button>
-                    
-                    <!-- Mobile Dropdown Menu -->
-                    <div id="mobile-user-dropdown" class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transform scale-95 transition-all duration-200 origin-top-right z-50">
-                        {% if user.is_authenticated %}
+                    {% if user.is_authenticated %}
+                        <button id="mobile-user-menu-button" class="flex items-center justify-center w-8 h-8 rounded-full bg-[#863F3F] text-white text-sm font-semibold transition-colors duration-200">
+                            {{ user.first_name|default:user.username|slice:":1"|upper }}
+                        </button>
+                        <div id="mobile-user-dropdown" class="absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible transform scale-95 transition-all duration-200 origin-top-right z-50">
+                            {% if user.is_authenticated %}
                             <div class="px-4 py-3 border-b border-gray-100">
                                 <span class="block text-sm text-gray-500">Welcome <b> {{user.first_name|default:user.username}}</b></span>
                             </div>
@@ -158,19 +150,13 @@
                                     <span>Logout</span>
                                 </a>
                             </div>
-                        {% else %}
-                            <div class="py-2">
-                                <a href="{% url 'users:login' %}" class="flex items-center px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
-                                    <i class="fas fa-sign-in-alt w-5 mr-3 text-gray-400"></i>
-                                    <span>Login</span>
-                                </a>
-                                <a href="{% url 'users:register' %}" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-[#863F3F] transition-colors duration-200">
-                                    <i class="fas fa-user-plus w-5 mr-3 text-gray-400"></i>
-                                    <span>Register</span>
-                                </a>
-                            </div>
-                        {% endif %}
-                    </div>
+                            {% endif %}
+                        </div>
+                    {% else %}
+                        <a href="{% url 'users:login' %}" class="px-2.5 py-1 border border-[#863F3F] text-[#863F3F] rounded-full text-xs font-semibold hover:bg-[#863F3F] hover:text-white transition-colors duration-200">
+                            Login
+                        </a>
+                    {% endif %}
                 </div>
             </div>
         </div>
