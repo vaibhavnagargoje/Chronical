@@ -354,7 +354,7 @@ This template is for the Statistical Chapter detail page.
           <div class="mt-2">
             <p class="text-[12px] text-gray-400 italic">
               Last updated on {{ chapter.updated_at|date:"j F Y" }}.
-              Help us improve the information on this page by clicking on Suggest Edits or <a href="{% url 'footersection:leave_us_a_message' %}" class="text-gray-600 hover:text-[#863F3F] underline">writing to us</a>.
+              Help us improve the information on this page by clicking on <a href="{% url 'editor:suggest_edit' app_label='statistic' chapter_id=chapter.id %}" class="text-gray-600 hover:text-[#863F3F] underline">suggest edits</a> or <a href="{% url 'footersection:leave_us_a_message' %}" class="text-gray-600 hover:text-[#863F3F] underline">writing to us</a>.
 
             </p>
           </div>
@@ -431,6 +431,17 @@ This template is for the Statistical Chapter detail page.
                   </figure>
               {% endif %}
           {% endfor %}
+
+           {% if chapter.updated_at %}
+          <div class="mt-4 border-t border-gray-200">
+            <p class="text-[12px] text-gray-400 italic">
+              Last updated on {{ chapter.updated_at|date:"j F Y" }}.
+              Help us improve the information on this page by clicking on <a href="{% url 'editor:suggest_edit' app_label='statistic' chapter_id=chapter.id %}" class="text-gray-600 hover:text-[#863F3F] underline">suggest edits</a> or <a href="{% url 'footersection:leave_us_a_message' %}" class="text-gray-600 hover:text-[#863F3F] underline">writing to us</a>.
+
+            </p>
+          </div>
+
+          {% endif %}
           
       </div>
     </div>
