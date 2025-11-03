@@ -264,8 +264,9 @@ def chapter_editor_view(request, app_label, chapter_id):
                         except BaseBlockModel.DoesNotExist:
                             continue
 
-            return redirect(chapter.get_absolute_url())
-
+                # Ensure chapter timestamp reflects editor changes
+                if hasattr(chapter, 'updated_at'):
+                    ChapterModel.objects.filter(pk=chapter.pk).update(updated_at=timezone.now())
         except Exception as e:
             print(f"Error saving content: {e}") 
             return redirect(reverse('editor:chapter_editor', kwargs={'app_label': app_label, 'chapter_id': chapter.id}))
