@@ -202,8 +202,8 @@ def leave_us_a_message(request):
             subject=subject,
             message=message_content
         )
-        
-        messages.success(request, 'Thank you for your message! We will get back to you soon.')
+        request.session['leave_us_a_message_success'] = 'Thank you for your message! We will get back to you soon.'
         return redirect('footersection:leave_us_a_message')
-    
-    return render(request, 'footersection/leave_us_a_message.html')
+    success_message = request.session.pop('leave_us_a_message_success', None)
+    list(messages.get_messages(request))
+    return render(request, 'footersection/leave_us_a_message.html', {'success_message': success_message})

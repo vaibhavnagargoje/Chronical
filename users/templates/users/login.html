@@ -1,31 +1,32 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}
 Login - Indian Districts
 {% endblock %}
 
 {% block content %}
-<div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8"
+     style="background-image: url('{% static 'img/ckabackground.png' %}'); background-size: cover; background-position: center;">
     <div class="max-w-md w-full space-y-8">
         <div>
-            <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
+            <h2 class="text-center text-3xl font-extrabold text-gray-900">
                 Sign In 
             </h2>
-            <p class="mt-2 text-center text-sm text-gray-600">
-                Welcome to Indian Districts !
-            </p>
         </div>
         {% if messages %}
-            {% for message in messages %}
-                {% if message.tags == 'error' %}
-                    <div class="alert alert-error bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded" role="alert">
-                        <strong>{{ message }}</strong>
-                    </div>
-                {% elif message.tags == 'success' %}
-                    <div class="alert alert-success bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded" role="alert">
-                        <strong>{{ message }}</strong>
-                    </div>
-                {% endif %}
-            {% endfor %}
+            <div class="space-y-2">
+                {% for message in messages %}
+                    {% if 'success' in message.tags %}
+                        <div class="bg-green-50 border border-green-300 text-green-700 px-4 py-3 rounded">{{ message }}</div>
+                    {% elif 'warning' in message.tags %}
+                        <div class="bg-yellow-50 border border-yellow-300 text-yellow-700 px-4 py-3 rounded">{{ message }}</div>
+                    {% elif 'error' in message.tags or 'danger' in message.tags %}
+                        <div class="bg-red-50 border border-red-300 text-red-700 px-4 py-3 rounded">{{ message }}</div>
+                    {% else %}
+                        <div class="bg-blue-50 border border-blue-300 text-blue-700 px-4 py-3 rounded">{{ message }}</div>
+                    {% endif %}
+                {% endfor %}
+            </div>
         {% endif %}
 
         <form id="loginForm" class="mt-8 space-y-6" method="post">

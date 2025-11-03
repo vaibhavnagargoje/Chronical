@@ -166,7 +166,7 @@ def custom_logout(request):
     if request.user.is_authenticated:
         logout(request)
         messages.success(request, "You have been logged out successfully.")
-        return redirect('users:login')
+        return redirect('home:index')
     else:
         messages.warning(request, "You are not logged in.")
 
