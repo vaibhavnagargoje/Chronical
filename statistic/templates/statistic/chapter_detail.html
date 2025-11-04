@@ -228,12 +228,12 @@ setTimeout(() => {
               <i class="fas fa-chevron-down text-xs transition-transform duration-300"
                  data-dropdown-icon></i>
             </button>
-            <div class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200 hidden"
+            <div class="absolute left-0 sm:left-1/2 sm:-translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200 hidden"
                  data-dropdown-menu>
               <div class="grid grid-cols-1 gap-1 max-h-96 overflow-y-auto">
                 {% for dist in all_districts_in_state %}
                 <a href="{{ dist.get_absolute_url }}"
-                   class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if dist == district %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}">
+                   class="px-2 py-1 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if dist == district %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}">
                   <span class="truncate">{{ dist.name }}</span>
                 </a>
                 {% endfor %}
@@ -249,17 +249,17 @@ setTimeout(() => {
               <i class="fas fa-chevron-down text-xs transition-transform duration-300"
                  data-dropdown-icon></i>
             </button>
-            <div class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200 hidden"
+            <div class="absolute left-0 sm:left-1/2 sm:-translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200 hidden"
                  data-dropdown-menu>
               <div class="grid grid-cols-1 gap-1 max-h-96 overflow-y-auto">
                 <!-- Statistical Chapters -->
-                 <a href="{{ district.get_absolute_url }}" class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700">
+                 <a href="{{ district.get_absolute_url }}" class="px-2 py-1 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700">
                     <span class="truncate">Introduction</span>
                 </a>
                 <div class="border-t border-gray-300"></div>
                 {% for chap in all_cultural_chapters_in_district %}
                 <a href="{{ chap.get_absolute_url }}"
-                   class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if chap == chapter %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}">
+                   class="px-2 py-1 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if chap == chapter %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}">
                   <span class="truncate">{{ chap.name }}</span>
                 </a>
                 {% endfor %}
