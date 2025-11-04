@@ -22,99 +22,62 @@
 <div class="bg-white border-b  top-16 z-40 sticky">
   <div class="container mx-auto px-4 md:px-6 lg:px-8 xl:px-20 2xl:px-40">
      <div class="flex items-center justify-between md:justify-center py-3 relative">
-      <!-- Centered container for dropdowns -->
-      <div class="flex items-center justify-center space-x-2 md:space-x-5">
-        <!-- Change District Dropdown -->
-        <div class="relative" x-data="{ open: false }">
-          <button 
-            @click="open = !open"
-            class="flex items-center space-x-1 text-yellow-600 font-semibold whitespace-nowrap px-1 py-1 rounded-md transition-all duration-300 hover:bg-gray-100 focus:outline-none"
-            >
-                        <span>{{district.name|slice:":14"}}</span>
-            <i 
-            class="fas fa-chevron-down text-xs transition-transform duration-300" 
-            :class="{'rotate-180': open}"
-            ></i>
-          </button>
-          <div 
-            x-show="open"
-            @click.outside="open = false"
-            x-transition:enter="transition ease-out duration-300"
-            x-transition:enter-start="opacity-0 scale-95"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-200"
-            x-transition:leave-start="opacity-100 scale-100"
-            x-transition:leave-end="opacity-0 scale-95"
-            class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200"
-            >
-            <div class="grid grid-cols-1 gap-1 max-h-96 overflow-y-auto">
-              {% for dist in all_districts_in_state %}
-              <a 
-                  href="{{ dist.get_absolute_url }}" 
-                  class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if dist == district %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}"
-                >
-                <span class="truncate">{{ dist.name }}</span>
+        <div class="flex items-center justify-center space-x-2 md:space-x-5">
+          <div class="relative" data-dropdown>
+            <button type="button"
+                    class="flex items-center space-x-1 text-yellow-600 font-semibold whitespace-nowrap px-1 py-1 rounded-md transition-all duration-300 hover:bg-gray-100 focus:outline-none"
+                    data-dropdown-button aria-expanded="false">
+              <span>{{ district.name|slice:":14" }}</span>
+              <i class="fas fa-chevron-down text-xs transition-transform duration-300"
+                 data-dropdown-icon></i>
+            </button>
+            <div class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200 hidden"
+                 data-dropdown-menu>
+              <div class="grid grid-cols-1 gap-1 max-h-96 overflow-y-auto">
+                {% for dist in all_districts_in_state %}
+                <a href="{{ dist.get_absolute_url }}"
+                   class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center {% if dist == district %}bg-gray-100 text-[#863F3F] font-medium{% else %}text-gray-700{% endif %}">
+                  <span class="truncate">{{ dist.name }}</span>
                 </a>
                 {% endfor %}
+              </div>
             </div>
           </div>
-        </div>
-        <div class="relative" x-data="{ open: false }">
-          <button 
-          @click="open = !open"
-          class="flex items-center space-x-1 text-[#863F3F] font-medium whitespace-nowrap px-3 py-1 rounded-md transition-all duration-300 hover:bg-[#863F3F]/10 focus:outline-none"
-          >
-          <!-- Change Chapter Dropdown -->
-            <span>Introduction</span>
-            <i 
-              class="fas fa-chevron-down text-xs transition-transform duration-300" 
-              :class="{'rotate-180': open}"
-            ></i>
-          </button>
-          <div 
-            x-show="open"
-            @click.outside="open = false"
-            x-transition:enter="transition ease-out duration-300"
-            x-transition:enter-start="opacity-0 scale-95"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-200"
-            x-transition:leave-start="opacity-100 scale-100"
-            x-transition:leave-end="opacity-0 scale-95"
-            class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200"
-          >
-            <div class="grid grid-cols-1 gap-1 max-h-96 overflow-y-auto">
-               <a 
-                  href="{{ district.get_absolute_url }}" 
-                  class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700 bg-gray-100  font-medium"
-                >
-                <span class="truncate bg-gray-100 text-[#863F3F]">Introduction</span>
-              </a>
-              <div class="border-t border-gray-300"></div>
-              {% for chapter_data in cultural_chapters %}
-              
-                <a 
-                  href="{{ chapter_data.object.get_absolute_url }}" 
-                  class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700"
-                >
+          <div class="relative" data-dropdown>
+            <button type="button"
+                    class="flex items-center space-x-1 text-[#863F3F] font-medium whitespace-nowrap px-3 py-1 rounded-md transition-all duration-300 hover:bg-[#863F3F]/10 focus:outline-none"
+                    data-dropdown-button aria-expanded="false">
+              <span>Introduction</span>
+              <i class="fas fa-chevron-down text-xs transition-transform duration-300"
+                 data-dropdown-icon></i>
+            </button>
+            <div class="absolute left-1/2 -translate-x-1/2 top-full mt-1 bg-white shadow-lg rounded-md p-2 w-40 z-50 border border-gray-200 hidden"
+                 data-dropdown-menu>
+              <div class="grid grid-cols-1 gap-1 max-h-96 overflow-y-auto">
+                <a href="{{ district.get_absolute_url }}"
+                   class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700 bg-gray-100 font-medium">
+                  <span class="truncate bg-gray-100 text-[#863F3F]">Introduction</span>
+                </a>
+                <div class="border-t border-gray-300"></div>
+                {% for chapter_data in cultural_chapters %}
+                <a href="{{ chapter_data.object.get_absolute_url }}"
+                   class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700">
                   <span class="truncate">{{ chapter_data.object.name }}</span>
                 </a>
-              {% endfor %}
-              {% if statistical_chapters %}
+                {% endfor %}
+                {% if statistical_chapters %}
                 <div class="border-t border-gray-300 my-1"></div>
-              {% endif %}
-
-              {% for chapter_data in statistical_chapters %}
-                <a 
-                  href="{{ chapter_data.object.get_absolute_url }}" 
-                  class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700"
-                >
+                {% endif %}
+                {% for chapter_data in statistical_chapters %}
+                <a href="{{ chapter_data.object.get_absolute_url }}"
+                   class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700">
                   <span class="truncate">{{ chapter_data.object.name }}</span>
                 </a>
-              {% endfor %}
+                {% endfor %}
+              </div>
             </div>
           </div>
         </div>
-      </div>
       <!-- Suggest Edit Button (Desktop) -->
       <div class="hidden lg:block absolute right-0 mr-32">
         <a href="{% url 'editor:suggest_intro' district.id %}" 
@@ -345,8 +308,47 @@
     </div>
 
 
-<!-- Include Alpine.js for interactivity -->
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdowns = document.querySelectorAll('[data-dropdown]');
+
+  const closeAll = () => {
+    dropdowns.forEach((dropdown) => {
+      const menu = dropdown.querySelector('[data-dropdown-menu]');
+      const button = dropdown.querySelector('[data-dropdown-button]');
+      const icon = dropdown.querySelector('[data-dropdown-icon]');
+      if (menu) menu.classList.add('hidden');
+      if (button) button.setAttribute('aria-expanded', 'false');
+      if (icon) icon.classList.remove('rotate-180');
+    });
+  };
+
+  dropdowns.forEach((dropdown) => {
+    const button = dropdown.querySelector('[data-dropdown-button]');
+    const menu = dropdown.querySelector('[data-dropdown-menu]');
+    const icon = dropdown.querySelector('[data-dropdown-icon]');
+    if (!button || !menu) return;
+
+    button.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const wasHidden = menu.classList.contains('hidden');
+      closeAll();
+      if (wasHidden) {
+        menu.classList.remove('hidden');
+        button.setAttribute('aria-expanded', 'true');
+        if (icon) icon.classList.add('rotate-180');
+      }
+    });
+
+    menu.addEventListener('click', (event) => event.stopPropagation());
+  });
+
+  document.addEventListener('click', closeAll);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeAll();
+  });
+});
+</script>
 
 {% block extra_scripts %}
     {# This safely embeds your dictionary data into the HTML #}

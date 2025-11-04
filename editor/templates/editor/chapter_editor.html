@@ -34,10 +34,13 @@
                             Final Reviewed
                         </label>
                     </div>
-                    
+                    <a href="{{ chapter.get_absolute_url|default:'#' }}" target="_blank" class="bg-white border border-gray-300 text-gray-700 font-semibold py-2 px-4 rounded-lg transition-colors shadow-sm hover:border-gray-400 hover:text-gray-900">
+                        <i class="fas fa-external-link-alt mr-2"></i> View Page
+                    </a>
                     <button id="save-button" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition-colors shadow-sm">
                         <i class="fas fa-save mr-2"></i> Save Changes
                     </button>
+                    <span id="save-feedback" class="text-sm font-semibold text-green-600 opacity-0 pointer-events-none">Changes saved!</span>
                 </div>
             </div>
         </div>
@@ -123,6 +126,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const saveButton = document.getElementById('save-button');
     const addBlockButtons = document.querySelectorAll('.add-block-btn');
     const blockTemplates = document.getElementById('block-templates');
+    const saveFeedback = document.getElementById('save-feedback');
+    let saveFeedbackTimeout;
 
     let uniqueIdCounter = Date.now();
     let tinyMCEInitialized = new Set(); // Track initialized editors
@@ -642,7 +647,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         contentDataInput.value = JSON.stringify(allBlocksData);
-        form.submit();
+        showSaveFeedback('Changes saved!');
+        setTimeout(() => {
+            form.submit();
+        }, 400);
     });
 
     // Handle review checkbox changes
@@ -682,6 +690,17 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // Show save feedback message
+    const showSaveFeedback = (message) => {
+        if (!saveFeedback) return;
+        saveFeedback.textContent = message;
+        saveFeedback.classList.add('show');
+        if (saveFeedbackTimeout) clearTimeout(saveFeedbackTimeout);
+        saveFeedbackTimeout = setTimeout(() => {
+            saveFeedback.classList.remove('show');
+        }, 500);
+    };
 });
 </script>
 <style>
@@ -837,6 +856,17 @@ document.addEventListener('DOMContentLoaded', () => {
     /* Cleaner file input styling */
     input[type="file"] {
         font-size: 12px !important;
+    }
+
+    #save-feedback {
+        opacity: 0;
+        transform: translateY(-4px);
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    #save-feedback.show {
+        opacity: 1;
+        transform: translateY(0);
     }
 </style>
 {% endblock %}
