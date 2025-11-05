@@ -423,7 +423,9 @@ setTimeout(() => {
                                 src="{{ block.get_chart_url }}"
                                 title="{{ block.title|default:'Statistical Chart' }}"
                                 frameborder="0"
-                                scrolling="no">
+                                scrolling="no"
+                                loading="lazy">
+                                
                                 Your browser does not support iframes.
                             </iframe>
                       </div>
@@ -432,8 +434,8 @@ setTimeout(() => {
           {% endfor %}
 
            {% if chapter.updated_at %}
-          <div class="mt-4 border-t border-gray-200">
-            <p class="text-[12px] text-gray-400 italic">
+          <div class="mt-4 pt-6">
+            <p class="text-[11px] text-gray-400 ">
               Last updated on {{ chapter.updated_at|date:"j F Y" }}.
               Help us improve the information on this page by clicking on <a href="{% url 'editor:suggest_edit' app_label='statistic' chapter_id=chapter.id %}" class="text-gray-600 hover:text-[#863F3F] font-normal underline">suggest edits</a> or <a href="{% url 'footersection:leave_us_a_message' %}" class="text-gray-600 font-normal hover:text-[#863F3F] underline">writing to us</a>.
 
@@ -612,7 +614,7 @@ setTimeout(() => {
       let current = tocAnchors[0].targetId;
       tocAnchors.forEach(({ targetId, element }) => {
         const rect = element.getBoundingClientRect();
-        if (rect.top <= 150) {
+        if (rect.top <= 200) {
           current = targetId;
         }
       });
@@ -635,8 +637,8 @@ setTimeout(() => {
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
           window.scrollTo({
-            top: targetElement.offsetTop - 120, // Offset for fixed header
-            behavior: "smooth",
+            top: targetElement.offsetTop - 180, // Offset for fixed header
+            behavior: "instant" // Change to 'smooth' for smooth scrolling,
           });
         }
       } catch (error) {

@@ -396,7 +396,7 @@ setTimeout(() => {
                     alt="{{ block.alt_text }}" 
                     class="mx-auto min-w-[300px] max-h-[500px] w-auto h-auto rounded-lg  object-cover block" 
                     style="aspect-ratio: auto;"
-                    {% comment %} loading="lazy" {% endcomment %}
+                    loading="lazy"
                   >
                 </picture>
                 {% if block.caption and block.caption != "Image (no caption)" %}
@@ -438,8 +438,8 @@ setTimeout(() => {
           {% endfor %}
           <!-- Last Updated Section -->
            {% if chapter.updated_at %}
-          <div class="mt-4 border-t border-gray-200" >
-            <p class="text-[12px] text-gray-400 italic">
+          <div class="mt-4 pt-6 " >
+            <p class="text-[11px] text-gray-400 ">
               Last updated on {{ chapter.updated_at|date:"j F Y" }}.
             Help us improve the information on this page by clicking on <a href="{% url 'editor:suggest_edit' app_label='culture' chapter_id=chapter.id %}" class="text-gray-600 hover:text-[#863F3F] font-normal underline">suggest edits</a> or <a href="{% url 'footersection:leave_us_a_message' %}" class="text-gray-600 hover:text-[#863F3F] font-normal underline">writing to us</a>.
           </p>
@@ -568,7 +568,7 @@ setTimeout(() => {
         
         headings.forEach(heading => {
           const rect = heading.getBoundingClientRect();
-          if (rect.top <= 150) {
+          if (rect.top <= 200) {
             current = heading.id;
           }
         });
@@ -619,8 +619,8 @@ setTimeout(() => {
 
         if (targetElement) {
           window.scrollTo({
-            top: targetElement.offsetTop - 120, // Offset for fixed header
-            behavior: "smooth",
+            top: targetElement.offsetTop - 180, // Offset for fixed header
+            behavior:"instant" // Smooth scroll behavior,
           });
         }
       });
