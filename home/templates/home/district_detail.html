@@ -105,7 +105,7 @@ setTimeout(() => {
                 {% endif %}
                 {% for chapter_data in statistical_chapters %}
                 <a href="{{ chapter_data.object.get_absolute_url }}"
-                   class="px-3 py-2 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700">
+                   class="px-2 py-1 hover:bg-gray-100 rounded text-sm transition-colors duration-200 flex items-center text-gray-700">
                   <span class="truncate">{{ chapter_data.object.name }}</span>
                 </a>
                 {% endfor %}
