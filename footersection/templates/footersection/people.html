@@ -41,7 +41,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-6">
         <!-- Patron 1: Vallabh Bhanshali -->
         <div>
-          <img src="{% static 'footersection/img/Team/Vallabh Bhanshali.jpg' %}" alt="Vallabh Bhanshali" class="w-128 h-auto object-cover">
+          <img src="{% static 'footersection/img/Team/Vallabh Bhanshali.jpg' %}" alt="Vallabh Bhanshali" class="w-[280px] h-auto object-cover">
           <p class="font-bold mt-4 mb-1 text-lg">Vallabh Bhanshali</p>
           <p class="text-[#863F3F] text-[0.9rem] leading-tight">
             Chairman, ENAM Securities<br>
@@ -56,7 +56,7 @@
 
         <!-- Patron 2: Monik Sameer Koticha -->
         <div>
-          <img src="{% static 'footersection/img/Team/Monik Sameer Koticha.jpg' %}" alt="Monik Sameer Koticha" class="w-128 h-auto object-cover">
+          <img src="{% static 'footersection/img/Team/Monik Sameer Koticha.jpg' %}" alt="Monik Sameer Koticha" class="w-[280px] h-auto object-cover">
           <p class="font-bold mt-4 mb-1 text-lg">Monik Sameer Koticha</p>
           <p class="text-[#863F3F] text-[0.9rem] leading-tight">
             Managing Director, Fortune Group<br>
@@ -74,24 +74,25 @@
       <!-- FOUNDING DIRECTOR Section -->
       <h1 class="text-4xl font-bold text-[#863F3F] mt-16">Founding Director</h1>
       <hr class="h-1 w-full bg-[#863F3F] border-none mt-2 mb-6">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mt-6">
+        <!-- Patron 1: Vallabh Bhanshali -->
+        <div>
+          <img src="{% static 'footersection/img/Team/Yugank Goyal.png' %}" alt="Vallabh Bhanshali" class="w-[280px] h-auto object-cover">
+          <p class="font-bold mt-4 mb-1 text-lg">Yugank Goyal</p>
+          <p class="text-[#863F3F] text-[0.9rem] leading-tight">
+            Professor in Public Policy<br>
+                FLAME Universityy
+          </p>
+          <hr class="h-[3px] w-[50px] bg-[#863F3F] border-none my-3">
+          <p class="text-base leading-relaxed">
+            Yugank joined FLAME University with a vision to build the Centre for Knowledge Alternatives and document India, district by district. He pursued Masters and PhD in law and economics from Europe as an Erasmus Mundus scholar. He was one of the founding members of O.P. Jindal Global University, and the Indian School of Public Policy. His research interests include law and development, institutional economics, knowledge frameworks and psephology.
+            </p>
+        </div>
+
+
       
-      <div class="flex flex-col lg:flex-row items-start gap-8">
-        <!-- Image Column -->
-        <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 flex-shrink-0">
-          <img src="{%static 'footersection/img/Team/Yugank Goyal.png' %}" alt="Yugank Goyal" class="w-full h-auto hover-image" >
-        </div>
-        <!-- Text Column -->
-        <div class="mt-2 lg:mt-5">
-            <p class="font-bold mb-1 text-lg">Yugank Goyal</p>
-            <p class="mb-2 text-[#863F3F] text-[0.95rem]">
-                Professor in Public Policy<br>
-                FLAME University
-            </p>
-            <p class="text-base leading-relaxed">
-                Yugank joined FLAME University with a vision to build the Centre for Knowledge Alternatives and document India, district by district. He pursued Masters and PhD in law and economics from Europe as an Erasmus Mundus scholar. He was one of the founding members of O.P. Jindal Global University, and the Indian School of Public Policy. His research interests include law and development, institutional economics, knowledge frameworks and psephology.
-            </p>
-        </div>
-      </div>
+
     </div>
 
     <!-- CKA TEAM Section -->
@@ -104,10 +105,10 @@
           <!-- Karishma K Shah -->
             <!-- Diki Sherpa -->
             <div>
-            <img src="{% static 'footersection/img/Team/Diki Sherpa.png' %}" alt="Diki Sherpa" class="w-full h-auto hover-image" >
+            <img src="{% static 'footersection/img/Team/Diki Sherpa.png' %}" alt="Diki Sherpa" class="w-[300px] h-auto hover-image" >
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Diki Sherpa</p>
-              <p class="text-sm mb-0 text-black"><i>Postdoctoral Research Fellow</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Postdoctoral Research Fellow</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">History, Jadavpur University &amp; Chinese University of Hong Kong</p>
             </div>
             </div>
@@ -115,10 +116,10 @@
 
             <!-- Hasita Pattipaty -->
             <div>
-            <img src="{% static 'footersection/img/Team/Hasita Pattipaty 1.png' %}" alt="Hasita Pattipaty" class="w-full h-auto hover-image">
+            <img src="{% static 'footersection/img/Team/Hasita Pattipaty 1.png' %}" alt="Hasita Pattipaty" class="w-[300px] h-auto hover-image">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Hasita Pattipaty</p>
-              <p class="text-sm mb-0 text-black"><i>Research Associate</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Research Associate</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">Finance &amp; Public Policy,<br>FLAME University</p>
             </div>
             </div>
@@ -128,7 +129,7 @@
             <img src="{% static 'footersection/img/Team/Karishma K Shah.png' %}" alt="Karishma K Shah" class="w-full h-auto hover-image">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Karishma K Shah</p>
-              <p class="text-sm mb-0 text-black"><i>Research Lead</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Research Lead</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">Finance & Public Policy, FLAME University</p>
             </div>
             </div>
@@ -138,7 +139,7 @@
             <img src="{% static 'footersection/img/Team/Kriti Bhargava.png' %}" alt="Kriti Bhargava" class="w-full h-auto">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Kriti Bhargava</p>
-              <p class="text-sm mb-0 text-black"><i>Intern</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Intern</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">Public Policy &amp; Economics,<br>FLAME University</p>
             </div>
             </div>
@@ -148,7 +149,7 @@
             <img src="{% static 'footersection/img/Team/Mahadev P. Menon.png' %}" alt="Mahadev P. Menon" class="w-full h-auto hover-image" >
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Mahadev P. Menon</p>
-              <p class="text-sm mb-0 text-black"><i>Research Associate</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Research Associate</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">Economics,<br>FLAME University</p>
             </div>
             </div>
@@ -158,8 +159,18 @@
             <img src="{% static 'footersection/img/Team/Pradeep Chellappan.png' %}" alt="Pradeep Chellappan" class="w-full h-auto">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Pradeep Chellappan</p>
-              <p class="text-sm mb-0 text-black"><i>Doctoral Fellow</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Doctoral Fellow</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">Geology &amp; Law,<br>Savitribai Phule Pune University</p>
+            </div>
+            </div>
+
+             <!-- Rheeya Chaavaan -->
+            <div>
+            <img src="{% static 'footersection/img/Team/Rheeya Chaavaan.png' %}" alt="Rheeya Chaavaan" class="w-full h-auto hover-image">
+            <div class="pt-2 text-left text-[#863F3F]">
+              <p class="font-bold mb-1 text-base text-gray-800">Rheeya Chaavaan</p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Intern</i></p> {% endcomment %}
+              <p class="text-sm mt-0 text-gray-600">MA Development<br>Azim Premji University</p>
             </div>
             </div>
 
@@ -168,7 +179,7 @@
             <img src="{% static 'footersection/img/Team/Rishab Tiwari.png' %}" alt="Rishabh Tiwari" class="w-full h-auto hover-image">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Rishabh Tiwari</p>
-              <p class="text-sm mb-0 text-black"><i>Research Associate</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Research Associate</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">Computer Applications,<br>Kalinga Institute of Industrial Technology</p>
             </div>
             </div>
@@ -178,7 +189,7 @@
             <img src="{% static 'footersection/img/Team/Rohit Warang.png' %}" alt="Rohit Warang" class="w-full h-auto hover-image">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Rohit Warang</p>
-              <p class="text-sm mb-0 text-black"><i>Research Associate</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Research Associate</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">Life Sciences &amp; Biochemistry,<br>Mumbai University</p>
             </div>
             </div>
@@ -188,7 +199,7 @@
             <img src="{% static 'footersection/img/Team/Sakshi Sethi.png' %}" alt="Sakshi Sethi" class="w-full h-auto hover-image">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Sakshi Sethi</p>
-              <p class="text-sm mb-0 text-black"><i>Research Associate</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Research Associate</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">English Literature,<br>Savitribai Phule Pune University</p>
             </div>
             </div>
@@ -198,7 +209,7 @@
             <img src="{% static 'footersection/img/Team/Utkarsh Sharma.png' %}" alt="Utkarsh Sharma" class="w-full h-auto hover-image">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Utkarsh Sharma</p>
-              <p class="text-sm mb-0 text-black"><i>Research Associate</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Research Associate</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">Environmental Studies & GIS,<br>FLAME University</p>
             </div>
             </div>
@@ -208,7 +219,7 @@
             <img src="{% static 'footersection/img/Team/vaibhav-nagargoje-b.png' %}" alt="vaibhav-nagargoje" class="w-full h-auto hover-image">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Vaibhav Nagargoje</p>
-              <p class="text-sm mb-0 text-black"><i>Software Engineer</i></p>
+              {% comment %} <p class="text-sm mb-0 text-black"><i>Software Engineer</i></p> {% endcomment %}
               <p class="text-sm mt-0 text-gray-600">Computer Science,<br>Fergusson College</p>
             </div>
             </div>
@@ -231,25 +242,35 @@
             
             
             
-            
+    
 
             
-            <!-- Kompal Grover -->
+              <!-- Dhuthi Vutukuru -->
+              <div>
+              <img src="{% static 'footersection/img/Team/Druthi Vanshika Vutukuru.png' %}" alt="Druthi Vutukuru" class="w-full h-auto">
+              <div class="pt-2 text-left text-[#863F3F]">
+                <p class="font-bold mb-1 text-base text-gray-800">Druthi Vutukuru</p>
+                {% comment %} <p class="text-sm mb-0 text-black"><i>Intern</i></p> {% endcomment %}
+              <p class="text-sm mt-0 text-gray-600">Economics<br>FLAME University</p>
+            </div>
+            </div>
+            <!--  -->
             <div>
             <img src="{% static 'footersection/img/Team/Kompal Grover.png' %}" alt="Kompal Grover" class="w-full h-auto">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Kompal Grover</p>
               {% comment %} <p class="text-sm mb-0 text-black"><i>Intern</i></p> {% endcomment %}
-              <p class="text-sm mt-0 text-gray-600"><br>FLAME University</p>
+              <p class="text-sm mt-0 text-gray-600">Economics<br>FLAME University</p>
             </div>
             </div>
+
             <!-- Lakshaya Kumar -->
             <div>
             <img src="{% static 'footersection/img/Team/Lakshaya Kumar.png' %}" alt="Lakshaya Kumar" class="w-full h-auto">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Lakshaya Kumar</p>
               {% comment %} <p class="text-sm mb-0 text-black"><i>Intern</i></p> {% endcomment %}
-              <p class="text-sm mt-0 text-gray-600"><br>FLAME University</p>
+              <p class="text-sm mt-0 text-gray-600">Public Policy<br>FLAME University</p>
             </div>
             </div>
             
@@ -259,7 +280,7 @@
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Nikit Potdar</p>
               {% comment %} <p class="text-sm mb-0 text-black"><i>Intern</i></p> {% endcomment %}
-              <p class="text-sm mt-0 text-gray-600">Computer Science,<br>Fergusson College</p>
+              <p class="text-sm mt-0 text-gray-600">Computer Science<br>Fergusson College</p>
             </div>
             </div>
             
@@ -269,26 +290,18 @@
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Parth Ambre</p>
               {% comment %} <p class="text-sm mb-0 text-black"><i>Intern</i></p> {% endcomment %}
-              <p class="text-sm mt-0 text-gray-600">International Relations,<br>Ajeenkya DY Patil University</p>
+              <p class="text-sm mt-0 text-gray-600">International Relations<br>Ajeenkya DY Patil University</p>
             </div>
             </div>
             
-            <!-- Rheeya Chaavaan -->
-            <div>
-            <img src="{% static 'footersection/img/Team/Rheeya Chaavaan.png' %}" alt="Rheeya Chaavaan" class="w-full h-auto hover-image">
-            <div class="pt-2 text-left text-[#863F3F]">
-              <p class="font-bold mb-1 text-base text-gray-800">Rheeya Chaavaan</p>
-              {% comment %} <p class="text-sm mb-0 text-black"><i>Intern</i></p> {% endcomment %}
-              <p class="text-sm mt-0 text-gray-600">MA Development<br>Azim Premji University</p>
-            </div>
-            </div>
+           
 
             <div>
             <img src="{% static 'footersection/img/Team/Sanskriti Jahadav.png' %}" alt="Sanskriti Jahadav" class="w-full h-auto">
             <div class="pt-2 text-left text-[#863F3F]">
               <p class="font-bold mb-1 text-base text-gray-800">Sanskruti Jadhav</p>
               {% comment %} <p class="text-sm mb-0 text-black"><i>Intern</i></p> {% endcomment %}
-              <p class="text-sm mt-0 text-gray-600">International studies and Public policy,<br>FLAME University</p>
+              <p class="text-sm mt-0 text-gray-600">International studies<br>FLAME University</p>
             </div>
             </div>
 
@@ -303,49 +316,51 @@
         
         <div class="columns-2 sm:columns-2 md:columns-3 lg:columns-3 xl:columns-4 text-gray-700">
            
-            <div class="text-sm break-inside-avoid mb-3">Ashwini Suresh Gejage</div>
-            <div class="text-sm break-inside-avoid mb-3">Chinmay Sethia</div>
-            <div class="text-sm break-inside-avoid mb-3">Gargee Raut</div>
+           
             <div class="text-sm break-inside-avoid mb-3">Gaurav Saraswat</div>
             <div class="text-sm break-inside-avoid mb-3">Khushi Somani</div>
             <div class="text-sm break-inside-avoid mb-3">Manish Narwade</div>
             <div class="text-sm break-inside-avoid mb-3">Mrityunjay Vichare</div>
-            <div class="text-sm break-inside-avoid mb-3">Mukesh Sharma</div>
+            
             <div class="text-sm break-inside-avoid mb-3">Muskan Agarwal</div>
             <div class="text-sm break-inside-avoid mb-3">Narhar Raherkar</div>
-            <div class="text-sm break-inside-avoid mb-3">Nidhi Avinash Ingole</div>
-            <div class="text-sm break-inside-avoid mb-3">Nikita Babu</div>
-            <div class="text-sm break-inside-avoid mb-3">Omkar Joshi</div>
+            <div class="text-sm break-inside-avoid mb-3">Nidhi Ingole</div>
+            
+            
             <div class="text-sm break-inside-avoid mb-3">Omkar Tikekar</div>
-            <div class="text-sm break-inside-avoid mb-3">Pratiksha Joshi</div>
+            
             <div class="text-sm break-inside-avoid mb-3">Prerana Thakur</div>
-            <div class="text-sm break-inside-avoid mb-3">Riham Goel</div>
+
             <div class="text-sm break-inside-avoid mb-3">Sahil Borse</div>
             <div class="text-sm break-inside-avoid mb-3">Sanchari Basu Chaudhuri</div>
             <div class="text-sm break-inside-avoid mb-3">Smriti Jalihal</div>
             <div class="text-sm break-inside-avoid mb-3">Tanya Chandra</div>
             <div class="text-sm break-inside-avoid mb-3">Varun Nair</div>
-            <div class="text-sm break-inside-avoid mb-3">Yashvi Shah</div>
+            
         </div>
-        <h2 class="text-4xl font-bold mt-16 text-[#863F3F]">District Fellows (Maharashtra) & Past Interns</h2>
+        <h2 class="text-4xl font-bold mt-16 text-[#863F3F]">District Fellows (Maharashtra), Past Interns & Other Contributors</h2>
         <hr class="h-1 w-full bg-[#863F3F] border-none mt-2 mb-6">
         
     <div class="columns-3 sm:columns-3 md:columns-4 lg:columns-5 xl:columns-5 text-gray-700">
 
+       <div class="text-sm break-inside-avoid mb-3">Aastha Nayak</div>
        <div class="text-sm break-inside-avoid mb-3">Alamprabhu More</div>
        <div class="text-sm break-inside-avoid mb-3">Ananya Prabhughate</div>
        <div class="text-sm break-inside-avoid mb-3">Ananya Saxena</div>
        <div class="text-sm break-inside-avoid mb-3">Aniket Humbe</div>
        <div class="text-sm break-inside-avoid mb-3">Anisha Jasti</div>
        <div class="text-sm break-inside-avoid mb-3">Arindam Joshi</div>
+       <div class="text-sm break-inside-avoid mb-3">Ashwini Suresh Gejage</div>
        <div class="text-sm break-inside-avoid mb-3">Atharv Zol</div>
        <div class="text-sm break-inside-avoid mb-3">Atharva Tadas</div>
        <div class="text-sm break-inside-avoid mb-3">Bajrang Maghade</div>
        <div class="text-sm break-inside-avoid mb-3">Chetana Nehete</div>
-       <div class="text-sm break-inside-avoid mb-3">Christine Rose Sebastian</div>
+       <div class="text-sm break-inside-avoid mb-3">Christine Sebastian</div>
+        <div class="text-sm break-inside-avoid mb-3">Devika Veerkar</div>
        <div class="text-sm break-inside-avoid mb-3">Dhiraj Guravpujari</div>
        <div class="text-sm break-inside-avoid mb-3">Gaargi Jamkar</div>
-       <div class="text-sm break-inside-avoid mb-3">Gargee Kedar Dixit</div>
+       <div class="text-sm break-inside-avoid mb-3">Gargee Dixit</div>
+       <div class="text-sm break-inside-avoid mb-3">Gargee Raut</div> 
        <div class="text-sm break-inside-avoid mb-3">Gargi Dave</div>
        <div class="text-sm break-inside-avoid mb-3">Gauri Kulkarni</div>
        <div class="text-sm break-inside-avoid mb-3">Gayatri Nautiyal</div>
@@ -375,16 +390,18 @@
        <div class="text-sm break-inside-avoid mb-3">Nikhat Bhandary</div>
        <div class="text-sm break-inside-avoid mb-3">Nimisha Dhengle</div>
        <div class="text-sm break-inside-avoid mb-3">Nishal Varude</div>
+       <div class="text-sm break-inside-avoid mb-3">Omkar Joshi</div>
        <div class="text-sm break-inside-avoid mb-3">Parambi Kapgate</div>
        <div class="text-sm break-inside-avoid mb-3">Parikshit Gavhane</div>
        <div class="text-sm break-inside-avoid mb-3">Poorvith Devang</div>
        <div class="text-sm break-inside-avoid mb-3">Pranjal Nikose</div>
+       <div class="text-sm break-inside-avoid mb-3">Pratiksha Joshi</div>
        <div class="text-sm break-inside-avoid mb-3">Purwa Khisti</div>
        <div class="text-sm break-inside-avoid mb-3">Radhika Pande</div>
        <div class="text-sm break-inside-avoid mb-3">Ranjana Gavit</div>
        <div class="text-sm break-inside-avoid mb-3">Riddhi More</div>
+       <div class="text-sm break-inside-avoid mb-3">Riham Goel</div>
        <div class="text-sm break-inside-avoid mb-3">Rohan Bhalaviukk</div>
-       <div class="text-sm break-inside-avoid mb-3">Rohit Warang</div>
        <div class="text-sm break-inside-avoid mb-3">Roshan Kokole</div>
        <div class="text-sm break-inside-avoid mb-3">Saathvi Kodali</div>
        <div class="text-sm break-inside-avoid mb-3">Samidha Kumar</div>
@@ -416,8 +433,9 @@
        <div class="text-sm break-inside-avoid mb-3">Vrinda Mandovra</div>
        <div class="text-sm break-inside-avoid mb-3">Yamini Borkar</div>
        <div class="text-sm break-inside-avoid mb-3">Yash Pund</div>
+       <div class="text-sm break-inside-avoid mb-3">Yashvi Shah</div>
        <div class="text-sm break-inside-avoid mb-3">Yogesh Dasarwad</div>
-        </div>
+      </div>
 
     </div>
 

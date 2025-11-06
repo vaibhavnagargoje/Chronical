@@ -1896,6 +1896,46 @@ video {
   width: 1px;
 }
 
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[2\] {
+  width: 2;
+}
+
+.w-\[250\] {
+  width: 250;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[3000px\] {
+  width: 3000px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.w-\[280px\] {
+  width: 280px;
+}
+
+.w-\[px\] {
+  width: px;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
