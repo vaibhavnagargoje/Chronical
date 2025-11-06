@@ -2,6 +2,19 @@
 {% load static %}
 {% block title %}Leave Us A Message | Centre For Knowledge Alternatives{% endblock title %}
 
+{% block header %}
+<style>
+    /* Restore indentation for nested lists */
+    .terms-content ul ul, .terms-content ul ol,
+    .terms-content ol ul, .terms-content ol ol {
+        padding-left: 1.5rem; /* Adjust as needed */
+    }
+    .text-base,p,li{
+      font-size: 14px;
+    }
+</style>
+{% endblock header %}
+
 {% block content %}
 
 
@@ -46,7 +59,7 @@ setTimeout(() => {
 </script>
 {% endif %}
 <!-- CONTENT CONTAINER -->
-<div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
   <div class="container mx-auto">
     
     

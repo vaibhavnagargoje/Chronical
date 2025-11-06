@@ -10,6 +10,9 @@
     .terms-content ol ul, .terms-content ol ol {
         padding-left: 1.5rem; /* Adjust as needed */
     }
+    .text-base,p,li{
+      font-size: 14px;
+    }
 </style>
 {% endblock header %}
 
@@ -57,9 +60,9 @@ setTimeout(() => {
 {% endif %}
 
   <!-- CONTENT CONTAINER -->
-  <div class="max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
     <div class="container mx-auto">
-      <div class="flex justify-between items-center mb-6">
+      <div class="flex justify-between items-left mb-6">
         <h1 class="text-4xl font-bold text-[#863F3F]">Suggest Edits</h1>
         {% if user.is_authenticated and user.profile.is_super_admin and not editing %}
           <a href="{% url 'footersection:edit_suggest_edits' %}" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
