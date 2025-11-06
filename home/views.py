@@ -11,8 +11,24 @@ def index(request):
     """
     Display the homepage with a list of all States.
     """
+    # Get all states with their districts for the search dropdown
+    all_states = State.objects.prefetch_related('districts').all().order_by('name')
     
-    return render(request, 'home/index.html',)
+    # Get Maharashtra as the featured state (or first state if Maharashtra doesn't exist)
+    try:
+        featured_state = State.objects.get(slug='maharashtra')
+    except State.DoesNotExist:
+        featured_state = State.objects.first()
+    
+    featured_districts = featured_state.districts.all() if featured_state else []
+    
+    context = {
+        'state': featured_state,
+        'districts': featured_districts,
+        'all_states': all_states,  # Add all states for search dropdown
+    }
+
+    return render(request, 'home/index.html', context)
 
 
 def state_detail(request, state_slug):
