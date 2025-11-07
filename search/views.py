@@ -20,8 +20,8 @@ from culture.models import CulturalChapter
 # Use aliases to resolve model name conflicts
 from culture.models import ParagraphBlock as CultureParagraphBlock
 
-from statistic.models import StatisticalChapter
-from statistic.models import ParagraphBlock as StatisticParagraphBlock
+from statistic.models import StatisticalChapter, ParagraphBlock as StatisticParagraphBlock
+from statistic.models import ChartBlock
 
 
 # This is a constant we can use to identify result types
@@ -76,9 +76,14 @@ def get_optimized_statistic_queryset():
         queryset=StatisticParagraphBlock.objects.only('content')[:1],
         to_attr='first_paragraphs'
     )
-    
+    chart_prefetch = Prefetch(
+        'content_blocks',
+        queryset=ChartBlock.objects.only('id', 'title'),
+        to_attr='prefetched_chart_blocks'
+    )
     return StatisticalChapter.objects.select_related('district__state').prefetch_related(
-        paragraph_prefetch
+        paragraph_prefetch,
+        chart_prefetch
     ).only('id', 'name', 'district__name', 'district__state__name', 'updated_at')
 
 def search_districts(query, count_only=False):
@@ -173,12 +178,15 @@ def search_statistical_chapters(query, count_only=False):
     
     queryset = get_optimized_statistic_queryset()
     
+    normalized_query = query.lower() if query else None
+
     if query:
         queryset = queryset.filter(
             Q(name__icontains=query) |
             Q(content_blocks__paragraphblock__content__icontains=query) |
             Q(content_blocks__headingblockone__text__icontains=query) |
-            Q(content_blocks__headingblocktwo__text__icontains=query)
+            Q(content_blocks__headingblocktwo__text__icontains=query) |
+            Q(content_blocks__chartblock__title__icontains=query)
         ).distinct()
     
     count = queryset.count()
@@ -194,14 +202,24 @@ def search_statistical_chapters(query, count_only=False):
             content = chapter.first_paragraphs[0].content
             description = content[:200] + "..." if len(content) > 200 else content
         
-        results.append({
+        matched_chart_titles = []
+        if normalized_query is not None and hasattr(chapter, 'prefetched_chart_blocks'):
+            matched_chart_titles = [
+                chart.title for chart in chapter.prefetched_chart_blocks
+                if chart.title and normalized_query in chart.title.lower()
+            ]
+
+        result = {
             'type': STATISTIC_TYPE,
             'title': f"{chapter.district.name} - {chapter.name}",
             'description': description,
             'url': chapter.get_absolute_url(),
             'state_name': chapter.district.state.name,
             'updated_at': chapter.updated_at,
-        })
+        }
+        if matched_chart_titles:
+            result['matched_chart_titles'] = matched_chart_titles
+        results.append(result)
     
     return results, count
 

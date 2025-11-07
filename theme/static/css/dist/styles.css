@@ -1780,6 +1780,38 @@ video {
   height: 100vh;
 }
 
+.h-\[800px\] {
+  height: 800px;
+}
+
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-\[600px\] {
+  height: 600px;
+}
+
+.h-\[00px\] {
+  height: 00px;
+}
+
+.h-\[6500px\] {
+  height: 6500px;
+}
+
+.h-\[650px\] {
+  height: 650px;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[0px\] {
+  height: 0px;
+}
+
 .max-h-40 {
   max-height: 10rem;
 }
@@ -1880,6 +1912,14 @@ video {
   width: 24rem;
 }
 
+.w-\[280px\] {
+  width: 280px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
 .w-\[50px\] {
   width: 50px;
 }
@@ -1894,46 +1934,6 @@ video {
 
 .w-px {
   width: 1px;
-}
-
-.w-3 {
-  width: 0.75rem;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-\[2\] {
-  width: 2;
-}
-
-.w-\[250\] {
-  width: 250;
-}
-
-.w-\[250px\] {
-  width: 250px;
-}
-
-.w-\[3000px\] {
-  width: 3000px;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
-.w-\[280px\] {
-  width: 280px;
-}
-
-.w-\[px\] {
-  width: px;
 }
 
 .min-w-0 {
@@ -2737,6 +2737,11 @@ video {
      object-fit: cover;
 }
 
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
+
 .p-0 {
   padding: 0px;
 }
@@ -2990,6 +2995,10 @@ video {
   vertical-align: bottom;
 }
 
+.align-super {
+  vertical-align: super;
+}
+
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -3017,10 +3026,6 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
-}
-
-.text-\[0\.95rem\] {
-  font-size: 0.95rem;
 }
 
 .text-\[0\.9rem\] {
@@ -4093,10 +4098,6 @@ video {
     height: 2.5rem;
   }
 
-  .sm\:w-1\/2 {
-    width: 50%;
-  }
-
   .sm\:w-10 {
     width: 2.5rem;
   }
@@ -4270,10 +4271,6 @@ video {
     max-height: 800px;
   }
 
-  .md\:w-1\/3 {
-    width: 33.333333%;
-  }
-
   .md\:w-auto {
     width: auto;
   }
@@ -4408,10 +4405,6 @@ video {
     margin-top: 0px;
   }
 
-  .lg\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -4422,10 +4415,6 @@ video {
 
   .lg\:w-1\/2 {
     width: 50%;
-  }
-
-  .lg\:w-1\/4 {
-    width: 25%;
   }
 
   .lg\:w-60 {
