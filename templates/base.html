@@ -13,6 +13,15 @@
     </title>
     {% comment %} <script src="https://cdn.tailwindcss.com"></script> {% endcomment %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QGZ8WKP5YX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-QGZ8WKP5YX');
+    </script>
    {% tailwind_css %}
    {% block head%}
    {% endblock head %}
