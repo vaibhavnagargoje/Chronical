@@ -22,10 +22,20 @@ def index(request):
     
     featured_districts = featured_state.districts.all() if featured_state else []
     
+    # Meta information for social sharing
+    meta = {
+        'title': 'The Districts Project',
+        'description': 'A comprehensive resource on district-level cultures and statistics of India. Explore and tell us more!', 
+        'image': request.build_absolute_uri('/static/img/cka.png'),  # Use your site logo or featured imaget
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+    
     context = {
         'state': featured_state,
         'districts': featured_districts,
-        'all_states': all_states,  # Add all states for search dropdown
+        'all_states': all_states,
+        'meta': meta,
     }
 
     return render(request, 'home/index.html', context)
@@ -36,7 +46,7 @@ def state_detail(request, state_slug):
     Display information about a State and its Districts.
     """
     state = get_object_or_404(State, slug=state_slug)
-    districts = state.districts.all()  # All districts in this state
+    districts = state.districts.all()
     
     # Get SVG content for districts in this state
     district_svgs = DistrictSVG.objects.filter(district__state=state)
@@ -44,11 +54,21 @@ def state_detail(request, state_slug):
     # Get all states with their districts for the nested dropdown
     all_states = State.objects.prefetch_related('districts').all().order_by('name')
     
+    # Meta information for social sharing
+    meta = {
+        'title': f'{state.name} The Districts Project | Maharashtra',
+        'description': f'A comprehensive resource on district-level cultures and statistics of {state.name}. Explore and tell us more!',
+        'image': request.build_absolute_uri('/static/img/cka.png'),  # You can add state-specific images later
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+    
     context = {
         'state': state,
         'districts': districts,
         'district_svgs': district_svgs,
-        'all_states': all_states,  # Add all states for nested dropdown
+        'all_states': all_states,
+        'meta': meta,
     }
     return render(request, 'home/state_detail.html', context)
 
@@ -62,20 +82,32 @@ def district_detail(request, state_slug, district_slug):
     all_districts_in_state = state.districts.all()
     cultural_chapters_qs = district.cultural_chapters.all().order_by('name')
 
-    statistical_chapters_qs = district.statistical_chapters.all().order_by('name')   # Uncomment if you have statistical chapters
+    statistical_chapters_qs = district.statistical_chapters.all().order_by('name')
     
     # Get related data with prefetch_related for optimization
     district_images = district.images.all()
     district_paragraphs = district.paragraphs.all()
     district_quick_facts = district.quick_facts.all()
-    district_gif_images = district.gif_images.all()  # Fetch GIF images related to the district
-    # district_sections = district.sections.all().prefetch_related('paragraphs', 'images')
+    district_gif_images = district.gif_images.all()
     all_terms = SidePanelTerm.objects.all()
     
     final_definitions = {term.term: term.default_definition for term in all_terms}
     
-
+    # Get featured image for social sharing
+    featured_image_url = request.build_absolute_uri('/static/logo.png')  # default
+    if district_images.exists():
+        # Use the first district image if available
+        featured_image_url = request.build_absolute_uri(district_images.first().webp_medium.url)
     
+    # Meta information for social sharing
+    meta = {
+        'title': f'{district.name} District, {state.name} - Culture & Statistics | The Districts Project',
+        'description': f'Cultures and statistics of {district.name} district. Explore and tell us more!',
+        'image': featured_image_url,
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+
     CHAPTER_META = {
         'Cultural': {
             'Architecture': {'icon': 'architecture.png', 'desc': 'Historical and modern structures'},
@@ -108,43 +140,36 @@ def district_detail(request, state_slug, district_slug):
     
     cultural_chapters_list = []
     for chapter in cultural_chapters_qs:
-        meta = CHAPTER_META['Cultural'].get(chapter.name, {}) # Use .get for safety
+        meta_info = CHAPTER_META['Cultural'].get(chapter.name, {})
         cultural_chapters_list.append({
             'object': chapter,
-            'icon': meta.get('icon', 'default.png'), # default icon if not found
-            'desc': meta.get('desc', 'No description available.'),
+            'icon': meta_info.get('icon', 'default.png'),
+            'desc': meta_info.get('desc', 'No description available.'),
         })
-        
-
 
     statistical_chapters_list = []
     for chapter in statistical_chapters_qs:
-        meta = CHAPTER_META['Statistical'].get(chapter.name, {})
+        meta_info = CHAPTER_META['Statistical'].get(chapter.name, {})
         statistical_chapters_list.append({
             'object': chapter,
-            'icon': meta.get('icon', 'default.png'),
-            'desc': meta.get('desc', 'No description available.'),
+            'icon': meta_info.get('icon', 'default.png'),
+            'desc': meta_info.get('desc', 'No description available.'),
         })
-
-
 
     context = {
         'state': state,
         'district': district,
-        'cultural_chapters': cultural_chapters_list, # Pass the new processed list
-        'statistical_chapters': statistical_chapters_list, # Pass the new processed list
+        'cultural_chapters': cultural_chapters_list,
+        'statistical_chapters': statistical_chapters_list,
         'district_images': district_images,
         'district_paragraphs': district_paragraphs,
         'district_quick_facts': district_quick_facts,
-        'district_gif_images': district_gif_images,  # Pass GIF images to the template
+        'district_gif_images': district_gif_images,
         'all_districts_in_state': all_districts_in_state,
         'side_panel_data': final_definitions,
-        # 'district_sections': district_sections,
-        
+        'meta': meta,
     }
     return render(request, 'home/district_detail.html', context)
-
-
 
 
 def people(request):

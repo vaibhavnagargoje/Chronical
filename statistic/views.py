@@ -4,7 +4,7 @@ from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
 from django.http import HttpResponse
 # Import the models from the statistic app
-from .models import StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree, ChartBlock, ReferenceBlock
+from .models import StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree, ChartBlock, ReferenceBlock, ImageBlock
 from culture.models import CulturalChapter
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.contrib.auth.decorators import login_required
@@ -99,7 +99,21 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
         # This case handles if the chapter isn't found in the list, though it should be.
         current_index, prev_chapter, next_chapter = -1, None, None
 
+    # Get featured image for social sharing
+    featured_image_url = request.build_absolute_uri('/static/img/ckabackground.png')  # default
+    image_blocks = [block for block in content_blocks if isinstance(block, ImageBlock)]
+    if image_blocks:
+        # Use the first image in the chapter
+        featured_image_url = request.build_absolute_uri(image_blocks[0].webp_medium.url)
 
+    # Meta information for social sharing
+    meta = {
+        'title': f'{chapter.name}: {chapter.district.name}, {chapter.district.state.name} | The Districts Project',
+        'description': f'Explore {chapter.name} in {chapter.district.name} district.',
+        'image': featured_image_url,
+        'url': request.build_absolute_uri(),
+        'type': 'article'
+    }
 
     context = {
         'state': chapter.district.state,
@@ -112,7 +126,8 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
         'all_districts_in_state': all_districts_in_state,
         'prev_chapter': prev_chapter,
         'next_chapter': next_chapter,
-        'side_panel_data': side_panel_data, # Pass the data to the template
+        'side_panel_data': side_panel_data,
+        'meta': meta,
     }
     
     # Render the response using a new template for the statistic detail page

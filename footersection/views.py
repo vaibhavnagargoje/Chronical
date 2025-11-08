@@ -24,7 +24,14 @@ def super_admin_required(view_func):
 
 
 def people(request):
-    return render(request, 'footersection/people.html')
+    meta = {
+        'title': 'Our People | The Districts Project',
+        'description': 'Meet the team behind The Districts Project.',
+        'image': request.build_absolute_uri('/static/logo.png'),
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+    return render(request, 'footersection/people.html', {'meta': meta})
 
 
 def careers(request):
@@ -32,8 +39,17 @@ def careers(request):
     if not career:
         career = Careers.objects.create()
     
+    meta = {
+        'title': 'Careers & Suggest Edits | The Districts Project',
+        'description': 'Join our mission to document India\'s heritage.',
+        'image': request.build_absolute_uri('/static/logo.png'),
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+    
     context = {
-        'career': career
+        'career': career,
+        'meta': meta
     }
     return render(request, 'footersection/suggest-edits.html', context)
 
@@ -63,8 +79,17 @@ def disclaimer(request):
     if not disclaimer_obj:
         disclaimer_obj = Disclaimer.objects.create()
     
+    meta = {
+        'title': 'Disclaimer | The Districts Project',
+        'description': 'Important information about the use of The Districts Project platform',
+        'image': request.build_absolute_uri('/static/logo.png'),
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+    
     context = {
-        'disclaimer': disclaimer_obj
+        'disclaimer': disclaimer_obj,
+        'meta': meta
     }
     return render(request, 'footersection/disclaimers.html', context)
 
@@ -94,8 +119,17 @@ def partnerships(request):
     if not partnership:
         partnership = Partnership.objects.create()
     
+    meta = {
+        'title': 'Partnerships | The Districts Project',
+        'description': 'Explore partnership opportunities with The Districts Project.',
+        'image': request.build_absolute_uri('/static/logo.png'),
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+    
     context = {
-        'partnership': partnership
+        'partnership': partnership,
+        'meta': meta
     }
     return render(request, 'footersection/partnership.html', context)
 
@@ -125,8 +159,17 @@ def projects(request):
     if not project:
         project = Project.objects.create()  # Create if doesn't exist
     
+    meta = {
+        'title': 'Our Projects | The Districts Project',
+        'description': 'Discover the various projects and initiatives by The Centre for Knowledge Alternatives.',
+        'image': request.build_absolute_uri('/static/logo.png'),
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+    
     context = {
-        'project': project
+        'project': project,
+        'meta': meta
     }
     return render(request, 'footersection/project.html', context)
 
@@ -152,16 +195,31 @@ def edit_project(request):
 
 
 def subscribe(request):
-    return render(request, 'footersection/subscribe.html')
-
+    meta = {
+        'title': 'Subscribe | The Districts Project',
+        'description': 'Subscribe to The Districts Project updates and stay informed about new content and features.',
+        'image': request.build_absolute_uri('/static/logo.png'),
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+    return render(request, 'footersection/subscribe.html', {'meta': meta})
 
 def terms(request):
     terms_obj = Terms.objects.first()
     if not terms_obj:
         terms_obj = Terms.objects.create()
     
+    meta = {
+        'title': 'Terms and Conditions | The Districts Project',
+        'description': 'Read our terms and conditions for using the The Districts Project platform.',
+        'image': request.build_absolute_uri('/static/logo.png'),
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+    
     context = {
-        'terms': terms_obj
+        'terms': terms_obj,
+        'meta': meta
     }
     return render(request, 'footersection/terms-and-conditions.html', context)
 
@@ -203,4 +261,13 @@ def leave_us_a_message(request):
         )
         messages.success(request, 'Thank you for your message! We will get back to you soon.')
         return redirect('footersection:leave_us_a_message')
-    return render(request, 'footersection/leave_us_a_message.html')
+    
+    meta = {
+        'title': 'Contact Us | The Districts Project',
+        'description': 'Get in touch with the The Districts Project team.',
+        'image': request.build_absolute_uri('/static/logo.png'),
+        'url': request.build_absolute_uri(),
+        'type': 'website'
+    }
+    
+    return render(request, 'footersection/leave_us_a_message.html', {'meta': meta})
