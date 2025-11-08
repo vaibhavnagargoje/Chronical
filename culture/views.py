@@ -87,7 +87,8 @@ def cultural_chapter_detail(request, state_slug, district_slug, chapter_slug):
     image_blocks = [block for block in content_blocks if isinstance(block, ImageBlock)]
     if image_blocks:
         # Use the first image in the chapter
-        featured_image_url = request.build_absolute_uri(image_blocks[0].webp_medium.url)
+        # featured_image_url = request.build_absolute_uri(image_blocks[0].webp_medium.url)
+        featured_image_url = request.build_absolute_uri('/static/img/cka.png')
 
     # Meta information for social sharing
     meta = {

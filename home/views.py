@@ -94,7 +94,7 @@ def district_detail(request, state_slug, district_slug):
     final_definitions = {term.term: term.default_definition for term in all_terms}
     
     # Get featured image for social sharing
-    featured_image_url = request.build_absolute_uri('/static/logo.png')  # default
+    featured_image_url = request.build_absolute_uri('/static/img/cka.png')  # default
     if district_images.exists():
         # Use the first district image if available
         featured_image_url = request.build_absolute_uri(district_images.first().webp_medium.url)
