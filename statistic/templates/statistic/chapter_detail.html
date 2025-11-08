@@ -417,9 +417,11 @@ setTimeout(() => {
                       {% comment %} {% if block.title %}
                         <h3 class="text-xl font-semibold text-center text-gray-800 mb-4">{{ block.title }}</h3>
                       {% endif %} {% endcomment %}
-                      <div class="mx-auto w-full overflow-hidden rounded-lg border my-10 h-[410px] md:h-[410px] xl:h-[520px] p-1">
+                      <div class="mx-auto w-full overflow-hidden rounded-lg border my-10 p-1">
                           <iframe 
-                                class="w-full h-full border-0 block"
+                                class="w-full border-0 block"
+                                data-auto-height
+                                data-fallback-height="520"
                                 src="{{ block.get_chart_url }}"
                                 title="{{ block.title|default:'Statistical Chart' }}"
                                 frameborder="0"
@@ -646,6 +648,30 @@ setTimeout(() => {
       }
     });
   });
+// Auto-resize statistical charts
+document.addEventListener('DOMContentLoaded', () => {
+  const autoIframes = document.querySelectorAll('iframe[data-auto-height]');
+  autoIframes.forEach((iframe) => {
+    const resize = () => {
+      try {
+        const doc = iframe.contentDocument || iframe.contentWindow.document;
+        if (!doc) return;
+        const height = Math.max(
+          doc.body?.scrollHeight || 0,
+          doc.documentElement?.scrollHeight || 0
+        );
+        if (height) iframe.style.height = `${height}px`;
+      } catch (error) {
+        iframe.style.height = iframe.dataset.fallbackHeight || '520px';
+        iframe.dataset.autoHeight = 'disabled';
+      }
+    };
+    iframe.addEventListener('load', resize);
+    window.addEventListener('resize', () => {
+      if (iframe.dataset.autoHeight !== 'disabled') resize();
+    });
+  });
+});
 </script>
 
 
