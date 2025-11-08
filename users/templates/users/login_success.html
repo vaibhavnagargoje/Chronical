@@ -53,8 +53,18 @@
             <p class="mt-2 text-center text-sm text-gray-600">
                 You have successfully logged in to Indian Districts.
             </p>
+            <p class="mt-1 text-center text-xs text-gray-500">
+                Redirecting to home page...
+            </p>
         </div>
      
     </div>
 </div>
+
+<script>
+// Redirect to home page after 1 second
+setTimeout(() => {
+    window.location.href = "{% url 'home:index' %}";
+}, 1000);
+</script>
 {% endblock %}
