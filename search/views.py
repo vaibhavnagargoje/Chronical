@@ -26,8 +26,8 @@ from statistic.models import ChartBlock
 
 # This is a constant we can use to identify result types
 DISTRICT_TYPE = 'District Overview'
-CULTURE_TYPE = 'Cultural Chapter'
-STATISTIC_TYPE = 'Statistical Chapter'
+CULTURE_TYPE = 'Cultures'
+STATISTIC_TYPE = 'Statistics'
 
 # Cache timeouts
 SEARCH_CACHE_TIMEOUT = 600  # 10 minutes
