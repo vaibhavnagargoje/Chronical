@@ -651,25 +651,89 @@ setTimeout(() => {
 // Auto-resize statistical charts
 document.addEventListener('DOMContentLoaded', () => {
   const autoIframes = document.querySelectorAll('iframe[data-auto-height]');
+  const fallback = (iframe) => {
+    if (iframe.__chapterMutationObserver) {
+      iframe.__chapterMutationObserver.disconnect();
+      delete iframe.__chapterMutationObserver;
+    }
+    if (iframe.__chapterResizeHandler) {
+      window.removeEventListener('resize', iframe.__chapterResizeHandler);
+      delete iframe.__chapterResizeHandler;
+    }
+    if (iframe.__chapterLoadHandler) {
+      iframe.removeEventListener('load', iframe.__chapterLoadHandler);
+      delete iframe.__chapterLoadHandler;
+    }
+    iframe.dataset.autoHeight = 'disabled';
+    iframe.style.height = iframe.dataset.fallbackHeight || '520px';
+  };
+  const canMeasure = (iframe) => {
+    const src = iframe.getAttribute('src');
+    if (!src) return true;
+    try {
+      return new URL(src, window.location.href).origin === window.location.origin;
+    } catch {
+      return false;
+    }
+  };
+  const runResize = (iframe) => {
+    try {
+      const doc = iframe.contentDocument;
+      if (!doc) return;
+      const { body, documentElement: html } = doc;
+      const height = Math.max(
+        body?.scrollHeight || 0,
+        body?.offsetHeight || 0,
+        html?.scrollHeight || 0,
+        html?.offsetHeight || 0
+      );
+      if (height > 0) {
+        iframe.style.height = `${height}px`;
+      }
+    } catch {
+      fallback(iframe);
+    }
+  };
+  const scheduleResize = (iframe) => {
+    if (iframe.dataset.autoHeight === 'disabled' || iframe.__chapterResizePending) return;
+    iframe.__chapterResizePending = true;
+    requestAnimationFrame(() => {
+      iframe.__chapterResizePending = false;
+      runResize(iframe);
+    });
+  };
   autoIframes.forEach((iframe) => {
-    const resize = () => {
+    if (!canMeasure(iframe)) {
+      fallback(iframe);
+      return;
+    }
+    iframe.dataset.autoHeight = iframe.dataset.autoHeight || 'enabled';
+    const resizeHandler = () => scheduleResize(iframe);
+    iframe.__chapterResizeHandler = resizeHandler;
+    window.addEventListener('resize', resizeHandler, { passive: true });
+    const loadHandler = () => {
+      scheduleResize(iframe);
+      if (iframe.dataset.autoHeight === 'disabled') return;
       try {
-        const doc = iframe.contentDocument || iframe.contentWindow.document;
-        if (!doc) return;
-        const height = Math.max(
-          doc.body?.scrollHeight || 0,
-          doc.documentElement?.scrollHeight || 0
-        );
-        if (height) iframe.style.height = `${height}px`;
-      } catch (error) {
-        iframe.style.height = iframe.dataset.fallbackHeight || '520px';
-        iframe.dataset.autoHeight = 'disabled';
+        const doc = iframe.contentDocument;
+        const body = doc?.body;
+        if (body && !iframe.__chapterMutationObserver) {
+          iframe.__chapterMutationObserver = new MutationObserver(() => scheduleResize(iframe));
+          iframe.__chapterMutationObserver.observe(body, {
+            childList: true,
+            subtree: true,
+            characterData: true
+          });
+        }
+      } catch {
+        fallback(iframe);
       }
     };
-    iframe.addEventListener('load', resize);
-    window.addEventListener('resize', () => {
-      if (iframe.dataset.autoHeight !== 'disabled') resize();
-    });
+    iframe.__chapterLoadHandler = loadHandler;
+    iframe.addEventListener('load', loadHandler);
+    if (iframe.contentDocument?.readyState === 'complete') {
+      loadHandler();
+    }
   });
 });
 </script>
