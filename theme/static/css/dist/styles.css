@@ -4128,6 +4128,10 @@ video {
     justify-content: space-between;
   }
 
+  .sm\:gap-24 {
+    gap: 6rem;
+  }
+
   .sm\:rounded-lg {
     border-radius: 0.5rem;
   }
@@ -4170,6 +4174,16 @@ video {
   .sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -4274,6 +4288,10 @@ video {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:gap-24 {
+    gap: 6rem;
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -4437,6 +4455,10 @@ video {
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:gap-24 {
+    gap: 6rem;
   }
 
   .lg\:px-0 {
