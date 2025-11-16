@@ -11,6 +11,7 @@ urlpatterns = [
     path("users/update-permissions/", views.update_user_permissions, name="update_user_permissions"),
     path("users/delete/", views.delete_user, name="delete_user"),
     path("edit-requests/", views.edit_requests, name="edit_requests"),
+    path("edit-requests/<str:source>/<int:pk>/", views.edit_request_detail, name="edit_request_detail"),
     path("comments/", views.comments, name="comments"),
     path("admin-users/", views.admin_users, name="admin_users"),
     path("permissions/", views.permissions, name="permissions"),

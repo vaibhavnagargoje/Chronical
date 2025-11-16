@@ -1,0 +1,165 @@
+<!-- filepath: c:\Users\vaibh\Desktop\CKA Projects\Chronical\admindashboard\templates\admindashboard\request_detail.html -->
+{% extends "admindashboard/base.html" %}
+{% block title %}Edit Request Detail | Admin Panel{% endblock title %}
+
+{% block content %}
+<div class="py-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 space-y-6">
+        <div class="flex items-center justify-between">
+            <a href="{% url 'admindashboard:edit_requests' %}" class="inline-flex items-center text-sm text-[#863F3F] hover:underline">
+                <i class="fas fa-arrow-left mr-2"></i>Back to edit requests
+            </a>
+            {% if updated %}
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">
+                <i class="fas fa-check-circle mr-2"></i>Saved
+            </span>
+            {% endif %}
+        </div>
+        {% if status_error %}
+        <div class="rounded-md bg-red-50 p-4 border border-red-200 text-sm text-red-700">
+            <i class="fas fa-exclamation-triangle mr-2"></i>Select a valid status before saving.
+        </div>
+        {% endif %}
+        <div class="bg-white shadow rounded-lg">
+            <div class="px-6 py-6 border-b border-gray-100 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                <div>
+                    <p class="text-sm text-gray-500 uppercase tracking-wide">{{ source_label }}</p>
+                    <h1 class="text-2xl font-semibold text-gray-900 mt-1">{{ detail_title }}</h1>
+                    <p class="mt-2 text-sm text-gray-500">{{ section_display }} • {{ edit_type_display }}</p>
+                </div>
+                <div class="mt-1">
+                    {% if edit.status == 'pending' %}
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800"><i class="fas fa-hourglass-half mr-2"></i>{{ status_display }}</span>
+                    {% elif edit.status == 'approved' %}
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700"><i class="fas fa-check-circle mr-2"></i>{{ status_display }}</span>
+                    {% elif edit.status == 'rejected' %}
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-700"><i class="fas fa-times-circle mr-2"></i>{{ status_display }}</span>
+                    {% else %}
+                    <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-700"><i class="fas fa-search mr-2"></i>{{ status_display }}</span>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="px-6 py-6 grid grid-cols-1 gap-6 lg:grid-cols-3">
+                <div class="space-y-6 lg:col-span-2">
+                    <div class="border border-gray-200 rounded-lg">
+                        <div class="px-5 py-4 border-b border-gray-100 flex items-center justify-between">
+                            <h2 class="text-sm font-medium text-gray-900">Submission details</h2>
+                            {% if edit.notify_on_review %}
+                            <span class="inline-flex items-center px-3 py-1 rounded-full bg-yellow-100 text-yellow-700 text-xs font-medium">
+                                <i class="fas fa-bell mr-1"></i>Notify on review
+                            </span>
+                            {% endif %}
+                        </div>
+                        <div class="px-5 py-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase">Submitted by</p>
+                                <p class="mt-1 text-gray-900">{{ submitted_by }}</p>
+                                <p class="text-xs text-gray-500">{{ contact_email }}</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase">Submitted</p>
+                                <p class="mt-1 text-gray-900">{{ edit.created_at|date:"M d, Y" }}</p>
+                                <p class="text-xs text-gray-500">{{ edit.created_at|time:"H:i" }}</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase">Last updated</p>
+                                <p class="mt-1 text-gray-900">{{ edit.updated_at|date:"M d, Y" }}</p>
+                                <p class="text-xs text-gray-500">{{ edit.updated_at|time:"H:i" }}</p>
+                            </div>
+                            {% if supporting_file_url %}
+                            <div>
+                                <p class="text-xs text-gray-500 uppercase">Supporting file</p>
+                                <a href="{{ supporting_file_url }}" target="_blank" class="mt-1 inline-flex items-center text-[#863F3F] hover:underline">
+                                    <i class="fas fa-paperclip mr-2"></i>Download attachment
+                                </a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% if related_object %}
+                    <div class="border border-gray-200 rounded-lg">
+                        <div class="px-5 py-4 border-b border-gray-100">
+                            <h2 class="text-sm font-medium text-gray-900">Context</h2>
+                        </div>
+                        <div class="px-5 py-4 text-sm text-gray-700">
+                            {% if source == 'chapter' %}
+                            <p class="text-gray-900 font-medium">{{ related_object.name }}</p>
+                            <p class="text-gray-500">{{ related_object.district.name }}, {{ related_object.district.state.name }}</p>
+                            {% else %}
+                            <p class="text-gray-900 font-medium">{{ related_object.name }}</p>
+                            <p class="text-gray-500">{{ related_object.state.name }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if edit.current_text %}
+                    <div class="border border-gray-200 rounded-lg">
+                        <div class="px-5 py-3 border-b border-gray-100">
+                            <h2 class="text-sm font-medium text-gray-900">Current text</h2>
+                        </div>
+                        <div class="px-5 py-4 text-sm text-gray-800 whitespace-pre-wrap bg-white">{{ edit.current_text }}</div>
+                    </div>
+                    {% endif %}
+                    <div class="border border-gray-200 rounded-lg">
+                        <div class="px-5 py-3 border-b border-gray-100 flex items-center justify-between">
+                            <h2 class="text-sm font-medium text-gray-900">Suggested text</h2>
+                            <span class="text-xs text-gray-500">Submitted text</span>
+                        </div>
+                        <div class="px-5 py-4 text-sm text-gray-900 whitespace-pre-wrap bg-white">{{ edit.suggested_text }}</div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg">
+                        <div class="px-5 py-3 border-b border-gray-100">
+                            <h2 class="text-sm font-medium text-gray-900">Reason</h2>
+                        </div>
+                        <div class="px-5 py-4 text-sm text-gray-800 whitespace-pre-wrap bg-white">{{ edit.reason }}</div>
+                    </div>
+                    {% if edit.sources %}
+                    <div class="border border-gray-200 rounded-lg">
+                        <div class="px-5 py-3 border-b border-gray-100">
+                            <h2 class="text-sm font-medium text-gray-900">Sources</h2>
+                        </div>
+                        <div class="px-5 py-4 text-sm text-gray-800 whitespace-pre-wrap bg-white">{{ edit.sources }}</div>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="lg:col-span-1 space-y-6">
+                    <form method="post" class="border border-gray-200 rounded-lg bg-gray-50">
+                        {% csrf_token %}
+                        <div class="px-5 py-4 border-b border-gray-200">
+                            <h2 class="text-sm font-medium text-gray-900">Review status</h2>
+                            <p class="mt-1 text-xs text-gray-500">Update status and share notes with admins.</p>
+                        </div>
+                        <div class="px-5 py-5 space-y-5">
+                            <div>
+                                <label for="status" class="block text-sm font-medium text-gray-700 mb-1">Status</label>
+                                <select id="status" name="status" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-[#863F3F] focus:border-[#863F3F]">
+                                    {% for value,label in status_choices %}
+                                    <option value="{{ value }}" {% if edit.status == value %}selected{% endif %}>{{ label }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div>
+                                <label for="review_notes" class="block text-sm font-medium text-gray-700 mb-1">Reviewer notes</label>
+                                <textarea id="review_notes" name="review_notes" rows="6" class="w-full border-gray-300 rounded-md shadow-sm focus:ring-[#863F3F] focus:border-[#863F3F]">{{ edit.review_notes }}</textarea>
+                                <p class="mt-1 text-xs text-gray-500">Shared internally with admins.</p>
+                            </div>
+                        </div>
+                        <div class="px-5 py-4 bg-white border-t border-gray-200 flex justify-end gap-3">
+                            <a href="{% url 'admindashboard:edit_requests' %}" class="px-4 py-2 bg-white border border-gray-300 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100">Cancel</a>
+                            <button type="submit" class="px-4 py-2 bg-[#863F3F] text-white text-sm font-medium rounded-md hover:bg-opacity-90">Save changes</button>
+                        </div>
+                    </form>
+                    {% if edit.review_notes %}
+                    <div class="border border-gray-200 rounded-lg bg-white">
+                        <div class="px-5 py-3 border-b border-gray-100">
+                            <h2 class="text-sm font-medium text-gray-900">Latest reviewer notes</h2>
+                        </div>
+                        <div class="px-5 py-4 text-sm text-gray-800 whitespace-pre-wrap">{{ edit.review_notes }}</div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

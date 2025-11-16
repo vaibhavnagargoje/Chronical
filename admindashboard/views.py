@@ -11,9 +11,12 @@ from culture.models import CulturalChapter
 from statistic.models import StatisticalChapter
 from users.models import Profile
 from sidepanal.models import SidePanelTerm, ContextualDefinition
+from editor.models import SuggestEdit, IntroductionEdit
 from django.utils import timezone
 from datetime import datetime, timedelta
 import json
+from collections import OrderedDict
+from django.urls import reverse
 
 # Helper function to check if user is staff
 def is_staff_user(user):
@@ -455,15 +458,156 @@ def delete_user(request):
     except Exception as e:
         return JsonResponse({'success': False, 'error': str(e)})
 
-# Placeholder views for other sections
 @login_required
 @user_passes_test(is_staff_user)
 def edit_requests(request):
-    """Edit requests management view"""
+    suggest_edits = SuggestEdit.objects.select_related('user').order_by('-created_at')
+    introduction_edits = IntroductionEdit.objects.select_related('user', 'district', 'district__state').order_by('-created_at')
+    combined_requests = []
+
+    for edit in suggest_edits:
+        submitted_by = (edit.user.get_full_name() or edit.user.username) if edit.user else edit.name
+        contact_email = edit.user.email if edit.user and edit.user.email else edit.email
+        combined_requests.append({
+            'pk': edit.pk,
+            'source': 'chapter',
+            'title': edit.get_chapter_title(),
+            'section': edit.section or 'General',
+            'status': edit.status,
+            'status_display': edit.get_status_display(),
+            'edit_type': edit.edit_type,
+            'edit_type_display': edit.get_edit_type_display(),
+            'submitted_at': edit.created_at,
+            'updated_at': edit.updated_at,
+            'submitted_by': submitted_by,
+            'email': contact_email,
+            'notify_on_review': edit.notify_on_review,
+        })
+
+    for edit in introduction_edits:
+        submitted_by = (edit.user.get_full_name() or edit.user.username) if edit.user else edit.name
+        contact_email = edit.user.email if edit.user and edit.user.email else edit.email
+        combined_requests.append({
+            'pk': edit.pk,
+            'source': 'introduction',
+            'title': edit.get_district_name(),
+            'section': edit.get_section_display(),
+            'status': edit.status,
+            'status_display': edit.get_status_display(),
+            'edit_type': edit.edit_type,
+            'edit_type_display': edit.get_edit_type_display(),
+            'submitted_at': edit.created_at,
+            'updated_at': edit.updated_at,
+            'submitted_by': submitted_by,
+            'email': contact_email,
+            'notify_on_review': edit.notify_on_review,
+        })
+
+    combined_requests = sorted(combined_requests, key=lambda item: item['submitted_at'], reverse=True)
+    status_filter = request.GET.get('status', '')
+    source_filter = request.GET.get('source', '')
+    edit_type_filter = request.GET.get('edit_type', '')
+    sort_by = request.GET.get('sort', 'latest')
+
+    filtered_requests = combined_requests
+    if status_filter:
+        filtered_requests = [item for item in filtered_requests if item['status'] == status_filter]
+    if source_filter:
+        filtered_requests = [item for item in filtered_requests if item['source'] == source_filter]
+    if edit_type_filter:
+        filtered_requests = [item for item in filtered_requests if item['edit_type'] == edit_type_filter]
+
+    status_order = {'pending': 0, 'in_review': 1, 'approved': 2, 'rejected': 3}
+    if sort_by == 'oldest':
+        filtered_requests = sorted(filtered_requests, key=lambda item: item['submitted_at'])
+    elif sort_by == 'status':
+        filtered_requests = sorted(filtered_requests, key=lambda item: (status_order.get(item['status'], 99), item['submitted_at']))
+    elif sort_by == 'recent_update':
+        filtered_requests = sorted(filtered_requests, key=lambda item: item['updated_at'] or item['submitted_at'], reverse=True)
+    else:
+        filtered_requests = sorted(filtered_requests, key=lambda item: item['submitted_at'], reverse=True)
+
+    total_requests = len(combined_requests)
+    pending_requests = sum(1 for item in combined_requests if item['status'] == 'pending')
+    in_review_requests = sum(1 for item in combined_requests if item['status'] == 'in_review')
+    approved_requests = sum(1 for item in combined_requests if item['status'] == 'approved')
+
+    edit_type_options = OrderedDict()
+    for value, label in SuggestEdit.EDIT_TYPE_CHOICES + IntroductionEdit.EDIT_TYPE_CHOICES:
+        edit_type_options.setdefault(value, label)
+
     context = {
-        'pending_edit_requests': 0,  # Placeholder
+        'total_requests': total_requests,
+        'pending_requests': pending_requests,
+        'in_review_requests': in_review_requests,
+        'approved_requests': approved_requests,
+        'chapter_request_count': suggest_edits.count(),
+        'introduction_request_count': introduction_edits.count(),
+        'requests_list': filtered_requests,
+        'visible_requests': len(filtered_requests),
+        'status_filter': status_filter,
+        'source_filter': source_filter,
+        'edit_type_filter': edit_type_filter,
+        'sort_by': sort_by,
+        'status_choices': SuggestEdit.STATUS_CHOICES,
+        'source_choices': [('chapter', 'Chapter Edits'), ('introduction', 'Introduction Edits')],
+        'edit_type_choices': list(edit_type_options.items()),
+        'sort_choices': [
+            ('latest', 'Newest first'),
+            ('oldest', 'Oldest first'),
+            ('status', 'Status (Pending → Approved)'),
+            ('recent_update', 'Recently updated'),
+        ],
     }
     return render(request, 'admindashboard/edit_requests.html', context)
+
+@login_required
+@user_passes_test(is_staff_user)
+def edit_request_detail(request, source, pk):
+    if source not in ('chapter', 'introduction'):
+        return redirect('admindashboard:edit_requests')
+
+    model = SuggestEdit if source == 'chapter' else IntroductionEdit
+    edit = get_object_or_404(model, pk=pk)
+    status_choices = model.STATUS_CHOICES
+    status_error = False
+
+    if request.method == 'POST':
+        new_status = request.POST.get('status', '')
+        if new_status in dict(status_choices):
+            edit.status = new_status
+            edit.review_notes = request.POST.get('review_notes', '').strip()
+            if hasattr(edit, 'reviewed_by'):
+                edit.reviewed_by = request.user
+            edit.save()
+            return redirect(f"{reverse('admindashboard:edit_request_detail', args=[source, pk])}?updated=1")
+        else:
+            status_error = True
+            edit.review_notes = request.POST.get('review_notes', edit.review_notes)
+
+    submitted_by = (edit.user.get_full_name() or edit.user.username) if edit.user else edit.name
+    contact_email = edit.user.email if edit.user and edit.user.email else edit.email
+    related_object = edit.get_chapter() if source == 'chapter' else edit.district
+    detail_title = edit.get_chapter_title() if source == 'chapter' else edit.get_district_name()
+    section_display = (edit.section or 'General') if source == 'chapter' else edit.get_section_display()
+
+    context = {
+        'edit': edit,
+        'source': source,
+        'source_label': 'Chapter Edit' if source == 'chapter' else 'Introduction Edit',
+        'status_choices': status_choices,
+        'status_error': status_error,
+        'submitted_by': submitted_by,
+        'contact_email': contact_email,
+        'related_object': related_object,
+        'detail_title': detail_title,
+        'section_display': section_display,
+        'edit_type_display': edit.get_edit_type_display(),
+        'status_display': edit.get_status_display(),
+        'supporting_file_url': edit.supporting_file.url if edit.supporting_file else None,
+        'updated': request.GET.get('updated'),
+    }
+    return render(request, 'admindashboard/request_detail.html', context)
 
 @login_required
 @user_passes_test(is_staff_user)
