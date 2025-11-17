@@ -4,29 +4,220 @@
 
 {% block content %}
 <div class="py-6">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-        <!-- Page Header -->
-        <div class="flex justify-between items-center mb-6">
-            <div>
-                <h1 class="text-2xl font-semibold text-gray-900">Comments Management</h1>
-                <p class="mt-1 text-sm text-gray-600">Moderate and manage user comments</p>
-            </div>
-            <div class="flex items-center space-x-3">
-                <button class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
-                    <i class="fas fa-filter mr-2"></i>
-                    Filter
-                </button>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 space-y-6">
+        <div class="bg-white shadow rounded-lg">
+            <div class="px-6 py-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+                <div>
+                    <h1 class="text-2xl font-semibold text-gray-900">Comments & Messages</h1>
+                    <p class="mt-1 text-sm text-gray-600">Moderate incoming feedback from the site.</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-3 text-sm text-gray-500">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-700">
+                        <i class="fas fa-inbox mr-2 text-[#863F3F]"></i>{{ total_messages }} total
+                    </span>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-700">
+                        <i class="fas fa-envelope-open mr-2 text-indigo-500"></i>{{ read_messages }} read
+                    </span>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-700">
+                        <i class="fas fa-envelope mr-2 text-red-500"></i>{{ unread_messages }} unread
+                    </span>
+                </div>
             </div>
         </div>
 
-        <!-- Coming Soon Content -->
         <div class="bg-white shadow rounded-lg">
-            <div class="px-4 py-5 sm:p-6 text-center">
-                <i class="fas fa-comments text-6xl text-gray-300 mb-4"></i>
-                <h3 class="text-lg font-medium text-gray-900 mb-2">Comments Moderation</h3>
-                <p class="text-sm text-gray-500">This section is under development. You'll be able to moderate and manage user comments here.</p>
+            <div class="px-6 py-5 border-b border-gray-100">
+                <h2 class="text-lg font-medium text-gray-900">Filter messages</h2>
+                <p class="mt-1 text-sm text-gray-500">Search or filter by read status to focus on specific feedback.</p>
             </div>
+            <div class="px-6 py-6">
+                <form method="get" class="flex flex-wrap items-end gap-4">
+                    <div class="w-full sm:w-64">
+                        <label class="block text-sm font-medium text-gray-700 mb-1" for="search">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                <i class="fas fa-search text-gray-400"></i>
+                            </div>
+                            <input id="search" name="search" value="{{ search_query }}" placeholder="Name, email, subject, message..." class="w-full border-gray-300 rounded-md shadow-sm pl-10 py-2 focus:ring-[#863F3F] focus:border-[#863F3F]" />
+                        </div>
+                    </div>
+                    <div class="flex items-end gap-3">
+                        <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#863F3F] hover:bg-opacity-90">
+                            <i class="fas fa-filter mr-2"></i>Apply
+                        </button>
+                        <a href="{% url 'admindashboard:comments' %}" class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-gray-50 hover:bg-gray-100">
+                            Reset
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="px-6 py-4 bg-gray-50 border-t border-gray-100 text-sm text-gray-500">
+                Showing {{ filtered_count }} {{ filtered_count|pluralize:"message,messages" }}.
+            </div>
+        </div>
+
+        <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+            <div class="px-4 py-5 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">Inbox</h3>
+                <p class="mt-1 max-w-2xl text-sm text-gray-500">Click “Read more” to view the full message.</p>
+            </div>
+            <div class="border-t border-gray-200 overflow-x-auto">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Subject</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">From</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Message</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Received</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        {% for item in messages_list %}
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ item.subject }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
+                                <div>{{ item.name }}</div>
+                                <div class="text-xs text-gray-500">{{ item.email }}</div>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-600 max-w-xs">
+                                {{ item.message|truncatechars:120 }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                {% if item.is_read %}
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-700">
+                                    <i class="fas fa-check-circle mr-1"></i>Read
+                                </span>
+                                {% else %}
+                                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-700">
+                                    <i class="fas fa-envelope mr-1"></i>Unread
+                                </span>
+                                {% endif %}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ item.created_at|date:"M d, Y" }}
+                                <div class="text-xs text-gray-400">{{ item.created_at|time:"H:i" }}</div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm">
+                                <button
+                                    type="button"
+                                    class="inline-flex items-center px-3 py-1.5 border border-transparent rounded-md text-xs font-medium text-white bg-[#863F3F] hover:bg-opacity-90"
+                                    data-modal-subject="{{ item.subject|escapejs }}"
+                                    data-modal-from="{{ item.name }} ({{ item.email }})"
+                                    data-modal-message="{{ item.message|escapejs }}"
+                                >
+                                    Read more
+                                </button>
+                            </td>
+                        </tr>
+                        {% empty %}
+                        <tr>
+                            <td colspan="6" class="px-6 py-12 text-center text-gray-500">
+                                <i class="fas fa-comments text-4xl text-gray-300 mb-4"></i>
+                                <p class="text-lg font-medium">No messages found</p>
+                                <p class="text-sm">Adjust your filters or check back later.</p>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        {% if messages_list.has_other_pages %}
+        <div class="bg-white px-4 py-3 border border-gray-200 sm:px-6 rounded-lg shadow">
+            <div class="hidden sm:flex sm:items-center sm:justify-between">
+                <p class="text-sm text-gray-700">
+                    Showing
+                    <span class="font-medium">{{ messages_list.start_index }}</span>
+                    to
+                    <span class="font-medium">{{ messages_list.end_index }}</span>
+                    of
+                    <span class="font-medium">{{ messages_list.paginator.count }}</span>
+                    results
+                </p>
+                <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px">
+                    {% if messages_list.has_previous %}
+                    <a href="?page={{ messages_list.previous_page_number }}&search={{ search_query }}" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    {% endif %}
+                    {% for num in messages_list.paginator.page_range %}
+                    {% if messages_list.number == num %}
+                    <span class="relative inline-flex items-center px-4 py-2 border border-[#863F3F] bg-[#863F3F] bg-opacity-10 text-sm font-medium text-[#863F3F]">{{ num }}</span>
+                    {% else %}
+                    <a href="?page={{ num }}&search={{ search_query }}" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">{{ num }}</a>
+                    {% endif %}
+                    {% endfor %}
+                    {% if messages_list.has_next %}
+                    <a href="?page={{ messages_list.next_page_number }}&search={{ search_query }}" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                    {% endif %}
+                </nav>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<div id="messageModal" class="fixed inset-0 bg-gray-900 bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white w-full max-w-2xl rounded-lg shadow-lg">
+        <div class="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
+            <div>
+                <h3 id="modalSubject" class="text-lg font-semibold text-gray-900"></h3>
+                <p id="modalFrom" class="text-sm text-gray-500"></p>
+            </div>
+            <button type="button" class="text-gray-400 hover:text-gray-600" data-modal-close>
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="px-6 py-5 text-sm text-gray-800 whitespace-pre-wrap max-h-96 overflow-y-auto" id="modalMessage"></div>
+        <div class="px-6 py-4 border-t border-gray-200 flex justify-end">
+            <button type="button" class="px-4 py-2 bg-[#863F3F] text-white rounded-md hover:bg-opacity-90" data-modal-close>Close</button>
         </div>
     </div>
 </div>
+
+<script>
+document.querySelectorAll('button[data-modal-message]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.getElementById('modalSubject').textContent = btn.dataset.modalSubject;
+        document.getElementById('modalFrom').textContent = btn.dataset.modalFrom;
+
+        const normalizedMessage = btn.dataset.modalMessage
+            .replace(/\\u000D\\u000A/g, '\n')
+            .replace(/\\r\\n/g, '\n')
+            .replace(/\\n/g, '\n')
+            .replace(/\\r/g, '\n');
+
+        const modalMessage = document.getElementById('modalMessage');
+        modalMessage.textContent = '';
+        normalizedMessage.split('\n').forEach((line, index) => {
+            if (index > 0) {
+                modalMessage.appendChild(document.createElement('br'));
+            }
+            modalMessage.appendChild(document.createTextNode(line));
+        });
+
+        document.getElementById('messageModal').classList.remove('hidden');
+        document.getElementById('messageModal').classList.add('flex');
+    });
+});
+
+document.querySelectorAll('[data-modal-close]').forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.getElementById('messageModal').classList.add('hidden');
+        document.getElementById('messageModal').classList.remove('flex');
+    });
+});
+
+document.getElementById('messageModal').addEventListener('click', (event) => {
+    if (event.target.id === 'messageModal') {
+        document.getElementById('messageModal').classList.add('hidden');
+        document.getElementById('messageModal').classList.remove('flex');
+    }
+});
+</script>
 {% endblock content %}

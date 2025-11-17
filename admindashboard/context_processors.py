@@ -2,6 +2,10 @@ from home.models import State, District
 from culture.models import CulturalChapter
 from statistic.models import StatisticalChapter
 from django.contrib.auth.models import User
+from footersection.models import Message
+from editor.models import SuggestEdit, IntroductionEdit
+from sidepanal.models import SidePanelTerm
+
 
 def dashboard_context(request):
     """
@@ -15,7 +19,8 @@ def dashboard_context(request):
             'total_statistical_chapters': StatisticalChapter.objects.count(),
             'total_chapters': CulturalChapter.objects.count() + StatisticalChapter.objects.count(),
             'total_users': User.objects.count(),
-            'pending_edit_requests': 0,  # Placeholder for future implementation
-            'total_comments': 0,  # Placeholder for future implementation
+            'pending_edit_requests': SuggestEdit.objects.filter(status='pending').count() + IntroductionEdit.objects.filter(status='pending').count(),
+            'total_comments': Message.objects.count(),  # Placeholder for future implementation
+            'total_sidepanel_terms': SidePanelTerm.objects.count(),
         }
     return {}

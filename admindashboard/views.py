@@ -17,6 +17,7 @@ from datetime import datetime, timedelta
 import json
 from collections import OrderedDict
 from django.urls import reverse
+from footersection.models import Message
 
 # Helper function to check if user is staff
 def is_staff_user(user):
@@ -36,6 +37,8 @@ def dashboard(request):
     total_chapters = total_cultural_chapters + total_statistical_chapters
     total_users = User.objects.count()
     total_sidepanel_terms = SidePanelTerm.objects.count()
+    total_messages = Message.objects.count()
+    pending_edit_requests = SuggestEdit.objects.filter(status='pending').count() + IntroductionEdit.objects.filter(status='pending').count()
     
     # Get recent activities (latest districts and chapters)
     recent_districts = District.objects.select_related('state').order_by('-id')[:5]
@@ -53,8 +56,8 @@ def dashboard(request):
         'recent_districts': recent_districts,
         'recent_cultural_chapters': recent_cultural_chapters,
         'recent_statistical_chapters': recent_statistical_chapters,
-        'pending_edit_requests': 0,  # Placeholder for future implementation
-        'total_comments': 0,  # Placeholder for future implementation
+        'pending_edit_requests': pending_edit_requests,
+        'total_comments': total_messages,
     }
     
     return render(request, 'admindashboard/dashboard.html', context)
@@ -612,9 +615,29 @@ def edit_request_detail(request, source, pk):
 @login_required
 @user_passes_test(is_staff_user)
 def comments(request):
-    """Comments management view"""
+    search_query = request.GET.get('search', '')
+
+    messages_qs = Message.objects.all().order_by('-created_at')
+
+    if search_query:
+        messages_qs = messages_qs.filter(
+            Q(name__icontains=search_query) |
+            Q(email__icontains=search_query) |
+            Q(subject__icontains=search_query) |
+            Q(message__icontains=search_query)
+        )
+
+    paginator = Paginator(messages_qs, 15)
+    page_number = request.GET.get('page')
+    messages_paginated = paginator.get_page(page_number)
+
     context = {
-        'total_comments': 0,  # Placeholder
+        'messages_list': messages_paginated,
+        'total_messages': Message.objects.count(),
+        'unread_messages': Message.objects.filter(is_read=False).count(),
+        'read_messages': Message.objects.filter(is_read=True).count(),
+        'filtered_count': messages_qs.count(),
+        'search_query': search_query,
     }
     return render(request, 'admindashboard/comments.html', context)
 
