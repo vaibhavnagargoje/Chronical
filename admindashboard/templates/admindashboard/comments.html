@@ -76,7 +76,7 @@
                     <tbody class="bg-white divide-y divide-gray-200">
                         {% for item in messages_list %}
                         <tr class="hover:bg-gray-50">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ item.subject }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{{ item.subject|truncatechars:30 }}</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
                                 <div>{{ item.name }}</div>
                                 <div class="text-xs text-gray-500">{{ item.email }}</div>
