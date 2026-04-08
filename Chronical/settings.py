@@ -63,6 +63,7 @@ INSTALLED_APPS = [
     'users',
     'culture',
     'statistic',
+    'charthandler',
     'search',
     'editor',
     'sidepanal',

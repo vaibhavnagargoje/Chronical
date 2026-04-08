@@ -2,6 +2,7 @@
 
 from django.contrib import admin
 from django.contrib import messages
+import re
 from polymorphic.admin import (
     PolymorphicInlineSupportMixin, StackedPolymorphicInline
 )
@@ -9,8 +10,26 @@ from polymorphic.admin import (
 # Import all the models from the statistic app
 from .models import (
     StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo,
-    HeadingBlockThree, ParagraphBlock, ImageBlock, ReferenceBlock, ChartBlock
+    HeadingBlockThree, ParagraphBlock, ImageBlock, ReferenceBlock, ChartBlock,
+    DynamicChartBlock
 )
+from charthandler.models import ChartTemplate
+
+# Maps StatisticalChapter.name → ChartTemplate.chapter_type slug
+CHAPTER_NAME_TO_SLUG = {
+    'Agriculture': 'agriculture',
+    'Demography': 'demography',
+    'Education': 'education',
+    'Elections': 'elections',
+    'Environment': 'environment',
+    'Health': 'health',
+    'Industry': 'industry',
+    'Labor': 'labor',
+    'Livestock & Fisheries': 'livestock-fisheries',
+    'Police & Judiciary': 'police-judiciary',
+    'Revenue & Expenditure': 'revenue-expenditure',
+    'Transport & Communication': 'transport-communication',
+}
 
 # This inline manager is the key to the admin interface.
 # It tells the admin how to display forms for each type of content block.
@@ -39,6 +58,24 @@ class StatisticContentBlockInline(StackedPolymorphicInline):
     class ChartBlockInline(StackedPolymorphicInline.Child):
         model = ChartBlock
 
+    class DynamicChartBlockInline(StackedPolymorphicInline.Child):
+        model = DynamicChartBlock
+
+        def formfield_for_foreignkey(self, db_field, request, **kwargs):
+            if db_field.name == 'chart_template':
+                # Extract parent chapter ID from the admin URL
+                # URL pattern: /admin/statistic/statisticalchapter/{id}/change/
+                match = re.search(r'/statisticalchapter/(\d+)/change/', request.path)
+                if match:
+                    try:
+                        chapter = StatisticalChapter.objects.get(pk=match.group(1))
+                        slug = CHAPTER_NAME_TO_SLUG.get(chapter.name, '')
+                        if slug:
+                            kwargs['queryset'] = ChartTemplate.objects.filter(chapter_type=slug)
+                    except StatisticalChapter.DoesNotExist:
+                        pass
+            return super().formfield_for_foreignkey(db_field, request, **kwargs)
+
     # The base model for all inlines
     model = StatisticContentBlock
     
@@ -51,6 +88,7 @@ class StatisticContentBlockInline(StackedPolymorphicInline):
         ImageBlockInline,
         ReferenceBlockInline,
         ChartBlockInline, # <-- Your new ChartBlock is now available!
+        DynamicChartBlockInline, # <-- Dynamic chart block
     )
     extra = 0 # Don't show any empty forms by default
     # Note: To enable drag-and-drop ordering, you'll need to install

@@ -418,18 +418,39 @@ setTimeout(() => {
                         <h3 class="text-xl font-semibold text-center text-gray-800 mb-4">{{ block.title }}</h3>
                       {% endif %} {% endcomment %}
                       <div class="mx-auto w-full overflow-hidden rounded-lg border my-10 p-1">
-                          <iframe 
-                                class="w-full border-0 block"
-                                data-auto-height
-                                data-fallback-height="520"
-                                src="{{ block.get_chart_url }}"
-                                title="{{ block.title|default:'Statistical Chart' }}"
-                                frameborder="0"
-                                scrolling="no"
-                                loading="lazy">
-                                
-                                Your browser does not support iframes.
-                            </iframe>
+                          {% if block.chart_html_file %}
+                            <iframe 
+                                  class="w-full border-0 block"
+                                  data-auto-height
+                                  data-fallback-height="520"
+                                  src="{{ block.get_chart_url }}"
+                                  title="{{ block.title|default:'Statistical Chart' }}"
+                                  frameborder="0"
+                                  scrolling="no"
+                                  loading="lazy">
+                                  
+                                  Your browser does not support iframes.
+                              </iframe>
+                          {% else %}
+                            <div class="w-full p-6 text-left">
+                              <p class="text-sm text-gray-600">Chart is not configured yet for this block.</p>
+                            </div>
+                          {% endif %}
+                      </div>
+                  </figure>
+              
+              {% elif block.polymorphic_ctype.model == 'dynamicchartblock' %}
+                  <figure id="{% if block.anchor_slug %}{{ block.anchor_slug }}{% else %}chart-{{ block.pk }}{% endif %}" class="mb-2 mt-2 max-w-4xl text-center">
+                      <div class="mx-auto w-full overflow-hidden rounded-lg border border-gray-200 shadow-sm my-10 p-1 bg-white">
+                          <div class="p-4 sm:p-6 w-full">
+                              <h3 class="text-lg sm:text-xl font-bold text-[#863F3F] mb-4 text-center">{{ block.get_chart_title }}</h3>
+                              <div class="dynamic-chart-container w-full max-w-full" data-template-slug="{{ block.chart_template.slug }}" data-district="{{ district.name }}" style="min-height: 400px; position: relative;">
+                                  <div class="loading-indicator text-center text-gray-500 py-10 flex flex-col items-center justify-center h-full">
+                                      <i class="fas fa-chart-line fa-2x mb-4 text-[#863F3F] animate-pulse"></i>
+                                      <p class="text-sm">Loading chart data...</p>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
                   </figure>
               {% endif %}
@@ -745,6 +766,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     {# Link to your JavaScript file #}
     <script src="{% static 'js/side-panel.js' %}"></script>
+    
+    <!-- Dynamic Charts dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{% static 'js/chart-renderer.js' %}"></script>
 {% endblock extra_scripts %}
 
 {% endblock content %}

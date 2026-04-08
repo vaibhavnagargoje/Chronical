@@ -4,7 +4,7 @@ from django.shortcuts import render, get_object_or_404
 from django.utils.text import slugify
 from django.http import HttpResponse
 # Import the models from the statistic app
-from .models import StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree, ChartBlock, ReferenceBlock, ImageBlock
+from .models import StatisticalChapter, StatisticContentBlock, HeadingBlockOne, HeadingBlockTwo, HeadingBlockThree, ChartBlock, ReferenceBlock, ImageBlock, DynamicChartBlock
 from culture.models import CulturalChapter
 from django.views.decorators.clickjacking import xframe_options_exempt
 from django.contrib.auth.decorators import login_required
@@ -78,6 +78,17 @@ def statistical_chapter_detail(request, state_slug, district_slug, chapter_slug)
                     'level': 3,
                 })
                 num+=1
+        elif isinstance(block, DynamicChartBlock):
+            chart_title = block.get_chart_title()
+            if chart_title:
+                anchor_slug = f"{slugify(chart_title)}-{num}"
+                block.anchor_slug = anchor_slug
+                table_of_contents.append({
+                    'text': chart_title,
+                    'slug': anchor_slug,
+                    'level': 3,
+                })
+                num += 1
 
     # Get all chapters in the current district for the "Change Chapter" dropdown
     # Note the use of the `related_name` 'statistical_chapters'
@@ -144,6 +155,13 @@ def serve_chart_html(request, chart_block_id):
     from django.templatetags.static import static
     
     chart_block = get_object_or_404(ChartBlock, pk=chart_block_id)
+    if not chart_block.chart_html_file:
+        return HttpResponse(
+            "<h1>Legacy chart file is not configured for this block.</h1>",
+            status=404,
+            content_type='text/html',
+        )
+
     try:
         with chart_block.chart_html_file.open('rb') as chart_file:
             raw_html = chart_file.read().decode('utf-8', errors='ignore')
@@ -195,6 +213,9 @@ def _extract_chart_title(html_content):
     return re.sub(r'\s+', ' ', match.group(1)).strip() if match else None
 
 def _ensure_chart_title(block):
+    if not block.chart_html_file:
+        return block.title
+
     try:
         with block.chart_html_file.open('rb') as chart_file:
             html_content = chart_file.read().decode('utf-8', errors='ignore')

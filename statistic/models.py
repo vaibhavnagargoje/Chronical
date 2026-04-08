@@ -219,6 +219,36 @@ class ChartBlock(StatisticContentBlock):
         return f'Chart Block: {self.title or "Untitled"}'
 
 
+class DynamicChartBlock(StatisticContentBlock):
+    """
+    A block for displaying dynamic, database-driven charts.
+    References a ChartTemplate from the charthandler app instead of a static HTML file.
+    Works alongside the existing ChartBlock for backward compatibility.
+    """
+    chart_template = models.ForeignKey(
+        'charthandler.ChartTemplate',
+        on_delete=models.PROTECT,
+        related_name='dynamic_blocks',
+        help_text="Select the chart template to render"
+    )
+    title_override = models.CharField(
+        max_length=255,
+        blank=True,
+        default='',
+        help_text="Optional: Override the chart template's default title"
+    )
+
+    class Meta:
+        verbose_name = "Dynamic Chart Block"
+
+    def __str__(self):
+        title = self.title_override or (self.chart_template.title if self.chart_template_id else 'No Template')
+        return f'Dynamic Chart: {title}'
+
+    def get_chart_title(self):
+        return self.title_override or self.chart_template.title
+
+
 
 
 

@@ -15,6 +15,7 @@ urlpatterns = [
     path('users/', include('users.urls', namespace='users')),  
     path('cultures/', include('culture.urls', namespace='culture')),
     path('statistics/', include('statistic.urls')), # Also adding namespace for best practice
+    path('api/', include('charthandler.urls', namespace='charthandler')),
     path('sidepanal/', include('sidepanal.urls', namespace='sidepanal')),
     path('importdata/', include('importdata.urls', namespace='importdata')),
     path('admindashboard/', include('admindashboard.urls', namespace='admindashboard')),
