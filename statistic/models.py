@@ -216,7 +216,7 @@ class ChartBlock(StatisticContentBlock):
     class Meta:
         verbose_name = "Chart Block (HTML Upload)"
     def __str__(self):
-        return f'Chart Block: {self.title or "Untitled"}'
+        return f'Chart Block: {self.title or "  Untitled"}'
 
 
 class DynamicChartBlock(StatisticContentBlock):
@@ -247,7 +247,6 @@ class DynamicChartBlock(StatisticContentBlock):
 
     def get_chart_title(self):
         return self.title_override or self.chart_template.title
-
 
 
 
