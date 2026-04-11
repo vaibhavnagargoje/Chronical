@@ -236,6 +236,7 @@ def chart_data_api(request, template_slug):
     response_data = {
         'chartType': template.chart_type,
         'title': template.title,
+        'showFilters': template.show_filters,
         'chartOptions': template.chart_options,
         'chartData': {
             'labels': labels,

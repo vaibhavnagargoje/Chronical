@@ -441,10 +441,10 @@ setTimeout(() => {
               
               {% elif block.polymorphic_ctype.model == 'dynamicchartblock' %}
                   <figure id="{% if block.anchor_slug %}{{ block.anchor_slug }}{% else %}chart-{{ block.pk }}{% endif %}" class="mb-2 mt-2 max-w-4xl text-center">
-                      <div class="mx-auto w-full overflow-hidden rounded-lg border border-gray-200 shadow-sm my-10 p-1 bg-white">
-                          <div class="p-4 sm:p-6 w-full">
-                              <h3 class="text-lg sm:text-xl font-bold text-[#863F3F] mb-4 text-center">{{ block.get_chart_title }}</h3>
-                              <div class="dynamic-chart-container w-full max-w-full" data-template-slug="{{ block.chart_template.slug }}" data-district="{{ district.name }}" style="min-height: 400px; position: relative;">
+                      <div class="mx-auto w-full overflow-hidden rounded-lg border my-10 p-1 bg-white">
+                          <div class="pt-2 pb-0 w-full text-center">
+                              <h3 class="font-bold text-[#2c3e50] mb-2 text-center" style="font-size: 16px;">{{ block.get_chart_title }}</h3>
+                              <div class="dynamic-chart-container w-full max-w-full" data-template-slug="{{ block.chart_template.slug }}" data-district="{{ district.name }}" style="position: relative;">
                                   <div class="loading-indicator text-center text-gray-500 py-10 flex flex-col items-center justify-center h-full">
                                       <i class="fas fa-chart-line fa-2x mb-4 text-[#863F3F] animate-pulse"></i>
                                       <p class="text-sm">Loading chart data...</p>
@@ -769,6 +769,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <!-- Dynamic Charts dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     <script src="{% static 'js/chart-renderer.js' %}"></script>
 {% endblock extra_scripts %}
 
