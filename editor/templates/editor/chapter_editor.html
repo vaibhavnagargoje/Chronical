@@ -108,6 +108,8 @@ setTimeout(() => {
                     
                     {% elif block.polymorphic_ctype.model == 'chartblock' %}
                         {% include 'editor/partials/chart_block.html' with chart_url=block.chart_html_file.url title=block.title id=block.id file_input_name='existing-chart-'|add:block.id|stringformat:"s" %}
+                    {% elif block.polymorphic_ctype.model == 'dynamicchartblock' %}
+                        {% include 'editor/partials/dynamic_chart_block.html' with chart_template=block.chart_template title_override=block.title_override id=block.id %}
                     {% elif block.polymorphic_ctype.model == 'bulkchartblock' %}
                         {% include 'editor/partials/bulk_chart_block.html' with id=block.id %}
                     {# ================= END OF FIX ================= #}
@@ -130,6 +132,9 @@ setTimeout(() => {
                 
                 <!-- Chart blocks for both apps -->
                 <button data-block-type="chart" class="add-block-btn">Chart</button>
+                {% if app_label == 'statistic' %}
+                <button data-block-type="dynamic-chart" class="add-block-btn">Dynamic Chart</button>
+                {% endif %}
                 <button data-block-type="bulk-chart" class="add-block-btn">Bulk Charts</button>
                 
             </div>
@@ -147,6 +152,9 @@ setTimeout(() => {
     <div data-template-type="reference">{% include 'editor/partials/reference_block.html' %}</div>
     <!-- Chart templates for both apps -->
     <div data-template-type="chart">{% include 'editor/partials/chart_block.html' %}</div>
+    {% if app_label == 'statistic' %}
+    <div data-template-type="dynamic-chart">{% include 'editor/partials/dynamic_chart_block.html' %}</div>
+    {% endif %}
     <div data-template-type="bulk-chart">{% include 'editor/partials/bulk_chart_block.html' %}</div>
 </div>
 
@@ -211,6 +219,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="insertion-menu-item" data-block-type="image">Image</div>
                     <div class="insertion-menu-item" data-block-type="reference">Reference</div>
                     <div class="insertion-menu-item" data-block-type="chart">Chart</div>
+                    {% if app_label == 'statistic' %}
+                    <div class="insertion-menu-item" data-block-type="dynamic-chart">Dynamic Chart</div>
+                    {% endif %}
                     <div class="insertion-menu-item" data-block-type="bulk-chart">Bulk Charts</div>
                 </div>
             </div>
@@ -505,6 +516,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `,
+        {% if app_label == 'statistic' %}
+        'dynamic-chart': `
+            <div class="p-3 bg-white rounded-lg shadow-sm editor-block" data-block-type="dynamic-chart" data-id="">
+                <div class="flex items-start gap-3">
+                    <span class="drag-handle text-gray-400 hover:text-gray-600 mt-1"><i class="fas fa-grip-vertical text-sm"></i></span>
+                    <div class="flex-grow space-y-2">
+                        <label class="block text-xs font-medium text-gray-400 uppercase tracking-wide">Dynamic Chart Template</label>
+                        <select name="template_id" class="w-full border-gray-200 rounded text-sm py-1.5 px-2 dynamic-chart-template-select">
+                            <option value="">Select chart template...</option>
+                            {% for template in available_chart_templates %}
+                            <option value="{{ template.id }}">{{ template.title|escapejs }}</option>
+                            {% endfor %}
+                        </select>
+                        {% if not available_chart_templates %}
+                        <p class="text-xs text-amber-600">No chart templates are configured for this chapter yet.</p>
+                        {% endif %}
+                        <input type="text" name="title_override" class="w-full border-gray-200 rounded text-sm py-1.5 px-2" placeholder="Custom chart title (optional)">
+                        <p class="text-xs text-gray-400">Leave empty to use template title.</p>
+                    </div>
+                    <button type="button" class="delete-block-btn text-gray-400 hover:text-red-400 mt-1"><i class="fas fa-times text-sm"></i></button>
+                </div>
+            </div>
+        `,
+        {% endif %}
         'bulk-chart': `
             <div class="p-4 bg-white rounded-lg shadow-sm editor-block" data-block-type="bulk-chart" data-id="">
                 <div class="flex items-start gap-3">
@@ -634,6 +669,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tinymce.triggerSave();
 
         const allBlocksData = [];
+        let hasValidationError = false;
         document.querySelectorAll('#editor-blocks .editor-block').forEach(blockEl => {
             const blockId = blockEl.dataset.id;
             const blockType = blockEl.dataset.blockType;
@@ -666,6 +702,21 @@ document.addEventListener('DOMContentLoaded', () => {
                      blockData.chart_file_id = fileInput.name;
                 }
             }
+            else if (blockType === 'dynamic-chart') {
+                const templateSelect = blockEl.querySelector('select[name="template_id"]');
+                const titleInput = blockEl.querySelector('input[name="title_override"]');
+                blockData.template_id = templateSelect ? templateSelect.value : '';
+                blockData.title_override = titleInput ? titleInput.value : '';
+
+                if (!blockData.template_id) {
+                    hasValidationError = true;
+                    if (templateSelect) {
+                        templateSelect.classList.add('border-red-400');
+                    }
+                } else if (templateSelect) {
+                    templateSelect.classList.remove('border-red-400');
+                }
+            }
             else if (blockType === 'bulk-chart') {
                 const fileInput = blockEl.querySelector('input[type="file"]');
                 const titlePrefix = blockEl.querySelector('input[name="bulk_title_prefix"]').value;
@@ -679,6 +730,11 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             allBlocksData.push(blockData);
         });
+
+        if (hasValidationError) {
+            alert('Please select a chart template for each Dynamic Chart block before saving.');
+            return;
+        }
         
         contentDataInput.value = JSON.stringify(allBlocksData);
         showSaveFeedback('Changes saved!');

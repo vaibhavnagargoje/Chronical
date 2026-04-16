@@ -25,8 +25,9 @@ from statistic.models import (
     StatisticalChapter, StatisticContentBlock, HeadingBlockOne as StatH1,
     HeadingBlockTwo as StatH2, HeadingBlockThree as StatH3,
     ParagraphBlock as StatP, ImageBlock as StatImg, ReferenceBlock as StatRef,
-    ChartBlock as StatChartBlock  # Renamed to avoid conflict
+    ChartBlock as StatChartBlock, DynamicChartBlock as StatDynamicChartBlock
 )
+from charthandler.models import ChartTemplate
 
 # Import review models
 from home.models import DeveloperCheck, FinalCheck, District, DistrictQuickFact
@@ -50,9 +51,26 @@ APP_CONFIG = {
         'BLOCK_TYPE_MAP': {
             'heading1': StatH1, 'heading2': StatH2, 'heading3': StatH3,
             'paragraph': StatP, 'image': StatImg, 'reference': StatRef,
-            'chart': StatChartBlock  # Updated to use renamed import
+            'chart': StatChartBlock,
+            'dynamic-chart': StatDynamicChartBlock,
         }
     }
+}
+
+
+CHAPTER_NAME_TO_SLUG = {
+    'Agriculture': 'agriculture',
+    'Demography': 'demography',
+    'Education': 'education',
+    'Elections': 'elections',
+    'Environment': 'environment',
+    'Health': 'health',
+    'Industry': 'industry',
+    'Labor': 'labor',
+    'Livestock & Fisheries': 'livestock-fisheries',
+    'Police & Judiciary': 'police-judiciary',
+    'Revenue & Expenditure': 'revenue-expenditure',
+    'Transport & Communication': 'transport-communication',
 }
 
 def get_app_config(app_label):
@@ -117,6 +135,17 @@ def chapter_editor_view(request, app_label, chapter_id):
         ChapterModel.objects.select_related('district__state'),
         id=chapter_id
     )
+
+    available_chart_templates = []
+    allowed_template_ids = set()
+    if app_label == 'statistic':
+        chapter_slug = CHAPTER_NAME_TO_SLUG.get(chapter.name, '')
+        if chapter_slug:
+            available_chart_templates = list(
+                ChartTemplate.objects.filter(chapter_type=chapter_slug)
+                .order_by('display_order', 'title')
+            )
+            allowed_template_ids = {template.id for template in available_chart_templates}
 
     # Get or create review checks
     developer_check = None
@@ -222,6 +251,15 @@ def chapter_editor_view(request, app_label, chapter_id):
                                 chart_file_id = block_data.get('chart_file_id')
                                 if chart_file_id and request.FILES.get(chart_file_id):
                                     block_instance.chart_html_file = request.FILES[chart_file_id]
+                            elif isinstance(block_instance, StatDynamicChartBlock):
+                                block_instance.title_override = block_data.get('title_override', '')
+                                template_id = block_data.get('template_id')
+                                try:
+                                    template_id = int(template_id)
+                                except (TypeError, ValueError):
+                                    template_id = None
+                                if template_id and template_id in allowed_template_ids:
+                                    block_instance.chart_template_id = template_id
 
                             block_instance.save()
                             order_index += 1
@@ -251,6 +289,17 @@ def chapter_editor_view(request, app_label, chapter_id):
                                 block_data['chart_html_file'] = request.FILES[chart_file_id]
                             else: continue
 
+                        elif block_type_str == 'dynamic-chart':
+                            template_id = block_data.pop('template_id', None)
+                            try:
+                                template_id = int(template_id)
+                            except (TypeError, ValueError):
+                                continue
+                            if template_id not in allowed_template_ids:
+                                continue
+                            block_data['chart_template_id'] = template_id
+                            block_data['title_override'] = block_data.get('title_override', '')
+
                         BlockModelClass.objects.create(**block_data)
                         order_index += 1
 
@@ -277,6 +326,7 @@ def chapter_editor_view(request, app_label, chapter_id):
     context = {
         'chapter': chapter,
         'content_blocks': content_blocks,
+        'available_chart_templates': available_chart_templates,
         'app_label': app_label,
         'app_title': config['title'],
         'developer_check': developer_check,
