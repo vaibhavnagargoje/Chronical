@@ -5,6 +5,7 @@
 
 const LEGACY_DYNAMIC_CHART_STYLE_ID = 'legacy-dynamic-chart-style';
 const PERCENT_LABEL_THRESHOLD = 5;
+const CHART_UPDATE_ANIMATION_DURATION = 280;
 
 document.addEventListener('DOMContentLoaded', function() {
     const chartContainers = document.querySelectorAll('.dynamic-chart-container');
@@ -93,6 +94,42 @@ function ensureLegacyDynamicChartStyles() {
             display: block;
         }
 
+        .dynamic-chart-container .chart-canvas-loading {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.68);
+            color: #374151;
+            font-size: 12px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+            z-index: 2;
+        }
+
+        .dynamic-chart-container .chart-canvas-loading.is-visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .dynamic-chart-container .chart-filter-controls.is-loading .dynamic-chart-filter {
+            opacity: 0.65;
+        }
+
+        .dynamic-chart-container .chart-inline-error {
+            display: none;
+            margin: 4px 12px 0;
+            color: #b42318;
+            font-size: 12px;
+            text-align: left;
+        }
+
+        .dynamic-chart-container .chart-inline-error.is-visible {
+            display: block;
+        }
+
         .dynamic-chart-container .chart-footer {
             display: flex;
             justify-content: space-between;
@@ -142,6 +179,10 @@ function ensureLegacyDynamicChartStyles() {
             }
 
             .dynamic-chart-container .chart-filter-group label {
+                font-size: 10px;
+            }
+
+            .dynamic-chart-container .chart-inline-error {
                 font-size: 10px;
             }
 
@@ -456,27 +497,190 @@ function initChart(container) {
         return;
     }
 
-    // Store the chart instance on the container so we can destroy it when updating
     container._chartInstance = null;
+    container._fetchController = null;
+    container._fetchRequestId = 0;
+
+    ensureChartScaffold(container, templateSlug, district);
     
     fetchAndRenderChart(container, templateSlug, district, null, null);
 }
 
-function fetchAndRenderChart(container, templateSlug, district, filter1Value, filter2Value) {
-    if (container._chartInstance) {
-        container._chartInstance.destroy();
-        container._chartInstance = null;
+function ensureChartScaffold(container, templateSlug, district) {
+    if (container._chartDom) {
+        return container._chartDom;
     }
 
-    // Show loading
-    const loadingHtml = `
-        <div class="loading-indicator text-center text-gray-500 py-10 flex flex-col items-center justify-center">
-            <i class="fas fa-spinner fa-spin fa-2x mb-3 text-[#863F3F]"></i>
-            <p class="text-sm">Loading chart data...</p>
+    container.innerHTML = `
+        <div class="chart-container">
+            <div class="chart-filter-controls" style="display: none;"></div>
+            <div class="chart-inline-error" role="status" aria-live="polite"></div>
+            <div class="chart-canvas-container">
+                <canvas></canvas>
+                <div class="chart-canvas-loading" aria-hidden="true">Updating chart...</div>
+            </div>
+            <div class="chart-footer" style="display: none;">
+                <div class="chart-info">
+                    <div class="chart-additional-info" style="display: none;"></div>
+                    <div class="chart-description" style="display: none;"></div>
+                </div>
+            </div>
         </div>
     `;
 
-    container.innerHTML = loadingHtml;
+    const chartDom = {
+        chartContainer: container.querySelector('.chart-container'),
+        filterControls: container.querySelector('.chart-filter-controls'),
+        inlineError: container.querySelector('.chart-inline-error'),
+        canvas: container.querySelector('canvas'),
+        loadingOverlay: container.querySelector('.chart-canvas-loading'),
+        footer: container.querySelector('.chart-footer'),
+        additionalInfo: container.querySelector('.chart-additional-info'),
+        sourceDescription: container.querySelector('.chart-description'),
+    };
+
+    chartDom.filterControls.addEventListener('change', (event) => {
+        const target = event.target;
+        if (!(target instanceof HTMLSelectElement) || !target.classList.contains('dynamic-chart-filter')) {
+            return;
+        }
+
+        const f1Select = chartDom.filterControls.querySelector('.dynamic-chart-filter[data-filter="1"]');
+        const f2Select = chartDom.filterControls.querySelector('.dynamic-chart-filter[data-filter="2"]');
+
+        fetchAndRenderChart(
+            container,
+            templateSlug,
+            district,
+            f1Select ? f1Select.value : null,
+            f2Select ? f2Select.value : null,
+        );
+    });
+
+    container._chartDom = chartDom;
+    return chartDom;
+}
+
+function setChartLoading(container, isLoading) {
+    const chartDom = container._chartDom;
+    if (!chartDom) {
+        return;
+    }
+
+    if (chartDom.loadingOverlay) {
+        chartDom.loadingOverlay.classList.toggle('is-visible', isLoading);
+    }
+
+    if (chartDom.filterControls) {
+        chartDom.filterControls.classList.toggle('is-loading', isLoading);
+        const selects = chartDom.filterControls.querySelectorAll('.dynamic-chart-filter');
+        selects.forEach((select) => {
+            select.disabled = isLoading;
+        });
+    }
+}
+
+function showChartInlineError(container, message) {
+    const chartDom = container._chartDom;
+    if (!chartDom || !chartDom.inlineError) {
+        return;
+    }
+
+    chartDom.inlineError.textContent = message;
+    chartDom.inlineError.classList.add('is-visible');
+}
+
+function clearChartInlineError(container) {
+    const chartDom = container._chartDom;
+    if (!chartDom || !chartDom.inlineError) {
+        return;
+    }
+
+    chartDom.inlineError.textContent = '';
+    chartDom.inlineError.classList.remove('is-visible');
+}
+
+function buildFilterGroupHtml(filter, filterNumber) {
+    const options = Array.isArray(filter.options)
+        ? filter.options.filter((opt) => opt !== null && opt !== undefined && String(opt).trim() !== '')
+        : [];
+
+    const selectedValue = String(filter.selected ?? '');
+    const optionHtml = options.map((opt) => {
+        const stringValue = String(opt);
+        const selected = stringValue === selectedValue ? 'selected' : '';
+        return `<option value="${escapeHtml(stringValue)}" ${selected}>${escapeHtml(stringValue)}</option>`;
+    }).join('');
+
+    return `
+        <div class="chart-filter-group">
+            <label>${escapeHtml(filter.label || filter.column || 'Filter')}:</label>
+            <select class="dynamic-chart-filter" data-filter="${filterNumber}">
+                <option value="">All</option>
+                ${optionHtml}
+            </select>
+        </div>
+    `;
+}
+
+function updateChartFilters(container, data) {
+    const chartDom = container._chartDom;
+    if (!chartDom || !chartDom.filterControls) {
+        return;
+    }
+
+    const showFilters = data.showFilters !== false;
+    const filterGroups = [];
+
+    if (showFilters && data.filters && data.filters.filter1 && Array.isArray(data.filters.filter1.options) && data.filters.filter1.options.length > 0) {
+        filterGroups.push(buildFilterGroupHtml(data.filters.filter1, 1));
+    }
+
+    if (showFilters && data.filters && data.filters.filter2 && Array.isArray(data.filters.filter2.options) && data.filters.filter2.options.length > 0) {
+        filterGroups.push(buildFilterGroupHtml(data.filters.filter2, 2));
+    }
+
+    chartDom.filterControls.innerHTML = filterGroups.join('');
+    chartDom.filterControls.style.display = filterGroups.length > 0 ? 'flex' : 'none';
+}
+
+function updateChartFooter(container, data) {
+    const chartDom = container._chartDom;
+    if (!chartDom || !chartDom.footer) {
+        return;
+    }
+
+    const sourceText = getSourceText(data.description);
+    const additionalInfo = String(data.additionalInfo || '').trim();
+    const hasFooter = Boolean(sourceText || additionalInfo);
+
+    chartDom.footer.style.display = hasFooter ? 'flex' : 'none';
+
+    if (chartDom.additionalInfo) {
+        chartDom.additionalInfo.textContent = additionalInfo;
+        chartDom.additionalInfo.style.display = additionalInfo ? 'block' : 'none';
+    }
+
+    if (chartDom.sourceDescription) {
+        chartDom.sourceDescription.textContent = sourceText;
+        chartDom.sourceDescription.style.display = sourceText ? 'block' : 'none';
+    }
+}
+
+function fetchAndRenderChart(container, templateSlug, district, filter1Value, filter2Value) {
+    ensureChartScaffold(container, templateSlug, district);
+
+    if (container._fetchController) {
+        container._fetchController.abort();
+    }
+
+    const controller = new AbortController();
+    container._fetchController = controller;
+    container._fetchRequestId = (container._fetchRequestId || 0) + 1;
+    const requestId = container._fetchRequestId;
+
+    setChartLoading(container, true);
+    clearChartInlineError(container);
 
     let url = `/api/chart-data/${templateSlug}/?district=${encodeURIComponent(district)}`;
     if (filter1Value !== null && filter1Value !== undefined && filter1Value !== '') {
@@ -486,7 +690,7 @@ function fetchAndRenderChart(container, templateSlug, district, filter1Value, fi
         url += `&filter2=${encodeURIComponent(filter2Value)}`;
     }
 
-    fetch(url)
+    fetch(url, { signal: controller.signal })
         .then(response => {
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
@@ -494,104 +698,88 @@ function fetchAndRenderChart(container, templateSlug, district, filter1Value, fi
             return response.json();
         })
         .then(data => {
+            if (requestId !== container._fetchRequestId) {
+                return;
+            }
             if (data.error) {
                 throw new Error(data.error);
             }
-            renderChartUI(container, data, templateSlug, district);
+            renderChartUI(container, data);
         })
         .catch(error => {
+            if (error.name === 'AbortError' || requestId !== container._fetchRequestId) {
+                return;
+            }
             console.error('Error fetching chart data:', error);
-            container.innerHTML = `
-                <div class="text-center text-red-500 py-10">
-                    <i class="fas fa-exclamation-triangle fa-2x mb-2"></i>
-                    <p>Failed to load chart data</p>
-                    <p class="text-sm text-gray-500">${error.message}</p>
-                </div>
-            `;
+            showChartInlineError(container, `Failed to update chart data: ${error.message}`);
+        })
+        .finally(() => {
+            if (requestId === container._fetchRequestId) {
+                setChartLoading(container, false);
+            }
+            if (container._fetchController === controller) {
+                container._fetchController = null;
+            }
         });
 }
 
-function renderChartUI(container, data, templateSlug, district) {
+function renderChartUI(container, data) {
     if (!data || !data.chartData || !Array.isArray(data.chartData.datasets)) {
-        container.innerHTML = `
-            <div class="text-center text-red-500 py-10">
-                <i class="fas fa-exclamation-triangle fa-2x mb-2"></i>
-                <p>Chart data is unavailable.</p>
-            </div>
-        `;
+        showChartInlineError(container, 'Chart data is unavailable.');
         return;
     }
 
-    const showFilters = data.showFilters !== false;
-    let filtersHtml = '';
+    updateChartFilters(container, data);
+    updateChartFooter(container, data);
+    clearChartInlineError(container);
 
-    if (showFilters && data.filters && data.filters.filter1 && Array.isArray(data.filters.filter1.options) && data.filters.filter1.options.length > 0) {
-        const filter = data.filters.filter1;
-        filtersHtml += `
-            <div class="chart-filter-group">
-                <label>${escapeHtml(filter.label || filter.column || 'Filter')}:</label>
-                <select class="dynamic-chart-filter" data-filter="1">
-                    <option value="">All</option>
-                    ${filter.options.map(opt => {
-                        const selected = String(opt) === String(filter.selected || '') ? 'selected' : '';
-                        return `<option value="${escapeHtml(opt)}" ${selected}>${escapeHtml(opt)}</option>`;
-                    }).join('')}
-                </select>
-            </div>
-        `;
+    const config = prepareChartConfig(data);
+    const chartDom = container._chartDom;
+
+    if (!chartDom || !chartDom.canvas) {
+        return;
     }
 
-    if (showFilters && data.filters && data.filters.filter2 && Array.isArray(data.filters.filter2.options) && data.filters.filter2.options.length > 0) {
-        const filter2 = data.filters.filter2;
-        filtersHtml += `
-            <div class="chart-filter-group">
-                <label>${escapeHtml(filter2.label || filter2.column || 'Filter')}:</label>
-                <select class="dynamic-chart-filter" data-filter="2">
-                    <option value="">All</option>
-                    ${filter2.options.map(opt => {
-                        const selected = String(opt) === String(filter2.selected || '') ? 'selected' : '';
-                        return `<option value="${escapeHtml(opt)}" ${selected}>${escapeHtml(opt)}</option>`;
-                    }).join('')}
-                </select>
-            </div>
-        `;
+    if (container._chartInstance && container._chartInstance.config.type !== config.type) {
+        container._chartInstance.destroy();
+        container._chartInstance = null;
     }
 
-    const sourceText = getSourceText(data.description);
-    const hasFooter = Boolean(sourceText || data.additionalInfo);
+    if (!container._chartInstance) {
+        const ctx = chartDom.canvas.getContext('2d');
+        container._chartInstance = new Chart(ctx, config);
+        if (config.type === 'line') {
+            refreshLineHoverPluginState(container._chartInstance);
+        }
+        return;
+    }
 
-    container.innerHTML = `
-        <div class="chart-container">
-            ${filtersHtml ? `<div class="chart-filter-controls">${filtersHtml}</div>` : ''}
-            <div class="chart-canvas-container">
-                <canvas></canvas>
-            </div>
-            ${hasFooter ? `
-                <div class="chart-footer">
-                    <div class="chart-info">
-                        ${data.additionalInfo ? `<div class="chart-additional-info">${escapeHtml(data.additionalInfo)}</div>` : ''}
-                        ${sourceText ? `<div class="chart-description">${escapeHtml(sourceText)}</div>` : ''}
-                    </div>
-                </div>
-            ` : ''}
-        </div>
-    `;
+    container._chartInstance.config.plugins = config.plugins;
+    container._chartInstance.options = config.options;
+    container._chartInstance.data = config.data;
 
-    const filterSelects = container.querySelectorAll('.dynamic-chart-filter');
-    filterSelects.forEach(select => {
-        select.addEventListener('change', () => {
-            const f1Select = container.querySelector('.dynamic-chart-filter[data-filter="1"]');
-            const f2Select = container.querySelector('.dynamic-chart-filter[data-filter="2"]');
-            const f1Val = f1Select ? f1Select.value : null;
-            const f2Val = f2Select ? f2Select.value : null;
-            fetchAndRenderChart(container, templateSlug, district, f1Val, f2Val);
-        });
-    });
+    if (config.type === 'line') {
+        refreshLineHoverPluginState(container._chartInstance);
+    }
 
-    // Render the Chart.js canvas
-    const canvas = container.querySelector('canvas');
-    const ctx = canvas.getContext('2d');
+    container._chartInstance.update();
+}
 
+function refreshLineHoverPluginState(chart) {
+    const datasets = Array.isArray(chart.data && chart.data.datasets) ? chart.data.datasets : [];
+
+    chart.$origStyles = datasets.map(ds => ({
+        borderColor: ds.borderColor,
+        backgroundColor: ds.backgroundColor,
+        borderWidth: ds.borderWidth ?? 2,
+        pointRadius: ds.pointRadius ?? 0,
+        pointHoverRadius: ds.pointHoverRadius ?? 4,
+    }));
+    chart.$activeDataset = null;
+    chart.$activeIndex = null;
+}
+
+function prepareChartConfig(data) {
     // Prepare chart options based on data.chartOptions and defaults
     const isPercentStacked = data.chartType === 'percentStackedBar';
     const isStacked = data.chartType === 'stackedBar' || data.chartType === 'percentStackedBar';
@@ -599,9 +787,11 @@ function renderChartUI(container, data, templateSlug, district) {
     const isMobile = window.innerWidth < 768;
     const chartDataForRender = isPercentStacked ? convertToPercentStackedData(data.chartData) : data.chartData;
 
+    const datasets = Array.isArray(chartDataForRender.datasets) ? chartDataForRender.datasets : [];
+
     // Process datasets for legacy line/bar chart styling
-    if (chartDataForRender && chartDataForRender.datasets) {
-        chartDataForRender.datasets.forEach(dataset => {
+    if (datasets.length > 0) {
+        datasets.forEach(dataset => {
             if (trueChartType === 'line') {
                 dataset.fill = false;
                 dataset.tension = 0;
@@ -646,7 +836,7 @@ function renderChartUI(container, data, templateSlug, district) {
             responsive: true,
             maintainAspectRatio: false,
             animation: {
-                duration: 40,
+                duration: CHART_UPDATE_ANIMATION_DURATION,
                 easing: "easeInOutQuart",
             },
             interaction: {
@@ -656,7 +846,7 @@ function renderChartUI(container, data, templateSlug, district) {
             },
             plugins: {
                 legend: {
-                    display: chartDataForRender.datasets.length > 1,
+                    display: datasets.length > 1,
                     position: 'top',
                     align: 'center',
                     labels: {
@@ -800,7 +990,12 @@ function renderChartUI(container, data, templateSlug, district) {
         if (x >= chartArea.left && x <= chartArea.right) {
             const canvasPosition = Chart.helpers.getRelativePosition(event, chart);
             const dataX = chart.scales.x.getValueForPixel(canvasPosition.x);
-            const labels = chart.data.labels;
+            const labels = chart.data.labels || [];
+
+            if (!labels.length) {
+                chart.tooltip.setActiveElements([], { x: 0, y: 0 });
+                return;
+            }
 
             let closestIndex = 0;
             let minDistance = Math.abs(dataX - 0);
@@ -833,8 +1028,7 @@ function renderChartUI(container, data, templateSlug, district) {
         }
     };
 
-    // Create the chart
-    container._chartInstance = new Chart(ctx, config);
+    return config;
 }
 
 function applyResponsiveTickSettings(options, chartData, isMobile, isPercentStacked) {
