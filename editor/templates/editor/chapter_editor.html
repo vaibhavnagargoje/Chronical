@@ -212,6 +212,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <i class="fas fa-plus"></i>
                 </button>
                 <div class="insertion-menu">
+                    <div class="px-2 py-1 mb-1 border-b border-gray-100 flex items-center justify-between" onclick="event.stopPropagation()">
+                        <span class="text-xs text-gray-500 font-medium">Count:</span>
+                        <input type="number" class="insertion-count-input w-12 text-xs border border-gray-200 rounded px-1 py-0.5" value="1" min="1" max="50">
+                    </div>
                     <div class="insertion-menu-item" data-block-type="heading1">Heading 1</div>
                     <div class="insertion-menu-item" data-block-type="heading2">Heading 2</div>
                     <div class="insertion-menu-item" data-block-type="heading3">Heading 3</div>
@@ -240,7 +244,11 @@ document.addEventListener('DOMContentLoaded', () => {
             item.addEventListener('click', (e) => {
                 e.stopPropagation();
                 const blockType = item.dataset.blockType;
-                insertNewBlock(blockType, insertionPoint);
+                const countInput = insertionPoint.querySelector('.insertion-count-input');
+                let count = parseInt(countInput ? countInput.value : 1) || 1;
+                if (count < 1) count = 1;
+                
+                insertNewBlock(blockType, insertionPoint, count);
                 closeAllInsertionMenus();
             });
         });
@@ -256,51 +264,61 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Insert a new block at the specified insertion point
-    function insertNewBlock(blockType, insertionPoint) {
+    function insertNewBlock(blockType, insertionPoint, count = 1) {
         if (!blockTemplatesHTML[blockType]) {
             console.error('Template not found for block type:', blockType);
             return;
         }
         
-        // Create new block element
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = blockTemplatesHTML[blockType].trim();
-        const newBlock = tempDiv.firstElementChild;
-        
-        // Insert the new block after the insertion point
-        insertionPoint.insertAdjacentElement('afterend', newBlock);
+        let insertAfterElement = insertionPoint;
+        let lastNewBlock = null;
 
-        // Initialize TinyMCE for paragraph blocks
-        if (blockType === 'paragraph') {
-            const newTextArea = newBlock.querySelector('.tinymce-editor');
-            if (newTextArea) {
-                // Small delay to ensure DOM is properly rendered
-                setTimeout(() => {
-                    initializeTinyMCE(newTextArea);
-                }, 100);
+        for (let i = 0; i < count; i++) {
+            // Create new block element
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = blockTemplatesHTML[blockType].trim();
+            const newBlock = tempDiv.firstElementChild;
+            
+            // Insert the new block after the insertion point (or previously inserted block)
+            insertAfterElement.insertAdjacentElement('afterend', newBlock);
+
+            // Initialize TinyMCE for paragraph blocks
+            if (blockType === 'paragraph') {
+                const newTextArea = newBlock.querySelector('.tinymce-editor');
+                if (newTextArea) {
+                    // Small delay to ensure DOM is properly rendered
+                    setTimeout(() => {
+                        initializeTinyMCE(newTextArea);
+                    }, 100);
+                }
+            } 
+            else if (blockType === 'image' || blockType === 'chart') {
+                uniqueIdCounter++;
+                const fileInput = newBlock.querySelector('input[type="file"]');
+                if (fileInput) { 
+                    fileInput.name = `new-file-${uniqueIdCounter}`; 
+                }
             }
-        } 
-        else if (blockType === 'image' || blockType === 'chart') {
-            uniqueIdCounter++;
-            const fileInput = newBlock.querySelector('input[type="file"]');
-            if (fileInput) { 
-                fileInput.name = `new-file-${uniqueIdCounter}`; 
+            else if (blockType === 'bulk-chart') {
+                uniqueIdCounter++;
+                const fileInput = newBlock.querySelector('input[type="file"]');
+                if (fileInput) { 
+                    fileInput.name = `new-file-${uniqueIdCounter}`; 
+                    // Initialize drag and drop for the new bulk chart block
+                    initializeBulkChartDragDrop(newBlock, uniqueIdCounter);
+                }
             }
-        }
-        else if (blockType === 'bulk-chart') {
-            uniqueIdCounter++;
-            const fileInput = newBlock.querySelector('input[type="file"]');
-            if (fileInput) { 
-                fileInput.name = `new-file-${uniqueIdCounter}`; 
-                // Initialize drag and drop for the new bulk chart block
-                initializeBulkChartDragDrop(newBlock, uniqueIdCounter);
-            }
+            
+            insertAfterElement = newBlock;
+            lastNewBlock = newBlock;
         }
 
-        // Scroll to the new block
-        newBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        // Scroll to the last new block
+        if (lastNewBlock) {
+            lastNewBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
         
-        // Update insertion points to include one after the new block
+        // Update insertion points to include ones after the new blocks
         updateInsertionPoints();
     }
     
