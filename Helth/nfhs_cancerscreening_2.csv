@@ -1,0 +1,208 @@
+District,Year,Select Examination,Percentage
+Ahilyanagar,2015,Cervix Examination,52.8
+Ahilyanagar,2015,Breast Examination,28.9
+Ahilyanagar,2015,Oral Cavity Examination,14.4
+Akola,2015,Cervix Examination,36.2
+Akola,2015,Breast Examination,9.7
+Akola,2015,Oral Cavity Examination,11
+Amravati,2015,Cervix Examination,45.2
+Amravati,2015,Breast Examination,20.3
+Amravati,2015,Oral Cavity Examination,14.9
+Beed,2015,Cervix Examination,52.1
+Beed,2015,Breast Examination,37.4
+Beed,2015,Oral Cavity Examination,34
+Bhandara,2015,Cervix Examination,56.2
+Bhandara,2015,Breast Examination,36.2
+Bhandara,2015,Oral Cavity Examination,14.4
+Buldhana,2015,Cervix Examination,49.7
+Buldhana,2015,Breast Examination,21.7
+Buldhana,2015,Oral Cavity Examination,7.8
+Chandrapur,2015,Cervix Examination,44.4
+Chandrapur,2015,Breast Examination,12.2
+Chandrapur,2015,Oral Cavity Examination,11.3
+Chhatrapati Sambhaji Nagar,2015,Cervix Examination,50.6
+Chhatrapati Sambhaji Nagar,2015,Breast Examination,25.7
+Chhatrapati Sambhaji Nagar,2015,Oral Cavity Examination,9.3
+Dharashiv,2015,Cervix Examination,49.1
+Dharashiv,2015,Breast Examination,20.4
+Dharashiv,2015,Oral Cavity Examination,12.4
+Dhule,2015,Cervix Examination,47.7
+Dhule,2015,Breast Examination,38.1
+Dhule,2015,Oral Cavity Examination,35.6
+Gadchiroli,2015,Cervix Examination,50.1
+Gadchiroli,2015,Breast Examination,34
+Gadchiroli,2015,Oral Cavity Examination,36.6
+Gondia,2015,Cervix Examination,48.6
+Gondia,2015,Breast Examination,18
+Gondia,2015,Oral Cavity Examination,10.6
+Hingoli,2015,Cervix Examination,46
+Hingoli,2015,Breast Examination,23.8
+Hingoli,2015,Oral Cavity Examination,19.7
+Jalgaon,2015,Cervix Examination,43.4
+Jalgaon,2015,Breast Examination,23.5
+Jalgaon,2015,Oral Cavity Examination,13.9
+Jalna,2015,Cervix Examination,49.9
+Jalna,2015,Breast Examination,27.3
+Jalna,2015,Oral Cavity Examination,22.2
+Kolhapur,2015,Cervix Examination,39.8
+Kolhapur,2015,Breast Examination,18.8
+Kolhapur,2015,Oral Cavity Examination,11.7
+Latur,2015,Cervix Examination,46.8
+Latur,2015,Breast Examination,14.6
+Latur,2015,Oral Cavity Examination,11.8
+Mumbai,2015,Cervix Examination,39.4
+Mumbai,2015,Breast Examination,26.5
+Mumbai,2015,Oral Cavity Examination,18.6
+Nagpur,2015,Cervix Examination,38
+Nagpur,2015,Breast Examination,14.8
+Nagpur,2015,Oral Cavity Examination,13
+Nanded,2015,Cervix Examination,45.3
+Nanded,2015,Breast Examination,15.8
+Nanded,2015,Oral Cavity Examination,13.9
+Nandurbar,2015,Cervix Examination,36.9
+Nandurbar,2015,Breast Examination,23.2
+Nandurbar,2015,Oral Cavity Examination,13.9
+Nashik,2015,Cervix Examination,30.9
+Nashik,2015,Breast Examination,10.7
+Nashik,2015,Oral Cavity Examination,9.4
+Parbhani,2015,Cervix Examination,55.7
+Parbhani,2015,Breast Examination,27.4
+Parbhani,2015,Oral Cavity Examination,8.9
+Pune,2015,Cervix Examination,37.2
+Pune,2015,Breast Examination,14.9
+Pune,2015,Oral Cavity Examination,12.6
+Raigad,2015,Cervix Examination,34.9
+Raigad,2015,Breast Examination,16.4
+Raigad,2015,Oral Cavity Examination,18.5
+Ratnagiri,2015,Cervix Examination,37.6
+Ratnagiri,2015,Breast Examination,15.6
+Ratnagiri,2015,Oral Cavity Examination,15.7
+Sangli,2015,Cervix Examination,38.3
+Sangli,2015,Breast Examination,21.2
+Sangli,2015,Oral Cavity Examination,16.2
+Satara,2015,Cervix Examination,33.7
+Satara,2015,Breast Examination,13.6
+Satara,2015,Oral Cavity Examination,10.5
+Sindhudurg,2015,Cervix Examination,37.7
+Sindhudurg,2015,Breast Examination,27.2
+Sindhudurg,2015,Oral Cavity Examination,23.9
+Solapur,2015,Cervix Examination,45.7
+Solapur,2015,Breast Examination,13.3
+Solapur,2015,Oral Cavity Examination,11.6
+Thane,2015,Cervix Examination,43.8
+Thane,2015,Breast Examination,25.6
+Thane,2015,Oral Cavity Examination,14.4
+Wardha,2015,Cervix Examination,43.1
+Wardha,2015,Breast Examination,12.9
+Wardha,2015,Oral Cavity Examination,11.3
+Washim,2015,Cervix Examination,49.9
+Washim,2015,Breast Examination,31.6
+Washim,2015,Oral Cavity Examination,29.2
+Yavatmal,2015,Cervix Examination,49.2
+Yavatmal,2015,Breast Examination,35.9
+Yavatmal,2015,Oral Cavity Examination,30.9
+Ahilyanagar,2019,Cervix Examination,1.3
+Ahilyanagar,2019,Breast Examination,0.2
+Ahilyanagar,2019,Oral Cavity Examination,0.2
+Akola,2019,Cervix Examination,1.6
+Akola,2019,Breast Examination,0.4
+Akola,2019,Oral Cavity Examination,0.5
+Amravati,2019,Cervix Examination,0.5
+Amravati,2019,Breast Examination,0
+Amravati,2019,Oral Cavity Examination,0
+Beed,2019,Cervix Examination,4.9
+Beed,2019,Breast Examination,0.8
+Beed,2019,Oral Cavity Examination,0.7
+Bhandara,2019,Cervix Examination,0.7
+Bhandara,2019,Breast Examination,0.2
+Bhandara,2019,Oral Cavity Examination,0.5
+Buldhana,2019,Cervix Examination,1
+Buldhana,2019,Breast Examination,0
+Buldhana,2019,Oral Cavity Examination,0.4
+Chandrapur,2019,Cervix Examination,1
+Chandrapur,2019,Breast Examination,0.2
+Chandrapur,2019,Oral Cavity Examination,0.6
+Chhatrapati Sambhaji Nagar,2019,Cervix Examination,2.5
+Chhatrapati Sambhaji Nagar,2019,Breast Examination,0.2
+Chhatrapati Sambhaji Nagar,2019,Oral Cavity Examination,0.4
+Dharashiv,2019,Cervix Examination,4.3
+Dharashiv,2019,Breast Examination,0
+Dharashiv,2019,Oral Cavity Examination,0
+Dhule,2019,Cervix Examination,0.4
+Dhule,2019,Breast Examination,0.3
+Dhule,2019,Oral Cavity Examination,0.2
+Gadchiroli,2019,Cervix Examination,1.1
+Gadchiroli,2019,Breast Examination,0.9
+Gadchiroli,2019,Oral Cavity Examination,0.9
+Gondia,2019,Cervix Examination,0.9
+Gondia,2019,Breast Examination,0.6
+Gondia,2019,Oral Cavity Examination,0.7
+Hingoli,2019,Cervix Examination,0.7
+Hingoli,2019,Breast Examination,0
+Hingoli,2019,Oral Cavity Examination,0
+Jalgaon,2019,Cervix Examination,0.4
+Jalgaon,2019,Breast Examination,0.3
+Jalgaon,2019,Oral Cavity Examination,0.2
+Jalna,2019,Cervix Examination,2.4
+Jalna,2019,Breast Examination,1.4
+Jalna,2019,Oral Cavity Examination,1.9
+Kolhapur,2019,Cervix Examination,9.4
+Kolhapur,2019,Breast Examination,8.5
+Kolhapur,2019,Oral Cavity Examination,8.3
+Latur,2019,Cervix Examination,0.9
+Latur,2019,Breast Examination,0.5
+Latur,2019,Oral Cavity Examination,0.4
+Mumbai,2019,Cervix Examination,1
+Mumbai,2019,Breast Examination,0
+Mumbai,2019,Oral Cavity Examination,0.2
+Nagpur,2019,Cervix Examination,0.8
+Nagpur,2019,Breast Examination,0.3
+Nagpur,2019,Oral Cavity Examination,0.7
+Nanded,2019,Cervix Examination,1.6
+Nanded,2019,Breast Examination,0.2
+Nanded,2019,Oral Cavity Examination,0
+Nandurbar,2019,Cervix Examination,0.7
+Nandurbar,2019,Breast Examination,1.2
+Nandurbar,2019,Oral Cavity Examination,0.4
+Nashik,2019,Cervix Examination,0.4
+Nashik,2019,Breast Examination,0.2
+Nashik,2019,Oral Cavity Examination,0
+Palghar,2019,Cervix Examination,1.8
+Palghar,2019,Breast Examination,0.4
+Palghar,2019,Oral Cavity Examination,0
+Parbhani,2019,Cervix Examination,3.8
+Parbhani,2019,Breast Examination,0.9
+Parbhani,2019,Oral Cavity Examination,0.2
+Pune,2019,Cervix Examination,3.8
+Pune,2019,Breast Examination,2.3
+Pune,2019,Oral Cavity Examination,0.9
+Raigad,2019,Cervix Examination,1
+Raigad,2019,Breast Examination,0.6
+Raigad,2019,Oral Cavity Examination,0.4
+Ratnagiri,2019,Cervix Examination,1.4
+Ratnagiri,2019,Breast Examination,0.4
+Ratnagiri,2019,Oral Cavity Examination,0.2
+Sangli,2019,Cervix Examination,3.9
+Sangli,2019,Breast Examination,4.1
+Sangli,2019,Oral Cavity Examination,4.1
+Satara,2019,Cervix Examination,1.2
+Satara,2019,Breast Examination,0.5
+Satara,2019,Oral Cavity Examination,0
+Sindhudurg,2019,Cervix Examination,1.9
+Sindhudurg,2019,Breast Examination,0.6
+Sindhudurg,2019,Oral Cavity Examination,0.4
+Solapur,2019,Cervix Examination,1.3
+Solapur,2019,Breast Examination,0.3
+Solapur,2019,Oral Cavity Examination,0.5
+Thane,2019,Cervix Examination,4.3
+Thane,2019,Breast Examination,3
+Thane,2019,Oral Cavity Examination,4.8
+Wardha,2019,Cervix Examination,0.4
+Wardha,2019,Breast Examination,0
+Wardha,2019,Oral Cavity Examination,0.2
+Washim,2019,Cervix Examination,1.8
+Washim,2019,Breast Examination,0.6
+Washim,2019,Oral Cavity Examination,0.9
+Yavatmal,2019,Cervix Examination,1.3
+Yavatmal,2019,Breast Examination,0.4
+Yavatmal,2019,Oral Cavity Examination,0

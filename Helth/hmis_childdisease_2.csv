@@ -1,0 +1,1156 @@
+District,Year,Select Disease,Number
+Ahilyanagar,2019,Pneumonia,172
+Ahilyanagar,2019,Asthma,76
+Ahilyanagar,2019,Sepsis,217
+Ahilyanagar,2019,Diphtheria,0
+Ahilyanagar,2019,Pertussis,0
+Ahilyanagar,2019,Tetanus Neonatorum,0
+Ahilyanagar,2019,Tuberculosis (TB),16
+Ahilyanagar,2019,Acute Flaccid Paralysis (AFP),14
+Ahilyanagar,2019,Measles,3
+Ahilyanagar,2019,Malaria,0
+Ahilyanagar,2019,Diarrhea,3322
+Akola,2019,Pneumonia,383
+Akola,2019,Asthma,27
+Akola,2019,Sepsis,26
+Akola,2019,Diphtheria,0
+Akola,2019,Pertussis,0
+Akola,2019,Tetanus Neonatorum,0
+Akola,2019,Tuberculosis (TB),15
+Akola,2019,Acute Flaccid Paralysis (AFP),9
+Akola,2019,Measles,14
+Akola,2019,Malaria,3
+Akola,2019,Diarrhea,444
+Amravati,2019,Pneumonia,1022
+Amravati,2019,Asthma,230
+Amravati,2019,Sepsis,148
+Amravati,2019,Diphtheria,0
+Amravati,2019,Pertussis,0
+Amravati,2019,Tetanus Neonatorum,0
+Amravati,2019,Tuberculosis (TB),26
+Amravati,2019,Acute Flaccid Paralysis (AFP),1
+Amravati,2019,Measles,18
+Amravati,2019,Malaria,0
+Amravati,2019,Diarrhea,1628
+Beed,2019,Pneumonia,763
+Beed,2019,Asthma,52
+Beed,2019,Sepsis,58
+Beed,2019,Diphtheria,0
+Beed,2019,Pertussis,0
+Beed,2019,Tetanus Neonatorum,0
+Beed,2019,Tuberculosis (TB),8
+Beed,2019,Acute Flaccid Paralysis (AFP),0
+Beed,2019,Measles,24
+Beed,2019,Malaria,0
+Beed,2019,Diarrhea,4998
+Bhandara,2019,Pneumonia,129
+Bhandara,2019,Asthma,23
+Bhandara,2019,Sepsis,39
+Bhandara,2019,Diphtheria,0
+Bhandara,2019,Pertussis,0
+Bhandara,2019,Tetanus Neonatorum,0
+Bhandara,2019,Tuberculosis (TB),3
+Bhandara,2019,Acute Flaccid Paralysis (AFP),13
+Bhandara,2019,Measles,6
+Bhandara,2019,Malaria,0
+Bhandara,2019,Diarrhea,822
+Buldhana,2019,Pneumonia,348
+Buldhana,2019,Asthma,52
+Buldhana,2019,Sepsis,28
+Buldhana,2019,Diphtheria,0
+Buldhana,2019,Pertussis,0
+Buldhana,2019,Tetanus Neonatorum,0
+Buldhana,2019,Tuberculosis (TB),6
+Buldhana,2019,Acute Flaccid Paralysis (AFP),18
+Buldhana,2019,Measles,14
+Buldhana,2019,Malaria,1
+Buldhana,2019,Diarrhea,858
+Chandrapur,2019,Pneumonia,212
+Chandrapur,2019,Asthma,79
+Chandrapur,2019,Sepsis,196
+Chandrapur,2019,Diphtheria,0
+Chandrapur,2019,Pertussis,0
+Chandrapur,2019,Tetanus Neonatorum,0
+Chandrapur,2019,Tuberculosis (TB),59
+Chandrapur,2019,Acute Flaccid Paralysis (AFP),39
+Chandrapur,2019,Measles,21
+Chandrapur,2019,Malaria,14
+Chandrapur,2019,Diarrhea,414
+Chhatrapati Sambhaji Nagar,2019,Pneumonia,0
+Chhatrapati Sambhaji Nagar,2019,Asthma,0
+Chhatrapati Sambhaji Nagar,2019,Sepsis,0
+Chhatrapati Sambhaji Nagar,2019,Diphtheria,0
+Chhatrapati Sambhaji Nagar,2019,Pertussis,0
+Chhatrapati Sambhaji Nagar,2019,Tetanus Neonatorum,0
+Chhatrapati Sambhaji Nagar,2019,Tuberculosis (TB),0
+Chhatrapati Sambhaji Nagar,2019,Acute Flaccid Paralysis (AFP),0
+Chhatrapati Sambhaji Nagar,2019,Measles,0
+Chhatrapati Sambhaji Nagar,2019,Malaria,0
+Chhatrapati Sambhaji Nagar,2019,Diarrhea,6458
+Dharashiv,2019,Pneumonia,94
+Dharashiv,2019,Asthma,20
+Dharashiv,2019,Sepsis,30
+Dharashiv,2019,Diphtheria,0
+Dharashiv,2019,Pertussis,0
+Dharashiv,2019,Tetanus Neonatorum,0
+Dharashiv,2019,Tuberculosis (TB),6
+Dharashiv,2019,Acute Flaccid Paralysis (AFP),0
+Dharashiv,2019,Measles,15
+Dharashiv,2019,Malaria,4
+Dharashiv,2019,Diarrhea,3059
+Dhule,2019,Pneumonia,244
+Dhule,2019,Asthma,68
+Dhule,2019,Sepsis,36
+Dhule,2019,Diphtheria,0
+Dhule,2019,Pertussis,0
+Dhule,2019,Tetanus Neonatorum,0
+Dhule,2019,Tuberculosis (TB),39
+Dhule,2019,Acute Flaccid Paralysis (AFP),2
+Dhule,2019,Measles,0
+Dhule,2019,Malaria,14
+Dhule,2019,Diarrhea,257
+Gadchiroli,2019,Pneumonia,426
+Gadchiroli,2019,Asthma,48
+Gadchiroli,2019,Sepsis,460
+Gadchiroli,2019,Diphtheria,0
+Gadchiroli,2019,Pertussis,1
+Gadchiroli,2019,Tetanus Neonatorum,0
+Gadchiroli,2019,Tuberculosis (TB),34
+Gadchiroli,2019,Acute Flaccid Paralysis (AFP),5
+Gadchiroli,2019,Measles,14
+Gadchiroli,2019,Malaria,451
+Gadchiroli,2019,Diarrhea,1751
+Gondia,2019,Pneumonia,91
+Gondia,2019,Asthma,8
+Gondia,2019,Sepsis,4
+Gondia,2019,Diphtheria,1
+Gondia,2019,Pertussis,0
+Gondia,2019,Tetanus Neonatorum,0
+Gondia,2019,Tuberculosis (TB),5
+Gondia,2019,Acute Flaccid Paralysis (AFP),19
+Gondia,2019,Measles,27
+Gondia,2019,Malaria,3
+Gondia,2019,Diarrhea,133
+Hingoli,2019,Pneumonia,82
+Hingoli,2019,Asthma,14
+Hingoli,2019,Sepsis,11
+Hingoli,2019,Diphtheria,0
+Hingoli,2019,Pertussis,0
+Hingoli,2019,Tetanus Neonatorum,0
+Hingoli,2019,Tuberculosis (TB),0
+Hingoli,2019,Acute Flaccid Paralysis (AFP),1
+Hingoli,2019,Measles,24
+Hingoli,2019,Malaria,0
+Hingoli,2019,Diarrhea,781
+Jalgaon,2019,Pneumonia,293
+Jalgaon,2019,Asthma,40
+Jalgaon,2019,Sepsis,14
+Jalgaon,2019,Diphtheria,0
+Jalgaon,2019,Pertussis,0
+Jalgaon,2019,Tetanus Neonatorum,0
+Jalgaon,2019,Tuberculosis (TB),21
+Jalgaon,2019,Acute Flaccid Paralysis (AFP),8
+Jalgaon,2019,Measles,0
+Jalgaon,2019,Malaria,22
+Jalgaon,2019,Diarrhea,798
+Jalna,2019,Pneumonia,107
+Jalna,2019,Asthma,2
+Jalna,2019,Sepsis,18
+Jalna,2019,Diphtheria,0
+Jalna,2019,Pertussis,0
+Jalna,2019,Tetanus Neonatorum,0
+Jalna,2019,Tuberculosis (TB),2
+Jalna,2019,Acute Flaccid Paralysis (AFP),0
+Jalna,2019,Measles,10
+Jalna,2019,Malaria,3
+Jalna,2019,Diarrhea,458
+Kolhapur,2019,Pneumonia,481
+Kolhapur,2019,Asthma,78
+Kolhapur,2019,Sepsis,27
+Kolhapur,2019,Diphtheria,0
+Kolhapur,2019,Pertussis,0
+Kolhapur,2019,Tetanus Neonatorum,0
+Kolhapur,2019,Tuberculosis (TB),28
+Kolhapur,2019,Acute Flaccid Paralysis (AFP),20
+Kolhapur,2019,Measles,1
+Kolhapur,2019,Malaria,3
+Kolhapur,2019,Diarrhea,1579
+Latur,2019,Pneumonia,103
+Latur,2019,Asthma,39
+Latur,2019,Sepsis,130
+Latur,2019,Diphtheria,0
+Latur,2019,Pertussis,0
+Latur,2019,Tetanus Neonatorum,0
+Latur,2019,Tuberculosis (TB),26
+Latur,2019,Acute Flaccid Paralysis (AFP),3
+Latur,2019,Measles,0
+Latur,2019,Malaria,6
+Latur,2019,Diarrhea,1775
+Mumbai,2019,Pneumonia,5685
+Mumbai,2019,Asthma,3939
+Mumbai,2019,Sepsis,1433
+Mumbai,2019,Diphtheria,4
+Mumbai,2019,Pertussis,2
+Mumbai,2019,Tetanus Neonatorum,0
+Mumbai,2019,Tuberculosis (TB),797
+Mumbai,2019,Acute Flaccid Paralysis (AFP),165
+Mumbai,2019,Measles,60
+Mumbai,2019,Malaria,633
+Mumbai,2019,Diarrhea,22795
+Nagpur,2019,Pneumonia,286
+Nagpur,2019,Asthma,155
+Nagpur,2019,Sepsis,88
+Nagpur,2019,Diphtheria,0
+Nagpur,2019,Pertussis,0
+Nagpur,2019,Tetanus Neonatorum,0
+Nagpur,2019,Tuberculosis (TB),10
+Nagpur,2019,Acute Flaccid Paralysis (AFP),2
+Nagpur,2019,Measles,14
+Nagpur,2019,Malaria,37
+Nagpur,2019,Diarrhea,4784
+Nanded,2019,Pneumonia,124
+Nanded,2019,Asthma,144
+Nanded,2019,Sepsis,73
+Nanded,2019,Diphtheria,0
+Nanded,2019,Pertussis,0
+Nanded,2019,Tetanus Neonatorum,0
+Nanded,2019,Tuberculosis (TB),16
+Nanded,2019,Acute Flaccid Paralysis (AFP),0
+Nanded,2019,Measles,15
+Nanded,2019,Malaria,1
+Nanded,2019,Diarrhea,1567
+Nandurbar,2019,Pneumonia,434
+Nandurbar,2019,Asthma,61
+Nandurbar,2019,Sepsis,81
+Nandurbar,2019,Diphtheria,1
+Nandurbar,2019,Pertussis,0
+Nandurbar,2019,Tetanus Neonatorum,1
+Nandurbar,2019,Tuberculosis (TB),34
+Nandurbar,2019,Acute Flaccid Paralysis (AFP),15
+Nandurbar,2019,Measles,2
+Nandurbar,2019,Malaria,20
+Nandurbar,2019,Diarrhea,1717
+Nashik,2019,Pneumonia,805
+Nashik,2019,Asthma,251
+Nashik,2019,Sepsis,212
+Nashik,2019,Diphtheria,0
+Nashik,2019,Pertussis,0
+Nashik,2019,Tetanus Neonatorum,0
+Nashik,2019,Tuberculosis (TB),90
+Nashik,2019,Acute Flaccid Paralysis (AFP),18
+Nashik,2019,Measles,9
+Nashik,2019,Malaria,26
+Nashik,2019,Diarrhea,3809
+Palghar,2019,Pneumonia,745
+Palghar,2019,Asthma,302
+Palghar,2019,Sepsis,174
+Palghar,2019,Diphtheria,0
+Palghar,2019,Pertussis,0
+Palghar,2019,Tetanus Neonatorum,0
+Palghar,2019,Tuberculosis (TB),83
+Palghar,2019,Acute Flaccid Paralysis (AFP),33
+Palghar,2019,Measles,11
+Palghar,2019,Malaria,25
+Palghar,2019,Diarrhea,3163
+Parbhani,2019,Pneumonia,39
+Parbhani,2019,Asthma,47
+Parbhani,2019,Sepsis,7
+Parbhani,2019,Diphtheria,0
+Parbhani,2019,Pertussis,0
+Parbhani,2019,Tetanus Neonatorum,0
+Parbhani,2019,Tuberculosis (TB),2
+Parbhani,2019,Acute Flaccid Paralysis (AFP),9
+Parbhani,2019,Measles,27
+Parbhani,2019,Malaria,1
+Parbhani,2019,Diarrhea,417
+Pune,2019,Pneumonia,1834
+Pune,2019,Asthma,1071
+Pune,2019,Sepsis,458
+Pune,2019,Diphtheria,1
+Pune,2019,Pertussis,0
+Pune,2019,Tetanus Neonatorum,0
+Pune,2019,Tuberculosis (TB),231
+Pune,2019,Acute Flaccid Paralysis (AFP),40
+Pune,2019,Measles,83
+Pune,2019,Malaria,239
+Pune,2019,Diarrhea,13825
+Raigad,2019,Pneumonia,24
+Raigad,2019,Asthma,49
+Raigad,2019,Sepsis,2
+Raigad,2019,Diphtheria,3
+Raigad,2019,Pertussis,0
+Raigad,2019,Tetanus Neonatorum,0
+Raigad,2019,Tuberculosis (TB),12
+Raigad,2019,Acute Flaccid Paralysis (AFP),0
+Raigad,2019,Measles,3
+Raigad,2019,Malaria,33
+Raigad,2019,Diarrhea,1165
+Ratnagiri,2019,Pneumonia,150
+Ratnagiri,2019,Asthma,24
+Ratnagiri,2019,Sepsis,19
+Ratnagiri,2019,Diphtheria,0
+Ratnagiri,2019,Pertussis,0
+Ratnagiri,2019,Tetanus Neonatorum,0
+Ratnagiri,2019,Tuberculosis (TB),9
+Ratnagiri,2019,Acute Flaccid Paralysis (AFP),6
+Ratnagiri,2019,Measles,1
+Ratnagiri,2019,Malaria,1
+Ratnagiri,2019,Diarrhea,1378
+Sangli,2019,Pneumonia,502
+Sangli,2019,Asthma,22
+Sangli,2019,Sepsis,6
+Sangli,2019,Diphtheria,0
+Sangli,2019,Pertussis,0
+Sangli,2019,Tetanus Neonatorum,0
+Sangli,2019,Tuberculosis (TB),16
+Sangli,2019,Acute Flaccid Paralysis (AFP),8
+Sangli,2019,Measles,7
+Sangli,2019,Malaria,0
+Sangli,2019,Diarrhea,1572
+Satara,2019,Pneumonia,265
+Satara,2019,Asthma,2
+Satara,2019,Sepsis,50
+Satara,2019,Diphtheria,0
+Satara,2019,Pertussis,0
+Satara,2019,Tetanus Neonatorum,0
+Satara,2019,Tuberculosis (TB),28
+Satara,2019,Acute Flaccid Paralysis (AFP),12
+Satara,2019,Measles,19
+Satara,2019,Malaria,14
+Satara,2019,Diarrhea,1694
+Sindhudurg,2019,Pneumonia,64
+Sindhudurg,2019,Asthma,10
+Sindhudurg,2019,Sepsis,7
+Sindhudurg,2019,Diphtheria,0
+Sindhudurg,2019,Pertussis,0
+Sindhudurg,2019,Tetanus Neonatorum,0
+Sindhudurg,2019,Tuberculosis (TB),6
+Sindhudurg,2019,Acute Flaccid Paralysis (AFP),5
+Sindhudurg,2019,Measles,1
+Sindhudurg,2019,Malaria,1
+Sindhudurg,2019,Diarrhea,383
+Solapur,2019,Pneumonia,561
+Solapur,2019,Asthma,86
+Solapur,2019,Sepsis,109
+Solapur,2019,Diphtheria,0
+Solapur,2019,Pertussis,0
+Solapur,2019,Tetanus Neonatorum,0
+Solapur,2019,Tuberculosis (TB),58
+Solapur,2019,Acute Flaccid Paralysis (AFP),15
+Solapur,2019,Measles,20
+Solapur,2019,Malaria,22
+Solapur,2019,Diarrhea,1174
+Thane,2019,Pneumonia,355
+Thane,2019,Asthma,54
+Thane,2019,Sepsis,240
+Thane,2019,Diphtheria,0
+Thane,2019,Pertussis,0
+Thane,2019,Tetanus Neonatorum,0
+Thane,2019,Tuberculosis (TB),76
+Thane,2019,Acute Flaccid Paralysis (AFP),47
+Thane,2019,Measles,83
+Thane,2019,Malaria,292
+Thane,2019,Diarrhea,3787
+Wardha,2019,Pneumonia,107
+Wardha,2019,Asthma,17
+Wardha,2019,Sepsis,5
+Wardha,2019,Diphtheria,0
+Wardha,2019,Pertussis,0
+Wardha,2019,Tetanus Neonatorum,0
+Wardha,2019,Tuberculosis (TB),8
+Wardha,2019,Acute Flaccid Paralysis (AFP),0
+Wardha,2019,Measles,0
+Wardha,2019,Malaria,0
+Wardha,2019,Diarrhea,609
+Washim,2019,Pneumonia,50
+Washim,2019,Asthma,9
+Washim,2019,Sepsis,4
+Washim,2019,Diphtheria,0
+Washim,2019,Pertussis,0
+Washim,2019,Tetanus Neonatorum,0
+Washim,2019,Tuberculosis (TB),3
+Washim,2019,Acute Flaccid Paralysis (AFP),0
+Washim,2019,Measles,0
+Washim,2019,Malaria,0
+Washim,2019,Diarrhea,648
+Yavatmal,2019,Pneumonia,52
+Yavatmal,2019,Asthma,12
+Yavatmal,2019,Sepsis,22
+Yavatmal,2019,Diphtheria,0
+Yavatmal,2019,Pertussis,0
+Yavatmal,2019,Tetanus Neonatorum,0
+Yavatmal,2019,Tuberculosis (TB),7
+Yavatmal,2019,Acute Flaccid Paralysis (AFP),2
+Yavatmal,2019,Measles,3
+Yavatmal,2019,Malaria,2
+Yavatmal,2019,Diarrhea,506
+Ahilyanagar,2018,Pneumonia,564
+Ahilyanagar,2018,Asthma,72
+Ahilyanagar,2018,Sepsis,89
+Ahilyanagar,2018,Diphtheria,0
+Ahilyanagar,2018,Pertussis,0
+Ahilyanagar,2018,Tetanus Neonatorum,0
+Ahilyanagar,2018,Tuberculosis (TB),32
+Ahilyanagar,2018,Acute Flaccid Paralysis (AFP),47
+Ahilyanagar,2018,Measles,21
+Ahilyanagar,2018,Malaria,0
+Ahilyanagar,2018,Diarrhea,5393
+Akola,2018,Pneumonia,130
+Akola,2018,Asthma,10
+Akola,2018,Sepsis,70
+Akola,2018,Diphtheria,0
+Akola,2018,Pertussis,0
+Akola,2018,Tetanus Neonatorum,0
+Akola,2018,Tuberculosis (TB),12
+Akola,2018,Acute Flaccid Paralysis (AFP),0
+Akola,2018,Measles,51
+Akola,2018,Malaria,6
+Akola,2018,Diarrhea,247
+Amravati,2018,Pneumonia,1283
+Amravati,2018,Asthma,286
+Amravati,2018,Sepsis,213
+Amravati,2018,Diphtheria,0
+Amravati,2018,Pertussis,0
+Amravati,2018,Tetanus Neonatorum,0
+Amravati,2018,Tuberculosis (TB),21
+Amravati,2018,Acute Flaccid Paralysis (AFP),8
+Amravati,2018,Measles,52
+Amravati,2018,Malaria,1
+Amravati,2018,Diarrhea,2077
+Beed,2018,Pneumonia,245
+Beed,2018,Asthma,87
+Beed,2018,Sepsis,48
+Beed,2018,Diphtheria,0
+Beed,2018,Pertussis,0
+Beed,2018,Tetanus Neonatorum,0
+Beed,2018,Tuberculosis (TB),30
+Beed,2018,Acute Flaccid Paralysis (AFP),4
+Beed,2018,Measles,112
+Beed,2018,Malaria,31
+Beed,2018,Diarrhea,2954
+Bhandara,2018,Pneumonia,145
+Bhandara,2018,Asthma,35
+Bhandara,2018,Sepsis,122
+Bhandara,2018,Diphtheria,0
+Bhandara,2018,Pertussis,0
+Bhandara,2018,Tetanus Neonatorum,0
+Bhandara,2018,Tuberculosis (TB),10
+Bhandara,2018,Acute Flaccid Paralysis (AFP),3
+Bhandara,2018,Measles,7
+Bhandara,2018,Malaria,0
+Bhandara,2018,Diarrhea,3007
+Buldhana,2018,Pneumonia,279
+Buldhana,2018,Asthma,40
+Buldhana,2018,Sepsis,70
+Buldhana,2018,Diphtheria,0
+Buldhana,2018,Pertussis,0
+Buldhana,2018,Tetanus Neonatorum,0
+Buldhana,2018,Tuberculosis (TB),2
+Buldhana,2018,Acute Flaccid Paralysis (AFP),12
+Buldhana,2018,Measles,46
+Buldhana,2018,Malaria,0
+Buldhana,2018,Diarrhea,718
+Chandrapur,2018,Pneumonia,1033
+Chandrapur,2018,Asthma,340
+Chandrapur,2018,Sepsis,138
+Chandrapur,2018,Diphtheria,0
+Chandrapur,2018,Pertussis,0
+Chandrapur,2018,Tetanus Neonatorum,1
+Chandrapur,2018,Tuberculosis (TB),19
+Chandrapur,2018,Acute Flaccid Paralysis (AFP),9
+Chandrapur,2018,Measles,37
+Chandrapur,2018,Malaria,47
+Chandrapur,2018,Diarrhea,750
+Chhatrapati Sambhaji Nagar,2018,Pneumonia,0
+Chhatrapati Sambhaji Nagar,2018,Asthma,0
+Chhatrapati Sambhaji Nagar,2018,Sepsis,0
+Chhatrapati Sambhaji Nagar,2018,Diphtheria,0
+Chhatrapati Sambhaji Nagar,2018,Pertussis,0
+Chhatrapati Sambhaji Nagar,2018,Tetanus Neonatorum,0
+Chhatrapati Sambhaji Nagar,2018,Tuberculosis (TB),0
+Chhatrapati Sambhaji Nagar,2018,Acute Flaccid Paralysis (AFP),0
+Chhatrapati Sambhaji Nagar,2018,Measles,0
+Chhatrapati Sambhaji Nagar,2018,Malaria,0
+Chhatrapati Sambhaji Nagar,2018,Diarrhea,3181
+Dharashiv,2018,Pneumonia,127
+Dharashiv,2018,Asthma,17
+Dharashiv,2018,Sepsis,18
+Dharashiv,2018,Diphtheria,0
+Dharashiv,2018,Pertussis,0
+Dharashiv,2018,Tetanus Neonatorum,0
+Dharashiv,2018,Tuberculosis (TB),0
+Dharashiv,2018,Acute Flaccid Paralysis (AFP),0
+Dharashiv,2018,Measles,31
+Dharashiv,2018,Malaria,0
+Dharashiv,2018,Diarrhea,2815
+Dhule,2018,Pneumonia,335
+Dhule,2018,Asthma,115
+Dhule,2018,Sepsis,70
+Dhule,2018,Diphtheria,0
+Dhule,2018,Pertussis,0
+Dhule,2018,Tetanus Neonatorum,0
+Dhule,2018,Tuberculosis (TB),31
+Dhule,2018,Acute Flaccid Paralysis (AFP),5
+Dhule,2018,Measles,5
+Dhule,2018,Malaria,37
+Dhule,2018,Diarrhea,464
+Gadchiroli,2018,Pneumonia,554
+Gadchiroli,2018,Asthma,105
+Gadchiroli,2018,Sepsis,450
+Gadchiroli,2018,Diphtheria,0
+Gadchiroli,2018,Pertussis,0
+Gadchiroli,2018,Tetanus Neonatorum,0
+Gadchiroli,2018,Tuberculosis (TB),13
+Gadchiroli,2018,Acute Flaccid Paralysis (AFP),6
+Gadchiroli,2018,Measles,11
+Gadchiroli,2018,Malaria,263
+Gadchiroli,2018,Diarrhea,1705
+Gondia,2018,Pneumonia,37
+Gondia,2018,Asthma,31
+Gondia,2018,Sepsis,22
+Gondia,2018,Diphtheria,0
+Gondia,2018,Pertussis,0
+Gondia,2018,Tetanus Neonatorum,0
+Gondia,2018,Tuberculosis (TB),8
+Gondia,2018,Acute Flaccid Paralysis (AFP),9
+Gondia,2018,Measles,5
+Gondia,2018,Malaria,0
+Gondia,2018,Diarrhea,209
+Hingoli,2018,Pneumonia,98
+Hingoli,2018,Asthma,76
+Hingoli,2018,Sepsis,105
+Hingoli,2018,Diphtheria,0
+Hingoli,2018,Pertussis,0
+Hingoli,2018,Tetanus Neonatorum,0
+Hingoli,2018,Tuberculosis (TB),4
+Hingoli,2018,Acute Flaccid Paralysis (AFP),7
+Hingoli,2018,Measles,19
+Hingoli,2018,Malaria,0
+Hingoli,2018,Diarrhea,666
+Jalgaon,2018,Pneumonia,262
+Jalgaon,2018,Asthma,32
+Jalgaon,2018,Sepsis,47
+Jalgaon,2018,Diphtheria,0
+Jalgaon,2018,Pertussis,0
+Jalgaon,2018,Tetanus Neonatorum,0
+Jalgaon,2018,Tuberculosis (TB),22
+Jalgaon,2018,Acute Flaccid Paralysis (AFP),7
+Jalgaon,2018,Measles,17
+Jalgaon,2018,Malaria,17
+Jalgaon,2018,Diarrhea,619
+Jalna,2018,Pneumonia,21
+Jalna,2018,Asthma,0
+Jalna,2018,Sepsis,45
+Jalna,2018,Diphtheria,0
+Jalna,2018,Pertussis,0
+Jalna,2018,Tetanus Neonatorum,0
+Jalna,2018,Tuberculosis (TB),11
+Jalna,2018,Acute Flaccid Paralysis (AFP),0
+Jalna,2018,Measles,19
+Jalna,2018,Malaria,7
+Jalna,2018,Diarrhea,686
+Kolhapur,2018,Pneumonia,343
+Kolhapur,2018,Asthma,37
+Kolhapur,2018,Sepsis,33
+Kolhapur,2018,Diphtheria,1
+Kolhapur,2018,Pertussis,0
+Kolhapur,2018,Tetanus Neonatorum,0
+Kolhapur,2018,Tuberculosis (TB),19
+Kolhapur,2018,Acute Flaccid Paralysis (AFP),6
+Kolhapur,2018,Measles,21
+Kolhapur,2018,Malaria,6
+Kolhapur,2018,Diarrhea,1343
+Latur,2018,Pneumonia,268
+Latur,2018,Asthma,14
+Latur,2018,Sepsis,111
+Latur,2018,Diphtheria,0
+Latur,2018,Pertussis,0
+Latur,2018,Tetanus Neonatorum,0
+Latur,2018,Tuberculosis (TB),10
+Latur,2018,Acute Flaccid Paralysis (AFP),2
+Latur,2018,Measles,13
+Latur,2018,Malaria,3
+Latur,2018,Diarrhea,1652
+Mumbai,2018,Pneumonia,5185
+Mumbai,2018,Asthma,2435
+Mumbai,2018,Sepsis,918
+Mumbai,2018,Diphtheria,6
+Mumbai,2018,Pertussis,7
+Mumbai,2018,Tetanus Neonatorum,3
+Mumbai,2018,Tuberculosis (TB),816
+Mumbai,2018,Acute Flaccid Paralysis (AFP),161
+Mumbai,2018,Measles,632
+Mumbai,2018,Malaria,706
+Mumbai,2018,Diarrhea,18462
+Nagpur,2018,Pneumonia,147
+Nagpur,2018,Asthma,45
+Nagpur,2018,Sepsis,63
+Nagpur,2018,Diphtheria,0
+Nagpur,2018,Pertussis,0
+Nagpur,2018,Tetanus Neonatorum,0
+Nagpur,2018,Tuberculosis (TB),13
+Nagpur,2018,Acute Flaccid Paralysis (AFP),0
+Nagpur,2018,Measles,15
+Nagpur,2018,Malaria,11
+Nagpur,2018,Diarrhea,3311
+Nanded,2018,Pneumonia,264
+Nanded,2018,Asthma,158
+Nanded,2018,Sepsis,26
+Nanded,2018,Diphtheria,0
+Nanded,2018,Pertussis,0
+Nanded,2018,Tetanus Neonatorum,0
+Nanded,2018,Tuberculosis (TB),41
+Nanded,2018,Acute Flaccid Paralysis (AFP),0
+Nanded,2018,Measles,14
+Nanded,2018,Malaria,21
+Nanded,2018,Diarrhea,3256
+Nandurbar,2018,Pneumonia,416
+Nandurbar,2018,Asthma,107
+Nandurbar,2018,Sepsis,95
+Nandurbar,2018,Diphtheria,0
+Nandurbar,2018,Pertussis,0
+Nandurbar,2018,Tetanus Neonatorum,3
+Nandurbar,2018,Tuberculosis (TB),39
+Nandurbar,2018,Acute Flaccid Paralysis (AFP),7
+Nandurbar,2018,Measles,31
+Nandurbar,2018,Malaria,17
+Nandurbar,2018,Diarrhea,1513
+Nashik,2018,Pneumonia,665
+Nashik,2018,Asthma,318
+Nashik,2018,Sepsis,148
+Nashik,2018,Diphtheria,0
+Nashik,2018,Pertussis,0
+Nashik,2018,Tetanus Neonatorum,0
+Nashik,2018,Tuberculosis (TB),65
+Nashik,2018,Acute Flaccid Paralysis (AFP),28
+Nashik,2018,Measles,39
+Nashik,2018,Malaria,39
+Nashik,2018,Diarrhea,3818
+Palghar,2018,Pneumonia,695
+Palghar,2018,Asthma,485
+Palghar,2018,Sepsis,53
+Palghar,2018,Diphtheria,0
+Palghar,2018,Pertussis,0
+Palghar,2018,Tetanus Neonatorum,0
+Palghar,2018,Tuberculosis (TB),46
+Palghar,2018,Acute Flaccid Paralysis (AFP),14
+Palghar,2018,Measles,17
+Palghar,2018,Malaria,3
+Palghar,2018,Diarrhea,2689
+Parbhani,2018,Pneumonia,39
+Parbhani,2018,Asthma,54
+Parbhani,2018,Sepsis,13
+Parbhani,2018,Diphtheria,0
+Parbhani,2018,Pertussis,0
+Parbhani,2018,Tetanus Neonatorum,0
+Parbhani,2018,Tuberculosis (TB),8
+Parbhani,2018,Acute Flaccid Paralysis (AFP),3
+Parbhani,2018,Measles,129
+Parbhani,2018,Malaria,5
+Parbhani,2018,Diarrhea,280
+Pune,2018,Pneumonia,1880
+Pune,2018,Asthma,1100
+Pune,2018,Sepsis,569
+Pune,2018,Diphtheria,4
+Pune,2018,Pertussis,5
+Pune,2018,Tetanus Neonatorum,0
+Pune,2018,Tuberculosis (TB),300
+Pune,2018,Acute Flaccid Paralysis (AFP),25
+Pune,2018,Measles,390
+Pune,2018,Malaria,217
+Pune,2018,Diarrhea,17904
+Raigad,2018,Pneumonia,5
+Raigad,2018,Asthma,132
+Raigad,2018,Sepsis,0
+Raigad,2018,Diphtheria,0
+Raigad,2018,Pertussis,0
+Raigad,2018,Tetanus Neonatorum,0
+Raigad,2018,Tuberculosis (TB),10
+Raigad,2018,Acute Flaccid Paralysis (AFP),0
+Raigad,2018,Measles,11
+Raigad,2018,Malaria,14
+Raigad,2018,Diarrhea,1131
+Ratnagiri,2018,Pneumonia,284
+Ratnagiri,2018,Asthma,92
+Ratnagiri,2018,Sepsis,38
+Ratnagiri,2018,Diphtheria,0
+Ratnagiri,2018,Pertussis,0
+Ratnagiri,2018,Tetanus Neonatorum,0
+Ratnagiri,2018,Tuberculosis (TB),6
+Ratnagiri,2018,Acute Flaccid Paralysis (AFP),4
+Ratnagiri,2018,Measles,20
+Ratnagiri,2018,Malaria,1
+Ratnagiri,2018,Diarrhea,1395
+Sangli,2018,Pneumonia,413
+Sangli,2018,Asthma,6
+Sangli,2018,Sepsis,27
+Sangli,2018,Diphtheria,0
+Sangli,2018,Pertussis,0
+Sangli,2018,Tetanus Neonatorum,0
+Sangli,2018,Tuberculosis (TB),22
+Sangli,2018,Acute Flaccid Paralysis (AFP),7
+Sangli,2018,Measles,23
+Sangli,2018,Malaria,1
+Sangli,2018,Diarrhea,2100
+Satara,2018,Pneumonia,216
+Satara,2018,Asthma,5
+Satara,2018,Sepsis,48
+Satara,2018,Diphtheria,0
+Satara,2018,Pertussis,0
+Satara,2018,Tetanus Neonatorum,0
+Satara,2018,Tuberculosis (TB),10
+Satara,2018,Acute Flaccid Paralysis (AFP),0
+Satara,2018,Measles,28
+Satara,2018,Malaria,33
+Satara,2018,Diarrhea,2740
+Sindhudurg,2018,Pneumonia,44
+Sindhudurg,2018,Asthma,9
+Sindhudurg,2018,Sepsis,18
+Sindhudurg,2018,Diphtheria,0
+Sindhudurg,2018,Pertussis,0
+Sindhudurg,2018,Tetanus Neonatorum,0
+Sindhudurg,2018,Tuberculosis (TB),3
+Sindhudurg,2018,Acute Flaccid Paralysis (AFP),0
+Sindhudurg,2018,Measles,0
+Sindhudurg,2018,Malaria,1
+Sindhudurg,2018,Diarrhea,370
+Solapur,2018,Pneumonia,328
+Solapur,2018,Asthma,39
+Solapur,2018,Sepsis,24
+Solapur,2018,Diphtheria,0
+Solapur,2018,Pertussis,0
+Solapur,2018,Tetanus Neonatorum,0
+Solapur,2018,Tuberculosis (TB),23
+Solapur,2018,Acute Flaccid Paralysis (AFP),5
+Solapur,2018,Measles,66
+Solapur,2018,Malaria,70
+Solapur,2018,Diarrhea,1302
+Thane,2018,Pneumonia,539
+Thane,2018,Asthma,86
+Thane,2018,Sepsis,304
+Thane,2018,Diphtheria,0
+Thane,2018,Pertussis,0
+Thane,2018,Tetanus Neonatorum,0
+Thane,2018,Tuberculosis (TB),96
+Thane,2018,Acute Flaccid Paralysis (AFP),68
+Thane,2018,Measles,158
+Thane,2018,Malaria,1193
+Thane,2018,Diarrhea,4161
+Wardha,2018,Pneumonia,99
+Wardha,2018,Asthma,10
+Wardha,2018,Sepsis,20
+Wardha,2018,Diphtheria,0
+Wardha,2018,Pertussis,0
+Wardha,2018,Tetanus Neonatorum,0
+Wardha,2018,Tuberculosis (TB),8
+Wardha,2018,Acute Flaccid Paralysis (AFP),12
+Wardha,2018,Measles,3
+Wardha,2018,Malaria,0
+Wardha,2018,Diarrhea,662
+Washim,2018,Pneumonia,44
+Washim,2018,Asthma,1
+Washim,2018,Sepsis,4
+Washim,2018,Diphtheria,0
+Washim,2018,Pertussis,0
+Washim,2018,Tetanus Neonatorum,0
+Washim,2018,Tuberculosis (TB),2
+Washim,2018,Acute Flaccid Paralysis (AFP),2
+Washim,2018,Measles,1
+Washim,2018,Malaria,8
+Washim,2018,Diarrhea,282
+Yavatmal,2018,Pneumonia,91
+Yavatmal,2018,Asthma,34
+Yavatmal,2018,Sepsis,8
+Yavatmal,2018,Diphtheria,0
+Yavatmal,2018,Pertussis,0
+Yavatmal,2018,Tetanus Neonatorum,0
+Yavatmal,2018,Tuberculosis (TB),100
+Yavatmal,2018,Acute Flaccid Paralysis (AFP),16
+Yavatmal,2018,Measles,24
+Yavatmal,2018,Malaria,14
+Yavatmal,2018,Diarrhea,987
+Ahilyanagar,2017,Pneumonia,100
+Ahilyanagar,2017,Asthma,90
+Ahilyanagar,2017,Sepsis,55
+Ahilyanagar,2017,Diphtheria,0
+Ahilyanagar,2017,Pertussis,0
+Ahilyanagar,2017,Tetanus Neonatorum,0
+Ahilyanagar,2017,Tuberculosis (TB),0
+Ahilyanagar,2017,Acute Flaccid Paralysis (AFP),0
+Ahilyanagar,2017,Measles,19
+Ahilyanagar,2017,Malaria,0
+Ahilyanagar,2017,Diarrhea,2148
+Akola,2017,Pneumonia,85
+Akola,2017,Asthma,0
+Akola,2017,Sepsis,8
+Akola,2017,Diphtheria,0
+Akola,2017,Pertussis,0
+Akola,2017,Tetanus Neonatorum,0
+Akola,2017,Tuberculosis (TB),7
+Akola,2017,Acute Flaccid Paralysis (AFP),1
+Akola,2017,Measles,15
+Akola,2017,Malaria,8
+Akola,2017,Diarrhea,346
+Amravati,2017,Pneumonia,416
+Amravati,2017,Asthma,61
+Amravati,2017,Sepsis,213
+Amravati,2017,Diphtheria,2
+Amravati,2017,Pertussis,0
+Amravati,2017,Tetanus Neonatorum,0
+Amravati,2017,Tuberculosis (TB),48
+Amravati,2017,Acute Flaccid Paralysis (AFP),0
+Amravati,2017,Measles,24
+Amravati,2017,Malaria,7
+Amravati,2017,Diarrhea,987
+Beed,2017,Pneumonia,216
+Beed,2017,Asthma,20
+Beed,2017,Sepsis,14
+Beed,2017,Diphtheria,0
+Beed,2017,Pertussis,0
+Beed,2017,Tetanus Neonatorum,0
+Beed,2017,Tuberculosis (TB),22
+Beed,2017,Acute Flaccid Paralysis (AFP),4
+Beed,2017,Measles,331
+Beed,2017,Malaria,0
+Beed,2017,Diarrhea,2581
+Bhandara,2017,Pneumonia,40
+Bhandara,2017,Asthma,47
+Bhandara,2017,Sepsis,15
+Bhandara,2017,Diphtheria,0
+Bhandara,2017,Pertussis,0
+Bhandara,2017,Tetanus Neonatorum,0
+Bhandara,2017,Tuberculosis (TB),3
+Bhandara,2017,Acute Flaccid Paralysis (AFP),2
+Bhandara,2017,Measles,2
+Bhandara,2017,Malaria,0
+Bhandara,2017,Diarrhea,120
+Buldhana,2017,Pneumonia,318
+Buldhana,2017,Asthma,6
+Buldhana,2017,Sepsis,47
+Buldhana,2017,Diphtheria,0
+Buldhana,2017,Pertussis,0
+Buldhana,2017,Tetanus Neonatorum,0
+Buldhana,2017,Tuberculosis (TB),6
+Buldhana,2017,Acute Flaccid Paralysis (AFP),1
+Buldhana,2017,Measles,13
+Buldhana,2017,Malaria,0
+Buldhana,2017,Diarrhea,679
+Chandrapur,2017,Pneumonia,239
+Chandrapur,2017,Asthma,51
+Chandrapur,2017,Sepsis,155
+Chandrapur,2017,Diphtheria,0
+Chandrapur,2017,Pertussis,0
+Chandrapur,2017,Tetanus Neonatorum,0
+Chandrapur,2017,Tuberculosis (TB),21
+Chandrapur,2017,Acute Flaccid Paralysis (AFP),5
+Chandrapur,2017,Measles,11
+Chandrapur,2017,Malaria,43
+Chandrapur,2017,Diarrhea,523
+Chhatrapati Sambhaji Nagar,2017,Pneumonia,0
+Chhatrapati Sambhaji Nagar,2017,Asthma,0
+Chhatrapati Sambhaji Nagar,2017,Sepsis,0
+Chhatrapati Sambhaji Nagar,2017,Diphtheria,0
+Chhatrapati Sambhaji Nagar,2017,Pertussis,0
+Chhatrapati Sambhaji Nagar,2017,Tetanus Neonatorum,0
+Chhatrapati Sambhaji Nagar,2017,Tuberculosis (TB),0
+Chhatrapati Sambhaji Nagar,2017,Acute Flaccid Paralysis (AFP),0
+Chhatrapati Sambhaji Nagar,2017,Measles,0
+Chhatrapati Sambhaji Nagar,2017,Malaria,0
+Chhatrapati Sambhaji Nagar,2017,Diarrhea,2165
+Dharashiv,2017,Pneumonia,93
+Dharashiv,2017,Asthma,54
+Dharashiv,2017,Sepsis,23
+Dharashiv,2017,Diphtheria,0
+Dharashiv,2017,Pertussis,0
+Dharashiv,2017,Tetanus Neonatorum,0
+Dharashiv,2017,Tuberculosis (TB),4
+Dharashiv,2017,Acute Flaccid Paralysis (AFP),0
+Dharashiv,2017,Measles,23
+Dharashiv,2017,Malaria,4
+Dharashiv,2017,Diarrhea,2716
+Dhule,2017,Pneumonia,15
+Dhule,2017,Asthma,16
+Dhule,2017,Sepsis,83
+Dhule,2017,Diphtheria,0
+Dhule,2017,Pertussis,0
+Dhule,2017,Tetanus Neonatorum,0
+Dhule,2017,Tuberculosis (TB),18
+Dhule,2017,Acute Flaccid Paralysis (AFP),3
+Dhule,2017,Measles,7
+Dhule,2017,Malaria,15
+Dhule,2017,Diarrhea,505
+Gadchiroli,2017,Pneumonia,327
+Gadchiroli,2017,Asthma,62
+Gadchiroli,2017,Sepsis,174
+Gadchiroli,2017,Diphtheria,0
+Gadchiroli,2017,Pertussis,0
+Gadchiroli,2017,Tetanus Neonatorum,0
+Gadchiroli,2017,Tuberculosis (TB),14
+Gadchiroli,2017,Acute Flaccid Paralysis (AFP),7
+Gadchiroli,2017,Measles,0
+Gadchiroli,2017,Malaria,213
+Gadchiroli,2017,Diarrhea,1491
+Gondia,2017,Pneumonia,33
+Gondia,2017,Asthma,23
+Gondia,2017,Sepsis,9
+Gondia,2017,Diphtheria,0
+Gondia,2017,Pertussis,0
+Gondia,2017,Tetanus Neonatorum,0
+Gondia,2017,Tuberculosis (TB),4
+Gondia,2017,Acute Flaccid Paralysis (AFP),7
+Gondia,2017,Measles,5
+Gondia,2017,Malaria,4
+Gondia,2017,Diarrhea,458
+Hingoli,2017,Pneumonia,211
+Hingoli,2017,Asthma,70
+Hingoli,2017,Sepsis,43
+Hingoli,2017,Diphtheria,0
+Hingoli,2017,Pertussis,0
+Hingoli,2017,Tetanus Neonatorum,0
+Hingoli,2017,Tuberculosis (TB),5
+Hingoli,2017,Acute Flaccid Paralysis (AFP),6
+Hingoli,2017,Measles,58
+Hingoli,2017,Malaria,0
+Hingoli,2017,Diarrhea,664
+Jalgaon,2017,Pneumonia,186
+Jalgaon,2017,Asthma,17
+Jalgaon,2017,Sepsis,9
+Jalgaon,2017,Diphtheria,0
+Jalgaon,2017,Pertussis,0
+Jalgaon,2017,Tetanus Neonatorum,0
+Jalgaon,2017,Tuberculosis (TB),21
+Jalgaon,2017,Acute Flaccid Paralysis (AFP),0
+Jalgaon,2017,Measles,27
+Jalgaon,2017,Malaria,13
+Jalgaon,2017,Diarrhea,570
+Jalna,2017,Pneumonia,33
+Jalna,2017,Asthma,2
+Jalna,2017,Sepsis,0
+Jalna,2017,Diphtheria,0
+Jalna,2017,Pertussis,0
+Jalna,2017,Tetanus Neonatorum,0
+Jalna,2017,Tuberculosis (TB),0
+Jalna,2017,Acute Flaccid Paralysis (AFP),0
+Jalna,2017,Measles,35
+Jalna,2017,Malaria,7
+Jalna,2017,Diarrhea,649
+Kolhapur,2017,Pneumonia,71
+Kolhapur,2017,Asthma,6
+Kolhapur,2017,Sepsis,10
+Kolhapur,2017,Diphtheria,0
+Kolhapur,2017,Pertussis,0
+Kolhapur,2017,Tetanus Neonatorum,0
+Kolhapur,2017,Tuberculosis (TB),12
+Kolhapur,2017,Acute Flaccid Paralysis (AFP),4
+Kolhapur,2017,Measles,3
+Kolhapur,2017,Malaria,3
+Kolhapur,2017,Diarrhea,1596
+Latur,2017,Pneumonia,433
+Latur,2017,Asthma,8
+Latur,2017,Sepsis,125
+Latur,2017,Diphtheria,0
+Latur,2017,Pertussis,0
+Latur,2017,Tetanus Neonatorum,0
+Latur,2017,Tuberculosis (TB),17
+Latur,2017,Acute Flaccid Paralysis (AFP),0
+Latur,2017,Measles,33
+Latur,2017,Malaria,35
+Latur,2017,Diarrhea,2199
+Mumbai,2017,Pneumonia,4384
+Mumbai,2017,Asthma,1836
+Mumbai,2017,Sepsis,950
+Mumbai,2017,Diphtheria,5
+Mumbai,2017,Pertussis,4
+Mumbai,2017,Tetanus Neonatorum,5
+Mumbai,2017,Tuberculosis (TB),722
+Mumbai,2017,Acute Flaccid Paralysis (AFP),124
+Mumbai,2017,Measles,628
+Mumbai,2017,Malaria,1436
+Mumbai,2017,Diarrhea,11253
+Nagpur,2017,Pneumonia,167
+Nagpur,2017,Asthma,130
+Nagpur,2017,Sepsis,82
+Nagpur,2017,Diphtheria,2
+Nagpur,2017,Pertussis,0
+Nagpur,2017,Tetanus Neonatorum,0
+Nagpur,2017,Tuberculosis (TB),26
+Nagpur,2017,Acute Flaccid Paralysis (AFP),1
+Nagpur,2017,Measles,33
+Nagpur,2017,Malaria,12
+Nagpur,2017,Diarrhea,3819
+Nanded,2017,Pneumonia,71
+Nanded,2017,Asthma,40
+Nanded,2017,Sepsis,16
+Nanded,2017,Diphtheria,0
+Nanded,2017,Pertussis,0
+Nanded,2017,Tetanus Neonatorum,0
+Nanded,2017,Tuberculosis (TB),21
+Nanded,2017,Acute Flaccid Paralysis (AFP),3
+Nanded,2017,Measles,2
+Nanded,2017,Malaria,3
+Nanded,2017,Diarrhea,1960
+Nandurbar,2017,Pneumonia,357
+Nandurbar,2017,Asthma,47
+Nandurbar,2017,Sepsis,68
+Nandurbar,2017,Diphtheria,0
+Nandurbar,2017,Pertussis,0
+Nandurbar,2017,Tetanus Neonatorum,0
+Nandurbar,2017,Tuberculosis (TB),36
+Nandurbar,2017,Acute Flaccid Paralysis (AFP),15
+Nandurbar,2017,Measles,39
+Nandurbar,2017,Malaria,23
+Nandurbar,2017,Diarrhea,1094
+Nashik,2017,Pneumonia,638
+Nashik,2017,Asthma,280
+Nashik,2017,Sepsis,36
+Nashik,2017,Diphtheria,0
+Nashik,2017,Pertussis,0
+Nashik,2017,Tetanus Neonatorum,0
+Nashik,2017,Tuberculosis (TB),27
+Nashik,2017,Acute Flaccid Paralysis (AFP),10
+Nashik,2017,Measles,50
+Nashik,2017,Malaria,27
+Nashik,2017,Diarrhea,2985
+Palghar,2017,Pneumonia,603
+Palghar,2017,Asthma,127
+Palghar,2017,Sepsis,81
+Palghar,2017,Diphtheria,0
+Palghar,2017,Pertussis,0
+Palghar,2017,Tetanus Neonatorum,1
+Palghar,2017,Tuberculosis (TB),53
+Palghar,2017,Acute Flaccid Paralysis (AFP),16
+Palghar,2017,Measles,86
+Palghar,2017,Malaria,24
+Palghar,2017,Diarrhea,3863
+Parbhani,2017,Pneumonia,64
+Parbhani,2017,Asthma,49
+Parbhani,2017,Sepsis,14
+Parbhani,2017,Diphtheria,0
+Parbhani,2017,Pertussis,0
+Parbhani,2017,Tetanus Neonatorum,0
+Parbhani,2017,Tuberculosis (TB),7
+Parbhani,2017,Acute Flaccid Paralysis (AFP),8
+Parbhani,2017,Measles,258
+Parbhani,2017,Malaria,46
+Parbhani,2017,Diarrhea,503
+Pune,2017,Pneumonia,888
+Pune,2017,Asthma,636
+Pune,2017,Sepsis,243
+Pune,2017,Diphtheria,13
+Pune,2017,Pertussis,7
+Pune,2017,Tetanus Neonatorum,0
+Pune,2017,Tuberculosis (TB),90
+Pune,2017,Acute Flaccid Paralysis (AFP),34
+Pune,2017,Measles,219
+Pune,2017,Malaria,292
+Pune,2017,Diarrhea,14523
+Raigad,2017,Pneumonia,102
+Raigad,2017,Asthma,181
+Raigad,2017,Sepsis,49
+Raigad,2017,Diphtheria,0
+Raigad,2017,Pertussis,0
+Raigad,2017,Tetanus Neonatorum,0
+Raigad,2017,Tuberculosis (TB),40
+Raigad,2017,Acute Flaccid Paralysis (AFP),2
+Raigad,2017,Measles,44
+Raigad,2017,Malaria,124
+Raigad,2017,Diarrhea,2396
+Ratnagiri,2017,Pneumonia,228
+Ratnagiri,2017,Asthma,0
+Ratnagiri,2017,Sepsis,8
+Ratnagiri,2017,Diphtheria,0
+Ratnagiri,2017,Pertussis,0
+Ratnagiri,2017,Tetanus Neonatorum,0
+Ratnagiri,2017,Tuberculosis (TB),19
+Ratnagiri,2017,Acute Flaccid Paralysis (AFP),4
+Ratnagiri,2017,Measles,25
+Ratnagiri,2017,Malaria,2
+Ratnagiri,2017,Diarrhea,1203
+Sangli,2017,Pneumonia,158
+Sangli,2017,Asthma,10
+Sangli,2017,Sepsis,3
+Sangli,2017,Diphtheria,0
+Sangli,2017,Pertussis,0
+Sangli,2017,Tetanus Neonatorum,0
+Sangli,2017,Tuberculosis (TB),7
+Sangli,2017,Acute Flaccid Paralysis (AFP),16
+Sangli,2017,Measles,6
+Sangli,2017,Malaria,0
+Sangli,2017,Diarrhea,2351
+Satara,2017,Pneumonia,216
+Satara,2017,Asthma,43
+Satara,2017,Sepsis,71
+Satara,2017,Diphtheria,0
+Satara,2017,Pertussis,0
+Satara,2017,Tetanus Neonatorum,0
+Satara,2017,Tuberculosis (TB),24
+Satara,2017,Acute Flaccid Paralysis (AFP),2
+Satara,2017,Measles,40
+Satara,2017,Malaria,159
+Satara,2017,Diarrhea,4291
+Sindhudurg,2017,Pneumonia,7
+Sindhudurg,2017,Asthma,1
+Sindhudurg,2017,Sepsis,20
+Sindhudurg,2017,Diphtheria,0
+Sindhudurg,2017,Pertussis,0
+Sindhudurg,2017,Tetanus Neonatorum,0
+Sindhudurg,2017,Tuberculosis (TB),13
+Sindhudurg,2017,Acute Flaccid Paralysis (AFP),1
+Sindhudurg,2017,Measles,1
+Sindhudurg,2017,Malaria,11
+Sindhudurg,2017,Diarrhea,543
+Solapur,2017,Pneumonia,425
+Solapur,2017,Asthma,109
+Solapur,2017,Sepsis,164
+Solapur,2017,Diphtheria,0
+Solapur,2017,Pertussis,0
+Solapur,2017,Tetanus Neonatorum,0
+Solapur,2017,Tuberculosis (TB),55
+Solapur,2017,Acute Flaccid Paralysis (AFP),10
+Solapur,2017,Measles,65
+Solapur,2017,Malaria,5
+Solapur,2017,Diarrhea,588
+Thane,2017,Pneumonia,323
+Thane,2017,Asthma,42
+Thane,2017,Sepsis,137
+Thane,2017,Diphtheria,0
+Thane,2017,Pertussis,0
+Thane,2017,Tetanus Neonatorum,0
+Thane,2017,Tuberculosis (TB),106
+Thane,2017,Acute Flaccid Paralysis (AFP),58
+Thane,2017,Measles,280
+Thane,2017,Malaria,470
+Thane,2017,Diarrhea,3289
+Wardha,2017,Pneumonia,96
+Wardha,2017,Asthma,34
+Wardha,2017,Sepsis,24
+Wardha,2017,Diphtheria,0
+Wardha,2017,Pertussis,0
+Wardha,2017,Tetanus Neonatorum,0
+Wardha,2017,Tuberculosis (TB),1
+Wardha,2017,Acute Flaccid Paralysis (AFP),3
+Wardha,2017,Measles,10
+Wardha,2017,Malaria,2
+Wardha,2017,Diarrhea,884
+Washim,2017,Pneumonia,0
+Washim,2017,Asthma,2
+Washim,2017,Sepsis,0
+Washim,2017,Diphtheria,0
+Washim,2017,Pertussis,0
+Washim,2017,Tetanus Neonatorum,0
+Washim,2017,Tuberculosis (TB),9
+Washim,2017,Acute Flaccid Paralysis (AFP),1
+Washim,2017,Measles,3
+Washim,2017,Malaria,2
+Washim,2017,Diarrhea,20
+Yavatmal,2017,Pneumonia,59
+Yavatmal,2017,Asthma,85
+Yavatmal,2017,Sepsis,10
+Yavatmal,2017,Diphtheria,0
+Yavatmal,2017,Pertussis,0
+Yavatmal,2017,Tetanus Neonatorum,0
+Yavatmal,2017,Tuberculosis (TB),17
+Yavatmal,2017,Acute Flaccid Paralysis (AFP),1
+Yavatmal,2017,Measles,6
+Yavatmal,2017,Malaria,3
+Yavatmal,2017,Diarrhea,616

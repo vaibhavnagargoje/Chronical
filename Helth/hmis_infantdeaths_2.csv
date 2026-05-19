@@ -1,0 +1,2717 @@
+District,Year,Select Cause,Number
+Ahilyanagar,2019,Sepsis,3
+Ahilyanagar,2019,Asphyxia,5
+Ahilyanagar,2019,Pneumonia,3
+Ahilyanagar,2019,Diarrhea,0
+Ahilyanagar,2019,Fever,1
+Ahilyanagar,2019,Measles,0
+Akola,2019,Sepsis,13
+Akola,2019,Asphyxia,13
+Akola,2019,Pneumonia,8
+Akola,2019,Diarrhea,0
+Akola,2019,Fever,1
+Akola,2019,Measles,0
+Amravati,2019,Sepsis,9
+Amravati,2019,Asphyxia,9
+Amravati,2019,Pneumonia,3
+Amravati,2019,Diarrhea,1
+Amravati,2019,Fever,1
+Amravati,2019,Measles,0
+Beed,2019,Sepsis,16
+Beed,2019,Asphyxia,17
+Beed,2019,Pneumonia,4
+Beed,2019,Diarrhea,0
+Beed,2019,Fever,0
+Beed,2019,Measles,0
+Bhandara,2019,Sepsis,5
+Bhandara,2019,Asphyxia,10
+Bhandara,2019,Pneumonia,2
+Bhandara,2019,Diarrhea,0
+Bhandara,2019,Fever,2
+Bhandara,2019,Measles,0
+Buldhana,2019,Sepsis,5
+Buldhana,2019,Asphyxia,10
+Buldhana,2019,Pneumonia,2
+Buldhana,2019,Diarrhea,0
+Buldhana,2019,Fever,1
+Buldhana,2019,Measles,0
+Chandrapur,2019,Sepsis,14
+Chandrapur,2019,Asphyxia,15
+Chandrapur,2019,Pneumonia,3
+Chandrapur,2019,Diarrhea,1
+Chandrapur,2019,Fever,1
+Chandrapur,2019,Measles,0
+Chhatrapati Sambhaji Nagar,2019,Sepsis,11
+Chhatrapati Sambhaji Nagar,2019,Asphyxia,12
+Chhatrapati Sambhaji Nagar,2019,Pneumonia,5
+Chhatrapati Sambhaji Nagar,2019,Diarrhea,0
+Chhatrapati Sambhaji Nagar,2019,Fever,2
+Chhatrapati Sambhaji Nagar,2019,Measles,0
+Dharashiv,2019,Sepsis,1
+Dharashiv,2019,Asphyxia,9
+Dharashiv,2019,Pneumonia,3
+Dharashiv,2019,Diarrhea,0
+Dharashiv,2019,Fever,2
+Dharashiv,2019,Measles,0
+Dhule,2019,Sepsis,12
+Dhule,2019,Asphyxia,21
+Dhule,2019,Pneumonia,4
+Dhule,2019,Diarrhea,1
+Dhule,2019,Fever,1
+Dhule,2019,Measles,0
+Gadchiroli,2019,Sepsis,14
+Gadchiroli,2019,Asphyxia,8
+Gadchiroli,2019,Pneumonia,3
+Gadchiroli,2019,Diarrhea,1
+Gadchiroli,2019,Fever,2
+Gadchiroli,2019,Measles,0
+Gondia,2019,Sepsis,15
+Gondia,2019,Asphyxia,22
+Gondia,2019,Pneumonia,4
+Gondia,2019,Diarrhea,0
+Gondia,2019,Fever,1
+Gondia,2019,Measles,0
+Hingoli,2019,Sepsis,6
+Hingoli,2019,Asphyxia,9
+Hingoli,2019,Pneumonia,2
+Hingoli,2019,Diarrhea,0
+Hingoli,2019,Fever,2
+Hingoli,2019,Measles,0
+Jalgaon,2019,Sepsis,9
+Jalgaon,2019,Asphyxia,13
+Jalgaon,2019,Pneumonia,6
+Jalgaon,2019,Diarrhea,1
+Jalgaon,2019,Fever,1
+Jalgaon,2019,Measles,0
+Jalna,2019,Sepsis,2
+Jalna,2019,Asphyxia,13
+Jalna,2019,Pneumonia,5
+Jalna,2019,Diarrhea,0
+Jalna,2019,Fever,0
+Jalna,2019,Measles,0
+Kolhapur,2019,Sepsis,20
+Kolhapur,2019,Asphyxia,11
+Kolhapur,2019,Pneumonia,3
+Kolhapur,2019,Diarrhea,1
+Kolhapur,2019,Fever,1
+Kolhapur,2019,Measles,0
+Latur,2019,Sepsis,2
+Latur,2019,Asphyxia,2
+Latur,2019,Pneumonia,3
+Latur,2019,Diarrhea,0
+Latur,2019,Fever,2
+Latur,2019,Measles,0
+Mumbai,2019,Sepsis,19
+Mumbai,2019,Asphyxia,13
+Mumbai,2019,Pneumonia,9
+Mumbai,2019,Diarrhea,2
+Mumbai,2019,Fever,2
+Mumbai,2019,Measles,0
+Nagpur,2019,Sepsis,13
+Nagpur,2019,Asphyxia,8
+Nagpur,2019,Pneumonia,2
+Nagpur,2019,Diarrhea,1
+Nagpur,2019,Fever,0
+Nagpur,2019,Measles,0
+Nanded,2019,Sepsis,0
+Nanded,2019,Asphyxia,3
+Nanded,2019,Pneumonia,1
+Nanded,2019,Diarrhea,0
+Nanded,2019,Fever,10
+Nanded,2019,Measles,0
+Nandurbar,2019,Sepsis,12
+Nandurbar,2019,Asphyxia,11
+Nandurbar,2019,Pneumonia,3
+Nandurbar,2019,Diarrhea,1
+Nandurbar,2019,Fever,4
+Nandurbar,2019,Measles,0
+Nashik,2019,Sepsis,8
+Nashik,2019,Asphyxia,19
+Nashik,2019,Pneumonia,5
+Nashik,2019,Diarrhea,1
+Nashik,2019,Fever,2
+Nashik,2019,Measles,0
+Palghar,2019,Sepsis,5
+Palghar,2019,Asphyxia,15
+Palghar,2019,Pneumonia,4
+Palghar,2019,Diarrhea,1
+Palghar,2019,Fever,0
+Palghar,2019,Measles,0
+Parbhani,2019,Sepsis,3
+Parbhani,2019,Asphyxia,4
+Parbhani,2019,Pneumonia,2
+Parbhani,2019,Diarrhea,0
+Parbhani,2019,Fever,0
+Parbhani,2019,Measles,0
+Pune,2019,Sepsis,19
+Pune,2019,Asphyxia,9
+Pune,2019,Pneumonia,8
+Pune,2019,Diarrhea,1
+Pune,2019,Fever,1
+Pune,2019,Measles,0
+Raigad,2019,Sepsis,3
+Raigad,2019,Asphyxia,11
+Raigad,2019,Pneumonia,3
+Raigad,2019,Diarrhea,0
+Raigad,2019,Fever,1
+Raigad,2019,Measles,0
+Ratnagiri,2019,Sepsis,10
+Ratnagiri,2019,Asphyxia,11
+Ratnagiri,2019,Pneumonia,1
+Ratnagiri,2019,Diarrhea,0
+Ratnagiri,2019,Fever,0
+Ratnagiri,2019,Measles,0
+Sangli,2019,Sepsis,6
+Sangli,2019,Asphyxia,18
+Sangli,2019,Pneumonia,4
+Sangli,2019,Diarrhea,1
+Sangli,2019,Fever,1
+Sangli,2019,Measles,0
+Satara,2019,Sepsis,9
+Satara,2019,Asphyxia,17
+Satara,2019,Pneumonia,3
+Satara,2019,Diarrhea,0
+Satara,2019,Fever,1
+Satara,2019,Measles,0
+Sindhudurg,2019,Sepsis,2
+Sindhudurg,2019,Asphyxia,4
+Sindhudurg,2019,Pneumonia,0
+Sindhudurg,2019,Diarrhea,0
+Sindhudurg,2019,Fever,0
+Sindhudurg,2019,Measles,0
+Solapur,2019,Sepsis,14
+Solapur,2019,Asphyxia,13
+Solapur,2019,Pneumonia,5
+Solapur,2019,Diarrhea,0
+Solapur,2019,Fever,4
+Solapur,2019,Measles,0
+Thane,2019,Sepsis,6
+Thane,2019,Asphyxia,15
+Thane,2019,Pneumonia,5
+Thane,2019,Diarrhea,1
+Thane,2019,Fever,2
+Thane,2019,Measles,0
+Wardha,2019,Sepsis,3
+Wardha,2019,Asphyxia,5
+Wardha,2019,Pneumonia,2
+Wardha,2019,Diarrhea,1
+Wardha,2019,Fever,0
+Wardha,2019,Measles,0
+Washim,2019,Sepsis,12
+Washim,2019,Asphyxia,18
+Washim,2019,Pneumonia,1
+Washim,2019,Diarrhea,0
+Washim,2019,Fever,0
+Washim,2019,Measles,0
+Yavatmal,2019,Sepsis,6
+Yavatmal,2019,Asphyxia,8
+Yavatmal,2019,Pneumonia,3
+Yavatmal,2019,Diarrhea,1
+Yavatmal,2019,Fever,3
+Yavatmal,2019,Measles,0
+Ahilyanagar,2018,Sepsis,4
+Ahilyanagar,2018,Asphyxia,12
+Ahilyanagar,2018,Pneumonia,5
+Ahilyanagar,2018,Diarrhea,1
+Ahilyanagar,2018,Fever,1
+Ahilyanagar,2018,Measles,0
+Akola,2018,Sepsis,12
+Akola,2018,Asphyxia,14
+Akola,2018,Pneumonia,5
+Akola,2018,Diarrhea,0
+Akola,2018,Fever,1
+Akola,2018,Measles,0
+Amravati,2018,Sepsis,9
+Amravati,2018,Asphyxia,10
+Amravati,2018,Pneumonia,5
+Amravati,2018,Diarrhea,1
+Amravati,2018,Fever,1
+Amravati,2018,Measles,0
+Beed,2018,Sepsis,7
+Beed,2018,Asphyxia,17
+Beed,2018,Pneumonia,3
+Beed,2018,Diarrhea,0
+Beed,2018,Fever,2
+Beed,2018,Measles,0
+Bhandara,2018,Sepsis,11
+Bhandara,2018,Asphyxia,11
+Bhandara,2018,Pneumonia,2
+Bhandara,2018,Diarrhea,0
+Bhandara,2018,Fever,1
+Bhandara,2018,Measles,0
+Buldhana,2018,Sepsis,9
+Buldhana,2018,Asphyxia,11
+Buldhana,2018,Pneumonia,4
+Buldhana,2018,Diarrhea,1
+Buldhana,2018,Fever,1
+Buldhana,2018,Measles,0
+Chandrapur,2018,Sepsis,8
+Chandrapur,2018,Asphyxia,11
+Chandrapur,2018,Pneumonia,2
+Chandrapur,2018,Diarrhea,1
+Chandrapur,2018,Fever,1
+Chandrapur,2018,Measles,0
+Chhatrapati Sambhaji Nagar,2018,Sepsis,34
+Chhatrapati Sambhaji Nagar,2018,Asphyxia,13
+Chhatrapati Sambhaji Nagar,2018,Pneumonia,1
+Chhatrapati Sambhaji Nagar,2018,Diarrhea,0
+Chhatrapati Sambhaji Nagar,2018,Fever,1
+Chhatrapati Sambhaji Nagar,2018,Measles,0
+Dharashiv,2018,Sepsis,4
+Dharashiv,2018,Asphyxia,5
+Dharashiv,2018,Pneumonia,3
+Dharashiv,2018,Diarrhea,0
+Dharashiv,2018,Fever,4
+Dharashiv,2018,Measles,0
+Dhule,2018,Sepsis,15
+Dhule,2018,Asphyxia,11
+Dhule,2018,Pneumonia,5
+Dhule,2018,Diarrhea,1
+Dhule,2018,Fever,1
+Dhule,2018,Measles,1
+Gadchiroli,2018,Sepsis,13
+Gadchiroli,2018,Asphyxia,7
+Gadchiroli,2018,Pneumonia,6
+Gadchiroli,2018,Diarrhea,1
+Gadchiroli,2018,Fever,1
+Gadchiroli,2018,Measles,0
+Gondia,2018,Sepsis,16
+Gondia,2018,Asphyxia,21
+Gondia,2018,Pneumonia,2
+Gondia,2018,Diarrhea,0
+Gondia,2018,Fever,1
+Gondia,2018,Measles,0
+Hingoli,2018,Sepsis,8
+Hingoli,2018,Asphyxia,13
+Hingoli,2018,Pneumonia,3
+Hingoli,2018,Diarrhea,0
+Hingoli,2018,Fever,2
+Hingoli,2018,Measles,0
+Jalgaon,2018,Sepsis,5
+Jalgaon,2018,Asphyxia,9
+Jalgaon,2018,Pneumonia,6
+Jalgaon,2018,Diarrhea,1
+Jalgaon,2018,Fever,1
+Jalgaon,2018,Measles,0
+Jalna,2018,Sepsis,2
+Jalna,2018,Asphyxia,11
+Jalna,2018,Pneumonia,2
+Jalna,2018,Diarrhea,0
+Jalna,2018,Fever,3
+Jalna,2018,Measles,0
+Kolhapur,2018,Sepsis,14
+Kolhapur,2018,Asphyxia,10
+Kolhapur,2018,Pneumonia,4
+Kolhapur,2018,Diarrhea,1
+Kolhapur,2018,Fever,1
+Kolhapur,2018,Measles,0
+Latur,2018,Sepsis,7
+Latur,2018,Asphyxia,4
+Latur,2018,Pneumonia,7
+Latur,2018,Diarrhea,5
+Latur,2018,Fever,7
+Latur,2018,Measles,0
+Mumbai,2018,Sepsis,16
+Mumbai,2018,Asphyxia,9
+Mumbai,2018,Pneumonia,7
+Mumbai,2018,Diarrhea,1
+Mumbai,2018,Fever,1
+Mumbai,2018,Measles,1
+Nagpur,2018,Sepsis,11
+Nagpur,2018,Asphyxia,8
+Nagpur,2018,Pneumonia,2
+Nagpur,2018,Diarrhea,0
+Nagpur,2018,Fever,2
+Nagpur,2018,Measles,0
+Nanded,2018,Sepsis,3
+Nanded,2018,Asphyxia,9
+Nanded,2018,Pneumonia,4
+Nanded,2018,Diarrhea,1
+Nanded,2018,Fever,8
+Nanded,2018,Measles,0
+Nandurbar,2018,Sepsis,11
+Nandurbar,2018,Asphyxia,15
+Nandurbar,2018,Pneumonia,5
+Nandurbar,2018,Diarrhea,2
+Nandurbar,2018,Fever,1
+Nandurbar,2018,Measles,1
+Nashik,2018,Sepsis,8
+Nashik,2018,Asphyxia,15
+Nashik,2018,Pneumonia,6
+Nashik,2018,Diarrhea,0
+Nashik,2018,Fever,1
+Nashik,2018,Measles,0
+Palghar,2018,Sepsis,5
+Palghar,2018,Asphyxia,13
+Palghar,2018,Pneumonia,7
+Palghar,2018,Diarrhea,0
+Palghar,2018,Fever,0
+Palghar,2018,Measles,0
+Parbhani,2018,Sepsis,1
+Parbhani,2018,Asphyxia,14
+Parbhani,2018,Pneumonia,4
+Parbhani,2018,Diarrhea,0
+Parbhani,2018,Fever,1
+Parbhani,2018,Measles,0
+Pune,2018,Sepsis,14
+Pune,2018,Asphyxia,9
+Pune,2018,Pneumonia,6
+Pune,2018,Diarrhea,1
+Pune,2018,Fever,1
+Pune,2018,Measles,1
+Raigad,2018,Sepsis,3
+Raigad,2018,Asphyxia,8
+Raigad,2018,Pneumonia,7
+Raigad,2018,Diarrhea,0
+Raigad,2018,Fever,2
+Raigad,2018,Measles,0
+Ratnagiri,2018,Sepsis,17
+Ratnagiri,2018,Asphyxia,15
+Ratnagiri,2018,Pneumonia,7
+Ratnagiri,2018,Diarrhea,0
+Ratnagiri,2018,Fever,1
+Ratnagiri,2018,Measles,0
+Sangli,2018,Sepsis,11
+Sangli,2018,Asphyxia,16
+Sangli,2018,Pneumonia,4
+Sangli,2018,Diarrhea,1
+Sangli,2018,Fever,2
+Sangli,2018,Measles,1
+Satara,2018,Sepsis,5
+Satara,2018,Asphyxia,9
+Satara,2018,Pneumonia,3
+Satara,2018,Diarrhea,0
+Satara,2018,Fever,1
+Satara,2018,Measles,0
+Sindhudurg,2018,Sepsis,5
+Sindhudurg,2018,Asphyxia,10
+Sindhudurg,2018,Pneumonia,8
+Sindhudurg,2018,Diarrhea,0
+Sindhudurg,2018,Fever,0
+Sindhudurg,2018,Measles,0
+Solapur,2018,Sepsis,11
+Solapur,2018,Asphyxia,8
+Solapur,2018,Pneumonia,5
+Solapur,2018,Diarrhea,2
+Solapur,2018,Fever,4
+Solapur,2018,Measles,1
+Thane,2018,Sepsis,10
+Thane,2018,Asphyxia,15
+Thane,2018,Pneumonia,7
+Thane,2018,Diarrhea,1
+Thane,2018,Fever,1
+Thane,2018,Measles,0
+Wardha,2018,Sepsis,3
+Wardha,2018,Asphyxia,9
+Wardha,2018,Pneumonia,3
+Wardha,2018,Diarrhea,0
+Wardha,2018,Fever,1
+Wardha,2018,Measles,0
+Washim,2018,Sepsis,7
+Washim,2018,Asphyxia,5
+Washim,2018,Pneumonia,2
+Washim,2018,Diarrhea,0
+Washim,2018,Fever,2
+Washim,2018,Measles,0
+Yavatmal,2018,Sepsis,5
+Yavatmal,2018,Asphyxia,13
+Yavatmal,2018,Pneumonia,3
+Yavatmal,2018,Diarrhea,0
+Yavatmal,2018,Fever,1
+Yavatmal,2018,Measles,0
+Ahilyanagar,2017,Sepsis,4
+Ahilyanagar,2017,Asphyxia,8
+Ahilyanagar,2017,Pneumonia,3
+Ahilyanagar,2017,Diarrhea,1
+Ahilyanagar,2017,Fever,1
+Ahilyanagar,2017,Measles,0
+Akola,2017,Sepsis,13
+Akola,2017,Asphyxia,10
+Akola,2017,Pneumonia,2
+Akola,2017,Diarrhea,0
+Akola,2017,Fever,2
+Akola,2017,Measles,0
+Amravati,2017,Sepsis,9
+Amravati,2017,Asphyxia,11
+Amravati,2017,Pneumonia,3
+Amravati,2017,Diarrhea,0
+Amravati,2017,Fever,1
+Amravati,2017,Measles,0
+Beed,2017,Sepsis,6
+Beed,2017,Asphyxia,9
+Beed,2017,Pneumonia,3
+Beed,2017,Diarrhea,1
+Beed,2017,Fever,2
+Beed,2017,Measles,1
+Bhandara,2017,Sepsis,10
+Bhandara,2017,Asphyxia,12
+Bhandara,2017,Pneumonia,1
+Bhandara,2017,Diarrhea,0
+Bhandara,2017,Fever,1
+Bhandara,2017,Measles,1
+Buldhana,2017,Sepsis,7
+Buldhana,2017,Asphyxia,12
+Buldhana,2017,Pneumonia,2
+Buldhana,2017,Diarrhea,0
+Buldhana,2017,Fever,2
+Buldhana,2017,Measles,0
+Chandrapur,2017,Sepsis,11
+Chandrapur,2017,Asphyxia,15
+Chandrapur,2017,Pneumonia,4
+Chandrapur,2017,Diarrhea,0
+Chandrapur,2017,Fever,1
+Chandrapur,2017,Measles,0
+Chhatrapati Sambhaji Nagar,2017,Sepsis,5
+Chhatrapati Sambhaji Nagar,2017,Asphyxia,12
+Chhatrapati Sambhaji Nagar,2017,Pneumonia,4
+Chhatrapati Sambhaji Nagar,2017,Diarrhea,1
+Chhatrapati Sambhaji Nagar,2017,Fever,3
+Chhatrapati Sambhaji Nagar,2017,Measles,0
+Dharashiv,2017,Sepsis,4
+Dharashiv,2017,Asphyxia,6
+Dharashiv,2017,Pneumonia,3
+Dharashiv,2017,Diarrhea,0
+Dharashiv,2017,Fever,3
+Dharashiv,2017,Measles,0
+Dhule,2017,Sepsis,7
+Dhule,2017,Asphyxia,8
+Dhule,2017,Pneumonia,14
+Dhule,2017,Diarrhea,0
+Dhule,2017,Fever,13
+Dhule,2017,Measles,0
+Gadchiroli,2017,Sepsis,10
+Gadchiroli,2017,Asphyxia,10
+Gadchiroli,2017,Pneumonia,5
+Gadchiroli,2017,Diarrhea,1
+Gadchiroli,2017,Fever,1
+Gadchiroli,2017,Measles,0
+Gondia,2017,Sepsis,21
+Gondia,2017,Asphyxia,18
+Gondia,2017,Pneumonia,3
+Gondia,2017,Diarrhea,0
+Gondia,2017,Fever,1
+Gondia,2017,Measles,0
+Hingoli,2017,Sepsis,4
+Hingoli,2017,Asphyxia,22
+Hingoli,2017,Pneumonia,2
+Hingoli,2017,Diarrhea,0
+Hingoli,2017,Fever,1
+Hingoli,2017,Measles,0
+Jalgaon,2017,Sepsis,6
+Jalgaon,2017,Asphyxia,7
+Jalgaon,2017,Pneumonia,3
+Jalgaon,2017,Diarrhea,0
+Jalgaon,2017,Fever,5
+Jalgaon,2017,Measles,0
+Jalna,2017,Sepsis,2
+Jalna,2017,Asphyxia,20
+Jalna,2017,Pneumonia,4
+Jalna,2017,Diarrhea,0
+Jalna,2017,Fever,0
+Jalna,2017,Measles,0
+Kolhapur,2017,Sepsis,17
+Kolhapur,2017,Asphyxia,14
+Kolhapur,2017,Pneumonia,3
+Kolhapur,2017,Diarrhea,0
+Kolhapur,2017,Fever,1
+Kolhapur,2017,Measles,0
+Latur,2017,Sepsis,14
+Latur,2017,Asphyxia,3
+Latur,2017,Pneumonia,3
+Latur,2017,Diarrhea,1
+Latur,2017,Fever,1
+Latur,2017,Measles,0
+Mumbai,2017,Sepsis,18
+Mumbai,2017,Asphyxia,9
+Mumbai,2017,Pneumonia,7
+Mumbai,2017,Diarrhea,1
+Mumbai,2017,Fever,1
+Mumbai,2017,Measles,1
+Nagpur,2017,Sepsis,2
+Nagpur,2017,Asphyxia,12
+Nagpur,2017,Pneumonia,4
+Nagpur,2017,Diarrhea,1
+Nagpur,2017,Fever,1
+Nagpur,2017,Measles,0
+Nanded,2017,Sepsis,6
+Nanded,2017,Asphyxia,8
+Nanded,2017,Pneumonia,7
+Nanded,2017,Diarrhea,4
+Nanded,2017,Fever,8
+Nanded,2017,Measles,0
+Nandurbar,2017,Sepsis,9
+Nandurbar,2017,Asphyxia,17
+Nandurbar,2017,Pneumonia,5
+Nandurbar,2017,Diarrhea,1
+Nandurbar,2017,Fever,1
+Nandurbar,2017,Measles,1
+Nashik,2017,Sepsis,5
+Nashik,2017,Asphyxia,8
+Nashik,2017,Pneumonia,6
+Nashik,2017,Diarrhea,1
+Nashik,2017,Fever,1
+Nashik,2017,Measles,1
+Palghar,2017,Sepsis,6
+Palghar,2017,Asphyxia,9
+Palghar,2017,Pneumonia,5
+Palghar,2017,Diarrhea,0
+Palghar,2017,Fever,1
+Palghar,2017,Measles,0
+Parbhani,2017,Sepsis,5
+Parbhani,2017,Asphyxia,8
+Parbhani,2017,Pneumonia,2
+Parbhani,2017,Diarrhea,0
+Parbhani,2017,Fever,1
+Parbhani,2017,Measles,1
+Pune,2017,Sepsis,11
+Pune,2017,Asphyxia,8
+Pune,2017,Pneumonia,4
+Pune,2017,Diarrhea,1
+Pune,2017,Fever,1
+Pune,2017,Measles,0
+Raigad,2017,Sepsis,3
+Raigad,2017,Asphyxia,15
+Raigad,2017,Pneumonia,7
+Raigad,2017,Diarrhea,0
+Raigad,2017,Fever,1
+Raigad,2017,Measles,0
+Ratnagiri,2017,Sepsis,8
+Ratnagiri,2017,Asphyxia,14
+Ratnagiri,2017,Pneumonia,7
+Ratnagiri,2017,Diarrhea,0
+Ratnagiri,2017,Fever,0
+Ratnagiri,2017,Measles,0
+Sangli,2017,Sepsis,5
+Sangli,2017,Asphyxia,7
+Sangli,2017,Pneumonia,3
+Sangli,2017,Diarrhea,1
+Sangli,2017,Fever,2
+Sangli,2017,Measles,1
+Satara,2017,Sepsis,5
+Satara,2017,Asphyxia,5
+Satara,2017,Pneumonia,4
+Satara,2017,Diarrhea,0
+Satara,2017,Fever,1
+Satara,2017,Measles,0
+Sindhudurg,2017,Sepsis,0
+Sindhudurg,2017,Asphyxia,9
+Sindhudurg,2017,Pneumonia,5
+Sindhudurg,2017,Diarrhea,0
+Sindhudurg,2017,Fever,3
+Sindhudurg,2017,Measles,0
+Solapur,2017,Sepsis,9
+Solapur,2017,Asphyxia,14
+Solapur,2017,Pneumonia,3
+Solapur,2017,Diarrhea,0
+Solapur,2017,Fever,5
+Solapur,2017,Measles,0
+Thane,2017,Sepsis,8
+Thane,2017,Asphyxia,12
+Thane,2017,Pneumonia,3
+Thane,2017,Diarrhea,1
+Thane,2017,Fever,1
+Thane,2017,Measles,0
+Wardha,2017,Sepsis,9
+Wardha,2017,Asphyxia,10
+Wardha,2017,Pneumonia,4
+Wardha,2017,Diarrhea,0
+Wardha,2017,Fever,1
+Wardha,2017,Measles,0
+Washim,2017,Sepsis,15
+Washim,2017,Asphyxia,12
+Washim,2017,Pneumonia,8
+Washim,2017,Diarrhea,0
+Washim,2017,Fever,0
+Washim,2017,Measles,0
+Yavatmal,2017,Sepsis,3
+Yavatmal,2017,Asphyxia,3
+Yavatmal,2017,Pneumonia,2
+Yavatmal,2017,Diarrhea,0
+Yavatmal,2017,Fever,1
+Yavatmal,2017,Measles,0
+Ahilyanagar,2016,Sepsis,4
+Ahilyanagar,2016,Asphyxia,13
+Ahilyanagar,2016,Pneumonia,4
+Ahilyanagar,2016,Diarrhea,0
+Ahilyanagar,2016,Fever,0
+Ahilyanagar,2016,Measles,0
+Ahilyanagar,2016,Low Birth Weight,28
+Akola,2016,Sepsis,20
+Akola,2016,Asphyxia,15
+Akola,2016,Pneumonia,2
+Akola,2016,Diarrhea,0
+Akola,2016,Fever,0
+Akola,2016,Measles,0
+Akola,2016,Low Birth Weight,32
+Amravati,2016,Sepsis,2
+Amravati,2016,Asphyxia,16
+Amravati,2016,Pneumonia,10
+Amravati,2016,Diarrhea,0
+Amravati,2016,Fever,0
+Amravati,2016,Measles,1
+Amravati,2016,Low Birth Weight,24
+Beed,2016,Sepsis,4
+Beed,2016,Asphyxia,13
+Beed,2016,Pneumonia,4
+Beed,2016,Diarrhea,0
+Beed,2016,Fever,0
+Beed,2016,Measles,1
+Beed,2016,Low Birth Weight,40
+Bhandara,2016,Sepsis,7
+Bhandara,2016,Asphyxia,14
+Bhandara,2016,Pneumonia,5
+Bhandara,2016,Diarrhea,0
+Bhandara,2016,Fever,0
+Bhandara,2016,Measles,0
+Bhandara,2016,Low Birth Weight,37
+Buldhana,2016,Sepsis,9
+Buldhana,2016,Asphyxia,15
+Buldhana,2016,Pneumonia,3
+Buldhana,2016,Diarrhea,0
+Buldhana,2016,Fever,0
+Buldhana,2016,Measles,0
+Buldhana,2016,Low Birth Weight,39
+Chandrapur,2016,Sepsis,17
+Chandrapur,2016,Asphyxia,13
+Chandrapur,2016,Pneumonia,4
+Chandrapur,2016,Diarrhea,0
+Chandrapur,2016,Fever,0
+Chandrapur,2016,Measles,1
+Chandrapur,2016,Low Birth Weight,14
+Chhatrapati Sambhaji Nagar,2016,Sepsis,11
+Chhatrapati Sambhaji Nagar,2016,Asphyxia,8
+Chhatrapati Sambhaji Nagar,2016,Pneumonia,2
+Chhatrapati Sambhaji Nagar,2016,Diarrhea,0
+Chhatrapati Sambhaji Nagar,2016,Fever,0
+Chhatrapati Sambhaji Nagar,2016,Measles,0
+Chhatrapati Sambhaji Nagar,2016,Low Birth Weight,24
+Dharashiv,2016,Sepsis,8
+Dharashiv,2016,Asphyxia,13
+Dharashiv,2016,Pneumonia,2
+Dharashiv,2016,Diarrhea,0
+Dharashiv,2016,Fever,0
+Dharashiv,2016,Measles,0
+Dharashiv,2016,Low Birth Weight,27
+Dhule,2016,Sepsis,12
+Dhule,2016,Asphyxia,8
+Dhule,2016,Pneumonia,8
+Dhule,2016,Diarrhea,0
+Dhule,2016,Fever,0
+Dhule,2016,Measles,1
+Dhule,2016,Low Birth Weight,16
+Gadchiroli,2016,Sepsis,7
+Gadchiroli,2016,Asphyxia,18
+Gadchiroli,2016,Pneumonia,7
+Gadchiroli,2016,Diarrhea,0
+Gadchiroli,2016,Fever,0
+Gadchiroli,2016,Measles,1
+Gadchiroli,2016,Low Birth Weight,24
+Gondia,2016,Sepsis,11
+Gondia,2016,Asphyxia,20
+Gondia,2016,Pneumonia,3
+Gondia,2016,Diarrhea,0
+Gondia,2016,Fever,0
+Gondia,2016,Measles,1
+Gondia,2016,Low Birth Weight,38
+Hingoli,2016,Sepsis,2
+Hingoli,2016,Asphyxia,14
+Hingoli,2016,Pneumonia,0
+Hingoli,2016,Diarrhea,0
+Hingoli,2016,Fever,0
+Hingoli,2016,Measles,2
+Hingoli,2016,Low Birth Weight,34
+Jalgaon,2016,Sepsis,5
+Jalgaon,2016,Asphyxia,14
+Jalgaon,2016,Pneumonia,2
+Jalgaon,2016,Diarrhea,0
+Jalgaon,2016,Fever,0
+Jalgaon,2016,Measles,0
+Jalgaon,2016,Low Birth Weight,17
+Jalna,2016,Sepsis,5
+Jalna,2016,Asphyxia,17
+Jalna,2016,Pneumonia,2
+Jalna,2016,Diarrhea,0
+Jalna,2016,Fever,0
+Jalna,2016,Measles,0
+Jalna,2016,Low Birth Weight,33
+Kolhapur,2016,Sepsis,5
+Kolhapur,2016,Asphyxia,6
+Kolhapur,2016,Pneumonia,1
+Kolhapur,2016,Diarrhea,0
+Kolhapur,2016,Fever,0
+Kolhapur,2016,Measles,0
+Kolhapur,2016,Low Birth Weight,36
+Latur,2016,Sepsis,3
+Latur,2016,Asphyxia,9
+Latur,2016,Pneumonia,3
+Latur,2016,Diarrhea,0
+Latur,2016,Fever,0
+Latur,2016,Measles,0
+Latur,2016,Low Birth Weight,19
+Mumbai,2016,Sepsis,19
+Mumbai,2016,Asphyxia,15
+Mumbai,2016,Pneumonia,9
+Mumbai,2016,Diarrhea,1
+Mumbai,2016,Fever,1
+Mumbai,2016,Measles,1
+Mumbai,2016,Low Birth Weight,16
+Nagpur,2016,Sepsis,1
+Nagpur,2016,Asphyxia,14
+Nagpur,2016,Pneumonia,5
+Nagpur,2016,Diarrhea,0
+Nagpur,2016,Fever,0
+Nagpur,2016,Measles,0
+Nagpur,2016,Low Birth Weight,21
+Nanded,2016,Sepsis,2
+Nanded,2016,Asphyxia,9
+Nanded,2016,Pneumonia,4
+Nanded,2016,Diarrhea,0
+Nanded,2016,Fever,0
+Nanded,2016,Measles,0
+Nanded,2016,Low Birth Weight,25
+Nandurbar,2016,Sepsis,7
+Nandurbar,2016,Asphyxia,15
+Nandurbar,2016,Pneumonia,8
+Nandurbar,2016,Diarrhea,0
+Nandurbar,2016,Fever,0
+Nandurbar,2016,Measles,0
+Nandurbar,2016,Low Birth Weight,34
+Nashik,2016,Sepsis,4
+Nashik,2016,Asphyxia,15
+Nashik,2016,Pneumonia,9
+Nashik,2016,Diarrhea,0
+Nashik,2016,Fever,0
+Nashik,2016,Measles,0
+Nashik,2016,Low Birth Weight,27
+Palghar,2016,Sepsis,2
+Palghar,2016,Asphyxia,15
+Palghar,2016,Pneumonia,10
+Palghar,2016,Diarrhea,0
+Palghar,2016,Fever,0
+Palghar,2016,Measles,1
+Palghar,2016,Low Birth Weight,25
+Parbhani,2016,Sepsis,7
+Parbhani,2016,Asphyxia,29
+Parbhani,2016,Pneumonia,0
+Parbhani,2016,Diarrhea,4
+Parbhani,2016,Fever,0
+Parbhani,2016,Measles,0
+Parbhani,2016,Low Birth Weight,18
+Pune,2016,Sepsis,8
+Pune,2016,Asphyxia,7
+Pune,2016,Pneumonia,6
+Pune,2016,Diarrhea,0
+Pune,2016,Fever,0
+Pune,2016,Measles,0
+Pune,2016,Low Birth Weight,15
+Raigad,2016,Sepsis,1
+Raigad,2016,Asphyxia,12
+Raigad,2016,Pneumonia,4
+Raigad,2016,Diarrhea,0
+Raigad,2016,Fever,0
+Raigad,2016,Measles,0
+Raigad,2016,Low Birth Weight,37
+Ratnagiri,2016,Sepsis,5
+Ratnagiri,2016,Asphyxia,21
+Ratnagiri,2016,Pneumonia,4
+Ratnagiri,2016,Diarrhea,0
+Ratnagiri,2016,Fever,0
+Ratnagiri,2016,Measles,0
+Ratnagiri,2016,Low Birth Weight,26
+Sangli,2016,Sepsis,6
+Sangli,2016,Asphyxia,12
+Sangli,2016,Pneumonia,5
+Sangli,2016,Diarrhea,0
+Sangli,2016,Fever,0
+Sangli,2016,Measles,0
+Sangli,2016,Low Birth Weight,17
+Satara,2016,Sepsis,4
+Satara,2016,Asphyxia,9
+Satara,2016,Pneumonia,4
+Satara,2016,Diarrhea,0
+Satara,2016,Fever,0
+Satara,2016,Measles,0
+Satara,2016,Low Birth Weight,36
+Sindhudurg,2016,Sepsis,0
+Sindhudurg,2016,Asphyxia,24
+Sindhudurg,2016,Pneumonia,0
+Sindhudurg,2016,Diarrhea,0
+Sindhudurg,2016,Fever,0
+Sindhudurg,2016,Measles,0
+Sindhudurg,2016,Low Birth Weight,8
+Solapur,2016,Sepsis,0
+Solapur,2016,Asphyxia,5
+Solapur,2016,Pneumonia,2
+Solapur,2016,Diarrhea,0
+Solapur,2016,Fever,0
+Solapur,2016,Measles,0
+Solapur,2016,Low Birth Weight,20
+Thane,2016,Sepsis,8
+Thane,2016,Asphyxia,11
+Thane,2016,Pneumonia,5
+Thane,2016,Diarrhea,0
+Thane,2016,Fever,0
+Thane,2016,Measles,0
+Thane,2016,Low Birth Weight,36
+Wardha,2016,Sepsis,2
+Wardha,2016,Asphyxia,11
+Wardha,2016,Pneumonia,5
+Wardha,2016,Diarrhea,0
+Wardha,2016,Fever,0
+Wardha,2016,Measles,0
+Wardha,2016,Low Birth Weight,26
+Washim,2016,Sepsis,7
+Washim,2016,Asphyxia,17
+Washim,2016,Pneumonia,3
+Washim,2016,Diarrhea,0
+Washim,2016,Fever,0
+Washim,2016,Measles,0
+Washim,2016,Low Birth Weight,45
+Yavatmal,2016,Sepsis,5
+Yavatmal,2016,Asphyxia,6
+Yavatmal,2016,Pneumonia,5
+Yavatmal,2016,Diarrhea,0
+Yavatmal,2016,Fever,0
+Yavatmal,2016,Measles,0
+Yavatmal,2016,Low Birth Weight,26
+Ahilyanagar,2015,Sepsis,4
+Ahilyanagar,2015,Asphyxia,12
+Ahilyanagar,2015,Pneumonia,2
+Ahilyanagar,2015,Diarrhea,0
+Ahilyanagar,2015,Fever,0
+Ahilyanagar,2015,Measles,0
+Ahilyanagar,2015,Low Birth Weight,31
+Akola,2015,Sepsis,17
+Akola,2015,Asphyxia,17
+Akola,2015,Pneumonia,1
+Akola,2015,Diarrhea,0
+Akola,2015,Fever,0
+Akola,2015,Measles,0
+Akola,2015,Low Birth Weight,33
+Amravati,2015,Sepsis,3
+Amravati,2015,Asphyxia,14
+Amravati,2015,Pneumonia,7
+Amravati,2015,Diarrhea,0
+Amravati,2015,Fever,0
+Amravati,2015,Measles,0
+Amravati,2015,Low Birth Weight,25
+Beed,2015,Sepsis,4
+Beed,2015,Asphyxia,22
+Beed,2015,Pneumonia,2
+Beed,2015,Diarrhea,0
+Beed,2015,Fever,0
+Beed,2015,Measles,0
+Beed,2015,Low Birth Weight,45
+Bhandara,2015,Sepsis,7
+Bhandara,2015,Asphyxia,11
+Bhandara,2015,Pneumonia,5
+Bhandara,2015,Diarrhea,0
+Bhandara,2015,Fever,0
+Bhandara,2015,Measles,0
+Bhandara,2015,Low Birth Weight,41
+Buldhana,2015,Sepsis,6
+Buldhana,2015,Asphyxia,12
+Buldhana,2015,Pneumonia,6
+Buldhana,2015,Diarrhea,0
+Buldhana,2015,Fever,0
+Buldhana,2015,Measles,0
+Buldhana,2015,Low Birth Weight,37
+Chandrapur,2015,Sepsis,13
+Chandrapur,2015,Asphyxia,24
+Chandrapur,2015,Pneumonia,5
+Chandrapur,2015,Diarrhea,0
+Chandrapur,2015,Fever,0
+Chandrapur,2015,Measles,0
+Chandrapur,2015,Low Birth Weight,11
+Chhatrapati Sambhaji Nagar,2015,Sepsis,2
+Chhatrapati Sambhaji Nagar,2015,Asphyxia,10
+Chhatrapati Sambhaji Nagar,2015,Pneumonia,3
+Chhatrapati Sambhaji Nagar,2015,Diarrhea,0
+Chhatrapati Sambhaji Nagar,2015,Fever,0
+Chhatrapati Sambhaji Nagar,2015,Measles,0
+Chhatrapati Sambhaji Nagar,2015,Low Birth Weight,19
+Dharashiv,2015,Sepsis,6
+Dharashiv,2015,Asphyxia,13
+Dharashiv,2015,Pneumonia,0
+Dharashiv,2015,Diarrhea,0
+Dharashiv,2015,Fever,0
+Dharashiv,2015,Measles,0
+Dharashiv,2015,Low Birth Weight,39
+Dhule,2015,Sepsis,14
+Dhule,2015,Asphyxia,8
+Dhule,2015,Pneumonia,10
+Dhule,2015,Diarrhea,0
+Dhule,2015,Fever,0
+Dhule,2015,Measles,1
+Dhule,2015,Low Birth Weight,15
+Gadchiroli,2015,Sepsis,8
+Gadchiroli,2015,Asphyxia,12
+Gadchiroli,2015,Pneumonia,5
+Gadchiroli,2015,Diarrhea,0
+Gadchiroli,2015,Fever,0
+Gadchiroli,2015,Measles,0
+Gadchiroli,2015,Low Birth Weight,31
+Gondia,2015,Sepsis,7
+Gondia,2015,Asphyxia,12
+Gondia,2015,Pneumonia,4
+Gondia,2015,Diarrhea,0
+Gondia,2015,Fever,0
+Gondia,2015,Measles,0
+Gondia,2015,Low Birth Weight,41
+Hingoli,2015,Sepsis,6
+Hingoli,2015,Asphyxia,16
+Hingoli,2015,Pneumonia,2
+Hingoli,2015,Diarrhea,0
+Hingoli,2015,Fever,0
+Hingoli,2015,Measles,0
+Hingoli,2015,Low Birth Weight,31
+Jalgaon,2015,Sepsis,7
+Jalgaon,2015,Asphyxia,18
+Jalgaon,2015,Pneumonia,4
+Jalgaon,2015,Diarrhea,0
+Jalgaon,2015,Fever,0
+Jalgaon,2015,Measles,0
+Jalgaon,2015,Low Birth Weight,20
+Jalna,2015,Sepsis,3
+Jalna,2015,Asphyxia,10
+Jalna,2015,Pneumonia,4
+Jalna,2015,Diarrhea,0
+Jalna,2015,Fever,0
+Jalna,2015,Measles,0
+Jalna,2015,Low Birth Weight,37
+Kolhapur,2015,Sepsis,11
+Kolhapur,2015,Asphyxia,10
+Kolhapur,2015,Pneumonia,1
+Kolhapur,2015,Diarrhea,0
+Kolhapur,2015,Fever,0
+Kolhapur,2015,Measles,0
+Kolhapur,2015,Low Birth Weight,26
+Latur,2015,Sepsis,6
+Latur,2015,Asphyxia,9
+Latur,2015,Pneumonia,3
+Latur,2015,Diarrhea,0
+Latur,2015,Fever,0
+Latur,2015,Measles,0
+Latur,2015,Low Birth Weight,29
+Mumbai,2015,Sepsis,13
+Mumbai,2015,Asphyxia,18
+Mumbai,2015,Pneumonia,19
+Mumbai,2015,Diarrhea,2
+Mumbai,2015,Fever,1
+Mumbai,2015,Measles,1
+Mumbai,2015,Low Birth Weight,38
+Nagpur,2015,Sepsis,9
+Nagpur,2015,Asphyxia,15
+Nagpur,2015,Pneumonia,3
+Nagpur,2015,Diarrhea,0
+Nagpur,2015,Fever,0
+Nagpur,2015,Measles,0
+Nagpur,2015,Low Birth Weight,26
+Nanded,2015,Sepsis,2
+Nanded,2015,Asphyxia,6
+Nanded,2015,Pneumonia,3
+Nanded,2015,Diarrhea,0
+Nanded,2015,Fever,0
+Nanded,2015,Measles,0
+Nanded,2015,Low Birth Weight,32
+Nandurbar,2015,Sepsis,8
+Nandurbar,2015,Asphyxia,18
+Nandurbar,2015,Pneumonia,7
+Nandurbar,2015,Diarrhea,0
+Nandurbar,2015,Fever,0
+Nandurbar,2015,Measles,0
+Nandurbar,2015,Low Birth Weight,36
+Nashik,2015,Sepsis,4
+Nashik,2015,Asphyxia,10
+Nashik,2015,Pneumonia,6
+Nashik,2015,Diarrhea,0
+Nashik,2015,Fever,0
+Nashik,2015,Measles,0
+Nashik,2015,Low Birth Weight,30
+Palghar,2015,Sepsis,5
+Palghar,2015,Asphyxia,12
+Palghar,2015,Pneumonia,7
+Palghar,2015,Diarrhea,0
+Palghar,2015,Fever,0
+Palghar,2015,Measles,1
+Palghar,2015,Low Birth Weight,22
+Parbhani,2015,Sepsis,3
+Parbhani,2015,Asphyxia,24
+Parbhani,2015,Pneumonia,1
+Parbhani,2015,Diarrhea,0
+Parbhani,2015,Fever,0
+Parbhani,2015,Measles,0
+Parbhani,2015,Low Birth Weight,26
+Pune,2015,Sepsis,5
+Pune,2015,Asphyxia,7
+Pune,2015,Pneumonia,3
+Pune,2015,Diarrhea,0
+Pune,2015,Fever,0
+Pune,2015,Measles,0
+Pune,2015,Low Birth Weight,19
+Raigad,2015,Sepsis,3
+Raigad,2015,Asphyxia,16
+Raigad,2015,Pneumonia,8
+Raigad,2015,Diarrhea,0
+Raigad,2015,Fever,0
+Raigad,2015,Measles,0
+Raigad,2015,Low Birth Weight,30
+Ratnagiri,2015,Sepsis,2
+Ratnagiri,2015,Asphyxia,19
+Ratnagiri,2015,Pneumonia,3
+Ratnagiri,2015,Diarrhea,0
+Ratnagiri,2015,Fever,0
+Ratnagiri,2015,Measles,0
+Ratnagiri,2015,Low Birth Weight,33
+Sangli,2015,Sepsis,9
+Sangli,2015,Asphyxia,15
+Sangli,2015,Pneumonia,2
+Sangli,2015,Diarrhea,0
+Sangli,2015,Fever,0
+Sangli,2015,Measles,0
+Sangli,2015,Low Birth Weight,17
+Satara,2015,Sepsis,5
+Satara,2015,Asphyxia,11
+Satara,2015,Pneumonia,3
+Satara,2015,Diarrhea,0
+Satara,2015,Fever,0
+Satara,2015,Measles,0
+Satara,2015,Low Birth Weight,28
+Sindhudurg,2015,Sepsis,6
+Sindhudurg,2015,Asphyxia,19
+Sindhudurg,2015,Pneumonia,3
+Sindhudurg,2015,Diarrhea,0
+Sindhudurg,2015,Fever,0
+Sindhudurg,2015,Measles,0
+Sindhudurg,2015,Low Birth Weight,19
+Solapur,2015,Sepsis,12
+Solapur,2015,Asphyxia,13
+Solapur,2015,Pneumonia,1
+Solapur,2015,Diarrhea,0
+Solapur,2015,Fever,0
+Solapur,2015,Measles,0
+Solapur,2015,Low Birth Weight,27
+Thane,2015,Sepsis,13
+Thane,2015,Asphyxia,12
+Thane,2015,Pneumonia,5
+Thane,2015,Diarrhea,0
+Thane,2015,Fever,0
+Thane,2015,Measles,0
+Thane,2015,Low Birth Weight,24
+Wardha,2015,Sepsis,7
+Wardha,2015,Asphyxia,10
+Wardha,2015,Pneumonia,5
+Wardha,2015,Diarrhea,0
+Wardha,2015,Fever,0
+Wardha,2015,Measles,0
+Wardha,2015,Low Birth Weight,35
+Washim,2015,Sepsis,9
+Washim,2015,Asphyxia,15
+Washim,2015,Pneumonia,2
+Washim,2015,Diarrhea,0
+Washim,2015,Fever,0
+Washim,2015,Measles,0
+Washim,2015,Low Birth Weight,33
+Yavatmal,2015,Sepsis,1
+Yavatmal,2015,Asphyxia,3
+Yavatmal,2015,Pneumonia,2
+Yavatmal,2015,Diarrhea,0
+Yavatmal,2015,Fever,0
+Yavatmal,2015,Measles,0
+Yavatmal,2015,Low Birth Weight,33
+Ahilyanagar,2014,Sepsis,3
+Ahilyanagar,2014,Asphyxia,13
+Ahilyanagar,2014,Pneumonia,5
+Ahilyanagar,2014,Diarrhea,0
+Ahilyanagar,2014,Fever,0
+Ahilyanagar,2014,Measles,1
+Ahilyanagar,2014,Low Birth Weight,28
+Akola,2014,Sepsis,12
+Akola,2014,Asphyxia,17
+Akola,2014,Pneumonia,2
+Akola,2014,Diarrhea,0
+Akola,2014,Fever,1
+Akola,2014,Measles,0
+Akola,2014,Low Birth Weight,36
+Amravati,2014,Sepsis,1
+Amravati,2014,Asphyxia,13
+Amravati,2014,Pneumonia,5
+Amravati,2014,Diarrhea,0
+Amravati,2014,Fever,0
+Amravati,2014,Measles,1
+Amravati,2014,Low Birth Weight,32
+Beed,2014,Sepsis,4
+Beed,2014,Asphyxia,31
+Beed,2014,Pneumonia,11
+Beed,2014,Diarrhea,0
+Beed,2014,Fever,0
+Beed,2014,Measles,0
+Beed,2014,Low Birth Weight,25
+Bhandara,2014,Sepsis,12
+Bhandara,2014,Asphyxia,18
+Bhandara,2014,Pneumonia,5
+Bhandara,2014,Diarrhea,0
+Bhandara,2014,Fever,0
+Bhandara,2014,Measles,0
+Bhandara,2014,Low Birth Weight,25
+Buldhana,2014,Sepsis,6
+Buldhana,2014,Asphyxia,14
+Buldhana,2014,Pneumonia,4
+Buldhana,2014,Diarrhea,0
+Buldhana,2014,Fever,0
+Buldhana,2014,Measles,0
+Buldhana,2014,Low Birth Weight,34
+Chandrapur,2014,Sepsis,5
+Chandrapur,2014,Asphyxia,18
+Chandrapur,2014,Pneumonia,4
+Chandrapur,2014,Diarrhea,0
+Chandrapur,2014,Fever,0
+Chandrapur,2014,Measles,0
+Chandrapur,2014,Low Birth Weight,29
+Chhatrapati Sambhaji Nagar,2014,Sepsis,3
+Chhatrapati Sambhaji Nagar,2014,Asphyxia,9
+Chhatrapati Sambhaji Nagar,2014,Pneumonia,5
+Chhatrapati Sambhaji Nagar,2014,Diarrhea,0
+Chhatrapati Sambhaji Nagar,2014,Fever,0
+Chhatrapati Sambhaji Nagar,2014,Measles,0
+Chhatrapati Sambhaji Nagar,2014,Low Birth Weight,21
+Dharashiv,2014,Sepsis,7
+Dharashiv,2014,Asphyxia,15
+Dharashiv,2014,Pneumonia,3
+Dharashiv,2014,Diarrhea,0
+Dharashiv,2014,Fever,0
+Dharashiv,2014,Measles,0
+Dharashiv,2014,Low Birth Weight,39
+Dhule,2014,Sepsis,8
+Dhule,2014,Asphyxia,11
+Dhule,2014,Pneumonia,9
+Dhule,2014,Diarrhea,0
+Dhule,2014,Fever,0
+Dhule,2014,Measles,0
+Dhule,2014,Low Birth Weight,10
+Gadchiroli,2014,Sepsis,13
+Gadchiroli,2014,Asphyxia,14
+Gadchiroli,2014,Pneumonia,4
+Gadchiroli,2014,Diarrhea,0
+Gadchiroli,2014,Fever,1
+Gadchiroli,2014,Measles,0
+Gadchiroli,2014,Low Birth Weight,37
+Gondia,2014,Sepsis,11
+Gondia,2014,Asphyxia,15
+Gondia,2014,Pneumonia,3
+Gondia,2014,Diarrhea,0
+Gondia,2014,Fever,0
+Gondia,2014,Measles,0
+Gondia,2014,Low Birth Weight,43
+Hingoli,2014,Sepsis,3
+Hingoli,2014,Asphyxia,22
+Hingoli,2014,Pneumonia,1
+Hingoli,2014,Diarrhea,0
+Hingoli,2014,Fever,0
+Hingoli,2014,Measles,1
+Hingoli,2014,Low Birth Weight,44
+Jalgaon,2014,Sepsis,9
+Jalgaon,2014,Asphyxia,13
+Jalgaon,2014,Pneumonia,7
+Jalgaon,2014,Diarrhea,0
+Jalgaon,2014,Fever,0
+Jalgaon,2014,Measles,0
+Jalgaon,2014,Low Birth Weight,21
+Jalna,2014,Sepsis,1
+Jalna,2014,Asphyxia,14
+Jalna,2014,Pneumonia,2
+Jalna,2014,Diarrhea,0
+Jalna,2014,Fever,0
+Jalna,2014,Measles,0
+Jalna,2014,Low Birth Weight,28
+Kolhapur,2014,Sepsis,14
+Kolhapur,2014,Asphyxia,7
+Kolhapur,2014,Pneumonia,2
+Kolhapur,2014,Diarrhea,0
+Kolhapur,2014,Fever,0
+Kolhapur,2014,Measles,0
+Kolhapur,2014,Low Birth Weight,29
+Latur,2014,Sepsis,0
+Latur,2014,Asphyxia,9
+Latur,2014,Pneumonia,0
+Latur,2014,Diarrhea,0
+Latur,2014,Fever,0
+Latur,2014,Measles,0
+Latur,2014,Low Birth Weight,34
+Mumbai,2014,Sepsis,14
+Mumbai,2014,Asphyxia,21
+Mumbai,2014,Pneumonia,22
+Mumbai,2014,Diarrhea,4
+Mumbai,2014,Fever,1
+Mumbai,2014,Measles,0
+Mumbai,2014,Low Birth Weight,41
+Nagpur,2014,Sepsis,10
+Nagpur,2014,Asphyxia,9
+Nagpur,2014,Pneumonia,6
+Nagpur,2014,Diarrhea,0
+Nagpur,2014,Fever,0
+Nagpur,2014,Measles,0
+Nagpur,2014,Low Birth Weight,28
+Nanded,2014,Sepsis,3
+Nanded,2014,Asphyxia,10
+Nanded,2014,Pneumonia,3
+Nanded,2014,Diarrhea,0
+Nanded,2014,Fever,0
+Nanded,2014,Measles,0
+Nanded,2014,Low Birth Weight,29
+Nandurbar,2014,Sepsis,9
+Nandurbar,2014,Asphyxia,9
+Nandurbar,2014,Pneumonia,12
+Nandurbar,2014,Diarrhea,0
+Nandurbar,2014,Fever,0
+Nandurbar,2014,Measles,0
+Nandurbar,2014,Low Birth Weight,26
+Nashik,2014,Sepsis,5
+Nashik,2014,Asphyxia,8
+Nashik,2014,Pneumonia,10
+Nashik,2014,Diarrhea,0
+Nashik,2014,Fever,0
+Nashik,2014,Measles,1
+Nashik,2014,Low Birth Weight,31
+Palghar,2014,Sepsis,7
+Palghar,2014,Asphyxia,9
+Palghar,2014,Pneumonia,9
+Palghar,2014,Diarrhea,0
+Palghar,2014,Fever,0
+Palghar,2014,Measles,0
+Palghar,2014,Low Birth Weight,33
+Parbhani,2014,Sepsis,16
+Parbhani,2014,Asphyxia,23
+Parbhani,2014,Pneumonia,3
+Parbhani,2014,Diarrhea,0
+Parbhani,2014,Fever,0
+Parbhani,2014,Measles,0
+Parbhani,2014,Low Birth Weight,35
+Pune,2014,Sepsis,5
+Pune,2014,Asphyxia,5
+Pune,2014,Pneumonia,4
+Pune,2014,Diarrhea,0
+Pune,2014,Fever,0
+Pune,2014,Measles,0
+Pune,2014,Low Birth Weight,22
+Raigad,2014,Sepsis,4
+Raigad,2014,Asphyxia,11
+Raigad,2014,Pneumonia,3
+Raigad,2014,Diarrhea,0
+Raigad,2014,Fever,1
+Raigad,2014,Measles,0
+Raigad,2014,Low Birth Weight,41
+Ratnagiri,2014,Sepsis,5
+Ratnagiri,2014,Asphyxia,27
+Ratnagiri,2014,Pneumonia,4
+Ratnagiri,2014,Diarrhea,0
+Ratnagiri,2014,Fever,0
+Ratnagiri,2014,Measles,0
+Ratnagiri,2014,Low Birth Weight,35
+Sangli,2014,Sepsis,12
+Sangli,2014,Asphyxia,6
+Sangli,2014,Pneumonia,1
+Sangli,2014,Diarrhea,0
+Sangli,2014,Fever,1
+Sangli,2014,Measles,0
+Sangli,2014,Low Birth Weight,15
+Satara,2014,Sepsis,6
+Satara,2014,Asphyxia,10
+Satara,2014,Pneumonia,4
+Satara,2014,Diarrhea,0
+Satara,2014,Fever,0
+Satara,2014,Measles,0
+Satara,2014,Low Birth Weight,34
+Sindhudurg,2014,Sepsis,16
+Sindhudurg,2014,Asphyxia,12
+Sindhudurg,2014,Pneumonia,4
+Sindhudurg,2014,Diarrhea,0
+Sindhudurg,2014,Fever,0
+Sindhudurg,2014,Measles,0
+Sindhudurg,2014,Low Birth Weight,32
+Solapur,2014,Sepsis,12
+Solapur,2014,Asphyxia,9
+Solapur,2014,Pneumonia,1
+Solapur,2014,Diarrhea,0
+Solapur,2014,Fever,0
+Solapur,2014,Measles,0
+Solapur,2014,Low Birth Weight,37
+Thane,2014,Sepsis,11
+Thane,2014,Asphyxia,11
+Thane,2014,Pneumonia,2
+Thane,2014,Diarrhea,0
+Thane,2014,Fever,0
+Thane,2014,Measles,0
+Thane,2014,Low Birth Weight,29
+Wardha,2014,Sepsis,6
+Wardha,2014,Asphyxia,10
+Wardha,2014,Pneumonia,7
+Wardha,2014,Diarrhea,0
+Wardha,2014,Fever,0
+Wardha,2014,Measles,0
+Wardha,2014,Low Birth Weight,31
+Washim,2014,Sepsis,6
+Washim,2014,Asphyxia,9
+Washim,2014,Pneumonia,2
+Washim,2014,Diarrhea,0
+Washim,2014,Fever,0
+Washim,2014,Measles,1
+Washim,2014,Low Birth Weight,24
+Yavatmal,2014,Sepsis,1
+Yavatmal,2014,Asphyxia,6
+Yavatmal,2014,Pneumonia,3
+Yavatmal,2014,Diarrhea,0
+Yavatmal,2014,Fever,0
+Yavatmal,2014,Measles,0
+Yavatmal,2014,Low Birth Weight,45
+Ahilyanagar,2013,Sepsis,4
+Ahilyanagar,2013,Asphyxia,15
+Ahilyanagar,2013,Pneumonia,2
+Ahilyanagar,2013,Diarrhea,2
+Ahilyanagar,2013,Fever,2
+Ahilyanagar,2013,Measles,0
+Ahilyanagar,2013,Low Birth Weight,34
+Akola,2013,Sepsis,11
+Akola,2013,Asphyxia,15
+Akola,2013,Pneumonia,1
+Akola,2013,Diarrhea,0
+Akola,2013,Fever,1
+Akola,2013,Measles,0
+Akola,2013,Low Birth Weight,52
+Amravati,2013,Sepsis,7
+Amravati,2013,Asphyxia,15
+Amravati,2013,Pneumonia,2
+Amravati,2013,Diarrhea,1
+Amravati,2013,Fever,1
+Amravati,2013,Measles,0
+Amravati,2013,Low Birth Weight,51
+Beed,2013,Sepsis,0
+Beed,2013,Asphyxia,3
+Beed,2013,Pneumonia,6
+Beed,2013,Diarrhea,3
+Beed,2013,Fever,3
+Beed,2013,Measles,0
+Beed,2013,Low Birth Weight,23
+Bhandara,2013,Sepsis,9
+Bhandara,2013,Asphyxia,22
+Bhandara,2013,Pneumonia,3
+Bhandara,2013,Diarrhea,0
+Bhandara,2013,Fever,2
+Bhandara,2013,Measles,0
+Bhandara,2013,Low Birth Weight,29
+Buldhana,2013,Sepsis,13
+Buldhana,2013,Asphyxia,23
+Buldhana,2013,Pneumonia,3
+Buldhana,2013,Diarrhea,5
+Buldhana,2013,Fever,2
+Buldhana,2013,Measles,0
+Buldhana,2013,Low Birth Weight,35
+Chandrapur,2013,Sepsis,6
+Chandrapur,2013,Asphyxia,24
+Chandrapur,2013,Pneumonia,3
+Chandrapur,2013,Diarrhea,1
+Chandrapur,2013,Fever,0
+Chandrapur,2013,Measles,0
+Chandrapur,2013,Low Birth Weight,30
+Chhatrapati Sambhaji Nagar,2013,Sepsis,2
+Chhatrapati Sambhaji Nagar,2013,Asphyxia,8
+Chhatrapati Sambhaji Nagar,2013,Pneumonia,3
+Chhatrapati Sambhaji Nagar,2013,Diarrhea,2
+Chhatrapati Sambhaji Nagar,2013,Fever,2
+Chhatrapati Sambhaji Nagar,2013,Measles,0
+Chhatrapati Sambhaji Nagar,2013,Low Birth Weight,40
+Dharashiv,2013,Sepsis,10
+Dharashiv,2013,Asphyxia,16
+Dharashiv,2013,Pneumonia,0
+Dharashiv,2013,Diarrhea,0
+Dharashiv,2013,Fever,2
+Dharashiv,2013,Measles,0
+Dharashiv,2013,Low Birth Weight,38
+Dhule,2013,Sepsis,5
+Dhule,2013,Asphyxia,24
+Dhule,2013,Pneumonia,5
+Dhule,2013,Diarrhea,2
+Dhule,2013,Fever,0
+Dhule,2013,Measles,0
+Dhule,2013,Low Birth Weight,42
+Gadchiroli,2013,Sepsis,7
+Gadchiroli,2013,Asphyxia,23
+Gadchiroli,2013,Pneumonia,6
+Gadchiroli,2013,Diarrhea,0
+Gadchiroli,2013,Fever,4
+Gadchiroli,2013,Measles,0
+Gadchiroli,2013,Low Birth Weight,19
+Gondia,2013,Sepsis,10
+Gondia,2013,Asphyxia,17
+Gondia,2013,Pneumonia,2
+Gondia,2013,Diarrhea,2
+Gondia,2013,Fever,1
+Gondia,2013,Measles,0
+Gondia,2013,Low Birth Weight,34
+Hingoli,2013,Sepsis,0
+Hingoli,2013,Asphyxia,19
+Hingoli,2013,Pneumonia,2
+Hingoli,2013,Diarrhea,0
+Hingoli,2013,Fever,1
+Hingoli,2013,Measles,0
+Hingoli,2013,Low Birth Weight,24
+Jalgaon,2013,Sepsis,6
+Jalgaon,2013,Asphyxia,18
+Jalgaon,2013,Pneumonia,3
+Jalgaon,2013,Diarrhea,1
+Jalgaon,2013,Fever,3
+Jalgaon,2013,Measles,0
+Jalgaon,2013,Low Birth Weight,35
+Jalna,2013,Sepsis,3
+Jalna,2013,Asphyxia,11
+Jalna,2013,Pneumonia,1
+Jalna,2013,Diarrhea,9
+Jalna,2013,Fever,3
+Jalna,2013,Measles,0
+Jalna,2013,Low Birth Weight,56
+Kolhapur,2013,Sepsis,4
+Kolhapur,2013,Asphyxia,9
+Kolhapur,2013,Pneumonia,1
+Kolhapur,2013,Diarrhea,5
+Kolhapur,2013,Fever,1
+Kolhapur,2013,Measles,0
+Kolhapur,2013,Low Birth Weight,13
+Latur,2013,Sepsis,6
+Latur,2013,Asphyxia,23
+Latur,2013,Pneumonia,0
+Latur,2013,Diarrhea,0
+Latur,2013,Fever,0
+Latur,2013,Measles,3
+Latur,2013,Low Birth Weight,25
+Mumbai,2013,Sepsis,9
+Mumbai,2013,Asphyxia,13
+Mumbai,2013,Pneumonia,6
+Mumbai,2013,Diarrhea,1
+Mumbai,2013,Fever,1
+Mumbai,2013,Measles,0
+Mumbai,2013,Low Birth Weight,17
+Nagpur,2013,Sepsis,13
+Nagpur,2013,Asphyxia,20
+Nagpur,2013,Pneumonia,1
+Nagpur,2013,Diarrhea,1
+Nagpur,2013,Fever,1
+Nagpur,2013,Measles,0
+Nagpur,2013,Low Birth Weight,28
+Nanded,2013,Sepsis,6
+Nanded,2013,Asphyxia,38
+Nanded,2013,Pneumonia,1
+Nanded,2013,Diarrhea,0
+Nanded,2013,Fever,0
+Nanded,2013,Measles,0
+Nanded,2013,Low Birth Weight,32
+Nandurbar,2013,Sepsis,8
+Nandurbar,2013,Asphyxia,11
+Nandurbar,2013,Pneumonia,8
+Nandurbar,2013,Diarrhea,1
+Nandurbar,2013,Fever,5
+Nandurbar,2013,Measles,0
+Nandurbar,2013,Low Birth Weight,27
+Nashik,2013,Sepsis,5
+Nashik,2013,Asphyxia,21
+Nashik,2013,Pneumonia,3
+Nashik,2013,Diarrhea,1
+Nashik,2013,Fever,2
+Nashik,2013,Measles,0
+Nashik,2013,Low Birth Weight,47
+Palghar,2013,Sepsis,7
+Palghar,2013,Asphyxia,34
+Palghar,2013,Pneumonia,0
+Palghar,2013,Diarrhea,0
+Palghar,2013,Fever,0
+Palghar,2013,Measles,0
+Palghar,2013,Low Birth Weight,20
+Parbhani,2013,Sepsis,0
+Parbhani,2013,Asphyxia,22
+Parbhani,2013,Pneumonia,0
+Parbhani,2013,Diarrhea,0
+Parbhani,2013,Fever,0
+Parbhani,2013,Measles,0
+Parbhani,2013,Low Birth Weight,22
+Pune,2013,Sepsis,10
+Pune,2013,Asphyxia,22
+Pune,2013,Pneumonia,6
+Pune,2013,Diarrhea,7
+Pune,2013,Fever,5
+Pune,2013,Measles,0
+Pune,2013,Low Birth Weight,30
+Raigad,2013,Sepsis,4
+Raigad,2013,Asphyxia,18
+Raigad,2013,Pneumonia,4
+Raigad,2013,Diarrhea,2
+Raigad,2013,Fever,2
+Raigad,2013,Measles,0
+Raigad,2013,Low Birth Weight,31
+Ratnagiri,2013,Sepsis,5
+Ratnagiri,2013,Asphyxia,21
+Ratnagiri,2013,Pneumonia,1
+Ratnagiri,2013,Diarrhea,0
+Ratnagiri,2013,Fever,0
+Ratnagiri,2013,Measles,0
+Ratnagiri,2013,Low Birth Weight,36
+Sangli,2013,Sepsis,6
+Sangli,2013,Asphyxia,11
+Sangli,2013,Pneumonia,5
+Sangli,2013,Diarrhea,0
+Sangli,2013,Fever,3
+Sangli,2013,Measles,0
+Sangli,2013,Low Birth Weight,21
+Satara,2013,Sepsis,7
+Satara,2013,Asphyxia,12
+Satara,2013,Pneumonia,1
+Satara,2013,Diarrhea,1
+Satara,2013,Fever,0
+Satara,2013,Measles,0
+Satara,2013,Low Birth Weight,32
+Sindhudurg,2013,Sepsis,0
+Sindhudurg,2013,Asphyxia,7
+Sindhudurg,2013,Pneumonia,0
+Sindhudurg,2013,Diarrhea,35
+Sindhudurg,2013,Fever,4
+Sindhudurg,2013,Measles,0
+Sindhudurg,2013,Low Birth Weight,11
+Solapur,2013,Sepsis,2
+Solapur,2013,Asphyxia,14
+Solapur,2013,Pneumonia,1
+Solapur,2013,Diarrhea,0
+Solapur,2013,Fever,2
+Solapur,2013,Measles,0
+Solapur,2013,Low Birth Weight,36
+Thane,2013,Sepsis,9
+Thane,2013,Asphyxia,18
+Thane,2013,Pneumonia,4
+Thane,2013,Diarrhea,1
+Thane,2013,Fever,2
+Thane,2013,Measles,0
+Thane,2013,Low Birth Weight,33
+Wardha,2013,Sepsis,9
+Wardha,2013,Asphyxia,16
+Wardha,2013,Pneumonia,3
+Wardha,2013,Diarrhea,0
+Wardha,2013,Fever,3
+Wardha,2013,Measles,0
+Wardha,2013,Low Birth Weight,39
+Washim,2013,Sepsis,3
+Washim,2013,Asphyxia,25
+Washim,2013,Pneumonia,0
+Washim,2013,Diarrhea,0
+Washim,2013,Fever,4
+Washim,2013,Measles,0
+Washim,2013,Low Birth Weight,37
+Yavatmal,2013,Sepsis,9
+Yavatmal,2013,Asphyxia,21
+Yavatmal,2013,Pneumonia,4
+Yavatmal,2013,Diarrhea,0
+Yavatmal,2013,Fever,0
+Yavatmal,2013,Measles,0
+Yavatmal,2013,Low Birth Weight,43
+Ahilyanagar,2012,Sepsis,4
+Ahilyanagar,2012,Asphyxia,11
+Ahilyanagar,2012,Pneumonia,4
+Ahilyanagar,2012,Diarrhea,0
+Ahilyanagar,2012,Fever,1
+Ahilyanagar,2012,Measles,0
+Ahilyanagar,2012,Low Birth Weight,31
+Akola,2012,Sepsis,13
+Akola,2012,Asphyxia,12
+Akola,2012,Pneumonia,1
+Akola,2012,Diarrhea,0
+Akola,2012,Fever,1
+Akola,2012,Measles,0
+Akola,2012,Low Birth Weight,39
+Amravati,2012,Sepsis,8
+Amravati,2012,Asphyxia,13
+Amravati,2012,Pneumonia,5
+Amravati,2012,Diarrhea,1
+Amravati,2012,Fever,1
+Amravati,2012,Measles,0
+Amravati,2012,Low Birth Weight,35
+Beed,2012,Sepsis,6
+Beed,2012,Asphyxia,13
+Beed,2012,Pneumonia,2
+Beed,2012,Diarrhea,1
+Beed,2012,Fever,2
+Beed,2012,Measles,0
+Beed,2012,Low Birth Weight,39
+Bhandara,2012,Sepsis,11
+Bhandara,2012,Asphyxia,23
+Bhandara,2012,Pneumonia,4
+Bhandara,2012,Diarrhea,0
+Bhandara,2012,Fever,1
+Bhandara,2012,Measles,1
+Bhandara,2012,Low Birth Weight,38
+Buldhana,2012,Sepsis,4
+Buldhana,2012,Asphyxia,13
+Buldhana,2012,Pneumonia,3
+Buldhana,2012,Diarrhea,7
+Buldhana,2012,Fever,13
+Buldhana,2012,Measles,0
+Buldhana,2012,Low Birth Weight,37
+Chandrapur,2012,Sepsis,12
+Chandrapur,2012,Asphyxia,17
+Chandrapur,2012,Pneumonia,4
+Chandrapur,2012,Diarrhea,0
+Chandrapur,2012,Fever,1
+Chandrapur,2012,Measles,0
+Chandrapur,2012,Low Birth Weight,31
+Chhatrapati Sambhaji Nagar,2012,Sepsis,2
+Chhatrapati Sambhaji Nagar,2012,Asphyxia,6
+Chhatrapati Sambhaji Nagar,2012,Pneumonia,5
+Chhatrapati Sambhaji Nagar,2012,Diarrhea,0
+Chhatrapati Sambhaji Nagar,2012,Fever,1
+Chhatrapati Sambhaji Nagar,2012,Measles,0
+Chhatrapati Sambhaji Nagar,2012,Low Birth Weight,32
+Dharashiv,2012,Sepsis,6
+Dharashiv,2012,Asphyxia,13
+Dharashiv,2012,Pneumonia,3
+Dharashiv,2012,Diarrhea,0
+Dharashiv,2012,Fever,2
+Dharashiv,2012,Measles,0
+Dharashiv,2012,Low Birth Weight,42
+Dhule,2012,Sepsis,8
+Dhule,2012,Asphyxia,24
+Dhule,2012,Pneumonia,7
+Dhule,2012,Diarrhea,1
+Dhule,2012,Fever,1
+Dhule,2012,Measles,0
+Dhule,2012,Low Birth Weight,33
+Gadchiroli,2012,Sepsis,11
+Gadchiroli,2012,Asphyxia,19
+Gadchiroli,2012,Pneumonia,5
+Gadchiroli,2012,Diarrhea,1
+Gadchiroli,2012,Fever,1
+Gadchiroli,2012,Measles,0
+Gadchiroli,2012,Low Birth Weight,31
+Gondia,2012,Sepsis,13
+Gondia,2012,Asphyxia,21
+Gondia,2012,Pneumonia,6
+Gondia,2012,Diarrhea,0
+Gondia,2012,Fever,0
+Gondia,2012,Measles,0
+Gondia,2012,Low Birth Weight,33
+Hingoli,2012,Sepsis,3
+Hingoli,2012,Asphyxia,12
+Hingoli,2012,Pneumonia,7
+Hingoli,2012,Diarrhea,0
+Hingoli,2012,Fever,0
+Hingoli,2012,Measles,0
+Hingoli,2012,Low Birth Weight,32
+Jalgaon,2012,Sepsis,9
+Jalgaon,2012,Asphyxia,16
+Jalgaon,2012,Pneumonia,4
+Jalgaon,2012,Diarrhea,0
+Jalgaon,2012,Fever,1
+Jalgaon,2012,Measles,0
+Jalgaon,2012,Low Birth Weight,34
+Jalna,2012,Sepsis,3
+Jalna,2012,Asphyxia,10
+Jalna,2012,Pneumonia,3
+Jalna,2012,Diarrhea,0
+Jalna,2012,Fever,1
+Jalna,2012,Measles,0
+Jalna,2012,Low Birth Weight,35
+Kolhapur,2012,Sepsis,1
+Kolhapur,2012,Asphyxia,5
+Kolhapur,2012,Pneumonia,1
+Kolhapur,2012,Diarrhea,1
+Kolhapur,2012,Fever,0
+Kolhapur,2012,Measles,1
+Kolhapur,2012,Low Birth Weight,14
+Latur,2012,Sepsis,7
+Latur,2012,Asphyxia,17
+Latur,2012,Pneumonia,3
+Latur,2012,Diarrhea,1
+Latur,2012,Fever,2
+Latur,2012,Measles,0
+Latur,2012,Low Birth Weight,39
+Mumbai,2012,Sepsis,6
+Mumbai,2012,Asphyxia,12
+Mumbai,2012,Pneumonia,8
+Mumbai,2012,Diarrhea,2
+Mumbai,2012,Fever,1
+Mumbai,2012,Measles,0
+Mumbai,2012,Low Birth Weight,15
+Nagpur,2012,Sepsis,9
+Nagpur,2012,Asphyxia,17
+Nagpur,2012,Pneumonia,3
+Nagpur,2012,Diarrhea,1
+Nagpur,2012,Fever,2
+Nagpur,2012,Measles,0
+Nagpur,2012,Low Birth Weight,37
+Nanded,2012,Sepsis,6
+Nanded,2012,Asphyxia,24
+Nanded,2012,Pneumonia,2
+Nanded,2012,Diarrhea,0
+Nanded,2012,Fever,2
+Nanded,2012,Measles,0
+Nanded,2012,Low Birth Weight,40
+Nandurbar,2012,Sepsis,5
+Nandurbar,2012,Asphyxia,13
+Nandurbar,2012,Pneumonia,11
+Nandurbar,2012,Diarrhea,1
+Nandurbar,2012,Fever,3
+Nandurbar,2012,Measles,0
+Nandurbar,2012,Low Birth Weight,30
+Nashik,2012,Sepsis,5
+Nashik,2012,Asphyxia,14
+Nashik,2012,Pneumonia,7
+Nashik,2012,Diarrhea,1
+Nashik,2012,Fever,2
+Nashik,2012,Measles,0
+Nashik,2012,Low Birth Weight,41
+Parbhani,2012,Sepsis,2
+Parbhani,2012,Asphyxia,5
+Parbhani,2012,Pneumonia,2
+Parbhani,2012,Diarrhea,1
+Parbhani,2012,Fever,3
+Parbhani,2012,Measles,0
+Parbhani,2012,Low Birth Weight,32
+Pune,2012,Sepsis,9
+Pune,2012,Asphyxia,13
+Pune,2012,Pneumonia,6
+Pune,2012,Diarrhea,4
+Pune,2012,Fever,4
+Pune,2012,Measles,1
+Pune,2012,Low Birth Weight,26
+Raigad,2012,Sepsis,7
+Raigad,2012,Asphyxia,15
+Raigad,2012,Pneumonia,5
+Raigad,2012,Diarrhea,1
+Raigad,2012,Fever,1
+Raigad,2012,Measles,0
+Raigad,2012,Low Birth Weight,32
+Ratnagiri,2012,Sepsis,4
+Ratnagiri,2012,Asphyxia,31
+Ratnagiri,2012,Pneumonia,3
+Ratnagiri,2012,Diarrhea,0
+Ratnagiri,2012,Fever,1
+Ratnagiri,2012,Measles,0
+Ratnagiri,2012,Low Birth Weight,29
+Sangli,2012,Sepsis,7
+Sangli,2012,Asphyxia,20
+Sangli,2012,Pneumonia,4
+Sangli,2012,Diarrhea,1
+Sangli,2012,Fever,2
+Sangli,2012,Measles,0
+Sangli,2012,Low Birth Weight,29
+Satara,2012,Sepsis,10
+Satara,2012,Asphyxia,13
+Satara,2012,Pneumonia,3
+Satara,2012,Diarrhea,1
+Satara,2012,Fever,1
+Satara,2012,Measles,1
+Satara,2012,Low Birth Weight,37
+Sindhudurg,2012,Sepsis,3
+Sindhudurg,2012,Asphyxia,18
+Sindhudurg,2012,Pneumonia,5
+Sindhudurg,2012,Diarrhea,0
+Sindhudurg,2012,Fever,0
+Sindhudurg,2012,Measles,0
+Sindhudurg,2012,Low Birth Weight,30
+Solapur,2012,Sepsis,3
+Solapur,2012,Asphyxia,13
+Solapur,2012,Pneumonia,3
+Solapur,2012,Diarrhea,1
+Solapur,2012,Fever,1
+Solapur,2012,Measles,1
+Solapur,2012,Low Birth Weight,34
+Thane,2012,Sepsis,11
+Thane,2012,Asphyxia,13
+Thane,2012,Pneumonia,5
+Thane,2012,Diarrhea,1
+Thane,2012,Fever,3
+Thane,2012,Measles,1
+Thane,2012,Low Birth Weight,30
+Wardha,2012,Sepsis,12
+Wardha,2012,Asphyxia,12
+Wardha,2012,Pneumonia,4
+Wardha,2012,Diarrhea,0
+Wardha,2012,Fever,1
+Wardha,2012,Measles,0
+Wardha,2012,Low Birth Weight,34
+Washim,2012,Sepsis,1
+Washim,2012,Asphyxia,15
+Washim,2012,Pneumonia,1
+Washim,2012,Diarrhea,8
+Washim,2012,Fever,0
+Washim,2012,Measles,0
+Washim,2012,Low Birth Weight,33
+Yavatmal,2012,Sepsis,4
+Yavatmal,2012,Asphyxia,15
+Yavatmal,2012,Pneumonia,4
+Yavatmal,2012,Diarrhea,1
+Yavatmal,2012,Fever,1
+Yavatmal,2012,Measles,0
+Yavatmal,2012,Low Birth Weight,44
+Ahilyanagar,2011,Sepsis,3
+Ahilyanagar,2011,Asphyxia,13
+Ahilyanagar,2011,Pneumonia,4
+Ahilyanagar,2011,Diarrhea,5
+Ahilyanagar,2011,Fever,1
+Ahilyanagar,2011,Measles,0
+Ahilyanagar,2011,Low Birth Weight,29
+Akola,2011,Sepsis,15
+Akola,2011,Asphyxia,19
+Akola,2011,Pneumonia,3
+Akola,2011,Diarrhea,0
+Akola,2011,Fever,1
+Akola,2011,Measles,0
+Akola,2011,Low Birth Weight,34
+Amravati,2011,Sepsis,6
+Amravati,2011,Asphyxia,12
+Amravati,2011,Pneumonia,6
+Amravati,2011,Diarrhea,1
+Amravati,2011,Fever,1
+Amravati,2011,Measles,1
+Amravati,2011,Low Birth Weight,38
+Beed,2011,Sepsis,2
+Beed,2011,Asphyxia,8
+Beed,2011,Pneumonia,2
+Beed,2011,Diarrhea,2
+Beed,2011,Fever,2
+Beed,2011,Measles,0
+Beed,2011,Low Birth Weight,21
+Bhandara,2011,Sepsis,4
+Bhandara,2011,Asphyxia,20
+Bhandara,2011,Pneumonia,5
+Bhandara,2011,Diarrhea,0
+Bhandara,2011,Fever,1
+Bhandara,2011,Measles,0
+Bhandara,2011,Low Birth Weight,38
+Buldhana,2011,Sepsis,4
+Buldhana,2011,Asphyxia,19
+Buldhana,2011,Pneumonia,5
+Buldhana,2011,Diarrhea,0
+Buldhana,2011,Fever,1
+Buldhana,2011,Measles,1
+Buldhana,2011,Low Birth Weight,40
+Chandrapur,2011,Sepsis,11
+Chandrapur,2011,Asphyxia,12
+Chandrapur,2011,Pneumonia,7
+Chandrapur,2011,Diarrhea,0
+Chandrapur,2011,Fever,1
+Chandrapur,2011,Measles,0
+Chandrapur,2011,Low Birth Weight,34
+Chhatrapati Sambhaji Nagar,2011,Sepsis,2
+Chhatrapati Sambhaji Nagar,2011,Asphyxia,7
+Chhatrapati Sambhaji Nagar,2011,Pneumonia,2
+Chhatrapati Sambhaji Nagar,2011,Diarrhea,8
+Chhatrapati Sambhaji Nagar,2011,Fever,1
+Chhatrapati Sambhaji Nagar,2011,Measles,0
+Chhatrapati Sambhaji Nagar,2011,Low Birth Weight,17
+Dharashiv,2011,Sepsis,8
+Dharashiv,2011,Asphyxia,14
+Dharashiv,2011,Pneumonia,5
+Dharashiv,2011,Diarrhea,5
+Dharashiv,2011,Fever,3
+Dharashiv,2011,Measles,0
+Dharashiv,2011,Low Birth Weight,37
+Dhule,2011,Sepsis,15
+Dhule,2011,Asphyxia,5
+Dhule,2011,Pneumonia,9
+Dhule,2011,Diarrhea,2
+Dhule,2011,Fever,1
+Dhule,2011,Measles,0
+Dhule,2011,Low Birth Weight,19
+Gadchiroli,2011,Sepsis,9
+Gadchiroli,2011,Asphyxia,20
+Gadchiroli,2011,Pneumonia,11
+Gadchiroli,2011,Diarrhea,2
+Gadchiroli,2011,Fever,0
+Gadchiroli,2011,Measles,1
+Gadchiroli,2011,Low Birth Weight,27
+Gondia,2011,Sepsis,21
+Gondia,2011,Asphyxia,22
+Gondia,2011,Pneumonia,4
+Gondia,2011,Diarrhea,0
+Gondia,2011,Fever,0
+Gondia,2011,Measles,0
+Gondia,2011,Low Birth Weight,36
+Hingoli,2011,Sepsis,3
+Hingoli,2011,Asphyxia,9
+Hingoli,2011,Pneumonia,3
+Hingoli,2011,Diarrhea,1
+Hingoli,2011,Fever,1
+Hingoli,2011,Measles,0
+Hingoli,2011,Low Birth Weight,24
+Jalgaon,2011,Sepsis,6
+Jalgaon,2011,Asphyxia,19
+Jalgaon,2011,Pneumonia,3
+Jalgaon,2011,Diarrhea,1
+Jalgaon,2011,Fever,1
+Jalgaon,2011,Measles,1
+Jalgaon,2011,Low Birth Weight,34
+Jalna,2011,Sepsis,4
+Jalna,2011,Asphyxia,10
+Jalna,2011,Pneumonia,3
+Jalna,2011,Diarrhea,0
+Jalna,2011,Fever,5
+Jalna,2011,Measles,0
+Jalna,2011,Low Birth Weight,32
+Kolhapur,2011,Sepsis,3
+Kolhapur,2011,Asphyxia,5
+Kolhapur,2011,Pneumonia,1
+Kolhapur,2011,Diarrhea,1
+Kolhapur,2011,Fever,1
+Kolhapur,2011,Measles,0
+Kolhapur,2011,Low Birth Weight,21
+Latur,2011,Sepsis,2
+Latur,2011,Asphyxia,17
+Latur,2011,Pneumonia,2
+Latur,2011,Diarrhea,1
+Latur,2011,Fever,2
+Latur,2011,Measles,0
+Latur,2011,Low Birth Weight,40
+Mumbai,2011,Sepsis,5
+Mumbai,2011,Asphyxia,11
+Mumbai,2011,Pneumonia,9
+Mumbai,2011,Diarrhea,2
+Mumbai,2011,Fever,1
+Mumbai,2011,Measles,0
+Mumbai,2011,Low Birth Weight,13
+Nagpur,2011,Sepsis,7
+Nagpur,2011,Asphyxia,20
+Nagpur,2011,Pneumonia,3
+Nagpur,2011,Diarrhea,1
+Nagpur,2011,Fever,1
+Nagpur,2011,Measles,1
+Nagpur,2011,Low Birth Weight,39
+Nanded,2011,Sepsis,6
+Nanded,2011,Asphyxia,15
+Nanded,2011,Pneumonia,4
+Nanded,2011,Diarrhea,0
+Nanded,2011,Fever,4
+Nanded,2011,Measles,1
+Nanded,2011,Low Birth Weight,35
+Nandurbar,2011,Sepsis,3
+Nandurbar,2011,Asphyxia,12
+Nandurbar,2011,Pneumonia,12
+Nandurbar,2011,Diarrhea,2
+Nandurbar,2011,Fever,2
+Nandurbar,2011,Measles,0
+Nandurbar,2011,Low Birth Weight,27
+Nashik,2011,Sepsis,4
+Nashik,2011,Asphyxia,8
+Nashik,2011,Pneumonia,6
+Nashik,2011,Diarrhea,3
+Nashik,2011,Fever,2
+Nashik,2011,Measles,0
+Nashik,2011,Low Birth Weight,27
+Parbhani,2011,Sepsis,1
+Parbhani,2011,Asphyxia,5
+Parbhani,2011,Pneumonia,2
+Parbhani,2011,Diarrhea,0
+Parbhani,2011,Fever,1
+Parbhani,2011,Measles,0
+Parbhani,2011,Low Birth Weight,38
+Pune,2011,Sepsis,12
+Pune,2011,Asphyxia,12
+Pune,2011,Pneumonia,9
+Pune,2011,Diarrhea,10
+Pune,2011,Fever,5
+Pune,2011,Measles,5
+Pune,2011,Low Birth Weight,19
+Raigad,2011,Sepsis,5
+Raigad,2011,Asphyxia,17
+Raigad,2011,Pneumonia,6
+Raigad,2011,Diarrhea,1
+Raigad,2011,Fever,1
+Raigad,2011,Measles,0
+Raigad,2011,Low Birth Weight,30
+Ratnagiri,2011,Sepsis,5
+Ratnagiri,2011,Asphyxia,14
+Ratnagiri,2011,Pneumonia,2
+Ratnagiri,2011,Diarrhea,2
+Ratnagiri,2011,Fever,0
+Ratnagiri,2011,Measles,0
+Ratnagiri,2011,Low Birth Weight,24
+Sangli,2011,Sepsis,3
+Sangli,2011,Asphyxia,20
+Sangli,2011,Pneumonia,1
+Sangli,2011,Diarrhea,1
+Sangli,2011,Fever,1
+Sangli,2011,Measles,0
+Sangli,2011,Low Birth Weight,36
+Satara,2011,Sepsis,5
+Satara,2011,Asphyxia,13
+Satara,2011,Pneumonia,3
+Satara,2011,Diarrhea,1
+Satara,2011,Fever,2
+Satara,2011,Measles,0
+Satara,2011,Low Birth Weight,31
+Sindhudurg,2011,Sepsis,3
+Sindhudurg,2011,Asphyxia,10
+Sindhudurg,2011,Pneumonia,4
+Sindhudurg,2011,Diarrhea,0
+Sindhudurg,2011,Fever,0
+Sindhudurg,2011,Measles,0
+Sindhudurg,2011,Low Birth Weight,23
+Solapur,2011,Sepsis,3
+Solapur,2011,Asphyxia,13
+Solapur,2011,Pneumonia,1
+Solapur,2011,Diarrhea,0
+Solapur,2011,Fever,1
+Solapur,2011,Measles,0
+Solapur,2011,Low Birth Weight,31
+Thane,2011,Sepsis,5
+Thane,2011,Asphyxia,9
+Thane,2011,Pneumonia,8
+Thane,2011,Diarrhea,1
+Thane,2011,Fever,1
+Thane,2011,Measles,1
+Thane,2011,Low Birth Weight,29
+Wardha,2011,Sepsis,4
+Wardha,2011,Asphyxia,12
+Wardha,2011,Pneumonia,5
+Wardha,2011,Diarrhea,0
+Wardha,2011,Fever,1
+Wardha,2011,Measles,0
+Wardha,2011,Low Birth Weight,39
+Washim,2011,Sepsis,3
+Washim,2011,Asphyxia,14
+Washim,2011,Pneumonia,2
+Washim,2011,Diarrhea,2
+Washim,2011,Fever,1
+Washim,2011,Measles,0
+Washim,2011,Low Birth Weight,30
+Yavatmal,2011,Sepsis,2
+Yavatmal,2011,Asphyxia,5
+Yavatmal,2011,Pneumonia,3
+Yavatmal,2011,Diarrhea,2
+Yavatmal,2011,Fever,1
+Yavatmal,2011,Measles,0
+Yavatmal,2011,Low Birth Weight,31
+Ahilyanagar,2010,Sepsis,0
+Ahilyanagar,2010,Asphyxia,0
+Ahilyanagar,2010,Pneumonia,0
+Ahilyanagar,2010,Diarrhea,0
+Ahilyanagar,2010,Fever,0
+Ahilyanagar,2010,Measles,0
+Ahilyanagar,2010,Low Birth Weight,0
+Akola,2010,Sepsis,0
+Akola,2010,Asphyxia,20
+Akola,2010,Pneumonia,2
+Akola,2010,Diarrhea,0
+Akola,2010,Fever,0
+Akola,2010,Measles,0
+Akola,2010,Low Birth Weight,23
+Amravati,2010,Sepsis,8
+Amravati,2010,Asphyxia,8
+Amravati,2010,Pneumonia,2
+Amravati,2010,Diarrhea,0
+Amravati,2010,Fever,1
+Amravati,2010,Measles,0
+Amravati,2010,Low Birth Weight,19
+Beed,2010,Sepsis,3
+Beed,2010,Asphyxia,3
+Beed,2010,Pneumonia,0
+Beed,2010,Diarrhea,0
+Beed,2010,Fever,0
+Beed,2010,Measles,0
+Beed,2010,Low Birth Weight,40
+Buldhana,2010,Sepsis,0
+Buldhana,2010,Asphyxia,0
+Buldhana,2010,Pneumonia,0
+Buldhana,2010,Diarrhea,0
+Buldhana,2010,Fever,0
+Buldhana,2010,Measles,0
+Buldhana,2010,Low Birth Weight,0
+Chandrapur,2010,Sepsis,7
+Chandrapur,2010,Asphyxia,16
+Chandrapur,2010,Pneumonia,2
+Chandrapur,2010,Diarrhea,0
+Chandrapur,2010,Fever,1
+Chandrapur,2010,Measles,0
+Chandrapur,2010,Low Birth Weight,21
+Chhatrapati Sambhaji Nagar,2010,Sepsis,0
+Chhatrapati Sambhaji Nagar,2010,Asphyxia,0
+Chhatrapati Sambhaji Nagar,2010,Pneumonia,0
+Chhatrapati Sambhaji Nagar,2010,Diarrhea,0
+Chhatrapati Sambhaji Nagar,2010,Fever,0
+Chhatrapati Sambhaji Nagar,2010,Measles,0
+Chhatrapati Sambhaji Nagar,2010,Low Birth Weight,0
+Dharashiv,2010,Sepsis,0
+Dharashiv,2010,Asphyxia,0
+Dharashiv,2010,Pneumonia,0
+Dharashiv,2010,Diarrhea,0
+Dharashiv,2010,Fever,0
+Dharashiv,2010,Measles,0
+Dharashiv,2010,Low Birth Weight,0
+Dhule,2010,Sepsis,1
+Dhule,2010,Asphyxia,1
+Dhule,2010,Pneumonia,3
+Dhule,2010,Diarrhea,0
+Dhule,2010,Fever,2
+Dhule,2010,Measles,0
+Dhule,2010,Low Birth Weight,19
+Gondia,2010,Sepsis,4
+Gondia,2010,Asphyxia,4
+Gondia,2010,Pneumonia,0
+Gondia,2010,Diarrhea,0
+Gondia,2010,Fever,1
+Gondia,2010,Measles,0
+Gondia,2010,Low Birth Weight,13
+Hingoli,2010,Sepsis,0
+Hingoli,2010,Asphyxia,0
+Hingoli,2010,Pneumonia,0
+Hingoli,2010,Diarrhea,0
+Hingoli,2010,Fever,0
+Hingoli,2010,Measles,0
+Hingoli,2010,Low Birth Weight,6
+Jalgaon,2010,Sepsis,2
+Jalgaon,2010,Asphyxia,20
+Jalgaon,2010,Pneumonia,4
+Jalgaon,2010,Diarrhea,2
+Jalgaon,2010,Fever,2
+Jalgaon,2010,Measles,0
+Jalgaon,2010,Low Birth Weight,38
+Jalna,2010,Sepsis,0
+Jalna,2010,Asphyxia,0
+Jalna,2010,Pneumonia,9
+Jalna,2010,Diarrhea,14
+Jalna,2010,Fever,14
+Jalna,2010,Measles,0
+Jalna,2010,Low Birth Weight,0
+Kolhapur,2010,Sepsis,3
+Kolhapur,2010,Asphyxia,2
+Kolhapur,2010,Pneumonia,1
+Kolhapur,2010,Diarrhea,0
+Kolhapur,2010,Fever,0
+Kolhapur,2010,Measles,0
+Kolhapur,2010,Low Birth Weight,4
+Latur,2010,Sepsis,0
+Latur,2010,Asphyxia,0
+Latur,2010,Pneumonia,0
+Latur,2010,Diarrhea,0
+Latur,2010,Fever,0
+Latur,2010,Measles,0
+Latur,2010,Low Birth Weight,0
+Mumbai,2010,Sepsis,6
+Mumbai,2010,Asphyxia,10
+Mumbai,2010,Pneumonia,11
+Mumbai,2010,Diarrhea,2
+Mumbai,2010,Fever,1
+Mumbai,2010,Measles,0
+Mumbai,2010,Low Birth Weight,14
+Nagpur,2010,Sepsis,0
+Nagpur,2010,Asphyxia,0
+Nagpur,2010,Pneumonia,0
+Nagpur,2010,Diarrhea,0
+Nagpur,2010,Fever,0
+Nagpur,2010,Measles,0
+Nagpur,2010,Low Birth Weight,0
+Nanded,2010,Sepsis,0
+Nanded,2010,Asphyxia,1
+Nanded,2010,Pneumonia,0
+Nanded,2010,Diarrhea,0
+Nanded,2010,Fever,0
+Nanded,2010,Measles,0
+Nanded,2010,Low Birth Weight,50
+Nandurbar,2010,Sepsis,5
+Nandurbar,2010,Asphyxia,10
+Nandurbar,2010,Pneumonia,1
+Nandurbar,2010,Diarrhea,2
+Nandurbar,2010,Fever,0
+Nandurbar,2010,Measles,0
+Nandurbar,2010,Low Birth Weight,22
+Nashik,2010,Sepsis,0
+Nashik,2010,Asphyxia,0
+Nashik,2010,Pneumonia,0
+Nashik,2010,Diarrhea,0
+Nashik,2010,Fever,0
+Nashik,2010,Measles,0
+Nashik,2010,Low Birth Weight,0
+Parbhani,2010,Sepsis,15
+Parbhani,2010,Asphyxia,7
+Parbhani,2010,Pneumonia,13
+Parbhani,2010,Diarrhea,1
+Parbhani,2010,Fever,6
+Parbhani,2010,Measles,0
+Parbhani,2010,Low Birth Weight,32
+Pune,2010,Sepsis,4
+Pune,2010,Asphyxia,6
+Pune,2010,Pneumonia,3
+Pune,2010,Diarrhea,1
+Pune,2010,Fever,3
+Pune,2010,Measles,0
+Pune,2010,Low Birth Weight,7
+Raigad,2010,Sepsis,3
+Raigad,2010,Asphyxia,0
+Raigad,2010,Pneumonia,6
+Raigad,2010,Diarrhea,2
+Raigad,2010,Fever,4
+Raigad,2010,Measles,0
+Raigad,2010,Low Birth Weight,13
+Ratnagiri,2010,Sepsis,0
+Ratnagiri,2010,Asphyxia,2
+Ratnagiri,2010,Pneumonia,2
+Ratnagiri,2010,Diarrhea,1
+Ratnagiri,2010,Fever,2
+Ratnagiri,2010,Measles,0
+Ratnagiri,2010,Low Birth Weight,21
+Sangli,2010,Sepsis,1
+Sangli,2010,Asphyxia,1
+Sangli,2010,Pneumonia,2
+Sangli,2010,Diarrhea,1
+Sangli,2010,Fever,2
+Sangli,2010,Measles,0
+Sangli,2010,Low Birth Weight,23
+Satara,2010,Sepsis,2
+Satara,2010,Asphyxia,5
+Satara,2010,Pneumonia,0
+Satara,2010,Diarrhea,0
+Satara,2010,Fever,0
+Satara,2010,Measles,0
+Satara,2010,Low Birth Weight,3
+Sindhudurg,2010,Sepsis,3
+Sindhudurg,2010,Asphyxia,8
+Sindhudurg,2010,Pneumonia,0
+Sindhudurg,2010,Diarrhea,0
+Sindhudurg,2010,Fever,0
+Sindhudurg,2010,Measles,0
+Sindhudurg,2010,Low Birth Weight,27
+Solapur,2010,Sepsis,1
+Solapur,2010,Asphyxia,4
+Solapur,2010,Pneumonia,5
+Solapur,2010,Diarrhea,0
+Solapur,2010,Fever,0
+Solapur,2010,Measles,0
+Solapur,2010,Low Birth Weight,17
+Thane,2010,Sepsis,4
+Thane,2010,Asphyxia,3
+Thane,2010,Pneumonia,4
+Thane,2010,Diarrhea,4
+Thane,2010,Fever,5
+Thane,2010,Measles,0
+Thane,2010,Low Birth Weight,13
+Wardha,2010,Sepsis,0
+Wardha,2010,Asphyxia,0
+Wardha,2010,Pneumonia,0
+Wardha,2010,Diarrhea,0
+Wardha,2010,Fever,0
+Wardha,2010,Measles,0
+Wardha,2010,Low Birth Weight,0
+Washim,2010,Sepsis,0
+Washim,2010,Asphyxia,0
+Washim,2010,Pneumonia,0
+Washim,2010,Diarrhea,0
+Washim,2010,Fever,0
+Washim,2010,Measles,0
+Washim,2010,Low Birth Weight,0
+Yavatmal,2010,Sepsis,0
+Yavatmal,2010,Asphyxia,0
+Yavatmal,2010,Pneumonia,0
+Yavatmal,2010,Diarrhea,0
+Yavatmal,2010,Fever,0
+Yavatmal,2010,Measles,0
+Yavatmal,2010,Low Birth Weight,41
+Ahilyanagar,2009,Sepsis,0
+Ahilyanagar,2009,Asphyxia,0
+Ahilyanagar,2009,Pneumonia,0
+Ahilyanagar,2009,Diarrhea,0
+Ahilyanagar,2009,Fever,0
+Ahilyanagar,2009,Measles,0
+Ahilyanagar,2009,Low Birth Weight,1
+Akola,2009,Sepsis,2
+Akola,2009,Asphyxia,1
+Akola,2009,Pneumonia,5
+Akola,2009,Diarrhea,11
+Akola,2009,Fever,69
+Akola,2009,Measles,7
+Akola,2009,Low Birth Weight,7
+Amravati,2009,Sepsis,1
+Amravati,2009,Asphyxia,3
+Amravati,2009,Pneumonia,0
+Amravati,2009,Diarrhea,0
+Amravati,2009,Fever,0
+Amravati,2009,Measles,0
+Amravati,2009,Low Birth Weight,3
+Beed,2009,Sepsis,0
+Beed,2009,Asphyxia,0
+Beed,2009,Pneumonia,100
+Beed,2009,Diarrhea,0
+Beed,2009,Fever,0
+Beed,2009,Measles,0
+Beed,2009,Low Birth Weight,0
+Chandrapur,2009,Sepsis,0
+Chandrapur,2009,Asphyxia,0
+Chandrapur,2009,Pneumonia,0
+Chandrapur,2009,Diarrhea,0
+Chandrapur,2009,Fever,0
+Chandrapur,2009,Measles,0
+Chandrapur,2009,Low Birth Weight,0
+Chhatrapati Sambhaji Nagar,2009,Sepsis,0
+Chhatrapati Sambhaji Nagar,2009,Asphyxia,0
+Chhatrapati Sambhaji Nagar,2009,Pneumonia,0
+Chhatrapati Sambhaji Nagar,2009,Diarrhea,0
+Chhatrapati Sambhaji Nagar,2009,Fever,0
+Chhatrapati Sambhaji Nagar,2009,Measles,0
+Chhatrapati Sambhaji Nagar,2009,Low Birth Weight,0
+Dharashiv,2009,Sepsis,0
+Dharashiv,2009,Asphyxia,0
+Dharashiv,2009,Pneumonia,0
+Dharashiv,2009,Diarrhea,0
+Dharashiv,2009,Fever,0
+Dharashiv,2009,Measles,0
+Dharashiv,2009,Low Birth Weight,0
+Dhule,2009,Sepsis,4
+Dhule,2009,Asphyxia,5
+Dhule,2009,Pneumonia,9
+Dhule,2009,Diarrhea,2
+Dhule,2009,Fever,14
+Dhule,2009,Measles,2
+Dhule,2009,Low Birth Weight,30
+Gadchiroli,2009,Sepsis,0
+Gadchiroli,2009,Asphyxia,0
+Gadchiroli,2009,Pneumonia,0
+Gadchiroli,2009,Diarrhea,0
+Gadchiroli,2009,Fever,0
+Gadchiroli,2009,Measles,0
+Gadchiroli,2009,Low Birth Weight,0
+Hingoli,2009,Sepsis,0
+Hingoli,2009,Asphyxia,0
+Hingoli,2009,Pneumonia,0
+Hingoli,2009,Diarrhea,0
+Hingoli,2009,Fever,0
+Hingoli,2009,Measles,0
+Hingoli,2009,Low Birth Weight,0
+Jalgaon,2009,Sepsis,1
+Jalgaon,2009,Asphyxia,20
+Jalgaon,2009,Pneumonia,5
+Jalgaon,2009,Diarrhea,0
+Jalgaon,2009,Fever,1
+Jalgaon,2009,Measles,1
+Jalgaon,2009,Low Birth Weight,50
+Jalna,2009,Sepsis,0
+Jalna,2009,Asphyxia,0
+Jalna,2009,Pneumonia,0
+Jalna,2009,Diarrhea,0
+Jalna,2009,Fever,0
+Jalna,2009,Measles,0
+Jalna,2009,Low Birth Weight,0
+Kolhapur,2009,Sepsis,0
+Kolhapur,2009,Asphyxia,0
+Kolhapur,2009,Pneumonia,0
+Kolhapur,2009,Diarrhea,0
+Kolhapur,2009,Fever,0
+Kolhapur,2009,Measles,0
+Kolhapur,2009,Low Birth Weight,0
+Latur,2009,Sepsis,0
+Latur,2009,Asphyxia,0
+Latur,2009,Pneumonia,0
+Latur,2009,Diarrhea,0
+Latur,2009,Fever,0
+Latur,2009,Measles,0
+Latur,2009,Low Birth Weight,0
+Nagpur,2009,Sepsis,0
+Nagpur,2009,Asphyxia,0
+Nagpur,2009,Pneumonia,0
+Nagpur,2009,Diarrhea,0
+Nagpur,2009,Fever,0
+Nagpur,2009,Measles,0
+Nagpur,2009,Low Birth Weight,0
+Nanded,2009,Sepsis,34
+Nanded,2009,Asphyxia,0
+Nanded,2009,Pneumonia,0
+Nanded,2009,Diarrhea,0
+Nanded,2009,Fever,0
+Nanded,2009,Measles,0
+Nanded,2009,Low Birth Weight,67
+Nashik,2009,Sepsis,0
+Nashik,2009,Asphyxia,0
+Nashik,2009,Pneumonia,0
+Nashik,2009,Diarrhea,0
+Nashik,2009,Fever,0
+Nashik,2009,Measles,0
+Nashik,2009,Low Birth Weight,0
+Parbhani,2009,Sepsis,0
+Parbhani,2009,Asphyxia,0
+Parbhani,2009,Pneumonia,0
+Parbhani,2009,Diarrhea,0
+Parbhani,2009,Fever,0
+Parbhani,2009,Measles,0
+Parbhani,2009,Low Birth Weight,0
+Pune,2009,Sepsis,12
+Pune,2009,Asphyxia,16
+Pune,2009,Pneumonia,12
+Pune,2009,Diarrhea,8
+Pune,2009,Fever,14
+Pune,2009,Measles,2
+Pune,2009,Low Birth Weight,17
+Sangli,2009,Sepsis,1
+Sangli,2009,Asphyxia,24
+Sangli,2009,Pneumonia,3
+Sangli,2009,Diarrhea,2
+Sangli,2009,Fever,5
+Sangli,2009,Measles,0
+Sangli,2009,Low Birth Weight,9
+Satara,2009,Sepsis,3
+Satara,2009,Asphyxia,16
+Satara,2009,Pneumonia,1
+Satara,2009,Diarrhea,0
+Satara,2009,Fever,2
+Satara,2009,Measles,0
+Satara,2009,Low Birth Weight,21
+Sindhudurg,2009,Sepsis,2
+Sindhudurg,2009,Asphyxia,20
+Sindhudurg,2009,Pneumonia,3
+Sindhudurg,2009,Diarrhea,0
+Sindhudurg,2009,Fever,0
+Sindhudurg,2009,Measles,0
+Sindhudurg,2009,Low Birth Weight,39
+Solapur,2009,Sepsis,3
+Solapur,2009,Asphyxia,10
+Solapur,2009,Pneumonia,1
+Solapur,2009,Diarrhea,6
+Solapur,2009,Fever,8
+Solapur,2009,Measles,1
+Solapur,2009,Low Birth Weight,15
+Thane,2009,Sepsis,6
+Thane,2009,Asphyxia,12
+Thane,2009,Pneumonia,7
+Thane,2009,Diarrhea,2
+Thane,2009,Fever,0
+Thane,2009,Measles,0
+Thane,2009,Low Birth Weight,35
+Washim,2009,Sepsis,0
+Washim,2009,Asphyxia,0
+Washim,2009,Pneumonia,0
+Washim,2009,Diarrhea,0
+Washim,2009,Fever,0
+Washim,2009,Measles,0
+Washim,2009,Low Birth Weight,0
+Ahilyanagar,2008,Sepsis,0
+Ahilyanagar,2008,Asphyxia,0
+Ahilyanagar,2008,Pneumonia,0
+Ahilyanagar,2008,Diarrhea,0
+Ahilyanagar,2008,Fever,0
+Ahilyanagar,2008,Measles,0
+Ahilyanagar,2008,Low Birth Weight,0
+Akola,2008,Sepsis,0
+Akola,2008,Asphyxia,0
+Akola,2008,Pneumonia,0
+Akola,2008,Diarrhea,0
+Akola,2008,Fever,0
+Akola,2008,Measles,0
+Akola,2008,Low Birth Weight,0
+Amravati,2008,Sepsis,0
+Amravati,2008,Asphyxia,0
+Amravati,2008,Pneumonia,0
+Amravati,2008,Diarrhea,0
+Amravati,2008,Fever,0
+Amravati,2008,Measles,0
+Amravati,2008,Low Birth Weight,0
+Beed,2008,Sepsis,5
+Beed,2008,Asphyxia,4
+Beed,2008,Pneumonia,3
+Beed,2008,Diarrhea,0
+Beed,2008,Fever,0
+Beed,2008,Measles,0
+Beed,2008,Low Birth Weight,0
+Bhandara,2008,Sepsis,0
+Bhandara,2008,Asphyxia,0
+Bhandara,2008,Pneumonia,0
+Bhandara,2008,Diarrhea,0
+Bhandara,2008,Fever,0
+Bhandara,2008,Measles,2
+Bhandara,2008,Low Birth Weight,0
+Buldhana,2008,Sepsis,0
+Buldhana,2008,Asphyxia,0
+Buldhana,2008,Pneumonia,0
+Buldhana,2008,Diarrhea,0
+Buldhana,2008,Fever,0
+Buldhana,2008,Measles,0
+Buldhana,2008,Low Birth Weight,0
+Chandrapur,2008,Sepsis,0
+Chandrapur,2008,Asphyxia,0
+Chandrapur,2008,Pneumonia,0
+Chandrapur,2008,Diarrhea,0
+Chandrapur,2008,Fever,0
+Chandrapur,2008,Measles,0
+Chandrapur,2008,Low Birth Weight,0
+Chhatrapati Sambhaji Nagar,2008,Sepsis,9
+Chhatrapati Sambhaji Nagar,2008,Asphyxia,0
+Chhatrapati Sambhaji Nagar,2008,Pneumonia,0
+Chhatrapati Sambhaji Nagar,2008,Diarrhea,0
+Chhatrapati Sambhaji Nagar,2008,Fever,0
+Chhatrapati Sambhaji Nagar,2008,Measles,0
+Chhatrapati Sambhaji Nagar,2008,Low Birth Weight,0
+Dharashiv,2008,Sepsis,0
+Dharashiv,2008,Asphyxia,0
+Dharashiv,2008,Pneumonia,0
+Dharashiv,2008,Diarrhea,0
+Dharashiv,2008,Fever,0
+Dharashiv,2008,Measles,0
+Dharashiv,2008,Low Birth Weight,0
+Dhule,2008,Sepsis,0
+Dhule,2008,Asphyxia,0
+Dhule,2008,Pneumonia,0
+Dhule,2008,Diarrhea,0
+Dhule,2008,Fever,0
+Dhule,2008,Measles,0
+Dhule,2008,Low Birth Weight,0
+Gadchiroli,2008,Sepsis,0
+Gadchiroli,2008,Asphyxia,0
+Gadchiroli,2008,Pneumonia,0
+Gadchiroli,2008,Diarrhea,0
+Gadchiroli,2008,Fever,0
+Gadchiroli,2008,Measles,0
+Gadchiroli,2008,Low Birth Weight,0
+Gondia,2008,Sepsis,0
+Gondia,2008,Asphyxia,0
+Gondia,2008,Pneumonia,0
+Gondia,2008,Diarrhea,0
+Gondia,2008,Fever,0
+Gondia,2008,Measles,0
+Gondia,2008,Low Birth Weight,0
+Hingoli,2008,Sepsis,0
+Hingoli,2008,Asphyxia,0
+Hingoli,2008,Pneumonia,0
+Hingoli,2008,Diarrhea,0
+Hingoli,2008,Fever,0
+Hingoli,2008,Measles,0
+Hingoli,2008,Low Birth Weight,0
+Jalgaon,2008,Sepsis,0
+Jalgaon,2008,Asphyxia,0
+Jalgaon,2008,Pneumonia,0
+Jalgaon,2008,Diarrhea,0
+Jalgaon,2008,Fever,0
+Jalgaon,2008,Measles,0
+Jalgaon,2008,Low Birth Weight,0
+Jalna,2008,Sepsis,0
+Jalna,2008,Asphyxia,0
+Jalna,2008,Pneumonia,0
+Jalna,2008,Diarrhea,0
+Jalna,2008,Fever,0
+Jalna,2008,Measles,0
+Jalna,2008,Low Birth Weight,0
+Kolhapur,2008,Sepsis,0
+Kolhapur,2008,Asphyxia,0
+Kolhapur,2008,Pneumonia,0
+Kolhapur,2008,Diarrhea,0
+Kolhapur,2008,Fever,0
+Kolhapur,2008,Measles,0
+Kolhapur,2008,Low Birth Weight,0
+Latur,2008,Sepsis,0
+Latur,2008,Asphyxia,0
+Latur,2008,Pneumonia,0
+Latur,2008,Diarrhea,0
+Latur,2008,Fever,0
+Latur,2008,Measles,0
+Latur,2008,Low Birth Weight,0
+Nagpur,2008,Sepsis,0
+Nagpur,2008,Asphyxia,0
+Nagpur,2008,Pneumonia,0
+Nagpur,2008,Diarrhea,0
+Nagpur,2008,Fever,0
+Nagpur,2008,Measles,0
+Nagpur,2008,Low Birth Weight,0
+Nanded,2008,Sepsis,0
+Nanded,2008,Asphyxia,0
+Nanded,2008,Pneumonia,0
+Nanded,2008,Diarrhea,0
+Nanded,2008,Fever,0
+Nanded,2008,Measles,0
+Nanded,2008,Low Birth Weight,2
+Nandurbar,2008,Sepsis,0
+Nandurbar,2008,Asphyxia,0
+Nandurbar,2008,Pneumonia,0
+Nandurbar,2008,Diarrhea,0
+Nandurbar,2008,Fever,0
+Nandurbar,2008,Measles,0
+Nandurbar,2008,Low Birth Weight,0
+Nashik,2008,Sepsis,0
+Nashik,2008,Asphyxia,0
+Nashik,2008,Pneumonia,0
+Nashik,2008,Diarrhea,0
+Nashik,2008,Fever,0
+Nashik,2008,Measles,0
+Nashik,2008,Low Birth Weight,0
+Parbhani,2008,Sepsis,0
+Parbhani,2008,Asphyxia,2
+Parbhani,2008,Pneumonia,0
+Parbhani,2008,Diarrhea,0
+Parbhani,2008,Fever,0
+Parbhani,2008,Measles,0
+Parbhani,2008,Low Birth Weight,3
+Pune,2008,Sepsis,0
+Pune,2008,Asphyxia,0
+Pune,2008,Pneumonia,0
+Pune,2008,Diarrhea,0
+Pune,2008,Fever,0
+Pune,2008,Measles,0
+Pune,2008,Low Birth Weight,12
+Raigad,2008,Sepsis,0
+Raigad,2008,Asphyxia,0
+Raigad,2008,Pneumonia,0
+Raigad,2008,Diarrhea,0
+Raigad,2008,Fever,0
+Raigad,2008,Measles,0
+Raigad,2008,Low Birth Weight,0
+Ratnagiri,2008,Sepsis,0
+Ratnagiri,2008,Asphyxia,0
+Ratnagiri,2008,Pneumonia,0
+Ratnagiri,2008,Diarrhea,0
+Ratnagiri,2008,Fever,0
+Ratnagiri,2008,Measles,0
+Ratnagiri,2008,Low Birth Weight,0
+Sangli,2008,Sepsis,0
+Sangli,2008,Asphyxia,0
+Sangli,2008,Pneumonia,0
+Sangli,2008,Diarrhea,0
+Sangli,2008,Fever,0
+Sangli,2008,Measles,0
+Sangli,2008,Low Birth Weight,0
+Satara,2008,Sepsis,0
+Satara,2008,Asphyxia,0
+Satara,2008,Pneumonia,0
+Satara,2008,Diarrhea,0
+Satara,2008,Fever,0
+Satara,2008,Measles,0
+Satara,2008,Low Birth Weight,0
+Sindhudurg,2008,Sepsis,0
+Sindhudurg,2008,Asphyxia,0
+Sindhudurg,2008,Pneumonia,0
+Sindhudurg,2008,Diarrhea,0
+Sindhudurg,2008,Fever,0
+Sindhudurg,2008,Measles,0
+Sindhudurg,2008,Low Birth Weight,0
+Solapur,2008,Sepsis,0
+Solapur,2008,Asphyxia,0
+Solapur,2008,Pneumonia,0
+Solapur,2008,Diarrhea,0
+Solapur,2008,Fever,0
+Solapur,2008,Measles,0
+Solapur,2008,Low Birth Weight,0
+Thane,2008,Sepsis,0
+Thane,2008,Asphyxia,0
+Thane,2008,Pneumonia,0
+Thane,2008,Diarrhea,0
+Thane,2008,Fever,0
+Thane,2008,Measles,0
+Thane,2008,Low Birth Weight,0
+Wardha,2008,Sepsis,0
+Wardha,2008,Asphyxia,0
+Wardha,2008,Pneumonia,0
+Wardha,2008,Diarrhea,0
+Wardha,2008,Fever,0
+Wardha,2008,Measles,0
+Wardha,2008,Low Birth Weight,0
+Washim,2008,Sepsis,9
+Washim,2008,Asphyxia,0
+Washim,2008,Pneumonia,0
+Washim,2008,Diarrhea,0
+Washim,2008,Fever,0
+Washim,2008,Measles,0
+Washim,2008,Low Birth Weight,0
+Yavatmal,2008,Sepsis,0
+Yavatmal,2008,Asphyxia,0
+Yavatmal,2008,Pneumonia,0
+Yavatmal,2008,Diarrhea,0
+Yavatmal,2008,Fever,0
+Yavatmal,2008,Measles,0
+Yavatmal,2008,Low Birth Weight,0

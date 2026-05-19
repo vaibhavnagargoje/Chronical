@@ -1,0 +1,553 @@
+District,Year,Select Effect,Number
+Ahilyanagar,2019,Abscess Cases,0
+Ahilyanagar,2019,Deaths,0
+Ahilyanagar,2019,Other Complications,5
+Akola,2019,Abscess Cases,3
+Akola,2019,Deaths,0
+Akola,2019,Other Complications,18
+Amravati,2019,Abscess Cases,0
+Amravati,2019,Deaths,0
+Amravati,2019,Other Complications,0
+Beed,2019,Abscess Cases,0
+Beed,2019,Deaths,1
+Beed,2019,Other Complications,0
+Bhandara,2019,Abscess Cases,4
+Bhandara,2019,Deaths,0
+Bhandara,2019,Other Complications,10
+Buldhana,2019,Abscess Cases,1
+Buldhana,2019,Deaths,0
+Buldhana,2019,Other Complications,2
+Chandrapur,2019,Abscess Cases,1
+Chandrapur,2019,Deaths,2
+Chandrapur,2019,Other Complications,12
+Chhatrapati Sambhaji Nagar,2019,Abscess Cases,0
+Chhatrapati Sambhaji Nagar,2019,Deaths,1
+Chhatrapati Sambhaji Nagar,2019,Other Complications,0
+Dharashiv,2019,Abscess Cases,1
+Dharashiv,2019,Deaths,0
+Dharashiv,2019,Other Complications,24
+Dhule,2019,Abscess Cases,0
+Dhule,2019,Deaths,0
+Dhule,2019,Other Complications,0
+Gadchiroli,2019,Abscess Cases,0
+Gadchiroli,2019,Deaths,0
+Gadchiroli,2019,Other Complications,41
+Gondia,2019,Abscess Cases,0
+Gondia,2019,Deaths,0
+Gondia,2019,Other Complications,2
+Hingoli,2019,Abscess Cases,2
+Hingoli,2019,Deaths,0
+Hingoli,2019,Other Complications,4
+Jalgaon,2019,Abscess Cases,5
+Jalgaon,2019,Deaths,0
+Jalgaon,2019,Other Complications,9
+Jalna,2019,Abscess Cases,3
+Jalna,2019,Deaths,0
+Jalna,2019,Other Complications,157
+Kolhapur,2019,Abscess Cases,4
+Kolhapur,2019,Deaths,1
+Kolhapur,2019,Other Complications,13
+Latur,2019,Abscess Cases,0
+Latur,2019,Deaths,0
+Latur,2019,Other Complications,0
+Mumbai,2019,Abscess Cases,6
+Mumbai,2019,Deaths,5
+Mumbai,2019,Other Complications,76
+Nagpur,2019,Abscess Cases,0
+Nagpur,2019,Deaths,0
+Nagpur,2019,Other Complications,0
+Nanded,2019,Abscess Cases,0
+Nanded,2019,Deaths,1
+Nanded,2019,Other Complications,111
+Nandurbar,2019,Abscess Cases,0
+Nandurbar,2019,Deaths,0
+Nandurbar,2019,Other Complications,0
+Nashik,2019,Abscess Cases,2
+Nashik,2019,Deaths,0
+Nashik,2019,Other Complications,15
+Palghar,2019,Abscess Cases,0
+Palghar,2019,Deaths,0
+Palghar,2019,Other Complications,12
+Parbhani,2019,Abscess Cases,5
+Parbhani,2019,Deaths,0
+Parbhani,2019,Other Complications,58
+Pune,2019,Abscess Cases,6
+Pune,2019,Deaths,0
+Pune,2019,Other Complications,151
+Raigad,2019,Abscess Cases,1
+Raigad,2019,Deaths,0
+Raigad,2019,Other Complications,1
+Ratnagiri,2019,Abscess Cases,0
+Ratnagiri,2019,Deaths,0
+Ratnagiri,2019,Other Complications,62
+Sangli,2019,Abscess Cases,6
+Sangli,2019,Deaths,0
+Sangli,2019,Other Complications,16
+Satara,2019,Abscess Cases,0
+Satara,2019,Deaths,0
+Satara,2019,Other Complications,3
+Sindhudurg,2019,Abscess Cases,0
+Sindhudurg,2019,Deaths,0
+Sindhudurg,2019,Other Complications,208
+Solapur,2019,Abscess Cases,8
+Solapur,2019,Deaths,2
+Solapur,2019,Other Complications,94
+Thane,2019,Abscess Cases,32
+Thane,2019,Deaths,1
+Thane,2019,Other Complications,427
+Wardha,2019,Abscess Cases,0
+Wardha,2019,Deaths,0
+Wardha,2019,Other Complications,2
+Washim,2019,Abscess Cases,2
+Washim,2019,Deaths,0
+Washim,2019,Other Complications,0
+Yavatmal,2019,Abscess Cases,0
+Yavatmal,2019,Deaths,0
+Yavatmal,2019,Other Complications,7
+Ahilyanagar,2018,Abscess Cases,0
+Ahilyanagar,2018,Deaths,0
+Ahilyanagar,2018,Other Complications,2
+Akola,2018,Abscess Cases,2
+Akola,2018,Deaths,2
+Akola,2018,Other Complications,4
+Amravati,2018,Abscess Cases,0
+Amravati,2018,Deaths,0
+Amravati,2018,Other Complications,5
+Beed,2018,Abscess Cases,0
+Beed,2018,Deaths,1
+Beed,2018,Other Complications,0
+Bhandara,2018,Abscess Cases,0
+Bhandara,2018,Deaths,2
+Bhandara,2018,Other Complications,12
+Buldhana,2018,Abscess Cases,8
+Buldhana,2018,Deaths,0
+Buldhana,2018,Other Complications,1
+Chandrapur,2018,Abscess Cases,0
+Chandrapur,2018,Deaths,0
+Chandrapur,2018,Other Complications,7
+Chhatrapati Sambhaji Nagar,2018,Abscess Cases,1
+Chhatrapati Sambhaji Nagar,2018,Deaths,2
+Chhatrapati Sambhaji Nagar,2018,Other Complications,6
+Dharashiv,2018,Abscess Cases,0
+Dharashiv,2018,Deaths,0
+Dharashiv,2018,Other Complications,15
+Dhule,2018,Abscess Cases,0
+Dhule,2018,Deaths,0
+Dhule,2018,Other Complications,1
+Gadchiroli,2018,Abscess Cases,5
+Gadchiroli,2018,Deaths,0
+Gadchiroli,2018,Other Complications,13
+Gondia,2018,Abscess Cases,3
+Gondia,2018,Deaths,1
+Gondia,2018,Other Complications,0
+Hingoli,2018,Abscess Cases,0
+Hingoli,2018,Deaths,0
+Hingoli,2018,Other Complications,19
+Jalgaon,2018,Abscess Cases,0
+Jalgaon,2018,Deaths,0
+Jalgaon,2018,Other Complications,1
+Jalna,2018,Abscess Cases,7
+Jalna,2018,Deaths,1
+Jalna,2018,Other Complications,45
+Kolhapur,2018,Abscess Cases,0
+Kolhapur,2018,Deaths,0
+Kolhapur,2018,Other Complications,11
+Latur,2018,Abscess Cases,0
+Latur,2018,Deaths,0
+Latur,2018,Other Complications,0
+Mumbai,2018,Abscess Cases,0
+Mumbai,2018,Deaths,8
+Mumbai,2018,Other Complications,93
+Nagpur,2018,Abscess Cases,1
+Nagpur,2018,Deaths,0
+Nagpur,2018,Other Complications,2
+Nanded,2018,Abscess Cases,0
+Nanded,2018,Deaths,0
+Nanded,2018,Other Complications,30
+Nandurbar,2018,Abscess Cases,0
+Nandurbar,2018,Deaths,0
+Nandurbar,2018,Other Complications,13
+Nashik,2018,Abscess Cases,1
+Nashik,2018,Deaths,2
+Nashik,2018,Other Complications,37
+Palghar,2018,Abscess Cases,0
+Palghar,2018,Deaths,3
+Palghar,2018,Other Complications,4
+Parbhani,2018,Abscess Cases,2
+Parbhani,2018,Deaths,2
+Parbhani,2018,Other Complications,15
+Pune,2018,Abscess Cases,4
+Pune,2018,Deaths,3
+Pune,2018,Other Complications,41
+Raigad,2018,Abscess Cases,0
+Raigad,2018,Deaths,2
+Raigad,2018,Other Complications,3
+Ratnagiri,2018,Abscess Cases,0
+Ratnagiri,2018,Deaths,0
+Ratnagiri,2018,Other Complications,2
+Sangli,2018,Abscess Cases,0
+Sangli,2018,Deaths,0
+Sangli,2018,Other Complications,5
+Satara,2018,Abscess Cases,0
+Satara,2018,Deaths,0
+Satara,2018,Other Complications,0
+Sindhudurg,2018,Abscess Cases,0
+Sindhudurg,2018,Deaths,0
+Sindhudurg,2018,Other Complications,8
+Solapur,2018,Abscess Cases,0
+Solapur,2018,Deaths,2
+Solapur,2018,Other Complications,0
+Thane,2018,Abscess Cases,34
+Thane,2018,Deaths,7
+Thane,2018,Other Complications,128
+Wardha,2018,Abscess Cases,0
+Wardha,2018,Deaths,1
+Wardha,2018,Other Complications,14
+Washim,2018,Abscess Cases,0
+Washim,2018,Deaths,1
+Washim,2018,Other Complications,88
+Yavatmal,2018,Abscess Cases,0
+Yavatmal,2018,Deaths,0
+Yavatmal,2018,Other Complications,16
+Ahilyanagar,2017,Abscess Cases,0
+Ahilyanagar,2017,Deaths,0
+Ahilyanagar,2017,Other Complications,1
+Akola,2017,Abscess Cases,0
+Akola,2017,Deaths,0
+Akola,2017,Other Complications,2
+Amravati,2017,Abscess Cases,1
+Amravati,2017,Deaths,0
+Amravati,2017,Other Complications,0
+Beed,2017,Abscess Cases,1
+Beed,2017,Deaths,0
+Beed,2017,Other Complications,0
+Bhandara,2017,Abscess Cases,0
+Bhandara,2017,Deaths,0
+Bhandara,2017,Other Complications,10
+Buldhana,2017,Abscess Cases,0
+Buldhana,2017,Deaths,0
+Buldhana,2017,Other Complications,6
+Chandrapur,2017,Abscess Cases,1
+Chandrapur,2017,Deaths,0
+Chandrapur,2017,Other Complications,100
+Chhatrapati Sambhaji Nagar,2017,Abscess Cases,0
+Chhatrapati Sambhaji Nagar,2017,Deaths,0
+Chhatrapati Sambhaji Nagar,2017,Other Complications,13
+Dharashiv,2017,Abscess Cases,0
+Dharashiv,2017,Deaths,0
+Dharashiv,2017,Other Complications,10
+Dhule,2017,Abscess Cases,0
+Dhule,2017,Deaths,0
+Dhule,2017,Other Complications,1
+Gadchiroli,2017,Abscess Cases,0
+Gadchiroli,2017,Deaths,0
+Gadchiroli,2017,Other Complications,132
+Gondia,2017,Abscess Cases,0
+Gondia,2017,Deaths,1
+Gondia,2017,Other Complications,6
+Hingoli,2017,Abscess Cases,0
+Hingoli,2017,Deaths,0
+Hingoli,2017,Other Complications,4
+Jalgaon,2017,Abscess Cases,1
+Jalgaon,2017,Deaths,0
+Jalgaon,2017,Other Complications,0
+Jalna,2017,Abscess Cases,0
+Jalna,2017,Deaths,0
+Jalna,2017,Other Complications,177
+Kolhapur,2017,Abscess Cases,2
+Kolhapur,2017,Deaths,2
+Kolhapur,2017,Other Complications,15
+Latur,2017,Abscess Cases,0
+Latur,2017,Deaths,0
+Latur,2017,Other Complications,2
+Mumbai,2017,Abscess Cases,1
+Mumbai,2017,Deaths,8
+Mumbai,2017,Other Complications,94
+Nagpur,2017,Abscess Cases,1
+Nagpur,2017,Deaths,0
+Nagpur,2017,Other Complications,0
+Nanded,2017,Abscess Cases,0
+Nanded,2017,Deaths,0
+Nanded,2017,Other Complications,0
+Nandurbar,2017,Abscess Cases,0
+Nandurbar,2017,Deaths,0
+Nandurbar,2017,Other Complications,0
+Nashik,2017,Abscess Cases,2
+Nashik,2017,Deaths,0
+Nashik,2017,Other Complications,10
+Palghar,2017,Abscess Cases,0
+Palghar,2017,Deaths,2
+Palghar,2017,Other Complications,0
+Parbhani,2017,Abscess Cases,0
+Parbhani,2017,Deaths,0
+Parbhani,2017,Other Complications,0
+Pune,2017,Abscess Cases,17
+Pune,2017,Deaths,1
+Pune,2017,Other Complications,2590
+Raigad,2017,Abscess Cases,0
+Raigad,2017,Deaths,0
+Raigad,2017,Other Complications,0
+Ratnagiri,2017,Abscess Cases,0
+Ratnagiri,2017,Deaths,0
+Ratnagiri,2017,Other Complications,1
+Sangli,2017,Abscess Cases,0
+Sangli,2017,Deaths,0
+Sangli,2017,Other Complications,3
+Satara,2017,Abscess Cases,0
+Satara,2017,Deaths,1
+Satara,2017,Other Complications,0
+Sindhudurg,2017,Abscess Cases,0
+Sindhudurg,2017,Deaths,0
+Sindhudurg,2017,Other Complications,6
+Solapur,2017,Abscess Cases,4
+Solapur,2017,Deaths,0
+Solapur,2017,Other Complications,19
+Thane,2017,Abscess Cases,11
+Thane,2017,Deaths,3
+Thane,2017,Other Complications,1903
+Wardha,2017,Abscess Cases,0
+Wardha,2017,Deaths,0
+Wardha,2017,Other Complications,6
+Washim,2017,Abscess Cases,0
+Washim,2017,Deaths,0
+Washim,2017,Other Complications,0
+Yavatmal,2017,Abscess Cases,0
+Yavatmal,2017,Deaths,0
+Yavatmal,2017,Other Complications,13
+Ahilyanagar,2016,Other Complications,6
+Akola,2016,Other Complications,1
+Amravati,2016,Other Complications,14
+Beed,2016,Other Complications,1
+Bhandara,2016,Other Complications,98
+Buldhana,2016,Other Complications,15
+Chandrapur,2016,Other Complications,67
+Chhatrapati Sambhaji Nagar,2016,Other Complications,17
+Dharashiv,2016,Other Complications,2
+Dhule,2016,Other Complications,0
+Gadchiroli,2016,Other Complications,120
+Gondia,2016,Other Complications,0
+Hingoli,2016,Other Complications,2
+Jalgaon,2016,Other Complications,1
+Jalna,2016,Other Complications,1
+Kolhapur,2016,Other Complications,3
+Latur,2016,Other Complications,50
+Mumbai,2016,Other Complications,22
+Nagpur,2016,Other Complications,0
+Nanded,2016,Other Complications,54
+Nandurbar,2016,Other Complications,0
+Nashik,2016,Other Complications,3
+Palghar,2016,Other Complications,0
+Parbhani,2016,Other Complications,23
+Pune,2016,Other Complications,1176
+Raigad,2016,Other Complications,9
+Ratnagiri,2016,Other Complications,3
+Sangli,2016,Other Complications,0
+Satara,2016,Other Complications,1
+Sindhudurg,2016,Other Complications,8
+Solapur,2016,Other Complications,118
+Thane,2016,Other Complications,1432
+Wardha,2016,Other Complications,1
+Washim,2016,Other Complications,3
+Yavatmal,2016,Other Complications,6
+Ahilyanagar,2015,Other Complications,3050
+Akola,2015,Other Complications,1
+Amravati,2015,Other Complications,6
+Beed,2015,Other Complications,0
+Bhandara,2015,Other Complications,255
+Buldhana,2015,Other Complications,5
+Chandrapur,2015,Other Complications,116
+Chhatrapati Sambhaji Nagar,2015,Other Complications,63
+Dharashiv,2015,Other Complications,4
+Dhule,2015,Other Complications,0
+Gadchiroli,2015,Other Complications,1
+Gondia,2015,Other Complications,0
+Hingoli,2015,Other Complications,9
+Jalgaon,2015,Other Complications,0
+Jalna,2015,Other Complications,0
+Kolhapur,2015,Other Complications,4
+Latur,2015,Other Complications,61
+Mumbai,2015,Other Complications,29
+Nagpur,2015,Other Complications,0
+Nanded,2015,Other Complications,186
+Nandurbar,2015,Other Complications,0
+Nashik,2015,Other Complications,13
+Palghar,2015,Other Complications,9
+Parbhani,2015,Other Complications,136
+Pune,2015,Other Complications,52
+Raigad,2015,Other Complications,2
+Ratnagiri,2015,Other Complications,19
+Sangli,2015,Other Complications,4
+Satara,2015,Other Complications,2
+Sindhudurg,2015,Other Complications,22
+Solapur,2015,Other Complications,22
+Thane,2015,Other Complications,1070
+Wardha,2015,Other Complications,0
+Washim,2015,Other Complications,4
+Yavatmal,2015,Other Complications,39
+Ahilyanagar,2014,Other Complications,9220
+Akola,2014,Other Complications,3
+Amravati,2014,Other Complications,4
+Beed,2014,Other Complications,0
+Bhandara,2014,Other Complications,31
+Buldhana,2014,Other Complications,0
+Chandrapur,2014,Other Complications,136
+Chhatrapati Sambhaji Nagar,2014,Other Complications,643
+Dharashiv,2014,Other Complications,20
+Dhule,2014,Other Complications,0
+Gadchiroli,2014,Other Complications,119
+Gondia,2014,Other Complications,31
+Hingoli,2014,Other Complications,9
+Jalgaon,2014,Other Complications,0
+Jalna,2014,Other Complications,0
+Kolhapur,2014,Other Complications,1
+Latur,2014,Other Complications,25
+Mumbai,2014,Other Complications,25
+Nagpur,2014,Other Complications,5
+Nanded,2014,Other Complications,0
+Nandurbar,2014,Other Complications,0
+Nashik,2014,Other Complications,0
+Palghar,2014,Other Complications,26
+Parbhani,2014,Other Complications,75
+Pune,2014,Other Complications,1
+Raigad,2014,Other Complications,0
+Ratnagiri,2014,Other Complications,128
+Sangli,2014,Other Complications,64
+Satara,2014,Other Complications,12
+Sindhudurg,2014,Other Complications,29
+Solapur,2014,Other Complications,11
+Thane,2014,Other Complications,933
+Wardha,2014,Other Complications,0
+Washim,2014,Other Complications,4
+Yavatmal,2014,Other Complications,23
+Ahilyanagar,2013,Other Complications,10281
+Akola,2013,Other Complications,67
+Amravati,2013,Other Complications,179
+Beed,2013,Other Complications,0
+Bhandara,2013,Other Complications,1318
+Buldhana,2013,Other Complications,0
+Chandrapur,2013,Other Complications,537
+Chhatrapati Sambhaji Nagar,2013,Other Complications,221
+Dharashiv,2013,Other Complications,46
+Dhule,2013,Other Complications,0
+Gadchiroli,2013,Other Complications,868
+Gondia,2013,Other Complications,548
+Hingoli,2013,Other Complications,42
+Jalgaon,2013,Other Complications,0
+Jalna,2013,Other Complications,199
+Kolhapur,2013,Other Complications,0
+Latur,2013,Other Complications,119
+Mumbai,2013,Other Complications,7
+Nagpur,2013,Other Complications,490
+Nanded,2013,Other Complications,13
+Nandurbar,2013,Other Complications,0
+Nashik,2013,Other Complications,26
+Palghar,2013,Other Complications,21
+Parbhani,2013,Other Complications,48
+Pune,2013,Other Complications,437
+Raigad,2013,Other Complications,87
+Ratnagiri,2013,Other Complications,170
+Sangli,2013,Other Complications,329
+Satara,2013,Other Complications,90
+Sindhudurg,2013,Other Complications,114
+Solapur,2013,Other Complications,332
+Thane,2013,Other Complications,1446
+Wardha,2013,Other Complications,200
+Washim,2013,Other Complications,31
+Yavatmal,2013,Other Complications,1460
+Ahilyanagar,2012,Other Complications,13942
+Akola,2012,Other Complications,600
+Amravati,2012,Other Complications,514
+Bhandara,2012,Other Complications,2849
+Buldhana,2012,Other Complications,3467
+Chandrapur,2012,Other Complications,1835
+Chhatrapati Sambhaji Nagar,2012,Other Complications,2063
+Dharashiv,2012,Other Complications,289
+Dhule,2012,Other Complications,952
+Gadchiroli,2012,Other Complications,1191
+Gondia,2012,Other Complications,409
+Hingoli,2012,Other Complications,200
+Jalna,2012,Other Complications,309
+Latur,2012,Other Complications,773
+Mumbai,2012,Other Complications,23
+Nagpur,2012,Other Complications,3215
+Nashik,2012,Other Complications,1124
+Parbhani,2012,Other Complications,2238
+Pune,2012,Other Complications,19171
+Raigad,2012,Other Complications,1307
+Ratnagiri,2012,Other Complications,2150
+Sangli,2012,Other Complications,6132
+Satara,2012,Other Complications,2610
+Sindhudurg,2012,Other Complications,1959
+Solapur,2012,Other Complications,6488
+Thane,2012,Other Complications,31990
+Wardha,2012,Other Complications,126
+Yavatmal,2012,Other Complications,6552
+Ahilyanagar,2011,Other Complications,13176
+Amravati,2011,Other Complications,7218
+Bhandara,2011,Other Complications,1702
+Buldhana,2011,Other Complications,6581
+Chandrapur,2011,Other Complications,2756
+Chhatrapati Sambhaji Nagar,2011,Other Complications,856
+Dharashiv,2011,Other Complications,1081
+Dhule,2011,Other Complications,634
+Gadchiroli,2011,Other Complications,830
+Gondia,2011,Other Complications,2835
+Hingoli,2011,Other Complications,94
+Jalna,2011,Other Complications,866
+Kolhapur,2011,Other Complications,52
+Latur,2011,Other Complications,933
+Mumbai,2011,Other Complications,16
+Nagpur,2011,Other Complications,388
+Nashik,2011,Other Complications,911
+Parbhani,2011,Other Complications,1944
+Pune,2011,Other Complications,9612
+Raigad,2011,Other Complications,1050
+Ratnagiri,2011,Other Complications,3802
+Sangli,2011,Other Complications,1768
+Satara,2011,Other Complications,811
+Solapur,2011,Other Complications,8856
+Thane,2011,Other Complications,35964
+Wardha,2011,Other Complications,311
+Yavatmal,2011,Other Complications,2933
+Ahilyanagar,2010,Other Complications,9
+Akola,2010,Other Complications,40
+Amravati,2010,Other Complications,11
+Kolhapur,2010,Other Complications,1
+Mumbai,2010,Other Complications,30
+Nashik,2010,Other Complications,1
+Pune,2010,Other Complications,158
+Raigad,2010,Other Complications,60
+Sangli,2010,Other Complications,422
+Sindhudurg,2010,Other Complications,33
+Solapur,2010,Other Complications,161
+Ahilyanagar,2009,Other Complications,9
+Akola,2009,Other Complications,50
+Amravati,2009,Other Complications,34
+Jalgaon,2009,Other Complications,1
+Mumbai,2009,Other Complications,53
+Pune,2009,Other Complications,44
+Raigad,2009,Other Complications,16
+Ratnagiri,2009,Other Complications,1
+Sangli,2009,Other Complications,2
+Solapur,2009,Other Complications,12
+Thane,2009,Other Complications,3
+Washim,2009,Other Complications,31
+Ahilyanagar,2008,Other Complications,12
+Akola,2008,Other Complications,2
+Amravati,2008,Other Complications,68
+Beed,2008,Other Complications,97
+Bhandara,2008,Other Complications,1
+Chandrapur,2008,Other Complications,10
+Dharashiv,2008,Other Complications,1
+Gadchiroli,2008,Other Complications,6
+Gondia,2008,Other Complications,1
+Hingoli,2008,Other Complications,120
+Jalna,2008,Other Complications,165
+Mumbai,2008,Other Complications,44
+Nandurbar,2008,Other Complications,138
+Pune,2008,Other Complications,33
+Raigad,2008,Other Complications,32
+Sangli,2008,Other Complications,50
+Sindhudurg,2008,Other Complications,88
+Solapur,2008,Other Complications,5
+Thane,2008,Other Complications,140

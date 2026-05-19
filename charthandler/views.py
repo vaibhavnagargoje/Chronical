@@ -26,6 +26,61 @@ DATA_MODEL_REGISTRY = {
     'IrrigationProjects': 'charthandler.IrrigationProjects',
     'IrrigationWells': 'charthandler.IrrigationWells',
     'TubewellsHandpumps': 'charthandler.TubewellsHandpumps',
+    # Health
+    'DSAPublicHospitals2': 'charthandler.DSAPublicHospitals2',
+    'DSAPrivateHealth2': 'charthandler.DSAPrivateHealth2',
+    'DSAAnganwadis': 'charthandler.DSAAnganwadis',
+    'DSAPublicOutPatients': 'charthandler.DSAPublicOutPatients',
+    'DSAReportedDeaths': 'charthandler.DSAReportedDeaths',
+    'DSADeathCause': 'charthandler.DSADeathCause',
+    'DSARegisteredBirths': 'charthandler.DSARegisteredBirths',
+    'DSAFamilyWelfarePrograms': 'charthandler.DSAFamilyWelfarePrograms',
+    'DSAVaccines': 'charthandler.DSAVaccines',
+    'DSAMalnutrition2': 'charthandler.DSAMalnutrition2',
+    'HMISPatients': 'charthandler.HMISPatients',
+    'HMISDeliveries': 'charthandler.HMISDeliveries',
+    'HMISMDeaths': 'charthandler.HMISMDeaths',
+    'HMISCSection': 'charthandler.HMISCSection',
+    'HMISSexRatio': 'charthandler.HMISSexRatio',
+    'HMISAbortion': 'charthandler.HMISAbortion',
+    'HMISAntenatalCare': 'charthandler.HMISAntenatalCare',
+    'HMISFamilyPlanning': 'charthandler.HMISFamilyPlanning',
+    'HMISContraceptives': 'charthandler.HMISContraceptives',
+    'HMISInfantVaccinations': 'charthandler.HMISInfantVaccinations',
+    'HMISIV2': 'charthandler.HMISIV2',
+    'HMISInfantDeaths': 'charthandler.HMISInfantDeaths',
+    'HMISInfantDeaths2': 'charthandler.HMISInfantDeaths2',
+    'HMISChildDisease2': 'charthandler.HMISChildDisease2',
+    'HMISAnaemia': 'charthandler.HMISAnaemia',
+    'NFHSFacilities': 'charthandler.NFHSFacilities',
+    'NFHSHighBloodSugar': 'charthandler.NFHSHighBloodSugar',
+    'NFHSHypertension': 'charthandler.NFHSHypertension',
+    'NFHSCancerScreening2': 'charthandler.NFHSCancerScreening2',
+    'NFHSTobaccoAlcohol': 'charthandler.NFHSTobaccoAlcohol',
+    'NFHSDeliveryExpenditure': 'charthandler.NFHSDeliveryExpenditure',
+    'NFHSIFAConsumption': 'charthandler.NFHSIFAConsumption',
+    'NFHSPostnatalCare': 'charthandler.NFHSPostnatalCare',
+    'NFHSSexRatio': 'charthandler.NFHSSexRatio',
+    'NFHSBirths': 'charthandler.NFHSBirths',
+    'NFHSCSection': 'charthandler.NFHSCSection',
+    'NFHSDiet': 'charthandler.NFHSDiet',
+    'NFHSFamilyPlanning': 'charthandler.NFHSFamilyPlanning',
+    'NFHSVaccinations': 'charthandler.NFHSVaccinations',
+    'NFHSMalnutrition': 'charthandler.NFHSMalnutrition',
+    'NFHSOverweight': 'charthandler.NFHSOverweight',
+    'NFHSLowBMI': 'charthandler.NFHSLowBMI',
+    'NFHSAnaemia': 'charthandler.NFHSAnaemia',
+    # Industry
+    'ECNumber': 'charthandler.ECNumber',
+    'ECSocialGroup': 'charthandler.ECSocialGroup',
+    'ECSourcesOfFinance': 'charthandler.ECSourcesOfFinance',
+    'ECSourcesOfBorrowings': 'charthandler.ECSourcesOfBorrowings',
+    'ECType': 'charthandler.ECType',
+    'ECBroadActivity': 'charthandler.ECBroadActivity',
+    'DSAMsme': 'charthandler.DSAMsme',
+    'FactoryWorkers': 'charthandler.FactoryWorkers',
+    'DSAElectricity': 'charthandler.DSAElectricity',
+    'DSAPollutionCategory': 'charthandler.DSAPollutionCategory',
 }
 
 
@@ -90,22 +145,55 @@ def chart_data_api(request, template_slug):
             'error': f'Data source not found: {template.data_source_table}'
         }, status=500)
 
-    # Build the queryset with filters
-    queryset = ModelClass.objects.all()
+    has_filter1 = bool(template.filter1_column)
+    has_filter2 = bool(template.filter2_column)
+    disable_all_filter1 = template.chart_options.get('disable_all_filter1', template.chart_options.get('disable_aggregation', False))
+    disable_all_filter2 = template.chart_options.get('disable_all_filter2', template.chart_options.get('disable_aggregation', False))
+    
+    # Build base queryset for filter options (district-scoped)
+    base_district_qs = ModelClass.objects.filter(
+        **{f'{template.main_filter_column}__iexact': district}
+    ) if template.main_filter_column else ModelClass.objects.all()
 
-    # Apply district filter (case-insensitive)
-    if template.main_filter_column:
-        queryset = queryset.filter(
-            **{f'{template.main_filter_column}__iexact': district}
+    filter1_options = []
+    filter2_options = []
+
+    if has_filter1:
+        filter1_options = list(
+            base_district_qs.values_list(
+                template.filter1_column, flat=True
+            ).distinct().order_by(template.filter1_column)
         )
+        # If aggregation is disabled and no filter1 is selected, default to the first option
+        if disable_all_filter1 and not filter1_value and filter1_options:
+            filter1_value = filter1_options[0]
 
-    # Apply secondary filter (taluka)
+    if has_filter2:
+        # Filter2 options are scoped by filter1 if filter1 is selected
+        filter2_base_qs = base_district_qs
+        if filter1_value and template.filter1_column:
+            filter2_base_qs = filter2_base_qs.filter(
+                **{f'{template.filter1_column}__iexact': filter1_value}
+            )
+        filter2_options = list(
+            filter2_base_qs.values_list(
+                template.filter2_column, flat=True
+            ).distinct().order_by(template.filter2_column)
+        )
+        # If aggregation is disabled and no filter2 is selected, default to the first option
+        if disable_all_filter2 and not filter2_value and filter2_options:
+            filter2_value = filter2_options[0]
+
+    # Build the data queryset with final filters
+    queryset = base_district_qs
+
+    # Apply secondary filter (taluka or select_facility etc)
     if filter1_value and template.filter1_column:
         queryset = queryset.filter(
             **{f'{template.filter1_column}__iexact': filter1_value}
         )
 
-    # Apply tertiary filter (size_class, project_size, etc.)
+    # Apply tertiary filter
     if filter2_value and template.filter2_column:
         queryset = queryset.filter(
             **{f'{template.filter2_column}__iexact': filter2_value}
@@ -122,48 +210,6 @@ def chart_data_api(request, template_slug):
     labels = []
     datasets_data = {col: [] for col in y_columns}
 
-    for record in queryset:
-        x_value = getattr(record, x_column, None)
-        if x_value is not None:
-            # Avoid duplicate x-axis labels (for taluka-level data, aggregate)
-            if x_value not in labels:
-                labels.append(x_value)
-
-            for col in y_columns:
-                value = getattr(record, col, None)
-                datasets_data[col].append(value)
-
-    # If this has sub-filters, we need to aggregate when no filter is selected.
-    has_filter1 = bool(template.filter1_column)
-    has_filter2 = bool(template.filter2_column)
-    filter1_options = []
-    filter2_options = []
-
-    # Build base queryset for filter options (district-scoped)
-    base_district_qs = ModelClass.objects.filter(
-        **{f'{template.main_filter_column}__iexact': district}
-    ) if template.main_filter_column else ModelClass.objects.all()
-
-    if has_filter1:
-        filter1_options = list(
-            base_district_qs.values_list(
-                template.filter1_column, flat=True
-            ).distinct().order_by(template.filter1_column)
-        )
-
-    if has_filter2:
-        # Filter2 options are scoped by filter1 if filter1 is selected
-        filter2_base_qs = base_district_qs
-        if filter1_value and template.filter1_column:
-            filter2_base_qs = filter2_base_qs.filter(
-                **{f'{template.filter1_column}__iexact': filter1_value}
-            )
-        filter2_options = list(
-            filter2_base_qs.values_list(
-                template.filter2_column, flat=True
-            ).distinct().order_by(template.filter2_column)
-        )
-
     # Determine if aggregation is needed (multi-row data without a filter selected)
     needs_aggregation = (
         (has_filter1 and not filter1_value) or
@@ -172,9 +218,6 @@ def chart_data_api(request, template_slug):
 
     if needs_aggregation:
         # Aggregate data by x-axis (year) — sum all sub-rows
-        labels = []
-        datasets_data = {col: [] for col in y_columns}
-
         aggregated = {}
         for record in queryset:
             x_val = getattr(record, x_column, None)
@@ -193,6 +236,16 @@ def chart_data_api(request, template_slug):
                     datasets_data[col].append(round(sum(values), 2))
                 else:
                     datasets_data[col].append(None)
+    else:
+        # Normal extraction without aggregation
+        for record in queryset:
+            x_value = getattr(record, x_column, None)
+            if x_value is not None:
+                if x_value not in labels:
+                    labels.append(x_value)
+                for col in y_columns:
+                    value = getattr(record, col, None)
+                    datasets_data[col].append(value)
 
     # Convert integer labels for display
     labels = [int(l) if isinstance(l, float) and l == int(l) else l for l in labels]
@@ -208,27 +261,32 @@ def chart_data_api(request, template_slug):
     datasets = []
     for i, col in enumerate(y_columns):
         config = dataset_configs[i] if i < len(dataset_configs) else {}
-        color = config.get('borderColor', default_colors[i % len(default_colors)])
+        # Support both borderColor (line) and backgroundColor (bar) in dataset_config
+        border_color = config.get('borderColor', default_colors[i % len(default_colors)])
+        bg_color = config.get('backgroundColor', border_color)
         label = config.get('label', col.replace('_', ' ').title())
 
-        dataset = {
-            'label': label,
-            'data': datasets_data[col],
-            'borderColor': color,
-            'backgroundColor': color + '33',  # 20% opacity fill
-            'borderWidth': 2,
-            'pointRadius': 4,
-            'pointHoverRadius': 6,
-            'fill': False,
-        }
+        is_bar = template.chart_type in ('bar', 'stackedBar', 'percentStackedBar')
 
-        # Bar chart specific
-        if template.chart_type in ('bar', 'stackedBar', 'percentStackedBar'):
-            dataset['backgroundColor'] = color + 'CC'  # 80% opacity
-            dataset['borderWidth'] = 1
-            del dataset['pointRadius']
-            del dataset['pointHoverRadius']
-            del dataset['fill']
+        if is_bar:
+            dataset = {
+                'label': label,
+                'data': datasets_data[col],
+                'backgroundColor': bg_color + 'CC',  # 80% opacity
+                'borderColor': bg_color,
+                'borderWidth': 1,
+            }
+        else:
+            dataset = {
+                'label': label,
+                'data': datasets_data[col],
+                'borderColor': border_color,
+                'backgroundColor': border_color + '33',  # 20% opacity fill
+                'borderWidth': 2,
+                'pointRadius': 4,
+                'pointHoverRadius': 6,
+                'fill': False,
+            }
 
         datasets.append(dataset)
 
@@ -248,12 +306,14 @@ def chart_data_api(request, template_slug):
                 'label': template.filter1_column.replace('_', ' ').title() if template.filter1_column else '',
                 'options': filter1_options,
                 'selected': filter1_value,
+                'disableAllOption': disable_all_filter1,
             } if has_filter1 else None,
             'filter2': {
                 'column': template.filter2_column,
                 'label': template.filter2_column.replace('_', ' ').title() if template.filter2_column else '',
                 'options': filter2_options,
                 'selected': filter2_value,
+                'disableAllOption': disable_all_filter2,
             } if has_filter2 else None,
         },
         'description': template.description,

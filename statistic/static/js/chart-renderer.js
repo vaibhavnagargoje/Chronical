@@ -297,19 +297,7 @@ function registerChartDataLabelsIfAvailable() {
     if (typeof window === 'undefined' || !window.ChartDataLabels) {
         return false;
     }
-
-    if (window.__dynamicChartDataLabelsRegistered) {
-        return true;
-    }
-
-    try {
-        Chart.register(window.ChartDataLabels);
-        window.__dynamicChartDataLabelsRegistered = true;
-        return true;
-    } catch (error) {
-        console.warn('Could not register ChartDataLabels plugin:', error);
-        return false;
-    }
+    return true;
 }
 
 function convertToPercentStackedData(chartData) {
@@ -612,11 +600,13 @@ function buildFilterGroupHtml(filter, filterNumber) {
         return `<option value="${escapeHtml(stringValue)}" ${selected}>${escapeHtml(stringValue)}</option>`;
     }).join('');
 
+    const allOptionHtml = filter.disableAllOption ? '' : '<option value="">All</option>';
+
     return `
         <div class="chart-filter-group">
             <label>${escapeHtml(filter.label || filter.column || 'Filter')}:</label>
             <select class="dynamic-chart-filter" data-filter="${filterNumber}">
-                <option value="">All</option>
+                ${allOptionHtml}
                 ${optionHtml}
             </select>
         </div>
@@ -740,29 +730,16 @@ function renderChartUI(container, data) {
         return;
     }
 
-    if (container._chartInstance && container._chartInstance.config.type !== config.type) {
+    if (container._chartInstance) {
         container._chartInstance.destroy();
         container._chartInstance = null;
     }
 
-    if (!container._chartInstance) {
-        const ctx = chartDom.canvas.getContext('2d');
-        container._chartInstance = new Chart(ctx, config);
-        if (config.type === 'line') {
-            refreshLineHoverPluginState(container._chartInstance);
-        }
-        return;
-    }
-
-    container._chartInstance.config.plugins = config.plugins;
-    container._chartInstance.options = config.options;
-    container._chartInstance.data = config.data;
-
+    const ctx = chartDom.canvas.getContext('2d');
+    container._chartInstance = new Chart(ctx, config);
     if (config.type === 'line') {
         refreshLineHoverPluginState(container._chartInstance);
     }
-
-    container._chartInstance.update();
 }
 
 function refreshLineHoverPluginState(chart) {
@@ -828,6 +805,8 @@ function prepareChartConfig(data) {
     }
 
     // Base configuration matching ChartFlask exactly
+    const isPercentageFormat = isPercentStacked || (data.chartOptions && data.chartOptions.is_percentage_format === true);
+
     const config = {
         type: trueChartType,
         data: chartDataForRender,
@@ -845,6 +824,9 @@ function prepareChartConfig(data) {
                 axis: "x",
             },
             plugins: {
+                datalabels: {
+                    display: false
+                },
                 legend: {
                     display: datasets.length > 1,
                     position: 'top',
@@ -875,9 +857,10 @@ function prepareChartConfig(data) {
                             if (label) {
                                 label += ": ";
                             }
-                            if (isPercentStacked) {
+                            if (isPercentageFormat) {
                                 if (context.parsed.y !== null && context.parsed.y !== undefined) {
-                                    label += context.parsed.y.toFixed(1)+'%';
+                                    const value = context.parsed.y;
+                                    label += (value % 1 === 0 ? value : parseFloat(value.toFixed(1))) + '%';
                                 }
                             } else {
                                 if (context.parsed.y !== null) {
@@ -892,7 +875,6 @@ function prepareChartConfig(data) {
             },
             scales: {
                 x: {
-                    // offset: trueChartType === 'line',
                     offset: true,
                     grid: {
                         drawTicks: true,
@@ -925,8 +907,8 @@ function prepareChartConfig(data) {
                     },
                     ticks: {
                         callback: function (value) {
-                            if (isPercentStacked) {
-                                return formatPercentAxisTick(value);
+                            if (isPercentageFormat) {
+                                return value + '%';
                             }
                             return formatIndianNumber(value);
                         },
@@ -947,6 +929,7 @@ function prepareChartConfig(data) {
         config.options.scales.y.ticks.stepSize = 20;
 
         if (hasDataLabels) {
+            config.plugins.push(window.ChartDataLabels);
             config.options.plugins.datalabels = {
                 display: function(context) {
                     return Number(context.dataset.data[context.dataIndex]) > PERCENT_LABEL_THRESHOLD;
@@ -1100,6 +1083,8 @@ function applyResponsiveTickSettings(options, chartData, isMobile, isPercentStac
         callback: function(value) {
             if (isPercentStacked) {
                 return formatPercentAxisTick(value);
+            } else if (options.is_percentage_format === true) {
+                return value + '%';
             }
             return formatIndianNumber(value);
         },
