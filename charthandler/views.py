@@ -81,6 +81,44 @@ DATA_MODEL_REGISTRY = {
     'FactoryWorkers': 'charthandler.FactoryWorkers',
     'DSAElectricity': 'charthandler.DSAElectricity',
     'DSAPollutionCategory': 'charthandler.DSAPollutionCategory',
+    # Labor
+    'LaborWorkers': 'charthandler.LaborWorkers',
+    'LaborAgeDistribution': 'charthandler.LaborAgeDistribution',
+    'LaborECWorkers': 'charthandler.LaborECWorkers',
+    'LaborECGender': 'charthandler.LaborECGender',
+    'LaborECReligion': 'charthandler.LaborECReligion',
+    'LaborMNREGAJobCards': 'charthandler.LaborMNREGAJobCards',
+    'LaborMNREGAParticipation': 'charthandler.LaborMNREGAParticipation',
+    'LaborMNREGAAccounts': 'charthandler.LaborMNREGAAccounts',
+    'LaborMNREGAScope': 'charthandler.LaborMNREGAScope',
+    'LaborGovtEmployees': 'charthandler.LaborGovtEmployees',
+    'LaborDSAEstablishments': 'charthandler.LaborDSAEstablishments',
+    'LaborDSAWorkers': 'charthandler.LaborDSAWorkers',
+    'LaborIndustryType': 'charthandler.LaborIndustryType',
+    
+    # Demography — Population Profile
+    'CensusPopulation': 'charthandler.CensusPopulation',
+    'CensusAgeDistribution': 'charthandler.CensusAgeDistribution',
+    'CensusSC': 'charthandler.CensusSC',
+    'CensusST': 'charthandler.CensusST',
+    'CensusLiterate': 'charthandler.CensusLiterate',
+    'CensusWorking': 'charthandler.CensusWorking',
+    'CensusMotherTongue': 'charthandler.CensusMotherTongue',
+    'CensusReligion': 'charthandler.CensusReligion',
+    'CensusSexRatio': 'charthandler.CensusSexRatio',
+    # Demography — Household Characteristics
+    'CensusToiletFacility': 'charthandler.CensusToiletFacility',
+    'CensusCooking': 'charthandler.CensusCooking',
+    'CensusWater': 'charthandler.CensusWater',
+    'CensusElectricity': 'charthandler.CensusElectricity',
+    'CensusTCAssets': 'charthandler.CensusTCAssets',
+    'CensusOwnership': 'charthandler.CensusOwnership',
+    # Demography — Migration
+    'CensusInwardMigrationA': 'charthandler.CensusInwardMigrationA',
+    'CensusInwardMigrationB': 'charthandler.CensusInwardMigrationB',
+    'CensusInwardMigrationC': 'charthandler.CensusInwardMigrationC',
+    'CensusInwardMigrationD': 'charthandler.CensusInwardMigrationD',
+    'CensusInwardMigrationE': 'charthandler.CensusInwardMigrationE',
 }
 
 
@@ -272,7 +310,7 @@ def chart_data_api(request, template_slug):
             dataset = {
                 'label': label,
                 'data': datasets_data[col],
-                'backgroundColor': bg_color + 'CC',  # 80% opacity
+                'backgroundColor': bg_color,  # Original color
                 'borderColor': bg_color,
                 'borderWidth': 1,
             }

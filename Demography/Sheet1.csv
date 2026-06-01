@@ -1,0 +1,736 @@
+Year,District,Rural/Urban,Location,Tap,Handpump,Tubewell,Well,All Others
+2001,Nandurbar,Total,Total,131370,71240,7591,21477,18848
+2001,Nandurbar,Total,Within Premises,74842,12897,1738,3560,212
+2001,Nandurbar,Total,Near Premises,49690,48868,4303,12720,10989
+2001,Nandurbar,Total,Away,6838,9475,1550,5197,7647
+2001,Nandurbar,Rural,Total,101158,69094,5788,21278,18137
+2001,Nandurbar,Rural,Within Premises,51282,12618,872,3501,100
+2001,Nandurbar,Rural,Near Premises,44692,47522,3888,12686,10604
+2001,Nandurbar,Rural,Away,5184,8954,1028,5091,7433
+2001,Nandurbar,Urban,Total,30212,2146,1803,199,711
+2001,Nandurbar,Urban,Within Premises,23560,279,866,59,112
+2001,Nandurbar,Urban,Near Premises,4998,1346,415,34,385
+2001,Nandurbar,Urban,Away,1654,521,522,106,214
+2001,Dhule,Total,Total,247681,37143,3991,34154,6899
+2001,Dhule,Total,Within Premises,177428,6892,1026,9606,674
+2001,Dhule,Total,Near Premises,61145,25081,2212,14129,3006
+2001,Dhule,Total,Away,9108,5170,753,10419,3219
+2001,Dhule,Rural,Total,181637,35350,3494,27649,4790
+2001,Dhule,Rural,Within Premises,125035,6560,761,5215,506
+2001,Dhule,Rural,Near Premises,50907,24157,2070,12795,2022
+2001,Dhule,Rural,Away,5695,4633,663,9639,2262
+2001,Dhule,Urban,Total,66044,1793,497,6505,2109
+2001,Dhule,Urban,Within Premises,52393,332,265,4391,168
+2001,Dhule,Urban,Near Premises,10238,924,142,1334,984
+2001,Dhule,Urban,Away,3413,537,90,780,957
+2001,Jalgaon,Total,Total,623627,47221,9064,37448,12703
+2001,Jalgaon,Total,Within Premises,446390,10775,3689,7550,1870
+2001,Jalgaon,Total,Near Premises,147185,28048,3592,16160,5879
+2001,Jalgaon,Total,Away,30052,8398,1783,13738,4954
+2001,Jalgaon,Rural,Total,447978,38218,6640,34098,8960
+2001,Jalgaon,Rural,Within Premises,305382,8678,2111,6497,1429
+2001,Jalgaon,Rural,Near Premises,120826,22956,3063,14944,4289
+2001,Jalgaon,Rural,Away,21770,6584,1466,12657,3242
+2001,Jalgaon,Urban,Total,175649,9003,2424,3350,3743
+2001,Jalgaon,Urban,Within Premises,141008,2097,1578,1053,441
+2001,Jalgaon,Urban,Near Premises,26359,5092,529,1216,1590
+2001,Jalgaon,Urban,Away,8282,1814,317,1081,1712
+2001,Buldhana,Total,Total,226446,72172,12437,123018,9805
+2001,Buldhana,Total,Within Premises,145066,8930,2746,31161,641
+2001,Buldhana,Total,Near Premises,66276,47802,5587,56658,4312
+2001,Buldhana,Total,Away,15104,15440,4104,35199,4852
+2001,Buldhana,Rural,Total,162517,63735,10367,114146,7775
+2001,Buldhana,Rural,Within Premises,98193,7631,1664,27362,523
+2001,Buldhana,Rural,Near Premises,53673,43102,5155,53801,3815
+2001,Buldhana,Rural,Away,10651,13002,3548,32983,3437
+2001,Buldhana,Urban,Total,63929,8437,2070,8872,2030
+2001,Buldhana,Urban,Within Premises,46873,1299,1082,3799,118
+2001,Buldhana,Urban,Near Premises,12603,4700,432,2857,497
+2001,Buldhana,Urban,Away,4453,2438,556,2216,1415
+2001,Akola,Total,Total,189064,55751,12024,47770,8796
+2001,Akola,Total,Within Premises,100784,11622,8695,17641,375
+2001,Akola,Total,Near Premises,67048,32422,2326,20590,3153
+2001,Akola,Total,Away,21232,11707,1003,9539,5268
+2001,Akola,Rural,Total,111241,37670,4729,42074,6472
+2001,Akola,Rural,Within Premises,49727,5143,2281,14647,224
+2001,Akola,Rural,Near Premises,49388,24982,1793,18644,2364
+2001,Akola,Rural,Away,12126,7545,655,8783,3884
+2001,Akola,Urban,Total,77823,18081,7295,5696,2324
+2001,Akola,Urban,Within Premises,51057,6479,6414,2994,151
+2001,Akola,Urban,Near Premises,17660,7440,533,1946,789
+2001,Akola,Urban,Away,9106,4162,348,756,1384
+2001,Washim,Total,Total,74961,39823,3861,82190,1799
+2001,Washim,Total,Within Premises,46706,4945,1993,9696,60
+2001,Washim,Total,Near Premises,23501,26650,1325,43983,439
+2001,Washim,Total,Away,4754,8228,543,28511,1300
+2001,Washim,Rural,Total,53002,35209,3174,79622,1657
+2001,Washim,Rural,Within Premises,31807,4105,1496,9076,40
+2001,Washim,Rural,Near Premises,18677,24459,1199,42912,391
+2001,Washim,Rural,Away,2518,6645,479,27634,1226
+2001,Washim,Urban,Total,21959,4614,687,2568,142
+2001,Washim,Urban,Within Premises,14899,840,497,620,20
+2001,Washim,Urban,Near Premises,4824,2191,126,1071,48
+2001,Washim,Urban,Away,2236,1583,64,877,74
+2001,Amravati,Total,Total,361403,66419,6308,72782,6811
+2001,Amravati,Total,Within Premises,191253,6158,1919,29570,312
+2001,Amravati,Total,Near Premises,139140,43804,3227,26935,3742
+2001,Amravati,Total,Away,31010,16457,1162,16277,2757
+2001,Amravati,Rural,Total,232149,55798,4502,53434,4770
+2001,Amravati,Rural,Within Premises,100245,4772,1063,17197,204
+2001,Amravati,Rural,Near Premises,109616,37543,2529,21954,2789
+2001,Amravati,Rural,Away,22288,13483,910,14283,1777
+2001,Amravati,Urban,Total,129254,10621,1806,19348,2041
+2001,Amravati,Urban,Within Premises,91008,1386,856,12373,108
+2001,Amravati,Urban,Near Premises,29524,6261,698,4981,953
+2001,Amravati,Urban,Away,8722,2974,252,1994,980
+2001,Wardha,Total,Total,131388,41284,4701,79666,2303
+2001,Wardha,Total,Within Premises,85773,6052,2011,24308,86
+2001,Wardha,Total,Near Premises,36671,26804,1836,38001,1079
+2001,Wardha,Total,Away,8944,8428,854,17357,1138
+2001,Wardha,Rural,Total,82854,38045,3506,67697,1744
+2001,Wardha,Rural,Within Premises,46970,5546,1080,16653,32
+2001,Wardha,Rural,Near Premises,29315,24938,1663,35213,711
+2001,Wardha,Rural,Away,6569,7561,763,15831,1001
+2001,Wardha,Urban,Total,48534,3239,1195,11969,559
+2001,Wardha,Urban,Within Premises,38803,506,931,7655,54
+2001,Wardha,Urban,Near Premises,7356,1866,173,2788,368
+2001,Wardha,Urban,Away,2375,867,91,1526,137
+2001,Nagpur,Total,Total,559189,82510,6668,136044,6113
+2001,Nagpur,Total,Within Premises,415246,10665,3116,53894,297
+2001,Nagpur,Total,Near Premises,115944,55767,2118,55486,2993
+2001,Nagpur,Total,Away,27999,16078,1434,26664,2823
+2001,Nagpur,Rural,Total,163457,52271,2862,73565,2162
+2001,Nagpur,Rural,Within Premises,91459,6329,766,16455,145
+2001,Nagpur,Rural,Near Premises,60555,36529,1149,37724,1436
+2001,Nagpur,Rural,Away,11443,9413,947,19386,581
+2001,Nagpur,Urban,Total,395732,30239,3806,62479,3951
+2001,Nagpur,Urban,Within Premises,323787,4336,2350,37439,152
+2001,Nagpur,Urban,Near Premises,55389,19238,969,17762,1557
+2001,Nagpur,Urban,Away,16556,6665,487,7278,2242
+2001,Bhandara,Total,Total,85372,66546,4680,82171,1092
+2001,Bhandara,Total,Within Premises,48331,6562,1093,24164,42
+2001,Bhandara,Total,Near Premises,28570,45267,2295,39190,484
+2001,Bhandara,Total,Away,8471,14717,1292,18817,566
+2001,Bhandara,Rural,Total,57913,65032,4332,76499,888
+2001,Bhandara,Rural,Within Premises,28394,6359,968,20313,31
+2001,Bhandara,Rural,Near Premises,23585,44428,2242,37975,390
+2001,Bhandara,Rural,Away,5934,14245,1122,18211,467
+2001,Bhandara,Urban,Total,27459,1514,348,5672,204
+2001,Bhandara,Urban,Within Premises,19937,203,125,3851,11
+2001,Bhandara,Urban,Near Premises,4985,839,53,1215,94
+2001,Bhandara,Urban,Away,2537,472,170,606,99
+2001,Gondia,Total,Total,39091,89366,3786,116267,866
+2001,Gondia,Total,Within Premises,24111,9507,758,42012,51
+2001,Gondia,Total,Near Premises,11980,58802,2139,53309,415
+2001,Gondia,Total,Away,3000,21057,889,20946,400
+2001,Gondia,Rural,Total,20991,85697,3129,112002,748
+2001,Gondia,Rural,Within Premises,9197,9179,628,39911,47
+2001,Gondia,Rural,Near Premises,9512,56398,1771,51863,385
+2001,Gondia,Rural,Away,2282,20120,730,20228,316
+2001,Gondia,Urban,Total,18100,3669,657,4265,118
+2001,Gondia,Urban,Within Premises,14914,328,130,2101,4
+2001,Gondia,Urban,Near Premises,2468,2404,368,1446,30
+2001,Gondia,Urban,Away,718,937,159,718,84
+2001,Gadchiroli,Total,Total,35310,81479,3470,83301,2191
+2001,Gadchiroli,Total,Within Premises,20431,7661,653,18377,16
+2001,Gadchiroli,Total,Near Premises,11724,53239,1937,44426,945
+2001,Gadchiroli,Total,Away,3155,20579,880,20498,1230
+2001,Gadchiroli,Rural,Total,26983,78251,3307,80467,2186
+2001,Gadchiroli,Rural,Within Premises,13645,7372,586,16820,15
+2001,Gadchiroli,Rural,Near Premises,10561,51072,1873,43826,942
+2001,Gadchiroli,Rural,Away,2777,19807,848,19821,1229
+2001,Gadchiroli,Urban,Total,8327,3228,163,2834,5
+2001,Gadchiroli,Urban,Within Premises,6786,289,67,1557,1
+2001,Gadchiroli,Urban,Near Premises,1163,2167,64,600,3
+2001,Gadchiroli,Urban,Away,378,772,32,677,1
+2001,Chandrapur,Total,Total,163899,128741,10751,142130,6460
+2001,Chandrapur,Total,Within Premises,107728,20806,5658,25883,416
+2001,Chandrapur,Total,Near Premises,41335,76090,2966,70610,2462
+2001,Chandrapur,Total,Away,14836,31845,2127,45637,3582
+2001,Chandrapur,Rural,Total,65753,108465,5798,127515,3429
+2001,Chandrapur,Rural,Within Premises,34485,12991,1586,18382,329
+2001,Chandrapur,Rural,Near Premises,25007,67619,2462,66253,1324
+2001,Chandrapur,Rural,Away,6261,27855,1750,42880,1776
+2001,Chandrapur,Urban,Total,98146,20276,4953,14615,3031
+2001,Chandrapur,Urban,Within Premises,73243,7815,4072,7501,87
+2001,Chandrapur,Urban,Near Premises,16328,8471,504,4357,1138
+2001,Chandrapur,Urban,Away,8575,3990,377,2757,1806
+2001,Yavatmal,Total,Total,207227,102132,10436,177786,11125
+2001,Yavatmal,Total,Within Premises,113217,14613,3876,24349,591
+2001,Yavatmal,Total,Near Premises,77222,65163,4845,91542,5671
+2001,Yavatmal,Total,Away,16788,22356,1715,61895,4863
+2001,Yavatmal,Rural,Total,138641,94870,8852,169273,10350
+2001,Yavatmal,Rural,Within Premises,64632,12998,2657,20780,379
+2001,Yavatmal,Rural,Near Premises,61712,61180,4685,89007,5338
+2001,Yavatmal,Rural,Away,12297,20692,1510,59486,4633
+2001,Yavatmal,Urban,Total,68586,7262,1584,8513,775
+2001,Yavatmal,Urban,Within Premises,48585,1615,1219,3569,212
+2001,Yavatmal,Urban,Near Premises,15510,3983,160,2535,333
+2001,Yavatmal,Urban,Away,4491,1664,205,2409,230
+2001,Nanded,Total,Total,261067,117895,26005,100752,17820
+2001,Nanded,Total,Within Premises,160022,23609,11989,12880,589
+2001,Nanded,Total,Near Premises,78188,64401,8728,47625,5604
+2001,Nanded,Total,Away,22857,29885,5288,40247,11627
+2001,Nanded,Rural,Total,179584,98450,19390,99209,13912
+2001,Nanded,Rural,Within Premises,101108,15696,6846,12496,471
+2001,Nanded,Rural,Near Premises,62366,56867,7875,47333,4835
+2001,Nanded,Rural,Away,16110,25887,4669,39380,8606
+2001,Nanded,Urban,Total,81483,19445,6615,1543,3908
+2001,Nanded,Urban,Within Premises,58914,7913,5143,384,118
+2001,Nanded,Urban,Near Premises,15822,7534,853,292,769
+2001,Nanded,Urban,Away,6747,3998,619,867,3021
+2001,Hingoli,Total,Total,47293,80790,6897,42588,3467
+2001,Hingoli,Total,Within Premises,31775,11817,3113,4834,98
+2001,Hingoli,Total,Near Premises,12577,52622,2470,19881,1152
+2001,Hingoli,Total,Away,2941,16351,1314,17873,2217
+2001,Hingoli,Rural,Total,30257,75829,5597,41890,2773
+2001,Hingoli,Rural,Within Premises,18741,10309,1952,4711,71
+2001,Hingoli,Rural,Near Premises,9711,50186,2389,19632,778
+2001,Hingoli,Rural,Away,1805,15334,1256,17547,1924
+2001,Hingoli,Urban,Total,17036,4961,1300,698,694
+2001,Hingoli,Urban,Within Premises,13034,1508,1161,123,27
+2001,Hingoli,Urban,Near Premises,2866,2436,81,249,374
+2001,Hingoli,Urban,Away,1136,1017,58,326,293
+2001,Parbhani,Total,Total,110945,118720,9205,34876,9857
+2001,Parbhani,Total,Within Premises,77130,28227,3025,4455,431
+2001,Parbhani,Total,Near Premises,25787,68658,4185,17487,4256
+2001,Parbhani,Total,Away,8028,21835,1995,12934,5170
+2001,Parbhani,Rural,Total,60146,95924,6714,34064,6717
+2001,Parbhani,Rural,Within Premises,39512,16160,1392,4246,143
+2001,Parbhani,Rural,Near Premises,17069,61411,3870,17122,3155
+2001,Parbhani,Rural,Away,3565,18353,1452,12696,3419
+2001,Parbhani,Urban,Total,50799,22796,2491,812,3140
+2001,Parbhani,Urban,Within Premises,37618,12067,1633,209,288
+2001,Parbhani,Urban,Near Premises,8718,7247,315,365,1101
+2001,Parbhani,Urban,Away,4463,3482,543,238,1751
+2001,Jalna,Total,Total,133048,80134,11318,70150,7899
+2001,Jalna,Total,Within Premises,82089,12353,5554,7811,554
+2001,Jalna,Total,Near Premises,43783,50806,3751,31392,3089
+2001,Jalna,Total,Away,7176,16975,2013,30947,4256
+2001,Jalna,Rural,Total,101743,72180,5539,68585,5378
+2001,Jalna,Rural,Within Premises,56585,10089,966,7501,345
+2001,Jalna,Rural,Near Premises,39767,47366,3295,30664,2474
+2001,Jalna,Rural,Away,5391,14725,1278,30420,2559
+2001,Jalna,Urban,Total,31305,7954,5779,1565,2521
+2001,Jalna,Urban,Within Premises,25504,2264,4588,310,209
+2001,Jalna,Urban,Near Premises,4016,3440,456,728,615
+2001,Jalna,Urban,Away,1785,2250,735,527,1697
+2001,Chhatrapati Sambhaji Nagar,Total,Total,326990,80650,11988,95885,10642
+2001,Chhatrapati Sambhaji Nagar,Total,Within Premises,240371,20689,5191,25214,965
+2001,Chhatrapati Sambhaji Nagar,Total,Near Premises,72118,47356,4185,41715,3978
+2001,Chhatrapati Sambhaji Nagar,Total,Away,14501,12605,2612,28956,5699
+2001,Chhatrapati Sambhaji Nagar,Rural,Total,164787,64071,8536,92842,4587
+2001,Chhatrapati Sambhaji Nagar,Rural,Within Premises,99094,12631,2543,24138,348
+2001,Chhatrapati Sambhaji Nagar,Rural,Near Premises,55633,41390,3746,40847,1865
+2001,Chhatrapati Sambhaji Nagar,Rural,Away,10060,10050,2247,27857,2374
+2001,Chhatrapati Sambhaji Nagar,Urban,Total,162203,16579,3452,3043,6055
+2001,Chhatrapati Sambhaji Nagar,Urban,Within Premises,141277,8058,2648,1076,617
+2001,Chhatrapati Sambhaji Nagar,Urban,Near Premises,16485,5966,439,868,2113
+2001,Chhatrapati Sambhaji Nagar,Urban,Away,4441,2555,365,1099,3325
+2001,Nashik,Total,Total,519734,76964,19430,235581,25049
+2001,Nashik,Total,Within Premises,387679,17711,7666,82090,2153
+2001,Nashik,Total,Near Premises,111283,46718,7951,100584,11257
+2001,Nashik,Total,Away,20772,12535,3813,52907,11639
+2001,Nashik,Rural,Total,205387,66332,14179,226386,17431
+2001,Nashik,Rural,Within Premises,138123,15124,5124,78479,663
+2001,Nashik,Rural,Near Premises,59135,40561,6458,96804,8608
+2001,Nashik,Rural,Away,8129,10647,2597,51103,8160
+2001,Nashik,Urban,Total,314347,10632,5251,9195,7618
+2001,Nashik,Urban,Within Premises,249556,2587,2542,3611,1490
+2001,Nashik,Urban,Near Premises,52148,6157,1493,3780,2649
+2001,Nashik,Urban,Away,12643,1888,1216,1804,3479
+2001,Thane,Total,Total,1299785,122765,37366,207782,32321
+2001,Thane,Total,Within Premises,1046028,32816,18121,40290,3077
+2001,Thane,Total,Near Premises,214146,71478,13922,107431,13260
+2001,Thane,Total,Away,39611,18471,5323,60061,15984
+2001,Thane,Rural,Total,118321,81707,24335,186426,17307
+2001,Thane,Rural,Within Premises,72267,21687,9899,33601,468
+2001,Thane,Rural,Near Premises,39954,48642,10614,99687,9696
+2001,Thane,Rural,Away,6100,11378,3822,53138,7143
+2001,Thane,Urban,Total,1181464,41058,13031,21356,15014
+2001,Thane,Urban,Within Premises,973761,11129,8222,6689,2609
+2001,Thane,Urban,Near Premises,174192,22836,3308,7744,3564
+2001,Thane,Urban,Away,33511,7093,1501,6923,8841
+2001,Mumbai Suburban,Total,Total,1742964,15272,2892,5395,7809
+2001,Mumbai Suburban,Total,Within Premises,1248091,3785,586,310,439
+2001,Mumbai Suburban,Total,Near Premises,451842,9566,949,2568,2968
+2001,Mumbai Suburban,Total,Away,43031,1921,1357,2517,4402
+2001,Mumbai Suburban,Rural,Total,0,0,0,0,0
+2001,Mumbai Suburban,Rural,Within Premises,0,0,0,0,0
+2001,Mumbai Suburban,Rural,Near Premises,0,0,0,0,0
+2001,Mumbai Suburban,Rural,Away,0,0,0,0,0
+2001,Mumbai Suburban,Urban,Total,1742964,15272,2892,5395,7809
+2001,Mumbai Suburban,Urban,Within Premises,1248091,3785,586,310,439
+2001,Mumbai Suburban,Urban,Near Premises,451842,9566,949,2568,2968
+2001,Mumbai Suburban,Urban,Away,43031,1921,1357,2517,4402
+2001,Mumbai City,Total,Total,626569,13494,437,1382,6708
+2001,Mumbai City,Total,Within Premises,489554,2732,89,39,495
+2001,Mumbai City,Total,Near Premises,125834,10188,181,426,2724
+2001,Mumbai City,Total,Away,11181,574,167,917,3489
+2001,Mumbai City,Rural,Total,0,0,0,0,0
+2001,Mumbai City,Rural,Within Premises,0,0,0,0,0
+2001,Mumbai City,Rural,Near Premises,0,0,0,0,0
+2001,Mumbai City,Rural,Away,0,0,0,0,0
+2001,Mumbai City,Urban,Total,626569,13494,437,1382,6708
+2001,Mumbai City,Urban,Within Premises,489554,2732,89,39,495
+2001,Mumbai City,Urban,Near Premises,125834,10188,181,426,2724
+2001,Mumbai City,Urban,Away,11181,574,167,917,3489
+2001,Raigad,Total,Total,267408,37489,18858,130079,17794
+2001,Raigad,Total,Within Premises,147863,6849,7990,13813,300
+2001,Raigad,Total,Near Premises,95763,22596,7212,61761,6834
+2001,Raigad,Total,Away,23782,8044,3656,54505,10660
+2001,Raigad,Rural,Total,167038,33438,15803,125530,16936
+2001,Raigad,Rural,Within Premises,70435,5741,5533,12222,231
+2001,Raigad,Rural,Near Premises,77173,20197,6732,60445,6534
+2001,Raigad,Rural,Away,19430,7500,3538,52863,10171
+2001,Raigad,Urban,Total,100370,4051,3055,4549,858
+2001,Raigad,Urban,Within Premises,77428,1108,2457,1591,69
+2001,Raigad,Urban,Near Premises,18590,2399,480,1316,300
+2001,Raigad,Urban,Away,4352,544,118,1642,489
+2001,Pune,Total,Total,1082611,85733,44873,190427,35966
+2001,Pune,Total,Within Premises,826294,25626,23975,54117,2953
+2001,Pune,Total,Near Premises,226366,46320,14390,82556,16127
+2001,Pune,Total,Away,29951,13787,6508,53754,16886
+2001,Pune,Rural,Total,268889,68055,27993,180628,20995
+2001,Pune,Rural,Within Premises,177283,19206,13734,51614,1445
+2001,Pune,Rural,Near Premises,79754,38061,9905,78682,10641
+2001,Pune,Rural,Away,11852,10788,4354,50332,8909
+2001,Pune,Urban,Total,813722,17678,16880,9799,14971
+2001,Pune,Urban,Within Premises,649011,6420,10241,2503,1508
+2001,Pune,Urban,Near Premises,146612,8259,4485,3874,5486
+2001,Pune,Urban,Away,18099,2999,2154,3422,7977
+2001,Ahilyanagar,Total,Total,355433,70804,27644,264455,23729
+2001,Ahilyanagar,Total,Within Premises,250829,17030,10928,85423,1504
+2001,Ahilyanagar,Total,Near Premises,84762,40470,11601,112899,10187
+2001,Ahilyanagar,Total,Away,19842,13304,5115,66133,12038
+2001,Ahilyanagar,Rural,Total,230939,62573,24317,255972,20645
+2001,Ahilyanagar,Rural,Within Premises,146379,14093,9096,81926,1219
+2001,Ahilyanagar,Rural,Near Premises,70045,36592,10734,109260,8849
+2001,Ahilyanagar,Rural,Away,14515,11888,4487,64786,10577
+2001,Ahilyanagar,Urban,Total,124494,8231,3327,8483,3084
+2001,Ahilyanagar,Urban,Within Premises,104450,2937,1832,3497,285
+2001,Ahilyanagar,Urban,Near Premises,14717,3878,867,3639,1338
+2001,Ahilyanagar,Urban,Away,5327,1416,628,1347,1461
+2001,Beed,Total,Total,187945,136677,22059,77284,9143
+2001,Beed,Total,Within Premises,127111,19138,5845,10080,333
+2001,Beed,Total,Near Premises,51828,93206,12407,35283,3431
+2001,Beed,Total,Away,9006,24333,3807,31921,5379
+2001,Beed,Rural,Total,131111,131519,19419,75671,7525
+2001,Beed,Rural,Within Premises,81628,17600,3937,9315,254
+2001,Beed,Rural,Near Premises,42671,90814,11841,34884,2945
+2001,Beed,Rural,Away,6812,23105,3641,31472,4326
+2001,Beed,Urban,Total,56834,5158,2640,1613,1618
+2001,Beed,Urban,Within Premises,45483,1538,1908,765,79
+2001,Beed,Urban,Near Premises,9157,2392,566,399,486
+2001,Beed,Urban,Away,2194,1228,166,449,1053
+2001,Latur,Total,Total,201665,73663,45185,38755,14015
+2001,Latur,Total,Within Premises,142843,10882,11998,4786,1311
+2001,Latur,Total,Near Premises,47631,44029,19878,14963,4545
+2001,Latur,Total,Away,11191,18752,13309,19006,8159
+2001,Latur,Rural,Total,152239,65908,30619,36281,9068
+2001,Latur,Rural,Within Premises,104293,8478,4488,4373,913
+2001,Latur,Rural,Near Premises,39988,40838,15787,14412,3069
+2001,Latur,Rural,Away,7958,16592,10344,17496,5086
+2001,Latur,Urban,Total,49426,7755,14566,2474,4947
+2001,Latur,Urban,Within Premises,38550,2404,7510,413,398
+2001,Latur,Urban,Near Premises,7643,3191,4091,551,1476
+2001,Latur,Urban,Away,3233,2160,2965,1510,3073
+2001,Dharashiv,Total,Total,146735,80280,31901,26216,7977
+2001,Dharashiv,Total,Within Premises,93772,10243,4474,2784,896
+2001,Dharashiv,Total,Near Premises,43346,51871,18442,10293,3598
+2001,Dharashiv,Total,Away,9617,18166,8985,13139,3483
+2001,Dharashiv,Rural,Total,113519,78001,28576,25620,6367
+2001,Dharashiv,Rural,Within Premises,67491,9852,3412,2685,756
+2001,Dharashiv,Rural,Near Premises,38196,50417,16865,10131,2947
+2001,Dharashiv,Rural,Away,7832,17732,8299,12804,2664
+2001,Dharashiv,Urban,Total,33216,2279,3325,596,1610
+2001,Dharashiv,Urban,Within Premises,26281,391,1062,99,140
+2001,Dharashiv,Urban,Near Premises,5150,1454,1577,162,651
+2001,Dharashiv,Urban,Away,1785,434,686,335,819
+2001,Solapur,Total,Total,391235,136140,29893,135759,22048
+2001,Solapur,Total,Within Premises,244746,28277,12596,39802,1937
+2001,Solapur,Total,Near Premises,126047,83284,13087,64032,13308
+2001,Solapur,Total,Away,20442,24579,4210,31925,6803
+2001,Solapur,Rural,Total,201916,111857,25739,133215,18260
+2001,Solapur,Rural,Within Premises,118150,24908,10509,39117,1389
+2001,Solapur,Rural,Near Premises,73587,68656,11928,63158,11145
+2001,Solapur,Rural,Away,10179,18293,3302,30940,5726
+2001,Solapur,Urban,Total,189319,24283,4154,2544,3788
+2001,Solapur,Urban,Within Premises,126596,3369,2087,685,548
+2001,Solapur,Urban,Near Premises,52460,14628,1159,874,2163
+2001,Solapur,Urban,Away,10263,6286,908,985,1077
+2001,Satara,Total,Total,377882,54130,22434,71908,20104
+2001,Satara,Total,Within Premises,271436,15140,11400,19402,1467
+2001,Satara,Total,Near Premises,93965,30557,7886,32745,11252
+2001,Satara,Total,Away,12481,8433,3148,19761,7385
+2001,Satara,Rural,Total,312477,51727,20323,69063,18383
+2001,Satara,Rural,Within Premises,215305,14525,9844,18352,1337
+2001,Satara,Rural,Near Premises,86381,29157,7589,31571,10850
+2001,Satara,Rural,Away,10791,8045,2890,19140,6196
+2001,Satara,Urban,Total,65405,2403,2111,2845,1721
+2001,Satara,Urban,Within Premises,56131,615,1556,1050,130
+2001,Satara,Urban,Near Premises,7584,1400,297,1174,402
+2001,Satara,Urban,Away,1690,388,258,621,1189
+2001,Ratnagiri,Total,Total,150453,8722,10129,157201,40100
+2001,Ratnagiri,Total,Within Premises,81334,1918,3533,41686,522
+2001,Ratnagiri,Total,Near Premises,62498,4981,4530,66377,17641
+2001,Ratnagiri,Total,Away,6621,1823,2066,49138,21937
+2001,Ratnagiri,Rural,Total,122467,8487,8829,149198,39549
+2001,Ratnagiri,Rural,Within Premises,56401,1800,2387,35411,457
+2001,Ratnagiri,Rural,Near Premises,60061,4872,4447,65130,17534
+2001,Ratnagiri,Rural,Away,6005,1815,1995,48657,21558
+2001,Ratnagiri,Urban,Total,27986,235,1300,8003,551
+2001,Ratnagiri,Urban,Within Premises,24933,118,1146,6275,65
+2001,Ratnagiri,Urban,Near Premises,2437,109,83,1247,107
+2001,Ratnagiri,Urban,Away,616,8,71,481,379
+2001,Sindhudurg,Total,Total,42523,3126,3530,130423,10676
+2001,Sindhudurg,Total,Within Premises,31616,878,1294,49648,264
+2001,Sindhudurg,Total,Near Premises,9609,1711,1360,55138,5685
+2001,Sindhudurg,Total,Away,1298,537,876,25637,4727
+2001,Sindhudurg,Rural,Total,36588,3091,3335,118520,10600
+2001,Sindhudurg,Rural,Within Premises,26277,856,1147,41728,256
+2001,Sindhudurg,Rural,Near Premises,9165,1701,1327,52365,5646
+2001,Sindhudurg,Rural,Away,1146,534,861,24427,4698
+2001,Sindhudurg,Urban,Total,5935,35,195,11903,76
+2001,Sindhudurg,Urban,Within Premises,5339,22,147,7920,8
+2001,Sindhudurg,Urban,Near Premises,444,10,33,2773,39
+2001,Sindhudurg,Urban,Away,152,3,15,1210,29
+2001,Kolhapur,Total,Total,530688,40197,38260,55830,25548
+2001,Kolhapur,Total,Within Premises,414570,9483,14182,12781,2361
+2001,Kolhapur,Total,Near Premises,101052,23390,16873,23883,13295
+2001,Kolhapur,Total,Away,15066,7324,7205,19166,9892
+2001,Kolhapur,Rural,Total,340917,34745,30816,52808,22621
+2001,Kolhapur,Rural,Within Premises,254254,8244,9902,11927,1854
+2001,Kolhapur,Rural,Near Premises,76848,20425,14802,22655,12472
+2001,Kolhapur,Rural,Away,9815,6076,6112,18226,8295
+2001,Kolhapur,Urban,Total,189771,5452,7444,3022,2927
+2001,Kolhapur,Urban,Within Premises,160316,1239,4280,854,507
+2001,Kolhapur,Urban,Near Premises,24204,2965,2071,1228,823
+2001,Kolhapur,Urban,Away,5251,1248,1093,940,1597
+2001,Sangli,Total,Total,324491,43353,33890,80836,12619
+2001,Sangli,Total,Within Premises,235572,12574,15187,23176,1309
+2001,Sangli,Total,Near Premises,72389,22735,11838,35203,6608
+2001,Sangli,Total,Away,16530,8044,6865,22457,4702
+2001,Sangli,Rural,Total,222130,35155,27384,77926,9942
+2001,Sangli,Rural,Within Premises,153224,9206,10744,22108,833
+2001,Sangli,Rural,Near Premises,56684,19451,10693,34046,5552
+2001,Sangli,Rural,Away,12222,6498,5947,21772,3557
+2001,Sangli,Urban,Total,102361,8198,6506,2910,2677
+2001,Sangli,Urban,Within Premises,82348,3368,4443,1068,476
+2001,Sangli,Urban,Near Premises,15705,3284,1145,1157,1056
+2001,Sangli,Urban,Away,4308,1546,918,685,1145
+2011,Ahilyanagar,Rural,Away,23923,17932,12040,81084,17059
+2011,Ahilyanagar,Rural,Near premises,63993,29967,23068,104304,11874
+2011,Ahilyanagar,Rural,Within premises,206751,12352,33611,79760,0
+2011,Ahilyanagar,Total,Away,28587,19968,12737,82784,18449
+2011,Ahilyanagar,Total,Near premises,78778,31701,24535,106279,14463
+2011,Ahilyanagar,Total,Within premises,346933,13738,39652,83144,0
+2011,Ahilyanagar,Urban,Away,4664,2036,697,1700,1390
+2011,Ahilyanagar,Urban,Near premises,14785,1734,1467,1975,2589
+2011,Ahilyanagar,Urban,Within premises,140182,1386,6041,3384,0
+2011,Akola,Rural,Away,14499,22596,822,11799,2688
+2011,Akola,Rural,Near premises,42641,38483,1284,12575,1166
+2011,Akola,Rural,Within premises,79685,4436,7778,7300,0
+2011,Akola,Total,Away,21736,29489,4940,12561,3277
+2011,Akola,Total,Near premises,59000,47521,6510,13481,2026
+2011,Akola,Total,Within premises,148799,7841,24929,9025,0
+2011,Akola,Urban,Away,7237,6893,4118,762,589
+2011,Akola,Urban,Near premises,16359,9038,5226,906,860
+2011,Akola,Urban,Within premises,69114,3405,17151,1725,0
+2011,Amravati,Rural,Away,25233,19228,606,18409,1374
+2011,Amravati,Rural,Near premises,104341,29791,1634,16221,2537
+2011,Amravati,Rural,Within premises,190032,2216,2465,10476,0
+2011,Amravati,Total,Away,35402,24129,1135,19632,2007
+2011,Amravati,Total,Near premises,135656,40056,2516,18951,3724
+2011,Amravati,Total,Within premises,325088,3283,7467,18400,0
+2011,Amravati,Urban,Away,10169,4901,529,1223,633
+2011,Amravati,Urban,Near premises,31315,10265,882,2730,1187
+2011,Amravati,Urban,Within premises,135056,1067,5002,7924,0
+2011,Chhatrapati Sambhaji Nagar,Rural,Away,15605,13283,3122,50394,5703
+2011,Chhatrapati Sambhaji Nagar,Rural,Near premises,66276,26221,6155,59649,5698
+2011,Chhatrapati Sambhaji Nagar,Rural,Within premises,118176,7719,9162,31957,0
+2011,Chhatrapati Sambhaji Nagar,Total,Away,27794,16554,6379,52272,13411
+2011,Chhatrapati Sambhaji Nagar,Total,Near premises,85414,31091,10141,62004,9361
+2011,Chhatrapati Sambhaji Nagar,Total,Within premises,346639,11136,31094,33297,0
+2011,Chhatrapati Sambhaji Nagar,Urban,Away,12189,3271,3257,1878,7708
+2011,Chhatrapati Sambhaji Nagar,Urban,Near premises,19138,4870,3986,2355,3663
+2011,Chhatrapati Sambhaji Nagar,Urban,Within premises,228463,3417,21932,1340,0
+2011,Bhandara,Rural,Away,6402,24588,3492,15768,421
+2011,Bhandara,Rural,Near premises,22457,47248,5745,23933,616
+2011,Bhandara,Rural,Within premises,41553,6129,2983,21964,0
+2011,Bhandara,Total,Away,8748,25565,4052,17048,587
+2011,Bhandara,Total,Near premises,27899,48838,6504,25035,956
+2011,Bhandara,Total,Within premises,68052,6510,7232,28747,0
+2011,Bhandara,Urban,Away,2346,977,560,1280,166
+2011,Bhandara,Urban,Near premises,5442,1590,759,1102,340
+2011,Bhandara,Urban,Within premises,26499,381,4249,6783,0
+2011,Beed,Rural,Away,11783,35260,12514,47936,6566
+2011,Beed,Rural,Near premises,51144,68515,21704,47619,5412
+2011,Beed,Rural,Within premises,90780,15340,17972,13569,0
+2011,Beed,Total,Away,15042,36310,15043,49085,7408
+2011,Beed,Total,Near premises,62614,69928,24822,48246,6751
+2011,Beed,Total,Within premises,153273,16438,25675,14438,0
+2011,Beed,Urban,Away,3259,1050,2529,1149,842
+2011,Beed,Urban,Near premises,11470,1413,3118,627,1339
+2011,Beed,Urban,Within premises,62493,1098,7703,869,0
+2011,Buldana,Rural,Away,19648,26340,2483,58073,4479
+2011,Buldana,Rural,Near premises,59040,42121,3728,46994,2336
+2011,Buldana,Rural,Within premises,143937,7594,7950,20524,0
+2011,Buldana,Total,Away,25418,31240,3531,60482,6502
+2011,Buldana,Total,Near premises,72612,48774,4844,48839,3121
+2011,Buldana,Total,Within premises,201400,8527,13564,24177,0
+2011,Buldana,Urban,Away,5770,4900,1048,2409,2023
+2011,Buldana,Urban,Near premises,13572,6653,1116,1845,785
+2011,Buldana,Urban,Within premises,57463,933,5614,3653,0
+2011,Chandrapur,Rural,Away,11066,41941,5212,39189,1406
+2011,Chandrapur,Rural,Near premises,30569,74455,8347,46900,722
+2011,Chandrapur,Rural,Within premises,57131,10504,11821,13380,0
+2011,Chandrapur,Total,Away,21012,46971,6882,40653,2761
+2011,Chandrapur,Total,Near premises,48718,83372,11326,49023,1612
+2011,Chandrapur,Total,Within premises,145398,15311,34967,21606,0
+2011,Chandrapur,Urban,Away,9946,5030,1670,1464,1355
+2011,Chandrapur,Urban,Near premises,18149,8917,2979,2123,890
+2011,Chandrapur,Urban,Within premises,88267,4807,23146,8226,0
+2011,Dhule,Rural,Away,11650,5367,923,9882,2565
+2011,Dhule,Rural,Near premises,82377,13434,1654,10244,2150
+2011,Dhule,Rural,Within premises,148523,4010,1730,4406,0
+2011,Dhule,Total,Away,15344,5592,1048,10473,3664
+2011,Dhule,Total,Near premises,96708,13879,1887,10861,3217
+2011,Dhule,Total,Within premises,230978,4108,3224,7717,0
+2011,Dhule,Urban,Away,3694,225,125,591,1099
+2011,Dhule,Urban,Near premises,14331,445,233,617,1067
+2011,Dhule,Urban,Within premises,82455,98,1494,3311,0
+2011,Gadchiroli,Rural,Away,4039,37959,1788,25043,1292
+2011,Gadchiroli,Rural,Near premises,8052,50623,2585,39976,760
+2011,Gadchiroli,Rural,Within premises,17665,5894,3227,20032,0
+2011,Gadchiroli,Total,Away,5104,38945,1905,25494,1541
+2011,Gadchiroli,Total,Near premises,9898,52341,2718,40584,984
+2011,Gadchiroli,Total,Within premises,32918,6151,4102,23060,0
+2011,Gadchiroli,Urban,Away,1065,986,117,451,249
+2011,Gadchiroli,Urban,Near premises,1846,1718,133,608,224
+2011,Gadchiroli,Urban,Within premises,15253,257,875,3028,0
+2011,Gondia,Rural,Away,2369,32501,2872,17499,221
+2011,Gondia,Rural,Near premises,11164,63755,5405,39268,348
+2011,Gondia,Rural,Within premises,17013,6718,3371,39298,0
+2011,Gondia,Total,Away,3634,34841,3550,19302,321
+2011,Gondia,Total,Near premises,14176,69997,6588,41972,477
+2011,Gondia,Total,Within premises,32892,7191,7459,47031,0
+2011,Gondia,Urban,Away,1265,2340,678,1803,100
+2011,Gondia,Urban,Near premises,3012,6242,1183,2704,129
+2011,Gondia,Urban,Within premises,15879,473,4088,7733,0
+2011,Hingoli,Rural,Away,5452,15124,5236,23763,2481
+2011,Hingoli,Rural,Near premises,20003,30705,9060,18766,1374
+2011,Hingoli,Rural,Within premises,38515,9377,11566,3721,0
+2011,Hingoli,Total,Away,6814,16745,6187,24333,3413
+2011,Hingoli,Total,Near premises,22647,32776,9903,18969,1705
+2011,Hingoli,Total,Within premises,52021,10392,17259,3877,0
+2011,Hingoli,Urban,Away,1362,1621,951,570,932
+2011,Hingoli,Urban,Near premises,2644,2071,843,203,331
+2011,Hingoli,Urban,Within premises,13506,1015,5693,156,0
+2011,Jalgaon,Rural,Away,34353,5724,1120,15303,5674
+2011,Jalgaon,Rural,Near premises,153178,13909,2632,14625,8166
+2011,Jalgaon,Rural,Within premises,351380,2750,3253,6247,0
+2011,Jalgaon,Total,Away,45868,7313,1952,16020,7829
+2011,Jalgaon,Total,Near premises,191507,16416,4591,16038,10607
+2011,Jalgaon,Total,Within premises,553535,3913,7867,8201,0
+2011,Jalgaon,Urban,Away,11515,1589,832,717,2155
+2011,Jalgaon,Urban,Near premises,38329,2507,1959,1413,2441
+2011,Jalgaon,Urban,Within premises,202155,1163,4614,1954,0
+2011,Jalna,Rural,Away,9534,15468,2543,54569,4068
+2011,Jalna,Rural,Near premises,42255,38329,4248,39415,3359
+2011,Jalna,Rural,Within premises,75535,9377,8551,11312,0
+2011,Jalna,Total,Away,11391,20343,5062,55923,7209
+2011,Jalna,Total,Near premises,45883,41821,6475,40067,4247
+2011,Jalna,Total,Within premises,103252,11056,23561,11826,0
+2011,Jalna,Urban,Away,1857,4875,2519,1354,3141
+2011,Jalna,Urban,Near premises,3628,3492,2227,652,888
+2011,Jalna,Urban,Within premises,27717,1679,15010,514,0
+2011,Kolhapur,Rural,Away,19765,4285,5496,8469,4117
+2011,Kolhapur,Rural,Near premises,79094,10292,12829,17031,8042
+2011,Kolhapur,Rural,Within premises,353111,4914,17235,11948,0
+2011,Kolhapur,Total,Away,24428,4495,6497,8898,4618
+2011,Kolhapur,Total,Near premises,106171,10763,14977,18250,10395
+2011,Kolhapur,Total,Within premises,570994,5274,22757,12966,0
+2011,Kolhapur,Urban,Away,4663,210,1001,429,501
+2011,Kolhapur,Urban,Near premises,27077,471,2148,1219,2353
+2011,Kolhapur,Urban,Within premises,217883,360,5522,1018,0
+2011,Latur,Rural,Away,12491,16190,20409,22901,4758
+2011,Latur,Rural,Near premises,51828,29731,32481,23757,4339
+2011,Latur,Rural,Within premises,118757,5749,11634,4833,0
+2011,Latur,Total,Away,15714,17019,22115,23714,6155
+2011,Latur,Total,Near premises,61290,30609,35848,24444,5584
+2011,Latur,Total,Within premises,199745,6303,20242,5367,0
+2011,Latur,Urban,Away,3223,829,1706,813,1397
+2011,Latur,Urban,Near premises,9462,878,3367,687,1245
+2011,Latur,Urban,Within premises,80988,554,8608,534,0
+2011,Mumbai,Rural,Away,0,0,0,0,0
+2011,Mumbai,Rural,Near premises,0,0,0,0,0
+2011,Mumbai,Rural,Within premises,0,0,0,0,0
+2011,Mumbai,Total,Away,8241,566,50,192,1840
+2011,Mumbai,Total,Near premises,76744,4630,87,145,3919
+2011,Mumbai,Total,Within premises,538483,2236,138,467,0
+2011,Mumbai,Urban,Away,8241,566,50,192,1840
+2011,Mumbai,Urban,Near premises,76744,4630,87,145,3919
+2011,Mumbai,Urban,Within premises,538483,2236,138,467,0
+2011,Mumbai Suburban,Rural,Away,0,0,0,0,0
+2011,Mumbai Suburban,Rural,Near premises,0,0,0,0,0
+2011,Mumbai Suburban,Rural,Within premises,0,0,0,0,0
+2011,Mumbai Suburban,Total,Away,48215,2694,1251,2914,16714
+2011,Mumbai Suburban,Total,Near premises,348559,4180,2866,2360,32955
+2011,Mumbai Suburban,Total,Within premises,1560098,1728,1389,1820,0
+2011,Mumbai Suburban,Urban,Away,48215,2694,1251,2914,16714
+2011,Mumbai Suburban,Urban,Near premises,348559,4180,2866,2360,32955
+2011,Mumbai Suburban,Urban,Within premises,1560098,1728,1389,1820,0
+2011,Nagpur,Rural,Away,14594,13977,1550,14215,1221
+2011,Nagpur,Rural,Near premises,56719,31486,3329,25176,1256
+2011,Nagpur,Rural,Within premises,136619,3946,4314,16166,0
+2011,Nagpur,Total,Away,28884,22104,3693,20829,3762
+2011,Nagpur,Total,Near premises,102057,51899,8555,38274,5235
+2011,Nagpur,Total,Within premises,629734,7213,15372,58197,0
+2011,Nagpur,Urban,Away,14290,8127,2143,6614,2541
+2011,Nagpur,Urban,Near premises,45338,20413,5226,13098,3979
+2011,Nagpur,Urban,Within premises,493115,3267,11058,42031,0
+2011,Nanded,Rural,Away,23740,31316,27902,51333,12605
+2011,Nanded,Rural,Near premises,74638,50971,32787,40537,4174
+2011,Nanded,Rural,Within premises,94919,10882,23508,8312,0
+2011,Nanded,Total,Away,31485,36296,32354,53136,14679
+2011,Nanded,Total,Near premises,96871,55980,38142,41830,5678
+2011,Nanded,Total,Within premises,180393,14457,45966,9036,0
+2011,Nanded,Urban,Away,7745,4980,4452,1803,2074
+2011,Nanded,Urban,Near premises,22233,5009,5355,1293,1504
+2011,Nanded,Urban,Within premises,85474,3575,22458,724,0
+2011,Nandurbar,Rural,Away,9788,17183,1140,8152,10574
+2011,Nandurbar,Rural,Near premises,66576,49191,3065,8924,11814
+2011,Nandurbar,Rural,Within premises,64935,14149,2754,2288,0
+2011,Nandurbar,Total,Away,12092,17805,1877,8213,10926
+2011,Nandurbar,Total,Near premises,74036,50189,5033,9024,12458
+2011,Nandurbar,Total,Within premises,95415,14352,5792,2411,0
+2011,Nandurbar,Urban,Away,2304,622,737,61,352
+2011,Nandurbar,Urban,Near premises,7460,998,1968,100,644
+2011,Nandurbar,Urban,Within premises,30480,203,3038,123,0
+2011,Nashik,Rural,Away,14945,14873,2431,75051,9405
+2011,Nashik,Rural,Near premises,91837,32060,7889,125278,9607
+2011,Nashik,Rural,Within premises,162535,10996,10956,94114,0
+2011,Nashik,Total,Away,33726,18300,8920,77154,12654
+2011,Nashik,Total,Near premises,147535,35855,14355,128529,13342
+2011,Nashik,Total,Within premises,564437,12413,15181,97892,0
+2011,Nashik,Urban,Away,18781,3427,6489,2103,3249
+2011,Nashik,Urban,Near premises,55698,3795,6466,3251,3735
+2011,Nashik,Urban,Within premises,401902,1417,4225,3778,0
+2011,Dharashiv,Rural,Away,11561,16280,13055,14198,4321
+2011,Dharashiv,Rural,Near premises,49476,28658,24299,13027,7142
+2011,Dharashiv,Rural,Within premises,93990,6461,7744,4604,0
+2011,Dharashiv,Total,Away,15241,16999,14797,14470,5334
+2011,Dharashiv,Total,Near premises,56421,29509,26182,13206,8056
+2011,Dharashiv,Total,Within premises,125709,6600,11476,4760,0
+2011,Dharashiv,Urban,Away,3680,719,1742,272,1013
+2011,Dharashiv,Urban,Near premises,6945,851,1883,179,914
+2011,Dharashiv,Urban,Within premises,31719,139,3732,156,0
+2011,Parbhani,Rural,Away,7239,25925,6383,24414,3165
+2011,Parbhani,Rural,Near premises,26545,46441,8616,19611,2890
+2011,Parbhani,Rural,Within premises,53620,17530,9582,4102,0
+2011,Parbhani,Total,Away,11942,29956,7660,25018,5860
+2011,Parbhani,Total,Near premises,36142,52286,9635,19933,4331
+2011,Parbhani,Total,Within premises,100360,31027,21495,4541,0
+2011,Parbhani,Urban,Away,4703,4031,1277,604,2695
+2011,Parbhani,Urban,Near premises,9597,5845,1019,322,1441
+2011,Parbhani,Urban,Within premises,46740,13497,11913,439,0
+2011,Pune,Rural,Away,19150,20334,8797,51380,11516
+2011,Pune,Rural,Near premises,88945,36089,21112,75865,11781
+2011,Pune,Rural,Within premises,274039,17888,54598,52620,0
+2011,Pune,Total,Away,35771,20630,10269,52354,14474
+2011,Pune,Total,Near premises,203184,37003,25786,77681,23533
+2011,Pune,Total,Within premises,1435186,19096,66348,55292,0
+2011,Pune,Urban,Away,16621,296,1472,974,2958
+2011,Pune,Urban,Near premises,114239,914,4674,1816,11752
+2011,Pune,Urban,Within premises,1161147,1208,11750,2672,0
+2011,Raigad,Rural,Away,16163,7753,4135,31697,6640
+2011,Raigad,Rural,Near premises,93821,14699,9670,33626,4864
+2011,Raigad,Rural,Within premises,124156,4105,16743,8448,0
+2011,Raigad,Total,Away,21646,8073,4445,32337,7267
+2011,Raigad,Total,Near premises,115963,15493,10971,34896,6698
+2011,Raigad,Total,Within premises,303108,4727,21308,9582,0
+2011,Raigad,Urban,Away,5483,320,310,640,627
+2011,Raigad,Urban,Near premises,22142,794,1301,1270,1834
+2011,Raigad,Urban,Within premises,178952,622,4565,1134,0
+2011,Ratnagiri,Rural,Away,15099,1089,1730,31951,11242
+2011,Ratnagiri,Rural,Near premises,84249,2977,4344,38535,8936
+2011,Ratnagiri,Rural,Within premises,97645,728,6216,28904,0
+2011,Ratnagiri,Total,Away,16908,1103,1760,32942,11635
+2011,Ratnagiri,Total,Near premises,87930,3034,4450,40256,9167
+2011,Ratnagiri,Total,Within premises,133014,766,9844,40570,0
+2011,Ratnagiri,Urban,Away,1809,14,30,991,393
+2011,Ratnagiri,Urban,Near premises,3681,57,106,1721,231
+2011,Ratnagiri,Urban,Within premises,35369,38,3628,11666,0
+2011,Sangli,Rural,Away,14424,9451,7191,22709,3223
+2011,Sangli,Rural,Near premises,46751,16497,16083,32178,5801
+2011,Sangli,Rural,Within premises,198785,8977,26583,23926,0
+2011,Sangli,Total,Away,19683,10326,8259,23215,4410
+2011,Sangli,Total,Near premises,63926,18337,17514,32956,7370
+2011,Sangli,Total,Within premises,310381,11527,32252,25071,0
+2011,Sangli,Urban,Away,5259,875,1068,506,1187
+2011,Sangli,Urban,Near premises,17175,1840,1431,778,1569
+2011,Sangli,Urban,Within premises,111596,2550,5669,1145,0
+2011,Satara,Rural,Away,15746,9076,3051,16492,5205
+2011,Satara,Rural,Near premises,84300,22471,10364,27139,8269
+2011,Satara,Rural,Within premises,264526,12037,21385,18126,0
+2011,Satara,Total,Away,18743,9605,3495,17154,5826
+2011,Satara,Total,Near premises,93681,23275,11201,28407,9441
+2011,Satara,Total,Within premises,357606,13088,29083,19394,0
+2011,Satara,Urban,Away,2997,529,444,662,621
+2011,Satara,Urban,Near premises,9381,804,837,1268,1172
+2011,Satara,Urban,Within premises,93080,1051,7698,1268,0
+2011,Sindhudurg,Rural,Away,2882,398,830,22738,3244
+2011,Sindhudurg,Rural,Near premises,9329,770,1324,42496,3773
+2011,Sindhudurg,Rural,Within premises,42669,327,2954,46760,0
+2011,Sindhudurg,Total,Away,3314,398,837,23796,3319
+2011,Sindhudurg,Total,Near premises,9906,799,1377,45501,3890
+2011,Sindhudurg,Total,Within premises,49727,439,3696,58120,0
+2011,Sindhudurg,Urban,Away,432,0,7,1058,75
+2011,Sindhudurg,Urban,Near premises,577,29,53,3005,117
+2011,Sindhudurg,Urban,Within premises,7058,112,742,11360,0
+2011,Solapur,Rural,Away,16906,30645,9453,43829,6227
+2011,Solapur,Rural,Near premises,74750,58923,22724,66098,11034
+2011,Solapur,Rural,Within premises,150268,22678,30944,39227,0
+2011,Solapur,Total,Away,27402,34296,10368,44540,8750
+2011,Solapur,Total,Near premises,133476,64485,24819,67044,15846
+2011,Solapur,Total,Within premises,328820,24266,34774,40095,0
+2011,Solapur,Urban,Away,10496,3651,915,711,2523
+2011,Solapur,Urban,Near premises,58726,5562,2095,946,4812
+2011,Solapur,Urban,Within premises,178552,1588,3830,868,0
+2011,Thane,Rural,Away,8561,20821,7398,72486,7594
+2011,Thane,Rural,Near premises,48241,53939,17304,92241,6652
+2011,Thane,Rural,Within premises,127174,18489,26273,19224,0
+2011,Thane,Total,Away,61272,25540,12090,78324,15282
+2011,Thane,Total,Near premises,265031,69854,33239,99554,22215
+2011,Thane,Total,Within premises,1638261,29714,45546,34694,0
+2011,Thane,Urban,Away,52711,4719,4692,5838,7688
+2011,Thane,Urban,Near premises,216790,15915,15935,7313,15563
+2011,Thane,Urban,Within premises,1511087,11225,19273,15470,0
+2011,Wardha,Rural,Away,8697,8582,862,10738,341
+2011,Wardha,Rural,Near premises,36221,18740,1735,19160,800
+2011,Wardha,Rural,Within premises,85400,3591,5584,9833,0
+2011,Wardha,Total,Away,10856,11125,1159,11936,532
+2011,Wardha,Total,Near premises,44507,23633,2624,22092,1234
+2011,Wardha,Total,Within premises,136712,4357,11835,20078,0
+2011,Wardha,Urban,Away,2159,2543,297,1198,191
+2011,Wardha,Urban,Near premises,8286,4893,889,2932,434
+2011,Wardha,Urban,Within premises,51312,766,6251,10245,0
+2011,Washim,Rural,Away,8364,11018,1835,52405,1954
+2011,Washim,Rural,Near premises,20977,14703,2053,34251,570
+2011,Washim,Rural,Within premises,52300,2477,7364,7219,0
+2011,Washim,Total,Away,10106,14127,2252,53972,2590
+2011,Washim,Total,Near premises,24532,19101,2602,35144,802
+2011,Washim,Total,Within premises,71479,2906,10603,7676,0
+2011,Washim,Urban,Away,1742,3109,417,1567,636
+2011,Washim,Urban,Near premises,3555,4398,549,893,232
+2011,Washim,Urban,Within premises,19179,429,3239,457,0
+2011,Yavatmal,Rural,Away,19597,39461,3166,91268,5950
+2011,Yavatmal,Rural,Near premises,68668,62358,4681,71296,3118
+2011,Yavatmal,Rural,Within premises,102621,12139,16117,12601,0
+2011,Yavatmal,Total,Away,26404,43764,4062,93218,7432
+2011,Yavatmal,Total,Near premises,84398,68410,5607,74637,3820
+2011,Yavatmal,Total,Within premises,170635,13530,26077,18391,0
+2011,Yavatmal,Urban,Away,6807,4303,896,1950,1482
+2011,Yavatmal,Urban,Near premises,15730,6052,926,3341,702
+2011,Yavatmal,Urban,Within premises,68014,1391,9960,5790,0

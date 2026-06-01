@@ -2,7 +2,7 @@ from django.db import models
 
 
 # ============================================================================
-# HEALTH DATA MODELS — One model per CSV data source
+# HEALTH DATA MODELS  One model per CSV data source
 # ============================================================================
 
 # ---------- DSA (District Statistical Abstracts) ----------

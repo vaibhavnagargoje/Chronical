@@ -90,3 +90,42 @@ from .industry import (
     DSAElectricity,
     DSAPollutionCategory,
 )
+
+from .labor import (
+    LaborWorkers,
+    LaborAgeDistribution,
+    LaborECWorkers,
+    LaborECGender,
+    LaborECReligion,
+    LaborMNREGAJobCards,
+    LaborMNREGAParticipation,
+    LaborMNREGAAccounts,
+    LaborMNREGAScope,
+    LaborGovtEmployees,
+    LaborDSAEstablishments,
+    LaborDSAWorkers,
+    LaborIndustryType,
+)
+
+from .demography import (
+    CensusPopulation,
+    CensusSC,
+    CensusST,
+    CensusAgeDistribution,
+    CensusLiterate,
+    CensusWorking,
+    CensusInwardMigrationA,
+    CensusInwardMigrationB,
+    CensusInwardMigrationC,
+    CensusInwardMigrationD,
+    CensusInwardMigrationE,
+    CensusMotherTongue,
+    CensusReligion,
+    CensusSexRatio,
+    CensusToiletFacility,
+    CensusCooking,
+    CensusWater,
+    CensusElectricity,
+    CensusTCAssets,
+    CensusOwnership,
+)

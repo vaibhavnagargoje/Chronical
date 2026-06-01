@@ -15,8 +15,8 @@ class LivestockNumbers(models.Model):
 
     class Meta:
         ordering = ['district', 'year']
-        verbose_name = 'Livestock Numbers'
-        verbose_name_plural = 'Livestock Numbers'
+        verbose_name = 'Numbers'
+        verbose_name_plural = 'Numbers'
         unique_together = ['district', 'year']
 
     def __str__(self):

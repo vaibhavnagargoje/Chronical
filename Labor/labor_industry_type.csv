@@ -1,0 +1,2620 @@
+﻿District,Year,Type of Industry,Govt Employees,Semi Govt Employees,Private Employees,Total Employees
+Ahilyanagar,2012,Agriculture,1885,0,30,1915
+Ahilyanagar,2012,Mining,0,0,98,98
+Ahilyanagar,2012,Commodity Manufacturing,211,0,44980,45191
+Ahilyanagar,2012,"Electricity Generation, Gas, Water And Sewage Services",6800,490,1805,9095
+Ahilyanagar,2012,Construction,923,0,2225,3148
+Ahilyanagar,2012,Wholesale And Retail Trade And Hotel Business,7550,0,7215,14765
+Ahilyanagar,2012,"Transportation, Warehousing And Transportation",11050,7733,918,19701
+Ahilyanagar,2012,"Finance, Insurance, Real Estate And Trade Services",2700,13025,31026,46751
+Ahilyanagar,2012,"Collective, Social And Individual Service",30,0,2825,2855
+Ahilyanagar,2013,Agriculture,0,201,132,333
+Ahilyanagar,2013,Mining,0,0,48093,48093
+Ahilyanagar,2013,Commodity Manufacturing,0,0,30831,30831
+Ahilyanagar,2013,"Electricity Generation, Gas, Water And Sewage Services",479,0,87,566
+Ahilyanagar,2013,Construction,1154,0,318,1472
+Ahilyanagar,2013,Wholesale And Retail Trade And Hotel Business,0,404,7108,7512
+Ahilyanagar,2013,"Transportation, Warehousing And Transportation",6527,0,203,6730
+Ahilyanagar,2013,"Finance, Insurance, Real Estate And Trade Services",576,0,13451,14027
+Ahilyanagar,2013,"Collective, Social And Individual Service",30,0,5498,5528
+Ahilyanagar,2014,Agriculture,1802,155,190,2147
+Ahilyanagar,2014,Mining,0,0,23774,23774
+Ahilyanagar,2014,Commodity Manufacturing,51,2595,15221,17867
+Ahilyanagar,2014,"Electricity Generation, Gas, Water And Sewage Services",2803,1753,2259,6815
+Ahilyanagar,2014,Construction,49,5086,1565,6700
+Ahilyanagar,2014,Wholesale And Retail Trade And Hotel Business,190,3442,5664,9296
+Ahilyanagar,2014,"Transportation, Warehousing And Transportation",25,86,387,498
+Ahilyanagar,2014,"Finance, Insurance, Real Estate And Trade Services",11632,21760,31638,65030
+Ahilyanagar,2014,"Collective, Social And Individual Service",12,1,3169,3182
+Ahilyanagar,2015,Agriculture,1806,159,145,2110
+Ahilyanagar,2015,Mining,59,43,10159,10261
+Ahilyanagar,2015,Commodity Manufacturing,62,2584,9646,12292
+Ahilyanagar,2015,"Electricity Generation, Gas, Water And Sewage Services",3371,622,1526,5519
+Ahilyanagar,2015,Construction,655,4454,1389,6498
+Ahilyanagar,2015,Wholesale And Retail Trade And Hotel Business,212,3263,4598,8073
+Ahilyanagar,2015,"Transportation, Warehousing And Transportation",27,103,387,517
+Ahilyanagar,2015,"Finance, Insurance, Real Estate And Trade Services",12485,20040,29698,62223
+Ahilyanagar,2015,"Collective, Social And Individual Service",8,3,1225,1236
+Ahilyanagar,2016,Agriculture,1806,159,189,2154
+Ahilyanagar,2016,Mining,59,43,23409,23511
+Ahilyanagar,2016,Commodity Manufacturing,62,2584,17316,19962
+Ahilyanagar,2016,"Electricity Generation, Gas, Water And Sewage Services",3905,622,2377,6904
+Ahilyanagar,2016,Construction,655,4454,1389,6498
+Ahilyanagar,2016,Wholesale And Retail Trade And Hotel Business,212,3263,6036,9511
+Ahilyanagar,2016,"Transportation, Warehousing And Transportation",25,86,391,502
+Ahilyanagar,2016,"Finance, Insurance, Real Estate And Trade Services",13191,20121,31989,65301
+Ahilyanagar,2016,"Collective, Social And Individual Service",10,1,3135,3146
+Ahilyanagar,2017,Agriculture,,,,
+Ahilyanagar,2017,Mining,,,,
+Ahilyanagar,2017,Commodity Manufacturing,,,,
+Ahilyanagar,2017,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Ahilyanagar,2017,Construction,,,,
+Ahilyanagar,2017,Wholesale And Retail Trade And Hotel Business,,,,
+Ahilyanagar,2017,"Transportation, Warehousing And Transportation",,,,
+Ahilyanagar,2017,"Finance, Insurance, Real Estate And Trade Services",,,,
+Ahilyanagar,2017,"Collective, Social And Individual Service",,,,
+Ahilyanagar,2018,Agriculture,1762,153,1533,3448
+Ahilyanagar,2018,Mining,177,13,25490,25680
+Ahilyanagar,2018,Commodity Manufacturing,79,5654,23637,29370
+Ahilyanagar,2018,"Electricity Generation, Gas, Water And Sewage Services",3835,669,3096,7600
+Ahilyanagar,2018,Construction,526,4223,2672,7421
+Ahilyanagar,2018,Wholesale And Retail Trade And Hotel Business,170,3071,6470,9711
+Ahilyanagar,2018,"Transportation, Warehousing And Transportation",46,78,1248,1372
+Ahilyanagar,2018,"Finance, Insurance, Real Estate And Trade Services",15591,21271,40896,77758
+Ahilyanagar,2018,"Collective, Social And Individual Service",0,1,1275,1276
+Ahilyanagar,2019,Agriculture,1557,332,1417,3306
+Ahilyanagar,2019,Mining,161,13,25286,25460
+Ahilyanagar,2019,Commodity Manufacturing,240,2582,19687,22509
+Ahilyanagar,2019,"Electricity Generation, Gas, Water And Sewage Services",2285,2077,3600,7962
+Ahilyanagar,2019,Construction,630,4298,1312,6240
+Ahilyanagar,2019,Wholesale And Retail Trade And Hotel Business,329,2948,6597,9874
+Ahilyanagar,2019,"Transportation, Warehousing And Transportation",21,90,965,1076
+Ahilyanagar,2019,"Finance, Insurance, Real Estate And Trade Services",22117,14615,39617,76349
+Ahilyanagar,2019,"Collective, Social And Individual Service",16,1,2724,2741
+Ahilyanagar,2020,Agriculture,1561,383,373,2317
+Ahilyanagar,2020,Mining,151,12,25451,25614
+Ahilyanagar,2020,Commodity Manufacturing,240,2582,23398,26220
+Ahilyanagar,2020,"Electricity Generation, Gas, Water And Sewage Services",2278,2077,3868,8223
+Ahilyanagar,2020,Construction,628,4114,1246,5988
+Ahilyanagar,2020,Wholesale And Retail Trade And Hotel Business,332,2948,6772,10052
+Ahilyanagar,2020,"Transportation, Warehousing And Transportation",21,94,659,774
+Ahilyanagar,2020,"Finance, Insurance, Real Estate And Trade Services",22104,14568,39517,76189
+Ahilyanagar,2020,"Collective, Social And Individual Service",13,0,2425,2438
+Ahilyanagar,2021,Agriculture,1566,441,371,2378
+Ahilyanagar,2021,Mining,117,44,52524,52685
+Ahilyanagar,2021,Commodity Manufacturing,0,2551,2028,4579
+Ahilyanagar,2021,"Electricity Generation, Gas, Water And Sewage Services",161,0,13,174
+Ahilyanagar,2021,Construction,1601,2002,621,4224
+Ahilyanagar,2021,Wholesale And Retail Trade And Hotel Business,705,3938,3512,8155
+Ahilyanagar,2021,"Transportation, Warehousing And Transportation",145,52,1090,1287
+Ahilyanagar,2021,"Finance, Insurance, Real Estate And Trade Services",0,4877,6932,11809
+Ahilyanagar,2021,"Collective, Social And Individual Service",20312,320,1961,22593
+Akola,2012,Agriculture,916,0,0,916
+Akola,2012,Mining,17,25,97,139
+Akola,2012,Commodity Manufacturing,289,0,2006,2295
+Akola,2012,"Electricity Generation, Gas, Water And Sewage Services",2299,0,0,2299
+Akola,2012,Construction,1325,292,0,1617
+Akola,2012,Wholesale And Retail Trade And Hotel Business,379,108,399,886
+Akola,2012,"Transportation, Warehousing And Transportation",3552,0,88,3640
+Akola,2012,"Finance, Insurance, Real Estate And Trade Services",4085,0,1972,6057
+Akola,2012,"Collective, Social And Individual Service",5164,9118,9939,24221
+Akola,2013,Agriculture,905,0,0,905
+Akola,2013,Mining,16,25,98,139
+Akola,2013,Commodity Manufacturing,281,0,2023,2304
+Akola,2013,"Electricity Generation, Gas, Water And Sewage Services",2273,0,0,2273
+Akola,2013,Construction,1327,302,0,1629
+Akola,2013,Wholesale And Retail Trade And Hotel Business,371,110,401,882
+Akola,2013,"Transportation, Warehousing And Transportation",3545,0,92,3637
+Akola,2013,"Finance, Insurance, Real Estate And Trade Services",4073,0,1995,6068
+Akola,2013,"Collective, Social And Individual Service",5313,9187,9991,24491
+Akola,2014,Agriculture,894,52,0,946
+Akola,2014,Mining,12,11,89,112
+Akola,2014,Commodity Manufacturing,269,0,1823,2092
+Akola,2014,"Electricity Generation, Gas, Water And Sewage Services",2201,64,0,2265
+Akola,2014,Construction,1251,283,0,1534
+Akola,2014,Wholesale And Retail Trade And Hotel Business,392,93,462,947
+Akola,2014,"Transportation, Warehousing And Transportation",3459,103,89,3651
+Akola,2014,"Finance, Insurance, Real Estate And Trade Services",4003,0,2095,6098
+Akola,2014,"Collective, Social And Individual Service",5223,8992,9193,23408
+Akola,2015,Agriculture,,,,
+Akola,2015,Mining,,,,
+Akola,2015,Commodity Manufacturing,,,,
+Akola,2015,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Akola,2015,Construction,,,,
+Akola,2015,Wholesale And Retail Trade And Hotel Business,,,,
+Akola,2015,"Transportation, Warehousing And Transportation",,,,
+Akola,2015,"Finance, Insurance, Real Estate And Trade Services",,,,
+Akola,2015,"Collective, Social And Individual Service",,,,
+Akola,2016,Agriculture,931,57,7,995
+Akola,2016,Mining,17,21,97,135
+Akola,2016,Commodity Manufacturing,321,0,1901,2222
+Akola,2016,"Electricity Generation, Gas, Water And Sewage Services",193,2421,0,2614
+Akola,2016,Construction,1329,341,0,1670
+Akola,2016,Wholesale And Retail Trade And Hotel Business,523,163,517,1203
+Akola,2016,"Transportation, Warehousing And Transportation",407,4801,93,5301
+Akola,2016,"Finance, Insurance, Real Estate And Trade Services",3301,0,1953,5254
+Akola,2016,"Collective, Social And Individual Service",7329,9517,7793,24639
+Akola,2017,Agriculture,939,63,19,1021
+Akola,2017,Mining,22,23,107,152
+Akola,2017,Commodity Manufacturing,324,0,1920,2244
+Akola,2017,"Electricity Generation, Gas, Water And Sewage Services",195,2445,0,2640
+Akola,2017,Construction,1342,344,0,1686
+Akola,2017,Wholesale And Retail Trade And Hotel Business,528,165,522,1215
+Akola,2017,"Transportation, Warehousing And Transportation",411,4849,102,5362
+Akola,2017,"Finance, Insurance, Real Estate And Trade Services",3334,0,2343,5677
+Akola,2017,"Collective, Social And Individual Service",7922,10466,14943,33341
+Akola,2018,Agriculture,948,100,25,1073
+Akola,2018,Mining,22,0,0,22
+Akola,2018,Commodity Manufacturing,350,0,1950,2300
+Akola,2018,"Electricity Generation, Gas, Water And Sewage Services",195,2445,0,2640
+Akola,2018,Construction,1350,348,0,1698
+Akola,2018,Wholesale And Retail Trade And Hotel Business,532,168,510,1210
+Akola,2018,"Transportation, Warehousing And Transportation",415,4858,109,5382
+Akola,2018,"Finance, Insurance, Real Estate And Trade Services",3434,0,2433,5867
+Akola,2018,"Collective, Social And Individual Service",7925,10333,14950,33208
+Akola,2019,Agriculture,950,110,50,1110
+Akola,2019,Mining,22,0,0,22
+Akola,2019,Commodity Manufacturing,350,0,1950,2300
+Akola,2019,"Electricity Generation, Gas, Water And Sewage Services",195,2445,0,2640
+Akola,2019,Construction,1355,348,0,1703
+Akola,2019,Wholesale And Retail Trade And Hotel Business,535,170,535,1240
+Akola,2019,"Transportation, Warehousing And Transportation",450,4860,110,5420
+Akola,2019,"Finance, Insurance, Real Estate And Trade Services",3450,0,2435,5885
+Akola,2019,"Collective, Social And Individual Service",7930,10350,14998,33278
+Akola,2020,Agriculture,950,110,58,1118
+Akola,2020,Mining,22,0,0,22
+Akola,2020,Commodity Manufacturing,350,0,2013,2363
+Akola,2020,"Electricity Generation, Gas, Water And Sewage Services",195,2445,0,2640
+Akola,2020,Construction,1355,348,0,1703
+Akola,2020,Wholesale And Retail Trade And Hotel Business,535,170,548,1253
+Akola,2020,"Transportation, Warehousing And Transportation",450,4860,127,5437
+Akola,2020,"Finance, Insurance, Real Estate And Trade Services",3450,0,2469,5919
+Akola,2020,"Collective, Social And Individual Service",7930,10350,15216,33496
+Akola,2021,Agriculture,950,110,50,1110
+Akola,2021,Mining,22,0,0,22
+Akola,2021,Commodity Manufacturing,350,0,1950,2300
+Akola,2021,"Electricity Generation, Gas, Water And Sewage Services",250,2530,0,2780
+Akola,2021,Construction,1355,348,0,1703
+Akola,2021,Wholesale And Retail Trade And Hotel Business,0,0,1468,1468
+Akola,2021,"Transportation, Warehousing And Transportation",450,4860,110,5420
+Akola,2021,"Finance, Insurance, Real Estate And Trade Services",3450,0,2448,5898
+Akola,2021,"Collective, Social And Individual Service",7930,10350,14998,33278
+Amravati,2012,Agriculture,2294,113,79,2486
+Amravati,2012,Mining,122,93,2218,2433
+Amravati,2012,Commodity Manufacturing,0,152,3112,3264
+Amravati,2012,"Electricity Generation, Gas, Water And Sewage Services",4258,3918,180,8356
+Amravati,2012,Construction,4087,1792,337,6216
+Amravati,2012,Wholesale And Retail Trade And Hotel Business,0,3106,2792,5898
+Amravati,2012,"Transportation, Warehousing And Transportation",923,2972,713,4608
+Amravati,2012,"Finance, Insurance, Real Estate And Trade Services",414,4008,1211,5633
+Amravati,2012,"Collective, Social And Individual Service",13234,8786,12538,34558
+Amravati,2013,Agriculture,2499,113,79,2691
+Amravati,2013,Mining,197,93,2218,2508
+Amravati,2013,Commodity Manufacturing,0,144,3112,3256
+Amravati,2013,"Electricity Generation, Gas, Water And Sewage Services",4352,3054,180,7586
+Amravati,2013,Construction,4190,1732,337,6259
+Amravati,2013,Wholesale And Retail Trade And Hotel Business,0,3326,2792,6118
+Amravati,2013,"Transportation, Warehousing And Transportation",1031,3192,713,4936
+Amravati,2013,"Finance, Insurance, Real Estate And Trade Services",516,3398,1083,4997
+Amravati,2013,"Collective, Social And Individual Service",13307,7697,12538,33542
+Amravati,2014,Agriculture,2624,119,83,2826
+Amravati,2014,Mining,207,97,2329,2633
+Amravati,2014,Commodity Manufacturing,0,151,3267,3418
+Amravati,2014,"Electricity Generation, Gas, Water And Sewage Services",4569,3207,189,7965
+Amravati,2014,Construction,4399,1839,354,6592
+Amravati,2014,Wholesale And Retail Trade And Hotel Business,0,3492,2931,6423
+Amravati,2014,"Transportation, Warehousing And Transportation",1082,3351,749,5182
+Amravati,2014,"Finance, Insurance, Real Estate And Trade Services",542,3568,1137,5247
+Amravati,2014,"Collective, Social And Individual Service",14025,8108,13242,35375
+Amravati,2015,Agriculture,2772,168,84,3024
+Amravati,2015,Mining,187,98,2317,2602
+Amravati,2015,Commodity Manufacturing,0,172,3236,3408
+Amravati,2015,"Electricity Generation, Gas, Water And Sewage Services",4617,3289,187,8093
+Amravati,2015,Construction,4012,1856,345,6213
+Amravati,2015,Wholesale And Retail Trade And Hotel Business,0,3820,2716,6536
+Amravati,2015,"Transportation, Warehousing And Transportation",982,3651,712,5345
+Amravati,2015,"Finance, Insurance, Real Estate And Trade Services",498,3601,1017,5116
+Amravati,2015,"Collective, Social And Individual Service",20935,15446,13122,49503
+Amravati,2016,Agriculture,2776,176,96,3048
+Amravati,2016,Mining,189,99,2396,2684
+Amravati,2016,Commodity Manufacturing,0,186,3276,3462
+Amravati,2016,"Electricity Generation, Gas, Water And Sewage Services",4623,3293,202,8118
+Amravati,2016,Construction,4014,1866,356,6236
+Amravati,2016,Wholesale And Retail Trade And Hotel Business,0,3825,2777,6602
+Amravati,2016,"Transportation, Warehousing And Transportation",984,3662,746,5392
+Amravati,2016,"Finance, Insurance, Real Estate And Trade Services",506,3615,1108,5229
+Amravati,2016,"Collective, Social And Individual Service",20966,15458,13146,49570
+Amravati,2017,Agriculture,2899,173,98,3170
+Amravati,2017,Mining,196,97,2409,2702
+Amravati,2017,Commodity Manufacturing,1,182,3310,3493
+Amravati,2017,"Electricity Generation, Gas, Water And Sewage Services",4816,3280,207,8303
+Amravati,2017,Construction,4188,1855,359,6402
+Amravati,2017,Wholesale And Retail Trade And Hotel Business,2,3806,2800,6608
+Amravati,2017,"Transportation, Warehousing And Transportation",1021,3645,752,5418
+Amravati,2017,"Finance, Insurance, Real Estate And Trade Services",528,3599,1117,5244
+Amravati,2017,"Collective, Social And Individual Service",21350,15364,13249,49963
+Amravati,2018,Agriculture,2927,174,99,3200
+Amravati,2018,Mining,197,98,2433,2728
+Amravati,2018,Commodity Manufacturing,2,104,3343,3449
+Amravati,2018,"Electricity Generation, Gas, Water And Sewage Services",4864,3312,209,8337
+Amravati,2018,Construction,4229,1873,362,6464
+Amravati,2018,Wholesale And Retail Trade And Hotel Business,3,3844,2828,6675
+Amravati,2018,"Transportation, Warehousing And Transportation",1031,3681,759,5471
+Amravati,2018,"Finance, Insurance, Real Estate And Trade Services",533,3634,1128,5295
+Amravati,2018,"Collective, Social And Individual Service",21563,15517,13381,50461
+Amravati,2019,Agriculture,2223,147,92,2462
+Amravati,2019,Mining,127,91,2006,2224
+Amravati,2019,Commodity Manufacturing,2,94,2703,2799
+Amravati,2019,"Electricity Generation, Gas, Water And Sewage Services",3961,2769,194,6924
+Amravati,2019,Construction,3721,1573,292,5586
+Amravati,2019,Wholesale And Retail Trade And Hotel Business,3,3104,2228,5335
+Amravati,2019,"Transportation, Warehousing And Transportation",861,3141,489,4491
+Amravati,2019,"Finance, Insurance, Real Estate And Trade Services",373,2878,713,3964
+Amravati,2019,"Collective, Social And Individual Service",18063,11211,8661,37935
+Amravati,2020,Agriculture,2219,146,94,2459
+Amravati,2020,Mining,128,90,2005,2223
+Amravati,2020,Commodity Manufacturing,3,92,2697,2792
+Amravati,2020,"Electricity Generation, Gas, Water And Sewage Services",3959,2768,195,6922
+Amravati,2020,Construction,3722,1572,291,5585
+Amravati,2020,Wholesale And Retail Trade And Hotel Business,3,3105,2221,5329
+Amravati,2020,"Transportation, Warehousing And Transportation",860,3142,484,4486
+Amravati,2020,"Finance, Insurance, Real Estate And Trade Services",371,2877,711,3959
+Amravati,2020,"Collective, Social And Individual Service",18059,11213,8659,37931
+Amravati,2021,Agriculture,2219,146,94,2459
+Amravati,2021,Mining,128,90,2004,2222
+Amravati,2021,Commodity Manufacturing,3,94,2693,2790
+Amravati,2021,"Electricity Generation, Gas, Water And Sewage Services",3959,2768,196,6923
+Amravati,2021,Construction,3723,1573,290,5586
+Amravati,2021,Wholesale And Retail Trade And Hotel Business,3,3106,2216,5325
+Amravati,2021,"Transportation, Warehousing And Transportation",861,3143,483,4487
+Amravati,2021,"Finance, Insurance, Real Estate And Trade Services",371,2878,712,3961
+Amravati,2021,"Collective, Social And Individual Service",18059,11215,8656,37930
+Beed,2013,Agriculture,469,0,733,1202
+Beed,2013,Mining,0,0,51,51
+Beed,2013,Commodity Manufacturing,0,0,0,0
+Beed,2013,"Electricity Generation, Gas, Water And Sewage Services",7,0,0,7
+Beed,2013,Construction,0,0,0,0
+Beed,2013,Wholesale And Retail Trade And Hotel Business,0,3079,149,3228
+Beed,2013,"Transportation, Warehousing And Transportation",257,14,0,271
+Beed,2013,"Finance, Insurance, Real Estate And Trade Services",78,0,1964,2042
+Beed,2013,"Collective, Social And Individual Service",0,0,0,0
+Beed,2014,Agriculture,469,0,743,1212
+Beed,2014,Mining,0,0,0,0
+Beed,2014,Commodity Manufacturing,0,0,0,0
+Beed,2014,"Electricity Generation, Gas, Water And Sewage Services",7,0,0,7
+Beed,2014,Construction,0,0,0,0
+Beed,2014,Wholesale And Retail Trade And Hotel Business,0,3079,159,3238
+Beed,2014,"Transportation, Warehousing And Transportation",257,14,0,271
+Beed,2014,"Finance, Insurance, Real Estate And Trade Services",78,0,1974,2052
+Beed,2014,"Collective, Social And Individual Service",0,0,0,0
+Beed,2015,Agriculture,1273,481,1166,2920
+Beed,2015,Mining,119,450,5393,5962
+Beed,2015,Commodity Manufacturing,101,14518,214,14833
+Beed,2015,"Electricity Generation, Gas, Water And Sewage Services",104,1086,106,1296
+Beed,2015,Construction,61,481,195,737
+Beed,2015,Wholesale And Retail Trade And Hotel Business,737,450,95,1282
+Beed,2015,"Transportation, Warehousing And Transportation",871,1086,340,2297
+Beed,2015,"Finance, Insurance, Real Estate And Trade Services",3085,110,2331,5526
+Beed,2015,"Collective, Social And Individual Service",88,16720,820,17628
+Beed,2016,Agriculture,612,0,381,1002
+Beed,2016,Mining,0,0,0,0
+Beed,2016,Commodity Manufacturing,0,0,214,214
+Beed,2016,"Electricity Generation, Gas, Water And Sewage Services",0,0,380,380
+Beed,2016,Construction,300,0,0,300
+Beed,2016,Wholesale And Retail Trade And Hotel Business,0,0,25000,25000
+Beed,2016,"Transportation, Warehousing And Transportation",16,991,376,1383
+Beed,2016,"Finance, Insurance, Real Estate And Trade Services",300,3080,2401,5781
+Beed,2016,"Collective, Social And Individual Service",188,200,580,968
+Beed,2017,Agriculture,1279,481,1166,2926
+Beed,2017,Mining,119,450,5393,5962
+Beed,2017,Commodity Manufacturing,101,14518,214,14833
+Beed,2017,"Electricity Generation, Gas, Water And Sewage Services",104,1086,106,1296
+Beed,2017,Construction,61,481,195,737
+Beed,2017,Wholesale And Retail Trade And Hotel Business,737,450,95,1282
+Beed,2017,"Transportation, Warehousing And Transportation",871,1086,340,2297
+Beed,2017,"Finance, Insurance, Real Estate And Trade Services",3085,110,2331,5526
+Beed,2017,"Collective, Social And Individual Service",88,16720,820,17628
+Beed,2018,Agriculture,1406,529,1282,3217
+Beed,2018,Mining,0,0,0,0
+Beed,2018,Commodity Manufacturing,105,13255,218,13578
+Beed,2018,"Electricity Generation, Gas, Water And Sewage Services",0,0,380,380
+Beed,2018,Construction,67,529,214,810
+Beed,2018,Wholesale And Retail Trade And Hotel Business,810,501,104,1415
+Beed,2018,"Transportation, Warehousing And Transportation",958,1194,374,2526
+Beed,2018,"Finance, Insurance, Real Estate And Trade Services",3393,121,2564,6078
+Beed,2018,"Collective, Social And Individual Service",97,18392,902,19391
+Beed,2019,Agriculture,1143,15,1227,2385
+Beed,2019,Mining,104,0,1,105
+Beed,2019,Commodity Manufacturing,151,0,5439,5590
+Beed,2019,"Electricity Generation, Gas, Water And Sewage Services",3059,0,0,3059
+Beed,2019,Construction,1837,991,128,2956
+Beed,2019,Wholesale And Retail Trade And Hotel Business,16,8,10,34
+Beed,2019,"Transportation, Warehousing And Transportation",96,0,0,96
+Beed,2019,"Finance, Insurance, Real Estate And Trade Services",36,6,2146,2188
+Beed,2019,"Collective, Social And Individual Service",7402,12571,11,19984
+Beed,2020,Agriculture,1099,15,1227,2341
+Beed,2020,Mining,90,0,1,91
+Beed,2020,Commodity Manufacturing,144,0,5443,5587
+Beed,2020,"Electricity Generation, Gas, Water And Sewage Services",3059,0,0,3059
+Beed,2020,Construction,1837,850,152,2839
+Beed,2020,Wholesale And Retail Trade And Hotel Business,16,8,4,28
+Beed,2020,"Transportation, Warehousing And Transportation",88,0,5,93
+Beed,2020,"Finance, Insurance, Real Estate And Trade Services",35,61,2323,2419
+Beed,2020,"Collective, Social And Individual Service",7753,12571,11,20335
+Beed,2021,Agriculture,1098,29,1227,2354
+Beed,2021,Mining,90,0,1,91
+Beed,2021,Commodity Manufacturing,144,0,5443,5587
+Beed,2021,"Electricity Generation, Gas, Water And Sewage Services",3059,0,0,3059
+Beed,2021,Construction,2423,850,152,3425
+Beed,2021,Wholesale And Retail Trade And Hotel Business,24,8,84,116
+Beed,2021,"Transportation, Warehousing And Transportation",1047,0,61,1108
+Beed,2021,"Finance, Insurance, Real Estate And Trade Services",1044,61,2401,3506
+Beed,2021,"Collective, Social And Individual Service",20315,12571,11,32897
+Bhandara,2012,Agriculture,31,966,545,1542
+Bhandara,2012,Mining,,1739,0,1739
+Bhandara,2012,Commodity Manufacturing,405,607,3765,4777
+Bhandara,2012,"Electricity Generation, Gas, Water And Sewage Services",,,5,5
+Bhandara,2012,Construction,36,,,36
+Bhandara,2012,Wholesale And Retail Trade And Hotel Business,3,,107,110
+Bhandara,2012,"Transportation, Warehousing And Transportation",158,2007,12,2177
+Bhandara,2012,"Finance, Insurance, Real Estate And Trade Services",853,512,477,1842
+Bhandara,2012,"Collective, Social And Individual Service",3831,5630,5871,15332
+Bhandara,2013,Agriculture,35,901,580,1516
+Bhandara,2013,Mining,0,1675,0,1675
+Bhandara,2013,Commodity Manufacturing,471,413,3297,4181
+Bhandara,2013,"Electricity Generation, Gas, Water And Sewage Services",0,0,5,5
+Bhandara,2013,Construction,39,0,0,39
+Bhandara,2013,Wholesale And Retail Trade And Hotel Business,3,0,106,109
+Bhandara,2013,"Transportation, Warehousing And Transportation",264,2122,12,2398
+Bhandara,2013,"Finance, Insurance, Real Estate And Trade Services",942,865,444,2251
+Bhandara,2013,"Collective, Social And Individual Service",6334,6577,6059,18970
+Bhandara,2014,Agriculture,40,903,586,1529
+Bhandara,2014,Mining,0,1675,0,1675
+Bhandara,2014,Commodity Manufacturing,475,413,3299,4187
+Bhandara,2014,"Electricity Generation, Gas, Water And Sewage Services",0,0,6,6
+Bhandara,2014,Construction,35,0,0,35
+Bhandara,2014,Wholesale And Retail Trade And Hotel Business,6,0,110,116
+Bhandara,2014,"Transportation, Warehousing And Transportation",265,2120,15,2400
+Bhandara,2014,"Finance, Insurance, Real Estate And Trade Services",943,865,448,2256
+Bhandara,2014,"Collective, Social And Individual Service",6337,6579,674,13590
+Bhandara,2015,Agriculture,38,901,588,1527
+Bhandara,2015,Mining,0,1680,0,1680
+Bhandara,2015,Commodity Manufacturing,470,410,3310,4190
+Bhandara,2015,"Electricity Generation, Gas, Water And Sewage Services",0,0,6,6
+Bhandara,2015,Construction,37,0,0,37
+Bhandara,2015,Wholesale And Retail Trade And Hotel Business,6,0,113,119
+Bhandara,2015,"Transportation, Warehousing And Transportation",261,2128,15,2404
+Bhandara,2015,"Finance, Insurance, Real Estate And Trade Services",941,867,457,2265
+Bhandara,2015,"Collective, Social And Individual Service",6331,6567,674,13572
+Bhandara,2016,Agriculture,38,905,588,1531
+Bhandara,2016,Mining,0,1678,0,1678
+Bhandara,2016,Commodity Manufacturing,470,410,3310,4190
+Bhandara,2016,"Electricity Generation, Gas, Water And Sewage Services",0,0,6,6
+Bhandara,2016,Construction,36,0,0,36
+Bhandara,2016,Wholesale And Retail Trade And Hotel Business,6,0,115,121
+Bhandara,2016,"Transportation, Warehousing And Transportation",260,2127,17,2404
+Bhandara,2016,"Finance, Insurance, Real Estate And Trade Services",952,867,462,2281
+Bhandara,2016,"Collective, Social And Individual Service",6331,6543,682,13556
+Bhandara,2017,Agriculture,38,905,588,1531
+Bhandara,2017,Mining,0,1678,8,1686
+Bhandara,2017,Commodity Manufacturing,470,416,3360,4246
+Bhandara,2017,"Electricity Generation, Gas, Water And Sewage Services",0,6,68,74
+Bhandara,2017,Construction,71,0,0,71
+Bhandara,2017,Wholesale And Retail Trade And Hotel Business,6,40,175,221
+Bhandara,2017,"Transportation, Warehousing And Transportation",310,2127,77,2514
+Bhandara,2017,"Finance, Insurance, Real Estate And Trade Services",956,879,612,2447
+Bhandara,2017,"Collective, Social And Individual Service",6331,6643,834,13808
+Bhandara,2018,Agriculture,38,905,588,1531
+Bhandara,2018,Mining,0,1678,8,1686
+Bhandara,2018,Commodity Manufacturing,470,416,3360,4246
+Bhandara,2018,"Electricity Generation, Gas, Water And Sewage Services",0,0,76,76
+Bhandara,2018,Construction,71,0,0,71
+Bhandara,2018,Wholesale And Retail Trade And Hotel Business,6,40,175,221
+Bhandara,2018,"Transportation, Warehousing And Transportation",390,2127,66,2583
+Bhandara,2018,"Finance, Insurance, Real Estate And Trade Services",956,891,622,2469
+Bhandara,2018,"Collective, Social And Individual Service",6341,6661,844,13846
+Bhandara,2019,Agriculture,38,905,588,1531
+Bhandara,2019,Mining,0,1678,8,1686
+Bhandara,2019,Commodity Manufacturing,470,416,3360,4246
+Bhandara,2019,"Electricity Generation, Gas, Water And Sewage Services",0,0,76,76
+Bhandara,2019,Construction,71,0,0,71
+Bhandara,2019,Wholesale And Retail Trade And Hotel Business,6,40,197,243
+Bhandara,2019,"Transportation, Warehousing And Transportation",390,2127,66,2583
+Bhandara,2019,"Finance, Insurance, Real Estate And Trade Services",956,891,634,2481
+Bhandara,2019,"Collective, Social And Individual Service",6341,6666,874,13881
+Bhandara,2020,Agriculture,38,905,588,1531
+Bhandara,2020,Mining,0,1678,8,1686
+Bhandara,2020,Commodity Manufacturing,470,416,3360,4246
+Bhandara,2020,"Electricity Generation, Gas, Water And Sewage Services",0,0,76,76
+Bhandara,2020,Construction,71,0,0,71
+Bhandara,2020,Wholesale And Retail Trade And Hotel Business,6,1050,2200,3256
+Bhandara,2020,"Transportation, Warehousing And Transportation",390,2127,1080,3597
+Bhandara,2020,"Finance, Insurance, Real Estate And Trade Services",956,1891,1534,4381
+Bhandara,2020,"Collective, Social And Individual Service",6341,8666,1874,16881
+Bhandara,2021,Agriculture,38,905,588,1531
+Bhandara,2021,Mining,0,1678,8,1686
+Bhandara,2021,Commodity Manufacturing,470,416,3360,4246
+Bhandara,2021,"Electricity Generation, Gas, Water And Sewage Services",0,0,76,76
+Bhandara,2021,Construction,71,0,0,71
+Bhandara,2021,Wholesale And Retail Trade And Hotel Business,6,1050,2200,3256
+Bhandara,2021,"Transportation, Warehousing And Transportation",390,2127,1005,3522
+Bhandara,2021,"Finance, Insurance, Real Estate And Trade Services",956,1891,1444,4291
+Bhandara,2021,"Collective, Social And Individual Service",6341,8054,3199,17594
+Buldhana,2013,Agriculture,658,86,0,744
+Buldhana,2013,Mining,0,0,0,0
+Buldhana,2013,Commodity Manufacturing,182,65,5970,6217
+Buldhana,2013,"Electricity Generation, Gas, Water And Sewage Services",0,1735,0,1735
+Buldhana,2013,Construction,1254,162,0,1416
+Buldhana,2013,Wholesale And Retail Trade And Hotel Business,0,0,0,0
+Buldhana,2013,"Transportation, Warehousing And Transportation",0,2930,0,2930
+Buldhana,2013,"Finance, Insurance, Real Estate And Trade Services",123,1016,0,1139
+Buldhana,2013,"Collective, Social And Individual Service",7639,18185,0,25824
+Buldhana,2014,Agriculture,429,78,0,507
+Buldhana,2014,Mining,0,0,0,0
+Buldhana,2014,Commodity Manufacturing,154,35,6872,7061
+Buldhana,2014,"Electricity Generation, Gas, Water And Sewage Services",0,1347,0,1347
+Buldhana,2014,Construction,1084,139,0,1223
+Buldhana,2014,Wholesale And Retail Trade And Hotel Business,0,0,0,0
+Buldhana,2014,"Transportation, Warehousing And Transportation",0,2735,0,2735
+Buldhana,2014,"Finance, Insurance, Real Estate And Trade Services",111,799,4221,5131
+Buldhana,2014,"Collective, Social And Individual Service",7891,17652,10051,35594
+Buldhana,2015,Agriculture,413,63,0,476
+Buldhana,2015,Mining,0,0,0,0
+Buldhana,2015,Commodity Manufacturing,143,27,6547,6717
+Buldhana,2015,"Electricity Generation, Gas, Water And Sewage Services",0,1332,0,1332
+Buldhana,2015,Construction,997,132,0,1129
+Buldhana,2015,Wholesale And Retail Trade And Hotel Business,0,0,0,0
+Buldhana,2015,"Transportation, Warehousing And Transportation",0,2691,0,2691
+Buldhana,2015,"Finance, Insurance, Real Estate And Trade Services",123,899,4029,5051
+Buldhana,2015,"Collective, Social And Individual Service",7961,16463,10123,34547
+Buldhana,2016,Agriculture,524,73,0,597
+Buldhana,2016,Mining,0,0,0,0
+Buldhana,2016,Commodity Manufacturing,225,21,5671,5917
+Buldhana,2016,"Electricity Generation, Gas, Water And Sewage Services",0,1379,0,1379
+Buldhana,2016,Construction,1002,144,0,1146
+Buldhana,2016,Wholesale And Retail Trade And Hotel Business,0,0,0,0
+Buldhana,2016,"Transportation, Warehousing And Transportation",0,2941,0,2941
+Buldhana,2016,"Finance, Insurance, Real Estate And Trade Services",212,985,3992,5189
+Buldhana,2016,"Collective, Social And Individual Service",8072,15653,11246,34971
+Buldhana,2017,Agriculture,987,154,158,1299
+Buldhana,2017,Mining,0,0,0,0
+Buldhana,2017,Commodity Manufacturing,1438,150,6212,7800
+Buldhana,2017,"Electricity Generation, Gas, Water And Sewage Services",0,1200,69,1269
+Buldhana,2017,Construction,1281,998,340,2619
+Buldhana,2017,Wholesale And Retail Trade And Hotel Business,0,553,512,1065
+Buldhana,2017,"Transportation, Warehousing And Transportation",0,2850,25,2875
+Buldhana,2017,"Finance, Insurance, Real Estate And Trade Services",1149,374,2850,4373
+Buldhana,2017,"Collective, Social And Individual Service",26900,9365,15042,51307
+Buldhana,2018,Agriculture,996,207,250,1453
+Buldhana,2018,Mining,0,0,0,0
+Buldhana,2018,Commodity Manufacturing,1567,75,6305,7947
+Buldhana,2018,"Electricity Generation, Gas, Water And Sewage Services",0,1225,58,1283
+Buldhana,2018,Construction,1301,810,345,2456
+Buldhana,2018,Wholesale And Retail Trade And Hotel Business,0,453,498,951
+Buldhana,2018,"Transportation, Warehousing And Transportation",0,3200,21,3221
+Buldhana,2018,"Finance, Insurance, Real Estate And Trade Services",1401,450,2900,4751
+Buldhana,2018,"Collective, Social And Individual Service",26100,9005,15561,50666
+Buldhana,2019,Agriculture,996,207,250,1488
+Buldhana,2019,Mining,0,0,0,0
+Buldhana,2019,Commodity Manufacturing,1567,75,6425,8167
+Buldhana,2019,"Electricity Generation, Gas, Water And Sewage Services",0,1225,58,1311
+Buldhana,2019,Construction,1301,810,345,2479
+Buldhana,2019,Wholesale And Retail Trade And Hotel Business,0,453,560,1197
+Buldhana,2019,"Transportation, Warehousing And Transportation",0,3200,21,3242
+Buldhana,2019,"Finance, Insurance, Real Estate And Trade Services",1401,450,2990,5074
+Buldhana,2019,"Collective, Social And Individual Service",26100,9005,15671,51536
+Buldhana,2020,Agriculture,1031,218,230,1479
+Buldhana,2020,Mining,0,0,0,0
+Buldhana,2020,Commodity Manufacturing,1576,81,6320,7977
+Buldhana,2020,"Electricity Generation, Gas, Water And Sewage Services",0,1265,75,1340
+Buldhana,2020,Construction,1318,849,370,2537
+Buldhana,2020,Wholesale And Retail Trade And Hotel Business,0,470,329,799
+Buldhana,2020,"Transportation, Warehousing And Transportation",0,3263,36,3299
+Buldhana,2020,"Finance, Insurance, Real Estate And Trade Services",1425,455,2600,4480
+Buldhana,2020,"Collective, Social And Individual Service",26255,9187,15239,50681
+Buldhana,2021,Agriculture,889,198,259,1346
+Buldhana,2021,Mining,0,0,0,0
+Buldhana,2021,Commodity Manufacturing,51,0,3413,3464
+Buldhana,2021,"Electricity Generation, Gas, Water And Sewage Services",0,1385,135,1520
+Buldhana,2021,Construction,1307,830,475,2612
+Buldhana,2021,Wholesale And Retail Trade And Hotel Business,0,0,1230,1230
+Buldhana,2021,"Transportation, Warehousing And Transportation",0,3245,32,3277
+Buldhana,2021,"Finance, Insurance, Real Estate And Trade Services",1679,556,3270,5505
+Buldhana,2021,"Collective, Social And Individual Service",23395,8721,16629,48745
+Chandrapur,2012,Agriculture,3095,190,40,3325
+Chandrapur,2012,Mining,0,7000,0,7000
+Chandrapur,2012,Commodity Manufacturing,9065,640,6700,16722
+Chandrapur,2012,"Electricity Generation, Gas, Water And Sewage Services",0,1100,0,1100
+Chandrapur,2012,Construction,3751,36,188,3975
+Chandrapur,2012,Wholesale And Retail Trade And Hotel Business,0,1010,2160,3301
+Chandrapur,2012,"Transportation, Warehousing And Transportation",3080,27,0,3107
+Chandrapur,2012,"Finance, Insurance, Real Estate And Trade Services",8890,35,0,9035
+Chandrapur,2012,"Collective, Social And Individual Service",13199,387,21555,35816
+Chandrapur,2013,Agriculture,3097,188,38,3323
+Chandrapur,2013,Mining,0,6998,0,6998
+Chandrapur,2013,Commodity Manufacturing,9053,653,6684,16390
+Chandrapur,2013,"Electricity Generation, Gas, Water And Sewage Services",0,1095,0,1095
+Chandrapur,2013,Construction,3458,36,188,3682
+Chandrapur,2013,Wholesale And Retail Trade And Hotel Business,0,1009,2125,3134
+Chandrapur,2013,"Transportation, Warehousing And Transportation",3182,27,0,3209
+Chandrapur,2013,"Finance, Insurance, Real Estate And Trade Services",8982,35,0,9017
+Chandrapur,2013,"Collective, Social And Individual Service",12787,476,21537,34800
+Chandrapur,2014,Agriculture,4017,193,45,4255
+Chandrapur,2014,Mining,0,7250,0,7250
+Chandrapur,2014,Commodity Manufacturing,8921,654,6675,16250
+Chandrapur,2014,"Electricity Generation, Gas, Water And Sewage Services",0,1097,0,1097
+Chandrapur,2014,Construction,3463,41,205,3709
+Chandrapur,2014,Wholesale And Retail Trade And Hotel Business,0,1049,2014,3063
+Chandrapur,2014,"Transportation, Warehousing And Transportation",3192,36,0,3228
+Chandrapur,2014,"Finance, Insurance, Real Estate And Trade Services",8995,37,0,9032
+Chandrapur,2014,"Collective, Social And Individual Service",12980,723,21691,35394
+Chandrapur,2015,Agriculture,4119,197,47,4363
+Chandrapur,2015,Mining,0,7045,0,7045
+Chandrapur,2015,Commodity Manufacturing,9015,657,6752,16424
+Chandrapur,2015,"Electricity Generation, Gas, Water And Sewage Services",0,1217,0,1217
+Chandrapur,2015,Construction,4511,48,118,4677
+Chandrapur,2015,Wholesale And Retail Trade And Hotel Business,0,1109,2148,3257
+Chandrapur,2015,"Transportation, Warehousing And Transportation",3264,41,0,3305
+Chandrapur,2015,"Finance, Insurance, Real Estate And Trade Services",9011,46,0,9057
+Chandrapur,2015,"Collective, Social And Individual Service",13211,843,21895,35949
+Chandrapur,2016,Agriculture,4101,192,56,4349
+Chandrapur,2016,Mining,0,7016,0,7016
+Chandrapur,2016,Commodity Manufacturing,9004,648,6764,16416
+Chandrapur,2016,"Electricity Generation, Gas, Water And Sewage Services",0,1271,0,1271
+Chandrapur,2016,Construction,4519,51,127,4697
+Chandrapur,2016,Wholesale And Retail Trade And Hotel Business,0,1223,2481,3704
+Chandrapur,2016,"Transportation, Warehousing And Transportation",3291,43,0,3334
+Chandrapur,2016,"Finance, Insurance, Real Estate And Trade Services",10012,67,0,10079
+Chandrapur,2016,"Collective, Social And Individual Service",13298,934,21914,36146
+Chandrapur,2017,Agriculture,4215,134,48,4397
+Chandrapur,2017,Mining,0,6611,0,6611
+Chandrapur,2017,Commodity Manufacturing,7219,616,6208,14043
+Chandrapur,2017,"Electricity Generation, Gas, Water And Sewage Services",0,1287,0,1287
+Chandrapur,2017,Construction,4431,53,132,4616
+Chandrapur,2017,Wholesale And Retail Trade And Hotel Business,0,1265,2284,3549
+Chandrapur,2017,"Transportation, Warehousing And Transportation",3348,48,0,3396
+Chandrapur,2017,"Finance, Insurance, Real Estate And Trade Services",9547,72,0,9619
+Chandrapur,2017,"Collective, Social And Individual Service",14421,963,22348,37732
+Chandrapur,2018,Agriculture,3754,126,53,3933
+Chandrapur,2018,Mining,0,6117,0,6117
+Chandrapur,2018,Commodity Manufacturing,6721,502,6308,13531
+Chandrapur,2018,"Electricity Generation, Gas, Water And Sewage Services",0,1147,0,1147
+Chandrapur,2018,Construction,3804,57,167,4028
+Chandrapur,2018,Wholesale And Retail Trade And Hotel Business,0,1203,2156,3359
+Chandrapur,2018,"Transportation, Warehousing And Transportation",3192,62,0,3254
+Chandrapur,2018,"Finance, Insurance, Real Estate And Trade Services",8518,66,0,8584
+Chandrapur,2018,"Collective, Social And Individual Service",12520,714,21819,35053
+Chandrapur,2019,Agriculture,3548,114,47,3709
+Chandrapur,2019,Mining,0,5719,0,5719
+Chandrapur,2019,Commodity Manufacturing,7323,582,7214,15119
+Chandrapur,2019,"Electricity Generation, Gas, Water And Sewage Services",0,1378,0,1378
+Chandrapur,2019,Construction,3911,82,221,4214
+Chandrapur,2019,Wholesale And Retail Trade And Hotel Business,0,1412,2307,3719
+Chandrapur,2019,"Transportation, Warehousing And Transportation",2687,45,0,2732
+Chandrapur,2019,"Finance, Insurance, Real Estate And Trade Services",9785,107,0,9892
+Chandrapur,2019,"Collective, Social And Individual Service",12902,819,23205,36926
+Chandrapur,2020,Agriculture,2914,107,32,3053
+Chandrapur,2020,Mining,0,4872,0,4872
+Chandrapur,2020,Commodity Manufacturing,7105,527,7099,14731
+Chandrapur,2020,"Electricity Generation, Gas, Water And Sewage Services",0,1175,0,1175
+Chandrapur,2020,Construction,3788,76,204,4068
+Chandrapur,2020,Wholesale And Retail Trade And Hotel Business,0,1359,2125,3484
+Chandrapur,2020,"Transportation, Warehousing And Transportation",2407,39,0,2446
+Chandrapur,2020,"Finance, Insurance, Real Estate And Trade Services",9215,97,0,9312
+Chandrapur,2020,"Collective, Social And Individual Service",11623,721,21714,34058
+Chandrapur,2021,Agriculture,2713,97,28,2838
+Chandrapur,2021,Mining,0,2912,0,2912
+Chandrapur,2021,Commodity Manufacturing,6315,503,6041,12859
+Chandrapur,2021,"Electricity Generation, Gas, Water And Sewage Services",0,1108,0,1108
+Chandrapur,2021,Construction,3104,67,195,3366
+Chandrapur,2021,Wholesale And Retail Trade And Hotel Business,0,1202,2004,3206
+Chandrapur,2021,"Transportation, Warehousing And Transportation",2285,25,0,2310
+Chandrapur,2021,"Finance, Insurance, Real Estate And Trade Services",9076,81,0,9157
+Chandrapur,2021,"Collective, Social And Individual Service",10712,587,19813,31112
+Dhule,2012,Agriculture,844,0,477,1321
+Dhule,2012,Mining,8,21,139,168
+Dhule,2012,Commodity Manufacturing,174,175,9187,9536
+Dhule,2012,"Electricity Generation, Gas, Water And Sewage Services",621,1257,6,1884
+Dhule,2012,Construction,967,0,518,1485
+Dhule,2012,Wholesale And Retail Trade And Hotel Business,24,0,434,458
+Dhule,2012,"Transportation, Warehousing And Transportation",918,3804,97,4819
+Dhule,2012,"Finance, Insurance, Real Estate And Trade Services",54,9,4738,4801
+Dhule,2012,"Collective, Social And Individual Service",17937,154,13334,31425
+Dhule,2013,Agriculture,0,0,8,8
+Dhule,2013,Mining,0,0,0,0
+Dhule,2013,Commodity Manufacturing,0,0,680,680
+Dhule,2013,"Electricity Generation, Gas, Water And Sewage Services",0,393,0,393
+Dhule,2013,Construction,0,0,18,18
+Dhule,2013,Wholesale And Retail Trade And Hotel Business,0,0,77,77
+Dhule,2013,"Transportation, Warehousing And Transportation",274,0,0,274
+Dhule,2013,"Finance, Insurance, Real Estate And Trade Services",0,0,80,80
+Dhule,2013,"Collective, Social And Individual Service",0,68,3233,3301
+Dhule,2014,Agriculture,853,195,654,1702
+Dhule,2014,Mining,175,1367,8723,10265
+Dhule,2014,Commodity Manufacturing,0,0,45,45
+Dhule,2014,"Electricity Generation, Gas, Water And Sewage Services",621,0,0,621
+Dhule,2014,Construction,933,0,518,1451
+Dhule,2014,Wholesale And Retail Trade And Hotel Business,8,35,543,586
+Dhule,2014,"Transportation, Warehousing And Transportation",274,3804,123,4201
+Dhule,2014,"Finance, Insurance, Real Estate And Trade Services",660,888,2220,3768
+Dhule,2014,"Collective, Social And Individual Service",1708,155,15558,33521
+Dhule,2015,Agriculture,853,198,659,1710
+Dhule,2015,Mining,369,1382,8731,10482
+Dhule,2015,Commodity Manufacturing,1367,0,49,1416
+Dhule,2015,"Electricity Generation, Gas, Water And Sewage Services",621,0,0,621
+Dhule,2015,Construction,933,0,522,1455
+Dhule,2015,Wholesale And Retail Trade And Hotel Business,43,38,548,629
+Dhule,2015,"Transportation, Warehousing And Transportation",4541,3808,127,8476
+Dhule,2015,"Finance, Insurance, Real Estate And Trade Services",1611,892,2226,4729
+Dhule,2015,"Collective, Social And Individual Service",91,159,1561,1811
+Dhule,2016,Agriculture,853,298,659,1810
+Dhule,2016,Mining,369,1394,8920,10683
+Dhule,2016,Commodity Manufacturing,1382,50,62,1494
+Dhule,2016,"Electricity Generation, Gas, Water And Sewage Services",626,40,70,736
+Dhule,2016,Construction,942,62,530,1534
+Dhule,2016,Wholesale And Retail Trade And Hotel Business,45,46,565,656
+Dhule,2016,"Transportation, Warehousing And Transportation",4350,3902,135,8387
+Dhule,2016,"Finance, Insurance, Real Estate And Trade Services",1719,946,2397,5062
+Dhule,2016,"Collective, Social And Individual Service",164,99,697,960
+Dhule,2017,Agriculture,291,85,188,564
+Dhule,2017,Mining,322,1450,6760,8532
+Dhule,2017,Commodity Manufacturing,1382,50,62,1494
+Dhule,2017,"Electricity Generation, Gas, Water And Sewage Services",626,40,70,736
+Dhule,2017,Construction,942,62,530,1534
+Dhule,2017,Wholesale And Retail Trade And Hotel Business,45,46,565,656
+Dhule,2017,"Transportation, Warehousing And Transportation",4650,3902,135,8687
+Dhule,2017,"Finance, Insurance, Real Estate And Trade Services",1719,946,2397,5062
+Dhule,2017,"Collective, Social And Individual Service",164,99,698,961
+Dhule,2018,Agriculture,855,23,17,895
+Dhule,2018,Mining,19,0,7,26
+Dhule,2018,Commodity Manufacturing,450,136,126,712
+Dhule,2018,"Electricity Generation, Gas, Water And Sewage Services",0,1586,3,1589
+Dhule,2018,Construction,660,184,5,849
+Dhule,2018,Wholesale And Retail Trade And Hotel Business,148,33,48,229
+Dhule,2018,"Transportation, Warehousing And Transportation",635,4300,2,4937
+Dhule,2018,"Finance, Insurance, Real Estate And Trade Services",957,31,49,1037
+Dhule,2018,"Collective, Social And Individual Service",28,0,108,136
+Dhule,2019,Agriculture,861,24,667,1552
+Dhule,2019,Mining,19,0,28,47
+Dhule,2019,Commodity Manufacturing,503,145,12019,12667
+Dhule,2019,"Electricity Generation, Gas, Water And Sewage Services",0,1586,51,1637
+Dhule,2019,Construction,478,370,530,1378
+Dhule,2019,Wholesale And Retail Trade And Hotel Business,147,33,867,1047
+Dhule,2019,"Transportation, Warehousing And Transportation",634,4138,103,4875
+Dhule,2019,"Finance, Insurance, Real Estate And Trade Services",956,44,2569,3569
+Dhule,2019,"Collective, Social And Individual Service",1192,18,2640,3850
+Dhule,2020,Agriculture,855,22,667,1544
+Dhule,2020,Mining,19,0,28,47
+Dhule,2020,Commodity Manufacturing,477,145,12490,13112
+Dhule,2020,"Electricity Generation, Gas, Water And Sewage Services",0,1586,170,1756
+Dhule,2020,Construction,393,370,30,793
+Dhule,2020,Wholesale And Retail Trade And Hotel Business,146,33,867,1046
+Dhule,2020,"Transportation, Warehousing And Transportation",634,4023,103,4760
+Dhule,2020,"Finance, Insurance, Real Estate And Trade Services",954,113,3613,4680
+Dhule,2020,"Collective, Social And Individual Service",1150,18,2619,3787
+Dhule,2021,Agriculture,854,22,667,1543
+Dhule,2021,Mining,19,0,28,47
+Dhule,2021,Commodity Manufacturing,477,145,12502,13124
+Dhule,2021,"Electricity Generation, Gas, Water And Sewage Services",0,1586,249,1835
+Dhule,2021,Construction,394,370,30,794
+Dhule,2021,Wholesale And Retail Trade And Hotel Business,148,33,852,1033
+Dhule,2021,"Transportation, Warehousing And Transportation",634,3869,103,4606
+Dhule,2021,"Finance, Insurance, Real Estate And Trade Services",957,111,4151,5219
+Dhule,2021,"Collective, Social And Individual Service",1151,18,2572,3741
+Gadchiroli,2012,Agriculture,1895,0,23,1918
+Gadchiroli,2012,Mining,0,0,0,0
+Gadchiroli,2012,Commodity Manufacturing,548,0,434,982
+Gadchiroli,2012,"Electricity Generation, Gas, Water And Sewage Services",49,7,0,56
+Gadchiroli,2012,Construction,557,742,135,1434
+Gadchiroli,2012,Wholesale And Retail Trade And Hotel Business,248,7,0,255
+Gadchiroli,2012,"Transportation, Warehousing And Transportation",466,443,66,975
+Gadchiroli,2012,"Finance, Insurance, Real Estate And Trade Services",2940,222,439,3601
+Gadchiroli,2012,"Collective, Social And Individual Service",9073,44,4600,13717
+Gadchiroli,2013,Agriculture,3179,30,0,3209
+Gadchiroli,2013,Mining,0,0,0,0
+Gadchiroli,2013,Commodity Manufacturing,217,29,641,887
+Gadchiroli,2013,"Electricity Generation, Gas, Water And Sewage Services",1209,78,127,1414
+Gadchiroli,2013,Construction,254,0,38,292
+Gadchiroli,2013,Wholesale And Retail Trade And Hotel Business,886,0,55,941
+Gadchiroli,2013,"Transportation, Warehousing And Transportation",6297,407,428,7132
+Gadchiroli,2013,"Finance, Insurance, Real Estate And Trade Services",864,11,200,1075
+Gadchiroli,2013,"Collective, Social And Individual Service",3179,6303,4658,14140
+Gadchiroli,2014,Agriculture,3511,54,0,3565
+Gadchiroli,2014,Mining,0,0,404,404
+Gadchiroli,2014,Commodity Manufacturing,288,64,231,583
+Gadchiroli,2014,"Electricity Generation, Gas, Water And Sewage Services",1087,40,196,1323
+Gadchiroli,2014,Construction,303,0,36,339
+Gadchiroli,2014,Wholesale And Retail Trade And Hotel Business,975,0,198,1173
+Gadchiroli,2014,"Transportation, Warehousing And Transportation",306,268,430,1004
+Gadchiroli,2014,"Finance, Insurance, Real Estate And Trade Services",15358,6506,4846,26710
+Gadchiroli,2014,"Collective, Social And Individual Service",862,0,38,900
+Gadchiroli,2015,Agriculture,2457,53,0,2510
+Gadchiroli,2015,Mining,0,0,399,399
+Gadchiroli,2015,Commodity Manufacturing,223,64,231,518
+Gadchiroli,2015,"Electricity Generation, Gas, Water And Sewage Services",1025,42,196,1263
+Gadchiroli,2015,Construction,552,0,54,606
+Gadchiroli,2015,Wholesale And Retail Trade And Hotel Business,876,0,199,1075
+Gadchiroli,2015,"Transportation, Warehousing And Transportation",20,180,422,622
+Gadchiroli,2015,"Finance, Insurance, Real Estate And Trade Services",10159,470,5107,15736
+Gadchiroli,2015,"Collective, Social And Individual Service",862,6033,38,6933
+Gadchiroli,2016,Agriculture,3511,54,0,3565
+Gadchiroli,2016,Mining,0,0,404,404
+Gadchiroli,2016,Commodity Manufacturing,288,64,231,583
+Gadchiroli,2016,"Electricity Generation, Gas, Water And Sewage Services",1087,40,196,1323
+Gadchiroli,2016,Construction,303,0,36,339
+Gadchiroli,2016,Wholesale And Retail Trade And Hotel Business,975,0,198,1173
+Gadchiroli,2016,"Transportation, Warehousing And Transportation",306,268,430,1004
+Gadchiroli,2016,"Finance, Insurance, Real Estate And Trade Services",15358,6506,4846,26710
+Gadchiroli,2016,"Collective, Social And Individual Service",982,0,38,1020
+Gadchiroli,2017,Agriculture,3600,60,0,3660
+Gadchiroli,2017,Mining,0,0,420,420
+Gadchiroli,2017,Commodity Manufacturing,290,70,235,595
+Gadchiroli,2017,"Electricity Generation, Gas, Water And Sewage Services",1090,45,200,1335
+Gadchiroli,2017,Construction,305,0,38,343
+Gadchiroli,2017,Wholesale And Retail Trade And Hotel Business,980,0,200,1180
+Gadchiroli,2017,"Transportation, Warehousing And Transportation",310,272,435,1017
+Gadchiroli,2017,"Finance, Insurance, Real Estate And Trade Services",15485,6870,4950,27305
+Gadchiroli,2017,"Collective, Social And Individual Service",870,0,45,915
+Gadchiroli,2018,Agriculture,3800,65,0,3865
+Gadchiroli,2018,Mining,0,0,586,586
+Gadchiroli,2018,Commodity Manufacturing,315,75,354,744
+Gadchiroli,2018,"Electricity Generation, Gas, Water And Sewage Services",1230,47,230,1507
+Gadchiroli,2018,Construction,325,0,43,368
+Gadchiroli,2018,Wholesale And Retail Trade And Hotel Business,1087,0,243,1330
+Gadchiroli,2018,"Transportation, Warehousing And Transportation",429,285,487,1201
+Gadchiroli,2018,"Finance, Insurance, Real Estate And Trade Services",17860,6956,5862,30678
+Gadchiroli,2018,"Collective, Social And Individual Service",958,0,54,1012
+Gadchiroli,2019,Agriculture,3800,70,0,3870
+Gadchiroli,2019,Mining,0,0,595,595
+Gadchiroli,2019,Commodity Manufacturing,320,80,362,762
+Gadchiroli,2019,"Electricity Generation, Gas, Water And Sewage Services",1245,51,242,1538
+Gadchiroli,2019,Construction,340,0,47,387
+Gadchiroli,2019,Wholesale And Retail Trade And Hotel Business,1090,0,247,1337
+Gadchiroli,2019,"Transportation, Warehousing And Transportation",431,292,492,1215
+Gadchiroli,2019,"Finance, Insurance, Real Estate And Trade Services",17875,6972,5865,30712
+Gadchiroli,2019,"Collective, Social And Individual Service",970,0,59,1029
+Gadchiroli,2020,Agriculture,3840,75,0,3915
+Gadchiroli,2020,Mining,0,0,430,430
+Gadchiroli,2020,Commodity Manufacturing,300,80,245,625
+Gadchiroli,2020,"Electricity Generation, Gas, Water And Sewage Services",1320,50,225,1595
+Gadchiroli,2020,Construction,315,0,45,360
+Gadchiroli,2020,Wholesale And Retail Trade And Hotel Business,998,0,220,1218
+Gadchiroli,2020,"Transportation, Warehousing And Transportation",422,280,450,1152
+Gadchiroli,2020,"Finance, Insurance, Real Estate And Trade Services",17910,6890,5120,29920
+Gadchiroli,2020,"Collective, Social And Individual Service",967,0,50,1017
+Gadchiroli,2021,Agriculture,3841,76,1,3918
+Gadchiroli,2021,Mining,0,0,431,431
+Gadchiroli,2021,Commodity Manufacturing,301,81,245,627
+Gadchiroli,2021,"Electricity Generation, Gas, Water And Sewage Services",1320,50,225,1595
+Gadchiroli,2021,Construction,316,0,46,362
+Gadchiroli,2021,Wholesale And Retail Trade And Hotel Business,999,0,220,1219
+Gadchiroli,2021,"Transportation, Warehousing And Transportation",422,281,450,1153
+Gadchiroli,2021,"Finance, Insurance, Real Estate And Trade Services",17914,6892,5120,29926
+Gadchiroli,2021,"Collective, Social And Individual Service",969,0,51,1020
+Gondia,2012,Agriculture,147,92,,239
+Gondia,2012,Mining,,,,
+Gondia,2012,Commodity Manufacturing,2088,381,527,2996
+Gondia,2012,"Electricity Generation, Gas, Water And Sewage Services",2546,368,,2914
+Gondia,2012,Construction,223,,,223
+Gondia,2012,Wholesale And Retail Trade And Hotel Business,,,,
+Gondia,2012,"Transportation, Warehousing And Transportation",,2088,,2088
+Gondia,2012,"Finance, Insurance, Real Estate And Trade Services",375,296,62,733
+Gondia,2012,"Collective, Social And Individual Service",1056,337,6098,7491
+Gondia,2013,Agriculture,308,,,308
+Gondia,2013,Mining,66,,166,232
+Gondia,2013,Commodity Manufacturing,2475,,302,2777
+Gondia,2013,"Electricity Generation, Gas, Water And Sewage Services",412,,585,997
+Gondia,2013,Construction,,,,
+Gondia,2013,Wholesale And Retail Trade And Hotel Business,5349,631,202,6182
+Gondia,2013,"Transportation, Warehousing And Transportation",398,164,89,651
+Gondia,2013,"Finance, Insurance, Real Estate And Trade Services",998,932,7077,9007
+Gondia,2013,"Collective, Social And Individual Service",212,0,31,243
+Gondia,2014,Agriculture,125,208,0,333
+Gondia,2014,Mining,63,0,146,209
+Gondia,2014,Commodity Manufacturing,795,365,874,2034
+Gondia,2014,"Electricity Generation, Gas, Water And Sewage Services",488,2295,37,2820
+Gondia,2014,Construction,,,,
+Gondia,2014,Wholesale And Retail Trade And Hotel Business,3041,1065,237,4343
+Gondia,2014,"Transportation, Warehousing And Transportation",16,7,0,23
+Gondia,2014,"Finance, Insurance, Real Estate And Trade Services",1737,872,7174,9783
+Gondia,2014,"Collective, Social And Individual Service",180,45,24,249
+Gondia,2015,Agriculture,127,208,0,335
+Gondia,2015,Mining,51,23,399,473
+Gondia,2015,Commodity Manufacturing,2118,365,233,2716
+Gondia,2015,"Electricity Generation, Gas, Water And Sewage Services",536,2293,196,3025
+Gondia,2015,Construction,,,,
+Gondia,2015,Wholesale And Retail Trade And Hotel Business,3239,1064,253,4556
+Gondia,2015,"Transportation, Warehousing And Transportation",16,7,422,445
+Gondia,2015,"Finance, Insurance, Real Estate And Trade Services",1383,856,5105,7344
+Gondia,2015,"Collective, Social And Individual Service",175,45,38,258
+Gondia,2016,Agriculture,127,208,0,335
+Gondia,2016,Mining,51,23,399,473
+Gondia,2016,Commodity Manufacturing,2118,365,233,2716
+Gondia,2016,"Electricity Generation, Gas, Water And Sewage Services",536,2293,196,3025
+Gondia,2016,Construction,,,,
+Gondia,2016,Wholesale And Retail Trade And Hotel Business,3239,1072,261,4572
+Gondia,2016,"Transportation, Warehousing And Transportation",16,7,423,446
+Gondia,2016,"Finance, Insurance, Real Estate And Trade Services",1386,871,5116,7373
+Gondia,2016,"Collective, Social And Individual Service",175,45,43,263
+Gondia,2017,Agriculture,127,208,0,335
+Gondia,2017,Mining,51,23,399,473
+Gondia,2017,Commodity Manufacturing,2118,365,233,2716
+Gondia,2017,"Electricity Generation, Gas, Water And Sewage Services",536,2293,215,3044
+Gondia,2017,Construction,,,,
+Gondia,2017,Wholesale And Retail Trade And Hotel Business,3239,1072,277,4588
+Gondia,2017,"Transportation, Warehousing And Transportation",16,7,439,462
+Gondia,2017,"Finance, Insurance, Real Estate And Trade Services",1394,871,5165,7430
+Gondia,2017,"Collective, Social And Individual Service",181,45,64,290
+Gondia,2018,Agriculture,127,208,0,335
+Gondia,2018,Mining,51,23,399,473
+Gondia,2018,Commodity Manufacturing,2118,365,233,2716
+Gondia,2018,"Electricity Generation, Gas, Water And Sewage Services",460,2231,196,2887
+Gondia,2018,Construction,76,62,0,138
+Gondia,2018,Wholesale And Retail Trade And Hotel Business,3239,1082,277,4598
+Gondia,2018,"Transportation, Warehousing And Transportation",16,7,423,446
+Gondia,2018,"Finance, Insurance, Real Estate And Trade Services",1386,871,5206,7463
+Gondia,2018,"Collective, Social And Individual Service",175,57,104,336
+Gondia,2019,Agriculture,102,199,0,301
+Gondia,2019,Mining,1443,8,334,1785
+Gondia,2019,Commodity Manufacturing,1064,365,927,2356
+Gondia,2019,"Electricity Generation, Gas, Water And Sewage Services",445,12,154,611
+Gondia,2019,Construction,119,2193,29,2341
+Gondia,2019,Wholesale And Retail Trade And Hotel Business,3243,1475,302,5020
+Gondia,2019,"Transportation, Warehousing And Transportation",37,7,9,53
+Gondia,2019,"Finance, Insurance, Real Estate And Trade Services",1785,1329,8497,11611
+Gondia,2019,"Collective, Social And Individual Service",158,2037,501,2696
+Gondia,2020,Agriculture,123,199,,
+Gondia,2020,Mining,1443,8,,
+Gondia,2020,Commodity Manufacturing,1012,365,,
+Gondia,2020,"Electricity Generation, Gas, Water And Sewage Services",445,12,,
+Gondia,2020,Construction,158,2193,,
+Gondia,2020,Wholesale And Retail Trade And Hotel Business,3263,687,,
+Gondia,2020,"Transportation, Warehousing And Transportation",22,7,,
+Gondia,2020,"Finance, Insurance, Real Estate And Trade Services",1789,1284,,
+Gondia,2020,"Collective, Social And Individual Service",158,2031,,
+Gondia,2021,Agriculture,122,199,8,329
+Gondia,2021,Mining,1442,8,442,1892
+Gondia,2021,Commodity Manufacturing,1012,365,875,2252
+Gondia,2021,"Electricity Generation, Gas, Water And Sewage Services",445,12,143,600
+Gondia,2021,Construction,158,2193,31,2382
+Gondia,2021,Wholesale And Retail Trade And Hotel Business,3261,685,1031,4977
+Gondia,2021,"Transportation, Warehousing And Transportation",22,7,16,45
+Gondia,2021,"Finance, Insurance, Real Estate And Trade Services",1799,1277,8673,11749
+Gondia,2021,"Collective, Social And Individual Service",158,2031,446,2635
+Hingoli,2012,Agriculture,60,56,,116
+Hingoli,2012,Mining,0,0,0,0
+Hingoli,2012,Commodity Manufacturing,74,77,379,530
+Hingoli,2012,"Electricity Generation, Gas, Water And Sewage Services",275,117,979,1371
+Hingoli,2012,Construction,125,86,94,305
+Hingoli,2012,Wholesale And Retail Trade And Hotel Business,296,157,336,789
+Hingoli,2012,"Transportation, Warehousing And Transportation",50,26,64,140
+Hingoli,2012,"Finance, Insurance, Real Estate And Trade Services",525,250,472,1247
+Hingoli,2012,"Collective, Social And Individual Service",4022,524,2568,7114
+Hingoli,2013,Agriculture,,,,
+Hingoli,2013,Mining,,,,
+Hingoli,2013,Commodity Manufacturing,,,,
+Hingoli,2013,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Hingoli,2013,Construction,,,,
+Hingoli,2013,Wholesale And Retail Trade And Hotel Business,,,,
+Hingoli,2013,"Transportation, Warehousing And Transportation",,,,
+Hingoli,2013,"Finance, Insurance, Real Estate And Trade Services",,,,
+Hingoli,2013,"Collective, Social And Individual Service",,,,
+Hingoli,2014,Agriculture,60,65,0,125
+Hingoli,2014,Mining,,,,0
+Hingoli,2014,Commodity Manufacturing,70,72,370,512
+Hingoli,2014,"Electricity Generation, Gas, Water And Sewage Services",276,120,175,571
+Hingoli,2014,Construction,118,83,91,292
+Hingoli,2014,Wholesale And Retail Trade And Hotel Business,287,155,331,773
+Hingoli,2014,"Transportation, Warehousing And Transportation",49,25,67,141
+Hingoli,2014,"Finance, Insurance, Real Estate And Trade Services",505,251,465,1221
+Hingoli,2014,"Collective, Social And Individual Service",3800,514,2511,6825
+Hingoli,2015,Agriculture,73,60,11,144
+Hingoli,2015,Mining,0,0,0,0
+Hingoli,2015,Commodity Manufacturing,83,79,413,575
+Hingoli,2015,"Electricity Generation, Gas, Water And Sewage Services",292,121,994,1407
+Hingoli,2015,Construction,131,89,97,317
+Hingoli,2015,Wholesale And Retail Trade And Hotel Business,310,162,339,811
+Hingoli,2015,"Transportation, Warehousing And Transportation",75,33,72,180
+Hingoli,2015,"Finance, Insurance, Real Estate And Trade Services",542,255,490,1287
+Hingoli,2015,"Collective, Social And Individual Service",4042,542,2578,7162
+Hingoli,2016,Agriculture,,,,
+Hingoli,2016,Mining,,,,
+Hingoli,2016,Commodity Manufacturing,,,,
+Hingoli,2016,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Hingoli,2016,Construction,,,,
+Hingoli,2016,Wholesale And Retail Trade And Hotel Business,,,,
+Hingoli,2016,"Transportation, Warehousing And Transportation",,,,
+Hingoli,2016,"Finance, Insurance, Real Estate And Trade Services",,,,
+Hingoli,2016,"Collective, Social And Individual Service",,,,
+Hingoli,2017,Agriculture,156,83,57,359
+Hingoli,2017,Mining,1,0,0,2
+Hingoli,2017,Commodity Manufacturing,85,79,413,607
+Hingoli,2017,"Electricity Generation, Gas, Water And Sewage Services",310,123,997,1486
+Hingoli,2017,Construction,155,86,99,370
+Hingoli,2017,Wholesale And Retail Trade And Hotel Business,325,173,347,933
+Hingoli,2017,"Transportation, Warehousing And Transportation",80,39,79,244
+Hingoli,2017,"Finance, Insurance, Real Estate And Trade Services",547,259,515,1434
+Hingoli,2017,"Collective, Social And Individual Service",4050,587,2598,7483
+Hingoli,2018,Agriculture,173,83,57,313
+Hingoli,2018,Mining,1,0,0,1
+Hingoli,2018,Commodity Manufacturing,85,79,413,577
+Hingoli,2018,"Electricity Generation, Gas, Water And Sewage Services",354,123,997,1474
+Hingoli,2018,Construction,181,86,99,366
+Hingoli,2018,Wholesale And Retail Trade And Hotel Business,325,173,362,860
+Hingoli,2018,"Transportation, Warehousing And Transportation",80,39,79,198
+Hingoli,2018,"Finance, Insurance, Real Estate And Trade Services",550,259,525,1334
+Hingoli,2018,"Collective, Social And Individual Service",4134,587,2886,7607
+Hingoli,2019,Agriculture,622,19,396,1037
+Hingoli,2019,Mining,20,42,1161,1223
+Hingoli,2019,Commodity Manufacturing,116,157,96,369
+Hingoli,2019,"Electricity Generation, Gas, Water And Sewage Services",988,0,81,1069
+Hingoli,2019,Construction,204,12,17,233
+Hingoli,2019,Wholesale And Retail Trade And Hotel Business,138,271,440,849
+Hingoli,2019,"Transportation, Warehousing And Transportation",11,39,130,180
+Hingoli,2019,"Finance, Insurance, Real Estate And Trade Services",5798,54,3956,9808
+Hingoli,2019,"Collective, Social And Individual Service",116,83,662,861
+Hingoli,2020,Agriculture,742,46,396,1184
+Hingoli,2020,Mining,21,43,1165,1229
+Hingoli,2020,Commodity Manufacturing,117,97,96,310
+Hingoli,2020,"Electricity Generation, Gas, Water And Sewage Services",960,6,81,1047
+Hingoli,2020,Construction,216,6,17,239
+Hingoli,2020,Wholesale And Retail Trade And Hotel Business,85,196,439,720
+Hingoli,2020,"Transportation, Warehousing And Transportation",10,36,130,176
+Hingoli,2020,"Finance, Insurance, Real Estate And Trade Services",5802,55,3922,9779
+Hingoli,2020,"Collective, Social And Individual Service",116,77,1109,1302
+Hingoli,2021,Agriculture,721,46,396,1163
+Hingoli,2021,Mining,20,16,1184,1220
+Hingoli,2021,Commodity Manufacturing,115,98,96,309
+Hingoli,2021,"Electricity Generation, Gas, Water And Sewage Services",947,0,81,1028
+Hingoli,2021,Construction,203,12,17,232
+Hingoli,2021,Wholesale And Retail Trade And Hotel Business,132,196,443,771
+Hingoli,2021,"Transportation, Warehousing And Transportation",11,36,130,177
+Hingoli,2021,"Finance, Insurance, Real Estate And Trade Services",5750,48,3926,9724
+Hingoli,2021,"Collective, Social And Individual Service",86,77,1109,1272
+Jalna,2013,Agriculture,94,0,971,1065
+Jalna,2013,Mining,253,21,5114,5388
+Jalna,2013,Commodity Manufacturing,2116,0,0,2116
+Jalna,2013,"Electricity Generation, Gas, Water And Sewage Services",1354,0,0,1354
+Jalna,2013,Construction,336,52,170,558
+Jalna,2013,Wholesale And Retail Trade And Hotel Business,109,65,235,409
+Jalna,2013,"Transportation, Warehousing And Transportation",0,0,289,289
+Jalna,2013,"Finance, Insurance, Real Estate And Trade Services",3075,1434,19,4528
+Jalna,2013,"Collective, Social And Individual Service",638,65,863,1566
+Jalna,2014,Agriculture,227,0,830,1057
+Jalna,2014,Mining,183,82,4811,5076
+Jalna,2014,Commodity Manufacturing,1298,0,0,1298
+Jalna,2014,"Electricity Generation, Gas, Water And Sewage Services",0,1191,0,1191
+Jalna,2014,Construction,258,49,150,457
+Jalna,2014,Wholesale And Retail Trade And Hotel Business,17,62,209,288
+Jalna,2014,"Transportation, Warehousing And Transportation",0,0,265,265
+Jalna,2014,"Finance, Insurance, Real Estate And Trade Services",2300,63,58,2421
+Jalna,2014,"Collective, Social And Individual Service",5181,1946,0,7127
+Jalna,2015,Agriculture,227,0,977,1204
+Jalna,2015,Mining,183,82,4811,5076
+Jalna,2015,Commodity Manufacturing,1298,0,63,1361
+Jalna,2015,"Electricity Generation, Gas, Water And Sewage Services",0,1191,0,1191
+Jalna,2015,Construction,258,49,150,457
+Jalna,2015,Wholesale And Retail Trade And Hotel Business,17,62,200,279
+Jalna,2015,"Transportation, Warehousing And Transportation",0,0,265,265
+Jalna,2015,"Finance, Insurance, Real Estate And Trade Services",2300,63,81,2444
+Jalna,2015,"Collective, Social And Individual Service",5302,1946,198,7446
+Jalna,2016,Agriculture,,,,
+Jalna,2016,Mining,,,,
+Jalna,2016,Commodity Manufacturing,,,,
+Jalna,2016,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Jalna,2016,Construction,,,,
+Jalna,2016,Wholesale And Retail Trade And Hotel Business,,,,
+Jalna,2016,"Transportation, Warehousing And Transportation",,,,
+Jalna,2016,"Finance, Insurance, Real Estate And Trade Services",,,,
+Jalna,2016,"Collective, Social And Individual Service",,,,
+Jalna,2017,Agriculture,274,0,563,866
+Jalna,2017,Mining,62,28,2362,2492
+Jalna,2017,Commodity Manufacturing,0,0,0,0
+Jalna,2017,"Electricity Generation, Gas, Water And Sewage Services",9,9,0,20
+Jalna,2017,Construction,116,116,12,256
+Jalna,2017,Wholesale And Retail Trade And Hotel Business,16,3,228,265
+Jalna,2017,"Transportation, Warehousing And Transportation",0,0,0,5
+Jalna,2017,"Finance, Insurance, Real Estate And Trade Services",1442,0,104,1550
+Jalna,2017,"Collective, Social And Individual Service",5713,1123,0,7089
+Jalna,2018,Agriculture,,,,
+Jalna,2018,Mining,,,,
+Jalna,2018,Commodity Manufacturing,,,,
+Jalna,2018,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Jalna,2018,Construction,,,,
+Jalna,2018,Wholesale And Retail Trade And Hotel Business,,,,
+Jalna,2018,"Transportation, Warehousing And Transportation",,,,
+Jalna,2018,"Finance, Insurance, Real Estate And Trade Services",,,,
+Jalna,2018,"Collective, Social And Individual Service",,,,
+Jalna,2019,Agriculture,593,,31919,32512
+Jalna,2019,Mining,152,17,8500,8669
+Jalna,2019,Commodity Manufacturing,0,0,5,5
+Jalna,2019,"Electricity Generation, Gas, Water And Sewage Services",0,1200,0,1200
+Jalna,2019,Construction,352,0,12,364
+Jalna,2019,Wholesale And Retail Trade And Hotel Business,13,62,447,522
+Jalna,2019,"Transportation, Warehousing And Transportation",30,0,293,323
+Jalna,2019,"Finance, Insurance, Real Estate And Trade Services",0,0,115,115
+Jalna,2019,"Collective, Social And Individual Service",5736,840,7,6583
+Jalna,2020,Agriculture,293,310,1848,2451
+Jalna,2020,Mining,150,251,8514,8915
+Jalna,2020,Commodity Manufacturing,0,1298,5,1303
+Jalna,2020,"Electricity Generation, Gas, Water And Sewage Services",5,2408,0,2413
+Jalna,2020,Construction,340,340,12,692
+Jalna,2020,Wholesale And Retail Trade And Hotel Business,4,128,464,596
+Jalna,2020,"Transportation, Warehousing And Transportation",29,29,293,351
+Jalna,2020,"Finance, Insurance, Real Estate And Trade Services",0,3180,115,3295
+Jalna,2020,"Collective, Social And Individual Service",5719,7389,7,13115
+Jalna,2021,Agriculture,268,302,3702,4272
+Jalna,2021,Mining,157,311,16992,17460
+Jalna,2021,Commodity Manufacturing,0,2596,10,2606
+Jalna,2021,"Electricity Generation, Gas, Water And Sewage Services",7,2403,0,2410
+Jalna,2021,Construction,321,321,24,666
+Jalna,2021,Wholesale And Retail Trade And Hotel Business,3,127,0,130
+Jalna,2021,"Transportation, Warehousing And Transportation",29,29,586,644
+Jalna,2021,"Finance, Insurance, Real Estate And Trade Services",104,1738,230,2072
+Jalna,2021,"Collective, Social And Individual Service",5838,7260,14,13112
+Latur,2012,Agriculture,208,240,--,448
+Latur,2012,Mining,306,--,3401,3707
+Latur,2012,Commodity Manufacturing,--,--,490,490
+Latur,2012,"Electricity Generation, Gas, Water And Sewage Services",2217,2251,--,4468
+Latur,2012,Construction,78,140,562,780
+Latur,2012,Wholesale And Retail Trade And Hotel Business,203,3779,9468,13450
+Latur,2012,"Transportation, Warehousing And Transportation",5773,2422,81,8276
+Latur,2012,"Finance, Insurance, Real Estate And Trade Services",5262,8061,11921,25244
+Latur,2012,"Collective, Social And Individual Service",11,--,--,11
+Latur,2013,Agriculture,208,240,0,448
+Latur,2013,Mining,0,0,0,0
+Latur,2013,Commodity Manufacturing,0,0,497,497
+Latur,2013,"Electricity Generation, Gas, Water And Sewage Services",2217,2251,0,4468
+Latur,2013,Construction,78,140,562,780
+Latur,2013,Wholesale And Retail Trade And Hotel Business,203,3779,9468,13450
+Latur,2013,"Transportation, Warehousing And Transportation",5773,2422,81,8276
+Latur,2013,"Finance, Insurance, Real Estate And Trade Services",5562,9063,11876,26501
+Latur,2013,"Collective, Social And Individual Service",317,0,3501,3818
+Latur,2014,Agriculture,241,270,0,511
+Latur,2014,Mining,0,0,0,0
+Latur,2014,Commodity Manufacturing,1,0,35,36
+Latur,2014,"Electricity Generation, Gas, Water And Sewage Services",2000,3200,0,5200
+Latur,2014,Construction,1800,140,570,2510
+Latur,2014,Wholesale And Retail Trade And Hotel Business,0,0,4550,4550
+Latur,2014,"Transportation, Warehousing And Transportation",5774,6199,81,12054
+Latur,2014,"Finance, Insurance, Real Estate And Trade Services",7704,9224,27125,44053
+Latur,2014,"Collective, Social And Individual Service",334,0,3528,3862
+Latur,2015,Agriculture,378,479,46,903
+Latur,2015,Mining,0,0,0,0
+Latur,2015,Commodity Manufacturing,49,49,64,162
+Latur,2015,"Electricity Generation, Gas, Water And Sewage Services",2713,3453,0,6166
+Latur,2015,Construction,2800,514,679,3993
+Latur,2015,Wholesale And Retail Trade And Hotel Business,0,0,5097,5097
+Latur,2015,"Transportation, Warehousing And Transportation",5974,6487,92,12553
+Latur,2015,"Finance, Insurance, Real Estate And Trade Services",7794,11430,28122,47346
+Latur,2015,"Collective, Social And Individual Service",459,117,3629,4205
+Latur,2016,Agriculture,388,485,55,928
+Latur,2016,Mining,0,0,0,0
+Latur,2016,Commodity Manufacturing,55,55,75,185
+Latur,2016,"Electricity Generation, Gas, Water And Sewage Services",2720,3460,0,6180
+Latur,2016,Construction,2850,525,691,4066
+Latur,2016,Wholesale And Retail Trade And Hotel Business,0,0,6045,6045
+Latur,2016,"Transportation, Warehousing And Transportation",6001,6500,108,12609
+Latur,2016,"Finance, Insurance, Real Estate And Trade Services",8000,11510,28220,47730
+Latur,2016,"Collective, Social And Individual Service",469,180,3650,4299
+Latur,2017,Agriculture,395,495,68,958
+Latur,2017,Mining,0,0,0,0
+Latur,2017,Commodity Manufacturing,62,73,82,217
+Latur,2017,"Electricity Generation, Gas, Water And Sewage Services",2723,3472,0,6195
+Latur,2017,Construction,2858,531,702,4091
+Latur,2017,Wholesale And Retail Trade And Hotel Business,0,0,6065,6065
+Latur,2017,"Transportation, Warehousing And Transportation",6021,6518,121,12660
+Latur,2017,"Finance, Insurance, Real Estate And Trade Services",8081,11517,28232,47830
+Latur,2017,"Collective, Social And Individual Service",469,197,3658,4324
+Latur,2018,Agriculture,402,895,98,1395
+Latur,2018,Mining,13,15,55,83
+Latur,2018,Commodity Manufacturing,72,93,102,267
+Latur,2018,"Electricity Generation, Gas, Water And Sewage Services",2923,3972,15,6910
+Latur,2018,Construction,2958,631,982,4571
+Latur,2018,Wholesale And Retail Trade And Hotel Business,5,11,8365,8381
+Latur,2018,"Transportation, Warehousing And Transportation",6221,6818,190,13229
+Latur,2018,"Finance, Insurance, Real Estate And Trade Services",8381,11717,31232,51330
+Latur,2018,"Collective, Social And Individual Service",569,237,3958,4764
+Latur,2019,Agriculture,761,293,28,1082
+Latur,2019,Mining,342,0,6263,6605
+Latur,2019,Commodity Manufacturing,419,2000,1726,4145
+Latur,2019,"Electricity Generation, Gas, Water And Sewage Services",1645,124,849,2618
+Latur,2019,Construction,2,2818,343,3163
+Latur,2019,Wholesale And Retail Trade And Hotel Business,1098,1134,2195,4427
+Latur,2019,"Transportation, Warehousing And Transportation",65,208,880,1153
+Latur,2019,"Finance, Insurance, Real Estate And Trade Services",11648,10903,18730,41281
+Latur,2019,"Collective, Social And Individual Service",3,2,55,60
+Latur,2020,Agriculture,660,296,28,984
+Latur,2020,Mining,314,0,6392,6706
+Latur,2020,Commodity Manufacturing,412,2000,1733,4145
+Latur,2020,"Electricity Generation, Gas, Water And Sewage Services",1615,123,834,2572
+Latur,2020,Construction,2,10,341,353
+Latur,2020,Wholesale And Retail Trade And Hotel Business,1098,1134,2205,4437
+Latur,2020,"Transportation, Warehousing And Transportation",60,3016,880,3956
+Latur,2020,"Finance, Insurance, Real Estate And Trade Services",11547,10901,18730,41178
+Latur,2020,"Collective, Social And Individual Service",3,2,55,60
+Latur,2021,Agriculture,657,298,28,983
+Latur,2021,Mining,313,0,6326,6639
+Latur,2021,Commodity Manufacturing,411,2000,1728,4139
+Latur,2021,"Electricity Generation, Gas, Water And Sewage Services",1572,122,824,2518
+Latur,2021,Construction,2,10,341,353
+Latur,2021,Wholesale And Retail Trade And Hotel Business,1096,1134,2203,4433
+Latur,2021,"Transportation, Warehousing And Transportation",60,3016,880,3956
+Latur,2021,"Finance, Insurance, Real Estate And Trade Services",11322,10897,18736,40955
+Latur,2021,"Collective, Social And Individual Service",3,2,55,60
+Mumbai City,2013,Agriculture,108,0,256,364
+Mumbai City,2013,Mining,95,0,71,166
+Mumbai City,2013,Commodity Manufacturing,27595,377,44487,72459
+Mumbai City,2013,"Electricity Generation, Gas, Water And Sewage Services",1675,14361,384,16420
+Mumbai City,2013,Construction,6225,1389,8192,15806
+Mumbai City,2013,Wholesale And Retail Trade And Hotel Business,2231,1389,3826,7446
+Mumbai City,2013,"Transportation, Warehousing And Transportation",31315,265,8837,40417
+Mumbai City,2013,"Finance, Insurance, Real Estate And Trade Services",59682,236,24597,84515
+Mumbai City,2013,"Collective, Social And Individual Service",100590,121563,123882,346035
+Mumbai City,2014,Agriculture,112,0,289,401
+Mumbai City,2014,Mining,117,0,87,204
+Mumbai City,2014,Commodity Manufacturing,29785,451,45375,75611
+Mumbai City,2014,"Electricity Generation, Gas, Water And Sewage Services",2295,15063,399,17757
+Mumbai City,2014,Construction,7982,1732,9417,19131
+Mumbai City,2014,Wholesale And Retail Trade And Hotel Business,3793,1573,3998,9364
+Mumbai City,2014,"Transportation, Warehousing And Transportation",32577,317,9273,42167
+Mumbai City,2014,"Finance, Insurance, Real Estate And Trade Services",60890,252,27372,88514
+Mumbai City,2014,"Collective, Social And Individual Service",145478,121612,122402,389492
+Mumbai City,2015,Agriculture,124,0,304,428
+Mumbai City,2015,Mining,114,0,78,192
+Mumbai City,2015,Commodity Manufacturing,30567,462,51932,82961
+Mumbai City,2015,"Electricity Generation, Gas, Water And Sewage Services",2173,16427,394,18994
+Mumbai City,2015,Construction,7260,1915,9407,18582
+Mumbai City,2015,Wholesale And Retail Trade And Hotel Business,3981,1765,4217,9963
+Mumbai City,2015,"Transportation, Warehousing And Transportation",34482,308,9174,43964
+Mumbai City,2015,"Finance, Insurance, Real Estate And Trade Services",61989,259,28943,91191
+Mumbai City,2015,"Collective, Social And Individual Service",146290,121685,181687,449662
+Mumbai City,2016,Agriculture,128,0,317,445
+Mumbai City,2016,Mining,119,0,83,202
+Mumbai City,2016,Commodity Manufacturing,31670,481,52443,84594
+Mumbai City,2016,"Electricity Generation, Gas, Water And Sewage Services",2803,17203,406,20412
+Mumbai City,2016,Construction,7803,2343,10503,20649
+Mumbai City,2016,Wholesale And Retail Trade And Hotel Business,4103,2143,5719,11965
+Mumbai City,2016,"Transportation, Warehousing And Transportation",35379,409,10307,46095
+Mumbai City,2016,"Finance, Insurance, Real Estate And Trade Services",62390,304,29455,92149
+Mumbai City,2016,"Collective, Social And Individual Service",147460,122890,190530,460880
+Mumbai City,2017,Agriculture,109,71,949,1149
+Mumbai City,2017,Mining,93,0,851,962
+Mumbai City,2017,Commodity Manufacturing,32530,5581,63443,102155
+Mumbai City,2017,"Electricity Generation, Gas, Water And Sewage Services",1567,21203,988,23790
+Mumbai City,2017,Construction,6548,6843,21503,34989
+Mumbai City,2017,Wholesale And Retail Trade And Hotel Business,3789,6643,7269,18194
+Mumbai City,2017,"Transportation, Warehousing And Transportation",34145,1409,21307,57019
+Mumbai City,2017,"Finance, Insurance, Real Estate And Trade Services",50268,1304,40455,92831
+Mumbai City,2017,"Collective, Social And Individual Service",1194722,222890,245530,589209
+Mumbai City,2018,Agriculture,134,64,1099,1297
+Mumbai City,2018,Mining,118,0,952,1070
+Mumbai City,2018,Commodity Manufacturing,44530,4081,69443,118054
+Mumbai City,2018,"Electricity Generation, Gas, Water And Sewage Services",2567,16203,1113,19883
+Mumbai City,2018,Construction,9548,4843,23503,37894
+Mumbai City,2018,Wholesale And Retail Trade And Hotel Business,4789,4143,7789,16721
+Mumbai City,2018,"Transportation, Warehousing And Transportation",43145,709,24307,68161
+Mumbai City,2018,"Finance, Insurance, Real Estate And Trade Services",62268,704,45435,108407
+Mumbai City,2018,"Collective, Social And Individual Service",136472,134399,254595,555466
+Mumbai City,2019,Agriculture,131,63,1179,1373
+Mumbai City,2019,Mining,116,0,1013,1129
+Mumbai City,2019,Commodity Manufacturing,44500,4020,74899,123419
+Mumbai City,2019,"Electricity Generation, Gas, Water And Sewage Services",2552,15830,1218,19600
+Mumbai City,2019,Construction,9523,4706,26181,40410
+Mumbai City,2019,Wholesale And Retail Trade And Hotel Business,4769,4052,8330,17151
+Mumbai City,2019,"Transportation, Warehousing And Transportation",42930,705,28430,72065
+Mumbai City,2019,"Finance, Insurance, Real Estate And Trade Services",61953,702,52175,114830
+Mumbai City,2019,"Collective, Social And Individual Service",135657,164365,267200,567222
+Mumbai City,2020,Agriculture,423,61,458,942
+Mumbai City,2020,Mining,831,146,224,1201
+Mumbai City,2020,Commodity Manufacturing,1934,23637,79843,105414
+Mumbai City,2020,"Electricity Generation, Gas, Water And Sewage Services",1710,39429,1499,42638
+Mumbai City,2020,Construction,1497,677,16070,18244
+Mumbai City,2020,Wholesale And Retail Trade And Hotel Business,2763,255,48425,51443
+Mumbai City,2020,"Transportation, Warehousing And Transportation",102273,40753,56398,199424
+Mumbai City,2020,"Finance, Insurance, Real Estate And Trade Services",9127,63991,192708,265826
+Mumbai City,2020,"Collective, Social And Individual Service",156296,24840,93629,274765
+Mumbai City,2021,Agriculture,1228,207,746,2181
+Mumbai City,2021,Mining,161,8007,17896,26064
+Mumbai City,2021,Commodity Manufacturing,31529,56178,65610,153317
+Mumbai City,2021,"Electricity Generation, Gas, Water And Sewage Services",1497,677,18032,20206
+Mumbai City,2021,Construction,86829,3042,36348,126219
+Mumbai City,2021,Wholesale And Retail Trade And Hotel Business,10847,37789,31823,80459
+Mumbai City,2021,"Transportation, Warehousing And Transportation",11405,42988,139202,193595
+Mumbai City,2021,"Finance, Insurance, Real Estate And Trade Services",6009,21008,97151,124168
+Mumbai City,2021,"Collective, Social And Individual Service",155794,26935,116983,299712
+Mumbai Suburban,2016,Agriculture,,,,
+Mumbai Suburban,2016,Mining,,,,
+Mumbai Suburban,2016,Commodity Manufacturing,,,,
+Mumbai Suburban,2016,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Mumbai Suburban,2016,Construction,,,,
+Mumbai Suburban,2016,Wholesale And Retail Trade And Hotel Business,,,,
+Mumbai Suburban,2016,"Transportation, Warehousing And Transportation",,,,
+Mumbai Suburban,2016,"Finance, Insurance, Real Estate And Trade Services",,,,
+Mumbai Suburban,2016,"Collective, Social And Individual Service",,,,
+Mumbai Suburban,2017,Agriculture,,,,
+Mumbai Suburban,2017,Mining,,,,
+Mumbai Suburban,2017,Commodity Manufacturing,,,,
+Mumbai Suburban,2017,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Mumbai Suburban,2017,Construction,,,,
+Mumbai Suburban,2017,Wholesale And Retail Trade And Hotel Business,,,,
+Mumbai Suburban,2017,"Transportation, Warehousing And Transportation",,,,
+Mumbai Suburban,2017,"Finance, Insurance, Real Estate And Trade Services",,,,
+Mumbai Suburban,2017,"Collective, Social And Individual Service",,,,
+Mumbai Suburban,2018,Agriculture,,,466,466
+Mumbai Suburban,2018,Mining,,,2183,2183
+Mumbai Suburban,2018,Commodity Manufacturing,352,4844,70167,75363
+Mumbai Suburban,2018,"Electricity Generation, Gas, Water And Sewage Services",,,1866,1866
+Mumbai Suburban,2018,Construction,,,944,944
+Mumbai Suburban,2018,Wholesale And Retail Trade And Hotel Business,,,31762,31762
+Mumbai Suburban,2018,"Transportation, Warehousing And Transportation",889,3500,377350,381739
+Mumbai Suburban,2018,"Finance, Insurance, Real Estate And Trade Services",296,,132459,132755
+Mumbai Suburban,2018,"Collective, Social And Individual Service",1126,,64881,66007
+Mumbai Suburban,2019,Agriculture,0,0,2409,2409
+Mumbai Suburban,2019,Mining,0,0,2890,2890
+Mumbai Suburban,2019,Commodity Manufacturing,0,422,72989,73411
+Mumbai Suburban,2019,"Electricity Generation, Gas, Water And Sewage Services",0,0,1849,1849
+Mumbai Suburban,2019,Construction,0,0,1011,1011
+Mumbai Suburban,2019,Wholesale And Retail Trade And Hotel Business,0,0,35894,35894
+Mumbai Suburban,2019,"Transportation, Warehousing And Transportation",1031,3497,402860,407388
+Mumbai Suburban,2019,"Finance, Insurance, Real Estate And Trade Services",247,0,117860,118107
+Mumbai Suburban,2019,"Collective, Social And Individual Service",0,0,437208,437208
+Mumbai Suburban,2020,Agriculture,0,0,3000,3000
+Mumbai Suburban,2020,Mining,0,0,4376,4376
+Mumbai Suburban,2020,Commodity Manufacturing,0,4024,78925,82949
+Mumbai Suburban,2020,"Electricity Generation, Gas, Water And Sewage Services",0,0,1824,1824
+Mumbai Suburban,2020,Construction,0,0,78,78
+Mumbai Suburban,2020,Wholesale And Retail Trade And Hotel Business,0,0,36578,36578
+Mumbai Suburban,2020,"Transportation, Warehousing And Transportation",1108,3464,401331,405903
+Mumbai Suburban,2020,"Finance, Insurance, Real Estate And Trade Services",241,0,126470,126711
+Mumbai Suburban,2020,"Collective, Social And Individual Service",3672,0,279498,283170
+Mumbai Suburban,2021,Agriculture,0,0,3228,3228
+Mumbai Suburban,2021,Mining,0,0,2838,2838
+Mumbai Suburban,2021,Commodity Manufacturing,0,2281,97159,99440
+Mumbai Suburban,2021,"Electricity Generation, Gas, Water And Sewage Services",0,0,2009,2009
+Mumbai Suburban,2021,Construction,0,0,65,65
+Mumbai Suburban,2021,Wholesale And Retail Trade And Hotel Business,0,0,38654,38654
+Mumbai Suburban,2021,"Transportation, Warehousing And Transportation",1405,0,438731,440136
+Mumbai Suburban,2021,"Finance, Insurance, Real Estate And Trade Services",244,0,121322,121566
+Mumbai Suburban,2021,"Collective, Social And Individual Service",3634,0,298790,302424
+Nagpur,2012,Agriculture,1620,325,875,2820
+Nagpur,2012,Mining,298,9975,375,10648
+Nagpur,2012,Commodity Manufacturing,1040,320,44100,45460
+Nagpur,2012,"Electricity Generation, Gas, Water And Sewage Services",170,5225,50,5445
+Nagpur,2012,Construction,4000,2600,2950,9550
+Nagpur,2012,Wholesale And Retail Trade And Hotel Business,425,3111,7250,10786
+Nagpur,2012,"Transportation, Warehousing And Transportation",2300,3370,2770,8440
+Nagpur,2012,"Finance, Insurance, Real Estate And Trade Services",3150,10150,28900,42200
+Nagpur,2012,"Collective, Social And Individual Service",31250,38280,36767,106297
+Nagpur,2013,Agriculture,1620,325,875,2820
+Nagpur,2013,Mining,298,9975,375,10648
+Nagpur,2013,Commodity Manufacturing,1040,320,44100,45460
+Nagpur,2013,"Electricity Generation, Gas, Water And Sewage Services",170,5225,50,5445
+Nagpur,2013,Construction,4000,2600,2950,9550
+Nagpur,2013,Wholesale And Retail Trade And Hotel Business,425,3111,7250,10786
+Nagpur,2013,"Transportation, Warehousing And Transportation",2300,3370,2770,8440
+Nagpur,2013,"Finance, Insurance, Real Estate And Trade Services",3150,10150,28900,42200
+Nagpur,2013,"Collective, Social And Individual Service",31250,38280,36767,106297
+Nagpur,2014,Agriculture,,,,
+Nagpur,2014,Mining,1620,9975,875,10598
+Nagpur,2014,Commodity Manufacturing,1040,320,44100,45460
+Nagpur,2014,"Electricity Generation, Gas, Water And Sewage Services",170,5225,50,5445
+Nagpur,2014,Construction,4000,2600,2950,9550
+Nagpur,2014,Wholesale And Retail Trade And Hotel Business,425,3111,7250,10786
+Nagpur,2014,"Transportation, Warehousing And Transportation",2300,3370,2770,8440
+Nagpur,2014,"Finance, Insurance, Real Estate And Trade Services",3150,10150,28900,42200
+Nagpur,2014,"Collective, Social And Individual Service",31250,38280,36767,106297
+Nagpur,2015,Agriculture,,,,
+Nagpur,2015,Mining,,,,
+Nagpur,2015,Commodity Manufacturing,,,,
+Nagpur,2015,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Nagpur,2015,Construction,,,,
+Nagpur,2015,Wholesale And Retail Trade And Hotel Business,,,,
+Nagpur,2015,"Transportation, Warehousing And Transportation",,,,
+Nagpur,2015,"Finance, Insurance, Real Estate And Trade Services",,,,
+Nagpur,2015,"Collective, Social And Individual Service",,,,
+Nagpur,2016,Agriculture,,,,
+Nagpur,2016,Mining,,,,
+Nagpur,2016,Commodity Manufacturing,,,,
+Nagpur,2016,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Nagpur,2016,Construction,,,,
+Nagpur,2016,Wholesale And Retail Trade And Hotel Business,,,,
+Nagpur,2016,"Transportation, Warehousing And Transportation",,,,
+Nagpur,2016,"Finance, Insurance, Real Estate And Trade Services",,,,
+Nagpur,2016,"Collective, Social And Individual Service",,,,
+Nagpur,2017,Agriculture,210,893,4519,5843
+Nagpur,2017,Mining,131,576,6312,7217
+Nagpur,2017,Commodity Manufacturing,106,303,4221,4668
+Nagpur,2017,"Electricity Generation, Gas, Water And Sewage Services",247,619,10942,12025
+Nagpur,2017,Construction,183,180,5913,6337
+Nagpur,2017,Wholesale And Retail Trade And Hotel Business,213,709,10918,12018
+Nagpur,2017,"Transportation, Warehousing And Transportation",205,276,3615,4110
+Nagpur,2017,"Finance, Insurance, Real Estate And Trade Services",5093,9923,14718,30484
+Nagpur,2017,"Collective, Social And Individual Service",312,536,5321,6192
+Nagpur,2018,Agriculture,816,920,8750,10486
+Nagpur,2018,Mining,418,636,11130,12184
+Nagpur,2018,Commodity Manufacturing,276,330,5442,6048
+Nagpur,2018,"Electricity Generation, Gas, Water And Sewage Services",560,690,13787,15037
+Nagpur,2018,Construction,392,203,6835,7430
+Nagpur,2018,Wholesale And Retail Trade And Hotel Business,496,784,13991,15271
+Nagpur,2018,"Transportation, Warehousing And Transportation",340,280,3938,4558
+Nagpur,2018,"Finance, Insurance, Real Estate And Trade Services",14404,18674,64539,97617
+Nagpur,2018,"Collective, Social And Individual Service",685,404,5836,6925
+Nagpur,2019,Agriculture,1170,1287,15310,17767
+Nagpur,2019,Mining,817,1035,14350,16202
+Nagpur,2019,Commodity Manufacturing,517,768,8571,9856
+Nagpur,2019,"Electricity Generation, Gas, Water And Sewage Services",934,883,19140,20957
+Nagpur,2019,Construction,511,412,11531,12454
+Nagpur,2019,Wholesale And Retail Trade And Hotel Business,818,954,19602,21374
+Nagpur,2019,"Transportation, Warehousing And Transportation",611,530,7424,8565
+Nagpur,2019,"Finance, Insurance, Real Estate And Trade Services",16302,18398,65014,99714
+Nagpur,2019,"Collective, Social And Individual Service",611,585,6129,7325
+Nagpur,2020,Agriculture,1220,1340,16021,18581
+Nagpur,2020,Mining,902,1101,15202,17205
+Nagpur,2020,Commodity Manufacturing,570,813,8611,9994
+Nagpur,2020,"Electricity Generation, Gas, Water And Sewage Services",1013,906,20240,22159
+Nagpur,2020,Construction,525,465,12098,13088
+Nagpur,2020,Wholesale And Retail Trade And Hotel Business,880,1002,19977,21859
+Nagpur,2020,"Transportation, Warehousing And Transportation",720,578,8202,9500
+Nagpur,2020,"Finance, Insurance, Real Estate And Trade Services",17210,18880,68304,104394
+Nagpur,2020,"Collective, Social And Individual Service",720,602,6571,7893
+Nagpur,2021,Agriculture,1225,1348,16028,18601
+Nagpur,2021,Mining,898,1107,15213,17218
+Nagpur,2021,Commodity Manufacturing,572,824,8656,10052
+Nagpur,2021,"Electricity Generation, Gas, Water And Sewage Services",1015,911,20249,22175
+Nagpur,2021,Construction,532,471,12192,13195
+Nagpur,2021,Wholesale And Retail Trade And Hotel Business,880,998,20145,22023
+Nagpur,2021,"Transportation, Warehousing And Transportation",728,582,8221,9531
+Nagpur,2021,"Finance, Insurance, Real Estate And Trade Services",17215,18884,68365,104464
+Nagpur,2021,"Collective, Social And Individual Service",724,621,6578,7923
+Nanded,2014,Agriculture,1264,671,289,2224
+Nanded,2014,Mining,,,,
+Nanded,2014,Commodity Manufacturing,3659,1119,365,5143
+Nanded,2014,"Electricity Generation, Gas, Water And Sewage Services",2981,3862,61,6904
+Nanded,2014,Construction,2896,299,499,3694
+Nanded,2014,Wholesale And Retail Trade And Hotel Business,2134,2749,1282,6165
+Nanded,2014,"Transportation, Warehousing And Transportation",6715,1898,2915,11528
+Nanded,2014,"Finance, Insurance, Real Estate And Trade Services",14844,3829,8998,27671
+Nanded,2014,"Collective, Social And Individual Service",61,119,998,1178
+Nanded,2015,Agriculture,,,,
+Nanded,2015,Mining,,,,
+Nanded,2015,Commodity Manufacturing,,,,
+Nanded,2015,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Nanded,2015,Construction,,,,
+Nanded,2015,Wholesale And Retail Trade And Hotel Business,,,,
+Nanded,2015,"Transportation, Warehousing And Transportation",,,,
+Nanded,2015,"Finance, Insurance, Real Estate And Trade Services",,,,
+Nanded,2015,"Collective, Social And Individual Service",,,,
+Nanded,2016,Agriculture,1265,672,285,2222
+Nanded,2016,Mining,,,,
+Nanded,2016,Commodity Manufacturing,3659,1114,366,5139
+Nanded,2016,"Electricity Generation, Gas, Water And Sewage Services",2987,3866,63,6916
+Nanded,2016,Construction,2891,299,499,3689
+Nanded,2016,Wholesale And Retail Trade And Hotel Business,2135,2750,12820,17705
+Nanded,2016,"Transportation, Warehousing And Transportation",6711,1899,2917,11527
+Nanded,2016,"Finance, Insurance, Real Estate And Trade Services",14844,3822,8992,27658
+Nanded,2016,"Collective, Social And Individual Service",62,114,2993,3169
+Nanded,2017,Agriculture,1400,1900,16,3316
+Nanded,2017,Mining,267,11,,278
+Nanded,2017,Commodity Manufacturing,42,465,2259,2766
+Nanded,2017,"Electricity Generation, Gas, Water And Sewage Services",2902,3876,211,6989
+Nanded,2017,Construction,117,4274,6,4397
+Nanded,2017,Wholesale And Retail Trade And Hotel Business,247,2347,500,3094
+Nanded,2017,"Transportation, Warehousing And Transportation",179,243,32,454
+Nanded,2017,"Finance, Insurance, Real Estate And Trade Services",10664,26977,6309,43950
+Nanded,2017,"Collective, Social And Individual Service",177,177,10,364
+Nanded,2018,Agriculture,1430,1950,25,3405
+Nanded,2018,Mining,273,13,,286
+Nanded,2018,Commodity Manufacturing,47,470,2263,2780
+Nanded,2018,"Electricity Generation, Gas, Water And Sewage Services",2970,3889,245,7104
+Nanded,2018,Construction,122,4320,10,4452
+Nanded,2018,Wholesale And Retail Trade And Hotel Business,258,2350,513,3121
+Nanded,2018,"Transportation, Warehousing And Transportation",184,258,37,479
+Nanded,2018,"Finance, Insurance, Real Estate And Trade Services",10680,26985,6320,43985
+Nanded,2018,"Collective, Social And Individual Service",190,187,15,392
+Nanded,2019,Agriculture,1320,1640,23,2983
+Nanded,2019,Mining,273,10,0,286
+Nanded,2019,Commodity Manufacturing,47,435,2160,2642
+Nanded,2019,"Electricity Generation, Gas, Water And Sewage Services",2590,3542,241,6373
+Nanded,2019,Construction,22,4320,10,4352
+Nanded,2019,Wholesale And Retail Trade And Hotel Business,249,2240,490,2979
+Nanded,2019,"Transportation, Warehousing And Transportation",170,243,32,445
+Nanded,2019,"Finance, Insurance, Real Estate And Trade Services",9680,24985,5520,40185
+Nanded,2019,"Collective, Social And Individual Service",185,180,10,375
+Nanded,2020,Agriculture,1320,1640,23,2983
+Nanded,2020,Mining,273,20,0,293
+Nanded,2020,Commodity Manufacturing,47,455,2160,2662
+Nanded,2020,"Electricity Generation, Gas, Water And Sewage Services",2590,3542,241,6373
+Nanded,2020,Construction,22,4320,20,4362
+Nanded,2020,Wholesale And Retail Trade And Hotel Business,249,2240,500,2989
+Nanded,2020,"Transportation, Warehousing And Transportation",200,250,32,482
+Nanded,2020,"Finance, Insurance, Real Estate And Trade Services",9640,24990,5520,40150
+Nanded,2020,"Collective, Social And Individual Service",185,180,10,375
+Nanded,2021,Agriculture,1307,506,413,2226
+Nanded,2021,Mining,258,16,2963,3237
+Nanded,2021,Commodity Manufacturing,458,176,1610,2244
+Nanded,2021,"Electricity Generation, Gas, Water And Sewage Services",7309,18,1108,8435
+Nanded,2021,Construction,34,3225,239,3498
+Nanded,2021,Wholesale And Retail Trade And Hotel Business,108,111,1699,1918
+Nanded,2021,"Transportation, Warehousing And Transportation",276,0,39,315
+Nanded,2021,"Finance, Insurance, Real Estate And Trade Services",14191,658,14910,29759
+Nanded,2021,"Collective, Social And Individual Service",174,0,799,973
+Nandurbar,2006,Agriculture,1103,0,0,1103
+Nandurbar,2006,Mining,425,0,0,425
+Nandurbar,2006,Commodity Manufacturing,0,0,2212,2212
+Nandurbar,2006,"Electricity Generation, Gas, Water And Sewage Services",0,129,0,129
+Nandurbar,2006,Construction,443,0,0,443
+Nandurbar,2006,Wholesale And Retail Trade And Hotel Business,65,0,0,65
+Nandurbar,2006,"Transportation, Warehousing And Transportation",8,0,0,8
+Nandurbar,2006,"Finance, Insurance, Real Estate And Trade Services",438,0,220,658
+Nandurbar,2006,"Collective, Social And Individual Service",5048,6471,2657,14176
+Nandurbar,2008,Agriculture,956,560,0,1516
+Nandurbar,2008,Mining,45,0,0,45
+Nandurbar,2008,Commodity Manufacturing,10,0,2450,2460
+Nandurbar,2008,"Electricity Generation, Gas, Water And Sewage Services",25,870,0,895
+Nandurbar,2008,Construction,450,159,0,609
+Nandurbar,2008,Wholesale And Retail Trade And Hotel Business,0,0,60,60
+Nandurbar,2008,"Transportation, Warehousing And Transportation",85,910,0,995
+Nandurbar,2008,"Finance, Insurance, Real Estate And Trade Services",495,206,210,911
+Nandurbar,2008,"Collective, Social And Individual Service",4682,4940,2554,7494
+Nandurbar,2009,Agriculture,1189,565,0,1754
+Nandurbar,2009,Mining,45,0,0,45
+Nandurbar,2009,Commodity Manufacturing,10,0,2650,2660
+Nandurbar,2009,"Electricity Generation, Gas, Water And Sewage Services",25,905,0,930
+Nandurbar,2009,Construction,459,159,0,618
+Nandurbar,2009,Wholesale And Retail Trade And Hotel Business,0,0,60,60
+Nandurbar,2009,"Transportation, Warehousing And Transportation",80,1014,0,1094
+Nandurbar,2009,"Finance, Insurance, Real Estate And Trade Services",509,212,225,946
+Nandurbar,2009,"Collective, Social And Individual Service",10532,5736,2805,8541
+Nandurbar,2010,Agriculture,1185,562,0,1747
+Nandurbar,2010,Mining,44,0,0,44
+Nandurbar,2010,Commodity Manufacturing,10,0,2650,2660
+Nandurbar,2010,"Electricity Generation, Gas, Water And Sewage Services",28,907,0,935
+Nandurbar,2010,Construction,460,157,0,617
+Nandurbar,2010,Wholesale And Retail Trade And Hotel Business,0,0,58,58
+Nandurbar,2010,"Transportation, Warehousing And Transportation",82,1017,0,1099
+Nandurbar,2010,"Finance, Insurance, Real Estate And Trade Services",506,211,231,948
+Nandurbar,2010,"Collective, Social And Individual Service",10711,5813,2886,8699
+Nandurbar,2011,Agriculture,1181,558,0,1739
+Nandurbar,2011,Mining,45,0,0,45
+Nandurbar,2011,Commodity Manufacturing,9,0,2652,2661
+Nandurbar,2011,"Electricity Generation, Gas, Water And Sewage Services",29,909,0,938
+Nandurbar,2011,Construction,466,156,0,622
+Nandurbar,2011,Wholesale And Retail Trade And Hotel Business,0,0,58,58
+Nandurbar,2011,"Transportation, Warehousing And Transportation",79,1011,0,1090
+Nandurbar,2011,"Finance, Insurance, Real Estate And Trade Services",512,210,238,960
+Nandurbar,2011,"Collective, Social And Individual Service",10744,5824,2874,19442
+Nandurbar,2012,Agriculture,1148,541,0,1689
+Nandurbar,2012,Mining,42,0,0,42
+Nandurbar,2012,Commodity Manufacturing,9,0,2568,2577
+Nandurbar,2012,"Electricity Generation, Gas, Water And Sewage Services",27,904,0,931
+Nandurbar,2012,Construction,462,146,0,608
+Nandurbar,2012,Wholesale And Retail Trade And Hotel Business,0,0,56,56
+Nandurbar,2012,"Transportation, Warehousing And Transportation",76,1006,0,1082
+Nandurbar,2012,"Finance, Insurance, Real Estate And Trade Services",509,220,237,966
+Nandurbar,2012,"Collective, Social And Individual Service",10891,5832,2846,19569
+Nandurbar,2013,Agriculture,1124,533,0,1657
+Nandurbar,2013,Mining,38,0,0,38
+Nandurbar,2013,Commodity Manufacturing,8,0,2542,2550
+Nandurbar,2013,"Electricity Generation, Gas, Water And Sewage Services",23,891,0,914
+Nandurbar,2013,Construction,451,135,0,586
+Nandurbar,2013,Wholesale And Retail Trade And Hotel Business,0,0,52,52
+Nandurbar,2013,"Transportation, Warehousing And Transportation",72,982,0,1054
+Nandurbar,2013,"Finance, Insurance, Real Estate And Trade Services",519,227,229,975
+Nandurbar,2013,"Collective, Social And Individual Service",10955,5879,2918,19752
+Nandurbar,2014,Agriculture,1102,524,0,1626
+Nandurbar,2014,Mining,36,0,0,36
+Nandurbar,2014,Commodity Manufacturing,7,0,2526,2533
+Nandurbar,2014,"Electricity Generation, Gas, Water And Sewage Services",22,887,0,909
+Nandurbar,2014,Construction,432,133,0,565
+Nandurbar,2014,Wholesale And Retail Trade And Hotel Business,0,0,52,52
+Nandurbar,2014,"Transportation, Warehousing And Transportation",70,978,0,1048
+Nandurbar,2014,"Finance, Insurance, Real Estate And Trade Services",511,216,223,950
+Nandurbar,2014,"Collective, Social And Individual Service",11213,5892,3012,20117
+Nandurbar,2015,Agriculture,1091,521,0,1612
+Nandurbar,2015,Mining,33,0,0,33
+Nandurbar,2015,Commodity Manufacturing,6,0,2519,2525
+Nandurbar,2015,"Electricity Generation, Gas, Water And Sewage Services",21,888,0,909
+Nandurbar,2015,Construction,438,131,0,569
+Nandurbar,2015,Wholesale And Retail Trade And Hotel Business,0,0,61,61
+Nandurbar,2015,"Transportation, Warehousing And Transportation",69,975,0,1044
+Nandurbar,2015,"Finance, Insurance, Real Estate And Trade Services",483,209,221,913
+Nandurbar,2015,"Collective, Social And Individual Service",11166,5602,3114,19882
+Nandurbar,2016,Agriculture,1084,519,0,1603
+Nandurbar,2016,Mining,28,0,0,28
+Nandurbar,2016,Commodity Manufacturing,7,0,2487,2494
+Nandurbar,2016,"Electricity Generation, Gas, Water And Sewage Services",15,839,0,854
+Nandurbar,2016,Construction,423,122,0,545
+Nandurbar,2016,Wholesale And Retail Trade And Hotel Business,0,0,58,58
+Nandurbar,2016,"Transportation, Warehousing And Transportation",67,938,0,1005
+Nandurbar,2016,"Finance, Insurance, Real Estate And Trade Services",476,201,217,894
+Nandurbar,2016,"Collective, Social And Individual Service",11168,5633,3091,19892
+Nandurbar,2017,Agriculture,1069,514,0,1583
+Nandurbar,2017,Mining,24,0,0,24
+Nandurbar,2017,Commodity Manufacturing,6,0,2495,2501
+Nandurbar,2017,"Electricity Generation, Gas, Water And Sewage Services",12,828,0,840
+Nandurbar,2017,Construction,429,119,0,548
+Nandurbar,2017,Wholesale And Retail Trade And Hotel Business,0,0,119,119
+Nandurbar,2017,"Transportation, Warehousing And Transportation",63,934,0,997
+Nandurbar,2017,"Finance, Insurance, Real Estate And Trade Services",472,204,231,907
+Nandurbar,2017,"Collective, Social And Individual Service",11133,5606,3098,19837
+Nandurbar,2018,Agriculture,1075,519,0,1594
+Nandurbar,2018,Mining,21,0,0,21
+Nandurbar,2018,Commodity Manufacturing,6,0,2456,2462
+Nandurbar,2018,"Electricity Generation, Gas, Water And Sewage Services",11,824,0,835
+Nandurbar,2018,Construction,432,126,0,558
+Nandurbar,2018,Wholesale And Retail Trade And Hotel Business,0,0,116,116
+Nandurbar,2018,"Transportation, Warehousing And Transportation",61,929,0,990
+Nandurbar,2018,"Finance, Insurance, Real Estate And Trade Services",446,207,236,889
+Nandurbar,2018,"Collective, Social And Individual Service",11126,5602,3094,19822
+Nandurbar,2019,Agriculture,976,492,0,1468
+Nandurbar,2019,Mining,19,0,0,19
+Nandurbar,2019,Commodity Manufacturing,7,0,2384,2391
+Nandurbar,2019,"Electricity Generation, Gas, Water And Sewage Services",10,801,0,811
+Nandurbar,2019,Construction,416,109,0,525
+Nandurbar,2019,Wholesale And Retail Trade And Hotel Business,0,0,98,98
+Nandurbar,2019,"Transportation, Warehousing And Transportation",52,827,0,879
+Nandurbar,2019,"Finance, Insurance, Real Estate And Trade Services",407,181,211,799
+Nandurbar,2019,"Collective, Social And Individual Service",10928,5135,2891,18954
+Nandurbar,2020,Agriculture,971,483,0,1454
+Nandurbar,2020,Mining,15,0,0,15
+Nandurbar,2020,Commodity Manufacturing,5,0,2276,2281
+Nandurbar,2020,"Electricity Generation, Gas, Water And Sewage Services",8,781,0,789
+Nandurbar,2020,Construction,402,99,0,501
+Nandurbar,2020,Wholesale And Retail Trade And Hotel Business,0,0,101,101
+Nandurbar,2020,"Transportation, Warehousing And Transportation",51,822,0,873
+Nandurbar,2020,"Finance, Insurance, Real Estate And Trade Services",398,172,209,779
+Nandurbar,2020,"Collective, Social And Individual Service",10819,5102,2852,18773
+Nandurbar,2021,Agriculture,,,,
+Nandurbar,2021,Mining,,,,
+Nandurbar,2021,Commodity Manufacturing,,,,
+Nandurbar,2021,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Nandurbar,2021,Construction,,,,
+Nandurbar,2021,Wholesale And Retail Trade And Hotel Business,,,,
+Nandurbar,2021,"Transportation, Warehousing And Transportation",,,,
+Nandurbar,2021,"Finance, Insurance, Real Estate And Trade Services",,,,
+Nandurbar,2021,"Collective, Social And Individual Service",,,,
+Nashik,2012,Agriculture,1582,297,242,2121
+Nashik,2012,Mining,81,48,10,139
+Nashik,2012,Commodity Manufacturing,4772,8861,66712,80345
+Nashik,2012,"Electricity Generation, Gas, Water And Sewage Services",1158,4013,187,5358
+Nashik,2012,Construction,1237,3419,916,5572
+Nashik,2012,Wholesale And Retail Trade And Hotel Business,30,40,5849,5919
+Nashik,2012,"Transportation, Warehousing And Transportation",3219,6585,285,10089
+Nashik,2012,"Finance, Insurance, Real Estate And Trade Services",2319,3450,14557,20326
+Nashik,2012,"Collective, Social And Individual Service",17591,29545,34278,81414
+Nashik,2013,Agriculture,1539,281,227,2047
+Nashik,2013,Mining,74,42,7,123
+Nashik,2013,Commodity Manufacturing,4347,8791,63429,76567
+Nashik,2013,"Electricity Generation, Gas, Water And Sewage Services",1103,3992,172,5267
+Nashik,2013,Construction,1197,3382,787,5366
+Nashik,2013,Wholesale And Retail Trade And Hotel Business,26,35,5694,5755
+Nashik,2013,"Transportation, Warehousing And Transportation",3021,6378,278,9677
+Nashik,2013,"Finance, Insurance, Real Estate And Trade Services",2112,3312,12587,18011
+Nashik,2013,"Collective, Social And Individual Service",14078,22665,26209,62952
+Nashik,2014,Agriculture,1314,77,198,1589
+Nashik,2014,Mining,14101,2097,64835,81033
+Nashik,2014,Commodity Manufacturing,63,12,6256,6331
+Nashik,2014,"Electricity Generation, Gas, Water And Sewage Services",537,63,40,640
+Nashik,2014,Construction,1873,310,1610,3793
+Nashik,2014,Wholesale And Retail Trade And Hotel Business,8732,380,4148,13260
+Nashik,2014,"Transportation, Warehousing And Transportation",29,472,1887,2388
+Nashik,2014,"Finance, Insurance, Real Estate And Trade Services",2227,3639,11651,17517
+Nashik,2014,"Collective, Social And Individual Service",16112,26171,3753,46036
+Nashik,2015,Agriculture,19,0,0,19
+Nashik,2015,Mining,5105,2407,13817,21329
+Nashik,2015,Commodity Manufacturing,0,0,22,22
+Nashik,2015,"Electricity Generation, Gas, Water And Sewage Services",0,0,0,0
+Nashik,2015,Construction,0,0,209,209
+Nashik,2015,Wholesale And Retail Trade And Hotel Business,61,6129,339,6529
+Nashik,2015,"Transportation, Warehousing And Transportation",0,0,220,220
+Nashik,2015,"Finance, Insurance, Real Estate And Trade Services",0,39,2796,2835
+Nashik,2015,"Collective, Social And Individual Service",849,241,0,1090
+Nashik,2016,Agriculture,1510,85,210,1805
+Nashik,2016,Mining,15242,2118,65910,83270
+Nashik,2016,Commodity Manufacturing,75,17,7312,7404
+Nashik,2016,"Electricity Generation, Gas, Water And Sewage Services",714,85,58,857
+Nashik,2016,Construction,2212,507,1810,4529
+Nashik,2016,Wholesale And Retail Trade And Hotel Business,9453,570,5137,15160
+Nashik,2016,"Transportation, Warehousing And Transportation",65,517,1952,2534
+Nashik,2016,"Finance, Insurance, Real Estate And Trade Services",2333,3740,12452,18525
+Nashik,2016,"Collective, Social And Individual Service",1901,28212,4015,34128
+Nashik,2017,Agriculture,2254,437,438,3129
+Nashik,2017,Mining,12883,216,71912,85011
+Nashik,2017,Commodity Manufacturing,27,1438,3701,5166
+Nashik,2017,"Electricity Generation, Gas, Water And Sewage Services",658,143,0,801
+Nashik,2017,Construction,3,430,1034,4467
+Nashik,2017,Wholesale And Retail Trade And Hotel Business,2244,8212,4636,15092
+Nashik,2017,"Transportation, Warehousing And Transportation",627,2,2541,3170
+Nashik,2017,"Finance, Insurance, Real Estate And Trade Services",740,7230,19203,27173
+Nashik,2017,"Collective, Social And Individual Service",9741,30430,2871,43042
+Nashik,2018,Agriculture,1983,632,2641,5256
+Nashik,2018,Mining,12872,508,13069,26449
+Nashik,2018,Commodity Manufacturing,38,1509,1408,2955
+Nashik,2018,"Electricity Generation, Gas, Water And Sewage Services",821,0,859,1680
+Nashik,2018,Construction,2572,423,3013,6008
+Nashik,2018,Wholesale And Retail Trade And Hotel Business,2000,7604,9742,19346
+Nashik,2018,"Transportation, Warehousing And Transportation",416,2,414,832
+Nashik,2018,"Finance, Insurance, Real Estate And Trade Services",583,6188,6704,13475
+Nashik,2018,"Collective, Social And Individual Service",21454,356,45604,67414
+Nashik,2019,Agriculture,1787,888,885,3560
+Nashik,2019,Mining,12047,535,73530,86112
+Nashik,2019,Commodity Manufacturing,0,1453,3638,5091
+Nashik,2019,"Electricity Generation, Gas, Water And Sewage Services",0,961,0,961
+Nashik,2019,Construction,2929,27,1739,4695
+Nashik,2019,Wholesale And Retail Trade And Hotel Business,2763,6872,6637,16272
+Nashik,2019,"Transportation, Warehousing And Transportation",420,0,2391,2811
+Nashik,2019,"Finance, Insurance, Real Estate And Trade Services",395,5560,20574,26529
+Nashik,2019,"Collective, Social And Individual Service",44759,820,3628,49207
+Nashik,2020,Agriculture,1760,937,1035,3732
+Nashik,2020,Mining,11327,535,72150,84012
+Nashik,2020,Commodity Manufacturing,0,1446,3639,5085
+Nashik,2020,"Electricity Generation, Gas, Water And Sewage Services",0,958,0,958
+Nashik,2020,Construction,2950,26,1346,4322
+Nashik,2020,Wholesale And Retail Trade And Hotel Business,3058,6642,6320,16020
+Nashik,2020,"Transportation, Warehousing And Transportation",409,0,2339,2748
+Nashik,2020,"Finance, Insurance, Real Estate And Trade Services",393,5378,20987,26758
+Nashik,2020,"Collective, Social And Individual Service",44353,912,4055,49320
+Nashik,2021,Agriculture,1653,824,871,3348
+Nashik,2021,Mining,211,119,316,646
+Nashik,2021,Commodity Manufacturing,10931,535,72118,83584
+Nashik,2021,"Electricity Generation, Gas, Water And Sewage Services",0,1446,3641,5087
+Nashik,2021,Construction,2950,27,1331,4308
+Nashik,2021,Wholesale And Retail Trade And Hotel Business,59,196,6905,7160
+Nashik,2021,"Transportation, Warehousing And Transportation",2881,5585,335,8801
+Nashik,2021,"Finance, Insurance, Real Estate And Trade Services",108,5119,10890,16117
+Nashik,2021,"Collective, Social And Individual Service",5586,0,4975,10561
+Dharashiv,2012,Agriculture,879,37,203,1119
+Dharashiv,2012,Mining,3,0,4790,4793
+Dharashiv,2012,Commodity Manufacturing,90,0,593,683
+Dharashiv,2012,"Electricity Generation, Gas, Water And Sewage Services",1570,1240,41,2851
+Dharashiv,2012,Construction,23,0,45,68
+Dharashiv,2012,Wholesale And Retail Trade And Hotel Business,1032,3197,1102,5331
+Dharashiv,2012,"Transportation, Warehousing And Transportation",8003,72,865,8940
+Dharashiv,2012,"Finance, Insurance, Real Estate And Trade Services",7382,26,7052,14460
+Dharashiv,2012,"Collective, Social And Individual Service",2,0,199,201
+Dharashiv,2013,Agriculture,782,25,189,996
+Dharashiv,2013,Mining,2,0,4580,4582
+Dharashiv,2013,Commodity Manufacturing,79,0,564,643
+Dharashiv,2013,"Electricity Generation, Gas, Water And Sewage Services",1393,905,39,2337
+Dharashiv,2013,Construction,19,0,42,61
+Dharashiv,2013,Wholesale And Retail Trade And Hotel Business,944,2948,1074,4966
+Dharashiv,2013,"Transportation, Warehousing And Transportation",6996,68,852,7916
+Dharashiv,2013,"Finance, Insurance, Real Estate And Trade Services",7246,21,6993,14260
+Dharashiv,2013,"Collective, Social And Individual Service",2,0,188,190
+Dharashiv,2014,Agriculture,1096,835,227,2158
+Dharashiv,2014,Mining,2,1,6390,6393
+Dharashiv,2014,Commodity Manufacturing,154,79,782,1015
+Dharashiv,2014,"Electricity Generation, Gas, Water And Sewage Services",1794,1368,122,3284
+Dharashiv,2014,Construction,1443,870,0,2313
+Dharashiv,2014,Wholesale And Retail Trade And Hotel Business,1249,3047,1067,5363
+Dharashiv,2014,"Transportation, Warehousing And Transportation",7151,568,1253,8972
+Dharashiv,2014,"Finance, Insurance, Real Estate And Trade Services",8123,7509,5261,20893
+Dharashiv,2014,"Collective, Social And Individual Service",2446,6463,1109,10018
+Dharashiv,2015,Agriculture,1121,845,252,2218
+Dharashiv,2015,Mining,20,7,6420,6447
+Dharashiv,2015,Commodity Manufacturing,184,85,802,1071
+Dharashiv,2015,"Electricity Generation, Gas, Water And Sewage Services",1830,1372,135,3337
+Dharashiv,2015,Construction,1463,873,15,2351
+Dharashiv,2015,Wholesale And Retail Trade And Hotel Business,1284,3052,1091,5427
+Dharashiv,2015,"Transportation, Warehousing And Transportation",7191,570,1281,9042
+Dharashiv,2015,"Finance, Insurance, Real Estate And Trade Services",8150,7515,5280,20945
+Dharashiv,2015,"Collective, Social And Individual Service",2465,6467,1133,10065
+Dharashiv,2016,Agriculture,1141,855,263,2259
+Dharashiv,2016,Mining,25,11,6437,6473
+Dharashiv,2016,Commodity Manufacturing,190,91,812,1093
+Dharashiv,2016,"Electricity Generation, Gas, Water And Sewage Services",1833,1387,141,3361
+Dharashiv,2016,Construction,1467,884,19,2370
+Dharashiv,2016,Wholesale And Retail Trade And Hotel Business,1293,3071,1110,5474
+Dharashiv,2016,"Transportation, Warehousing And Transportation",7202,582,1295,9079
+Dharashiv,2016,"Finance, Insurance, Real Estate And Trade Services",8165,7530,5301,20996
+Dharashiv,2016,"Collective, Social And Individual Service",2512,6480,1214,10206
+Dharashiv,2017,Agriculture,1146,858,306,2310
+Dharashiv,2017,Mining,27,12,6492,6531
+Dharashiv,2017,Commodity Manufacturing,193,93,851,1137
+Dharashiv,2017,"Electricity Generation, Gas, Water And Sewage Services",1840,1394,168,3402
+Dharashiv,2017,Construction,1470,887,40,2397
+Dharashiv,2017,Wholesale And Retail Trade And Hotel Business,1306,3077,1161,5544
+Dharashiv,2017,"Transportation, Warehousing And Transportation",7219,587,1357,9163
+Dharashiv,2017,"Finance, Insurance, Real Estate And Trade Services",8175,7537,5452,21164
+Dharashiv,2017,"Collective, Social And Individual Service",2521,6486,1281,10288
+Dharashiv,2018,Agriculture,1186,860,323,2369
+Dharashiv,2018,Mining,30,12,6535,6577
+Dharashiv,2018,Commodity Manufacturing,205,93,983,1281
+Dharashiv,2018,"Electricity Generation, Gas, Water And Sewage Services",1860,1396,203,3459
+Dharashiv,2018,Construction,1501,890,55,2446
+Dharashiv,2018,Wholesale And Retail Trade And Hotel Business,1380,3080,1225,5685
+Dharashiv,2018,"Transportation, Warehousing And Transportation",7300,591,1397,9288
+Dharashiv,2018,"Finance, Insurance, Real Estate And Trade Services",8200,7545,5662,21407
+Dharashiv,2018,"Collective, Social And Individual Service",2535,6488,1301,10324
+Dharashiv,2019,Agriculture,1190,865,329,2384
+Dharashiv,2019,Mining,30,12,6540,6582
+Dharashiv,2019,Commodity Manufacturing,208,95,983,1286
+Dharashiv,2019,"Electricity Generation, Gas, Water And Sewage Services",1865,1397,205,3467
+Dharashiv,2019,Construction,1501,891,57,2449
+Dharashiv,2019,Wholesale And Retail Trade And Hotel Business,1390,3081,1235,5706
+Dharashiv,2019,"Transportation, Warehousing And Transportation",7315,591,1415,9321
+Dharashiv,2019,"Finance, Insurance, Real Estate And Trade Services",8732,7546,5833,22111
+Dharashiv,2019,"Collective, Social And Individual Service",4388,6497,1400,12285
+Dharashiv,2020,Agriculture,763,40,125,928
+Dharashiv,2020,Mining,0,0,0,0
+Dharashiv,2020,Commodity Manufacturing,124,15,4808,4947
+Dharashiv,2020,"Electricity Generation, Gas, Water And Sewage Services",0,1178,60,1238
+Dharashiv,2020,Construction,1043,0,1055,2098
+Dharashiv,2020,Wholesale And Retail Trade And Hotel Business,44,21,736,801
+Dharashiv,2020,"Transportation, Warehousing And Transportation",981,2715,163,3859
+Dharashiv,2020,"Finance, Insurance, Real Estate And Trade Services",120,697,1375,2192
+Dharashiv,2020,"Collective, Social And Individual Service",22778,3272,9702,35752
+Dharashiv,2021,Agriculture,721,41,125,887
+Dharashiv,2021,Mining,0,0,0,0
+Dharashiv,2021,Commodity Manufacturing,124,15,4777,4916
+Dharashiv,2021,"Electricity Generation, Gas, Water And Sewage Services",0,1175,60,1235
+Dharashiv,2021,Construction,1038,0,1105,2143
+Dharashiv,2021,Wholesale And Retail Trade And Hotel Business,46,21,714,781
+Dharashiv,2021,"Transportation, Warehousing And Transportation",980,2715,163,3858
+Dharashiv,2021,"Finance, Insurance, Real Estate And Trade Services",113,652,1410,2175
+Dharashiv,2021,"Collective, Social And Individual Service",22613,3271,9692,35576
+Palghar,2014,Agriculture,3527,268,184,3979
+Palghar,2014,Mining,0,0,179,179
+Palghar,2014,Commodity Manufacturing,176,519,80167,80862
+Palghar,2014,"Electricity Generation, Gas, Water And Sewage Services",367,5551,3151,9069
+Palghar,2014,Construction,2664,3287,1427,7378
+Palghar,2014,Wholesale And Retail Trade And Hotel Business,84,0,7059,7143
+Palghar,2014,"Transportation, Warehousing And Transportation",317,13892,778,14987
+Palghar,2014,"Finance, Insurance, Real Estate And Trade Services",3276,9097,47879,60252
+Palghar,2014,"Collective, Social And Individual Service",40385,38291,41777,120453
+Palghar,2015,Agriculture,3547,264,187,3998
+Palghar,2015,Mining,0,0,184,184
+Palghar,2015,Commodity Manufacturing,179,531,80238,80948
+Palghar,2015,"Electricity Generation, Gas, Water And Sewage Services",396,5564,3188,9148
+Palghar,2015,Construction,2679,3308,2008,7995
+Palghar,2015,Wholesale And Retail Trade And Hotel Business,0,0,7069,7069
+Palghar,2015,"Transportation, Warehousing And Transportation",352,14021,804,15177
+Palghar,2015,"Finance, Insurance, Real Estate And Trade Services",3362,9463,48209,61034
+Palghar,2015,"Collective, Social And Individual Service",40392,37992,42174,120558
+Palghar,2016,Agriculture,0,0,0,0
+Palghar,2016,Mining,0,0,0,0
+Palghar,2016,Commodity Manufacturing,0,0,0,0
+Palghar,2016,"Electricity Generation, Gas, Water And Sewage Services",0,0,0,0
+Palghar,2016,Construction,0,0,0,0
+Palghar,2016,Wholesale And Retail Trade And Hotel Business,0,0,0,0
+Palghar,2016,"Transportation, Warehousing And Transportation",0,0,0,0
+Palghar,2016,"Finance, Insurance, Real Estate And Trade Services",0,0,0,0
+Palghar,2016,"Collective, Social And Individual Service",0,0,0,0
+Palghar,2017,Agriculture,0,0,0,0
+Palghar,2017,Mining,0,0,0,0
+Palghar,2017,Commodity Manufacturing,0,0,0,0
+Palghar,2017,"Electricity Generation, Gas, Water And Sewage Services",0,0,0,0
+Palghar,2017,Construction,0,0,0,0
+Palghar,2017,Wholesale And Retail Trade And Hotel Business,0,0,0,0
+Palghar,2017,"Transportation, Warehousing And Transportation",0,0,0,0
+Palghar,2017,"Finance, Insurance, Real Estate And Trade Services",0,0,0,0
+Palghar,2017,"Collective, Social And Individual Service",0,0,0,0
+Palghar,2018,Agriculture,0,0,0,0
+Palghar,2018,Mining,0,0,0,0
+Palghar,2018,Commodity Manufacturing,0,0,0,0
+Palghar,2018,"Electricity Generation, Gas, Water And Sewage Services",0,0,0,0
+Palghar,2018,Construction,0,0,0,0
+Palghar,2018,Wholesale And Retail Trade And Hotel Business,0,0,0,0
+Palghar,2018,"Transportation, Warehousing And Transportation",0,0,0,0
+Palghar,2018,"Finance, Insurance, Real Estate And Trade Services",0,0,0,0
+Palghar,2018,"Collective, Social And Individual Service",0,0,0,0
+Palghar,2019,Agriculture,0,0,0,0
+Palghar,2019,Mining,0,0,0,0
+Palghar,2019,Commodity Manufacturing,0,0,3700,3700
+Palghar,2019,"Electricity Generation, Gas, Water And Sewage Services",1427,0,459,1886
+Palghar,2019,Construction,0,0,151,151
+Palghar,2019,Wholesale And Retail Trade And Hotel Business,0,0,304,304
+Palghar,2019,"Transportation, Warehousing And Transportation",0,493,677,1170
+Palghar,2019,"Finance, Insurance, Real Estate And Trade Services",0,0,0,0
+Palghar,2019,"Collective, Social And Individual Service",0,0,0,0
+Palghar,2020,Agriculture,0,0,0,0
+Palghar,2020,Mining,0,0,0,0
+Palghar,2020,Commodity Manufacturing,0,0,3200,3200
+Palghar,2020,"Electricity Generation, Gas, Water And Sewage Services",0,0,0,0
+Palghar,2020,Construction,0,0,0,0
+Palghar,2020,Wholesale And Retail Trade And Hotel Business,0,0,0,0
+Palghar,2020,"Transportation, Warehousing And Transportation",0,0,0,0
+Palghar,2020,"Finance, Insurance, Real Estate And Trade Services",0,0,0,0
+Palghar,2020,"Collective, Social And Individual Service",0,0,0,0
+Palghar,2021,Agriculture,0,0,0,0
+Palghar,2021,Mining,0,0,0,0
+Palghar,2021,Commodity Manufacturing,0,0,3800,3800
+Palghar,2021,"Electricity Generation, Gas, Water And Sewage Services",0,0,0,0
+Palghar,2021,Construction,0,0,0,0
+Palghar,2021,Wholesale And Retail Trade And Hotel Business,0,0,0,0
+Palghar,2021,"Transportation, Warehousing And Transportation",0,0,0,0
+Palghar,2021,"Finance, Insurance, Real Estate And Trade Services",0,0,0,0
+Palghar,2021,"Collective, Social And Individual Service",0,0,0,0
+Parbhani,2013,Agriculture,769,78,17,864
+Parbhani,2013,Mining,0,0,0,0
+Parbhani,2013,Commodity Manufacturing,0,0,16,16
+Parbhani,2013,"Electricity Generation, Gas, Water And Sewage Services",1509,1457,19,2985
+Parbhani,2013,Construction,62,0,56,118
+Parbhani,2013,Wholesale And Retail Trade And Hotel Business,234,3201,155,3590
+Parbhani,2013,"Transportation, Warehousing And Transportation",7889,2933,1532,12354
+Parbhani,2013,"Finance, Insurance, Real Estate And Trade Services",3431,6233,5120,14784
+Parbhani,2013,"Collective, Social And Individual Service",89,8,137,234
+Parbhani,2014,Agriculture,769,78,17,864
+Parbhani,2014,Mining,0,0,0,0
+Parbhani,2014,Commodity Manufacturing,0,0,16,16
+Parbhani,2014,"Electricity Generation, Gas, Water And Sewage Services",1533,1460,21,3014
+Parbhani,2014,Construction,56,0,52,108
+Parbhani,2014,Wholesale And Retail Trade And Hotel Business,234,3201,155,3590
+Parbhani,2014,"Transportation, Warehousing And Transportation",7889,2933,1532,12354
+Parbhani,2014,"Finance, Insurance, Real Estate And Trade Services",3453,7231,6133,16817
+Parbhani,2014,"Collective, Social And Individual Service",91,8,137,236
+Parbhani,2015,Agriculture,769,78,17,864
+Parbhani,2015,Mining,0,0,0,0
+Parbhani,2015,Commodity Manufacturing,0,0,16,16
+Parbhani,2015,"Electricity Generation, Gas, Water And Sewage Services",1533,1460,21,3014
+Parbhani,2015,Construction,56,0,52,108
+Parbhani,2015,Wholesale And Retail Trade And Hotel Business,234,3201,155,3590
+Parbhani,2015,"Transportation, Warehousing And Transportation",7889,2933,1532,12354
+Parbhani,2015,"Finance, Insurance, Real Estate And Trade Services",3723,7371,7093,18187
+Parbhani,2015,"Collective, Social And Individual Service",91,8,137,236
+Parbhani,2016,Agriculture,769,78,17,864
+Parbhani,2016,Mining,0,0,0,0
+Parbhani,2016,Commodity Manufacturing,0,0,16,16
+Parbhani,2016,"Electricity Generation, Gas, Water And Sewage Services",1533,1460,21,3014
+Parbhani,2016,Construction,56,0,52,108
+Parbhani,2016,Wholesale And Retail Trade And Hotel Business,234,3201,155,3590
+Parbhani,2016,"Transportation, Warehousing And Transportation",7889,2933,1532,12354
+Parbhani,2016,"Finance, Insurance, Real Estate And Trade Services",3723,7371,7203,18297
+Parbhani,2016,"Collective, Social And Individual Service",91,8,137,236
+Parbhani,2017,Agriculture,772,78,17,867
+Parbhani,2017,Mining,0,0,0,0
+Parbhani,2017,Commodity Manufacturing,0,0,22,22
+Parbhani,2017,"Electricity Generation, Gas, Water And Sewage Services",1605,1485,30,3120
+Parbhani,2017,Construction,56,0,60,116
+Parbhani,2017,Wholesale And Retail Trade And Hotel Business,309,3230,170,3709
+Parbhani,2017,"Transportation, Warehousing And Transportation",7910,2942,1513,12365
+Parbhani,2017,"Finance, Insurance, Real Estate And Trade Services",3780,7400,7220,18400
+Parbhani,2017,"Collective, Social And Individual Service",2959,155,238,3352
+Parbhani,2018,Agriculture,804,82,20,906
+Parbhani,2018,Mining,0,0,0,0
+Parbhani,2018,Commodity Manufacturing,0,0,22,22
+Parbhani,2018,"Electricity Generation, Gas, Water And Sewage Services",1648,1591,42,3281
+Parbhani,2018,Construction,69,0,76,145
+Parbhani,2018,Wholesale And Retail Trade And Hotel Business,328,3310,192,3830
+Parbhani,2018,"Transportation, Warehousing And Transportation",8140,3310,1632,13082
+Parbhani,2018,"Finance, Insurance, Real Estate And Trade Services",3809,7560,7540,18909
+Parbhani,2018,"Collective, Social And Individual Service",3010,168,280,3458
+Parbhani,2019,Agriculture,782,88,27,897
+Parbhani,2019,Mining,0,0,0,0
+Parbhani,2019,Commodity Manufacturing,0,0,20,20
+Parbhani,2019,"Electricity Generation, Gas, Water And Sewage Services",1652,1573,49,3274
+Parbhani,2019,Construction,50,0,80,130
+Parbhani,2019,Wholesale And Retail Trade And Hotel Business,58,0,170,228
+Parbhani,2019,"Transportation, Warehousing And Transportation",8047,3345,1643,13035
+Parbhani,2019,"Finance, Insurance, Real Estate And Trade Services",3893,7603,7689,19185
+Parbhani,2019,"Collective, Social And Individual Service",3174,210,274,3658
+Parbhani,2020,Agriculture,773,92,29,894
+Parbhani,2020,Mining,0,0,0,0
+Parbhani,2020,Commodity Manufacturing,0,0,32,32
+Parbhani,2020,"Electricity Generation, Gas, Water And Sewage Services",1666,1597,52,3315
+Parbhani,2020,Construction,43,0,94,137
+Parbhani,2020,Wholesale And Retail Trade And Hotel Business,82,0,182,264
+Parbhani,2020,"Transportation, Warehousing And Transportation",8220,3380,1654,13254
+Parbhani,2020,"Finance, Insurance, Real Estate And Trade Services",4010,7912,7710,19632
+Parbhani,2020,"Collective, Social And Individual Service",3403,278,298,3979
+Parbhani,2021,Agriculture,773,96,40,909
+Parbhani,2021,Mining,0,0,0,0
+Parbhani,2021,Commodity Manufacturing,0,0,49,49
+Parbhani,2021,"Electricity Generation, Gas, Water And Sewage Services",1666,1608,52,3326
+Parbhani,2021,Construction,56,0,121,177
+Parbhani,2021,Wholesale And Retail Trade And Hotel Business,82,0,260,342
+Parbhani,2021,"Transportation, Warehousing And Transportation",8225,3385,1659,13269
+Parbhani,2021,"Finance, Insurance, Real Estate And Trade Services",4032,7927,7720,19679
+Parbhani,2021,"Collective, Social And Individual Service",3408,281,311,4000
+Raigad,2012,Agriculture,1424,33,175,1632
+Raigad,2012,Mining,0,0,0,0
+Raigad,2012,Commodity Manufacturing,0,3784,44747,48531
+Raigad,2012,"Electricity Generation, Gas, Water And Sewage Services",0,889,7,896
+Raigad,2012,Construction,717,1631,179,2527
+Raigad,2012,Wholesale And Retail Trade And Hotel Business,0,0,4221,4221
+Raigad,2012,"Transportation, Warehousing And Transportation",1604,5372,1981,8957
+Raigad,2012,"Finance, Insurance, Real Estate And Trade Services",232,1503,1951,3686
+Raigad,2012,"Collective, Social And Individual Service",8053,12052,7379,27484
+Raigad,2013,Agriculture,1457,0,189,1646
+Raigad,2013,Mining,0,0,0,0
+Raigad,2013,Commodity Manufacturing,0,2256,39095,41351
+Raigad,2013,"Electricity Generation, Gas, Water And Sewage Services",0,889,0,889
+Raigad,2013,Construction,745,1588,180,2513
+Raigad,2013,Wholesale And Retail Trade And Hotel Business,0,0,3775,3775
+Raigad,2013,"Transportation, Warehousing And Transportation",1604,3293,2388,7285
+Raigad,2013,"Finance, Insurance, Real Estate And Trade Services",34,1287,1692,3013
+Raigad,2013,"Collective, Social And Individual Service",19865,450,7164,27479
+Raigad,2014,Agriculture,1455,0,189,1644
+Raigad,2014,Mining,0,0,0,0
+Raigad,2014,Commodity Manufacturing,18,2254,44711,46983
+Raigad,2014,"Electricity Generation, Gas, Water And Sewage Services",0,889,131,1020
+Raigad,2014,Construction,745,1588,239,2572
+Raigad,2014,Wholesale And Retail Trade And Hotel Business,20,0,4259,4279
+Raigad,2014,"Transportation, Warehousing And Transportation",1605,3803,3140,8548
+Raigad,2014,"Finance, Insurance, Real Estate And Trade Services",34,1299,1732,3065
+Raigad,2014,"Collective, Social And Individual Service",19987,441,7797,28225
+Raigad,2015,Agriculture,1455,0,201,1656
+Raigad,2015,Mining,3,0,255,258
+Raigad,2015,Commodity Manufacturing,18,2219,45104,47341
+Raigad,2015,"Electricity Generation, Gas, Water And Sewage Services",0,889,175,1064
+Raigad,2015,Construction,745,1588,284,2617
+Raigad,2015,Wholesale And Retail Trade And Hotel Business,20,0,4316,4336
+Raigad,2015,"Transportation, Warehousing And Transportation",1605,3731,3106,8442
+Raigad,2015,"Finance, Insurance, Real Estate And Trade Services",34,1300,1779,3113
+Raigad,2015,"Collective, Social And Individual Service",19945,506,8169,28620
+Raigad,2016,Agriculture,1455,0,201,1656
+Raigad,2016,Mining,3,0,255,258
+Raigad,2016,Commodity Manufacturing,18,2219,47234,49471
+Raigad,2016,"Electricity Generation, Gas, Water And Sewage Services",0,889,175,1064
+Raigad,2016,Construction,745,1590,335,2670
+Raigad,2016,Wholesale And Retail Trade And Hotel Business,20,0,4519,4539
+Raigad,2016,"Transportation, Warehousing And Transportation",1605,3731,3148,8484
+Raigad,2016,"Finance, Insurance, Real Estate And Trade Services",34,1326,1912,3272
+Raigad,2016,"Collective, Social And Individual Service",19949,526,8655,29130
+Raigad,2017,Agriculture,1458,0,589,2065
+Raigad,2017,Mining,0,2,5,9
+Raigad,2017,Commodity Manufacturing,0,2041,48032,50497
+Raigad,2017,"Electricity Generation, Gas, Water And Sewage Services",0,889,48,948
+Raigad,2017,Construction,855,1566,307,2754
+Raigad,2017,Wholesale And Retail Trade And Hotel Business,0,17,1372,1415
+Raigad,2017,"Transportation, Warehousing And Transportation",1701,3258,3454,8472
+Raigad,2017,"Finance, Insurance, Real Estate And Trade Services",50,1354,1488,3022
+Raigad,2017,"Collective, Social And Individual Service",19909,500,8970,29691
+Raigad,2018,Agriculture,1458,0,391,1849
+Raigad,2018,Mining,1,2,259,262
+Raigad,2018,Commodity Manufacturing,792,2776,58353,61921
+Raigad,2018,"Electricity Generation, Gas, Water And Sewage Services",0,889,499,1388
+Raigad,2018,Construction,1440,1145,311,2896
+Raigad,2018,Wholesale And Retail Trade And Hotel Business,0,186,1419,1605
+Raigad,2018,"Transportation, Warehousing And Transportation",1700,4704,4259,10663
+Raigad,2018,"Finance, Insurance, Real Estate And Trade Services",50,1359,1679,3088
+Raigad,2018,"Collective, Social And Individual Service",20233,342,9656,30231
+Raigad,2019,Agriculture,1458,0,391,1849
+Raigad,2019,Mining,1,2,257,260
+Raigad,2019,Commodity Manufacturing,631,2839,59219,62689
+Raigad,2019,"Electricity Generation, Gas, Water And Sewage Services",0,889,507,1396
+Raigad,2019,Construction,1330,1145,311,2786
+Raigad,2019,Wholesale And Retail Trade And Hotel Business,0,0,1903,1903
+Raigad,2019,"Transportation, Warehousing And Transportation",1700,4732,4293,10725
+Raigad,2019,"Finance, Insurance, Real Estate And Trade Services",50,1310,1508,2868
+Raigad,2019,"Collective, Social And Individual Service",20206,342,9992,30540
+Raigad,2020,Agriculture,1455,0,426,1881
+Raigad,2020,Mining,1,2,248,251
+Raigad,2020,Commodity Manufacturing,270,2997,58765,62032
+Raigad,2020,"Electricity Generation, Gas, Water And Sewage Services",0,889,563,1452
+Raigad,2020,Construction,1330,1145,307,2782
+Raigad,2020,Wholesale And Retail Trade And Hotel Business,0,0,1574,1574
+Raigad,2020,"Transportation, Warehousing And Transportation",4663,1769,4167,10599
+Raigad,2020,"Finance, Insurance, Real Estate And Trade Services",50,1310,1485,2845
+Raigad,2020,"Collective, Social And Individual Service",20589,342,9974,30905
+Raigad,2021,Agriculture,1455,0,522,1977
+Raigad,2021,Mining,1,2,252,255
+Raigad,2021,Commodity Manufacturing,270,2930,60783,63983
+Raigad,2021,"Electricity Generation, Gas, Water And Sewage Services",0,889,643,1532
+Raigad,2021,Construction,1330,1145,329,2804
+Raigad,2021,Wholesale And Retail Trade And Hotel Business,0,0,1589,1589
+Raigad,2021,"Transportation, Warehousing And Transportation",1700,4656,4193,10549
+Raigad,2021,"Finance, Insurance, Real Estate And Trade Services",50,1310,1515,2875
+Raigad,2021,"Collective, Social And Individual Service",20534,342,9963,30839
+Ratnagiri,2006,Agriculture,194,42,726,962
+Ratnagiri,2006,Mining,0,0,0,0
+Ratnagiri,2006,Commodity Manufacturing,116,0,5353,5469
+Ratnagiri,2006,"Electricity Generation, Gas, Water And Sewage Services",0,1701,0,1701
+Ratnagiri,2006,Construction,1824,1884,0,3708
+Ratnagiri,2006,Wholesale And Retail Trade And Hotel Business,0,0,336,336
+Ratnagiri,2006,"Transportation, Warehousing And Transportation",40,3679,15,3734
+Ratnagiri,2006,"Finance, Insurance, Real Estate And Trade Services",895,1249,1768,3912
+Ratnagiri,2006,"Collective, Social And Individual Service",5584,13115,5077,23776
+Ratnagiri,2008,Agriculture,187,34,790,1011
+Ratnagiri,2008,Mining,0,0,0,0
+Ratnagiri,2008,Commodity Manufacturing,101,0,5530,5631
+Ratnagiri,2008,"Electricity Generation, Gas, Water And Sewage Services",0,1624,0,1624
+Ratnagiri,2008,Construction,1731,1936,0,3667
+Ratnagiri,2008,Wholesale And Retail Trade And Hotel Business,0,0,296,296
+Ratnagiri,2008,"Transportation, Warehousing And Transportation",43,3521,17,3581
+Ratnagiri,2008,"Finance, Insurance, Real Estate And Trade Services",469,1634,1601,3704
+Ratnagiri,2008,"Collective, Social And Individual Service",5563,12883,5440,23886
+Ratnagiri,2009,Agriculture,176,36,454,666
+Ratnagiri,2009,Mining,0,0,0,0
+Ratnagiri,2009,Commodity Manufacturing,91,0,7580,7671
+Ratnagiri,2009,"Electricity Generation, Gas, Water And Sewage Services",0,1615,281,1896
+Ratnagiri,2009,Construction,1616,1920,15,3551
+Ratnagiri,2009,Wholesale And Retail Trade And Hotel Business,0,0,375,375
+Ratnagiri,2009,"Transportation, Warehousing And Transportation",40,3667,16,3723
+Ratnagiri,2009,"Finance, Insurance, Real Estate And Trade Services",428,1698,1773,3899
+Ratnagiri,2009,"Collective, Social And Individual Service",5561,12973,6983,25517
+Ratnagiri,2010,Agriculture,164,39,441,644
+Ratnagiri,2010,Mining,0,0,0,0
+Ratnagiri,2010,Commodity Manufacturing,85,0,8007,8092
+Ratnagiri,2010,"Electricity Generation, Gas, Water And Sewage Services",0,1775,383,2158
+Ratnagiri,2010,Construction,1509,2024,15,3548
+Ratnagiri,2010,Wholesale And Retail Trade And Hotel Business,0,0,369,369
+Ratnagiri,2010,"Transportation, Warehousing And Transportation",44,3912,15,3971
+Ratnagiri,2010,"Finance, Insurance, Real Estate And Trade Services",416,1694,1493,3603
+Ratnagiri,2010,"Collective, Social And Individual Service",5695,12961,7214,25870
+Ratnagiri,2011,Agriculture,168,37,449,654
+Ratnagiri,2011,Mining,0,0,0,0
+Ratnagiri,2011,Commodity Manufacturing,79,0,8344,8423
+Ratnagiri,2011,"Electricity Generation, Gas, Water And Sewage Services",0,1701,404,2105
+Ratnagiri,2011,Construction,1424,2070,15,3509
+Ratnagiri,2011,Wholesale And Retail Trade And Hotel Business,0,0,364,364
+Ratnagiri,2011,"Transportation, Warehousing And Transportation",43,4102,18,4163
+Ratnagiri,2011,"Finance, Insurance, Real Estate And Trade Services",441,1760,1345,3546
+Ratnagiri,2011,"Collective, Social And Individual Service",5688,13094,6451,25233
+Ratnagiri,2012,Agriculture,161,26,425,612
+Ratnagiri,2012,Mining,0,0,0,0
+Ratnagiri,2012,Commodity Manufacturing,73,0,8705,8778
+Ratnagiri,2012,"Electricity Generation, Gas, Water And Sewage Services",0,1653,414,2067
+Ratnagiri,2012,Construction,1385,2071,15,3471
+Ratnagiri,2012,Wholesale And Retail Trade And Hotel Business,0,0,373,373
+Ratnagiri,2012,"Transportation, Warehousing And Transportation",42,3977,17,4036
+Ratnagiri,2012,"Finance, Insurance, Real Estate And Trade Services",448,1715,1342,3505
+Ratnagiri,2012,"Collective, Social And Individual Service",5763,13113,6485,25361
+Ratnagiri,2013,Agriculture,144,14,0,158
+Ratnagiri,2013,Mining,0,0,0,0
+Ratnagiri,2013,Commodity Manufacturing,71,0,8401,8472
+Ratnagiri,2013,"Electricity Generation, Gas, Water And Sewage Services",0,1654,407,2061
+Ratnagiri,2013,Construction,1380,2070,15,3465
+Ratnagiri,2013,Wholesale And Retail Trade And Hotel Business,0,0,359,359
+Ratnagiri,2013,"Transportation, Warehousing And Transportation",39,3940,22,4001
+Ratnagiri,2013,"Finance, Insurance, Real Estate And Trade Services",441,1688,1374,3503
+Ratnagiri,2013,"Collective, Social And Individual Service",5743,13179,6208,25130
+Ratnagiri,2014,Agriculture,170,23,55,248
+Ratnagiri,2014,Mining,0,0,0,0
+Ratnagiri,2014,Commodity Manufacturing,81,0,8801,8882
+Ratnagiri,2014,"Electricity Generation, Gas, Water And Sewage Services",0,1675,420,2095
+Ratnagiri,2014,Construction,1472,2124,18,3614
+Ratnagiri,2014,Wholesale And Retail Trade And Hotel Business,0,0,370,370
+Ratnagiri,2014,"Transportation, Warehousing And Transportation",52,3960,25,4037
+Ratnagiri,2014,"Finance, Insurance, Real Estate And Trade Services",531,1918,1554,4003
+Ratnagiri,2014,"Collective, Social And Individual Service",5803,13379,6333,25515
+Ratnagiri,2015,Agriculture,147,18,0,165
+Ratnagiri,2015,Mining,0,0,0,0
+Ratnagiri,2015,Commodity Manufacturing,75,0,8510,8585
+Ratnagiri,2015,"Electricity Generation, Gas, Water And Sewage Services",1,1677,410,2088
+Ratnagiri,2015,Construction,1375,2081,17,3473
+Ratnagiri,2015,Wholesale And Retail Trade And Hotel Business,0,0,360,360
+Ratnagiri,2015,"Transportation, Warehousing And Transportation",42,3945,27,4014
+Ratnagiri,2015,"Finance, Insurance, Real Estate And Trade Services",438,1677,1372,3487
+Ratnagiri,2015,"Collective, Social And Individual Service",5745,13170,6201,25116
+Ratnagiri,2016,Agriculture,153,17,0,170
+Ratnagiri,2016,Mining,1,0,0,1
+Ratnagiri,2016,Commodity Manufacturing,82,0,8583,8665
+Ratnagiri,2016,"Electricity Generation, Gas, Water And Sewage Services",2,1690,421,2113
+Ratnagiri,2016,Construction,1371,2086,19,3476
+Ratnagiri,2016,Wholesale And Retail Trade And Hotel Business,0,0,364,364
+Ratnagiri,2016,"Transportation, Warehousing And Transportation",47,4011,24,4082
+Ratnagiri,2016,"Finance, Insurance, Real Estate And Trade Services",455,1690,1412,3557
+Ratnagiri,2016,"Collective, Social And Individual Service",5772,13174,8315,27261
+Ratnagiri,2017,Agriculture,174,189,1547,1910
+Ratnagiri,2017,Mining,0,0,9,9
+Ratnagiri,2017,Commodity Manufacturing,86,214,10490,10790
+Ratnagiri,2017,"Electricity Generation, Gas, Water And Sewage Services",0,2739,441,3180
+Ratnagiri,2017,Construction,1358,3544,79,4981
+Ratnagiri,2017,Wholesale And Retail Trade And Hotel Business,0,0,501,501
+Ratnagiri,2017,"Transportation, Warehousing And Transportation",33,4986,20,5039
+Ratnagiri,2017,"Finance, Insurance, Real Estate And Trade Services",72,1476,1340,2888
+Ratnagiri,2017,"Collective, Social And Individual Service",17,17,7,41
+Ratnagiri,2018,Agriculture,29,29,1590,1656
+Ratnagiri,2018,Mining,0,0,0,0
+Ratnagiri,2018,Commodity Manufacturing,0,0,5389,5445
+Ratnagiri,2018,"Electricity Generation, Gas, Water And Sewage Services",0,512,0,514
+Ratnagiri,2018,Construction,0,2064,0,2066
+Ratnagiri,2018,Wholesale And Retail Trade And Hotel Business,0,0,172,176
+Ratnagiri,2018,"Transportation, Warehousing And Transportation",0,4419,111,4534
+Ratnagiri,2018,"Finance, Insurance, Real Estate And Trade Services",0,0,841,855
+Ratnagiri,2018,"Collective, Social And Individual Service",11,11,0,24
+Ratnagiri,2019,Agriculture,173,188,1674,2035
+Ratnagiri,2019,Mining,0,0,0,0
+Ratnagiri,2019,Commodity Manufacturing,77,214,11220,11511
+Ratnagiri,2019,"Electricity Generation, Gas, Water And Sewage Services",0,2732,554,3286
+Ratnagiri,2019,Construction,3609,3609,257,7475
+Ratnagiri,2019,Wholesale And Retail Trade And Hotel Business,0,0,752,752
+Ratnagiri,2019,"Transportation, Warehousing And Transportation",32,5464,122,5618
+Ratnagiri,2019,"Finance, Insurance, Real Estate And Trade Services",63,1497,1417,2977
+Ratnagiri,2019,"Collective, Social And Individual Service",16,16,7,39
+Ratnagiri,2020,Agriculture,,,,
+Ratnagiri,2020,Mining,,,,
+Ratnagiri,2020,Commodity Manufacturing,,,,
+Ratnagiri,2020,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Ratnagiri,2020,Construction,,,,
+Ratnagiri,2020,Wholesale And Retail Trade And Hotel Business,,,,
+Ratnagiri,2020,"Transportation, Warehousing And Transportation",,,,
+Ratnagiri,2020,"Finance, Insurance, Real Estate And Trade Services",,,,
+Ratnagiri,2020,"Collective, Social And Individual Service",,,,
+Ratnagiri,2021,Agriculture,268,310,1649,2227
+Ratnagiri,2021,Mining,0,0,0,0
+Ratnagiri,2021,Commodity Manufacturing,117,254,12204,12575
+Ratnagiri,2021,"Electricity Generation, Gas, Water And Sewage Services",0,2714,599,3313
+Ratnagiri,2021,Construction,3614,3614,1185,8413
+Ratnagiri,2021,Wholesale And Retail Trade And Hotel Business,0,0,738,738
+Ratnagiri,2021,"Transportation, Warehousing And Transportation",30,4945,156,5131
+Ratnagiri,2021,"Finance, Insurance, Real Estate And Trade Services",67,1675,1279,3021
+Ratnagiri,2021,"Collective, Social And Individual Service",10,10,7,27
+Sindhudurg,2012,Agriculture,528,26,0,554
+Sindhudurg,2012,Mining,0,0,112,112
+Sindhudurg,2012,Commodity Manufacturing,40,1,2252,2293
+Sindhudurg,2012,"Electricity Generation, Gas, Water And Sewage Services",0,417,0,417
+Sindhudurg,2012,Construction,505,374,20,899
+Sindhudurg,2012,Wholesale And Retail Trade And Hotel Business,0,0,654,654
+Sindhudurg,2012,"Transportation, Warehousing And Transportation",0,2346,27,2373
+Sindhudurg,2012,"Finance, Insurance, Real Estate And Trade Services",999,1136,1060,3195
+Sindhudurg,2012,"Collective, Social And Individual Service",3549,6799,4099,14447
+Sindhudurg,2013,Agriculture,530,31,50,611
+Sindhudurg,2013,Mining,2,0,92,94
+Sindhudurg,2013,Commodity Manufacturing,36,1,2114,2151
+Sindhudurg,2013,"Electricity Generation, Gas, Water And Sewage Services",0,431,0,431
+Sindhudurg,2013,Construction,464,376,13,853
+Sindhudurg,2013,Wholesale And Retail Trade And Hotel Business,0,0,775,775
+Sindhudurg,2013,"Transportation, Warehousing And Transportation",0,43,27,70
+Sindhudurg,2013,"Finance, Insurance, Real Estate And Trade Services",1017,1217,1174,3408
+Sindhudurg,2013,"Collective, Social And Individual Service",3691,6815,4149,14655
+Sindhudurg,2014,Agriculture,597,31,148,776
+Sindhudurg,2014,Mining,26,8,1375,1409
+Sindhudurg,2014,Commodity Manufacturing,0,485,742,1227
+Sindhudurg,2014,"Electricity Generation, Gas, Water And Sewage Services",344,2,13,359
+Sindhudurg,2014,Construction,118,332,135,585
+Sindhudurg,2014,Wholesale And Retail Trade And Hotel Business,1005,2504,607,4116
+Sindhudurg,2014,"Transportation, Warehousing And Transportation",0,242,15,257
+Sindhudurg,2014,"Finance, Insurance, Real Estate And Trade Services",34,992,1183,2209
+Sindhudurg,2014,"Collective, Social And Individual Service",3726,6644,4234,14604
+Sindhudurg,2015,Agriculture,604,31,145,780
+Sindhudurg,2015,Mining,19,0,1416,1435
+Sindhudurg,2015,Commodity Manufacturing,0,494,761,1255
+Sindhudurg,2015,"Electricity Generation, Gas, Water And Sewage Services",212,2,13,227
+Sindhudurg,2015,Construction,111,332,155,598
+Sindhudurg,2015,Wholesale And Retail Trade And Hotel Business,982,2559,607,4148
+Sindhudurg,2015,"Transportation, Warehousing And Transportation",0,225,0,225
+Sindhudurg,2015,"Finance, Insurance, Real Estate And Trade Services",30,1022,1163,2215
+Sindhudurg,2015,"Collective, Social And Individual Service",3080,6581,4216,13877
+Sindhudurg,2016,Agriculture,604,31,145,780
+Sindhudurg,2016,Mining,19,0,1416,1435
+Sindhudurg,2016,Commodity Manufacturing,0,494,761,1255
+Sindhudurg,2016,"Electricity Generation, Gas, Water And Sewage Services",212,2,13,227
+Sindhudurg,2016,Construction,111,332,155,598
+Sindhudurg,2016,Wholesale And Retail Trade And Hotel Business,982,2559,607,4148
+Sindhudurg,2016,"Transportation, Warehousing And Transportation",0,225,0,225
+Sindhudurg,2016,"Finance, Insurance, Real Estate And Trade Services",30,1022,1163,2215
+Sindhudurg,2016,"Collective, Social And Individual Service",3080,6581,4216,13877
+Sindhudurg,2017,Agriculture,1573,422,304,2299
+Sindhudurg,2017,Mining,13,0,1364,1377
+Sindhudurg,2017,Commodity Manufacturing,1,680,688,1369
+Sindhudurg,2017,"Electricity Generation, Gas, Water And Sewage Services",169,2,13,184
+Sindhudurg,2017,Construction,0,0,164,164
+Sindhudurg,2017,Wholesale And Retail Trade And Hotel Business,982,2287,163,3432
+Sindhudurg,2017,"Transportation, Warehousing And Transportation",0,212,0,212
+Sindhudurg,2017,"Finance, Insurance, Real Estate And Trade Services",23,893,1037,1953
+Sindhudurg,2017,"Collective, Social And Individual Service",3176,6437,4763,14376
+Sindhudurg,2018,Agriculture,575,33,199,807
+Sindhudurg,2018,Mining,2,0,84,86
+Sindhudurg,2018,Commodity Manufacturing,0,4,2035,2039
+Sindhudurg,2018,"Electricity Generation, Gas, Water And Sewage Services",0,683,0,683
+Sindhudurg,2018,Construction,410,391,19,820
+Sindhudurg,2018,Wholesale And Retail Trade And Hotel Business,0,0,573,573
+Sindhudurg,2018,"Transportation, Warehousing And Transportation",964,2349,167,3480
+Sindhudurg,2018,"Finance, Insurance, Real Estate And Trade Services",0,1119,1151,2270
+Sindhudurg,2018,"Collective, Social And Individual Service",3839,6220,4272,14331
+Sindhudurg,2019,Agriculture,626,33,253,912
+Sindhudurg,2019,Mining,12,0,1381,1393
+Sindhudurg,2019,Commodity Manufacturing,1,580,790,1371
+Sindhudurg,2019,"Electricity Generation, Gas, Water And Sewage Services",431,324,11,766
+Sindhudurg,2019,Construction,0,0,215,215
+Sindhudurg,2019,Wholesale And Retail Trade And Hotel Business,925,2343,526,3794
+Sindhudurg,2019,"Transportation, Warehousing And Transportation",0,64,35,99
+Sindhudurg,2019,"Finance, Insurance, Real Estate And Trade Services",28,918,1152,2098
+Sindhudurg,2019,"Collective, Social And Individual Service",4655,5254,4222,14131
+Sindhudurg,2020,Agriculture,547,29,245,821
+Sindhudurg,2020,Mining,10,0,1433,1443
+Sindhudurg,2020,Commodity Manufacturing,1,555,705,1261
+Sindhudurg,2020,"Electricity Generation, Gas, Water And Sewage Services",375,291,11,677
+Sindhudurg,2020,Construction,0,0,597,597
+Sindhudurg,2020,Wholesale And Retail Trade And Hotel Business,928,2271,136,3335
+Sindhudurg,2020,"Transportation, Warehousing And Transportation",0,47,13,60
+Sindhudurg,2020,"Finance, Insurance, Real Estate And Trade Services",24,938,1143,2105
+Sindhudurg,2020,"Collective, Social And Individual Service",4451,5131,4269,13851
+Sindhudurg,2021,Agriculture,567,29,238,834
+Sindhudurg,2021,Mining,8,0,1397,1405
+Sindhudurg,2021,Commodity Manufacturing,499,0,863,1362
+Sindhudurg,2021,"Electricity Generation, Gas, Water And Sewage Services",0,0,11,11
+Sindhudurg,2021,Construction,0,0,601,601
+Sindhudurg,2021,Wholesale And Retail Trade And Hotel Business,3189,0,136,3325
+Sindhudurg,2021,"Transportation, Warehousing And Transportation",47,0,13,60
+Sindhudurg,2021,"Finance, Insurance, Real Estate And Trade Services",936,0,1101,2037
+Sindhudurg,2021,"Collective, Social And Individual Service",5129,5056,4269,14454
+Thane,2012,Agriculture,3526,259,595,4380
+Thane,2012,Mining,0,0,177,177
+Thane,2012,Commodity Manufacturing,173,510,79165,79848
+Thane,2012,"Electricity Generation, Gas, Water And Sewage Services",360,5550,2939,8849
+Thane,2012,Construction,2663,3281,1222,7166
+Thane,2012,Wholesale And Retail Trade And Hotel Business,82,0,6363,6445
+Thane,2012,"Transportation, Warehousing And Transportation",312,13866,668,14846
+Thane,2012,"Finance, Insurance, Real Estate And Trade Services",3273,9096,47375,59744
+Thane,2012,"Collective, Social And Individual Service",40392,38273,41483,120148
+Thane,2013,Agriculture,3526,268,183,3977
+Thane,2013,Mining,0,0,177,177
+Thane,2013,Commodity Manufacturing,173,519,80165,80857
+Thane,2013,"Electricity Generation, Gas, Water And Sewage Services",360,5550,3149,9059
+Thane,2013,Construction,2663,3286,1425,7374
+Thane,2013,Wholesale And Retail Trade And Hotel Business,82,0,7051,7133
+Thane,2013,"Transportation, Warehousing And Transportation",312,13891,774,14977
+Thane,2013,"Finance, Insurance, Real Estate And Trade Services",3273,9096,47875,60244
+Thane,2013,"Collective, Social And Individual Service",40392,38289,41784,120465
+Thane,2014,Agriculture,3527,268,184,3979
+Thane,2014,Mining,0,0,179,179
+Thane,2014,Commodity Manufacturing,176,519,80167,80862
+Thane,2014,"Electricity Generation, Gas, Water And Sewage Services",367,5551,3151,9069
+Thane,2014,Construction,2664,3287,1427,7378
+Thane,2014,Wholesale And Retail Trade And Hotel Business,84,0,7059,7143
+Thane,2014,"Transportation, Warehousing And Transportation",317,13892,778,14987
+Thane,2014,"Finance, Insurance, Real Estate And Trade Services",3276,9097,47879,60252
+Thane,2014,"Collective, Social And Individual Service",40385,38291,41777,120453
+Thane,2015,Agriculture,3547,264,187,3998
+Thane,2015,Mining,0,0,184,184
+Thane,2015,Commodity Manufacturing,179,531,80238,80948
+Thane,2015,"Electricity Generation, Gas, Water And Sewage Services",396,5564,3188,9148
+Thane,2015,Construction,2679,3308,2008,7995
+Thane,2015,Wholesale And Retail Trade And Hotel Business,0,0,7069,7069
+Thane,2015,"Transportation, Warehousing And Transportation",352,14021,804,15177
+Thane,2015,"Finance, Insurance, Real Estate And Trade Services",3362,9463,48209,61034
+Thane,2015,"Collective, Social And Individual Service",40392,37992,42174,120558
+Thane,2016,Agriculture,3547,364,371,4282
+Thane,2016,Mining,0,0,0,0
+Thane,2016,Commodity Manufacturing,179,630,83733,84542
+Thane,2016,"Electricity Generation, Gas, Water And Sewage Services",396,5665,4688,10749
+Thane,2016,Construction,2679,3408,3009,9096
+Thane,2016,Wholesale And Retail Trade And Hotel Business,0,0,8569,8569
+Thane,2016,"Transportation, Warehousing And Transportation",352,15021,804,16177
+Thane,2016,"Finance, Insurance, Real Estate And Trade Services",3362,8663,49709,61734
+Thane,2016,"Collective, Social And Individual Service",40665,38476,44674,123815
+Thane,2017,Agriculture,3747,414,421,4582
+Thane,2017,Mining,0,0,0,0
+Thane,2017,Commodity Manufacturing,679,1130,92864,94673
+Thane,2017,"Electricity Generation, Gas, Water And Sewage Services",596,5965,5088,11649
+Thane,2017,Construction,2729,3508,3220,9457
+Thane,2017,Wholesale And Retail Trade And Hotel Business,0,0,9169,9169
+Thane,2017,"Transportation, Warehousing And Transportation",402,15421,954,16777
+Thane,2017,"Finance, Insurance, Real Estate And Trade Services",3462,8863,50009,62334
+Thane,2017,"Collective, Social And Individual Service",40715,38526,45174,124415
+Thane,2018,Agriculture,3700,410,421,4531
+Thane,2018,Mining,0,0,0,0
+Thane,2018,Commodity Manufacturing,669,1115,91864,93648
+Thane,2018,"Electricity Generation, Gas, Water And Sewage Services",590,5902,4988,11480
+Thane,2018,Construction,2721,3501,3209,9431
+Thane,2018,Wholesale And Retail Trade And Hotel Business,0,0,10115,10115
+Thane,2018,"Transportation, Warehousing And Transportation",508,15421,989,16918
+Thane,2018,"Finance, Insurance, Real Estate And Trade Services",3438,8812,49849,62099
+Thane,2018,"Collective, Social And Individual Service",40710,38500,45274,124484
+Thane,2019,Agriculture,3001,210,421,3632
+Thane,2019,Mining,0,0,0,0
+Thane,2019,Commodity Manufacturing,660,1101,88864,90625
+Thane,2019,"Electricity Generation, Gas, Water And Sewage Services",590,5302,4987,10879
+Thane,2019,Construction,2721,3501,2920,9142
+Thane,2019,Wholesale And Retail Trade And Hotel Business,0,0,11125,11125
+Thane,2019,"Transportation, Warehousing And Transportation",408,1501,989,2898
+Thane,2019,"Finance, Insurance, Real Estate And Trade Services",3238,8812,49840,61890
+Thane,2019,"Collective, Social And Individual Service",40210,38002,45274,123486
+Thane,2020,Agriculture,553,321,347,1221
+Thane,2020,Mining,0,0,0,0
+Thane,2020,Commodity Manufacturing,2978,1098,87765,91841
+Thane,2020,"Electricity Generation, Gas, Water And Sewage Services",650,4520,5055,10225
+Thane,2020,Construction,2832,3501,3002,9335
+Thane,2020,Wholesale And Retail Trade And Hotel Business,0,0,12005,12005
+Thane,2020,"Transportation, Warehousing And Transportation",498,2028,979,3505
+Thane,2020,"Finance, Insurance, Real Estate And Trade Services",3326,8912,50843,63081
+Thane,2020,"Collective, Social And Individual Service",45220,38002,46274,129496
+Thane,2021,Agriculture,545,321,340,1206
+Thane,2021,Mining,0,0,0,0
+Thane,2021,Commodity Manufacturing,3045,1108,88700,92853
+Thane,2021,"Electricity Generation, Gas, Water And Sewage Services",670,4625,5254,10549
+Thane,2021,Construction,2825,4550,4400,11775
+Thane,2021,Wholesale And Retail Trade And Hotel Business,0,0,11040,11040
+Thane,2021,"Transportation, Warehousing And Transportation",645,2540,1035,4220
+Thane,2021,"Finance, Insurance, Real Estate And Trade Services",3296,9205,51598,64099
+Thane,2021,"Collective, Social And Individual Service",46002,39056,47274,132332
+Wardha,2012,Agriculture,629,541,0,1170
+Wardha,2012,Mining,104,0,0,104
+Wardha,2012,Commodity Manufacturing,1651,83,7221,8955
+Wardha,2012,"Electricity Generation, Gas, Water And Sewage Services",0,1381,0,1381
+Wardha,2012,Construction,1703,504,0,2207
+Wardha,2012,Wholesale And Retail Trade And Hotel Business,0,11,776,787
+Wardha,2012,"Transportation, Warehousing And Transportation",310,1632,0,1942
+Wardha,2012,"Finance, Insurance, Real Estate And Trade Services",47,849,1578,2474
+Wardha,2012,"Collective, Social And Individual Service",3677,6353,10330,20360
+Wardha,2013,Agriculture,628,540,0,1168
+Wardha,2013,Mining,0,0,0,0
+Wardha,2013,Commodity Manufacturing,1670,82,7220,8972
+Wardha,2013,"Electricity Generation, Gas, Water And Sewage Services",0,1385,0,1385
+Wardha,2013,Construction,1712,505,0,2217
+Wardha,2013,Wholesale And Retail Trade And Hotel Business,0,10,775,785
+Wardha,2013,"Transportation, Warehousing And Transportation",313,1635,0,1948
+Wardha,2013,"Finance, Insurance, Real Estate And Trade Services",48,853,1577,2478
+Wardha,2013,"Collective, Social And Individual Service",3766,6443,10325,20534
+Wardha,2014,Agriculture,617,529,0,1146
+Wardha,2014,Mining,0,0,0,0
+Wardha,2014,Commodity Manufacturing,1659,71,7229,8939
+Wardha,2014,"Electricity Generation, Gas, Water And Sewage Services",0,11374,0,1374
+Wardha,2014,Construction,1701,494,0,2195
+Wardha,2014,Wholesale And Retail Trade And Hotel Business,0,0,786,786
+Wardha,2014,"Transportation, Warehousing And Transportation",302,1624,0,1926
+Wardha,2014,"Finance, Insurance, Real Estate And Trade Services",37,864,1588,2489
+Wardha,2014,"Collective, Social And Individual Service",3755,6432,10336,20523
+Wardha,2015,Agriculture,609,510,0,1119
+Wardha,2015,Mining,0,0,0,0
+Wardha,2015,Commodity Manufacturing,1607,69,7229,8905
+Wardha,2015,"Electricity Generation, Gas, Water And Sewage Services",0,11254,0,11254
+Wardha,2015,Construction,1654,410,0,2064
+Wardha,2015,Wholesale And Retail Trade And Hotel Business,0,0,786,786
+Wardha,2015,"Transportation, Warehousing And Transportation",275,1618,0,1893
+Wardha,2015,"Finance, Insurance, Real Estate And Trade Services",34,837,1588,2459
+Wardha,2015,"Collective, Social And Individual Service",3601,6400,10336,20337
+Wardha,2016,Agriculture,609,510,0,1119
+Wardha,2016,Mining,0,0,0,0
+Wardha,2016,Commodity Manufacturing,1607,69,7229,8905
+Wardha,2016,"Electricity Generation, Gas, Water And Sewage Services",0,11254,0,11254
+Wardha,2016,Construction,1654,410,0,2064
+Wardha,2016,Wholesale And Retail Trade And Hotel Business,0,0,786,786
+Wardha,2016,"Transportation, Warehousing And Transportation",275,1618,0,1893
+Wardha,2016,"Finance, Insurance, Real Estate And Trade Services",34,837,1588,2459
+Wardha,2016,"Collective, Social And Individual Service",3601,6400,10686,20687
+Wardha,2017,Agriculture,590,501,0,1091
+Wardha,2017,Mining,0,0,0,0
+Wardha,2017,Commodity Manufacturing,1570,58,7192,8820
+Wardha,2017,"Electricity Generation, Gas, Water And Sewage Services",0,11245,0,11245
+Wardha,2017,Construction,1645,401,0,2046
+Wardha,2017,Wholesale And Retail Trade And Hotel Business,0,0,797,797
+Wardha,2017,"Transportation, Warehousing And Transportation",257,1581,0,1838
+Wardha,2017,"Finance, Insurance, Real Estate And Trade Services",43,873,1599,2515
+Wardha,2017,"Collective, Social And Individual Service",3631,6411,10697,20739
+Wardha,2018,Agriculture,591,502,0,1093
+Wardha,2018,Mining,0,0,0,0
+Wardha,2018,Commodity Manufacturing,1570,58,7210,8838
+Wardha,2018,"Electricity Generation, Gas, Water And Sewage Services",0,11245,0,11245
+Wardha,2018,Construction,1646,400,0,2046
+Wardha,2018,Wholesale And Retail Trade And Hotel Business,0,0,879,879
+Wardha,2018,"Transportation, Warehousing And Transportation",257,1581,0,1838
+Wardha,2018,"Finance, Insurance, Real Estate And Trade Services",45,875,1599,2519
+Wardha,2018,"Collective, Social And Individual Service",3633,6412,10699,20744
+Wardha,2019,Agriculture,590,501,0,1091
+Wardha,2019,Mining,0,0,0,0
+Wardha,2019,Commodity Manufacturing,1570,58,7192,8820
+Wardha,2019,"Electricity Generation, Gas, Water And Sewage Services",0,11245,0,11245
+Wardha,2019,Construction,1645,401,0,2046
+Wardha,2019,Wholesale And Retail Trade And Hotel Business,0,0,797,797
+Wardha,2019,"Transportation, Warehousing And Transportation",257,1581,0,1838
+Wardha,2019,"Finance, Insurance, Real Estate And Trade Services",43,873,1599,2515
+Wardha,2019,"Collective, Social And Individual Service",3631,6411,10697,20739
+Wardha,2020,Agriculture,591,502,0,1093
+Wardha,2020,Mining,0,0,0,0
+Wardha,2020,Commodity Manufacturing,1580,59,7194,8833
+Wardha,2020,"Electricity Generation, Gas, Water And Sewage Services",0,11249,0,11249
+Wardha,2020,Construction,1646,403,0,2049
+Wardha,2020,Wholesale And Retail Trade And Hotel Business,0,0,799,799
+Wardha,2020,"Transportation, Warehousing And Transportation",258,1582,0,1840
+Wardha,2020,"Finance, Insurance, Real Estate And Trade Services",44,875,1600,2519
+Wardha,2020,"Collective, Social And Individual Service",3635,6415,10699,20749
+Wardha,2021,Agriculture,591,502,0,1093
+Wardha,2021,Mining,0,0,0,0
+Wardha,2021,Commodity Manufacturing,1580,59,7194,8833
+Wardha,2021,"Electricity Generation, Gas, Water And Sewage Services",0,11249,0,11249
+Wardha,2021,Construction,1646,403,0,2049
+Wardha,2021,Wholesale And Retail Trade And Hotel Business,0,0,799,799
+Wardha,2021,"Transportation, Warehousing And Transportation",258,1582,0,1840
+Wardha,2021,"Finance, Insurance, Real Estate And Trade Services",44,875,1600,2519
+Wardha,2021,"Collective, Social And Individual Service",3635,6415,10699,20749
+Washim,2008,Agriculture,,,,
+Washim,2008,Mining,,,,
+Washim,2008,Commodity Manufacturing,,,,
+Washim,2008,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Washim,2008,Construction,,,,
+Washim,2008,Wholesale And Retail Trade And Hotel Business,,,,
+Washim,2008,"Transportation, Warehousing And Transportation",,,,
+Washim,2008,"Finance, Insurance, Real Estate And Trade Services",,,,
+Washim,2008,"Collective, Social And Individual Service",,,,
+Washim,2009,Agriculture,152,,127,279
+Washim,2009,Mining,0,0,0,0
+Washim,2009,Commodity Manufacturing,0,0,0,0
+Washim,2009,"Electricity Generation, Gas, Water And Sewage Services",509,821,,1330
+Washim,2009,Construction,120,,,120
+Washim,2009,Wholesale And Retail Trade And Hotel Business,,81,,81
+Washim,2009,"Transportation, Warehousing And Transportation",,11,,11
+Washim,2009,"Finance, Insurance, Real Estate And Trade Services",,80,292,372
+Washim,2009,"Collective, Social And Individual Service",2330,1858,3239,7427
+Washim,2010,Agriculture,167,0,60,227
+Washim,2010,Mining,0,0,0,0
+Washim,2010,Commodity Manufacturing,7,602,352,961
+Washim,2010,"Electricity Generation, Gas, Water And Sewage Services",110,67,0,177
+Washim,2010,Construction,482,0,0,482
+Washim,2010,Wholesale And Retail Trade And Hotel Business,0,83,41,124
+Washim,2010,"Transportation, Warehousing And Transportation",0,11,0,11
+Washim,2010,"Finance, Insurance, Real Estate And Trade Services",2244,1717,368,4329
+Washim,2010,"Collective, Social And Individual Service",400,54,3053,3507
+Washim,2011,Agriculture,206,0,51,257
+Washim,2011,Mining,0,0,0,0
+Washim,2011,Commodity Manufacturing,7,602,282,891
+Washim,2011,"Electricity Generation, Gas, Water And Sewage Services",110,68,0,178
+Washim,2011,Construction,472,0,0,472
+Washim,2011,Wholesale And Retail Trade And Hotel Business,0,85,68,153
+Washim,2011,"Transportation, Warehousing And Transportation",0,9,0,9
+Washim,2011,"Finance, Insurance, Real Estate And Trade Services",2321,1801,403,4525
+Washim,2011,"Collective, Social And Individual Service",404,54,4443,4901
+Washim,2012,Agriculture,206,0,51,257
+Washim,2012,Mining,0,0,0,0
+Washim,2012,Commodity Manufacturing,7,602,282,891
+Washim,2012,"Electricity Generation, Gas, Water And Sewage Services",110,68,0,178
+Washim,2012,Construction,472,0,0,472
+Washim,2012,Wholesale And Retail Trade And Hotel Business,0,85,68,153
+Washim,2012,"Transportation, Warehousing And Transportation",0,9,0,9
+Washim,2012,"Finance, Insurance, Real Estate And Trade Services",2326,1811,423,4560
+Washim,2012,"Collective, Social And Individual Service",410,54,4444,4908
+Washim,2013,Agriculture,206,0,56,262
+Washim,2013,Mining,0,0,0,0
+Washim,2013,Commodity Manufacturing,7,595,315,917
+Washim,2013,"Electricity Generation, Gas, Water And Sewage Services",115,75,0,190
+Washim,2013,Construction,577,0,0,577
+Washim,2013,Wholesale And Retail Trade And Hotel Business,0,85,89,174
+Washim,2013,"Transportation, Warehousing And Transportation",0,9,0,9
+Washim,2013,"Finance, Insurance, Real Estate And Trade Services",2326,1817,516,4669
+Washim,2013,"Collective, Social And Individual Service",415,55,4595,5065
+Washim,2014,Agriculture,207,0,58,265
+Washim,2014,Mining,0,0,0,0
+Washim,2014,Commodity Manufacturing,8,598,318,924
+Washim,2014,"Electricity Generation, Gas, Water And Sewage Services",105,92,6,203
+Washim,2014,Construction,0,96,223,319
+Washim,2014,Wholesale And Retail Trade And Hotel Business,0,0,324,324
+Washim,2014,"Transportation, Warehousing And Transportation",6,19,201,226
+Washim,2014,"Finance, Insurance, Real Estate And Trade Services",2365,1902,541,4808
+Washim,2014,"Collective, Social And Individual Service",455,61,4706,5222
+Washim,2015,Agriculture,199,0,56,255
+Washim,2015,Mining,0,0,0,0
+Washim,2015,Commodity Manufacturing,0,23,42,65
+Washim,2015,"Electricity Generation, Gas, Water And Sewage Services",109,13,2,124
+Washim,2015,Construction,0,59,241,300
+Washim,2015,Wholesale And Retail Trade And Hotel Business,0,0,428,428
+Washim,2015,"Transportation, Warehousing And Transportation",41,28,193,262
+Washim,2015,"Finance, Insurance, Real Estate And Trade Services",365,902,54,1321
+Washim,2015,"Collective, Social And Individual Service",12,62,4819,4893
+Washim,2016,Agriculture,156,8,147,311
+Washim,2016,Mining,0,0,0,0
+Washim,2016,Commodity Manufacturing,0,23,42,65
+Washim,2016,"Electricity Generation, Gas, Water And Sewage Services",78,29,152,259
+Washim,2016,Construction,0,52,478,530
+Washim,2016,Wholesale And Retail Trade And Hotel Business,0,0,455,455
+Washim,2016,"Transportation, Warehousing And Transportation",467,28,281,776
+Washim,2016,"Finance, Insurance, Real Estate And Trade Services",367,781,54,1202
+Washim,2016,"Collective, Social And Individual Service",7,63,4712,4782
+Washim,2017,Agriculture,335,0,133,468
+Washim,2017,Mining,0,0,0,0
+Washim,2017,Commodity Manufacturing,21,1040,63,1124
+Washim,2017,"Electricity Generation, Gas, Water And Sewage Services",175,201,39,415
+Washim,2017,Construction,0,196,439,635
+Washim,2017,Wholesale And Retail Trade And Hotel Business,0,0,642,642
+Washim,2017,"Transportation, Warehousing And Transportation",15,31,270,316
+Washim,2017,"Finance, Insurance, Real Estate And Trade Services",3502,2112,2296,7910
+Washim,2017,"Collective, Social And Individual Service",1054,3808,4463,9325
+Washim,2018,Agriculture,,,,
+Washim,2018,Mining,,,,
+Washim,2018,Commodity Manufacturing,,,,
+Washim,2018,"Electricity Generation, Gas, Water And Sewage Services",,,,
+Washim,2018,Construction,,,,
+Washim,2018,Wholesale And Retail Trade And Hotel Business,,,,
+Washim,2018,"Transportation, Warehousing And Transportation",,,,
+Washim,2018,"Finance, Insurance, Real Estate And Trade Services",,,,
+Washim,2018,"Collective, Social And Individual Service",,,,
+Washim,2019,Agriculture,303,0,72,375
+Washim,2019,Mining,0,0,0,0
+Washim,2019,Commodity Manufacturing,28,842,58,928
+Washim,2019,"Electricity Generation, Gas, Water And Sewage Services",105,191,32,328
+Washim,2019,Construction,14,152,316,482
+Washim,2019,Wholesale And Retail Trade And Hotel Business,0,0,147,147
+Washim,2019,"Transportation, Warehousing And Transportation",32,86,142,260
+Washim,2019,"Finance, Insurance, Real Estate And Trade Services",3103,1842,1779,6724
+Washim,2019,"Collective, Social And Individual Service",917,2804,3603,7324
+Washim,2020,Agriculture,305,8,80,393
+Washim,2020,Mining,0,0,0,0
+Washim,2020,Commodity Manufacturing,30,840,60,930
+Washim,2020,"Electricity Generation, Gas, Water And Sewage Services",110,195,35,340
+Washim,2020,Construction,16,155,320,491
+Washim,2020,Wholesale And Retail Trade And Hotel Business,0,0,150,150
+Washim,2020,"Transportation, Warehousing And Transportation",36,80,145,261
+Washim,2020,"Finance, Insurance, Real Estate And Trade Services",3105,1845,1780,6730
+Washim,2020,"Collective, Social And Individual Service",920,2840,3636,7396
+Washim,2021,Agriculture,296,12,164,472
+Washim,2021,Mining,0,0,0,0
+Washim,2021,Commodity Manufacturing,28,912,72,1012
+Washim,2021,"Electricity Generation, Gas, Water And Sewage Services",97,224,38,359
+Washim,2021,Construction,14,216,327,557
+Washim,2021,Wholesale And Retail Trade And Hotel Business,0,0,289,289
+Washim,2021,"Transportation, Warehousing And Transportation",42,171,92,305
+Washim,2021,"Finance, Insurance, Real Estate And Trade Services",2736,1717,1559,6012
+Washim,2021,"Collective, Social And Individual Service",902,2360,3942,7204
+Yavatmal,2012,Agriculture,2281,567,739,3587
+Yavatmal,2012,Mining,1374,,3359,4733
+Yavatmal,2012,Commodity Manufacturing,81,,371,452
+Yavatmal,2012,"Electricity Generation, Gas, Water And Sewage Services",3337,643,31,4011
+Yavatmal,2012,Construction,39,,581,620
+Yavatmal,2012,Wholesale And Retail Trade And Hotel Business,4812,,1761,6573
+Yavatmal,2012,"Transportation, Warehousing And Transportation",7221,5315,74,12610
+Yavatmal,2012,"Finance, Insurance, Real Estate And Trade Services",4241,21375,12019,37635
+Yavatmal,2012,"Collective, Social And Individual Service",585,13,1522,2120
+Yavatmal,2013,Agriculture,2867,0,709,3576
+Yavatmal,2013,Mining,1278,0,1273,2551
+Yavatmal,2013,Commodity Manufacturing,339,0,367,706
+Yavatmal,2013,"Electricity Generation, Gas, Water And Sewage Services",3235,0,17,3252
+Yavatmal,2013,Construction,49,0,523,572
+Yavatmal,2013,Wholesale And Retail Trade And Hotel Business,1991,0,1872,3863
+Yavatmal,2013,"Transportation, Warehousing And Transportation",12995,0,70,13065
+Yavatmal,2013,"Finance, Insurance, Real Estate And Trade Services",17197,0,12034,29231
+Yavatmal,2013,"Collective, Social And Individual Service",574,0,1475,2049
+Yavatmal,2014,Agriculture,4795,,1497,6292
+Yavatmal,2014,Mining,92,,1318,1410
+Yavatmal,2014,Commodity Manufacturing,991,,783,1774
+Yavatmal,2014,"Electricity Generation, Gas, Water And Sewage Services",1320,,451,1771
+Yavatmal,2014,Construction,3378,,239,3617
+Yavatmal,2014,Wholesale And Retail Trade And Hotel Business,2154,,2756,4910
+Yavatmal,2014,"Transportation, Warehousing And Transportation",1570,,0,1570
+Yavatmal,2014,"Finance, Insurance, Real Estate And Trade Services",30634,,16356,46990
+Yavatmal,2014,"Collective, Social And Individual Service",573,,2071,2644
+Yavatmal,2015,Agriculture,4462,,991,5453
+Yavatmal,2015,Mining,134,,372,506
+Yavatmal,2015,Commodity Manufacturing,1098,,1406,2504
+Yavatmal,2015,"Electricity Generation, Gas, Water And Sewage Services",925,,1361,2286
+Yavatmal,2015,Construction,3218,,208,3426
+Yavatmal,2015,Wholesale And Retail Trade And Hotel Business,1968,,1882,3850
+Yavatmal,2015,"Transportation, Warehousing And Transportation",1160,,0,1160
+Yavatmal,2015,"Finance, Insurance, Real Estate And Trade Services",29241,,11385,40626
+Yavatmal,2015,"Collective, Social And Individual Service",515,,1465,1980
+Yavatmal,2016,Agriculture,4512,,993,5505
+Yavatmal,2016,Mining,132,,347,479
+Yavatmal,2016,Commodity Manufacturing,1102,,1369,2471
+Yavatmal,2016,"Electricity Generation, Gas, Water And Sewage Services",967,,1210,2177
+Yavatmal,2016,Construction,3320,,217,3537
+Yavatmal,2016,Wholesale And Retail Trade And Hotel Business,1957,,1903,3860
+Yavatmal,2016,"Transportation, Warehousing And Transportation",1219,,0,1219
+Yavatmal,2016,"Finance, Insurance, Real Estate And Trade Services",28257,,12030,40287
+Yavatmal,2016,"Collective, Social And Individual Service",1255,,1001,2256
+Yavatmal,2017,Agriculture,4501,,996,5497
+Yavatmal,2017,Mining,132,,349,481
+Yavatmal,2017,Commodity Manufacturing,1102,,1374,2476
+Yavatmal,2017,"Electricity Generation, Gas, Water And Sewage Services",945,,1214,2159
+Yavatmal,2017,Construction,3325,,219,3544
+Yavatmal,2017,Wholesale And Retail Trade And Hotel Business,1859,,1911,3770
+Yavatmal,2017,"Transportation, Warehousing And Transportation",1207,,0,1207
+Yavatmal,2017,"Finance, Insurance, Real Estate And Trade Services",26841,,12929,39770
+Yavatmal,2017,"Collective, Social And Individual Service",1201,,1012,2213
+Yavatmal,2018,Agriculture,3242,55,2171,5468
+Yavatmal,2018,Mining,1278,1278,260,2816
+Yavatmal,2018,Commodity Manufacturing,908,341,5919,7168
+Yavatmal,2018,"Electricity Generation, Gas, Water And Sewage Services",1206,592,159,1957
+Yavatmal,2018,Construction,1429,0,46,1475
+Yavatmal,2018,Wholesale And Retail Trade And Hotel Business,40,20,508,568
+Yavatmal,2018,"Transportation, Warehousing And Transportation",3448,2831,102,6381
+Yavatmal,2018,"Finance, Insurance, Real Estate And Trade Services",1796,1649,3074,6519
+Yavatmal,2018,"Collective, Social And Individual Service",4602,0,618,5220
+Yavatmal,2019,Agriculture,6579,100,2305,8984
+Yavatmal,2019,Mining,1291,1291,261,2843
+Yavatmal,2019,Commodity Manufacturing,1002,443,6009,7454
+Yavatmal,2019,"Electricity Generation, Gas, Water And Sewage Services",1911,652,159,2722
+Yavatmal,2019,Construction,1498,40,74,1612
+Yavatmal,2019,Wholesale And Retail Trade And Hotel Business,160,60,759,979
+Yavatmal,2019,"Transportation, Warehousing And Transportation",3988,2012,291,6291
+Yavatmal,2019,"Finance, Insurance, Real Estate And Trade Services",2319,1409,5746,9474
+Yavatmal,2019,"Collective, Social And Individual Service",10169,705,919,11793
+Yavatmal,2020,Agriculture,3123,184,1987,5294
+Yavatmal,2020,Mining,1278,260,3,1541
+Yavatmal,2020,Commodity Manufacturing,916,5367,314,6597
+Yavatmal,2020,"Electricity Generation, Gas, Water And Sewage Services",1195,114,45,1354
+Yavatmal,2020,Construction,1394,25,21,1440
+Yavatmal,2020,Wholesale And Retail Trade And Hotel Business,38,507,107,652
+Yavatmal,2020,"Transportation, Warehousing And Transportation",4017,200,303,4520
+Yavatmal,2020,"Finance, Insurance, Real Estate And Trade Services",2045,368,2963,5376
+Yavatmal,2020,"Collective, Social And Individual Service",14783,600,1506,16889
+Yavatmal,2021,Agriculture,3145,196,2003,5344
+Yavatmal,2021,Mining,1281,275,5,1561
+Yavatmal,2021,Commodity Manufacturing,919,5371,314,6604
+Yavatmal,2021,"Electricity Generation, Gas, Water And Sewage Services",1199,115,46,1360
+Yavatmal,2021,Construction,1394,25,21,1440
+Yavatmal,2021,Wholesale And Retail Trade And Hotel Business,38,507,108,653
+Yavatmal,2021,"Transportation, Warehousing And Transportation",4018,201,304,4523
+Yavatmal,2021,"Finance, Insurance, Real Estate And Trade Services",2045,368,2969,5382
+Yavatmal,2021,"Collective, Social And Individual Service",14784,605,1525,16914

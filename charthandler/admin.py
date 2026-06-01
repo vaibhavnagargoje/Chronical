@@ -525,8 +525,20 @@ from .models import (
     DSAMsme,
     FactoryWorkers,
     DSAElectricity,
-    DSAPollutionCategory
-   
+    DSAPollutionCategory,
+    LaborWorkers,
+    LaborAgeDistribution,
+    LaborECWorkers,
+    LaborECGender,
+    LaborECReligion,
+    LaborMNREGAJobCards,
+    LaborMNREGAParticipation,
+    LaborMNREGAAccounts,
+    LaborMNREGAScope,
+    LaborGovtEmployees,
+    LaborDSAEstablishments,
+    LaborDSAWorkers,
+    LaborIndustryType,
 )
 
 @admin.register(ECNumber)
@@ -585,6 +597,256 @@ class DSAElectricityAdmin(admin.ModelAdmin):
 
 @admin.register(DSAPollutionCategory)
 class DSAPollutionCategoryAdmin(admin.ModelAdmin):
-    list_display = ['district', 'year', 'pollution_category']
-    list_filter = ['district', 'year', 'pollution_category']
-    search_fields = ['district', 'pollution_category']
+    list_display = ('district', 'year', 'taluka', 'pollution_category', 'number_of_industries')
+    list_filter = ('district', 'year', 'taluka', 'pollution_category')
+    search_fields = ('district', 'taluka', 'pollution_category')
+
+# ==========================================
+# LABOR MODELS
+# ==========================================
+
+@admin.register(LaborWorkers)
+class LaborWorkersAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'rural_urban', 'male_main_workers', 'female_main_workers', 'male_marginal_workers', 'female_marginal_workers')
+    list_filter = ('district', 'year', 'rural_urban')
+    search_fields = ('district',)
+
+@admin.register(LaborAgeDistribution)
+class LaborAgeDistributionAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'rural_urban', 'age_group', 'main_workers', 'marginal_workers', 'non_workers')
+    list_filter = ('district', 'year', 'rural_urban', 'age_group')
+    search_fields = ('district', 'age_group')
+
+@admin.register(LaborECWorkers)
+class LaborECWorkersAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'number_of_workers', 'govt_psu_workers', 'cooperative_workers', 'private_sector_workers')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(LaborECGender)
+class LaborECGenderAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'gender', 'employed_hired', 'employed_not_hired')
+    list_filter = ('district', 'year', 'gender')
+    search_fields = ('district', 'gender')
+
+@admin.register(LaborECReligion)
+class LaborECReligionAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'religion', 'number_of_establishments')
+    list_filter = ('district', 'year', 'religion')
+    search_fields = ('district', 'religion')
+
+@admin.register(LaborMNREGAJobCards)
+class LaborMNREGAJobCardsAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'job_cards_issued', 'sc', 'st', 'issued_for_sc_or_st')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(LaborMNREGAParticipation)
+class LaborMNREGAParticipationAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'worked', 'demanded_work', 'allotted_work')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(LaborMNREGAAccounts)
+class LaborMNREGAAccountsAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'bank_accounts', 'post_office_accounts')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(LaborMNREGAScope)
+class LaborMNREGAScopeAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'worked', 'demanded_work', 'allotted_work')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(LaborGovtEmployees)
+class LaborGovtEmployeesAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'group', 'approved_posts', 'positions_filled', 'number_of_women')
+    list_filter = ('district', 'year', 'group')
+    search_fields = ('district', 'group')
+
+@admin.register(LaborDSAEstablishments)
+class LaborDSAEstablishmentsAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'taluka', 'shops', 'business_organizations', 'hotels_and_restaurants', 'cinema_halls', 'organizations_without_workers')
+    list_filter = ('district', 'year', 'taluka')
+    search_fields = ('district', 'taluka')
+
+@admin.register(LaborDSAWorkers)
+class LaborDSAWorkersAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'taluka', 'shops', 'business_organizations', 'hotels_and_restaurants', 'cinema_halls')
+    list_filter = ('district', 'year', 'taluka')
+    search_fields = ('district', 'taluka')
+
+@admin.register(LaborIndustryType)
+class LaborIndustryTypeAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'type_of_industry', 'govt_employees', 'semi_govt_employees', 'private_employees', 'total_employees')
+    list_filter = ('district', 'year', 'type_of_industry')
+    search_fields = ('district', 'type_of_industry')
+
+
+# ============================================================================
+# DEMOGRAPHY ADMIN — Census Data
+# ============================================================================
+
+from .models import (
+    CensusPopulation,
+    CensusSC,
+    CensusST,
+    CensusAgeDistribution,
+    CensusLiterate,
+    CensusWorking,
+    CensusInwardMigrationA,
+    CensusInwardMigrationB,
+    CensusInwardMigrationC,
+    CensusInwardMigrationD,
+    CensusInwardMigrationE,
+    CensusMotherTongue,
+    CensusReligion,
+    CensusSexRatio,
+    CensusToiletFacility,
+    CensusCooking,
+    CensusWater,
+    CensusElectricity,
+    CensusTCAssets,
+    CensusOwnership,
+)
+
+
+@admin.register(CensusPopulation)
+class CensusPopulationAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'total', 'male', 'female']
+    list_filter = ['district', 'year', 'rural_urban']
+    search_fields = ['district']
+
+
+@admin.register(CensusSC)
+class CensusSCAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'population', 'male', 'female']
+    list_filter = ['district', 'year', 'rural_urban']
+    search_fields = ['district']
+
+
+@admin.register(CensusST)
+class CensusSTAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'population', 'male', 'female']
+    list_filter = ['district', 'year', 'rural_urban']
+    search_fields = ['district']
+
+
+@admin.register(CensusAgeDistribution)
+class CensusAgeDistributionAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'age_group', 'population', 'male', 'female']
+    list_filter = ['district', 'year', 'rural_urban', 'age_group']
+    search_fields = ['district', 'age_group']
+
+
+@admin.register(CensusLiterate)
+class CensusLiterateAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'literate_population', 'male', 'female']
+    list_filter = ['district', 'year', 'rural_urban']
+    search_fields = ['district']
+
+
+@admin.register(CensusWorking)
+class CensusWorkingAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'working_population', 'male_main_workers', 'female_main_workers', 'male_marginal_workers', 'female_marginal_workers']
+    list_filter = ['district', 'year', 'rural_urban']
+    search_fields = ['district']
+
+
+@admin.register(CensusInwardMigrationA)
+class CensusInwardMigrationAAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'birth_place', 'population', 'male', 'female', 'rural_population', 'urban_population']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'birth_place']
+
+
+@admin.register(CensusInwardMigrationB)
+class CensusInwardMigrationBAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'birth_place', 'population', 'male', 'female', 'rural_population', 'urban_population']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'birth_place']
+
+
+@admin.register(CensusInwardMigrationC)
+class CensusInwardMigrationCAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'birth_place', 'population', 'male', 'female', 'rural_population', 'urban_population']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'birth_place']
+
+
+@admin.register(CensusInwardMigrationD)
+class CensusInwardMigrationDAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'birth_place', 'population', 'male', 'female', 'rural_population', 'urban_population']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'birth_place']
+
+
+@admin.register(CensusInwardMigrationE)
+class CensusInwardMigrationEAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'birth_place', 'population', 'male', 'female', 'rural_population', 'urban_population']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'birth_place']
+
+
+@admin.register(CensusMotherTongue)
+class CensusMotherTongueAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'mother_tongue', 'male', 'female']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'mother_tongue']
+
+
+@admin.register(CensusReligion)
+class CensusReligionAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'gender', 'hindu', 'muslim', 'buddhist', 'christian', 'jain']
+    list_filter = ['district', 'year', 'rural_urban', 'gender']
+    search_fields = ['district']
+
+
+@admin.register(CensusSexRatio)
+class CensusSexRatioAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'sex_ratio']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+
+@admin.register(CensusToiletFacility)
+class CensusToiletFacilityAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'pit_latrine', 'water_closet', 'no_latrine', 'other']
+    list_filter = ['district', 'year', 'rural_urban']
+    search_fields = ['district']
+
+
+@admin.register(CensusCooking)
+class CensusCookingAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'firewood', 'lpg_png', 'electricity', 'biogas', 'no_cooking']
+    list_filter = ['district', 'year', 'rural_urban']
+    search_fields = ['district']
+
+
+@admin.register(CensusWater)
+class CensusWaterAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'location', 'tap', 'handpump', 'tubewell', 'well', 'all_others']
+    list_filter = ['district', 'year', 'rural_urban', 'location']
+    search_fields = ['district']
+
+
+@admin.register(CensusElectricity)
+class CensusElectricityAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'access_to_electricity', 'no_access_to_electricity']
+    list_filter = ['district', 'year', 'rural_urban']
+    search_fields = ['district']
+
+
+@admin.register(CensusTCAssets)
+class CensusTCAssetsAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'television', 'households_with_mobile', 'bicycle', 'car_jeep_van', 'access_to_any_asset']
+    list_filter = ['district', 'year', 'rural_urban']
+    search_fields = ['district']
+
+
+@admin.register(CensusOwnership)
+class CensusOwnershipAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'owned', 'rented', 'other']
+    list_filter = ['district', 'year', 'rural_urban']
+    search_fields = ['district']
