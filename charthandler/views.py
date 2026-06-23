@@ -304,6 +304,11 @@ def chart_data_api(request, template_slug):
         **{f'{template.main_filter_column}__iexact': district}
     ) if template.main_filter_column else ModelClass.objects.all()
 
+    # Apply any fixed filters defined in the template's chart_options
+    fixed_filters = template.chart_options.get('fixed_filters', {})
+    if fixed_filters:
+        base_district_qs = base_district_qs.filter(**fixed_filters)
+
     filter1_options = []
     filter2_options = []
 

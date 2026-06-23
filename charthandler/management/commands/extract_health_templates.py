@@ -1227,7 +1227,7 @@ class Command(BaseCommand):
             'filter1_column': 'taluka',
             'filter2_column': 'select_vaccine',
             'show_filters': True,
-            'chart_options': build_chart_options('Number', False, disable_all_filter2=True),
+            'chart_options': {**build_chart_options('Number', False, disable_all_filter2=True), 'fixed_filters': {'rural_urban': 'Total'}},
             'description': 'District Statistical Abstracts',
             'additional_info': '',
             'display_order': 61,
