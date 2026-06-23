@@ -1,0 +1,12 @@
+Sheet,Col_Idx,Col_Letter,Row,Original_Header,Value
+DSA_GramPanchayat_N,23,W,2,,(in Rs.)
+DSA_GramPanchayat,23,W,2,,(in Rs. Lakh)
+DSA_JillaParishad_Exp,17,Q,2,,(in Rs. Lakh)
+DSA_MunicipalCorp_Exp,19,S,2,,(in Rs. Lakh)
+DSA_NagarPanchayat_Exp,19,S,2,,(in Rs. Lakh)
+GDDP_GDVA,32,AF,2,,(in Rs. Lakh)
+NDDP_NDVA,32,AF,2,,(in Rs. Lakh)
+DSA_TaxRevenue,14,N,2,,(in Rs. Lakh)
+DSA_LandRevenue,13,M,2,,(in Amount Rs.)
+DSA_Banking,12,L,2,,(in Rs. Lakh)
+DSA_GST,12,L,2,,(in Rs. Lakh)

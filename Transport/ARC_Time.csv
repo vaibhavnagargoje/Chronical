@@ -1,0 +1,613 @@
+Year,District,Time of Day,Fatalities,Grievous injuries
+2018,Ahmednagar,00:00 to 03:00,45,38
+2018,Ahmednagar,03:00 to 06:00,79,66
+2018,Ahmednagar,06:00 to 09:00,88,71
+2018,Ahmednagar,09:00 to 12:00,119,108
+2018,Ahmednagar,12:00 to 15:00,97,93
+2018,Ahmednagar,15:00 to 18:00,121,129
+2018,Ahmednagar,18:00 to 21:00,221,158
+2018,Ahmednagar,21:00 to 00:00,85,64
+2018,Ahmednagar,Unknown,0,0
+2018,Akola,00:00 to 03:00,5,0
+2018,Akola,03:00 to 06:00,10,0
+2018,Akola,06:00 to 09:00,14,2
+2018,Akola,09:00 to 12:00,25,14
+2018,Akola,12:00 to 15:00,22,34
+2018,Akola,15:00 to 18:00,31,29
+2018,Akola,18:00 to 21:00,34,23
+2018,Akola,21:00 to 00:00,20,11
+2018,Akola,Unknown,0,0
+2018,Amravati,00:00 to 03:00,7,39
+2018,Amravati,03:00 to 06:00,33,35
+2018,Amravati,06:00 to 09:00,17,19
+2018,Amravati,09:00 to 12:00,35,24
+2018,Amravati,12:00 to 15:00,50,36
+2018,Amravati,15:00 to 18:00,44,49
+2018,Amravati,18:00 to 21:00,65,38
+2018,Amravati,21:00 to 00:00,52,44
+2018,Amravati,Unknown,0,0
+2018,Aurangabad,00:00 to 03:00,28,53
+2018,Aurangabad,03:00 to 06:00,11,17
+2018,Aurangabad,06:00 to 09:00,68,116
+2018,Aurangabad,09:00 to 12:00,49,102
+2018,Aurangabad,12:00 to 15:00,46,115
+2018,Aurangabad,15:00 to 18:00,70,102
+2018,Aurangabad,18:00 to 21:00,144,140
+2018,Aurangabad,21:00 to 00:00,86,110
+2018,Aurangabad,Unknown,21,24
+2018,Beed,00:00 to 03:00,13,18
+2018,Beed,03:00 to 06:00,12,15
+2018,Beed,06:00 to 09:00,34,37
+2018,Beed,09:00 to 12:00,32,45
+2018,Beed,12:00 to 15:00,40,41
+2018,Beed,15:00 to 18:00,61,73
+2018,Beed,18:00 to 21:00,92,60
+2018,Beed,21:00 to 00:00,54,21
+2018,Beed,Unknown,0,0
+2018,Bhandara,00:00 to 03:00,7,6
+2018,Bhandara,03:00 to 06:00,7,2
+2018,Bhandara,06:00 to 09:00,13,12
+2018,Bhandara,09:00 to 12:00,13,50
+2018,Bhandara,12:00 to 15:00,22,49
+2018,Bhandara,15:00 to 18:00,31,42
+2018,Bhandara,18:00 to 21:00,37,37
+2018,Bhandara,21:00 to 00:00,21,21
+2018,Bhandara,Unknown,0,0
+2018,Buldhana,00:00 to 03:00,30,22
+2018,Buldhana,03:00 to 06:00,27,16
+2018,Buldhana,06:00 to 09:00,34,18
+2018,Buldhana,09:00 to 12:00,50,35
+2018,Buldhana,12:00 to 15:00,45,37
+2018,Buldhana,15:00 to 18:00,43,55
+2018,Buldhana,18:00 to 21:00,38,28
+2018,Buldhana,21:00 to 00:00,37,27
+2018,Buldhana,Unknown,0,0
+2018,Chandrapur,00:00 to 03:00,8,5
+2018,Chandrapur,03:00 to 06:00,9,1
+2018,Chandrapur,06:00 to 09:00,30,17
+2018,Chandrapur,09:00 to 12:00,35,44
+2018,Chandrapur,12:00 to 15:00,36,75
+2018,Chandrapur,15:00 to 18:00,58,69
+2018,Chandrapur,18:00 to 21:00,61,63
+2018,Chandrapur,21:00 to 00:00,60,34
+2018,Chandrapur,Unknown,0,0
+2018,Dhule,00:00 to 03:00,21,54
+2018,Dhule,03:00 to 06:00,15,25
+2018,Dhule,06:00 to 09:00,25,46
+2018,Dhule,09:00 to 12:00,72,115
+2018,Dhule,12:00 to 15:00,66,145
+2018,Dhule,15:00 to 18:00,46,65
+2018,Dhule,18:00 to 21:00,45,59
+2018,Dhule,21:00 to 00:00,24,48
+2018,Dhule,Unknown,0,0
+2018,Gadchiroli,00:00 to 03:00,5,0
+2018,Gadchiroli,03:00 to 06:00,0,22
+2018,Gadchiroli,06:00 to 09:00,0,0
+2018,Gadchiroli,09:00 to 12:00,5,22
+2018,Gadchiroli,12:00 to 15:00,54,91
+2018,Gadchiroli,15:00 to 18:00,46,82
+2018,Gadchiroli,18:00 to 21:00,46,35
+2018,Gadchiroli,21:00 to 00:00,0,11
+2018,Gadchiroli,Unknown,0,0
+2018,Gondia,00:00 to 03:00,10,7
+2018,Gondia,03:00 to 06:00,13,11
+2018,Gondia,06:00 to 09:00,9,9
+2018,Gondia,09:00 to 12:00,25,38
+2018,Gondia,12:00 to 15:00,14,33
+2018,Gondia,15:00 to 18:00,35,38
+2018,Gondia,18:00 to 21:00,46,41
+2018,Gondia,21:00 to 00:00,22,20
+2018,Gondia,Unknown,0,0
+2018,Hingoli,00:00 to 03:00,14,11
+2018,Hingoli,03:00 to 06:00,2,12
+2018,Hingoli,06:00 to 09:00,15,25
+2018,Hingoli,09:00 to 12:00,14,49
+2018,Hingoli,12:00 to 15:00,19,59
+2018,Hingoli,15:00 to 18:00,22,47
+2018,Hingoli,18:00 to 21:00,33,76
+2018,Hingoli,21:00 to 00:00,12,20
+2018,Hingoli,Unknown,0,0
+2018,Jalgaon,00:00 to 03:00,25,19
+2018,Jalgaon,03:00 to 06:00,10,31
+2018,Jalgaon,06:00 to 09:00,29,42
+2018,Jalgaon,09:00 to 12:00,58,76
+2018,Jalgaon,12:00 to 15:00,99,142
+2018,Jalgaon,15:00 to 18:00,80,107
+2018,Jalgaon,18:00 to 21:00,83,87
+2018,Jalgaon,21:00 to 00:00,38,34
+2018,Jalgaon,Unknown,0,2
+2018,Jalna,00:00 to 03:00,44,61
+2018,Jalna,03:00 to 06:00,58,68
+2018,Jalna,06:00 to 09:00,5,6
+2018,Jalna,09:00 to 12:00,4,6
+2018,Jalna,12:00 to 15:00,7,15
+2018,Jalna,15:00 to 18:00,18,34
+2018,Jalna,18:00 to 21:00,28,44
+2018,Jalna,21:00 to 00:00,41,45
+2018,Jalna,Unknown,0,0
+2018,Kolhapur,00:00 to 03:00,28,37
+2018,Kolhapur,03:00 to 06:00,37,15
+2018,Kolhapur,06:00 to 09:00,45,75
+2018,Kolhapur,09:00 to 12:00,86,186
+2018,Kolhapur,12:00 to 15:00,52,123
+2018,Kolhapur,15:00 to 18:00,49,137
+2018,Kolhapur,18:00 to 21:00,55,110
+2018,Kolhapur,21:00 to 00:00,62,87
+2018,Kolhapur,Unknown,0,0
+2018,Latur,00:00 to 03:00,1,1
+2018,Latur,03:00 to 06:00,12,12
+2018,Latur,06:00 to 09:00,20,31
+2018,Latur,09:00 to 12:00,34,51
+2018,Latur,12:00 to 15:00,33,72
+2018,Latur,15:00 to 18:00,70,46
+2018,Latur,18:00 to 21:00,30,25
+2018,Latur,21:00 to 00:00,46,59
+2018,Latur,Unknown,0,0
+2018,Mumbai,00:00 to 03:00,92,299
+2018,Mumbai,03:00 to 06:00,73,215
+2018,Mumbai,06:00 to 09:00,90,262
+2018,Mumbai,09:00 to 12:00,91,375
+2018,Mumbai,12:00 to 15:00,97,379
+2018,Mumbai,15:00 to 18:00,92,434
+2018,Mumbai,18:00 to 21:00,99,472
+2018,Mumbai,21:00 to 00:00,118,423
+2018,Mumbai,Unknown,0,0
+2018,Nagpur,00:00 to 03:00,13,25
+2018,Nagpur,03:00 to 06:00,45,40
+2018,Nagpur,06:00 to 09:00,77,153
+2018,Nagpur,09:00 to 12:00,85,187
+2018,Nagpur,12:00 to 15:00,94,207
+2018,Nagpur,15:00 to 18:00,110,203
+2018,Nagpur,18:00 to 21:00,112,170
+2018,Nagpur,21:00 to 00:00,47,108
+2018,Nagpur,Unknown,0,0
+2018,Nanded,00:00 to 03:00,25,66
+2018,Nanded,03:00 to 06:00,57,66
+2018,Nanded,06:00 to 09:00,20,44
+2018,Nanded,09:00 to 12:00,39,60
+2018,Nanded,12:00 to 15:00,40,50
+2018,Nanded,15:00 to 18:00,27,41
+2018,Nanded,18:00 to 21:00,43,69
+2018,Nanded,21:00 to 00:00,19,61
+2018,Nanded,Unknown,0,0
+2018,Nandurbar,00:00 to 03:00,0,0
+2018,Nandurbar,03:00 to 06:00,1,0
+2018,Nandurbar,06:00 to 09:00,12,18
+2018,Nandurbar,09:00 to 12:00,25,42
+2018,Nandurbar,12:00 to 15:00,38,68
+2018,Nandurbar,15:00 to 18:00,51,125
+2018,Nandurbar,18:00 to 21:00,22,37
+2018,Nandurbar,21:00 to 00:00,28,40
+2018,Nandurbar,Unknown,0,0
+2018,Nashik,00:00 to 03:00,80,102
+2018,Nashik,03:00 to 06:00,86,93
+2018,Nashik,06:00 to 09:00,119,156
+2018,Nashik,09:00 to 12:00,174,233
+2018,Nashik,12:00 to 15:00,192,256
+2018,Nashik,15:00 to 18:00,136,172
+2018,Nashik,18:00 to 21:00,131,171
+2018,Nashik,21:00 to 00:00,123,135
+2018,Nashik,Unknown,0,0
+2018,Osmanabad,00:00 to 03:00,15,32
+2018,Osmanabad,03:00 to 06:00,18,55
+2018,Osmanabad,06:00 to 09:00,38,72
+2018,Osmanabad,09:00 to 12:00,51,109
+2018,Osmanabad,12:00 to 15:00,32,87
+2018,Osmanabad,15:00 to 18:00,57,125
+2018,Osmanabad,18:00 to 21:00,72,118
+2018,Osmanabad,21:00 to 00:00,34,25
+2018,Osmanabad,Unknown,0,0
+2018,Palghar,00:00 to 03:00,68,77
+2018,Palghar,03:00 to 06:00,59,62
+2018,Palghar,06:00 to 09:00,60,588
+2018,Palghar,09:00 to 12:00,50,66
+2018,Palghar,12:00 to 15:00,62,58
+2018,Palghar,15:00 to 18:00,56,59
+2018,Palghar,18:00 to 21:00,71,80
+2018,Palghar,21:00 to 00:00,79,76
+2018,Palghar,Unknown,0,0
+2018,Parbhani,00:00 to 03:00,10,11
+2018,Parbhani,03:00 to 06:00,2,10
+2018,Parbhani,06:00 to 09:00,13,25
+2018,Parbhani,09:00 to 12:00,13,30
+2018,Parbhani,12:00 to 15:00,19,33
+2018,Parbhani,15:00 to 18:00,21,36
+2018,Parbhani,18:00 to 21:00,33,40
+2018,Parbhani,21:00 to 00:00,12,19
+2018,Parbhani,Unknown,0,0
+2018,Pune,00:00 to 03:00,180,184
+2018,Pune,03:00 to 06:00,116,151
+2018,Pune,06:00 to 09:00,200,218
+2018,Pune,09:00 to 12:00,193,266
+2018,Pune,12:00 to 15:00,187,295
+2018,Pune,15:00 to 18:00,172,258
+2018,Pune,18:00 to 21:00,204,314
+2018,Pune,21:00 to 00:00,199,250
+2018,Pune,Unknown,1,0
+2018,Raigad,00:00 to 03:00,35,0
+2018,Raigad,03:00 to 06:00,25,66
+2018,Raigad,06:00 to 09:00,15,69
+2018,Raigad,09:00 to 12:00,65,101
+2018,Raigad,12:00 to 15:00,33,76
+2018,Raigad,15:00 to 18:00,38,98
+2018,Raigad,18:00 to 21:00,46,108
+2018,Raigad,21:00 to 00:00,28,87
+2018,Raigad,,17,52
+2018,Ratnagiri,00:00 to 03:00,3,42
+2018,Ratnagiri,03:00 to 06:00,6,20
+2018,Ratnagiri,06:00 to 09:00,26,49
+2018,Ratnagiri,09:00 to 12:00,38,98
+2018,Ratnagiri,12:00 to 15:00,27,103
+2018,Ratnagiri,15:00 to 18:00,29,69
+2018,Ratnagiri,18:00 to 21:00,21,65
+2018,Ratnagiri,21:00 to 00:00,13,45
+2018,Ratnagiri,Unknown,0,0
+2018,Sangli,00:00 to 03:00,11,35
+2018,Sangli,03:00 to 06:00,6,15
+2018,Sangli,06:00 to 09:00,45,107
+2018,Sangli,09:00 to 12:00,50,98
+2018,Sangli,12:00 to 15:00,54,101
+2018,Sangli,15:00 to 18:00,51,152
+2018,Sangli,18:00 to 21:00,87,129
+2018,Sangli,21:00 to 00:00,55,72
+2018,Sangli,Unknown,0,0
+2018,Satara,00:00 to 03:00,8,2
+2018,Satara,03:00 to 06:00,0,3
+2018,Satara,06:00 to 09:00,40,18
+2018,Satara,09:00 to 12:00,44,87
+2018,Satara,12:00 to 15:00,64,66
+2018,Satara,15:00 to 18:00,29,71
+2018,Satara,18:00 to 21:00,22,51
+2018,Satara,21:00 to 00:00,9,23
+2018,Satara,Unknown,0,2
+2018,Sindhudurg,00:00 to 03:00,3,3
+2018,Sindhudurg,03:00 to 06:00,2,1
+2018,Sindhudurg,06:00 to 09:00,4,10
+2018,Sindhudurg,09:00 to 12:00,14,16
+2018,Sindhudurg,12:00 to 15:00,17,14
+2018,Sindhudurg,15:00 to 18:00,24,21
+2018,Sindhudurg,18:00 to 21:00,19,18
+2018,Sindhudurg,21:00 to 00:00,6,8
+2018,Sindhudurg,Unknown,0,0
+2018,Solapur,00:00 to 03:00,118,132
+2018,Solapur,03:00 to 06:00,96,107
+2018,Solapur,06:00 to 09:00,71,74
+2018,Solapur,09:00 to 12:00,66,101
+2018,Solapur,12:00 to 15:00,61,106
+2018,Solapur,15:00 to 18:00,57,66
+2018,Solapur,18:00 to 21:00,82,112
+2018,Solapur,21:00 to 00:00,103,100
+2018,Solapur,Unknown,0,0
+2018,Thane,00:00 to 03:00,78,104
+2018,Thane,03:00 to 06:00,49,100
+2018,Thane,06:00 to 09:00,65,112
+2018,Thane,09:00 to 12:00,56,112
+2018,Thane,12:00 to 15:00,70,109
+2018,Thane,15:00 to 18:00,67,155
+2018,Thane,18:00 to 21:00,81,170
+2018,Thane,21:00 to 00:00,69,142
+2018,Thane,Unknown,14,28
+2018,Wardha,00:00 to 03:00,16,1
+2018,Wardha,03:00 to 06:00,16,25
+2018,Wardha,06:00 to 09:00,27,27
+2018,Wardha,09:00 to 12:00,22,50
+2018,Wardha,12:00 to 15:00,13,34
+2018,Wardha,15:00 to 18:00,35,36
+2018,Wardha,18:00 to 21:00,52,51
+2018,Wardha,21:00 to 00:00,32,27
+2018,Wardha,Unknown,0,0
+2018,Washim,00:00 to 03:00,6,0
+2018,Washim,03:00 to 06:00,6,1
+2018,Washim,06:00 to 09:00,12,10
+2018,Washim,09:00 to 12:00,17,14
+2018,Washim,12:00 to 15:00,21,9
+2018,Washim,15:00 to 18:00,20,13
+2018,Washim,18:00 to 21:00,49,28
+2018,Washim,21:00 to 00:00,11,3
+2018,Washim,Unknown,0,0
+2018,Yavatmal,00:00 to 03:00,6,0
+2018,Yavatmal,03:00 to 06:00,30,1
+2018,Yavatmal,06:00 to 09:00,20,29
+2018,Yavatmal,09:00 to 12:00,37,31
+2018,Yavatmal,12:00 to 15:00,48,51
+2018,Yavatmal,15:00 to 18:00,81,45
+2018,Yavatmal,18:00 to 21:00,86,50
+2018,Yavatmal,21:00 to 00:00,42,25
+2018,Yavatmal,Unknown,0,0
+2020,Ahmednagar,00:00 to 03:00,35,27
+2020,Ahmednagar,03:00 to 06:00,25,35
+2020,Ahmednagar,06:00 to 09:00,95,69
+2020,Ahmednagar,09:00 to 12:00,85,82
+2020,Ahmednagar,12:00 to 15:00,101,110
+2020,Ahmednagar,15:00 to 18:00,107,146
+2020,Ahmednagar,18:00 to 21:00,132,102
+2020,Ahmednagar,21:00 to 00:00,62,47
+2020,Ahmednagar,Unknown,0,0
+2020,Akola,00:00 to 03:00,2,0
+2020,Akola,03:00 to 06:00,2,2
+2020,Akola,06:00 to 09:00,4,2
+2020,Akola,09:00 to 12:00,19,26
+2020,Akola,12:00 to 15:00,25,28
+2020,Akola,15:00 to 18:00,28,37
+2020,Akola,18:00 to 21:00,35,32
+2020,Akola,21:00 to 00:00,7,8
+2020,Akola,Unknown,5,2
+2020,Amravati,00:00 to 03:00,2,1
+2020,Amravati,03:00 to 06:00,6,3
+2020,Amravati,06:00 to 09:00,13,21
+2020,Amravati,09:00 to 12:00,26,44
+2020,Amravati,12:00 to 15:00,111,53
+2020,Amravati,15:00 to 18:00,70,44
+2020,Amravati,18:00 to 21:00,89,57
+2020,Amravati,21:00 to 00:00,56,39
+2020,Amravati,Unknown,0,0
+2020,Aurangabad,00:00 to 03:00,28,27
+2020,Aurangabad,03:00 to 06:00,8,9
+2020,Aurangabad,06:00 to 09:00,28,19
+2020,Aurangabad,09:00 to 12:00,21,47
+2020,Aurangabad,12:00 to 15:00,30,63
+2020,Aurangabad,15:00 to 18:00,63,79
+2020,Aurangabad,18:00 to 21:00,93,110
+2020,Aurangabad,21:00 to 00:00,66,51
+2020,Aurangabad,Unknown,0,0
+2020,Beed,00:00 to 03:00,17,21
+2020,Beed,03:00 to 06:00,18,22
+2020,Beed,06:00 to 09:00,32,34
+2020,Beed,09:00 to 12:00,47,63
+2020,Beed,12:00 to 15:00,33,29
+2020,Beed,15:00 to 18:00,55,60
+2020,Beed,18:00 to 21:00,104,75
+2020,Beed,21:00 to 00:00,23,23
+2020,Beed,Unknown,0,0
+2020,Bhandara,00:00 to 03:00,3,7
+2020,Bhandara,03:00 to 06:00,8,8
+2020,Bhandara,06:00 to 09:00,14,9
+2020,Bhandara,09:00 to 12:00,19,14
+2020,Bhandara,12:00 to 15:00,20,24
+2020,Bhandara,15:00 to 18:00,29,28
+2020,Bhandara,18:00 to 21:00,39,38
+2020,Bhandara,21:00 to 00:00,13,9
+2020,Bhandara,Unknown,0,0
+2020,Buldhana,00:00 to 03:00,0,0
+2020,Buldhana,03:00 to 06:00,0,0
+2020,Buldhana,06:00 to 09:00,15,4
+2020,Buldhana,09:00 to 12:00,68,31
+2020,Buldhana,12:00 to 15:00,71,35
+2020,Buldhana,15:00 to 18:00,67,40
+2020,Buldhana,18:00 to 21:00,57,32
+2020,Buldhana,21:00 to 00:00,21,8
+2020,Buldhana,Unknown,0,0
+2020,Chandrapur,00:00 to 03:00,7,4
+2020,Chandrapur,03:00 to 06:00,10,3
+2020,Chandrapur,06:00 to 09:00,23,12
+2020,Chandrapur,09:00 to 12:00,35,53
+2020,Chandrapur,12:00 to 15:00,41,29
+2020,Chandrapur,15:00 to 18:00,37,45
+2020,Chandrapur,18:00 to 21:00,60,33
+2020,Chandrapur,21:00 to 00:00,43,22
+2020,Chandrapur,Unknown,0,0
+2020,Dhule,00:00 to 03:00,30,29
+2020,Dhule,03:00 to 06:00,7,2
+2020,Dhule,06:00 to 09:00,41,63
+2020,Dhule,09:00 to 12:00,53,111
+2020,Dhule,12:00 to 15:00,67,131
+2020,Dhule,15:00 to 18:00,88,104
+2020,Dhule,18:00 to 21:00,70,71
+2020,Dhule,21:00 to 00:00,29,29
+2020,Dhule,Unknown,0,0
+2020,Gadchiroli,00:00 to 03:00,0,0
+2020,Gadchiroli,03:00 to 06:00,7,4
+2020,Gadchiroli,06:00 to 09:00,10,3
+2020,Gadchiroli,09:00 to 12:00,19,8
+2020,Gadchiroli,12:00 to 15:00,26,5
+2020,Gadchiroli,15:00 to 18:00,34,13
+2020,Gadchiroli,18:00 to 21:00,31,13
+2020,Gadchiroli,21:00 to 00:00,5,3
+2020,Gadchiroli,Unknown,0,0
+2020,Gondia,00:00 to 03:00,11,6
+2020,Gondia,03:00 to 06:00,3,4
+2020,Gondia,06:00 to 09:00,17,9
+2020,Gondia,09:00 to 12:00,14,11
+2020,Gondia,12:00 to 15:00,25,23
+2020,Gondia,15:00 to 18:00,21,20
+2020,Gondia,18:00 to 21:00,44,29
+2020,Gondia,21:00 to 00:00,10,4
+2020,Gondia,Unknown,0,0
+2020,Jalgaon,00:00 to 03:00,10,6
+2020,Jalgaon,03:00 to 06:00,11,15
+2020,Jalgaon,06:00 to 09:00,73,40
+2020,Jalgaon,09:00 to 12:00,88,71
+2020,Jalgaon,12:00 to 15:00,84,67
+2020,Jalgaon,15:00 to 18:00,77,85
+2020,Jalgaon,18:00 to 21:00,78,64
+2020,Jalgaon,21:00 to 00:00,50,41
+2020,Jalgaon,Unknown,1,0
+2020,Jalna,00:00 to 03:00,25,38
+2020,Jalna,03:00 to 06:00,39,91
+2020,Jalna,06:00 to 09:00,12,34
+2020,Jalna,09:00 to 12:00,9,39
+2020,Jalna,12:00 to 15:00,23,29
+2020,Jalna,15:00 to 18:00,24,31
+2020,Jalna,18:00 to 21:00,38,25
+2020,Jalna,21:00 to 00:00,43,29
+2020,Jalna,Unknown,0,0
+2020,Kolhapur,00:00 to 03:00,18,24
+2020,Kolhapur,03:00 to 06:00,9,10
+2020,Kolhapur,06:00 to 09:00,26,39
+2020,Kolhapur,09:00 to 12:00,46,68
+2020,Kolhapur,12:00 to 15:00,55,84
+2020,Kolhapur,15:00 to 18:00,47,88
+2020,Kolhapur,18:00 to 21:00,68,73
+2020,Kolhapur,21:00 to 00:00,51,67
+2020,Kolhapur,Unknown,0,0
+2020,Latur,00:00 to 03:00,13,4
+2020,Latur,03:00 to 06:00,22,7
+2020,Latur,06:00 to 09:00,20,14
+2020,Latur,09:00 to 12:00,26,33
+2020,Latur,12:00 to 15:00,46,51
+2020,Latur,15:00 to 18:00,41,50
+2020,Latur,18:00 to 21:00,41,49
+2020,Latur,21:00 to 00:00,42,28
+2020,Latur,Unknown,0,0
+2020,Mumbai,00:00 to 03:00,54,163
+2020,Mumbai,03:00 to 06:00,52,116
+2020,Mumbai,06:00 to 09:00,77,145
+2020,Mumbai,09:00 to 12:00,62,261
+2020,Mumbai,12:00 to 15:00,90,216
+2020,Mumbai,15:00 to 18:00,90,234
+2020,Mumbai,18:00 to 21:00,58,261
+2020,Mumbai,21:00 to 00:00,79,255
+2020,Mumbai,Unknown,0,3
+2020,Nagpur,00:00 to 03:00,32,39
+2020,Nagpur,03:00 to 06:00,24,28
+2020,Nagpur,06:00 to 09:00,83,99
+2020,Nagpur,09:00 to 12:00,88,147
+2020,Nagpur,12:00 to 15:00,82,125
+2020,Nagpur,15:00 to 18:00,110,133
+2020,Nagpur,18:00 to 21:00,82,104
+2020,Nagpur,21:00 to 00:00,73,114
+2020,Nagpur,Unknown,0,0
+2020,Nanded,00:00 to 03:00,10,9
+2020,Nanded,03:00 to 06:00,10,10
+2020,Nanded,06:00 to 09:00,32,39
+2020,Nanded,09:00 to 12:00,29,52
+2020,Nanded,12:00 to 15:00,36,36
+2020,Nanded,15:00 to 18:00,47,66
+2020,Nanded,18:00 to 21:00,67,67
+2020,Nanded,21:00 to 00:00,37,30
+2020,Nanded,Unknown,0,0
+2020,Nandurbar,00:00 to 03:00,11,8
+2020,Nandurbar,03:00 to 06:00,10,8
+2020,Nandurbar,06:00 to 09:00,25,48
+2020,Nandurbar,09:00 to 12:00,18,39
+2020,Nandurbar,12:00 to 15:00,20,32
+2020,Nandurbar,15:00 to 18:00,22,34
+2020,Nandurbar,18:00 to 21:00,26,48
+2020,Nandurbar,21:00 to 00:00,14,9
+2020,Nandurbar,Unknown,0,0
+2020,Nashik,00:00 to 03:00,123,93
+2020,Nashik,03:00 to 06:00,88,80
+2020,Nashik,06:00 to 09:00,187,183
+2020,Nashik,09:00 to 12:00,115,132
+2020,Nashik,12:00 to 15:00,108,87
+2020,Nashik,15:00 to 18:00,72,117
+2020,Nashik,18:00 to 21:00,169,145
+2020,Nashik,21:00 to 00:00,137,114
+2020,Nashik,Unknown,0,0
+2020,Osmanabad,00:00 to 03:00,12,4
+2020,Osmanabad,03:00 to 06:00,10,5
+2020,Osmanabad,06:00 to 09:00,22,15
+2020,Osmanabad,09:00 to 12:00,35,40
+2020,Osmanabad,12:00 to 15:00,44,33
+2020,Osmanabad,15:00 to 18:00,47,39
+2020,Osmanabad,18:00 to 21:00,43,46
+2020,Osmanabad,21:00 to 00:00,39,10
+2020,Osmanabad,Unknown,0,0
+2020,Palghar,00:00 to 03:00,23,16
+2020,Palghar,03:00 to 06:00,17,6
+2020,Palghar,06:00 to 09:00,50,36
+2020,Palghar,09:00 to 12:00,55,67
+2020,Palghar,12:00 to 15:00,32,34
+2020,Palghar,15:00 to 18:00,47,43
+2020,Palghar,18:00 to 21:00,69,81
+2020,Palghar,21:00 to 00:00,22,29
+2020,Palghar,Unknown,6,2
+2020,Pune,00:00 to 03:00,145,182
+2020,Pune,03:00 to 06:00,164,168
+2020,Pune,06:00 to 09:00,118,94
+2020,Pune,09:00 to 12:00,79,134
+2020,Pune,12:00 to 15:00,81,106
+2020,Pune,15:00 to 18:00,112,91
+2020,Pune,18:00 to 21:00,104,102
+2020,Pune,21:00 to 00:00,172,205
+2020,Pune,Unknown,128,99
+2020,Raigad,00:00 to 03:00,22,31
+2020,Raigad,03:00 to 06:00,14,25
+2020,Raigad,06:00 to 09:00,19,23
+2020,Raigad,09:00 to 12:00,27,58
+2020,Raigad,12:00 to 15:00,33,75
+2020,Raigad,15:00 to 18:00,31,98
+2020,Raigad,18:00 to 21:00,34,46
+2020,Raigad,21:00 to 00:00,24,51
+2020,Raigad,Unknown,2,2
+2020,Ratnagiri,00:00 to 03:00,4,2
+2020,Ratnagiri,03:00 to 06:00,4,6
+2020,Ratnagiri,06:00 to 09:00,10,6
+2020,Ratnagiri,09:00 to 12:00,11,28
+2020,Ratnagiri,12:00 to 15:00,22,45
+2020,Ratnagiri,15:00 to 18:00,16,60
+2020,Ratnagiri,18:00 to 21:00,24,31
+2020,Ratnagiri,21:00 to 00:00,11,24
+2020,Ratnagiri,Unknown,1,0
+2020,Sangli,00:00 to 03:00,9,15
+2020,Sangli,03:00 to 06:00,5,5
+2020,Sangli,06:00 to 09:00,30,42
+2020,Sangli,09:00 to 12:00,35,51
+2020,Sangli,12:00 to 15:00,52,89
+2020,Sangli,15:00 to 18:00,46,77
+2020,Sangli,18:00 to 21:00,64,110
+2020,Sangli,21:00 to 00:00,26,34
+2020,Sangli,Unknown,2,4
+2020,Satara,00:00 to 03:00,36,13
+2020,Satara,03:00 to 06:00,16,26
+2020,Satara,06:00 to 09:00,33,33
+2020,Satara,09:00 to 12:00,49,53
+2020,Satara,12:00 to 15:00,42,81
+2020,Satara,15:00 to 18:00,53,66
+2020,Satara,18:00 to 21:00,69,74
+2020,Satara,21:00 to 00:00,45,48
+2020,Satara,Unknown,2,1
+2020,Sindhudurg,00:00 to 03:00,1,0
+2020,Sindhudurg,03:00 to 06:00,2,2
+2020,Sindhudurg,06:00 to 09:00,4,6
+2020,Sindhudurg,09:00 to 12:00,9,14
+2020,Sindhudurg,12:00 to 15:00,9,16
+2020,Sindhudurg,15:00 to 18:00,15,16
+2020,Sindhudurg,18:00 to 21:00,7,12
+2020,Sindhudurg,21:00 to 00:00,4,12
+2020,Sindhudurg,Unknown,0,0
+2020,Solapur,00:00 to 03:00,21,40
+2020,Solapur,03:00 to 06:00,43,28
+2020,Solapur,06:00 to 09:00,60,67
+2020,Solapur,09:00 to 12:00,65,78
+2020,Solapur,12:00 to 15:00,59,95
+2020,Solapur,15:00 to 18:00,65,86
+2020,Solapur,18:00 to 21:00,108,102
+2020,Solapur,21:00 to 00:00,57,46
+2020,Solapur,Unknown,0,0
+2020,Thane,00:00 to 03:00,48,62
+2020,Thane,03:00 to 06:00,29,70
+2020,Thane,06:00 to 09:00,81,114
+2020,Thane,09:00 to 12:00,58,104
+2020,Thane,12:00 to 15:00,46,78
+2020,Thane,15:00 to 18:00,40,79
+2020,Thane,18:00 to 21:00,78,169
+2020,Thane,21:00 to 00:00,73,95
+2020,Thane,Unknown,15,4
+2020,Wardha,00:00 to 03:00,6,2
+2020,Wardha,03:00 to 06:00,12,7
+2020,Wardha,06:00 to 09:00,9,11
+2020,Wardha,09:00 to 12:00,27,32
+2020,Wardha,12:00 to 15:00,32,27
+2020,Wardha,15:00 to 18:00,29,29
+2020,Wardha,18:00 to 21:00,51,67
+2020,Wardha,21:00 to 00:00,20,10
+2020,Wardha,Unknown,2,1
+2020,Washim,00:00 to 03:00,3,2
+2020,Washim,03:00 to 06:00,7,4
+2020,Washim,06:00 to 09:00,15,8
+2020,Washim,09:00 to 12:00,16,20
+2020,Washim,12:00 to 15:00,14,5
+2020,Washim,15:00 to 18:00,28,22
+2020,Washim,18:00 to 21:00,33,10
+2020,Washim,21:00 to 00:00,9,6
+2020,Washim,Unknown,0,0
+2020,Yavatmal,00:00 to 03:00,8,6
+2020,Yavatmal,03:00 to 06:00,6,8
+2020,Yavatmal,06:00 to 09:00,31,11
+2020,Yavatmal,09:00 to 12:00,31,29
+2020,Yavatmal,12:00 to 15:00,45,31
+2020,Yavatmal,15:00 to 18:00,101,38
+2020,Yavatmal,18:00 to 21:00,78,34
+2020,Yavatmal,21:00 to 00:00,33,6
+2020,Yavatmal,Unknown,1,1

@@ -1,0 +1,2241 @@
+Year,District,Crime,Cases
+2014,Ahilyanagar,Theft,1519.0
+2014,Akola,Theft,736.0
+2014,Amravati,Theft,2036.0
+2014,Chhatrapati Sambhaji Nagar,Theft,2336.0
+2014,Beed,Theft,678.0
+2014,Bhandara,Theft,476.0
+2014,Buldhana,Theft,669.0
+2014,Chandrapur,Theft,751.0
+2014,Dhule,Theft,366.0
+2014,Gadchiroli,Theft,102.0
+2014,Gondia,Theft,313.0
+2014,Hingoli,Theft,128.0
+2014,Jalgaon,Theft,999.0
+2014,Jalna,Theft,582.0
+2014,Kolhapur,Theft,883.0
+2014,Latur,Theft,549.0
+2014,Mumbai City,Theft,12348.0
+2014,Nagpur,Theft,5517.0
+2014,Nanded,Theft,511.0
+2014,Nandurbar,Theft,157.0
+2014,Nasik,Theft,1941.0
+2014,Dharashiv,Theft,427.0
+2014,Palghar,Theft,1071.0
+2014,Parbhani,Theft,488.0
+2014,Pune,Theft,8002.0
+2014,Raigad,Theft,429.0
+2014,Ratnagiri,Theft,256.0
+2014,Sangli,Theft,608.0
+2014,Satara,Theft,1254.0
+2014,Sindhudurg,Theft,132.0
+2014,Solapur,Theft,1648.0
+2014,Thane,Theft,5255.0
+2014,Wardha,Theft,800.0
+2014,Washim,Theft,466.0
+2014,Yavatmal,Theft,1850.0
+2015,Ahilyanagar,Theft,1839.0
+2015,Akola,Theft,741.0
+2015,Amravati,Theft,2451.0
+2015,Chhatrapati Sambhaji Nagar,Theft,3269.0
+2015,Beed,Theft,863.0
+2015,Bhandara,Theft,378.0
+2015,Buldhana,Theft,672.0
+2015,Chandrapur,Theft,607.0
+2015,Dhule,Theft,360.0
+2015,Gadchiroli,Theft,135.0
+2015,Gondia,Theft,310.0
+2015,Hingoli,Theft,153.0
+2015,Jalgaon,Theft,917.0
+2015,Jalna,Theft,576.0
+2015,Kolhapur,Theft,947.0
+2015,Latur,Theft,626.0
+2015,Mumbai City,Theft,13707.0
+2015,Nagpur,Theft,5920.0
+2015,Nanded,Theft,688.0
+2015,Nandurbar,Theft,207.0
+2015,Nasik,Theft,2091.0
+2015,Dharashiv,Theft,530.0
+2015,Palghar,Theft,1143.0
+2015,Parbhani,Theft,527.0
+2015,Pune,Theft,8300.0
+2015,Raigad,Theft,585.0
+2015,Ratnagiri,Theft,354.0
+2015,Sangli,Theft,618.0
+2015,Satara,Theft,1234.0
+2015,Sindhudurg,Theft,120.0
+2015,Solapur,Theft,1756.0
+2015,Thane,Theft,5700.0
+2015,Wardha,Theft,726.0
+2015,Washim,Theft,485.0
+2015,Yavatmal,Theft,1593.0
+2016,Ahilyanagar,Theft,1557.0
+2016,Akola,Theft,591.0
+2016,Amravati,Theft,2005.0
+2016,Chhatrapati Sambhaji Nagar,Theft,3449.0
+2016,Beed,Theft,799.0
+2016,Bhandara,Theft,472.0
+2016,Buldhana,Theft,611.0
+2016,Chandrapur,Theft,555.0
+2016,Dhule,Theft,464.0
+2016,Gadchiroli,Theft,139.0
+2016,Gondia,Theft,331.0
+2016,Hingoli,Theft,166.0
+2016,Jalgaon,Theft,889.0
+2016,Jalna,Theft,549.0
+2016,Kolhapur,Theft,898.0
+2016,Latur,Theft,565.0
+2016,Mumbai City,Theft,13154.0
+2016,Nagpur,Theft,6534.0
+2016,Nanded,Theft,747.0
+2016,Nandurbar,Theft,264.0
+2016,Nasik,Theft,1999.0
+2016,Dharashiv,Theft,407.0
+2016,Palghar,Theft,1094.0
+2016,Parbhani,Theft,477.0
+2016,Pune,Theft,8457.0
+2016,Raigad,Theft,487.0
+2016,Ratnagiri,Theft,403.0
+2016,Sangli,Theft,669.0
+2016,Satara,Theft,1085.0
+2016,Sindhudurg,Theft,156.0
+2016,Solapur,Theft,1728.0
+2016,Thane,Theft,5320.0
+2016,Wardha,Theft,696.0
+2016,Washim,Theft,325.0
+2016,Yavatmal,Theft,1055.0
+2017,Ahilyanagar,Theft,1791.0
+2017,Akola,Theft,604.0
+2017,Amravati,Theft,1750.0
+2017,Chhatrapati Sambhaji Nagar,Theft,2702.0
+2017,Beed,Theft,763.0
+2017,Bhandara,Theft,375.0
+2017,Buldhana,Theft,701.0
+2017,Chandrapur,Theft,587.0
+2017,Dhule,Theft,526.0
+2017,Gadchiroli,Theft,104.0
+2017,Gondia,Theft,372.0
+2017,Hingoli,Theft,212.0
+2017,Jalgaon,Theft,984.0
+2017,Jalna,Theft,670.0
+2017,Kolhapur,Theft,958.0
+2017,Latur,Theft,566.0
+2017,Mumbai City,Theft,34211.0
+2017,Nagpur,Theft,10135.0
+2017,Nanded,Theft,796.0
+2017,Nandurbar,Theft,289.0
+2017,Nasik,Theft,2055.0
+2017,Dharashiv,Theft,449.0
+2017,Palghar,Theft,1024.0
+2017,Parbhani,Theft,475.0
+2017,Pune,Theft,11303.0
+2017,Raigad,Theft,462.0
+2017,Ratnagiri,Theft,402.0
+2017,Sangli,Theft,983.0
+2017,Satara,Theft,1101.0
+2017,Sindhudurg,Theft,190.0
+2017,Solapur,Theft,2020.0
+2017,Thane,Theft,5176.0
+2017,Wardha,Theft,603.0
+2017,Washim,Theft,340.0
+2017,Yavatmal,Theft,1077.0
+2018,Ahilyanagar,Theft,2203.0
+2018,Akola,Theft,573.0
+2018,Amravati,Theft,1744.0
+2018,Chhatrapati Sambhaji Nagar,Theft,7505.0
+2018,Beed,Theft,688.0
+2018,Bhandara,Theft,383.0
+2018,Buldhana,Theft,792.0
+2018,Chandrapur,Theft,699.0
+2018,Dhule,Theft,600.0
+2018,Gadchiroli,Theft,118.0
+2018,Gondia,Theft,389.0
+2018,Hingoli,Theft,236.0
+2018,Jalgaon,Theft,1177.0
+2018,Jalna,Theft,823.0
+2018,Kolhapur,Theft,1092.0
+2018,Latur,Theft,597.0
+2018,Mumbai City,Theft,47202.0
+2018,Nagpur,Theft,7319.0
+2018,Nanded,Theft,573.0
+2018,Nandurbar,Theft,300.0
+2018,Nasik,Theft,2062.0
+2018,Dharashiv,Theft,485.0
+2018,Palghar,Theft,1443.0
+2018,Parbhani,Theft,537.0
+2018,Pune,Theft,11431.0
+2018,Raigad,Theft,481.0
+2018,Ratnagiri,Theft,442.0
+2018,Sangli,Theft,1510.0
+2018,Satara,Theft,1258.0
+2018,Sindhudurg,Theft,242.0
+2018,Solapur,Theft,2337.0
+2018,Thane,Theft,5688.0
+2018,Wardha,Theft,625.0
+2018,Washim,Theft,369.0
+2018,Yavatmal,Theft,932.0
+2019,Ahilyanagar,Theft,2938.0
+2019,Akola,Theft,592.0
+2019,Amravati,Theft,1743.0
+2019,Chhatrapati Sambhaji Nagar,Theft,7185.0
+2019,Beed,Theft,690.0
+2019,Bhandara,Theft,449.0
+2019,Buldhana,Theft,896.0
+2019,Chandrapur,Theft,764.0
+2019,Dhule,Theft,662.0
+2019,Gadchiroli,Theft,138.0
+2019,Gondia,Theft,343.0
+2019,Hingoli,Theft,318.0
+2019,Jalgaon,Theft,1249.0
+2019,Jalna,Theft,982.0
+2019,Kolhapur,Theft,1015.0
+2019,Latur,Theft,616.0
+2019,Mumbai City,Theft,40168.0
+2019,Nagpur,Theft,6541.0
+2019,Nanded,Theft,898.0
+2019,Nandurbar,Theft,334.0
+2019,Nasik,Theft,2133.0
+2019,Dharashiv,Theft,584.0
+2019,Palghar,Theft,1356.0
+2019,Parbhani,Theft,596.0
+2019,Pune,Theft,9995.0
+2019,Raigad,Theft,489.0
+2019,Ratnagiri,Theft,356.0
+2019,Sangli,Theft,1463.0
+2019,Satara,Theft,1218.0
+2019,Sindhudurg,Theft,226.0
+2019,Solapur,Theft,2507.0
+2019,Thane,Theft,5202.0
+2019,Wardha,Theft,612.0
+2019,Washim,Theft,337.0
+2019,Yavatmal,Theft,922.0
+2020,Ahilyanagar,Theft,2128.0
+2020,Akola,Theft,784.0
+2020,Amravati,Theft,1697.0
+2020,Chhatrapati Sambhaji Nagar,Theft,3309.0
+2020,Beed,Theft,686.0
+2020,Bhandara,Theft,519.0
+2020,Buldhana,Theft,922.0
+2020,Chandrapur,Theft,713.0
+2020,Dhule,Theft,529.0
+2020,Gadchiroli,Theft,193.0
+2020,Gondia,Theft,306.0
+2020,Hingoli,Theft,323.0
+2020,Jalgaon,Theft,1412.0
+2020,Jalna,Theft,1215.0
+2020,Kolhapur,Theft,880.0
+2020,Latur,Theft,649.0
+2020,Mumbai City,Theft,13716.0
+2020,Nagpur,Theft,3710.0
+2020,Nanded,Theft,952.0
+2020,Nandurbar,Theft,311.0
+2020,Nasik,Theft,1621.0
+2020,Dharashiv,Theft,455.0
+2020,Palghar,Theft,233.0
+2020,Parbhani,Theft,682.0
+2020,Pune,Theft,5989.0
+2020,Raigad,Theft,388.0
+2020,Ratnagiri,Theft,233.0
+2020,Sangli,Theft,1096.0
+2020,Satara,Theft,1024.0
+2020,Sindhudurg,Theft,106.0
+2020,Solapur,Theft,2244.0
+2020,Thane,Theft,5086.0
+2020,Wardha,Theft,572.0
+2020,Washim,Theft,330.0
+2020,Yavatmal,Theft,717.0
+2021,Ahilyanagar,Theft,3123.0
+2021,Akola,Theft,815.0
+2021,Amravati,Theft,1802.0
+2021,Chhatrapati Sambhaji Nagar,Theft,4303.0
+2021,Beed,Theft,1256.0
+2021,Bhandara,Theft,477.0
+2021,Buldhana,Theft,1241.0
+2021,Chandrapur,Theft,893.0
+2021,Dhule,Theft,601.0
+2021,Gadchiroli,Theft,262.0
+2021,Gondia,Theft,397.0
+2021,Hingoli,Theft,367.0
+2021,Jalgaon,Theft,1781.0
+2021,Jalna,Theft,1255.0
+2021,Kolhapur,Theft,1541.0
+2021,Latur,Theft,858.0
+2021,Mumbai City,Theft,13659.0
+2021,Nagpur,Theft,4345.0
+2021,Nanded,Theft,1278.0
+2021,Nandurbar,Theft,335.0
+2021,Nasik,Theft,1862.0
+2021,Dharashiv,Theft,742.0
+2021,Palghar,Theft,356.0
+2021,Parbhani,Theft,957.0
+2021,Pune,Theft,7310.0
+2021,Raigad,Theft,407.0
+2021,Ratnagiri,Theft,230.0
+2021,Sangli,Theft,1716.0
+2021,Satara,Theft,1151.0
+2021,Sindhudurg,Theft,140.0
+2021,Solapur,Theft,2881.0
+2021,Thane,Theft,6792.0
+2021,Wardha,Theft,592.0
+2021,Washim,Theft,456.0
+2021,Yavatmal,Theft,1037.0
+2014,Ahilyanagar,Counterfeiting,3.0
+2014,Akola,Counterfeiting,3.0
+2014,Amravati,Counterfeiting,3.0
+2014,Chhatrapati Sambhaji Nagar,Counterfeiting,4.0
+2014,Beed,Counterfeiting,1.0
+2014,Bhandara,Counterfeiting,
+2014,Buldhana,Counterfeiting,1.0
+2014,Chandrapur,Counterfeiting,
+2014,Dhule,Counterfeiting,2.0
+2014,Gadchiroli,Counterfeiting,
+2014,Gondia,Counterfeiting,1.0
+2014,Hingoli,Counterfeiting,1.0
+2014,Jalgaon,Counterfeiting,7.0
+2014,Jalna,Counterfeiting,
+2014,Kolhapur,Counterfeiting,7.0
+2014,Latur,Counterfeiting,2.0
+2014,Mumbai City,Counterfeiting,39.0
+2014,Nagpur,Counterfeiting,10.0
+2014,Nanded,Counterfeiting,4.0
+2014,Nandurbar,Counterfeiting,2.0
+2014,Nasik,Counterfeiting,15.0
+2014,Dharashiv,Counterfeiting,1.0
+2014,Palghar,Counterfeiting,14.0
+2014,Parbhani,Counterfeiting,
+2014,Pune,Counterfeiting,18.0
+2014,Raigad,Counterfeiting,5.0
+2014,Ratnagiri,Counterfeiting,2.0
+2014,Sangli,Counterfeiting,6.0
+2014,Satara,Counterfeiting,10.0
+2014,Sindhudurg,Counterfeiting,2.0
+2014,Solapur,Counterfeiting,5.0
+2014,Thane,Counterfeiting,32.0
+2014,Wardha,Counterfeiting,
+2014,Washim,Counterfeiting,
+2014,Yavatmal,Counterfeiting,1.0
+2015,Ahilyanagar,Counterfeiting,1.0
+2015,Akola,Counterfeiting,3.0
+2015,Amravati,Counterfeiting,3.0
+2015,Chhatrapati Sambhaji Nagar,Counterfeiting,3.0
+2015,Beed,Counterfeiting,1.0
+2015,Bhandara,Counterfeiting,1.0
+2015,Buldhana,Counterfeiting,9.0
+2015,Chandrapur,Counterfeiting,1.0
+2015,Dhule,Counterfeiting,1.0
+2015,Gadchiroli,Counterfeiting,1.0
+2015,Gondia,Counterfeiting,1.0
+2015,Hingoli,Counterfeiting,
+2015,Jalgaon,Counterfeiting,3.0
+2015,Jalna,Counterfeiting,
+2015,Kolhapur,Counterfeiting,
+2015,Latur,Counterfeiting,
+2015,Mumbai City,Counterfeiting,51.0
+2015,Nagpur,Counterfeiting,9.0
+2015,Nanded,Counterfeiting,3.0
+2015,Nandurbar,Counterfeiting,1.0
+2015,Nasik,Counterfeiting,17.0
+2015,Dharashiv,Counterfeiting,1.0
+2015,Palghar,Counterfeiting,5.0
+2015,Parbhani,Counterfeiting,1.0
+2015,Pune,Counterfeiting,17.0
+2015,Raigad,Counterfeiting,3.0
+2015,Ratnagiri,Counterfeiting,1.0
+2015,Sangli,Counterfeiting,5.0
+2015,Satara,Counterfeiting,4.0
+2015,Sindhudurg,Counterfeiting,7.0
+2015,Solapur,Counterfeiting,7.0
+2015,Thane,Counterfeiting,23.0
+2015,Wardha,Counterfeiting,4.0
+2015,Washim,Counterfeiting,1.0
+2015,Yavatmal,Counterfeiting,2.0
+2016,Ahilyanagar,Counterfeiting,5.0
+2016,Akola,Counterfeiting,1.0
+2016,Amravati,Counterfeiting,1.0
+2016,Chhatrapati Sambhaji Nagar,Counterfeiting,8.0
+2016,Beed,Counterfeiting,
+2016,Bhandara,Counterfeiting,2.0
+2016,Buldhana,Counterfeiting,6.0
+2016,Chandrapur,Counterfeiting,
+2016,Dhule,Counterfeiting,1.0
+2016,Gadchiroli,Counterfeiting,1.0
+2016,Gondia,Counterfeiting,
+2016,Hingoli,Counterfeiting,
+2016,Jalgaon,Counterfeiting,3.0
+2016,Jalna,Counterfeiting,1.0
+2016,Kolhapur,Counterfeiting,1.0
+2016,Latur,Counterfeiting,1.0
+2016,Mumbai City,Counterfeiting,24.0
+2016,Nagpur,Counterfeiting,2.0
+2016,Nanded,Counterfeiting,1.0
+2016,Nandurbar,Counterfeiting,1.0
+2016,Nasik,Counterfeiting,15.0
+2016,Dharashiv,Counterfeiting,2.0
+2016,Palghar,Counterfeiting,3.0
+2016,Parbhani,Counterfeiting,2.0
+2016,Pune,Counterfeiting,8.0
+2016,Raigad,Counterfeiting,4.0
+2016,Ratnagiri,Counterfeiting,
+2016,Sangli,Counterfeiting,
+2016,Satara,Counterfeiting,1.0
+2016,Sindhudurg,Counterfeiting,2.0
+2016,Solapur,Counterfeiting,8.0
+2016,Thane,Counterfeiting,16.0
+2016,Wardha,Counterfeiting,1.0
+2016,Washim,Counterfeiting,
+2016,Yavatmal,Counterfeiting,3.0
+2017,Ahilyanagar,Counterfeiting,2.0
+2017,Akola,Counterfeiting,1.0
+2017,Amravati,Counterfeiting,
+2017,Chhatrapati Sambhaji Nagar,Counterfeiting,3.0
+2017,Beed,Counterfeiting,1.0
+2017,Bhandara,Counterfeiting,1.0
+2017,Buldhana,Counterfeiting,2.0
+2017,Chandrapur,Counterfeiting,
+2017,Dhule,Counterfeiting,
+2017,Gadchiroli,Counterfeiting,
+2017,Gondia,Counterfeiting,
+2017,Hingoli,Counterfeiting,1.0
+2017,Jalgaon,Counterfeiting,2.0
+2017,Jalna,Counterfeiting,
+2017,Kolhapur,Counterfeiting,
+2017,Latur,Counterfeiting,
+2017,Mumbai City,Counterfeiting,18.0
+2017,Nagpur,Counterfeiting,4.0
+2017,Nanded,Counterfeiting,
+2017,Nandurbar,Counterfeiting,
+2017,Nasik,Counterfeiting,7.0
+2017,Dharashiv,Counterfeiting,
+2017,Palghar,Counterfeiting,
+2017,Parbhani,Counterfeiting,
+2017,Pune,Counterfeiting,6.0
+2017,Raigad,Counterfeiting,1.0
+2017,Ratnagiri,Counterfeiting,
+2017,Sangli,Counterfeiting,1.0
+2017,Satara,Counterfeiting,
+2017,Sindhudurg,Counterfeiting,3.0
+2017,Solapur,Counterfeiting,10.0
+2017,Thane,Counterfeiting,13.0
+2017,Wardha,Counterfeiting,1.0
+2017,Washim,Counterfeiting,1.0
+2017,Yavatmal,Counterfeiting,3.0
+2018,Ahilyanagar,Counterfeiting,
+2018,Akola,Counterfeiting,1.0
+2018,Amravati,Counterfeiting,
+2018,Chhatrapati Sambhaji Nagar,Counterfeiting,4.0
+2018,Beed,Counterfeiting,
+2018,Bhandara,Counterfeiting,
+2018,Buldhana,Counterfeiting,1.0
+2018,Chandrapur,Counterfeiting,1.0
+2018,Dhule,Counterfeiting,
+2018,Gadchiroli,Counterfeiting,
+2018,Gondia,Counterfeiting,
+2018,Hingoli,Counterfeiting,
+2018,Jalgaon,Counterfeiting,
+2018,Jalna,Counterfeiting,2.0
+2018,Kolhapur,Counterfeiting,2.0
+2018,Latur,Counterfeiting,
+2018,Mumbai City,Counterfeiting,13.0
+2018,Nagpur,Counterfeiting,2.0
+2018,Nanded,Counterfeiting,
+2018,Nandurbar,Counterfeiting,1.0
+2018,Nasik,Counterfeiting,2.0
+2018,Dharashiv,Counterfeiting,
+2018,Palghar,Counterfeiting,1.0
+2018,Parbhani,Counterfeiting,
+2018,Pune,Counterfeiting,9.0
+2018,Raigad,Counterfeiting,
+2018,Ratnagiri,Counterfeiting,
+2018,Sangli,Counterfeiting,2.0
+2018,Satara,Counterfeiting,4.0
+2018,Sindhudurg,Counterfeiting,
+2018,Solapur,Counterfeiting,7.0
+2018,Thane,Counterfeiting,13.0
+2018,Wardha,Counterfeiting,1.0
+2018,Washim,Counterfeiting,
+2018,Yavatmal,Counterfeiting,2.0
+2019,Ahilyanagar,Counterfeiting,3.0
+2019,Akola,Counterfeiting,
+2019,Amravati,Counterfeiting,1.0
+2019,Chhatrapati Sambhaji Nagar,Counterfeiting,2.0
+2019,Beed,Counterfeiting,
+2019,Bhandara,Counterfeiting,
+2019,Buldhana,Counterfeiting,2.0
+2019,Chandrapur,Counterfeiting,1.0
+2019,Dhule,Counterfeiting,2.0
+2019,Gadchiroli,Counterfeiting,
+2019,Gondia,Counterfeiting,
+2019,Hingoli,Counterfeiting,
+2019,Jalgaon,Counterfeiting,1.0
+2019,Jalna,Counterfeiting,1.0
+2019,Kolhapur,Counterfeiting,3.0
+2019,Latur,Counterfeiting,1.0
+2019,Mumbai City,Counterfeiting,12.0
+2019,Nagpur,Counterfeiting,8.0
+2019,Nanded,Counterfeiting,
+2019,Nandurbar,Counterfeiting,
+2019,Nasik,Counterfeiting,
+2019,Dharashiv,Counterfeiting,
+2019,Palghar,Counterfeiting,2.0
+2019,Parbhani,Counterfeiting,
+2019,Pune,Counterfeiting,13.0
+2019,Raigad,Counterfeiting,1.0
+2019,Ratnagiri,Counterfeiting,
+2019,Sangli,Counterfeiting,1.0
+2019,Satara,Counterfeiting,8.0
+2019,Sindhudurg,Counterfeiting,
+2019,Solapur,Counterfeiting,4.0
+2019,Thane,Counterfeiting,8.0
+2019,Wardha,Counterfeiting,1.0
+2019,Washim,Counterfeiting,
+2019,Yavatmal,Counterfeiting,1.0
+2020,Ahilyanagar,Counterfeiting,2.0
+2020,Akola,Counterfeiting,2.0
+2020,Amravati,Counterfeiting,
+2020,Chhatrapati Sambhaji Nagar,Counterfeiting,3.0
+2020,Beed,Counterfeiting,1.0
+2020,Bhandara,Counterfeiting,
+2020,Buldhana,Counterfeiting,2.0
+2020,Chandrapur,Counterfeiting,1.0
+2020,Dhule,Counterfeiting,1.0
+2020,Gadchiroli,Counterfeiting,
+2020,Gondia,Counterfeiting,
+2020,Hingoli,Counterfeiting,1.0
+2020,Jalgaon,Counterfeiting,2.0
+2020,Jalna,Counterfeiting,
+2020,Kolhapur,Counterfeiting,2.0
+2020,Latur,Counterfeiting,
+2020,Mumbai City,Counterfeiting,7.0
+2020,Nagpur,Counterfeiting,7.0
+2020,Nanded,Counterfeiting,1.0
+2020,Nandurbar,Counterfeiting,
+2020,Nasik,Counterfeiting,2.0
+2020,Dharashiv,Counterfeiting,
+2020,Palghar,Counterfeiting,
+2020,Parbhani,Counterfeiting,2.0
+2020,Pune,Counterfeiting,7.0
+2020,Raigad,Counterfeiting,1.0
+2020,Ratnagiri,Counterfeiting,
+2020,Sangli,Counterfeiting,
+2020,Satara,Counterfeiting,1.0
+2020,Sindhudurg,Counterfeiting,3.0
+2020,Solapur,Counterfeiting,2.0
+2020,Thane,Counterfeiting,4.0
+2020,Wardha,Counterfeiting,
+2020,Washim,Counterfeiting,
+2020,Yavatmal,Counterfeiting,
+2021,Ahilyanagar,Counterfeiting,1.0
+2021,Akola,Counterfeiting,
+2021,Amravati,Counterfeiting,1.0
+2021,Chhatrapati Sambhaji Nagar,Counterfeiting,1.0
+2021,Beed,Counterfeiting,
+2021,Bhandara,Counterfeiting,1.0
+2021,Buldhana,Counterfeiting,
+2021,Chandrapur,Counterfeiting,
+2021,Dhule,Counterfeiting,
+2021,Gadchiroli,Counterfeiting,
+2021,Gondia,Counterfeiting,
+2021,Hingoli,Counterfeiting,
+2021,Jalgaon,Counterfeiting,2.0
+2021,Jalna,Counterfeiting,
+2021,Kolhapur,Counterfeiting,2.0
+2021,Latur,Counterfeiting,1.0
+2021,Mumbai City,Counterfeiting,15.0
+2021,Nagpur,Counterfeiting,7.0
+2021,Nanded,Counterfeiting,1.0
+2021,Nandurbar,Counterfeiting,
+2021,Nasik,Counterfeiting,2.0
+2021,Dharashiv,Counterfeiting,1.0
+2021,Palghar,Counterfeiting,1.0
+2021,Parbhani,Counterfeiting,
+2021,Pune,Counterfeiting,9.0
+2021,Raigad,Counterfeiting,1.0
+2021,Ratnagiri,Counterfeiting,
+2021,Sangli,Counterfeiting,1.0
+2021,Satara,Counterfeiting,2.0
+2021,Sindhudurg,Counterfeiting,1.0
+2021,Solapur,Counterfeiting,1.0
+2021,Thane,Counterfeiting,6.0
+2021,Wardha,Counterfeiting,
+2021,Washim,Counterfeiting,
+2021,Yavatmal,Counterfeiting,
+2014,Ahilyanagar,Arson,46.0
+2014,Akola,Arson,34.0
+2014,Amravati,Arson,86.0
+2014,Chhatrapati Sambhaji Nagar,Arson,65.0
+2014,Beed,Arson,33.0
+2014,Bhandara,Arson,20.0
+2014,Buldhana,Arson,45.0
+2014,Chandrapur,Arson,28.0
+2014,Dhule,Arson,3.0
+2014,Gadchiroli,Arson,17.0
+2014,Gondia,Arson,10.0
+2014,Hingoli,Arson,12.0
+2014,Jalgaon,Arson,23.0
+2014,Jalna,Arson,23.0
+2014,Kolhapur,Arson,22.0
+2014,Latur,Arson,54.0
+2014,Mumbai City,Arson,54.0
+2014,Nagpur,Arson,74.0
+2014,Nanded,Arson,41.0
+2014,Nandurbar,Arson,6.0
+2014,Nasik,Arson,31.0
+2014,Dharashiv,Arson,19.0
+2014,Palghar,Arson,12.0
+2014,Parbhani,Arson,28.0
+2014,Pune,Arson,75.0
+2014,Raigad,Arson,22.0
+2014,Ratnagiri,Arson,13.0
+2014,Sangli,Arson,22.0
+2014,Satara,Arson,26.0
+2014,Sindhudurg,Arson,15.0
+2014,Solapur,Arson,37.0
+2014,Thane,Arson,74.0
+2014,Wardha,Arson,19.0
+2014,Washim,Arson,26.0
+2014,Yavatmal,Arson,65.0
+2015,Ahilyanagar,Arson,58.0
+2015,Akola,Arson,31.0
+2015,Amravati,Arson,79.0
+2015,Chhatrapati Sambhaji Nagar,Arson,101.0
+2015,Beed,Arson,29.0
+2015,Bhandara,Arson,31.0
+2015,Buldhana,Arson,45.0
+2015,Chandrapur,Arson,40.0
+2015,Dhule,Arson,4.0
+2015,Gadchiroli,Arson,17.0
+2015,Gondia,Arson,9.0
+2015,Hingoli,Arson,29.0
+2015,Jalgaon,Arson,23.0
+2015,Jalna,Arson,28.0
+2015,Kolhapur,Arson,17.0
+2015,Latur,Arson,54.0
+2015,Mumbai City,Arson,20.0
+2015,Nagpur,Arson,68.0
+2015,Nanded,Arson,51.0
+2015,Nandurbar,Arson,6.0
+2015,Nasik,Arson,40.0
+2015,Dharashiv,Arson,17.0
+2015,Palghar,Arson,10.0
+2015,Parbhani,Arson,30.0
+2015,Pune,Arson,111.0
+2015,Raigad,Arson,15.0
+2015,Ratnagiri,Arson,17.0
+2015,Sangli,Arson,18.0
+2015,Satara,Arson,28.0
+2015,Sindhudurg,Arson,15.0
+2015,Solapur,Arson,77.0
+2015,Thane,Arson,78.0
+2015,Wardha,Arson,16.0
+2015,Washim,Arson,29.0
+2015,Yavatmal,Arson,58.0
+2016,Ahilyanagar,Arson,34.0
+2016,Akola,Arson,28.0
+2016,Amravati,Arson,103.0
+2016,Chhatrapati Sambhaji Nagar,Arson,53.0
+2016,Beed,Arson,35.0
+2016,Bhandara,Arson,25.0
+2016,Buldhana,Arson,47.0
+2016,Chandrapur,Arson,38.0
+2016,Dhule,Arson,17.0
+2016,Gadchiroli,Arson,14.0
+2016,Gondia,Arson,13.0
+2016,Hingoli,Arson,18.0
+2016,Jalgaon,Arson,29.0
+2016,Jalna,Arson,20.0
+2016,Kolhapur,Arson,26.0
+2016,Latur,Arson,53.0
+2016,Mumbai City,Arson,31.0
+2016,Nagpur,Arson,81.0
+2016,Nanded,Arson,45.0
+2016,Nandurbar,Arson,13.0
+2016,Nasik,Arson,55.0
+2016,Dharashiv,Arson,15.0
+2016,Palghar,Arson,10.0
+2016,Parbhani,Arson,28.0
+2016,Pune,Arson,136.0
+2016,Raigad,Arson,21.0
+2016,Ratnagiri,Arson,17.0
+2016,Sangli,Arson,21.0
+2016,Satara,Arson,29.0
+2016,Sindhudurg,Arson,7.0
+2016,Solapur,Arson,56.0
+2016,Thane,Arson,78.0
+2016,Wardha,Arson,54.0
+2016,Washim,Arson,13.0
+2016,Yavatmal,Arson,75.0
+2017,Ahilyanagar,Arson,56.0
+2017,Akola,Arson,42.0
+2017,Amravati,Arson,84.0
+2017,Chhatrapati Sambhaji Nagar,Arson,61.0
+2017,Beed,Arson,30.0
+2017,Bhandara,Arson,28.0
+2017,Buldhana,Arson,57.0
+2017,Chandrapur,Arson,20.0
+2017,Dhule,Arson,17.0
+2017,Gadchiroli,Arson,17.0
+2017,Gondia,Arson,11.0
+2017,Hingoli,Arson,24.0
+2017,Jalgaon,Arson,24.0
+2017,Jalna,Arson,2.0
+2017,Kolhapur,Arson,15.0
+2017,Latur,Arson,40.0
+2017,Mumbai City,Arson,14.0
+2017,Nagpur,Arson,71.0
+2017,Nanded,Arson,34.0
+2017,Nandurbar,Arson,8.0
+2017,Nasik,Arson,50.0
+2017,Dharashiv,Arson,12.0
+2017,Palghar,Arson,13.0
+2017,Parbhani,Arson,22.0
+2017,Pune,Arson,130.0
+2017,Raigad,Arson,14.0
+2017,Ratnagiri,Arson,16.0
+2017,Sangli,Arson,22.0
+2017,Satara,Arson,29.0
+2017,Sindhudurg,Arson,16.0
+2017,Solapur,Arson,56.0
+2017,Thane,Arson,48.0
+2017,Wardha,Arson,34.0
+2017,Washim,Arson,16.0
+2017,Yavatmal,Arson,51.0
+2018,Ahilyanagar,Arson,50.0
+2018,Akola,Arson,26.0
+2018,Amravati,Arson,54.0
+2018,Chhatrapati Sambhaji Nagar,Arson,68.0
+2018,Beed,Arson,24.0
+2018,Bhandara,Arson,15.0
+2018,Buldhana,Arson,60.0
+2018,Chandrapur,Arson,29.0
+2018,Dhule,Arson,19.0
+2018,Gadchiroli,Arson,12.0
+2018,Gondia,Arson,16.0
+2018,Hingoli,Arson,21.0
+2018,Jalgaon,Arson,32.0
+2018,Jalna,Arson,5.0
+2018,Kolhapur,Arson,14.0
+2018,Latur,Arson,58.0
+2018,Mumbai City,Arson,60.0
+2018,Nagpur,Arson,96.0
+2018,Nanded,Arson,40.0
+2018,Nandurbar,Arson,8.0
+2018,Nasik,Arson,53.0
+2018,Dharashiv,Arson,24.0
+2018,Palghar,Arson,13.0
+2018,Parbhani,Arson,26.0
+2018,Pune,Arson,131.0
+2018,Raigad,Arson,18.0
+2018,Ratnagiri,Arson,17.0
+2018,Sangli,Arson,38.0
+2018,Satara,Arson,41.0
+2018,Sindhudurg,Arson,13.0
+2018,Solapur,Arson,68.0
+2018,Thane,Arson,67.0
+2018,Wardha,Arson,36.0
+2018,Washim,Arson,18.0
+2018,Yavatmal,Arson,42.0
+2019,Ahilyanagar,Arson,64.0
+2019,Akola,Arson,17.0
+2019,Amravati,Arson,72.0
+2019,Chhatrapati Sambhaji Nagar,Arson,37.0
+2019,Beed,Arson,29.0
+2019,Bhandara,Arson,18.0
+2019,Buldhana,Arson,46.0
+2019,Chandrapur,Arson,34.0
+2019,Dhule,Arson,19.0
+2019,Gadchiroli,Arson,26.0
+2019,Gondia,Arson,21.0
+2019,Hingoli,Arson,18.0
+2019,Jalgaon,Arson,29.0
+2019,Jalna,Arson,4.0
+2019,Kolhapur,Arson,17.0
+2019,Latur,Arson,43.0
+2019,Mumbai City,Arson,34.0
+2019,Nagpur,Arson,57.0
+2019,Nanded,Arson,41.0
+2019,Nandurbar,Arson,15.0
+2019,Nasik,Arson,49.0
+2019,Dharashiv,Arson,21.0
+2019,Palghar,Arson,14.0
+2019,Parbhani,Arson,31.0
+2019,Pune,Arson,109.0
+2019,Raigad,Arson,8.0
+2019,Ratnagiri,Arson,19.0
+2019,Sangli,Arson,32.0
+2019,Satara,Arson,29.0
+2019,Sindhudurg,Arson,11.0
+2019,Solapur,Arson,59.0
+2019,Thane,Arson,49.0
+2019,Wardha,Arson,24.0
+2019,Washim,Arson,14.0
+2019,Yavatmal,Arson,40.0
+2020,Ahilyanagar,Arson,53.0
+2020,Akola,Arson,23.0
+2020,Amravati,Arson,61.0
+2020,Chhatrapati Sambhaji Nagar,Arson,37.0
+2020,Beed,Arson,27.0
+2020,Bhandara,Arson,13.0
+2020,Buldhana,Arson,61.0
+2020,Chandrapur,Arson,43.0
+2020,Dhule,Arson,5.0
+2020,Gadchiroli,Arson,25.0
+2020,Gondia,Arson,10.0
+2020,Hingoli,Arson,11.0
+2020,Jalgaon,Arson,36.0
+2020,Jalna,Arson,10.0
+2020,Kolhapur,Arson,22.0
+2020,Latur,Arson,49.0
+2020,Mumbai City,Arson,23.0
+2020,Nagpur,Arson,47.0
+2020,Nanded,Arson,39.0
+2020,Nandurbar,Arson,8.0
+2020,Nasik,Arson,55.0
+2020,Dharashiv,Arson,15.0
+2020,Palghar,Arson,16.0
+2020,Parbhani,Arson,37.0
+2020,Pune,Arson,111.0
+2020,Raigad,Arson,12.0
+2020,Ratnagiri,Arson,9.0
+2020,Sangli,Arson,34.0
+2020,Satara,Arson,28.0
+2020,Sindhudurg,Arson,12.0
+2020,Solapur,Arson,54.0
+2020,Thane,Arson,60.0
+2020,Wardha,Arson,18.0
+2020,Washim,Arson,28.0
+2020,Yavatmal,Arson,31.0
+2021,Ahilyanagar,Arson,
+2021,Akola,Arson,23.0
+2021,Amravati,Arson,57.0
+2021,Chhatrapati Sambhaji Nagar,Arson,35.0
+2021,Beed,Arson,35.0
+2021,Bhandara,Arson,20.0
+2021,Buldhana,Arson,67.0
+2021,Chandrapur,Arson,34.0
+2021,Dhule,Arson,13.0
+2021,Gadchiroli,Arson,13.0
+2021,Gondia,Arson,16.0
+2021,Hingoli,Arson,17.0
+2021,Jalgaon,Arson,26.0
+2021,Jalna,Arson,45.0
+2021,Kolhapur,Arson,37.0
+2021,Latur,Arson,42.0
+2021,Mumbai City,Arson,35.0
+2021,Nagpur,Arson,63.0
+2021,Nanded,Arson,37.0
+2021,Nandurbar,Arson,10.0
+2021,Nasik,Arson,34.0
+2021,Dharashiv,Arson,19.0
+2021,Palghar,Arson,4.0
+2021,Parbhani,Arson,30.0
+2021,Pune,Arson,104.0
+2021,Raigad,Arson,8.0
+2021,Ratnagiri,Arson,15.0
+2021,Sangli,Arson,26.0
+2021,Satara,Arson,27.0
+2021,Sindhudurg,Arson,9.0
+2021,Solapur,Arson,62.0
+2021,Thane,Arson,91.0
+2021,Wardha,Arson,30.0
+2021,Washim,Arson,24.0
+2021,Yavatmal,Arson,44.0
+2014,Ahilyanagar,Extortion,9.0
+2014,Akola,Extortion,18.0
+2014,Amravati,Extortion,9.0
+2014,Chhatrapati Sambhaji Nagar,Extortion,16.0
+2014,Beed,Extortion,8.0
+2014,Bhandara,Extortion,2.0
+2014,Buldhana,Extortion,3.0
+2014,Chandrapur,Extortion,6.0
+2014,Dhule,Extortion,9.0
+2014,Gadchiroli,Extortion,2.0
+2014,Gondia,Extortion,2.0
+2014,Hingoli,Extortion,
+2014,Jalgaon,Extortion,17.0
+2014,Jalna,Extortion,12.0
+2014,Kolhapur,Extortion,13.0
+2014,Latur,Extortion,12.0
+2014,Mumbai City,Extortion,254.0
+2014,Nagpur,Extortion,45.0
+2014,Nanded,Extortion,14.0
+2014,Nandurbar,Extortion,2.0
+2014,Nasik,Extortion,22.0
+2014,Dharashiv,Extortion,6.0
+2014,Palghar,Extortion,5.0
+2014,Parbhani,Extortion,9.0
+2014,Pune,Extortion,76.0
+2014,Raigad,Extortion,6.0
+2014,Ratnagiri,Extortion,4.0
+2014,Sangli,Extortion,29.0
+2014,Satara,Extortion,9.0
+2014,Sindhudurg,Extortion,
+2014,Solapur,Extortion,18.0
+2014,Thane,Extortion,107.0
+2014,Wardha,Extortion,1.0
+2014,Washim,Extortion,4.0
+2014,Yavatmal,Extortion,31.0
+2015,Ahilyanagar,Extortion,13.0
+2015,Akola,Extortion,12.0
+2015,Amravati,Extortion,16.0
+2015,Chhatrapati Sambhaji Nagar,Extortion,38.0
+2015,Beed,Extortion,8.0
+2015,Bhandara,Extortion,
+2015,Buldhana,Extortion,3.0
+2015,Chandrapur,Extortion,11.0
+2015,Dhule,Extortion,13.0
+2015,Gadchiroli,Extortion,2.0
+2015,Gondia,Extortion,3.0
+2015,Hingoli,Extortion,2.0
+2015,Jalgaon,Extortion,24.0
+2015,Jalna,Extortion,5.0
+2015,Kolhapur,Extortion,6.0
+2015,Latur,Extortion,12.0
+2015,Mumbai City,Extortion,272.0
+2015,Nagpur,Extortion,82.0
+2015,Nanded,Extortion,12.0
+2015,Nandurbar,Extortion,4.0
+2015,Nasik,Extortion,34.0
+2015,Dharashiv,Extortion,4.0
+2015,Palghar,Extortion,18.0
+2015,Parbhani,Extortion,9.0
+2015,Pune,Extortion,101.0
+2015,Raigad,Extortion,8.0
+2015,Ratnagiri,Extortion,7.0
+2015,Sangli,Extortion,26.0
+2015,Satara,Extortion,15.0
+2015,Sindhudurg,Extortion,
+2015,Solapur,Extortion,28.0
+2015,Thane,Extortion,172.0
+2015,Wardha,Extortion,3.0
+2015,Washim,Extortion,10.0
+2015,Yavatmal,Extortion,8.0
+2016,Ahilyanagar,Extortion,18.0
+2016,Akola,Extortion,15.0
+2016,Amravati,Extortion,21.0
+2016,Chhatrapati Sambhaji Nagar,Extortion,37.0
+2016,Beed,Extortion,6.0
+2016,Bhandara,Extortion,3.0
+2016,Buldhana,Extortion,11.0
+2016,Chandrapur,Extortion,9.0
+2016,Dhule,Extortion,13.0
+2016,Gadchiroli,Extortion,1.0
+2016,Gondia,Extortion,2.0
+2016,Hingoli,Extortion,2.0
+2016,Jalgaon,Extortion,11.0
+2016,Jalna,Extortion,3.0
+2016,Kolhapur,Extortion,15.0
+2016,Latur,Extortion,
+2016,Mumbai City,Extortion,242.0
+2016,Nagpur,Extortion,33.0
+2016,Nanded,Extortion,13.0
+2016,Nandurbar,Extortion,2.0
+2016,Nasik,Extortion,20.0
+2016,Dharashiv,Extortion,1.0
+2016,Palghar,Extortion,14.0
+2016,Parbhani,Extortion,3.0
+2016,Pune,Extortion,110.0
+2016,Raigad,Extortion,11.0
+2016,Ratnagiri,Extortion,7.0
+2016,Sangli,Extortion,20.0
+2016,Satara,Extortion,8.0
+2016,Sindhudurg,Extortion,5.0
+2016,Solapur,Extortion,27.0
+2016,Thane,Extortion,92.0
+2016,Wardha,Extortion,3.0
+2016,Washim,Extortion,2.0
+2016,Yavatmal,Extortion,8.0
+2017,Ahilyanagar,Extortion,27.0
+2017,Akola,Extortion,12.0
+2017,Amravati,Extortion,10.0
+2017,Chhatrapati Sambhaji Nagar,Extortion,16.0
+2017,Beed,Extortion,2.0
+2017,Bhandara,Extortion,1.0
+2017,Buldhana,Extortion,5.0
+2017,Chandrapur,Extortion,10.0
+2017,Dhule,Extortion,10.0
+2017,Gadchiroli,Extortion,3.0
+2017,Gondia,Extortion,1.0
+2017,Hingoli,Extortion,1.0
+2017,Jalgaon,Extortion,18.0
+2017,Jalna,Extortion,9.0
+2017,Kolhapur,Extortion,17.0
+2017,Latur,Extortion,8.0
+2017,Mumbai City,Extortion,202.0
+2017,Nagpur,Extortion,53.0
+2017,Nanded,Extortion,14.0
+2017,Nandurbar,Extortion,1.0
+2017,Nasik,Extortion,35.0
+2017,Dharashiv,Extortion,2.0
+2017,Palghar,Extortion,16.0
+2017,Parbhani,Extortion,3.0
+2017,Pune,Extortion,77.0
+2017,Raigad,Extortion,9.0
+2017,Ratnagiri,Extortion,5.0
+2017,Sangli,Extortion,9.0
+2017,Satara,Extortion,32.0
+2017,Sindhudurg,Extortion,5.0
+2017,Solapur,Extortion,29.0
+2017,Thane,Extortion,111.0
+2017,Wardha,Extortion,2.0
+2017,Washim,Extortion,3.0
+2017,Yavatmal,Extortion,21.0
+2018,Ahilyanagar,Extortion,36.0
+2018,Akola,Extortion,16.0
+2018,Amravati,Extortion,22.0
+2018,Chhatrapati Sambhaji Nagar,Extortion,24.0
+2018,Beed,Extortion,15.0
+2018,Bhandara,Extortion,1.0
+2018,Buldhana,Extortion,6.0
+2018,Chandrapur,Extortion,12.0
+2018,Dhule,Extortion,25.0
+2018,Gadchiroli,Extortion,5.0
+2018,Gondia,Extortion,5.0
+2018,Hingoli,Extortion,6.0
+2018,Jalgaon,Extortion,14.0
+2018,Jalna,Extortion,12.0
+2018,Kolhapur,Extortion,24.0
+2018,Latur,Extortion,4.0
+2018,Mumbai City,Extortion,233.0
+2018,Nagpur,Extortion,54.0
+2018,Nanded,Extortion,11.0
+2018,Nandurbar,Extortion,6.0
+2018,Nasik,Extortion,44.0
+2018,Dharashiv,Extortion,5.0
+2018,Palghar,Extortion,42.0
+2018,Parbhani,Extortion,8.0
+2018,Pune,Extortion,109.0
+2018,Raigad,Extortion,13.0
+2018,Ratnagiri,Extortion,4.0
+2018,Sangli,Extortion,12.0
+2018,Satara,Extortion,22.0
+2018,Sindhudurg,Extortion,4.0
+2018,Solapur,Extortion,41.0
+2018,Thane,Extortion,150.0
+2018,Wardha,Extortion,2.0
+2018,Washim,Extortion,1.0
+2018,Yavatmal,Extortion,19.0
+2019,Ahilyanagar,Extortion,22.0
+2019,Akola,Extortion,12.0
+2019,Amravati,Extortion,17.0
+2019,Chhatrapati Sambhaji Nagar,Extortion,25.0
+2019,Beed,Extortion,8.0
+2019,Bhandara,Extortion,2.0
+2019,Buldhana,Extortion,8.0
+2019,Chandrapur,Extortion,5.0
+2019,Dhule,Extortion,14.0
+2019,Gadchiroli,Extortion,2.0
+2019,Gondia,Extortion,2.0
+2019,Hingoli,Extortion,2.0
+2019,Jalgaon,Extortion,7.0
+2019,Jalna,Extortion,11.0
+2019,Kolhapur,Extortion,32.0
+2019,Latur,Extortion,10.0
+2019,Mumbai City,Extortion,260.0
+2019,Nagpur,Extortion,43.0
+2019,Nanded,Extortion,19.0
+2019,Nandurbar,Extortion,5.0
+2019,Nasik,Extortion,27.0
+2019,Dharashiv,Extortion,2.0
+2019,Palghar,Extortion,17.0
+2019,Parbhani,Extortion,2.0
+2019,Pune,Extortion,99.0
+2019,Raigad,Extortion,7.0
+2019,Ratnagiri,Extortion,5.0
+2019,Sangli,Extortion,24.0
+2019,Satara,Extortion,20.0
+2019,Sindhudurg,Extortion,2.0
+2019,Solapur,Extortion,35.0
+2019,Thane,Extortion,76.0
+2019,Wardha,Extortion,1.0
+2019,Washim,Extortion,3.0
+2019,Yavatmal,Extortion,5.0
+2020,Ahilyanagar,Extortion,13.0
+2020,Akola,Extortion,4.0
+2020,Amravati,Extortion,12.0
+2020,Chhatrapati Sambhaji Nagar,Extortion,12.0
+2020,Beed,Extortion,1.0
+2020,Bhandara,Extortion,2.0
+2020,Buldhana,Extortion,6.0
+2020,Chandrapur,Extortion,6.0
+2020,Dhule,Extortion,9.0
+2020,Gadchiroli,Extortion,
+2020,Gondia,Extortion,1.0
+2020,Hingoli,Extortion,1.0
+2020,Jalgaon,Extortion,15.0
+2020,Jalna,Extortion,6.0
+2020,Kolhapur,Extortion,20.0
+2020,Latur,Extortion,4.0
+2020,Mumbai City,Extortion,209.0
+2020,Nagpur,Extortion,50.0
+2020,Nanded,Extortion,27.0
+2020,Nandurbar,Extortion,
+2020,Nasik,Extortion,26.0
+2020,Dharashiv,Extortion,8.0
+2020,Palghar,Extortion,3.0
+2020,Parbhani,Extortion,6.0
+2020,Pune,Extortion,89.0
+2020,Raigad,Extortion,10.0
+2020,Ratnagiri,Extortion,7.0
+2020,Sangli,Extortion,22.0
+2020,Satara,Extortion,30.0
+2020,Sindhudurg,Extortion,3.0
+2020,Solapur,Extortion,26.0
+2020,Thane,Extortion,77.0
+2020,Wardha,Extortion,4.0
+2020,Washim,Extortion,4.0
+2020,Yavatmal,Extortion,8.0
+2021,Ahilyanagar,Extortion,47.0
+2021,Akola,Extortion,12.0
+2021,Amravati,Extortion,11.0
+2021,Chhatrapati Sambhaji Nagar,Extortion,11.0
+2021,Beed,Extortion,9.0
+2021,Bhandara,Extortion,1.0
+2021,Buldhana,Extortion,5.0
+2021,Chandrapur,Extortion,8.0
+2021,Dhule,Extortion,9.0
+2021,Gadchiroli,Extortion,
+2021,Gondia,Extortion,1.0
+2021,Hingoli,Extortion,3.0
+2021,Jalgaon,Extortion,14.0
+2021,Jalna,Extortion,2.0
+2021,Kolhapur,Extortion,29.0
+2021,Latur,Extortion,5.0
+2021,Mumbai City,Extortion,283.0
+2021,Nagpur,Extortion,51.0
+2021,Nanded,Extortion,16.0
+2021,Nandurbar,Extortion,4.0
+2021,Nasik,Extortion,20.0
+2021,Dharashiv,Extortion,1.0
+2021,Palghar,Extortion,3.0
+2021,Parbhani,Extortion,7.0
+2021,Pune,Extortion,214.0
+2021,Raigad,Extortion,3.0
+2021,Ratnagiri,Extortion,7.0
+2021,Sangli,Extortion,25.0
+2021,Satara,Extortion,10.0
+2021,Sindhudurg,Extortion,
+2021,Solapur,Extortion,29.0
+2021,Thane,Extortion,118.0
+2021,Wardha,Extortion,7.0
+2021,Washim,Extortion,5.0
+2021,Yavatmal,Extortion,6.0
+2014,Ahilyanagar,Burglary,559.0
+2014,Akola,Burglary,177.0
+2014,Amravati,Burglary,442.0
+2014,Chhatrapati Sambhaji Nagar,Burglary,383.0
+2014,Beed,Burglary,227.0
+2014,Bhandara,Burglary,153.0
+2014,Buldhana,Burglary,155.0
+2014,Chandrapur,Burglary,233.0
+2014,Dhule,Burglary,145.0
+2014,Gadchiroli,Burglary,85.0
+2014,Gondia,Burglary,130.0
+2014,Hingoli,Burglary,51.0
+2014,Jalgaon,Burglary,248.0
+2014,Jalna,Burglary,206.0
+2014,Kolhapur,Burglary,363.0
+2014,Latur,Burglary,231.0
+2014,Mumbai City,Burglary,3059.0
+2014,Nagpur,Burglary,1323.0
+2014,Nanded,Burglary,243.0
+2014,Nandurbar,Burglary,84.0
+2014,Nasik,Burglary,618.0
+2014,Dharashiv,Burglary,206.0
+2014,Palghar,Burglary,631.0
+2014,Parbhani,Burglary,204.0
+2014,Pune,Burglary,2170.0
+2014,Raigad,Burglary,224.0
+2014,Ratnagiri,Burglary,143.0
+2014,Sangli,Burglary,227.0
+2014,Satara,Burglary,408.0
+2014,Sindhudurg,Burglary,84.0
+2014,Solapur,Burglary,484.0
+2014,Thane,Burglary,2546.0
+2014,Wardha,Burglary,166.0
+2014,Washim,Burglary,115.0
+2014,Yavatmal,Burglary,448.0
+2015,Ahilyanagar,Burglary,448.0
+2015,Akola,Burglary,137.0
+2015,Amravati,Burglary,464.0
+2015,Chhatrapati Sambhaji Nagar,Burglary,586.0
+2015,Beed,Burglary,239.0
+2015,Bhandara,Burglary,166.0
+2015,Buldhana,Burglary,185.0
+2015,Chandrapur,Burglary,217.0
+2015,Dhule,Burglary,114.0
+2015,Gadchiroli,Burglary,94.0
+2015,Gondia,Burglary,101.0
+2015,Hingoli,Burglary,89.0
+2015,Jalgaon,Burglary,232.0
+2015,Jalna,Burglary,236.0
+2015,Kolhapur,Burglary,318.0
+2015,Latur,Burglary,190.0
+2015,Mumbai City,Burglary,3012.0
+2015,Nagpur,Burglary,1377.0
+2015,Nanded,Burglary,249.0
+2015,Nandurbar,Burglary,70.0
+2015,Nasik,Burglary,591.0
+2015,Dharashiv,Burglary,172.0
+2015,Palghar,Burglary,634.0
+2015,Parbhani,Burglary,228.0
+2015,Pune,Burglary,1842.0
+2015,Raigad,Burglary,259.0
+2015,Ratnagiri,Burglary,123.0
+2015,Sangli,Burglary,189.0
+2015,Satara,Burglary,335.0
+2015,Sindhudurg,Burglary,85.0
+2015,Solapur,Burglary,406.0
+2015,Thane,Burglary,2564.0
+2015,Wardha,Burglary,186.0
+2015,Washim,Burglary,114.0
+2015,Yavatmal,Burglary,329.0
+2016,Ahilyanagar,Burglary,414.0
+2016,Akola,Burglary,136.0
+2016,Amravati,Burglary,403.0
+2016,Chhatrapati Sambhaji Nagar,Burglary,558.0
+2016,Beed,Burglary,212.0
+2016,Bhandara,Burglary,144.0
+2016,Buldhana,Burglary,152.0
+2016,Chandrapur,Burglary,237.0
+2016,Dhule,Burglary,154.0
+2016,Gadchiroli,Burglary,97.0
+2016,Gondia,Burglary,110.0
+2016,Hingoli,Burglary,86.0
+2016,Jalgaon,Burglary,271.0
+2016,Jalna,Burglary,155.0
+2016,Kolhapur,Burglary,313.0
+2016,Latur,Burglary,201.0
+2016,Mumbai City,Burglary,2552.0
+2016,Nagpur,Burglary,1203.0
+2016,Nanded,Burglary,291.0
+2016,Nandurbar,Burglary,75.0
+2016,Nasik,Burglary,631.0
+2016,Dharashiv,Burglary,131.0
+2016,Palghar,Burglary,531.0
+2016,Parbhani,Burglary,120.0
+2016,Pune,Burglary,1514.0
+2016,Raigad,Burglary,232.0
+2016,Ratnagiri,Burglary,115.0
+2016,Sangli,Burglary,232.0
+2016,Satara,Burglary,409.0
+2016,Sindhudurg,Burglary,81.0
+2016,Solapur,Burglary,391.0
+2016,Thane,Burglary,2132.0
+2016,Wardha,Burglary,215.0
+2016,Washim,Burglary,77.0
+2016,Yavatmal,Burglary,259.0
+2017,Ahilyanagar,Burglary,558.0
+2017,Akola,Burglary,159.0
+2017,Amravati,Burglary,390.0
+2017,Chhatrapati Sambhaji Nagar,Burglary,330.0
+2017,Beed,Burglary,193.0
+2017,Bhandara,Burglary,163.0
+2017,Buldhana,Burglary,179.0
+2017,Chandrapur,Burglary,243.0
+2017,Dhule,Burglary,155.0
+2017,Gadchiroli,Burglary,77.0
+2017,Gondia,Burglary,165.0
+2017,Hingoli,Burglary,93.0
+2017,Jalgaon,Burglary,278.0
+2017,Jalna,Burglary,190.0
+2017,Kolhapur,Burglary,327.0
+2017,Latur,Burglary,187.0
+2017,Mumbai City,Burglary,2409.0
+2017,Nagpur,Burglary,1393.0
+2017,Nanded,Burglary,295.0
+2017,Nandurbar,Burglary,73.0
+2017,Nasik,Burglary,698.0
+2017,Dharashiv,Burglary,154.0
+2017,Palghar,Burglary,527.0
+2017,Parbhani,Burglary,162.0
+2017,Pune,Burglary,1845.0
+2017,Raigad,Burglary,212.0
+2017,Ratnagiri,Burglary,147.0
+2017,Sangli,Burglary,314.0
+2017,Satara,Burglary,420.0
+2017,Sindhudurg,Burglary,87.0
+2017,Solapur,Burglary,473.0
+2017,Thane,Burglary,1927.0
+2017,Wardha,Burglary,233.0
+2017,Washim,Burglary,91.0
+2017,Yavatmal,Burglary,265.0
+2018,Ahilyanagar,Burglary,714.0
+2018,Akola,Burglary,124.0
+2018,Amravati,Burglary,350.0
+2018,Chhatrapati Sambhaji Nagar,Burglary,296.0
+2018,Beed,Burglary,146.0
+2018,Bhandara,Burglary,161.0
+2018,Buldhana,Burglary,229.0
+2018,Chandrapur,Burglary,218.0
+2018,Dhule,Burglary,159.0
+2018,Gadchiroli,Burglary,65.0
+2018,Gondia,Burglary,208.0
+2018,Hingoli,Burglary,101.0
+2018,Jalgaon,Burglary,360.0
+2018,Jalna,Burglary,186.0
+2018,Kolhapur,Burglary,314.0
+2018,Latur,Burglary,237.0
+2018,Mumbai City,Burglary,2244.0
+2018,Nagpur,Burglary,1123.0
+2018,Nanded,Burglary,234.0
+2018,Nandurbar,Burglary,100.0
+2018,Nasik,Burglary,565.0
+2018,Dharashiv,Burglary,171.0
+2018,Palghar,Burglary,710.0
+2018,Parbhani,Burglary,142.0
+2018,Pune,Burglary,1546.0
+2018,Raigad,Burglary,207.0
+2018,Ratnagiri,Burglary,124.0
+2018,Sangli,Burglary,407.0
+2018,Satara,Burglary,388.0
+2018,Sindhudurg,Burglary,87.0
+2018,Solapur,Burglary,513.0
+2018,Thane,Burglary,1995.0
+2018,Wardha,Burglary,211.0
+2018,Washim,Burglary,84.0
+2018,Yavatmal,Burglary,194.0
+2019,Ahilyanagar,Burglary,719.0
+2019,Akola,Burglary,151.0
+2019,Amravati,Burglary,343.0
+2019,Chhatrapati Sambhaji Nagar,Burglary,284.0
+2019,Beed,Burglary,151.0
+2019,Bhandara,Burglary,148.0
+2019,Buldhana,Burglary,226.0
+2019,Chandrapur,Burglary,204.0
+2019,Dhule,Burglary,203.0
+2019,Gadchiroli,Burglary,91.0
+2019,Gondia,Burglary,160.0
+2019,Hingoli,Burglary,85.0
+2019,Jalgaon,Burglary,368.0
+2019,Jalna,Burglary,263.0
+2019,Kolhapur,Burglary,398.0
+2019,Latur,Burglary,228.0
+2019,Mumbai City,Burglary,2063.0
+2019,Nagpur,Burglary,1049.0
+2019,Nanded,Burglary,249.0
+2019,Nandurbar,Burglary,87.0
+2019,Nasik,Burglary,596.0
+2019,Dharashiv,Burglary,196.0
+2019,Palghar,Burglary,656.0
+2019,Parbhani,Burglary,182.0
+2019,Pune,Burglary,1398.0
+2019,Raigad,Burglary,204.0
+2019,Ratnagiri,Burglary,152.0
+2019,Sangli,Burglary,439.0
+2019,Satara,Burglary,392.0
+2019,Sindhudurg,Burglary,69.0
+2019,Solapur,Burglary,626.0
+2019,Thane,Burglary,1663.0
+2019,Wardha,Burglary,204.0
+2019,Washim,Burglary,83.0
+2019,Yavatmal,Burglary,183.0
+2020,Ahilyanagar,Burglary,569.0
+2020,Akola,Burglary,124.0
+2020,Amravati,Burglary,357.0
+2020,Chhatrapati Sambhaji Nagar,Burglary,268.0
+2020,Beed,Burglary,217.0
+2020,Bhandara,Burglary,121.0
+2020,Buldhana,Burglary,255.0
+2020,Chandrapur,Burglary,202.0
+2020,Dhule,Burglary,141.0
+2020,Gadchiroli,Burglary,84.0
+2020,Gondia,Burglary,80.0
+2020,Hingoli,Burglary,90.0
+2020,Jalgaon,Burglary,377.0
+2020,Jalna,Burglary,288.0
+2020,Kolhapur,Burglary,287.0
+2020,Latur,Burglary,210.0
+2020,Mumbai City,Burglary,1646.0
+2020,Nagpur,Burglary,910.0
+2020,Nanded,Burglary,317.0
+2020,Nandurbar,Burglary,83.0
+2020,Nasik,Burglary,515.0
+2020,Dharashiv,Burglary,161.0
+2020,Palghar,Burglary,141.0
+2020,Parbhani,Burglary,179.0
+2020,Pune,Burglary,1051.0
+2020,Raigad,Burglary,100.0
+2020,Ratnagiri,Burglary,84.0
+2020,Sangli,Burglary,403.0
+2020,Satara,Burglary,319.0
+2020,Sindhudurg,Burglary,55.0
+2020,Solapur,Burglary,568.0
+2020,Thane,Burglary,1464.0
+2020,Wardha,Burglary,121.0
+2020,Washim,Burglary,75.0
+2020,Yavatmal,Burglary,152.0
+2021,Ahilyanagar,Burglary,796.0
+2021,Akola,Burglary,89.0
+2021,Amravati,Burglary,371.0
+2021,Chhatrapati Sambhaji Nagar,Burglary,298.0
+2021,Beed,Burglary,231.0
+2021,Bhandara,Burglary,125.0
+2021,Buldhana,Burglary,247.0
+2021,Chandrapur,Burglary,204.0
+2021,Dhule,Burglary,194.0
+2021,Gadchiroli,Burglary,96.0
+2021,Gondia,Burglary,113.0
+2021,Hingoli,Burglary,82.0
+2021,Jalgaon,Burglary,401.0
+2021,Jalna,Burglary,217.0
+2021,Kolhapur,Burglary,318.0
+2021,Latur,Burglary,196.0
+2021,Mumbai City,Burglary,1690.0
+2021,Nagpur,Burglary,1036.0
+2021,Nanded,Burglary,292.0
+2021,Nandurbar,Burglary,137.0
+2021,Nasik,Burglary,473.0
+2021,Dharashiv,Burglary,194.0
+2021,Palghar,Burglary,140.0
+2021,Parbhani,Burglary,200.0
+2021,Pune,Burglary,1285.0
+2021,Raigad,Burglary,161.0
+2021,Ratnagiri,Burglary,111.0
+2021,Sangli,Burglary,487.0
+2021,Satara,Burglary,322.0
+2021,Sindhudurg,Burglary,55.0
+2021,Solapur,Burglary,532.0
+2021,Thane,Burglary,1820.0
+2021,Wardha,Burglary,129.0
+2021,Washim,Burglary,83.0
+2021,Yavatmal,Burglary,176.0
+2014,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Chandrapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Dhule,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Gadchiroli,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Gondia,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Hingoli,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Jalgaon,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Pune,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Raigad,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Ratnagiri,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Sangli,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Satara,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Sindhudurg,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Solapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Thane,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Wardha,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Washim,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Yavatmal,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Chandrapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Dhule,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Gadchiroli,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Gondia,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Hingoli,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Jalgaon,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Pune,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Raigad,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Ratnagiri,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Sangli,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Satara,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Sindhudurg,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Solapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Thane,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Wardha,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Washim,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Yavatmal,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Chandrapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Dhule,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Gadchiroli,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Gondia,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Hingoli,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Jalgaon,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Pune,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Raigad,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Ratnagiri,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Sangli,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Satara,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Sindhudurg,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Solapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Thane,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Wardha,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Washim,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Yavatmal,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2017,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",12.0
+2017,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2017,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2017,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",10.0
+2017,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2017,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2017,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",10.0
+2017,Chandrapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2017,Dhule,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2017,Gadchiroli,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2017,Gondia,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2017,Hingoli,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2017,Jalgaon,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2017,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2017,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2017,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2017,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",34.0
+2017,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",30.0
+2017,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",12.0
+2017,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2017,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",21.0
+2017,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2017,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",9.0
+2017,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2017,Pune,"Miscarriage, Infanticide, Foeticide, and Abandonment",40.0
+2017,Raigad,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2017,Ratnagiri,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2017,Sangli,"Miscarriage, Infanticide, Foeticide, and Abandonment",11.0
+2017,Satara,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2017,Sindhudurg,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2017,Solapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",11.0
+2017,Thane,"Miscarriage, Infanticide, Foeticide, and Abandonment",31.0
+2017,Wardha,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2017,Washim,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2017,Yavatmal,"Miscarriage, Infanticide, Foeticide, and Abandonment",8.0
+2018,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
+2018,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2018,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",8.0
+2018,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",26.0
+2018,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
+2018,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2018,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2018,Chandrapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
+2018,Dhule,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2018,Gadchiroli,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2018,Gondia,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
+2018,Hingoli,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2018,Jalgaon,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2018,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2018,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2018,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",16.0
+2018,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",33.0
+2018,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",25.0
+2018,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
+2018,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2018,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",19.0
+2018,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2018,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",21.0
+2018,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2018,Pune,"Miscarriage, Infanticide, Foeticide, and Abandonment",27.0
+2018,Raigad,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2018,Ratnagiri,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2018,Sangli,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2018,Satara,"Miscarriage, Infanticide, Foeticide, and Abandonment",9.0
+2018,Sindhudurg,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2018,Solapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",12.0
+2018,Thane,"Miscarriage, Infanticide, Foeticide, and Abandonment",24.0
+2018,Wardha,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2018,Washim,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2018,Yavatmal,"Miscarriage, Infanticide, Foeticide, and Abandonment",11.0
+2019,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",8.0
+2019,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",8.0
+2019,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2019,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",20.0
+2019,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2019,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2019,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2019,Chandrapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2019,Dhule,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2019,Gadchiroli,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2019,Gondia,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2019,Hingoli,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2019,Jalgaon,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2019,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2019,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2019,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
+2019,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",14.0
+2019,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",15.0
+2019,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",10.0
+2019,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2019,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",31.0
+2019,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2019,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
+2019,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
+2019,Pune,"Miscarriage, Infanticide, Foeticide, and Abandonment",35.0
+2019,Raigad,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2019,Ratnagiri,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2019,Sangli,"Miscarriage, Infanticide, Foeticide, and Abandonment",10.0
+2019,Satara,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2019,Sindhudurg,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2019,Solapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",12.0
+2019,Thane,"Miscarriage, Infanticide, Foeticide, and Abandonment",27.0
+2019,Wardha,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2019,Washim,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2019,Yavatmal,"Miscarriage, Infanticide, Foeticide, and Abandonment",15.0
+2020,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2020,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2020,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2020,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",14.0
+2020,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2020,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2020,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2020,Chandrapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2020,Dhule,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2020,Gadchiroli,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2020,Gondia,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2020,Hingoli,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2020,Jalgaon,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2020,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2020,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
+2020,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2020,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",25.0
+2020,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
+2020,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
+2020,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2020,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
+2020,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2020,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2020,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2020,Pune,"Miscarriage, Infanticide, Foeticide, and Abandonment",22.0
+2020,Raigad,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2020,Ratnagiri,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2020,Sangli,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2020,Satara,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2020,Sindhudurg,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2020,Solapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",11.0
+2020,Thane,"Miscarriage, Infanticide, Foeticide, and Abandonment",23.0
+2020,Wardha,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2020,Washim,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2020,Yavatmal,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2021,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2021,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2021,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2021,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",17.0
+2021,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
+2021,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2021,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
+2021,Chandrapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",8.0
+2021,Dhule,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
+2021,Gadchiroli,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2021,Gondia,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2021,Hingoli,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2021,Jalgaon,"Miscarriage, Infanticide, Foeticide, and Abandonment",11.0
+2021,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2021,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
+2021,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2021,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",11.0
+2021,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
+2021,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",8.0
+2021,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2021,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",12.0
+2021,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
+2021,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2021,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2021,Pune,"Miscarriage, Infanticide, Foeticide, and Abandonment",35.0
+2021,Raigad,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2021,Ratnagiri,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2021,Sangli,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2021,Satara,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
+2021,Sindhudurg,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2021,Solapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
+2021,Thane,"Miscarriage, Infanticide, Foeticide, and Abandonment",33.0
+2021,Wardha,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
+2021,Washim,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2021,Yavatmal,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
+2014,Ahilyanagar,Cheating,165.0
+2014,Akola,Cheating,108.0
+2014,Amravati,Cheating,183.0
+2014,Chhatrapati Sambhaji Nagar,Cheating,284.0
+2014,Beed,Cheating,120.0
+2014,Bhandara,Cheating,55.0
+2014,Buldhana,Cheating,94.0
+2014,Chandrapur,Cheating,120.0
+2014,Dhule,Cheating,86.0
+2014,Gadchiroli,Cheating,36.0
+2014,Gondia,Cheating,41.0
+2014,Hingoli,Cheating,44.0
+2014,Jalgaon,Cheating,191.0
+2014,Jalna,Cheating,116.0
+2014,Kolhapur,Cheating,317.0
+2014,Latur,Cheating,125.0
+2014,Mumbai City,Cheating,2640.0
+2014,Nagpur,Cheating,462.0
+2014,Nanded,Cheating,11.0
+2014,Nandurbar,Cheating,34.0
+2014,Nasik,Cheating,316.0
+2014,Dharashiv,Cheating,75.0
+2014,Palghar,Cheating,259.0
+2014,Parbhani,Cheating,145.0
+2014,Pune,Cheating,1054.0
+2014,Raigad,Cheating,142.0
+2014,Ratnagiri,Cheating,71.0
+2014,Sangli,Cheating,197.0
+2014,Satara,Cheating,155.0
+2014,Sindhudurg,Cheating,10.0
+2014,Solapur,Cheating,172.0
+2014,Thane,Cheating,1830.0
+2014,Wardha,Cheating,95.0
+2014,Washim,Cheating,55.0
+2014,Yavatmal,Cheating,151.0
+2015,Ahilyanagar,Cheating,167.0
+2015,Akola,Cheating,93.0
+2015,Amravati,Cheating,222.0
+2015,Chhatrapati Sambhaji Nagar,Cheating,468.0
+2015,Beed,Cheating,94.0
+2015,Bhandara,Cheating,42.0
+2015,Buldhana,Cheating,103.0
+2015,Chandrapur,Cheating,92.0
+2015,Dhule,Cheating,60.0
+2015,Gadchiroli,Cheating,37.0
+2015,Gondia,Cheating,62.0
+2015,Hingoli,Cheating,23.0
+2015,Jalgaon,Cheating,154.0
+2015,Jalna,Cheating,118.0
+2015,Kolhapur,Cheating,284.0
+2015,Latur,Cheating,105.0
+2015,Mumbai City,Cheating,3015.0
+2015,Nagpur,Cheating,372.0
+2015,Nanded,Cheating,150.0
+2015,Nandurbar,Cheating,19.0
+2015,Nasik,Cheating,340.0
+2015,Dharashiv,Cheating,106.0
+2015,Palghar,Cheating,267.0
+2015,Parbhani,Cheating,132.0
+2015,Pune,Cheating,1098.0
+2015,Raigad,Cheating,200.0
+2015,Ratnagiri,Cheating,89.0
+2015,Sangli,Cheating,162.0
+2015,Satara,Cheating,177.0
+2015,Sindhudurg,Cheating,17.0
+2015,Solapur,Cheating,149.0
+2015,Thane,Cheating,1767.0
+2015,Wardha,Cheating,96.0
+2015,Washim,Cheating,63.0
+2015,Yavatmal,Cheating,147.0
+2016,Ahilyanagar,Cheating,102.0
+2016,Akola,Cheating,86.0
+2016,Amravati,Cheating,175.0
+2016,Chhatrapati Sambhaji Nagar,Cheating,483.0
+2016,Beed,Cheating,98.0
+2016,Bhandara,Cheating,58.0
+2016,Buldhana,Cheating,80.0
+2016,Chandrapur,Cheating,83.0
+2016,Dhule,Cheating,80.0
+2016,Gadchiroli,Cheating,31.0
+2016,Gondia,Cheating,72.0
+2016,Hingoli,Cheating,26.0
+2016,Jalgaon,Cheating,160.0
+2016,Jalna,Cheating,122.0
+2016,Kolhapur,Cheating,210.0
+2016,Latur,Cheating,115.0
+2016,Mumbai City,Cheating,2705.0
+2016,Nagpur,Cheating,463.0
+2016,Nanded,Cheating,117.0
+2016,Nandurbar,Cheating,28.0
+2016,Nasik,Cheating,320.0
+2016,Dharashiv,Cheating,58.0
+2016,Palghar,Cheating,371.0
+2016,Parbhani,Cheating,76.0
+2016,Pune,Cheating,1235.0
+2016,Raigad,Cheating,180.0
+2016,Ratnagiri,Cheating,103.0
+2016,Sangli,Cheating,142.0
+2016,Satara,Cheating,150.0
+2016,Sindhudurg,Cheating,20.0
+2016,Solapur,Cheating,186.0
+2016,Thane,Cheating,1421.0
+2016,Wardha,Cheating,102.0
+2016,Washim,Cheating,33.0
+2016,Yavatmal,Cheating,101.0
+2017,Ahilyanagar,Cheating,173.0
+2017,Akola,Cheating,64.0
+2017,Amravati,Cheating,133.0
+2017,Chhatrapati Sambhaji Nagar,Cheating,194.0
+2017,Beed,Cheating,56.0
+2017,Bhandara,Cheating,16.0
+2017,Buldhana,Cheating,108.0
+2017,Chandrapur,Cheating,81.0
+2017,Dhule,Cheating,86.0
+2017,Gadchiroli,Cheating,19.0
+2017,Gondia,Cheating,38.0
+2017,Hingoli,Cheating,7.0
+2017,Jalgaon,Cheating,148.0
+2017,Jalna,Cheating,85.0
+2017,Kolhapur,Cheating,168.0
+2017,Latur,Cheating,120.0
+2017,Mumbai City,Cheating,2937.0
+2017,Nagpur,Cheating,453.0
+2017,Nanded,Cheating,79.0
+2017,Nandurbar,Cheating,39.0
+2017,Nasik,Cheating,257.0
+2017,Dharashiv,Cheating,41.0
+2017,Palghar,Cheating,224.0
+2017,Parbhani,Cheating,12.0
+2017,Pune,Cheating,826.0
+2017,Raigad,Cheating,119.0
+2017,Ratnagiri,Cheating,45.0
+2017,Sangli,Cheating,82.0
+2017,Satara,Cheating,145.0
+2017,Sindhudurg,Cheating,5.0
+2017,Solapur,Cheating,241.0
+2017,Thane,Cheating,1373.0
+2017,Wardha,Cheating,45.0
+2017,Washim,Cheating,44.0
+2017,Yavatmal,Cheating,85.0
+2018,Ahilyanagar,Cheating,263.0
+2018,Akola,Cheating,81.0
+2018,Amravati,Cheating,145.0
+2018,Chhatrapati Sambhaji Nagar,Cheating,140.0
+2018,Beed,Cheating,38.0
+2018,Bhandara,Cheating,22.0
+2018,Buldhana,Cheating,121.0
+2018,Chandrapur,Cheating,94.0
+2018,Dhule,Cheating,81.0
+2018,Gadchiroli,Cheating,25.0
+2018,Gondia,Cheating,50.0
+2018,Hingoli,Cheating,2.0
+2018,Jalgaon,Cheating,147.0
+2018,Jalna,Cheating,102.0
+2018,Kolhapur,Cheating,202.0
+2018,Latur,Cheating,87.0
+2018,Mumbai City,Cheating,2882.0
+2018,Nagpur,Cheating,532.0
+2018,Nanded,Cheating,101.0
+2018,Nandurbar,Cheating,36.0
+2018,Nasik,Cheating,232.0
+2018,Dharashiv,Cheating,57.0
+2018,Palghar,Cheating,407.0
+2018,Parbhani,Cheating,13.0
+2018,Pune,Cheating,908.0
+2018,Raigad,Cheating,150.0
+2018,Ratnagiri,Cheating,48.0
+2018,Sangli,Cheating,146.0
+2018,Satara,Cheating,192.0
+2018,Sindhudurg,Cheating,29.0
+2018,Solapur,Cheating,250.0
+2018,Thane,Cheating,1488.0
+2018,Wardha,Cheating,20.0
+2018,Washim,Cheating,48.0
+2018,Yavatmal,Cheating,76.0
+2019,Ahilyanagar,Cheating,228.0
+2019,Akola,Cheating,71.0
+2019,Amravati,Cheating,101.0
+2019,Chhatrapati Sambhaji Nagar,Cheating,164.0
+2019,Beed,Cheating,53.0
+2019,Bhandara,Cheating,43.0
+2019,Buldhana,Cheating,112.0
+2019,Chandrapur,Cheating,84.0
+2019,Dhule,Cheating,116.0
+2019,Gadchiroli,Cheating,26.0
+2019,Gondia,Cheating,39.0
+2019,Hingoli,Cheating,1.0
+2019,Jalgaon,Cheating,141.0
+2019,Jalna,Cheating,126.0
+2019,Kolhapur,Cheating,204.0
+2019,Latur,Cheating,74.0
+2019,Mumbai City,Cheating,3974.0
+2019,Nagpur,Cheating,401.0
+2019,Nanded,Cheating,100.0
+2019,Nandurbar,Cheating,25.0
+2019,Nasik,Cheating,173.0
+2019,Dharashiv,Cheating,76.0
+2019,Palghar,Cheating,453.0
+2019,Parbhani,Cheating,19.0
+2019,Pune,Cheating,1110.0
+2019,Raigad,Cheating,155.0
+2019,Ratnagiri,Cheating,80.0
+2019,Sangli,Cheating,116.0
+2019,Satara,Cheating,169.0
+2019,Sindhudurg,Cheating,18.0
+2019,Solapur,Cheating,341.0
+2019,Thane,Cheating,1321.0
+2019,Wardha,Cheating,34.0
+2019,Washim,Cheating,37.0
+2019,Yavatmal,Cheating,51.0
+2020,Ahilyanagar,Cheating,218.0
+2020,Akola,Cheating,72.0
+2020,Amravati,Cheating,157.0
+2020,Chhatrapati Sambhaji Nagar,Cheating,120.0
+2020,Beed,Cheating,60.0
+2020,Bhandara,Cheating,35.0
+2020,Buldhana,Cheating,68.0
+2020,Chandrapur,Cheating,76.0
+2020,Dhule,Cheating,76.0
+2020,Gadchiroli,Cheating,28.0
+2020,Gondia,Cheating,16.0
+2020,Hingoli,Cheating,16.0
+2020,Jalgaon,Cheating,195.0
+2020,Jalna,Cheating,102.0
+2020,Kolhapur,Cheating,203.0
+2020,Latur,Cheating,64.0
+2020,Mumbai City,Cheating,2134.0
+2020,Nagpur,Cheating,432.0
+2020,Nanded,Cheating,91.0
+2020,Nandurbar,Cheating,21.0
+2020,Nasik,Cheating,311.0
+2020,Dharashiv,Cheating,46.0
+2020,Palghar,Cheating,71.0
+2020,Parbhani,Cheating,10.0
+2020,Pune,Cheating,707.0
+2020,Raigad,Cheating,121.0
+2020,Ratnagiri,Cheating,83.0
+2020,Sangli,Cheating,132.0
+2020,Satara,Cheating,141.0
+2020,Sindhudurg,Cheating,9.0
+2020,Solapur,Cheating,253.0
+2020,Thane,Cheating,1204.0
+2020,Wardha,Cheating,11.0
+2020,Washim,Cheating,37.0
+2020,Yavatmal,Cheating,21.0
+2021,Ahilyanagar,Cheating,314.0
+2021,Akola,Cheating,72.0
+2021,Amravati,Cheating,93.0
+2021,Chhatrapati Sambhaji Nagar,Cheating,206.0
+2021,Beed,Cheating,78.0
+2021,Bhandara,Cheating,27.0
+2021,Buldhana,Cheating,60.0
+2021,Chandrapur,Cheating,61.0
+2021,Dhule,Cheating,94.0
+2021,Gadchiroli,Cheating,36.0
+2021,Gondia,Cheating,5.0
+2021,Hingoli,Cheating,25.0
+2021,Jalgaon,Cheating,165.0
+2021,Jalna,Cheating,13.0
+2021,Kolhapur,Cheating,153.0
+2021,Latur,Cheating,43.0
+2021,Mumbai City,Cheating,3546.0
+2021,Nagpur,Cheating,411.0
+2021,Nanded,Cheating,97.0
+2021,Nandurbar,Cheating,26.0
+2021,Nasik,Cheating,184.0
+2021,Dharashiv,Cheating,49.0
+2021,Palghar,Cheating,36.0
+2021,Parbhani,Cheating,46.0
+2021,Pune,Cheating,1032.0
+2021,Raigad,Cheating,103.0
+2021,Ratnagiri,Cheating,59.0
+2021,Sangli,Cheating,238.0
+2021,Satara,Cheating,93.0
+2021,Sindhudurg,Cheating,10.0
+2021,Solapur,Cheating,234.0
+2021,Thane,Cheating,1487.0
+2021,Wardha,Cheating,7.0
+2021,Washim,Cheating,33.0
+2021,Yavatmal,Cheating,63.0
+2014,Ahilyanagar,Forgery,
+2014,Akola,Forgery,7.0
+2014,Amravati,Forgery,17.0
+2014,Chhatrapati Sambhaji Nagar,Forgery,4.0
+2014,Beed,Forgery,2.0
+2014,Bhandara,Forgery,
+2014,Buldhana,Forgery,10.0
+2014,Chandrapur,Forgery,
+2014,Dhule,Forgery,1.0
+2014,Gadchiroli,Forgery,
+2014,Gondia,Forgery,
+2014,Hingoli,Forgery,
+2014,Jalgaon,Forgery,
+2014,Jalna,Forgery,
+2014,Kolhapur,Forgery,
+2014,Latur,Forgery,
+2014,Mumbai City,Forgery,980.0
+2014,Nagpur,Forgery,2.0
+2014,Nanded,Forgery,140.0
+2014,Nandurbar,Forgery,1.0
+2014,Nasik,Forgery,2.0
+2014,Dharashiv,Forgery,
+2014,Palghar,Forgery,11.0
+2014,Parbhani,Forgery,
+2014,Pune,Forgery,8.0
+2014,Raigad,Forgery,4.0
+2014,Ratnagiri,Forgery,1.0
+2014,Sangli,Forgery,9.0
+2014,Satara,Forgery,22.0
+2014,Sindhudurg,Forgery,20.0
+2014,Solapur,Forgery,45.0
+2014,Thane,Forgery,3.0
+2014,Wardha,Forgery,4.0
+2014,Washim,Forgery,
+2014,Yavatmal,Forgery,
+2015,Ahilyanagar,Forgery,
+2015,Akola,Forgery,2.0
+2015,Amravati,Forgery,34.0
+2015,Chhatrapati Sambhaji Nagar,Forgery,4.0
+2015,Beed,Forgery,2.0
+2015,Bhandara,Forgery,1.0
+2015,Buldhana,Forgery,
+2015,Chandrapur,Forgery,
+2015,Dhule,Forgery,
+2015,Gadchiroli,Forgery,
+2015,Gondia,Forgery,
+2015,Hingoli,Forgery,
+2015,Jalgaon,Forgery,
+2015,Jalna,Forgery,
+2015,Kolhapur,Forgery,
+2015,Latur,Forgery,
+2015,Mumbai City,Forgery,754.0
+2015,Nagpur,Forgery,77.0
+2015,Nanded,Forgery,3.0
+2015,Nandurbar,Forgery,4.0
+2015,Nasik,Forgery,1.0
+2015,Dharashiv,Forgery,
+2015,Palghar,Forgery,8.0
+2015,Parbhani,Forgery,
+2015,Pune,Forgery,3.0
+2015,Raigad,Forgery,4.0
+2015,Ratnagiri,Forgery,3.0
+2015,Sangli,Forgery,2.0
+2015,Satara,Forgery,13.0
+2015,Sindhudurg,Forgery,13.0
+2015,Solapur,Forgery,71.0
+2015,Thane,Forgery,11.0
+2015,Wardha,Forgery,1.0
+2015,Washim,Forgery,
+2015,Yavatmal,Forgery,
+2016,Ahilyanagar,Forgery,3.0
+2016,Akola,Forgery,1.0
+2016,Amravati,Forgery,47.0
+2016,Chhatrapati Sambhaji Nagar,Forgery,
+2016,Beed,Forgery,2.0
+2016,Bhandara,Forgery,
+2016,Buldhana,Forgery,
+2016,Chandrapur,Forgery,
+2016,Dhule,Forgery,
+2016,Gadchiroli,Forgery,
+2016,Gondia,Forgery,
+2016,Hingoli,Forgery,
+2016,Jalgaon,Forgery,1.0
+2016,Jalna,Forgery,
+2016,Kolhapur,Forgery,
+2016,Latur,Forgery,
+2016,Mumbai City,Forgery,808.0
+2016,Nagpur,Forgery,15.0
+2016,Nanded,Forgery,5.0
+2016,Nandurbar,Forgery,7.0
+2016,Nasik,Forgery,50.0
+2016,Dharashiv,Forgery,
+2016,Palghar,Forgery,16.0
+2016,Parbhani,Forgery,
+2016,Pune,Forgery,21.0
+2016,Raigad,Forgery,
+2016,Ratnagiri,Forgery,4.0
+2016,Sangli,Forgery,1.0
+2016,Satara,Forgery,5.0
+2016,Sindhudurg,Forgery,9.0
+2016,Solapur,Forgery,19.0
+2016,Thane,Forgery,34.0
+2016,Wardha,Forgery,8.0
+2016,Washim,Forgery,
+2016,Yavatmal,Forgery,
+2017,Ahilyanagar,Forgery,
+2017,Akola,Forgery,2.0
+2017,Amravati,Forgery,27.0
+2017,Chhatrapati Sambhaji Nagar,Forgery,16.0
+2017,Beed,Forgery,29.0
+2017,Bhandara,Forgery,
+2017,Buldhana,Forgery,2.0
+2017,Chandrapur,Forgery,
+2017,Dhule,Forgery,
+2017,Gadchiroli,Forgery,
+2017,Gondia,Forgery,
+2017,Hingoli,Forgery,
+2017,Jalgaon,Forgery,11.0
+2017,Jalna,Forgery,15.0
+2017,Kolhapur,Forgery,11.0
+2017,Latur,Forgery,
+2017,Mumbai City,Forgery,322.0
+2017,Nagpur,Forgery,54.0
+2017,Nanded,Forgery,2.0
+2017,Nandurbar,Forgery,
+2017,Nasik,Forgery,14.0
+2017,Dharashiv,Forgery,
+2017,Palghar,Forgery,23.0
+2017,Parbhani,Forgery,
+2017,Pune,Forgery,40.0
+2017,Raigad,Forgery,
+2017,Ratnagiri,Forgery,6.0
+2017,Sangli,Forgery,14.0
+2017,Satara,Forgery,6.0
+2017,Sindhudurg,Forgery,11.0
+2017,Solapur,Forgery,31.0
+2017,Thane,Forgery,58.0
+2017,Wardha,Forgery,35.0
+2017,Washim,Forgery,
+2017,Yavatmal,Forgery,
+2018,Ahilyanagar,Forgery,
+2018,Akola,Forgery,6.0
+2018,Amravati,Forgery,29.0
+2018,Chhatrapati Sambhaji Nagar,Forgery,9.0
+2018,Beed,Forgery,11.0
+2018,Bhandara,Forgery,
+2018,Buldhana,Forgery,6.0
+2018,Chandrapur,Forgery,
+2018,Dhule,Forgery,
+2018,Gadchiroli,Forgery,
+2018,Gondia,Forgery,
+2018,Hingoli,Forgery,
+2018,Jalgaon,Forgery,2.0
+2018,Jalna,Forgery,13.0
+2018,Kolhapur,Forgery,11.0
+2018,Latur,Forgery,
+2018,Mumbai City,Forgery,403.0
+2018,Nagpur,Forgery,17.0
+2018,Nanded,Forgery,4.0
+2018,Nandurbar,Forgery,8.0
+2018,Nasik,Forgery,92.0
+2018,Dharashiv,Forgery,
+2018,Palghar,Forgery,44.0
+2018,Parbhani,Forgery,
+2018,Pune,Forgery,43.0
+2018,Raigad,Forgery,
+2018,Ratnagiri,Forgery,8.0
+2018,Sangli,Forgery,38.0
+2018,Satara,Forgery,7.0
+2018,Sindhudurg,Forgery,
+2018,Solapur,Forgery,35.0
+2018,Thane,Forgery,97.0
+2018,Wardha,Forgery,14.0
+2018,Washim,Forgery,6.0
+2018,Yavatmal,Forgery,18.0
+2019,Ahilyanagar,Forgery,
+2019,Akola,Forgery,1.0
+2019,Amravati,Forgery,40.0
+2019,Chhatrapati Sambhaji Nagar,Forgery,7.0
+2019,Beed,Forgery,22.0
+2019,Bhandara,Forgery,
+2019,Buldhana,Forgery,3.0
+2019,Chandrapur,Forgery,
+2019,Dhule,Forgery,
+2019,Gadchiroli,Forgery,1.0
+2019,Gondia,Forgery,
+2019,Hingoli,Forgery,2.0
+2019,Jalgaon,Forgery,
+2019,Jalna,Forgery,11.0
+2019,Kolhapur,Forgery,8.0
+2019,Latur,Forgery,
+2019,Mumbai City,Forgery,347.0
+2019,Nagpur,Forgery,20.0
+2019,Nanded,Forgery,7.0
+2019,Nandurbar,Forgery,2.0
+2019,Nasik,Forgery,43.0
+2019,Dharashiv,Forgery,2.0
+2019,Palghar,Forgery,88.0
+2019,Parbhani,Forgery,
+2019,Pune,Forgery,96.0
+2019,Raigad,Forgery,
+2019,Ratnagiri,Forgery,3.0
+2019,Sangli,Forgery,26.0
+2019,Satara,Forgery,5.0
+2019,Sindhudurg,Forgery,3.0
+2019,Solapur,Forgery,11.0
+2019,Thane,Forgery,33.0
+2019,Wardha,Forgery,8.0
+2019,Washim,Forgery,2.0
+2019,Yavatmal,Forgery,2.0
+2020,Ahilyanagar,Forgery,
+2020,Akola,Forgery,1.0
+2020,Amravati,Forgery,15.0
+2020,Chhatrapati Sambhaji Nagar,Forgery,2.0
+2020,Beed,Forgery,14.0
+2020,Bhandara,Forgery,1.0
+2020,Buldhana,Forgery,2.0
+2020,Chandrapur,Forgery,
+2020,Dhule,Forgery,
+2020,Gadchiroli,Forgery,4.0
+2020,Gondia,Forgery,3.0
+2020,Hingoli,Forgery,1.0
+2020,Jalgaon,Forgery,
+2020,Jalna,Forgery,22.0
+2020,Kolhapur,Forgery,11.0
+2020,Latur,Forgery,
+2020,Mumbai City,Forgery,320.0
+2020,Nagpur,Forgery,37.0
+2020,Nanded,Forgery,3.0
+2020,Nandurbar,Forgery,2.0
+2020,Nasik,Forgery,59.0
+2020,Dharashiv,Forgery,
+2020,Palghar,Forgery,12.0
+2020,Parbhani,Forgery,
+2020,Pune,Forgery,65.0
+2020,Raigad,Forgery,
+2020,Ratnagiri,Forgery,11.0
+2020,Sangli,Forgery,21.0
+2020,Satara,Forgery,5.0
+2020,Sindhudurg,Forgery,7.0
+2020,Solapur,Forgery,21.0
+2020,Thane,Forgery,46.0
+2020,Wardha,Forgery,4.0
+2020,Washim,Forgery,2.0
+2020,Yavatmal,Forgery,
+2021,Ahilyanagar,Forgery,
+2021,Akola,Forgery,
+2021,Amravati,Forgery,44.0
+2021,Chhatrapati Sambhaji Nagar,Forgery,6.0
+2021,Beed,Forgery,25.0
+2021,Bhandara,Forgery,
+2021,Buldhana,Forgery,14.0
+2021,Chandrapur,Forgery,
+2021,Dhule,Forgery,
+2021,Gadchiroli,Forgery,1.0
+2021,Gondia,Forgery,35.0
+2021,Hingoli,Forgery,11.0
+2021,Jalgaon,Forgery,25.0
+2021,Jalna,Forgery,22.0
+2021,Kolhapur,Forgery,6.0
+2021,Latur,Forgery,15.0
+2021,Mumbai City,Forgery,440.0
+2021,Nagpur,Forgery,11.0
+2021,Nanded,Forgery,1.0
+2021,Nandurbar,Forgery,2.0
+2021,Nasik,Forgery,48.0
+2021,Dharashiv,Forgery,1.0
+2021,Palghar,Forgery,18.0
+2021,Parbhani,Forgery,1.0
+2021,Pune,Forgery,99.0
+2021,Raigad,Forgery,32.0
+2021,Ratnagiri,Forgery,28.0
+2021,Sangli,Forgery,9.0
+2021,Satara,Forgery,5.0
+2021,Sindhudurg,Forgery,9.0
+2021,Solapur,Forgery,10.0
+2021,Thane,Forgery,115.0
+2021,Wardha,Forgery,20.0
+2021,Washim,Forgery,
+2021,Yavatmal,Forgery,2.0

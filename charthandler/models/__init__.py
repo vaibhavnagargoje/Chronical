@@ -13,16 +13,16 @@ from .livestock import (
 )
 
 from .agriculture import (
-    GrossCroppedArea,
-    HoldingsArea,
-    HoldingsNumber,
-    LandUse,
-    ChemicalFertilizer,
-    IrrigationBeneficiary,
-    IrrigationFacilities,
-    IrrigationProjects,
-    IrrigationWells,
-    TubewellsHandpumps,
+    AgcGrosscroppedarea,
+    AgcHoldingsarea,
+    AgcHoldingsnumber,
+    AgcLanduse,
+    DsaChemicalfertilizer,
+    DsaIrrigationbeneficiary,
+    DsaIrrigationfacilities,
+    DsaIrrigationprojects,
+    DsaIrrigationwells,
+    DsaTubewellshandpumps,
 )
 
 from .health import (
@@ -128,4 +128,65 @@ from .demography import (
     CensusElectricity,
     CensusTCAssets,
     CensusOwnership,
+)
+
+from .transport import (
+    TransportARCAccidents,
+    TransportARCAge,
+    TransportARCCaseFine,
+    TransportARCFatalities,
+    TransportARCGrievousInjuries,
+    TransportARCInjuries,
+    TransportARCMinorInjuries,
+    TransportARCModeTransport,
+    TransportARCMonth,
+    TransportARCRoadType,
+    TransportARCTime,
+    TransportARCTotalsInjuryDeath,
+    TransportDSA100sqkm,
+    TransportDSABus,
+    TransportDSAMagazine,
+    TransportDSARoadMaterial,
+    TransportDSARoadType,
+    TransportTCAssets,
+)
+
+from .revenue import *
+
+from .police import *
+
+from .education import (
+    DropOutRateByGender,
+    DropOutRateSchoolingStage,
+    EducationLevels,
+    NoOfSchools,
+    NoOfSchoolsManagementType,
+    NoOfSchoolsType,
+    NoOfTeachersByType,
+    StudentEnrollmentBoysVsGirls,
+    StudentEnrollmentClassWise,
+    StudentEnrollmentGirlsVsBoys,
+    StudentEnrollmentNumbers,
+    TeacherCategory,
+    TeacherSocialCategory,
+)
+
+from .environment import (
+    EnvWildlifeProjects,
+    EnvForestArea,
+    EnvForestDensity,
+    EnvNightLightIntensity,
+    EnvRunoff,
+    EnvRainyDays,
+    EnvRainfall,
+    EnvMinTemperature,
+    EnvMaxTemperature,
+    EnvWindSpeed,
+    EnvWaterDeficit,
+    EnvHumidity,
+    EnvSoilMoisture,
+    EnvEvapotranspirationYearly,
+    EnvEvapotranspirationMonthly,
+    EnvBorewells,
+    EnvDugwells,
 )

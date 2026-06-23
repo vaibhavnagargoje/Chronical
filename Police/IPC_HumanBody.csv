@@ -1,0 +1,2241 @@
+Year,District,Crime,Cases
+2014,Ahilyanagar,Murder,109.0
+2014,Akola,Murder,52.0
+2014,Amravati,Murder,78.0
+2014,Chhatrapati Sambhaji Nagar,Murder,84.0
+2014,Beed,Murder,75.0
+2014,Bhandara,Murder,20.0
+2014,Buldhana,Murder,59.0
+2014,Chandrapur,Murder,51.0
+2014,Dhule,Murder,38.0
+2014,Gadchiroli,Murder,54.0
+2014,Gondia,Murder,33.0
+2014,Hingoli,Murder,27.0
+2014,Jalgaon,Murder,80.0
+2014,Jalna,Murder,64.0
+2014,Kolhapur,Murder,64.0
+2014,Latur,Murder,74.0
+2014,Mumbai City,Murder,200.0
+2014,Nagpur,Murder,174.0
+2014,Nanded,Murder,73.0
+2014,Nandurbar,Murder,36.0
+2014,Nasik,Murder,124.0
+2014,Dharashiv,Murder,39.0
+2014,Palghar,Murder,85.0
+2014,Parbhani,Murder,44.0
+2014,Pune,Murder,299.0
+2014,Raigad,Murder,31.0
+2014,Ratnagiri,Murder,11.0
+2014,Sangli,Murder,50.0
+2014,Satara,Murder,67.0
+2014,Sindhudurg,Murder,7.0
+2014,Solapur,Murder,108.0
+2014,Thane,Murder,219.0
+2014,Wardha,Murder,35.0
+2014,Washim,Murder,31.0
+2014,Yavatmal,Murder,75.0
+2015,Ahilyanagar,Murder,111.0
+2015,Akola,Murder,44.0
+2015,Amravati,Murder,84.0
+2015,Chhatrapati Sambhaji Nagar,Murder,89.0
+2015,Beed,Murder,66.0
+2015,Bhandara,Murder,27.0
+2015,Buldhana,Murder,54.0
+2015,Chandrapur,Murder,29.0
+2015,Dhule,Murder,35.0
+2015,Gadchiroli,Murder,52.0
+2015,Gondia,Murder,28.0
+2015,Hingoli,Murder,35.0
+2015,Jalgaon,Murder,72.0
+2015,Jalna,Murder,40.0
+2015,Kolhapur,Murder,47.0
+2015,Latur,Murder,59.0
+2015,Mumbai City,Murder,175.0
+2015,Nagpur,Murder,144.0
+2015,Nanded,Murder,60.0
+2015,Nandurbar,Murder,31.0
+2015,Nasik,Murder,144.0
+2015,Dharashiv,Murder,39.0
+2015,Palghar,Murder,92.0
+2015,Parbhani,Murder,45.0
+2015,Pune,Murder,297.0
+2015,Raigad,Murder,35.0
+2015,Ratnagiri,Murder,14.0
+2015,Sangli,Murder,56.0
+2015,Satara,Murder,57.0
+2015,Sindhudurg,Murder,9.0
+2015,Solapur,Murder,85.0
+2015,Thane,Murder,207.0
+2015,Wardha,Murder,46.0
+2015,Washim,Murder,26.0
+2015,Yavatmal,Murder,75.0
+2016,Ahilyanagar,Murder,91.0
+2016,Akola,Murder,35.0
+2016,Amravati,Murder,70.0
+2016,Chhatrapati Sambhaji Nagar,Murder,98.0
+2016,Beed,Murder,59.0
+2016,Bhandara,Murder,27.0
+2016,Buldhana,Murder,49.0
+2016,Chandrapur,Murder,33.0
+2016,Dhule,Murder,38.0
+2016,Gadchiroli,Murder,37.0
+2016,Gondia,Murder,25.0
+2016,Hingoli,Murder,21.0
+2016,Jalgaon,Murder,53.0
+2016,Jalna,Murder,47.0
+2016,Kolhapur,Murder,49.0
+2016,Latur,Murder,46.0
+2016,Mumbai City,Murder,154.0
+2016,Nagpur,Murder,142.0
+2016,Nanded,Murder,75.0
+2016,Nandurbar,Murder,23.0
+2016,Nasik,Murder,121.0
+2016,Dharashiv,Murder,44.0
+2016,Palghar,Murder,67.0
+2016,Parbhani,Murder,49.0
+2016,Pune,Murder,259.0
+2016,Raigad,Murder,37.0
+2016,Ratnagiri,Murder,14.0
+2016,Sangli,Murder,63.0
+2016,Satara,Murder,54.0
+2016,Sindhudurg,Murder,6.0
+2016,Solapur,Murder,97.0
+2016,Thane,Murder,187.0
+2016,Wardha,Murder,37.0
+2016,Washim,Murder,17.0
+2016,Yavatmal,Murder,75.0
+2017,Ahilyanagar,Murder,86.0
+2017,Akola,Murder,38.0
+2017,Amravati,Murder,61.0
+2017,Chhatrapati Sambhaji Nagar,Murder,75.0
+2017,Beed,Murder,56.0
+2017,Bhandara,Murder,14.0
+2017,Buldhana,Murder,44.0
+2017,Chandrapur,Murder,32.0
+2017,Dhule,Murder,41.0
+2017,Gadchiroli,Murder,37.0
+2017,Gondia,Murder,28.0
+2017,Hingoli,Murder,30.0
+2017,Jalgaon,Murder,53.0
+2017,Jalna,Murder,44.0
+2017,Kolhapur,Murder,43.0
+2017,Latur,Murder,44.0
+2017,Mumbai City,Murder,131.0
+2017,Nagpur,Murder,130.0
+2017,Nanded,Murder,59.0
+2017,Nandurbar,Murder,35.0
+2017,Nasik,Murder,119.0
+2017,Dharashiv,Murder,48.0
+2017,Palghar,Murder,74.0
+2017,Parbhani,Murder,34.0
+2017,Pune,Murder,232.0
+2017,Raigad,Murder,16.0
+2017,Ratnagiri,Murder,12.0
+2017,Sangli,Murder,43.0
+2017,Satara,Murder,47.0
+2017,Sindhudurg,Murder,8.0
+2017,Solapur,Murder,78.0
+2017,Thane,Murder,198.0
+2017,Wardha,Murder,32.0
+2017,Washim,Murder,27.0
+2017,Yavatmal,Murder,54.0
+2018,Ahilyanagar,Murder,77.0
+2018,Akola,Murder,33.0
+2018,Amravati,Murder,76.0
+2018,Chhatrapati Sambhaji Nagar,Murder,76.0
+2018,Beed,Murder,48.0
+2018,Bhandara,Murder,15.0
+2018,Buldhana,Murder,45.0
+2018,Chandrapur,Murder,30.0
+2018,Dhule,Murder,26.0
+2018,Gadchiroli,Murder,40.0
+2018,Gondia,Murder,25.0
+2018,Hingoli,Murder,27.0
+2018,Jalgaon,Murder,65.0
+2018,Jalna,Murder,43.0
+2018,Kolhapur,Murder,56.0
+2018,Latur,Murder,36.0
+2018,Mumbai City,Murder,172.0
+2018,Nagpur,Murder,108.0
+2018,Nanded,Murder,56.0
+2018,Nandurbar,Murder,28.0
+2018,Nasik,Murder,115.0
+2018,Dharashiv,Murder,41.0
+2018,Palghar,Murder,72.0
+2018,Parbhani,Murder,40.0
+2018,Pune,Murder,262.0
+2018,Raigad,Murder,42.0
+2018,Ratnagiri,Murder,21.0
+2018,Sangli,Murder,70.0
+2018,Satara,Murder,51.0
+2018,Sindhudurg,Murder,9.0
+2018,Solapur,Murder,88.0
+2018,Thane,Murder,194.0
+2018,Wardha,Murder,35.0
+2018,Washim,Murder,22.0
+2018,Yavatmal,Murder,55.0
+2019,Ahilyanagar,Murder,77.0
+2019,Akola,Murder,36.0
+2019,Amravati,Murder,71.0
+2019,Chhatrapati Sambhaji Nagar,Murder,72.0
+2019,Beed,Murder,54.0
+2019,Bhandara,Murder,25.0
+2019,Buldhana,Murder,33.0
+2019,Chandrapur,Murder,33.0
+2019,Dhule,Murder,27.0
+2019,Gadchiroli,Murder,39.0
+2019,Gondia,Murder,37.0
+2019,Hingoli,Murder,26.0
+2019,Jalgaon,Murder,61.0
+2019,Jalna,Murder,38.0
+2019,Kolhapur,Murder,49.0
+2019,Latur,Murder,58.0
+2019,Mumbai City,Murder,176.0
+2019,Nagpur,Murder,139.0
+2019,Nanded,Murder,55.0
+2019,Nandurbar,Murder,29.0
+2019,Nasik,Murder,71.0
+2019,Dharashiv,Murder,41.0
+2019,Palghar,Murder,72.0
+2019,Parbhani,Murder,31.0
+2019,Pune,Murder,246.0
+2019,Raigad,Murder,21.0
+2019,Ratnagiri,Murder,14.0
+2019,Sangli,Murder,59.0
+2019,Satara,Murder,56.0
+2019,Sindhudurg,Murder,8.0
+2019,Solapur,Murder,82.0
+2019,Thane,Murder,176.0
+2019,Wardha,Murder,41.0
+2019,Washim,Murder,31.0
+2019,Yavatmal,Murder,58.0
+2020,Ahilyanagar,Murder,89.0
+2020,Akola,Murder,41.0
+2020,Amravati,Murder,88.0
+2020,Chhatrapati Sambhaji Nagar,Murder,60.0
+2020,Beed,Murder,53.0
+2020,Bhandara,Murder,19.0
+2020,Buldhana,Murder,48.0
+2020,Chandrapur,Murder,54.0
+2020,Dhule,Murder,38.0
+2020,Gadchiroli,Murder,27.0
+2020,Gondia,Murder,33.0
+2020,Hingoli,Murder,32.0
+2020,Jalgaon,Murder,58.0
+2020,Jalna,Murder,37.0
+2020,Kolhapur,Murder,46.0
+2020,Latur,Murder,37.0
+2020,Mumbai City,Murder,151.0
+2020,Nagpur,Murder,142.0
+2020,Nanded,Murder,63.0
+2020,Nandurbar,Murder,31.0
+2020,Nasik,Murder,106.0
+2020,Dharashiv,Murder,35.0
+2020,Palghar,Murder,29.0
+2020,Parbhani,Murder,35.0
+2020,Pune,Murder,251.0
+2020,Raigad,Murder,21.0
+2020,Ratnagiri,Murder,17.0
+2020,Sangli,Murder,55.0
+2020,Satara,Murder,53.0
+2020,Sindhudurg,Murder,5.0
+2020,Solapur,Murder,82.0
+2020,Thane,Murder,186.0
+2020,Wardha,Murder,38.0
+2020,Washim,Murder,35.0
+2020,Yavatmal,Murder,68.0
+2021,Ahilyanagar,Murder,101.0
+2021,Akola,Murder,36.0
+2021,Amravati,Murder,70.0
+2021,Chhatrapati Sambhaji Nagar,Murder,78.0
+2021,Beed,Murder,59.0
+2021,Bhandara,Murder,30.0
+2021,Buldhana,Murder,47.0
+2021,Chandrapur,Murder,48.0
+2021,Dhule,Murder,40.0
+2021,Gadchiroli,Murder,39.0
+2021,Gondia,Murder,30.0
+2021,Hingoli,Murder,23.0
+2021,Jalgaon,Murder,63.0
+2021,Jalna,Murder,54.0
+2021,Kolhapur,Murder,50.0
+2021,Latur,Murder,56.0
+2021,Mumbai City,Murder,172.0
+2021,Nagpur,Murder,152.0
+2021,Nanded,Murder,73.0
+2021,Nandurbar,Murder,32.0
+2021,Nasik,Murder,92.0
+2021,Dharashiv,Murder,33.0
+2021,Palghar,Murder,31.0
+2021,Parbhani,Murder,29.0
+2021,Pune,Murder,291.0
+2021,Raigad,Murder,38.0
+2021,Ratnagiri,Murder,12.0
+2021,Sangli,Murder,68.0
+2021,Satara,Murder,55.0
+2021,Sindhudurg,Murder,9.0
+2021,Solapur,Murder,90.0
+2021,Thane,Murder,207.0
+2021,Wardha,Murder,33.0
+2021,Washim,Murder,22.0
+2021,Yavatmal,Murder,67.0
+2014,Ahilyanagar,Kidnapping & Abduction,121.0
+2014,Akola,Kidnapping & Abduction,42.0
+2014,Amravati,Kidnapping & Abduction,112.0
+2014,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,100.0
+2014,Beed,Kidnapping & Abduction,72.0
+2014,Bhandara,Kidnapping & Abduction,23.0
+2014,Buldhana,Kidnapping & Abduction,44.0
+2014,Chandrapur,Kidnapping & Abduction,49.0
+2014,Dhule,Kidnapping & Abduction,43.0
+2014,Gadchiroli,Kidnapping & Abduction,8.0
+2014,Gondia,Kidnapping & Abduction,26.0
+2014,Hingoli,Kidnapping & Abduction,29.0
+2014,Jalgaon,Kidnapping & Abduction,84.0
+2014,Jalna,Kidnapping & Abduction,39.0
+2014,Kolhapur,Kidnapping & Abduction,70.0
+2014,Latur,Kidnapping & Abduction,84.0
+2014,Mumbai City,Kidnapping & Abduction,558.0
+2014,Nagpur,Kidnapping & Abduction,182.0
+2014,Nanded,Kidnapping & Abduction,95.0
+2014,Nandurbar,Kidnapping & Abduction,21.0
+2014,Nasik,Kidnapping & Abduction,167.0
+2014,Dharashiv,Kidnapping & Abduction,28.0
+2014,Palghar,Kidnapping & Abduction,114.0
+2014,Parbhani,Kidnapping & Abduction,64.0
+2014,Pune,Kidnapping & Abduction,388.0
+2014,Raigad,Kidnapping & Abduction,41.0
+2014,Ratnagiri,Kidnapping & Abduction,19.0
+2014,Sangli,Kidnapping & Abduction,68.0
+2014,Satara,Kidnapping & Abduction,88.0
+2014,Sindhudurg,Kidnapping & Abduction,10.0
+2014,Solapur,Kidnapping & Abduction,132.0
+2014,Thane,Kidnapping & Abduction,646.0
+2014,Wardha,Kidnapping & Abduction,37.0
+2014,Washim,Kidnapping & Abduction,32.0
+2014,Yavatmal,Kidnapping & Abduction,157.0
+2015,Ahilyanagar,Kidnapping & Abduction,229.0
+2015,Akola,Kidnapping & Abduction,73.0
+2015,Amravati,Kidnapping & Abduction,233.0
+2015,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,249.0
+2015,Beed,Kidnapping & Abduction,122.0
+2015,Bhandara,Kidnapping & Abduction,68.0
+2015,Buldhana,Kidnapping & Abduction,41.0
+2015,Chandrapur,Kidnapping & Abduction,138.0
+2015,Dhule,Kidnapping & Abduction,28.0
+2015,Gadchiroli,Kidnapping & Abduction,22.0
+2015,Gondia,Kidnapping & Abduction,78.0
+2015,Hingoli,Kidnapping & Abduction,37.0
+2015,Jalgaon,Kidnapping & Abduction,107.0
+2015,Jalna,Kidnapping & Abduction,78.0
+2015,Kolhapur,Kidnapping & Abduction,185.0
+2015,Latur,Kidnapping & Abduction,114.0
+2015,Mumbai City,Kidnapping & Abduction,1606.0
+2015,Nagpur,Kidnapping & Abduction,446.0
+2015,Nanded,Kidnapping & Abduction,138.0
+2015,Nandurbar,Kidnapping & Abduction,27.0
+2015,Nasik,Kidnapping & Abduction,343.0
+2015,Dharashiv,Kidnapping & Abduction,65.0
+2015,Palghar,Kidnapping & Abduction,409.0
+2015,Parbhani,Kidnapping & Abduction,108.0
+2015,Pune,Kidnapping & Abduction,1103.0
+2015,Raigad,Kidnapping & Abduction,75.0
+2015,Ratnagiri,Kidnapping & Abduction,57.0
+2015,Sangli,Kidnapping & Abduction,130.0
+2015,Satara,Kidnapping & Abduction,201.0
+2015,Sindhudurg,Kidnapping & Abduction,19.0
+2015,Solapur,Kidnapping & Abduction,215.0
+2015,Thane,Kidnapping & Abduction,1233.0
+2015,Wardha,Kidnapping & Abduction,80.0
+2015,Washim,Kidnapping & Abduction,54.0
+2015,Yavatmal,Kidnapping & Abduction,144.0
+2016,Ahilyanagar,Kidnapping & Abduction,252.0
+2016,Akola,Kidnapping & Abduction,80.0
+2016,Amravati,Kidnapping & Abduction,209.0
+2016,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,315.0
+2016,Beed,Kidnapping & Abduction,123.0
+2016,Bhandara,Kidnapping & Abduction,71.0
+2016,Buldhana,Kidnapping & Abduction,74.0
+2016,Chandrapur,Kidnapping & Abduction,117.0
+2016,Dhule,Kidnapping & Abduction,60.0
+2016,Gadchiroli,Kidnapping & Abduction,28.0
+2016,Gondia,Kidnapping & Abduction,67.0
+2016,Hingoli,Kidnapping & Abduction,28.0
+2016,Jalgaon,Kidnapping & Abduction,101.0
+2016,Jalna,Kidnapping & Abduction,71.0
+2016,Kolhapur,Kidnapping & Abduction,186.0
+2016,Latur,Kidnapping & Abduction,114.0
+2016,Mumbai City,Kidnapping & Abduction,1985.0
+2016,Nagpur,Kidnapping & Abduction,635.0
+2016,Nanded,Kidnapping & Abduction,158.0
+2016,Nandurbar,Kidnapping & Abduction,43.0
+2016,Nasik,Kidnapping & Abduction,401.0
+2016,Dharashiv,Kidnapping & Abduction,64.0
+2016,Palghar,Kidnapping & Abduction,431.0
+2016,Parbhani,Kidnapping & Abduction,100.0
+2016,Pune,Kidnapping & Abduction,1269.0
+2016,Raigad,Kidnapping & Abduction,83.0
+2016,Ratnagiri,Kidnapping & Abduction,79.0
+2016,Sangli,Kidnapping & Abduction,147.0
+2016,Satara,Kidnapping & Abduction,214.0
+2016,Sindhudurg,Kidnapping & Abduction,27.0
+2016,Solapur,Kidnapping & Abduction,231.0
+2016,Thane,Kidnapping & Abduction,1285.0
+2016,Wardha,Kidnapping & Abduction,97.0
+2016,Washim,Kidnapping & Abduction,59.0
+2016,Yavatmal,Kidnapping & Abduction,128.0
+2017,Ahilyanagar,Kidnapping & Abduction,303.0
+2017,Akola,Kidnapping & Abduction,96.0
+2017,Amravati,Kidnapping & Abduction,215.0
+2017,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,264.0
+2017,Beed,Kidnapping & Abduction,134.0
+2017,Bhandara,Kidnapping & Abduction,108.0
+2017,Buldhana,Kidnapping & Abduction,97.0
+2017,Chandrapur,Kidnapping & Abduction,210.0
+2017,Dhule,Kidnapping & Abduction,58.0
+2017,Gadchiroli,Kidnapping & Abduction,41.0
+2017,Gondia,Kidnapping & Abduction,76.0
+2017,Hingoli,Kidnapping & Abduction,45.0
+2017,Jalgaon,Kidnapping & Abduction,153.0
+2017,Jalna,Kidnapping & Abduction,90.0
+2017,Kolhapur,Kidnapping & Abduction,197.0
+2017,Latur,Kidnapping & Abduction,134.0
+2017,Mumbai City,Kidnapping & Abduction,2198.0
+2017,Nagpur,Kidnapping & Abduction,660.0
+2017,Nanded,Kidnapping & Abduction,154.0
+2017,Nandurbar,Kidnapping & Abduction,41.0
+2017,Nasik,Kidnapping & Abduction,431.0
+2017,Dharashiv,Kidnapping & Abduction,71.0
+2017,Palghar,Kidnapping & Abduction,411.0
+2017,Parbhani,Kidnapping & Abduction,107.0
+2017,Pune,Kidnapping & Abduction,1499.0
+2017,Raigad,Kidnapping & Abduction,97.0
+2017,Ratnagiri,Kidnapping & Abduction,75.0
+2017,Sangli,Kidnapping & Abduction,183.0
+2017,Satara,Kidnapping & Abduction,243.0
+2017,Sindhudurg,Kidnapping & Abduction,34.0
+2017,Solapur,Kidnapping & Abduction,255.0
+2017,Thane,Kidnapping & Abduction,1303.0
+2017,Wardha,Kidnapping & Abduction,121.0
+2017,Washim,Kidnapping & Abduction,50.0
+2017,Yavatmal,Kidnapping & Abduction,170.0
+2018,Ahilyanagar,Kidnapping & Abduction,431.0
+2018,Akola,Kidnapping & Abduction,133.0
+2018,Amravati,Kidnapping & Abduction,236.0
+2018,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,281.0
+2018,Beed,Kidnapping & Abduction,145.0
+2018,Bhandara,Kidnapping & Abduction,109.0
+2018,Buldhana,Kidnapping & Abduction,102.0
+2018,Chandrapur,Kidnapping & Abduction,177.0
+2018,Dhule,Kidnapping & Abduction,106.0
+2018,Gadchiroli,Kidnapping & Abduction,50.0
+2018,Gondia,Kidnapping & Abduction,86.0
+2018,Hingoli,Kidnapping & Abduction,40.0
+2018,Jalgaon,Kidnapping & Abduction,183.0
+2018,Jalna,Kidnapping & Abduction,101.0
+2018,Kolhapur,Kidnapping & Abduction,232.0
+2018,Latur,Kidnapping & Abduction,156.0
+2018,Mumbai City,Kidnapping & Abduction,2232.0
+2018,Nagpur,Kidnapping & Abduction,651.0
+2018,Nanded,Kidnapping & Abduction,159.0
+2018,Nandurbar,Kidnapping & Abduction,62.0
+2018,Nasik,Kidnapping & Abduction,514.0
+2018,Dharashiv,Kidnapping & Abduction,81.0
+2018,Palghar,Kidnapping & Abduction,524.0
+2018,Parbhani,Kidnapping & Abduction,83.0
+2018,Pune,Kidnapping & Abduction,1550.0
+2018,Raigad,Kidnapping & Abduction,93.0
+2018,Ratnagiri,Kidnapping & Abduction,82.0
+2018,Sangli,Kidnapping & Abduction,240.0
+2018,Satara,Kidnapping & Abduction,263.0
+2018,Sindhudurg,Kidnapping & Abduction,22.0
+2018,Solapur,Kidnapping & Abduction,323.0
+2018,Thane,Kidnapping & Abduction,1632.0
+2018,Wardha,Kidnapping & Abduction,125.0
+2018,Washim,Kidnapping & Abduction,63.0
+2018,Yavatmal,Kidnapping & Abduction,176.0
+2019,Ahilyanagar,Kidnapping & Abduction,420.0
+2019,Akola,Kidnapping & Abduction,126.0
+2019,Amravati,Kidnapping & Abduction,271.0
+2019,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,318.0
+2019,Beed,Kidnapping & Abduction,128.0
+2019,Bhandara,Kidnapping & Abduction,108.0
+2019,Buldhana,Kidnapping & Abduction,123.0
+2019,Chandrapur,Kidnapping & Abduction,205.0
+2019,Dhule,Kidnapping & Abduction,107.0
+2019,Gadchiroli,Kidnapping & Abduction,49.0
+2019,Gondia,Kidnapping & Abduction,113.0
+2019,Hingoli,Kidnapping & Abduction,54.0
+2019,Jalgaon,Kidnapping & Abduction,207.0
+2019,Jalna,Kidnapping & Abduction,114.0
+2019,Kolhapur,Kidnapping & Abduction,267.0
+2019,Latur,Kidnapping & Abduction,134.0
+2019,Mumbai City,Kidnapping & Abduction,2139.0
+2019,Nagpur,Kidnapping & Abduction,695.0
+2019,Nanded,Kidnapping & Abduction,182.0
+2019,Nandurbar,Kidnapping & Abduction,50.0
+2019,Nasik,Kidnapping & Abduction,545.0
+2019,Dharashiv,Kidnapping & Abduction,77.0
+2019,Palghar,Kidnapping & Abduction,533.0
+2019,Parbhani,Kidnapping & Abduction,124.0
+2019,Pune,Kidnapping & Abduction,1643.0
+2019,Raigad,Kidnapping & Abduction,121.0
+2019,Ratnagiri,Kidnapping & Abduction,75.0
+2019,Sangli,Kidnapping & Abduction,263.0
+2019,Satara,Kidnapping & Abduction,242.0
+2019,Sindhudurg,Kidnapping & Abduction,24.0
+2019,Solapur,Kidnapping & Abduction,334.0
+2019,Thane,Kidnapping & Abduction,1586.0
+2019,Wardha,Kidnapping & Abduction,125.0
+2019,Washim,Kidnapping & Abduction,76.0
+2019,Yavatmal,Kidnapping & Abduction,177.0
+2020,Ahilyanagar,Kidnapping & Abduction,369.0
+2020,Akola,Kidnapping & Abduction,76.0
+2020,Amravati,Kidnapping & Abduction,190.0
+2020,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,242.0
+2020,Beed,Kidnapping & Abduction,91.0
+2020,Bhandara,Kidnapping & Abduction,71.0
+2020,Buldhana,Kidnapping & Abduction,110.0
+2020,Chandrapur,Kidnapping & Abduction,152.0
+2020,Dhule,Kidnapping & Abduction,98.0
+2020,Gadchiroli,Kidnapping & Abduction,32.0
+2020,Gondia,Kidnapping & Abduction,40.0
+2020,Hingoli,Kidnapping & Abduction,27.0
+2020,Jalgaon,Kidnapping & Abduction,187.0
+2020,Jalna,Kidnapping & Abduction,100.0
+2020,Kolhapur,Kidnapping & Abduction,150.0
+2020,Latur,Kidnapping & Abduction,111.0
+2020,Mumbai City,Kidnapping & Abduction,1180.0
+2020,Nagpur,Kidnapping & Abduction,442.0
+2020,Nanded,Kidnapping & Abduction,127.0
+2020,Nandurbar,Kidnapping & Abduction,57.0
+2020,Nasik,Kidnapping & Abduction,473.0
+2020,Dharashiv,Kidnapping & Abduction,87.0
+2020,Palghar,Kidnapping & Abduction,71.0
+2020,Parbhani,Kidnapping & Abduction,65.0
+2020,Pune,Kidnapping & Abduction,1113.0
+2020,Raigad,Kidnapping & Abduction,73.0
+2020,Ratnagiri,Kidnapping & Abduction,43.0
+2020,Sangli,Kidnapping & Abduction,228.0
+2020,Satara,Kidnapping & Abduction,192.0
+2020,Sindhudurg,Kidnapping & Abduction,18.0
+2020,Solapur,Kidnapping & Abduction,276.0
+2020,Thane,Kidnapping & Abduction,1305.0
+2020,Wardha,Kidnapping & Abduction,113.0
+2020,Washim,Kidnapping & Abduction,66.0
+2020,Yavatmal,Kidnapping & Abduction,128.0
+2021,Ahilyanagar,Kidnapping & Abduction,449.0
+2021,Akola,Kidnapping & Abduction,98.0
+2021,Amravati,Kidnapping & Abduction,266.0
+2021,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,272.0
+2021,Beed,Kidnapping & Abduction,128.0
+2021,Bhandara,Kidnapping & Abduction,74.0
+2021,Buldhana,Kidnapping & Abduction,137.0
+2021,Chandrapur,Kidnapping & Abduction,215.0
+2021,Dhule,Kidnapping & Abduction,123.0
+2021,Gadchiroli,Kidnapping & Abduction,50.0
+2021,Gondia,Kidnapping & Abduction,76.0
+2021,Hingoli,Kidnapping & Abduction,43.0
+2021,Jalgaon,Kidnapping & Abduction,226.0
+2021,Jalna,Kidnapping & Abduction,106.0
+2021,Kolhapur,Kidnapping & Abduction,211.0
+2021,Latur,Kidnapping & Abduction,136.0
+2021,Mumbai City,Kidnapping & Abduction,1600.0
+2021,Nagpur,Kidnapping & Abduction,522.0
+2021,Nanded,Kidnapping & Abduction,140.0
+2021,Nandurbar,Kidnapping & Abduction,77.0
+2021,Nasik,Kidnapping & Abduction,598.0
+2021,Dharashiv,Kidnapping & Abduction,92.0
+2021,Palghar,Kidnapping & Abduction,90.0
+2021,Parbhani,Kidnapping & Abduction,89.0
+2021,Pune,Kidnapping & Abduction,1444.0
+2021,Raigad,Kidnapping & Abduction,135.0
+2021,Ratnagiri,Kidnapping & Abduction,83.0
+2021,Sangli,Kidnapping & Abduction,259.0
+2021,Satara,Kidnapping & Abduction,237.0
+2021,Sindhudurg,Kidnapping & Abduction,24.0
+2021,Solapur,Kidnapping & Abduction,312.0
+2021,Thane,Kidnapping & Abduction,1810.0
+2021,Wardha,Kidnapping & Abduction,112.0
+2021,Washim,Kidnapping & Abduction,65.0
+2021,Yavatmal,Kidnapping & Abduction,203.0
+2014,Ahilyanagar,Hurt,398.0
+2014,Akola,Hurt,242.0
+2014,Amravati,Hurt,676.0
+2014,Chhatrapati Sambhaji Nagar,Hurt,296.0
+2014,Beed,Hurt,242.0
+2014,Bhandara,Hurt,84.0
+2014,Buldhana,Hurt,256.0
+2014,Chandrapur,Hurt,254.0
+2014,Dhule,Hurt,100.0
+2014,Gadchiroli,Hurt,48.0
+2014,Gondia,Hurt,118.0
+2014,Hingoli,Hurt,108.0
+2014,Jalgaon,Hurt,344.0
+2014,Jalna,Hurt,382.0
+2014,Kolhapur,Hurt,220.0
+2014,Latur,Hurt,84.0
+2014,Mumbai City,Hurt,4038.0
+2014,Nagpur,Hurt,941.0
+2014,Nanded,Hurt,342.0
+2014,Nandurbar,Hurt,68.0
+2014,Nasik,Hurt,942.0
+2014,Dharashiv,Hurt,130.0
+2014,Palghar,Hurt,425.0
+2014,Parbhani,Hurt,282.0
+2014,Pune,Hurt,1489.0
+2014,Raigad,Hurt,148.0
+2014,Ratnagiri,Hurt,48.0
+2014,Sangli,Hurt,272.0
+2014,Satara,Hurt,284.0
+2014,Sindhudurg,Hurt,40.0
+2014,Solapur,Hurt,538.0
+2014,Thane,Hurt,1574.0
+2014,Wardha,Hurt,218.0
+2014,Washim,Hurt,142.0
+2014,Yavatmal,Hurt,474.0
+2015,Ahilyanagar,Hurt,430.0
+2015,Akola,Hurt,194.0
+2015,Amravati,Hurt,411.0
+2015,Chhatrapati Sambhaji Nagar,Hurt,334.0
+2015,Beed,Hurt,254.0
+2015,Bhandara,Hurt,102.0
+2015,Buldhana,Hurt,238.0
+2015,Chandrapur,Hurt,148.0
+2015,Dhule,Hurt,126.0
+2015,Gadchiroli,Hurt,70.0
+2015,Gondia,Hurt,100.0
+2015,Hingoli,Hurt,136.0
+2015,Jalgaon,Hurt,353.0
+2015,Jalna,Hurt,584.0
+2015,Kolhapur,Hurt,1228.0
+2015,Latur,Hurt,82.0
+2015,Mumbai City,Hurt,3043.0
+2015,Nagpur,Hurt,784.0
+2015,Nanded,Hurt,323.0
+2015,Nandurbar,Hurt,82.0
+2015,Nasik,Hurt,1036.0
+2015,Dharashiv,Hurt,182.0
+2015,Palghar,Hurt,526.0
+2015,Parbhani,Hurt,302.0
+2015,Pune,Hurt,1896.0
+2015,Raigad,Hurt,104.0
+2015,Ratnagiri,Hurt,62.0
+2015,Sangli,Hurt,344.0
+2015,Satara,Hurt,308.0
+2015,Sindhudurg,Hurt,52.0
+2015,Solapur,Hurt,386.0
+2015,Thane,Hurt,968.0
+2015,Wardha,Hurt,218.0
+2015,Washim,Hurt,153.0
+2015,Yavatmal,Hurt,324.0
+2016,Ahilyanagar,Hurt,237.0
+2016,Akola,Hurt,91.0
+2016,Amravati,Hurt,163.0
+2016,Chhatrapati Sambhaji Nagar,Hurt,189.0
+2016,Beed,Hurt,143.0
+2016,Bhandara,Hurt,54.0
+2016,Buldhana,Hurt,114.0
+2016,Chandrapur,Hurt,89.0
+2016,Dhule,Hurt,60.0
+2016,Gadchiroli,Hurt,28.0
+2016,Gondia,Hurt,31.0
+2016,Hingoli,Hurt,50.0
+2016,Jalgaon,Hurt,164.0
+2016,Jalna,Hurt,20.0
+2016,Kolhapur,Hurt,115.0
+2016,Latur,Hurt,101.0
+2016,Mumbai City,Hurt,1367.0
+2016,Nagpur,Hurt,392.0
+2016,Nanded,Hurt,130.0
+2016,Nandurbar,Hurt,25.0
+2016,Nasik,Hurt,1041.0
+2016,Dharashiv,Hurt,73.0
+2016,Palghar,Hurt,195.0
+2016,Parbhani,Hurt,156.0
+2016,Pune,Hurt,901.0
+2016,Raigad,Hurt,45.0
+2016,Ratnagiri,Hurt,25.0
+2016,Sangli,Hurt,158.0
+2016,Satara,Hurt,152.0
+2016,Sindhudurg,Hurt,16.0
+2016,Solapur,Hurt,216.0
+2016,Thane,Hurt,757.0
+2016,Wardha,Hurt,124.0
+2016,Washim,Hurt,66.0
+2016,Yavatmal,Hurt,157.0
+2017,Ahilyanagar,Hurt,886.0
+2017,Akola,Hurt,1161.0
+2017,Amravati,Hurt,1553.0
+2017,Chhatrapati Sambhaji Nagar,Hurt,1613.0
+2017,Beed,Hurt,925.0
+2017,Bhandara,Hurt,338.0
+2017,Buldhana,Hurt,1624.0
+2017,Chandrapur,Hurt,716.0
+2017,Dhule,Hurt,395.0
+2017,Gadchiroli,Hurt,180.0
+2017,Gondia,Hurt,380.0
+2017,Hingoli,Hurt,398.0
+2017,Jalgaon,Hurt,604.0
+2017,Jalna,Hurt,840.0
+2017,Kolhapur,Hurt,687.0
+2017,Latur,Hurt,960.0
+2017,Mumbai City,Hurt,5222.0
+2017,Nagpur,Hurt,2244.0
+2017,Nanded,Hurt,1160.0
+2017,Nandurbar,Hurt,174.0
+2017,Nasik,Hurt,1462.0
+2017,Dharashiv,Hurt,670.0
+2017,Palghar,Hurt,702.0
+2017,Parbhani,Hurt,798.0
+2017,Pune,Hurt,2906.0
+2017,Raigad,Hurt,406.0
+2017,Ratnagiri,Hurt,259.0
+2017,Sangli,Hurt,704.0
+2017,Satara,Hurt,807.0
+2017,Sindhudurg,Hurt,125.0
+2017,Solapur,Hurt,1439.0
+2017,Thane,Hurt,2559.0
+2017,Wardha,Hurt,982.0
+2017,Washim,Hurt,576.0
+2017,Yavatmal,Hurt,1523.0
+2018,Ahilyanagar,Hurt,1458.0
+2018,Akola,Hurt,1203.0
+2018,Amravati,Hurt,1325.0
+2018,Chhatrapati Sambhaji Nagar,Hurt,1852.0
+2018,Beed,Hurt,944.0
+2018,Bhandara,Hurt,368.0
+2018,Buldhana,Hurt,1742.0
+2018,Chandrapur,Hurt,875.0
+2018,Dhule,Hurt,399.0
+2018,Gadchiroli,Hurt,197.0
+2018,Gondia,Hurt,379.0
+2018,Hingoli,Hurt,501.0
+2018,Jalgaon,Hurt,721.0
+2018,Jalna,Hurt,849.0
+2018,Kolhapur,Hurt,738.0
+2018,Latur,Hurt,964.0
+2018,Mumbai City,Hurt,5966.0
+2018,Nagpur,Hurt,2202.0
+2018,Nanded,Hurt,1310.0
+2018,Nandurbar,Hurt,181.0
+2018,Nasik,Hurt,1575.0
+2018,Dharashiv,Hurt,689.0
+2018,Palghar,Hurt,1009.0
+2018,Parbhani,Hurt,855.0
+2018,Pune,Hurt,3422.0
+2018,Raigad,Hurt,353.0
+2018,Ratnagiri,Hurt,276.0
+2018,Sangli,Hurt,1181.0
+2018,Satara,Hurt,883.0
+2018,Sindhudurg,Hurt,187.0
+2018,Solapur,Hurt,1741.0
+2018,Thane,Hurt,3012.0
+2018,Wardha,Hurt,1066.0
+2018,Washim,Hurt,657.0
+2018,Yavatmal,Hurt,1450.0
+2019,Ahilyanagar,Hurt,1644.0
+2019,Akola,Hurt,1297.0
+2019,Amravati,Hurt,1860.0
+2019,Chhatrapati Sambhaji Nagar,Hurt,1932.0
+2019,Beed,Hurt,1125.0
+2019,Bhandara,Hurt,422.0
+2019,Buldhana,Hurt,1751.0
+2019,Chandrapur,Hurt,1045.0
+2019,Dhule,Hurt,472.0
+2019,Gadchiroli,Hurt,250.0
+2019,Gondia,Hurt,422.0
+2019,Hingoli,Hurt,587.0
+2019,Jalgaon,Hurt,853.0
+2019,Jalna,Hurt,1045.0
+2019,Kolhapur,Hurt,852.0
+2019,Latur,Hurt,993.0
+2019,Mumbai City,Hurt,6416.0
+2019,Nagpur,Hurt,2377.0
+2019,Nanded,Hurt,1673.0
+2019,Nandurbar,Hurt,225.0
+2019,Nasik,Hurt,2228.0
+2019,Dharashiv,Hurt,823.0
+2019,Palghar,Hurt,1180.0
+2019,Parbhani,Hurt,1014.0
+2019,Pune,Hurt,3935.0
+2019,Raigad,Hurt,429.0
+2019,Ratnagiri,Hurt,345.0
+2019,Sangli,Hurt,1408.0
+2019,Satara,Hurt,954.0
+2019,Sindhudurg,Hurt,210.0
+2019,Solapur,Hurt,2320.0
+2019,Thane,Hurt,3659.0
+2019,Wardha,Hurt,1128.0
+2019,Washim,Hurt,681.0
+2019,Yavatmal,Hurt,1393.0
+2020,Ahilyanagar,Hurt,1826.0
+2020,Akola,Hurt,1345.0
+2020,Amravati,Hurt,2133.0
+2020,Chhatrapati Sambhaji Nagar,Hurt,1869.0
+2020,Beed,Hurt,1233.0
+2020,Bhandara,Hurt,486.0
+2020,Buldhana,Hurt,2099.0
+2020,Chandrapur,Hurt,1147.0
+2020,Dhule,Hurt,433.0
+2020,Gadchiroli,Hurt,303.0
+2020,Gondia,Hurt,311.0
+2020,Hingoli,Hurt,649.0
+2020,Jalgaon,Hurt,901.0
+2020,Jalna,Hurt,1436.0
+2020,Kolhapur,Hurt,1020.0
+2020,Latur,Hurt,1077.0
+2020,Mumbai City,Hurt,4171.0
+2020,Nagpur,Hurt,2252.0
+2020,Nanded,Hurt,1778.0
+2020,Nandurbar,Hurt,255.0
+2020,Nasik,Hurt,1720.0
+2020,Dharashiv,Hurt,847.0
+2020,Palghar,Hurt,422.0
+2020,Parbhani,Hurt,1227.0
+2020,Pune,Hurt,3540.0
+2020,Raigad,Hurt,334.0
+2020,Ratnagiri,Hurt,250.0
+2020,Sangli,Hurt,1344.0
+2020,Satara,Hurt,1017.0
+2020,Sindhudurg,Hurt,241.0
+2020,Solapur,Hurt,2437.0
+2020,Thane,Hurt,3231.0
+2020,Wardha,Hurt,1394.0
+2020,Washim,Hurt,855.0
+2020,Yavatmal,Hurt,1431.0
+2021,Ahilyanagar,Hurt,2554.0
+2021,Akola,Hurt,1437.0
+2021,Amravati,Hurt,2105.0
+2021,Chhatrapati Sambhaji Nagar,Hurt,2157.0
+2021,Beed,Hurt,1309.0
+2021,Bhandara,Hurt,486.0
+2021,Buldhana,Hurt,2059.0
+2021,Chandrapur,Hurt,1362.0
+2021,Dhule,Hurt,546.0
+2021,Gadchiroli,Hurt,295.0
+2021,Gondia,Hurt,464.0
+2021,Hingoli,Hurt,674.0
+2021,Jalgaon,Hurt,927.0
+2021,Jalna,Hurt,1244.0
+2021,Kolhapur,Hurt,1137.0
+2021,Latur,Hurt,1317.0
+2021,Mumbai City,Hurt,4654.0
+2021,Nagpur,Hurt,2231.0
+2021,Nanded,Hurt,1782.0
+2021,Nandurbar,Hurt,260.0
+2021,Nasik,Hurt,1842.0
+2021,Dharashiv,Hurt,854.0
+2021,Palghar,Hurt,357.0
+2021,Parbhani,Hurt,1319.0
+2021,Pune,Hurt,3812.0
+2021,Raigad,Hurt,391.0
+2021,Ratnagiri,Hurt,251.0
+2021,Sangli,Hurt,1434.0
+2021,Satara,Hurt,1063.0
+2021,Sindhudurg,Hurt,253.0
+2021,Solapur,Hurt,2772.0
+2021,Thane,Hurt,4056.0
+2021,Wardha,Hurt,1422.0
+2021,Washim,Hurt,928.0
+2021,Yavatmal,Hurt,1510.0
+2014,Ahilyanagar,Causing Death by Negligence,736.0
+2014,Akola,Causing Death by Negligence,141.0
+2014,Amravati,Causing Death by Negligence,319.0
+2014,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,481.0
+2014,Beed,Causing Death by Negligence,304.0
+2014,Bhandara,Causing Death by Negligence,135.0
+2014,Buldhana,Causing Death by Negligence,279.0
+2014,Chandrapur,Causing Death by Negligence,313.0
+2014,Dhule,Causing Death by Negligence,311.0
+2014,Gadchiroli,Causing Death by Negligence,109.0
+2014,Gondia,Causing Death by Negligence,135.0
+2014,Hingoli,Causing Death by Negligence,91.0
+2014,Jalgaon,Causing Death by Negligence,393.0
+2014,Jalna,Causing Death by Negligence,189.0
+2014,Kolhapur,Causing Death by Negligence,317.0
+2014,Latur,Causing Death by Negligence,256.0
+2014,Mumbai City,Causing Death by Negligence,586.0
+2014,Nagpur,Causing Death by Negligence,756.0
+2014,Nanded,Causing Death by Negligence,268.0
+2014,Nandurbar,Causing Death by Negligence,129.0
+2014,Nasik,Causing Death by Negligence,860.0
+2014,Dharashiv,Causing Death by Negligence,243.0
+2014,Palghar,Causing Death by Negligence,396.0
+2014,Parbhani,Causing Death by Negligence,120.0
+2014,Pune,Causing Death by Negligence,1444.0
+2014,Raigad,Causing Death by Negligence,281.0
+2014,Ratnagiri,Causing Death by Negligence,153.0
+2014,Sangli,Causing Death by Negligence,309.0
+2014,Satara,Causing Death by Negligence,470.0
+2014,Sindhudurg,Causing Death by Negligence,80.0
+2014,Solapur,Causing Death by Negligence,591.0
+2014,Thane,Causing Death by Negligence,883.0
+2014,Wardha,Causing Death by Negligence,166.0
+2014,Washim,Causing Death by Negligence,132.0
+2014,Yavatmal,Causing Death by Negligence,243.0
+2015,Ahilyanagar,Causing Death by Negligence,784.0
+2015,Akola,Causing Death by Negligence,133.0
+2015,Amravati,Causing Death by Negligence,322.0
+2015,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,420.0
+2015,Beed,Causing Death by Negligence,265.0
+2015,Bhandara,Causing Death by Negligence,161.0
+2015,Buldhana,Causing Death by Negligence,259.0
+2015,Chandrapur,Causing Death by Negligence,241.0
+2015,Dhule,Causing Death by Negligence,316.0
+2015,Gadchiroli,Causing Death by Negligence,111.0
+2015,Gondia,Causing Death by Negligence,130.0
+2015,Hingoli,Causing Death by Negligence,111.0
+2015,Jalgaon,Causing Death by Negligence,420.0
+2015,Jalna,Causing Death by Negligence,169.0
+2015,Kolhapur,Causing Death by Negligence,377.0
+2015,Latur,Causing Death by Negligence,249.0
+2015,Mumbai City,Causing Death by Negligence,590.0
+2015,Nagpur,Causing Death by Negligence,725.0
+2015,Nanded,Causing Death by Negligence,237.0
+2015,Nandurbar,Causing Death by Negligence,143.0
+2015,Nasik,Causing Death by Negligence,964.0
+2015,Dharashiv,Causing Death by Negligence,288.0
+2015,Palghar,Causing Death by Negligence,498.0
+2015,Parbhani,Causing Death by Negligence,119.0
+2015,Pune,Causing Death by Negligence,1540.0
+2015,Raigad,Causing Death by Negligence,325.0
+2015,Ratnagiri,Causing Death by Negligence,160.0
+2015,Sangli,Causing Death by Negligence,352.0
+2015,Satara,Causing Death by Negligence,465.0
+2015,Sindhudurg,Causing Death by Negligence,81.0
+2015,Solapur,Causing Death by Negligence,605.0
+2015,Thane,Causing Death by Negligence,958.0
+2015,Wardha,Causing Death by Negligence,173.0
+2015,Washim,Causing Death by Negligence,113.0
+2015,Yavatmal,Causing Death by Negligence,254.0
+2016,Ahilyanagar,Causing Death by Negligence,756.0
+2016,Akola,Causing Death by Negligence,144.0
+2016,Amravati,Causing Death by Negligence,351.0
+2016,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,459.0
+2016,Beed,Causing Death by Negligence,271.0
+2016,Bhandara,Causing Death by Negligence,154.0
+2016,Buldhana,Causing Death by Negligence,291.0
+2016,Chandrapur,Causing Death by Negligence,243.0
+2016,Dhule,Causing Death by Negligence,289.0
+2016,Gadchiroli,Causing Death by Negligence,115.0
+2016,Gondia,Causing Death by Negligence,150.0
+2016,Hingoli,Causing Death by Negligence,126.0
+2016,Jalgaon,Causing Death by Negligence,400.0
+2016,Jalna,Causing Death by Negligence,191.0
+2016,Kolhapur,Causing Death by Negligence,411.0
+2016,Latur,Causing Death by Negligence,229.0
+2016,Mumbai City,Causing Death by Negligence,559.0
+2016,Nagpur,Causing Death by Negligence,714.0
+2016,Nanded,Causing Death by Negligence,257.0
+2016,Nandurbar,Causing Death by Negligence,156.0
+2016,Nasik,Causing Death by Negligence,928.0
+2016,Dharashiv,Causing Death by Negligence,231.0
+2016,Palghar,Causing Death by Negligence,509.0
+2016,Parbhani,Causing Death by Negligence,120.0
+2016,Pune,Causing Death by Negligence,1558.0
+2016,Raigad,Causing Death by Negligence,276.0
+2016,Ratnagiri,Causing Death by Negligence,154.0
+2016,Sangli,Causing Death by Negligence,391.0
+2016,Satara,Causing Death by Negligence,522.0
+2016,Sindhudurg,Causing Death by Negligence,80.0
+2016,Solapur,Causing Death by Negligence,574.0
+2016,Thane,Causing Death by Negligence,878.0
+2016,Wardha,Causing Death by Negligence,186.0
+2016,Washim,Causing Death by Negligence,126.0
+2016,Yavatmal,Causing Death by Negligence,317.0
+2017,Ahilyanagar,Causing Death by Negligence,715.0
+2017,Akola,Causing Death by Negligence,143.0
+2017,Amravati,Causing Death by Negligence,273.0
+2017,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,515.0
+2017,Beed,Causing Death by Negligence,292.0
+2017,Bhandara,Causing Death by Negligence,168.0
+2017,Buldhana,Causing Death by Negligence,248.0
+2017,Chandrapur,Causing Death by Negligence,295.0
+2017,Dhule,Causing Death by Negligence,296.0
+2017,Gadchiroli,Causing Death by Negligence,148.0
+2017,Gondia,Causing Death by Negligence,131.0
+2017,Hingoli,Causing Death by Negligence,119.0
+2017,Jalgaon,Causing Death by Negligence,400.0
+2017,Jalna,Causing Death by Negligence,199.0
+2017,Kolhapur,Causing Death by Negligence,368.0
+2017,Latur,Causing Death by Negligence,241.0
+2017,Mumbai City,Causing Death by Negligence,604.0
+2017,Nagpur,Causing Death by Negligence,630.0
+2017,Nanded,Causing Death by Negligence,265.0
+2017,Nandurbar,Causing Death by Negligence,129.0
+2017,Nasik,Causing Death by Negligence,848.0
+2017,Dharashiv,Causing Death by Negligence,246.0
+2017,Palghar,Causing Death by Negligence,481.0
+2017,Parbhani,Causing Death by Negligence,103.0
+2017,Pune,Causing Death by Negligence,1416.0
+2017,Raigad,Causing Death by Negligence,247.0
+2017,Ratnagiri,Causing Death by Negligence,140.0
+2017,Sangli,Causing Death by Negligence,345.0
+2017,Satara,Causing Death by Negligence,440.0
+2017,Sindhudurg,Causing Death by Negligence,61.0
+2017,Solapur,Causing Death by Negligence,486.0
+2017,Thane,Causing Death by Negligence,799.0
+2017,Wardha,Causing Death by Negligence,174.0
+2017,Washim,Causing Death by Negligence,116.0
+2017,Yavatmal,Causing Death by Negligence,346.0
+2018,Ahilyanagar,Causing Death by Negligence,799.0
+2018,Akola,Causing Death by Negligence,146.0
+2018,Amravati,Causing Death by Negligence,302.0
+2018,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,532.0
+2018,Beed,Causing Death by Negligence,318.0
+2018,Bhandara,Causing Death by Negligence,149.0
+2018,Buldhana,Causing Death by Negligence,280.0
+2018,Chandrapur,Causing Death by Negligence,265.0
+2018,Dhule,Causing Death by Negligence,284.0
+2018,Gadchiroli,Causing Death by Negligence,139.0
+2018,Gondia,Causing Death by Negligence,157.0
+2018,Hingoli,Causing Death by Negligence,121.0
+2018,Jalgaon,Causing Death by Negligence,389.0
+2018,Jalna,Causing Death by Negligence,198.0
+2018,Kolhapur,Causing Death by Negligence,364.0
+2018,Latur,Causing Death by Negligence,238.0
+2018,Mumbai City,Causing Death by Negligence,473.0
+2018,Nagpur,Causing Death by Negligence,613.0
+2018,Nanded,Causing Death by Negligence,253.0
+2018,Nandurbar,Causing Death by Negligence,162.0
+2018,Nasik,Causing Death by Negligence,995.0
+2018,Dharashiv,Causing Death by Negligence,300.0
+2018,Palghar,Causing Death by Negligence,500.0
+2018,Parbhani,Causing Death by Negligence,128.0
+2018,Pune,Causing Death by Negligence,1412.0
+2018,Raigad,Causing Death by Negligence,243.0
+2018,Ratnagiri,Causing Death by Negligence,144.0
+2018,Sangli,Causing Death by Negligence,334.0
+2018,Satara,Causing Death by Negligence,478.0
+2018,Sindhudurg,Causing Death by Negligence,86.0
+2018,Solapur,Causing Death by Negligence,519.0
+2018,Thane,Causing Death by Negligence,874.0
+2018,Wardha,Causing Death by Negligence,206.0
+2018,Washim,Causing Death by Negligence,129.0
+2018,Yavatmal,Causing Death by Negligence,301.0
+2019,Ahilyanagar,Causing Death by Negligence,832.0
+2019,Akola,Causing Death by Negligence,156.0
+2019,Amravati,Causing Death by Negligence,316.0
+2019,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,489.0
+2019,Beed,Causing Death by Negligence,316.0
+2019,Bhandara,Causing Death by Negligence,141.0
+2019,Buldhana,Causing Death by Negligence,276.0
+2019,Chandrapur,Causing Death by Negligence,245.0
+2019,Dhule,Causing Death by Negligence,266.0
+2019,Gadchiroli,Causing Death by Negligence,138.0
+2019,Gondia,Causing Death by Negligence,150.0
+2019,Hingoli,Causing Death by Negligence,117.0
+2019,Jalgaon,Causing Death by Negligence,416.0
+2019,Jalna,Causing Death by Negligence,184.0
+2019,Kolhapur,Causing Death by Negligence,349.0
+2019,Latur,Causing Death by Negligence,270.0
+2019,Mumbai City,Causing Death by Negligence,446.0
+2019,Nagpur,Causing Death by Negligence,637.0
+2019,Nanded,Causing Death by Negligence,255.0
+2019,Nandurbar,Causing Death by Negligence,138.0
+2019,Nasik,Causing Death by Negligence,909.0
+2019,Dharashiv,Causing Death by Negligence,240.0
+2019,Palghar,Causing Death by Negligence,454.0
+2019,Parbhani,Causing Death by Negligence,118.0
+2019,Pune,Causing Death by Negligence,1360.0
+2019,Raigad,Causing Death by Negligence,206.0
+2019,Ratnagiri,Causing Death by Negligence,140.0
+2019,Sangli,Causing Death by Negligence,293.0
+2019,Satara,Causing Death by Negligence,465.0
+2019,Sindhudurg,Causing Death by Negligence,71.0
+2019,Solapur,Causing Death by Negligence,545.0
+2019,Thane,Causing Death by Negligence,768.0
+2019,Wardha,Causing Death by Negligence,180.0
+2019,Washim,Causing Death by Negligence,98.0
+2019,Yavatmal,Causing Death by Negligence,344.0
+2020,Ahilyanagar,Causing Death by Negligence,620.0
+2020,Akola,Causing Death by Negligence,116.0
+2020,Amravati,Causing Death by Negligence,354.0
+2020,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,386.0
+2020,Beed,Causing Death by Negligence,308.0
+2020,Bhandara,Causing Death by Negligence,141.0
+2020,Buldhana,Causing Death by Negligence,293.0
+2020,Chandrapur,Causing Death by Negligence,234.0
+2020,Dhule,Causing Death by Negligence,352.0
+2020,Gadchiroli,Causing Death by Negligence,135.0
+2020,Gondia,Causing Death by Negligence,131.0
+2020,Hingoli,Causing Death by Negligence,119.0
+2020,Jalgaon,Causing Death by Negligence,439.0
+2020,Jalna,Causing Death by Negligence,209.0
+2020,Kolhapur,Causing Death by Negligence,313.0
+2020,Latur,Causing Death by Negligence,244.0
+2020,Mumbai City,Causing Death by Negligence,349.0
+2020,Nagpur,Causing Death by Negligence,581.0
+2020,Nanded,Causing Death by Negligence,252.0
+2020,Nandurbar,Causing Death by Negligence,133.0
+2020,Nasik,Causing Death by Negligence,917.0
+2020,Dharashiv,Causing Death by Negligence,253.0
+2020,Palghar,Causing Death by Negligence,216.0
+2020,Parbhani,Causing Death by Negligence,121.0
+2020,Pune,Causing Death by Negligence,1102.0
+2020,Raigad,Causing Death by Negligence,191.0
+2020,Ratnagiri,Causing Death by Negligence,106.0
+2020,Sangli,Causing Death by Negligence,269.0
+2020,Satara,Causing Death by Negligence,359.0
+2020,Sindhudurg,Causing Death by Negligence,50.0
+2020,Solapur,Causing Death by Negligence,461.0
+2020,Thane,Causing Death by Negligence,830.0
+2020,Wardha,Causing Death by Negligence,170.0
+2020,Washim,Causing Death by Negligence,110.0
+2020,Yavatmal,Causing Death by Negligence,310.0
+2021,Ahilyanagar,Causing Death by Negligence,749.0
+2021,Akola,Causing Death by Negligence,151.0
+2021,Amravati,Causing Death by Negligence,366.0
+2021,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,528.0
+2021,Beed,Causing Death by Negligence,398.0
+2021,Bhandara,Causing Death by Negligence,164.0
+2021,Buldhana,Causing Death by Negligence,284.0
+2021,Chandrapur,Causing Death by Negligence,316.0
+2021,Dhule,Causing Death by Negligence,335.0
+2021,Gadchiroli,Causing Death by Negligence,135.0
+2021,Gondia,Causing Death by Negligence,136.0
+2021,Hingoli,Causing Death by Negligence,144.0
+2021,Jalgaon,Causing Death by Negligence,471.0
+2021,Jalna,Causing Death by Negligence,305.0
+2021,Kolhapur,Causing Death by Negligence,388.0
+2021,Latur,Causing Death by Negligence,286.0
+2021,Mumbai City,Causing Death by Negligence,389.0
+2021,Nagpur,Causing Death by Negligence,741.0
+2021,Nanded,Causing Death by Negligence,338.0
+2021,Nandurbar,Causing Death by Negligence,170.0
+2021,Nasik,Causing Death by Negligence,991.0
+2021,Dharashiv,Causing Death by Negligence,258.0
+2021,Palghar,Causing Death by Negligence,273.0
+2021,Parbhani,Causing Death by Negligence,180.0
+2021,Pune,Causing Death by Negligence,1362.0
+2021,Raigad,Causing Death by Negligence,221.0
+2021,Ratnagiri,Causing Death by Negligence,107.0
+2021,Sangli,Causing Death by Negligence,329.0
+2021,Satara,Causing Death by Negligence,452.0
+2021,Sindhudurg,Causing Death by Negligence,62.0
+2021,Solapur,Causing Death by Negligence,578.0
+2021,Thane,Causing Death by Negligence,921.0
+2021,Wardha,Causing Death by Negligence,201.0
+2021,Washim,Causing Death by Negligence,141.0
+2021,Yavatmal,Causing Death by Negligence,320.0
+2014,Ahilyanagar,HumanTrafficking,
+2014,Akola,HumanTrafficking,
+2014,Amravati,HumanTrafficking,
+2014,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2014,Beed,HumanTrafficking,
+2014,Bhandara,HumanTrafficking,
+2014,Buldhana,HumanTrafficking,
+2014,Chandrapur,HumanTrafficking,
+2014,Dhule,HumanTrafficking,
+2014,Gadchiroli,HumanTrafficking,
+2014,Gondia,HumanTrafficking,
+2014,Hingoli,HumanTrafficking,
+2014,Jalgaon,HumanTrafficking,
+2014,Jalna,HumanTrafficking,
+2014,Kolhapur,HumanTrafficking,
+2014,Latur,HumanTrafficking,
+2014,Mumbai City,HumanTrafficking,85.0
+2014,Nagpur,HumanTrafficking,1.0
+2014,Nanded,HumanTrafficking,
+2014,Nandurbar,HumanTrafficking,
+2014,Nasik,HumanTrafficking,
+2014,Dharashiv,HumanTrafficking,
+2014,Palghar,HumanTrafficking,
+2014,Parbhani,HumanTrafficking,
+2014,Pune,HumanTrafficking,
+2014,Raigad,HumanTrafficking,
+2014,Ratnagiri,HumanTrafficking,
+2014,Sangli,HumanTrafficking,
+2014,Satara,HumanTrafficking,
+2014,Sindhudurg,HumanTrafficking,
+2014,Solapur,HumanTrafficking,
+2014,Thane,HumanTrafficking,22.0
+2014,Wardha,HumanTrafficking,
+2014,Washim,HumanTrafficking,
+2014,Yavatmal,HumanTrafficking,
+2015,Ahilyanagar,HumanTrafficking,
+2015,Akola,HumanTrafficking,
+2015,Amravati,HumanTrafficking,
+2015,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2015,Beed,HumanTrafficking,
+2015,Bhandara,HumanTrafficking,
+2015,Buldhana,HumanTrafficking,
+2015,Chandrapur,HumanTrafficking,
+2015,Dhule,HumanTrafficking,
+2015,Gadchiroli,HumanTrafficking,
+2015,Gondia,HumanTrafficking,
+2015,Hingoli,HumanTrafficking,
+2015,Jalgaon,HumanTrafficking,
+2015,Jalna,HumanTrafficking,
+2015,Kolhapur,HumanTrafficking,
+2015,Latur,HumanTrafficking,
+2015,Mumbai City,HumanTrafficking,2.0
+2015,Nagpur,HumanTrafficking,1.0
+2015,Nanded,HumanTrafficking,1.0
+2015,Nandurbar,HumanTrafficking,
+2015,Nasik,HumanTrafficking,
+2015,Dharashiv,HumanTrafficking,
+2015,Palghar,HumanTrafficking,
+2015,Parbhani,HumanTrafficking,
+2015,Pune,HumanTrafficking,1.0
+2015,Raigad,HumanTrafficking,
+2015,Ratnagiri,HumanTrafficking,
+2015,Sangli,HumanTrafficking,
+2015,Satara,HumanTrafficking,2.0
+2015,Sindhudurg,HumanTrafficking,
+2015,Solapur,HumanTrafficking,
+2015,Thane,HumanTrafficking,
+2015,Wardha,HumanTrafficking,
+2015,Washim,HumanTrafficking,
+2015,Yavatmal,HumanTrafficking,
+2016,Ahilyanagar,HumanTrafficking,
+2016,Akola,HumanTrafficking,
+2016,Amravati,HumanTrafficking,
+2016,Chhatrapati Sambhaji Nagar,HumanTrafficking,2.0
+2016,Beed,HumanTrafficking,
+2016,Bhandara,HumanTrafficking,
+2016,Buldhana,HumanTrafficking,
+2016,Chandrapur,HumanTrafficking,
+2016,Dhule,HumanTrafficking,
+2016,Gadchiroli,HumanTrafficking,1.0
+2016,Gondia,HumanTrafficking,
+2016,Hingoli,HumanTrafficking,1.0
+2016,Jalgaon,HumanTrafficking,
+2016,Jalna,HumanTrafficking,
+2016,Kolhapur,HumanTrafficking,
+2016,Latur,HumanTrafficking,
+2016,Mumbai City,HumanTrafficking,3.0
+2016,Nagpur,HumanTrafficking,3.0
+2016,Nanded,HumanTrafficking,1.0
+2016,Nandurbar,HumanTrafficking,
+2016,Nasik,HumanTrafficking,
+2016,Dharashiv,HumanTrafficking,
+2016,Palghar,HumanTrafficking,1.0
+2016,Parbhani,HumanTrafficking,
+2016,Pune,HumanTrafficking,1.0
+2016,Raigad,HumanTrafficking,
+2016,Ratnagiri,HumanTrafficking,
+2016,Sangli,HumanTrafficking,1.0
+2016,Satara,HumanTrafficking,4.0
+2016,Sindhudurg,HumanTrafficking,
+2016,Solapur,HumanTrafficking,
+2016,Thane,HumanTrafficking,
+2016,Wardha,HumanTrafficking,
+2016,Washim,HumanTrafficking,
+2016,Yavatmal,HumanTrafficking,
+2017,Ahilyanagar,HumanTrafficking,
+2017,Akola,HumanTrafficking,
+2017,Amravati,HumanTrafficking,2.0
+2017,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2017,Beed,HumanTrafficking,1.0
+2017,Bhandara,HumanTrafficking,1.0
+2017,Buldhana,HumanTrafficking,
+2017,Chandrapur,HumanTrafficking,
+2017,Dhule,HumanTrafficking,
+2017,Gadchiroli,HumanTrafficking,1.0
+2017,Gondia,HumanTrafficking,
+2017,Hingoli,HumanTrafficking,
+2017,Jalgaon,HumanTrafficking,1.0
+2017,Jalna,HumanTrafficking,
+2017,Kolhapur,HumanTrafficking,1.0
+2017,Latur,HumanTrafficking,
+2017,Mumbai City,HumanTrafficking,34.0
+2017,Nagpur,HumanTrafficking,15.0
+2017,Nanded,HumanTrafficking,
+2017,Nandurbar,HumanTrafficking,
+2017,Nasik,HumanTrafficking,2.0
+2017,Dharashiv,HumanTrafficking,
+2017,Palghar,HumanTrafficking,17.0
+2017,Parbhani,HumanTrafficking,
+2017,Pune,HumanTrafficking,23.0
+2017,Raigad,HumanTrafficking,
+2017,Ratnagiri,HumanTrafficking,
+2017,Sangli,HumanTrafficking,2.0
+2017,Satara,HumanTrafficking,4.0
+2017,Sindhudurg,HumanTrafficking,
+2017,Solapur,HumanTrafficking,2.0
+2017,Thane,HumanTrafficking,30.0
+2017,Wardha,HumanTrafficking,
+2017,Washim,HumanTrafficking,
+2017,Yavatmal,HumanTrafficking,
+2018,Ahilyanagar,HumanTrafficking,
+2018,Akola,HumanTrafficking,
+2018,Amravati,HumanTrafficking,1.0
+2018,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2018,Beed,HumanTrafficking,7.0
+2018,Bhandara,HumanTrafficking,
+2018,Buldhana,HumanTrafficking,
+2018,Chandrapur,HumanTrafficking,
+2018,Dhule,HumanTrafficking,
+2018,Gadchiroli,HumanTrafficking,
+2018,Gondia,HumanTrafficking,
+2018,Hingoli,HumanTrafficking,
+2018,Jalgaon,HumanTrafficking,1.0
+2018,Jalna,HumanTrafficking,
+2018,Kolhapur,HumanTrafficking,15.0
+2018,Latur,HumanTrafficking,
+2018,Mumbai City,HumanTrafficking,49.0
+2018,Nagpur,HumanTrafficking,27.0
+2018,Nanded,HumanTrafficking,1.0
+2018,Nandurbar,HumanTrafficking,
+2018,Nasik,HumanTrafficking,
+2018,Dharashiv,HumanTrafficking,
+2018,Palghar,HumanTrafficking,12.0
+2018,Parbhani,HumanTrafficking,
+2018,Pune,HumanTrafficking,35.0
+2018,Raigad,HumanTrafficking,
+2018,Ratnagiri,HumanTrafficking,
+2018,Sangli,HumanTrafficking,7.0
+2018,Satara,HumanTrafficking,9.0
+2018,Sindhudurg,HumanTrafficking,2.0
+2018,Solapur,HumanTrafficking,4.0
+2018,Thane,HumanTrafficking,73.0
+2018,Wardha,HumanTrafficking,
+2018,Washim,HumanTrafficking,
+2018,Yavatmal,HumanTrafficking,
+2019,Ahilyanagar,HumanTrafficking,
+2019,Akola,HumanTrafficking,
+2019,Amravati,HumanTrafficking,2.0
+2019,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2019,Beed,HumanTrafficking,4.0
+2019,Bhandara,HumanTrafficking,
+2019,Buldhana,HumanTrafficking,
+2019,Chandrapur,HumanTrafficking,
+2019,Dhule,HumanTrafficking,
+2019,Gadchiroli,HumanTrafficking,
+2019,Gondia,HumanTrafficking,
+2019,Hingoli,HumanTrafficking,
+2019,Jalgaon,HumanTrafficking,
+2019,Jalna,HumanTrafficking,
+2019,Kolhapur,HumanTrafficking,16.0
+2019,Latur,HumanTrafficking,
+2019,Mumbai City,HumanTrafficking,85.0
+2019,Nagpur,HumanTrafficking,14.0
+2019,Nanded,HumanTrafficking,
+2019,Nandurbar,HumanTrafficking,
+2019,Nasik,HumanTrafficking,
+2019,Dharashiv,HumanTrafficking,
+2019,Palghar,HumanTrafficking,13.0
+2019,Parbhani,HumanTrafficking,
+2019,Pune,HumanTrafficking,31.0
+2019,Raigad,HumanTrafficking,
+2019,Ratnagiri,HumanTrafficking,
+2019,Sangli,HumanTrafficking,3.0
+2019,Satara,HumanTrafficking,3.0
+2019,Sindhudurg,HumanTrafficking,
+2019,Solapur,HumanTrafficking,3.0
+2019,Thane,HumanTrafficking,52.0
+2019,Wardha,HumanTrafficking,
+2019,Washim,HumanTrafficking,
+2019,Yavatmal,HumanTrafficking,
+2020,Ahilyanagar,HumanTrafficking,
+2020,Akola,HumanTrafficking,
+2020,Amravati,HumanTrafficking,
+2020,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2020,Beed,HumanTrafficking,
+2020,Bhandara,HumanTrafficking,
+2020,Buldhana,HumanTrafficking,
+2020,Chandrapur,HumanTrafficking,1.0
+2020,Dhule,HumanTrafficking,1.0
+2020,Gadchiroli,HumanTrafficking,
+2020,Gondia,HumanTrafficking,
+2020,Hingoli,HumanTrafficking,
+2020,Jalgaon,HumanTrafficking,
+2020,Jalna,HumanTrafficking,
+2020,Kolhapur,HumanTrafficking,15.0
+2020,Latur,HumanTrafficking,3.0
+2020,Mumbai City,HumanTrafficking,58.0
+2020,Nagpur,HumanTrafficking,13.0
+2020,Nanded,HumanTrafficking,1.0
+2020,Nandurbar,HumanTrafficking,
+2020,Nasik,HumanTrafficking,1.0
+2020,Dharashiv,HumanTrafficking,
+2020,Palghar,HumanTrafficking,
+2020,Parbhani,HumanTrafficking,
+2020,Pune,HumanTrafficking,24.0
+2020,Raigad,HumanTrafficking,
+2020,Ratnagiri,HumanTrafficking,
+2020,Sangli,HumanTrafficking,2.0
+2020,Satara,HumanTrafficking,2.0
+2020,Sindhudurg,HumanTrafficking,
+2020,Solapur,HumanTrafficking,
+2020,Thane,HumanTrafficking,32.0
+2020,Wardha,HumanTrafficking,
+2020,Washim,HumanTrafficking,
+2020,Yavatmal,HumanTrafficking,1.0
+2021,Ahilyanagar,HumanTrafficking,1.0
+2021,Akola,HumanTrafficking,1.0
+2021,Amravati,HumanTrafficking,1.0
+2021,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2021,Beed,HumanTrafficking,
+2021,Bhandara,HumanTrafficking,
+2021,Buldhana,HumanTrafficking,
+2021,Chandrapur,HumanTrafficking,2.0
+2021,Dhule,HumanTrafficking,
+2021,Gadchiroli,HumanTrafficking,
+2021,Gondia,HumanTrafficking,
+2021,Hingoli,HumanTrafficking,
+2021,Jalgaon,HumanTrafficking,
+2021,Jalna,HumanTrafficking,
+2021,Kolhapur,HumanTrafficking,17.0
+2021,Latur,HumanTrafficking,5.0
+2021,Mumbai City,HumanTrafficking,41.0
+2021,Nagpur,HumanTrafficking,12.0
+2021,Nanded,HumanTrafficking,
+2021,Nandurbar,HumanTrafficking,1.0
+2021,Nasik,HumanTrafficking,1.0
+2021,Dharashiv,HumanTrafficking,
+2021,Palghar,HumanTrafficking,
+2021,Parbhani,HumanTrafficking,
+2021,Pune,HumanTrafficking,62.0
+2021,Raigad,HumanTrafficking,1.0
+2021,Ratnagiri,HumanTrafficking,2.0
+2021,Sangli,HumanTrafficking,
+2021,Satara,HumanTrafficking,3.0
+2021,Sindhudurg,HumanTrafficking,
+2021,Solapur,HumanTrafficking,4.0
+2021,Thane,HumanTrafficking,105.0
+2021,Wardha,HumanTrafficking,
+2021,Washim,HumanTrafficking,
+2021,Yavatmal,HumanTrafficking,1.0
+2014,Ahilyanagar,Wrongful Restraint/Confinement,
+2014,Akola,Wrongful Restraint/Confinement,
+2014,Amravati,Wrongful Restraint/Confinement,
+2014,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,
+2014,Beed,Wrongful Restraint/Confinement,
+2014,Bhandara,Wrongful Restraint/Confinement,
+2014,Buldhana,Wrongful Restraint/Confinement,
+2014,Chandrapur,Wrongful Restraint/Confinement,
+2014,Dhule,Wrongful Restraint/Confinement,
+2014,Gadchiroli,Wrongful Restraint/Confinement,
+2014,Gondia,Wrongful Restraint/Confinement,
+2014,Hingoli,Wrongful Restraint/Confinement,
+2014,Jalgaon,Wrongful Restraint/Confinement,
+2014,Jalna,Wrongful Restraint/Confinement,
+2014,Kolhapur,Wrongful Restraint/Confinement,
+2014,Latur,Wrongful Restraint/Confinement,
+2014,Mumbai City,Wrongful Restraint/Confinement,
+2014,Nagpur,Wrongful Restraint/Confinement,
+2014,Nanded,Wrongful Restraint/Confinement,
+2014,Nandurbar,Wrongful Restraint/Confinement,
+2014,Nasik,Wrongful Restraint/Confinement,
+2014,Dharashiv,Wrongful Restraint/Confinement,
+2014,Palghar,Wrongful Restraint/Confinement,
+2014,Parbhani,Wrongful Restraint/Confinement,
+2014,Pune,Wrongful Restraint/Confinement,
+2014,Raigad,Wrongful Restraint/Confinement,
+2014,Ratnagiri,Wrongful Restraint/Confinement,
+2014,Sangli,Wrongful Restraint/Confinement,
+2014,Satara,Wrongful Restraint/Confinement,
+2014,Sindhudurg,Wrongful Restraint/Confinement,
+2014,Solapur,Wrongful Restraint/Confinement,
+2014,Thane,Wrongful Restraint/Confinement,
+2014,Wardha,Wrongful Restraint/Confinement,
+2014,Washim,Wrongful Restraint/Confinement,
+2014,Yavatmal,Wrongful Restraint/Confinement,
+2015,Ahilyanagar,Wrongful Restraint/Confinement,
+2015,Akola,Wrongful Restraint/Confinement,
+2015,Amravati,Wrongful Restraint/Confinement,
+2015,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,
+2015,Beed,Wrongful Restraint/Confinement,
+2015,Bhandara,Wrongful Restraint/Confinement,
+2015,Buldhana,Wrongful Restraint/Confinement,
+2015,Chandrapur,Wrongful Restraint/Confinement,
+2015,Dhule,Wrongful Restraint/Confinement,
+2015,Gadchiroli,Wrongful Restraint/Confinement,
+2015,Gondia,Wrongful Restraint/Confinement,
+2015,Hingoli,Wrongful Restraint/Confinement,
+2015,Jalgaon,Wrongful Restraint/Confinement,
+2015,Jalna,Wrongful Restraint/Confinement,
+2015,Kolhapur,Wrongful Restraint/Confinement,
+2015,Latur,Wrongful Restraint/Confinement,
+2015,Mumbai City,Wrongful Restraint/Confinement,
+2015,Nagpur,Wrongful Restraint/Confinement,
+2015,Nanded,Wrongful Restraint/Confinement,
+2015,Nandurbar,Wrongful Restraint/Confinement,
+2015,Nasik,Wrongful Restraint/Confinement,
+2015,Dharashiv,Wrongful Restraint/Confinement,
+2015,Palghar,Wrongful Restraint/Confinement,
+2015,Parbhani,Wrongful Restraint/Confinement,
+2015,Pune,Wrongful Restraint/Confinement,
+2015,Raigad,Wrongful Restraint/Confinement,
+2015,Ratnagiri,Wrongful Restraint/Confinement,
+2015,Sangli,Wrongful Restraint/Confinement,
+2015,Satara,Wrongful Restraint/Confinement,
+2015,Sindhudurg,Wrongful Restraint/Confinement,
+2015,Solapur,Wrongful Restraint/Confinement,
+2015,Thane,Wrongful Restraint/Confinement,
+2015,Wardha,Wrongful Restraint/Confinement,
+2015,Washim,Wrongful Restraint/Confinement,
+2015,Yavatmal,Wrongful Restraint/Confinement,
+2016,Ahilyanagar,Wrongful Restraint/Confinement,
+2016,Akola,Wrongful Restraint/Confinement,
+2016,Amravati,Wrongful Restraint/Confinement,
+2016,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,
+2016,Beed,Wrongful Restraint/Confinement,
+2016,Bhandara,Wrongful Restraint/Confinement,
+2016,Buldhana,Wrongful Restraint/Confinement,
+2016,Chandrapur,Wrongful Restraint/Confinement,
+2016,Dhule,Wrongful Restraint/Confinement,
+2016,Gadchiroli,Wrongful Restraint/Confinement,
+2016,Gondia,Wrongful Restraint/Confinement,
+2016,Hingoli,Wrongful Restraint/Confinement,
+2016,Jalgaon,Wrongful Restraint/Confinement,
+2016,Jalna,Wrongful Restraint/Confinement,
+2016,Kolhapur,Wrongful Restraint/Confinement,
+2016,Latur,Wrongful Restraint/Confinement,
+2016,Mumbai City,Wrongful Restraint/Confinement,
+2016,Nagpur,Wrongful Restraint/Confinement,
+2016,Nanded,Wrongful Restraint/Confinement,
+2016,Nandurbar,Wrongful Restraint/Confinement,
+2016,Nasik,Wrongful Restraint/Confinement,
+2016,Dharashiv,Wrongful Restraint/Confinement,
+2016,Palghar,Wrongful Restraint/Confinement,
+2016,Parbhani,Wrongful Restraint/Confinement,
+2016,Pune,Wrongful Restraint/Confinement,
+2016,Raigad,Wrongful Restraint/Confinement,
+2016,Ratnagiri,Wrongful Restraint/Confinement,
+2016,Sangli,Wrongful Restraint/Confinement,
+2016,Satara,Wrongful Restraint/Confinement,
+2016,Sindhudurg,Wrongful Restraint/Confinement,
+2016,Solapur,Wrongful Restraint/Confinement,
+2016,Thane,Wrongful Restraint/Confinement,
+2016,Wardha,Wrongful Restraint/Confinement,
+2016,Washim,Wrongful Restraint/Confinement,
+2016,Yavatmal,Wrongful Restraint/Confinement,
+2017,Ahilyanagar,Wrongful Restraint/Confinement,45.0
+2017,Akola,Wrongful Restraint/Confinement,25.0
+2017,Amravati,Wrongful Restraint/Confinement,40.0
+2017,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,38.0
+2017,Beed,Wrongful Restraint/Confinement,
+2017,Bhandara,Wrongful Restraint/Confinement,18.0
+2017,Buldhana,Wrongful Restraint/Confinement,46.0
+2017,Chandrapur,Wrongful Restraint/Confinement,12.0
+2017,Dhule,Wrongful Restraint/Confinement,15.0
+2017,Gadchiroli,Wrongful Restraint/Confinement,3.0
+2017,Gondia,Wrongful Restraint/Confinement,8.0
+2017,Hingoli,Wrongful Restraint/Confinement,5.0
+2017,Jalgaon,Wrongful Restraint/Confinement,
+2017,Jalna,Wrongful Restraint/Confinement,10.0
+2017,Kolhapur,Wrongful Restraint/Confinement,22.0
+2017,Latur,Wrongful Restraint/Confinement,
+2017,Mumbai City,Wrongful Restraint/Confinement,39.0
+2017,Nagpur,Wrongful Restraint/Confinement,41.0
+2017,Nanded,Wrongful Restraint/Confinement,
+2017,Nandurbar,Wrongful Restraint/Confinement,13.0
+2017,Nasik,Wrongful Restraint/Confinement,36.0
+2017,Dharashiv,Wrongful Restraint/Confinement,
+2017,Palghar,Wrongful Restraint/Confinement,10.0
+2017,Parbhani,Wrongful Restraint/Confinement,19.0
+2017,Pune,Wrongful Restraint/Confinement,92.0
+2017,Raigad,Wrongful Restraint/Confinement,
+2017,Ratnagiri,Wrongful Restraint/Confinement,14.0
+2017,Sangli,Wrongful Restraint/Confinement,15.0
+2017,Satara,Wrongful Restraint/Confinement,
+2017,Sindhudurg,Wrongful Restraint/Confinement,3.0
+2017,Solapur,Wrongful Restraint/Confinement,57.0
+2017,Thane,Wrongful Restraint/Confinement,15.0
+2017,Wardha,Wrongful Restraint/Confinement,47.0
+2017,Washim,Wrongful Restraint/Confinement,5.0
+2017,Yavatmal,Wrongful Restraint/Confinement,34.0
+2018,Ahilyanagar,Wrongful Restraint/Confinement,49.0
+2018,Akola,Wrongful Restraint/Confinement,18.0
+2018,Amravati,Wrongful Restraint/Confinement,23.0
+2018,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,88.0
+2018,Beed,Wrongful Restraint/Confinement,10.0
+2018,Bhandara,Wrongful Restraint/Confinement,16.0
+2018,Buldhana,Wrongful Restraint/Confinement,46.0
+2018,Chandrapur,Wrongful Restraint/Confinement,
+2018,Dhule,Wrongful Restraint/Confinement,11.0
+2018,Gadchiroli,Wrongful Restraint/Confinement,3.0
+2018,Gondia,Wrongful Restraint/Confinement,4.0
+2018,Hingoli,Wrongful Restraint/Confinement,10.0
+2018,Jalgaon,Wrongful Restraint/Confinement,15.0
+2018,Jalna,Wrongful Restraint/Confinement,
+2018,Kolhapur,Wrongful Restraint/Confinement,30.0
+2018,Latur,Wrongful Restraint/Confinement,
+2018,Mumbai City,Wrongful Restraint/Confinement,63.0
+2018,Nagpur,Wrongful Restraint/Confinement,58.0
+2018,Nanded,Wrongful Restraint/Confinement,
+2018,Nandurbar,Wrongful Restraint/Confinement,4.0
+2018,Nasik,Wrongful Restraint/Confinement,43.0
+2018,Dharashiv,Wrongful Restraint/Confinement,
+2018,Palghar,Wrongful Restraint/Confinement,18.0
+2018,Parbhani,Wrongful Restraint/Confinement,29.0
+2018,Pune,Wrongful Restraint/Confinement,79.0
+2018,Raigad,Wrongful Restraint/Confinement,9.0
+2018,Ratnagiri,Wrongful Restraint/Confinement,24.0
+2018,Sangli,Wrongful Restraint/Confinement,10.0
+2018,Satara,Wrongful Restraint/Confinement,
+2018,Sindhudurg,Wrongful Restraint/Confinement,16.0
+2018,Solapur,Wrongful Restraint/Confinement,291.0
+2018,Thane,Wrongful Restraint/Confinement,27.0
+2018,Wardha,Wrongful Restraint/Confinement,20.0
+2018,Washim,Wrongful Restraint/Confinement,6.0
+2018,Yavatmal,Wrongful Restraint/Confinement,36.0
+2019,Ahilyanagar,Wrongful Restraint/Confinement,112.0
+2019,Akola,Wrongful Restraint/Confinement,15.0
+2019,Amravati,Wrongful Restraint/Confinement,14.0
+2019,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,45.0
+2019,Beed,Wrongful Restraint/Confinement,
+2019,Bhandara,Wrongful Restraint/Confinement,15.0
+2019,Buldhana,Wrongful Restraint/Confinement,45.0
+2019,Chandrapur,Wrongful Restraint/Confinement,22.0
+2019,Dhule,Wrongful Restraint/Confinement,10.0
+2019,Gadchiroli,Wrongful Restraint/Confinement,3.0
+2019,Gondia,Wrongful Restraint/Confinement,5.0
+2019,Hingoli,Wrongful Restraint/Confinement,2.0
+2019,Jalgaon,Wrongful Restraint/Confinement,16.0
+2019,Jalna,Wrongful Restraint/Confinement,1.0
+2019,Kolhapur,Wrongful Restraint/Confinement,20.0
+2019,Latur,Wrongful Restraint/Confinement,
+2019,Mumbai City,Wrongful Restraint/Confinement,39.0
+2019,Nagpur,Wrongful Restraint/Confinement,42.0
+2019,Nanded,Wrongful Restraint/Confinement,
+2019,Nandurbar,Wrongful Restraint/Confinement,3.0
+2019,Nasik,Wrongful Restraint/Confinement,20.0
+2019,Dharashiv,Wrongful Restraint/Confinement,
+2019,Palghar,Wrongful Restraint/Confinement,10.0
+2019,Parbhani,Wrongful Restraint/Confinement,21.0
+2019,Pune,Wrongful Restraint/Confinement,36.0
+2019,Raigad,Wrongful Restraint/Confinement,19.0
+2019,Ratnagiri,Wrongful Restraint/Confinement,6.0
+2019,Sangli,Wrongful Restraint/Confinement,5.0
+2019,Satara,Wrongful Restraint/Confinement,
+2019,Sindhudurg,Wrongful Restraint/Confinement,4.0
+2019,Solapur,Wrongful Restraint/Confinement,611.0
+2019,Thane,Wrongful Restraint/Confinement,17.0
+2019,Wardha,Wrongful Restraint/Confinement,5.0
+2019,Washim,Wrongful Restraint/Confinement,
+2019,Yavatmal,Wrongful Restraint/Confinement,14.0
+2020,Ahilyanagar,Wrongful Restraint/Confinement,108.0
+2020,Akola,Wrongful Restraint/Confinement,21.0
+2020,Amravati,Wrongful Restraint/Confinement,15.0
+2020,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,42.0
+2020,Beed,Wrongful Restraint/Confinement,
+2020,Bhandara,Wrongful Restraint/Confinement,11.0
+2020,Buldhana,Wrongful Restraint/Confinement,35.0
+2020,Chandrapur,Wrongful Restraint/Confinement,9.0
+2020,Dhule,Wrongful Restraint/Confinement,6.0
+2020,Gadchiroli,Wrongful Restraint/Confinement,2.0
+2020,Gondia,Wrongful Restraint/Confinement,4.0
+2020,Hingoli,Wrongful Restraint/Confinement,4.0
+2020,Jalgaon,Wrongful Restraint/Confinement,28.0
+2020,Jalna,Wrongful Restraint/Confinement,
+2020,Kolhapur,Wrongful Restraint/Confinement,24.0
+2020,Latur,Wrongful Restraint/Confinement,41.0
+2020,Mumbai City,Wrongful Restraint/Confinement,28.0
+2020,Nagpur,Wrongful Restraint/Confinement,42.0
+2020,Nanded,Wrongful Restraint/Confinement,
+2020,Nandurbar,Wrongful Restraint/Confinement,4.0
+2020,Nasik,Wrongful Restraint/Confinement,53.0
+2020,Dharashiv,Wrongful Restraint/Confinement,
+2020,Palghar,Wrongful Restraint/Confinement,3.0
+2020,Parbhani,Wrongful Restraint/Confinement,19.0
+2020,Pune,Wrongful Restraint/Confinement,66.0
+2020,Raigad,Wrongful Restraint/Confinement,14.0
+2020,Ratnagiri,Wrongful Restraint/Confinement,3.0
+2020,Sangli,Wrongful Restraint/Confinement,10.0
+2020,Satara,Wrongful Restraint/Confinement,
+2020,Sindhudurg,Wrongful Restraint/Confinement,4.0
+2020,Solapur,Wrongful Restraint/Confinement,97.0
+2020,Thane,Wrongful Restraint/Confinement,37.0
+2020,Wardha,Wrongful Restraint/Confinement,12.0
+2020,Washim,Wrongful Restraint/Confinement,
+2020,Yavatmal,Wrongful Restraint/Confinement,17.0
+2021,Ahilyanagar,Wrongful Restraint/Confinement,53.0
+2021,Akola,Wrongful Restraint/Confinement,35.0
+2021,Amravati,Wrongful Restraint/Confinement,19.0
+2021,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,38.0
+2021,Beed,Wrongful Restraint/Confinement,
+2021,Bhandara,Wrongful Restraint/Confinement,21.0
+2021,Buldhana,Wrongful Restraint/Confinement,32.0
+2021,Chandrapur,Wrongful Restraint/Confinement,21.0
+2021,Dhule,Wrongful Restraint/Confinement,10.0
+2021,Gadchiroli,Wrongful Restraint/Confinement,5.0
+2021,Gondia,Wrongful Restraint/Confinement,1.0
+2021,Hingoli,Wrongful Restraint/Confinement,9.0
+2021,Jalgaon,Wrongful Restraint/Confinement,24.0
+2021,Jalna,Wrongful Restraint/Confinement,
+2021,Kolhapur,Wrongful Restraint/Confinement,51.0
+2021,Latur,Wrongful Restraint/Confinement,30.0
+2021,Mumbai City,Wrongful Restraint/Confinement,26.0
+2021,Nagpur,Wrongful Restraint/Confinement,45.0
+2021,Nanded,Wrongful Restraint/Confinement,
+2021,Nandurbar,Wrongful Restraint/Confinement,5.0
+2021,Nasik,Wrongful Restraint/Confinement,47.0
+2021,Dharashiv,Wrongful Restraint/Confinement,
+2021,Palghar,Wrongful Restraint/Confinement,7.0
+2021,Parbhani,Wrongful Restraint/Confinement,14.0
+2021,Pune,Wrongful Restraint/Confinement,104.0
+2021,Raigad,Wrongful Restraint/Confinement,14.0
+2021,Ratnagiri,Wrongful Restraint/Confinement,10.0
+2021,Sangli,Wrongful Restraint/Confinement,23.0
+2021,Satara,Wrongful Restraint/Confinement,
+2021,Sindhudurg,Wrongful Restraint/Confinement,4.0
+2021,Solapur,Wrongful Restraint/Confinement,60.0
+2021,Thane,Wrongful Restraint/Confinement,48.0
+2021,Wardha,Wrongful Restraint/Confinement,19.0
+2021,Washim,Wrongful Restraint/Confinement,
+2021,Yavatmal,Wrongful Restraint/Confinement,31.0
+2014,Ahilyanagar,Missing Children Deemed as Kidnapped,
+2014,Akola,Missing Children Deemed as Kidnapped,
+2014,Amravati,Missing Children Deemed as Kidnapped,
+2014,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,
+2014,Beed,Missing Children Deemed as Kidnapped,
+2014,Bhandara,Missing Children Deemed as Kidnapped,
+2014,Buldhana,Missing Children Deemed as Kidnapped,
+2014,Chandrapur,Missing Children Deemed as Kidnapped,
+2014,Dhule,Missing Children Deemed as Kidnapped,
+2014,Gadchiroli,Missing Children Deemed as Kidnapped,
+2014,Gondia,Missing Children Deemed as Kidnapped,
+2014,Hingoli,Missing Children Deemed as Kidnapped,
+2014,Jalgaon,Missing Children Deemed as Kidnapped,
+2014,Jalna,Missing Children Deemed as Kidnapped,
+2014,Kolhapur,Missing Children Deemed as Kidnapped,
+2014,Latur,Missing Children Deemed as Kidnapped,
+2014,Mumbai City,Missing Children Deemed as Kidnapped,
+2014,Nagpur,Missing Children Deemed as Kidnapped,
+2014,Nanded,Missing Children Deemed as Kidnapped,
+2014,Nandurbar,Missing Children Deemed as Kidnapped,
+2014,Nasik,Missing Children Deemed as Kidnapped,
+2014,Dharashiv,Missing Children Deemed as Kidnapped,
+2014,Palghar,Missing Children Deemed as Kidnapped,
+2014,Parbhani,Missing Children Deemed as Kidnapped,
+2014,Pune,Missing Children Deemed as Kidnapped,
+2014,Raigad,Missing Children Deemed as Kidnapped,
+2014,Ratnagiri,Missing Children Deemed as Kidnapped,
+2014,Sangli,Missing Children Deemed as Kidnapped,
+2014,Satara,Missing Children Deemed as Kidnapped,
+2014,Sindhudurg,Missing Children Deemed as Kidnapped,
+2014,Solapur,Missing Children Deemed as Kidnapped,
+2014,Thane,Missing Children Deemed as Kidnapped,
+2014,Wardha,Missing Children Deemed as Kidnapped,
+2014,Washim,Missing Children Deemed as Kidnapped,
+2014,Yavatmal,Missing Children Deemed as Kidnapped,
+2015,Ahilyanagar,Missing Children Deemed as Kidnapped,
+2015,Akola,Missing Children Deemed as Kidnapped,
+2015,Amravati,Missing Children Deemed as Kidnapped,
+2015,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,
+2015,Beed,Missing Children Deemed as Kidnapped,
+2015,Bhandara,Missing Children Deemed as Kidnapped,
+2015,Buldhana,Missing Children Deemed as Kidnapped,
+2015,Chandrapur,Missing Children Deemed as Kidnapped,
+2015,Dhule,Missing Children Deemed as Kidnapped,
+2015,Gadchiroli,Missing Children Deemed as Kidnapped,
+2015,Gondia,Missing Children Deemed as Kidnapped,
+2015,Hingoli,Missing Children Deemed as Kidnapped,
+2015,Jalgaon,Missing Children Deemed as Kidnapped,
+2015,Jalna,Missing Children Deemed as Kidnapped,
+2015,Kolhapur,Missing Children Deemed as Kidnapped,
+2015,Latur,Missing Children Deemed as Kidnapped,
+2015,Mumbai City,Missing Children Deemed as Kidnapped,
+2015,Nagpur,Missing Children Deemed as Kidnapped,
+2015,Nanded,Missing Children Deemed as Kidnapped,
+2015,Nandurbar,Missing Children Deemed as Kidnapped,
+2015,Nasik,Missing Children Deemed as Kidnapped,
+2015,Dharashiv,Missing Children Deemed as Kidnapped,
+2015,Palghar,Missing Children Deemed as Kidnapped,
+2015,Parbhani,Missing Children Deemed as Kidnapped,
+2015,Pune,Missing Children Deemed as Kidnapped,
+2015,Raigad,Missing Children Deemed as Kidnapped,
+2015,Ratnagiri,Missing Children Deemed as Kidnapped,
+2015,Sangli,Missing Children Deemed as Kidnapped,
+2015,Satara,Missing Children Deemed as Kidnapped,
+2015,Sindhudurg,Missing Children Deemed as Kidnapped,
+2015,Solapur,Missing Children Deemed as Kidnapped,
+2015,Thane,Missing Children Deemed as Kidnapped,
+2015,Wardha,Missing Children Deemed as Kidnapped,
+2015,Washim,Missing Children Deemed as Kidnapped,
+2015,Yavatmal,Missing Children Deemed as Kidnapped,
+2016,Ahilyanagar,Missing Children Deemed as Kidnapped,
+2016,Akola,Missing Children Deemed as Kidnapped,
+2016,Amravati,Missing Children Deemed as Kidnapped,
+2016,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,
+2016,Beed,Missing Children Deemed as Kidnapped,
+2016,Bhandara,Missing Children Deemed as Kidnapped,
+2016,Buldhana,Missing Children Deemed as Kidnapped,
+2016,Chandrapur,Missing Children Deemed as Kidnapped,
+2016,Dhule,Missing Children Deemed as Kidnapped,
+2016,Gadchiroli,Missing Children Deemed as Kidnapped,
+2016,Gondia,Missing Children Deemed as Kidnapped,
+2016,Hingoli,Missing Children Deemed as Kidnapped,
+2016,Jalgaon,Missing Children Deemed as Kidnapped,
+2016,Jalna,Missing Children Deemed as Kidnapped,
+2016,Kolhapur,Missing Children Deemed as Kidnapped,
+2016,Latur,Missing Children Deemed as Kidnapped,
+2016,Mumbai City,Missing Children Deemed as Kidnapped,
+2016,Nagpur,Missing Children Deemed as Kidnapped,
+2016,Nanded,Missing Children Deemed as Kidnapped,
+2016,Nandurbar,Missing Children Deemed as Kidnapped,
+2016,Nasik,Missing Children Deemed as Kidnapped,
+2016,Dharashiv,Missing Children Deemed as Kidnapped,
+2016,Palghar,Missing Children Deemed as Kidnapped,
+2016,Parbhani,Missing Children Deemed as Kidnapped,
+2016,Pune,Missing Children Deemed as Kidnapped,
+2016,Raigad,Missing Children Deemed as Kidnapped,
+2016,Ratnagiri,Missing Children Deemed as Kidnapped,
+2016,Sangli,Missing Children Deemed as Kidnapped,
+2016,Satara,Missing Children Deemed as Kidnapped,
+2016,Sindhudurg,Missing Children Deemed as Kidnapped,
+2016,Solapur,Missing Children Deemed as Kidnapped,
+2016,Thane,Missing Children Deemed as Kidnapped,
+2016,Wardha,Missing Children Deemed as Kidnapped,
+2016,Washim,Missing Children Deemed as Kidnapped,
+2016,Yavatmal,Missing Children Deemed as Kidnapped,
+2017,Ahilyanagar,Missing Children Deemed as Kidnapped,98.0
+2017,Akola,Missing Children Deemed as Kidnapped,57.0
+2017,Amravati,Missing Children Deemed as Kidnapped,71.0
+2017,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,148.0
+2017,Beed,Missing Children Deemed as Kidnapped,71.0
+2017,Bhandara,Missing Children Deemed as Kidnapped,92.0
+2017,Buldhana,Missing Children Deemed as Kidnapped,36.0
+2017,Chandrapur,Missing Children Deemed as Kidnapped,117.0
+2017,Dhule,Missing Children Deemed as Kidnapped,5.0
+2017,Gadchiroli,Missing Children Deemed as Kidnapped,30.0
+2017,Gondia,Missing Children Deemed as Kidnapped,
+2017,Hingoli,Missing Children Deemed as Kidnapped,
+2017,Jalgaon,Missing Children Deemed as Kidnapped,
+2017,Jalna,Missing Children Deemed as Kidnapped,
+2017,Kolhapur,Missing Children Deemed as Kidnapped,31.0
+2017,Latur,Missing Children Deemed as Kidnapped,
+2017,Mumbai City,Missing Children Deemed as Kidnapped,70.0
+2017,Nagpur,Missing Children Deemed as Kidnapped,42.0
+2017,Nanded,Missing Children Deemed as Kidnapped,123.0
+2017,Nandurbar,Missing Children Deemed as Kidnapped,10.0
+2017,Nasik,Missing Children Deemed as Kidnapped,206.0
+2017,Dharashiv,Missing Children Deemed as Kidnapped,30.0
+2017,Palghar,Missing Children Deemed as Kidnapped,327.0
+2017,Parbhani,Missing Children Deemed as Kidnapped,88.0
+2017,Pune,Missing Children Deemed as Kidnapped,683.0
+2017,Raigad,Missing Children Deemed as Kidnapped,86.0
+2017,Ratnagiri,Missing Children Deemed as Kidnapped,60.0
+2017,Sangli,Missing Children Deemed as Kidnapped,65.0
+2017,Satara,Missing Children Deemed as Kidnapped,171.0
+2017,Sindhudurg,Missing Children Deemed as Kidnapped,
+2017,Solapur,Missing Children Deemed as Kidnapped,78.0
+2017,Thane,Missing Children Deemed as Kidnapped,443.0
+2017,Wardha,Missing Children Deemed as Kidnapped,
+2017,Washim,Missing Children Deemed as Kidnapped,
+2017,Yavatmal,Missing Children Deemed as Kidnapped,18.0
+2018,Ahilyanagar,Missing Children Deemed as Kidnapped,165.0
+2018,Akola,Missing Children Deemed as Kidnapped,73.0
+2018,Amravati,Missing Children Deemed as Kidnapped,125.0
+2018,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,227.0
+2018,Beed,Missing Children Deemed as Kidnapped,69.0
+2018,Bhandara,Missing Children Deemed as Kidnapped,99.0
+2018,Buldhana,Missing Children Deemed as Kidnapped,47.0
+2018,Chandrapur,Missing Children Deemed as Kidnapped,130.0
+2018,Dhule,Missing Children Deemed as Kidnapped,79.0
+2018,Gadchiroli,Missing Children Deemed as Kidnapped,44.0
+2018,Gondia,Missing Children Deemed as Kidnapped,
+2018,Hingoli,Missing Children Deemed as Kidnapped,
+2018,Jalgaon,Missing Children Deemed as Kidnapped,
+2018,Jalna,Missing Children Deemed as Kidnapped,
+2018,Kolhapur,Missing Children Deemed as Kidnapped,30.0
+2018,Latur,Missing Children Deemed as Kidnapped,
+2018,Mumbai City,Missing Children Deemed as Kidnapped,70.0
+2018,Nagpur,Missing Children Deemed as Kidnapped,28.0
+2018,Nanded,Missing Children Deemed as Kidnapped,117.0
+2018,Nandurbar,Missing Children Deemed as Kidnapped,8.0
+2018,Nasik,Missing Children Deemed as Kidnapped,273.0
+2018,Dharashiv,Missing Children Deemed as Kidnapped,38.0
+2018,Palghar,Missing Children Deemed as Kidnapped,446.0
+2018,Parbhani,Missing Children Deemed as Kidnapped,67.0
+2018,Pune,Missing Children Deemed as Kidnapped,744.0
+2018,Raigad,Missing Children Deemed as Kidnapped,88.0
+2018,Ratnagiri,Missing Children Deemed as Kidnapped,75.0
+2018,Sangli,Missing Children Deemed as Kidnapped,157.0
+2018,Satara,Missing Children Deemed as Kidnapped,151.0
+2018,Sindhudurg,Missing Children Deemed as Kidnapped,
+2018,Solapur,Missing Children Deemed as Kidnapped,166.0
+2018,Thane,Missing Children Deemed as Kidnapped,722.0
+2018,Wardha,Missing Children Deemed as Kidnapped,
+2018,Washim,Missing Children Deemed as Kidnapped,16.0
+2018,Yavatmal,Missing Children Deemed as Kidnapped,
+2019,Ahilyanagar,Missing Children Deemed as Kidnapped,156.0
+2019,Akola,Missing Children Deemed as Kidnapped,74.0
+2019,Amravati,Missing Children Deemed as Kidnapped,133.0
+2019,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,266.0
+2019,Beed,Missing Children Deemed as Kidnapped,71.0
+2019,Bhandara,Missing Children Deemed as Kidnapped,104.0
+2019,Buldhana,Missing Children Deemed as Kidnapped,36.0
+2019,Chandrapur,Missing Children Deemed as Kidnapped,123.0
+2019,Dhule,Missing Children Deemed as Kidnapped,74.0
+2019,Gadchiroli,Missing Children Deemed as Kidnapped,46.0
+2019,Gondia,Missing Children Deemed as Kidnapped,
+2019,Hingoli,Missing Children Deemed as Kidnapped,
+2019,Jalgaon,Missing Children Deemed as Kidnapped,
+2019,Jalna,Missing Children Deemed as Kidnapped,
+2019,Kolhapur,Missing Children Deemed as Kidnapped,45.0
+2019,Latur,Missing Children Deemed as Kidnapped,
+2019,Mumbai City,Missing Children Deemed as Kidnapped,888.0
+2019,Nagpur,Missing Children Deemed as Kidnapped,36.0
+2019,Nanded,Missing Children Deemed as Kidnapped,132.0
+2019,Nandurbar,Missing Children Deemed as Kidnapped,28.0
+2019,Nasik,Missing Children Deemed as Kidnapped,297.0
+2019,Dharashiv,Missing Children Deemed as Kidnapped,36.0
+2019,Palghar,Missing Children Deemed as Kidnapped,480.0
+2019,Parbhani,Missing Children Deemed as Kidnapped,104.0
+2019,Pune,Missing Children Deemed as Kidnapped,720.0
+2019,Raigad,Missing Children Deemed as Kidnapped,121.0
+2019,Ratnagiri,Missing Children Deemed as Kidnapped,67.0
+2019,Sangli,Missing Children Deemed as Kidnapped,52.0
+2019,Satara,Missing Children Deemed as Kidnapped,124.0
+2019,Sindhudurg,Missing Children Deemed as Kidnapped,5.0
+2019,Solapur,Missing Children Deemed as Kidnapped,178.0
+2019,Thane,Missing Children Deemed as Kidnapped,1188.0
+2019,Wardha,Missing Children Deemed as Kidnapped,
+2019,Washim,Missing Children Deemed as Kidnapped,19.0
+2019,Yavatmal,Missing Children Deemed as Kidnapped,44.0
+2020,Ahilyanagar,Missing Children Deemed as Kidnapped,148.0
+2020,Akola,Missing Children Deemed as Kidnapped,42.0
+2020,Amravati,Missing Children Deemed as Kidnapped,99.0
+2020,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,219.0
+2020,Beed,Missing Children Deemed as Kidnapped,38.0
+2020,Bhandara,Missing Children Deemed as Kidnapped,67.0
+2020,Buldhana,Missing Children Deemed as Kidnapped,40.0
+2020,Chandrapur,Missing Children Deemed as Kidnapped,67.0
+2020,Dhule,Missing Children Deemed as Kidnapped,9.0
+2020,Gadchiroli,Missing Children Deemed as Kidnapped,30.0
+2020,Gondia,Missing Children Deemed as Kidnapped,
+2020,Hingoli,Missing Children Deemed as Kidnapped,
+2020,Jalgaon,Missing Children Deemed as Kidnapped,
+2020,Jalna,Missing Children Deemed as Kidnapped,
+2020,Kolhapur,Missing Children Deemed as Kidnapped,60.0
+2020,Latur,Missing Children Deemed as Kidnapped,
+2020,Mumbai City,Missing Children Deemed as Kidnapped,625.0
+2020,Nagpur,Missing Children Deemed as Kidnapped,36.0
+2020,Nanded,Missing Children Deemed as Kidnapped,91.0
+2020,Nandurbar,Missing Children Deemed as Kidnapped,29.0
+2020,Nasik,Missing Children Deemed as Kidnapped,208.0
+2020,Dharashiv,Missing Children Deemed as Kidnapped,39.0
+2020,Palghar,Missing Children Deemed as Kidnapped,47.0
+2020,Parbhani,Missing Children Deemed as Kidnapped,49.0
+2020,Pune,Missing Children Deemed as Kidnapped,475.0
+2020,Raigad,Missing Children Deemed as Kidnapped,70.0
+2020,Ratnagiri,Missing Children Deemed as Kidnapped,33.0
+2020,Sangli,Missing Children Deemed as Kidnapped,
+2020,Satara,Missing Children Deemed as Kidnapped,88.0
+2020,Sindhudurg,Missing Children Deemed as Kidnapped,7.0
+2020,Solapur,Missing Children Deemed as Kidnapped,152.0
+2020,Thane,Missing Children Deemed as Kidnapped,1016.0
+2020,Wardha,Missing Children Deemed as Kidnapped,
+2020,Washim,Missing Children Deemed as Kidnapped,28.0
+2020,Yavatmal,Missing Children Deemed as Kidnapped,55.0
+2021,Ahilyanagar,Missing Children Deemed as Kidnapped,123.0
+2021,Akola,Missing Children Deemed as Kidnapped,43.0
+2021,Amravati,Missing Children Deemed as Kidnapped,144.0
+2021,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,246.0
+2021,Beed,Missing Children Deemed as Kidnapped,83.0
+2021,Bhandara,Missing Children Deemed as Kidnapped,70.0
+2021,Buldhana,Missing Children Deemed as Kidnapped,38.0
+2021,Chandrapur,Missing Children Deemed as Kidnapped,139.0
+2021,Dhule,Missing Children Deemed as Kidnapped,122.0
+2021,Gadchiroli,Missing Children Deemed as Kidnapped,50.0
+2021,Gondia,Missing Children Deemed as Kidnapped,
+2021,Hingoli,Missing Children Deemed as Kidnapped,
+2021,Jalgaon,Missing Children Deemed as Kidnapped,
+2021,Jalna,Missing Children Deemed as Kidnapped,
+2021,Kolhapur,Missing Children Deemed as Kidnapped,129.0
+2021,Latur,Missing Children Deemed as Kidnapped,9.0
+2021,Mumbai City,Missing Children Deemed as Kidnapped,1175.0
+2021,Nagpur,Missing Children Deemed as Kidnapped,34.0
+2021,Nanded,Missing Children Deemed as Kidnapped,93.0
+2021,Nandurbar,Missing Children Deemed as Kidnapped,74.0
+2021,Nasik,Missing Children Deemed as Kidnapped,253.0
+2021,Dharashiv,Missing Children Deemed as Kidnapped,46.0
+2021,Palghar,Missing Children Deemed as Kidnapped,74.0
+2021,Parbhani,Missing Children Deemed as Kidnapped,74.0
+2021,Pune,Missing Children Deemed as Kidnapped,438.0
+2021,Raigad,Missing Children Deemed as Kidnapped,126.0
+2021,Ratnagiri,Missing Children Deemed as Kidnapped,48.0
+2021,Sangli,Missing Children Deemed as Kidnapped,
+2021,Satara,Missing Children Deemed as Kidnapped,112.0
+2021,Sindhudurg,Missing Children Deemed as Kidnapped,5.0
+2021,Solapur,Missing Children Deemed as Kidnapped,143.0
+2021,Thane,Missing Children Deemed as Kidnapped,1301.0
+2021,Wardha,Missing Children Deemed as Kidnapped,
+2021,Washim,Missing Children Deemed as Kidnapped,23.0
+2021,Yavatmal,Missing Children Deemed as Kidnapped,51.0
+2014,Ahilyanagar,Attempts to Commit Suicide,
+2014,Akola,Attempts to Commit Suicide,
+2014,Amravati,Attempts to Commit Suicide,
+2014,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,
+2014,Beed,Attempts to Commit Suicide,
+2014,Bhandara,Attempts to Commit Suicide,
+2014,Buldhana,Attempts to Commit Suicide,
+2014,Chandrapur,Attempts to Commit Suicide,
+2014,Dhule,Attempts to Commit Suicide,
+2014,Gadchiroli,Attempts to Commit Suicide,
+2014,Gondia,Attempts to Commit Suicide,
+2014,Hingoli,Attempts to Commit Suicide,
+2014,Jalgaon,Attempts to Commit Suicide,
+2014,Jalna,Attempts to Commit Suicide,
+2014,Kolhapur,Attempts to Commit Suicide,
+2014,Latur,Attempts to Commit Suicide,
+2014,Mumbai City,Attempts to Commit Suicide,
+2014,Nagpur,Attempts to Commit Suicide,
+2014,Nanded,Attempts to Commit Suicide,
+2014,Nandurbar,Attempts to Commit Suicide,
+2014,Nasik,Attempts to Commit Suicide,
+2014,Dharashiv,Attempts to Commit Suicide,
+2014,Palghar,Attempts to Commit Suicide,
+2014,Parbhani,Attempts to Commit Suicide,
+2014,Pune,Attempts to Commit Suicide,
+2014,Raigad,Attempts to Commit Suicide,
+2014,Ratnagiri,Attempts to Commit Suicide,
+2014,Sangli,Attempts to Commit Suicide,
+2014,Satara,Attempts to Commit Suicide,
+2014,Sindhudurg,Attempts to Commit Suicide,
+2014,Solapur,Attempts to Commit Suicide,
+2014,Thane,Attempts to Commit Suicide,
+2014,Wardha,Attempts to Commit Suicide,
+2014,Washim,Attempts to Commit Suicide,
+2014,Yavatmal,Attempts to Commit Suicide,
+2015,Ahilyanagar,Attempts to Commit Suicide,
+2015,Akola,Attempts to Commit Suicide,
+2015,Amravati,Attempts to Commit Suicide,
+2015,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,
+2015,Beed,Attempts to Commit Suicide,
+2015,Bhandara,Attempts to Commit Suicide,
+2015,Buldhana,Attempts to Commit Suicide,
+2015,Chandrapur,Attempts to Commit Suicide,
+2015,Dhule,Attempts to Commit Suicide,
+2015,Gadchiroli,Attempts to Commit Suicide,
+2015,Gondia,Attempts to Commit Suicide,
+2015,Hingoli,Attempts to Commit Suicide,
+2015,Jalgaon,Attempts to Commit Suicide,
+2015,Jalna,Attempts to Commit Suicide,
+2015,Kolhapur,Attempts to Commit Suicide,
+2015,Latur,Attempts to Commit Suicide,
+2015,Mumbai City,Attempts to Commit Suicide,
+2015,Nagpur,Attempts to Commit Suicide,
+2015,Nanded,Attempts to Commit Suicide,
+2015,Nandurbar,Attempts to Commit Suicide,
+2015,Nasik,Attempts to Commit Suicide,
+2015,Dharashiv,Attempts to Commit Suicide,
+2015,Palghar,Attempts to Commit Suicide,
+2015,Parbhani,Attempts to Commit Suicide,
+2015,Pune,Attempts to Commit Suicide,
+2015,Raigad,Attempts to Commit Suicide,
+2015,Ratnagiri,Attempts to Commit Suicide,
+2015,Sangli,Attempts to Commit Suicide,
+2015,Satara,Attempts to Commit Suicide,
+2015,Sindhudurg,Attempts to Commit Suicide,
+2015,Solapur,Attempts to Commit Suicide,
+2015,Thane,Attempts to Commit Suicide,
+2015,Wardha,Attempts to Commit Suicide,
+2015,Washim,Attempts to Commit Suicide,
+2015,Yavatmal,Attempts to Commit Suicide,
+2016,Ahilyanagar,Attempts to Commit Suicide,
+2016,Akola,Attempts to Commit Suicide,
+2016,Amravati,Attempts to Commit Suicide,
+2016,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,
+2016,Beed,Attempts to Commit Suicide,
+2016,Bhandara,Attempts to Commit Suicide,
+2016,Buldhana,Attempts to Commit Suicide,
+2016,Chandrapur,Attempts to Commit Suicide,
+2016,Dhule,Attempts to Commit Suicide,
+2016,Gadchiroli,Attempts to Commit Suicide,
+2016,Gondia,Attempts to Commit Suicide,
+2016,Hingoli,Attempts to Commit Suicide,
+2016,Jalgaon,Attempts to Commit Suicide,
+2016,Jalna,Attempts to Commit Suicide,
+2016,Kolhapur,Attempts to Commit Suicide,
+2016,Latur,Attempts to Commit Suicide,
+2016,Mumbai City,Attempts to Commit Suicide,
+2016,Nagpur,Attempts to Commit Suicide,
+2016,Nanded,Attempts to Commit Suicide,
+2016,Nandurbar,Attempts to Commit Suicide,
+2016,Nasik,Attempts to Commit Suicide,
+2016,Dharashiv,Attempts to Commit Suicide,
+2016,Palghar,Attempts to Commit Suicide,
+2016,Parbhani,Attempts to Commit Suicide,
+2016,Pune,Attempts to Commit Suicide,
+2016,Raigad,Attempts to Commit Suicide,
+2016,Ratnagiri,Attempts to Commit Suicide,
+2016,Sangli,Attempts to Commit Suicide,
+2016,Satara,Attempts to Commit Suicide,
+2016,Sindhudurg,Attempts to Commit Suicide,
+2016,Solapur,Attempts to Commit Suicide,
+2016,Thane,Attempts to Commit Suicide,
+2016,Wardha,Attempts to Commit Suicide,
+2016,Washim,Attempts to Commit Suicide,
+2016,Yavatmal,Attempts to Commit Suicide,
+2017,Ahilyanagar,Attempts to Commit Suicide,122.0
+2017,Akola,Attempts to Commit Suicide,60.0
+2017,Amravati,Attempts to Commit Suicide,99.0
+2017,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,135.0
+2017,Beed,Attempts to Commit Suicide,105.0
+2017,Bhandara,Attempts to Commit Suicide,22.0
+2017,Buldhana,Attempts to Commit Suicide,53.0
+2017,Chandrapur,Attempts to Commit Suicide,33.0
+2017,Dhule,Attempts to Commit Suicide,54.0
+2017,Gadchiroli,Attempts to Commit Suicide,67.0
+2017,Gondia,Attempts to Commit Suicide,29.0
+2017,Hingoli,Attempts to Commit Suicide,50.0
+2017,Jalgaon,Attempts to Commit Suicide,64.0
+2017,Jalna,Attempts to Commit Suicide,77.0
+2017,Kolhapur,Attempts to Commit Suicide,99.0
+2017,Latur,Attempts to Commit Suicide,40.0
+2017,Mumbai City,Attempts to Commit Suicide,205.0
+2017,Nagpur,Attempts to Commit Suicide,113.0
+2017,Nanded,Attempts to Commit Suicide,78.0
+2017,Nandurbar,Attempts to Commit Suicide,33.0
+2017,Nasik,Attempts to Commit Suicide,103.0
+2017,Dharashiv,Attempts to Commit Suicide,28.0
+2017,Palghar,Attempts to Commit Suicide,39.0
+2017,Parbhani,Attempts to Commit Suicide,61.0
+2017,Pune,Attempts to Commit Suicide,361.0
+2017,Raigad,Attempts to Commit Suicide,25.0
+2017,Ratnagiri,Attempts to Commit Suicide,4.0
+2017,Sangli,Attempts to Commit Suicide,81.0
+2017,Satara,Attempts to Commit Suicide,71.0
+2017,Sindhudurg,Attempts to Commit Suicide,6.0
+2017,Solapur,Attempts to Commit Suicide,102.0
+2017,Thane,Attempts to Commit Suicide,182.0
+2017,Wardha,Attempts to Commit Suicide,37.0
+2017,Washim,Attempts to Commit Suicide,47.0
+2017,Yavatmal,Attempts to Commit Suicide,59.0
+2018,Ahilyanagar,Attempts to Commit Suicide,195.0
+2018,Akola,Attempts to Commit Suicide,63.0
+2018,Amravati,Attempts to Commit Suicide,89.0
+2018,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,113.0
+2018,Beed,Attempts to Commit Suicide,117.0
+2018,Bhandara,Attempts to Commit Suicide,16.0
+2018,Buldhana,Attempts to Commit Suicide,79.0
+2018,Chandrapur,Attempts to Commit Suicide,21.0
+2018,Dhule,Attempts to Commit Suicide,46.0
+2018,Gadchiroli,Attempts to Commit Suicide,58.0
+2018,Gondia,Attempts to Commit Suicide,21.0
+2018,Hingoli,Attempts to Commit Suicide,35.0
+2018,Jalgaon,Attempts to Commit Suicide,86.0
+2018,Jalna,Attempts to Commit Suicide,71.0
+2018,Kolhapur,Attempts to Commit Suicide,145.0
+2018,Latur,Attempts to Commit Suicide,45.0
+2018,Mumbai City,Attempts to Commit Suicide,295.0
+2018,Nagpur,Attempts to Commit Suicide,100.0
+2018,Nanded,Attempts to Commit Suicide,70.0
+2018,Nandurbar,Attempts to Commit Suicide,27.0
+2018,Nasik,Attempts to Commit Suicide,133.0
+2018,Dharashiv,Attempts to Commit Suicide,58.0
+2018,Palghar,Attempts to Commit Suicide,55.0
+2018,Parbhani,Attempts to Commit Suicide,89.0
+2018,Pune,Attempts to Commit Suicide,366.0
+2018,Raigad,Attempts to Commit Suicide,20.0
+2018,Ratnagiri,Attempts to Commit Suicide,17.0
+2018,Sangli,Attempts to Commit Suicide,165.0
+2018,Satara,Attempts to Commit Suicide,71.0
+2018,Sindhudurg,Attempts to Commit Suicide,17.0
+2018,Solapur,Attempts to Commit Suicide,136.0
+2018,Thane,Attempts to Commit Suicide,217.0
+2018,Wardha,Attempts to Commit Suicide,36.0
+2018,Washim,Attempts to Commit Suicide,40.0
+2018,Yavatmal,Attempts to Commit Suicide,50.0
+2019,Ahilyanagar,Attempts to Commit Suicide,7.0
+2019,Akola,Attempts to Commit Suicide,1.0
+2019,Amravati,Attempts to Commit Suicide,11.0
+2019,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,9.0
+2019,Beed,Attempts to Commit Suicide,14.0
+2019,Bhandara,Attempts to Commit Suicide,2.0
+2019,Buldhana,Attempts to Commit Suicide,10.0
+2019,Chandrapur,Attempts to Commit Suicide,3.0
+2019,Dhule,Attempts to Commit Suicide,6.0
+2019,Gadchiroli,Attempts to Commit Suicide,
+2019,Gondia,Attempts to Commit Suicide,2.0
+2019,Hingoli,Attempts to Commit Suicide,5.0
+2019,Jalgaon,Attempts to Commit Suicide,6.0
+2019,Jalna,Attempts to Commit Suicide,33.0
+2019,Kolhapur,Attempts to Commit Suicide,13.0
+2019,Latur,Attempts to Commit Suicide,2.0
+2019,Mumbai City,Attempts to Commit Suicide,13.0
+2019,Nagpur,Attempts to Commit Suicide,5.0
+2019,Nanded,Attempts to Commit Suicide,8.0
+2019,Nandurbar,Attempts to Commit Suicide,3.0
+2019,Nasik,Attempts to Commit Suicide,6.0
+2019,Dharashiv,Attempts to Commit Suicide,7.0
+2019,Palghar,Attempts to Commit Suicide,
+2019,Parbhani,Attempts to Commit Suicide,7.0
+2019,Pune,Attempts to Commit Suicide,13.0
+2019,Raigad,Attempts to Commit Suicide,
+2019,Ratnagiri,Attempts to Commit Suicide,
+2019,Sangli,Attempts to Commit Suicide,6.0
+2019,Satara,Attempts to Commit Suicide,14.0
+2019,Sindhudurg,Attempts to Commit Suicide,
+2019,Solapur,Attempts to Commit Suicide,17.0
+2019,Thane,Attempts to Commit Suicide,3.0
+2019,Wardha,Attempts to Commit Suicide,1.0
+2019,Washim,Attempts to Commit Suicide,3.0
+2019,Yavatmal,Attempts to Commit Suicide,20.0
+2020,Ahilyanagar,Attempts to Commit Suicide,4.0
+2020,Akola,Attempts to Commit Suicide,7.0
+2020,Amravati,Attempts to Commit Suicide,12.0
+2020,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,12.0
+2020,Beed,Attempts to Commit Suicide,17.0
+2020,Bhandara,Attempts to Commit Suicide,1.0
+2020,Buldhana,Attempts to Commit Suicide,6.0
+2020,Chandrapur,Attempts to Commit Suicide,
+2020,Dhule,Attempts to Commit Suicide,3.0
+2020,Gadchiroli,Attempts to Commit Suicide,1.0
+2020,Gondia,Attempts to Commit Suicide,
+2020,Hingoli,Attempts to Commit Suicide,1.0
+2020,Jalgaon,Attempts to Commit Suicide,8.0
+2020,Jalna,Attempts to Commit Suicide,
+2020,Kolhapur,Attempts to Commit Suicide,6.0
+2020,Latur,Attempts to Commit Suicide,1.0
+2020,Mumbai City,Attempts to Commit Suicide,14.0
+2020,Nagpur,Attempts to Commit Suicide,12.0
+2020,Nanded,Attempts to Commit Suicide,12.0
+2020,Nandurbar,Attempts to Commit Suicide,
+2020,Nasik,Attempts to Commit Suicide,14.0
+2020,Dharashiv,Attempts to Commit Suicide,2.0
+2020,Palghar,Attempts to Commit Suicide,
+2020,Parbhani,Attempts to Commit Suicide,14.0
+2020,Pune,Attempts to Commit Suicide,18.0
+2020,Raigad,Attempts to Commit Suicide,
+2020,Ratnagiri,Attempts to Commit Suicide,1.0
+2020,Sangli,Attempts to Commit Suicide,5.0
+2020,Satara,Attempts to Commit Suicide,9.0
+2020,Sindhudurg,Attempts to Commit Suicide,
+2020,Solapur,Attempts to Commit Suicide,22.0
+2020,Thane,Attempts to Commit Suicide,2.0
+2020,Wardha,Attempts to Commit Suicide,2.0
+2020,Washim,Attempts to Commit Suicide,2.0
+2020,Yavatmal,Attempts to Commit Suicide,4.0
+2021,Ahilyanagar,Attempts to Commit Suicide,13.0
+2021,Akola,Attempts to Commit Suicide,16.0
+2021,Amravati,Attempts to Commit Suicide,6.0
+2021,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,17.0
+2021,Beed,Attempts to Commit Suicide,10.0
+2021,Bhandara,Attempts to Commit Suicide,2.0
+2021,Buldhana,Attempts to Commit Suicide,10.0
+2021,Chandrapur,Attempts to Commit Suicide,2.0
+2021,Dhule,Attempts to Commit Suicide,4.0
+2021,Gadchiroli,Attempts to Commit Suicide,1.0
+2021,Gondia,Attempts to Commit Suicide,7.0
+2021,Hingoli,Attempts to Commit Suicide,
+2021,Jalgaon,Attempts to Commit Suicide,7.0
+2021,Jalna,Attempts to Commit Suicide,
+2021,Kolhapur,Attempts to Commit Suicide,16.0
+2021,Latur,Attempts to Commit Suicide,13.0
+2021,Mumbai City,Attempts to Commit Suicide,14.0
+2021,Nagpur,Attempts to Commit Suicide,7.0
+2021,Nanded,Attempts to Commit Suicide,7.0
+2021,Nandurbar,Attempts to Commit Suicide,1.0
+2021,Nasik,Attempts to Commit Suicide,12.0
+2021,Dharashiv,Attempts to Commit Suicide,4.0
+2021,Palghar,Attempts to Commit Suicide,
+2021,Parbhani,Attempts to Commit Suicide,13.0
+2021,Pune,Attempts to Commit Suicide,17.0
+2021,Raigad,Attempts to Commit Suicide,4.0
+2021,Ratnagiri,Attempts to Commit Suicide,
+2021,Sangli,Attempts to Commit Suicide,6.0
+2021,Satara,Attempts to Commit Suicide,23.0
+2021,Sindhudurg,Attempts to Commit Suicide,2.0
+2021,Solapur,Attempts to Commit Suicide,26.0
+2021,Thane,Attempts to Commit Suicide,10.0
+2021,Wardha,Attempts to Commit Suicide,1.0
+2021,Washim,Attempts to Commit Suicide,1.0
+2021,Yavatmal,Attempts to Commit Suicide,6.0

@@ -1,0 +1,61 @@
+
+--- DSA_Banking.csv ---
+['Year', 'District', 'Taluka', 'Towns and cities where banks have offices', 'Classified Banks', 'Branch Offices of Classified Banks', 'Deposits', 'Agriculture Loans', 'Non-Agriculture Loans', 'Total Loans']
+--- DSA_Banking_N.csv ---
+['Year', 'District', 'Taluka', 'Towns and cities where banks have offices', 'Classified Banks', 'Branch Offices of Classified Banks']
+--- DSA_Deposits_N.csv ---
+['Year', 'District', 'Taluka Old', 'Taluka', 'Deposits']
+--- DSA_GramPanchayat.csv ---
+['District', 'Year', 'Land and Property taxes', 'Other taxes and charges', 'Tax', 'Statutory Grants', 'Contribution, donations and other subsidies', 'Grants', 'Other Sources', 'Revenue', 'Administration\n', 'Public Health\n', 'Public Works\n', 'Public Lighting\n', 'Education\n', 'Public Welfare\n', 'Other Expenses\n', 'Developmental', 'Non-Developmental', 'Expenditure', 'Total Deposit']
+--- DSA_GramPanchayat_N.csv ---
+['District', 'Year', 'Land and Property taxes', 'Other taxes and charges', 'Tax', 'Government Grants', 'Contribution, donations and other grants', 'Grants', 'Other Sources', 'Revenue', 'Administration\n', 'Health and Hygiene\n', 'Public Works\n', 'Public Lighting\n', 'Education\n', 'Public Welfare\n', 'Other Expenses\n', 'Developmental', 'Non-Developmental', 'Expenditure', 'Total Deposit']
+--- DSA_GST.csv ---
+['Year', 'District', 'VAT', 'Central Sales Tax', 'Business Tax', 'Sugarcane purchase tax', 'Entry Tax', 'Luxury Tax', 'GST', 'Total']
+--- DSA_JillaParishad_Exp.csv ---
+['District', 'Year', 'General Administration', 'Education', 'Public Works', 'Irrigation', 'Agriculture', 'Animal Husbandary', 'Forests', 'Public Health', 'Social Welfare', 'Other Expenses', 'Revenue Account', 'Capital Account', 'Total Expenditure']
+--- DSA_JillaParishad_Inc.csv ---
+['District', 'Year', 'Opening Balance', 'Self-Generated', 'Purposive Grants', 'Establishment Grants', 'Grants for Plan Schemes', 'Other Statutory Grants', 'Statutory Grants', 'For Agency Schemes', 'Government Subsidies', 'Other Income', 'Revenue Income', 'Capital Income', 'All Receipts', 'Revenue', 'General Administration', 'Education', 'Public Works', 'Irrigation', 'Agriculture', 'Animal Husbandary', 'Forests', 'Public Health', 'Social Welfare', 'Other Expenses', 'Revenue Expenditure', 'Capital Expenditure', 'Expenditure', 'Economic Services', 'Social Services', 'Non-Developmental']
+--- DSA_JillaParishad_N.csv ---
+['District', 'Year', 'Opening Balance', 'Self-Generated', 'Purposive Grants', 'Establishment Grants', 'Grants for Plan Schemes', 'Other Statutory Grants', 'Statutory Grants', 'For Agency Schemes', 'Total Grants', 'Other Income', 'Revenue Income', 'Capital Income', 'All Receipts', 'Revenue', 'General Administration', 'Education', 'Public Works', 'Irrigation', 'Agriculture', 'Animal Husbandary', 'Forests', 'Public Health', 'Social Welfare', 'Other Expenses', 'Revenue Expenditure', 'Capital Expenditure', 'Expenditure', 'Economic Services', 'Social Services', 'Non-Developmental']
+--- DSA_LandRevenue.csv ---
+['District', 'Year', 'Taluka', 'Aggregate Current Demand', 'Arrears', 'Aggregate Demand', 'Discount', 'Amount of suspended recovery', 'Amount Eligible for Recovery', 'Value Recovery', 'Number of Account Holders']
+--- DSA_LandRevenue_N.csv ---
+['District', 'Year', 'Taluka', 'Aggregate Current Demand', 'Arrears', 'Aggregate Demand', 'Discount', 'Amount of suspended recovery', 'Amount Eligible for Recovery', 'Value Recovery', 'Number of Account Holders']
+--- DSA_Loans_N.csv ---
+['Year', 'District', 'Taluka Old', 'Taluka', 'Agriculture Loans', 'Non-Agriculture Loans', 'Total Loans']
+--- DSA_MunCorp_N.csv ---
+['District', 'Year', 'Receipts and Loans\n', 'From Commercial Activities\n', 'Government Subsidy', 'Other Sources\n', 'Rents and Taxes', 'Revenue\n', 'Administration (Establishment)', 'Administration (Others)', 'Construction', 'Drainage and Sewage', 'Education', 'Expenditure on Weak Components', 'Others', 'Public Health', 'Public Lighting', 'Public Security', 'Special Expenses and Loans', 'Tax Recovery', 'Transportation', 'Water Supply', 'Expenditure', 'Social Services', 'Economic Services', 'Developmental', 'Non-Developmental']
+--- DSA_MunicipalCorp_Exp.csv ---
+['District', 'Year', 'Administration-Establishment', 'Administration-Others', 'Construction', 'Drainage and Sewage', 'Education', 'Expenditure on Weak Components', 'Others', 'Public Health', 'Public Lighting', 'Public Security', 'Special Expenses and Loans', 'Tax Recovery', 'Transportation', 'Water Supply', 'Total Expenditure']
+--- DSA_MunicipalCorp_Inc.csv ---
+['District', 'Year', 'Receipts and Loans\n', 'From Commercial Activities\n', 'Government Grants', 'Other Sources\n', 'Rents and Taxes', 'Revenue\n', 'Administration (Establishment)', 'Administration (Others)', 'Construction', 'Drainage and Sewage', 'Education', 'Expenditure on Weak Components', 'Others', 'Public Health', 'Public Lighting', 'Public Security', 'Special Expenses and Loans', 'Tax Recovery', 'Transportation', 'Water Supply', 'Expenditure', 'Social Services', 'Economic Services', 'Developmental', 'Non-Developmental']
+--- DSA_MunicipalCoun_Exp.csv ---
+['District', 'Year', 'Administration (Establishment)', 'Administration (Others)', 'Construction', 'Drainage and Sewage', 'Education', 'Expenditure on Weak Sectors', 'Others', 'Public Health', 'Public Lighting', 'Public Security', 'Special Expenses and Loans', 'Tax Recovery', 'Transportation', 'Water Supply', 'Total Expenditure']
+--- DSA_MunicipalCoun_Inc.csv ---
+['District', 'Year', 'Receipts and Loans\n', 'From Commercial Activities\n', 'Government Grants', 'Other Sources\n', 'Rents and Taxes', 'Revenue\n', 'Administration (Establishment)', 'Administration (Others)', 'Construction', 'Drainage and Sewage', 'Education', 'Expenditure on Weak Sectors', 'Others', 'Public Health', 'Public Lighting', 'Public Security', 'Special Expenses and Loans', 'Tax Recovery', 'Transportation', 'Water Supply', 'Expenditure', 'Social Services', 'Economic Services', 'Non-Developmental']
+--- DSA_MunicipalCoun_N.csv ---
+['District', 'Year', 'Receipts and Loans\n', 'From Commercial Activities\n', 'Government Subsidies', 'Other Sources\n', 'Rents and Taxes', 'Revenue\n', 'Administration (Establishment)', 'Administration (Others)', 'Construction', 'Drainage and Sewage', 'Education', 'Expenditure on Weak Sectors', 'Others', 'Public Health', 'Public Lighting', 'Public Security', 'Special Expenses and Loans', 'Tax Recovery', 'Transportation', 'Water Supply', 'Expenditure', 'Social Services', 'Economic Services', 'Non-Developmental']
+--- DSA_NagarPanchayat_Exp.csv ---
+['District', 'Year', 'Administration-Establishment', 'Administration-Others', 'Construction', 'Drainage and Sewage', 'Education', 'Expenditure on Weak Components', 'Others', 'Public Health', 'Public Lighting', 'Public Security', 'Special Expenses and Loans', 'Tax Recovery', 'Transportation', 'Water Supply', 'Total Expenditure']
+--- DSA_NagarPanchayat_Inc.csv ---
+['District', 'Year', 'Receipts and Loans', 'From Commercial Activities\n', 'Government Grants', 'Other Sources', 'Rents and Taxes', 'Revenue', 'Administration (Establishment)', 'Administration (Others)', 'Construction', 'Drainage and Sewage', 'Education', 'Expenditure on Weak Components', 'Others', 'Public Health', 'Public Lighting', 'Public Security', 'Special Expenses and Loans', 'Tax Recovery', 'Transportation', 'Water Supply', 'Expenditure', 'Social Services', 'Economic Services', 'Non-Developmental']
+--- DSA_NagarPanchayat_N.csv ---
+['District', 'Year', 'Receipts and Loans', 'From Commercial Activities\n', 'Government Subsidies', 'Other Sources', 'Rents and Taxes', 'Revenue', 'Administration (Establishment)', 'Administration (Others)', 'Construction', 'Drainage and Sewage', 'Education', 'Expenditure on Weak Components', 'Others', 'Public Health', 'Public Lighting', 'Public Security', 'Special Expenses and Loans', 'Tax Recovery', 'Transportation', 'Water Supply', 'Expenditure', 'Social Services', 'Economic Services', 'Non-Developmental']
+--- DSA_TaxRevenue.csv ---
+['District', 'Year', 'Value Added Tax (VAT)', 'Stamp and Registration fee', 'State Excise Duty', 'Electricity Charges', 'Entertainment Tax', 'Vehicles Tax', 'Tax on goods and cargo', 'Land Tax', 'Other Revenue', 'Total Tax Revenue']
+--- DSA_TaxRevenue_N.csv ---
+['District', 'Year', 'Value Added Tax (VAT)', 'Stamp and Registration fee', 'State Excise Duty', 'Electricity Charges', 'Entertainment Tax', 'Vehicles Tax', 'Tax on goods and cargo', 'Land Tax', 'Other Revenue', 'Total Tax Revenue']
+--- GDDP_GDVA.csv ---
+['Year', 'District', 'Crops', 'Livestock', 'Forestry and Logging', 'Fishing and aquaculture', 'Agriculture & Allied Activities', 'Mining & Quarrying', 'Primary Sector', 'Manufacturing', 'Electricity, Gas, Water Supply  & Other Utility\nServices', 'Construction', 'Secondary Sector', 'Industry', 'Trade, Repair, Hotels &\nRestaurants', 'Railways', 'Transport by means other than\nRailways', 'Storage', 'Comm. and services related to\nBroad.', 'Financial Services', 'R. Estate, O. Dwellings & Professional\nServices', 'Public Administration\nDefence', 'Other Services', 'Services/ Tertiary Sector', 'GDVA', 'Taxes on products', 'Less subsidies on\nproducts', 'GDDP', "Population ('000)", 'Per capita District Domestic Product']
+--- GDDP_GDVA_N.csv ---
+['Year', 'District', 'Crops', 'Livestock', 'Forestry and Logging', 'Fishing and aquaculture', 'Agriculture & Allied Activities', 'Mining & Quarrying', 'Primary Sector', 'Manufacturing', 'Electricity, Gas, Water Supply  & Other Utility\nServices', 'Construction', 'Secondary Sector', 'Industry', 'Trade, Repair, and Hospitality', 'Railways', 'Transport (Other than Railways)', 'Storage', 'Communication and Broadcast Services', 'Financial Services', 'Real Estate, Other Dwellings, and Professional Services', 'Public Administration and Defence', 'Other Services', 'Services/ Tertiary Sector', 'GDVA', 'Taxes on products', 'Less subsidies on\nproducts', 'GDDP', "Population ('000)", 'Per capita District Domestic Product']
+--- Heading_Shortenings_Index.csv ---
+['Sheet', 'Col_Idx', 'Col_Letter', 'Original_Header', 'Shortened_Header', 'Chars_Before', 'Chars_After']
+--- NDDP_NDVA.csv ---
+['Year', 'District', 'Crops', 'Livestock', 'Forestry and Logging', 'Fishing and aquaculture', 'Agriculture & Allied Activities', 'Minign & Quarrying', 'Primary Sector', 'Manufacturing', 'Electricity, Gas, Water Supply  & Other Utility\nServices', 'Construction', 'Secondary Sector', 'Industry', 'Trade, Repair, Hotels &\nRestaurants', 'Railways', 'Transport by means other than\nRailways', 'Storage', 'Comm. and services related to\nBroad.', 'Financial Services', 'R. Estate, O. Dwellings & Professional\nServices', 'Public Admini- stration &\nDefence', 'Other Services', 'Services/ Tertiary Sector', 'NDVA', 'Taxes on products', 'Less subsidies on\nproducts', 'NDDP', "Popula- tion ('000)", 'Per capita District Domestic\nProduct  (  )']
+--- NDDP_NDVA_N.csv ---
+['Year', 'District', 'Crops', 'Livestock', 'Forestry and Logging', 'Fishing and aquaculture', 'Agriculture & Allied Activities', 'Mining & Quarrying', 'Primary Sector', 'Manufacturing', 'Electricity, Gas, Water Supply  & Other Utility\nServices', 'Construction', 'Secondary Sector', 'Industry', 'Trade, Repair, and Hospitality', 'Railways', 'Transport (Other than Railways)', 'Storage', 'Communication and Broadcast Services', 'Financial Services', 'Real Estate, Other Dwellings, and Professional Services', 'Public Administration and Defence', 'Other Services', 'Services/ Tertiary Sector', 'NDVA', 'Taxes on products', 'Less subsidies on\nproducts', 'NDDP', "Population ('000)", 'Per capita District Domestic Product']
+--- Notes_Index.csv ---
+['Sheet', 'Col_Idx', 'Col_Letter', 'Row', 'Original_Header', 'Value']
+--- Table.csv ---
+['Year', 'District', 'Taluka', 'Select Banks/ Bank Branches', 'Number']

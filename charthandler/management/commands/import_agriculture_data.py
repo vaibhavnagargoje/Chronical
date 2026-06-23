@@ -1,259 +1,326 @@
 """
-Management command to import all Agriculture CSV data into the database.
-Usage: python manage.py import_agriculture_data
+Management command to import agriculture CSV data into the database.
 """
 import csv
 import os
-from django.core.management.base import BaseCommand
-from charthandler.models import (
-    GrossCroppedArea, HoldingsArea, HoldingsNumber, LandUse,
-    ChemicalFertilizer, IrrigationBeneficiary, IrrigationFacilities,
-    IrrigationProjects, IrrigationWells, TubewellsHandpumps,
+from django.core.management.base import BaseCommand, CommandError
+from django.conf import settings
+
+from charthandler.models.agriculture import (
+    AgcGrosscroppedarea,
+    AgcHoldingsarea,
+    AgcHoldingsnumber,
+    AgcLanduse,
+    DsaChemicalfertilizer,
+    DsaIrrigationbeneficiary,
+    DsaIrrigationfacilities,
+    DsaIrrigationprojects,
+    DsaIrrigationwells,
+    DsaTubewellshandpumps,
 )
 
-
-def safe_float(val):
-    """Convert a value to float, returning None for empty/invalid values."""
-    if val is None or str(val).strip() == '':
+def _safe_float(value):
+    if value is None or str(value).strip() in ('', 'nan', 'NaN', 'None'):
         return None
     try:
-        return float(val)
+        return float(str(value).strip().replace(',', ''))
     except (ValueError, TypeError):
         return None
 
+def _safe_int(value):
+    f = _safe_float(value)
+    if f is None:
+        return None
+    return int(f)
 
-def safe_int(val):
-    """Convert a value to int, returning None for empty/invalid values."""
-    f = safe_float(val)
-    return int(f) if f is not None else None
+def _str(row, col):
+    return str(row.get(col, '') or '').strip()
 
+ALL_MODELS = [
+    AgcGrosscroppedarea,
+    AgcHoldingsarea,
+    AgcHoldingsnumber,
+    AgcLanduse,
+    DsaChemicalfertilizer,
+    DsaIrrigationbeneficiary,
+    DsaIrrigationfacilities,
+    DsaIrrigationprojects,
+    DsaIrrigationwells,
+    DsaTubewellshandpumps,
+]
 
 class Command(BaseCommand):
-    help = 'Import Agriculture CSV data from the Agriculture/cleaned_csv/ folder.'
+    help = 'Import agriculture CSV data into charthandler models'
 
     def add_arguments(self, parser):
         parser.add_argument(
-            '--folder',
-            default='Agriculture/cleaned_csv',
-            help='Path to the folder containing Agriculture CSV files'
+            '--data-dir',
+            type=str,
+            default=os.path.join(settings.BASE_DIR, 'Agriculture'),
+            help='Path to the directory containing agriculture CSV files (default: Agriculture/)',
+        )
+        parser.add_argument(
+            '--clear',
+            action='store_true',
+            help='Clear all existing agriculture data before importing',
         )
 
     def handle(self, *args, **options):
-        folder = options['folder']
+        data_dir = options['data_dir']
 
-        if not os.path.isdir(folder):
-            self.stderr.write(self.style.ERROR(f'Folder not found: {folder}'))
-            return
+        if not os.path.exists(data_dir):
+            raise CommandError(f'Data directory not found: {data_dir}')
 
-        csv_model_map = {
-            'AGC_GrossCroppedArea.csv': self._import_gross_cropped_area,
-            'AGC_HoldingsArea.csv': self._import_holdings_area,
-            'AGC_HoldingsNumber.csv': self._import_holdings_number,
-            'AGC_LandUse.csv': self._import_land_use,
-            'DSA_ChemicalFertilizer.csv': self._import_chemical_fertilizer,
-            'DSA_IrrigationBeneficiary.csv': self._import_irrigation_beneficiary,
-            'DSA_IrrigationFacilities.csv': self._import_irrigation_facilities,
-            'DSA_IrrigationProjects.csv': self._import_irrigation_projects,
-            'DSA_IrrigationWells.csv': self._import_irrigation_wells,
-            'DSA_TubewellsHandpumps.csv': self._import_tubewells_handpumps,
-        }
+        self.stdout.write(f'Importing agriculture data from: {data_dir}\n')
 
-        total_imported = 0
-        for filename, importer in csv_model_map.items():
-            filepath = os.path.join(folder, filename)
+        if options['clear']:
+            self.stdout.write('Clearing existing agriculture data...')
+            for ModelClass in ALL_MODELS:
+                deleted, _ = ModelClass.objects.all().delete()
+                self.stdout.write(f'  Cleared {deleted:>6} rows from {ModelClass.__name__}')
+            self.stdout.write(self.style.SUCCESS('All agriculture data cleared.\n'))
+
+        csv_importers = [
+            ('AGC_GrossCroppedArea.csv', self._import_agc_grosscroppedarea),
+            ('AGC_HoldingsArea.csv', self._import_agc_holdingsarea),
+            ('AGC_HoldingsNumber.csv', self._import_agc_holdingsnumber),
+            ('AGC_LandUse.csv', self._import_agc_landuse),
+            ('DSA_ChemicalFertilizer.csv', self._import_dsa_chemicalfertilizer),
+            ('DSA_IrrigationBeneficiary.csv', self._import_dsa_irrigationbeneficiary),
+            ('DSA_IrrigationFacilities.csv', self._import_dsa_irrigationfacilities),
+            ('DSA_IrrigationProjects.csv', self._import_dsa_irrigationprojects),
+            ('DSA_IrrigationWells.csv', self._import_dsa_irrigationwells),
+            ('DSA_TubewellsHandpumps.csv', self._import_dsa_tubewellshandpumps),
+        ]
+
+        total_records = 0
+        for filename, importer in csv_importers:
+            filepath = os.path.join(data_dir, filename)
             if not os.path.exists(filepath):
-                self.stdout.write(self.style.WARNING(f'  [SKIP] {filename} not found'))
+                self.stdout.write(self.style.WARNING(f'  [SKIP] {filename} - file not found'))
                 continue
-            count = importer(filepath)
-            total_imported += count
-            self.stdout.write(self.style.SUCCESS(f'  [OK] {filename}: {count} records'))
+            try:
+                count = importer(filepath)
+                total_records += count
+                self.stdout.write(self.style.SUCCESS(f'  [OK]   {filename} - {count} records'))
+            except Exception as exc:
+                self.stdout.write(self.style.ERROR(f'  [ERROR] {filename}: {exc}'))
 
-        self.stdout.write(self.style.SUCCESS(f'\nTotal Agriculture records imported: {total_imported}'))
+        self.stdout.write(self.style.SUCCESS(f'\nImport complete! Total records imported: {total_records}'))
 
-    def _read_csv(self, filepath):
-        with open(filepath, encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            return list(reader)
+    def _import_agc_grosscroppedarea(self, filepath):
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(AgcGrosscroppedarea(
+                    year=year,
+                    district=_str(row, 'District'),
+                    taluka=_str(row, 'Taluka'),
+                    size_class=_str(row, 'Size Class'),
+                    irrigated_area=_safe_float(row.get('Irrigated Area')),
+                    unirrigated_area=_safe_float(row.get('Unirrigated Area')),
+                    gross_cropped_area=_safe_float(row.get('Gross Cropped Area')),
+                    share_of_cropped_area_irrigated=_safe_float(row.get('Share of Cropped Area Irrigated')),
+                    share_of_total_land_holdings_cropped=_safe_float(row.get('Share of Total Land Holdings Cropped')),
+                    unnamed_9=_safe_float(row.get('Unnamed: 9')),
+                    total_holding_number=_safe_float(row.get('Total Holding Number')),
+                    total_holding_area=_safe_float(row.get('Total Holding Area')),
+                ))
+        AgcGrosscroppedarea.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
 
-    def _import_gross_cropped_area(self, filepath):
-        rows = self._read_csv(filepath)
-        objs = []
-        for r in rows:
-            objs.append(GrossCroppedArea(
-                district=r['District'],
-                taluka=r['Taluka'],
-                year=safe_int(r['Year']),
-                size_class=r['Size Class'],
-                irrigated_area=safe_float(r['Irrigated Area']),
-                unirrigated_area=safe_float(r['Unirrigated Area']),
-                gross_cropped_area=safe_float(r['Gross Cropped Area']),
-                share_cropped_area_irrigated=safe_float(r['Share of Cropped Area Irrigated']),
-                share_total_land_holdings_cropped=safe_float(r['Share of Total Land Holdings Cropped']),
-                total_holding_number=safe_float(r['Total Holding Number']),
-                total_holding_area=safe_float(r['Total Holding Area']),
-            ))
-        GrossCroppedArea.objects.all().delete()
-        GrossCroppedArea.objects.bulk_create(objs, batch_size=500, ignore_conflicts=True)
-        return len(objs)
+    def _import_agc_holdingsarea(self, filepath):
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(AgcHoldingsarea(
+                    year=year,
+                    district=_str(row, 'District'),
+                    taluka=_str(row, 'Taluka'),
+                    marginal_below_1_ha=_safe_float(row.get('Marginal (Below 1 ha)')),
+                    small_1_to_2_ha=_safe_float(row.get('Small (1 to 2 ha)')),
+                    semimedium_2_to_4_ha=_safe_float(row.get('Semimedium (2 to 4 ha)')),
+                    medium_4_to_10_ha=_safe_float(row.get('Medium (4 to 10 ha)')),
+                    large_10_ha=_safe_float(row.get('Large (>10 ha)')),
+                ))
+        AgcHoldingsarea.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
 
-    def _import_holdings_area(self, filepath):
-        rows = self._read_csv(filepath)
-        objs = []
-        for r in rows:
-            objs.append(HoldingsArea(
-                district=r['District'],
-                taluka=r['Taluka'],
-                year=safe_int(r['Year']),
-                marginal=safe_float(r['Marginal (Below 1 ha)']),
-                small=safe_float(r['Small (1 to 2 ha)']),
-                semimedium=safe_float(r['Semimedium (2 to 4 ha)']),
-                medium=safe_float(r['Medium (4 to 10 ha)']),
-                large=safe_float(r['Large (>10 ha)']),
-            ))
-        HoldingsArea.objects.all().delete()
-        HoldingsArea.objects.bulk_create(objs, batch_size=500, ignore_conflicts=True)
-        return len(objs)
+    def _import_agc_holdingsnumber(self, filepath):
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(AgcHoldingsnumber(
+                    year=year,
+                    district=_str(row, 'District'),
+                    taluka=_str(row, 'Taluka'),
+                    marginal_below_1_ha=_safe_float(row.get('Marginal (Below 1 ha)')),
+                    small_1_to_2_ha=_safe_float(row.get('Small (1 to 2 ha)')),
+                    semimedium_2_to_4_ha=_safe_float(row.get('Semimedium (2 to 4 ha)')),
+                    medium_4_to_10_ha=_safe_float(row.get('Medium (4 to 10 ha)')),
+                    large_10_ha=_safe_float(row.get('Large (>10 ha)')),
+                ))
+        AgcHoldingsnumber.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
 
-    def _import_holdings_number(self, filepath):
-        rows = self._read_csv(filepath)
-        objs = []
-        for r in rows:
-            objs.append(HoldingsNumber(
-                district=r['District'],
-                taluka=r['Taluka'],
-                year=safe_int(r['Year']),
-                marginal=safe_float(r['Marginal (Below 1 ha)']),
-                small=safe_float(r['Small (1 to 2 ha)']),
-                semimedium=safe_float(r['Semimedium (2 to 4 ha)']),
-                medium=safe_float(r['Medium (4 to 10 ha)']),
-                large=safe_float(r['Large (>10 ha)']),
-            ))
-        HoldingsNumber.objects.all().delete()
-        HoldingsNumber.objects.bulk_create(objs, batch_size=500, ignore_conflicts=True)
-        return len(objs)
+    def _import_agc_landuse(self, filepath):
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(AgcLanduse(
+                    year=year,
+                    district=_str(row, 'District'),
+                    taluka=_str(row, 'Taluka'),
+                    size_class=_str(row, 'Size Class'),
+                    total_holdings_number=_safe_float(row.get('Total Holdings Number')),
+                    total_holdings_area=_safe_float(row.get('Total Holdings Area')),
+                    area_classified_as_cultivated=_safe_float(row.get('Area Classified as Cultivated')),
+                    area_classified_as_uncultivated=_safe_float(row.get('Area Classified as Uncultivated')),
+                    area_not_available_for_agriculture=_safe_float(row.get('Area Not Available For Agriculture')),
+                    net_sown_area=_safe_float(row.get('Net Sown Area')),
+                    current_fallow=_safe_float(row.get('Current Fallow')),
+                    actually_uncultivated_area=_safe_float(row.get('Actually Uncultivated Area')),
+                    other_fallow_land=_safe_float(row.get('Other Fallow Land')),
+                    cultivable_waste_land=_safe_float(row.get('Cultivable Waste Land')),
+                ))
+        AgcLanduse.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
 
-    def _import_land_use(self, filepath):
-        rows = self._read_csv(filepath)
-        objs = []
-        for r in rows:
-            objs.append(LandUse(
-                district=r['District'],
-                taluka=r['Taluka'],
-                year=safe_int(r['Year']),
-                size_class=r['Size Class'],
-                total_holdings_number=safe_float(r['Total Holdings Number']),
-                total_holdings_area=safe_float(r['Total Holdings Area']),
-                area_cultivated=safe_float(r['Area Classified as Cultivated']),
-                area_uncultivated=safe_float(r['Area Classified as Uncultivated']),
-                area_not_available_for_agriculture=safe_float(r['Area Not Available For Agriculture']),
-                net_sown_area=safe_float(r['Net Sown Area']),
-                current_fallow=safe_float(r['Current Fallow']),
-                actually_uncultivated_area=safe_float(r['Actually Uncultivated Area']),
-                other_fallow_land=safe_float(r['Other Fallow Land']),
-                cultivable_waste_land=safe_float(r['Cultivable Waste Land']),
-            ))
-        LandUse.objects.all().delete()
-        LandUse.objects.bulk_create(objs, batch_size=500, ignore_conflicts=True)
-        return len(objs)
+    def _import_dsa_chemicalfertilizer(self, filepath):
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(DsaChemicalfertilizer(
+                    year=year,
+                    district=_str(row, 'District'),
+                    taluka=_str(row, 'Taluka'),
+                    kharif=_safe_float(row.get('Kharif')),
+                    rabi=_safe_float(row.get('Rabi')),
+                ))
+        DsaChemicalfertilizer.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
 
-    def _import_chemical_fertilizer(self, filepath):
-        rows = self._read_csv(filepath)
-        objs = []
-        for r in rows:
-            objs.append(ChemicalFertilizer(
-                district=r['District'],
-                taluka=r['Taluka'],
-                year=safe_int(r['Year']),
-                kharif=safe_float(r['Kharif']),
-                rabi=safe_float(r['Rabi']),
-            ))
-        ChemicalFertilizer.objects.all().delete()
-        ChemicalFertilizer.objects.bulk_create(objs, batch_size=500, ignore_conflicts=True)
-        return len(objs)
+    def _import_dsa_irrigationbeneficiary(self, filepath):
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                    
+                irr_ben_area = _safe_float(row.get('Irrigation Beneficiary Area'))
+                irr_area = _safe_float(row.get('Irrigated Area'))
+                
+                share = _safe_float(row.get('Share of Beneficiary Area Irrigated'))
+                if share is None and irr_ben_area and irr_area is not None:
+                    if irr_ben_area > 0:
+                        share = (irr_area / irr_ben_area) * 100
+                    else:
+                        share = 0.0
 
-    def _import_irrigation_beneficiary(self, filepath):
-        rows = self._read_csv(filepath)
-        objs = []
-        for r in rows:
-            objs.append(IrrigationBeneficiary(
-                district=r['District'],
-                taluka=r['Taluka'],
-                year=safe_int(r['Year']),
-                project_size=r['Project Size'],
-                irrigation_beneficiary_area=safe_float(r['Irrigation Beneficiary Area']),
-                irrigated_area=safe_float(r['Irrigated Area']),
-                share_beneficiary_area_irrigated=safe_float(r['Share of Beneficiary Area Irrigated']),
-            ))
-        IrrigationBeneficiary.objects.all().delete()
-        IrrigationBeneficiary.objects.bulk_create(objs, batch_size=500, ignore_conflicts=True)
-        return len(objs)
+                records.append(DsaIrrigationbeneficiary(
+                    year=year,
+                    district=_str(row, 'District'),
+                    taluka=_str(row, 'Taluka'),
+                    project_size=_str(row, 'Project Size'),
+                    irrigation_beneficiary_area=irr_ben_area,
+                    irrigated_area=irr_area,
+                    share_of_beneficiary_area_irrigated=share,
+                ))
+        DsaIrrigationbeneficiary.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
 
-    def _import_irrigation_facilities(self, filepath):
-        rows = self._read_csv(filepath)
-        objs = []
-        for r in rows:
-            objs.append(IrrigationFacilities(
-                district=r['District'],
-                taluka=r['Taluka'],
-                year=safe_int(r['Year']),
-                ponds_village_lakes=safe_float(r['Ponds or Village Lakes']),
-                storage_dams=safe_float(r['Storage Dams']),
-                irrigation_wells=safe_float(r['Irrigation Wells']),
-                diesel_pumps=safe_float(r['Diesel Pumps']),
-                electric_pumps=safe_float(r['Electric Pumps']),
-            ))
-        IrrigationFacilities.objects.all().delete()
-        IrrigationFacilities.objects.bulk_create(objs, batch_size=500, ignore_conflicts=True)
-        return len(objs)
+    def _import_dsa_irrigationfacilities(self, filepath):
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(DsaIrrigationfacilities(
+                    year=year,
+                    district=_str(row, 'District'),
+                    taluka=_str(row, 'Taluka'),
+                    ponds_or_village_lakes=_safe_float(row.get('Ponds or Village Lakes')),
+                    storage_dams=_safe_float(row.get('Storage Dams')),
+                    irrigation_wells=_safe_float(row.get('Irrigation Wells')),
+                    diesel_pumps=_safe_float(row.get('Diesel Pumps')),
+                    electric_pumps=_safe_float(row.get('Electric Pumps')),
+                ))
+        DsaIrrigationfacilities.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
 
-    def _import_irrigation_projects(self, filepath):
-        rows = self._read_csv(filepath)
-        objs = []
-        for r in rows:
-            objs.append(IrrigationProjects(
-                district=r['District'],
-                taluka=r['Taluka'],
-                year=safe_int(r['Year']),
-                small_local=safe_float(r['Small (Local)']),
-                small_state=safe_float(r['Small (State)']),
-                medium=safe_float(r['Medium']),
-                big=safe_float(r['Big']),
-            ))
-        IrrigationProjects.objects.all().delete()
-        IrrigationProjects.objects.bulk_create(objs, batch_size=500, ignore_conflicts=True)
-        return len(objs)
+    def _import_dsa_irrigationprojects(self, filepath):
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(DsaIrrigationprojects(
+                    year=year,
+                    district=_str(row, 'District'),
+                    taluka=_str(row, 'Taluka'),
+                    small_local=_safe_float(row.get('Small (Local)')),
+                    small_state=_safe_float(row.get('Small (State)')),
+                    medium=_safe_float(row.get('Medium')),
+                    big=_safe_float(row.get('Big')),
+                ))
+        DsaIrrigationprojects.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
 
-    def _import_irrigation_wells(self, filepath):
-        rows = self._read_csv(filepath)
-        objs = []
-        for r in rows:
-            objs.append(IrrigationWells(
-                district=r['District'],
-                taluka=r['Taluka'],
-                year=safe_int(r['Year']),
-                total_irrigation_wells=safe_float(r['Total Irrigation Wells']),
-                wells_diesel_pump=safe_float(r['Wells In Use With Diesel Pump']),
-                wells_electric_pump=safe_float(r['Wells In Use With Electric Pump']),
-                wells_not_in_use=safe_float(r['Irrigation Wells Not in Use']),
-            ))
-        IrrigationWells.objects.all().delete()
-        IrrigationWells.objects.bulk_create(objs, batch_size=500, ignore_conflicts=True)
-        return len(objs)
+    def _import_dsa_irrigationwells(self, filepath):
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(DsaIrrigationwells(
+                    year=year,
+                    district=_str(row, 'District'),
+                    taluka=_str(row, 'Taluka'),
+                    total_irrigation_wells=_safe_float(row.get('Total Irrigation Wells')),
+                    wells_in_use_with_diesel_pump=_safe_float(row.get('Wells In Use With Diesel Pump')),
+                    wells_in_use_with_electric_pump=_safe_float(row.get('Wells In Use With Electric Pump')),
+                    irrigation_wells_not_in_use=_safe_float(row.get('Irrigation Wells Not in Use')),
+                ))
+        DsaIrrigationwells.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
 
-    def _import_tubewells_handpumps(self, filepath):
-        rows = self._read_csv(filepath)
-        objs = []
-        for r in rows:
-            objs.append(TubewellsHandpumps(
-                district=r['District'],
-                taluka=r['Taluka'],
-                year=safe_int(r['Year']),
-                all_tubewells=safe_float(r['All Tubewells']),
-                high_capacity_tubewells=safe_float(r['High Capacity Tubewells']),
-                successful_tubewells=safe_float(r['Successful Tubewells']),
-                hand_pumps=safe_float(r['Hand Pumps']),
-                electric_pumps=safe_float(r['Electric Pumps']),
-            ))
-        TubewellsHandpumps.objects.all().delete()
-        TubewellsHandpumps.objects.bulk_create(objs, batch_size=500, ignore_conflicts=True)
-        return len(objs)
+    def _import_dsa_tubewellshandpumps(self, filepath):
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            for row in csv.DictReader(f):
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(DsaTubewellshandpumps(
+                    year=year,
+                    district=_str(row, 'District'),
+                    taluka=_str(row, 'Taluka'),
+                    all_tubewells=_safe_float(row.get('All Tubewells')),
+                    high_capacity_tubewells=_safe_float(row.get('High Capacity Tubewells')),
+                    successful_tubewells=_safe_float(row.get('Successful Tubewells')),
+                    hand_pumps=_safe_float(row.get('Hand Pumps')),
+                    electric_pumps=_safe_float(row.get('Electric Pumps')),
+                ))
+        DsaTubewellshandpumps.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
+
+

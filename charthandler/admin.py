@@ -8,17 +8,7 @@ from .models import (
     DairyByproduct,
     Fisheries,
     Veterinary,
-    # Agriculture
-    GrossCroppedArea,
-    HoldingsArea,
-    HoldingsNumber,
-    LandUse,
-    ChemicalFertilizer,
-    IrrigationBeneficiary,
-    IrrigationFacilities,
-    IrrigationProjects,
-    IrrigationWells,
-    TubewellsHandpumps,
+
 )
 
 
@@ -81,75 +71,78 @@ class VeterinaryAdmin(admin.ModelAdmin):
 # AGRICULTURE ADMIN
 # ============================================================================
 
-@admin.register(GrossCroppedArea)
-class GrossCroppedAreaAdmin(admin.ModelAdmin):
-    list_display = ['district', 'taluka', 'year', 'size_class', 'gross_cropped_area', 'irrigated_area']
-    list_filter = ['district', 'year', 'size_class']
-    search_fields = ['district', 'taluka']
+from .models.agriculture import (
+    AgcGrosscroppedarea,
+    AgcHoldingsarea,
+    AgcHoldingsnumber,
+    AgcLanduse,
+    DsaChemicalfertilizer,
+    DsaIrrigationbeneficiary,
+    DsaIrrigationfacilities,
+    DsaIrrigationprojects,
+    DsaIrrigationwells,
+    DsaTubewellshandpumps,
+)
 
-
-@admin.register(HoldingsArea)
-class HoldingsAreaAdmin(admin.ModelAdmin):
-    list_display = ['district', 'taluka', 'year', 'marginal', 'small', 'semimedium', 'medium', 'large']
+@admin.register(AgcGrosscroppedarea)
+class AgcGrosscroppedareaAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'size_class', 'irrigated_area', 'unirrigated_area']
     list_filter = ['district', 'year']
-    search_fields = ['district', 'taluka']
+    search_fields = ['district']
 
-
-@admin.register(HoldingsNumber)
-class HoldingsNumberAdmin(admin.ModelAdmin):
-    list_display = ['district', 'taluka', 'year', 'marginal', 'small', 'semimedium', 'medium', 'large']
+@admin.register(AgcHoldingsarea)
+class AgcHoldingsareaAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'marginal_below_1_ha', 'small_1_to_2_ha', 'semimedium_2_to_4_ha']
     list_filter = ['district', 'year']
-    search_fields = ['district', 'taluka']
+    search_fields = ['district']
 
-
-@admin.register(LandUse)
-class LandUseAdmin(admin.ModelAdmin):
-    list_display = ['district', 'taluka', 'year', 'size_class', 'net_sown_area', 'area_cultivated']
-    list_filter = ['district', 'year', 'size_class']
-    search_fields = ['district', 'taluka']
-
-
-@admin.register(ChemicalFertilizer)
-class ChemicalFertilizerAdmin(admin.ModelAdmin):
-    list_display = ['district', 'taluka', 'year', 'kharif', 'rabi']
+@admin.register(AgcHoldingsnumber)
+class AgcHoldingsnumberAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'marginal_below_1_ha', 'small_1_to_2_ha', 'semimedium_2_to_4_ha']
     list_filter = ['district', 'year']
-    search_fields = ['district', 'taluka']
+    search_fields = ['district']
 
-
-@admin.register(IrrigationBeneficiary)
-class IrrigationBeneficiaryAdmin(admin.ModelAdmin):
-    list_display = ['district', 'taluka', 'year', 'project_size', 'irrigation_beneficiary_area', 'irrigated_area']
-    list_filter = ['district', 'year', 'project_size']
-    search_fields = ['district', 'taluka']
-
-
-@admin.register(IrrigationFacilities)
-class IrrigationFacilitiesAdmin(admin.ModelAdmin):
-    list_display = ['district', 'taluka', 'year', 'ponds_village_lakes', 'storage_dams', 'irrigation_wells']
+@admin.register(AgcLanduse)
+class AgcLanduseAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'size_class', 'total_holdings_number', 'total_holdings_area']
     list_filter = ['district', 'year']
-    search_fields = ['district', 'taluka']
+    search_fields = ['district']
 
-
-@admin.register(IrrigationProjects)
-class IrrigationProjectsAdmin(admin.ModelAdmin):
-    list_display = ['district', 'taluka', 'year', 'small_local', 'small_state', 'medium', 'big']
+@admin.register(DsaChemicalfertilizer)
+class DsaChemicalfertilizerAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'kharif', 'rabi']
     list_filter = ['district', 'year']
-    search_fields = ['district', 'taluka']
+    search_fields = ['district']
 
-
-@admin.register(IrrigationWells)
-class IrrigationWellsAdmin(admin.ModelAdmin):
-    list_display = ['district', 'taluka', 'year', 'total_irrigation_wells', 'wells_diesel_pump', 'wells_electric_pump']
+@admin.register(DsaIrrigationbeneficiary)
+class DsaIrrigationbeneficiaryAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'project_size', 'irrigation_beneficiary_area', 'irrigated_area']
     list_filter = ['district', 'year']
-    search_fields = ['district', 'taluka']
+    search_fields = ['district']
 
-
-@admin.register(TubewellsHandpumps)
-class TubewellsHandpumpsAdmin(admin.ModelAdmin):
-    list_display = ['district', 'taluka', 'year', 'all_tubewells', 'hand_pumps', 'electric_pumps']
+@admin.register(DsaIrrigationfacilities)
+class DsaIrrigationfacilitiesAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'ponds_or_village_lakes', 'storage_dams', 'irrigation_wells']
     list_filter = ['district', 'year']
-    search_fields = ['district', 'taluka']
+    search_fields = ['district']
 
+@admin.register(DsaIrrigationprojects)
+class DsaIrrigationprojectsAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'small_local', 'small_state', 'medium']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(DsaIrrigationwells)
+class DsaIrrigationwellsAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'total_irrigation_wells', 'wells_in_use_with_diesel_pump', 'wells_in_use_with_electric_pump']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(DsaTubewellshandpumps)
+class DsaTubewellshandpumpsAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'all_tubewells', 'high_capacity_tubewells', 'successful_tubewells']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
 
 # ============================================================================
 # HEALTH ADMIN — DSA
@@ -160,6 +153,7 @@ from .models import (
     DSARegisteredBirths, DSAReportedDeaths, DSADeathCause,
     DSAPublicHospitals2, DSAPrivateHealth2, DSAAnganwadis, DSAPublicOutPatients,
     HMISFamilyPlanning, HMISContraceptives, HMISInfantVaccinations,
+
     HMISIV2, HMISIV, HMISAnaemia, HMISAntenatalCare, HMISDeliveries,
     HMISMDeaths, HMISCSection, HMISSexRatio, HMISAbortion,
     HMISInfantDeaths2, HMISInfantDeaths, HMISChildDisease2, HMISChildDisease,
@@ -850,3 +844,668 @@ class CensusOwnershipAdmin(admin.ModelAdmin):
     list_display = ['district', 'year', 'rural_urban', 'owned', 'rented', 'other']
     list_filter = ['district', 'year', 'rural_urban']
     search_fields = ['district']
+
+# ============================================================================
+# TRANSPORT ADMIN
+# ============================================================================
+
+from .models import (
+    TransportARCAccidents, TransportARCAge, TransportARCCaseFine,
+    TransportARCFatalities, TransportARCGrievousInjuries, TransportARCInjuries,
+    TransportARCMinorInjuries, TransportARCModeTransport, TransportARCMonth,
+    TransportARCRoadType, TransportARCTime, TransportARCTotalsInjuryDeath,
+    TransportDSA100sqkm, TransportDSABus, TransportDSAMagazine,
+    TransportDSARoadMaterial, TransportDSARoadType, TransportTCAssets,
+)
+
+@admin.register(TransportARCAccidents)
+class TransportARCAccidentsAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCAge)
+class TransportARCAgeAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCCaseFine)
+class TransportARCCaseFineAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCFatalities)
+class TransportARCFatalitiesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCGrievousInjuries)
+class TransportARCGrievousInjuriesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCInjuries)
+class TransportARCInjuriesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCMinorInjuries)
+class TransportARCMinorInjuriesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCModeTransport)
+class TransportARCModeTransportAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCMonth)
+class TransportARCMonthAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCRoadType)
+class TransportARCRoadTypeAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCTime)
+class TransportARCTimeAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportARCTotalsInjuryDeath)
+class TransportARCTotalsInjuryDeathAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportDSA100sqkm)
+class TransportDSA100sqkmAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka']
+    list_filter = ['district', 'year', 'taluka']
+    search_fields = ['district', 'taluka']
+
+@admin.register(TransportDSABus)
+class TransportDSABusAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TransportDSAMagazine)
+class TransportDSAMagazineAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka']
+    list_filter = ['district', 'year', 'taluka']
+    search_fields = ['district', 'taluka']
+
+@admin.register(TransportDSARoadMaterial)
+class TransportDSARoadMaterialAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka']
+    list_filter = ['district', 'year', 'taluka']
+    search_fields = ['district', 'taluka']
+
+@admin.register(TransportDSARoadType)
+class TransportDSARoadTypeAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka']
+    list_filter = ['district', 'year', 'taluka']
+    search_fields = ['district', 'taluka']
+
+@admin.register(TransportTCAssets)
+class TransportTCAssetsAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+from django.contrib import admin
+
+from django.contrib import admin
+
+from django.contrib import admin
+from .models.revenue import *
+
+@admin.register(RevenueDSABanking)
+class RevenueDSABankingAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'towns_and_cities_where_banks_have_offices', 'classified_banks', 'branch_offices_of_classified_banks', 'deposits', 'agriculture_loans', 'non_agriculture_loans', 'total_loans']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSABankingN)
+class RevenueDSABankingNAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'towns_and_cities_where_banks_have_offices', 'classified_banks', 'branch_offices_of_classified_banks']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSADepositsN)
+class RevenueDSADepositsNAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka_old', 'taluka', 'deposits']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAGramPanchayat)
+class RevenueDSAGramPanchayatAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'land_and_property_taxes', 'other_taxes_and_charges', 'tax', 'statutory_grants', 'contribution_donations_and_other_subsidies', 'grants', 'other_sources', 'revenue']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAGramPanchayatN)
+class RevenueDSAGramPanchayatNAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'land_and_property_taxes', 'other_taxes_and_charges', 'tax', 'government_grants', 'contribution_donations_and_other_grants', 'grants', 'other_sources', 'revenue']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAGST)
+class RevenueDSAGSTAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'vat', 'central_sales_tax', 'business_tax', 'sugarcane_purchase_tax', 'entry_tax', 'luxury_tax', 'gst', 'total']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAJillaParishadExp)
+class RevenueDSAJillaParishadExpAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'general_administration', 'education', 'public_works', 'irrigation', 'agriculture', 'animal_husbandary', 'forests', 'public_health']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAJillaParishadInc)
+class RevenueDSAJillaParishadIncAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'opening_balance', 'self_generated', 'purposive_grants', 'establishment_grants', 'grants_for_plan_schemes', 'other_statutory_grants', 'statutory_grants', 'for_agency_schemes']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAJillaParishadN)
+class RevenueDSAJillaParishadNAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'opening_balance', 'self_generated', 'purposive_grants', 'establishment_grants', 'grants_for_plan_schemes', 'other_statutory_grants', 'statutory_grants', 'for_agency_schemes']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSALandRevenue)
+class RevenueDSALandRevenueAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka', 'aggregate_current_demand', 'arrears', 'aggregate_demand', 'discount', 'amount_of_suspended_recovery', 'amount_eligible_for_recovery', 'value_recovery']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSALandRevenueN)
+class RevenueDSALandRevenueNAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka', 'aggregate_current_demand', 'arrears', 'aggregate_demand', 'discount', 'amount_of_suspended_recovery', 'amount_eligible_for_recovery', 'value_recovery']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSALoansN)
+class RevenueDSALoansNAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka_old', 'taluka', 'agriculture_loans', 'non_agriculture_loans', 'total_loans']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAMunCorpN)
+class RevenueDSAMunCorpNAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'receipts_and_loans', 'from_commercial_activities', 'government_subsidy', 'other_sources', 'rents_and_taxes', 'revenue', 'administration_establishment', 'administration_others']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAMunicipalCorpExp)
+class RevenueDSAMunicipalCorpExpAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'administration_establishment', 'administration_others', 'construction', 'drainage_and_sewage', 'education', 'expenditure_on_weak_components', 'others', 'public_health']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAMunicipalCorpInc)
+class RevenueDSAMunicipalCorpIncAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'receipts_and_loans', 'from_commercial_activities', 'government_grants', 'other_sources', 'rents_and_taxes', 'revenue', 'administration_establishment', 'administration_others']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAMunicipalCounExp)
+class RevenueDSAMunicipalCounExpAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'administration_establishment', 'administration_others', 'construction', 'drainage_and_sewage', 'education', 'expenditure_on_weak_sectors', 'others', 'public_health']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAMunicipalCounInc)
+class RevenueDSAMunicipalCounIncAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'receipts_and_loans', 'from_commercial_activities', 'government_grants', 'other_sources', 'rents_and_taxes', 'revenue', 'administration_establishment', 'administration_others']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSAMunicipalCounN)
+class RevenueDSAMunicipalCounNAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'receipts_and_loans', 'from_commercial_activities', 'government_subsidies', 'other_sources', 'rents_and_taxes', 'revenue', 'administration_establishment', 'administration_others']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSANagarPanchayatExp)
+class RevenueDSANagarPanchayatExpAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'administration_establishment', 'administration_others', 'construction', 'drainage_and_sewage', 'education', 'expenditure_on_weak_components', 'others', 'public_health']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSANagarPanchayatInc)
+class RevenueDSANagarPanchayatIncAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'receipts_and_loans', 'from_commercial_activities', 'government_grants', 'other_sources', 'rents_and_taxes', 'revenue', 'administration_establishment', 'administration_others']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSANagarPanchayatN)
+class RevenueDSANagarPanchayatNAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'receipts_and_loans', 'from_commercial_activities', 'government_subsidies', 'other_sources', 'rents_and_taxes', 'revenue', 'administration_establishment', 'administration_others']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSATaxRevenue)
+class RevenueDSATaxRevenueAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'value_added_tax_vat', 'stamp_and_registration_fee', 'state_excise_duty', 'electricity_charges', 'entertainment_tax', 'vehicles_tax', 'tax_on_goods_and_cargo', 'land_tax']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueDSATaxRevenueN)
+class RevenueDSATaxRevenueNAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'value_added_tax_vat', 'stamp_and_registration_fee', 'state_excise_duty', 'electricity_charges', 'entertainment_tax', 'vehicles_tax', 'tax_on_goods_and_cargo', 'land_tax']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueGDDPGDVA)
+class RevenueGDDPGDVAAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'crops', 'livestock', 'forestry_and_logging', 'fishing_and_aquaculture', 'agriculture_allied_activities', 'mining_quarrying', 'primary_sector', 'manufacturing']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueGDDPGDVAN)
+class RevenueGDDPGDVANAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'crops', 'livestock', 'forestry_and_logging', 'fishing_and_aquaculture', 'agriculture_allied_activities', 'mining_quarrying', 'primary_sector', 'manufacturing']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueNDDPNDVA)
+class RevenueNDDPNDVAAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'crops', 'livestock', 'forestry_and_logging', 'fishing_and_aquaculture', 'agriculture_allied_activities', 'minign_quarrying', 'primary_sector', 'manufacturing']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+@admin.register(RevenueNDDPNDVAN)
+class RevenueNDDPNDVANAdmin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'crops', 'livestock', 'forestry_and_logging', 'fishing_and_aquaculture', 'agriculture_allied_activities', 'mining_quarrying', 'primary_sector', 'manufacturing']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+# ============================================================================
+# POLICE ADMIN
+# ============================================================================
+
+from .models.police import (
+    PoliceCourtsAppealCases,
+    PoliceCourtsFunctioning,
+    PoliceCourtsJudgesCases,
+    PoliceCourtsOriginalCases,
+    PoliceCyberCrimeTypes,
+    PoliceCyberFraudTypes,
+    PoliceCyberTotals,
+    PoliceDSAWomenChildrenTaluka,
+    PoliceIPCDocPropertyMarks,
+    PoliceIPCHumanBody,
+    PoliceIPCMisc,
+    PoliceIPCProperty,
+    PoliceIPCPublicTranquility,
+    PoliceIPCTotal,
+    PoliceEmployees,
+    PoliceInfrastructure,
+    PoliceSLLOffenseTypes,
+    PoliceSLLTotal,
+    PoliceWomenCrimeTypes,
+    PoliceWomenTotal,
+)
+
+
+@admin.register(PoliceCourtsAppealCases)
+class PoliceCourtsAppealCasesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'type_of_court', 'all_appeal_cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'type_of_court']
+
+@admin.register(PoliceCourtsFunctioning)
+class PoliceCourtsFunctioningAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'type_of_court', 'functioning_courts']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'type_of_court']
+
+@admin.register(PoliceCourtsJudgesCases)
+class PoliceCourtsJudgesCasesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'type_of_court', 'total_cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'type_of_court']
+
+@admin.register(PoliceCourtsOriginalCases)
+class PoliceCourtsOriginalCasesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'type_of_court', 'all_original_cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'type_of_court']
+
+@admin.register(PoliceCyberCrimeTypes)
+class PoliceCyberCrimeTypesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'crime', 'cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'crime']
+
+@admin.register(PoliceCyberFraudTypes)
+class PoliceCyberFraudTypesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'select_offense', 'cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'select_offense']
+
+@admin.register(PoliceCyberTotals)
+class PoliceCyberTotalsAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'cyber_crimes']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(PoliceDSAWomenChildrenTaluka)
+class PoliceDSAWomenChildrenTalukaAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'taluka']
+
+@admin.register(PoliceIPCDocPropertyMarks)
+class PoliceIPCDocPropertyMarksAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'select_offense', 'cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'select_offense']
+
+@admin.register(PoliceIPCHumanBody)
+class PoliceIPCHumanBodyAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'crime', 'cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'crime']
+
+@admin.register(PoliceIPCMisc)
+class PoliceIPCMiscAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'select_offense', 'cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'select_offense']
+
+@admin.register(PoliceIPCProperty)
+class PoliceIPCPropertyAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'crime', 'cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'crime']
+
+@admin.register(PoliceIPCPublicTranquility)
+class PoliceIPCPublicTranquilityAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'crime', 'cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'crime']
+
+@admin.register(PoliceIPCTotal)
+class PoliceIPCTotalAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'cognizable_ipc_crimes']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(PoliceEmployees)
+class PoliceEmployeesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka', 'establishment', 'number_of_officers_employees']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'taluka', 'establishment']
+
+@admin.register(PoliceInfrastructure)
+class PoliceInfrastructureAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka', 'select_type_of_police_establishment', 'number']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'taluka', 'select_type_of_police_establishment']
+
+@admin.register(PoliceSLLOffenseTypes)
+class PoliceSLLOffenseTypesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'select_offense_under', 'cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'select_offense_under']
+
+@admin.register(PoliceSLLTotal)
+class PoliceSLLTotalAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'cognizable_sll_crimes']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(PoliceWomenCrimeTypes)
+class PoliceWomenCrimeTypesAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'crime', 'cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'crime']
+
+@admin.register(PoliceWomenTotal)
+class PoliceWomenTotalAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'cases']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+
+
+# ============================================================================
+# EDUCATION ADMIN
+# ============================================================================
+
+from .models.education import (
+    DropOutRateByGender,
+    DropOutRateSchoolingStage,
+    EducationLevels,
+    NoOfSchools,
+    NoOfSchoolsManagementType,
+    NoOfSchoolsType,
+    NoOfTeachersByType,
+    StudentEnrollmentBoysVsGirls,
+    StudentEnrollmentClassWise,
+    StudentEnrollmentGirlsVsBoys,
+    StudentEnrollmentNumbers,
+    TeacherCategory,
+    TeacherSocialCategory,
+)
+
+@admin.register(DropOutRateByGender)
+class DropOutRateByGenderAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'select_schooling_level', 'social_category']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(DropOutRateSchoolingStage)
+class DropOutRateSchoolingStageAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'social_category', 'gender']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(EducationLevels)
+class EducationLevelsAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'age_group', 'gender']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(NoOfSchools)
+class NoOfSchoolsAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'gender_mix']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(NoOfSchoolsManagementType)
+class NoOfSchoolsManagementTypeAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'type_of_school']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'type_of_school']
+
+@admin.register(NoOfSchoolsType)
+class NoOfSchoolsTypeAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'rural_urban', 'select_school_management_type']
+    list_filter = ['district', 'year']
+    search_fields = ['district', 'select_school_management_type']
+
+@admin.register(NoOfTeachersByType)
+class NoOfTeachersByTypeAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'type_of_school']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(StudentEnrollmentBoysVsGirls)
+class StudentEnrollmentBoysVsGirlsAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'select_class', 'social_category']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(StudentEnrollmentClassWise)
+class StudentEnrollmentClassWiseAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'social_category', 'gender']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(StudentEnrollmentGirlsVsBoys)
+class StudentEnrollmentGirlsVsBoysAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'gender']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(StudentEnrollmentNumbers)
+class StudentEnrollmentNumbersAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'social_category']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TeacherCategory)
+class TeacherCategoryAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'select_school_management_type']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+@admin.register(TeacherSocialCategory)
+class TeacherSocialCategoryAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'select_school_management_type', 'social_category']
+    list_filter = ['district', 'year']
+    search_fields = ['district']
+
+
+# ============================================================================
+# ENVIRONMENT ADMIN
+# ============================================================================
+
+from .models import (
+    EnvWildlifeProjects,
+    EnvForestArea,
+    EnvForestDensity,
+    EnvNightLightIntensity,
+    EnvRunoff,
+    EnvRainyDays,
+    EnvRainfall,
+    EnvMinTemperature,
+    EnvMaxTemperature,
+    EnvWindSpeed,
+    EnvWaterDeficit,
+    EnvHumidity,
+    EnvSoilMoisture,
+    EnvEvapotranspirationYearly,
+    EnvEvapotranspirationMonthly,
+    EnvBorewells,
+    EnvDugwells,
+)
+
+@admin.register(EnvWildlifeProjects)
+class EnvWildlifeProjectsAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'select_wildlife_project', 'project_area_expenses', 'value')
+    list_filter = ('district', 'year', 'select_wildlife_project')
+    search_fields = ('district',)
+
+@admin.register(EnvForestArea)
+class EnvForestAreaAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'area_classification', 'jurisdiction', 'forest_area')
+    list_filter = ('district', 'year', 'area_classification', 'jurisdiction')
+    search_fields = ('district',)
+
+@admin.register(EnvForestDensity)
+class EnvForestDensityAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'type', 'forest_area')
+    list_filter = ('district', 'year', 'type')
+    search_fields = ('district',)
+
+@admin.register(EnvNightLightIntensity)
+class EnvNightLightIntensityAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'night_light_intensity')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvRunoff)
+class EnvRunoffAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'yearly_runoff', 'june', 'july', 'august', 'september')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvRainyDays)
+class EnvRainyDaysAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'taluka', 'avg_rainy_days', 'rainy_days_in_year', 'precipitation_in_year')
+    list_filter = ('district', 'year')
+    search_fields = ('district', 'taluka')
+
+@admin.register(EnvRainfall)
+class EnvRainfallAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'total', 'june', 'july', 'august', 'september')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvMinTemperature)
+class EnvMinTemperatureAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'min', 'january', 'april', 'july', 'october')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvMaxTemperature)
+class EnvMaxTemperatureAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'max', 'january', 'april', 'july', 'october')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvWindSpeed)
+class EnvWindSpeedAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'average', 'june', 'july', 'august')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvWaterDeficit)
+class EnvWaterDeficitAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'yearly_water_deficit', 'january', 'april', 'july')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvHumidity)
+class EnvHumidityAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'relative_humidity')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvSoilMoisture)
+class EnvSoilMoistureAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'moisture_1mm_2mm', 'moisture_04mm_1mm')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvEvapotranspirationYearly)
+class EnvEvapotranspirationYearlyAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'actual_numbers', 'potential')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvEvapotranspirationMonthly)
+class EnvEvapotranspirationMonthlyAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'actual_june', 'actual_july', 'actual_august', 'potential_june', 'potential_july')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
+
+@admin.register(EnvBorewells)
+class EnvBorewellsAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'season', 'values')
+    list_filter = ('district', 'year', 'season')
+    search_fields = ('district',)
+
+@admin.register(EnvDugwells)
+class EnvDugwellsAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'season', 'values')
+    list_filter = ('district', 'year', 'season')
+    search_fields = ('district',)

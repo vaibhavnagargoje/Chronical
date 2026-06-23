@@ -1,0 +1,561 @@
+Year,District,Crime,Cases
+2014,Ahilyanagar,Riots,457
+2014,Akola,Riots,97
+2014,Amravati,Riots,56
+2014,Chhatrapati Sambhaji Nagar,Riots,398
+2014,Beed,Riots,266
+2014,Bhandara,Riots,19
+2014,Buldhana,Riots,186
+2014,Chandrapur,Riots,53
+2014,Dhule,Riots,166
+2014,Gadchiroli,Riots,9
+2014,Gondia,Riots,13
+2014,Hingoli,Riots,66
+2014,Jalgaon,Riots,327
+2014,Jalna,Riots,120
+2014,Kolhapur,Riots,273
+2014,Latur,Riots,246
+2014,Mumbai City,Riots,415
+2014,Nagpur,Riots,214
+2014,Nanded,Riots,192
+2014,Nandurbar,Riots,89
+2014,Nasik,Riots,439
+2014,Dharashiv,Riots,148
+2014,Palghar,Riots,220
+2014,Parbhani,Riots,157
+2014,Pune,Riots,871
+2014,Raigad,Riots,146
+2014,Ratnagiri,Riots,66
+2014,Sangli,Riots,218
+2014,Satara,Riots,340
+2014,Sindhudurg,Riots,24
+2014,Solapur,Riots,542
+2014,Thane,Riots,595
+2014,Wardha,Riots,41
+2014,Washim,Riots,94
+2014,Yavatmal,Riots,197
+2015,Ahilyanagar,Riots,554
+2015,Akola,Riots,70
+2015,Amravati,Riots,65
+2015,Chhatrapati Sambhaji Nagar,Riots,435
+2015,Beed,Riots,321
+2015,Bhandara,Riots,19
+2015,Buldhana,Riots,186
+2015,Chandrapur,Riots,66
+2015,Dhule,Riots,143
+2015,Gadchiroli,Riots,24
+2015,Gondia,Riots,7
+2015,Hingoli,Riots,121
+2015,Jalgaon,Riots,289
+2015,Jalna,Riots,192
+2015,Kolhapur,Riots,383
+2015,Latur,Riots,189
+2015,Mumbai City,Riots,400
+2015,Nagpur,Riots,192
+2015,Nanded,Riots,200
+2015,Nandurbar,Riots,91
+2015,Nasik,Riots,531
+2015,Dharashiv,Riots,196
+2015,Palghar,Riots,196
+2015,Parbhani,Riots,132
+2015,Pune,Riots,889
+2015,Raigad,Riots,156
+2015,Ratnagiri,Riots,90
+2015,Sangli,Riots,263
+2015,Satara,Riots,355
+2015,Sindhudurg,Riots,33
+2015,Solapur,Riots,547
+2015,Thane,Riots,741
+2015,Wardha,Riots,41
+2015,Washim,Riots,73
+2015,Yavatmal,Riots,146
+2016,Ahilyanagar,Riots,614
+2016,Akola,Riots,59
+2016,Amravati,Riots,45
+2016,Chhatrapati Sambhaji Nagar,Riots,413
+2016,Beed,Riots,268
+2016,Bhandara,Riots,21
+2016,Buldhana,Riots,195
+2016,Chandrapur,Riots,62
+2016,Dhule,Riots,159
+2016,Gadchiroli,Riots,17
+2016,Gondia,Riots,9
+2016,Hingoli,Riots,81
+2016,Jalgaon,Riots,266
+2016,Jalna,Riots,212
+2016,Kolhapur,Riots,264
+2016,Latur,Riots,218
+2016,Mumbai City,Riots,473
+2016,Nagpur,Riots,170
+2016,Nanded,Riots,242
+2016,Nandurbar,Riots,117
+2016,Nasik,Riots,522
+2016,Dharashiv,Riots,171
+2016,Palghar,Riots,194
+2016,Parbhani,Riots,130
+2016,Pune,Riots,809
+2016,Raigad,Riots,154
+2016,Ratnagiri,Riots,91
+2016,Sangli,Riots,243
+2016,Satara,Riots,331
+2016,Sindhudurg,Riots,31
+2016,Solapur,Riots,462
+2016,Thane,Riots,611
+2016,Wardha,Riots,48
+2016,Washim,Riots,73
+2016,Yavatmal,Riots,123
+2017,Ahilyanagar,Riots,507
+2017,Akola,Riots,45
+2017,Amravati,Riots,48
+2017,Chhatrapati Sambhaji Nagar,Riots,292
+2017,Beed,Riots,307
+2017,Bhandara,Riots,23
+2017,Buldhana,Riots,184
+2017,Chandrapur,Riots,50
+2017,Dhule,Riots,174
+2017,Gadchiroli,Riots,13
+2017,Gondia,Riots,21
+2017,Hingoli,Riots,114
+2017,Jalgaon,Riots,249
+2017,Jalna,Riots,220
+2017,Kolhapur,Riots,233
+2017,Latur,Riots,254
+2017,Mumbai City,Riots,443
+2017,Nagpur,Riots,180
+2017,Nanded,Riots,163
+2017,Nandurbar,Riots,114
+2017,Nasik,Riots,498
+2017,Dharashiv,Riots,193
+2017,Palghar,Riots,179
+2017,Parbhani,Riots,101
+2017,Pune,Riots,963
+2017,Raigad,Riots,141
+2017,Ratnagiri,Riots,85
+2017,Sangli,Riots,256
+2017,Satara,Riots,369
+2017,Sindhudurg,Riots,35
+2017,Solapur,Riots,484
+2017,Thane,Riots,578
+2017,Wardha,Riots,41
+2017,Washim,Riots,95
+2017,Yavatmal,Riots,91
+2018,Ahilyanagar,Riots,677
+2018,Akola,Riots,72
+2018,Amravati,Riots,40
+2018,Chhatrapati Sambhaji Nagar,Riots,279
+2018,Beed,Riots,377
+2018,Bhandara,Riots,30
+2018,Buldhana,Riots,190
+2018,Chandrapur,Riots,54
+2018,Dhule,Riots,204
+2018,Gadchiroli,Riots,12
+2018,Gondia,Riots,23
+2018,Hingoli,Riots,146
+2018,Jalgaon,Riots,288
+2018,Jalna,Riots,250
+2018,Kolhapur,Riots,282
+2018,Latur,Riots,255
+2018,Mumbai City,Riots,546
+2018,Nagpur,Riots,208
+2018,Nanded,Riots,278
+2018,Nandurbar,Riots,102
+2018,Nasik,Riots,505
+2018,Dharashiv,Riots,252
+2018,Palghar,Riots,257
+2018,Parbhani,Riots,133
+2018,Pune,Riots,1325
+2018,Raigad,Riots,136
+2018,Ratnagiri,Riots,111
+2018,Sangli,Riots,324
+2018,Satara,Riots,366
+2018,Sindhudurg,Riots,43
+2018,Solapur,Riots,706
+2018,Thane,Riots,756
+2018,Wardha,Riots,44
+2018,Washim,Riots,107
+2018,Yavatmal,Riots,95
+2019,Ahilyanagar,Riots,664
+2019,Akola,Riots,66
+2019,Amravati,Riots,37
+2019,Chhatrapati Sambhaji Nagar,Riots,273
+2019,Beed,Riots,289
+2019,Bhandara,Riots,23
+2019,Buldhana,Riots,227
+2019,Chandrapur,Riots,73
+2019,Dhule,Riots,174
+2019,Gadchiroli,Riots,5
+2019,Gondia,Riots,19
+2019,Hingoli,Riots,86
+2019,Jalgaon,Riots,291
+2019,Jalna,Riots,238
+2019,Kolhapur,Riots,277
+2019,Latur,Riots,162
+2019,Mumbai City,Riots,370
+2019,Nagpur,Riots,133
+2019,Nanded,Riots,162
+2019,Nandurbar,Riots,58
+2019,Nasik,Riots,410
+2019,Dharashiv,Riots,206
+2019,Palghar,Riots,235
+2019,Parbhani,Riots,63
+2019,Pune,Riots,953
+2019,Raigad,Riots,104
+2019,Ratnagiri,Riots,57
+2019,Sangli,Riots,263
+2019,Satara,Riots,274
+2019,Sindhudurg,Riots,27
+2019,Solapur,Riots,612
+2019,Thane,Riots,513
+2019,Wardha,Riots,33
+2019,Washim,Riots,81
+2019,Yavatmal,Riots,60
+2020,Ahilyanagar,Riots,862
+2020,Akola,Riots,71
+2020,Amravati,Riots,49
+2020,Chhatrapati Sambhaji Nagar,Riots,335
+2020,Beed,Riots,449
+2020,Bhandara,Riots,27
+2020,Buldhana,Riots,257
+2020,Chandrapur,Riots,68
+2020,Dhule,Riots,184
+2020,Gadchiroli,Riots,14
+2020,Gondia,Riots,6
+2020,Hingoli,Riots,129
+2020,Jalgaon,Riots,361
+2020,Jalna,Riots,379
+2020,Kolhapur,Riots,318
+2020,Latur,Riots,230
+2020,Mumbai City,Riots,311
+2020,Nagpur,Riots,139
+2020,Nanded,Riots,261
+2020,Nandurbar,Riots,83
+2020,Nasik,Riots,562
+2020,Dharashiv,Riots,229
+2020,Palghar,Riots,92
+2020,Parbhani,Riots,96
+2020,Pune,Riots,1133
+2020,Raigad,Riots,40
+2020,Ratnagiri,Riots,99
+2020,Sangli,Riots,316
+2020,Satara,Riots,452
+2020,Sindhudurg,Riots,41
+2020,Solapur,Riots,704
+2020,Thane,Riots,637
+2020,Wardha,Riots,38
+2020,Washim,Riots,123
+2020,Yavatmal,Riots,62
+2021,Ahilyanagar,Riots,791
+2021,Akola,Riots,53
+2021,Amravati,Riots,105
+2021,Chhatrapati Sambhaji Nagar,Riots,398
+2021,Beed,Riots,351
+2021,Bhandara,Riots,35
+2021,Buldhana,Riots,316
+2021,Chandrapur,Riots,73
+2021,Dhule,Riots,174
+2021,Gadchiroli,Riots,10
+2021,Gondia,Riots,15
+2021,Hingoli,Riots,89
+2021,Jalgaon,Riots,393
+2021,Jalna,Riots,334
+2021,Kolhapur,Riots,341
+2021,Latur,Riots,201
+2021,Mumbai City,Riots,305
+2021,Nagpur,Riots,136
+2021,Nanded,Riots,225
+2021,Nandurbar,Riots,73
+2021,Nasik,Riots,469
+2021,Dharashiv,Riots,264
+2021,Palghar,Riots,62
+2021,Parbhani,Riots,52
+2021,Pune,Riots,1022
+2021,Raigad,Riots,65
+2021,Ratnagiri,Riots,72
+2021,Sangli,Riots,215
+2021,Satara,Riots,352
+2021,Sindhudurg,Riots,38
+2021,Solapur,Riots,833
+2021,Thane,Riots,593
+2021,Wardha,Riots,37
+2021,Washim,Riots,113
+2021,Yavatmal,Riots,104
+2014,Ahilyanagar,Incidence of Rash Driving,747
+2014,Akola,Incidence of Rash Driving,503
+2014,Amravati,Incidence of Rash Driving,1056
+2014,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,1173
+2014,Beed,Incidence of Rash Driving,856
+2014,Bhandara,Incidence of Rash Driving,309
+2014,Buldhana,Incidence of Rash Driving,396
+2014,Chandrapur,Incidence of Rash Driving,512
+2014,Dhule,Incidence of Rash Driving,378
+2014,Gadchiroli,Incidence of Rash Driving,90
+2014,Gondia,Incidence of Rash Driving,209
+2014,Hingoli,Incidence of Rash Driving,186
+2014,Jalgaon,Incidence of Rash Driving,597
+2014,Jalna,Incidence of Rash Driving,16
+2014,Kolhapur,Incidence of Rash Driving,776
+2014,Latur,Incidence of Rash Driving,393
+2014,Mumbai City,Incidence of Rash Driving,4129
+2014,Nagpur,Incidence of Rash Driving,1826
+2014,Nanded,Incidence of Rash Driving,574
+2014,Nandurbar,Incidence of Rash Driving,233
+2014,Nasik,Incidence of Rash Driving,2088
+2014,Dharashiv,Incidence of Rash Driving,408
+2014,Palghar,Incidence of Rash Driving,369
+2014,Parbhani,Incidence of Rash Driving,328
+2014,Pune,Incidence of Rash Driving,2543
+2014,Raigad,Incidence of Rash Driving,386
+2014,Ratnagiri,Incidence of Rash Driving,342
+2014,Sangli,Incidence of Rash Driving,430
+2014,Satara,Incidence of Rash Driving,605
+2014,Sindhudurg,Incidence of Rash Driving,102
+2014,Solapur,Incidence of Rash Driving,1125
+2014,Thane,Incidence of Rash Driving,1474
+2014,Wardha,Incidence of Rash Driving,51
+2014,Washim,Incidence of Rash Driving,182
+2014,Yavatmal,Incidence of Rash Driving,668
+2015,Ahilyanagar,Incidence of Rash Driving,1187
+2015,Akola,Incidence of Rash Driving,615
+2015,Amravati,Incidence of Rash Driving,1512
+2015,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,2065
+2015,Beed,Incidence of Rash Driving,992
+2015,Bhandara,Incidence of Rash Driving,300
+2015,Buldhana,Incidence of Rash Driving,425
+2015,Chandrapur,Incidence of Rash Driving,413
+2015,Dhule,Incidence of Rash Driving,386
+2015,Gadchiroli,Incidence of Rash Driving,93
+2015,Gondia,Incidence of Rash Driving,176
+2015,Hingoli,Incidence of Rash Driving,313
+2015,Jalgaon,Incidence of Rash Driving,502
+2015,Jalna,Incidence of Rash Driving,36
+2015,Kolhapur,Incidence of Rash Driving,798
+2015,Latur,Incidence of Rash Driving,362
+2015,Mumbai City,Incidence of Rash Driving,3963
+2015,Nagpur,Incidence of Rash Driving,2091
+2015,Nanded,Incidence of Rash Driving,1605
+2015,Nandurbar,Incidence of Rash Driving,201
+2015,Nasik,Incidence of Rash Driving,2524
+2015,Dharashiv,Incidence of Rash Driving,545
+2015,Palghar,Incidence of Rash Driving,200
+2015,Parbhani,Incidence of Rash Driving,202
+2015,Pune,Incidence of Rash Driving,3222
+2015,Raigad,Incidence of Rash Driving,461
+2015,Ratnagiri,Incidence of Rash Driving,716
+2015,Sangli,Incidence of Rash Driving,424
+2015,Satara,Incidence of Rash Driving,570
+2015,Sindhudurg,Incidence of Rash Driving,97
+2015,Solapur,Incidence of Rash Driving,899
+2015,Thane,Incidence of Rash Driving,1688
+2015,Wardha,Incidence of Rash Driving,734
+2015,Washim,Incidence of Rash Driving,193
+2015,Yavatmal,Incidence of Rash Driving,651
+2016,Ahilyanagar,Incidence of Rash Driving,1164
+2016,Akola,Incidence of Rash Driving,842
+2016,Amravati,Incidence of Rash Driving,1527
+2016,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,2489
+2016,Beed,Incidence of Rash Driving,713
+2016,Bhandara,Incidence of Rash Driving,420
+2016,Buldhana,Incidence of Rash Driving,444
+2016,Chandrapur,Incidence of Rash Driving,317
+2016,Dhule,Incidence of Rash Driving,376
+2016,Gadchiroli,Incidence of Rash Driving,94
+2016,Gondia,Incidence of Rash Driving,154
+2016,Hingoli,Incidence of Rash Driving,597
+2016,Jalgaon,Incidence of Rash Driving,431
+2016,Jalna,Incidence of Rash Driving,5
+2016,Kolhapur,Incidence of Rash Driving,1038
+2016,Latur,Incidence of Rash Driving,359
+2016,Mumbai City,Incidence of Rash Driving,3900
+2016,Nagpur,Incidence of Rash Driving,1972
+2016,Nanded,Incidence of Rash Driving,1610
+2016,Nandurbar,Incidence of Rash Driving,142
+2016,Nasik,Incidence of Rash Driving,454
+2016,Dharashiv,Incidence of Rash Driving,445
+2016,Palghar,Incidence of Rash Driving,349
+2016,Parbhani,Incidence of Rash Driving,226
+2016,Pune,Incidence of Rash Driving,2604
+2016,Raigad,Incidence of Rash Driving,390
+2016,Ratnagiri,Incidence of Rash Driving,473
+2016,Sangli,Incidence of Rash Driving,383
+2016,Satara,Incidence of Rash Driving,494
+2016,Sindhudurg,Incidence of Rash Driving,152
+2016,Solapur,Incidence of Rash Driving,847
+2016,Thane,Incidence of Rash Driving,1637
+2016,Wardha,Incidence of Rash Driving,361
+2016,Washim,Incidence of Rash Driving,162
+2016,Yavatmal,Incidence of Rash Driving,826
+2017,Ahilyanagar,Incidence of Rash Driving,819
+2017,Akola,Incidence of Rash Driving,413
+2017,Amravati,Incidence of Rash Driving,1997
+2017,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,826
+2017,Beed,Incidence of Rash Driving,320
+2017,Bhandara,Incidence of Rash Driving,326
+2017,Buldhana,Incidence of Rash Driving,526
+2017,Chandrapur,Incidence of Rash Driving,403
+2017,Dhule,Incidence of Rash Driving,354
+2017,Gadchiroli,Incidence of Rash Driving,106
+2017,Gondia,Incidence of Rash Driving,153
+2017,Hingoli,Incidence of Rash Driving,185
+2017,Jalgaon,Incidence of Rash Driving,441
+2017,Jalna,Incidence of Rash Driving,403
+2017,Kolhapur,Incidence of Rash Driving,559
+2017,Latur,Incidence of Rash Driving,412
+2017,Mumbai City,Incidence of Rash Driving,3119
+2017,Nagpur,Incidence of Rash Driving,2280
+2017,Nanded,Incidence of Rash Driving,526
+2017,Nandurbar,Incidence of Rash Driving,121
+2017,Nasik,Incidence of Rash Driving,1002
+2017,Dharashiv,Incidence of Rash Driving,307
+2017,Palghar,Incidence of Rash Driving,318
+2017,Parbhani,Incidence of Rash Driving,206
+2017,Pune,Incidence of Rash Driving,2414
+2017,Raigad,Incidence of Rash Driving,387
+2017,Ratnagiri,Incidence of Rash Driving,418
+2017,Sangli,Incidence of Rash Driving,337
+2017,Satara,Incidence of Rash Driving,580
+2017,Sindhudurg,Incidence of Rash Driving,156
+2017,Solapur,Incidence of Rash Driving,1311
+2017,Thane,Incidence of Rash Driving,1338
+2017,Wardha,Incidence of Rash Driving,287
+2017,Washim,Incidence of Rash Driving,151
+2017,Yavatmal,Incidence of Rash Driving,646
+2018,Ahilyanagar,Incidence of Rash Driving,933
+2018,Akola,Incidence of Rash Driving,371
+2018,Amravati,Incidence of Rash Driving,1600
+2018,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,893
+2018,Beed,Incidence of Rash Driving,409
+2018,Bhandara,Incidence of Rash Driving,293
+2018,Buldhana,Incidence of Rash Driving,568
+2018,Chandrapur,Incidence of Rash Driving,649
+2018,Dhule,Incidence of Rash Driving,512
+2018,Gadchiroli,Incidence of Rash Driving,125
+2018,Gondia,Incidence of Rash Driving,158
+2018,Hingoli,Incidence of Rash Driving,208
+2018,Jalgaon,Incidence of Rash Driving,468
+2018,Jalna,Incidence of Rash Driving,59
+2018,Kolhapur,Incidence of Rash Driving,593
+2018,Latur,Incidence of Rash Driving,401
+2018,Mumbai City,Incidence of Rash Driving,3151
+2018,Nagpur,Incidence of Rash Driving,2327
+2018,Nanded,Incidence of Rash Driving,556
+2018,Nandurbar,Incidence of Rash Driving,112
+2018,Nasik,Incidence of Rash Driving,1279
+2018,Dharashiv,Incidence of Rash Driving,404
+2018,Palghar,Incidence of Rash Driving,386
+2018,Parbhani,Incidence of Rash Driving,229
+2018,Pune,Incidence of Rash Driving,4768
+2018,Raigad,Incidence of Rash Driving,430
+2018,Ratnagiri,Incidence of Rash Driving,398
+2018,Sangli,Incidence of Rash Driving,778
+2018,Satara,Incidence of Rash Driving,530
+2018,Sindhudurg,Incidence of Rash Driving,263
+2018,Solapur,Incidence of Rash Driving,1241
+2018,Thane,Incidence of Rash Driving,2139
+2018,Wardha,Incidence of Rash Driving,348
+2018,Washim,Incidence of Rash Driving,165
+2018,Yavatmal,Incidence of Rash Driving,1195
+2019,Ahilyanagar,Incidence of Rash Driving,1004
+2019,Akola,Incidence of Rash Driving,335
+2019,Amravati,Incidence of Rash Driving,942
+2019,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,729
+2019,Beed,Incidence of Rash Driving,328
+2019,Bhandara,Incidence of Rash Driving,298
+2019,Buldhana,Incidence of Rash Driving,390
+2019,Chandrapur,Incidence of Rash Driving,721
+2019,Dhule,Incidence of Rash Driving,783
+2019,Gadchiroli,Incidence of Rash Driving,114
+2019,Gondia,Incidence of Rash Driving,138
+2019,Hingoli,Incidence of Rash Driving,332
+2019,Jalgaon,Incidence of Rash Driving,424
+2019,Jalna,Incidence of Rash Driving,70
+2019,Kolhapur,Incidence of Rash Driving,577
+2019,Latur,Incidence of Rash Driving,474
+2019,Mumbai City,Incidence of Rash Driving,2997
+2019,Nagpur,Incidence of Rash Driving,3479
+2019,Nanded,Incidence of Rash Driving,498
+2019,Nandurbar,Incidence of Rash Driving,374
+2019,Nasik,Incidence of Rash Driving,1215
+2019,Dharashiv,Incidence of Rash Driving,482
+2019,Palghar,Incidence of Rash Driving,420
+2019,Parbhani,Incidence of Rash Driving,456
+2019,Pune,Incidence of Rash Driving,9903
+2019,Raigad,Incidence of Rash Driving,467
+2019,Ratnagiri,Incidence of Rash Driving,330
+2019,Sangli,Incidence of Rash Driving,919
+2019,Satara,Incidence of Rash Driving,663
+2019,Sindhudurg,Incidence of Rash Driving,362
+2019,Solapur,Incidence of Rash Driving,1501
+2019,Thane,Incidence of Rash Driving,1613
+2019,Wardha,Incidence of Rash Driving,318
+2019,Washim,Incidence of Rash Driving,156
+2019,Yavatmal,Incidence of Rash Driving,901
+2020,Ahilyanagar,Incidence of Rash Driving,685
+2020,Akola,Incidence of Rash Driving,266
+2020,Amravati,Incidence of Rash Driving,939
+2020,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,572
+2020,Beed,Incidence of Rash Driving,264
+2020,Bhandara,Incidence of Rash Driving,252
+2020,Buldhana,Incidence of Rash Driving,288
+2020,Chandrapur,Incidence of Rash Driving,489
+2020,Dhule,Incidence of Rash Driving,361
+2020,Gadchiroli,Incidence of Rash Driving,96
+2020,Gondia,Incidence of Rash Driving,100
+2020,Hingoli,Incidence of Rash Driving,157
+2020,Jalgaon,Incidence of Rash Driving,324
+2020,Jalna,Incidence of Rash Driving,276
+2020,Kolhapur,Incidence of Rash Driving,455
+2020,Latur,Incidence of Rash Driving,366
+2020,Mumbai City,Incidence of Rash Driving,1605
+2020,Nagpur,Incidence of Rash Driving,1582
+2020,Nanded,Incidence of Rash Driving,406
+2020,Nandurbar,Incidence of Rash Driving,86
+2020,Nasik,Incidence of Rash Driving,871
+2020,Dharashiv,Incidence of Rash Driving,299
+2020,Palghar,Incidence of Rash Driving,158
+2020,Parbhani,Incidence of Rash Driving,243
+2020,Pune,Incidence of Rash Driving,2837
+2020,Raigad,Incidence of Rash Driving,246
+2020,Ratnagiri,Incidence of Rash Driving,200
+2020,Sangli,Incidence of Rash Driving,483
+2020,Satara,Incidence of Rash Driving,372
+2020,Sindhudurg,Incidence of Rash Driving,117
+2020,Solapur,Incidence of Rash Driving,634
+2020,Thane,Incidence of Rash Driving,1333
+2020,Wardha,Incidence of Rash Driving,425
+2020,Washim,Incidence of Rash Driving,151
+2020,Yavatmal,Incidence of Rash Driving,425
+2021,Ahilyanagar,Incidence of Rash Driving,690
+2021,Akola,Incidence of Rash Driving,248
+2021,Amravati,Incidence of Rash Driving,670
+2021,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,624
+2021,Beed,Incidence of Rash Driving,305
+2021,Bhandara,Incidence of Rash Driving,340
+2021,Buldhana,Incidence of Rash Driving,307
+2021,Chandrapur,Incidence of Rash Driving,724
+2021,Dhule,Incidence of Rash Driving,373
+2021,Gadchiroli,Incidence of Rash Driving,118
+2021,Gondia,Incidence of Rash Driving,171
+2021,Hingoli,Incidence of Rash Driving,153
+2021,Jalgaon,Incidence of Rash Driving,333
+2021,Jalna,Incidence of Rash Driving,122
+2021,Kolhapur,Incidence of Rash Driving,675
+2021,Latur,Incidence of Rash Driving,388
+2021,Mumbai City,Incidence of Rash Driving,2283
+2021,Nagpur,Incidence of Rash Driving,1421
+2021,Nanded,Incidence of Rash Driving,432
+2021,Nandurbar,Incidence of Rash Driving,165
+2021,Nasik,Incidence of Rash Driving,965
+2021,Dharashiv,Incidence of Rash Driving,371
+2021,Palghar,Incidence of Rash Driving,201
+2021,Parbhani,Incidence of Rash Driving,183
+2021,Pune,Incidence of Rash Driving,2350
+2021,Raigad,Incidence of Rash Driving,310
+2021,Ratnagiri,Incidence of Rash Driving,221
+2021,Sangli,Incidence of Rash Driving,623
+2021,Satara,Incidence of Rash Driving,396
+2021,Sindhudurg,Incidence of Rash Driving,108
+2021,Solapur,Incidence of Rash Driving,601
+2021,Thane,Incidence of Rash Driving,1507
+2021,Wardha,Incidence of Rash Driving,926
+2021,Washim,Incidence of Rash Driving,149
+2021,Yavatmal,Incidence of Rash Driving,456

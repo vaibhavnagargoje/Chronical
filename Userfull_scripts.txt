@@ -1,36 +1,36 @@
-//Script for chart selects form dropdown 
-(function() {
-    // 1. Find all Dynamic Chart blocks on the page
-    const dynamicBlocks = document.querySelectorAll('.editor-block[data-block-type="dynamic-chart"]');
-    
-    if (dynamicBlocks.length === 0) {
-        console.warn("No dynamic chart blocks found on the page!");
-        return;
-    }
-    
-    let successCount = 0;
-
-    // 2. Iterate through each block and assign the corresponding chart
-    dynamicBlocks.forEach((block, index) => {
-        const select = block.querySelector('select[name="template_id"]');
+    //Script for chart selects form dropdown 
+    (function() {
+        // 1. Find all Dynamic Chart blocks on the page
+        const dynamicBlocks = document.querySelectorAll('.editor-block[data-block-type="dynamic-chart"]');
         
-        if (select) {
-            // Options are 0-indexed, and option 0 is the "Select chart template..." placeholder.
-            // So we want to select option index 1 for the 1st block, index 2 for the 2nd, etc.
-            const optionToSelect = index + 1;
-            
-            // Check if we actually have enough templates in the dropdown
-            if (optionToSelect < select.options.length) {
-                select.selectedIndex = optionToSelect;
-                successCount++;
-                
-                // Trigger a 'change' event just in case any other scripts are listening
-                select.dispatchEvent(new Event('change', { bubbles: true }));
-            } else {
-                console.warn(`Block #${index + 1}: Not enough chart templates available. Max available is ${select.options.length - 1}.`);
-            }
+        if (dynamicBlocks.length === 0) {
+            console.warn("No dynamic chart blocks found on the page!");
+            return;
         }
-    });
-    
-    console.log(`✅ Successfully assigned sequential templates to ${successCount} dynamic chart blocks!`);
-})();
+        
+        let successCount = 0;
+
+        // 2. Iterate through each block and assign the corresponding chart
+        dynamicBlocks.forEach((block, index) => {
+            const select = block.querySelector('select[name="template_id"]');
+            
+            if (select) {
+                // Options are 0-indexed, and option 0 is the "Select chart template..." placeholder.
+                // So we want to select option index 1 for the 1st block, index 2 for the 2nd, etc.
+                const optionToSelect = index + 1;
+                
+                // Check if we actually have enough templates in the dropdown
+                if (optionToSelect < select.options.length) {
+                    select.selectedIndex = optionToSelect;
+                    successCount++;
+                    
+                    // Trigger a 'change' event just in case any other scripts are listening
+                    select.dispatchEvent(new Event('change', { bubbles: true }));
+                } else {
+                    console.warn(`Block #${index + 1}: Not enough chart templates available. Max available is ${select.options.length - 1}.`);
+                }
+            }
+        });
+        
+        console.log(`✅ Successfully assigned sequential templates to ${successCount} dynamic chart blocks!`);
+    })();
