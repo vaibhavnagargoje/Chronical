@@ -29,27 +29,21 @@ class DSAFamilyWelfarePrograms(models.Model):
 
 
 class DSAVaccines(models.Model):
+    """Long-format vaccines data with Select Vaccine dropdown."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     taluka = models.CharField(max_length=100, db_index=True)
     rural_urban = models.CharField(max_length=20, db_index=True)
-    dpt = models.FloatField(null=True, blank=True)
-    polio = models.FloatField(null=True, blank=True)
-    bcg = models.FloatField(null=True, blank=True)
-    measles = models.FloatField(null=True, blank=True)
-    dt = models.FloatField(null=True, blank=True)
-    tetanus_10_years = models.FloatField(null=True, blank=True)
-    tetanus_16_years = models.FloatField(null=True, blank=True)
-    tetanus_pregnant_women = models.FloatField(null=True, blank=True)
-    pentavalent_3 = models.FloatField(null=True, blank=True)
+    select_vaccine = models.CharField(max_length=200, db_index=True, default='')
+    number = models.FloatField(null=True, blank=True)
 
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Vaccines'
-        unique_together = ['district', 'year', 'taluka', 'rural_urban']
+        unique_together = ['district', 'year', 'taluka', 'rural_urban', 'select_vaccine']
 
     def __str__(self):
-        return f"{self.district} - {self.taluka} - {self.year}"
+        return f"{self.district} - {self.taluka} - {self.year} - {self.select_vaccine}"
 
 
 class DSAMalnutrition(models.Model):

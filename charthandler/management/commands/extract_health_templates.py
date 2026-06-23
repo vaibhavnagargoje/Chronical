@@ -1219,7 +1219,7 @@ class Command(BaseCommand):
             'chart_type': 'line',
             'data_source_table': 'DSAVaccines',
             'x_column': 'year',
-            'y_columns': ['dpt', 'polio', 'bcg', 'measles', 'd_t', 'tetanus_10_years', 'tetanus_16_years', 'tetanus_pregnant_women', 'pentavalent_3'],
+            'y_columns': ['number'],
             'dataset_config': [
                 {'label': 'Number', 'borderColor': '#1a4570', 'backgroundColor': '#1a4570'},
             ],

@@ -37,11 +37,7 @@ CSV_MAP = {
     }),
     'dsa_vaccines.csv': ('charthandler.DSAVaccines', {
         'Taluka': 'taluka', 'Rural/Urban': 'rural_urban',
-        'DPT': 'dpt', 'Polio': 'polio', 'BCG': 'bcg', 'Measles': 'measles',
-        'D.T': 'dt', 'Tetanus 10 years': 'tetanus_10_years',
-        'Tetanus 16 years': 'tetanus_16_years',
-        'Tetanus Pregnant Women': 'tetanus_pregnant_women',
-        'Pentavalent-3': 'pentavalent_3',
+        'Select Vaccine': 'select_vaccine', 'Number': 'number',
     }),
     'dsa_malnutrition.csv': ('charthandler.DSAMalnutrition', {
         'Taluka': 'taluka', 'Rural/Urban': 'rural_urban',
@@ -297,7 +293,7 @@ STRING_FIELDS = {
     'taluka', 'rural_urban', 'sex', 'type',
     'select_variable', 'select_cause', 'select_facility',
     'select_contraceptive', 'select_effect', 'select_disease',
-    'select_examination',
+    'select_examination', 'select_vaccine',
 }
 
 

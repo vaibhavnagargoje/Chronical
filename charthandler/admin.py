@@ -175,8 +175,8 @@ class DSAFamilyWelfareProgramsAdmin(admin.ModelAdmin):
 
 @admin.register(DSAVaccines)
 class DSAVaccinesAdmin(admin.ModelAdmin):
-    list_display = ['district', 'year', 'taluka', 'rural_urban', 'dpt', 'polio', 'bcg']
-    list_filter = ['district', 'year']
+    list_display = ['district', 'year', 'taluka', 'rural_urban', 'select_vaccine', 'number']
+    list_filter = ['district', 'year', 'select_vaccine']
     search_fields = ['district', 'taluka']
 
 
