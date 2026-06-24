@@ -979,6 +979,13 @@ class RevenueDSABankingAdmin(admin.ModelAdmin):
     list_filter = ('year', 'district')
     search_fields = ('district',)
 
+@admin.register(RevenueDSABanking2)
+class RevenueDSABanking2Admin(admin.ModelAdmin):
+    list_display = ['year', 'district', 'taluka', 'select_bank', 'number']
+    list_filter = ('year', 'district')
+    search_fields = ('district',)
+
+
 @admin.register(RevenueDSABankingN)
 class RevenueDSABankingNAdmin(admin.ModelAdmin):
     list_display = ['year', 'district', 'taluka', 'towns_and_cities_where_banks_have_offices', 'classified_banks', 'branch_offices_of_classified_banks']

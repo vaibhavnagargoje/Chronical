@@ -804,3 +804,18 @@ class RevenueNDDPNDVAN(models.Model):
         return f"{self.district} - {self.year}"
 
 
+class RevenueDSABanking2(models.Model):
+    year = models.IntegerField(db_index=True, null=True, blank=True)
+    district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
+    taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
+    select_bank = models.CharField(max_length=255, db_index=True, null=True, blank=True)
+    number = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        verbose_name = 'RevenueDSABanking2'
+        verbose_name_plural = 'RevenueDSABanking2'
+        ordering = ['district', 'year'] if 'district' in ['year', 'district', 'taluka', 'select_bank', 'number'] and 'year' in ['year', 'district', 'taluka', 'select_bank', 'number'] else []
+
+    def __str__(self):
+        return f"{self.district} - {self.year}"
+

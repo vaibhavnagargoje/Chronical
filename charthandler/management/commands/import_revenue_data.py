@@ -13,6 +13,7 @@ from django.conf import settings
 
 from charthandler.models.revenue import (
     RevenueDSABanking,
+    RevenueDSABanking2,
     RevenueDSABankingN,
     RevenueDSADepositsN,
     RevenueDSAGramPanchayat,
@@ -83,6 +84,7 @@ class Command(BaseCommand):
         if clear:
             self.stdout.write('Clearing existing revenue data...')
             RevenueDSABanking.objects.all().delete()
+            RevenueDSABanking2.objects.all().delete()
             RevenueDSABankingN.objects.all().delete()
             RevenueDSADepositsN.objects.all().delete()
             RevenueDSAGramPanchayat.objects.all().delete()
@@ -113,6 +115,7 @@ class Command(BaseCommand):
 
         csv_files = {
             'DSA_Banking.csv': self._import_dsa_banking,
+            'DSA_Banking_2.csv': self._import_dsa_banking_2,
             'DSA_Banking_N.csv': self._import_dsa_banking_n,
             'DSA_Deposits_N.csv': self._import_dsa_deposits_n,
             'DSA_GramPanchayat.csv': self._import_dsa_grampanchayat,
@@ -197,6 +200,23 @@ class Command(BaseCommand):
                     branch_offices_of_classified_banks=_safe_float(row.get('Branch Offices of Classified Banks')),
                 ))
         RevenueDSABankingN.objects.bulk_create(records, ignore_conflicts=True)
+        return len(records)
+
+    def _import_dsa_banking_2(self, filepath):
+        """Import DSA_Banking_2.csv → RevenueDSABanking2"""
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                year = _safe_int(row.get('Year'))
+                records.append(RevenueDSABanking2(
+                    year=year,
+                    district=row.get('District', '').strip() if row.get('District') else None,
+                    taluka=row.get('Taluka', '').strip() if row.get('Taluka') else None,
+                    select_bank=row.get('Select Banks/ Bank Branches', '').strip() if row.get('Select Banks/ Bank Branches') else None,
+                    number=_safe_float(row.get('Number')),
+                ))
+        RevenueDSABanking2.objects.bulk_create(records, ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_deposits_n(self, filepath):

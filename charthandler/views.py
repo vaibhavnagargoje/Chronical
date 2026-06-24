@@ -155,6 +155,7 @@ DATA_MODEL_REGISTRY = {
     'RevenueDSALandRevenueN':        'charthandler.RevenueDSALandRevenueN',
     # Revenue & Expenditure — Banking
     'RevenueDSABanking':             'charthandler.RevenueDSABanking',
+    'RevenueDSABanking2':            'charthandler.RevenueDSABanking2',
     'RevenueDSABankingN':            'charthandler.RevenueDSABankingN',
     'RevenueDSADepositsN':           'charthandler.RevenueDSADepositsN',
     'RevenueDSALoansN':              'charthandler.RevenueDSALoansN',
