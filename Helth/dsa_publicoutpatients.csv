@@ -1336,15 +1336,15 @@ Mumbai Suburban,2020,Kurla,Outpatient,1117200,1173000,484700
 Mumbai Suburban,2021,Adheri,Outpatient,525000,496200,156700
 Mumbai Suburban,2021,Borivali,Outpatient,245700,278900,71700
 Mumbai Suburban,2021,Kurla,Outpatient,277300,278600,85700
-Mumbai City,2013,Mumbai City,Outpatient,116351700,104208700,67645600
-Mumbai City,2014,Mumbai City,Outpatient,436181100,,
-Mumbai City,2015,Mumbai City,Outpatient,188893300,185984300,191174000
-Mumbai City,2016,Mumbai City,Outpatient,180224700,165075600,170619400
-Mumbai City,2017,Mumbai City,Outpatient,187577200,167918900,184891000
-Mumbai City,2018,Mumbai City,Outpatient,2023904,1949929,1781694
-Mumbai City,2019,Mumbai City,Outpatient,1419475,2860249,1379639
-Mumbai City,2020,Mumbai City,Outpatient,1212003,948258,1411860
-Mumbai City,2021,Mumbai City,Outpatient,1903235,1667328,644427
+Mumbai,2013,Mumbai City,Outpatient,116351700,104208700,67645600
+Mumbai,2014,Mumbai City,Outpatient,436181100,,
+Mumbai,2015,Mumbai City,Outpatient,188893300,185984300,191174000
+Mumbai,2016,Mumbai City,Outpatient,180224700,165075600,170619400
+Mumbai,2017,Mumbai City,Outpatient,187577200,167918900,184891000
+Mumbai,2018,Mumbai City,Outpatient,2023904,1949929,1781694
+Mumbai,2019,Mumbai City,Outpatient,1419475,2860249,1379639
+Mumbai,2020,Mumbai City,Outpatient,1212003,948258,1411860
+Mumbai,2021,Mumbai City,Outpatient,1903235,1667328,644427
 Nagpur,2012,Narkhed,Outpatient,4880000,5125300,1557300
 Nagpur,2012,Katol,Outpatient,5094200,4964400,2869600
 Nagpur,2012,Kalameshwar,Outpatient,6080700,6819600,3621000
@@ -4439,15 +4439,15 @@ Mumbai Suburban,2020,Kurla,Inpatient,33600,67000,13500
 Mumbai Suburban,2021,Adheri,Inpatient,81700,90000,36200
 Mumbai Suburban,2021,Borivali,Inpatient,23400,34300,3900
 Mumbai Suburban,2021,Kurla,Inpatient,784900,769000,914800
-Mumbai City,2013,Mumbai City,Inpatient,9626900,8936400,4173400
-Mumbai City,2014,Mumbai City,Inpatient,26389900,,
-Mumbai City,2015,Mumbai City,Inpatient,47946800,37390400,17967400
-Mumbai City,2016,Mumbai City,Inpatient,46786400,38171600,16173800
-Mumbai City,2017,Mumbai City,Inpatient,51174300,35339400,15950500
-Mumbai City,2018,Mumbai City,Inpatient,524099,360406,164497
-Mumbai City,2019,Mumbai City,Inpatient,510034,346112,153427
-Mumbai City,2020,Mumbai City,Inpatient,510757,340700,159999
-Mumbai City,2021,Mumbai City,Inpatient,516433,314600,53550
+Mumbai,2013,Mumbai City,Inpatient,9626900,8936400,4173400
+Mumbai,2014,Mumbai City,Inpatient,26389900,,
+Mumbai,2015,Mumbai City,Inpatient,47946800,37390400,17967400
+Mumbai,2016,Mumbai City,Inpatient,46786400,38171600,16173800
+Mumbai,2017,Mumbai City,Inpatient,51174300,35339400,15950500
+Mumbai,2018,Mumbai City,Inpatient,524099,360406,164497
+Mumbai,2019,Mumbai City,Inpatient,510034,346112,153427
+Mumbai,2020,Mumbai City,Inpatient,510757,340700,159999
+Mumbai,2021,Mumbai City,Inpatient,516433,314600,53550
 Nagpur,2012,Narkhed,Inpatient,166800,296400,41500
 Nagpur,2012,Katol,Inpatient,707900,707200,600700
 Nagpur,2012,Kalameshwar,Inpatient,94200,279100,106600

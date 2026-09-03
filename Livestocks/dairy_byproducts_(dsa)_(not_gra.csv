@@ -1,4 +1,4 @@
-﻿District,Year,Items,Units
+District,Year,Items,Units
 Ahilyanagar,2012,Milk Powder,
 Ahilyanagar,2012,White butter,15.98
 Ahilyanagar,2012,Ghee,403.96
@@ -734,69 +734,69 @@ Mumbai Suburban,2021,Energy Milk,603000.0
 Mumbai Suburban,2021,Lassi,1359000.0
 Mumbai Suburban,2021,Masala Milk,0.0
 Mumbai Suburban,2021,Sustainable cow's milk,8565000.0
-Mumbai City,2013,Milk Powder,0.0
-Mumbai City,2013,White butter,0.0
-Mumbai City,2013,Ghee,41.53
-Mumbai City,2013,Energy Milk,26.92
-Mumbai City,2013,Lassi,32.44
-Mumbai City,2013,Masala Milk,7.56
-Mumbai City,2013,Sustainable cow's milk,0.4
-Mumbai City,2014,Milk Powder,0.0
-Mumbai City,2014,White butter,0.0
-Mumbai City,2014,Ghee,0.0
-Mumbai City,2014,Energy Milk,49485.0
-Mumbai City,2014,Lassi,933655.0
-Mumbai City,2014,Masala Milk,156309.0
-Mumbai City,2014,Sustainable cow's milk,0.0
-Mumbai City,2015,Milk Powder,0.0
-Mumbai City,2015,White butter,0.0
-Mumbai City,2015,Ghee,0.0
-Mumbai City,2015,Energy Milk,102537.0
-Mumbai City,2015,Lassi,159512.0
-Mumbai City,2015,Masala Milk,48765.0
-Mumbai City,2015,Sustainable cow's milk,0.0
-Mumbai City,2016,Milk Powder,0.0
-Mumbai City,2016,White butter,0.0
-Mumbai City,2016,Ghee,0.0
-Mumbai City,2016,Energy Milk,0.0
-Mumbai City,2016,Lassi,41270.0
-Mumbai City,2016,Masala Milk,20025.0
-Mumbai City,2016,Sustainable cow's milk,0.0
-Mumbai City,2017,Milk Powder,0.0
-Mumbai City,2017,White butter,0.0
-Mumbai City,2017,Ghee,0.0
-Mumbai City,2017,Energy Milk,0.0
-Mumbai City,2017,Lassi,0.08
-Mumbai City,2017,Masala Milk,0.05
-Mumbai City,2017,Sustainable cow's milk,0.0
-Mumbai City,2018,Milk Powder,0.0
-Mumbai City,2018,White butter,0.0
-Mumbai City,2018,Ghee,0.0
-Mumbai City,2018,Energy Milk,0.0
-Mumbai City,2018,Lassi,0.0
-Mumbai City,2018,Masala Milk,0.0
-Mumbai City,2018,Sustainable cow's milk,0.0
-Mumbai City,2019,Milk Powder,0.0
-Mumbai City,2019,White butter,0.0
-Mumbai City,2019,Ghee,0.0
-Mumbai City,2019,Energy Milk,0.0
-Mumbai City,2019,Lassi,0.0
-Mumbai City,2019,Masala Milk,0.0
-Mumbai City,2019,Sustainable cow's milk,0.0
-Mumbai City,2020,Milk Powder,0.0
-Mumbai City,2020,White butter,0.0
-Mumbai City,2020,Ghee,0.0
-Mumbai City,2020,Energy Milk,0.0
-Mumbai City,2020,Lassi,0.0
-Mumbai City,2020,Masala Milk,0.0
-Mumbai City,2020,Sustainable cow's milk,0.0
-Mumbai City,2021,Milk Powder,0.0
-Mumbai City,2021,White butter,0.0
-Mumbai City,2021,Ghee,0.0
-Mumbai City,2021,Energy Milk,0.0
-Mumbai City,2021,Lassi,0.0
-Mumbai City,2021,Masala Milk,0.0
-Mumbai City,2021,Sustainable cow's milk,0.0
+Mumbai,2013,Milk Powder,0.0
+Mumbai,2013,White butter,0.0
+Mumbai,2013,Ghee,41.53
+Mumbai,2013,Energy Milk,26.92
+Mumbai,2013,Lassi,32.44
+Mumbai,2013,Masala Milk,7.56
+Mumbai,2013,Sustainable cow's milk,0.4
+Mumbai,2014,Milk Powder,0.0
+Mumbai,2014,White butter,0.0
+Mumbai,2014,Ghee,0.0
+Mumbai,2014,Energy Milk,49485.0
+Mumbai,2014,Lassi,933655.0
+Mumbai,2014,Masala Milk,156309.0
+Mumbai,2014,Sustainable cow's milk,0.0
+Mumbai,2015,Milk Powder,0.0
+Mumbai,2015,White butter,0.0
+Mumbai,2015,Ghee,0.0
+Mumbai,2015,Energy Milk,102537.0
+Mumbai,2015,Lassi,159512.0
+Mumbai,2015,Masala Milk,48765.0
+Mumbai,2015,Sustainable cow's milk,0.0
+Mumbai,2016,Milk Powder,0.0
+Mumbai,2016,White butter,0.0
+Mumbai,2016,Ghee,0.0
+Mumbai,2016,Energy Milk,0.0
+Mumbai,2016,Lassi,41270.0
+Mumbai,2016,Masala Milk,20025.0
+Mumbai,2016,Sustainable cow's milk,0.0
+Mumbai,2017,Milk Powder,0.0
+Mumbai,2017,White butter,0.0
+Mumbai,2017,Ghee,0.0
+Mumbai,2017,Energy Milk,0.0
+Mumbai,2017,Lassi,0.08
+Mumbai,2017,Masala Milk,0.05
+Mumbai,2017,Sustainable cow's milk,0.0
+Mumbai,2018,Milk Powder,0.0
+Mumbai,2018,White butter,0.0
+Mumbai,2018,Ghee,0.0
+Mumbai,2018,Energy Milk,0.0
+Mumbai,2018,Lassi,0.0
+Mumbai,2018,Masala Milk,0.0
+Mumbai,2018,Sustainable cow's milk,0.0
+Mumbai,2019,Milk Powder,0.0
+Mumbai,2019,White butter,0.0
+Mumbai,2019,Ghee,0.0
+Mumbai,2019,Energy Milk,0.0
+Mumbai,2019,Lassi,0.0
+Mumbai,2019,Masala Milk,0.0
+Mumbai,2019,Sustainable cow's milk,0.0
+Mumbai,2020,Milk Powder,0.0
+Mumbai,2020,White butter,0.0
+Mumbai,2020,Ghee,0.0
+Mumbai,2020,Energy Milk,0.0
+Mumbai,2020,Lassi,0.0
+Mumbai,2020,Masala Milk,0.0
+Mumbai,2020,Sustainable cow's milk,0.0
+Mumbai,2021,Milk Powder,0.0
+Mumbai,2021,White butter,0.0
+Mumbai,2021,Ghee,0.0
+Mumbai,2021,Energy Milk,0.0
+Mumbai,2021,Lassi,0.0
+Mumbai,2021,Masala Milk,0.0
+Mumbai,2021,Sustainable cow's milk,0.0
 Nagpur,2012,Milk Powder,352.53
 Nagpur,2012,White butter,206.76
 Nagpur,2012,Ghee,8.85

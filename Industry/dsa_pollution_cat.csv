@@ -1,4 +1,4 @@
-﻿District,Year,Taluka,Pollution Category ,Number of Industries 
+District,Year,Taluka,Pollution Category ,Number of Industries 
 Ahilyanagar,2014,Akole,Red,7
 Ahilyanagar,2014,Sangamner,Red,34
 Ahilyanagar,2014,Kopargaon,Red,41
@@ -1663,386 +1663,386 @@ Bhandara,2021,Sakoli,White,5
 Bhandara,2021,Lakhani,White,4
 Bhandara,2021,Pavani,White,2
 Bhandara,2021,Lakhandur,White,1
-Buldana,2013,Jalgaon Jamod,Red,0
-Buldana,2013,Sangrampur,Red,0
-Buldana,2013,Shegaon,Red,0
-Buldana,2013,Nandura,Red,0
-Buldana,2013,Malkapur,Red,0
-Buldana,2013,Motala,Red,0
-Buldana,2013,Khamgaon,Red,0
-Buldana,2013,Mehkar,Red,0
-Buldana,2013,Chikhali,Red,0
-Buldana,2013,Buldana,Red,0
-Buldana,2013,Deulgaon Raja,Red,0
-Buldana,2013,Sindkhed Raja,Red,0
-Buldana,2013,Lonar,Red,0
-Buldana,2013,Jalgaon Jamod,Orange,0
-Buldana,2013,Sangrampur,Orange,0
-Buldana,2013,Shegaon,Orange,0
-Buldana,2013,Nandura,Orange,0
-Buldana,2013,Malkapur,Orange,0
-Buldana,2013,Motala,Orange,0
-Buldana,2013,Khamgaon,Orange,0
-Buldana,2013,Mehkar,Orange,0
-Buldana,2013,Chikhali,Orange,0
-Buldana,2013,Buldana,Orange,0
-Buldana,2013,Deulgaon Raja,Orange,0
-Buldana,2013,Sindkhed Raja,Orange,0
-Buldana,2013,Lonar,Orange,0
-Buldana,2013,Jalgaon Jamod,Green,0
-Buldana,2013,Sangrampur,Green,0
-Buldana,2013,Shegaon,Green,0
-Buldana,2013,Nandura,Green,0
-Buldana,2013,Malkapur,Green,0
-Buldana,2013,Motala,Green,0
-Buldana,2013,Khamgaon,Green,0
-Buldana,2013,Mehkar,Green,0
-Buldana,2013,Chikhali,Green,0
-Buldana,2013,Buldana,Green,0
-Buldana,2013,Deulgaon Raja,Green,0
-Buldana,2013,Sindkhed Raja,Green,0
-Buldana,2013,Lonar,Green,0
-Buldana,2013,Jalgaon Jamod,White,0
-Buldana,2013,Sangrampur,White,0
-Buldana,2013,Shegaon,White,0
-Buldana,2013,Nandura,White,0
-Buldana,2013,Malkapur,White,0
-Buldana,2013,Motala,White,0
-Buldana,2013,Khamgaon,White,0
-Buldana,2013,Mehkar,White,0
-Buldana,2013,Chikhali,White,0
-Buldana,2013,Buldana,White,0
-Buldana,2013,Deulgaon Raja,White,0
-Buldana,2013,Sindkhed Raja,White,0
-Buldana,2013,Lonar,White,0
-Buldana,2014,Shegaon,Red,1
-Buldana,2014,Malkapur,Red,2
-Buldana,2014,Khamgaon,Red,7
-Buldana,2014,Chikhali,Red,4
-Buldana,2014,Deulgaon Raja,Red,1
-Buldana,2014,Lonar,Red,1
-Buldana,2014,Jalgaon Jamod,Orange,2
-Buldana,2014,Shegaon,Orange,0
-Buldana,2014,Malkapur,Orange,2
-Buldana,2014,Khamgaon,Orange,7
-Buldana,2014,Chikhali,Orange,6
-Buldana,2014,Buldana,Orange,3
-Buldana,2014,Deulgaon Raja,Orange,1
-Buldana,2014,Lonar,Orange,1
-Buldana,2014,Jalgaon Jamod,Green,1
-Buldana,2014,Shegaon,Green,2
-Buldana,2014,Nandura,Green,1
-Buldana,2014,Malkapur,Green,2
-Buldana,2014,Motala,Green,1
-Buldana,2014,Khamgaon,Green,10
-Buldana,2014,Mehkar,Green,4
-Buldana,2014,Chikhali,Green,10
-Buldana,2014,Buldana,Green,3
-Buldana,2014,Sindkhed Raja,Green,1
-Buldana,2015,Shegaon,Red,1
-Buldana,2015,Khamgaon,Red,3
-Buldana,2015,Chikhali,Red,1
-Buldana,2015,Buldana,Red,1
-Buldana,2015,Sindkhed Raja,Red,1
-Buldana,2015,Nandura,Orange,1
-Buldana,2015,Malkapur,Orange,3
-Buldana,2015,Khamgaon,Orange,7
-Buldana,2015,Mehkar,Orange,2
-Buldana,2015,Chikhali,Orange,2
-Buldana,2015,Deulgaon Raja,Orange,1
-Buldana,2015,Sangrampur,Green,2
-Buldana,2015,Malkapur,Green,6
-Buldana,2015,Khamgaon,Green,9
-Buldana,2015,Chikhali,Green,6
-Buldana,2015,Buldana,Green,3
-Buldana,2015,Deulgaon Raja,Green,2
-Buldana,2015,Sindkhed Raja,Green,1
-Buldana,2016,Jalgaon Jamod,Red,1
-Buldana,2016,Sangrampur,Red,0
-Buldana,2016,Shegaon,Red,0
-Buldana,2016,Nandura,Red,0
-Buldana,2016,Malkapur,Red,2
-Buldana,2016,Motala,Red,0
-Buldana,2016,Khamgaon,Red,4
-Buldana,2016,Mehkar,Red,0
-Buldana,2016,Chikhali,Red,0
-Buldana,2016,Buldana,Red,1
-Buldana,2016,Deulgaon Raja,Red,0
-Buldana,2016,Sindkhed Raja,Red,0
-Buldana,2016,Lonar,Red,0
-Buldana,2016,Jalgaon Jamod,Orange,2
-Buldana,2016,Sangrampur,Orange,1
-Buldana,2016,Shegaon,Orange,0
-Buldana,2016,Nandura,Orange,1
-Buldana,2016,Malkapur,Orange,6
-Buldana,2016,Motala,Orange,0
-Buldana,2016,Khamgaon,Orange,6
-Buldana,2016,Mehkar,Orange,0
-Buldana,2016,Chikhali,Orange,7
-Buldana,2016,Buldana,Orange,2
-Buldana,2016,Deulgaon Raja,Orange,2
-Buldana,2016,Sindkhed Raja,Orange,1
-Buldana,2016,Lonar,Orange,0
-Buldana,2016,Jalgaon Jamod,Green,0
-Buldana,2016,Sangrampur,Green,0
-Buldana,2016,Shegaon,Green,2
-Buldana,2016,Nandura,Green,5
-Buldana,2016,Malkapur,Green,11
-Buldana,2016,Motala,Green,1
-Buldana,2016,Khamgaon,Green,20
-Buldana,2016,Mehkar,Green,4
-Buldana,2016,Chikhali,Green,22
-Buldana,2016,Buldana,Green,8
-Buldana,2016,Deulgaon Raja,Green,4
-Buldana,2016,Sindkhed Raja,Green,0
-Buldana,2016,Lonar,Green,0
-Buldana,2017,Jalgaon Jamod,Red,1
-Buldana,2017,Sangrampur,Red,0
-Buldana,2017,Shegaon,Red,0
-Buldana,2017,Nandura,Red,0
-Buldana,2017,Malkapur,Red,2
-Buldana,2017,Motala,Red,0
-Buldana,2017,Khamgaon,Red,6
-Buldana,2017,Mehkar,Red,0
-Buldana,2017,Chikhali,Red,0
-Buldana,2017,Buldana,Red,0
-Buldana,2017,Deulgaon Raja,Red,0
-Buldana,2017,Sindkhed Raja,Red,0
-Buldana,2017,Lonar,Red,0
-Buldana,2017,Jalgaon Jamod,Orange,2
-Buldana,2017,Sangrampur,Orange,1
-Buldana,2017,Shegaon,Orange,0
-Buldana,2017,Nandura,Orange,2
-Buldana,2017,Malkapur,Orange,4
-Buldana,2017,Motala,Orange,2
-Buldana,2017,Khamgaon,Orange,10
-Buldana,2017,Mehkar,Orange,4
-Buldana,2017,Chikhali,Orange,9
-Buldana,2017,Buldana,Orange,4
-Buldana,2017,Deulgaon Raja,Orange,2
-Buldana,2017,Sindkhed Raja,Orange,0
-Buldana,2017,Lonar,Orange,0
-Buldana,2017,Jalgaon Jamod,Green,2
-Buldana,2017,Sangrampur,Green,1
-Buldana,2017,Shegaon,Green,2
-Buldana,2017,Nandura,Green,4
-Buldana,2017,Malkapur,Green,17
-Buldana,2017,Motala,Green,2
-Buldana,2017,Khamgaon,Green,27
-Buldana,2017,Mehkar,Green,10
-Buldana,2017,Chikhali,Green,25
-Buldana,2017,Buldana,Green,12
-Buldana,2017,Deulgaon Raja,Green,8
-Buldana,2017,Sindkhed Raja,Green,3
-Buldana,2017,Lonar,Green,5
-Buldana,2018,Jalgaon Jamod,Red,2
-Buldana,2018,Sangrampur,Red,0
-Buldana,2018,Shegaon,Red,9
-Buldana,2018,Nandura,Red,1
-Buldana,2018,Malkapur,Red,38
-Buldana,2018,Motala,Red,2
-Buldana,2018,Khamgaon,Red,51
-Buldana,2018,Mehkar,Red,0
-Buldana,2018,Chikhali,Red,8
-Buldana,2018,Buldana,Red,6
-Buldana,2018,Deulgaon Raja,Red,1
-Buldana,2018,Sindkhed Raja,Red,0
-Buldana,2018,Lonar,Red,0
-Buldana,2018,Jalgaon Jamod,Orange,16
-Buldana,2018,Sangrampur,Orange,0
-Buldana,2018,Shegaon,Orange,52
-Buldana,2018,Nandura,Orange,28
-Buldana,2018,Malkapur,Orange,51
-Buldana,2018,Motala,Orange,13
-Buldana,2018,Khamgaon,Orange,84
-Buldana,2018,Mehkar,Orange,14
-Buldana,2018,Chikhali,Orange,77
-Buldana,2018,Buldana,Orange,45
-Buldana,2018,Deulgaon Raja,Orange,47
-Buldana,2018,Sindkhed Raja,Orange,6
-Buldana,2018,Lonar,Orange,14
-Buldana,2018,Jalgaon Jamod,Green,21
-Buldana,2018,Sangrampur,Green,13
-Buldana,2018,Shegaon,Green,27
-Buldana,2018,Nandura,Green,41
-Buldana,2018,Malkapur,Green,28
-Buldana,2018,Motala,Green,16
-Buldana,2018,Khamgaon,Green,71
-Buldana,2018,Mehkar,Green,13
-Buldana,2018,Chikhali,Green,114
-Buldana,2018,Buldana,Green,48
-Buldana,2018,Deulgaon Raja,Green,20
-Buldana,2018,Sindkhed Raja,Green,8
-Buldana,2018,Lonar,Green,8
-Buldana,2018,Jalgaon Jamod,White,0
-Buldana,2018,Sangrampur,White,0
-Buldana,2018,Shegaon,White,0
-Buldana,2018,Nandura,White,0
-Buldana,2018,Malkapur,White,0
-Buldana,2018,Motala,White,0
-Buldana,2018,Khamgaon,White,0
-Buldana,2018,Mehkar,White,0
-Buldana,2018,Chikhali,White,0
-Buldana,2018,Buldana,White,0
-Buldana,2018,Deulgaon Raja,White,0
-Buldana,2018,Sindkhed Raja,White,0
-Buldana,2018,Lonar,White,0
-Buldana,2019,Jalgaon Jamod,Red,1
-Buldana,2019,Sangrampur,Red,0
-Buldana,2019,Shegaon,Red,0
-Buldana,2019,Nandura,Red,0
-Buldana,2019,Malkapur,Red,2
-Buldana,2019,Motala,Red,0
-Buldana,2019,Khamgaon,Red,6
-Buldana,2019,Mehkar,Red,0
-Buldana,2019,Chikhali,Red,0
-Buldana,2019,Buldana,Red,0
-Buldana,2019,Deulgaon Raja,Red,0
-Buldana,2019,Sindkhed Raja,Red,0
-Buldana,2019,Lonar,Red,0
-Buldana,2019,Jalgaon Jamod,Orange,2
-Buldana,2019,Sangrampur,Orange,1
-Buldana,2019,Shegaon,Orange,2
-Buldana,2019,Nandura,Orange,5
-Buldana,2019,Malkapur,Orange,5
-Buldana,2019,Motala,Orange,2
-Buldana,2019,Khamgaon,Orange,14
-Buldana,2019,Mehkar,Orange,5
-Buldana,2019,Chikhali,Orange,10
-Buldana,2019,Buldana,Orange,5
-Buldana,2019,Deulgaon Raja,Orange,2
-Buldana,2019,Sindkhed Raja,Orange,1
-Buldana,2019,Lonar,Orange,1
-Buldana,2019,Jalgaon Jamod,Green,4
-Buldana,2019,Sangrampur,Green,3
-Buldana,2019,Shegaon,Green,5
-Buldana,2019,Nandura,Green,9
-Buldana,2019,Malkapur,Green,18
-Buldana,2019,Motala,Green,5
-Buldana,2019,Khamgaon,Green,29
-Buldana,2019,Mehkar,Green,13
-Buldana,2019,Chikhali,Green,25
-Buldana,2019,Buldana,Green,14
-Buldana,2019,Deulgaon Raja,Green,8
-Buldana,2019,Sindkhed Raja,Green,3
-Buldana,2019,Lonar,Green,5
-Buldana,2019,Jalgaon Jamod,White,2
-Buldana,2019,Sangrampur,White,1
-Buldana,2019,Shegaon,White,0
-Buldana,2019,Nandura,White,3
-Buldana,2019,Malkapur,White,5
-Buldana,2019,Motala,White,0
-Buldana,2019,Khamgaon,White,12
-Buldana,2019,Mehkar,White,3
-Buldana,2019,Chikhali,White,15
-Buldana,2019,Buldana,White,7
-Buldana,2019,Deulgaon Raja,White,1
-Buldana,2019,Sindkhed Raja,White,0
-Buldana,2019,Lonar,White,1
-Buldana,2020,Jalgaon Jamod,Red,2
-Buldana,2020,Sangrampur,Red,0
-Buldana,2020,Shegaon,Red,0
-Buldana,2020,Nandura,Red,0
-Buldana,2020,Malkapur,Red,3
-Buldana,2020,Motala,Red,0
-Buldana,2020,Khamgaon,Red,8
-Buldana,2020,Mehkar,Red,0
-Buldana,2020,Chikhali,Red,0
-Buldana,2020,Buldana,Red,0
-Buldana,2020,Deulgaon Raja,Red,0
-Buldana,2020,Sindkhed Raja,Red,0
-Buldana,2020,Lonar,Red,0
-Buldana,2020,Jalgaon Jamod,Orange,3
-Buldana,2020,Sangrampur,Orange,1
-Buldana,2020,Shegaon,Orange,2
-Buldana,2020,Nandura,Orange,7
-Buldana,2020,Malkapur,Orange,8
-Buldana,2020,Motala,Orange,3
-Buldana,2020,Khamgaon,Orange,18
-Buldana,2020,Mehkar,Orange,7
-Buldana,2020,Chikhali,Orange,12
-Buldana,2020,Buldana,Orange,9
-Buldana,2020,Deulgaon Raja,Orange,3
-Buldana,2020,Sindkhed Raja,Orange,1
-Buldana,2020,Lonar,Orange,1
-Buldana,2020,Jalgaon Jamod,Green,7
-Buldana,2020,Sangrampur,Green,6
-Buldana,2020,Shegaon,Green,9
-Buldana,2020,Nandura,Green,10
-Buldana,2020,Malkapur,Green,23
-Buldana,2020,Motala,Green,9
-Buldana,2020,Khamgaon,Green,34
-Buldana,2020,Mehkar,Green,17
-Buldana,2020,Chikhali,Green,28
-Buldana,2020,Buldana,Green,22
-Buldana,2020,Deulgaon Raja,Green,12
-Buldana,2020,Sindkhed Raja,Green,5
-Buldana,2020,Lonar,Green,5
-Buldana,2020,Jalgaon Jamod,White,4
-Buldana,2020,Sangrampur,White,2
-Buldana,2020,Shegaon,White,4
-Buldana,2020,Nandura,White,4
-Buldana,2020,Malkapur,White,7
-Buldana,2020,Motala,White,1
-Buldana,2020,Khamgaon,White,14
-Buldana,2020,Mehkar,White,5
-Buldana,2020,Chikhali,White,17
-Buldana,2020,Buldana,White,10
-Buldana,2020,Deulgaon Raja,White,3
-Buldana,2020,Sindkhed Raja,White,1
-Buldana,2020,Lonar,White,1
-Buldana,2021,Jalgaon Jamod,Red,0
-Buldana,2021,Sangrampur,Red,0
-Buldana,2021,Shegaon,Red,0
-Buldana,2021,Nandura,Red,0
-Buldana,2021,Malkapur,Red,10
-Buldana,2021,Motala,Red,0
-Buldana,2021,Khamgaon,Red,13
-Buldana,2021,Mehkar,Red,0
-Buldana,2021,Chikhali,Red,2
-Buldana,2021,Buldana,Red,0
-Buldana,2021,Deulgaon Raja,Red,0
-Buldana,2021,Sindkhed Raja,Red,0
-Buldana,2021,Lonar,Red,0
-Buldana,2021,Jalgaon Jamod,Orange,1
-Buldana,2021,Sangrampur,Orange,0
-Buldana,2021,Shegaon,Orange,9
-Buldana,2021,Nandura,Orange,7
-Buldana,2021,Malkapur,Orange,17
-Buldana,2021,Motala,Orange,6
-Buldana,2021,Khamgaon,Orange,69
-Buldana,2021,Mehkar,Orange,13
-Buldana,2021,Chikhali,Orange,19
-Buldana,2021,Buldana,Orange,22
-Buldana,2021,Deulgaon Raja,Orange,11
-Buldana,2021,Sindkhed Raja,Orange,3
-Buldana,2021,Lonar,Orange,6
-Buldana,2021,Jalgaon Jamod,Green,7
-Buldana,2021,Sangrampur,Green,4
-Buldana,2021,Shegaon,Green,28
-Buldana,2021,Nandura,Green,114
-Buldana,2021,Malkapur,Green,45
-Buldana,2021,Motala,Green,9
-Buldana,2021,Khamgaon,Green,97
-Buldana,2021,Mehkar,Green,15
-Buldana,2021,Chikhali,Green,75
-Buldana,2021,Buldana,Green,18
-Buldana,2021,Deulgaon Raja,Green,19
-Buldana,2021,Sindkhed Raja,Green,6
-Buldana,2021,Lonar,Green,7
-Buldana,2021,Jalgaon Jamod,White,7
-Buldana,2021,Sangrampur,White,0
-Buldana,2021,Shegaon,White,6
-Buldana,2021,Nandura,White,4
-Buldana,2021,Malkapur,White,11
-Buldana,2021,Motala,White,1
-Buldana,2021,Khamgaon,White,22
-Buldana,2021,Mehkar,White,6
-Buldana,2021,Chikhali,White,64
-Buldana,2021,Buldana,White,14
-Buldana,2021,Deulgaon Raja,White,5
-Buldana,2021,Sindkhed Raja,White,5
-Buldana,2021,Lonar,White,0
+Buldhana,2013,Jalgaon Jamod,Red,0
+Buldhana,2013,Sangrampur,Red,0
+Buldhana,2013,Shegaon,Red,0
+Buldhana,2013,Nandura,Red,0
+Buldhana,2013,Malkapur,Red,0
+Buldhana,2013,Motala,Red,0
+Buldhana,2013,Khamgaon,Red,0
+Buldhana,2013,Mehkar,Red,0
+Buldhana,2013,Chikhali,Red,0
+Buldhana,2013,Buldana,Red,0
+Buldhana,2013,Deulgaon Raja,Red,0
+Buldhana,2013,Sindkhed Raja,Red,0
+Buldhana,2013,Lonar,Red,0
+Buldhana,2013,Jalgaon Jamod,Orange,0
+Buldhana,2013,Sangrampur,Orange,0
+Buldhana,2013,Shegaon,Orange,0
+Buldhana,2013,Nandura,Orange,0
+Buldhana,2013,Malkapur,Orange,0
+Buldhana,2013,Motala,Orange,0
+Buldhana,2013,Khamgaon,Orange,0
+Buldhana,2013,Mehkar,Orange,0
+Buldhana,2013,Chikhali,Orange,0
+Buldhana,2013,Buldana,Orange,0
+Buldhana,2013,Deulgaon Raja,Orange,0
+Buldhana,2013,Sindkhed Raja,Orange,0
+Buldhana,2013,Lonar,Orange,0
+Buldhana,2013,Jalgaon Jamod,Green,0
+Buldhana,2013,Sangrampur,Green,0
+Buldhana,2013,Shegaon,Green,0
+Buldhana,2013,Nandura,Green,0
+Buldhana,2013,Malkapur,Green,0
+Buldhana,2013,Motala,Green,0
+Buldhana,2013,Khamgaon,Green,0
+Buldhana,2013,Mehkar,Green,0
+Buldhana,2013,Chikhali,Green,0
+Buldhana,2013,Buldana,Green,0
+Buldhana,2013,Deulgaon Raja,Green,0
+Buldhana,2013,Sindkhed Raja,Green,0
+Buldhana,2013,Lonar,Green,0
+Buldhana,2013,Jalgaon Jamod,White,0
+Buldhana,2013,Sangrampur,White,0
+Buldhana,2013,Shegaon,White,0
+Buldhana,2013,Nandura,White,0
+Buldhana,2013,Malkapur,White,0
+Buldhana,2013,Motala,White,0
+Buldhana,2013,Khamgaon,White,0
+Buldhana,2013,Mehkar,White,0
+Buldhana,2013,Chikhali,White,0
+Buldhana,2013,Buldana,White,0
+Buldhana,2013,Deulgaon Raja,White,0
+Buldhana,2013,Sindkhed Raja,White,0
+Buldhana,2013,Lonar,White,0
+Buldhana,2014,Shegaon,Red,1
+Buldhana,2014,Malkapur,Red,2
+Buldhana,2014,Khamgaon,Red,7
+Buldhana,2014,Chikhali,Red,4
+Buldhana,2014,Deulgaon Raja,Red,1
+Buldhana,2014,Lonar,Red,1
+Buldhana,2014,Jalgaon Jamod,Orange,2
+Buldhana,2014,Shegaon,Orange,0
+Buldhana,2014,Malkapur,Orange,2
+Buldhana,2014,Khamgaon,Orange,7
+Buldhana,2014,Chikhali,Orange,6
+Buldhana,2014,Buldana,Orange,3
+Buldhana,2014,Deulgaon Raja,Orange,1
+Buldhana,2014,Lonar,Orange,1
+Buldhana,2014,Jalgaon Jamod,Green,1
+Buldhana,2014,Shegaon,Green,2
+Buldhana,2014,Nandura,Green,1
+Buldhana,2014,Malkapur,Green,2
+Buldhana,2014,Motala,Green,1
+Buldhana,2014,Khamgaon,Green,10
+Buldhana,2014,Mehkar,Green,4
+Buldhana,2014,Chikhali,Green,10
+Buldhana,2014,Buldana,Green,3
+Buldhana,2014,Sindkhed Raja,Green,1
+Buldhana,2015,Shegaon,Red,1
+Buldhana,2015,Khamgaon,Red,3
+Buldhana,2015,Chikhali,Red,1
+Buldhana,2015,Buldana,Red,1
+Buldhana,2015,Sindkhed Raja,Red,1
+Buldhana,2015,Nandura,Orange,1
+Buldhana,2015,Malkapur,Orange,3
+Buldhana,2015,Khamgaon,Orange,7
+Buldhana,2015,Mehkar,Orange,2
+Buldhana,2015,Chikhali,Orange,2
+Buldhana,2015,Deulgaon Raja,Orange,1
+Buldhana,2015,Sangrampur,Green,2
+Buldhana,2015,Malkapur,Green,6
+Buldhana,2015,Khamgaon,Green,9
+Buldhana,2015,Chikhali,Green,6
+Buldhana,2015,Buldana,Green,3
+Buldhana,2015,Deulgaon Raja,Green,2
+Buldhana,2015,Sindkhed Raja,Green,1
+Buldhana,2016,Jalgaon Jamod,Red,1
+Buldhana,2016,Sangrampur,Red,0
+Buldhana,2016,Shegaon,Red,0
+Buldhana,2016,Nandura,Red,0
+Buldhana,2016,Malkapur,Red,2
+Buldhana,2016,Motala,Red,0
+Buldhana,2016,Khamgaon,Red,4
+Buldhana,2016,Mehkar,Red,0
+Buldhana,2016,Chikhali,Red,0
+Buldhana,2016,Buldana,Red,1
+Buldhana,2016,Deulgaon Raja,Red,0
+Buldhana,2016,Sindkhed Raja,Red,0
+Buldhana,2016,Lonar,Red,0
+Buldhana,2016,Jalgaon Jamod,Orange,2
+Buldhana,2016,Sangrampur,Orange,1
+Buldhana,2016,Shegaon,Orange,0
+Buldhana,2016,Nandura,Orange,1
+Buldhana,2016,Malkapur,Orange,6
+Buldhana,2016,Motala,Orange,0
+Buldhana,2016,Khamgaon,Orange,6
+Buldhana,2016,Mehkar,Orange,0
+Buldhana,2016,Chikhali,Orange,7
+Buldhana,2016,Buldana,Orange,2
+Buldhana,2016,Deulgaon Raja,Orange,2
+Buldhana,2016,Sindkhed Raja,Orange,1
+Buldhana,2016,Lonar,Orange,0
+Buldhana,2016,Jalgaon Jamod,Green,0
+Buldhana,2016,Sangrampur,Green,0
+Buldhana,2016,Shegaon,Green,2
+Buldhana,2016,Nandura,Green,5
+Buldhana,2016,Malkapur,Green,11
+Buldhana,2016,Motala,Green,1
+Buldhana,2016,Khamgaon,Green,20
+Buldhana,2016,Mehkar,Green,4
+Buldhana,2016,Chikhali,Green,22
+Buldhana,2016,Buldana,Green,8
+Buldhana,2016,Deulgaon Raja,Green,4
+Buldhana,2016,Sindkhed Raja,Green,0
+Buldhana,2016,Lonar,Green,0
+Buldhana,2017,Jalgaon Jamod,Red,1
+Buldhana,2017,Sangrampur,Red,0
+Buldhana,2017,Shegaon,Red,0
+Buldhana,2017,Nandura,Red,0
+Buldhana,2017,Malkapur,Red,2
+Buldhana,2017,Motala,Red,0
+Buldhana,2017,Khamgaon,Red,6
+Buldhana,2017,Mehkar,Red,0
+Buldhana,2017,Chikhali,Red,0
+Buldhana,2017,Buldana,Red,0
+Buldhana,2017,Deulgaon Raja,Red,0
+Buldhana,2017,Sindkhed Raja,Red,0
+Buldhana,2017,Lonar,Red,0
+Buldhana,2017,Jalgaon Jamod,Orange,2
+Buldhana,2017,Sangrampur,Orange,1
+Buldhana,2017,Shegaon,Orange,0
+Buldhana,2017,Nandura,Orange,2
+Buldhana,2017,Malkapur,Orange,4
+Buldhana,2017,Motala,Orange,2
+Buldhana,2017,Khamgaon,Orange,10
+Buldhana,2017,Mehkar,Orange,4
+Buldhana,2017,Chikhali,Orange,9
+Buldhana,2017,Buldana,Orange,4
+Buldhana,2017,Deulgaon Raja,Orange,2
+Buldhana,2017,Sindkhed Raja,Orange,0
+Buldhana,2017,Lonar,Orange,0
+Buldhana,2017,Jalgaon Jamod,Green,2
+Buldhana,2017,Sangrampur,Green,1
+Buldhana,2017,Shegaon,Green,2
+Buldhana,2017,Nandura,Green,4
+Buldhana,2017,Malkapur,Green,17
+Buldhana,2017,Motala,Green,2
+Buldhana,2017,Khamgaon,Green,27
+Buldhana,2017,Mehkar,Green,10
+Buldhana,2017,Chikhali,Green,25
+Buldhana,2017,Buldana,Green,12
+Buldhana,2017,Deulgaon Raja,Green,8
+Buldhana,2017,Sindkhed Raja,Green,3
+Buldhana,2017,Lonar,Green,5
+Buldhana,2018,Jalgaon Jamod,Red,2
+Buldhana,2018,Sangrampur,Red,0
+Buldhana,2018,Shegaon,Red,9
+Buldhana,2018,Nandura,Red,1
+Buldhana,2018,Malkapur,Red,38
+Buldhana,2018,Motala,Red,2
+Buldhana,2018,Khamgaon,Red,51
+Buldhana,2018,Mehkar,Red,0
+Buldhana,2018,Chikhali,Red,8
+Buldhana,2018,Buldana,Red,6
+Buldhana,2018,Deulgaon Raja,Red,1
+Buldhana,2018,Sindkhed Raja,Red,0
+Buldhana,2018,Lonar,Red,0
+Buldhana,2018,Jalgaon Jamod,Orange,16
+Buldhana,2018,Sangrampur,Orange,0
+Buldhana,2018,Shegaon,Orange,52
+Buldhana,2018,Nandura,Orange,28
+Buldhana,2018,Malkapur,Orange,51
+Buldhana,2018,Motala,Orange,13
+Buldhana,2018,Khamgaon,Orange,84
+Buldhana,2018,Mehkar,Orange,14
+Buldhana,2018,Chikhali,Orange,77
+Buldhana,2018,Buldana,Orange,45
+Buldhana,2018,Deulgaon Raja,Orange,47
+Buldhana,2018,Sindkhed Raja,Orange,6
+Buldhana,2018,Lonar,Orange,14
+Buldhana,2018,Jalgaon Jamod,Green,21
+Buldhana,2018,Sangrampur,Green,13
+Buldhana,2018,Shegaon,Green,27
+Buldhana,2018,Nandura,Green,41
+Buldhana,2018,Malkapur,Green,28
+Buldhana,2018,Motala,Green,16
+Buldhana,2018,Khamgaon,Green,71
+Buldhana,2018,Mehkar,Green,13
+Buldhana,2018,Chikhali,Green,114
+Buldhana,2018,Buldana,Green,48
+Buldhana,2018,Deulgaon Raja,Green,20
+Buldhana,2018,Sindkhed Raja,Green,8
+Buldhana,2018,Lonar,Green,8
+Buldhana,2018,Jalgaon Jamod,White,0
+Buldhana,2018,Sangrampur,White,0
+Buldhana,2018,Shegaon,White,0
+Buldhana,2018,Nandura,White,0
+Buldhana,2018,Malkapur,White,0
+Buldhana,2018,Motala,White,0
+Buldhana,2018,Khamgaon,White,0
+Buldhana,2018,Mehkar,White,0
+Buldhana,2018,Chikhali,White,0
+Buldhana,2018,Buldana,White,0
+Buldhana,2018,Deulgaon Raja,White,0
+Buldhana,2018,Sindkhed Raja,White,0
+Buldhana,2018,Lonar,White,0
+Buldhana,2019,Jalgaon Jamod,Red,1
+Buldhana,2019,Sangrampur,Red,0
+Buldhana,2019,Shegaon,Red,0
+Buldhana,2019,Nandura,Red,0
+Buldhana,2019,Malkapur,Red,2
+Buldhana,2019,Motala,Red,0
+Buldhana,2019,Khamgaon,Red,6
+Buldhana,2019,Mehkar,Red,0
+Buldhana,2019,Chikhali,Red,0
+Buldhana,2019,Buldana,Red,0
+Buldhana,2019,Deulgaon Raja,Red,0
+Buldhana,2019,Sindkhed Raja,Red,0
+Buldhana,2019,Lonar,Red,0
+Buldhana,2019,Jalgaon Jamod,Orange,2
+Buldhana,2019,Sangrampur,Orange,1
+Buldhana,2019,Shegaon,Orange,2
+Buldhana,2019,Nandura,Orange,5
+Buldhana,2019,Malkapur,Orange,5
+Buldhana,2019,Motala,Orange,2
+Buldhana,2019,Khamgaon,Orange,14
+Buldhana,2019,Mehkar,Orange,5
+Buldhana,2019,Chikhali,Orange,10
+Buldhana,2019,Buldana,Orange,5
+Buldhana,2019,Deulgaon Raja,Orange,2
+Buldhana,2019,Sindkhed Raja,Orange,1
+Buldhana,2019,Lonar,Orange,1
+Buldhana,2019,Jalgaon Jamod,Green,4
+Buldhana,2019,Sangrampur,Green,3
+Buldhana,2019,Shegaon,Green,5
+Buldhana,2019,Nandura,Green,9
+Buldhana,2019,Malkapur,Green,18
+Buldhana,2019,Motala,Green,5
+Buldhana,2019,Khamgaon,Green,29
+Buldhana,2019,Mehkar,Green,13
+Buldhana,2019,Chikhali,Green,25
+Buldhana,2019,Buldana,Green,14
+Buldhana,2019,Deulgaon Raja,Green,8
+Buldhana,2019,Sindkhed Raja,Green,3
+Buldhana,2019,Lonar,Green,5
+Buldhana,2019,Jalgaon Jamod,White,2
+Buldhana,2019,Sangrampur,White,1
+Buldhana,2019,Shegaon,White,0
+Buldhana,2019,Nandura,White,3
+Buldhana,2019,Malkapur,White,5
+Buldhana,2019,Motala,White,0
+Buldhana,2019,Khamgaon,White,12
+Buldhana,2019,Mehkar,White,3
+Buldhana,2019,Chikhali,White,15
+Buldhana,2019,Buldana,White,7
+Buldhana,2019,Deulgaon Raja,White,1
+Buldhana,2019,Sindkhed Raja,White,0
+Buldhana,2019,Lonar,White,1
+Buldhana,2020,Jalgaon Jamod,Red,2
+Buldhana,2020,Sangrampur,Red,0
+Buldhana,2020,Shegaon,Red,0
+Buldhana,2020,Nandura,Red,0
+Buldhana,2020,Malkapur,Red,3
+Buldhana,2020,Motala,Red,0
+Buldhana,2020,Khamgaon,Red,8
+Buldhana,2020,Mehkar,Red,0
+Buldhana,2020,Chikhali,Red,0
+Buldhana,2020,Buldana,Red,0
+Buldhana,2020,Deulgaon Raja,Red,0
+Buldhana,2020,Sindkhed Raja,Red,0
+Buldhana,2020,Lonar,Red,0
+Buldhana,2020,Jalgaon Jamod,Orange,3
+Buldhana,2020,Sangrampur,Orange,1
+Buldhana,2020,Shegaon,Orange,2
+Buldhana,2020,Nandura,Orange,7
+Buldhana,2020,Malkapur,Orange,8
+Buldhana,2020,Motala,Orange,3
+Buldhana,2020,Khamgaon,Orange,18
+Buldhana,2020,Mehkar,Orange,7
+Buldhana,2020,Chikhali,Orange,12
+Buldhana,2020,Buldana,Orange,9
+Buldhana,2020,Deulgaon Raja,Orange,3
+Buldhana,2020,Sindkhed Raja,Orange,1
+Buldhana,2020,Lonar,Orange,1
+Buldhana,2020,Jalgaon Jamod,Green,7
+Buldhana,2020,Sangrampur,Green,6
+Buldhana,2020,Shegaon,Green,9
+Buldhana,2020,Nandura,Green,10
+Buldhana,2020,Malkapur,Green,23
+Buldhana,2020,Motala,Green,9
+Buldhana,2020,Khamgaon,Green,34
+Buldhana,2020,Mehkar,Green,17
+Buldhana,2020,Chikhali,Green,28
+Buldhana,2020,Buldana,Green,22
+Buldhana,2020,Deulgaon Raja,Green,12
+Buldhana,2020,Sindkhed Raja,Green,5
+Buldhana,2020,Lonar,Green,5
+Buldhana,2020,Jalgaon Jamod,White,4
+Buldhana,2020,Sangrampur,White,2
+Buldhana,2020,Shegaon,White,4
+Buldhana,2020,Nandura,White,4
+Buldhana,2020,Malkapur,White,7
+Buldhana,2020,Motala,White,1
+Buldhana,2020,Khamgaon,White,14
+Buldhana,2020,Mehkar,White,5
+Buldhana,2020,Chikhali,White,17
+Buldhana,2020,Buldana,White,10
+Buldhana,2020,Deulgaon Raja,White,3
+Buldhana,2020,Sindkhed Raja,White,1
+Buldhana,2020,Lonar,White,1
+Buldhana,2021,Jalgaon Jamod,Red,0
+Buldhana,2021,Sangrampur,Red,0
+Buldhana,2021,Shegaon,Red,0
+Buldhana,2021,Nandura,Red,0
+Buldhana,2021,Malkapur,Red,10
+Buldhana,2021,Motala,Red,0
+Buldhana,2021,Khamgaon,Red,13
+Buldhana,2021,Mehkar,Red,0
+Buldhana,2021,Chikhali,Red,2
+Buldhana,2021,Buldana,Red,0
+Buldhana,2021,Deulgaon Raja,Red,0
+Buldhana,2021,Sindkhed Raja,Red,0
+Buldhana,2021,Lonar,Red,0
+Buldhana,2021,Jalgaon Jamod,Orange,1
+Buldhana,2021,Sangrampur,Orange,0
+Buldhana,2021,Shegaon,Orange,9
+Buldhana,2021,Nandura,Orange,7
+Buldhana,2021,Malkapur,Orange,17
+Buldhana,2021,Motala,Orange,6
+Buldhana,2021,Khamgaon,Orange,69
+Buldhana,2021,Mehkar,Orange,13
+Buldhana,2021,Chikhali,Orange,19
+Buldhana,2021,Buldana,Orange,22
+Buldhana,2021,Deulgaon Raja,Orange,11
+Buldhana,2021,Sindkhed Raja,Orange,3
+Buldhana,2021,Lonar,Orange,6
+Buldhana,2021,Jalgaon Jamod,Green,7
+Buldhana,2021,Sangrampur,Green,4
+Buldhana,2021,Shegaon,Green,28
+Buldhana,2021,Nandura,Green,114
+Buldhana,2021,Malkapur,Green,45
+Buldhana,2021,Motala,Green,9
+Buldhana,2021,Khamgaon,Green,97
+Buldhana,2021,Mehkar,Green,15
+Buldhana,2021,Chikhali,Green,75
+Buldhana,2021,Buldana,Green,18
+Buldhana,2021,Deulgaon Raja,Green,19
+Buldhana,2021,Sindkhed Raja,Green,6
+Buldhana,2021,Lonar,Green,7
+Buldhana,2021,Jalgaon Jamod,White,7
+Buldhana,2021,Sangrampur,White,0
+Buldhana,2021,Shegaon,White,6
+Buldhana,2021,Nandura,White,4
+Buldhana,2021,Malkapur,White,11
+Buldhana,2021,Motala,White,1
+Buldhana,2021,Khamgaon,White,22
+Buldhana,2021,Mehkar,White,6
+Buldhana,2021,Chikhali,White,64
+Buldhana,2021,Buldana,White,14
+Buldhana,2021,Deulgaon Raja,White,5
+Buldhana,2021,Sindkhed Raja,White,5
+Buldhana,2021,Lonar,White,0
 Chandrapur,2012,Varora,Red,13
 Chandrapur,2012,Chimur,Red,8
 Chandrapur,2012,Nagbhid,Red,2
@@ -4485,37 +4485,37 @@ Latur,2021,Aosa,White,22
 Latur,2021,Nilanga,White,19
 Latur,2021,Devani,White,8
 Latur,2021,Udgir,White,16
-Mumbai City,2013,Mumbai City,Red,499
-Mumbai City,2013,Mumbai City,Orange,899
-Mumbai City,2013,Mumbai City,Green,1970
-Mumbai City,2014,Mumbai City,Red,509
-Mumbai City,2014,Mumbai City,Orange,848
-Mumbai City,2014,Mumbai City,Green,2205
-Mumbai City,2015,Mumbai City,Red,526
-Mumbai City,2015,Mumbai City,Orange,848
-Mumbai City,2015,Mumbai City,Green,2220
-Mumbai City,2016,Mumbai City,Red,533
-Mumbai City,2016,Mumbai City,Orange,856
-Mumbai City,2016,Mumbai City,Green,2222
-Mumbai City,2017,Mumbai City,Red,1056
-Mumbai City,2017,Mumbai City,Orange,1236
-Mumbai City,2017,Mumbai City,Green,1600
-Mumbai City,2018,Mumbai City,Red,773
-Mumbai City,2018,Mumbai City,Orange,1491
-Mumbai City,2018,Mumbai City,Green,2578
-Mumbai City,2018,Mumbai City,White,23
-Mumbai City,2019,Mumbai City,Red,1539
-Mumbai City,2019,Mumbai City,Orange,1412
-Mumbai City,2019,Mumbai City,Green,2192
-Mumbai City,2019,Mumbai City,White,76
-Mumbai City,2020,Mumbai City,Red,929
-Mumbai City,2020,Mumbai City,Orange,1884
-Mumbai City,2020,Mumbai City,Green,2494
-Mumbai City,2020,Mumbai City,White,45
-Mumbai City,2021,Mumbai City,Red,1291
-Mumbai City,2021,Mumbai City,Orange,1715
-Mumbai City,2021,Mumbai City,Green,2258
-Mumbai City,2021,Mumbai City,White,35
+Mumbai,2013,Mumbai City,Red,499
+Mumbai,2013,Mumbai City,Orange,899
+Mumbai,2013,Mumbai City,Green,1970
+Mumbai,2014,Mumbai City,Red,509
+Mumbai,2014,Mumbai City,Orange,848
+Mumbai,2014,Mumbai City,Green,2205
+Mumbai,2015,Mumbai City,Red,526
+Mumbai,2015,Mumbai City,Orange,848
+Mumbai,2015,Mumbai City,Green,2220
+Mumbai,2016,Mumbai City,Red,533
+Mumbai,2016,Mumbai City,Orange,856
+Mumbai,2016,Mumbai City,Green,2222
+Mumbai,2017,Mumbai City,Red,1056
+Mumbai,2017,Mumbai City,Orange,1236
+Mumbai,2017,Mumbai City,Green,1600
+Mumbai,2018,Mumbai City,Red,773
+Mumbai,2018,Mumbai City,Orange,1491
+Mumbai,2018,Mumbai City,Green,2578
+Mumbai,2018,Mumbai City,White,23
+Mumbai,2019,Mumbai City,Red,1539
+Mumbai,2019,Mumbai City,Orange,1412
+Mumbai,2019,Mumbai City,Green,2192
+Mumbai,2019,Mumbai City,White,76
+Mumbai,2020,Mumbai City,Red,929
+Mumbai,2020,Mumbai City,Orange,1884
+Mumbai,2020,Mumbai City,Green,2494
+Mumbai,2020,Mumbai City,White,45
+Mumbai,2021,Mumbai City,Red,1291
+Mumbai,2021,Mumbai City,Orange,1715
+Mumbai,2021,Mumbai City,Green,2258
+Mumbai,2021,Mumbai City,White,35
 Mumbai Suburban,2017,Adheri,Red,427
 Mumbai Suburban,2017,Borivali,Red,286
 Mumbai Suburban,2017,Kurla,Red,372

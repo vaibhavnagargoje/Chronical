@@ -2,7 +2,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Theft,1519.0
 2014,Akola,Theft,736.0
 2014,Amravati,Theft,2036.0
-2014,Chhatrapati Sambhaji Nagar,Theft,2336.0
+2014,Chh. Sambhaji Nagar,Theft,2336.0
 2014,Beed,Theft,678.0
 2014,Bhandara,Theft,476.0
 2014,Buldhana,Theft,669.0
@@ -15,11 +15,11 @@ Year,District,Crime,Cases
 2014,Jalna,Theft,582.0
 2014,Kolhapur,Theft,883.0
 2014,Latur,Theft,549.0
-2014,Mumbai City,Theft,12348.0
+2014,Mumbai,Theft,12348.0
 2014,Nagpur,Theft,5517.0
 2014,Nanded,Theft,511.0
 2014,Nandurbar,Theft,157.0
-2014,Nasik,Theft,1941.0
+2014,Nashik,Theft,1941.0
 2014,Dharashiv,Theft,427.0
 2014,Palghar,Theft,1071.0
 2014,Parbhani,Theft,488.0
@@ -37,7 +37,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Theft,1839.0
 2015,Akola,Theft,741.0
 2015,Amravati,Theft,2451.0
-2015,Chhatrapati Sambhaji Nagar,Theft,3269.0
+2015,Chh. Sambhaji Nagar,Theft,3269.0
 2015,Beed,Theft,863.0
 2015,Bhandara,Theft,378.0
 2015,Buldhana,Theft,672.0
@@ -50,11 +50,11 @@ Year,District,Crime,Cases
 2015,Jalna,Theft,576.0
 2015,Kolhapur,Theft,947.0
 2015,Latur,Theft,626.0
-2015,Mumbai City,Theft,13707.0
+2015,Mumbai,Theft,13707.0
 2015,Nagpur,Theft,5920.0
 2015,Nanded,Theft,688.0
 2015,Nandurbar,Theft,207.0
-2015,Nasik,Theft,2091.0
+2015,Nashik,Theft,2091.0
 2015,Dharashiv,Theft,530.0
 2015,Palghar,Theft,1143.0
 2015,Parbhani,Theft,527.0
@@ -72,7 +72,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Theft,1557.0
 2016,Akola,Theft,591.0
 2016,Amravati,Theft,2005.0
-2016,Chhatrapati Sambhaji Nagar,Theft,3449.0
+2016,Chh. Sambhaji Nagar,Theft,3449.0
 2016,Beed,Theft,799.0
 2016,Bhandara,Theft,472.0
 2016,Buldhana,Theft,611.0
@@ -85,11 +85,11 @@ Year,District,Crime,Cases
 2016,Jalna,Theft,549.0
 2016,Kolhapur,Theft,898.0
 2016,Latur,Theft,565.0
-2016,Mumbai City,Theft,13154.0
+2016,Mumbai,Theft,13154.0
 2016,Nagpur,Theft,6534.0
 2016,Nanded,Theft,747.0
 2016,Nandurbar,Theft,264.0
-2016,Nasik,Theft,1999.0
+2016,Nashik,Theft,1999.0
 2016,Dharashiv,Theft,407.0
 2016,Palghar,Theft,1094.0
 2016,Parbhani,Theft,477.0
@@ -107,7 +107,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Theft,1791.0
 2017,Akola,Theft,604.0
 2017,Amravati,Theft,1750.0
-2017,Chhatrapati Sambhaji Nagar,Theft,2702.0
+2017,Chh. Sambhaji Nagar,Theft,2702.0
 2017,Beed,Theft,763.0
 2017,Bhandara,Theft,375.0
 2017,Buldhana,Theft,701.0
@@ -120,11 +120,11 @@ Year,District,Crime,Cases
 2017,Jalna,Theft,670.0
 2017,Kolhapur,Theft,958.0
 2017,Latur,Theft,566.0
-2017,Mumbai City,Theft,34211.0
+2017,Mumbai,Theft,34211.0
 2017,Nagpur,Theft,10135.0
 2017,Nanded,Theft,796.0
 2017,Nandurbar,Theft,289.0
-2017,Nasik,Theft,2055.0
+2017,Nashik,Theft,2055.0
 2017,Dharashiv,Theft,449.0
 2017,Palghar,Theft,1024.0
 2017,Parbhani,Theft,475.0
@@ -142,7 +142,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Theft,2203.0
 2018,Akola,Theft,573.0
 2018,Amravati,Theft,1744.0
-2018,Chhatrapati Sambhaji Nagar,Theft,7505.0
+2018,Chh. Sambhaji Nagar,Theft,7505.0
 2018,Beed,Theft,688.0
 2018,Bhandara,Theft,383.0
 2018,Buldhana,Theft,792.0
@@ -155,11 +155,11 @@ Year,District,Crime,Cases
 2018,Jalna,Theft,823.0
 2018,Kolhapur,Theft,1092.0
 2018,Latur,Theft,597.0
-2018,Mumbai City,Theft,47202.0
+2018,Mumbai,Theft,47202.0
 2018,Nagpur,Theft,7319.0
 2018,Nanded,Theft,573.0
 2018,Nandurbar,Theft,300.0
-2018,Nasik,Theft,2062.0
+2018,Nashik,Theft,2062.0
 2018,Dharashiv,Theft,485.0
 2018,Palghar,Theft,1443.0
 2018,Parbhani,Theft,537.0
@@ -177,7 +177,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Theft,2938.0
 2019,Akola,Theft,592.0
 2019,Amravati,Theft,1743.0
-2019,Chhatrapati Sambhaji Nagar,Theft,7185.0
+2019,Chh. Sambhaji Nagar,Theft,7185.0
 2019,Beed,Theft,690.0
 2019,Bhandara,Theft,449.0
 2019,Buldhana,Theft,896.0
@@ -190,11 +190,11 @@ Year,District,Crime,Cases
 2019,Jalna,Theft,982.0
 2019,Kolhapur,Theft,1015.0
 2019,Latur,Theft,616.0
-2019,Mumbai City,Theft,40168.0
+2019,Mumbai,Theft,40168.0
 2019,Nagpur,Theft,6541.0
 2019,Nanded,Theft,898.0
 2019,Nandurbar,Theft,334.0
-2019,Nasik,Theft,2133.0
+2019,Nashik,Theft,2133.0
 2019,Dharashiv,Theft,584.0
 2019,Palghar,Theft,1356.0
 2019,Parbhani,Theft,596.0
@@ -212,7 +212,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Theft,2128.0
 2020,Akola,Theft,784.0
 2020,Amravati,Theft,1697.0
-2020,Chhatrapati Sambhaji Nagar,Theft,3309.0
+2020,Chh. Sambhaji Nagar,Theft,3309.0
 2020,Beed,Theft,686.0
 2020,Bhandara,Theft,519.0
 2020,Buldhana,Theft,922.0
@@ -225,11 +225,11 @@ Year,District,Crime,Cases
 2020,Jalna,Theft,1215.0
 2020,Kolhapur,Theft,880.0
 2020,Latur,Theft,649.0
-2020,Mumbai City,Theft,13716.0
+2020,Mumbai,Theft,13716.0
 2020,Nagpur,Theft,3710.0
 2020,Nanded,Theft,952.0
 2020,Nandurbar,Theft,311.0
-2020,Nasik,Theft,1621.0
+2020,Nashik,Theft,1621.0
 2020,Dharashiv,Theft,455.0
 2020,Palghar,Theft,233.0
 2020,Parbhani,Theft,682.0
@@ -247,7 +247,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Theft,3123.0
 2021,Akola,Theft,815.0
 2021,Amravati,Theft,1802.0
-2021,Chhatrapati Sambhaji Nagar,Theft,4303.0
+2021,Chh. Sambhaji Nagar,Theft,4303.0
 2021,Beed,Theft,1256.0
 2021,Bhandara,Theft,477.0
 2021,Buldhana,Theft,1241.0
@@ -260,11 +260,11 @@ Year,District,Crime,Cases
 2021,Jalna,Theft,1255.0
 2021,Kolhapur,Theft,1541.0
 2021,Latur,Theft,858.0
-2021,Mumbai City,Theft,13659.0
+2021,Mumbai,Theft,13659.0
 2021,Nagpur,Theft,4345.0
 2021,Nanded,Theft,1278.0
 2021,Nandurbar,Theft,335.0
-2021,Nasik,Theft,1862.0
+2021,Nashik,Theft,1862.0
 2021,Dharashiv,Theft,742.0
 2021,Palghar,Theft,356.0
 2021,Parbhani,Theft,957.0
@@ -282,7 +282,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Counterfeiting,3.0
 2014,Akola,Counterfeiting,3.0
 2014,Amravati,Counterfeiting,3.0
-2014,Chhatrapati Sambhaji Nagar,Counterfeiting,4.0
+2014,Chh. Sambhaji Nagar,Counterfeiting,4.0
 2014,Beed,Counterfeiting,1.0
 2014,Bhandara,Counterfeiting,
 2014,Buldhana,Counterfeiting,1.0
@@ -295,11 +295,11 @@ Year,District,Crime,Cases
 2014,Jalna,Counterfeiting,
 2014,Kolhapur,Counterfeiting,7.0
 2014,Latur,Counterfeiting,2.0
-2014,Mumbai City,Counterfeiting,39.0
+2014,Mumbai,Counterfeiting,39.0
 2014,Nagpur,Counterfeiting,10.0
 2014,Nanded,Counterfeiting,4.0
 2014,Nandurbar,Counterfeiting,2.0
-2014,Nasik,Counterfeiting,15.0
+2014,Nashik,Counterfeiting,15.0
 2014,Dharashiv,Counterfeiting,1.0
 2014,Palghar,Counterfeiting,14.0
 2014,Parbhani,Counterfeiting,
@@ -317,7 +317,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Counterfeiting,1.0
 2015,Akola,Counterfeiting,3.0
 2015,Amravati,Counterfeiting,3.0
-2015,Chhatrapati Sambhaji Nagar,Counterfeiting,3.0
+2015,Chh. Sambhaji Nagar,Counterfeiting,3.0
 2015,Beed,Counterfeiting,1.0
 2015,Bhandara,Counterfeiting,1.0
 2015,Buldhana,Counterfeiting,9.0
@@ -330,11 +330,11 @@ Year,District,Crime,Cases
 2015,Jalna,Counterfeiting,
 2015,Kolhapur,Counterfeiting,
 2015,Latur,Counterfeiting,
-2015,Mumbai City,Counterfeiting,51.0
+2015,Mumbai,Counterfeiting,51.0
 2015,Nagpur,Counterfeiting,9.0
 2015,Nanded,Counterfeiting,3.0
 2015,Nandurbar,Counterfeiting,1.0
-2015,Nasik,Counterfeiting,17.0
+2015,Nashik,Counterfeiting,17.0
 2015,Dharashiv,Counterfeiting,1.0
 2015,Palghar,Counterfeiting,5.0
 2015,Parbhani,Counterfeiting,1.0
@@ -352,7 +352,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Counterfeiting,5.0
 2016,Akola,Counterfeiting,1.0
 2016,Amravati,Counterfeiting,1.0
-2016,Chhatrapati Sambhaji Nagar,Counterfeiting,8.0
+2016,Chh. Sambhaji Nagar,Counterfeiting,8.0
 2016,Beed,Counterfeiting,
 2016,Bhandara,Counterfeiting,2.0
 2016,Buldhana,Counterfeiting,6.0
@@ -365,11 +365,11 @@ Year,District,Crime,Cases
 2016,Jalna,Counterfeiting,1.0
 2016,Kolhapur,Counterfeiting,1.0
 2016,Latur,Counterfeiting,1.0
-2016,Mumbai City,Counterfeiting,24.0
+2016,Mumbai,Counterfeiting,24.0
 2016,Nagpur,Counterfeiting,2.0
 2016,Nanded,Counterfeiting,1.0
 2016,Nandurbar,Counterfeiting,1.0
-2016,Nasik,Counterfeiting,15.0
+2016,Nashik,Counterfeiting,15.0
 2016,Dharashiv,Counterfeiting,2.0
 2016,Palghar,Counterfeiting,3.0
 2016,Parbhani,Counterfeiting,2.0
@@ -387,7 +387,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Counterfeiting,2.0
 2017,Akola,Counterfeiting,1.0
 2017,Amravati,Counterfeiting,
-2017,Chhatrapati Sambhaji Nagar,Counterfeiting,3.0
+2017,Chh. Sambhaji Nagar,Counterfeiting,3.0
 2017,Beed,Counterfeiting,1.0
 2017,Bhandara,Counterfeiting,1.0
 2017,Buldhana,Counterfeiting,2.0
@@ -400,11 +400,11 @@ Year,District,Crime,Cases
 2017,Jalna,Counterfeiting,
 2017,Kolhapur,Counterfeiting,
 2017,Latur,Counterfeiting,
-2017,Mumbai City,Counterfeiting,18.0
+2017,Mumbai,Counterfeiting,18.0
 2017,Nagpur,Counterfeiting,4.0
 2017,Nanded,Counterfeiting,
 2017,Nandurbar,Counterfeiting,
-2017,Nasik,Counterfeiting,7.0
+2017,Nashik,Counterfeiting,7.0
 2017,Dharashiv,Counterfeiting,
 2017,Palghar,Counterfeiting,
 2017,Parbhani,Counterfeiting,
@@ -422,7 +422,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Counterfeiting,
 2018,Akola,Counterfeiting,1.0
 2018,Amravati,Counterfeiting,
-2018,Chhatrapati Sambhaji Nagar,Counterfeiting,4.0
+2018,Chh. Sambhaji Nagar,Counterfeiting,4.0
 2018,Beed,Counterfeiting,
 2018,Bhandara,Counterfeiting,
 2018,Buldhana,Counterfeiting,1.0
@@ -435,11 +435,11 @@ Year,District,Crime,Cases
 2018,Jalna,Counterfeiting,2.0
 2018,Kolhapur,Counterfeiting,2.0
 2018,Latur,Counterfeiting,
-2018,Mumbai City,Counterfeiting,13.0
+2018,Mumbai,Counterfeiting,13.0
 2018,Nagpur,Counterfeiting,2.0
 2018,Nanded,Counterfeiting,
 2018,Nandurbar,Counterfeiting,1.0
-2018,Nasik,Counterfeiting,2.0
+2018,Nashik,Counterfeiting,2.0
 2018,Dharashiv,Counterfeiting,
 2018,Palghar,Counterfeiting,1.0
 2018,Parbhani,Counterfeiting,
@@ -457,7 +457,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Counterfeiting,3.0
 2019,Akola,Counterfeiting,
 2019,Amravati,Counterfeiting,1.0
-2019,Chhatrapati Sambhaji Nagar,Counterfeiting,2.0
+2019,Chh. Sambhaji Nagar,Counterfeiting,2.0
 2019,Beed,Counterfeiting,
 2019,Bhandara,Counterfeiting,
 2019,Buldhana,Counterfeiting,2.0
@@ -470,11 +470,11 @@ Year,District,Crime,Cases
 2019,Jalna,Counterfeiting,1.0
 2019,Kolhapur,Counterfeiting,3.0
 2019,Latur,Counterfeiting,1.0
-2019,Mumbai City,Counterfeiting,12.0
+2019,Mumbai,Counterfeiting,12.0
 2019,Nagpur,Counterfeiting,8.0
 2019,Nanded,Counterfeiting,
 2019,Nandurbar,Counterfeiting,
-2019,Nasik,Counterfeiting,
+2019,Nashik,Counterfeiting,
 2019,Dharashiv,Counterfeiting,
 2019,Palghar,Counterfeiting,2.0
 2019,Parbhani,Counterfeiting,
@@ -492,7 +492,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Counterfeiting,2.0
 2020,Akola,Counterfeiting,2.0
 2020,Amravati,Counterfeiting,
-2020,Chhatrapati Sambhaji Nagar,Counterfeiting,3.0
+2020,Chh. Sambhaji Nagar,Counterfeiting,3.0
 2020,Beed,Counterfeiting,1.0
 2020,Bhandara,Counterfeiting,
 2020,Buldhana,Counterfeiting,2.0
@@ -505,11 +505,11 @@ Year,District,Crime,Cases
 2020,Jalna,Counterfeiting,
 2020,Kolhapur,Counterfeiting,2.0
 2020,Latur,Counterfeiting,
-2020,Mumbai City,Counterfeiting,7.0
+2020,Mumbai,Counterfeiting,7.0
 2020,Nagpur,Counterfeiting,7.0
 2020,Nanded,Counterfeiting,1.0
 2020,Nandurbar,Counterfeiting,
-2020,Nasik,Counterfeiting,2.0
+2020,Nashik,Counterfeiting,2.0
 2020,Dharashiv,Counterfeiting,
 2020,Palghar,Counterfeiting,
 2020,Parbhani,Counterfeiting,2.0
@@ -527,7 +527,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Counterfeiting,1.0
 2021,Akola,Counterfeiting,
 2021,Amravati,Counterfeiting,1.0
-2021,Chhatrapati Sambhaji Nagar,Counterfeiting,1.0
+2021,Chh. Sambhaji Nagar,Counterfeiting,1.0
 2021,Beed,Counterfeiting,
 2021,Bhandara,Counterfeiting,1.0
 2021,Buldhana,Counterfeiting,
@@ -540,11 +540,11 @@ Year,District,Crime,Cases
 2021,Jalna,Counterfeiting,
 2021,Kolhapur,Counterfeiting,2.0
 2021,Latur,Counterfeiting,1.0
-2021,Mumbai City,Counterfeiting,15.0
+2021,Mumbai,Counterfeiting,15.0
 2021,Nagpur,Counterfeiting,7.0
 2021,Nanded,Counterfeiting,1.0
 2021,Nandurbar,Counterfeiting,
-2021,Nasik,Counterfeiting,2.0
+2021,Nashik,Counterfeiting,2.0
 2021,Dharashiv,Counterfeiting,1.0
 2021,Palghar,Counterfeiting,1.0
 2021,Parbhani,Counterfeiting,
@@ -562,7 +562,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Arson,46.0
 2014,Akola,Arson,34.0
 2014,Amravati,Arson,86.0
-2014,Chhatrapati Sambhaji Nagar,Arson,65.0
+2014,Chh. Sambhaji Nagar,Arson,65.0
 2014,Beed,Arson,33.0
 2014,Bhandara,Arson,20.0
 2014,Buldhana,Arson,45.0
@@ -575,11 +575,11 @@ Year,District,Crime,Cases
 2014,Jalna,Arson,23.0
 2014,Kolhapur,Arson,22.0
 2014,Latur,Arson,54.0
-2014,Mumbai City,Arson,54.0
+2014,Mumbai,Arson,54.0
 2014,Nagpur,Arson,74.0
 2014,Nanded,Arson,41.0
 2014,Nandurbar,Arson,6.0
-2014,Nasik,Arson,31.0
+2014,Nashik,Arson,31.0
 2014,Dharashiv,Arson,19.0
 2014,Palghar,Arson,12.0
 2014,Parbhani,Arson,28.0
@@ -597,7 +597,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Arson,58.0
 2015,Akola,Arson,31.0
 2015,Amravati,Arson,79.0
-2015,Chhatrapati Sambhaji Nagar,Arson,101.0
+2015,Chh. Sambhaji Nagar,Arson,101.0
 2015,Beed,Arson,29.0
 2015,Bhandara,Arson,31.0
 2015,Buldhana,Arson,45.0
@@ -610,11 +610,11 @@ Year,District,Crime,Cases
 2015,Jalna,Arson,28.0
 2015,Kolhapur,Arson,17.0
 2015,Latur,Arson,54.0
-2015,Mumbai City,Arson,20.0
+2015,Mumbai,Arson,20.0
 2015,Nagpur,Arson,68.0
 2015,Nanded,Arson,51.0
 2015,Nandurbar,Arson,6.0
-2015,Nasik,Arson,40.0
+2015,Nashik,Arson,40.0
 2015,Dharashiv,Arson,17.0
 2015,Palghar,Arson,10.0
 2015,Parbhani,Arson,30.0
@@ -632,7 +632,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Arson,34.0
 2016,Akola,Arson,28.0
 2016,Amravati,Arson,103.0
-2016,Chhatrapati Sambhaji Nagar,Arson,53.0
+2016,Chh. Sambhaji Nagar,Arson,53.0
 2016,Beed,Arson,35.0
 2016,Bhandara,Arson,25.0
 2016,Buldhana,Arson,47.0
@@ -645,11 +645,11 @@ Year,District,Crime,Cases
 2016,Jalna,Arson,20.0
 2016,Kolhapur,Arson,26.0
 2016,Latur,Arson,53.0
-2016,Mumbai City,Arson,31.0
+2016,Mumbai,Arson,31.0
 2016,Nagpur,Arson,81.0
 2016,Nanded,Arson,45.0
 2016,Nandurbar,Arson,13.0
-2016,Nasik,Arson,55.0
+2016,Nashik,Arson,55.0
 2016,Dharashiv,Arson,15.0
 2016,Palghar,Arson,10.0
 2016,Parbhani,Arson,28.0
@@ -667,7 +667,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Arson,56.0
 2017,Akola,Arson,42.0
 2017,Amravati,Arson,84.0
-2017,Chhatrapati Sambhaji Nagar,Arson,61.0
+2017,Chh. Sambhaji Nagar,Arson,61.0
 2017,Beed,Arson,30.0
 2017,Bhandara,Arson,28.0
 2017,Buldhana,Arson,57.0
@@ -680,11 +680,11 @@ Year,District,Crime,Cases
 2017,Jalna,Arson,2.0
 2017,Kolhapur,Arson,15.0
 2017,Latur,Arson,40.0
-2017,Mumbai City,Arson,14.0
+2017,Mumbai,Arson,14.0
 2017,Nagpur,Arson,71.0
 2017,Nanded,Arson,34.0
 2017,Nandurbar,Arson,8.0
-2017,Nasik,Arson,50.0
+2017,Nashik,Arson,50.0
 2017,Dharashiv,Arson,12.0
 2017,Palghar,Arson,13.0
 2017,Parbhani,Arson,22.0
@@ -702,7 +702,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Arson,50.0
 2018,Akola,Arson,26.0
 2018,Amravati,Arson,54.0
-2018,Chhatrapati Sambhaji Nagar,Arson,68.0
+2018,Chh. Sambhaji Nagar,Arson,68.0
 2018,Beed,Arson,24.0
 2018,Bhandara,Arson,15.0
 2018,Buldhana,Arson,60.0
@@ -715,11 +715,11 @@ Year,District,Crime,Cases
 2018,Jalna,Arson,5.0
 2018,Kolhapur,Arson,14.0
 2018,Latur,Arson,58.0
-2018,Mumbai City,Arson,60.0
+2018,Mumbai,Arson,60.0
 2018,Nagpur,Arson,96.0
 2018,Nanded,Arson,40.0
 2018,Nandurbar,Arson,8.0
-2018,Nasik,Arson,53.0
+2018,Nashik,Arson,53.0
 2018,Dharashiv,Arson,24.0
 2018,Palghar,Arson,13.0
 2018,Parbhani,Arson,26.0
@@ -737,7 +737,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Arson,64.0
 2019,Akola,Arson,17.0
 2019,Amravati,Arson,72.0
-2019,Chhatrapati Sambhaji Nagar,Arson,37.0
+2019,Chh. Sambhaji Nagar,Arson,37.0
 2019,Beed,Arson,29.0
 2019,Bhandara,Arson,18.0
 2019,Buldhana,Arson,46.0
@@ -750,11 +750,11 @@ Year,District,Crime,Cases
 2019,Jalna,Arson,4.0
 2019,Kolhapur,Arson,17.0
 2019,Latur,Arson,43.0
-2019,Mumbai City,Arson,34.0
+2019,Mumbai,Arson,34.0
 2019,Nagpur,Arson,57.0
 2019,Nanded,Arson,41.0
 2019,Nandurbar,Arson,15.0
-2019,Nasik,Arson,49.0
+2019,Nashik,Arson,49.0
 2019,Dharashiv,Arson,21.0
 2019,Palghar,Arson,14.0
 2019,Parbhani,Arson,31.0
@@ -772,7 +772,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Arson,53.0
 2020,Akola,Arson,23.0
 2020,Amravati,Arson,61.0
-2020,Chhatrapati Sambhaji Nagar,Arson,37.0
+2020,Chh. Sambhaji Nagar,Arson,37.0
 2020,Beed,Arson,27.0
 2020,Bhandara,Arson,13.0
 2020,Buldhana,Arson,61.0
@@ -785,11 +785,11 @@ Year,District,Crime,Cases
 2020,Jalna,Arson,10.0
 2020,Kolhapur,Arson,22.0
 2020,Latur,Arson,49.0
-2020,Mumbai City,Arson,23.0
+2020,Mumbai,Arson,23.0
 2020,Nagpur,Arson,47.0
 2020,Nanded,Arson,39.0
 2020,Nandurbar,Arson,8.0
-2020,Nasik,Arson,55.0
+2020,Nashik,Arson,55.0
 2020,Dharashiv,Arson,15.0
 2020,Palghar,Arson,16.0
 2020,Parbhani,Arson,37.0
@@ -807,7 +807,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Arson,
 2021,Akola,Arson,23.0
 2021,Amravati,Arson,57.0
-2021,Chhatrapati Sambhaji Nagar,Arson,35.0
+2021,Chh. Sambhaji Nagar,Arson,35.0
 2021,Beed,Arson,35.0
 2021,Bhandara,Arson,20.0
 2021,Buldhana,Arson,67.0
@@ -820,11 +820,11 @@ Year,District,Crime,Cases
 2021,Jalna,Arson,45.0
 2021,Kolhapur,Arson,37.0
 2021,Latur,Arson,42.0
-2021,Mumbai City,Arson,35.0
+2021,Mumbai,Arson,35.0
 2021,Nagpur,Arson,63.0
 2021,Nanded,Arson,37.0
 2021,Nandurbar,Arson,10.0
-2021,Nasik,Arson,34.0
+2021,Nashik,Arson,34.0
 2021,Dharashiv,Arson,19.0
 2021,Palghar,Arson,4.0
 2021,Parbhani,Arson,30.0
@@ -842,7 +842,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Extortion,9.0
 2014,Akola,Extortion,18.0
 2014,Amravati,Extortion,9.0
-2014,Chhatrapati Sambhaji Nagar,Extortion,16.0
+2014,Chh. Sambhaji Nagar,Extortion,16.0
 2014,Beed,Extortion,8.0
 2014,Bhandara,Extortion,2.0
 2014,Buldhana,Extortion,3.0
@@ -855,11 +855,11 @@ Year,District,Crime,Cases
 2014,Jalna,Extortion,12.0
 2014,Kolhapur,Extortion,13.0
 2014,Latur,Extortion,12.0
-2014,Mumbai City,Extortion,254.0
+2014,Mumbai,Extortion,254.0
 2014,Nagpur,Extortion,45.0
 2014,Nanded,Extortion,14.0
 2014,Nandurbar,Extortion,2.0
-2014,Nasik,Extortion,22.0
+2014,Nashik,Extortion,22.0
 2014,Dharashiv,Extortion,6.0
 2014,Palghar,Extortion,5.0
 2014,Parbhani,Extortion,9.0
@@ -877,7 +877,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Extortion,13.0
 2015,Akola,Extortion,12.0
 2015,Amravati,Extortion,16.0
-2015,Chhatrapati Sambhaji Nagar,Extortion,38.0
+2015,Chh. Sambhaji Nagar,Extortion,38.0
 2015,Beed,Extortion,8.0
 2015,Bhandara,Extortion,
 2015,Buldhana,Extortion,3.0
@@ -890,11 +890,11 @@ Year,District,Crime,Cases
 2015,Jalna,Extortion,5.0
 2015,Kolhapur,Extortion,6.0
 2015,Latur,Extortion,12.0
-2015,Mumbai City,Extortion,272.0
+2015,Mumbai,Extortion,272.0
 2015,Nagpur,Extortion,82.0
 2015,Nanded,Extortion,12.0
 2015,Nandurbar,Extortion,4.0
-2015,Nasik,Extortion,34.0
+2015,Nashik,Extortion,34.0
 2015,Dharashiv,Extortion,4.0
 2015,Palghar,Extortion,18.0
 2015,Parbhani,Extortion,9.0
@@ -912,7 +912,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Extortion,18.0
 2016,Akola,Extortion,15.0
 2016,Amravati,Extortion,21.0
-2016,Chhatrapati Sambhaji Nagar,Extortion,37.0
+2016,Chh. Sambhaji Nagar,Extortion,37.0
 2016,Beed,Extortion,6.0
 2016,Bhandara,Extortion,3.0
 2016,Buldhana,Extortion,11.0
@@ -925,11 +925,11 @@ Year,District,Crime,Cases
 2016,Jalna,Extortion,3.0
 2016,Kolhapur,Extortion,15.0
 2016,Latur,Extortion,
-2016,Mumbai City,Extortion,242.0
+2016,Mumbai,Extortion,242.0
 2016,Nagpur,Extortion,33.0
 2016,Nanded,Extortion,13.0
 2016,Nandurbar,Extortion,2.0
-2016,Nasik,Extortion,20.0
+2016,Nashik,Extortion,20.0
 2016,Dharashiv,Extortion,1.0
 2016,Palghar,Extortion,14.0
 2016,Parbhani,Extortion,3.0
@@ -947,7 +947,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Extortion,27.0
 2017,Akola,Extortion,12.0
 2017,Amravati,Extortion,10.0
-2017,Chhatrapati Sambhaji Nagar,Extortion,16.0
+2017,Chh. Sambhaji Nagar,Extortion,16.0
 2017,Beed,Extortion,2.0
 2017,Bhandara,Extortion,1.0
 2017,Buldhana,Extortion,5.0
@@ -960,11 +960,11 @@ Year,District,Crime,Cases
 2017,Jalna,Extortion,9.0
 2017,Kolhapur,Extortion,17.0
 2017,Latur,Extortion,8.0
-2017,Mumbai City,Extortion,202.0
+2017,Mumbai,Extortion,202.0
 2017,Nagpur,Extortion,53.0
 2017,Nanded,Extortion,14.0
 2017,Nandurbar,Extortion,1.0
-2017,Nasik,Extortion,35.0
+2017,Nashik,Extortion,35.0
 2017,Dharashiv,Extortion,2.0
 2017,Palghar,Extortion,16.0
 2017,Parbhani,Extortion,3.0
@@ -982,7 +982,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Extortion,36.0
 2018,Akola,Extortion,16.0
 2018,Amravati,Extortion,22.0
-2018,Chhatrapati Sambhaji Nagar,Extortion,24.0
+2018,Chh. Sambhaji Nagar,Extortion,24.0
 2018,Beed,Extortion,15.0
 2018,Bhandara,Extortion,1.0
 2018,Buldhana,Extortion,6.0
@@ -995,11 +995,11 @@ Year,District,Crime,Cases
 2018,Jalna,Extortion,12.0
 2018,Kolhapur,Extortion,24.0
 2018,Latur,Extortion,4.0
-2018,Mumbai City,Extortion,233.0
+2018,Mumbai,Extortion,233.0
 2018,Nagpur,Extortion,54.0
 2018,Nanded,Extortion,11.0
 2018,Nandurbar,Extortion,6.0
-2018,Nasik,Extortion,44.0
+2018,Nashik,Extortion,44.0
 2018,Dharashiv,Extortion,5.0
 2018,Palghar,Extortion,42.0
 2018,Parbhani,Extortion,8.0
@@ -1017,7 +1017,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Extortion,22.0
 2019,Akola,Extortion,12.0
 2019,Amravati,Extortion,17.0
-2019,Chhatrapati Sambhaji Nagar,Extortion,25.0
+2019,Chh. Sambhaji Nagar,Extortion,25.0
 2019,Beed,Extortion,8.0
 2019,Bhandara,Extortion,2.0
 2019,Buldhana,Extortion,8.0
@@ -1030,11 +1030,11 @@ Year,District,Crime,Cases
 2019,Jalna,Extortion,11.0
 2019,Kolhapur,Extortion,32.0
 2019,Latur,Extortion,10.0
-2019,Mumbai City,Extortion,260.0
+2019,Mumbai,Extortion,260.0
 2019,Nagpur,Extortion,43.0
 2019,Nanded,Extortion,19.0
 2019,Nandurbar,Extortion,5.0
-2019,Nasik,Extortion,27.0
+2019,Nashik,Extortion,27.0
 2019,Dharashiv,Extortion,2.0
 2019,Palghar,Extortion,17.0
 2019,Parbhani,Extortion,2.0
@@ -1052,7 +1052,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Extortion,13.0
 2020,Akola,Extortion,4.0
 2020,Amravati,Extortion,12.0
-2020,Chhatrapati Sambhaji Nagar,Extortion,12.0
+2020,Chh. Sambhaji Nagar,Extortion,12.0
 2020,Beed,Extortion,1.0
 2020,Bhandara,Extortion,2.0
 2020,Buldhana,Extortion,6.0
@@ -1065,11 +1065,11 @@ Year,District,Crime,Cases
 2020,Jalna,Extortion,6.0
 2020,Kolhapur,Extortion,20.0
 2020,Latur,Extortion,4.0
-2020,Mumbai City,Extortion,209.0
+2020,Mumbai,Extortion,209.0
 2020,Nagpur,Extortion,50.0
 2020,Nanded,Extortion,27.0
 2020,Nandurbar,Extortion,
-2020,Nasik,Extortion,26.0
+2020,Nashik,Extortion,26.0
 2020,Dharashiv,Extortion,8.0
 2020,Palghar,Extortion,3.0
 2020,Parbhani,Extortion,6.0
@@ -1087,7 +1087,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Extortion,47.0
 2021,Akola,Extortion,12.0
 2021,Amravati,Extortion,11.0
-2021,Chhatrapati Sambhaji Nagar,Extortion,11.0
+2021,Chh. Sambhaji Nagar,Extortion,11.0
 2021,Beed,Extortion,9.0
 2021,Bhandara,Extortion,1.0
 2021,Buldhana,Extortion,5.0
@@ -1100,11 +1100,11 @@ Year,District,Crime,Cases
 2021,Jalna,Extortion,2.0
 2021,Kolhapur,Extortion,29.0
 2021,Latur,Extortion,5.0
-2021,Mumbai City,Extortion,283.0
+2021,Mumbai,Extortion,283.0
 2021,Nagpur,Extortion,51.0
 2021,Nanded,Extortion,16.0
 2021,Nandurbar,Extortion,4.0
-2021,Nasik,Extortion,20.0
+2021,Nashik,Extortion,20.0
 2021,Dharashiv,Extortion,1.0
 2021,Palghar,Extortion,3.0
 2021,Parbhani,Extortion,7.0
@@ -1122,7 +1122,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Burglary,559.0
 2014,Akola,Burglary,177.0
 2014,Amravati,Burglary,442.0
-2014,Chhatrapati Sambhaji Nagar,Burglary,383.0
+2014,Chh. Sambhaji Nagar,Burglary,383.0
 2014,Beed,Burglary,227.0
 2014,Bhandara,Burglary,153.0
 2014,Buldhana,Burglary,155.0
@@ -1135,11 +1135,11 @@ Year,District,Crime,Cases
 2014,Jalna,Burglary,206.0
 2014,Kolhapur,Burglary,363.0
 2014,Latur,Burglary,231.0
-2014,Mumbai City,Burglary,3059.0
+2014,Mumbai,Burglary,3059.0
 2014,Nagpur,Burglary,1323.0
 2014,Nanded,Burglary,243.0
 2014,Nandurbar,Burglary,84.0
-2014,Nasik,Burglary,618.0
+2014,Nashik,Burglary,618.0
 2014,Dharashiv,Burglary,206.0
 2014,Palghar,Burglary,631.0
 2014,Parbhani,Burglary,204.0
@@ -1157,7 +1157,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Burglary,448.0
 2015,Akola,Burglary,137.0
 2015,Amravati,Burglary,464.0
-2015,Chhatrapati Sambhaji Nagar,Burglary,586.0
+2015,Chh. Sambhaji Nagar,Burglary,586.0
 2015,Beed,Burglary,239.0
 2015,Bhandara,Burglary,166.0
 2015,Buldhana,Burglary,185.0
@@ -1170,11 +1170,11 @@ Year,District,Crime,Cases
 2015,Jalna,Burglary,236.0
 2015,Kolhapur,Burglary,318.0
 2015,Latur,Burglary,190.0
-2015,Mumbai City,Burglary,3012.0
+2015,Mumbai,Burglary,3012.0
 2015,Nagpur,Burglary,1377.0
 2015,Nanded,Burglary,249.0
 2015,Nandurbar,Burglary,70.0
-2015,Nasik,Burglary,591.0
+2015,Nashik,Burglary,591.0
 2015,Dharashiv,Burglary,172.0
 2015,Palghar,Burglary,634.0
 2015,Parbhani,Burglary,228.0
@@ -1192,7 +1192,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Burglary,414.0
 2016,Akola,Burglary,136.0
 2016,Amravati,Burglary,403.0
-2016,Chhatrapati Sambhaji Nagar,Burglary,558.0
+2016,Chh. Sambhaji Nagar,Burglary,558.0
 2016,Beed,Burglary,212.0
 2016,Bhandara,Burglary,144.0
 2016,Buldhana,Burglary,152.0
@@ -1205,11 +1205,11 @@ Year,District,Crime,Cases
 2016,Jalna,Burglary,155.0
 2016,Kolhapur,Burglary,313.0
 2016,Latur,Burglary,201.0
-2016,Mumbai City,Burglary,2552.0
+2016,Mumbai,Burglary,2552.0
 2016,Nagpur,Burglary,1203.0
 2016,Nanded,Burglary,291.0
 2016,Nandurbar,Burglary,75.0
-2016,Nasik,Burglary,631.0
+2016,Nashik,Burglary,631.0
 2016,Dharashiv,Burglary,131.0
 2016,Palghar,Burglary,531.0
 2016,Parbhani,Burglary,120.0
@@ -1227,7 +1227,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Burglary,558.0
 2017,Akola,Burglary,159.0
 2017,Amravati,Burglary,390.0
-2017,Chhatrapati Sambhaji Nagar,Burglary,330.0
+2017,Chh. Sambhaji Nagar,Burglary,330.0
 2017,Beed,Burglary,193.0
 2017,Bhandara,Burglary,163.0
 2017,Buldhana,Burglary,179.0
@@ -1240,11 +1240,11 @@ Year,District,Crime,Cases
 2017,Jalna,Burglary,190.0
 2017,Kolhapur,Burglary,327.0
 2017,Latur,Burglary,187.0
-2017,Mumbai City,Burglary,2409.0
+2017,Mumbai,Burglary,2409.0
 2017,Nagpur,Burglary,1393.0
 2017,Nanded,Burglary,295.0
 2017,Nandurbar,Burglary,73.0
-2017,Nasik,Burglary,698.0
+2017,Nashik,Burglary,698.0
 2017,Dharashiv,Burglary,154.0
 2017,Palghar,Burglary,527.0
 2017,Parbhani,Burglary,162.0
@@ -1262,7 +1262,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Burglary,714.0
 2018,Akola,Burglary,124.0
 2018,Amravati,Burglary,350.0
-2018,Chhatrapati Sambhaji Nagar,Burglary,296.0
+2018,Chh. Sambhaji Nagar,Burglary,296.0
 2018,Beed,Burglary,146.0
 2018,Bhandara,Burglary,161.0
 2018,Buldhana,Burglary,229.0
@@ -1275,11 +1275,11 @@ Year,District,Crime,Cases
 2018,Jalna,Burglary,186.0
 2018,Kolhapur,Burglary,314.0
 2018,Latur,Burglary,237.0
-2018,Mumbai City,Burglary,2244.0
+2018,Mumbai,Burglary,2244.0
 2018,Nagpur,Burglary,1123.0
 2018,Nanded,Burglary,234.0
 2018,Nandurbar,Burglary,100.0
-2018,Nasik,Burglary,565.0
+2018,Nashik,Burglary,565.0
 2018,Dharashiv,Burglary,171.0
 2018,Palghar,Burglary,710.0
 2018,Parbhani,Burglary,142.0
@@ -1297,7 +1297,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Burglary,719.0
 2019,Akola,Burglary,151.0
 2019,Amravati,Burglary,343.0
-2019,Chhatrapati Sambhaji Nagar,Burglary,284.0
+2019,Chh. Sambhaji Nagar,Burglary,284.0
 2019,Beed,Burglary,151.0
 2019,Bhandara,Burglary,148.0
 2019,Buldhana,Burglary,226.0
@@ -1310,11 +1310,11 @@ Year,District,Crime,Cases
 2019,Jalna,Burglary,263.0
 2019,Kolhapur,Burglary,398.0
 2019,Latur,Burglary,228.0
-2019,Mumbai City,Burglary,2063.0
+2019,Mumbai,Burglary,2063.0
 2019,Nagpur,Burglary,1049.0
 2019,Nanded,Burglary,249.0
 2019,Nandurbar,Burglary,87.0
-2019,Nasik,Burglary,596.0
+2019,Nashik,Burglary,596.0
 2019,Dharashiv,Burglary,196.0
 2019,Palghar,Burglary,656.0
 2019,Parbhani,Burglary,182.0
@@ -1332,7 +1332,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Burglary,569.0
 2020,Akola,Burglary,124.0
 2020,Amravati,Burglary,357.0
-2020,Chhatrapati Sambhaji Nagar,Burglary,268.0
+2020,Chh. Sambhaji Nagar,Burglary,268.0
 2020,Beed,Burglary,217.0
 2020,Bhandara,Burglary,121.0
 2020,Buldhana,Burglary,255.0
@@ -1345,11 +1345,11 @@ Year,District,Crime,Cases
 2020,Jalna,Burglary,288.0
 2020,Kolhapur,Burglary,287.0
 2020,Latur,Burglary,210.0
-2020,Mumbai City,Burglary,1646.0
+2020,Mumbai,Burglary,1646.0
 2020,Nagpur,Burglary,910.0
 2020,Nanded,Burglary,317.0
 2020,Nandurbar,Burglary,83.0
-2020,Nasik,Burglary,515.0
+2020,Nashik,Burglary,515.0
 2020,Dharashiv,Burglary,161.0
 2020,Palghar,Burglary,141.0
 2020,Parbhani,Burglary,179.0
@@ -1367,7 +1367,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Burglary,796.0
 2021,Akola,Burglary,89.0
 2021,Amravati,Burglary,371.0
-2021,Chhatrapati Sambhaji Nagar,Burglary,298.0
+2021,Chh. Sambhaji Nagar,Burglary,298.0
 2021,Beed,Burglary,231.0
 2021,Bhandara,Burglary,125.0
 2021,Buldhana,Burglary,247.0
@@ -1380,11 +1380,11 @@ Year,District,Crime,Cases
 2021,Jalna,Burglary,217.0
 2021,Kolhapur,Burglary,318.0
 2021,Latur,Burglary,196.0
-2021,Mumbai City,Burglary,1690.0
+2021,Mumbai,Burglary,1690.0
 2021,Nagpur,Burglary,1036.0
 2021,Nanded,Burglary,292.0
 2021,Nandurbar,Burglary,137.0
-2021,Nasik,Burglary,473.0
+2021,Nashik,Burglary,473.0
 2021,Dharashiv,Burglary,194.0
 2021,Palghar,Burglary,140.0
 2021,Parbhani,Burglary,200.0
@@ -1402,7 +1402,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",
-2014,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Chh. Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",
@@ -1415,11 +1415,11 @@ Year,District,Crime,Cases
 2014,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
-2014,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Mumbai,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
-2014,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2014,Nashik,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2014,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",
@@ -1437,7 +1437,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",
-2015,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Chh. Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",
@@ -1450,11 +1450,11 @@ Year,District,Crime,Cases
 2015,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
-2015,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Mumbai,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
-2015,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2015,Nashik,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2015,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",
@@ -1472,7 +1472,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",
-2016,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Chh. Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",
@@ -1485,11 +1485,11 @@ Year,District,Crime,Cases
 2016,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
-2016,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Mumbai,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
-2016,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",
+2016,Nashik,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2016,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",
@@ -1507,7 +1507,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",12.0
 2017,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
 2017,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
-2017,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",10.0
+2017,Chh. Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",10.0
 2017,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
 2017,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
 2017,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",10.0
@@ -1520,11 +1520,11 @@ Year,District,Crime,Cases
 2017,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
 2017,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
 2017,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
-2017,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",34.0
+2017,Mumbai,"Miscarriage, Infanticide, Foeticide, and Abandonment",34.0
 2017,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",30.0
 2017,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",12.0
 2017,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
-2017,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",21.0
+2017,Nashik,"Miscarriage, Infanticide, Foeticide, and Abandonment",21.0
 2017,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
 2017,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",9.0
 2017,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
@@ -1542,7 +1542,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
 2018,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
 2018,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",8.0
-2018,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",26.0
+2018,Chh. Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",26.0
 2018,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
 2018,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
 2018,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
@@ -1555,11 +1555,11 @@ Year,District,Crime,Cases
 2018,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
 2018,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
 2018,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",16.0
-2018,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",33.0
+2018,Mumbai,"Miscarriage, Infanticide, Foeticide, and Abandonment",33.0
 2018,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",25.0
 2018,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
 2018,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
-2018,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",19.0
+2018,Nashik,"Miscarriage, Infanticide, Foeticide, and Abandonment",19.0
 2018,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
 2018,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",21.0
 2018,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
@@ -1577,7 +1577,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",8.0
 2019,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",8.0
 2019,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
-2019,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",20.0
+2019,Chh. Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",20.0
 2019,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
 2019,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
 2019,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
@@ -1590,11 +1590,11 @@ Year,District,Crime,Cases
 2019,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
 2019,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
 2019,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
-2019,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",14.0
+2019,Mumbai,"Miscarriage, Infanticide, Foeticide, and Abandonment",14.0
 2019,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",15.0
 2019,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",10.0
 2019,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
-2019,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",31.0
+2019,Nashik,"Miscarriage, Infanticide, Foeticide, and Abandonment",31.0
 2019,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
 2019,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
 2019,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
@@ -1612,7 +1612,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2020,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
 2020,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",
-2020,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",14.0
+2020,Chh. Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",14.0
 2020,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
 2020,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
 2020,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
@@ -1625,11 +1625,11 @@ Year,District,Crime,Cases
 2020,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
 2020,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
 2020,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
-2020,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",25.0
+2020,Mumbai,"Miscarriage, Infanticide, Foeticide, and Abandonment",25.0
 2020,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
 2020,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",6.0
 2020,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
-2020,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
+2020,Nashik,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
 2020,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
 2020,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
 2020,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",5.0
@@ -1647,7 +1647,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2021,Akola,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
 2021,Amravati,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
-2021,Chhatrapati Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",17.0
+2021,Chh. Sambhaji Nagar,"Miscarriage, Infanticide, Foeticide, and Abandonment",17.0
 2021,Beed,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
 2021,Bhandara,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
 2021,Buldhana,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
@@ -1660,11 +1660,11 @@ Year,District,Crime,Cases
 2021,Jalna,"Miscarriage, Infanticide, Foeticide, and Abandonment",
 2021,Kolhapur,"Miscarriage, Infanticide, Foeticide, and Abandonment",2.0
 2021,Latur,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
-2021,Mumbai City,"Miscarriage, Infanticide, Foeticide, and Abandonment",11.0
+2021,Mumbai,"Miscarriage, Infanticide, Foeticide, and Abandonment",11.0
 2021,Nagpur,"Miscarriage, Infanticide, Foeticide, and Abandonment",13.0
 2021,Nanded,"Miscarriage, Infanticide, Foeticide, and Abandonment",8.0
 2021,Nandurbar,"Miscarriage, Infanticide, Foeticide, and Abandonment",1.0
-2021,Nasik,"Miscarriage, Infanticide, Foeticide, and Abandonment",12.0
+2021,Nashik,"Miscarriage, Infanticide, Foeticide, and Abandonment",12.0
 2021,Dharashiv,"Miscarriage, Infanticide, Foeticide, and Abandonment",7.0
 2021,Palghar,"Miscarriage, Infanticide, Foeticide, and Abandonment",3.0
 2021,Parbhani,"Miscarriage, Infanticide, Foeticide, and Abandonment",4.0
@@ -1682,7 +1682,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Cheating,165.0
 2014,Akola,Cheating,108.0
 2014,Amravati,Cheating,183.0
-2014,Chhatrapati Sambhaji Nagar,Cheating,284.0
+2014,Chh. Sambhaji Nagar,Cheating,284.0
 2014,Beed,Cheating,120.0
 2014,Bhandara,Cheating,55.0
 2014,Buldhana,Cheating,94.0
@@ -1695,11 +1695,11 @@ Year,District,Crime,Cases
 2014,Jalna,Cheating,116.0
 2014,Kolhapur,Cheating,317.0
 2014,Latur,Cheating,125.0
-2014,Mumbai City,Cheating,2640.0
+2014,Mumbai,Cheating,2640.0
 2014,Nagpur,Cheating,462.0
 2014,Nanded,Cheating,11.0
 2014,Nandurbar,Cheating,34.0
-2014,Nasik,Cheating,316.0
+2014,Nashik,Cheating,316.0
 2014,Dharashiv,Cheating,75.0
 2014,Palghar,Cheating,259.0
 2014,Parbhani,Cheating,145.0
@@ -1717,7 +1717,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Cheating,167.0
 2015,Akola,Cheating,93.0
 2015,Amravati,Cheating,222.0
-2015,Chhatrapati Sambhaji Nagar,Cheating,468.0
+2015,Chh. Sambhaji Nagar,Cheating,468.0
 2015,Beed,Cheating,94.0
 2015,Bhandara,Cheating,42.0
 2015,Buldhana,Cheating,103.0
@@ -1730,11 +1730,11 @@ Year,District,Crime,Cases
 2015,Jalna,Cheating,118.0
 2015,Kolhapur,Cheating,284.0
 2015,Latur,Cheating,105.0
-2015,Mumbai City,Cheating,3015.0
+2015,Mumbai,Cheating,3015.0
 2015,Nagpur,Cheating,372.0
 2015,Nanded,Cheating,150.0
 2015,Nandurbar,Cheating,19.0
-2015,Nasik,Cheating,340.0
+2015,Nashik,Cheating,340.0
 2015,Dharashiv,Cheating,106.0
 2015,Palghar,Cheating,267.0
 2015,Parbhani,Cheating,132.0
@@ -1752,7 +1752,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Cheating,102.0
 2016,Akola,Cheating,86.0
 2016,Amravati,Cheating,175.0
-2016,Chhatrapati Sambhaji Nagar,Cheating,483.0
+2016,Chh. Sambhaji Nagar,Cheating,483.0
 2016,Beed,Cheating,98.0
 2016,Bhandara,Cheating,58.0
 2016,Buldhana,Cheating,80.0
@@ -1765,11 +1765,11 @@ Year,District,Crime,Cases
 2016,Jalna,Cheating,122.0
 2016,Kolhapur,Cheating,210.0
 2016,Latur,Cheating,115.0
-2016,Mumbai City,Cheating,2705.0
+2016,Mumbai,Cheating,2705.0
 2016,Nagpur,Cheating,463.0
 2016,Nanded,Cheating,117.0
 2016,Nandurbar,Cheating,28.0
-2016,Nasik,Cheating,320.0
+2016,Nashik,Cheating,320.0
 2016,Dharashiv,Cheating,58.0
 2016,Palghar,Cheating,371.0
 2016,Parbhani,Cheating,76.0
@@ -1787,7 +1787,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Cheating,173.0
 2017,Akola,Cheating,64.0
 2017,Amravati,Cheating,133.0
-2017,Chhatrapati Sambhaji Nagar,Cheating,194.0
+2017,Chh. Sambhaji Nagar,Cheating,194.0
 2017,Beed,Cheating,56.0
 2017,Bhandara,Cheating,16.0
 2017,Buldhana,Cheating,108.0
@@ -1800,11 +1800,11 @@ Year,District,Crime,Cases
 2017,Jalna,Cheating,85.0
 2017,Kolhapur,Cheating,168.0
 2017,Latur,Cheating,120.0
-2017,Mumbai City,Cheating,2937.0
+2017,Mumbai,Cheating,2937.0
 2017,Nagpur,Cheating,453.0
 2017,Nanded,Cheating,79.0
 2017,Nandurbar,Cheating,39.0
-2017,Nasik,Cheating,257.0
+2017,Nashik,Cheating,257.0
 2017,Dharashiv,Cheating,41.0
 2017,Palghar,Cheating,224.0
 2017,Parbhani,Cheating,12.0
@@ -1822,7 +1822,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Cheating,263.0
 2018,Akola,Cheating,81.0
 2018,Amravati,Cheating,145.0
-2018,Chhatrapati Sambhaji Nagar,Cheating,140.0
+2018,Chh. Sambhaji Nagar,Cheating,140.0
 2018,Beed,Cheating,38.0
 2018,Bhandara,Cheating,22.0
 2018,Buldhana,Cheating,121.0
@@ -1835,11 +1835,11 @@ Year,District,Crime,Cases
 2018,Jalna,Cheating,102.0
 2018,Kolhapur,Cheating,202.0
 2018,Latur,Cheating,87.0
-2018,Mumbai City,Cheating,2882.0
+2018,Mumbai,Cheating,2882.0
 2018,Nagpur,Cheating,532.0
 2018,Nanded,Cheating,101.0
 2018,Nandurbar,Cheating,36.0
-2018,Nasik,Cheating,232.0
+2018,Nashik,Cheating,232.0
 2018,Dharashiv,Cheating,57.0
 2018,Palghar,Cheating,407.0
 2018,Parbhani,Cheating,13.0
@@ -1857,7 +1857,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Cheating,228.0
 2019,Akola,Cheating,71.0
 2019,Amravati,Cheating,101.0
-2019,Chhatrapati Sambhaji Nagar,Cheating,164.0
+2019,Chh. Sambhaji Nagar,Cheating,164.0
 2019,Beed,Cheating,53.0
 2019,Bhandara,Cheating,43.0
 2019,Buldhana,Cheating,112.0
@@ -1870,11 +1870,11 @@ Year,District,Crime,Cases
 2019,Jalna,Cheating,126.0
 2019,Kolhapur,Cheating,204.0
 2019,Latur,Cheating,74.0
-2019,Mumbai City,Cheating,3974.0
+2019,Mumbai,Cheating,3974.0
 2019,Nagpur,Cheating,401.0
 2019,Nanded,Cheating,100.0
 2019,Nandurbar,Cheating,25.0
-2019,Nasik,Cheating,173.0
+2019,Nashik,Cheating,173.0
 2019,Dharashiv,Cheating,76.0
 2019,Palghar,Cheating,453.0
 2019,Parbhani,Cheating,19.0
@@ -1892,7 +1892,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Cheating,218.0
 2020,Akola,Cheating,72.0
 2020,Amravati,Cheating,157.0
-2020,Chhatrapati Sambhaji Nagar,Cheating,120.0
+2020,Chh. Sambhaji Nagar,Cheating,120.0
 2020,Beed,Cheating,60.0
 2020,Bhandara,Cheating,35.0
 2020,Buldhana,Cheating,68.0
@@ -1905,11 +1905,11 @@ Year,District,Crime,Cases
 2020,Jalna,Cheating,102.0
 2020,Kolhapur,Cheating,203.0
 2020,Latur,Cheating,64.0
-2020,Mumbai City,Cheating,2134.0
+2020,Mumbai,Cheating,2134.0
 2020,Nagpur,Cheating,432.0
 2020,Nanded,Cheating,91.0
 2020,Nandurbar,Cheating,21.0
-2020,Nasik,Cheating,311.0
+2020,Nashik,Cheating,311.0
 2020,Dharashiv,Cheating,46.0
 2020,Palghar,Cheating,71.0
 2020,Parbhani,Cheating,10.0
@@ -1927,7 +1927,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Cheating,314.0
 2021,Akola,Cheating,72.0
 2021,Amravati,Cheating,93.0
-2021,Chhatrapati Sambhaji Nagar,Cheating,206.0
+2021,Chh. Sambhaji Nagar,Cheating,206.0
 2021,Beed,Cheating,78.0
 2021,Bhandara,Cheating,27.0
 2021,Buldhana,Cheating,60.0
@@ -1940,11 +1940,11 @@ Year,District,Crime,Cases
 2021,Jalna,Cheating,13.0
 2021,Kolhapur,Cheating,153.0
 2021,Latur,Cheating,43.0
-2021,Mumbai City,Cheating,3546.0
+2021,Mumbai,Cheating,3546.0
 2021,Nagpur,Cheating,411.0
 2021,Nanded,Cheating,97.0
 2021,Nandurbar,Cheating,26.0
-2021,Nasik,Cheating,184.0
+2021,Nashik,Cheating,184.0
 2021,Dharashiv,Cheating,49.0
 2021,Palghar,Cheating,36.0
 2021,Parbhani,Cheating,46.0
@@ -1962,7 +1962,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Forgery,
 2014,Akola,Forgery,7.0
 2014,Amravati,Forgery,17.0
-2014,Chhatrapati Sambhaji Nagar,Forgery,4.0
+2014,Chh. Sambhaji Nagar,Forgery,4.0
 2014,Beed,Forgery,2.0
 2014,Bhandara,Forgery,
 2014,Buldhana,Forgery,10.0
@@ -1975,11 +1975,11 @@ Year,District,Crime,Cases
 2014,Jalna,Forgery,
 2014,Kolhapur,Forgery,
 2014,Latur,Forgery,
-2014,Mumbai City,Forgery,980.0
+2014,Mumbai,Forgery,980.0
 2014,Nagpur,Forgery,2.0
 2014,Nanded,Forgery,140.0
 2014,Nandurbar,Forgery,1.0
-2014,Nasik,Forgery,2.0
+2014,Nashik,Forgery,2.0
 2014,Dharashiv,Forgery,
 2014,Palghar,Forgery,11.0
 2014,Parbhani,Forgery,
@@ -1997,7 +1997,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Forgery,
 2015,Akola,Forgery,2.0
 2015,Amravati,Forgery,34.0
-2015,Chhatrapati Sambhaji Nagar,Forgery,4.0
+2015,Chh. Sambhaji Nagar,Forgery,4.0
 2015,Beed,Forgery,2.0
 2015,Bhandara,Forgery,1.0
 2015,Buldhana,Forgery,
@@ -2010,11 +2010,11 @@ Year,District,Crime,Cases
 2015,Jalna,Forgery,
 2015,Kolhapur,Forgery,
 2015,Latur,Forgery,
-2015,Mumbai City,Forgery,754.0
+2015,Mumbai,Forgery,754.0
 2015,Nagpur,Forgery,77.0
 2015,Nanded,Forgery,3.0
 2015,Nandurbar,Forgery,4.0
-2015,Nasik,Forgery,1.0
+2015,Nashik,Forgery,1.0
 2015,Dharashiv,Forgery,
 2015,Palghar,Forgery,8.0
 2015,Parbhani,Forgery,
@@ -2032,7 +2032,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Forgery,3.0
 2016,Akola,Forgery,1.0
 2016,Amravati,Forgery,47.0
-2016,Chhatrapati Sambhaji Nagar,Forgery,
+2016,Chh. Sambhaji Nagar,Forgery,
 2016,Beed,Forgery,2.0
 2016,Bhandara,Forgery,
 2016,Buldhana,Forgery,
@@ -2045,11 +2045,11 @@ Year,District,Crime,Cases
 2016,Jalna,Forgery,
 2016,Kolhapur,Forgery,
 2016,Latur,Forgery,
-2016,Mumbai City,Forgery,808.0
+2016,Mumbai,Forgery,808.0
 2016,Nagpur,Forgery,15.0
 2016,Nanded,Forgery,5.0
 2016,Nandurbar,Forgery,7.0
-2016,Nasik,Forgery,50.0
+2016,Nashik,Forgery,50.0
 2016,Dharashiv,Forgery,
 2016,Palghar,Forgery,16.0
 2016,Parbhani,Forgery,
@@ -2067,7 +2067,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Forgery,
 2017,Akola,Forgery,2.0
 2017,Amravati,Forgery,27.0
-2017,Chhatrapati Sambhaji Nagar,Forgery,16.0
+2017,Chh. Sambhaji Nagar,Forgery,16.0
 2017,Beed,Forgery,29.0
 2017,Bhandara,Forgery,
 2017,Buldhana,Forgery,2.0
@@ -2080,11 +2080,11 @@ Year,District,Crime,Cases
 2017,Jalna,Forgery,15.0
 2017,Kolhapur,Forgery,11.0
 2017,Latur,Forgery,
-2017,Mumbai City,Forgery,322.0
+2017,Mumbai,Forgery,322.0
 2017,Nagpur,Forgery,54.0
 2017,Nanded,Forgery,2.0
 2017,Nandurbar,Forgery,
-2017,Nasik,Forgery,14.0
+2017,Nashik,Forgery,14.0
 2017,Dharashiv,Forgery,
 2017,Palghar,Forgery,23.0
 2017,Parbhani,Forgery,
@@ -2102,7 +2102,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Forgery,
 2018,Akola,Forgery,6.0
 2018,Amravati,Forgery,29.0
-2018,Chhatrapati Sambhaji Nagar,Forgery,9.0
+2018,Chh. Sambhaji Nagar,Forgery,9.0
 2018,Beed,Forgery,11.0
 2018,Bhandara,Forgery,
 2018,Buldhana,Forgery,6.0
@@ -2115,11 +2115,11 @@ Year,District,Crime,Cases
 2018,Jalna,Forgery,13.0
 2018,Kolhapur,Forgery,11.0
 2018,Latur,Forgery,
-2018,Mumbai City,Forgery,403.0
+2018,Mumbai,Forgery,403.0
 2018,Nagpur,Forgery,17.0
 2018,Nanded,Forgery,4.0
 2018,Nandurbar,Forgery,8.0
-2018,Nasik,Forgery,92.0
+2018,Nashik,Forgery,92.0
 2018,Dharashiv,Forgery,
 2018,Palghar,Forgery,44.0
 2018,Parbhani,Forgery,
@@ -2137,7 +2137,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Forgery,
 2019,Akola,Forgery,1.0
 2019,Amravati,Forgery,40.0
-2019,Chhatrapati Sambhaji Nagar,Forgery,7.0
+2019,Chh. Sambhaji Nagar,Forgery,7.0
 2019,Beed,Forgery,22.0
 2019,Bhandara,Forgery,
 2019,Buldhana,Forgery,3.0
@@ -2150,11 +2150,11 @@ Year,District,Crime,Cases
 2019,Jalna,Forgery,11.0
 2019,Kolhapur,Forgery,8.0
 2019,Latur,Forgery,
-2019,Mumbai City,Forgery,347.0
+2019,Mumbai,Forgery,347.0
 2019,Nagpur,Forgery,20.0
 2019,Nanded,Forgery,7.0
 2019,Nandurbar,Forgery,2.0
-2019,Nasik,Forgery,43.0
+2019,Nashik,Forgery,43.0
 2019,Dharashiv,Forgery,2.0
 2019,Palghar,Forgery,88.0
 2019,Parbhani,Forgery,
@@ -2172,7 +2172,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Forgery,
 2020,Akola,Forgery,1.0
 2020,Amravati,Forgery,15.0
-2020,Chhatrapati Sambhaji Nagar,Forgery,2.0
+2020,Chh. Sambhaji Nagar,Forgery,2.0
 2020,Beed,Forgery,14.0
 2020,Bhandara,Forgery,1.0
 2020,Buldhana,Forgery,2.0
@@ -2185,11 +2185,11 @@ Year,District,Crime,Cases
 2020,Jalna,Forgery,22.0
 2020,Kolhapur,Forgery,11.0
 2020,Latur,Forgery,
-2020,Mumbai City,Forgery,320.0
+2020,Mumbai,Forgery,320.0
 2020,Nagpur,Forgery,37.0
 2020,Nanded,Forgery,3.0
 2020,Nandurbar,Forgery,2.0
-2020,Nasik,Forgery,59.0
+2020,Nashik,Forgery,59.0
 2020,Dharashiv,Forgery,
 2020,Palghar,Forgery,12.0
 2020,Parbhani,Forgery,
@@ -2207,7 +2207,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Forgery,
 2021,Akola,Forgery,
 2021,Amravati,Forgery,44.0
-2021,Chhatrapati Sambhaji Nagar,Forgery,6.0
+2021,Chh. Sambhaji Nagar,Forgery,6.0
 2021,Beed,Forgery,25.0
 2021,Bhandara,Forgery,
 2021,Buldhana,Forgery,14.0
@@ -2220,11 +2220,11 @@ Year,District,Crime,Cases
 2021,Jalna,Forgery,22.0
 2021,Kolhapur,Forgery,6.0
 2021,Latur,Forgery,15.0
-2021,Mumbai City,Forgery,440.0
+2021,Mumbai,Forgery,440.0
 2021,Nagpur,Forgery,11.0
 2021,Nanded,Forgery,1.0
 2021,Nandurbar,Forgery,2.0
-2021,Nasik,Forgery,48.0
+2021,Nashik,Forgery,48.0
 2021,Dharashiv,Forgery,1.0
 2021,Palghar,Forgery,18.0
 2021,Parbhani,Forgery,1.0

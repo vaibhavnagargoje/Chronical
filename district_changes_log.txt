@@ -1,0 +1,379 @@
+District Name Changes Log File
+==============================
+Chapter: Agriculture | File: DSA_ChemicalFertilizer.csv | Replaced 'Mumbai City' with 'Mumbai' in 70 rows.
+Chapter: Agriculture | File: DSA_IrrigationWells.csv | Replaced 'Mumbai City' with 'Mumbai' in 72 rows.
+Chapter: Agriculture | File: DSA_TubewellsHandpumps.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Demography | File: Census_AgeDist.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 102 rows.
+Chapter: Demography | File: Census_AgeDist.csv | Replaced 'Mumbai City' with 'Mumbai' in 102 rows.
+Chapter: Demography | File: Census_Cooking.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Demography | File: Census_Cooking.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Demography | File: Census_Electricity.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 6 rows.
+Chapter: Demography | File: Census_Electricity.csv | Replaced 'Mumbai City' with 'Mumbai' in 3 rows.
+Chapter: Demography | File: Census_Electricity.csv | Replaced 'Buldana' with 'Buldhana' in 3 rows.
+Chapter: Demography | File: Census_InwardMigrationC.csv | Replaced 'Greater Bombay' with 'Mumbai' in 3 rows.
+Chapter: Demography | File: Census_InwardMigrationC.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 9 rows.
+Chapter: Demography | File: Census_InwardMigrationC.csv | Replaced 'Buldana' with 'Buldhana' in 6 rows.
+Chapter: Demography | File: Census_InwardMigrationC.csv | Replaced 'Mumbai City' with 'Mumbai' in 3 rows.
+Chapter: Demography | File: Census_InwardMigrationD.csv | Replaced 'Greater Bombay' with 'Mumbai' in 32 rows.
+Chapter: Demography | File: Census_InwardMigrationD.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 102 rows.
+Chapter: Demography | File: Census_InwardMigrationD.csv | Replaced 'Buldana' with 'Buldhana' in 67 rows.
+Chapter: Demography | File: Census_InwardMigrationD.csv | Replaced 'Mumbai City' with 'Mumbai' in 35 rows.
+Chapter: Demography | File: Census_InwardMigration_A.csv | Replaced 'Greater Bombay' with 'Mumbai' in 3 rows.
+Chapter: Demography | File: Census_InwardMigration_A.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 9 rows.
+Chapter: Demography | File: Census_InwardMigration_A.csv | Replaced 'Buldana' with 'Buldhana' in 6 rows.
+Chapter: Demography | File: Census_InwardMigration_A.csv | Replaced 'Mumbai City' with 'Mumbai' in 6 rows.
+Chapter: Demography | File: Census_InwardMigration_B.csv | Replaced 'Greater Bombay' with 'Mumbai' in 2 rows.
+Chapter: Demography | File: Census_InwardMigration_B.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 6 rows.
+Chapter: Demography | File: Census_InwardMigration_B.csv | Replaced 'Buldana' with 'Buldhana' in 4 rows.
+Chapter: Demography | File: Census_InwardMigration_B.csv | Replaced 'Mumbai City' with 'Mumbai' in 2 rows.
+Chapter: Demography | File: Census_InwardMigration_E.csv | Replaced 'Greater Bombay' with 'Mumbai' in 5 rows.
+Chapter: Demography | File: Census_InwardMigration_E.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 15 rows.
+Chapter: Demography | File: Census_InwardMigration_E.csv | Replaced 'Buldana' with 'Buldhana' in 10 rows.
+Chapter: Demography | File: Census_InwardMigration_E.csv | Replaced 'Mumbai City' with 'Mumbai' in 5 rows.
+Chapter: Demography | File: Census_Literate.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 6 rows.
+Chapter: Demography | File: Census_Literate.csv | Replaced 'Mumbai City' with 'Mumbai' in 2 rows.
+Chapter: Demography | File: Census_MotherTongue.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 97 rows.
+Chapter: Demography | File: Census_Ownership.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Demography | File: Census_Ownership.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Demography | File: Census_Population.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 6 rows.
+Chapter: Demography | File: Census_Population.csv | Replaced 'Buldana' with 'Buldhana' in 2 rows.
+Chapter: Demography | File: Census_Religion.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Demography | File: Census_Religion.csv | Replaced 'Buldana' with 'Buldhana' in 12 rows.
+Chapter: Demography | File: Census_Religion.csv | Replaced 'Mumbai City' with 'Mumbai' in 18 rows.
+Chapter: Demography | File: Census_Religion.csv | Replaced 'Nagaur' with 'Nagpur' in 4 rows.
+Chapter: Demography | File: Census_SC.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 6 rows.
+Chapter: Demography | File: Census_SexRatio.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Demography | File: Census_SexRatio.csv | Replaced 'Buldana' with 'Buldhana' in 12 rows.
+Chapter: Demography | File: Census_ST.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 6 rows.
+Chapter: Demography | File: Census_TC.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Demography | File: Census_TC.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Demography | File: Census_ToiletFacility.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Demography | File: Census_ToiletFacility.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Demography | File: Census_Water.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 21 rows.
+Chapter: Demography | File: Census_Water.csv | Replaced 'Mumbai City' with 'Mumbai' in 12 rows.
+Chapter: Demography | File: Census_Working.csv | Replaced 'Mumbai City' with 'Mumbai' in 5 rows.
+Chapter: Demography | File: Census_Working.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 6 rows.
+Chapter: Demography | File: Sheet1.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 21 rows.
+Chapter: Demography | File: Sheet1.csv | Replaced 'Mumbai City' with 'Mumbai' in 12 rows.
+Chapter: Demography | File: Sheet1.csv | Replaced 'Buldana' with 'Buldhana' in 9 rows.
+Chapter: Education | File: Drop_Out_Rate_(By_Gender).csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 150 rows.
+Chapter: Education | File: Drop_Out_Rate_(By_Gender).csv | Replaced 'Mumbai City' with 'Mumbai' in 150 rows.
+Chapter: Education | File: Drop_Out_Rate_(Schooling_Stage_.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 150 rows.
+Chapter: Education | File: Drop_Out_Rate_(Schooling_Stage_.csv | Replaced 'Mumbai City' with 'Mumbai' in 150 rows.
+Chapter: Education | File: Education_Levels.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 166 rows.
+Chapter: Education | File: Education_Levels.csv | Replaced 'Mumbai City' with 'Mumbai' in 116 rows.
+Chapter: Education | File: No._of_Schools.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 33 rows.
+Chapter: Education | File: No._of_Schools.csv | Replaced 'Mumbai City' with 'Mumbai' in 33 rows.
+Chapter: Education | File: No._of_Schools_(Management).csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 110 rows.
+Chapter: Education | File: No._of_Schools_(Management).csv | Replaced 'Mumbai City' with 'Mumbai' in 55 rows.
+Chapter: Education | File: No._of_Schools_(Type_of_School).csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 93 rows.
+Chapter: Education | File: No._of_Schools_(Type_of_School).csv | Replaced 'Mumbai City' with 'Mumbai' in 37 rows.
+Chapter: Education | File: No._of_Teachers_(By_Type_of_Sch.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 66 rows.
+Chapter: Education | File: No._of_Teachers_(By_Type_of_Sch.csv | Replaced 'Mumbai City' with 'Mumbai' in 65 rows.
+Chapter: Education | File: Student_Enrollment_(Boys_vs_Gir.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 715 rows.
+Chapter: Education | File: Student_Enrollment_(Boys_vs_Gir.csv | Replaced 'Mumbai City' with 'Mumbai' in 715 rows.
+Chapter: Education | File: Student_Enrollment_(Class_Wise).csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 165 rows.
+Chapter: Education | File: Student_Enrollment_(Class_Wise).csv | Replaced 'Mumbai City' with 'Mumbai' in 165 rows.
+Chapter: Education | File: Student_Enrollment_(Girls_vs_Bo.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 22 rows.
+Chapter: Education | File: Student_Enrollment_(Girls_vs_Bo.csv | Replaced 'Mumbai City' with 'Mumbai' in 22 rows.
+Chapter: Education | File: Student_Enrollment_Numbers.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 55 rows.
+Chapter: Education | File: Student_Enrollment_Numbers.csv | Replaced 'Mumbai City' with 'Mumbai' in 55 rows.
+Chapter: Education | File: Teacher_Category.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 48 rows.
+Chapter: Education | File: Teacher_Category.csv | Replaced 'Mumbai City' with 'Mumbai' in 37 rows.
+Chapter: Education | File: Teacher_Social_Category.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 288 rows.
+Chapter: Education | File: Teacher_Social_Category.csv | Replaced 'Mumbai City' with 'Mumbai' in 222 rows.
+Chapter: Environment | File: borewells.xlsx | Replaced 'Chhatrapati Sambhajinagar' with 'Chh. Sambhaji Nagar' in 76 rows.
+Chapter: Environment | File: dugwells.xlsx | Replaced 'Chhatrapati Sambhajinagar' with 'Chh. Sambhaji Nagar' in 88 rows.
+Chapter: Environment | File: dugwells.xlsx | Replaced 'Mumbai City' with 'Mumbai' in 88 rows.
+Chapter: Environment | File: evapotranspiration_monthly.xlsx | Replaced 'Raigarh' with 'Raigad' in 8 rows.
+Chapter: Environment | File: evapotranspiration_monthly.xlsx | Replaced 'Nasik' with 'Nashik' in 66 rows.
+Chapter: Environment | File: evapotranspiration_monthly.xlsx | Replaced 'Ahmednagar' with 'Ahilyanagar' in 66 rows.
+Chapter: Environment | File: evapotranspiration_monthly.xlsx | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 8 rows.
+Chapter: Environment | File: evapotranspiration_monthly.xlsx | Replaced 'Bid' with 'Beed' in 66 rows.
+Chapter: Environment | File: evapotranspiration_monthly.xlsx | Replaced 'Osmanabad' with 'Dharashiv' in 66 rows.
+Chapter: Environment | File: evapotranspiration_monthly.xlsx | Replaced 'Amarawati' with 'Amravati' in 66 rows.
+Chapter: Environment | File: evapotranspiration_monthly.xlsx | Replaced 'Yeotmal' with 'Yavatmal' in 66 rows.
+Chapter: Environment | File: evapotranspiration_monthly.xlsx | Replaced 'Mumbai sub' with 'Mumbai Suburban' in 66 rows.
+Chapter: Environment | File: evapotranspiration_monthly.xlsx | Replaced 'Mumbai City' with 'Mumbai' in 66 rows.
+Chapter: Environment | File: evapotranspiration_yearly.xlsx | Replaced 'Raigarh' with 'Raigad' in 8 rows.
+Chapter: Environment | File: evapotranspiration_yearly.xlsx | Replaced 'Nasik' with 'Nashik' in 66 rows.
+Chapter: Environment | File: evapotranspiration_yearly.xlsx | Replaced 'Ahmednagar' with 'Ahilyanagar' in 66 rows.
+Chapter: Environment | File: evapotranspiration_yearly.xlsx | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 8 rows.
+Chapter: Environment | File: evapotranspiration_yearly.xlsx | Replaced 'Bid' with 'Beed' in 66 rows.
+Chapter: Environment | File: evapotranspiration_yearly.xlsx | Replaced 'Osmanabad' with 'Dharashiv' in 66 rows.
+Chapter: Environment | File: evapotranspiration_yearly.xlsx | Replaced 'Amarawati' with 'Amravati' in 66 rows.
+Chapter: Environment | File: evapotranspiration_yearly.xlsx | Replaced 'Yeotmal' with 'Yavatmal' in 66 rows.
+Chapter: Environment | File: evapotranspiration_yearly.xlsx | Replaced 'Mumbai sub' with 'Mumbai Suburban' in 66 rows.
+Chapter: Environment | File: evapotranspiration_yearly.xlsx | Replaced 'Mumbai City' with 'Mumbai' in 66 rows.
+Chapter: Environment | File: forest_density_(dsa).xlsx | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Environment | File: humidity.xlsx | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 27 rows.
+Chapter: Environment | File: max_temperature_(icrisat).xlsx | Replaced 'Raigarh' with 'Raigad' in 8 rows.
+Chapter: Environment | File: max_temperature_(icrisat).xlsx | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 8 rows.
+Chapter: Environment | File: max_temperature_(icrisat).xlsx | Replaced 'Bid' with 'Beed' in 66 rows.
+Chapter: Environment | File: max_temperature_(icrisat).xlsx | Replaced 'Mumbai City' with 'Mumbai' in 66 rows.
+Chapter: Environment | File: min_temperature_(icrisat.xlsx | Replaced 'Raigarh' with 'Raigad' in 8 rows.
+Chapter: Environment | File: min_temperature_(icrisat.xlsx | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 8 rows.
+Chapter: Environment | File: min_temperature_(icrisat.xlsx | Replaced 'Bid' with 'Beed' in 66 rows.
+Chapter: Environment | File: min_temperature_(icrisat.xlsx | Replaced 'Mumbai City' with 'Mumbai' in 66 rows.
+Chapter: Environment | File: night_light_intensity_(icrisat.xlsx | Replaced 'Raigarh' with 'Raigad' in 22 rows.
+Chapter: Environment | File: night_light_intensity_(icrisat.xlsx | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 22 rows.
+Chapter: Environment | File: night_light_intensity_(icrisat.xlsx | Replaced 'Bid' with 'Beed' in 22 rows.
+Chapter: Environment | File: night_light_intensity_(icrisat.xlsx | Replaced 'Garhchiroli' with 'Gadchiroli' in 22 rows.
+Chapter: Environment | File: night_light_intensity_(icrisat.xlsx | Replaced 'Mumbai City' with 'Mumbai' in 22 rows.
+Chapter: Environment | File: rainfall_(icrisat).xlsx | Replaced 'Raigarh' with 'Raigad' in 8 rows.
+Chapter: Environment | File: rainfall_(icrisat).xlsx | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 8 rows.
+Chapter: Environment | File: rainfall_(icrisat).xlsx | Replaced 'Bid' with 'Beed' in 66 rows.
+Chapter: Environment | File: rainfall_(icrisat).xlsx | Replaced 'Mumbai City' with 'Mumbai' in 66 rows.
+Chapter: Environment | File: rainy_days_(dsa).xlsx | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Environment | File: runoff_(icrisat).xlsx | Replaced 'Raigarh' with 'Raigad' in 8 rows.
+Chapter: Environment | File: runoff_(icrisat).xlsx | Replaced 'Bid' with 'Beed' in 66 rows.
+Chapter: Environment | File: runoff_(icrisat).xlsx | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 8 rows.
+Chapter: Environment | File: runoff_(icrisat).xlsx | Replaced 'Mumbai City' with 'Mumbai' in 66 rows.
+Chapter: Environment | File: soil_moisture.xlsx | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 27 rows.
+Chapter: Environment | File: water_deficit_(icrisat).xlsx | Replaced 'Mumbai City' with 'Mumbai' in 58 rows.
+Chapter: Environment | File: wind_speed_(icrisat).xlsx | Replaced 'Raigarh' with 'Raigad' in 8 rows.
+Chapter: Environment | File: wind_speed_(icrisat).xlsx | Replaced 'Bid' with 'Beed' in 66 rows.
+Chapter: Environment | File: wind_speed_(icrisat).xlsx | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 8 rows.
+Chapter: Environment | File: wind_speed_(icrisat).xlsx | Replaced 'Mumbai City' with 'Mumbai' in 66 rows.
+Chapter: Health | File: dsa_anganwadis.csv | Replaced 'Mumbai City' with 'Mumbai' in 27 rows.
+Chapter: Health | File: dsa_deathcause.csv | Replaced 'Mumbai City' with 'Mumbai' in 330 rows.
+Chapter: Health | File: dsa_familywelfareprograms.csv | Replaced 'Mumbai City' with 'Mumbai' in 27 rows.
+Chapter: Health | File: dsa_malnutrition.csv | Replaced 'Mumbai City' with 'Mumbai' in 27 rows.
+Chapter: Health | File: dsa_malnutrition_2.csv | Replaced 'Mumbai City' with 'Mumbai' in 24 rows.
+Chapter: Health | File: dsa_privatehealth_2.csv | Replaced 'Mumbai City' with 'Mumbai' in 45 rows.
+Chapter: Health | File: dsa_publichospitals_2.csv | Replaced 'Mumbai City' with 'Mumbai' in 89 rows.
+Chapter: Health | File: dsa_publicoutpatients.csv | Replaced 'Mumbai City' with 'Mumbai' in 18 rows.
+Chapter: Health | File: dsa_registeredbirths.csv | Replaced 'Mumbai City' with 'Mumbai' in 27 rows.
+Chapter: Health | File: dsa_reporteddeaths.csv | Replaced 'Mumbai City' with 'Mumbai' in 27 rows.
+Chapter: Health | File: dsa_vaccines.csv | Replaced 'Mumbai City' with 'Mumbai' in 228 rows.
+Chapter: Health | File: hmis_abortion.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: hmis_anaemia.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: hmis_antenatalcare.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: hmis_childdisease.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 3 rows.
+Chapter: Health | File: hmis_childdisease_2.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 33 rows.
+Chapter: Health | File: hmis_contraceptives.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 38 rows.
+Chapter: Health | File: hmis_csection.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: hmis_deliveries.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: hmis_familyplanning.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: hmis_infantdeaths.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: hmis_infantdeaths_2.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 81 rows.
+Chapter: Health | File: hmis_infantvaccinations.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: hmis_iv.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: hmis_iv_2.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 15 rows.
+Chapter: Health | File: hmis_mdeaths.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 3 rows.
+Chapter: Health | File: hmis_patients.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: hmis_sexratio.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Health | File: nfhs_anaemia.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_births.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_cancerscreening.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_cancerscreening_2.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 6 rows.
+Chapter: Health | File: nfhs_csection.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_deliveryexpenditure.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_diet.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_facilities.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_familyplanning.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_highbloodsugar.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_hypertension.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_ifaconsumption.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_lowbmi.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_malnutrition.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_overweight.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_postnatalcare.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_sexratio.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Health | File: nfhs_tobaccoalcohol.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 1 rows.
+Chapter: Health | File: nfhs_vaccinations.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Industry | File: dsa_electricity.csv | Replaced 'Buldana' with 'Buldhana' in 117 rows.
+Chapter: Industry | File: dsa_electricity.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Industry | File: dsa_msme.csv | Replaced 'Buldana' with 'Buldhana' in 52 rows.
+Chapter: Industry | File: dsa_msme.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Industry | File: dsa_pollution_cat.csv | Replaced 'Buldana' with 'Buldhana' in 380 rows.
+Chapter: Industry | File: dsa_pollution_cat.csv | Replaced 'Mumbai City' with 'Mumbai' in 31 rows.
+Chapter: Industry | File: ec_broad_activity.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Industry | File: ec_broad_activity.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Industry | File: ec_number.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Industry | File: ec_number.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Industry | File: ec_social_group.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Industry | File: ec_social_group.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Industry | File: ec_sources_of_borrowings.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 3 rows.
+Chapter: Industry | File: ec_sources_of_borrowings.csv | Replaced 'Mumbai City' with 'Mumbai' in 3 rows.
+Chapter: Industry | File: ec_sources_of_finance.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 3 rows.
+Chapter: Industry | File: ec_sources_of_finance.csv | Replaced 'Mumbai City' with 'Mumbai' in 3 rows.
+Chapter: Industry | File: ec_type.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Industry | File: ec_type.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Industry | File: mahadish_factory_workers.csv | Replaced 'Buldana' with 'Buldhana' in 200 rows.
+Chapter: Industry | File: mahadish_factory_workers.csv | Replaced 'Mumbai City' with 'Mumbai' in 5031 rows.
+Chapter: Labor | File: labor_age_distribution.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 144 rows.
+Chapter: Labor | File: labor_age_distribution.csv | Replaced 'Mumbai City' with 'Mumbai' in 144 rows.
+Chapter: Labor | File: labor_dsa_establishments.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Labor | File: labor_dsa_workers.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Labor | File: labor_ec_gender.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 8 rows.
+Chapter: Labor | File: labor_ec_gender.csv | Replaced 'Mumbai City' with 'Mumbai' in 8 rows.
+Chapter: Labor | File: labor_ec_religion.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 8 rows.
+Chapter: Labor | File: labor_ec_religion.csv | Replaced 'Mumbai City' with 'Mumbai' in 8 rows.
+Chapter: Labor | File: labor_ec_workers.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Labor | File: labor_ec_workers.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Labor | File: labor_govt_employees.csv | Replaced 'Mumbai City' with 'Mumbai' in 36 rows.
+Chapter: Labor | File: labor_industry_type.csv | Replaced 'Mumbai City' with 'Mumbai' in 81 rows.
+Chapter: Labor | File: labor_mnrega_accounts.csv | Replaced 'Mumbai City' with 'Mumbai' in 10 rows.
+Chapter: Labor | File: labor_mnrega_job_cards.csv | Replaced 'Mumbai City' with 'Mumbai' in 10 rows.
+Chapter: Labor | File: labor_mnrega_participation.csv | Replaced 'Mumbai City' with 'Mumbai' in 10 rows.
+Chapter: Labor | File: labor_mnrega_scope.csv | Replaced 'Mumbai City' with 'Mumbai' in 10 rows.
+Chapter: Labor | File: labor_workers.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 6 rows.
+Chapter: Labor | File: labor_workers.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Livestock | File: artificial_insemination_(dsa).csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Livestock | File: dairy_byproducts_(dsa)_(not_gra.csv | Replaced 'Mumbai City' with 'Mumbai' in 63 rows.
+Chapter: Livestock | File: dairy_co-op_(dsa).csv | Replaced 'Mumbai suburban' with 'Mumbai Suburban' in 15 rows.
+Chapter: Livestock | File: number_of_livestock_(dsa).csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Police | File: Courts_AppealCases.csv | Replaced 'Mumbai City' with 'Mumbai' in 81 rows.
+Chapter: Police | File: Courts_Functioning.csv | Replaced 'Mumbai City' with 'Mumbai' in 81 rows.
+Chapter: Police | File: Courts_JudgesCases.csv | Replaced 'Mumbai City' with 'Mumbai' in 72 rows.
+Chapter: Police | File: Courts_OriginalCases.csv | Replaced 'Mumbai City' with 'Mumbai' in 81 rows.
+Chapter: Police | File: Cyber_CrimeTypes.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 30 rows.
+Chapter: Police | File: Cyber_CrimeTypes.csv | Replaced 'Mumbai City' with 'Mumbai' in 30 rows.
+Chapter: Police | File: Cyber_CrimeTypes.csv | Replaced 'Nasik' with 'Nashik' in 30 rows.
+Chapter: Police | File: Cyber_FraudTypes.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 30 rows.
+Chapter: Police | File: Cyber_FraudTypes.csv | Replaced 'Nasik' with 'Nashik' in 30 rows.
+Chapter: Police | File: Cyber_Totals.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 6 rows.
+Chapter: Police | File: Cyber_Totals.csv | Replaced 'Nasik' with 'Nashik' in 6 rows.
+Chapter: Police | File: DSA_WomenChildren_Taluka.csv | Replaced 'Ahmadnagar' with 'Ahilyanagar' in 56 rows.
+Chapter: Police | File: DSA_WomenChildren_Taluka.csv | Replaced 'Buldana' with 'Buldhana' in 44 rows.
+Chapter: Police | File: DSA_WomenChildren_Taluka.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.
+Chapter: Police | File: DSA_WomenChildren_Taluka.csv | Replaced 'Osmanabad' with 'Dharashiv' in 32 rows.
+Chapter: Police | File: DSA_WomenChildren_Taluka.csv | Replaced 'Sangali' with 'Sangli' in 40 rows.
+Chapter: Police | File: IPC_DocPropertyMarks.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 29 rows.
+Chapter: Police | File: IPC_DocPropertyMarks.csv | Replaced 'Nasik' with 'Nashik' in 29 rows.
+Chapter: Police | File: IPC_HumanBody.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 64 rows.
+Chapter: Police | File: IPC_HumanBody.csv | Replaced 'Mumbai City' with 'Mumbai' in 64 rows.
+Chapter: Police | File: IPC_HumanBody.csv | Replaced 'Nasik' with 'Nashik' in 64 rows.
+Chapter: Police | File: IPC_Misc.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 51 rows.
+Chapter: Police | File: IPC_Misc.csv | Replaced 'Nasik' with 'Nashik' in 51 rows.
+Chapter: Police | File: IPC_Property.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 64 rows.
+Chapter: Police | File: IPC_Property.csv | Replaced 'Mumbai City' with 'Mumbai' in 64 rows.
+Chapter: Police | File: IPC_Property.csv | Replaced 'Nasik' with 'Nashik' in 64 rows.
+Chapter: Police | File: IPC_PublicTranquility.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 16 rows.
+Chapter: Police | File: IPC_PublicTranquility.csv | Replaced 'Mumbai City' with 'Mumbai' in 16 rows.
+Chapter: Police | File: IPC_PublicTranquility.csv | Replaced 'Nasik' with 'Nashik' in 16 rows.
+Chapter: Police | File: IPC_Total.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 9 rows.
+Chapter: Police | File: IPC_Total.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Police | File: IPC_Total.csv | Replaced 'Nasik' with 'Nashik' in 9 rows.
+Chapter: Police | File: Police_Employees.csv | Replaced 'Mumbai City' with 'Mumbai' in 12 rows.
+Chapter: Police | File: Police_Infrastructure.csv | Replaced 'Mumbai City' with 'Mumbai' in 12 rows.
+Chapter: Police | File: SLL_OffenseTypes.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 258 rows.
+Chapter: Police | File: SLL_OffenseTypes.csv | Replaced 'Nasik' with 'Nashik' in 258 rows.
+Chapter: Police | File: SLL_Total.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 9 rows.
+Chapter: Police | File: SLL_Total.csv | Replaced 'Nasik' with 'Nashik' in 9 rows.
+Chapter: Police | File: Women_CrimeTypes.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 117 rows.
+Chapter: Police | File: Women_CrimeTypes.csv | Replaced 'Mumbai City' with 'Mumbai' in 117 rows.
+Chapter: Police | File: Women_CrimeTypes.csv | Replaced 'Nasik' with 'Nashik' in 117 rows.
+Chapter: Police | File: Women_Total.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 9 rows.
+Chapter: Police | File: Women_Total.csv | Replaced 'Nasik' with 'Nashik' in 9 rows.
+Chapter: Police | File: Women_Total.csv | Replaced 'Mumbai City' with 'Mumbai' in 1 rows.
+Chapter: Revenue | File: DSA_Banking.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 90 rows.
+Chapter: Revenue | File: DSA_Banking.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_Banking_2.csv | Replaced 'Chhatrapati Sambhajinagar' with 'Chh. Sambhaji Nagar' in 180 rows.
+Chapter: Revenue | File: DSA_Banking_2.csv | Replaced 'Mumbai City' with 'Mumbai' in 18 rows.
+Chapter: Revenue | File: DSA_Banking_N.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 90 rows.
+Chapter: Revenue | File: DSA_Banking_N.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_Deposits_N.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 37 rows.
+Chapter: Revenue | File: DSA_Deposits_N.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_GramPanchayat.csv | Replaced 'Buldana' with 'Buldhana' in 9 rows.
+Chapter: Revenue | File: DSA_GramPanchayat.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_GramPanchayat.csv | Replaced 'Sangali' with 'Sangli' in 10 rows.
+Chapter: Revenue | File: DSA_GramPanchayat_N.csv | Replaced 'Buldana' with 'Buldhana' in 9 rows.
+Chapter: Revenue | File: DSA_GramPanchayat_N.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_GramPanchayat_N.csv | Replaced 'Sangali' with 'Sangli' in 10 rows.
+Chapter: Revenue | File: DSA_GST.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 5 rows.
+Chapter: Revenue | File: DSA_JillaParishad_Exp.csv | Replaced 'Buldana' with 'Buldhana' in 9 rows.
+Chapter: Revenue | File: DSA_JillaParishad_Exp.csv | Replaced 'Sangali' with 'Sangli' in 10 rows.
+Chapter: Revenue | File: DSA_JillaParishad_Inc.csv | Replaced 'Buldana' with 'Buldhana' in 9 rows.
+Chapter: Revenue | File: DSA_JillaParishad_Inc.csv | Replaced 'Sangali' with 'Sangli' in 10 rows.
+Chapter: Revenue | File: DSA_JillaParishad_N.csv | Replaced 'Buldana' with 'Buldhana' in 9 rows.
+Chapter: Revenue | File: DSA_JillaParishad_N.csv | Replaced 'Sangali' with 'Sangli' in 10 rows.
+Chapter: Revenue | File: DSA_LandRevenue.csv | Replaced 'Buldana' with 'Buldhana' in 117 rows.
+Chapter: Revenue | File: DSA_LandRevenue.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_LandRevenue.csv | Replaced 'Sangali' with 'Sangli' in 100 rows.
+Chapter: Revenue | File: DSA_LandRevenue_N.csv | Replaced 'Buldana' with 'Buldhana' in 117 rows.
+Chapter: Revenue | File: DSA_LandRevenue_N.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_LandRevenue_N.csv | Replaced 'Sangali' with 'Sangli' in 100 rows.
+Chapter: Revenue | File: DSA_Loans_N.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 46 rows.
+Chapter: Revenue | File: DSA_Loans_N.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_MunCorp_N.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 10 rows.
+Chapter: Revenue | File: DSA_MunCorp_N.csv | Replaced 'Mumbai (City+Suburban)' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_MunicipalCorp_Exp.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 10 rows.
+Chapter: Revenue | File: DSA_MunicipalCorp_Exp.csv | Replaced 'Mumbai (City+Suburban)' with 'Mumbai' in 8 rows.
+Chapter: Revenue | File: DSA_MunicipalCorp_Exp.csv | Replaced 'Sindhurdurg' with 'Sindhudurg' in 10 rows.
+Chapter: Revenue | File: DSA_MunicipalCorp_Inc.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 10 rows.
+Chapter: Revenue | File: DSA_MunicipalCorp_Inc.csv | Replaced 'Mumbai (City+Suburban)' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_MunicipalCoun_Exp.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 10 rows.
+Chapter: Revenue | File: DSA_MunicipalCoun_Exp.csv | Replaced 'Mumbai (City+Suburban)' with 'Mumbai' in 8 rows.
+Chapter: Revenue | File: DSA_MunicipalCoun_Exp.csv | Replaced 'Sindhurdurg' with 'Sindhudurg' in 10 rows.
+Chapter: Revenue | File: DSA_MunicipalCoun_Inc.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 10 rows.
+Chapter: Revenue | File: DSA_MunicipalCoun_Inc.csv | Replaced 'Mumbai (City+Suburban)' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_MunicipalCoun_N.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 10 rows.
+Chapter: Revenue | File: DSA_MunicipalCoun_N.csv | Replaced 'Mumbai (City+Suburban)' with 'Mumbai' in 2 rows.
+Chapter: Revenue | File: DSA_NagarPanchayat_Exp.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 10 rows.
+Chapter: Revenue | File: DSA_NagarPanchayat_Exp.csv | Replaced 'Mumbai (City+Suburban)' with 'Mumbai' in 8 rows.
+Chapter: Revenue | File: DSA_NagarPanchayat_Exp.csv | Replaced 'Sindhurdurg' with 'Sindhudurg' in 10 rows.
+Chapter: Revenue | File: DSA_NagarPanchayat_Inc.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 10 rows.
+Chapter: Revenue | File: DSA_NagarPanchayat_Inc.csv | Replaced 'Mumbai (City+Suburban)' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_NagarPanchayat_N.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 5 rows.
+Chapter: Revenue | File: DSA_TaxRevenue.csv | Replaced 'Buldana' with 'Buldhana' in 9 rows.
+Chapter: Revenue | File: DSA_TaxRevenue.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_TaxRevenue.csv | Replaced 'Sangali' with 'Sangli' in 10 rows.
+Chapter: Revenue | File: DSA_TaxRevenue_N.csv | Replaced 'Buldana' with 'Buldhana' in 9 rows.
+Chapter: Revenue | File: DSA_TaxRevenue_N.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Revenue | File: DSA_TaxRevenue_N.csv | Replaced 'Sangali' with 'Sangli' in 10 rows.
+Chapter: Revenue | File: GDDP_GDVA.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 9 rows.
+Chapter: Revenue | File: GDDP_GDVA_N.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 9 rows.
+Chapter: Revenue | File: NDDP_NDVA.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 9 rows.
+Chapter: Revenue | File: NDDP_NDVA_N.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 9 rows.
+Chapter: Revenue | File: Table.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 180 rows.
+Chapter: Revenue | File: Table.csv | Replaced 'Mumbai City' with 'Mumbai' in 18 rows.
+Chapter: Transport | File: ARC_Accidents.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 2 rows.
+Chapter: Transport | File: ARC_Accidents.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Transport | File: ARC_Accidents.csv | Replaced 'Osmanabad' with 'Dharashiv' in 2 rows.
+Chapter: Transport | File: ARC_Age.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 7 rows.
+Chapter: Transport | File: ARC_Age.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 7 rows.
+Chapter: Transport | File: ARC_Age.csv | Replaced 'Osmanabad' with 'Dharashiv' in 7 rows.
+Chapter: Transport | File: ARC_CaseFine.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 54 rows.
+Chapter: Transport | File: ARC_CaseFine.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 54 rows.
+Chapter: Transport | File: ARC_CaseFine.csv | Replaced 'Osmanabad' with 'Dharashiv' in 54 rows.
+Chapter: Transport | File: ARC_Fatalities.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 2 rows.
+Chapter: Transport | File: ARC_Fatalities.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Transport | File: ARC_Fatalities.csv | Replaced 'Osmanabad' with 'Dharashiv' in 2 rows.
+Chapter: Transport | File: ARC_GrievousInjuries.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 2 rows.
+Chapter: Transport | File: ARC_GrievousInjuries.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Transport | File: ARC_GrievousInjuries.csv | Replaced 'Osmanabad' with 'Dharashiv' in 2 rows.
+Chapter: Transport | File: ARC_Injuries.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 4 rows.
+Chapter: Transport | File: ARC_Injuries.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Transport | File: ARC_Injuries.csv | Replaced 'Osmanabad' with 'Dharashiv' in 4 rows.
+Chapter: Transport | File: ARC_MinorInjuries.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 2 rows.
+Chapter: Transport | File: ARC_MinorInjuries.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Transport | File: ARC_MinorInjuries.csv | Replaced 'Osmanabad' with 'Dharashiv' in 2 rows.
+Chapter: Transport | File: ARC_ModeTransport.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 2 rows.
+Chapter: Transport | File: ARC_ModeTransport.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Transport | File: ARC_ModeTransport.csv | Replaced 'Osmanabad' with 'Dharashiv' in 2 rows.
+Chapter: Transport | File: ARC_Month.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 48 rows.
+Chapter: Transport | File: ARC_Month.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 48 rows.
+Chapter: Transport | File: ARC_Month.csv | Replaced 'Osmanabad' with 'Dharashiv' in 48 rows.
+Chapter: Transport | File: ARC_RoadType.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 8 rows.
+Chapter: Transport | File: ARC_RoadType.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 8 rows.
+Chapter: Transport | File: ARC_RoadType.csv | Replaced 'Osmanabad' with 'Dharashiv' in 8 rows.
+Chapter: Transport | File: ARC_Time.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 18 rows.
+Chapter: Transport | File: ARC_Time.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 18 rows.
+Chapter: Transport | File: ARC_Time.csv | Replaced 'Osmanabad' with 'Dharashiv' in 18 rows.
+Chapter: Transport | File: ARC_TotalsInjuryDeath.csv | Replaced 'Ahmednagar' with 'Ahilyanagar' in 2 rows.
+Chapter: Transport | File: ARC_TotalsInjuryDeath.csv | Replaced 'Aurangabad' with 'Chh. Sambhaji Nagar' in 2 rows.
+Chapter: Transport | File: ARC_TotalsInjuryDeath.csv | Replaced 'Osmanabad' with 'Dharashiv' in 2 rows.
+Chapter: Transport | File: DSA_100sqkm.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 90 rows.
+Chapter: Transport | File: DSA_100sqkm.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Transport | File: DSA_Bus.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 12 rows.
+Chapter: Transport | File: DSA_Bus.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Transport | File: DSA_Magazine.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 90 rows.
+Chapter: Transport | File: DSA_Magazine.csv | Replaced 'Mumbai City' with 'Mumbai' in 9 rows.
+Chapter: Transport | File: DSA_RoadMaterial.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 243 rows.
+Chapter: Transport | File: DSA_RoadMaterial.csv | Replaced 'Mumbai City' with 'Mumbai' in 25 rows.
+Chapter: Transport | File: DSA_RoadType.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 720 rows.
+Chapter: Transport | File: DSA_RoadType.csv | Replaced 'Mumbai City' with 'Mumbai' in 72 rows.
+Chapter: Transport | File: TC Assets.csv | Replaced 'Chhatrapati Sambhaji Nagar' with 'Chh. Sambhaji Nagar' in 4 rows.
+Chapter: Transport | File: TC Assets.csv | Replaced 'Mumbai City' with 'Mumbai' in 4 rows.

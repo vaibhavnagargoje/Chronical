@@ -1,8 +1,8 @@
 Year,District,Road Type,Fatalities,Grievous injuries
-2018,Ahmednagar,Expressway,0,0
-2018,Ahmednagar,National Highways,234,176
-2018,Ahmednagar,Other Roads,331,263
-2018,Ahmednagar,State Highways,290,277
+2018,Ahilyanagar,Expressway,0,0
+2018,Ahilyanagar,National Highways,234,176
+2018,Ahilyanagar,Other Roads,331,263
+2018,Ahilyanagar,State Highways,290,277
 2018,Akola,Expressway,0,0
 2018,Akola,National Highways,23,58
 2018,Akola,Other Roads,63,70
@@ -11,10 +11,10 @@ Year,District,Road Type,Fatalities,Grievous injuries
 2018,Amravati,National Highways,56,32
 2018,Amravati,Other Roads,130,166
 2018,Amravati,State Highways,117,86
-2018,Aurangabad,Expressway,0,0
-2018,Aurangabad,National Highways,77,110
-2018,Aurangabad,Other Roads,181,279
-2018,Aurangabad,State Highways,317,410
+2018,Chh. Sambhaji Nagar,Expressway,0,0
+2018,Chh. Sambhaji Nagar,National Highways,77,110
+2018,Chh. Sambhaji Nagar,Other Roads,181,279
+2018,Chh. Sambhaji Nagar,State Highways,317,410
 2018,Beed,Expressway,0,0
 2018,Beed,National Highways,93,95
 2018,Beed,Other Roads,105,118
@@ -83,10 +83,10 @@ Year,District,Road Type,Fatalities,Grievous injuries
 2018,Nashik,National Highways,320,408
 2018,Nashik,Other Roads,519,640
 2018,Nashik,State Highways,202,270
-2018,Osmanabad,Expressway,0,0
-2018,Osmanabad,National Highways,107,282
-2018,Osmanabad,Other Roads,148,198
-2018,Osmanabad,State Highways,62,143
+2018,Dharashiv,Expressway,0,0
+2018,Dharashiv,National Highways,107,282
+2018,Dharashiv,Other Roads,148,198
+2018,Dharashiv,State Highways,62,143
 2018,Palghar,Expressway,0,0
 2018,Palghar,National Highways,259,146
 2018,Palghar,Other Roads,110,189
@@ -139,10 +139,10 @@ Year,District,Road Type,Fatalities,Grievous injuries
 2018,Yavatmal,National Highways,18,4
 2018,Yavatmal,Other Roads,174,119
 2018,Yavatmal,State Highways,158,109
-2020,Ahmednagar,Expressway,0,0
-2020,Ahmednagar,National Highways,123,130
-2020,Ahmednagar,Other Roads,297,295
-2020,Ahmednagar,State Highways,222,193
+2020,Ahilyanagar,Expressway,0,0
+2020,Ahilyanagar,National Highways,123,130
+2020,Ahilyanagar,Other Roads,297,295
+2020,Ahilyanagar,State Highways,222,193
 2020,Akola,Expressway,0,0
 2020,Akola,National Highways,52,62
 2020,Akola,Other Roads,46,64
@@ -151,10 +151,10 @@ Year,District,Road Type,Fatalities,Grievous injuries
 2020,Amravati,National Highways,93,52
 2020,Amravati,Other Roads,120,109
 2020,Amravati,State Highways,160,101
-2020,Aurangabad,Expressway,0,0
-2020,Aurangabad,National Highways,101,133
-2020,Aurangabad,Other Roads,265,416
-2020,Aurangabad,State Highways,207,220
+2020,Chh. Sambhaji Nagar,Expressway,0,0
+2020,Chh. Sambhaji Nagar,National Highways,101,133
+2020,Chh. Sambhaji Nagar,Other Roads,265,416
+2020,Chh. Sambhaji Nagar,State Highways,207,220
 2020,Beed,Expressway,0,0
 2020,Beed,National Highways,116,95
 2020,Beed,Other Roads,93,102
@@ -223,10 +223,10 @@ Year,District,Road Type,Fatalities,Grievous injuries
 2020,Nashik,National Highways,326,273
 2020,Nashik,Other Roads,501,565
 2020,Nashik,State Highways,145,140
-2020,Osmanabad,Expressway,0,0
-2020,Osmanabad,National Highways,106,145
-2020,Osmanabad,Other Roads,126,180
-2020,Osmanabad,State Highways,40,69
+2020,Dharashiv,Expressway,0,0
+2020,Dharashiv,National Highways,106,145
+2020,Dharashiv,Other Roads,126,180
+2020,Dharashiv,State Highways,40,69
 2020,Palghar,Expressway,0,0
 2020,Palghar,National Highways,180,100
 2020,Palghar,Other Roads,81,132

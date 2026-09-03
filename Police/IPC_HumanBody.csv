@@ -2,7 +2,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Murder,109.0
 2014,Akola,Murder,52.0
 2014,Amravati,Murder,78.0
-2014,Chhatrapati Sambhaji Nagar,Murder,84.0
+2014,Chh. Sambhaji Nagar,Murder,84.0
 2014,Beed,Murder,75.0
 2014,Bhandara,Murder,20.0
 2014,Buldhana,Murder,59.0
@@ -15,11 +15,11 @@ Year,District,Crime,Cases
 2014,Jalna,Murder,64.0
 2014,Kolhapur,Murder,64.0
 2014,Latur,Murder,74.0
-2014,Mumbai City,Murder,200.0
+2014,Mumbai,Murder,200.0
 2014,Nagpur,Murder,174.0
 2014,Nanded,Murder,73.0
 2014,Nandurbar,Murder,36.0
-2014,Nasik,Murder,124.0
+2014,Nashik,Murder,124.0
 2014,Dharashiv,Murder,39.0
 2014,Palghar,Murder,85.0
 2014,Parbhani,Murder,44.0
@@ -37,7 +37,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Murder,111.0
 2015,Akola,Murder,44.0
 2015,Amravati,Murder,84.0
-2015,Chhatrapati Sambhaji Nagar,Murder,89.0
+2015,Chh. Sambhaji Nagar,Murder,89.0
 2015,Beed,Murder,66.0
 2015,Bhandara,Murder,27.0
 2015,Buldhana,Murder,54.0
@@ -50,11 +50,11 @@ Year,District,Crime,Cases
 2015,Jalna,Murder,40.0
 2015,Kolhapur,Murder,47.0
 2015,Latur,Murder,59.0
-2015,Mumbai City,Murder,175.0
+2015,Mumbai,Murder,175.0
 2015,Nagpur,Murder,144.0
 2015,Nanded,Murder,60.0
 2015,Nandurbar,Murder,31.0
-2015,Nasik,Murder,144.0
+2015,Nashik,Murder,144.0
 2015,Dharashiv,Murder,39.0
 2015,Palghar,Murder,92.0
 2015,Parbhani,Murder,45.0
@@ -72,7 +72,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Murder,91.0
 2016,Akola,Murder,35.0
 2016,Amravati,Murder,70.0
-2016,Chhatrapati Sambhaji Nagar,Murder,98.0
+2016,Chh. Sambhaji Nagar,Murder,98.0
 2016,Beed,Murder,59.0
 2016,Bhandara,Murder,27.0
 2016,Buldhana,Murder,49.0
@@ -85,11 +85,11 @@ Year,District,Crime,Cases
 2016,Jalna,Murder,47.0
 2016,Kolhapur,Murder,49.0
 2016,Latur,Murder,46.0
-2016,Mumbai City,Murder,154.0
+2016,Mumbai,Murder,154.0
 2016,Nagpur,Murder,142.0
 2016,Nanded,Murder,75.0
 2016,Nandurbar,Murder,23.0
-2016,Nasik,Murder,121.0
+2016,Nashik,Murder,121.0
 2016,Dharashiv,Murder,44.0
 2016,Palghar,Murder,67.0
 2016,Parbhani,Murder,49.0
@@ -107,7 +107,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Murder,86.0
 2017,Akola,Murder,38.0
 2017,Amravati,Murder,61.0
-2017,Chhatrapati Sambhaji Nagar,Murder,75.0
+2017,Chh. Sambhaji Nagar,Murder,75.0
 2017,Beed,Murder,56.0
 2017,Bhandara,Murder,14.0
 2017,Buldhana,Murder,44.0
@@ -120,11 +120,11 @@ Year,District,Crime,Cases
 2017,Jalna,Murder,44.0
 2017,Kolhapur,Murder,43.0
 2017,Latur,Murder,44.0
-2017,Mumbai City,Murder,131.0
+2017,Mumbai,Murder,131.0
 2017,Nagpur,Murder,130.0
 2017,Nanded,Murder,59.0
 2017,Nandurbar,Murder,35.0
-2017,Nasik,Murder,119.0
+2017,Nashik,Murder,119.0
 2017,Dharashiv,Murder,48.0
 2017,Palghar,Murder,74.0
 2017,Parbhani,Murder,34.0
@@ -142,7 +142,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Murder,77.0
 2018,Akola,Murder,33.0
 2018,Amravati,Murder,76.0
-2018,Chhatrapati Sambhaji Nagar,Murder,76.0
+2018,Chh. Sambhaji Nagar,Murder,76.0
 2018,Beed,Murder,48.0
 2018,Bhandara,Murder,15.0
 2018,Buldhana,Murder,45.0
@@ -155,11 +155,11 @@ Year,District,Crime,Cases
 2018,Jalna,Murder,43.0
 2018,Kolhapur,Murder,56.0
 2018,Latur,Murder,36.0
-2018,Mumbai City,Murder,172.0
+2018,Mumbai,Murder,172.0
 2018,Nagpur,Murder,108.0
 2018,Nanded,Murder,56.0
 2018,Nandurbar,Murder,28.0
-2018,Nasik,Murder,115.0
+2018,Nashik,Murder,115.0
 2018,Dharashiv,Murder,41.0
 2018,Palghar,Murder,72.0
 2018,Parbhani,Murder,40.0
@@ -177,7 +177,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Murder,77.0
 2019,Akola,Murder,36.0
 2019,Amravati,Murder,71.0
-2019,Chhatrapati Sambhaji Nagar,Murder,72.0
+2019,Chh. Sambhaji Nagar,Murder,72.0
 2019,Beed,Murder,54.0
 2019,Bhandara,Murder,25.0
 2019,Buldhana,Murder,33.0
@@ -190,11 +190,11 @@ Year,District,Crime,Cases
 2019,Jalna,Murder,38.0
 2019,Kolhapur,Murder,49.0
 2019,Latur,Murder,58.0
-2019,Mumbai City,Murder,176.0
+2019,Mumbai,Murder,176.0
 2019,Nagpur,Murder,139.0
 2019,Nanded,Murder,55.0
 2019,Nandurbar,Murder,29.0
-2019,Nasik,Murder,71.0
+2019,Nashik,Murder,71.0
 2019,Dharashiv,Murder,41.0
 2019,Palghar,Murder,72.0
 2019,Parbhani,Murder,31.0
@@ -212,7 +212,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Murder,89.0
 2020,Akola,Murder,41.0
 2020,Amravati,Murder,88.0
-2020,Chhatrapati Sambhaji Nagar,Murder,60.0
+2020,Chh. Sambhaji Nagar,Murder,60.0
 2020,Beed,Murder,53.0
 2020,Bhandara,Murder,19.0
 2020,Buldhana,Murder,48.0
@@ -225,11 +225,11 @@ Year,District,Crime,Cases
 2020,Jalna,Murder,37.0
 2020,Kolhapur,Murder,46.0
 2020,Latur,Murder,37.0
-2020,Mumbai City,Murder,151.0
+2020,Mumbai,Murder,151.0
 2020,Nagpur,Murder,142.0
 2020,Nanded,Murder,63.0
 2020,Nandurbar,Murder,31.0
-2020,Nasik,Murder,106.0
+2020,Nashik,Murder,106.0
 2020,Dharashiv,Murder,35.0
 2020,Palghar,Murder,29.0
 2020,Parbhani,Murder,35.0
@@ -247,7 +247,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Murder,101.0
 2021,Akola,Murder,36.0
 2021,Amravati,Murder,70.0
-2021,Chhatrapati Sambhaji Nagar,Murder,78.0
+2021,Chh. Sambhaji Nagar,Murder,78.0
 2021,Beed,Murder,59.0
 2021,Bhandara,Murder,30.0
 2021,Buldhana,Murder,47.0
@@ -260,11 +260,11 @@ Year,District,Crime,Cases
 2021,Jalna,Murder,54.0
 2021,Kolhapur,Murder,50.0
 2021,Latur,Murder,56.0
-2021,Mumbai City,Murder,172.0
+2021,Mumbai,Murder,172.0
 2021,Nagpur,Murder,152.0
 2021,Nanded,Murder,73.0
 2021,Nandurbar,Murder,32.0
-2021,Nasik,Murder,92.0
+2021,Nashik,Murder,92.0
 2021,Dharashiv,Murder,33.0
 2021,Palghar,Murder,31.0
 2021,Parbhani,Murder,29.0
@@ -282,7 +282,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Kidnapping & Abduction,121.0
 2014,Akola,Kidnapping & Abduction,42.0
 2014,Amravati,Kidnapping & Abduction,112.0
-2014,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,100.0
+2014,Chh. Sambhaji Nagar,Kidnapping & Abduction,100.0
 2014,Beed,Kidnapping & Abduction,72.0
 2014,Bhandara,Kidnapping & Abduction,23.0
 2014,Buldhana,Kidnapping & Abduction,44.0
@@ -295,11 +295,11 @@ Year,District,Crime,Cases
 2014,Jalna,Kidnapping & Abduction,39.0
 2014,Kolhapur,Kidnapping & Abduction,70.0
 2014,Latur,Kidnapping & Abduction,84.0
-2014,Mumbai City,Kidnapping & Abduction,558.0
+2014,Mumbai,Kidnapping & Abduction,558.0
 2014,Nagpur,Kidnapping & Abduction,182.0
 2014,Nanded,Kidnapping & Abduction,95.0
 2014,Nandurbar,Kidnapping & Abduction,21.0
-2014,Nasik,Kidnapping & Abduction,167.0
+2014,Nashik,Kidnapping & Abduction,167.0
 2014,Dharashiv,Kidnapping & Abduction,28.0
 2014,Palghar,Kidnapping & Abduction,114.0
 2014,Parbhani,Kidnapping & Abduction,64.0
@@ -317,7 +317,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Kidnapping & Abduction,229.0
 2015,Akola,Kidnapping & Abduction,73.0
 2015,Amravati,Kidnapping & Abduction,233.0
-2015,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,249.0
+2015,Chh. Sambhaji Nagar,Kidnapping & Abduction,249.0
 2015,Beed,Kidnapping & Abduction,122.0
 2015,Bhandara,Kidnapping & Abduction,68.0
 2015,Buldhana,Kidnapping & Abduction,41.0
@@ -330,11 +330,11 @@ Year,District,Crime,Cases
 2015,Jalna,Kidnapping & Abduction,78.0
 2015,Kolhapur,Kidnapping & Abduction,185.0
 2015,Latur,Kidnapping & Abduction,114.0
-2015,Mumbai City,Kidnapping & Abduction,1606.0
+2015,Mumbai,Kidnapping & Abduction,1606.0
 2015,Nagpur,Kidnapping & Abduction,446.0
 2015,Nanded,Kidnapping & Abduction,138.0
 2015,Nandurbar,Kidnapping & Abduction,27.0
-2015,Nasik,Kidnapping & Abduction,343.0
+2015,Nashik,Kidnapping & Abduction,343.0
 2015,Dharashiv,Kidnapping & Abduction,65.0
 2015,Palghar,Kidnapping & Abduction,409.0
 2015,Parbhani,Kidnapping & Abduction,108.0
@@ -352,7 +352,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Kidnapping & Abduction,252.0
 2016,Akola,Kidnapping & Abduction,80.0
 2016,Amravati,Kidnapping & Abduction,209.0
-2016,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,315.0
+2016,Chh. Sambhaji Nagar,Kidnapping & Abduction,315.0
 2016,Beed,Kidnapping & Abduction,123.0
 2016,Bhandara,Kidnapping & Abduction,71.0
 2016,Buldhana,Kidnapping & Abduction,74.0
@@ -365,11 +365,11 @@ Year,District,Crime,Cases
 2016,Jalna,Kidnapping & Abduction,71.0
 2016,Kolhapur,Kidnapping & Abduction,186.0
 2016,Latur,Kidnapping & Abduction,114.0
-2016,Mumbai City,Kidnapping & Abduction,1985.0
+2016,Mumbai,Kidnapping & Abduction,1985.0
 2016,Nagpur,Kidnapping & Abduction,635.0
 2016,Nanded,Kidnapping & Abduction,158.0
 2016,Nandurbar,Kidnapping & Abduction,43.0
-2016,Nasik,Kidnapping & Abduction,401.0
+2016,Nashik,Kidnapping & Abduction,401.0
 2016,Dharashiv,Kidnapping & Abduction,64.0
 2016,Palghar,Kidnapping & Abduction,431.0
 2016,Parbhani,Kidnapping & Abduction,100.0
@@ -387,7 +387,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Kidnapping & Abduction,303.0
 2017,Akola,Kidnapping & Abduction,96.0
 2017,Amravati,Kidnapping & Abduction,215.0
-2017,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,264.0
+2017,Chh. Sambhaji Nagar,Kidnapping & Abduction,264.0
 2017,Beed,Kidnapping & Abduction,134.0
 2017,Bhandara,Kidnapping & Abduction,108.0
 2017,Buldhana,Kidnapping & Abduction,97.0
@@ -400,11 +400,11 @@ Year,District,Crime,Cases
 2017,Jalna,Kidnapping & Abduction,90.0
 2017,Kolhapur,Kidnapping & Abduction,197.0
 2017,Latur,Kidnapping & Abduction,134.0
-2017,Mumbai City,Kidnapping & Abduction,2198.0
+2017,Mumbai,Kidnapping & Abduction,2198.0
 2017,Nagpur,Kidnapping & Abduction,660.0
 2017,Nanded,Kidnapping & Abduction,154.0
 2017,Nandurbar,Kidnapping & Abduction,41.0
-2017,Nasik,Kidnapping & Abduction,431.0
+2017,Nashik,Kidnapping & Abduction,431.0
 2017,Dharashiv,Kidnapping & Abduction,71.0
 2017,Palghar,Kidnapping & Abduction,411.0
 2017,Parbhani,Kidnapping & Abduction,107.0
@@ -422,7 +422,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Kidnapping & Abduction,431.0
 2018,Akola,Kidnapping & Abduction,133.0
 2018,Amravati,Kidnapping & Abduction,236.0
-2018,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,281.0
+2018,Chh. Sambhaji Nagar,Kidnapping & Abduction,281.0
 2018,Beed,Kidnapping & Abduction,145.0
 2018,Bhandara,Kidnapping & Abduction,109.0
 2018,Buldhana,Kidnapping & Abduction,102.0
@@ -435,11 +435,11 @@ Year,District,Crime,Cases
 2018,Jalna,Kidnapping & Abduction,101.0
 2018,Kolhapur,Kidnapping & Abduction,232.0
 2018,Latur,Kidnapping & Abduction,156.0
-2018,Mumbai City,Kidnapping & Abduction,2232.0
+2018,Mumbai,Kidnapping & Abduction,2232.0
 2018,Nagpur,Kidnapping & Abduction,651.0
 2018,Nanded,Kidnapping & Abduction,159.0
 2018,Nandurbar,Kidnapping & Abduction,62.0
-2018,Nasik,Kidnapping & Abduction,514.0
+2018,Nashik,Kidnapping & Abduction,514.0
 2018,Dharashiv,Kidnapping & Abduction,81.0
 2018,Palghar,Kidnapping & Abduction,524.0
 2018,Parbhani,Kidnapping & Abduction,83.0
@@ -457,7 +457,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Kidnapping & Abduction,420.0
 2019,Akola,Kidnapping & Abduction,126.0
 2019,Amravati,Kidnapping & Abduction,271.0
-2019,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,318.0
+2019,Chh. Sambhaji Nagar,Kidnapping & Abduction,318.0
 2019,Beed,Kidnapping & Abduction,128.0
 2019,Bhandara,Kidnapping & Abduction,108.0
 2019,Buldhana,Kidnapping & Abduction,123.0
@@ -470,11 +470,11 @@ Year,District,Crime,Cases
 2019,Jalna,Kidnapping & Abduction,114.0
 2019,Kolhapur,Kidnapping & Abduction,267.0
 2019,Latur,Kidnapping & Abduction,134.0
-2019,Mumbai City,Kidnapping & Abduction,2139.0
+2019,Mumbai,Kidnapping & Abduction,2139.0
 2019,Nagpur,Kidnapping & Abduction,695.0
 2019,Nanded,Kidnapping & Abduction,182.0
 2019,Nandurbar,Kidnapping & Abduction,50.0
-2019,Nasik,Kidnapping & Abduction,545.0
+2019,Nashik,Kidnapping & Abduction,545.0
 2019,Dharashiv,Kidnapping & Abduction,77.0
 2019,Palghar,Kidnapping & Abduction,533.0
 2019,Parbhani,Kidnapping & Abduction,124.0
@@ -492,7 +492,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Kidnapping & Abduction,369.0
 2020,Akola,Kidnapping & Abduction,76.0
 2020,Amravati,Kidnapping & Abduction,190.0
-2020,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,242.0
+2020,Chh. Sambhaji Nagar,Kidnapping & Abduction,242.0
 2020,Beed,Kidnapping & Abduction,91.0
 2020,Bhandara,Kidnapping & Abduction,71.0
 2020,Buldhana,Kidnapping & Abduction,110.0
@@ -505,11 +505,11 @@ Year,District,Crime,Cases
 2020,Jalna,Kidnapping & Abduction,100.0
 2020,Kolhapur,Kidnapping & Abduction,150.0
 2020,Latur,Kidnapping & Abduction,111.0
-2020,Mumbai City,Kidnapping & Abduction,1180.0
+2020,Mumbai,Kidnapping & Abduction,1180.0
 2020,Nagpur,Kidnapping & Abduction,442.0
 2020,Nanded,Kidnapping & Abduction,127.0
 2020,Nandurbar,Kidnapping & Abduction,57.0
-2020,Nasik,Kidnapping & Abduction,473.0
+2020,Nashik,Kidnapping & Abduction,473.0
 2020,Dharashiv,Kidnapping & Abduction,87.0
 2020,Palghar,Kidnapping & Abduction,71.0
 2020,Parbhani,Kidnapping & Abduction,65.0
@@ -527,7 +527,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Kidnapping & Abduction,449.0
 2021,Akola,Kidnapping & Abduction,98.0
 2021,Amravati,Kidnapping & Abduction,266.0
-2021,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,272.0
+2021,Chh. Sambhaji Nagar,Kidnapping & Abduction,272.0
 2021,Beed,Kidnapping & Abduction,128.0
 2021,Bhandara,Kidnapping & Abduction,74.0
 2021,Buldhana,Kidnapping & Abduction,137.0
@@ -540,11 +540,11 @@ Year,District,Crime,Cases
 2021,Jalna,Kidnapping & Abduction,106.0
 2021,Kolhapur,Kidnapping & Abduction,211.0
 2021,Latur,Kidnapping & Abduction,136.0
-2021,Mumbai City,Kidnapping & Abduction,1600.0
+2021,Mumbai,Kidnapping & Abduction,1600.0
 2021,Nagpur,Kidnapping & Abduction,522.0
 2021,Nanded,Kidnapping & Abduction,140.0
 2021,Nandurbar,Kidnapping & Abduction,77.0
-2021,Nasik,Kidnapping & Abduction,598.0
+2021,Nashik,Kidnapping & Abduction,598.0
 2021,Dharashiv,Kidnapping & Abduction,92.0
 2021,Palghar,Kidnapping & Abduction,90.0
 2021,Parbhani,Kidnapping & Abduction,89.0
@@ -562,7 +562,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Hurt,398.0
 2014,Akola,Hurt,242.0
 2014,Amravati,Hurt,676.0
-2014,Chhatrapati Sambhaji Nagar,Hurt,296.0
+2014,Chh. Sambhaji Nagar,Hurt,296.0
 2014,Beed,Hurt,242.0
 2014,Bhandara,Hurt,84.0
 2014,Buldhana,Hurt,256.0
@@ -575,11 +575,11 @@ Year,District,Crime,Cases
 2014,Jalna,Hurt,382.0
 2014,Kolhapur,Hurt,220.0
 2014,Latur,Hurt,84.0
-2014,Mumbai City,Hurt,4038.0
+2014,Mumbai,Hurt,4038.0
 2014,Nagpur,Hurt,941.0
 2014,Nanded,Hurt,342.0
 2014,Nandurbar,Hurt,68.0
-2014,Nasik,Hurt,942.0
+2014,Nashik,Hurt,942.0
 2014,Dharashiv,Hurt,130.0
 2014,Palghar,Hurt,425.0
 2014,Parbhani,Hurt,282.0
@@ -597,7 +597,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Hurt,430.0
 2015,Akola,Hurt,194.0
 2015,Amravati,Hurt,411.0
-2015,Chhatrapati Sambhaji Nagar,Hurt,334.0
+2015,Chh. Sambhaji Nagar,Hurt,334.0
 2015,Beed,Hurt,254.0
 2015,Bhandara,Hurt,102.0
 2015,Buldhana,Hurt,238.0
@@ -610,11 +610,11 @@ Year,District,Crime,Cases
 2015,Jalna,Hurt,584.0
 2015,Kolhapur,Hurt,1228.0
 2015,Latur,Hurt,82.0
-2015,Mumbai City,Hurt,3043.0
+2015,Mumbai,Hurt,3043.0
 2015,Nagpur,Hurt,784.0
 2015,Nanded,Hurt,323.0
 2015,Nandurbar,Hurt,82.0
-2015,Nasik,Hurt,1036.0
+2015,Nashik,Hurt,1036.0
 2015,Dharashiv,Hurt,182.0
 2015,Palghar,Hurt,526.0
 2015,Parbhani,Hurt,302.0
@@ -632,7 +632,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Hurt,237.0
 2016,Akola,Hurt,91.0
 2016,Amravati,Hurt,163.0
-2016,Chhatrapati Sambhaji Nagar,Hurt,189.0
+2016,Chh. Sambhaji Nagar,Hurt,189.0
 2016,Beed,Hurt,143.0
 2016,Bhandara,Hurt,54.0
 2016,Buldhana,Hurt,114.0
@@ -645,11 +645,11 @@ Year,District,Crime,Cases
 2016,Jalna,Hurt,20.0
 2016,Kolhapur,Hurt,115.0
 2016,Latur,Hurt,101.0
-2016,Mumbai City,Hurt,1367.0
+2016,Mumbai,Hurt,1367.0
 2016,Nagpur,Hurt,392.0
 2016,Nanded,Hurt,130.0
 2016,Nandurbar,Hurt,25.0
-2016,Nasik,Hurt,1041.0
+2016,Nashik,Hurt,1041.0
 2016,Dharashiv,Hurt,73.0
 2016,Palghar,Hurt,195.0
 2016,Parbhani,Hurt,156.0
@@ -667,7 +667,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Hurt,886.0
 2017,Akola,Hurt,1161.0
 2017,Amravati,Hurt,1553.0
-2017,Chhatrapati Sambhaji Nagar,Hurt,1613.0
+2017,Chh. Sambhaji Nagar,Hurt,1613.0
 2017,Beed,Hurt,925.0
 2017,Bhandara,Hurt,338.0
 2017,Buldhana,Hurt,1624.0
@@ -680,11 +680,11 @@ Year,District,Crime,Cases
 2017,Jalna,Hurt,840.0
 2017,Kolhapur,Hurt,687.0
 2017,Latur,Hurt,960.0
-2017,Mumbai City,Hurt,5222.0
+2017,Mumbai,Hurt,5222.0
 2017,Nagpur,Hurt,2244.0
 2017,Nanded,Hurt,1160.0
 2017,Nandurbar,Hurt,174.0
-2017,Nasik,Hurt,1462.0
+2017,Nashik,Hurt,1462.0
 2017,Dharashiv,Hurt,670.0
 2017,Palghar,Hurt,702.0
 2017,Parbhani,Hurt,798.0
@@ -702,7 +702,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Hurt,1458.0
 2018,Akola,Hurt,1203.0
 2018,Amravati,Hurt,1325.0
-2018,Chhatrapati Sambhaji Nagar,Hurt,1852.0
+2018,Chh. Sambhaji Nagar,Hurt,1852.0
 2018,Beed,Hurt,944.0
 2018,Bhandara,Hurt,368.0
 2018,Buldhana,Hurt,1742.0
@@ -715,11 +715,11 @@ Year,District,Crime,Cases
 2018,Jalna,Hurt,849.0
 2018,Kolhapur,Hurt,738.0
 2018,Latur,Hurt,964.0
-2018,Mumbai City,Hurt,5966.0
+2018,Mumbai,Hurt,5966.0
 2018,Nagpur,Hurt,2202.0
 2018,Nanded,Hurt,1310.0
 2018,Nandurbar,Hurt,181.0
-2018,Nasik,Hurt,1575.0
+2018,Nashik,Hurt,1575.0
 2018,Dharashiv,Hurt,689.0
 2018,Palghar,Hurt,1009.0
 2018,Parbhani,Hurt,855.0
@@ -737,7 +737,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Hurt,1644.0
 2019,Akola,Hurt,1297.0
 2019,Amravati,Hurt,1860.0
-2019,Chhatrapati Sambhaji Nagar,Hurt,1932.0
+2019,Chh. Sambhaji Nagar,Hurt,1932.0
 2019,Beed,Hurt,1125.0
 2019,Bhandara,Hurt,422.0
 2019,Buldhana,Hurt,1751.0
@@ -750,11 +750,11 @@ Year,District,Crime,Cases
 2019,Jalna,Hurt,1045.0
 2019,Kolhapur,Hurt,852.0
 2019,Latur,Hurt,993.0
-2019,Mumbai City,Hurt,6416.0
+2019,Mumbai,Hurt,6416.0
 2019,Nagpur,Hurt,2377.0
 2019,Nanded,Hurt,1673.0
 2019,Nandurbar,Hurt,225.0
-2019,Nasik,Hurt,2228.0
+2019,Nashik,Hurt,2228.0
 2019,Dharashiv,Hurt,823.0
 2019,Palghar,Hurt,1180.0
 2019,Parbhani,Hurt,1014.0
@@ -772,7 +772,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Hurt,1826.0
 2020,Akola,Hurt,1345.0
 2020,Amravati,Hurt,2133.0
-2020,Chhatrapati Sambhaji Nagar,Hurt,1869.0
+2020,Chh. Sambhaji Nagar,Hurt,1869.0
 2020,Beed,Hurt,1233.0
 2020,Bhandara,Hurt,486.0
 2020,Buldhana,Hurt,2099.0
@@ -785,11 +785,11 @@ Year,District,Crime,Cases
 2020,Jalna,Hurt,1436.0
 2020,Kolhapur,Hurt,1020.0
 2020,Latur,Hurt,1077.0
-2020,Mumbai City,Hurt,4171.0
+2020,Mumbai,Hurt,4171.0
 2020,Nagpur,Hurt,2252.0
 2020,Nanded,Hurt,1778.0
 2020,Nandurbar,Hurt,255.0
-2020,Nasik,Hurt,1720.0
+2020,Nashik,Hurt,1720.0
 2020,Dharashiv,Hurt,847.0
 2020,Palghar,Hurt,422.0
 2020,Parbhani,Hurt,1227.0
@@ -807,7 +807,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Hurt,2554.0
 2021,Akola,Hurt,1437.0
 2021,Amravati,Hurt,2105.0
-2021,Chhatrapati Sambhaji Nagar,Hurt,2157.0
+2021,Chh. Sambhaji Nagar,Hurt,2157.0
 2021,Beed,Hurt,1309.0
 2021,Bhandara,Hurt,486.0
 2021,Buldhana,Hurt,2059.0
@@ -820,11 +820,11 @@ Year,District,Crime,Cases
 2021,Jalna,Hurt,1244.0
 2021,Kolhapur,Hurt,1137.0
 2021,Latur,Hurt,1317.0
-2021,Mumbai City,Hurt,4654.0
+2021,Mumbai,Hurt,4654.0
 2021,Nagpur,Hurt,2231.0
 2021,Nanded,Hurt,1782.0
 2021,Nandurbar,Hurt,260.0
-2021,Nasik,Hurt,1842.0
+2021,Nashik,Hurt,1842.0
 2021,Dharashiv,Hurt,854.0
 2021,Palghar,Hurt,357.0
 2021,Parbhani,Hurt,1319.0
@@ -842,7 +842,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Causing Death by Negligence,736.0
 2014,Akola,Causing Death by Negligence,141.0
 2014,Amravati,Causing Death by Negligence,319.0
-2014,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,481.0
+2014,Chh. Sambhaji Nagar,Causing Death by Negligence,481.0
 2014,Beed,Causing Death by Negligence,304.0
 2014,Bhandara,Causing Death by Negligence,135.0
 2014,Buldhana,Causing Death by Negligence,279.0
@@ -855,11 +855,11 @@ Year,District,Crime,Cases
 2014,Jalna,Causing Death by Negligence,189.0
 2014,Kolhapur,Causing Death by Negligence,317.0
 2014,Latur,Causing Death by Negligence,256.0
-2014,Mumbai City,Causing Death by Negligence,586.0
+2014,Mumbai,Causing Death by Negligence,586.0
 2014,Nagpur,Causing Death by Negligence,756.0
 2014,Nanded,Causing Death by Negligence,268.0
 2014,Nandurbar,Causing Death by Negligence,129.0
-2014,Nasik,Causing Death by Negligence,860.0
+2014,Nashik,Causing Death by Negligence,860.0
 2014,Dharashiv,Causing Death by Negligence,243.0
 2014,Palghar,Causing Death by Negligence,396.0
 2014,Parbhani,Causing Death by Negligence,120.0
@@ -877,7 +877,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Causing Death by Negligence,784.0
 2015,Akola,Causing Death by Negligence,133.0
 2015,Amravati,Causing Death by Negligence,322.0
-2015,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,420.0
+2015,Chh. Sambhaji Nagar,Causing Death by Negligence,420.0
 2015,Beed,Causing Death by Negligence,265.0
 2015,Bhandara,Causing Death by Negligence,161.0
 2015,Buldhana,Causing Death by Negligence,259.0
@@ -890,11 +890,11 @@ Year,District,Crime,Cases
 2015,Jalna,Causing Death by Negligence,169.0
 2015,Kolhapur,Causing Death by Negligence,377.0
 2015,Latur,Causing Death by Negligence,249.0
-2015,Mumbai City,Causing Death by Negligence,590.0
+2015,Mumbai,Causing Death by Negligence,590.0
 2015,Nagpur,Causing Death by Negligence,725.0
 2015,Nanded,Causing Death by Negligence,237.0
 2015,Nandurbar,Causing Death by Negligence,143.0
-2015,Nasik,Causing Death by Negligence,964.0
+2015,Nashik,Causing Death by Negligence,964.0
 2015,Dharashiv,Causing Death by Negligence,288.0
 2015,Palghar,Causing Death by Negligence,498.0
 2015,Parbhani,Causing Death by Negligence,119.0
@@ -912,7 +912,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Causing Death by Negligence,756.0
 2016,Akola,Causing Death by Negligence,144.0
 2016,Amravati,Causing Death by Negligence,351.0
-2016,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,459.0
+2016,Chh. Sambhaji Nagar,Causing Death by Negligence,459.0
 2016,Beed,Causing Death by Negligence,271.0
 2016,Bhandara,Causing Death by Negligence,154.0
 2016,Buldhana,Causing Death by Negligence,291.0
@@ -925,11 +925,11 @@ Year,District,Crime,Cases
 2016,Jalna,Causing Death by Negligence,191.0
 2016,Kolhapur,Causing Death by Negligence,411.0
 2016,Latur,Causing Death by Negligence,229.0
-2016,Mumbai City,Causing Death by Negligence,559.0
+2016,Mumbai,Causing Death by Negligence,559.0
 2016,Nagpur,Causing Death by Negligence,714.0
 2016,Nanded,Causing Death by Negligence,257.0
 2016,Nandurbar,Causing Death by Negligence,156.0
-2016,Nasik,Causing Death by Negligence,928.0
+2016,Nashik,Causing Death by Negligence,928.0
 2016,Dharashiv,Causing Death by Negligence,231.0
 2016,Palghar,Causing Death by Negligence,509.0
 2016,Parbhani,Causing Death by Negligence,120.0
@@ -947,7 +947,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Causing Death by Negligence,715.0
 2017,Akola,Causing Death by Negligence,143.0
 2017,Amravati,Causing Death by Negligence,273.0
-2017,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,515.0
+2017,Chh. Sambhaji Nagar,Causing Death by Negligence,515.0
 2017,Beed,Causing Death by Negligence,292.0
 2017,Bhandara,Causing Death by Negligence,168.0
 2017,Buldhana,Causing Death by Negligence,248.0
@@ -960,11 +960,11 @@ Year,District,Crime,Cases
 2017,Jalna,Causing Death by Negligence,199.0
 2017,Kolhapur,Causing Death by Negligence,368.0
 2017,Latur,Causing Death by Negligence,241.0
-2017,Mumbai City,Causing Death by Negligence,604.0
+2017,Mumbai,Causing Death by Negligence,604.0
 2017,Nagpur,Causing Death by Negligence,630.0
 2017,Nanded,Causing Death by Negligence,265.0
 2017,Nandurbar,Causing Death by Negligence,129.0
-2017,Nasik,Causing Death by Negligence,848.0
+2017,Nashik,Causing Death by Negligence,848.0
 2017,Dharashiv,Causing Death by Negligence,246.0
 2017,Palghar,Causing Death by Negligence,481.0
 2017,Parbhani,Causing Death by Negligence,103.0
@@ -982,7 +982,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Causing Death by Negligence,799.0
 2018,Akola,Causing Death by Negligence,146.0
 2018,Amravati,Causing Death by Negligence,302.0
-2018,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,532.0
+2018,Chh. Sambhaji Nagar,Causing Death by Negligence,532.0
 2018,Beed,Causing Death by Negligence,318.0
 2018,Bhandara,Causing Death by Negligence,149.0
 2018,Buldhana,Causing Death by Negligence,280.0
@@ -995,11 +995,11 @@ Year,District,Crime,Cases
 2018,Jalna,Causing Death by Negligence,198.0
 2018,Kolhapur,Causing Death by Negligence,364.0
 2018,Latur,Causing Death by Negligence,238.0
-2018,Mumbai City,Causing Death by Negligence,473.0
+2018,Mumbai,Causing Death by Negligence,473.0
 2018,Nagpur,Causing Death by Negligence,613.0
 2018,Nanded,Causing Death by Negligence,253.0
 2018,Nandurbar,Causing Death by Negligence,162.0
-2018,Nasik,Causing Death by Negligence,995.0
+2018,Nashik,Causing Death by Negligence,995.0
 2018,Dharashiv,Causing Death by Negligence,300.0
 2018,Palghar,Causing Death by Negligence,500.0
 2018,Parbhani,Causing Death by Negligence,128.0
@@ -1017,7 +1017,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Causing Death by Negligence,832.0
 2019,Akola,Causing Death by Negligence,156.0
 2019,Amravati,Causing Death by Negligence,316.0
-2019,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,489.0
+2019,Chh. Sambhaji Nagar,Causing Death by Negligence,489.0
 2019,Beed,Causing Death by Negligence,316.0
 2019,Bhandara,Causing Death by Negligence,141.0
 2019,Buldhana,Causing Death by Negligence,276.0
@@ -1030,11 +1030,11 @@ Year,District,Crime,Cases
 2019,Jalna,Causing Death by Negligence,184.0
 2019,Kolhapur,Causing Death by Negligence,349.0
 2019,Latur,Causing Death by Negligence,270.0
-2019,Mumbai City,Causing Death by Negligence,446.0
+2019,Mumbai,Causing Death by Negligence,446.0
 2019,Nagpur,Causing Death by Negligence,637.0
 2019,Nanded,Causing Death by Negligence,255.0
 2019,Nandurbar,Causing Death by Negligence,138.0
-2019,Nasik,Causing Death by Negligence,909.0
+2019,Nashik,Causing Death by Negligence,909.0
 2019,Dharashiv,Causing Death by Negligence,240.0
 2019,Palghar,Causing Death by Negligence,454.0
 2019,Parbhani,Causing Death by Negligence,118.0
@@ -1052,7 +1052,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Causing Death by Negligence,620.0
 2020,Akola,Causing Death by Negligence,116.0
 2020,Amravati,Causing Death by Negligence,354.0
-2020,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,386.0
+2020,Chh. Sambhaji Nagar,Causing Death by Negligence,386.0
 2020,Beed,Causing Death by Negligence,308.0
 2020,Bhandara,Causing Death by Negligence,141.0
 2020,Buldhana,Causing Death by Negligence,293.0
@@ -1065,11 +1065,11 @@ Year,District,Crime,Cases
 2020,Jalna,Causing Death by Negligence,209.0
 2020,Kolhapur,Causing Death by Negligence,313.0
 2020,Latur,Causing Death by Negligence,244.0
-2020,Mumbai City,Causing Death by Negligence,349.0
+2020,Mumbai,Causing Death by Negligence,349.0
 2020,Nagpur,Causing Death by Negligence,581.0
 2020,Nanded,Causing Death by Negligence,252.0
 2020,Nandurbar,Causing Death by Negligence,133.0
-2020,Nasik,Causing Death by Negligence,917.0
+2020,Nashik,Causing Death by Negligence,917.0
 2020,Dharashiv,Causing Death by Negligence,253.0
 2020,Palghar,Causing Death by Negligence,216.0
 2020,Parbhani,Causing Death by Negligence,121.0
@@ -1087,7 +1087,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Causing Death by Negligence,749.0
 2021,Akola,Causing Death by Negligence,151.0
 2021,Amravati,Causing Death by Negligence,366.0
-2021,Chhatrapati Sambhaji Nagar,Causing Death by Negligence,528.0
+2021,Chh. Sambhaji Nagar,Causing Death by Negligence,528.0
 2021,Beed,Causing Death by Negligence,398.0
 2021,Bhandara,Causing Death by Negligence,164.0
 2021,Buldhana,Causing Death by Negligence,284.0
@@ -1100,11 +1100,11 @@ Year,District,Crime,Cases
 2021,Jalna,Causing Death by Negligence,305.0
 2021,Kolhapur,Causing Death by Negligence,388.0
 2021,Latur,Causing Death by Negligence,286.0
-2021,Mumbai City,Causing Death by Negligence,389.0
+2021,Mumbai,Causing Death by Negligence,389.0
 2021,Nagpur,Causing Death by Negligence,741.0
 2021,Nanded,Causing Death by Negligence,338.0
 2021,Nandurbar,Causing Death by Negligence,170.0
-2021,Nasik,Causing Death by Negligence,991.0
+2021,Nashik,Causing Death by Negligence,991.0
 2021,Dharashiv,Causing Death by Negligence,258.0
 2021,Palghar,Causing Death by Negligence,273.0
 2021,Parbhani,Causing Death by Negligence,180.0
@@ -1122,7 +1122,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,HumanTrafficking,
 2014,Akola,HumanTrafficking,
 2014,Amravati,HumanTrafficking,
-2014,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2014,Chh. Sambhaji Nagar,HumanTrafficking,
 2014,Beed,HumanTrafficking,
 2014,Bhandara,HumanTrafficking,
 2014,Buldhana,HumanTrafficking,
@@ -1135,11 +1135,11 @@ Year,District,Crime,Cases
 2014,Jalna,HumanTrafficking,
 2014,Kolhapur,HumanTrafficking,
 2014,Latur,HumanTrafficking,
-2014,Mumbai City,HumanTrafficking,85.0
+2014,Mumbai,HumanTrafficking,85.0
 2014,Nagpur,HumanTrafficking,1.0
 2014,Nanded,HumanTrafficking,
 2014,Nandurbar,HumanTrafficking,
-2014,Nasik,HumanTrafficking,
+2014,Nashik,HumanTrafficking,
 2014,Dharashiv,HumanTrafficking,
 2014,Palghar,HumanTrafficking,
 2014,Parbhani,HumanTrafficking,
@@ -1157,7 +1157,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,HumanTrafficking,
 2015,Akola,HumanTrafficking,
 2015,Amravati,HumanTrafficking,
-2015,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2015,Chh. Sambhaji Nagar,HumanTrafficking,
 2015,Beed,HumanTrafficking,
 2015,Bhandara,HumanTrafficking,
 2015,Buldhana,HumanTrafficking,
@@ -1170,11 +1170,11 @@ Year,District,Crime,Cases
 2015,Jalna,HumanTrafficking,
 2015,Kolhapur,HumanTrafficking,
 2015,Latur,HumanTrafficking,
-2015,Mumbai City,HumanTrafficking,2.0
+2015,Mumbai,HumanTrafficking,2.0
 2015,Nagpur,HumanTrafficking,1.0
 2015,Nanded,HumanTrafficking,1.0
 2015,Nandurbar,HumanTrafficking,
-2015,Nasik,HumanTrafficking,
+2015,Nashik,HumanTrafficking,
 2015,Dharashiv,HumanTrafficking,
 2015,Palghar,HumanTrafficking,
 2015,Parbhani,HumanTrafficking,
@@ -1192,7 +1192,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,HumanTrafficking,
 2016,Akola,HumanTrafficking,
 2016,Amravati,HumanTrafficking,
-2016,Chhatrapati Sambhaji Nagar,HumanTrafficking,2.0
+2016,Chh. Sambhaji Nagar,HumanTrafficking,2.0
 2016,Beed,HumanTrafficking,
 2016,Bhandara,HumanTrafficking,
 2016,Buldhana,HumanTrafficking,
@@ -1205,11 +1205,11 @@ Year,District,Crime,Cases
 2016,Jalna,HumanTrafficking,
 2016,Kolhapur,HumanTrafficking,
 2016,Latur,HumanTrafficking,
-2016,Mumbai City,HumanTrafficking,3.0
+2016,Mumbai,HumanTrafficking,3.0
 2016,Nagpur,HumanTrafficking,3.0
 2016,Nanded,HumanTrafficking,1.0
 2016,Nandurbar,HumanTrafficking,
-2016,Nasik,HumanTrafficking,
+2016,Nashik,HumanTrafficking,
 2016,Dharashiv,HumanTrafficking,
 2016,Palghar,HumanTrafficking,1.0
 2016,Parbhani,HumanTrafficking,
@@ -1227,7 +1227,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,HumanTrafficking,
 2017,Akola,HumanTrafficking,
 2017,Amravati,HumanTrafficking,2.0
-2017,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2017,Chh. Sambhaji Nagar,HumanTrafficking,
 2017,Beed,HumanTrafficking,1.0
 2017,Bhandara,HumanTrafficking,1.0
 2017,Buldhana,HumanTrafficking,
@@ -1240,11 +1240,11 @@ Year,District,Crime,Cases
 2017,Jalna,HumanTrafficking,
 2017,Kolhapur,HumanTrafficking,1.0
 2017,Latur,HumanTrafficking,
-2017,Mumbai City,HumanTrafficking,34.0
+2017,Mumbai,HumanTrafficking,34.0
 2017,Nagpur,HumanTrafficking,15.0
 2017,Nanded,HumanTrafficking,
 2017,Nandurbar,HumanTrafficking,
-2017,Nasik,HumanTrafficking,2.0
+2017,Nashik,HumanTrafficking,2.0
 2017,Dharashiv,HumanTrafficking,
 2017,Palghar,HumanTrafficking,17.0
 2017,Parbhani,HumanTrafficking,
@@ -1262,7 +1262,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,HumanTrafficking,
 2018,Akola,HumanTrafficking,
 2018,Amravati,HumanTrafficking,1.0
-2018,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2018,Chh. Sambhaji Nagar,HumanTrafficking,
 2018,Beed,HumanTrafficking,7.0
 2018,Bhandara,HumanTrafficking,
 2018,Buldhana,HumanTrafficking,
@@ -1275,11 +1275,11 @@ Year,District,Crime,Cases
 2018,Jalna,HumanTrafficking,
 2018,Kolhapur,HumanTrafficking,15.0
 2018,Latur,HumanTrafficking,
-2018,Mumbai City,HumanTrafficking,49.0
+2018,Mumbai,HumanTrafficking,49.0
 2018,Nagpur,HumanTrafficking,27.0
 2018,Nanded,HumanTrafficking,1.0
 2018,Nandurbar,HumanTrafficking,
-2018,Nasik,HumanTrafficking,
+2018,Nashik,HumanTrafficking,
 2018,Dharashiv,HumanTrafficking,
 2018,Palghar,HumanTrafficking,12.0
 2018,Parbhani,HumanTrafficking,
@@ -1297,7 +1297,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,HumanTrafficking,
 2019,Akola,HumanTrafficking,
 2019,Amravati,HumanTrafficking,2.0
-2019,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2019,Chh. Sambhaji Nagar,HumanTrafficking,
 2019,Beed,HumanTrafficking,4.0
 2019,Bhandara,HumanTrafficking,
 2019,Buldhana,HumanTrafficking,
@@ -1310,11 +1310,11 @@ Year,District,Crime,Cases
 2019,Jalna,HumanTrafficking,
 2019,Kolhapur,HumanTrafficking,16.0
 2019,Latur,HumanTrafficking,
-2019,Mumbai City,HumanTrafficking,85.0
+2019,Mumbai,HumanTrafficking,85.0
 2019,Nagpur,HumanTrafficking,14.0
 2019,Nanded,HumanTrafficking,
 2019,Nandurbar,HumanTrafficking,
-2019,Nasik,HumanTrafficking,
+2019,Nashik,HumanTrafficking,
 2019,Dharashiv,HumanTrafficking,
 2019,Palghar,HumanTrafficking,13.0
 2019,Parbhani,HumanTrafficking,
@@ -1332,7 +1332,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,HumanTrafficking,
 2020,Akola,HumanTrafficking,
 2020,Amravati,HumanTrafficking,
-2020,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2020,Chh. Sambhaji Nagar,HumanTrafficking,
 2020,Beed,HumanTrafficking,
 2020,Bhandara,HumanTrafficking,
 2020,Buldhana,HumanTrafficking,
@@ -1345,11 +1345,11 @@ Year,District,Crime,Cases
 2020,Jalna,HumanTrafficking,
 2020,Kolhapur,HumanTrafficking,15.0
 2020,Latur,HumanTrafficking,3.0
-2020,Mumbai City,HumanTrafficking,58.0
+2020,Mumbai,HumanTrafficking,58.0
 2020,Nagpur,HumanTrafficking,13.0
 2020,Nanded,HumanTrafficking,1.0
 2020,Nandurbar,HumanTrafficking,
-2020,Nasik,HumanTrafficking,1.0
+2020,Nashik,HumanTrafficking,1.0
 2020,Dharashiv,HumanTrafficking,
 2020,Palghar,HumanTrafficking,
 2020,Parbhani,HumanTrafficking,
@@ -1367,7 +1367,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,HumanTrafficking,1.0
 2021,Akola,HumanTrafficking,1.0
 2021,Amravati,HumanTrafficking,1.0
-2021,Chhatrapati Sambhaji Nagar,HumanTrafficking,
+2021,Chh. Sambhaji Nagar,HumanTrafficking,
 2021,Beed,HumanTrafficking,
 2021,Bhandara,HumanTrafficking,
 2021,Buldhana,HumanTrafficking,
@@ -1380,11 +1380,11 @@ Year,District,Crime,Cases
 2021,Jalna,HumanTrafficking,
 2021,Kolhapur,HumanTrafficking,17.0
 2021,Latur,HumanTrafficking,5.0
-2021,Mumbai City,HumanTrafficking,41.0
+2021,Mumbai,HumanTrafficking,41.0
 2021,Nagpur,HumanTrafficking,12.0
 2021,Nanded,HumanTrafficking,
 2021,Nandurbar,HumanTrafficking,1.0
-2021,Nasik,HumanTrafficking,1.0
+2021,Nashik,HumanTrafficking,1.0
 2021,Dharashiv,HumanTrafficking,
 2021,Palghar,HumanTrafficking,
 2021,Parbhani,HumanTrafficking,
@@ -1402,7 +1402,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Wrongful Restraint/Confinement,
 2014,Akola,Wrongful Restraint/Confinement,
 2014,Amravati,Wrongful Restraint/Confinement,
-2014,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,
+2014,Chh. Sambhaji Nagar,Wrongful Restraint/Confinement,
 2014,Beed,Wrongful Restraint/Confinement,
 2014,Bhandara,Wrongful Restraint/Confinement,
 2014,Buldhana,Wrongful Restraint/Confinement,
@@ -1415,11 +1415,11 @@ Year,District,Crime,Cases
 2014,Jalna,Wrongful Restraint/Confinement,
 2014,Kolhapur,Wrongful Restraint/Confinement,
 2014,Latur,Wrongful Restraint/Confinement,
-2014,Mumbai City,Wrongful Restraint/Confinement,
+2014,Mumbai,Wrongful Restraint/Confinement,
 2014,Nagpur,Wrongful Restraint/Confinement,
 2014,Nanded,Wrongful Restraint/Confinement,
 2014,Nandurbar,Wrongful Restraint/Confinement,
-2014,Nasik,Wrongful Restraint/Confinement,
+2014,Nashik,Wrongful Restraint/Confinement,
 2014,Dharashiv,Wrongful Restraint/Confinement,
 2014,Palghar,Wrongful Restraint/Confinement,
 2014,Parbhani,Wrongful Restraint/Confinement,
@@ -1437,7 +1437,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Wrongful Restraint/Confinement,
 2015,Akola,Wrongful Restraint/Confinement,
 2015,Amravati,Wrongful Restraint/Confinement,
-2015,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,
+2015,Chh. Sambhaji Nagar,Wrongful Restraint/Confinement,
 2015,Beed,Wrongful Restraint/Confinement,
 2015,Bhandara,Wrongful Restraint/Confinement,
 2015,Buldhana,Wrongful Restraint/Confinement,
@@ -1450,11 +1450,11 @@ Year,District,Crime,Cases
 2015,Jalna,Wrongful Restraint/Confinement,
 2015,Kolhapur,Wrongful Restraint/Confinement,
 2015,Latur,Wrongful Restraint/Confinement,
-2015,Mumbai City,Wrongful Restraint/Confinement,
+2015,Mumbai,Wrongful Restraint/Confinement,
 2015,Nagpur,Wrongful Restraint/Confinement,
 2015,Nanded,Wrongful Restraint/Confinement,
 2015,Nandurbar,Wrongful Restraint/Confinement,
-2015,Nasik,Wrongful Restraint/Confinement,
+2015,Nashik,Wrongful Restraint/Confinement,
 2015,Dharashiv,Wrongful Restraint/Confinement,
 2015,Palghar,Wrongful Restraint/Confinement,
 2015,Parbhani,Wrongful Restraint/Confinement,
@@ -1472,7 +1472,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Wrongful Restraint/Confinement,
 2016,Akola,Wrongful Restraint/Confinement,
 2016,Amravati,Wrongful Restraint/Confinement,
-2016,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,
+2016,Chh. Sambhaji Nagar,Wrongful Restraint/Confinement,
 2016,Beed,Wrongful Restraint/Confinement,
 2016,Bhandara,Wrongful Restraint/Confinement,
 2016,Buldhana,Wrongful Restraint/Confinement,
@@ -1485,11 +1485,11 @@ Year,District,Crime,Cases
 2016,Jalna,Wrongful Restraint/Confinement,
 2016,Kolhapur,Wrongful Restraint/Confinement,
 2016,Latur,Wrongful Restraint/Confinement,
-2016,Mumbai City,Wrongful Restraint/Confinement,
+2016,Mumbai,Wrongful Restraint/Confinement,
 2016,Nagpur,Wrongful Restraint/Confinement,
 2016,Nanded,Wrongful Restraint/Confinement,
 2016,Nandurbar,Wrongful Restraint/Confinement,
-2016,Nasik,Wrongful Restraint/Confinement,
+2016,Nashik,Wrongful Restraint/Confinement,
 2016,Dharashiv,Wrongful Restraint/Confinement,
 2016,Palghar,Wrongful Restraint/Confinement,
 2016,Parbhani,Wrongful Restraint/Confinement,
@@ -1507,7 +1507,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Wrongful Restraint/Confinement,45.0
 2017,Akola,Wrongful Restraint/Confinement,25.0
 2017,Amravati,Wrongful Restraint/Confinement,40.0
-2017,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,38.0
+2017,Chh. Sambhaji Nagar,Wrongful Restraint/Confinement,38.0
 2017,Beed,Wrongful Restraint/Confinement,
 2017,Bhandara,Wrongful Restraint/Confinement,18.0
 2017,Buldhana,Wrongful Restraint/Confinement,46.0
@@ -1520,11 +1520,11 @@ Year,District,Crime,Cases
 2017,Jalna,Wrongful Restraint/Confinement,10.0
 2017,Kolhapur,Wrongful Restraint/Confinement,22.0
 2017,Latur,Wrongful Restraint/Confinement,
-2017,Mumbai City,Wrongful Restraint/Confinement,39.0
+2017,Mumbai,Wrongful Restraint/Confinement,39.0
 2017,Nagpur,Wrongful Restraint/Confinement,41.0
 2017,Nanded,Wrongful Restraint/Confinement,
 2017,Nandurbar,Wrongful Restraint/Confinement,13.0
-2017,Nasik,Wrongful Restraint/Confinement,36.0
+2017,Nashik,Wrongful Restraint/Confinement,36.0
 2017,Dharashiv,Wrongful Restraint/Confinement,
 2017,Palghar,Wrongful Restraint/Confinement,10.0
 2017,Parbhani,Wrongful Restraint/Confinement,19.0
@@ -1542,7 +1542,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Wrongful Restraint/Confinement,49.0
 2018,Akola,Wrongful Restraint/Confinement,18.0
 2018,Amravati,Wrongful Restraint/Confinement,23.0
-2018,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,88.0
+2018,Chh. Sambhaji Nagar,Wrongful Restraint/Confinement,88.0
 2018,Beed,Wrongful Restraint/Confinement,10.0
 2018,Bhandara,Wrongful Restraint/Confinement,16.0
 2018,Buldhana,Wrongful Restraint/Confinement,46.0
@@ -1555,11 +1555,11 @@ Year,District,Crime,Cases
 2018,Jalna,Wrongful Restraint/Confinement,
 2018,Kolhapur,Wrongful Restraint/Confinement,30.0
 2018,Latur,Wrongful Restraint/Confinement,
-2018,Mumbai City,Wrongful Restraint/Confinement,63.0
+2018,Mumbai,Wrongful Restraint/Confinement,63.0
 2018,Nagpur,Wrongful Restraint/Confinement,58.0
 2018,Nanded,Wrongful Restraint/Confinement,
 2018,Nandurbar,Wrongful Restraint/Confinement,4.0
-2018,Nasik,Wrongful Restraint/Confinement,43.0
+2018,Nashik,Wrongful Restraint/Confinement,43.0
 2018,Dharashiv,Wrongful Restraint/Confinement,
 2018,Palghar,Wrongful Restraint/Confinement,18.0
 2018,Parbhani,Wrongful Restraint/Confinement,29.0
@@ -1577,7 +1577,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Wrongful Restraint/Confinement,112.0
 2019,Akola,Wrongful Restraint/Confinement,15.0
 2019,Amravati,Wrongful Restraint/Confinement,14.0
-2019,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,45.0
+2019,Chh. Sambhaji Nagar,Wrongful Restraint/Confinement,45.0
 2019,Beed,Wrongful Restraint/Confinement,
 2019,Bhandara,Wrongful Restraint/Confinement,15.0
 2019,Buldhana,Wrongful Restraint/Confinement,45.0
@@ -1590,11 +1590,11 @@ Year,District,Crime,Cases
 2019,Jalna,Wrongful Restraint/Confinement,1.0
 2019,Kolhapur,Wrongful Restraint/Confinement,20.0
 2019,Latur,Wrongful Restraint/Confinement,
-2019,Mumbai City,Wrongful Restraint/Confinement,39.0
+2019,Mumbai,Wrongful Restraint/Confinement,39.0
 2019,Nagpur,Wrongful Restraint/Confinement,42.0
 2019,Nanded,Wrongful Restraint/Confinement,
 2019,Nandurbar,Wrongful Restraint/Confinement,3.0
-2019,Nasik,Wrongful Restraint/Confinement,20.0
+2019,Nashik,Wrongful Restraint/Confinement,20.0
 2019,Dharashiv,Wrongful Restraint/Confinement,
 2019,Palghar,Wrongful Restraint/Confinement,10.0
 2019,Parbhani,Wrongful Restraint/Confinement,21.0
@@ -1612,7 +1612,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Wrongful Restraint/Confinement,108.0
 2020,Akola,Wrongful Restraint/Confinement,21.0
 2020,Amravati,Wrongful Restraint/Confinement,15.0
-2020,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,42.0
+2020,Chh. Sambhaji Nagar,Wrongful Restraint/Confinement,42.0
 2020,Beed,Wrongful Restraint/Confinement,
 2020,Bhandara,Wrongful Restraint/Confinement,11.0
 2020,Buldhana,Wrongful Restraint/Confinement,35.0
@@ -1625,11 +1625,11 @@ Year,District,Crime,Cases
 2020,Jalna,Wrongful Restraint/Confinement,
 2020,Kolhapur,Wrongful Restraint/Confinement,24.0
 2020,Latur,Wrongful Restraint/Confinement,41.0
-2020,Mumbai City,Wrongful Restraint/Confinement,28.0
+2020,Mumbai,Wrongful Restraint/Confinement,28.0
 2020,Nagpur,Wrongful Restraint/Confinement,42.0
 2020,Nanded,Wrongful Restraint/Confinement,
 2020,Nandurbar,Wrongful Restraint/Confinement,4.0
-2020,Nasik,Wrongful Restraint/Confinement,53.0
+2020,Nashik,Wrongful Restraint/Confinement,53.0
 2020,Dharashiv,Wrongful Restraint/Confinement,
 2020,Palghar,Wrongful Restraint/Confinement,3.0
 2020,Parbhani,Wrongful Restraint/Confinement,19.0
@@ -1647,7 +1647,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Wrongful Restraint/Confinement,53.0
 2021,Akola,Wrongful Restraint/Confinement,35.0
 2021,Amravati,Wrongful Restraint/Confinement,19.0
-2021,Chhatrapati Sambhaji Nagar,Wrongful Restraint/Confinement,38.0
+2021,Chh. Sambhaji Nagar,Wrongful Restraint/Confinement,38.0
 2021,Beed,Wrongful Restraint/Confinement,
 2021,Bhandara,Wrongful Restraint/Confinement,21.0
 2021,Buldhana,Wrongful Restraint/Confinement,32.0
@@ -1660,11 +1660,11 @@ Year,District,Crime,Cases
 2021,Jalna,Wrongful Restraint/Confinement,
 2021,Kolhapur,Wrongful Restraint/Confinement,51.0
 2021,Latur,Wrongful Restraint/Confinement,30.0
-2021,Mumbai City,Wrongful Restraint/Confinement,26.0
+2021,Mumbai,Wrongful Restraint/Confinement,26.0
 2021,Nagpur,Wrongful Restraint/Confinement,45.0
 2021,Nanded,Wrongful Restraint/Confinement,
 2021,Nandurbar,Wrongful Restraint/Confinement,5.0
-2021,Nasik,Wrongful Restraint/Confinement,47.0
+2021,Nashik,Wrongful Restraint/Confinement,47.0
 2021,Dharashiv,Wrongful Restraint/Confinement,
 2021,Palghar,Wrongful Restraint/Confinement,7.0
 2021,Parbhani,Wrongful Restraint/Confinement,14.0
@@ -1682,7 +1682,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Missing Children Deemed as Kidnapped,
 2014,Akola,Missing Children Deemed as Kidnapped,
 2014,Amravati,Missing Children Deemed as Kidnapped,
-2014,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,
+2014,Chh. Sambhaji Nagar,Missing Children Deemed as Kidnapped,
 2014,Beed,Missing Children Deemed as Kidnapped,
 2014,Bhandara,Missing Children Deemed as Kidnapped,
 2014,Buldhana,Missing Children Deemed as Kidnapped,
@@ -1695,11 +1695,11 @@ Year,District,Crime,Cases
 2014,Jalna,Missing Children Deemed as Kidnapped,
 2014,Kolhapur,Missing Children Deemed as Kidnapped,
 2014,Latur,Missing Children Deemed as Kidnapped,
-2014,Mumbai City,Missing Children Deemed as Kidnapped,
+2014,Mumbai,Missing Children Deemed as Kidnapped,
 2014,Nagpur,Missing Children Deemed as Kidnapped,
 2014,Nanded,Missing Children Deemed as Kidnapped,
 2014,Nandurbar,Missing Children Deemed as Kidnapped,
-2014,Nasik,Missing Children Deemed as Kidnapped,
+2014,Nashik,Missing Children Deemed as Kidnapped,
 2014,Dharashiv,Missing Children Deemed as Kidnapped,
 2014,Palghar,Missing Children Deemed as Kidnapped,
 2014,Parbhani,Missing Children Deemed as Kidnapped,
@@ -1717,7 +1717,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Missing Children Deemed as Kidnapped,
 2015,Akola,Missing Children Deemed as Kidnapped,
 2015,Amravati,Missing Children Deemed as Kidnapped,
-2015,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,
+2015,Chh. Sambhaji Nagar,Missing Children Deemed as Kidnapped,
 2015,Beed,Missing Children Deemed as Kidnapped,
 2015,Bhandara,Missing Children Deemed as Kidnapped,
 2015,Buldhana,Missing Children Deemed as Kidnapped,
@@ -1730,11 +1730,11 @@ Year,District,Crime,Cases
 2015,Jalna,Missing Children Deemed as Kidnapped,
 2015,Kolhapur,Missing Children Deemed as Kidnapped,
 2015,Latur,Missing Children Deemed as Kidnapped,
-2015,Mumbai City,Missing Children Deemed as Kidnapped,
+2015,Mumbai,Missing Children Deemed as Kidnapped,
 2015,Nagpur,Missing Children Deemed as Kidnapped,
 2015,Nanded,Missing Children Deemed as Kidnapped,
 2015,Nandurbar,Missing Children Deemed as Kidnapped,
-2015,Nasik,Missing Children Deemed as Kidnapped,
+2015,Nashik,Missing Children Deemed as Kidnapped,
 2015,Dharashiv,Missing Children Deemed as Kidnapped,
 2015,Palghar,Missing Children Deemed as Kidnapped,
 2015,Parbhani,Missing Children Deemed as Kidnapped,
@@ -1752,7 +1752,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Missing Children Deemed as Kidnapped,
 2016,Akola,Missing Children Deemed as Kidnapped,
 2016,Amravati,Missing Children Deemed as Kidnapped,
-2016,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,
+2016,Chh. Sambhaji Nagar,Missing Children Deemed as Kidnapped,
 2016,Beed,Missing Children Deemed as Kidnapped,
 2016,Bhandara,Missing Children Deemed as Kidnapped,
 2016,Buldhana,Missing Children Deemed as Kidnapped,
@@ -1765,11 +1765,11 @@ Year,District,Crime,Cases
 2016,Jalna,Missing Children Deemed as Kidnapped,
 2016,Kolhapur,Missing Children Deemed as Kidnapped,
 2016,Latur,Missing Children Deemed as Kidnapped,
-2016,Mumbai City,Missing Children Deemed as Kidnapped,
+2016,Mumbai,Missing Children Deemed as Kidnapped,
 2016,Nagpur,Missing Children Deemed as Kidnapped,
 2016,Nanded,Missing Children Deemed as Kidnapped,
 2016,Nandurbar,Missing Children Deemed as Kidnapped,
-2016,Nasik,Missing Children Deemed as Kidnapped,
+2016,Nashik,Missing Children Deemed as Kidnapped,
 2016,Dharashiv,Missing Children Deemed as Kidnapped,
 2016,Palghar,Missing Children Deemed as Kidnapped,
 2016,Parbhani,Missing Children Deemed as Kidnapped,
@@ -1787,7 +1787,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Missing Children Deemed as Kidnapped,98.0
 2017,Akola,Missing Children Deemed as Kidnapped,57.0
 2017,Amravati,Missing Children Deemed as Kidnapped,71.0
-2017,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,148.0
+2017,Chh. Sambhaji Nagar,Missing Children Deemed as Kidnapped,148.0
 2017,Beed,Missing Children Deemed as Kidnapped,71.0
 2017,Bhandara,Missing Children Deemed as Kidnapped,92.0
 2017,Buldhana,Missing Children Deemed as Kidnapped,36.0
@@ -1800,11 +1800,11 @@ Year,District,Crime,Cases
 2017,Jalna,Missing Children Deemed as Kidnapped,
 2017,Kolhapur,Missing Children Deemed as Kidnapped,31.0
 2017,Latur,Missing Children Deemed as Kidnapped,
-2017,Mumbai City,Missing Children Deemed as Kidnapped,70.0
+2017,Mumbai,Missing Children Deemed as Kidnapped,70.0
 2017,Nagpur,Missing Children Deemed as Kidnapped,42.0
 2017,Nanded,Missing Children Deemed as Kidnapped,123.0
 2017,Nandurbar,Missing Children Deemed as Kidnapped,10.0
-2017,Nasik,Missing Children Deemed as Kidnapped,206.0
+2017,Nashik,Missing Children Deemed as Kidnapped,206.0
 2017,Dharashiv,Missing Children Deemed as Kidnapped,30.0
 2017,Palghar,Missing Children Deemed as Kidnapped,327.0
 2017,Parbhani,Missing Children Deemed as Kidnapped,88.0
@@ -1822,7 +1822,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Missing Children Deemed as Kidnapped,165.0
 2018,Akola,Missing Children Deemed as Kidnapped,73.0
 2018,Amravati,Missing Children Deemed as Kidnapped,125.0
-2018,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,227.0
+2018,Chh. Sambhaji Nagar,Missing Children Deemed as Kidnapped,227.0
 2018,Beed,Missing Children Deemed as Kidnapped,69.0
 2018,Bhandara,Missing Children Deemed as Kidnapped,99.0
 2018,Buldhana,Missing Children Deemed as Kidnapped,47.0
@@ -1835,11 +1835,11 @@ Year,District,Crime,Cases
 2018,Jalna,Missing Children Deemed as Kidnapped,
 2018,Kolhapur,Missing Children Deemed as Kidnapped,30.0
 2018,Latur,Missing Children Deemed as Kidnapped,
-2018,Mumbai City,Missing Children Deemed as Kidnapped,70.0
+2018,Mumbai,Missing Children Deemed as Kidnapped,70.0
 2018,Nagpur,Missing Children Deemed as Kidnapped,28.0
 2018,Nanded,Missing Children Deemed as Kidnapped,117.0
 2018,Nandurbar,Missing Children Deemed as Kidnapped,8.0
-2018,Nasik,Missing Children Deemed as Kidnapped,273.0
+2018,Nashik,Missing Children Deemed as Kidnapped,273.0
 2018,Dharashiv,Missing Children Deemed as Kidnapped,38.0
 2018,Palghar,Missing Children Deemed as Kidnapped,446.0
 2018,Parbhani,Missing Children Deemed as Kidnapped,67.0
@@ -1857,7 +1857,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Missing Children Deemed as Kidnapped,156.0
 2019,Akola,Missing Children Deemed as Kidnapped,74.0
 2019,Amravati,Missing Children Deemed as Kidnapped,133.0
-2019,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,266.0
+2019,Chh. Sambhaji Nagar,Missing Children Deemed as Kidnapped,266.0
 2019,Beed,Missing Children Deemed as Kidnapped,71.0
 2019,Bhandara,Missing Children Deemed as Kidnapped,104.0
 2019,Buldhana,Missing Children Deemed as Kidnapped,36.0
@@ -1870,11 +1870,11 @@ Year,District,Crime,Cases
 2019,Jalna,Missing Children Deemed as Kidnapped,
 2019,Kolhapur,Missing Children Deemed as Kidnapped,45.0
 2019,Latur,Missing Children Deemed as Kidnapped,
-2019,Mumbai City,Missing Children Deemed as Kidnapped,888.0
+2019,Mumbai,Missing Children Deemed as Kidnapped,888.0
 2019,Nagpur,Missing Children Deemed as Kidnapped,36.0
 2019,Nanded,Missing Children Deemed as Kidnapped,132.0
 2019,Nandurbar,Missing Children Deemed as Kidnapped,28.0
-2019,Nasik,Missing Children Deemed as Kidnapped,297.0
+2019,Nashik,Missing Children Deemed as Kidnapped,297.0
 2019,Dharashiv,Missing Children Deemed as Kidnapped,36.0
 2019,Palghar,Missing Children Deemed as Kidnapped,480.0
 2019,Parbhani,Missing Children Deemed as Kidnapped,104.0
@@ -1892,7 +1892,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Missing Children Deemed as Kidnapped,148.0
 2020,Akola,Missing Children Deemed as Kidnapped,42.0
 2020,Amravati,Missing Children Deemed as Kidnapped,99.0
-2020,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,219.0
+2020,Chh. Sambhaji Nagar,Missing Children Deemed as Kidnapped,219.0
 2020,Beed,Missing Children Deemed as Kidnapped,38.0
 2020,Bhandara,Missing Children Deemed as Kidnapped,67.0
 2020,Buldhana,Missing Children Deemed as Kidnapped,40.0
@@ -1905,11 +1905,11 @@ Year,District,Crime,Cases
 2020,Jalna,Missing Children Deemed as Kidnapped,
 2020,Kolhapur,Missing Children Deemed as Kidnapped,60.0
 2020,Latur,Missing Children Deemed as Kidnapped,
-2020,Mumbai City,Missing Children Deemed as Kidnapped,625.0
+2020,Mumbai,Missing Children Deemed as Kidnapped,625.0
 2020,Nagpur,Missing Children Deemed as Kidnapped,36.0
 2020,Nanded,Missing Children Deemed as Kidnapped,91.0
 2020,Nandurbar,Missing Children Deemed as Kidnapped,29.0
-2020,Nasik,Missing Children Deemed as Kidnapped,208.0
+2020,Nashik,Missing Children Deemed as Kidnapped,208.0
 2020,Dharashiv,Missing Children Deemed as Kidnapped,39.0
 2020,Palghar,Missing Children Deemed as Kidnapped,47.0
 2020,Parbhani,Missing Children Deemed as Kidnapped,49.0
@@ -1927,7 +1927,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Missing Children Deemed as Kidnapped,123.0
 2021,Akola,Missing Children Deemed as Kidnapped,43.0
 2021,Amravati,Missing Children Deemed as Kidnapped,144.0
-2021,Chhatrapati Sambhaji Nagar,Missing Children Deemed as Kidnapped,246.0
+2021,Chh. Sambhaji Nagar,Missing Children Deemed as Kidnapped,246.0
 2021,Beed,Missing Children Deemed as Kidnapped,83.0
 2021,Bhandara,Missing Children Deemed as Kidnapped,70.0
 2021,Buldhana,Missing Children Deemed as Kidnapped,38.0
@@ -1940,11 +1940,11 @@ Year,District,Crime,Cases
 2021,Jalna,Missing Children Deemed as Kidnapped,
 2021,Kolhapur,Missing Children Deemed as Kidnapped,129.0
 2021,Latur,Missing Children Deemed as Kidnapped,9.0
-2021,Mumbai City,Missing Children Deemed as Kidnapped,1175.0
+2021,Mumbai,Missing Children Deemed as Kidnapped,1175.0
 2021,Nagpur,Missing Children Deemed as Kidnapped,34.0
 2021,Nanded,Missing Children Deemed as Kidnapped,93.0
 2021,Nandurbar,Missing Children Deemed as Kidnapped,74.0
-2021,Nasik,Missing Children Deemed as Kidnapped,253.0
+2021,Nashik,Missing Children Deemed as Kidnapped,253.0
 2021,Dharashiv,Missing Children Deemed as Kidnapped,46.0
 2021,Palghar,Missing Children Deemed as Kidnapped,74.0
 2021,Parbhani,Missing Children Deemed as Kidnapped,74.0
@@ -1962,7 +1962,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Attempts to Commit Suicide,
 2014,Akola,Attempts to Commit Suicide,
 2014,Amravati,Attempts to Commit Suicide,
-2014,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,
+2014,Chh. Sambhaji Nagar,Attempts to Commit Suicide,
 2014,Beed,Attempts to Commit Suicide,
 2014,Bhandara,Attempts to Commit Suicide,
 2014,Buldhana,Attempts to Commit Suicide,
@@ -1975,11 +1975,11 @@ Year,District,Crime,Cases
 2014,Jalna,Attempts to Commit Suicide,
 2014,Kolhapur,Attempts to Commit Suicide,
 2014,Latur,Attempts to Commit Suicide,
-2014,Mumbai City,Attempts to Commit Suicide,
+2014,Mumbai,Attempts to Commit Suicide,
 2014,Nagpur,Attempts to Commit Suicide,
 2014,Nanded,Attempts to Commit Suicide,
 2014,Nandurbar,Attempts to Commit Suicide,
-2014,Nasik,Attempts to Commit Suicide,
+2014,Nashik,Attempts to Commit Suicide,
 2014,Dharashiv,Attempts to Commit Suicide,
 2014,Palghar,Attempts to Commit Suicide,
 2014,Parbhani,Attempts to Commit Suicide,
@@ -1997,7 +1997,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Attempts to Commit Suicide,
 2015,Akola,Attempts to Commit Suicide,
 2015,Amravati,Attempts to Commit Suicide,
-2015,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,
+2015,Chh. Sambhaji Nagar,Attempts to Commit Suicide,
 2015,Beed,Attempts to Commit Suicide,
 2015,Bhandara,Attempts to Commit Suicide,
 2015,Buldhana,Attempts to Commit Suicide,
@@ -2010,11 +2010,11 @@ Year,District,Crime,Cases
 2015,Jalna,Attempts to Commit Suicide,
 2015,Kolhapur,Attempts to Commit Suicide,
 2015,Latur,Attempts to Commit Suicide,
-2015,Mumbai City,Attempts to Commit Suicide,
+2015,Mumbai,Attempts to Commit Suicide,
 2015,Nagpur,Attempts to Commit Suicide,
 2015,Nanded,Attempts to Commit Suicide,
 2015,Nandurbar,Attempts to Commit Suicide,
-2015,Nasik,Attempts to Commit Suicide,
+2015,Nashik,Attempts to Commit Suicide,
 2015,Dharashiv,Attempts to Commit Suicide,
 2015,Palghar,Attempts to Commit Suicide,
 2015,Parbhani,Attempts to Commit Suicide,
@@ -2032,7 +2032,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Attempts to Commit Suicide,
 2016,Akola,Attempts to Commit Suicide,
 2016,Amravati,Attempts to Commit Suicide,
-2016,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,
+2016,Chh. Sambhaji Nagar,Attempts to Commit Suicide,
 2016,Beed,Attempts to Commit Suicide,
 2016,Bhandara,Attempts to Commit Suicide,
 2016,Buldhana,Attempts to Commit Suicide,
@@ -2045,11 +2045,11 @@ Year,District,Crime,Cases
 2016,Jalna,Attempts to Commit Suicide,
 2016,Kolhapur,Attempts to Commit Suicide,
 2016,Latur,Attempts to Commit Suicide,
-2016,Mumbai City,Attempts to Commit Suicide,
+2016,Mumbai,Attempts to Commit Suicide,
 2016,Nagpur,Attempts to Commit Suicide,
 2016,Nanded,Attempts to Commit Suicide,
 2016,Nandurbar,Attempts to Commit Suicide,
-2016,Nasik,Attempts to Commit Suicide,
+2016,Nashik,Attempts to Commit Suicide,
 2016,Dharashiv,Attempts to Commit Suicide,
 2016,Palghar,Attempts to Commit Suicide,
 2016,Parbhani,Attempts to Commit Suicide,
@@ -2067,7 +2067,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Attempts to Commit Suicide,122.0
 2017,Akola,Attempts to Commit Suicide,60.0
 2017,Amravati,Attempts to Commit Suicide,99.0
-2017,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,135.0
+2017,Chh. Sambhaji Nagar,Attempts to Commit Suicide,135.0
 2017,Beed,Attempts to Commit Suicide,105.0
 2017,Bhandara,Attempts to Commit Suicide,22.0
 2017,Buldhana,Attempts to Commit Suicide,53.0
@@ -2080,11 +2080,11 @@ Year,District,Crime,Cases
 2017,Jalna,Attempts to Commit Suicide,77.0
 2017,Kolhapur,Attempts to Commit Suicide,99.0
 2017,Latur,Attempts to Commit Suicide,40.0
-2017,Mumbai City,Attempts to Commit Suicide,205.0
+2017,Mumbai,Attempts to Commit Suicide,205.0
 2017,Nagpur,Attempts to Commit Suicide,113.0
 2017,Nanded,Attempts to Commit Suicide,78.0
 2017,Nandurbar,Attempts to Commit Suicide,33.0
-2017,Nasik,Attempts to Commit Suicide,103.0
+2017,Nashik,Attempts to Commit Suicide,103.0
 2017,Dharashiv,Attempts to Commit Suicide,28.0
 2017,Palghar,Attempts to Commit Suicide,39.0
 2017,Parbhani,Attempts to Commit Suicide,61.0
@@ -2102,7 +2102,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Attempts to Commit Suicide,195.0
 2018,Akola,Attempts to Commit Suicide,63.0
 2018,Amravati,Attempts to Commit Suicide,89.0
-2018,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,113.0
+2018,Chh. Sambhaji Nagar,Attempts to Commit Suicide,113.0
 2018,Beed,Attempts to Commit Suicide,117.0
 2018,Bhandara,Attempts to Commit Suicide,16.0
 2018,Buldhana,Attempts to Commit Suicide,79.0
@@ -2115,11 +2115,11 @@ Year,District,Crime,Cases
 2018,Jalna,Attempts to Commit Suicide,71.0
 2018,Kolhapur,Attempts to Commit Suicide,145.0
 2018,Latur,Attempts to Commit Suicide,45.0
-2018,Mumbai City,Attempts to Commit Suicide,295.0
+2018,Mumbai,Attempts to Commit Suicide,295.0
 2018,Nagpur,Attempts to Commit Suicide,100.0
 2018,Nanded,Attempts to Commit Suicide,70.0
 2018,Nandurbar,Attempts to Commit Suicide,27.0
-2018,Nasik,Attempts to Commit Suicide,133.0
+2018,Nashik,Attempts to Commit Suicide,133.0
 2018,Dharashiv,Attempts to Commit Suicide,58.0
 2018,Palghar,Attempts to Commit Suicide,55.0
 2018,Parbhani,Attempts to Commit Suicide,89.0
@@ -2137,7 +2137,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Attempts to Commit Suicide,7.0
 2019,Akola,Attempts to Commit Suicide,1.0
 2019,Amravati,Attempts to Commit Suicide,11.0
-2019,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,9.0
+2019,Chh. Sambhaji Nagar,Attempts to Commit Suicide,9.0
 2019,Beed,Attempts to Commit Suicide,14.0
 2019,Bhandara,Attempts to Commit Suicide,2.0
 2019,Buldhana,Attempts to Commit Suicide,10.0
@@ -2150,11 +2150,11 @@ Year,District,Crime,Cases
 2019,Jalna,Attempts to Commit Suicide,33.0
 2019,Kolhapur,Attempts to Commit Suicide,13.0
 2019,Latur,Attempts to Commit Suicide,2.0
-2019,Mumbai City,Attempts to Commit Suicide,13.0
+2019,Mumbai,Attempts to Commit Suicide,13.0
 2019,Nagpur,Attempts to Commit Suicide,5.0
 2019,Nanded,Attempts to Commit Suicide,8.0
 2019,Nandurbar,Attempts to Commit Suicide,3.0
-2019,Nasik,Attempts to Commit Suicide,6.0
+2019,Nashik,Attempts to Commit Suicide,6.0
 2019,Dharashiv,Attempts to Commit Suicide,7.0
 2019,Palghar,Attempts to Commit Suicide,
 2019,Parbhani,Attempts to Commit Suicide,7.0
@@ -2172,7 +2172,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Attempts to Commit Suicide,4.0
 2020,Akola,Attempts to Commit Suicide,7.0
 2020,Amravati,Attempts to Commit Suicide,12.0
-2020,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,12.0
+2020,Chh. Sambhaji Nagar,Attempts to Commit Suicide,12.0
 2020,Beed,Attempts to Commit Suicide,17.0
 2020,Bhandara,Attempts to Commit Suicide,1.0
 2020,Buldhana,Attempts to Commit Suicide,6.0
@@ -2185,11 +2185,11 @@ Year,District,Crime,Cases
 2020,Jalna,Attempts to Commit Suicide,
 2020,Kolhapur,Attempts to Commit Suicide,6.0
 2020,Latur,Attempts to Commit Suicide,1.0
-2020,Mumbai City,Attempts to Commit Suicide,14.0
+2020,Mumbai,Attempts to Commit Suicide,14.0
 2020,Nagpur,Attempts to Commit Suicide,12.0
 2020,Nanded,Attempts to Commit Suicide,12.0
 2020,Nandurbar,Attempts to Commit Suicide,
-2020,Nasik,Attempts to Commit Suicide,14.0
+2020,Nashik,Attempts to Commit Suicide,14.0
 2020,Dharashiv,Attempts to Commit Suicide,2.0
 2020,Palghar,Attempts to Commit Suicide,
 2020,Parbhani,Attempts to Commit Suicide,14.0
@@ -2207,7 +2207,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Attempts to Commit Suicide,13.0
 2021,Akola,Attempts to Commit Suicide,16.0
 2021,Amravati,Attempts to Commit Suicide,6.0
-2021,Chhatrapati Sambhaji Nagar,Attempts to Commit Suicide,17.0
+2021,Chh. Sambhaji Nagar,Attempts to Commit Suicide,17.0
 2021,Beed,Attempts to Commit Suicide,10.0
 2021,Bhandara,Attempts to Commit Suicide,2.0
 2021,Buldhana,Attempts to Commit Suicide,10.0
@@ -2220,11 +2220,11 @@ Year,District,Crime,Cases
 2021,Jalna,Attempts to Commit Suicide,
 2021,Kolhapur,Attempts to Commit Suicide,16.0
 2021,Latur,Attempts to Commit Suicide,13.0
-2021,Mumbai City,Attempts to Commit Suicide,14.0
+2021,Mumbai,Attempts to Commit Suicide,14.0
 2021,Nagpur,Attempts to Commit Suicide,7.0
 2021,Nanded,Attempts to Commit Suicide,7.0
 2021,Nandurbar,Attempts to Commit Suicide,1.0
-2021,Nasik,Attempts to Commit Suicide,12.0
+2021,Nashik,Attempts to Commit Suicide,12.0
 2021,Dharashiv,Attempts to Commit Suicide,4.0
 2021,Palghar,Attempts to Commit Suicide,
 2021,Parbhani,Attempts to Commit Suicide,13.0

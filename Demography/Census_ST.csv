@@ -2,7 +2,7 @@ Year,District,Rural/Urban,Population,Male,Female
 1991,Ahilyanagar,Rural,230465,116108,114357
 1991,Akola,Rural,138055,70689,67366
 1991,Amravati,Rural,285469,146370,139099
-1991,Chhatrapati Sambhaji Nagar,Rural,73401,37452,35949
+1991,Chh. Sambhaji Nagar,Rural,73401,37452,35949
 1991,Beed,Rural,18012,9374,8638
 1991,Bhandara,Rural,288475,143898,144577
 1991,Buldhana,Rural,89423,45921,43502
@@ -31,7 +31,7 @@ Year,District,Rural/Urban,Population,Male,Female
 1991,Ahilyanagar,Urban,9676,5036,4640
 1991,Akola,Urban,17640,9174,8466
 1991,Amravati,Urban,30979,16192,14787
-1991,Chhatrapati Sambhaji Nagar,Urban,10101,5418,4683
+1991,Chh. Sambhaji Nagar,Urban,10101,5418,4683
 1991,Beed,Urban,2503,1310,1193
 1991,Bhandara,Urban,21347,10848,10499
 1991,Buldhana,Urban,5966,3152,2814
@@ -63,8 +63,8 @@ Year,District,Rural/Urban,Population,Male,Female
 2001,Akola,Urban,14548,7590,6958
 2001,Amravati,Rural,320579,163624,156955
 2001,Amravati,Urban,33911,17561,16350
-2001,Chhatrapati Sambhaji Nagar,Rural,86250,43940,42310
-2001,Chhatrapati Sambhaji Nagar,Urban,14200,7371,6829
+2001,Chh. Sambhaji Nagar,Rural,86250,43940,42310
+2001,Chh. Sambhaji Nagar,Urban,14200,7371,6829
 2001,Beed,Rural,19069,9902,9167
 2001,Beed,Urban,5111,2644,2467
 2001,Bhandara,Rural,84740,42395,42345
@@ -128,8 +128,8 @@ Year,District,Rural/Urban,Population,Male,Female
 2011,Akola,Urban,14619,7562,7057
 2011,Amravati,Rural,366394,186329,180065
 2011,Amravati,Urban,35498,18369,17129
-2011,Chhatrapati Sambhaji Nagar,Rural,118149,60578,57571
-2011,Chhatrapati Sambhaji Nagar,Urban,25296,13339,11957
+2011,Chh. Sambhaji Nagar,Rural,118149,60578,57571
+2011,Chh. Sambhaji Nagar,Urban,25296,13339,11957
 2011,Beed,Rural,26661,13650,13011
 2011,Beed,Urban,6041,3147,2894
 2011,Bhandara,Rural,78943,39532,39411

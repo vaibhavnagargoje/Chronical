@@ -181,7 +181,7 @@ class Command(BaseCommand):
             {
                 'title': 'E. Reported Road Accidents',
                 'chapter_type': 'transport-communication',
-                'chart_type': 'bar  ',
+                'chart_type': 'bar',
                 'data_source_table': 'TransportARCTotalsInjuryDeath',
                 'x_column': 'year',
                 'y_columns': ['accidents'],

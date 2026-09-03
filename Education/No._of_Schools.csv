@@ -20,9 +20,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2012,Chandrapur,Co-Ed,1207,729,120,163,140
 2012,Chandrapur,Boys,13,1,4,0,0
 2012,Chandrapur,Girls,15,2,7,10,0
-2012,Chhatrapati Sambhaji Nagar,Co-Ed,1830,1137,164,250,236
-2012,Chhatrapati Sambhaji Nagar,Boys,8,5,1,4,5
-2012,Chhatrapati Sambhaji Nagar,Girls,12,7,8,14,3
+2012,Chh. Sambhaji Nagar,Co-Ed,1830,1137,164,250,236
+2012,Chh. Sambhaji Nagar,Boys,8,5,1,4,5
+2012,Chh. Sambhaji Nagar,Girls,12,7,8,14,3
 2012,Dharashiv,Co-Ed,700,529,65,169,143
 2012,Dharashiv,Boys,13,7,1,2,1
 2012,Dharashiv,Girls,8,18,1,10,4
@@ -50,9 +50,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2012,Latur,Co-Ed,971,825,145,254,154
 2012,Latur,Boys,4,4,1,4,1
 2012,Latur,Girls,9,17,4,19,3
-2012,Mumbai City,Co-Ed,0,16,242,780,184
-2012,Mumbai City,Boys,0,1,10,42,2
-2012,Mumbai City,Girls,0,2,7,72,10
+2012,Mumbai,Co-Ed,0,16,242,780,184
+2012,Mumbai,Boys,0,1,10,42,2
+2012,Mumbai,Girls,0,2,7,72,10
 2012,Mumbai Suburban,Co-Ed,1257,925,0,39,105
 2012,Mumbai Suburban,Boys,34,0,0,0,0
 2012,Mumbai Suburban,Girls,59,0,0,0,0
@@ -122,9 +122,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2013,Chandrapur,Co-Ed,1215,721,121,165,133
 2013,Chandrapur,Boys,14,2,4,0,0
 2013,Chandrapur,Girls,14,2,6,10,0
-2013,Chhatrapati Sambhaji Nagar,Co-Ed,1847,1147,162,253,241
-2013,Chhatrapati Sambhaji Nagar,Boys,8,5,2,4,1
-2013,Chhatrapati Sambhaji Nagar,Girls,12,6,8,11,2
+2013,Chh. Sambhaji Nagar,Co-Ed,1847,1147,162,253,241
+2013,Chh. Sambhaji Nagar,Boys,8,5,2,4,1
+2013,Chh. Sambhaji Nagar,Girls,12,6,8,11,2
 2013,Dharashiv,Co-Ed,710,527,65,169,137
 2013,Dharashiv,Boys,14,7,1,3,0
 2013,Dharashiv,Girls,8,18,1,10,2
@@ -152,9 +152,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2013,Latur,Co-Ed,974,820,146,253,156
 2013,Latur,Boys,4,6,1,4,0
 2013,Latur,Girls,9,17,4,18,2
-2013,Mumbai City,Co-Ed,5,22,243,787,167
-2013,Mumbai City,Boys,0,1,9,42,2
-2013,Mumbai City,Girls,0,2,8,73,8
+2013,Mumbai,Co-Ed,5,22,243,787,167
+2013,Mumbai,Boys,0,1,9,42,2
+2013,Mumbai,Girls,0,2,8,73,8
 2013,Mumbai Suburban,Co-Ed,1325,911,0,38,105
 2013,Mumbai Suburban,Boys,34,0,0,0,0
 2013,Mumbai Suburban,Girls,56,1,0,1,0
@@ -224,9 +224,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2014,Chandrapur,Co-Ed,1220,715,122,167,135
 2014,Chandrapur,Boys,14,2,4,0,0
 2014,Chandrapur,Girls,14,2,6,10,0
-2014,Chhatrapati Sambhaji Nagar,Co-Ed,1858,1170,167,254,260
-2014,Chhatrapati Sambhaji Nagar,Boys,7,6,2,4,3
-2014,Chhatrapati Sambhaji Nagar,Girls,12,7,8,12,2
+2014,Chh. Sambhaji Nagar,Co-Ed,1858,1170,167,254,260
+2014,Chh. Sambhaji Nagar,Boys,7,6,2,4,3
+2014,Chh. Sambhaji Nagar,Girls,12,7,8,12,2
 2014,Dharashiv,Co-Ed,742,529,65,169,141
 2014,Dharashiv,Boys,14,7,1,3,1
 2014,Dharashiv,Girls,8,18,1,10,4
@@ -254,9 +254,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2014,Latur,Co-Ed,1001,835,146,256,164
 2014,Latur,Boys,4,5,1,4,2
 2014,Latur,Girls,9,16,4,18,2
-2014,Mumbai City,Co-Ed,9,27,247,811,183
-2014,Mumbai City,Boys,0,1,9,40,2
-2014,Mumbai City,Girls,0,3,8,72,9
+2014,Mumbai,Co-Ed,9,27,247,811,183
+2014,Mumbai,Boys,0,1,9,40,2
+2014,Mumbai,Girls,0,3,8,72,9
 2014,Mumbai Suburban,Co-Ed,1299,899,0,38,106
 2014,Mumbai Suburban,Boys,33,0,0,0,0
 2014,Mumbai Suburban,Girls,58,0,0,1,0
@@ -332,9 +332,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2015,Chandrapur,Co-Ed,1218,716,124,167,136
 2015,Chandrapur,Boys,13,2,2,0,0
 2015,Chandrapur,Girls,11,2,6,10,0
-2015,Chhatrapati Sambhaji Nagar,Co-Ed,1899,1182,172,264,258
-2015,Chhatrapati Sambhaji Nagar,Boys,7,5,2,4,2
-2015,Chhatrapati Sambhaji Nagar,Girls,12,7,7,12,2
+2015,Chh. Sambhaji Nagar,Co-Ed,1899,1182,172,264,258
+2015,Chh. Sambhaji Nagar,Boys,7,5,2,4,2
+2015,Chh. Sambhaji Nagar,Girls,12,7,7,12,2
 2015,Dharashiv,Co-Ed,757,532,65,170,145
 2015,Dharashiv,Boys,14,7,1,3,1
 2015,Dharashiv,Girls,8,18,1,9,4
@@ -362,9 +362,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2015,Latur,Co-Ed,1033,836,146,260,164
 2015,Latur,Boys,4,5,1,4,2
 2015,Latur,Girls,7,15,4,15,1
-2015,Mumbai City,Co-Ed,11,38,256,824,187
-2015,Mumbai City,Boys,0,1,5,39,2
-2015,Mumbai City,Girls,0,3,6,70,7
+2015,Mumbai,Co-Ed,11,38,256,824,187
+2015,Mumbai,Boys,0,1,5,39,2
+2015,Mumbai,Girls,0,3,6,70,7
 2015,Mumbai Suburban,Co-Ed,1350,885,0,39,105
 2015,Mumbai Suburban,Boys,33,0,0,0,0
 2015,Mumbai Suburban,Girls,58,0,0,1,0
@@ -440,9 +440,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2016,Chandrapur,Co-Ed,1216,721,125,166,137
 2016,Chandrapur,Boys,13,2,1,0,0
 2016,Chandrapur,Girls,11,2,6,8,0
-2016,Chhatrapati Sambhaji Nagar,Co-Ed,1937,1227,181,262,262
-2016,Chhatrapati Sambhaji Nagar,Boys,7,4,2,5,0
-2016,Chhatrapati Sambhaji Nagar,Girls,11,6,8,12,2
+2016,Chh. Sambhaji Nagar,Co-Ed,1937,1227,181,262,262
+2016,Chh. Sambhaji Nagar,Boys,7,4,2,5,0
+2016,Chh. Sambhaji Nagar,Girls,11,6,8,12,2
 2016,Dharashiv,Co-Ed,762,536,66,169,145
 2016,Dharashiv,Boys,14,8,1,3,0
 2016,Dharashiv,Girls,9,18,1,10,2
@@ -470,9 +470,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2016,Latur,Co-Ed,1055,839,147,261,165
 2016,Latur,Boys,4,5,1,5,1
 2016,Latur,Girls,6,15,4,15,2
-2016,Mumbai City,Co-Ed,10,45,260,837,186
-2016,Mumbai City,Boys,0,1,3,38,2
-2016,Mumbai City,Girls,0,2,5,71,7
+2016,Mumbai,Co-Ed,10,45,260,837,186
+2016,Mumbai,Boys,0,1,3,38,2
+2016,Mumbai,Girls,0,2,5,71,7
 2016,Mumbai Suburban,Co-Ed,1382,859,0,39,104
 2016,Mumbai Suburban,Boys,31,1,0,0,0
 2016,Mumbai Suburban,Girls,56,2,0,1,0
@@ -548,9 +548,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2017,Chandrapur,Co-Ed,1183,729,127,185,136
 2017,Chandrapur,Boys,8,1,1,1,1
 2017,Chandrapur,Girls,11,1,6,9,1
-2017,Chhatrapati Sambhaji Nagar,Co-Ed,1741,1509,218,289,238
-2017,Chhatrapati Sambhaji Nagar,Boys,4,2,1,3,2
-2017,Chhatrapati Sambhaji Nagar,Girls,6,4,8,11,2
+2017,Chh. Sambhaji Nagar,Co-Ed,1741,1509,218,289,238
+2017,Chh. Sambhaji Nagar,Boys,4,2,1,3,2
+2017,Chh. Sambhaji Nagar,Girls,6,4,8,11,2
 2017,Dharashiv,Co-Ed,759,553,65,174,146
 2017,Dharashiv,Boys,15,7,1,2,2
 2017,Dharashiv,Girls,11,17,1,9,4
@@ -578,9 +578,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2017,Latur,Co-Ed,1033,878,149,271,177
 2017,Latur,Boys,4,3,1,4,4
 2017,Latur,Girls,5,13,4,15,4
-2017,Mumbai City,Co-Ed,9,30,326,838,163
-2017,Mumbai City,Boys,0,1,3,36,2
-2017,Mumbai City,Girls,0,2,8,68,7
+2017,Mumbai,Co-Ed,9,30,326,838,163
+2017,Mumbai,Boys,0,1,3,36,2
+2017,Mumbai,Girls,0,2,8,68,7
 2017,Mumbai Suburban,Co-Ed,1352,938,25,71,8
 2017,Mumbai Suburban,Boys,32,1,0,0,0
 2017,Mumbai Suburban,Girls,55,2,0,0,0
@@ -656,9 +656,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2018,Chandrapur,Co-Ed,1172,727,127,191,140
 2018,Chandrapur,Boys,4,0,1,0,1
 2018,Chandrapur,Girls,4,1,5,9,1
-2018,Chhatrapati Sambhaji Nagar,Co-Ed,1713,1500,282,288,233
-2018,Chhatrapati Sambhaji Nagar,Boys,4,2,1,3,2
-2018,Chhatrapati Sambhaji Nagar,Girls,6,4,8,11,2
+2018,Chh. Sambhaji Nagar,Co-Ed,1713,1500,282,288,233
+2018,Chh. Sambhaji Nagar,Boys,4,2,1,3,2
+2018,Chh. Sambhaji Nagar,Girls,6,4,8,11,2
 2018,Dharashiv,Co-Ed,742,557,68,180,145
 2018,Dharashiv,Boys,14,6,1,2,2
 2018,Dharashiv,Girls,11,16,1,8,4
@@ -686,9 +686,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2018,Latur,Co-Ed,1007,886,168,278,172
 2018,Latur,Boys,4,3,1,4,4
 2018,Latur,Girls,5,13,4,13,5
-2018,Mumbai City,Co-Ed,14,26,329,843,173
-2018,Mumbai City,Boys,0,1,3,36,2
-2018,Mumbai City,Girls,0,2,7,67,7
+2018,Mumbai,Co-Ed,14,26,329,843,173
+2018,Mumbai,Boys,0,1,3,36,2
+2018,Mumbai,Girls,0,2,7,67,7
 2018,Mumbai Suburban,Co-Ed,1320,918,0,92,12
 2018,Mumbai Suburban,Boys,32,1,0,0,0
 2018,Mumbai Suburban,Girls,54,2,0,0,0
@@ -764,9 +764,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2019,Chandrapur,Co-Ed,1159,725,134,204,138
 2019,Chandrapur,Boys,2,0,1,0,1
 2019,Chandrapur,Girls,3,1,5,9,1
-2019,Chhatrapati Sambhaji Nagar,Co-Ed,1705,1581,339,296,235
-2019,Chhatrapati Sambhaji Nagar,Boys,4,2,1,3,2
-2019,Chhatrapati Sambhaji Nagar,Girls,5,4,8,11,2
+2019,Chh. Sambhaji Nagar,Co-Ed,1705,1581,339,296,235
+2019,Chh. Sambhaji Nagar,Boys,4,2,1,3,2
+2019,Chh. Sambhaji Nagar,Girls,5,4,8,11,2
 2019,Dharashiv,Co-Ed,735,558,73,184,145
 2019,Dharashiv,Boys,14,6,1,2,2
 2019,Dharashiv,Girls,11,16,1,8,4
@@ -794,9 +794,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2019,Latur,Co-Ed,998,895,178,286,178
 2019,Latur,Boys,4,3,1,4,3
 2019,Latur,Girls,5,13,4,13,5
-2019,Mumbai City,Co-Ed,13,22,348,849,177
-2019,Mumbai City,Boys,0,1,3,35,2
-2019,Mumbai City,Girls,0,2,7,66,6
+2019,Mumbai,Co-Ed,13,22,348,849,177
+2019,Mumbai,Boys,0,1,3,35,2
+2019,Mumbai,Girls,0,2,7,66,6
 2019,Mumbai Suburban,Co-Ed,1295,925,0,99,11
 2019,Mumbai Suburban,Boys,32,1,0,0,0
 2019,Mumbai Suburban,Girls,54,2,0,0,0
@@ -872,9 +872,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2020,Chandrapur,Co-Ed,1146,723,138,209,140
 2020,Chandrapur,Boys,2,0,1,0,1
 2020,Chandrapur,Girls,3,1,5,9,1
-2020,Chhatrapati Sambhaji Nagar,Co-Ed,1700,1584,377,302,237
-2020,Chhatrapati Sambhaji Nagar,Boys,4,2,1,3,2
-2020,Chhatrapati Sambhaji Nagar,Girls,5,4,8,11,2
+2020,Chh. Sambhaji Nagar,Co-Ed,1700,1584,377,302,237
+2020,Chh. Sambhaji Nagar,Boys,4,2,1,3,2
+2020,Chh. Sambhaji Nagar,Girls,5,4,8,11,2
 2020,Dharashiv,Co-Ed,728,556,78,184,145
 2020,Dharashiv,Boys,14,6,0,2,2
 2020,Dharashiv,Girls,11,15,1,8,4
@@ -902,9 +902,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2020,Latur,Co-Ed,994,890,189,290,179
 2020,Latur,Boys,4,3,0,4,3
 2020,Latur,Girls,5,13,4,12,5
-2020,Mumbai City,Co-Ed,13,19,355,851,174
-2020,Mumbai City,Boys,0,1,4,35,1
-2020,Mumbai City,Girls,0,1,7,66,5
+2020,Mumbai,Co-Ed,13,19,355,851,174
+2020,Mumbai,Boys,0,1,4,35,1
+2020,Mumbai,Girls,0,1,7,66,5
 2020,Mumbai Suburban,Co-Ed,1281,916,0,113,10
 2020,Mumbai Suburban,Boys,30,1,0,0,0
 2020,Mumbai Suburban,Girls,54,2,0,0,0
@@ -980,9 +980,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2021,Chandrapur,Co-Ed,1139,717,144,207,139
 2021,Chandrapur,Boys,2,0,1,0,1
 2021,Chandrapur,Girls,3,1,5,9,1
-2021,Chhatrapati Sambhaji Nagar,Co-Ed,1660,1588,385,302,234
-2021,Chhatrapati Sambhaji Nagar,Boys,4,2,1,3,2
-2021,Chhatrapati Sambhaji Nagar,Girls,5,4,8,11,2
+2021,Chh. Sambhaji Nagar,Co-Ed,1660,1588,385,302,234
+2021,Chh. Sambhaji Nagar,Boys,4,2,1,3,2
+2021,Chh. Sambhaji Nagar,Girls,5,4,8,11,2
 2021,Dharashiv,Co-Ed,719,556,79,182,145
 2021,Dharashiv,Boys,14,6,0,2,2
 2021,Dharashiv,Girls,11,15,1,7,4
@@ -1010,9 +1010,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2021,Latur,Co-Ed,980,884,189,290,177
 2021,Latur,Boys,4,3,0,4,3
 2021,Latur,Girls,5,13,4,12,5
-2021,Mumbai City,Co-Ed,10,15,360,845,174
-2021,Mumbai City,Boys,0,1,3,34,1
-2021,Mumbai City,Girls,0,0,7,66,3
+2021,Mumbai,Co-Ed,10,15,360,845,174
+2021,Mumbai,Boys,0,1,3,34,1
+2021,Mumbai,Girls,0,0,7,66,3
 2021,Mumbai Suburban,Co-Ed,1258,898,0,113,11
 2021,Mumbai Suburban,Boys,30,1,0,0,0
 2021,Mumbai Suburban,Girls,53,2,0,0,0
@@ -1088,9 +1088,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2024,Chandrapur,Co-Ed,1112,700,158,215,134
 2024,Chandrapur,Boys,2,0,1,0,1
 2024,Chandrapur,Girls,3,1,5,9,1
-2024,Chhatrapati Sambhaji Nagar,Co-Ed,1534,1530,441,356,227
-2024,Chhatrapati Sambhaji Nagar,Boys,3,2,1,3,2
-2024,Chhatrapati Sambhaji Nagar,Girls,5,3,8,11,2
+2024,Chh. Sambhaji Nagar,Co-Ed,1534,1530,441,356,227
+2024,Chh. Sambhaji Nagar,Boys,3,2,1,3,2
+2024,Chh. Sambhaji Nagar,Girls,5,3,8,11,2
 2024,Dharashiv,Co-Ed,704,548,92,184,148
 2024,Dharashiv,Boys,13,6,0,2,2
 2024,Dharashiv,Girls,9,15,1,7,4
@@ -1118,9 +1118,9 @@ Year,District ,Gender Mix,Primary School (I-V),Upper Primary School (I-VIII),Hig
 2024,Latur,Co-Ed,935,866,214,307,175
 2024,Latur,Boys,4,3,0,4,4
 2024,Latur,Girls,5,13,3,12,5
-2024,Mumbai City,Co-Ed,7,10,403,829,149
-2024,Mumbai City,Boys,0,1,2,30,1
-2024,Mumbai City,Girls,0,0,7,63,3
+2024,Mumbai,Co-Ed,7,10,403,829,149
+2024,Mumbai,Boys,0,1,2,30,1
+2024,Mumbai,Girls,0,0,7,63,3
 2024,Mumbai Suburban,Co-Ed,1120,863,0,125,11
 2024,Mumbai Suburban,Boys,29,1,0,0,0
 2024,Mumbai Suburban,Girls,52,1,0,0,0

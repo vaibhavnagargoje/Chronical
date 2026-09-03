@@ -1,13 +1,13 @@
 Year,District,Time of Day,Fatalities,Grievous injuries
-2018,Ahmednagar,00:00 to 03:00,45,38
-2018,Ahmednagar,03:00 to 06:00,79,66
-2018,Ahmednagar,06:00 to 09:00,88,71
-2018,Ahmednagar,09:00 to 12:00,119,108
-2018,Ahmednagar,12:00 to 15:00,97,93
-2018,Ahmednagar,15:00 to 18:00,121,129
-2018,Ahmednagar,18:00 to 21:00,221,158
-2018,Ahmednagar,21:00 to 00:00,85,64
-2018,Ahmednagar,Unknown,0,0
+2018,Ahilyanagar,00:00 to 03:00,45,38
+2018,Ahilyanagar,03:00 to 06:00,79,66
+2018,Ahilyanagar,06:00 to 09:00,88,71
+2018,Ahilyanagar,09:00 to 12:00,119,108
+2018,Ahilyanagar,12:00 to 15:00,97,93
+2018,Ahilyanagar,15:00 to 18:00,121,129
+2018,Ahilyanagar,18:00 to 21:00,221,158
+2018,Ahilyanagar,21:00 to 00:00,85,64
+2018,Ahilyanagar,Unknown,0,0
 2018,Akola,00:00 to 03:00,5,0
 2018,Akola,03:00 to 06:00,10,0
 2018,Akola,06:00 to 09:00,14,2
@@ -26,15 +26,15 @@ Year,District,Time of Day,Fatalities,Grievous injuries
 2018,Amravati,18:00 to 21:00,65,38
 2018,Amravati,21:00 to 00:00,52,44
 2018,Amravati,Unknown,0,0
-2018,Aurangabad,00:00 to 03:00,28,53
-2018,Aurangabad,03:00 to 06:00,11,17
-2018,Aurangabad,06:00 to 09:00,68,116
-2018,Aurangabad,09:00 to 12:00,49,102
-2018,Aurangabad,12:00 to 15:00,46,115
-2018,Aurangabad,15:00 to 18:00,70,102
-2018,Aurangabad,18:00 to 21:00,144,140
-2018,Aurangabad,21:00 to 00:00,86,110
-2018,Aurangabad,Unknown,21,24
+2018,Chh. Sambhaji Nagar,00:00 to 03:00,28,53
+2018,Chh. Sambhaji Nagar,03:00 to 06:00,11,17
+2018,Chh. Sambhaji Nagar,06:00 to 09:00,68,116
+2018,Chh. Sambhaji Nagar,09:00 to 12:00,49,102
+2018,Chh. Sambhaji Nagar,12:00 to 15:00,46,115
+2018,Chh. Sambhaji Nagar,15:00 to 18:00,70,102
+2018,Chh. Sambhaji Nagar,18:00 to 21:00,144,140
+2018,Chh. Sambhaji Nagar,21:00 to 00:00,86,110
+2018,Chh. Sambhaji Nagar,Unknown,21,24
 2018,Beed,00:00 to 03:00,13,18
 2018,Beed,03:00 to 06:00,12,15
 2018,Beed,06:00 to 09:00,34,37
@@ -188,15 +188,15 @@ Year,District,Time of Day,Fatalities,Grievous injuries
 2018,Nashik,18:00 to 21:00,131,171
 2018,Nashik,21:00 to 00:00,123,135
 2018,Nashik,Unknown,0,0
-2018,Osmanabad,00:00 to 03:00,15,32
-2018,Osmanabad,03:00 to 06:00,18,55
-2018,Osmanabad,06:00 to 09:00,38,72
-2018,Osmanabad,09:00 to 12:00,51,109
-2018,Osmanabad,12:00 to 15:00,32,87
-2018,Osmanabad,15:00 to 18:00,57,125
-2018,Osmanabad,18:00 to 21:00,72,118
-2018,Osmanabad,21:00 to 00:00,34,25
-2018,Osmanabad,Unknown,0,0
+2018,Dharashiv,00:00 to 03:00,15,32
+2018,Dharashiv,03:00 to 06:00,18,55
+2018,Dharashiv,06:00 to 09:00,38,72
+2018,Dharashiv,09:00 to 12:00,51,109
+2018,Dharashiv,12:00 to 15:00,32,87
+2018,Dharashiv,15:00 to 18:00,57,125
+2018,Dharashiv,18:00 to 21:00,72,118
+2018,Dharashiv,21:00 to 00:00,34,25
+2018,Dharashiv,Unknown,0,0
 2018,Palghar,00:00 to 03:00,68,77
 2018,Palghar,03:00 to 06:00,59,62
 2018,Palghar,06:00 to 09:00,60,588
@@ -314,15 +314,15 @@ Year,District,Time of Day,Fatalities,Grievous injuries
 2018,Yavatmal,18:00 to 21:00,86,50
 2018,Yavatmal,21:00 to 00:00,42,25
 2018,Yavatmal,Unknown,0,0
-2020,Ahmednagar,00:00 to 03:00,35,27
-2020,Ahmednagar,03:00 to 06:00,25,35
-2020,Ahmednagar,06:00 to 09:00,95,69
-2020,Ahmednagar,09:00 to 12:00,85,82
-2020,Ahmednagar,12:00 to 15:00,101,110
-2020,Ahmednagar,15:00 to 18:00,107,146
-2020,Ahmednagar,18:00 to 21:00,132,102
-2020,Ahmednagar,21:00 to 00:00,62,47
-2020,Ahmednagar,Unknown,0,0
+2020,Ahilyanagar,00:00 to 03:00,35,27
+2020,Ahilyanagar,03:00 to 06:00,25,35
+2020,Ahilyanagar,06:00 to 09:00,95,69
+2020,Ahilyanagar,09:00 to 12:00,85,82
+2020,Ahilyanagar,12:00 to 15:00,101,110
+2020,Ahilyanagar,15:00 to 18:00,107,146
+2020,Ahilyanagar,18:00 to 21:00,132,102
+2020,Ahilyanagar,21:00 to 00:00,62,47
+2020,Ahilyanagar,Unknown,0,0
 2020,Akola,00:00 to 03:00,2,0
 2020,Akola,03:00 to 06:00,2,2
 2020,Akola,06:00 to 09:00,4,2
@@ -341,15 +341,15 @@ Year,District,Time of Day,Fatalities,Grievous injuries
 2020,Amravati,18:00 to 21:00,89,57
 2020,Amravati,21:00 to 00:00,56,39
 2020,Amravati,Unknown,0,0
-2020,Aurangabad,00:00 to 03:00,28,27
-2020,Aurangabad,03:00 to 06:00,8,9
-2020,Aurangabad,06:00 to 09:00,28,19
-2020,Aurangabad,09:00 to 12:00,21,47
-2020,Aurangabad,12:00 to 15:00,30,63
-2020,Aurangabad,15:00 to 18:00,63,79
-2020,Aurangabad,18:00 to 21:00,93,110
-2020,Aurangabad,21:00 to 00:00,66,51
-2020,Aurangabad,Unknown,0,0
+2020,Chh. Sambhaji Nagar,00:00 to 03:00,28,27
+2020,Chh. Sambhaji Nagar,03:00 to 06:00,8,9
+2020,Chh. Sambhaji Nagar,06:00 to 09:00,28,19
+2020,Chh. Sambhaji Nagar,09:00 to 12:00,21,47
+2020,Chh. Sambhaji Nagar,12:00 to 15:00,30,63
+2020,Chh. Sambhaji Nagar,15:00 to 18:00,63,79
+2020,Chh. Sambhaji Nagar,18:00 to 21:00,93,110
+2020,Chh. Sambhaji Nagar,21:00 to 00:00,66,51
+2020,Chh. Sambhaji Nagar,Unknown,0,0
 2020,Beed,00:00 to 03:00,17,21
 2020,Beed,03:00 to 06:00,18,22
 2020,Beed,06:00 to 09:00,32,34
@@ -494,15 +494,15 @@ Year,District,Time of Day,Fatalities,Grievous injuries
 2020,Nashik,18:00 to 21:00,169,145
 2020,Nashik,21:00 to 00:00,137,114
 2020,Nashik,Unknown,0,0
-2020,Osmanabad,00:00 to 03:00,12,4
-2020,Osmanabad,03:00 to 06:00,10,5
-2020,Osmanabad,06:00 to 09:00,22,15
-2020,Osmanabad,09:00 to 12:00,35,40
-2020,Osmanabad,12:00 to 15:00,44,33
-2020,Osmanabad,15:00 to 18:00,47,39
-2020,Osmanabad,18:00 to 21:00,43,46
-2020,Osmanabad,21:00 to 00:00,39,10
-2020,Osmanabad,Unknown,0,0
+2020,Dharashiv,00:00 to 03:00,12,4
+2020,Dharashiv,03:00 to 06:00,10,5
+2020,Dharashiv,06:00 to 09:00,22,15
+2020,Dharashiv,09:00 to 12:00,35,40
+2020,Dharashiv,12:00 to 15:00,44,33
+2020,Dharashiv,15:00 to 18:00,47,39
+2020,Dharashiv,18:00 to 21:00,43,46
+2020,Dharashiv,21:00 to 00:00,39,10
+2020,Dharashiv,Unknown,0,0
 2020,Palghar,00:00 to 03:00,23,16
 2020,Palghar,03:00 to 06:00,17,6
 2020,Palghar,06:00 to 09:00,50,36

@@ -1,0 +1,84 @@
+District Name Changes Summary (Chapter-wise Mappings)
+=====================================================
+
+Chapter: Agriculture
+--------------------
+  * Mumbai City -> Mumbai
+
+Chapter: Demography
+-------------------
+  * Buldana -> Buldhana
+  * Chhatrapati Sambhaji Nagar -> Chh. Sambhaji Nagar
+  * Greater Bombay -> Mumbai
+  * Mumbai City -> Mumbai
+  * Nagaur -> Nagpur
+
+Chapter: Education
+------------------
+  * Chhatrapati Sambhaji Nagar -> Chh. Sambhaji Nagar
+  * Mumbai City -> Mumbai
+
+Chapter: Environment
+--------------------
+  * Ahmednagar -> Ahilyanagar
+  * Amarawati -> Amravati
+  * Aurangabad -> Chh. Sambhaji Nagar
+  * Bid -> Beed
+  * Chhatrapati Sambhaji Nagar -> Chh. Sambhaji Nagar
+  * Chhatrapati Sambhajinagar -> Chh. Sambhaji Nagar
+  * Garhchiroli -> Gadchiroli
+  * Mumbai City -> Mumbai
+  * Mumbai sub -> Mumbai Suburban
+  * Nasik -> Nashik
+  * Osmanabad -> Dharashiv
+  * Raigarh -> Raigad
+  * Yeotmal -> Yavatmal
+
+Chapter: Health
+---------------
+  * Chhatrapati Sambhaji Nagar -> Chh. Sambhaji Nagar
+  * Mumbai City -> Mumbai
+
+Chapter: Industry
+-----------------
+  * Buldana -> Buldhana
+  * Chhatrapati Sambhaji Nagar -> Chh. Sambhaji Nagar
+  * Mumbai City -> Mumbai
+
+Chapter: Labor
+--------------
+  * Chhatrapati Sambhaji Nagar -> Chh. Sambhaji Nagar
+  * Mumbai City -> Mumbai
+
+Chapter: Livestock
+------------------
+  * Mumbai City -> Mumbai
+  * Mumbai suburban -> Mumbai Suburban
+
+Chapter: Police
+---------------
+  * Ahmadnagar -> Ahilyanagar
+  * Buldana -> Buldhana
+  * Chhatrapati Sambhaji Nagar -> Chh. Sambhaji Nagar
+  * Mumbai City -> Mumbai
+  * Nasik -> Nashik
+  * Osmanabad -> Dharashiv
+  * Sangali -> Sangli
+
+Chapter: Revenue
+----------------
+  * Buldana -> Buldhana
+  * Chhatrapati Sambhaji Nagar -> Chh. Sambhaji Nagar
+  * Chhatrapati Sambhajinagar -> Chh. Sambhaji Nagar
+  * Mumbai (City+Suburban) -> Mumbai
+  * Mumbai City -> Mumbai
+  * Sangali -> Sangli
+  * Sindhurdurg -> Sindhudurg
+
+Chapter: Transport
+------------------
+  * Ahmednagar -> Ahilyanagar
+  * Aurangabad -> Chh. Sambhaji Nagar
+  * Chhatrapati Sambhaji Nagar -> Chh. Sambhaji Nagar
+  * Mumbai City -> Mumbai
+  * Osmanabad -> Dharashiv

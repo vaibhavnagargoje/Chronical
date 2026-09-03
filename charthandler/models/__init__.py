@@ -92,19 +92,18 @@ from .industry import (
 )
 
 from .labor import (
-    LaborWorkers,
-    LaborAgeDistribution,
-    LaborECWorkers,
-    LaborECGender,
-    LaborECReligion,
+    LaborNonWorkersYearly,
+    LaborWorkingPopulations,
+    LaborCensusAgeDistribution,
+    LaborEconomicCensusWorkers,
+    LaborEconomicCensusGender,
+    LaborDsaMsme,
+    LaborEmpByIndustry,
+    LaborGovtEmployees,
+    LaborMNREGAAccounts,
     LaborMNREGAJobCards,
     LaborMNREGAParticipation,
-    LaborMNREGAAccounts,
     LaborMNREGAScope,
-    LaborGovtEmployees,
-    LaborDSAEstablishments,
-    LaborDSAWorkers,
-    LaborIndustryType,
 )
 
 from .demography import (
@@ -128,6 +127,13 @@ from .demography import (
     CensusElectricity,
     CensusTCAssets,
     CensusOwnership,
+)
+
+from .election import (
+    VidhanSabhaElectionWinners,
+    VidhanSabhaNOTAResults,
+    LokSabhaElectionWinners,
+    LokSabhaNOTAResults,
 )
 
 from .transport import (

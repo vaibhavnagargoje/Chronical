@@ -20,9 +20,9 @@ Year,District,Rural/Urban,Access to Electricity,No Access to Electricity
 2001.0,Chandrapur,Total,280404.0,171577
 2001.0,Chandrapur,Rural,160864.0,150096
 2001.0,Chandrapur,Urban,119540.0,21481
-2001.0,Chhatrapati Sambhaji Nagar,Total,404475.0,121680
-2001.0,Chhatrapati Sambhaji Nagar,Rural,222450.0,112373
-2001.0,Chhatrapati Sambhaji Nagar,Urban,182025.0,9307
+2001.0,Chh. Sambhaji Nagar,Total,404475.0,121680
+2001.0,Chh. Sambhaji Nagar,Rural,222450.0,112373
+2001.0,Chh. Sambhaji Nagar,Urban,182025.0,9307
 2001.0,Dharashiv,Total,191638.0,101471
 2001.0,Dharashiv,Rural,155959.0,96124
 2001.0,Dharashiv,Urban,35679.0,5347
@@ -50,9 +50,9 @@ Year,District,Rural/Urban,Access to Electricity,No Access to Electricity
 2001.0,Latur,Total,273393.0,99890
 2001.0,Latur,Rural,202237.0,91878
 2001.0,Latur,Urban,71156.0,8012
-2001.0,Mumbai City,Total,634563.0,14027
-2001.0,Mumbai City,Rural,0.0,0
-2001.0,Mumbai City,Urban,634563.0,14027
+2001.0,Mumbai,Total,634563.0,14027
+2001.0,Mumbai,Rural,0.0,0
+2001.0,Mumbai,Urban,634563.0,14027
 2001.0,Mumbai Suburban,Total,1737197.0,37135
 2001.0,Mumbai Suburban,Rural,0.0,0
 2001.0,Mumbai Suburban,Urban,1737197.0,37135
@@ -116,15 +116,15 @@ Year,District,Rural/Urban,Access to Electricity,No Access to Electricity
 2011.0,Bhandara,Total,227025.0,48748
 2011.0,Bhandara,Rural,177263.0,46036
 2011.0,Bhandara,Urban,49762.0,2712
-2011.0,Buldana,Total,423036.0,129995
-2011.0,Buldana,Rural,326847.0,118400
-2011.0,Buldana,Urban,96189.0,11595
+2011.0,Buldhana,Total,423036.0,129995
+2011.0,Buldhana,Rural,326847.0,118400
+2011.0,Buldhana,Urban,96189.0,11595
 2011.0,Chandrapur,Total,418666.0,110946
 2011.0,Chandrapur,Rural,254066.0,98577
 2011.0,Chandrapur,Urban,164600.0,12369
-2011.0,Chhatrapati Sambhaji Nagar,Total,589477.0,147110
-2011.0,Chhatrapati Sambhaji Nagar,Rural,281642.0,137478
-2011.0,Chhatrapati Sambhaji Nagar,Urban,307835.0,9632
+2011.0,Chh. Sambhaji Nagar,Total,589477.0,147110
+2011.0,Chh. Sambhaji Nagar,Rural,281642.0,137478
+2011.0,Chh. Sambhaji Nagar,Urban,307835.0,9632
 2011.0,Dharashiv,Total,240042.0,92427
 2011.0,Dharashiv,Rural,191608.0,86131
 2011.0,Dharashiv,Urban,48434.0,6296

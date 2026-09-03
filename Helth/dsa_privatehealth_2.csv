@@ -5944,51 +5944,51 @@ Mumbai Suburban,2021,Kurla,"Specialty Hospitals (Cancer, TB, etc)",0
 Mumbai Suburban,2021,Kurla,Clinics,2028
 Mumbai Suburban,2021,Kurla,Maternity Wards,126
 Mumbai Suburban,2021,Kurla,Number of Beds,8409
-Mumbai City,2013,Mumbai City,Hospitals,47
-Mumbai City,2013,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",7
-Mumbai City,2013,Mumbai City,Clinics,237
-Mumbai City,2013,Mumbai City,Maternity Wards,220
-Mumbai City,2013,Mumbai City,Number of Beds,7948
-Mumbai City,2014,Mumbai City,Hospitals,167
-Mumbai City,2014,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",2
-Mumbai City,2014,Mumbai City,Clinics,1215
-Mumbai City,2014,Mumbai City,Maternity Wards,72
-Mumbai City,2014,Mumbai City,Number of Beds,10392
-Mumbai City,2015,Mumbai City,Hospitals,183
-Mumbai City,2015,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",0
-Mumbai City,2015,Mumbai City,Clinics,1221
-Mumbai City,2015,Mumbai City,Maternity Wards,72
-Mumbai City,2015,Mumbai City,Number of Beds,8608
-Mumbai City,2016,Mumbai City,Hospitals,184
-Mumbai City,2016,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",0
-Mumbai City,2016,Mumbai City,Clinics,1228
-Mumbai City,2016,Mumbai City,Maternity Wards,72
-Mumbai City,2016,Mumbai City,Number of Beds,8633
-Mumbai City,2017,Mumbai City,Hospitals,188
-Mumbai City,2017,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",0
-Mumbai City,2017,Mumbai City,Clinics,1524
-Mumbai City,2017,Mumbai City,Maternity Wards,100
-Mumbai City,2017,Mumbai City,Number of Beds,8240
-Mumbai City,2018,Mumbai City,Hospitals,199
-Mumbai City,2018,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",1
-Mumbai City,2018,Mumbai City,Clinics,1535
-Mumbai City,2018,Mumbai City,Maternity Wards,91
-Mumbai City,2018,Mumbai City,Number of Beds,8780
-Mumbai City,2019,Mumbai City,Hospitals,201
-Mumbai City,2019,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",1
-Mumbai City,2019,Mumbai City,Clinics,1179
-Mumbai City,2019,Mumbai City,Maternity Wards,72
-Mumbai City,2019,Mumbai City,Number of Beds,6700
-Mumbai City,2020,Mumbai City,Hospitals,201
-Mumbai City,2020,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",3
-Mumbai City,2020,Mumbai City,Clinics,1155
-Mumbai City,2020,Mumbai City,Maternity Wards,94
-Mumbai City,2020,Mumbai City,Number of Beds,6600
-Mumbai City,2021,Mumbai City,Hospitals,146
-Mumbai City,2021,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",2
-Mumbai City,2021,Mumbai City,Clinics,1173
-Mumbai City,2021,Mumbai City,Maternity Wards,98
-Mumbai City,2021,Mumbai City,Number of Beds,9584
+Mumbai,2013,Mumbai City,Hospitals,47
+Mumbai,2013,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",7
+Mumbai,2013,Mumbai City,Clinics,237
+Mumbai,2013,Mumbai City,Maternity Wards,220
+Mumbai,2013,Mumbai City,Number of Beds,7948
+Mumbai,2014,Mumbai City,Hospitals,167
+Mumbai,2014,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",2
+Mumbai,2014,Mumbai City,Clinics,1215
+Mumbai,2014,Mumbai City,Maternity Wards,72
+Mumbai,2014,Mumbai City,Number of Beds,10392
+Mumbai,2015,Mumbai City,Hospitals,183
+Mumbai,2015,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",0
+Mumbai,2015,Mumbai City,Clinics,1221
+Mumbai,2015,Mumbai City,Maternity Wards,72
+Mumbai,2015,Mumbai City,Number of Beds,8608
+Mumbai,2016,Mumbai City,Hospitals,184
+Mumbai,2016,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",0
+Mumbai,2016,Mumbai City,Clinics,1228
+Mumbai,2016,Mumbai City,Maternity Wards,72
+Mumbai,2016,Mumbai City,Number of Beds,8633
+Mumbai,2017,Mumbai City,Hospitals,188
+Mumbai,2017,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",0
+Mumbai,2017,Mumbai City,Clinics,1524
+Mumbai,2017,Mumbai City,Maternity Wards,100
+Mumbai,2017,Mumbai City,Number of Beds,8240
+Mumbai,2018,Mumbai City,Hospitals,199
+Mumbai,2018,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",1
+Mumbai,2018,Mumbai City,Clinics,1535
+Mumbai,2018,Mumbai City,Maternity Wards,91
+Mumbai,2018,Mumbai City,Number of Beds,8780
+Mumbai,2019,Mumbai City,Hospitals,201
+Mumbai,2019,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",1
+Mumbai,2019,Mumbai City,Clinics,1179
+Mumbai,2019,Mumbai City,Maternity Wards,72
+Mumbai,2019,Mumbai City,Number of Beds,6700
+Mumbai,2020,Mumbai City,Hospitals,201
+Mumbai,2020,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",3
+Mumbai,2020,Mumbai City,Clinics,1155
+Mumbai,2020,Mumbai City,Maternity Wards,94
+Mumbai,2020,Mumbai City,Number of Beds,6600
+Mumbai,2021,Mumbai City,Hospitals,146
+Mumbai,2021,Mumbai City,"Specialty Hospitals (Cancer, TB, etc)",2
+Mumbai,2021,Mumbai City,Clinics,1173
+Mumbai,2021,Mumbai City,Maternity Wards,98
+Mumbai,2021,Mumbai City,Number of Beds,9584
 Nagpur,2012,Narkhed,Hospitals,2
 Nagpur,2012,Narkhed,"Specialty Hospitals (Cancer, TB, etc)",0
 Nagpur,2012,Narkhed,Clinics,20

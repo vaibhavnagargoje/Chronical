@@ -82,19 +82,18 @@ DATA_MODEL_REGISTRY = {
     'DSAElectricity': 'charthandler.DSAElectricity',
     'DSAPollutionCategory': 'charthandler.DSAPollutionCategory',
     # Labor
-    'LaborWorkers': 'charthandler.LaborWorkers',
-    'LaborAgeDistribution': 'charthandler.LaborAgeDistribution',
-    'LaborECWorkers': 'charthandler.LaborECWorkers',
-    'LaborECGender': 'charthandler.LaborECGender',
-    'LaborECReligion': 'charthandler.LaborECReligion',
-    'LaborMNREGAJobCards': 'charthandler.LaborMNREGAJobCards',
-    'LaborMNREGAParticipation': 'charthandler.LaborMNREGAParticipation',
-    'LaborMNREGAAccounts': 'charthandler.LaborMNREGAAccounts',
-    'LaborMNREGAScope': 'charthandler.LaborMNREGAScope',
-    'LaborGovtEmployees': 'charthandler.LaborGovtEmployees',
-    'LaborDSAEstablishments': 'charthandler.LaborDSAEstablishments',
-    'LaborDSAWorkers': 'charthandler.LaborDSAWorkers',
-    'LaborIndustryType': 'charthandler.LaborIndustryType',
+    'LaborNonWorkersYearly':         'charthandler.LaborNonWorkersYearly',
+    'LaborWorkingPopulations':       'charthandler.LaborWorkingPopulations',
+    'LaborCensusAgeDistribution':    'charthandler.LaborCensusAgeDistribution',
+    'LaborEconomicCensusWorkers':    'charthandler.LaborEconomicCensusWorkers',
+    'LaborEconomicCensusGender':     'charthandler.LaborEconomicCensusGender',
+    'LaborDsaMsme':                  'charthandler.LaborDsaMsme',
+    'LaborEmpByIndustry':            'charthandler.LaborEmpByIndustry',
+    'LaborGovtEmployees':            'charthandler.LaborGovtEmployees',
+    'LaborMNREGAAccounts':           'charthandler.LaborMNREGAAccounts',
+    'LaborMNREGAJobCards':           'charthandler.LaborMNREGAJobCards',
+    'LaborMNREGAParticipation':      'charthandler.LaborMNREGAParticipation',
+    'LaborMNREGAScope':              'charthandler.LaborMNREGAScope',
     
     # Demography — Population Profile
     'CensusPopulation': 'charthandler.CensusPopulation',
@@ -119,6 +118,12 @@ DATA_MODEL_REGISTRY = {
     'CensusInwardMigrationC': 'charthandler.CensusInwardMigrationC',
     'CensusInwardMigrationD': 'charthandler.CensusInwardMigrationD',
     'CensusInwardMigrationE': 'charthandler.CensusInwardMigrationE',
+
+    # Elections
+    'LokSabhaElectionWinners': 'charthandler.LokSabhaElectionWinners',
+    'LokSabhaNOTAResults': 'charthandler.LokSabhaNOTAResults',
+    'VidhanSabhaElectionWinners': 'charthandler.VidhanSabhaElectionWinners',
+    'VidhanSabhaNOTAResults': 'charthandler.VidhanSabhaNOTAResults',
 
     # Transport & Communication — ARC (Annual Report on Crime / Accident Records)
     'TransportARCAccidents':         'charthandler.TransportARCAccidents',

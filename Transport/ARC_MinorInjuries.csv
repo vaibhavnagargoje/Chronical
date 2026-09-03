@@ -1,8 +1,8 @@
 Year,District,No. of accidents,Males Minor Injured,Females Minor Injured,Total Minor Injured
-2018,Ahmednagar,188,212,29,241
+2018,Ahilyanagar,188,212,29,241
 2018,Akola,210,338,40,378
 2018,Amravati,384,431,100,531
-2018,Aurangabad,132,145,32,177
+2018,Chh. Sambhaji Nagar,132,145,32,177
 2018,Beed,56,58,15,73
 2018,Bhandara,124,207,62,269
 2018,Buldhana,181,300,90,390
@@ -20,7 +20,7 @@ Year,District,No. of accidents,Males Minor Injured,Females Minor Injured,Total M
 2018,Nanded,92,100,10,110
 2018,Nandurbar,132,262,26,288
 2018,Nashik,226,431,113,544
-2018,Osmanabad,62,68,27,95
+2018,Dharashiv,62,68,27,95
 2018,Palghar,296,317,53,370
 2018,Parbhani,33,36,2,38
 2018,Pune,489,502,129,631
@@ -34,10 +34,10 @@ Year,District,No. of accidents,Males Minor Injured,Females Minor Injured,Total M
 2018,Wardha,186,247,28,275
 2018,Washim,87,119,18,137
 2018,Yavatmal,230,271,47,318
-2020,Ahmednagar,194,278,82,360
+2020,Ahilyanagar,194,278,82,360
 2020,Akola,136,213,41,254
 2020,Amravati,203,230,45,275
-2020,Aurangabad,178,223,54,277
+2020,Chh. Sambhaji Nagar,178,223,54,277
 2020,Beed,38,59,0,59
 2020,Bhandara,40,42,8,50
 2020,Buldhana,111,176,12,188
@@ -55,7 +55,7 @@ Year,District,No. of accidents,Males Minor Injured,Females Minor Injured,Total M
 2020,Nanded,31,33,5,38
 2020,Nandurbar,83,134,28,162
 2020,Nashik,91,302,76,378
-2020,Osmanabad,4,5,3,8
+2020,Dharashiv,4,5,3,8
 2020,Palghar,33,84,14,98
 2020,Parbhani,92,123,11,134
 2020,Pune,37,89,18,107

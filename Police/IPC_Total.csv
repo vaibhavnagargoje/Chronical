@@ -2,7 +2,7 @@ Year,District,Cognizable IPC crimes
 2014,Ahilyanagar,6957
 2014,Akola,4433
 2014,Amravati,10286
-2014,Chhatrapati Sambhaji Nagar,9058
+2014,Chh. Sambhaji Nagar,9058
 2014,Beed,4864
 2014,Bhandara,2003
 2014,Buldhana,4453
@@ -15,11 +15,11 @@ Year,District,Cognizable IPC crimes
 2014,Jalna,3372
 2014,Kolhapur,4942
 2014,Latur,4070
-2014,Mumbai City,43502
+2014,Mumbai,43502
 2014,Nagpur,16691
 2014,Nanded,4600
 2014,Nandurbar,1425
-2014,Nasik,10715
+2014,Nashik,10715
 2014,Dharashiv,2825
 2014,Palghar,4692
 2014,Parbhani,3606
@@ -37,7 +37,7 @@ Year,District,Cognizable IPC crimes
 2015,Ahilyanagar,8018
 2015,Akola,4423
 2015,Amravati,11868
-2015,Chhatrapati Sambhaji Nagar,12219
+2015,Chh. Sambhaji Nagar,12219
 2015,Beed,5480
 2015,Bhandara,2016
 2015,Buldhana,4959
@@ -50,11 +50,11 @@ Year,District,Cognizable IPC crimes
 2015,Jalna,3646
 2015,Kolhapur,6109
 2015,Latur,4616
-2015,Mumbai City,47174
+2015,Mumbai,47174
 2015,Nagpur,17748
 2015,Nanded,5654
 2015,Nandurbar,1388
-2015,Nasik,11195
+2015,Nashik,11195
 2015,Dharashiv,3316
 2015,Palghar,5343
 2015,Parbhani,4083
@@ -72,7 +72,7 @@ Year,District,Cognizable IPC crimes
 2016,Ahilyanagar,7881
 2016,Akola,4220
 2016,Amravati,11263
-2016,Chhatrapati Sambhaji Nagar,13293
+2016,Chh. Sambhaji Nagar,13293
 2016,Beed,4895
 2016,Bhandara,2211
 2016,Buldhana,5074
@@ -85,11 +85,11 @@ Year,District,Cognizable IPC crimes
 2016,Jalna,3638
 2016,Kolhapur,4892
 2016,Latur,4396
-2016,Mumbai City,43333
+2016,Mumbai,43333
 2016,Nagpur,18798
 2016,Nanded,5935
 2016,Nandurbar,1730
-2016,Nasik,11049
+2016,Nashik,11049
 2016,Dharashiv,2660
 2016,Palghar,5121
 2016,Parbhani,3937
@@ -107,7 +107,7 @@ Year,District,Cognizable IPC crimes
 2017,Ahilyanagar,8916
 2017,Akola,5026
 2017,Amravati,9365
-2017,Chhatrapati Sambhaji Nagar,10281
+2017,Chh. Sambhaji Nagar,10281
 2017,Beed,5162
 2017,Bhandara,2274
 2017,Buldhana,6094
@@ -120,11 +120,11 @@ Year,District,Cognizable IPC crimes
 2017,Jalna,3707
 2017,Kolhapur,4656
 2017,Latur,4001
-2017,Mumbai City,64443
+2017,Mumbai,64443
 2017,Nagpur,22267
 2017,Nanded,5674
 2017,Nandurbar,1581
-2017,Nasik,11484
+2017,Nashik,11484
 2017,Dharashiv,2850
 2017,Palghar,4835
 2017,Parbhani,3211
@@ -142,7 +142,7 @@ Year,District,Cognizable IPC crimes
 2018,Ahilyanagar,12613
 2018,Akola,5579
 2018,Amravati,9577
-2018,Chhatrapati Sambhaji Nagar,15929
+2018,Chh. Sambhaji Nagar,15929
 2018,Beed,5352
 2018,Bhandara,2738
 2018,Buldhana,6792
@@ -155,11 +155,11 @@ Year,District,Cognizable IPC crimes
 2018,Jalna,4110
 2018,Kolhapur,7191
 2018,Latur,4377
-2018,Mumbai City,80052
+2018,Mumbai,80052
 2018,Nagpur,20085
 2018,Nanded,6157
 2018,Nandurbar,1681
-2018,Nasik,13242
+2018,Nashik,13242
 2018,Dharashiv,3490
 2018,Palghar,6683
 2018,Parbhani,3471
@@ -177,7 +177,7 @@ Year,District,Cognizable IPC crimes
 2019,Ahilyanagar,12543
 2019,Akola,5217
 2019,Amravati,9732
-2019,Chhatrapati Sambhaji Nagar,15243
+2019,Chh. Sambhaji Nagar,15243
 2019,Beed,4461
 2019,Bhandara,3060
 2019,Buldhana,7714
@@ -190,11 +190,11 @@ Year,District,Cognizable IPC crimes
 2019,Jalna,4601
 2019,Kolhapur,6379
 2019,Latur,4677
-2019,Mumbai City,74490
+2019,Mumbai,74490
 2019,Nagpur,22489
 2019,Nanded,6674
 2019,Nandurbar,2301
-2019,Nasik,13900
+2019,Nashik,13900
 2019,Dharashiv,3409
 2019,Palghar,6678
 2019,Parbhani,4367
@@ -212,7 +212,7 @@ Year,District,Cognizable IPC crimes
 2020,Ahilyanagar,38689
 2020,Akola,7524
 2020,Amravati,10113
-2020,Chhatrapati Sambhaji Nagar,12268
+2020,Chh. Sambhaji Nagar,12268
 2020,Beed,5719
 2020,Bhandara,2727
 2020,Buldhana,7792
@@ -225,11 +225,11 @@ Year,District,Cognizable IPC crimes
 2020,Jalna,6255
 2020,Kolhapur,9320
 2020,Latur,5146
-2020,Mumbai City,58444
+2020,Mumbai,58444
 2020,Nagpur,19799
 2020,Nanded,7514
 2020,Nandurbar,7134
-2020,Nasik,25909
+2020,Nashik,25909
 2020,Dharashiv,3622
 2020,Palghar,1914
 2020,Parbhani,4439
@@ -247,7 +247,7 @@ Year,District,Cognizable IPC crimes
 2021,Ahilyanagar,13192
 2021,Akola,10393
 2021,Amravati,16456
-2021,Chhatrapati Sambhaji Nagar,14313
+2021,Chh. Sambhaji Nagar,14313
 2021,Beed,6013
 2021,Bhandara,2771
 2021,Buldhana,9327
@@ -260,11 +260,11 @@ Year,District,Cognizable IPC crimes
 2021,Jalna,6030
 2021,Kolhapur,7548
 2021,Latur,5664
-2021,Mumbai City,70401
+2021,Mumbai,70401
 2021,Nagpur,19377
 2021,Nanded,7297
 2021,Nandurbar,4669
-2021,Nasik,23444
+2021,Nashik,23444
 2021,Dharashiv,4167
 2021,Palghar,2204
 2021,Parbhani,4340
@@ -286,7 +286,7 @@ Year,District,Cognizable IPC crimes
 2022,Bhandara,3159
 2022,Buldhana,7928
 2022,Chandrapur,8029
-2022,Chhatrapati Sambhaji Nagar,14758
+2022,Chh. Sambhaji Nagar,14758
 2022,Dharashiv,4154
 2022,Dhule,3840
 2022,Gadchiroli,1592
@@ -296,11 +296,11 @@ Year,District,Cognizable IPC crimes
 2022,Jalna,7391
 2022,Kolhapur,7126
 2022,Latur,5392
-2022,Mumbai City,83073
+2022,Mumbai,83073
 2022,Nagpur,22093
 2022,Nanded,7195
 2022,Nandurbar,2728
-2022,Nasik,10752
+2022,Nashik,10752
 2022,Palghar,3201
 2022,Parbhani,3873
 2022,Pune,33968

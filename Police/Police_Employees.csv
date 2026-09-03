@@ -559,10 +559,10 @@ Year,District,Taluka,Establishment,Number of Officers/Employees
 2021,Latur,Nilanga,Police Stations,141
 2021,Latur,Devani,Police Stations,39
 2021,Latur,Udgir,Police Stations,254
-2018,Mumbai City,Mumbai City,Police Stations,40337
-2019,Mumbai City,Mumbai City,Police Stations,41382
-2020,Mumbai City,Mumbai City,Police Stations,40037
-2021,Mumbai City,Mumbai City,Police Stations,37430
+2018,Mumbai,Mumbai City,Police Stations,40337
+2019,Mumbai,Mumbai City,Police Stations,41382
+2020,Mumbai,Mumbai City,Police Stations,40037
+2021,Mumbai,Mumbai City,Police Stations,37430
 2018,Mumbai Suburban,Adheri,Police Stations,
 2018,Mumbai Suburban,Borivali,Police Stations,
 2018,Mumbai Suburban,Kurla,Police Stations,
@@ -1855,10 +1855,10 @@ Year,District,Taluka,Establishment,Number of Officers/Employees
 2021,Latur,Nilanga,Outposts,4
 2021,Latur,Devani,Outposts,2
 2021,Latur,Udgir,Outposts,5
-2018,Mumbai City,Mumbai City,Outposts,
-2019,Mumbai City,Mumbai City,Outposts,
-2020,Mumbai City,Mumbai City,Outposts,
-2021,Mumbai City,Mumbai City,Outposts,
+2018,Mumbai,Mumbai City,Outposts,
+2019,Mumbai,Mumbai City,Outposts,
+2020,Mumbai,Mumbai City,Outposts,
+2021,Mumbai,Mumbai City,Outposts,
 2018,Mumbai Suburban,Adheri,Outposts,
 2018,Mumbai Suburban,Borivali,Outposts,
 2018,Mumbai Suburban,Kurla,Outposts,
@@ -3151,10 +3151,10 @@ Year,District,Taluka,Establishment,Number of Officers/Employees
 2021,Latur,Nilanga,Police Chowkis,
 2021,Latur,Devani,Police Chowkis,
 2021,Latur,Udgir,Police Chowkis,
-2018,Mumbai City,Mumbai City,Police Chowkis,4741
-2019,Mumbai City,Mumbai City,Police Chowkis,4493
-2020,Mumbai City,Mumbai City,Police Chowkis,4855
-2021,Mumbai City,Mumbai City,Police Chowkis,4424
+2018,Mumbai,Mumbai City,Police Chowkis,4741
+2019,Mumbai,Mumbai City,Police Chowkis,4493
+2020,Mumbai,Mumbai City,Police Chowkis,4855
+2021,Mumbai,Mumbai City,Police Chowkis,4424
 2018,Mumbai Suburban,Adheri,Police Chowkis,
 2018,Mumbai Suburban,Borivali,Police Chowkis,
 2018,Mumbai Suburban,Kurla,Police Chowkis,

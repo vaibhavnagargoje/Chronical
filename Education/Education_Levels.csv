@@ -4,7 +4,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,All ages,Male,134278,125094,66935,19536,380,5760,22460
 1991,Buldhana,All ages,Male,170218,156578,72100,21070,180,7600,16995
 1991,Chandrapur,All ages,Male,152111,131279,68120,31025,320,7810,22330
-1991,Chhatrapati Sambhaji Nagar,All ages,Male,178076,163262,101325,35790,240,9622,42483
+1991,Chh. Sambhaji Nagar,All ages,Male,178076,163262,101325,35790,240,9622,42483
 1991,Dharashiv,All ages,Male,101320,101459,50750,16890,380,2390,17476
 1991,Gadchiroli,All ages,Male,55732,40304,16234,6760,40,2210,4828
 1991,Jalgaon,All ages,Male,287132,258997,163889,50436,1840,19166,51435
@@ -31,7 +31,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,All ages,Male,84885,83418,67532,36981,35,2222,28472
 2001,Buldhana,All ages,Male,200849,132126,132070,57831,88,4385,44193
 2001,Chandrapur,All ages,Male,163053,134414,117450,69992,130,4803,48898
-2001,Chhatrapati Sambhaji Nagar,All ages,Male,244128,146526,187934,93054,211,11256,93325
+2001,Chh. Sambhaji Nagar,All ages,Male,244128,146526,187934,93054,211,11256,93325
 2001,Dharashiv,All ages,Male,129124,79950,89124,42741,64,3141,38448
 2001,Dhule,All ages,Male,143688,75537,102719,59867,134,8343,45038
 2001,Gadchiroli,All ages,Male,68401,47505,36328,21913,17,962,12693
@@ -41,7 +41,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,All ages,Male,145813,74645,70079,29712,44,1225,23925
 2001,Kolhapur,All ages,Male,318291,193230,280927,122969,353,16115,121779
 2001,Latur,All ages,Male,169925,111269,125825,69971,100,5671,57747
-2001,Mumbai City,All ages,Male,332234,262176,337243,163849,608,11602,170582
+2001,Mumbai,All ages,Male,332234,262176,337243,163849,608,11602,170582
 2001,Mumbai Suburban,All ages,Male,820860,628610,843708,407404,2095,44378,495142
 2001,Nagpur,All ages,Male,315470,300559,268021,170971,490,19796,175378
 2001,Nanded,All ages,Male,229237,121398,136975,91340,95,4624,75231
@@ -66,7 +66,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,All ages,Male,76228,99354,80381,66979,150,5113,40311
 2011,Buldhana,All ages,Male,198450,169247,160975,114003,265,7686,71735
 2011,Chandrapur,All ages,Male,151322,174025,141853,116900,308,10551,72839
-2011,Chhatrapati Sambhaji Nagar,All ages,Male,270007,211329,262314,188486,1062,18871,162377
+2011,Chh. Sambhaji Nagar,All ages,Male,270007,211329,262314,188486,1062,18871,162377
 2011,Dharashiv,All ages,Male,120652,106218,116619,76522,224,6539,62708
 2011,Dhule,All ages,Male,137821,93503,116301,91536,862,12288,65745
 2011,Gadchiroli,All ages,Male,73387,69380,52519,44767,56,1766,21243
@@ -76,7 +76,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,All ages,Male,158301,108698,99809,66843,178,3523,46248
 2011,Kolhapur,All ages,Male,277521,224973,325928,203198,2236,29875,183449
 2011,Latur,All ages,Male,168092,143134,159784,121170,336,11354,93817
-2011,Mumbai City,All ages,Male,249086,221861,284103,207303,2035,16784,228615
+2011,Mumbai,All ages,Male,249086,221861,284103,207303,2035,16784,228615
 2011,Mumbai Suburban,All ages,Male,730649,649018,850307,609223,7726,64782,736349
 2011,Nagpur,All ages,Male,301524,357956,327002,277674,1188,32547,268252
 2011,Nanded,All ages,Male,256301,188491,171330,149519,345,9833,109445
@@ -99,7 +99,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,All ages,Female,72533,53090,17435,3770,80,1348,3401
 1991,Buldhana,All ages,Female,119406,75232,22596,5160,30,1300,3950
 1991,Chandrapur,All ages,Female,107868,85995,28438,10610,80,1870,7600
-1991,Chhatrapati Sambhaji Nagar,All ages,Female,100907,78386,34580,10280,90,930,13960
+1991,Chh. Sambhaji Nagar,All ages,Female,100907,78386,34580,10280,90,930,13960
 1991,Dharashiv,All ages,Female,65684,52438,15590,2810,30,170,2553
 1991,Gadchiroli,All ages,Female,29115,19238,5780,1950,30,520,810
 1991,Jalgaon,All ages,Female,201235,162826,68430,18560,630,3600,13191
@@ -126,7 +126,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,All ages,Female,73297,72665,45487,19549,8,369,11212
 2001,Buldhana,All ages,Female,181014,71738,59343,21432,15,436,12010
 2001,Chandrapur,All ages,Female,142949,107491,74791,34017,22,409,21120
-2001,Chhatrapati Sambhaji Nagar,All ages,Female,210986,87471,91686,39230,61,1150,37477
+2001,Chh. Sambhaji Nagar,All ages,Female,210986,87471,91686,39230,61,1150,37477
 2001,Dharashiv,All ages,Female,119002,48536,42123,15185,21,286,7790
 2001,Dhule,All ages,Female,128971,54699,57454,27365,26,767,15324
 2001,Gadchiroli,All ages,Female,52308,33490,21219,9264,3,132,3886
@@ -136,7 +136,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,All ages,Female,103509,32224,25020,9198,7,101,5226
 2001,Kolhapur,All ages,Female,327719,140388,158004,54182,100,1848,47100
 2001,Latur,All ages,Female,157044,69678,62197,27658,66,541,13116
-2001,Mumbai City,All ages,Female,267801,153434,191976,101737,447,3951,134938
+2001,Mumbai,All ages,Female,267801,153434,191976,101737,447,3951,134938
 2001,Mumbai Suburban,All ages,Female,735723,382067,483021,248740,1251,10970,373769
 2001,Nagpur,All ages,Female,278189,254561,204795,113092,210,3161,117168
 2001,Nanded,All ages,Female,186909,69671,64007,32634,25,394,16677
@@ -161,7 +161,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,All ages,Female,66757,90223,70727,50063,37,1328,24332
 2011,Buldhana,All ages,Female,200868,116815,101098,60007,101,1610,27195
 2011,Chandrapur,All ages,Female,136089,152580,120842,81502,139,2211,44865
-2011,Chhatrapati Sambhaji Nagar,All ages,Female,269415,155288,177287,105571,434,4135,83775
+2011,Chh. Sambhaji Nagar,All ages,Female,269415,155288,177287,105571,434,4135,83775
 2011,Dharashiv,All ages,Female,125408,77799,77854,40109,93,1493,20819
 2011,Dhule,All ages,Female,134684,75228,83618,54390,225,2606,31813
 2011,Gadchiroli,All ages,Female,62644,57687,41348,26335,25,585,9711
@@ -171,7 +171,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,All ages,Female,142811,66882,56285,30032,77,925,15714
 2011,Kolhapur,All ages,Female,314615,186987,240905,123874,771,6960,101706
 2011,Latur,All ages,Female,175342,110262,112544,67426,148,2961,35856
-2011,Mumbai City,All ages,Female,221504,147255,190552,153456,1756,7073,204137
+2011,Mumbai,All ages,Female,221504,147255,190552,153456,1756,7073,204137
 2011,Mumbai Suburban,All ages,Female,713881,452771,557176,434313,4904,22546,633270
 2011,Nagpur,All ages,Female,273701,317299,294960,225500,699,8466,228462
 2011,Nanded,All ages,Female,245908,134953,109697,75895,200,2401,38474
@@ -194,7 +194,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,0-6,Male,0,0,0,0,0,0,0
 1991,Buldhana,0-6,Male,0,0,0,0,0,0,0
 1991,Chandrapur,0-6,Male,0,0,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,0-6,Male,0,0,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,0-6,Male,0,0,0,0,0,0,0
 1991,Dharashiv,0-6,Male,0,0,0,0,0,0,0
 1991,Gadchiroli,0-6,Male,0,0,0,0,0,0,0
 1991,Jalgaon,0-6,Male,0,0,0,0,0,0,0
@@ -221,7 +221,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,0-6,Male,0,0,0,0,0,0,0
 2001,Buldhana,0-6,Male,0,0,0,0,0,0,0
 2001,Chandrapur,0-6,Male,0,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,0-6,Male,0,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,0-6,Male,0,0,0,0,0,0,0
 2001,Dharashiv,0-6,Male,0,0,0,0,0,0,0
 2001,Dhule,0-6,Male,0,0,0,0,0,0,0
 2001,Gadchiroli,0-6,Male,0,0,0,0,0,0,0
@@ -231,7 +231,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,0-6,Male,0,0,0,0,0,0,0
 2001,Kolhapur,0-6,Male,0,0,0,0,0,0,0
 2001,Latur,0-6,Male,0,0,0,0,0,0,0
-2001,Mumbai City,0-6,Male,0,0,0,0,0,0,0
+2001,Mumbai,0-6,Male,0,0,0,0,0,0,0
 2001,Mumbai Suburban,0-6,Male,0,0,0,0,0,0,0
 2001,Nagpur,0-6,Male,0,0,0,0,0,0,0
 2001,Nanded,0-6,Male,0,0,0,0,0,0,0
@@ -256,7 +256,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,0-6,Male,0,0,0,0,0,0,0
 2011,Buldhana,0-6,Male,0,0,0,0,0,0,0
 2011,Chandrapur,0-6,Male,0,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,0-6,Male,0,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,0-6,Male,0,0,0,0,0,0,0
 2011,Dharashiv,0-6,Male,0,0,0,0,0,0,0
 2011,Dhule,0-6,Male,0,0,0,0,0,0,0
 2011,Gadchiroli,0-6,Male,0,0,0,0,0,0,0
@@ -266,7 +266,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,0-6,Male,0,0,0,0,0,0,0
 2011,Kolhapur,0-6,Male,0,0,0,0,0,0,0
 2011,Latur,0-6,Male,0,0,0,0,0,0,0
-2011,Mumbai City,0-6,Male,0,0,0,0,0,0,0
+2011,Mumbai,0-6,Male,0,0,0,0,0,0,0
 2011,Mumbai Suburban,0-6,Male,0,0,0,0,0,0,0
 2011,Nagpur,0-6,Male,0,0,0,0,0,0,0
 2011,Nanded,0-6,Male,0,0,0,0,0,0,0
@@ -289,7 +289,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,0-6,Female,0,0,0,0,0,0,0
 1991,Buldhana,0-6,Female,0,0,0,0,0,0,0
 1991,Chandrapur,0-6,Female,0,0,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,0-6,Female,0,0,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,0-6,Female,0,0,0,0,0,0,0
 1991,Dharashiv,0-6,Female,0,0,0,0,0,0,0
 1991,Gadchiroli,0-6,Female,0,0,0,0,0,0,0
 1991,Jalgaon,0-6,Female,0,0,0,0,0,0,0
@@ -316,7 +316,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,0-6,Female,0,0,0,0,0,0,0
 2001,Buldhana,0-6,Female,0,0,0,0,0,0,0
 2001,Chandrapur,0-6,Female,0,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,0-6,Female,0,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,0-6,Female,0,0,0,0,0,0,0
 2001,Dharashiv,0-6,Female,0,0,0,0,0,0,0
 2001,Dhule,0-6,Female,0,0,0,0,0,0,0
 2001,Gadchiroli,0-6,Female,0,0,0,0,0,0,0
@@ -326,7 +326,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,0-6,Female,0,0,0,0,0,0,0
 2001,Kolhapur,0-6,Female,0,0,0,0,0,0,0
 2001,Latur,0-6,Female,0,0,0,0,0,0,0
-2001,Mumbai City,0-6,Female,0,0,0,0,0,0,0
+2001,Mumbai,0-6,Female,0,0,0,0,0,0,0
 2001,Mumbai Suburban,0-6,Female,0,0,0,0,0,0,0
 2001,Nagpur,0-6,Female,0,0,0,0,0,0,0
 2001,Nanded,0-6,Female,0,0,0,0,0,0,0
@@ -351,7 +351,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,0-6,Female,0,0,0,0,0,0,0
 2011,Buldhana,0-6,Female,0,0,0,0,0,0,0
 2011,Chandrapur,0-6,Female,0,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,0-6,Female,0,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,0-6,Female,0,0,0,0,0,0,0
 2011,Dharashiv,0-6,Female,0,0,0,0,0,0,0
 2011,Dhule,0-6,Female,0,0,0,0,0,0,0
 2011,Gadchiroli,0-6,Female,0,0,0,0,0,0,0
@@ -361,7 +361,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,0-6,Female,0,0,0,0,0,0,0
 2011,Kolhapur,0-6,Female,0,0,0,0,0,0,0
 2011,Latur,0-6,Female,0,0,0,0,0,0,0
-2011,Mumbai City,0-6,Female,0,0,0,0,0,0,0
+2011,Mumbai,0-6,Female,0,0,0,0,0,0,0
 2011,Mumbai Suburban,0-6,Female,0,0,0,0,0,0,0
 2011,Nagpur,0-6,Female,0,0,0,0,0,0,0
 2011,Nanded,0-6,Female,0,0,0,0,0,0,0
@@ -384,7 +384,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,7,Male,0,0,0,0,0,0,0
 1991,Buldhana,7,Male,0,0,0,0,0,0,0
 1991,Chandrapur,7,Male,0,0,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,7,Male,0,0,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,7,Male,0,0,0,0,0,0,0
 1991,Dharashiv,7,Male,0,0,0,0,0,0,0
 1991,Gadchiroli,7,Male,0,0,0,0,0,0,0
 1991,Jalgaon,7,Male,0,0,0,0,0,0,0
@@ -411,7 +411,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,7,Male,0,0,0,0,0,0,0
 2001,Buldhana,7,Male,0,0,0,0,0,0,0
 2001,Chandrapur,7,Male,0,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,7,Male,0,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,7,Male,0,0,0,0,0,0,0
 2001,Dharashiv,7,Male,0,0,0,0,0,0,0
 2001,Dhule,7,Male,0,0,0,0,0,0,0
 2001,Gadchiroli,7,Male,0,0,0,0,0,0,0
@@ -421,7 +421,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,7,Male,0,0,0,0,0,0,0
 2001,Kolhapur,7,Male,0,0,0,0,0,0,0
 2001,Latur,7,Male,0,0,0,0,0,0,0
-2001,Mumbai City,7,Male,0,0,0,0,0,0,0
+2001,Mumbai,7,Male,0,0,0,0,0,0,0
 2001,Mumbai Suburban,7,Male,0,0,0,0,0,0,0
 2001,Nagpur,7,Male,0,0,0,0,0,0,0
 2001,Nanded,7,Male,0,0,0,0,0,0,0
@@ -446,7 +446,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,7,Male,0,0,0,0,0,0,0
 2011,Buldhana,7,Male,0,0,0,0,0,0,0
 2011,Chandrapur,7,Male,0,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,7,Male,0,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,7,Male,0,0,0,0,0,0,0
 2011,Dharashiv,7,Male,0,0,0,0,0,0,0
 2011,Dhule,7,Male,0,0,0,0,0,0,0
 2011,Gadchiroli,7,Male,0,0,0,0,0,0,0
@@ -456,7 +456,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,7,Male,0,0,0,0,0,0,0
 2011,Kolhapur,7,Male,0,0,0,0,0,0,0
 2011,Latur,7,Male,0,0,0,0,0,0,0
-2011,Mumbai City,7,Male,0,0,0,0,0,0,0
+2011,Mumbai,7,Male,0,0,0,0,0,0,0
 2011,Mumbai Suburban,7,Male,0,0,0,0,0,0,0
 2011,Nagpur,7,Male,0,0,0,0,0,0,0
 2011,Nanded,7,Male,0,0,0,0,0,0,0
@@ -479,7 +479,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,7,Female,0,0,0,0,0,0,0
 1991,Buldhana,7,Female,0,0,0,0,0,0,0
 1991,Chandrapur,7,Female,0,0,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,7,Female,0,0,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,7,Female,0,0,0,0,0,0,0
 1991,Dharashiv,7,Female,0,0,0,0,0,0,0
 1991,Gadchiroli,7,Female,0,0,0,0,0,0,0
 1991,Jalgaon,7,Female,0,0,0,0,0,0,0
@@ -506,7 +506,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,7,Female,0,0,0,0,0,0,0
 2001,Buldhana,7,Female,0,0,0,0,0,0,0
 2001,Chandrapur,7,Female,0,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,7,Female,0,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,7,Female,0,0,0,0,0,0,0
 2001,Dharashiv,7,Female,0,0,0,0,0,0,0
 2001,Dhule,7,Female,0,0,0,0,0,0,0
 2001,Gadchiroli,7,Female,0,0,0,0,0,0,0
@@ -516,7 +516,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,7,Female,0,0,0,0,0,0,0
 2001,Kolhapur,7,Female,0,0,0,0,0,0,0
 2001,Latur,7,Female,0,0,0,0,0,0,0
-2001,Mumbai City,7,Female,0,0,0,0,0,0,0
+2001,Mumbai,7,Female,0,0,0,0,0,0,0
 2001,Mumbai Suburban,7,Female,0,0,0,0,0,0,0
 2001,Nagpur,7,Female,0,0,0,0,0,0,0
 2001,Nanded,7,Female,0,0,0,0,0,0,0
@@ -541,7 +541,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,7,Female,0,0,0,0,0,0,0
 2011,Buldhana,7,Female,0,0,0,0,0,0,0
 2011,Chandrapur,7,Female,0,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,7,Female,0,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,7,Female,0,0,0,0,0,0,0
 2011,Dharashiv,7,Female,0,0,0,0,0,0,0
 2011,Dhule,7,Female,0,0,0,0,0,0,0
 2011,Gadchiroli,7,Female,0,0,0,0,0,0,0
@@ -551,7 +551,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,7,Female,0,0,0,0,0,0,0
 2011,Kolhapur,7,Female,0,0,0,0,0,0,0
 2011,Latur,7,Female,0,0,0,0,0,0,0
-2011,Mumbai City,7,Female,0,0,0,0,0,0,0
+2011,Mumbai,7,Female,0,0,0,0,0,0,0
 2011,Mumbai Suburban,7,Female,0,0,0,0,0,0,0
 2011,Nagpur,7,Female,0,0,0,0,0,0,0
 2011,Nanded,7,Female,0,0,0,0,0,0,0
@@ -574,7 +574,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,8,Male,0,0,0,0,0,0,0
 1991,Buldhana,8,Male,0,0,0,0,0,0,0
 1991,Chandrapur,8,Male,0,0,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,8,Male,0,0,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,8,Male,0,0,0,0,0,0,0
 1991,Dharashiv,8,Male,0,0,0,0,0,0,0
 1991,Gadchiroli,8,Male,0,0,0,0,0,0,0
 1991,Jalgaon,8,Male,0,0,0,0,0,0,0
@@ -601,7 +601,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,8,Male,0,0,0,0,0,0,0
 2001,Buldhana,8,Male,0,0,0,0,0,0,0
 2001,Chandrapur,8,Male,0,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,8,Male,0,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,8,Male,0,0,0,0,0,0,0
 2001,Dharashiv,8,Male,0,0,0,0,0,0,0
 2001,Dhule,8,Male,0,0,0,0,0,0,0
 2001,Gadchiroli,8,Male,0,0,0,0,0,0,0
@@ -611,7 +611,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,8,Male,0,0,0,0,0,0,0
 2001,Kolhapur,8,Male,0,0,0,0,0,0,0
 2001,Latur,8,Male,0,0,0,0,0,0,0
-2001,Mumbai City,8,Male,0,0,0,0,0,0,0
+2001,Mumbai,8,Male,0,0,0,0,0,0,0
 2001,Mumbai Suburban,8,Male,0,0,0,0,0,0,0
 2001,Nagpur,8,Male,0,0,0,0,0,0,0
 2001,Nanded,8,Male,0,0,0,0,0,0,0
@@ -636,7 +636,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,8,Male,0,0,0,0,0,0,0
 2011,Buldhana,8,Male,0,0,0,0,0,0,0
 2011,Chandrapur,8,Male,0,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,8,Male,0,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,8,Male,0,0,0,0,0,0,0
 2011,Dharashiv,8,Male,0,0,0,0,0,0,0
 2011,Dhule,8,Male,0,0,0,0,0,0,0
 2011,Gadchiroli,8,Male,0,0,0,0,0,0,0
@@ -646,7 +646,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,8,Male,0,0,0,0,0,0,0
 2011,Kolhapur,8,Male,0,0,0,0,0,0,0
 2011,Latur,8,Male,0,0,0,0,0,0,0
-2011,Mumbai City,8,Male,0,0,0,0,0,0,0
+2011,Mumbai,8,Male,0,0,0,0,0,0,0
 2011,Mumbai Suburban,8,Male,0,0,0,0,0,0,0
 2011,Nagpur,8,Male,0,0,0,0,0,0,0
 2011,Nanded,8,Male,0,0,0,0,0,0,0
@@ -669,7 +669,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,8,Female,0,0,0,0,0,0,0
 1991,Buldhana,8,Female,0,0,0,0,0,0,0
 1991,Chandrapur,8,Female,0,0,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,8,Female,0,0,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,8,Female,0,0,0,0,0,0,0
 1991,Dharashiv,8,Female,0,0,0,0,0,0,0
 1991,Gadchiroli,8,Female,0,0,0,0,0,0,0
 1991,Jalgaon,8,Female,0,0,0,0,0,0,0
@@ -696,7 +696,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,8,Female,0,0,0,0,0,0,0
 2001,Buldhana,8,Female,0,0,0,0,0,0,0
 2001,Chandrapur,8,Female,0,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,8,Female,0,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,8,Female,0,0,0,0,0,0,0
 2001,Dharashiv,8,Female,0,0,0,0,0,0,0
 2001,Dhule,8,Female,0,0,0,0,0,0,0
 2001,Gadchiroli,8,Female,0,0,0,0,0,0,0
@@ -706,7 +706,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,8,Female,0,0,0,0,0,0,0
 2001,Kolhapur,8,Female,0,0,0,0,0,0,0
 2001,Latur,8,Female,0,0,0,0,0,0,0
-2001,Mumbai City,8,Female,0,0,0,0,0,0,0
+2001,Mumbai,8,Female,0,0,0,0,0,0,0
 2001,Mumbai Suburban,8,Female,0,0,0,0,0,0,0
 2001,Nagpur,8,Female,0,0,0,0,0,0,0
 2001,Nanded,8,Female,0,0,0,0,0,0,0
@@ -731,7 +731,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,8,Female,0,0,0,0,0,0,0
 2011,Buldhana,8,Female,0,0,0,0,0,0,0
 2011,Chandrapur,8,Female,0,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,8,Female,0,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,8,Female,0,0,0,0,0,0,0
 2011,Dharashiv,8,Female,0,0,0,0,0,0,0
 2011,Dhule,8,Female,0,0,0,0,0,0,0
 2011,Gadchiroli,8,Female,0,0,0,0,0,0,0
@@ -741,7 +741,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,8,Female,0,0,0,0,0,0,0
 2011,Kolhapur,8,Female,0,0,0,0,0,0,0
 2011,Latur,8,Female,0,0,0,0,0,0,0
-2011,Mumbai City,8,Female,0,0,0,0,0,0,0
+2011,Mumbai,8,Female,0,0,0,0,0,0,0
 2011,Mumbai Suburban,8,Female,0,0,0,0,0,0,0
 2011,Nagpur,8,Female,0,0,0,0,0,0,0
 2011,Nanded,8,Female,0,0,0,0,0,0,0
@@ -764,7 +764,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,9,Male,3210,0,0,0,0,0,0
 1991,Buldhana,9,Male,1320,0,0,0,0,0,0
 1991,Chandrapur,9,Male,1140,0,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,9,Male,3620,0,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,9,Male,3620,0,0,0,0,0,0
 1991,Dharashiv,9,Male,2600,0,0,0,0,0,0
 1991,Gadchiroli,9,Male,350,0,0,0,0,0,0
 1991,Jalgaon,9,Male,5110,0,0,0,0,0,0
@@ -791,7 +791,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,9,Male,349,0,0,0,0,0,0
 2001,Buldhana,9,Male,711,0,0,0,0,0,0
 2001,Chandrapur,9,Male,740,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,9,Male,2115,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,9,Male,2115,0,0,0,0,0,0
 2001,Dharashiv,9,Male,1007,0,0,0,0,0,0
 2001,Dhule,9,Male,902,0,0,0,0,0,0
 2001,Gadchiroli,9,Male,208,0,0,0,0,0,0
@@ -801,7 +801,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,9,Male,1053,0,0,0,0,0,0
 2001,Kolhapur,9,Male,1461,0,0,0,0,0,0
 2001,Latur,9,Male,1271,0,0,0,0,0,0
-2001,Mumbai City,9,Male,2298,0,0,0,0,0,0
+2001,Mumbai,9,Male,2298,0,0,0,0,0,0
 2001,Mumbai Suburban,9,Male,5612,0,0,0,0,0,0
 2001,Nagpur,9,Male,2023,0,0,0,0,0,0
 2001,Nanded,9,Male,2105,0,0,0,0,0,0
@@ -826,7 +826,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,9,Male,387,0,0,0,0,0,0
 2011,Buldhana,9,Male,756,0,0,0,0,0,0
 2011,Chandrapur,9,Male,613,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,9,Male,1932,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,9,Male,1932,0,0,0,0,0,0
 2011,Dharashiv,9,Male,769,0,0,0,0,0,0
 2011,Dhule,9,Male,1301,0,0,0,0,0,0
 2011,Gadchiroli,9,Male,312,0,0,0,0,0,0
@@ -836,7 +836,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,9,Male,805,0,0,0,0,0,0
 2011,Kolhapur,9,Male,1314,0,0,0,0,0,0
 2011,Latur,9,Male,1036,0,0,0,0,0,0
-2011,Mumbai City,9,Male,2018,0,0,0,0,0,0
+2011,Mumbai,9,Male,2018,0,0,0,0,0,0
 2011,Mumbai Suburban,9,Male,6123,0,0,0,0,0,0
 2011,Nagpur,9,Male,2586,0,0,0,0,0,0
 2011,Nanded,9,Male,1755,0,0,0,0,0,0
@@ -859,7 +859,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,9,Female,2650,0,0,0,0,0,0
 1991,Buldhana,9,Female,1010,0,0,0,0,0,0
 1991,Chandrapur,9,Female,1230,0,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,9,Female,3350,0,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,9,Female,3350,0,0,0,0,0,0
 1991,Dharashiv,9,Female,2510,0,0,0,0,0,0
 1991,Gadchiroli,9,Female,320,0,0,0,0,0,0
 1991,Jalgaon,9,Female,5060,0,0,0,0,0,0
@@ -886,7 +886,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,9,Female,317,0,0,0,0,0,0
 2001,Buldhana,9,Female,709,0,0,0,0,0,0
 2001,Chandrapur,9,Female,784,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,9,Female,2092,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,9,Female,2092,0,0,0,0,0,0
 2001,Dharashiv,9,Female,1061,0,0,0,0,0,0
 2001,Dhule,9,Female,884,0,0,0,0,0,0
 2001,Gadchiroli,9,Female,206,0,0,0,0,0,0
@@ -896,7 +896,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,9,Female,1058,0,0,0,0,0,0
 2001,Kolhapur,9,Female,1593,0,0,0,0,0,0
 2001,Latur,9,Female,1367,0,0,0,0,0,0
-2001,Mumbai City,9,Female,2423,0,0,0,0,0,0
+2001,Mumbai,9,Female,2423,0,0,0,0,0,0
 2001,Mumbai Suburban,9,Female,5890,0,0,0,0,0,0
 2001,Nagpur,9,Female,2359,0,0,0,0,0,0
 2001,Nanded,9,Female,2175,0,0,0,0,0,0
@@ -921,7 +921,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,9,Female,384,0,0,0,0,0,0
 2011,Buldhana,9,Female,712,0,0,0,0,0,0
 2011,Chandrapur,9,Female,588,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,9,Female,1978,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,9,Female,1978,0,0,0,0,0,0
 2011,Dharashiv,9,Female,752,0,0,0,0,0,0
 2011,Dhule,9,Female,1206,0,0,0,0,0,0
 2011,Gadchiroli,9,Female,330,0,0,0,0,0,0
@@ -931,7 +931,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,9,Female,817,0,0,0,0,0,0
 2011,Kolhapur,9,Female,1121,0,0,0,0,0,0
 2011,Latur,9,Female,1025,0,0,0,0,0,0
-2011,Mumbai City,9,Female,1875,0,0,0,0,0,0
+2011,Mumbai,9,Female,1875,0,0,0,0,0,0
 2011,Mumbai Suburban,9,Female,6054,0,0,0,0,0,0
 2011,Nagpur,9,Female,2614,0,0,0,0,0,0
 2011,Nanded,9,Female,1664,0,0,0,0,0,0
@@ -954,7 +954,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,10,Male,12730,0,0,0,0,0,0
 1991,Buldhana,10,Male,8910,0,0,0,0,0,0
 1991,Chandrapur,10,Male,7180,0,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,10,Male,14980,0,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,10,Male,14980,0,0,0,0,0,0
 1991,Dharashiv,10,Male,8690,0,0,0,0,0,0
 1991,Gadchiroli,10,Male,2430,0,0,0,0,0,0
 1991,Jalgaon,10,Male,25100,0,0,0,0,0,0
@@ -981,7 +981,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,10,Male,2633,0,0,0,0,0,0
 2001,Buldhana,10,Male,5414,0,0,0,0,0,0
 2001,Chandrapur,10,Male,4857,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,10,Male,12515,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,10,Male,12515,0,0,0,0,0,0
 2001,Dharashiv,10,Male,6878,0,0,0,0,0,0
 2001,Dhule,10,Male,5763,0,0,0,0,0,0
 2001,Gadchiroli,10,Male,1659,0,0,0,0,0,0
@@ -991,7 +991,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,10,Male,5502,0,0,0,0,0,0
 2001,Kolhapur,10,Male,11119,0,0,0,0,0,0
 2001,Latur,10,Male,8626,0,0,0,0,0,0
-2001,Mumbai City,10,Male,12216,0,0,0,0,0,0
+2001,Mumbai,10,Male,12216,0,0,0,0,0,0
 2001,Mumbai Suburban,10,Male,34211,0,0,0,0,0,0
 2001,Nagpur,10,Male,14719,0,0,0,0,0,0
 2001,Nanded,10,Male,13243,0,0,0,0,0,0
@@ -1016,7 +1016,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,10,Male,2335,0,0,0,0,0,0
 2011,Buldhana,10,Male,4752,0,0,0,0,0,0
 2011,Chandrapur,10,Male,3832,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,10,Male,9857,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,10,Male,9857,0,0,0,0,0,0
 2011,Dharashiv,10,Male,4258,0,0,0,0,0,0
 2011,Dhule,10,Male,5872,0,0,0,0,0,0
 2011,Gadchiroli,10,Male,1811,0,0,0,0,0,0
@@ -1026,7 +1026,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,10,Male,4158,0,0,0,0,0,0
 2011,Kolhapur,10,Male,7908,0,0,0,0,0,0
 2011,Latur,10,Male,5750,0,0,0,0,0,0
-2011,Mumbai City,10,Male,8885,0,0,0,0,0,0
+2011,Mumbai,10,Male,8885,0,0,0,0,0,0
 2011,Mumbai Suburban,10,Male,27862,0,0,0,0,0,0
 2011,Nagpur,10,Male,12734,0,0,0,0,0,0
 2011,Nanded,10,Male,8395,0,0,0,0,0,0
@@ -1049,7 +1049,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,10,Female,9200,0,0,0,0,0,0
 1991,Buldhana,10,Female,6530,0,0,0,0,0,0
 1991,Chandrapur,10,Female,6750,0,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,10,Female,11410,0,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,10,Female,11410,0,0,0,0,0,0
 1991,Dharashiv,10,Female,7260,0,0,0,0,0,0
 1991,Gadchiroli,10,Female,1810,0,0,0,0,0,0
 1991,Jalgaon,10,Female,19840,0,0,0,0,0,0
@@ -1076,7 +1076,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,10,Female,2533,0,0,0,0,0,0
 2001,Buldhana,10,Female,5078,0,0,0,0,0,0
 2001,Chandrapur,10,Female,4779,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,10,Female,11586,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,10,Female,11586,0,0,0,0,0,0
 2001,Dharashiv,10,Female,6365,0,0,0,0,0,0
 2001,Dhule,10,Female,5292,0,0,0,0,0,0
 2001,Gadchiroli,10,Female,1595,0,0,0,0,0,0
@@ -1086,7 +1086,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,10,Female,4766,0,0,0,0,0,0
 2001,Kolhapur,10,Female,10257,0,0,0,0,0,0
 2001,Latur,10,Female,8132,0,0,0,0,0,0
-2001,Mumbai City,10,Female,11327,0,0,0,0,0,0
+2001,Mumbai,10,Female,11327,0,0,0,0,0,0
 2001,Mumbai Suburban,10,Female,31717,0,0,0,0,0,0
 2001,Nagpur,10,Female,14894,0,0,0,0,0,0
 2001,Nanded,10,Female,12304,0,0,0,0,0,0
@@ -1111,7 +1111,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,10,Female,2316,0,0,0,0,0,0
 2011,Buldhana,10,Female,4372,0,0,0,0,0,0
 2011,Chandrapur,10,Female,3864,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,10,Female,9200,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,10,Female,9200,0,0,0,0,0,0
 2011,Dharashiv,10,Female,4000,0,0,0,0,0,0
 2011,Dhule,10,Female,4940,0,0,0,0,0,0
 2011,Gadchiroli,10,Female,1693,0,0,0,0,0,0
@@ -1121,7 +1121,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,10,Female,3835,0,0,0,0,0,0
 2011,Kolhapur,10,Female,7027,0,0,0,0,0,0
 2011,Latur,10,Female,5584,0,0,0,0,0,0
-2011,Mumbai City,10,Female,8215,0,0,0,0,0,0
+2011,Mumbai,10,Female,8215,0,0,0,0,0,0
 2011,Mumbai Suburban,10,Female,26340,0,0,0,0,0,0
 2011,Nagpur,10,Female,13155,0,0,0,0,0,0
 2011,Nanded,10,Female,8029,0,0,0,0,0,0
@@ -1144,7 +1144,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,11,Male,11900,760,0,0,0,0,0
 1991,Buldhana,11,Male,13040,360,0,0,0,0,0
 1991,Chandrapur,11,Male,9670,550,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,11,Male,14380,810,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,11,Male,14380,810,0,0,0,0,0
 1991,Dharashiv,11,Male,10006,490,0,0,0,0,0
 1991,Gadchiroli,11,Male,3340,200,0,0,0,0,0
 1991,Jalgaon,11,Male,23230,1280,0,0,0,0,0
@@ -1171,7 +1171,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,11,Male,7215,0,0,0,0,0,0
 2001,Buldhana,11,Male,17859,0,0,0,0,0,0
 2001,Chandrapur,11,Male,12756,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,11,Male,23874,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,11,Male,23874,0,0,0,0,0,0
 2001,Dharashiv,11,Male,14031,0,0,0,0,0,0
 2001,Dhule,11,Male,12180,0,0,0,0,0,0
 2001,Gadchiroli,11,Male,6115,0,0,0,0,0,0
@@ -1181,7 +1181,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,11,Male,12906,0,0,0,0,0,0
 2001,Kolhapur,11,Male,27384,0,0,0,0,0,0
 2001,Latur,11,Male,18019,0,0,0,0,0,0
-2001,Mumbai City,11,Male,17646,0,0,0,0,0,0
+2001,Mumbai,11,Male,17646,0,0,0,0,0,0
 2001,Mumbai Suburban,11,Male,53115,0,0,0,0,0,0
 2001,Nagpur,11,Male,25838,0,0,0,0,0,0
 2001,Nanded,11,Male,22072,0,0,0,0,0,0
@@ -1206,7 +1206,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,11,Male,8110,0,0,0,0,0,0
 2011,Buldhana,11,Male,16673,0,0,0,0,0,0
 2011,Chandrapur,11,Male,13474,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,11,Male,25694,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,11,Male,25694,0,0,0,0,0,0
 2011,Dharashiv,11,Male,10863,0,0,0,0,0,0
 2011,Dhule,11,Male,13334,0,0,0,0,0,0
 2011,Gadchiroli,11,Male,6258,0,0,0,0,0,0
@@ -1216,7 +1216,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,11,Male,11893,0,0,0,0,0,0
 2011,Kolhapur,11,Male,23766,0,0,0,0,0,0
 2011,Latur,11,Male,16456,0,0,0,0,0,0
-2011,Mumbai City,11,Male,17216,0,0,0,0,0,0
+2011,Mumbai,11,Male,17216,0,0,0,0,0,0
 2011,Mumbai Suburban,11,Male,57441,0,0,0,0,0,0
 2011,Nagpur,11,Male,29789,0,0,0,0,0,0
 2011,Nanded,11,Male,21190,0,0,0,0,0,0
@@ -1239,7 +1239,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,11,Female,8240,600,0,0,0,0,0
 1991,Buldhana,11,Female,9630,250,0,0,0,0,0
 1991,Chandrapur,11,Female,8680,460,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,11,Female,9790,940,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,11,Female,9790,940,0,0,0,0,0
 1991,Dharashiv,11,Female,7100,490,0,0,0,0,0
 1991,Gadchiroli,11,Female,2810,120,0,0,0,0,0
 1991,Jalgaon,11,Female,18120,1410,0,0,0,0,0
@@ -1266,7 +1266,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,11,Female,7059,0,0,0,0,0,0
 2001,Buldhana,11,Female,16185,0,0,0,0,0,0
 2001,Chandrapur,11,Female,12573,0,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,11,Female,21380,0,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,11,Female,21380,0,0,0,0,0,0
 2001,Dharashiv,11,Female,12801,0,0,0,0,0,0
 2001,Dhule,11,Female,10273,0,0,0,0,0,0
 2001,Gadchiroli,11,Female,5755,0,0,0,0,0,0
@@ -1276,7 +1276,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,11,Female,10673,0,0,0,0,0,0
 2001,Kolhapur,11,Female,24500,0,0,0,0,0,0
 2001,Latur,11,Female,16130,0,0,0,0,0,0
-2001,Mumbai City,11,Female,16540,0,0,0,0,0,0
+2001,Mumbai,11,Female,16540,0,0,0,0,0,0
 2001,Mumbai Suburban,11,Female,49535,0,0,0,0,0,0
 2001,Nagpur,11,Female,25145,0,0,0,0,0,0
 2001,Nanded,11,Female,19459,0,0,0,0,0,0
@@ -1301,7 +1301,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,11,Female,8216,0,0,0,0,0,0
 2011,Buldhana,11,Female,15104,0,0,0,0,0,0
 2011,Chandrapur,11,Female,12996,0,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,11,Female,22654,0,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,11,Female,22654,0,0,0,0,0,0
 2011,Dharashiv,11,Female,9855,0,0,0,0,0,0
 2011,Dhule,11,Female,11138,0,0,0,0,0,0
 2011,Gadchiroli,11,Female,6194,0,0,0,0,0,0
@@ -1311,7 +1311,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,11,Female,10682,0,0,0,0,0,0
 2011,Kolhapur,11,Female,20469,0,0,0,0,0,0
 2011,Latur,11,Female,14875,0,0,0,0,0,0
-2011,Mumbai City,11,Female,15727,0,0,0,0,0,0
+2011,Mumbai,11,Female,15727,0,0,0,0,0,0
 2011,Mumbai Suburban,11,Female,53019,0,0,0,0,0,0
 2011,Nagpur,11,Female,29909,0,0,0,0,0,0
 2011,Nanded,11,Female,19415,0,0,0,0,0,0
@@ -1334,7 +1334,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,12,Male,15590,4260,0,0,0,0,0
 1991,Buldhana,12,Male,17160,1870,0,0,0,0,0
 1991,Chandrapur,12,Male,15640,2100,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,12,Male,19230,4820,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,12,Male,19230,4820,0,0,0,0,0
 1991,Dharashiv,12,Male,10390,2840,0,0,0,0,0
 1991,Gadchiroli,12,Male,5550,580,0,0,0,0,0
 1991,Jalgaon,12,Male,28650,8290,0,0,0,0,0
@@ -1361,7 +1361,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,12,Male,11645,520,0,0,0,0,0
 2001,Buldhana,12,Male,25430,730,0,0,0,0,0
 2001,Chandrapur,12,Male,20080,1021,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,12,Male,35382,2226,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,12,Male,35382,2226,0,0,0,0,0
 2001,Dharashiv,12,Male,18723,1061,0,0,0,0,0
 2001,Dhule,12,Male,17779,1256,0,0,0,0,0
 2001,Gadchiroli,12,Male,9439,270,0,0,0,0,0
@@ -1371,7 +1371,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,12,Male,18711,1014,0,0,0,0,0
 2001,Kolhapur,12,Male,36234,2296,0,0,0,0,0
 2001,Latur,12,Male,26992,1623,0,0,0,0,0
-2001,Mumbai City,12,Male,25272,2954,0,0,0,0,0
+2001,Mumbai,12,Male,25272,2954,0,0,0,0,0
 2001,Mumbai Suburban,12,Male,77416,7084,0,0,0,0,0
 2001,Nagpur,12,Male,40584,2933,0,0,0,0,0
 2001,Nanded,12,Male,35021,2750,0,0,0,0,0
@@ -1396,7 +1396,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,12,Male,9250,556,0,0,0,0,0
 2011,Buldhana,12,Male,21271,1079,0,0,0,0,0
 2011,Chandrapur,12,Male,16270,963,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,12,Male,30963,2638,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,12,Male,30963,2638,0,0,0,0,0
 2011,Dharashiv,12,Male,13491,1186,0,0,0,0,0
 2011,Dhule,12,Male,15409,1622,0,0,0,0,0
 2011,Gadchiroli,12,Male,8572,444,0,0,0,0,0
@@ -1406,7 +1406,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,12,Male,15717,1095,0,0,0,0,0
 2011,Kolhapur,12,Male,29490,2038,0,0,0,0,0
 2011,Latur,12,Male,20784,1860,0,0,0,0,0
-2011,Mumbai City,12,Male,17898,2566,0,0,0,0,0
+2011,Mumbai,12,Male,17898,2566,0,0,0,0,0
 2011,Mumbai Suburban,12,Male,60480,7964,0,0,0,0,0
 2011,Nagpur,12,Male,32529,3149,0,0,0,0,0
 2011,Nanded,12,Male,28474,2531,0,0,0,0,0
@@ -1429,7 +1429,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,12,Female,9170,2990,0,0,0,0,0
 1991,Buldhana,12,Female,12130,1440,0,0,0,0,0
 1991,Chandrapur,12,Female,13630,1860,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,12,Female,12580,3650,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,12,Female,12580,3650,0,0,0,0,0
 1991,Dharashiv,12,Female,7780,2260,0,0,0,0,0
 1991,Gadchiroli,12,Female,4220,410,0,0,0,0,0
 1991,Jalgaon,12,Female,20630,6570,0,0,0,0,0
@@ -1456,7 +1456,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,12,Female,11174,543,0,0,0,0,0
 2001,Buldhana,12,Female,22056,672,0,0,0,0,0
 2001,Chandrapur,12,Female,19593,987,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,12,Female,29753,1924,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,12,Female,29753,1924,0,0,0,0,0
 2001,Dharashiv,12,Female,16536,1058,0,0,0,0,0
 2001,Dhule,12,Female,14706,1069,0,0,0,0,0
 2001,Gadchiroli,12,Female,8631,247,0,0,0,0,0
@@ -1466,7 +1466,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,12,Female,14178,764,0,0,0,0,0
 2001,Kolhapur,12,Female,31829,2090,0,0,0,0,0
 2001,Latur,12,Female,22835,1482,0,0,0,0,0
-2001,Mumbai City,12,Female,21713,2709,0,0,0,0,0
+2001,Mumbai,12,Female,21713,2709,0,0,0,0,0
 2001,Mumbai Suburban,12,Female,66498,6493,0,0,0,0,0
 2001,Nagpur,12,Female,37933,2993,0,0,0,0,0
 2001,Nanded,12,Female,29123,2617,0,0,0,0,0
@@ -1491,7 +1491,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,12,Female,8874,559,0,0,0,0,0
 2011,Buldhana,12,Female,19290,844,0,0,0,0,0
 2011,Chandrapur,12,Female,15213,916,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,12,Female,26676,2531,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,12,Female,26676,2531,0,0,0,0,0
 2011,Dharashiv,12,Female,12109,1041,0,0,0,0,0
 2011,Dhule,12,Female,12955,1374,0,0,0,0,0
 2011,Gadchiroli,12,Female,8139,394,0,0,0,0,0
@@ -1501,7 +1501,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,12,Female,13840,929,0,0,0,0,0
 2011,Kolhapur,12,Female,24451,1785,0,0,0,0,0
 2011,Latur,12,Female,18644,1757,0,0,0,0,0
-2011,Mumbai City,12,Female,15957,2254,0,0,0,0,0
+2011,Mumbai,12,Female,15957,2254,0,0,0,0,0
 2011,Mumbai Suburban,12,Female,53748,7322,0,0,0,0,0
 2011,Nagpur,12,Female,30574,3323,0,0,0,0,0
 2011,Nanded,12,Female,25427,2405,0,0,0,0,0
@@ -1524,7 +1524,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,13,Male,7140,7530,0,0,0,0,0
 1991,Buldhana,13,Male,10010,5050,0,0,0,0,0
 1991,Chandrapur,13,Male,9210,4000,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,13,Male,7930,8320,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,13,Male,7930,8320,0,0,0,0,0
 1991,Dharashiv,13,Male,4880,5690,0,0,0,0,0
 1991,Gadchiroli,13,Male,3600,1310,0,0,0,0,0
 1991,Jalgaon,13,Male,12680,13710,0,0,0,0,0
@@ -1551,7 +1551,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,13,Male,9395,1848,0,0,0,0,0
 2001,Buldhana,13,Male,20131,2956,0,0,0,0,0
 2001,Chandrapur,13,Male,16774,2976,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,13,Male,24824,7011,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,13,Male,24824,7011,0,0,0,0,0
 2001,Dharashiv,13,Male,12210,4282,0,0,0,0,0
 2001,Dhule,13,Male,12277,3577,0,0,0,0,0
 2001,Gadchiroli,13,Male,8405,935,0,0,0,0,0
@@ -1561,7 +1561,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,13,Male,13516,2558,0,0,0,0,0
 2001,Kolhapur,13,Male,26419,8882,0,0,0,0,0
 2001,Latur,13,Male,17000,5247,0,0,0,0,0
-2001,Mumbai City,13,Male,17253,7313,0,0,0,0,0
+2001,Mumbai,13,Male,17253,7313,0,0,0,0,0
 2001,Mumbai Suburban,13,Male,52266,19806,0,0,0,0,0
 2001,Nagpur,13,Male,28559,8522,0,0,0,0,0
 2001,Nanded,13,Male,21365,6919,0,0,0,0,0
@@ -1586,7 +1586,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,13,Male,8964,2278,0,0,0,0,0
 2011,Buldhana,13,Male,20568,3844,0,0,0,0,0
 2011,Chandrapur,13,Male,15511,3965,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,13,Male,25836,9169,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,13,Male,25836,9169,0,0,0,0,0
 2011,Dharashiv,13,Male,11384,4297,0,0,0,0,0
 2011,Dhule,13,Male,12682,5077,0,0,0,0,0
 2011,Gadchiroli,13,Male,8754,1538,0,0,0,0,0
@@ -1596,7 +1596,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,13,Male,13961,3509,0,0,0,0,0
 2011,Kolhapur,13,Male,26366,7921,0,0,0,0,0
 2011,Latur,13,Male,17559,5839,0,0,0,0,0
-2011,Mumbai City,13,Male,13441,7491,0,0,0,0,0
+2011,Mumbai,13,Male,13441,7491,0,0,0,0,0
 2011,Mumbai Suburban,13,Male,47307,24165,0,0,0,0,0
 2011,Nagpur,13,Male,26699,11010,0,0,0,0,0
 2011,Nanded,13,Male,23334,7736,0,0,0,0,0
@@ -1619,7 +1619,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,13,Female,3940,4640,0,0,0,0,0
 1991,Buldhana,13,Female,8020,3710,0,0,0,0,0
 1991,Chandrapur,13,Female,9170,3870,0,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,13,Female,4850,5590,0,0,0,0,0
+1991,Chh. Sambhaji Nagar,13,Female,4850,5590,0,0,0,0,0
 1991,Dharashiv,13,Female,3340,3820,0,0,0,0,0
 1991,Gadchiroli,13,Female,2490,970,0,0,0,0,0
 1991,Jalgaon,13,Female,9310,11020,0,0,0,0,0
@@ -1646,7 +1646,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,13,Female,9387,2016,0,0,0,0,0
 2001,Buldhana,13,Female,17628,2684,0,0,0,0,0
 2001,Chandrapur,13,Female,16354,3252,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,13,Female,20863,6105,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,13,Female,20863,6105,0,0,0,0,0
 2001,Dharashiv,13,Female,10723,3787,0,0,0,0,0
 2001,Dhule,13,Female,10104,3229,0,0,0,0,0
 2001,Gadchiroli,13,Female,7543,979,0,0,0,0,0
@@ -1656,7 +1656,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,13,Female,10199,1854,0,0,0,0,0
 2001,Kolhapur,13,Female,23830,8183,0,0,0,0,0
 2001,Latur,13,Female,14538,4679,0,0,0,0,0
-2001,Mumbai City,13,Female,14971,7352,0,0,0,0,0
+2001,Mumbai,13,Female,14971,7352,0,0,0,0,0
 2001,Mumbai Suburban,13,Female,45607,20643,0,0,0,0,0
 2001,Nagpur,13,Female,27232,9925,0,0,0,0,0
 2001,Nanded,13,Female,17255,5958,0,0,0,0,0
@@ -1681,7 +1681,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,13,Female,8416,2400,0,0,0,0,0
 2011,Buldhana,13,Female,18533,3697,0,0,0,0,0
 2011,Chandrapur,13,Female,14365,4080,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,13,Female,22112,8984,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,13,Female,22112,8984,0,0,0,0,0
 2011,Dharashiv,13,Female,9975,4158,0,0,0,0,0
 2011,Dhule,13,Female,10336,4614,0,0,0,0,0
 2011,Gadchiroli,13,Female,7985,1494,0,0,0,0,0
@@ -1691,7 +1691,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,13,Female,12344,3262,0,0,0,0,0
 2011,Kolhapur,13,Female,21726,7156,0,0,0,0,0
 2011,Latur,13,Female,15259,5832,0,0,0,0,0
-2011,Mumbai City,13,Female,11875,7414,0,0,0,0,0
+2011,Mumbai,13,Female,11875,7414,0,0,0,0,0
 2011,Mumbai Suburban,13,Female,40714,23947,0,0,0,0,0
 2011,Nagpur,13,Female,24835,12152,0,0,0,0,0
 2011,Nanded,13,Female,20937,7282,0,0,0,0,0
@@ -1714,7 +1714,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,14,Male,3400,11880,550,50,0,10,0
 1991,Buldhana,14,Male,6340,10932,190,0,0,0,0
 1991,Chandrapur,14,Male,7760,8320,160,0,10,0,0
-1991,Chhatrapati Sambhaji Nagar,14,Male,5260,13460,500,80,0,0,0
+1991,Chh. Sambhaji Nagar,14,Male,5260,13460,500,80,0,0,0
 1991,Dharashiv,14,Male,2730,9020,300,0,0,0,0
 1991,Gadchiroli,14,Male,2930,3270,100,0,10,0,0
 1991,Jalgaon,14,Male,8100,20810,970,60,20,0,0
@@ -1741,7 +1741,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,14,Male,5764,6070,0,0,0,0,0
 2001,Buldhana,14,Male,12864,12261,0,0,0,0,0
 2001,Chandrapur,14,Male,11924,9120,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,14,Male,13957,18337,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,14,Male,13957,18337,0,0,0,0,0
 2001,Dharashiv,14,Male,6204,10385,0,0,0,0,0
 2001,Dhule,14,Male,7617,9473,0,0,0,0,0
 2001,Gadchiroli,14,Male,5564,4168,0,0,0,0,0
@@ -1751,7 +1751,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,14,Male,8621,7752,0,0,0,0,0
 2001,Kolhapur,14,Male,13168,23172,0,0,0,0,0
 2001,Latur,14,Male,9146,14836,0,0,0,0,0
-2001,Mumbai City,14,Male,11652,14902,0,0,0,0,0
+2001,Mumbai,14,Male,11652,14902,0,0,0,0,0
 2001,Mumbai Suburban,14,Male,34139,43656,0,0,0,0,0
 2001,Nagpur,14,Male,19485,21611,0,0,0,0,0
 2001,Nanded,14,Male,12270,17139,0,0,0,0,0
@@ -1776,7 +1776,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,14,Male,3378,6986,0,0,0,0,0
 2011,Buldhana,14,Male,11334,13731,0,0,0,0,0
 2011,Chandrapur,14,Male,7503,12131,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,14,Male,12793,22518,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,14,Male,12793,22518,0,0,0,0,0
 2011,Dharashiv,14,Male,5699,10770,0,0,0,0,0
 2011,Dhule,14,Male,6546,10875,0,0,0,0,0
 2011,Gadchiroli,14,Male,5043,5300,0,0,0,0,0
@@ -1786,7 +1786,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,14,Male,8083,9747,0,0,0,0,0
 2011,Kolhapur,14,Male,12288,22616,0,0,0,0,0
 2011,Latur,14,Male,9071,15814,0,0,0,0,0
-2011,Mumbai City,14,Male,6691,15352,0,0,0,0,0
+2011,Mumbai,14,Male,6691,15352,0,0,0,0,0
 2011,Mumbai Suburban,14,Male,22708,51745,0,0,0,0,0
 2011,Nagpur,14,Male,13026,26272,0,0,0,0,0
 2011,Nanded,14,Male,13875,19239,0,0,0,0,0
@@ -1809,7 +1809,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,14,Female,2440,6060,280,10,0,0,0
 1991,Buldhana,14,Female,4350,6310,150,0,0,10,0
 1991,Chandrapur,14,Female,6970,7090,200,0,30,0,0
-1991,Chhatrapati Sambhaji Nagar,14,Female,3600,7810,500,20,0,0,0
+1991,Chh. Sambhaji Nagar,14,Female,3600,7810,500,20,0,0,0
 1991,Dharashiv,14,Female,2394,5270,250,20,0,10,0
 1991,Gadchiroli,14,Female,1990,2100,30,20,0,0,0
 1991,Jalgaon,14,Female,6470,15540,740,20,10,10,0
@@ -1836,7 +1836,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,14,Female,5586,6218,0,0,0,0,0
 2001,Buldhana,14,Female,11074,9168,0,0,0,0,0
 2001,Chandrapur,14,Female,11243,9322,0,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,14,Female,11584,14050,0,0,0,0,0
+2001,Chh. Sambhaji Nagar,14,Female,11584,14050,0,0,0,0,0
 2001,Dharashiv,14,Female,5360,7959,0,0,0,0,0
 2001,Dhule,14,Female,6401,7742,0,0,0,0,0
 2001,Gadchiroli,14,Female,4872,3618,0,0,0,0,0
@@ -1846,7 +1846,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,14,Female,6672,4730,0,0,0,0,0
 2001,Kolhapur,14,Female,11713,19767,0,0,0,0,0
 2001,Latur,14,Female,8350,11653,0,0,0,0,0
-2001,Mumbai City,14,Female,8888,14574,0,0,0,0,0
+2001,Mumbai,14,Female,8888,14574,0,0,0,0,0
 2001,Mumbai Suburban,14,Female,26865,41228,0,0,0,0,0
 2001,Nagpur,14,Female,16236,23298,0,0,0,0,0
 2001,Nanded,14,Female,10487,12795,0,0,0,0,0
@@ -1871,7 +1871,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,14,Female,2919,7211,0,0,0,0,0
 2011,Buldhana,14,Female,9843,12534,0,0,0,0,0
 2011,Chandrapur,14,Female,6620,12286,0,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,14,Female,10651,19965,0,0,0,0,0
+2011,Chh. Sambhaji Nagar,14,Female,10651,19965,0,0,0,0,0
 2011,Dharashiv,14,Female,4674,9783,0,0,0,0,0
 2011,Dhule,14,Female,5393,9169,0,0,0,0,0
 2011,Gadchiroli,14,Female,4428,5205,0,0,0,0,0
@@ -1881,7 +1881,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,14,Female,6928,8259,0,0,0,0,0
 2011,Kolhapur,14,Female,9805,19324,0,0,0,0,0
 2011,Latur,14,Female,7623,14513,0,0,0,0,0
-2011,Mumbai City,14,Female,5024,14813,0,0,0,0,0
+2011,Mumbai,14,Female,5024,14813,0,0,0,0,0
 2011,Mumbai Suburban,14,Female,17472,48884,0,0,0,0,0
 2011,Nagpur,14,Female,10174,27569,0,0,0,0,0
 2011,Nanded,14,Female,12220,17492,0,0,0,0,0
@@ -1906,7 +1906,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,15,Male,2757,7559,1264,0,0,0,0
 2001,Buldhana,15,Male,6554,15043,2502,0,0,0,0
 2001,Chandrapur,15,Male,6324,11887,1993,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,15,Male,7467,18079,5277,0,0,0,0
+2001,Chh. Sambhaji Nagar,15,Male,7467,18079,5277,0,0,0,0
 2001,Dharashiv,15,Male,3207,9285,3212,0,0,0,0
 2001,Dhule,15,Male,3745,9473,3494,0,0,0,0
 2001,Gadchiroli,15,Male,2789,5507,644,0,0,0,0
@@ -1916,7 +1916,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,15,Male,5409,8970,1736,0,0,0,0
 2001,Kolhapur,15,Male,5894,22136,7022,0,0,0,0
 2001,Latur,15,Male,4629,14239,4278,0,0,0,0
-2001,Mumbai City,15,Male,8642,15125,5114,0,0,0,0
+2001,Mumbai,15,Male,8642,15125,5114,0,0,0,0
 2001,Mumbai Suburban,15,Male,22875,44231,14119,0,0,0,0
 2001,Nagpur,15,Male,10619,23234,5603,0,0,0,0
 2001,Nanded,15,Male,7547,15222,6021,0,0,0,0
@@ -1941,7 +1941,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,15,Male,1351,7936,1688,0,0,0,0
 2011,Buldhana,15,Male,5012,16247,3081,0,0,0,0
 2011,Chandrapur,15,Male,3663,13840,2697,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,15,Male,6488,21348,8035,0,0,0,0
+2011,Chh. Sambhaji Nagar,15,Male,6488,21348,8035,0,0,0,0
 2011,Dharashiv,15,Male,2396,10421,3811,0,0,0,0
 2011,Dhule,15,Male,3427,9740,4280,0,0,0,0
 2011,Gadchiroli,15,Male,2672,6884,1281,0,0,0,0
@@ -1951,7 +1951,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,15,Male,4380,11111,2992,0,0,0,0
 2011,Kolhapur,15,Male,4276,23968,7213,0,0,0,0
 2011,Latur,15,Male,4036,15991,5032,0,0,0,0
-2011,Mumbai City,15,Male,4022,13074,6577,0,0,0,0
+2011,Mumbai,15,Male,4022,13074,6577,0,0,0,0
 2011,Mumbai Suburban,15,Male,13116,44903,20319,0,0,0,0
 2011,Nagpur,15,Male,6367,24992,8140,0,0,0,0
 2011,Nanded,15,Male,7916,20318,6214,0,0,0,0
@@ -1976,7 +1976,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,15,Female,2342,7851,1308,0,0,0,0
 2001,Buldhana,15,Female,6092,10021,1971,0,0,0,0
 2001,Chandrapur,15,Female,5266,11378,2207,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,15,Female,6126,11477,4191,0,0,0,0
+2001,Chh. Sambhaji Nagar,15,Female,6126,11477,4191,0,0,0,0
 2001,Dharashiv,15,Female,2858,6084,2317,0,0,0,0
 2001,Dhule,15,Female,3225,6757,2699,0,0,0,0
 2001,Gadchiroli,15,Female,2231,4811,590,0,0,0,0
@@ -1986,7 +1986,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,15,Female,4163,4339,1135,0,0,0,0
 2001,Kolhapur,15,Female,5688,17095,6286,0,0,0,0
 2001,Latur,15,Female,4024,9631,3262,0,0,0,0
-2001,Mumbai City,15,Female,5535,12849,5354,0,0,0,0
+2001,Mumbai,15,Female,5535,12849,5354,0,0,0,0
 2001,Mumbai Suburban,15,Female,16529,36305,13987,0,0,0,0
 2001,Nagpur,15,Female,7613,22364,6650,0,0,0,0
 2001,Nanded,15,Female,6122,9165,4507,0,0,0,0
@@ -2011,7 +2011,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,15,Female,921,7823,1640,0,0,0,0
 2011,Buldhana,15,Female,4505,13916,2829,0,0,0,0
 2011,Chandrapur,15,Female,2613,13434,2963,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,15,Female,5553,17210,7725,0,0,0,0
+2011,Chh. Sambhaji Nagar,15,Female,5553,17210,7725,0,0,0,0
 2011,Dharashiv,15,Female,1978,8801,3508,0,0,0,0
 2011,Dhule,15,Female,2933,7776,3829,0,0,0,0
 2011,Gadchiroli,15,Female,2227,6508,1226,0,0,0,0
@@ -2021,7 +2021,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,15,Female,4004,8336,2584,0,0,0,0
 2011,Kolhapur,15,Female,3478,19792,6310,0,0,0,0
 2011,Latur,15,Female,3351,13344,5008,0,0,0,0
-2011,Mumbai City,15,Female,2779,11348,6564,0,0,0,0
+2011,Mumbai,15,Female,2779,11348,6564,0,0,0,0
 2011,Mumbai Suburban,15,Female,9733,38207,19964,0,0,0,0
 2011,Nagpur,15,Female,4269,23643,9507,0,0,0,0
 2011,Nanded,15,Female,6932,16649,5594,0,0,0,0
@@ -2046,7 +2046,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,16,Male,1713,6181,3788,0,0,0,0
 2001,Buldhana,16,Male,4555,10105,8927,0,0,0,0
 2001,Chandrapur,16,Male,4233,9942,6148,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,16,Male,5069,10994,13484,0,0,0,0
+2001,Chh. Sambhaji Nagar,16,Male,5069,10994,13484,0,0,0,0
 2001,Dharashiv,16,Male,2323,5547,7550,0,0,0,0
 2001,Dhule,16,Male,2795,5866,8338,0,0,0,0
 2001,Gadchiroli,16,Male,1743,4467,2700,0,0,0,0
@@ -2056,7 +2056,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,16,Male,3817,5528,5569,0,0,0,0
 2001,Kolhapur,16,Male,3842,12726,18557,0,0,0,0
 2001,Latur,16,Male,3410,8296,11102,0,0,0,0
-2001,Mumbai City,16,Male,6638,11730,11212,0,0,0,0
+2001,Mumbai,16,Male,6638,11730,11212,0,0,0,0
 2001,Mumbai Suburban,16,Male,17240,32079,32156,0,0,0,0
 2001,Nagpur,16,Male,7353,18624,14051,0,0,0,0
 2001,Nanded,16,Male,5261,8999,14505,0,0,0,0
@@ -2081,7 +2081,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,16,Male,953,4795,5465,0,0,0,0
 2011,Buldhana,16,Male,3258,10751,11072,0,0,0,0
 2011,Chandrapur,16,Male,2570,9376,8595,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,16,Male,4725,12316,19080,0,0,0,0
+2011,Chh. Sambhaji Nagar,16,Male,4725,12316,19080,0,0,0,0
 2011,Dharashiv,16,Male,1601,6601,8337,0,0,0,0
 2011,Dhule,16,Male,2329,5985,8846,0,0,0,0
 2011,Gadchiroli,16,Male,1804,4917,4103,0,0,0,0
@@ -2091,7 +2091,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,16,Male,3266,7531,7683,0,0,0,0
 2011,Kolhapur,16,Male,2330,13940,18785,0,0,0,0
 2011,Latur,16,Male,2677,9825,11907,0,0,0,0
-2011,Mumbai City,16,Male,2916,7005,13118,0,0,0,0
+2011,Mumbai,16,Male,2916,7005,13118,0,0,0,0
 2011,Mumbai Suburban,16,Male,9389,24028,42758,0,0,0,0
 2011,Nagpur,16,Male,4624,15735,20116,0,0,0,0
 2011,Nanded,16,Male,6057,14316,13420,0,0,0,0
@@ -2116,7 +2116,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,16,Female,1365,6382,4065,0,0,0,0
 2001,Buldhana,16,Female,5019,6522,6191,0,0,0,0
 2001,Chandrapur,16,Female,3635,9489,6347,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,16,Female,4634,6776,9394,0,0,0,0
+2001,Chh. Sambhaji Nagar,16,Female,4634,6776,9394,0,0,0,0
 2001,Dharashiv,16,Female,2382,3557,4891,0,0,0,0
 2001,Dhule,16,Female,2547,4187,6513,0,0,0,0
 2001,Gadchiroli,16,Female,1524,3676,2331,0,0,0,0
@@ -2126,7 +2126,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,16,Female,3281,2614,2783,0,0,0,0
 2001,Kolhapur,16,Female,4276,9183,14571,0,0,0,0
 2001,Latur,16,Female,3507,5523,7640,0,0,0,0
-2001,Mumbai City,16,Female,4479,9035,11216,0,0,0,0
+2001,Mumbai,16,Female,4479,9035,11216,0,0,0,0
 2001,Mumbai Suburban,16,Female,14095,23640,31767,0,0,0,0
 2001,Nagpur,16,Female,5361,17774,16527,0,0,0,0
 2001,Nanded,16,Female,4765,5218,8880,0,0,0,0
@@ -2151,7 +2151,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,16,Female,515,4453,6055,0,0,0,0
 2011,Buldhana,16,Female,3293,8687,9507,0,0,0,0
 2011,Chandrapur,16,Female,1631,8113,9400,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,16,Female,4220,8894,16394,0,0,0,0
+2011,Chh. Sambhaji Nagar,16,Female,4220,8894,16394,0,0,0,0
 2011,Dharashiv,16,Female,1365,4960,7558,0,0,0,0
 2011,Dhule,16,Female,2136,4452,7494,0,0,0,0
 2011,Gadchiroli,16,Female,1548,4214,4215,0,0,0,0
@@ -2161,7 +2161,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,16,Female,3037,5132,6083,0,0,0,0
 2011,Kolhapur,16,Female,2036,10247,16400,0,0,0,0
 2011,Latur,16,Female,2374,7584,10984,0,0,0,0
-2011,Mumbai City,16,Female,2073,5057,12771,0,0,0,0
+2011,Mumbai,16,Female,2073,5057,12771,0,0,0,0
 2011,Mumbai Suburban,16,Female,7474,17751,40312,0,0,0,0
 2011,Nagpur,16,Female,2942,12783,22401,0,0,0,0
 2011,Nanded,16,Female,5577,11104,11545,0,0,0,0
@@ -2186,7 +2186,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,17,Male,1123,3747,4750,0,0,0,0
 2001,Buldhana,17,Male,3097,5453,9575,0,0,0,0
 2001,Chandrapur,17,Male,2618,6255,7702,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,17,Male,3279,5729,14415,0,0,0,0
+2001,Chh. Sambhaji Nagar,17,Male,3279,5729,14415,0,0,0,0
 2001,Dharashiv,17,Male,1501,2729,7544,0,0,0,0
 2001,Dhule,17,Male,1578,2777,8697,0,0,0,0
 2001,Gadchiroli,17,Male,1021,2540,3372,0,0,0,0
@@ -2196,7 +2196,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,17,Male,2345,2796,5375,0,0,0,0
 2001,Kolhapur,17,Male,3062,7027,21785,0,0,0,0
 2001,Latur,17,Male,1920,3792,11330,0,0,0,0
-2001,Mumbai City,17,Male,5710,8686,15155,0,0,0,0
+2001,Mumbai,17,Male,5710,8686,15155,0,0,0,0
 2001,Mumbai Suburban,17,Male,13865,22540,42301,0,0,0,0
 2001,Nagpur,17,Male,4721,11778,17242,0,0,0,0
 2001,Nanded,17,Male,2836,3844,12494,0,0,0,0
@@ -2221,7 +2221,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,17,Male,826,2720,7243,0,0,0,0
 2011,Buldhana,17,Male,2678,5601,14739,0,0,0,0
 2011,Chandrapur,17,Male,2009,5497,11922,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,17,Male,4138,6578,23818,0,0,0,0
+2011,Chh. Sambhaji Nagar,17,Male,4138,6578,23818,0,0,0,0
 2011,Dharashiv,17,Male,1537,3666,11074,0,0,0,0
 2011,Dhule,17,Male,1804,3119,11141,0,0,0,0
 2011,Gadchiroli,17,Male,1477,2959,5775,0,0,0,0
@@ -2231,7 +2231,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,17,Male,2764,4083,9869,0,0,0,0
 2011,Kolhapur,17,Male,1958,6955,26257,0,0,0,0
 2011,Latur,17,Male,2295,5117,15357,0,0,0,0
-2011,Mumbai City,17,Male,2927,4832,16569,0,0,0,0
+2011,Mumbai,17,Male,2927,4832,16569,0,0,0,0
 2011,Mumbai Suburban,17,Male,8610,15966,54067,0,0,0,0
 2011,Nagpur,17,Male,4255,9710,24985,0,0,0,0
 2011,Nanded,17,Male,4772,7879,17076,0,0,0,0
@@ -2256,7 +2256,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,17,Female,910,3964,4886,0,0,0,0
 2001,Buldhana,17,Female,3587,3561,6404,0,0,0,0
 2001,Chandrapur,17,Female,2169,5917,7430,0,0,0,0
-2001,Chhatrapati Sambhaji Nagar,17,Female,2979,3235,9532,0,0,0,0
+2001,Chh. Sambhaji Nagar,17,Female,2979,3235,9532,0,0,0,0
 2001,Dharashiv,17,Female,1718,1881,5001,0,0,0,0
 2001,Dhule,17,Female,1466,1920,6356,0,0,0,0
 2001,Gadchiroli,17,Female,934,2067,2559,0,0,0,0
@@ -2266,7 +2266,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,17,Female,2085,1297,2756,0,0,0,0
 2001,Kolhapur,17,Female,3120,4708,15092,0,0,0,0
 2001,Latur,17,Female,2312,2670,7793,0,0,0,0
-2001,Mumbai City,17,Female,3597,5702,13587,0,0,0,0
+2001,Mumbai,17,Female,3597,5702,13587,0,0,0,0
 2001,Mumbai Suburban,17,Female,10783,14316,36989,0,0,0,0
 2001,Nagpur,17,Female,3417,10997,18245,0,0,0,0
 2001,Nanded,17,Female,2632,2259,7660,0,0,0,0
@@ -2291,7 +2291,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,17,Female,364,2072,8209,0,0,0,0
 2011,Buldhana,17,Female,2729,4281,12313,0,0,0,0
 2011,Chandrapur,17,Female,1426,4408,13171,0,0,0,0
-2011,Chhatrapati Sambhaji Nagar,17,Female,3620,4524,18607,0,0,0,0
+2011,Chh. Sambhaji Nagar,17,Female,3620,4524,18607,0,0,0,0
 2011,Dharashiv,17,Female,1319,2567,9046,0,0,0,0
 2011,Dhule,17,Female,1637,2236,9170,0,0,0,0
 2011,Gadchiroli,17,Female,1245,2508,5652,0,0,0,0
@@ -2301,7 +2301,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,17,Female,2493,2548,6754,0,0,0,0
 2011,Kolhapur,17,Female,1839,5156,22049,0,0,0,0
 2011,Latur,17,Female,2145,3844,13184,0,0,0,0
-2011,Mumbai City,17,Female,1700,2997,15282,0,0,0,0
+2011,Mumbai,17,Female,1700,2997,15282,0,0,0,0
 2011,Mumbai Suburban,17,Female,6843,10688,47728,0,0,0,0
 2011,Nagpur,17,Female,2393,7579,27105,0,0,0,0
 2011,Nanded,17,Female,4409,5595,13329,0,0,0,0
@@ -2326,7 +2326,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,18,Male,1699,4698,4771,2157,0,66,0
 2001,Buldhana,18,Male,4609,6609,8603,5165,1,236,0
 2001,Chandrapur,18,Male,3762,7942,7923,3907,8,136,0
-2001,Chhatrapati Sambhaji Nagar,18,Male,5705,8144,13469,9135,0,376,0
+2001,Chh. Sambhaji Nagar,18,Male,5705,8144,13469,9135,0,376,0
 2001,Dharashiv,18,Male,2746,4077,6350,5172,1,235,0
 2001,Dhule,18,Male,2793,3730,7292,5911,2,457,0
 2001,Gadchiroli,18,Male,1524,3114,3479,1479,0,38,0
@@ -2336,7 +2336,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,18,Male,3928,4029,5193,3310,2,100,0
 2001,Kolhapur,18,Male,4693,8275,16037,13231,18,956,0
 2001,Latur,18,Male,3589,5665,9065,8157,4,402,0
-2001,Mumbai City,18,Male,10833,13084,13489,9996,11,305,0
+2001,Mumbai,18,Male,10833,13084,13489,9996,11,305,0
 2001,Mumbai Suburban,18,Male,24454,31753,36643,27420,47,1372,0
 2001,Nagpur,18,Male,7476,15921,15500,10596,11,791,0
 2001,Nanded,18,Male,6252,6601,11178,11399,7,281,0
@@ -2361,7 +2361,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,18,Male,961,2556,3974,3818,6,284,0
 2011,Buldhana,18,Male,3309,4874,8431,8226,22,539,0
 2011,Chandrapur,18,Male,2592,5578,7537,6035,18,539,0
-2011,Chhatrapati Sambhaji Nagar,18,Male,5749,7170,13148,14886,84,837,0
+2011,Chh. Sambhaji Nagar,18,Male,5749,7170,13148,14886,84,837,0
 2011,Dharashiv,18,Male,1934,3581,6365,6661,20,606,0
 2011,Dhule,18,Male,2322,2814,5355,7053,83,705,0
 2011,Gadchiroli,18,Male,1669,2702,3511,2664,2,109,0
@@ -2371,7 +2371,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,18,Male,3843,4366,6345,5937,4,288,0
 2011,Kolhapur,18,Male,2479,5559,13274,14165,201,1926,0
 2011,Latur,18,Male,3189,5041,8528,9790,18,837,0
-2011,Mumbai City,18,Male,4913,5823,8453,11791,89,545,0
+2011,Mumbai,18,Male,4913,5823,8453,11791,89,545,0
 2011,Mumbai Suburban,18,Male,13775,18017,28083,38493,285,1841,0
 2011,Nagpur,18,Male,5358,9991,13454,15324,43,1432,0
 2011,Nanded,18,Male,6904,8125,11784,10808,21,693,0
@@ -2396,7 +2396,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,18,Female,1198,4689,4034,2298,0,20,0
 2001,Buldhana,18,Female,4703,3730,4632,3188,0,51,0
 2001,Chandrapur,18,Female,2986,6898,6505,3693,0,28,0
-2001,Chhatrapati Sambhaji Nagar,18,Female,5632,4426,7213,5977,3,84,0
+2001,Chh. Sambhaji Nagar,18,Female,5632,4426,7213,5977,3,84,0
 2001,Dharashiv,18,Female,3093,2500,3728,2987,1,45,0
 2001,Dhule,18,Female,2543,2314,3945,4363,3,94,0
 2001,Gadchiroli,18,Female,1266,2311,2363,1053,0,13,0
@@ -2406,7 +2406,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,18,Female,3663,1962,2267,1641,1,12,0
 2001,Kolhapur,18,Female,5254,5356,9115,8663,9,155,0
 2001,Latur,18,Female,4662,3912,5615,5264,20,66,0
-2001,Mumbai City,18,Female,5274,6351,8402,9655,8,230,0
+2001,Mumbai,18,Female,5274,6351,8402,9655,8,230,0
 2001,Mumbai Suburban,18,Female,15912,16246,22192,25512,40,435,0
 2001,Nagpur,18,Female,4842,12909,13093,12362,6,236,0
 2001,Nanded,18,Female,6264,3917,5898,6229,2,57,0
@@ -2431,7 +2431,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,18,Female,416,1811,4002,4562,1,118,0
 2011,Buldhana,18,Female,3698,3903,6375,6525,7,187,0
 2011,Chandrapur,18,Female,1673,4299,7525,7087,6,239,0
-2011,Chhatrapati Sambhaji Nagar,18,Female,5921,5256,9563,11836,32,368,0
+2011,Chh. Sambhaji Nagar,18,Female,5921,5256,9563,11836,32,368,0
 2011,Dharashiv,18,Female,1943,2570,4681,5212,11,231,0
 2011,Dhule,18,Female,2085,2050,3995,5850,32,268,0
 2011,Gadchiroli,18,Female,1486,2516,3217,2707,4,59,0
@@ -2441,7 +2441,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,18,Female,3855,3011,4045,3866,1,100,0
 2011,Kolhapur,18,Female,2701,4734,10577,13135,112,624,0
 2011,Latur,18,Female,3270,3865,6679,8204,11,399,0
-2011,Mumbai City,18,Female,2243,2925,5810,11765,54,292,0
+2011,Mumbai,18,Female,2243,2925,5810,11765,54,292,0
 2011,Mumbai Suburban,18,Female,9336,10553,19560,35453,151,815,0
 2011,Nagpur,18,Female,2974,7382,12437,18516,47,670,0
 2011,Nanded,18,Female,6854,5825,7923,8230,12,298,0
@@ -2466,7 +2466,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,19,Male,961,2615,2359,2083,0,67,0
 2001,Buldhana,19,Male,2527,3890,4541,4297,1,187,0
 2001,Chandrapur,19,Male,2061,4574,4521,3898,2,171,0
-2001,Chhatrapati Sambhaji Nagar,19,Male,2559,3991,6480,7259,6,295,0
+2001,Chh. Sambhaji Nagar,19,Male,2559,3991,6480,7259,6,295,0
 2001,Dharashiv,19,Male,1329,2148,3017,3644,4,178,0
 2001,Dhule,19,Male,1329,1802,3231,4768,6,378,0
 2001,Gadchiroli,19,Male,774,1628,1774,1314,0,39,0
@@ -2476,7 +2476,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,19,Male,1763,1961,2546,2358,0,87,0
 2001,Kolhapur,19,Male,2692,4640,8278,10386,10,825,0
 2001,Latur,19,Male,1668,2698,3696,5830,2,297,0
-2001,Mumbai City,19,Male,5924,7346,8085,9682,12,298,0
+2001,Mumbai,19,Male,5924,7346,8085,9682,12,298,0
 2001,Mumbai Suburban,19,Male,12431,17179,20217,25135,45,1214,0
 2001,Nagpur,19,Male,3907,8803,8285,10213,14,719,0
 2001,Nanded,19,Male,2298,2719,4124,7232,5,255,0
@@ -2501,7 +2501,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,19,Male,839,2267,2214,4263,5,317,0
 2011,Buldhana,19,Male,2762,4087,5211,9973,10,565,0
 2011,Chandrapur,19,Male,2049,4700,4550,7122,13,605,0
-2011,Chhatrapati Sambhaji Nagar,19,Male,4252,5501,7452,15887,58,762,0
+2011,Chh. Sambhaji Nagar,19,Male,4252,5501,7452,15887,58,762,0
 2011,Dharashiv,19,Male,1482,2604,3693,7143,20,566,0
 2011,Dhule,19,Male,1763,2114,3073,7127,94,774,0
 2011,Gadchiroli,19,Male,1202,2253,2000,2821,0,133,0
@@ -2511,7 +2511,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,19,Male,2718,3142,3464,6199,8,287,0
 2011,Kolhapur,19,Male,2158,4653,8509,16275,223,2011,0
 2011,Latur,19,Male,2404,3519,4696,10175,23,819,0
-2011,Mumbai City,19,Male,4369,4944,6047,13531,77,625,0
+2011,Mumbai,19,Male,4369,4944,6047,13531,77,625,0
 2011,Mumbai Suburban,19,Male,11319,14033,18927,42314,257,2140,0
 2011,Nagpur,19,Male,4394,8505,8944,17455,42,1439,0
 2011,Nanded,19,Male,4401,5266,6396,11037,25,714,0
@@ -2536,7 +2536,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,19,Female,780,2671,2047,1933,0,24,0
 2001,Buldhana,19,Female,3238,2186,2458,2292,1,31,0
 2001,Chandrapur,19,Female,2006,4216,3528,3100,0,19,0
-2001,Chhatrapati Sambhaji Nagar,19,Female,3222,2469,3502,4282,1,65,0
+2001,Chh. Sambhaji Nagar,19,Female,3222,2469,3502,4282,1,65,0
 2001,Dharashiv,19,Female,1842,1492,1823,1957,1,28,0
 2001,Dhule,19,Female,1366,1303,1862,3008,2,57,0
 2001,Gadchiroli,19,Female,752,1368,1178,862,0,10,0
@@ -2546,7 +2546,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,19,Female,1884,962,1076,984,2,5,0
 2001,Kolhapur,19,Female,4699,4182,5912,6582,4,163,0
 2001,Latur,19,Female,2487,1994,2434,3410,13,70,0
-2001,Mumbai City,19,Female,3306,3893,4854,8975,13,293,0
+2001,Mumbai,19,Female,3306,3893,4854,8975,13,293,0
 2001,Mumbai Suburban,19,Female,9645,10063,12115,23308,43,447,0
 2001,Nagpur,19,Female,2794,7268,6744,10695,11,217,0
 2001,Nanded,19,Female,2908,1783,2340,3557,5,33,0
@@ -2571,7 +2571,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,19,Female,400,1924,2332,4946,4,116,0
 2011,Buldhana,19,Female,3712,3737,4232,7350,7,213,0
 2011,Chandrapur,19,Female,1435,4255,4551,7736,6,211,0
-2011,Chhatrapati Sambhaji Nagar,19,Female,5346,4528,6701,11601,25,346,0
+2011,Chh. Sambhaji Nagar,19,Female,5346,4528,6701,11601,25,346,0
 2011,Dharashiv,19,Female,1808,2239,3022,4948,15,206,0
 2011,Dhule,19,Female,1814,1747,2457,6132,29,281,0
 2011,Gadchiroli,19,Female,1135,2218,1807,2687,0,72,0
@@ -2581,7 +2581,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,19,Female,3395,2366,2529,3613,4,90,0
 2011,Kolhapur,19,Female,2988,4374,7469,14487,97,664,0
 2011,Latur,19,Female,2688,2951,3944,7780,12,397,0
-2011,Mumbai City,19,Female,2211,2511,3816,12920,73,343,0
+2011,Mumbai,19,Female,2211,2511,3816,12920,73,343,0
 2011,Mumbai Suburban,19,Female,8378,8729,12709,38169,161,1040,0
 2011,Nagpur,19,Female,2457,6835,7964,20123,54,578,0
 2011,Nanded,19,Female,5444,4257,4650,7823,10,272,0
@@ -2604,7 +2604,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,15-19,Male,8130,32123,18640,4350,20,520,410
 1991,Buldhana,15-19,Male,14140,39356,16730,3610,20,360,70
 1991,Chandrapur,15-19,Male,13461,36637,15230,3630,80,340,140
-1991,Chhatrapati Sambhaji Nagar,15-19,Male,13161,40869,24590,7470,10,600,730
+1991,Chh. Sambhaji Nagar,15-19,Male,13161,40869,24590,7470,10,600,730
 1991,Dharashiv,15-19,Male,7290,24330,13550,3890,40,410,580
 1991,Gadchiroli,15-19,Male,4860,11470,3884,760,0,100,50
 1991,Jalgaon,15-19,Male,21500,57840,37200,12080,170,1690,700
@@ -2629,7 +2629,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,15-19,Female,7133,13400,7150,1600,30,250,190
 1991,Buldhana,15-19,Female,12470,20419,7300,1720,0,160,180
 1991,Chandrapur,15-19,Female,11914,29150,9490,2840,10,30,150
-1991,Chhatrapati Sambhaji Nagar,15-19,Female,9450,18650,10510,3490,30,90,580
+1991,Chh. Sambhaji Nagar,15-19,Female,9450,18650,10510,3490,30,90,580
 1991,Dharashiv,15-19,Female,6510,14070,6400,1350,0,10,220
 1991,Gadchiroli,15-19,Female,3310,7045,2530,520,20,10,40
 1991,Jalgaon,15-19,Female,16940,35337,19210,7410,70,200,580
@@ -2654,7 +2654,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,20-24,Male,9030,14041,11850,7113,90,1680,3970
 1991,Buldhana,20-24,Male,11710,20002,12700,7550,40,1940,2700
 1991,Chandrapur,20-24,Male,10724,19426,13380,11840,40,1780,2583
-1991,Chhatrapati Sambhaji Nagar,20-24,Male,12490,20820,19520,13920,40,2150,7580
+1991,Chh. Sambhaji Nagar,20-24,Male,12490,20820,19520,13920,40,2150,7580
 1991,Dharashiv,20-24,Male,7434,12367,8730,5390,100,930,3706
 1991,Gadchiroli,20-24,Male,3903,5980,3570,2750,0,550,600
 1991,Jalgaon,20-24,Male,19030,29047,23330,19338,360,4198,11295
@@ -2681,7 +2681,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,20-24,Male,5553,14140,11585,10593,3,521,4280
 2001,Buldhana,20-24,Male,14188,19151,20930,17970,17,1306,7355
 2001,Chandrapur,20-24,Male,11757,22733,21163,20006,28,1150,6835
-2001,Chhatrapati Sambhaji Nagar,20-24,Male,15626,18502,30855,29083,37,2176,16375
+2001,Chh. Sambhaji Nagar,20-24,Male,15626,18502,30855,29083,37,2176,16375
 2001,Dharashiv,20-24,Male,7681,9515,13419,13405,12,893,7598
 2001,Dhule,20-24,Male,8378,9186,15349,20645,29,2623,7441
 2001,Gadchiroli,20-24,Male,4529,7810,7098,6955,2,290,1554
@@ -2691,7 +2691,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,20-24,Male,10980,9969,11691,9402,9,335,5036
 2001,Kolhapur,20-24,Male,17080,22470,39609,38281,68,4397,20555
 2001,Latur,20-24,Male,10243,14024,19167,22810,16,1601,11342
-2001,Mumbai City,20-24,Male,39287,43738,49677,41617,113,2580,24764
+2001,Mumbai,20-24,Male,39287,43738,49677,41617,113,2580,24764
 2001,Mumbai Suburban,20-24,Male,83834,100429,121685,101254,368,8673,68858
 2001,Nagpur,20-24,Male,23185,46989,41357,47318,89,5027,22528
 2001,Nanded,20-24,Male,14972,14254,20071,31011,19,1207,13134
@@ -2716,7 +2716,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,20-24,Male,4757,14232,10407,17986,29,1402,4953
 2011,Buldhana,20-24,Male,16927,24417,20642,34570,63,1940,12960
 2011,Chandrapur,20-24,Male,12112,26335,19864,29612,47,2696,9319
-2011,Chhatrapati Sambhaji Nagar,20-24,Male,23711,30747,35567,53358,247,3054,24284
+2011,Chh. Sambhaji Nagar,20-24,Male,23711,30747,35567,53358,247,3054,24284
 2011,Dharashiv,20-24,Male,9414,15181,16028,22769,59,1945,11668
 2011,Dhule,20-24,Male,9426,11388,13503,23896,263,2805,10715
 2011,Gadchiroli,20-24,Male,6324,12292,8817,12349,11,555,2992
@@ -2726,7 +2726,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,20-24,Male,16096,16520,14387,21295,47,1040,8678
 2011,Kolhapur,20-24,Male,13271,25581,38220,53873,609,7491,26440
 2011,Latur,20-24,Male,13352,19254,20692,35397,72,3154,16934
-2011,Mumbai City,20-24,Male,27616,29284,30199,43470,354,3353,32341
+2011,Mumbai,20-24,Male,27616,29284,30199,43470,354,3353,32341
 2011,Mumbai Suburban,20-24,Male,69748,84736,94885,136951,1291,11549,101326
 2011,Nagpur,20-24,Male,24545,49535,38906,65982,224,6724,30577
 2011,Nanded,20-24,Male,25911,28187,24547,40942,93,2808,18411
@@ -2749,7 +2749,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,20-24,Female,6600,7760,3190,1300,0,330,971
 1991,Buldhana,20-24,Female,13060,11520,4240,1770,0,330,1510
 1991,Chandrapur,20-24,Female,11530,14530,6900,4680,10,670,2120
-1991,Chhatrapati Sambhaji Nagar,20-24,Female,9870,12750,7330,3630,10,210,3820
+1991,Chh. Sambhaji Nagar,20-24,Female,9870,12750,7330,3630,10,210,3820
 1991,Dharashiv,20-24,Female,6610,8220,2950,820,0,60,840
 1991,Gadchiroli,20-24,Female,3020,3303,1260,780,10,180,240
 1991,Jalgaon,20-24,Female,18620,22689,12220,5530,140,490,4710
@@ -2776,7 +2776,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,20-24,Female,4994,13928,9637,7037,5,120,3228
 2001,Buldhana,20-24,Female,17715,10045,10937,7684,6,163,3525
 2001,Chandrapur,20-24,Female,11753,19998,16021,11904,6,131,5522
-2001,Chhatrapati Sambhaji Nagar,20-24,Female,20568,12192,17917,14097,23,395,8995
+2001,Chh. Sambhaji Nagar,20-24,Female,20568,12192,17917,14097,23,395,8995
 2001,Dharashiv,20-24,Female,10792,6126,7671,5351,7,101,2602
 2001,Dhule,20-24,Female,9880,6784,9686,9479,9,261,3985
 2001,Gadchiroli,20-24,Female,4426,6348,4954,3510,1,44,1017
@@ -2786,7 +2786,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,20-24,Female,10508,4344,4886,3232,1,32,1673
 2001,Kolhapur,20-24,Female,33060,21017,29424,18924,40,658,13258
 2001,Latur,20-24,Female,15165,9333,11801,9606,14,213,4085
-2001,Mumbai City,20-24,Female,22050,21030,25504,29364,108,1170,24934
+2001,Mumbai,20-24,Female,22050,21030,25504,29364,108,1170,24934
 2001,Mumbai Suburban,20-24,Female,66316,52854,65054,71949,294,2812,68798
 2001,Nagpur,20-24,Female,19547,40022,34903,37783,51,1060,25327
 2001,Nanded,20-24,Female,18002,8646,11424,11761,12,147,4734
@@ -2811,7 +2811,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,20-24,Female,3024,13314,11621,17237,15,461,5553
 2011,Buldhana,20-24,Female,22459,19343,18232,20368,33,563,7445
 2011,Chandrapur,20-24,Female,9790,25447,21557,26400,38,830,10671
-2011,Chhatrapati Sambhaji Nagar,20-24,Female,33340,25716,34640,33929,129,1160,17690
+2011,Chh. Sambhaji Nagar,20-24,Female,33340,25716,34640,33929,129,1160,17690
 2011,Dharashiv,20-24,Female,12543,12002,14425,13411,39,507,6635
 2011,Dhule,20-24,Female,10767,9314,12223,15672,81,886,8214
 2011,Gadchiroli,20-24,Female,6350,11397,8291,8647,9,220,2632
@@ -2821,7 +2821,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,20-24,Female,21012,11586,11224,10440,27,335,4075
 2011,Kolhapur,20-24,Female,20979,26240,40399,39814,250,2253,24993
 2011,Latur,20-24,Female,17609,15310,19010,21893,54,1063,10497
-2011,Mumbai City,20-24,Female,14505,15458,19296,34537,353,1832,33501
+2011,Mumbai,20-24,Female,14505,15458,19296,34537,353,1832,33501
 2011,Mumbai Suburban,20-24,Female,56518,54752,65283,102863,980,5307,98890
 2011,Nagpur,20-24,Female,16868,42146,39802,65216,164,2486,40787
 2011,Nanded,20-24,Female,31724,21010,19837,23979,72,858,10459
@@ -2844,7 +2844,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,25-29,Male,9910,12810,8270,2683,60,920,4410
 1991,Buldhana,25-29,Male,12290,17728,8530,3230,10,1270,3240
 1991,Chandrapur,25-29,Male,12530,14939,8300,6096,30,1940,5350
-1991,Chhatrapati Sambhaji Nagar,25-29,Male,13539,18570,14081,5650,30,2520,9060
+1991,Chh. Sambhaji Nagar,25-29,Male,13539,18570,14081,5650,30,2520,9060
 1991,Dharashiv,25-29,Male,7490,11470,6010,2330,20,430,3210
 1991,Gadchiroli,25-29,Male,4650,4213,1980,1370,0,570,1121
 1991,Jalgaon,25-29,Male,19760,22580,17950,7180,140,2430,11380
@@ -2871,7 +2871,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,25-29,Male,4914,10475,8946,7140,6,402,6167
 2001,Buldhana,25-29,Male,11372,12912,15047,10498,15,680,9638
 2001,Chandrapur,25-29,Male,10778,16128,16774,14842,17,878,10397
-2001,Chhatrapati Sambhaji Nagar,25-29,Male,14197,12701,24193,16257,46,1969,21450
+2001,Chh. Sambhaji Nagar,25-29,Male,14197,12701,24193,16257,46,1969,21450
 2001,Dharashiv,25-29,Male,6824,6879,9977,6840,16,535,9299
 2001,Dhule,25-29,Male,7143,5755,9881,11179,28,1080,8486
 2001,Gadchiroli,25-29,Male,4415,5438,5408,5312,5,202,2899
@@ -2881,7 +2881,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,25-29,Male,9194,6752,8478,5072,11,178,6028
 2001,Kolhapur,25-29,Male,19947,19390,34180,21214,84,2861,25435
 2001,Latur,25-29,Male,8951,9679,14616,11029,15,868,13091
-2001,Mumbai City,25-29,Male,31886,35182,44859,26268,96,1852,31663
+2001,Mumbai,25-29,Male,31886,35182,44859,26268,96,1852,31663
 2001,Mumbai Suburban,25-29,Male,74099,82765,114585,65066,328,7303,91189
 2001,Nagpur,25-29,Male,21231,36690,35381,31780,68,3557,31163
 2001,Nanded,25-29,Male,13281,9806,14051,15229,19,637,19879
@@ -2906,7 +2906,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,25-29,Male,4427,12142,9457,11852,25,792,7213
 2011,Buldhana,25-29,Male,14204,19979,18562,18327,39,1024,14284
 2011,Chandrapur,25-29,Male,10486,21858,17721,19698,27,1435,13809
-2011,Chhatrapati Sambhaji Nagar,25-29,Male,19632,24937,33442,29583,133,2223,32890
+2011,Chh. Sambhaji Nagar,25-29,Male,19632,24937,33442,29583,133,2223,32890
 2011,Dharashiv,25-29,Male,7688,11630,13697,11048,33,914,13017
 2011,Dhule,25-29,Male,7738,9245,12477,14506,104,1738,11810
 2011,Gadchiroli,25-29,Male,4719,8758,7448,8822,16,273,4241
@@ -2916,7 +2916,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,25-29,Male,13424,12372,11919,10633,28,491,10731
 2011,Kolhapur,25-29,Male,13509,22624,36940,33462,318,4165,34698
 2011,Latur,25-29,Male,10521,14636,17876,18295,47,1685,18317
-2011,Mumbai City,25-29,Male,24412,28055,31517,27421,306,2154,42743
+2011,Mumbai,25-29,Male,24412,28055,31517,27421,306,2154,42743
 2011,Mumbai Suburban,25-29,Male,65407,82445,101137,81248,1144,8401,137559
 2011,Nagpur,25-29,Male,21065,43665,37527,42351,170,4529,44367
 2011,Nanded,25-29,Male,19753,20978,20620,25576,53,1430,19881
@@ -2939,7 +2939,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,25-29,Female,6300,6410,2610,450,20,270,900
 1991,Buldhana,25-29,Female,12400,9930,3450,660,0,200,830
 1991,Chandrapur,25-29,Female,11394,10810,4330,1830,10,360,2060
-1991,Chhatrapati Sambhaji Nagar,25-29,Female,9820,9726,5150,1550,10,200,3500
+1991,Chh. Sambhaji Nagar,25-29,Female,9820,9726,5150,1550,10,200,3500
 1991,Dharashiv,25-29,Female,6030,6650,2270,250,10,40,603
 1991,Gadchiroli,25-29,Female,2730,2080,780,290,0,140,310
 1991,Jalgaon,25-29,Female,19030,19800,11272,2880,70,420,3211
@@ -2966,7 +2966,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,25-29,Female,5259,9893,7410,3912,0,41,3119
 2001,Buldhana,25-29,Female,16112,7274,8201,3973,1,59,3459
 2001,Chandrapur,25-29,Female,12390,14205,12648,7412,1,69,6079
-2001,Chhatrapati Sambhaji Nagar,25-29,Female,19485,8637,13406,6613,12,223,10478
+2001,Chh. Sambhaji Nagar,25-29,Female,19485,8637,13406,6613,12,223,10478
 2001,Dharashiv,25-29,Female,11191,5077,6196,2375,2,40,2345
 2001,Dhule,25-29,Female,10136,5542,7912,5200,4,83,3960
 2001,Gadchiroli,25-29,Female,4005,3818,3478,2137,0,21,1239
@@ -2976,7 +2976,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,25-29,Female,8800,3271,3588,1563,0,16,1531
 2001,Kolhapur,25-29,Female,39523,17363,23592,8201,14,288,12302
 2001,Latur,25-29,Female,14434,6862,8884,4340,6,79,3821
-2001,Mumbai City,25-29,Female,24567,18535,24019,15032,87,601,28110
+2001,Mumbai,25-29,Female,24567,18535,24019,15032,87,601,28110
 2001,Mumbai Suburban,25-29,Female,73969,45702,60175,35224,238,1887,82484
 2001,Nagpur,25-29,Female,22397,33943,29943,20702,47,473,28287
 2001,Nanded,25-29,Female,15714,6309,8419,5395,2,56,5057
@@ -3001,7 +3001,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,25-29,Female,3717,13038,10566,8884,9,169,6059
 2011,Buldhana,25-29,Female,19414,14500,14693,10117,18,249,6770
 2011,Chandrapur,25-29,Female,10586,22759,18753,14421,25,283,11377
-2011,Chhatrapati Sambhaji Nagar,25-29,Female,28865,20177,27277,18203,69,716,20344
+2011,Chh. Sambhaji Nagar,25-29,Female,28865,20177,27277,18203,69,716,20344
 2011,Dharashiv,25-29,Female,12409,9761,11972,6832,13,201,5606
 2011,Dhule,25-29,Female,10023,8367,11384,8978,35,358,6903
 2011,Gadchiroli,25-29,Female,5129,8341,6471,5109,4,83,2508
@@ -3011,7 +3011,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,25-29,Female,16564,7805,8112,5150,16,146,4291
 2011,Kolhapur,25-29,Female,25835,24720,37283,20755,126,1132,24134
 2011,Latur,25-29,Female,17341,12885,16543,11604,28,430,8926
-2011,Mumbai City,25-29,Female,17055,16750,21481,19647,293,1152,40764
+2011,Mumbai,25-29,Female,17055,16750,21481,19647,293,1152,40764
 2011,Mumbai Suburban,25-29,Female,63041,55006,67124,55947,990,3939,129119
 2011,Nagpur,25-29,Female,17811,40920,39084,36302,137,1408,50096
 2011,Nanded,25-29,Female,27293,15944,16202,14361,36,382,9238
@@ -3034,7 +3034,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,30-34,Male,10040,11610,7950,2040,50,750,3920
 1991,Buldhana,30-34,Male,11908,13950,8620,2180,20,850,2780
 1991,Chandrapur,30-34,Male,12580,13202,7200,3279,30,1350,4717
-1991,Chhatrapati Sambhaji Nagar,30-34,Male,13090,16080,12090,3200,50,1582,6910
+1991,Chh. Sambhaji Nagar,30-34,Male,13090,16080,12090,3200,50,1582,6910
 1991,Dharashiv,30-34,Male,6120,9970,5810,1690,30,210,2470
 1991,Gadchiroli,30-34,Male,5040,4031,1620,720,10,300,1137
 1991,Jalgaon,30-34,Male,20118,21880,18551,4728,100,1910,8260
@@ -3061,7 +3061,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,30-34,Male,4866,7032,6825,5489,5,301,5366
 2001,Buldhana,30-34,Male,11272,10622,12771,6770,11,453,8004
 2001,Chandrapur,30-34,Male,10099,11185,12026,10461,10,691,9662
-2001,Chhatrapati Sambhaji Nagar,30-34,Male,14929,10603,20468,11294,37,2018,16422
+2001,Chh. Sambhaji Nagar,30-34,Male,14929,10603,20468,11294,37,2018,16422
 2001,Dharashiv,30-34,Male,7337,5812,8135,4447,12,468,6606
 2001,Dhule,30-34,Male,7566,5101,8370,6678,18,751,8574
 2001,Gadchiroli,30-34,Male,4027,3701,3457,3103,3,121,3060
@@ -3071,7 +3071,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,30-34,Male,9609,5764,7076,3336,4,170,4204
 2001,Kolhapur,30-34,Male,21972,18122,29748,13353,51,2203,20222
 2001,Latur,30-34,Male,9673,7825,12493,6953,16,780,9166
-2001,Mumbai City,30-34,Male,26514,26852,37279,19998,84,1425,25176
+2001,Mumbai,30-34,Male,26514,26852,37279,19998,84,1425,25176
 2001,Mumbai Suburban,30-34,Male,64628,63354,96677,50089,239,5866,75336
 2001,Nagpur,30-34,Male,20421,28366,28633,23807,60,2479,28774
 2001,Nanded,30-34,Male,14013,8427,12328,9191,11,622,14183
@@ -3096,7 +3096,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,30-34,Male,4313,11220,8208,8100,18,495,6164
 2011,Buldhana,30-34,Male,12035,15737,16054,12295,22,820,10085
 2011,Chandrapur,30-34,Male,9308,18989,15805,15390,40,1151,11620
-2011,Chhatrapati Sambhaji Nagar,30-34,Male,16772,18268,28452,22177,116,2402,26732
+2011,Chh. Sambhaji Nagar,30-34,Male,16772,18268,28452,22177,116,2402,26732
 2011,Dharashiv,30-34,Male,6772,8685,11136,8233,17,604,9748
 2011,Dhule,30-34,Male,7000,7080,10908,11977,70,1445,8454
 2011,Gadchiroli,30-34,Male,3898,6699,5486,6367,4,224,3430
@@ -3106,7 +3106,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,30-34,Male,11089,9353,10216,7452,20,333,8056
 2011,Kolhapur,30-34,Male,14721,18714,32934,25457,230,3575,27632
 2011,Latur,30-34,Male,9498,11391,15606,14611,32,1084,13668
-2011,Mumbai City,30-34,Male,19828,22908,29728,22441,263,1753,31920
+2011,Mumbai,30-34,Male,19828,22908,29728,22441,263,1753,31920
 2011,Mumbai Suburban,30-34,Male,55885,66589,92752,65719,1025,7299,108681
 2011,Nagpur,30-34,Male,18716,37669,35175,34958,136,4200,38821
 2011,Nanded,30-34,Male,16006,14776,17028,21738,33,947,16434
@@ -3129,7 +3129,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,30-34,Female,5280,4597,1730,240,10,190,520
 1991,Buldhana,30-34,Female,10780,7980,3036,540,0,180,640
 1991,Chandrapur,30-34,Female,8980,7365,2940,610,0,210,1420
-1991,Chhatrapati Sambhaji Nagar,30-34,Female,7350,6690,4050,650,10,130,2380
+1991,Chh. Sambhaji Nagar,30-34,Female,7350,6690,4050,650,10,130,2380
 1991,Dharashiv,30-34,Female,4858,4574,1630,170,0,10,350
 1991,Gadchiroli,30-34,Female,2398,1330,590,210,0,60,100
 1991,Jalgaon,30-34,Female,16568,15650,9780,1410,10,510,1970
@@ -3156,7 +3156,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,30-34,Female,5309,5264,4515,2299,0,24,2081
 2001,Buldhana,30-34,Female,13707,4995,5519,1933,2,24,1965
 2001,Chandrapur,30-34,Female,10590,7811,7076,4023,4,40,3985
-2001,Chhatrapati Sambhaji Nagar,30-34,Female,15048,5563,8149,3292,6,145,6574
+2001,Chh. Sambhaji Nagar,30-34,Female,15048,5563,8149,3292,6,145,6574
 2001,Dharashiv,30-34,Female,9274,3135,3531,1092,4,26,1162
 2001,Dhule,30-34,Female,10659,4506,5637,2421,3,48,2695
 2001,Gadchiroli,30-34,Female,2620,1713,1614,994,1,16,889
@@ -3166,7 +3166,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,30-34,Female,6579,2055,2199,773,3,16,865
 2001,Kolhapur,30-34,Female,35265,12105,16376,4256,14,150,7396
 2001,Latur,30-34,Female,11691,4287,5227,2012,4,52,2029
-2001,Mumbai City,30-34,Female,22820,13873,19472,9926,53,321,20200
+2001,Mumbai,30-34,Female,22820,13873,19472,9926,53,321,20200
 2001,Mumbai Suburban,30-34,Female,64636,32564,48200,23957,151,1133,61911
 2001,Nagpur,30-34,Female,22119,22880,21252,12813,21,291,20062
 2001,Nanded,30-34,Female,11720,3733,4878,2510,1,43,2724
@@ -3191,7 +3191,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,30-34,Female,4464,12235,8176,5271,1,121,4308
 2011,Buldhana,30-34,Female,16707,9935,9925,6254,13,131,4713
 2011,Chandrapur,30-34,Female,10879,18846,13856,9251,26,184,7896
-2011,Chhatrapati Sambhaji Nagar,30-34,Female,23694,13150,18434,11373,63,516,14992
+2011,Chh. Sambhaji Nagar,30-34,Female,23694,13150,18434,11373,63,516,14992
 2011,Dharashiv,30-34,Female,11602,6848,7943,4056,4,116,3440
 2011,Dhule,30-34,Female,9419,6552,8873,6691,13,221,4767
 2011,Gadchiroli,30-34,Female,4219,5652,4189,3110,3,61,1775
@@ -3201,7 +3201,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,30-34,Female,11840,4786,5003,2874,14,80,2813
 2011,Kolhapur,30-34,Female,30905,19880,28184,13424,77,814,17351
 2011,Latur,30-34,Female,16000,10043,12462,7723,18,222,5893
-2011,Mumbai City,30-34,Female,16753,14374,19063,16263,248,779,29904
+2011,Mumbai,30-34,Female,16753,14374,19063,16263,248,779,29904
 2011,Mumbai Suburban,30-34,Female,60259,43771,55668,43332,741,2853,101000
 2011,Nagpur,30-34,Female,18805,35928,32815,26340,67,981,38252
 2011,Nanded,30-34,Female,20762,10275,11114,9789,20,254,6338
@@ -3224,7 +3224,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,35-39,Male,8650,10230,7520,1450,60,580,4200
 1991,Buldhana,35-39,Male,12290,12590,9400,1780,40,830,2845
 1991,Chandrapur,35-39,Male,11990,11285,7680,2760,50,640,3620
-1991,Chhatrapati Sambhaji Nagar,35-39,Male,12380,15223,11444,2380,50,960,6530
+1991,Chh. Sambhaji Nagar,35-39,Male,12380,15223,11444,2380,50,960,6530
 1991,Dharashiv,35-39,Male,5720,8312,5870,1540,40,150,2960
 1991,Gadchiroli,35-39,Male,5320,3310,1930,580,0,170,850
 1991,Jalgaon,35-39,Male,19890,18680,19699,2480,190,1780,6790
@@ -3251,7 +3251,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,35-39,Male,5745,5016,4888,3612,1,196,3739
 2001,Buldhana,35-39,Male,12890,9453,10736,4189,6,363,4977
 2001,Chandrapur,35-39,Male,10679,9052,9208,6802,16,582,6881
-2001,Chhatrapati Sambhaji Nagar,35-39,Male,16278,9712,16773,7439,27,1587,10575
+2001,Chh. Sambhaji Nagar,35-39,Male,16278,9712,16773,7439,27,1587,10575
 2001,Dharashiv,35-39,Male,8097,5420,7022,2989,9,299,4053
 2001,Dhule,35-39,Male,9156,5255,8351,4106,15,661,6237
 2001,Gadchiroli,35-39,Male,4269,2503,2198,1665,1,105,1920
@@ -3261,7 +3261,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,35-39,Male,10082,5155,5870,2258,8,148,2534
 2001,Kolhapur,35-39,Male,24345,15137,25729,9623,30,1324,14517
 2001,Latur,35-39,Male,10474,7061,10197,4633,21,542,5875
-2001,Mumbai City,35-39,Male,25640,21963,32435,15491,44,946,19394
+2001,Mumbai,35-39,Male,25640,21963,32435,15491,44,946,19394
 2001,Mumbai Suburban,35-39,Male,63733,52447,83908,40022,220,3939,59031
 2001,Nagpur,35-39,Male,21523,22639,22806,15995,42,1667,22809
 2001,Nanded,35-39,Male,14655,7369,10454,6021,12,478,8248
@@ -3286,7 +3286,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,35-39,Male,4105,9356,7849,6529,19,446,5648
 2011,Buldhana,35-39,Male,10809,12512,14235,10636,23,623,9358
 2011,Chandrapur,35-39,Male,8941,14898,13910,13260,37,1003,9960
-2011,Chhatrapati Sambhaji Nagar,35-39,Male,15892,14138,25073,18011,105,2194,23091
+2011,Chh. Sambhaji Nagar,35-39,Male,15892,14138,25073,18011,105,2194,23091
 2011,Dharashiv,35-39,Male,6898,7140,9669,6702,21,471,8587
 2011,Dhule,35-39,Male,6773,5676,9194,10300,47,1026,7996
 2011,Gadchiroli,35-39,Male,3873,4842,4635,5101,7,152,3340
@@ -3296,7 +3296,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,35-39,Male,9787,6977,8512,5393,20,310,6320
 2011,Kolhapur,35-39,Male,18020,17807,31172,20346,180,2853,24343
 2011,Latur,35-39,Male,9154,9525,15020,11482,28,889,12957
-2011,Mumbai City,35-39,Male,18382,20231,27978,20265,209,1528,25511
+2011,Mumbai,35-39,Male,18382,20231,27978,20265,209,1528,25511
 2011,Mumbai Suburban,35-39,Male,53101,57635,86080,57430,874,6843,87807
 2011,Nagpur,35-39,Male,17972,31894,32106,30687,112,3533,33943
 2011,Nanded,35-39,Male,14218,10925,13728,14954,29,667,18458
@@ -3319,7 +3319,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,35-39,Female,3910,3090,1145,60,10,190,450
 1991,Buldhana,35-39,Female,9656,5670,2250,190,10,100,330
 1991,Chandrapur,35-39,Female,7110,5570,2388,390,10,280,770
-1991,Chhatrapati Sambhaji Nagar,35-39,Female,6100,4860,2800,380,20,130,1530
+1991,Chh. Sambhaji Nagar,35-39,Female,6100,4860,2800,380,20,130,1530
 1991,Dharashiv,35-39,Female,4020,3214,1380,60,0,30,240
 1991,Gadchiroli,35-39,Female,1847,1100,300,70,0,60,50
 1991,Jalgaon,35-39,Female,14246,12650,7708,710,90,640,1210
@@ -3346,7 +3346,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,35-39,Female,5485,3624,2835,1098,0,30,1234
 2001,Buldhana,35-39,Female,12498,4063,4510,1054,3,9,1172
 2001,Chandrapur,35-39,Female,10148,5607,4679,2028,4,30,2382
-2001,Chhatrapati Sambhaji Nagar,35-39,Female,12029,4213,6216,2021,7,72,4017
+2001,Chh. Sambhaji Nagar,35-39,Female,12029,4213,6216,2021,7,72,4017
 2001,Dharashiv,35-39,Female,7956,2383,2664,619,4,18,585
 2001,Dhule,35-39,Female,11238,3974,4541,1345,3,31,1723
 2001,Gadchiroli,35-39,Female,2391,1115,912,398,0,5,381
@@ -3356,7 +3356,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,35-39,Female,5177,1575,1637,421,0,3,460
 2001,Kolhapur,35-39,Female,30839,8410,13179,2991,4,103,4810
 2001,Latur,35-39,Female,9633,3130,3758,1323,4,28,1118
-2001,Mumbai City,35-39,Female,23503,12001,18024,7786,40,254,15512
+2001,Mumbai,35-39,Female,23503,12001,18024,7786,40,254,15512
 2001,Mumbai Suburban,35-39,Female,63837,26768,44135,19907,109,772,47557
 2001,Nagpur,35-39,Female,21930,18492,16781,7660,17,201,14353
 2001,Nanded,35-39,Female,9611,2826,3730,1403,1,21,1609
@@ -3381,7 +3381,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,35-39,Female,4629,9270,6893,3956,3,65,2947
 2011,Buldhana,35-39,Female,14662,7138,7341,4153,8,75,3305
 2011,Chandrapur,35-39,Female,10692,13288,10963,7419,9,135,5470
-2011,Chhatrapati Sambhaji Nagar,35-39,Female,20004,8948,13048,7371,27,322,11162
+2011,Chh. Sambhaji Nagar,35-39,Female,20004,8948,13048,7371,27,322,11162
 2011,Dharashiv,35-39,Female,11150,4960,5681,2505,4,75,2120
 2011,Dhule,35-39,Female,9540,5299,6940,4834,15,134,3882
 2011,Gadchiroli,35-39,Female,3346,3293,2913,2107,1,35,1202
@@ -3391,7 +3391,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,35-39,Female,8804,3006,3237,1643,5,56,1822
 2011,Kolhapur,35-39,Female,36354,15896,22365,8267,36,438,12059
 2011,Latur,35-39,Female,14297,7002,9606,4686,7,161,4171
-2011,Mumbai City,35-39,Female,18573,13304,18201,13520,204,604,23269
+2011,Mumbai,35-39,Female,18573,13304,18201,13520,204,604,23269
 2011,Mumbai Suburban,35-39,Female,63042,37536,49417,35490,666,2063,79962
 2011,Nagpur,35-39,Female,20644,31141,29291,21767,64,583,29233
 2011,Nanded,35-39,Female,15878,6624,7421,5454,16,131,5155
@@ -3414,7 +3414,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,40-44,Male,7288,6490,4640,940,20,420,2770
 1991,Buldhana,40-44,Male,9670,9120,7150,1260,10,810,2370
 1991,Chandrapur,40-44,Male,9207,7570,6940,1610,30,500,2410
-1991,Chhatrapati Sambhaji Nagar,40-44,Male,9756,7890,7420,1200,20,670,4483
+1991,Chh. Sambhaji Nagar,40-44,Male,9756,7890,7420,1200,20,670,4483
 1991,Dharashiv,40-44,Male,5320,5460,4480,830,40,50,2030
 1991,Gadchiroli,40-44,Male,3410,2070,1260,370,0,120,590
 1991,Jalgaon,40-44,Male,15860,14890,16280,1660,130,2288,4930
@@ -3441,7 +3441,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,40-44,Male,5780,4665,4820,2255,4,182,2558
 2001,Buldhana,40-44,Male,11694,7861,10906,3295,6,277,3852
 2001,Chandrapur,40-44,Male,10316,7765,8128,4048,15,429,4902
-2001,Chhatrapati Sambhaji Nagar,40-44,Male,13056,7739,13805,4801,21,943,8302
+2001,Chh. Sambhaji Nagar,40-44,Male,13056,7739,13805,4801,21,943,8302
 2001,Dharashiv,40-44,Male,6776,4474,6843,2174,4,156,3027
 2001,Dhule,40-44,Male,8322,4533,8840,2529,10,537,4272
 2001,Gadchiroli,40-44,Male,3688,2018,1899,853,4,44,1247
@@ -3451,7 +3451,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,40-44,Male,8154,4319,5059,1383,3,60,1851
 2001,Kolhapur,40-44,Male,22691,10682,23564,6327,35,920,12494
 2001,Latur,40-44,Male,8827,5922,9546,3680,11,409,5040
-2001,Mumbai City,40-44,Male,21316,17273,29888,11566,57,708,16666
+2001,Mumbai,40-44,Male,21316,17273,29888,11566,57,708,16666
 2001,Mumbai Suburban,40-44,Male,51031,39136,75587,29340,168,3286,52969
 2001,Nagpur,40-44,Male,18626,18696,20913,11181,37,1452,19141
 2001,Nanded,40-44,Male,12384,6019,9738,3995,6,386,6019
@@ -3476,7 +3476,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,40-44,Male,4067,6600,6159,5374,9,361,5197
 2011,Buldhana,40-44,Male,10034,9962,11832,6938,17,539,7928
 2011,Chandrapur,40-44,Male,8541,10612,10407,9857,29,869,9117
-2011,Chhatrapati Sambhaji Nagar,40-44,Male,14490,10577,19473,12420,109,2352,17321
+2011,Chh. Sambhaji Nagar,40-44,Male,14490,10577,19473,12420,109,2352,17321
 2011,Dharashiv,40-44,Male,7020,5479,7885,4638,19,478,6466
 2011,Dhule,40-44,Male,6624,4585,7725,6200,47,823,8294
 2011,Gadchiroli,40-44,Male,3301,3344,3089,2974,4,112,2957
@@ -3486,7 +3486,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,40-44,Male,8810,5100,6279,3412,14,275,4107
 2011,Kolhapur,40-44,Male,19224,16358,28105,13075,142,2460,20141
 2011,Latur,40-44,Male,8859,7016,11895,7550,24,914,9704
-2011,Mumbai City,40-44,Male,15866,16504,24724,16452,164,1388,21724
+2011,Mumbai,40-44,Male,15866,16504,24724,16452,164,1388,21724
 2011,Mumbai Suburban,40-44,Male,48245,46076,73455,46124,632,5978,70643
 2011,Nagpur,40-44,Male,17275,25358,26851,24412,121,2751,30473
 2011,Nanded,40-44,Male,13151,8064,10519,8725,24,768,12719
@@ -3509,7 +3509,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,40-44,Female,2610,1613,650,40,0,38,140
 1991,Buldhana,40-44,Female,6460,3150,1250,120,10,120,240
 1991,Chandrapur,40-44,Female,4310,2690,1090,120,0,170,550
-1991,Chhatrapati Sambhaji Nagar,40-44,Female,3977,2670,1810,270,0,80,1010
+1991,Chh. Sambhaji Nagar,40-44,Female,3977,2670,1810,270,0,80,1010
 1991,Dharashiv,40-44,Female,2630,1670,350,80,10,0,170
 1991,Gadchiroli,40-44,Female,890,400,220,20,0,40,40
 1991,Jalgaon,40-44,Female,10330,7555,3570,330,80,490,680
@@ -3536,7 +3536,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,40-44,Female,4173,2404,1898,481,2,14,639
 2001,Buldhana,40-44,Female,8728,2688,3371,551,0,9,719
 2001,Chandrapur,40-44,Female,6674,3506,3367,921,1,16,1398
-2001,Chhatrapati Sambhaji Nagar,40-44,Female,7553,2399,4327,1157,5,45,2877
+2001,Chh. Sambhaji Nagar,40-44,Female,7553,2399,4327,1157,5,45,2877
 2001,Dharashiv,40-44,Female,5129,1488,1739,349,1,4,427
 2001,Dhule,40-44,Female,8060,2263,3424,697,1,21,1132
 2001,Gadchiroli,40-44,Female,1491,606,542,165,0,5,181
@@ -3546,7 +3546,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,40-44,Female,3265,868,998,250,0,5,312
 2001,Kolhapur,40-44,Female,20465,4442,9284,1753,3,59,3442
 2001,Latur,40-44,Female,6396,1847,2448,736,2,9,820
-2001,Mumbai City,40-44,Female,17879,7677,15805,5396,24,209,12850
+2001,Mumbai,40-44,Female,17879,7677,15805,5396,24,209,12850
 2001,Mumbai Suburban,40-44,Female,44369,16703,38872,13502,98,546,38117
 2001,Nagpur,40-44,Female,14987,11936,13559,4412,12,121,10370
 2001,Nanded,40-44,Female,6241,1754,2476,723,0,13,1025
@@ -3571,7 +3571,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,40-44,Female,4742,5224,4130,2573,0,46,2251
 2011,Buldhana,40-44,Female,11797,4681,4827,2133,2,50,1936
 2011,Chandrapur,40-44,Female,9485,7565,6587,4626,12,93,4002
-2011,Chhatrapati Sambhaji Nagar,40-44,Female,14065,5235,7802,4017,14,237,7243
+2011,Chh. Sambhaji Nagar,40-44,Female,14065,5235,7802,4017,14,237,7243
 2011,Dharashiv,40-44,Female,8263,2757,3369,1163,1,60,1198
 2011,Dhule,40-44,Female,8664,3843,5132,2423,4,101,2851
 2011,Gadchiroli,40-44,Female,2374,1651,1458,1060,1,12,807
@@ -3581,7 +3581,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,40-44,Female,5796,1777,2024,895,4,39,1028
 2011,Kolhapur,40-44,Female,29976,10644,15973,4805,16,325,8045
 2011,Latur,40-44,Female,10050,3957,5337,2165,7,109,2514
-2011,Mumbai City,40-44,Female,17455,10854,15523,10520,140,451,19067
+2011,Mumbai,40-44,Female,17455,10854,15523,10520,140,451,19067
 2011,Mumbai Suburban,40-44,Female,54590,28383,40565,27634,390,1318,62476
 2011,Nagpur,40-44,Female,19480,21883,21549,14762,49,482,22965
 2011,Nanded,40-44,Female,10605,3578,4088,2478,11,72,2935
@@ -3604,7 +3604,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,45-49,Male,6810,4720,3260,400,30,480,1340
 1991,Buldhana,45-49,Male,9910,8030,4400,690,10,590,1230
 1991,Chandrapur,45-49,Male,8710,5160,4500,840,10,700,1630
-1991,Chhatrapati Sambhaji Nagar,45-49,Male,10440,5750,4720,880,20,560,3200
+1991,Chh. Sambhaji Nagar,45-49,Male,10440,5750,4720,880,20,560,3200
 1991,Dharashiv,45-49,Male,5800,3790,2550,540,60,90,1340
 1991,Gadchiroli,45-49,Male,3170,1460,930,120,10,200,270
 1991,Jalgaon,45-49,Male,15670,12440,11739,870,230,1700,3470
@@ -3631,7 +3631,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,45-49,Male,4644,3870,4886,1639,1,86,2406
 2001,Buldhana,45-49,Male,9465,5690,9816,2364,4,211,3702
 2001,Chandrapur,45-49,Male,8467,5745,7592,2678,7,251,4273
-2001,Chhatrapati Sambhaji Nagar,45-49,Male,9136,5229,10779,3074,12,628,7698
+2001,Chh. Sambhaji Nagar,45-49,Male,9136,5229,10779,3074,12,628,7698
 2001,Dharashiv,45-49,Male,4855,3271,5798,1542,0,91,2929
 2001,Dhule,45-49,Male,7040,2891,7671,1658,6,457,3607
 2001,Gadchiroli,45-49,Male,3136,1417,1707,547,1,24,978
@@ -3641,7 +3641,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,45-49,Male,5615,3231,4339,960,1,43,1731
 2001,Kolhapur,45-49,Male,19086,7009,19895,3839,19,601,11120
 2001,Latur,45-49,Male,5654,3938,7310,2585,7,227,4964
-2001,Mumbai City,45-49,Male,18041,12638,27213,8809,41,710,14597
+2001,Mumbai,45-49,Male,18041,12638,27213,8809,41,710,14597
 2001,Mumbai Suburban,45-49,Male,40830,26935,64761,21634,178,2882,46541
 2001,Nagpur,45-49,Male,14250,13170,18201,7553,22,1049,16493
 2001,Nanded,45-49,Male,8396,4339,8012,2767,4,245,5396
@@ -3666,7 +3666,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,45-49,Male,4398,4481,4087,3227,12,269,3697
 2011,Buldhana,45-49,Male,9967,7987,9238,4172,19,457,4905
 2011,Chandrapur,45-49,Male,8363,7764,7417,6102,36,866,6495
-2011,Chhatrapati Sambhaji Nagar,45-49,Male,12787,7866,14140,8003,61,2052,11155
+2011,Chh. Sambhaji Nagar,45-49,Male,12787,7866,14140,8003,61,2052,11155
 2011,Dharashiv,45-49,Male,6052,4353,6038,2887,13,335,3520
 2011,Dhule,45-49,Male,6644,4148,6808,3544,35,681,5962
 2011,Gadchiroli,45-49,Male,3244,2164,1770,1554,4,89,1804
@@ -3676,7 +3676,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,45-49,Male,7015,3782,4690,2052,12,200,2287
 2011,Kolhapur,45-49,Male,18588,12369,21727,9461,99,1677,13922
 2011,Latur,45-49,Male,7305,4981,8534,4399,35,677,5668
-2011,Mumbai City,45-49,Male,14530,13529,21727,14216,123,1166,18369
+2011,Mumbai,45-49,Male,14530,13529,21727,14216,123,1166,18369
 2011,Mumbai Suburban,45-49,Male,43864,36361,61206,38966,492,4560,57569
 2011,Nagpur,45-49,Male,16457,18863,20233,16406,67,2120,25314
 2011,Nanded,45-49,Male,10697,5639,7687,5007,31,585,7047
@@ -3699,7 +3699,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,45-49,Female,1950,940,380,40,0,20,60
 1991,Buldhana,45-49,Female,4830,2070,420,70,10,90,40
 1991,Chandrapur,45-49,Female,2460,1130,510,80,10,70,160
-1991,Chhatrapati Sambhaji Nagar,45-49,Female,2980,1970,1040,130,0,30,510
+1991,Chh. Sambhaji Nagar,45-49,Female,2980,1970,1040,130,0,30,510
 1991,Dharashiv,45-49,Female,1660,1000,210,20,0,10,90
 1991,Gadchiroli,45-49,Female,590,180,30,10,0,20,10
 1991,Jalgaon,45-49,Female,9150,5730,1860,120,50,390,270
@@ -3726,7 +3726,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,45-49,Female,2795,1834,1492,274,1,13,444
 2001,Buldhana,45-49,Female,6694,1841,2436,375,0,14,540
 2001,Chandrapur,45-49,Female,5121,2516,2458,493,2,17,908
-2001,Chhatrapati Sambhaji Nagar,45-49,Female,5584,1591,3201,742,0,32,2015
+2001,Chh. Sambhaji Nagar,45-49,Female,5584,1591,3201,742,0,32,2015
 2001,Dharashiv,45-49,Female,3735,951,1251,209,1,4,288
 2001,Dhule,45-49,Female,6697,1521,2519,395,0,11,833
 2001,Gadchiroli,45-49,Female,1004,404,378,95,0,3,97
@@ -3736,7 +3736,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,45-49,Female,2311,614,770,155,0,3,179
 2001,Kolhapur,45-49,Female,15805,2953,6837,1178,6,46,2613
 2001,Latur,45-49,Female,4430,1259,1667,457,1,3,606
-2001,Mumbai City,45-49,Female,16653,5914,13852,4413,26,196,10719
+2001,Mumbai,45-49,Female,16653,5914,13852,4413,26,196,10719
 2001,Mumbai Suburban,45-49,Female,38442,12766,35071,11615,90,537,30071
 2001,Nagpur,45-49,Female,11238,8385,10298,2703,14,88,7579
 2001,Nanded,45-49,Female,4617,1204,1765,479,1,6,705
@@ -3761,7 +3761,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,45-49,Female,4234,3102,2346,1105,2,44,1324
 2011,Buldhana,45-49,Female,9187,3419,3517,1194,5,31,1129
 2011,Chandrapur,45-49,Female,7922,4699,4008,2106,4,59,2331
-2011,Chhatrapati Sambhaji Nagar,45-49,Female,9595,3486,5478,2624,19,142,4286
+2011,Chh. Sambhaji Nagar,45-49,Female,9595,3486,5478,2624,19,142,4286
 2011,Dharashiv,45-49,Female,6149,1816,2221,677,2,33,599
 2011,Dhule,45-49,Female,7765,2988,3765,1339,5,54,1714
 2011,Gadchiroli,45-49,Female,1692,883,734,430,1,22,389
@@ -3771,7 +3771,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,45-49,Female,3792,1244,1430,495,1,29,594
 2011,Kolhapur,45-49,Female,22838,6597,11375,3265,17,215,5062
 2011,Latur,45-49,Female,7083,2462,3277,1087,5,64,1234
-2011,Mumbai City,45-49,Female,16455,8797,13260,8930,99,334,15640
+2011,Mumbai,45-49,Female,16455,8797,13260,8930,99,334,15640
 2011,Mumbai Suburban,45-49,Female,47933,21041,34375,24904,249,910,48797
 2011,Nagpur,45-49,Female,17195,15646,15872,8852,28,288,16352
 2011,Nanded,45-49,Female,7154,2239,2661,1407,6,48,1585
@@ -3794,7 +3794,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,50-54,Male,5850,3100,1945,290,30,260,650
 1991,Buldhana,50-54,Male,8360,5900,1970,290,10,500,860
 1991,Chandrapur,50-54,Male,6880,2980,2150,400,10,260,1000
-1991,Chhatrapati Sambhaji Nagar,50-54,Male,8030,3820,2730,230,10,290,1800
+1991,Chh. Sambhaji Nagar,50-54,Male,8030,3820,2730,230,10,290,1800
 1991,Dharashiv,50-54,Male,4760,2530,1840,370,10,70,690
 1991,Gadchiroli,50-54,Male,2390,1050,530,60,0,120,110
 1991,Jalgaon,50-54,Male,13580,10330,6450,780,110,1090,1970
@@ -3821,7 +3821,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,50-54,Male,2817,2498,4041,1091,3,84,1932
 2001,Buldhana,50-54,Male,6818,3572,7046,1539,3,168,3123
 2001,Chandrapur,50-54,Male,4855,3841,6377,1701,5,189,3018
-2001,Chhatrapati Sambhaji Nagar,50-54,Male,6033,2938,6838,1880,7,501,5300
+2001,Chh. Sambhaji Nagar,50-54,Male,6033,2938,6838,1880,7,501,5300
 2001,Dharashiv,50-54,Male,3319,1727,3863,1012,1,62,2254
 2001,Dhule,50-54,Male,5373,1855,5341,953,3,399,2886
 2001,Gadchiroli,50-54,Male,1745,844,1240,394,0,33,603
@@ -3831,7 +3831,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,50-54,Male,3718,1849,2769,653,1,30,1208
 2001,Kolhapur,50-54,Male,15144,4829,15580,2653,11,672,7976
 2001,Latur,50-54,Male,4048,2356,5055,1744,3,181,3938
-2001,Mumbai City,50-54,Male,13997,9071,22484,7068,33,901,12202
+2001,Mumbai,50-54,Male,13997,9071,22484,7068,33,901,12202
 2001,Mumbai Suburban,50-54,Male,29627,17360,50606,17035,144,3565,36501
 2001,Nagpur,50-54,Male,9608,9465,14874,5458,25,982,13369
 2001,Nanded,50-54,Male,5654,2749,5736,1906,1,173,3879
@@ -3856,7 +3856,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,50-54,Male,4361,3930,3759,2107,14,195,2217
 2011,Buldhana,50-54,Male,8326,6279,8376,3173,14,340,3462
 2011,Chandrapur,50-54,Male,7849,6281,6206,3831,33,570,4422
-2011,Chhatrapati Sambhaji Nagar,50-54,Male,9693,6020,11068,5026,46,1174,8047
+2011,Chh. Sambhaji Nagar,50-54,Male,9693,6020,11068,5026,46,1174,8047
 2011,Dharashiv,50-54,Male,5001,3458,5518,2085,9,183,2615
 2011,Dhule,50-54,Male,5721,3281,6814,2280,33,550,3769
 2011,Gadchiroli,50-54,Male,2706,1583,1525,855,2,38,1007
@@ -3866,7 +3866,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,50-54,Male,5413,2976,3895,1347,12,113,1775
 2011,Kolhapur,50-54,Male,16458,8427,19269,6034,68,1129,11218
 2011,Latur,50-54,Male,5945,4153,7253,3053,11,457,4493
-2011,Mumbai City,50-54,Male,12002,10500,19653,10949,112,950,15722
+2011,Mumbai,50-54,Male,12002,10500,19653,10949,112,950,15722
 2011,Mumbai Suburban,50-54,Male,34902,26981,53293,29812,415,3821,50624
 2011,Nagpur,50-54,Male,14074,15306,17823,11097,76,1781,19810
 2011,Nanded,50-54,Male,8585,4757,6663,3678,8,474,5181
@@ -3889,7 +3889,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,50-54,Female,1040,430,120,0,0,20,40
 1991,Buldhana,50-54,Female,2860,1060,220,30,0,60,80
 1991,Chandrapur,50-54,Female,1010,600,290,30,0,40,110
-1991,Chhatrapati Sambhaji Nagar,50-54,Female,1890,1200,580,70,10,30,330
+1991,Chh. Sambhaji Nagar,50-54,Female,1890,1200,580,70,10,30,330
 1991,Dharashiv,50-54,Female,1160,540,40,0,0,0,20
 1991,Gadchiroli,50-54,Female,250,100,20,10,0,10,10
 1991,Jalgaon,50-54,Female,6351,3590,790,90,30,190,260
@@ -3916,7 +3916,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,50-54,Female,1342,781,794,123,0,30,275
 2001,Buldhana,50-54,Female,3776,961,1315,179,0,24,335
 2001,Chandrapur,50-54,Female,2269,1204,1318,228,1,18,462
-2001,Chhatrapati Sambhaji Nagar,50-54,Female,3250,850,1891,433,2,26,1111
+2001,Chh. Sambhaji Nagar,50-54,Female,3250,850,1891,433,2,26,1111
 2001,Dharashiv,50-54,Female,2004,401,598,112,0,5,203
 2001,Dhule,50-54,Female,4136,748,1185,190,1,47,486
 2001,Gadchiroli,50-54,Female,457,188,177,28,0,7,56
@@ -3926,7 +3926,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,50-54,Female,1294,330,369,68,0,4,91
 2001,Kolhapur,50-54,Female,9142,1527,3870,682,2,59,1542
 2001,Latur,50-54,Female,2420,548,767,231,2,5,314
-2001,Mumbai City,50-54,Female,11504,3599,10302,3638,25,194,8206
+2001,Mumbai,50-54,Female,11504,3599,10302,3638,25,194,8206
 2001,Mumbai Suburban,50-54,Female,26131,8146,27730,9206,68,609,19892
 2001,Nagpur,50-54,Female,6290,4546,6508,1683,8,149,4883
 2001,Nanded,50-54,Female,2617,614,914,256,0,3,371
@@ -3951,7 +3951,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,50-54,Female,3401,2269,1698,506,1,26,689
 2011,Buldhana,50-54,Female,7055,2257,2803,773,3,22,679
 2011,Chandrapur,50-54,Female,5656,3287,2858,1059,3,45,1299
-2011,Chhatrapati Sambhaji Nagar,50-54,Female,6561,2266,4010,1633,11,119,3060
+2011,Chh. Sambhaji Nagar,50-54,Female,6561,2266,4010,1633,11,119,3060
 2011,Dharashiv,50-54,Female,4153,1273,1634,440,1,18,393
 2011,Dhule,50-54,Female,6046,1904,2994,767,1,34,1157
 2011,Gadchiroli,50-54,Female,1164,524,450,196,1,9,177
@@ -3961,7 +3961,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,50-54,Female,2739,801,1020,302,2,15,357
 2011,Kolhapur,50-54,Female,16316,3925,8235,2088,15,130,3655
 2011,Latur,50-54,Female,4879,1580,2207,745,1,42,850
-2011,Mumbai City,50-54,Female,13280,5786,11421,6571,79,287,12537
+2011,Mumbai,50-54,Female,13280,5786,11421,6571,79,287,12537
 2011,Mumbai Suburban,50-54,Female,35712,14185,29656,19158,168,748,38924
 2011,Nagpur,50-54,Female,12357,10647,12790,5231,20,179,11396
 2011,Nanded,50-54,Female,4977,1588,1969,836,3,32,1098
@@ -3984,7 +3984,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,55-59,Male,4550,1860,830,80,10,80,410
 1991,Buldhana,55-59,Male,7390,4180,1150,200,0,250,440
 1991,Chandrapur,55-59,Male,5340,1740,1090,160,10,130,360
-1991,Chhatrapati Sambhaji Nagar,55-59,Male,6180,2350,1590,260,0,140,1010
+1991,Chh. Sambhaji Nagar,55-59,Male,6180,2350,1590,260,0,140,1010
 1991,Dharashiv,55-59,Male,3390,1730,670,140,20,10,210
 1991,Gadchiroli,55-59,Male,1690,580,100,10,0,40,50
 1991,Jalgaon,55-59,Male,12094,9390,4410,510,80,630,1160
@@ -4011,7 +4011,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,55-59,Male,1797,1167,2367,530,2,136,1113
 2001,Buldhana,55-59,Male,4956,2196,4522,799,1,233,1701
 2001,Chandrapur,55-59,Male,3297,1988,3988,906,4,183,1568
-2001,Chhatrapati Sambhaji Nagar,55-59,Male,4142,1512,4002,1082,7,323,3002
+2001,Chh. Sambhaji Nagar,55-59,Male,4142,1512,4002,1082,7,323,3002
 2001,Dharashiv,55-59,Male,2484,944,2220,604,1,84,1315
 2001,Dhule,55-59,Male,4471,1081,3235,593,6,352,1526
 2001,Gadchiroli,55-59,Male,1203,517,725,148,0,33,276
@@ -4021,7 +4021,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,55-59,Male,2484,1020,1688,366,1,33,627
 2001,Kolhapur,55-59,Male,11248,2613,8823,1557,7,525,3911
 2001,Latur,55-59,Male,2957,1248,2672,1006,2,188,2096
-2001,Mumbai City,55-59,Male,9792,5319,13925,4527,25,695,7878
+2001,Mumbai,55-59,Male,9792,5319,13925,4527,25,695,7878
 2001,Mumbai Suburban,55-59,Male,20710,10577,31744,10839,114,2601,22880
 2001,Nagpur,55-59,Male,6382,5018,9171,3091,18,830,8049
 2001,Nanded,55-59,Male,3433,1384,3244,1101,1,179,2242
@@ -4046,7 +4046,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,55-59,Male,3181,3002,3751,1541,5,102,2064
 2011,Buldhana,55-59,Male,6529,4466,7099,2277,12,221,3480
 2011,Chandrapur,55-59,Male,5760,4651,5684,2640,15,299,3725
-2011,Chhatrapati Sambhaji Nagar,55-59,Male,6534,3994,8479,3404,31,639,7595
+2011,Chh. Sambhaji Nagar,55-59,Male,6534,3994,8479,3404,31,639,7595
 2011,Dharashiv,55-59,Male,3243,2234,4435,1495,8,101,2662
 2011,Dhule,55-59,Male,4758,2123,5831,1479,20,424,3331
 2011,Gadchiroli,55-59,Male,1949,1026,1182,542,4,15,754
@@ -4056,7 +4056,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,55-59,Male,3628,2221,3070,996,2,63,1647
 2011,Kolhapur,55-59,Male,13046,5239,15131,3785,41,672,10310
 2011,Latur,55-59,Male,3666,2611,5181,2101,10,234,4376
-2011,Mumbai City,55-59,Male,9247,6839,16706,8303,102,876,13364
+2011,Mumbai,55-59,Male,9247,6839,16706,8303,102,876,13364
 2011,Mumbai Suburban,55-59,Male,25429,16765,43180,22800,355,3287,43032
 2011,Nagpur,55-59,Male,9247,9617,14147,7401,49,1203,16314
 2011,Nanded,55-59,Male,5412,3120,5245,2471,7,286,4666
@@ -4079,7 +4079,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,55-59,Female,790,240,80,0,0,20,20
 1991,Buldhana,55-59,Female,1910,733,130,30,0,30,30
 1991,Chandrapur,55-59,Female,950,290,140,10,0,20,70
-1991,Chhatrapati Sambhaji Nagar,55-59,Female,1300,710,330,40,0,20,110
+1991,Chh. Sambhaji Nagar,55-59,Female,1300,710,330,40,0,20,110
 1991,Dharashiv,55-59,Female,580,220,80,10,0,0,10
 1991,Gadchiroli,55-59,Female,140,10,10,0,0,0,0
 1991,Jalgaon,55-59,Female,4550,2555,590,10,20,100,140
@@ -4106,7 +4106,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,55-59,Female,624,302,294,47,0,34,109
 2001,Buldhana,55-59,Female,2495,548,623,105,1,14,137
 2001,Chandrapur,55-59,Female,1135,544,607,93,0,24,207
-2001,Chhatrapati Sambhaji Nagar,55-59,Female,2360,537,1130,250,0,22,605
+2001,Chh. Sambhaji Nagar,55-59,Female,2360,537,1130,250,0,22,605
 2001,Dharashiv,55-59,Female,1341,246,280,46,0,6,95
 2001,Dhule,55-59,Female,3029,353,542,102,0,41,244
 2001,Gadchiroli,55-59,Female,234,109,62,9,0,2,14
@@ -4116,7 +4116,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,55-59,Female,872,218,220,42,0,1,53
 2001,Kolhapur,55-59,Female,6222,843,1965,423,1,55,806
 2001,Latur,55-59,Female,1461,297,365,108,0,9,151
-2001,Mumbai City,55-59,Female,8446,2375,6338,2319,18,148,4729
+2001,Mumbai,55-59,Female,8446,2375,6338,2319,18,148,4729
 2001,Mumbai Suburban,55-59,Female,19442,5663,17205,5798,39,529,10388
 2001,Nagpur,55-59,Female,4059,2467,3832,888,3,118,2601
 2001,Nanded,55-59,Female,1636,289,462,124,1,3,216
@@ -4141,7 +4141,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,55-59,Female,2159,1508,1290,292,0,27,494
 2011,Buldhana,55-59,Female,5135,1580,2009,480,2,12,516
 2011,Chandrapur,55-59,Female,3770,2052,1883,556,3,28,847
-2011,Chhatrapati Sambhaji Nagar,55-59,Female,4747,1426,2773,1070,13,62,2139
+2011,Chh. Sambhaji Nagar,55-59,Female,4747,1426,2773,1070,13,62,2139
 2011,Dharashiv,55-59,Female,3077,791,1135,289,1,8,304
 2011,Dhule,55-59,Female,4850,1244,2154,487,1,44,890
 2011,Gadchiroli,55-59,Female,802,341,289,108,0,1,106
@@ -4151,7 +4151,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,55-59,Female,2011,584,733,228,2,11,274
 2011,Kolhapur,55-59,Female,11910,2359,5799,1333,8,89,2711
 2011,Latur,55-59,Female,3765,1096,1565,473,2,24,690
-2011,Mumbai City,55-59,Female,10655,4058,9302,5331,70,231,9966
+2011,Mumbai,55-59,Female,10655,4058,9302,5331,70,231,9966
 2011,Mumbai Suburban,55-59,Female,27993,9848,25180,16766,158,625,30196
 2011,Nagpur,55-59,Female,8414,6863,9211,3216,20,150,7956
 2011,Nanded,55-59,Female,3703,1076,1319,557,5,13,738
@@ -4174,7 +4174,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,60-64,Male,3800,1520,660,40,0,10,170
 1991,Buldhana,60-64,Male,6530,2640,510,170,0,100,180
 1991,Chandrapur,60-64,Male,3749,1060,590,100,0,50,130
-1991,Chhatrapati Sambhaji Nagar,60-64,Male,4860,1800,960,170,0,70,500
+1991,Chh. Sambhaji Nagar,60-64,Male,4860,1800,960,170,0,70,500
 1991,Dharashiv,60-64,Male,3190,1340,420,80,10,0,120
 1991,Gadchiroli,60-64,Male,1330,270,110,0,0,0,10
 1991,Jalgaon,60-64,Male,10040,6530,3480,280,180,700,650
@@ -4201,7 +4201,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,60-64,Male,1368,646,1197,191,7,92,485
 2001,Buldhana,60-64,Male,4451,1450,2821,403,10,128,893
 2001,Chandrapur,60-64,Male,2484,935,1807,342,7,75,679
-2001,Chhatrapati Sambhaji Nagar,60-64,Male,3714,992,2584,668,6,224,1746
+2001,Chh. Sambhaji Nagar,60-64,Male,3714,992,2584,668,6,224,1746
 2001,Dharashiv,60-64,Male,2606,656,1385,348,0,66,581
 2001,Dhule,60-64,Male,4392,708,1818,315,3,232,864
 2001,Gadchiroli,60-64,Male,824,268,319,69,0,22,73
@@ -4211,7 +4211,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,60-64,Male,2178,602,945,203,1,17,296
 2001,Kolhapur,60-64,Male,10116,1555,5338,1011,10,400,2496
 2001,Latur,60-64,Male,3259,851,1971,571,2,96,964
-2001,Mumbai City,60-64,Male,7225,3367,8951,3159,20,405,5828
+2001,Mumbai,60-64,Male,7225,3367,8951,3159,20,405,5828
 2001,Mumbai Suburban,60-64,Male,16675,7003,22082,7834,99,1660,16876
 2001,Nagpur,60-64,Male,5068,3134,6091,1668,48,592,5282
 2001,Nanded,60-64,Male,3684,994,1987,565,1,88,979
@@ -4236,7 +4236,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,60-64,Male,1975,1838,2683,911,2,107,1470
 2011,Buldhana,60-64,Male,5532,3044,5064,1448,9,194,2542
 2011,Chandrapur,60-64,Male,3583,2939,4369,1531,2,137,2161
-2011,Chhatrapati Sambhaji Nagar,60-64,Male,5791,2823,5862,2189,25,461,4817
+2011,Chh. Sambhaji Nagar,60-64,Male,5791,2823,5862,2189,25,461,4817
 2011,Dharashiv,60-64,Male,3438,1756,3378,1067,1,75,2044
 2011,Dhule,60-64,Male,4177,1517,3833,868,19,344,2189
 2011,Gadchiroli,60-64,Male,1366,633,797,264,0,10,393
@@ -4246,7 +4246,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,60-64,Male,3368,1680,2288,700,5,33,1062
 2011,Kolhapur,60-64,Male,11424,4154,12376,2634,46,680,6796
 2011,Latur,60-64,Male,4234,2285,4640,1520,8,172,3416
-2011,Mumbai City,60-64,Male,7556,4708,12148,6361,77,816,8923
+2011,Mumbai,60-64,Male,7556,4708,12148,6361,77,816,8923
 2011,Mumbai Suburban,60-64,Male,21051,11816,31462,17545,311,3386,29921
 2011,Nagpur,60-64,Male,7287,7038,11472,4925,35,943,11864
 2011,Nanded,60-64,Male,5868,2743,4517,1936,5,163,3078
@@ -4269,7 +4269,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,60-64,Female,500,140,20,0,10,20,20
 1991,Buldhana,60-64,Female,1390,420,60,0,0,0,30
 1991,Chandrapur,60-64,Female,600,140,80,0,0,20,30
-1991,Chhatrapati Sambhaji Nagar,60-64,Female,1080,520,240,20,0,0,90
+1991,Chh. Sambhaji Nagar,60-64,Female,1080,520,240,20,0,0,90
 1991,Dharashiv,60-64,Female,452,140,10,0,10,0,0
 1991,Gadchiroli,60-64,Female,80,10,0,0,0,0,10
 1991,Jalgaon,60-64,Female,2610,1350,360,10,40,90,50
@@ -4296,7 +4296,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,60-64,Female,312,129,121,17,0,11,43
 2001,Buldhana,60-64,Female,1791,349,374,46,1,20,80
 2001,Chandrapur,60-64,Female,589,237,265,45,2,11,82
-2001,Chhatrapati Sambhaji Nagar,60-64,Female,2067,402,673,157,1,14,384
+2001,Chh. Sambhaji Nagar,60-64,Female,2067,402,673,157,1,14,384
 2001,Dharashiv,60-64,Female,1060,141,174,20,0,3,39
 2001,Dhule,60-64,Female,2440,208,268,55,0,25,126
 2001,Gadchiroli,60-64,Female,153,43,31,5,1,3,6
@@ -4306,7 +4306,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,60-64,Female,764,166,119,24,0,1,23
 2001,Kolhapur,60-64,Female,4198,412,1050,200,1,53,460
 2001,Latur,60-64,Female,1205,183,195,55,0,2,58
-2001,Mumbai City,60-64,Female,6879,1882,5014,1831,14,107,3638
+2001,Mumbai,60-64,Female,6879,1882,5014,1831,14,107,3638
 2001,Mumbai Suburban,60-64,Female,15664,4404,12374,3848,45,508,6927
 2001,Nagpur,60-64,Female,2968,1572,2630,541,10,85,1633
 2001,Nanded,60-64,Female,1242,205,236,57,0,4,97
@@ -4331,7 +4331,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,60-64,Female,1257,785,668,163,0,63,270
 2011,Buldhana,60-64,Female,3948,990,1119,238,0,28,331
 2011,Chandrapur,60-64,Female,2305,1200,1170,254,3,28,418
-2011,Chhatrapati Sambhaji Nagar,60-64,Female,4209,1176,1907,641,12,62,1259
+2011,Chh. Sambhaji Nagar,60-64,Female,4209,1176,1907,641,12,62,1259
 2011,Dharashiv,60-64,Female,2748,588,684,172,0,18,225
 2011,Dhule,60-64,Female,4027,734,1116,228,4,39,474
 2011,Gadchiroli,60-64,Female,464,180,145,48,1,3,54
@@ -4341,7 +4341,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,60-64,Female,1781,405,450,124,0,6,134
 2011,Kolhapur,60-64,Female,8820,1508,3671,806,6,83,1589
 2011,Latur,60-64,Female,3226,829,971,299,1,15,400
-2011,Mumbai City,60-64,Female,9332,2975,6667,4307,38,191,6823
+2011,Mumbai,60-64,Female,9332,2975,6667,4307,38,191,6823
 2011,Mumbai Suburban,60-64,Female,22921,7875,19747,13356,80,777,18975
 2011,Nagpur,60-64,Female,6709,4874,6344,2025,16,220,4963
 2011,Nanded,60-64,Female,3076,806,802,359,4,12,384
@@ -4364,7 +4364,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,65-69,Male,2560,790,300,30,0,30,90
 1991,Buldhana,65-69,Male,4170,1750,290,30,0,50,100
 1991,Chandrapur,65-69,Male,2490,630,360,40,0,40,90
-1991,Chhatrapati Sambhaji Nagar,65-69,Male,3660,980,610,90,10,30,270
+1991,Chh. Sambhaji Nagar,65-69,Male,3660,980,610,90,10,30,270
 1991,Dharashiv,65-69,Male,2220,890,230,10,0,20,70
 1991,Gadchiroli,65-69,Male,719,180,80,0,0,0,0
 1991,Jalgaon,65-69,Male,7350,5030,1550,160,40,370,510
@@ -4391,7 +4391,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,65-69,Male,1064,355,634,105,3,52,252
 2001,Buldhana,65-69,Male,5007,1173,1921,298,10,79,531
 2001,Chandrapur,65-69,Male,2097,655,1086,176,10,36,352
-2001,Chhatrapati Sambhaji Nagar,65-69,Male,4914,1057,2221,494,3,109,1211
+2001,Chh. Sambhaji Nagar,65-69,Male,4914,1057,2221,494,3,109,1211
 2001,Dharashiv,65-69,Male,4153,928,1486,279,2,37,389
 2001,Dhule,65-69,Male,6577,707,1455,244,3,207,537
 2001,Gadchiroli,65-69,Male,656,158,167,31,1,7,40
@@ -4401,7 +4401,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,65-69,Male,3112,687,906,190,1,14,180
 2001,Kolhapur,65-69,Male,9092,1124,3346,685,4,213,1481
 2001,Latur,65-69,Male,4559,1023,1838,521,1,42,663
-2001,Mumbai City,65-69,Male,5771,2542,7076,2281,29,310,4951
+2001,Mumbai,65-69,Male,5771,2542,7076,2281,29,310,4951
 2001,Mumbai Suburban,65-69,Male,12089,4791,16401,5468,78,994,11970
 2001,Nagpur,65-69,Male,4197,2230,4428,1052,35,363,3715
 2001,Nanded,65-69,Male,3973,877,1499,385,4,40,608
@@ -4426,7 +4426,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,65-69,Male,1329,1088,1707,470,2,144,797
 2011,Buldhana,65-69,Male,5335,2431,3969,994,8,213,1457
 2011,Chandrapur,65-69,Male,2584,1720,2702,856,4,191,1093
-2011,Chhatrapati Sambhaji Nagar,65-69,Male,5305,2352,4465,1570,24,351,3030
+2011,Chh. Sambhaji Nagar,65-69,Male,5305,2352,4465,1570,24,351,3030
 2011,Dharashiv,65-69,Male,3894,1668,2976,903,3,122,1307
 2011,Dhule,65-69,Male,4285,1180,2948,636,16,376,1181
 2011,Gadchiroli,65-69,Male,1095,480,563,158,1,29,172
@@ -4436,7 +4436,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,65-69,Male,3457,1422,1960,531,0,30,705
 2011,Kolhapur,65-69,Male,9351,2604,7845,1696,33,517,3373
 2011,Latur,65-69,Male,4143,1968,3746,1234,14,185,2142
-2011,Mumbai City,65-69,Male,4982,2972,7575,4481,54,681,5655
+2011,Mumbai,65-69,Male,4982,2972,7575,4481,54,681,5655
 2011,Mumbai Suburban,65-69,Male,13049,7296,19750,12157,278,2558,18879
 2011,Nagpur,65-69,Male,5029,4348,7764,2922,36,808,7177
 2011,Nanded,65-69,Male,4308,1966,3057,1280,6,147,1871
@@ -4459,7 +4459,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,65-69,Female,260,30,10,10,0,0,10
 1991,Buldhana,65-69,Female,950,250,10,0,0,10,30
 1991,Chandrapur,65-69,Female,440,60,20,0,0,0,40
-1991,Chhatrapati Sambhaji Nagar,65-69,Female,710,290,120,10,0,10,20
+1991,Chh. Sambhaji Nagar,65-69,Female,710,290,120,10,0,10,20
 1991,Dharashiv,65-69,Female,300,80,0,0,0,0,0
 1991,Gadchiroli,65-69,Female,50,20,0,0,0,0,0
 1991,Jalgaon,65-69,Female,1710,740,120,10,0,40,30
@@ -4486,7 +4486,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,65-69,Female,200,71,78,7,0,5,20
 2001,Buldhana,65-69,Female,1215,224,213,20,0,8,40
 2001,Chandrapur,65-69,Female,447,186,160,32,0,4,41
-2001,Chhatrapati Sambhaji Nagar,65-69,Female,1678,294,510,91,1,17,218
+2001,Chh. Sambhaji Nagar,65-69,Female,1678,294,510,91,1,17,218
 2001,Dharashiv,65-69,Female,958,104,111,12,0,4,15
 2001,Dhule,65-69,Female,2411,127,167,36,0,22,81
 2001,Gadchiroli,65-69,Female,105,22,16,2,0,2,2
@@ -4496,7 +4496,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,65-69,Female,688,131,98,14,0,2,14
 2001,Kolhapur,65-69,Female,3113,296,624,139,0,27,223
 2001,Latur,65-69,Female,985,142,122,36,0,0,41
-2001,Mumbai City,65-69,Female,6193,1656,4137,1453,16,87,2605
+2001,Mumbai,65-69,Female,6193,1656,4137,1453,16,87,2605
 2001,Mumbai Suburban,65-69,Female,13145,3510,8673,2357,22,353,3916
 2001,Nagpur,65-69,Female,2298,1231,1858,375,8,59,1070
 2001,Nanded,65-69,Female,904,143,147,37,0,0,50
@@ -4521,7 +4521,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,65-69,Female,590,393,354,109,0,42,129
 2011,Buldhana,65-69,Female,2489,684,680,155,1,30,152
 2011,Chandrapur,65-69,Female,1172,647,693,160,2,37,218
-2011,Chhatrapati Sambhaji Nagar,65-69,Female,2851,784,1339,521,8,36,680
+2011,Chh. Sambhaji Nagar,65-69,Female,2851,784,1339,521,8,36,680
 2011,Dharashiv,65-69,Female,1926,405,470,160,2,8,119
 2011,Dhule,65-69,Female,2951,452,734,195,2,65,225
 2011,Gadchiroli,65-69,Female,281,132,94,19,0,4,20
@@ -4531,7 +4531,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,65-69,Female,1253,324,339,105,0,8,95
 2011,Kolhapur,65-69,Female,5789,916,1879,530,4,71,809
 2011,Latur,65-69,Female,2035,486,678,210,0,11,220
-2011,Mumbai City,65-69,Female,6100,1793,4261,3203,38,189,4406
+2011,Mumbai,65-69,Female,6100,1793,4261,3203,38,189,4406
 2011,Mumbai Suburban,65-69,Female,15246,5095,12314,9069,64,813,10114
 2011,Nagpur,65-69,Female,4131,2521,3745,1196,12,184,2574
 2011,Nanded,65-69,Female,1755,444,533,198,3,9,201
@@ -4554,7 +4554,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,70-74,Male,1590,650,220,30,0,10,40
 1991,Buldhana,70-74,Male,2750,1540,180,40,10,20,90
 1991,Chandrapur,70-74,Male,1900,600,130,20,10,30,70
-1991,Chhatrapati Sambhaji Nagar,70-74,Male,2280,720,420,100,0,10,140
+1991,Chh. Sambhaji Nagar,70-74,Male,2280,720,420,100,0,10,140
 1991,Dharashiv,70-74,Male,1450,470,100,10,0,10,20
 1991,Gadchiroli,70-74,Male,400,110,40,10,10,0,0
 1991,Jalgaon,70-74,Male,4600,3160,1130,110,20,180,110
@@ -4581,7 +4581,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,70-74,Male,586,178,223,46,0,17,98
 2001,Buldhana,70-74,Male,2601,478,750,104,2,39,242
 2001,Chandrapur,70-74,Male,1110,325,529,90,0,15,135
-2001,Chhatrapati Sambhaji Nagar,70-74,Male,2870,460,1028,220,0,42,601
+2001,Chh. Sambhaji Nagar,70-74,Male,2870,460,1028,220,0,42,601
 2001,Dharashiv,70-74,Male,2568,363,598,108,0,14,156
 2001,Dhule,70-74,Male,3611,279,705,127,2,137,323
 2001,Gadchiroli,70-74,Male,343,103,63,11,0,1,19
@@ -4591,7 +4591,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,70-74,Male,1678,307,373,86,2,4,83
 2001,Kolhapur,70-74,Male,5680,467,1568,285,3,95,701
 2001,Latur,70-74,Male,2759,429,742,190,0,13,221
-2001,Mumbai City,70-74,Male,4119,1383,4718,1469,20,205,3322
+2001,Mumbai,70-74,Male,4119,1383,4718,1469,20,205,3322
 2001,Mumbai Suburban,70-74,Male,7893,2633,9998,3017,35,503,6851
 2001,Nagpur,70-74,Male,2805,1273,2571,556,13,147,2112
 2001,Nanded,70-74,Male,2336,421,657,144,1,14,237
@@ -4616,7 +4616,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,70-74,Male,795,421,752,178,3,112,358
 2011,Buldhana,70-74,Male,3276,1132,1867,427,3,119,698
 2011,Chandrapur,70-74,Male,1777,753,1223,327,3,92,520
-2011,Chhatrapati Sambhaji Nagar,70-74,Male,3391,1039,2279,824,12,206,1633
+2011,Chh. Sambhaji Nagar,70-74,Male,3391,1039,2279,824,12,206,1633
 2011,Dharashiv,70-74,Male,2969,792,1451,421,0,84,542
 2011,Dhule,70-74,Male,3442,583,1310,337,8,220,588
 2011,Gadchiroli,70-74,Male,650,209,225,83,0,14,57
@@ -4626,7 +4626,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,70-74,Male,2052,602,905,237,2,20,290
 2011,Kolhapur,70-74,Male,7159,1291,3675,988,20,336,1925
 2011,Latur,70-74,Male,2949,927,1861,556,7,122,969
-2011,Mumbai City,70-74,Male,3648,1888,4456,2940,42,422,4502
+2011,Mumbai,70-74,Male,3648,1888,4456,2940,42,422,4502
 2011,Mumbai Suburban,70-74,Male,9122,4317,12217,8333,179,1574,13187
 2011,Nagpur,70-74,Male,3370,2192,4214,1561,31,570,4284
 2011,Nanded,70-74,Male,2619,780,1378,528,4,93,783
@@ -4649,7 +4649,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,70-74,Female,160,50,10,0,0,0,10
 1991,Buldhana,70-74,Female,360,170,10,10,0,0,10
 1991,Chandrapur,70-74,Female,120,80,10,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,70-74,Female,310,150,50,10,0,0,10
+1991,Chh. Sambhaji Nagar,70-74,Female,310,150,50,10,0,0,10
 1991,Dharashiv,70-74,Female,110,70,0,10,0,0,0
 1991,Gadchiroli,70-74,Female,60,0,0,0,0,0,0
 1991,Jalgaon,70-74,Female,740,290,70,20,10,10,40
@@ -4676,7 +4676,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,70-74,Female,78,38,34,11,0,1,11
 2001,Buldhana,70-74,Female,469,98,88,7,0,4,21
 2001,Chandrapur,70-74,Female,200,80,69,11,0,1,21
-2001,Chhatrapati Sambhaji Nagar,70-74,Female,697,132,171,33,0,5,82
+2001,Chh. Sambhaji Nagar,70-74,Female,697,132,171,33,0,5,82
 2001,Dharashiv,70-74,Female,266,29,37,7,0,2,2
 2001,Dhule,70-74,Female,864,51,67,17,0,13,24
 2001,Gadchiroli,70-74,Female,34,7,14,0,0,0,4
@@ -4686,7 +4686,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,70-74,Female,263,41,33,4,0,1,7
 2001,Kolhapur,70-74,Female,1512,145,353,54,2,15,101
 2001,Latur,70-74,Female,334,51,44,10,0,2,15
-2001,Mumbai City,70-74,Female,4114,1080,2851,889,6,64,1651
+2001,Mumbai,70-74,Female,4114,1080,2851,889,6,64,1651
 2001,Mumbai Suburban,70-74,Female,8273,2030,4510,1320,8,214,1934
 2001,Nagpur,70-74,Female,1207,668,983,185,2,38,502
 2001,Nanded,70-74,Female,391,56,63,12,0,1,20
@@ -4711,7 +4711,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,70-74,Female,216,109,129,64,0,18,69
 2011,Buldhana,70-74,Female,1031,271,302,77,2,10,74
 2011,Chandrapur,70-74,Female,494,213,229,81,1,18,104
-2011,Chhatrapati Sambhaji Nagar,70-74,Female,1504,335,607,228,2,23,386
+2011,Chh. Sambhaji Nagar,70-74,Female,1504,335,607,228,2,23,386
 2011,Dharashiv,70-74,Female,750,167,150,69,0,2,60
 2011,Dhule,70-74,Female,1489,176,224,83,2,54,123
 2011,Gadchiroli,70-74,Female,110,58,31,22,0,2,10
@@ -4721,7 +4721,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,70-74,Female,537,128,119,34,0,1,36
 2011,Kolhapur,70-74,Female,2943,376,921,294,2,52,486
 2011,Latur,70-74,Female,748,191,247,92,0,8,122
-2011,Mumbai City,70-74,Female,4464,1262,2846,2230,23,155,3105
+2011,Mumbai,70-74,Female,4464,1262,2846,2230,23,155,3105
 2011,Mumbai Suburban,70-74,Female,11036,3377,7448,5280,50,649,6355
 2011,Nagpur,70-74,Female,2130,1175,1989,581,11,123,1523
 2011,Nanded,70-74,Female,744,185,193,110,0,5,101
@@ -4744,7 +4744,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,75-79,Male,690,210,70,10,0,0,10
 1991,Buldhana,75-79,Male,1160,860,140,20,0,10,50
 1991,Chandrapur,75-79,Male,690,270,100,20,10,0,30
-1991,Chhatrapati Sambhaji Nagar,75-79,Male,1060,310,270,40,0,20,80
+1991,Chh. Sambhaji Nagar,75-79,Male,1060,310,270,40,0,20,80
 1991,Dharashiv,75-79,Male,680,270,60,10,10,10,0
 1991,Gadchiroli,75-79,Male,210,10,40,0,0,0,0
 1991,Jalgaon,75-79,Male,2220,1490,720,50,10,80,80
@@ -4771,7 +4771,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,75-79,Male,270,67,101,23,0,12,31
 2001,Buldhana,75-79,Male,1188,232,293,53,0,9,78
 2001,Chandrapur,75-79,Male,488,147,231,44,1,8,84
-2001,Chhatrapati Sambhaji Nagar,75-79,Male,1052,228,482,106,0,25,259
+2001,Chh. Sambhaji Nagar,75-79,Male,1052,228,482,106,0,25,259
 2001,Dharashiv,75-79,Male,952,144,258,46,2,8,62
 2001,Dhule,75-79,Male,1585,105,327,61,3,45,128
 2001,Gadchiroli,75-79,Male,133,42,24,5,0,0,7
@@ -4781,7 +4781,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,75-79,Male,594,106,147,36,0,2,32
 2001,Kolhapur,75-79,Male,2786,224,765,168,0,58,360
 2001,Latur,75-79,Male,977,169,243,74,0,5,103
-2001,Mumbai City,75-79,Male,2252,809,2756,902,13,116,2105
+2001,Mumbai,75-79,Male,2252,809,2756,902,13,116,2105
 2001,Mumbai Suburban,75-79,Male,4129,1381,5611,1722,18,277,3388
 2001,Nagpur,75-79,Male,1345,636,1432,291,5,62,988
 2001,Nanded,75-79,Male,775,151,274,73,2,6,95
@@ -4806,7 +4806,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,75-79,Male,372,148,288,80,0,44,163
 2011,Buldhana,75-79,Male,1558,452,805,209,2,57,305
 2011,Chandrapur,75-79,Male,776,296,471,119,1,47,211
-2011,Chhatrapati Sambhaji Nagar,75-79,Male,1529,394,989,379,6,78,812
+2011,Chh. Sambhaji Nagar,75-79,Male,1529,394,989,379,6,78,812
 2011,Dharashiv,75-79,Male,1241,274,515,161,0,31,231
 2011,Dhule,75-79,Male,1794,265,596,162,8,137,311
 2011,Gadchiroli,75-79,Male,253,82,89,46,0,5,28
@@ -4816,7 +4816,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,75-79,Male,761,203,333,81,0,5,123
 2011,Kolhapur,75-79,Male,3751,599,1727,503,9,144,1073
 2011,Latur,75-79,Male,1170,352,672,219,3,29,363
-2011,Mumbai City,75-79,Male,2047,1012,2813,1883,29,245,3431
+2011,Mumbai,75-79,Male,2047,1012,2813,1883,29,245,3431
 2011,Mumbai Suburban,75-79,Male,5029,2292,7390,4907,92,798,8019
 2011,Nagpur,75-79,Male,1711,1087,2331,742,17,289,2519
 2011,Nanded,75-79,Male,937,333,535,225,3,17,335
@@ -4839,7 +4839,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,75-79,Female,60,0,10,0,0,0,10
 1991,Buldhana,75-79,Female,240,10,0,10,0,0,0
 1991,Chandrapur,75-79,Female,110,0,20,0,0,0,0
-1991,Chhatrapati Sambhaji Nagar,75-79,Female,190,20,0,0,0,0,20
+1991,Chh. Sambhaji Nagar,75-79,Female,190,20,0,0,0,0,20
 1991,Dharashiv,75-79,Female,70,30,0,0,0,0,10
 1991,Gadchiroli,75-79,Female,10,0,0,0,0,0,0
 1991,Jalgaon,75-79,Female,280,50,40,10,0,10,0
@@ -4866,7 +4866,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,75-79,Female,35,29,18,2,0,1,2
 2001,Buldhana,75-79,Female,210,50,32,12,0,2,7
 2001,Chandrapur,75-79,Female,100,54,36,9,1,0,14
-2001,Chhatrapati Sambhaji Nagar,75-79,Female,299,65,97,23,0,3,41
+2001,Chh. Sambhaji Nagar,75-79,Female,299,65,97,23,0,3,41
 2001,Dharashiv,75-79,Female,133,30,24,10,0,0,9
 2001,Dhule,75-79,Female,315,30,52,17,0,7,11
 2001,Gadchiroli,75-79,Female,19,9,3,1,0,0,0
@@ -4876,7 +4876,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,75-79,Female,98,19,20,6,0,0,4
 2001,Kolhapur,75-79,Female,679,84,176,55,0,7,48
 2001,Latur,75-79,Female,138,30,37,9,0,2,13
-2001,Mumbai City,75-79,Female,2604,678,1698,554,4,40,957
+2001,Mumbai,75-79,Female,2604,678,1698,554,4,40,957
 2001,Mumbai Suburban,75-79,Female,4480,1095,2278,692,3,117,946
 2001,Nagpur,75-79,Female,577,368,522,108,0,14,229
 2001,Nanded,75-79,Female,159,29,49,15,0,2,18
@@ -4901,7 +4901,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,75-79,Female,85,70,83,27,1,1,23
 2011,Buldhana,75-79,Female,466,113,131,53,0,2,49
 2011,Chandrapur,75-79,Female,208,129,124,48,0,10,35
-2011,Chhatrapati Sambhaji Nagar,75-79,Female,690,167,329,136,4,11,206
+2011,Chh. Sambhaji Nagar,75-79,Female,690,167,329,136,4,11,206
 2011,Dharashiv,75-79,Female,284,55,65,20,0,3,19
 2011,Dhule,75-79,Female,710,99,131,57,0,21,83
 2011,Gadchiroli,75-79,Female,53,25,31,12,0,1,8
@@ -4911,7 +4911,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,75-79,Female,248,70,78,24,0,1,16
 2011,Kolhapur,75-79,Female,1454,196,424,130,0,15,206
 2011,Latur,75-79,Female,311,80,140,50,0,2,45
-2011,Mumbai City,75-79,Female,2986,871,2035,1558,19,94,2090
+2011,Mumbai,75-79,Female,2986,871,2035,1558,19,94,2090
 2011,Mumbai Suburban,75-79,Female,7025,2214,4627,2962,17,375,3291
 2011,Nagpur,75-79,Female,1136,712,1252,305,6,65,791
 2011,Nanded,75-79,Female,345,92,97,57,0,2,46
@@ -4934,7 +4934,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,80+,Male,1120,410,150,0,0,0,30
 1991,Buldhana,80+,Male,1120,700,110,10,0,20,20
 1991,Chandrapur,80+,Male,620,400,120,50,0,10,110
-1991,Chhatrapati Sambhaji Nagar,80+,Male,1340,420,200,20,0,20,80
+1991,Chh. Sambhaji Nagar,80+,Male,1340,420,200,20,0,20,80
 1991,Dharashiv,80+,Male,900,270,90,30,0,0,10
 1991,Gadchiroli,80+,Male,240,110,10,10,0,0,10
 1991,Jalgaon,80+,Male,2220,1320,360,70,30,90,20
@@ -4961,7 +4961,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,80+,Male,213,56,79,23,0,7,40
 2001,Buldhana,80+,Male,1107,240,306,57,1,9,74
 2001,Chandrapur,80+,Male,435,153,202,67,0,8,84
-2001,Chhatrapati Sambhaji Nagar,80+,Male,1185,235,608,171,2,28,288
+2001,Chh. Sambhaji Nagar,80+,Male,1185,235,608,171,2,28,288
 2001,Dharashiv,80+,Male,1174,225,349,99,0,13,132
 2001,Dhule,80+,Male,1231,92,272,60,0,24,114
 2001,Gadchiroli,80+,Male,135,44,37,14,0,1,11
@@ -4971,7 +4971,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,80+,Male,635,165,186,55,0,3,61
 2001,Kolhapur,80+,Male,2804,316,832,239,3,46,397
 2001,Latur,80+,Male,1095,228,375,112,0,12,186
-2001,Mumbai City,80+,Male,2072,717,2628,854,10,142,1832
+2001,Mumbai,80+,Male,2072,717,2628,854,10,142,1832
 2001,Mumbai Suburban,80+,Male,3572,1226,4268,1395,13,224,2556
 2001,Nagpur,80+,Male,1323,629,1259,258,3,69,834
 2001,Nanded,80+,Male,1000,209,386,155,2,11,174
@@ -4996,7 +4996,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,80+,Male,372,274,270,125,1,24,108
 2011,Buldhana,80+,Male,1320,412,510,197,2,26,189
 2011,Chandrapur,80+,Male,750,425,434,218,2,24,201
-2011,Chhatrapati Sambhaji Nagar,80+,Male,1702,683,1128,543,3,72,769
+2011,Chh. Sambhaji Nagar,80+,Male,1702,683,1128,543,3,72,769
 2011,Dharashiv,80+,Male,1407,293,475,174,1,14,190
 2011,Dhule,80+,Male,1565,371,678,361,4,92,379
 2011,Gadchiroli,80+,Male,266,169,123,72,0,8,26
@@ -5006,7 +5006,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,80+,Male,999,408,496,218,3,10,163
 2011,Kolhapur,80+,Male,3574,712,1553,666,7,129,898
 2011,Latur,80+,Male,1483,474,743,334,2,37,362
-2011,Mumbai City,80+,Male,2430,1276,2928,1963,31,239,3478
+2011,Mumbai,80+,Male,2430,1276,2928,1963,31,239,3478
 2011,Mumbai Suburban,80+,Male,5499,2928,6805,4544,75,564,6714
 2011,Nagpur,80+,Male,1768,1246,2034,806,21,155,1866
 2011,Nanded,80+,Male,1261,457,582,326,3,19,294
@@ -5029,7 +5029,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,80+,Female,90,10,0,0,0,0,10
 1991,Buldhana,80+,Female,350,90,30,0,0,0,0
 1991,Chandrapur,80+,Female,200,70,0,0,0,0,30
-1991,Chhatrapati Sambhaji Nagar,80+,Female,120,90,10,10,0,0,0
+1991,Chh. Sambhaji Nagar,80+,Female,120,90,10,10,0,0,0
 1991,Dharashiv,80+,Female,150,20,0,0,0,0,0
 1991,Gadchiroli,80+,Female,30,10,0,0,0,0,0
 1991,Jalgaon,80+,Female,360,110,30,0,0,0,10
@@ -5056,7 +5056,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,80+,Female,34,16,16,7,0,1,5
 2001,Buldhana,80+,Female,184,33,43,7,0,4,7
 2001,Chandrapur,80+,Female,101,60,52,16,0,0,14
-2001,Chhatrapati Sambhaji Nagar,80+,Female,364,78,103,37,0,1,56
+2001,Chh. Sambhaji Nagar,80+,Female,364,78,103,37,0,1,56
 2001,Dharashiv,80+,Female,322,78,57,18,0,0,10
 2001,Dhule,80+,Female,228,42,44,20,0,4,10
 2001,Gadchiroli,80+,Female,27,13,9,3,0,1,0
@@ -5066,7 +5066,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,80+,Female,165,37,33,9,0,0,5
 2001,Kolhapur,80+,Female,835,134,163,54,0,9,66
 2001,Latur,80+,Female,259,79,69,31,0,0,23
-2001,Mumbai City,80+,Female,2369,591,1443,444,5,36,723
+2001,Mumbai,80+,Female,2369,591,1443,444,5,36,723
 2001,Mumbai Suburban,80+,Female,3691,819,1547,485,3,68,723
 2001,Nagpur,80+,Female,572,343,328,97,0,9,201
 2001,Nanded,80+,Female,288,66,81,34,0,2,24
@@ -5091,7 +5091,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,80+,Female,161,195,153,87,0,4,58
 2011,Buldhana,80+,Female,492,194,152,87,0,5,69
 2011,Chandrapur,80+,Female,356,270,251,119,0,3,93
-2011,Chhatrapati Sambhaji Nagar,80+,Female,1027,384,480,287,5,12,247
+2011,Chh. Sambhaji Nagar,80+,Female,1027,384,480,287,5,12,247
 2011,Dharashiv,80+,Female,383,135,150,88,0,4,48
 2011,Dhule,80+,Female,764,258,302,183,0,22,127
 2011,Gadchiroli,80+,Female,119,87,60,43,0,1,11
@@ -5101,7 +5101,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,80+,Female,548,198,203,87,1,3,61
 2011,Kolhapur,80+,Female,1587,470,737,295,5,34,260
 2011,Latur,80+,Female,548,275,310,151,0,5,111
-2011,Mumbai City,80+,Female,3304,1114,2249,1592,19,106,2221
+2011,Mumbai,80+,Female,3304,1114,2249,1592,19,106,2221
 2011,Mumbai Suburban,80+,Female,7320,2402,3977,2648,29,234,3183
 2011,Nagpur,80+,Female,1191,918,1143,512,1,45,762
 2011,Nanded,80+,Female,530,219,188,132,2,3,87
@@ -5124,7 +5124,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,Age not stated,Male,290,100,80,30,10,10,40
 1991,Buldhana,Age not stated,Male,40,20,30,10,10,0,20
 1991,Chandrapur,Age not stated,Male,640,410,190,180,0,40,90
-1991,Chhatrapati Sambhaji Nagar,Age not stated,Male,410,250,180,100,0,0,110
+1991,Chh. Sambhaji Nagar,Age not stated,Male,410,250,180,100,0,0,110
 1991,Dharashiv,Age not stated,Male,260,220,40,30,0,0,60
 1991,Gadchiroli,Age not stated,Male,200,100,50,0,0,40,30
 1991,Jalgaon,Age not stated,Male,330,300,70,80,30,30,110
@@ -5151,7 +5151,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,Age not stated,Male,14,15,8,4,0,1,5
 2001,Buldhana,Age not stated,Male,89,49,57,30,0,7,23
 2001,Chandrapur,Age not stated,Male,62,45,52,24,0,1,28
-2001,Chhatrapati Sambhaji Nagar,Age not stated,Male,250,107,173,91,0,12,96
+2001,Chh. Sambhaji Nagar,Age not stated,Male,250,107,173,91,0,12,96
 2001,Dharashiv,Age not stated,Male,139,78,98,32,0,2,47
 2001,Dhule,Age not stated,Male,85,35,52,40,0,3,43
 2001,Gadchiroli,Age not stated,Male,57,13,17,13,0,2,6
@@ -5161,7 +5161,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,Age not stated,Male,209,111,133,44,0,1,54
 2001,Kolhapur,Age not stated,Male,332,138,271,117,0,19,114
 2001,Latur,Age not stated,Male,179,120,129,76,0,8,98
-2001,Mumbai City,Age not stated,Male,238,182,299,162,0,4,204
+2001,Mumbai,Age not stated,Male,238,182,299,162,0,4,204
 2001,Mumbai Suburban,Age not stated,Male,386,245,359,134,1,19,196
 2001,Nagpur,Age not stated,Male,222,198,223,154,0,10,121
 2001,Nanded,Age not stated,Male,411,206,216,166,0,2,158
@@ -5186,7 +5186,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,Age not stated,Male,422,528,420,418,0,19,262
 2011,Buldhana,Age not stated,Male,225,223,188,141,0,9,82
 2011,Chandrapur,Age not stated,Male,406,454,339,302,1,27,186
-2011,Chhatrapati Sambhaji Nagar,Age not stated,Male,351,253,364,226,2,14,201
+2011,Chh. Sambhaji Nagar,Age not stated,Male,351,253,364,226,2,14,201
 2011,Dharashiv,Age not stated,Male,201,149,138,135,0,10,111
 2011,Dhule,Age not stated,Male,1085,715,981,810,11,148,766
 2011,Gadchiroli,Age not stated,Male,169,102,100,95,1,0,42
@@ -5196,7 +5196,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,Age not stated,Male,814,498,506,360,1,25,304
 2011,Kolhapur,Age not stated,Male,1092,844,1216,778,10,110,680
 2011,Latur,Age not stated,Male,556,555,545,454,2,59,448
-2011,Mumbai City,Age not stated,Male,1244,1068,1187,836,3,43,932
+2011,Mumbai,Age not stated,Male,1244,1068,1187,836,3,43,932
 2011,Mumbai Suburban,Age not stated,Male,2188,1960,2541,1880,21,183,2388
 2011,Nagpur,Age not stated,Male,647,774,780,645,8,70,923
 2011,Nanded,Age not stated,Male,502,356,334,288,0,22,287
@@ -5219,7 +5219,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 1991,Beed,Age not stated,Female,210,90,50,20,0,0,50
 1991,Buldhana,Age not stated,Female,20,50,40,10,0,10,0
 1991,Chandrapur,Age not stated,Female,310,230,30,20,0,0,90
-1991,Chhatrapati Sambhaji Nagar,Age not stated,Female,180,100,60,0,0,0,50
+1991,Chh. Sambhaji Nagar,Age not stated,Female,180,100,60,0,0,0,50
 1991,Dharashiv,Age not stated,Female,160,100,20,20,0,0,0
 1991,Gadchiroli,Age not stated,Female,70,50,10,20,0,0,0
 1991,Jalgaon,Age not stated,Female,320,190,70,0,10,10,30
@@ -5246,7 +5246,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Bhandara,Age not stated,Female,6,18,5,3,0,0,2
 2001,Buldhana,Age not stated,Female,51,25,25,6,0,0,3
 2001,Chandrapur,Age not stated,Female,44,24,18,9,0,1,5
-2001,Chhatrapati Sambhaji Nagar,Age not stated,Female,153,56,63,25,0,1,24
+2001,Chh. Sambhaji Nagar,Age not stated,Female,153,56,63,25,0,1,24
 2001,Dharashiv,Age not stated,Female,102,29,30,21,0,0,8
 2001,Dhule,Age not stated,Female,71,29,35,20,0,2,14
 2001,Gadchiroli,Age not stated,Female,33,18,8,2,0,0,0
@@ -5256,7 +5256,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2001,Jalna,Age not stated,Female,103,33,33,12,0,0,9
 2001,Kolhapur,Age not stated,Female,302,93,135,27,0,1,33
 2001,Latur,Age not stated,Female,149,86,69,30,0,1,22
-2001,Mumbai City,Age not stated,Female,167,78,104,62,0,1,104
+2001,Mumbai,Age not stated,Female,167,78,104,62,0,1,104
 2001,Mumbai Suburban,Age not stated,Female,252,109,147,60,0,3,105
 2001,Nagpur,Age not stated,Female,174,180,139,85,0,2,71
 2001,Nanded,Age not stated,Female,273,85,78,42,0,3,27
@@ -5281,7 +5281,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Bhandara,Age not stated,Female,337,458,382,281,0,7,158
 2011,Buldhana,Age not stated,Female,235,111,111,50,0,2,27
 2011,Chandrapur,Age not stated,Female,350,387,300,179,1,8,104
-2011,Chhatrapati Sambhaji Nagar,Age not stated,Female,332,146,173,101,1,3,81
+2011,Chh. Sambhaji Nagar,Age not stated,Female,332,146,173,101,1,3,81
 2011,Dharashiv,Age not stated,Female,193,122,140,67,0,3,53
 2011,Dhule,Age not stated,Female,1096,580,701,471,1,24,403
 2011,Gadchiroli,Age not stated,Female,131,66,75,30,0,0,12
@@ -5291,7 +5291,7 @@ Year,District,Age Group,Gender,Primary,Middle,Matriculation/Secondary,Higher Sec
 2011,Jalna,Age not stated,Female,656,325,318,152,0,5,118
 2011,Kolhapur,Age not stated,Female,1268,692,855,446,0,21,346
 2011,Latur,Age not stated,Female,612,376,392,264,2,9,183
-2011,Mumbai City,Age not stated,Female,908,540,704,562,6,33,844
+2011,Mumbai,Age not stated,Female,908,540,704,562,6,33,844
 2011,Mumbai Suburban,Age not stated,Female,2134,1205,1522,1282,10,80,1988
 2011,Nagpur,Age not stated,Female,534,659,659,556,3,24,812
 2011,Nanded,Age not stated,Female,454,264,232,125,0,10,109

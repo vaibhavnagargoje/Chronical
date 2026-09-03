@@ -1,7 +1,7 @@
 Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rural Female,Urban Population,Urban Male,Urban Female
-1991,Greater Bombay,Born in the place of enumeration,6222997,3351852,2871145,0,0,0,6222997,3351852,2871145
-1991,Greater Bombay,Born elsewhere in the district of enumeration,0,0,0,0,0,0,0,0,0
-1991,Greater Bombay,Born in other districts of the state,1523047,834693,688354,0,0,0,1523047,834693,688354
+1991,Mumbai,Born in the place of enumeration,6222997,3351852,2871145,0,0,0,6222997,3351852,2871145
+1991,Mumbai,Born elsewhere in the district of enumeration,0,0,0,0,0,0,0,0,0
+1991,Mumbai,Born in other districts of the state,1523047,834693,688354,0,0,0,1523047,834693,688354
 1991,Thane,Born in the place of enumeration,3816009,2083173,1732836,1503911,835957,667954,2312098,1247216,1064882
 1991,Thane,Born elsewhere in the district of enumeration,312164,83287,228877,238597,53187,185410,73567,30100,43467
 1991,Thane,Born in other districts of the state,556641,281079,275562,61256,29680,31576,495385,251399,243986
@@ -41,9 +41,9 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 1991,Kolhapur,Born in the place of enumeration,1749410,1109444,639966,1302983,854140,448843,446427,255304,191123
 1991,Kolhapur,Born elsewhere in the district of enumeration,777877,233875,544002,637545,170455,467090,140332,63420,76912
 1991,Kolhapur,Born in other districts of the state,249856,96665,153191,145107,50373,94734,104749,46292,58457
-1991,Chhatrapati Sambhaji Nagar,Born in the place of enumeration,1621273,972990,648283,1087153,676497,410656,534120,296493,237627
-1991,Chhatrapati Sambhaji Nagar,Born elsewhere in the district of enumeration,355780,91319,264461,283064,57340,225724,72716,33979,38737
-1991,Chhatrapati Sambhaji Nagar,Born in other districts of the state,217636,78004,139632,114679,31099,83580,102957,46905,56052
+1991,Chh. Sambhaji Nagar,Born in the place of enumeration,1621273,972990,648283,1087153,676497,410656,534120,296493,237627
+1991,Chh. Sambhaji Nagar,Born elsewhere in the district of enumeration,355780,91319,264461,283064,57340,225724,72716,33979,38737
+1991,Chh. Sambhaji Nagar,Born in other districts of the state,217636,78004,139632,114679,31099,83580,102957,46905,56052
 1991,Jalna,Born in the place of enumeration,1049882,626391,423491,887102,536334,350768,162780,90057,72723
 1991,Jalna,Born elsewhere in the district of enumeration,179277,35387,143890,155731,24230,131501,23546,11157,12389
 1991,Jalna,Born in other districts of the state,128938,32050,96888,89656,16316,73340,39282,15734,23548
@@ -62,9 +62,9 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 1991,Latur,Born in the place of enumeration,1187592,749885,437707,983348,633222,350126,204244,116663,87581
 1991,Latur,Born elsewhere in the district of enumeration,334432,71002,263430,256041,33305,222736,78391,37697,40694
 1991,Latur,Born in other districts of the state,116107,32696,83411,72015,13270,58745,44092,19426,24666
-1991,Buldana,Born in the place of enumeration,1147713,737025,410688,929051,606829,322222,218662,130196,88466
-1991,Buldana,Born elsewhere in the district of enumeration,507231,155538,351693,412968,112734,300234,94263,42804,51459
-1991,Buldana,Born in other districts of the state,209325,63824,145501,143905,40104,103801,65420,23720,41700
+1991,Buldhana,Born in the place of enumeration,1147713,737025,410688,929051,606829,322222,218662,130196,88466
+1991,Buldhana,Born elsewhere in the district of enumeration,507231,155538,351693,412968,112734,300234,94263,42804,51459
+1991,Buldhana,Born in other districts of the state,209325,63824,145501,143905,40104,103801,65420,23720,41700
 1991,Akola,Born in the place of enumeration,1398138,879880,518258,1008540,653697,354843,389598,226183,163415
 1991,Akola,Born elsewhere in the district of enumeration,510461,162888,347573,395156,111200,283956,115305,51688,63617
 1991,Akola,Born in other districts of the state,277291,86560,190731,169064,44780,124284,108227,41780,66447
@@ -143,9 +143,9 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 2001,Jalna,Born in the place of enumeration,1088385,692717,395668,886280,579579,306701,202105,113138,88967
 2001,Jalna,Born elsewhere in the district of enumeration,372513,91419,281094,309727,62612,247115,62786,28807,33979
 2001,Jalna,Born in other districts of the state,145260,39829,105431,105900,23913,81987,39360,15916,23444
-2001,Chhatrapati Sambhaji Nagar,Born in the place of enumeration,1777823,1100973,676850,1177065,773679,403386,600758,327294,273464
-2001,Chhatrapati Sambhaji Nagar,Born elsewhere in the district of enumeration,607214,182435,424779,440737,98241,342496,166477,84194,82283
-2001,Chhatrapati Sambhaji Nagar,Born in other districts of the state,460310,193997,266313,182258,57174,125084,278052,136823,141229
+2001,Chh. Sambhaji Nagar,Born in the place of enumeration,1777823,1100973,676850,1177065,773679,403386,600758,327294,273464
+2001,Chh. Sambhaji Nagar,Born elsewhere in the district of enumeration,607214,182435,424779,440737,98241,342496,166477,84194,82283
+2001,Chh. Sambhaji Nagar,Born in other districts of the state,460310,193997,266313,182258,57174,125084,278052,136823,141229
 2001,Nashik,Born in the place of enumeration,2720336,1675289,1045047,1661618,1082933,578685,1058718,592356,466362
 2001,Nashik,Born elsewhere in the district of enumeration,1527856,563713,964143,1171012,395684,775328,356844,168029,188815
 2001,Nashik,Born in other districts of the state,579283,257160,322123,195061,76767,118294,384222,180393,203829
@@ -155,9 +155,9 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 2001,Mumbai Suburban,Born in the place of enumeration,4767607,2488606,2279001,0,0,0,4767607,2488606,2279001
 2001,Mumbai Suburban,Born elsewhere in the district of enumeration,0,0,0,0,0,0,0,0,0
 2001,Mumbai Suburban,Born in other districts of the state,1407494,747983,659511,0,0,0,1407494,747983,659511
-2001,Mumbai City,Born in the place of enumeration,2025409,1080213,945196,0,0,0,2025409,1080213,945196
-2001,Mumbai City,Born elsewhere in the district of enumeration,0,0,0,0,0,0,0,0,0
-2001,Mumbai City,Born in other districts of the state,531997,297412,234585,0,0,0,531997,297412,234585
+2001,Mumbai,Born in the place of enumeration,2025409,1080213,945196,0,0,0,2025409,1080213,945196
+2001,Mumbai,Born elsewhere in the district of enumeration,0,0,0,0,0,0,0,0,0
+2001,Mumbai,Born in other districts of the state,531997,297412,234585,0,0,0,531997,297412,234585
 2001,Raigad,Born in the place of enumeration,1284732,750452,534280,1071607,628893,442714,213125,121559,91566
 2001,Raigad,Born elsewhere in the district of enumeration,530270,158763,371507,423276,110731,312545,106994,48032,58962
 2001,Raigad,Born in other districts of the state,244142,115709,128433,116209,53559,62650,127933,62150,65783
@@ -203,9 +203,9 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 2011,Jalgaon,Born in the place of enumeration,2007640,1305387,702253,1379936,925068,454868,627704,380319,247385
 2011,Jalgaon,Born elsewhere in the district of enumeration,1563478,643788,919690,1119248,436157,683091,444230,207631,236599
 2011,Jalgaon,Born in other districts of the state,488373,178190,310183,293173,101704,191469,195200,76486,118714
-2011,Buldana,Born in the place of enumeration,1422500,953855,468645,1129247,772555,356692,293253,181300,111953
-2011,Buldana,Born elsewhere in the district of enumeration,798831,270906,527925,659262,210080,449182,139569,60826,78743
-2011,Buldana,Born in other districts of the state,335682,100526,235156,232595,65579,167016,103087,34947,68140
+2011,Buldhana,Born in the place of enumeration,1422500,953855,468645,1129247,772555,356692,293253,181300,111953
+2011,Buldhana,Born elsewhere in the district of enumeration,798831,270906,527925,659262,210080,449182,139569,60826,78743
+2011,Buldhana,Born in other districts of the state,335682,100526,235156,232595,65579,167016,103087,34947,68140
 2011,Akola,Born in the place of enumeration,1038329,660904,377425,614186,413768,200418,424143,247136,177007
 2011,Akola,Born elsewhere in the district of enumeration,427305,159094,268211,304148,102579,201569,123157,56515,66642
 2011,Akola,Born in other districts of the state,318906,100574,218332,168717,44624,124093,150189,55950,94239
@@ -248,9 +248,9 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 2011,Jalna,Born in the place of enumeration,1277401,837670,439731,1058487,713113,345374,218914,124557,94357
 2011,Jalna,Born elsewhere in the district of enumeration,402454,101489,300965,332906,66832,266074,69548,34657,34891
 2011,Jalna,Born in other districts of the state,266364,66203,200161,187161,35863,151298,79203,30340,48863
-2011,Chhatrapati Sambhaji Nagar,Born in the place of enumeration,1943043,1234537,708506,1232616,843279,389337,710427,391258,319169
-2011,Chhatrapati Sambhaji Nagar,Born elsewhere in the district of enumeration,980594,356934,623660,610788,169261,441527,369806,187673,182133
-2011,Chhatrapati Sambhaji Nagar,Born in other districts of the state,708570,297518,411052,229171,64987,164184,479399,232531,246868
+2011,Chh. Sambhaji Nagar,Born in the place of enumeration,1943043,1234537,708506,1232616,843279,389337,710427,391258,319169
+2011,Chh. Sambhaji Nagar,Born elsewhere in the district of enumeration,980594,356934,623660,610788,169261,441527,369806,187673,182133
+2011,Chh. Sambhaji Nagar,Born in other districts of the state,708570,297518,411052,229171,64987,164184,479399,232531,246868
 2011,Nashik,Born in the place of enumeration,2736508,1678998,1057510,1539815,1012959,526856,1196693,666039,530654
 2011,Nashik,Born elsewhere in the district of enumeration,2266147,966953,1299194,1649789,664320,985469,616358,302633,313725
 2011,Nashik,Born in other districts of the state,881462,392380,489082,283687,110927,172760,597775,281453,316322

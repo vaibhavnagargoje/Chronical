@@ -2336,33 +2336,33 @@ Mumbai Suburban,2021,Borivali,Total,51,291014,7,3076,7983,1185880
 Mumbai Suburban,2021,Kurla,Rural,,,,,,
 Mumbai Suburban,2021,Kurla,Urban,58,1566437,25,4532,14746,2249463
 Mumbai Suburban,2021,Kurla,Total,58,1566437,25,4532,14746,2249463
-Mumbai City,2013,Mumbai City,Rural,0,0,0,0,0,0
-Mumbai City,2013,Mumbai City,Urban,67,3927050,502,6524,10719,1358062
-Mumbai City,2013,Mumbai City,Total,67,3927050,502,6524,10719,1358062
-Mumbai City,2014,Mumbai City,Rural,0,0,0,0,0,0
-Mumbai City,2014,Mumbai City,Urban,47,384713,258,5983,9381,21259
-Mumbai City,2014,Mumbai City,Total,47,384713,258,5983,9381,21259
-Mumbai City,2015,Mumbai City,Rural,0,0,0,0,0,0
-Mumbai City,2015,Mumbai City,Urban,47,410510,339,5014,9164,20606
-Mumbai City,2015,Mumbai City,Total,47,410510,339,5014,9164,20606
-Mumbai City,2016,Mumbai City,Rural,0,0,0,0,0,0
-Mumbai City,2016,Mumbai City,Urban,52,370294,330,6613,11867,25369
-Mumbai City,2016,Mumbai City,Total,52,370294,330,6613,11867,25369
-Mumbai City,2017,Mumbai City,Rural,0,0,0,0,0,0
-Mumbai City,2017,Mumbai City,Urban,52,393546,568,6293,10678,29228
-Mumbai City,2017,Mumbai City,Total,52,393546,568,6293,10678,29228
-Mumbai City,2018,Mumbai City,Rural,0,0,0,0,0,0
-Mumbai City,2018,Mumbai City,Urban,55,349264,68,5643,1669,34824
-Mumbai City,2018,Mumbai City,Total,55,349264,68,5643,1669,34824
-Mumbai City,2019,Mumbai City,Rural,0,0,0,0,0,0
-Mumbai City,2019,Mumbai City,Urban,49,292597,67,5774,10074,31646
-Mumbai City,2019,Mumbai City,Total,49,292597,67,5774,10074,31646
-Mumbai City,2020,Mumbai City,Rural,0,0,0,0,0,0
-Mumbai City,2020,Mumbai City,Urban,52,316397,25,2656,7482,24027
-Mumbai City,2020,Mumbai City,Total,52,316397,25,2656,7482,24027
-Mumbai City,2021,Mumbai City,Rural,0,0,0,0,0,0
-Mumbai City,2021,Mumbai City,Urban,52,325438,21,4432,9938,26323
-Mumbai City,2021,Mumbai City,Total,52,325438,21,4432,9938,26323
+Mumbai,2013,Mumbai City,Rural,0,0,0,0,0,0
+Mumbai,2013,Mumbai City,Urban,67,3927050,502,6524,10719,1358062
+Mumbai,2013,Mumbai City,Total,67,3927050,502,6524,10719,1358062
+Mumbai,2014,Mumbai City,Rural,0,0,0,0,0,0
+Mumbai,2014,Mumbai City,Urban,47,384713,258,5983,9381,21259
+Mumbai,2014,Mumbai City,Total,47,384713,258,5983,9381,21259
+Mumbai,2015,Mumbai City,Rural,0,0,0,0,0,0
+Mumbai,2015,Mumbai City,Urban,47,410510,339,5014,9164,20606
+Mumbai,2015,Mumbai City,Total,47,410510,339,5014,9164,20606
+Mumbai,2016,Mumbai City,Rural,0,0,0,0,0,0
+Mumbai,2016,Mumbai City,Urban,52,370294,330,6613,11867,25369
+Mumbai,2016,Mumbai City,Total,52,370294,330,6613,11867,25369
+Mumbai,2017,Mumbai City,Rural,0,0,0,0,0,0
+Mumbai,2017,Mumbai City,Urban,52,393546,568,6293,10678,29228
+Mumbai,2017,Mumbai City,Total,52,393546,568,6293,10678,29228
+Mumbai,2018,Mumbai City,Rural,0,0,0,0,0,0
+Mumbai,2018,Mumbai City,Urban,55,349264,68,5643,1669,34824
+Mumbai,2018,Mumbai City,Total,55,349264,68,5643,1669,34824
+Mumbai,2019,Mumbai City,Rural,0,0,0,0,0,0
+Mumbai,2019,Mumbai City,Urban,49,292597,67,5774,10074,31646
+Mumbai,2019,Mumbai City,Total,49,292597,67,5774,10074,31646
+Mumbai,2020,Mumbai City,Rural,0,0,0,0,0,0
+Mumbai,2020,Mumbai City,Urban,52,316397,25,2656,7482,24027
+Mumbai,2020,Mumbai City,Total,52,316397,25,2656,7482,24027
+Mumbai,2021,Mumbai City,Rural,0,0,0,0,0,0
+Mumbai,2021,Mumbai City,Urban,52,325438,21,4432,9938,26323
+Mumbai,2021,Mumbai City,Total,52,325438,21,4432,9938,26323
 Nagpur,2012,Narkhed,Rural,4,20894,14,660,312,1982
 Nagpur,2012,Narkhed,Urban,,,,,,
 Nagpur,2012,Narkhed,Total,5,20894,14,710,312,2472

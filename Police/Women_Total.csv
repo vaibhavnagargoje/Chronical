@@ -2,7 +2,7 @@ Year,District,Cases
 2014,Ahilyanagar,822
 2014,Akola,479
 2014,Amravati,1159
-2014,Chhatrapati Sambhaji Nagar,944
+2014,Chh. Sambhaji Nagar,944
 2014,Beed,744
 2014,Bhandara,192
 2014,Buldhana,562
@@ -19,7 +19,7 @@ Year,District,Cases
 2014,Nagpur,1263
 2014,Nanded,464
 2014,Nandurbar,132
-2014,Nasik,1200
+2014,Nashik,1200
 2014,Dharashiv,321
 2014,Palghar,458
 2014,Parbhani,488
@@ -38,7 +38,7 @@ Year,District,Cases
 2015,Ahilyanagar,953
 2015,Akola,489
 2015,Amravati,1449
-2015,Chhatrapati Sambhaji Nagar,1421
+2015,Chh. Sambhaji Nagar,1421
 2015,Beed,823
 2015,Bhandara,225
 2015,Buldhana,567
@@ -55,7 +55,7 @@ Year,District,Cases
 2015,Nagpur,1754
 2015,Nanded,554
 2015,Nandurbar,142
-2015,Nasik,1416
+2015,Nashik,1416
 2015,Dharashiv,329
 2015,Palghar,691
 2015,Parbhani,473
@@ -74,7 +74,7 @@ Year,District,Cases
 2016,Ahilyanagar,1037
 2016,Akola,469
 2016,Amravati,1370
-2016,Chhatrapati Sambhaji Nagar,1597
+2016,Chh. Sambhaji Nagar,1597
 2016,Beed,742
 2016,Bhandara,266
 2016,Buldhana,515
@@ -91,7 +91,7 @@ Year,District,Cases
 2016,Nagpur,1837
 2016,Nanded,638
 2016,Nandurbar,203
-2016,Nasik,1339
+2016,Nashik,1339
 2016,Dharashiv,330
 2016,Palghar,724
 2016,Parbhani,450
@@ -114,7 +114,7 @@ Year,District,Cases
 2022,Bhandara,295
 2022,Buldhana,953
 2022,Chandrapur,885
-2022,Chhatrapati Sambhaji Nagar,1663
+2022,Chh. Sambhaji Nagar,1663
 2022,Dharashiv,496
 2022,Dhule,698
 2022,Gadchiroli,174
@@ -124,11 +124,11 @@ Year,District,Cases
 2022,Jalna,1124
 2022,Kolhapur,1069
 2022,Latur,781
-2022,Mumbai City,6293
+2022,Mumbai,6293
 2022,Nagpur,1729
 2022,Nanded,879
 2022,Nandurbar,334
-2022,Nasik,2048
+2022,Nashik,2048
 2022,Palghar,362
 2022,Parbhani,551
 2022,Pune,5434
@@ -149,7 +149,7 @@ Year,District,Cases
 2017,Bhandara,225
 2017,Buldhana,567
 2017,Chandrapur,751
-2017,Chhatrapati Sambhaji Nagar,1421
+2017,Chh. Sambhaji Nagar,1421
 2017,Dharashiv,329
 2017,Dhule,348
 2017,Gadchiroli,125
@@ -162,7 +162,7 @@ Year,District,Cases
 2017,Nagpur,1754
 2017,Nanded,554
 2017,Nandurbar,142
-2017,Nasik,1416
+2017,Nashik,1416
 2017,Palghar,691
 2017,Parbhani,473
 2017,Pune,3111
@@ -183,7 +183,7 @@ Year,District,Cases
 2018,Bhandara,355
 2018,Buldhana,755
 2018,Chandrapur,657
-2018,Chhatrapati Sambhaji Nagar,1293
+2018,Chh. Sambhaji Nagar,1293
 2018,Dharashiv,386
 2018,Dhule,401
 2018,Gadchiroli,166
@@ -196,7 +196,7 @@ Year,District,Cases
 2018,Nagpur,1529
 2018,Nanded,642
 2018,Nandurbar,208
-2018,Nasik,1486
+2018,Nashik,1486
 2018,Palghar,1005
 2018,Parbhani,523
 2018,Pune,3750
@@ -217,7 +217,7 @@ Year,District,Cases
 2019,Bhandara,301
 2019,Buldhana,750
 2019,Chandrapur,652
-2019,Chhatrapati Sambhaji Nagar,1304
+2019,Chh. Sambhaji Nagar,1304
 2019,Dharashiv,398
 2019,Dhule,510
 2019,Gadchiroli,200
@@ -230,7 +230,7 @@ Year,District,Cases
 2019,Nagpur,1521
 2019,Nanded,773
 2019,Nandurbar,214
-2019,Nasik,1906
+2019,Nashik,1906
 2019,Palghar,1139
 2019,Parbhani,487
 2019,Pune,3815
@@ -251,7 +251,7 @@ Year,District,Cases
 2020,Bhandara,295
 2020,Buldhana,754
 2020,Chandrapur,653
-2020,Chhatrapati Sambhaji Nagar,1059
+2020,Chh. Sambhaji Nagar,1059
 2020,Dharashiv,364
 2020,Dhule,488
 2020,Gadchiroli,187
@@ -264,7 +264,7 @@ Year,District,Cases
 2020,Nagpur,1326
 2020,Nanded,752
 2020,Nandurbar,167
-2020,Nasik,1494
+2020,Nashik,1494
 2020,Palghar,207
 2020,Parbhani,421
 2020,Pune,3235
@@ -285,7 +285,7 @@ Year,District,Cases
 2021,Bhandara,275
 2021,Buldhana,899
 2021,Chandrapur,752
-2021,Chhatrapati Sambhaji Nagar,1419
+2021,Chh. Sambhaji Nagar,1419
 2021,Dharashiv,491
 2021,Dhule,621
 2021,Gadchiroli,210
@@ -298,7 +298,7 @@ Year,District,Cases
 2021,Nagpur,1539
 2021,Nanded,772
 2021,Nandurbar,257
-2021,Nasik,1569
+2021,Nashik,1569
 2021,Palghar,246
 2021,Parbhani,521
 2021,Pune,4100

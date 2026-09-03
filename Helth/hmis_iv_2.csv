@@ -20,9 +20,9 @@ Buldhana,2019,Other Complications,2
 Chandrapur,2019,Abscess Cases,1
 Chandrapur,2019,Deaths,2
 Chandrapur,2019,Other Complications,12
-Chhatrapati Sambhaji Nagar,2019,Abscess Cases,0
-Chhatrapati Sambhaji Nagar,2019,Deaths,1
-Chhatrapati Sambhaji Nagar,2019,Other Complications,0
+Chh. Sambhaji Nagar,2019,Abscess Cases,0
+Chh. Sambhaji Nagar,2019,Deaths,1
+Chh. Sambhaji Nagar,2019,Other Complications,0
 Dharashiv,2019,Abscess Cases,1
 Dharashiv,2019,Deaths,0
 Dharashiv,2019,Other Complications,24
@@ -125,9 +125,9 @@ Buldhana,2018,Other Complications,1
 Chandrapur,2018,Abscess Cases,0
 Chandrapur,2018,Deaths,0
 Chandrapur,2018,Other Complications,7
-Chhatrapati Sambhaji Nagar,2018,Abscess Cases,1
-Chhatrapati Sambhaji Nagar,2018,Deaths,2
-Chhatrapati Sambhaji Nagar,2018,Other Complications,6
+Chh. Sambhaji Nagar,2018,Abscess Cases,1
+Chh. Sambhaji Nagar,2018,Deaths,2
+Chh. Sambhaji Nagar,2018,Other Complications,6
 Dharashiv,2018,Abscess Cases,0
 Dharashiv,2018,Deaths,0
 Dharashiv,2018,Other Complications,15
@@ -230,9 +230,9 @@ Buldhana,2017,Other Complications,6
 Chandrapur,2017,Abscess Cases,1
 Chandrapur,2017,Deaths,0
 Chandrapur,2017,Other Complications,100
-Chhatrapati Sambhaji Nagar,2017,Abscess Cases,0
-Chhatrapati Sambhaji Nagar,2017,Deaths,0
-Chhatrapati Sambhaji Nagar,2017,Other Complications,13
+Chh. Sambhaji Nagar,2017,Abscess Cases,0
+Chh. Sambhaji Nagar,2017,Deaths,0
+Chh. Sambhaji Nagar,2017,Other Complications,13
 Dharashiv,2017,Abscess Cases,0
 Dharashiv,2017,Deaths,0
 Dharashiv,2017,Other Complications,10
@@ -321,7 +321,7 @@ Beed,2016,Other Complications,1
 Bhandara,2016,Other Complications,98
 Buldhana,2016,Other Complications,15
 Chandrapur,2016,Other Complications,67
-Chhatrapati Sambhaji Nagar,2016,Other Complications,17
+Chh. Sambhaji Nagar,2016,Other Complications,17
 Dharashiv,2016,Other Complications,2
 Dhule,2016,Other Complications,0
 Gadchiroli,2016,Other Complications,120
@@ -356,7 +356,7 @@ Beed,2015,Other Complications,0
 Bhandara,2015,Other Complications,255
 Buldhana,2015,Other Complications,5
 Chandrapur,2015,Other Complications,116
-Chhatrapati Sambhaji Nagar,2015,Other Complications,63
+Chh. Sambhaji Nagar,2015,Other Complications,63
 Dharashiv,2015,Other Complications,4
 Dhule,2015,Other Complications,0
 Gadchiroli,2015,Other Complications,1
@@ -391,7 +391,7 @@ Beed,2014,Other Complications,0
 Bhandara,2014,Other Complications,31
 Buldhana,2014,Other Complications,0
 Chandrapur,2014,Other Complications,136
-Chhatrapati Sambhaji Nagar,2014,Other Complications,643
+Chh. Sambhaji Nagar,2014,Other Complications,643
 Dharashiv,2014,Other Complications,20
 Dhule,2014,Other Complications,0
 Gadchiroli,2014,Other Complications,119
@@ -426,7 +426,7 @@ Beed,2013,Other Complications,0
 Bhandara,2013,Other Complications,1318
 Buldhana,2013,Other Complications,0
 Chandrapur,2013,Other Complications,537
-Chhatrapati Sambhaji Nagar,2013,Other Complications,221
+Chh. Sambhaji Nagar,2013,Other Complications,221
 Dharashiv,2013,Other Complications,46
 Dhule,2013,Other Complications,0
 Gadchiroli,2013,Other Complications,868
@@ -460,7 +460,7 @@ Amravati,2012,Other Complications,514
 Bhandara,2012,Other Complications,2849
 Buldhana,2012,Other Complications,3467
 Chandrapur,2012,Other Complications,1835
-Chhatrapati Sambhaji Nagar,2012,Other Complications,2063
+Chh. Sambhaji Nagar,2012,Other Complications,2063
 Dharashiv,2012,Other Complications,289
 Dhule,2012,Other Complications,952
 Gadchiroli,2012,Other Complications,1191
@@ -487,7 +487,7 @@ Amravati,2011,Other Complications,7218
 Bhandara,2011,Other Complications,1702
 Buldhana,2011,Other Complications,6581
 Chandrapur,2011,Other Complications,2756
-Chhatrapati Sambhaji Nagar,2011,Other Complications,856
+Chh. Sambhaji Nagar,2011,Other Complications,856
 Dharashiv,2011,Other Complications,1081
 Dhule,2011,Other Complications,634
 Gadchiroli,2011,Other Complications,830

@@ -1,4 +1,4 @@
-﻿District,Year,Taluka,Number of MSME Industries
+District,Year,Taluka,Number of MSME Industries
 Ahilyanagar,2018,Akole,585
 Ahilyanagar,2018,Sangamner,1819
 Ahilyanagar,2018,Kopargaon,1102
@@ -211,58 +211,58 @@ Bhandara,2021,Sakoli,2546
 Bhandara,2021,Lakhani,2021
 Bhandara,2021,Pavani,2021
 Bhandara,2021,Lakhandur,1822
-Buldana,2018,Jalgaon Jamod,147
-Buldana,2018,Sangrampur,43
-Buldana,2018,Shegaon,225
-Buldana,2018,Nandura,219
-Buldana,2018,Malkapur,229
-Buldana,2018,Motala,53
-Buldana,2018,Khamgaon,705
-Buldana,2018,Mehkar,384
-Buldana,2018,Chikhali,453
-Buldana,2018,Buldana,620
-Buldana,2018,Deulgaon Raja,204
-Buldana,2018,Sindkhed Raja,62
-Buldana,2018,Lonar,116
-Buldana,2019,Jalgaon Jamod,147
-Buldana,2019,Sangrampur,43
-Buldana,2019,Shegaon,225
-Buldana,2019,Nandura,219
-Buldana,2019,Malkapur,229
-Buldana,2019,Motala,53
-Buldana,2019,Khamgaon,705
-Buldana,2019,Mehkar,384
-Buldana,2019,Chikhali,453
-Buldana,2019,Buldana,620
-Buldana,2019,Deulgaon Raja,204
-Buldana,2019,Sindkhed Raja,62
-Buldana,2019,Lonar,116
-Buldana,2020,Jalgaon Jamod,192
-Buldana,2020,Sangrampur,154
-Buldana,2020,Shegaon,476
-Buldana,2020,Nandura,432
-Buldana,2020,Malkapur,425
-Buldana,2020,Motala,184
-Buldana,2020,Khamgaon,1002
-Buldana,2020,Mehkar,754
-Buldana,2020,Chikhali,678
-Buldana,2020,Buldana,915
-Buldana,2020,Deulgaon Raja,241
-Buldana,2020,Sindkhed Raja,149
-Buldana,2020,Lonar,342
-Buldana,2021,Jalgaon Jamod,540
-Buldana,2021,Sangrampur,475
-Buldana,2021,Shegaon,825
-Buldana,2021,Nandura,852
-Buldana,2021,Malkapur,1130
-Buldana,2021,Motala,435
-Buldana,2021,Khamgaon,1754
-Buldana,2021,Mehkar,1334
-Buldana,2021,Chikhali,1420
-Buldana,2021,Buldana,1933
-Buldana,2021,Deulgaon Raja,472
-Buldana,2021,Sindkhed Raja,464
-Buldana,2021,Lonar,540
+Buldhana,2018,Jalgaon Jamod,147
+Buldhana,2018,Sangrampur,43
+Buldhana,2018,Shegaon,225
+Buldhana,2018,Nandura,219
+Buldhana,2018,Malkapur,229
+Buldhana,2018,Motala,53
+Buldhana,2018,Khamgaon,705
+Buldhana,2018,Mehkar,384
+Buldhana,2018,Chikhali,453
+Buldhana,2018,Buldana,620
+Buldhana,2018,Deulgaon Raja,204
+Buldhana,2018,Sindkhed Raja,62
+Buldhana,2018,Lonar,116
+Buldhana,2019,Jalgaon Jamod,147
+Buldhana,2019,Sangrampur,43
+Buldhana,2019,Shegaon,225
+Buldhana,2019,Nandura,219
+Buldhana,2019,Malkapur,229
+Buldhana,2019,Motala,53
+Buldhana,2019,Khamgaon,705
+Buldhana,2019,Mehkar,384
+Buldhana,2019,Chikhali,453
+Buldhana,2019,Buldana,620
+Buldhana,2019,Deulgaon Raja,204
+Buldhana,2019,Sindkhed Raja,62
+Buldhana,2019,Lonar,116
+Buldhana,2020,Jalgaon Jamod,192
+Buldhana,2020,Sangrampur,154
+Buldhana,2020,Shegaon,476
+Buldhana,2020,Nandura,432
+Buldhana,2020,Malkapur,425
+Buldhana,2020,Motala,184
+Buldhana,2020,Khamgaon,1002
+Buldhana,2020,Mehkar,754
+Buldhana,2020,Chikhali,678
+Buldhana,2020,Buldana,915
+Buldhana,2020,Deulgaon Raja,241
+Buldhana,2020,Sindkhed Raja,149
+Buldhana,2020,Lonar,342
+Buldhana,2021,Jalgaon Jamod,540
+Buldhana,2021,Sangrampur,475
+Buldhana,2021,Shegaon,825
+Buldhana,2021,Nandura,852
+Buldhana,2021,Malkapur,1130
+Buldhana,2021,Motala,435
+Buldhana,2021,Khamgaon,1754
+Buldhana,2021,Mehkar,1334
+Buldhana,2021,Chikhali,1420
+Buldhana,2021,Buldana,1933
+Buldhana,2021,Deulgaon Raja,472
+Buldhana,2021,Sindkhed Raja,464
+Buldhana,2021,Lonar,540
 Chandrapur,2018,Varora,135
 Chandrapur,2018,Chimur,110
 Chandrapur,2018,Nagbhid,117
@@ -559,10 +559,10 @@ Latur,2021,Aosa,198
 Latur,2021,Nilanga,234
 Latur,2021,Devani,48
 Latur,2021,Udgir,297
-Mumbai City,2018,Mumbai City,211676
-Mumbai City,2019,Mumbai City,211676
-Mumbai City,2020,Mumbai City,50965
-Mumbai City,2021,Mumbai City,7298
+Mumbai,2018,Mumbai City,211676
+Mumbai,2019,Mumbai City,211676
+Mumbai,2020,Mumbai City,50965
+Mumbai,2021,Mumbai City,7298
 Mumbai Suburban,2018,Adheri,
 Mumbai Suburban,2018,Borivali,
 Mumbai Suburban,2018,Kurla,

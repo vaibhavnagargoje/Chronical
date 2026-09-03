@@ -704,16 +704,16 @@ Amravati,2017,ATM Fraud,40
 Amravati,2017,Online Banking Fraud,6
 Amravati,2017,OTP Frauds,0
 Amravati,2017,Other Frauds,3
-Chhatrapati Sambhaji Nagar,2017,Credit Card/Debit Card Fraud,0
-Chhatrapati Sambhaji Nagar,2017,ATM Fraud,70
-Chhatrapati Sambhaji Nagar,2017,Online Banking Fraud,46
-Chhatrapati Sambhaji Nagar,2017,OTP Frauds,9
-Chhatrapati Sambhaji Nagar,2017,Other Frauds,3
-Nasik,2017,Credit Card/Debit Card Fraud,1
-Nasik,2017,ATM Fraud,12
-Nasik,2017,Online Banking Fraud,24
-Nasik,2017,OTP Frauds,9
-Nasik,2017,Other Frauds,0
+Chh. Sambhaji Nagar,2017,Credit Card/Debit Card Fraud,0
+Chh. Sambhaji Nagar,2017,ATM Fraud,70
+Chh. Sambhaji Nagar,2017,Online Banking Fraud,46
+Chh. Sambhaji Nagar,2017,OTP Frauds,9
+Chh. Sambhaji Nagar,2017,Other Frauds,3
+Nashik,2017,Credit Card/Debit Card Fraud,1
+Nashik,2017,ATM Fraud,12
+Nashik,2017,Online Banking Fraud,24
+Nashik,2017,OTP Frauds,9
+Nashik,2017,Other Frauds,0
 Solapur,2017,Credit Card/Debit Card Fraud,0
 Solapur,2017,ATM Fraud,0
 Solapur,2017,Online Banking Fraud,0
@@ -729,11 +729,11 @@ Amravati,2018,ATM Fraud,12
 Amravati,2018,Online Banking Fraud,20
 Amravati,2018,OTP Frauds,4
 Amravati,2018,Other Frauds,6
-Nasik,2018,Credit Card/Debit Card Fraud,0
-Nasik,2018,ATM Fraud,3
-Nasik,2018,Online Banking Fraud,17
-Nasik,2018,OTP Frauds,4
-Nasik,2018,Other Frauds,6
+Nashik,2018,Credit Card/Debit Card Fraud,0
+Nashik,2018,ATM Fraud,3
+Nashik,2018,Online Banking Fraud,17
+Nashik,2018,OTP Frauds,4
+Nashik,2018,Other Frauds,6
 Solapur,2018,Credit Card/Debit Card Fraud,3
 Solapur,2018,ATM Fraud,2
 Solapur,2018,Online Banking Fraud,1
@@ -749,11 +749,11 @@ Amravati,2019,ATM Fraud,2
 Amravati,2019,Online Banking Fraud,15
 Amravati,2019,OTP Frauds,4
 Amravati,2019,Other Frauds,15
-Nasik,2019,Credit Card/Debit Card Fraud,0
-Nasik,2019,ATM Fraud,4
-Nasik,2019,Online Banking Fraud,53
-Nasik,2019,OTP Frauds,2
-Nasik,2019,Other Frauds,0
+Nashik,2019,Credit Card/Debit Card Fraud,0
+Nashik,2019,ATM Fraud,4
+Nashik,2019,Online Banking Fraud,53
+Nashik,2019,OTP Frauds,2
+Nashik,2019,Other Frauds,0
 Solapur,2019,Credit Card/Debit Card Fraud,4
 Solapur,2019,ATM Fraud,10
 Solapur,2019,Online Banking Fraud,17
@@ -769,11 +769,11 @@ Amravati,2020,ATM Fraud,4
 Amravati,2020,Online Banking Fraud,93
 Amravati,2020,OTP Frauds,4
 Amravati,2020,Other Frauds,10
-Nasik,2020,Credit Card/Debit Card Fraud,1
-Nasik,2020,ATM Fraud,0
-Nasik,2020,Online Banking Fraud,8
-Nasik,2020,OTP Frauds,0
-Nasik,2020,Other Frauds,0
+Nashik,2020,Credit Card/Debit Card Fraud,1
+Nashik,2020,ATM Fraud,0
+Nashik,2020,Online Banking Fraud,8
+Nashik,2020,OTP Frauds,0
+Nashik,2020,Other Frauds,0
 Solapur,2020,Credit Card/Debit Card Fraud,4
 Solapur,2020,ATM Fraud,2
 Solapur,2020,Online Banking Fraud,4
@@ -784,11 +784,11 @@ Amravati,2021,ATM Fraud,10
 Amravati,2021,Online Banking Fraud,5
 Amravati,2021,OTP Frauds,0
 Amravati,2021,Other Frauds,26
-Nasik,2021,Credit Card/Debit Card Fraud,0
-Nasik,2021,ATM Fraud,0
-Nasik,2021,Online Banking Fraud,0
-Nasik,2021,OTP Frauds,0
-Nasik,2021,Other Frauds,0
+Nashik,2021,Credit Card/Debit Card Fraud,0
+Nashik,2021,ATM Fraud,0
+Nashik,2021,Online Banking Fraud,0
+Nashik,2021,OTP Frauds,0
+Nashik,2021,Other Frauds,0
 Solapur,2021,Credit Card/Debit Card Fraud,0
 Solapur,2021,ATM Fraud,1
 Solapur,2021,Online Banking Fraud,5
@@ -809,11 +809,11 @@ Pune,2017,ATM Fraud,45
 Pune,2017,Online Banking Fraud,140
 Pune,2017,OTP Frauds,10
 Pune,2017,Other Frauds,47
-Chhatrapati Sambhaji Nagar,2018,Credit Card/Debit Card Fraud,0
-Chhatrapati Sambhaji Nagar,2018,ATM Fraud,21
-Chhatrapati Sambhaji Nagar,2018,Online Banking Fraud,20
-Chhatrapati Sambhaji Nagar,2018,OTP Frauds,9
-Chhatrapati Sambhaji Nagar,2018,Other Frauds,0
+Chh. Sambhaji Nagar,2018,Credit Card/Debit Card Fraud,0
+Chh. Sambhaji Nagar,2018,ATM Fraud,21
+Chh. Sambhaji Nagar,2018,Online Banking Fraud,20
+Chh. Sambhaji Nagar,2018,OTP Frauds,9
+Chh. Sambhaji Nagar,2018,Other Frauds,0
 Mumbai,2018,Credit Card/Debit Card Fraud,79
 Mumbai,2018,ATM Fraud,105
 Mumbai,2018,Online Banking Fraud,80
@@ -824,11 +824,11 @@ Nagpur,2018,ATM Fraud,7
 Nagpur,2018,Online Banking Fraud,19
 Nagpur,2018,OTP Frauds,4
 Nagpur,2018,Other Frauds,0
-Chhatrapati Sambhaji Nagar,2019,Credit Card/Debit Card Fraud,1
-Chhatrapati Sambhaji Nagar,2019,ATM Fraud,5
-Chhatrapati Sambhaji Nagar,2019,Online Banking Fraud,15
-Chhatrapati Sambhaji Nagar,2019,OTP Frauds,6
-Chhatrapati Sambhaji Nagar,2019,Other Frauds,3
+Chh. Sambhaji Nagar,2019,Credit Card/Debit Card Fraud,1
+Chh. Sambhaji Nagar,2019,ATM Fraud,5
+Chh. Sambhaji Nagar,2019,Online Banking Fraud,15
+Chh. Sambhaji Nagar,2019,OTP Frauds,6
+Chh. Sambhaji Nagar,2019,Other Frauds,3
 Mumbai,2019,Credit Card/Debit Card Fraud,100
 Mumbai,2019,ATM Fraud,276
 Mumbai,2019,Online Banking Fraud,248
@@ -839,11 +839,11 @@ Nagpur,2019,ATM Fraud,10
 Nagpur,2019,Online Banking Fraud,13
 Nagpur,2019,OTP Frauds,1
 Nagpur,2019,Other Frauds,2
-Chhatrapati Sambhaji Nagar,2020,Credit Card/Debit Card Fraud,0
-Chhatrapati Sambhaji Nagar,2020,ATM Fraud,5
-Chhatrapati Sambhaji Nagar,2020,Online Banking Fraud,19
-Chhatrapati Sambhaji Nagar,2020,OTP Frauds,5
-Chhatrapati Sambhaji Nagar,2020,Other Frauds,1
+Chh. Sambhaji Nagar,2020,Credit Card/Debit Card Fraud,0
+Chh. Sambhaji Nagar,2020,ATM Fraud,5
+Chh. Sambhaji Nagar,2020,Online Banking Fraud,19
+Chh. Sambhaji Nagar,2020,OTP Frauds,5
+Chh. Sambhaji Nagar,2020,Other Frauds,1
 Mumbai,2020,Credit Card/Debit Card Fraud,105
 Mumbai,2020,ATM Fraud,181
 Mumbai,2020,Online Banking Fraud,381
@@ -859,11 +859,11 @@ Thane,2020,ATM Fraud,4
 Thane,2020,Online Banking Fraud,34
 Thane,2020,OTP Frauds,7
 Thane,2020,Other Frauds,45
-Chhatrapati Sambhaji Nagar,2021,Credit Card/Debit Card Fraud,2
-Chhatrapati Sambhaji Nagar,2021,ATM Fraud,3
-Chhatrapati Sambhaji Nagar,2021,Online Banking Fraud,13
-Chhatrapati Sambhaji Nagar,2021,OTP Frauds,1
-Chhatrapati Sambhaji Nagar,2021,Other Frauds,5
+Chh. Sambhaji Nagar,2021,Credit Card/Debit Card Fraud,2
+Chh. Sambhaji Nagar,2021,ATM Fraud,3
+Chh. Sambhaji Nagar,2021,Online Banking Fraud,13
+Chh. Sambhaji Nagar,2021,OTP Frauds,1
+Chh. Sambhaji Nagar,2021,Other Frauds,5
 Mumbai,2021,Credit Card/Debit Card Fraud,74
 Mumbai,2021,ATM Fraud,24
 Mumbai,2021,Online Banking Fraud,276
@@ -934,11 +934,11 @@ Chandrapur,2022,ATM Fraud,3
 Chandrapur,2022,Online Banking Fraud,29
 Chandrapur,2022,OTP Frauds,0
 Chandrapur,2022,Other Frauds,5
-Chhatrapati Sambhaji Nagar,2022,Credit Card/Debit Card Fraud,8
-Chhatrapati Sambhaji Nagar,2022,ATM Fraud,0
-Chhatrapati Sambhaji Nagar,2022,Online Banking Fraud,12
-Chhatrapati Sambhaji Nagar,2022,OTP Frauds,0
-Chhatrapati Sambhaji Nagar,2022,Other Frauds,6
+Chh. Sambhaji Nagar,2022,Credit Card/Debit Card Fraud,8
+Chh. Sambhaji Nagar,2022,ATM Fraud,0
+Chh. Sambhaji Nagar,2022,Online Banking Fraud,12
+Chh. Sambhaji Nagar,2022,OTP Frauds,0
+Chh. Sambhaji Nagar,2022,Other Frauds,6
 Dharashiv,2022,Credit Card/Debit Card Fraud,1
 Dharashiv,2022,ATM Fraud,1
 Dharashiv,2022,Online Banking Fraud,2
@@ -1004,11 +1004,11 @@ Nandurbar,2022,ATM Fraud,0
 Nandurbar,2022,Online Banking Fraud,3
 Nandurbar,2022,OTP Frauds,0
 Nandurbar,2022,Other Frauds,3
-Nasik,2022,Credit Card/Debit Card Fraud,4
-Nasik,2022,ATM Fraud,1
-Nasik,2022,Online Banking Fraud,9
-Nasik,2022,OTP Frauds,4
-Nasik,2022,Other Frauds,4
+Nashik,2022,Credit Card/Debit Card Fraud,4
+Nashik,2022,ATM Fraud,1
+Nashik,2022,Online Banking Fraud,9
+Nashik,2022,OTP Frauds,4
+Nashik,2022,Other Frauds,4
 Palghar,2022,Credit Card/Debit Card Fraud,0
 Palghar,2022,ATM Fraud,0
 Palghar,2022,Online Banking Fraud,2

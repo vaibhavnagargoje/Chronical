@@ -104,21 +104,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2013,Chandrapur,Secondary (IX-X),OBC,15.06,17.73,12.21
 2013,Chandrapur,Secondary (IX-X),SC,12.38,14.75,9.77
 2013,Chandrapur,Secondary (IX-X),ST,20.6,21.6,19.51
-2013,Chhatrapati Sambhaji Nagar,Primary (I-V),Overall,1.21,1.29,1.13
-2013,Chhatrapati Sambhaji Nagar,Primary (I-V),General,1.91,2.0,1.8
-2013,Chhatrapati Sambhaji Nagar,Primary (I-V),OBC,0.0,0.03,0.0
-2013,Chhatrapati Sambhaji Nagar,Primary (I-V),SC,0.5,0.47,0.53
-2013,Chhatrapati Sambhaji Nagar,Primary (I-V),ST,3.48,3.26,3.73
-2013,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),Overall,2.35,1.3,3.59
-2013,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),General,3.29,2.41,4.3
-2013,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),OBC,0.0,0.0,1.26
-2013,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),SC,2.26,1.01,3.69
-2013,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),ST,7.32,5.38,9.81
-2013,Chhatrapati Sambhaji Nagar,Secondary (IX-X),Overall,13.83,11.8,16.43
-2013,Chhatrapati Sambhaji Nagar,Secondary (IX-X),General,14.35,12.89,16.11
-2013,Chhatrapati Sambhaji Nagar,Secondary (IX-X),OBC,11.37,8.13,15.83
-2013,Chhatrapati Sambhaji Nagar,Secondary (IX-X),SC,16.35,15.24,17.76
-2013,Chhatrapati Sambhaji Nagar,Secondary (IX-X),ST,15.72,12.83,20.3
+2013,Chh. Sambhaji Nagar,Primary (I-V),Overall,1.21,1.29,1.13
+2013,Chh. Sambhaji Nagar,Primary (I-V),General,1.91,2.0,1.8
+2013,Chh. Sambhaji Nagar,Primary (I-V),OBC,0.0,0.03,0.0
+2013,Chh. Sambhaji Nagar,Primary (I-V),SC,0.5,0.47,0.53
+2013,Chh. Sambhaji Nagar,Primary (I-V),ST,3.48,3.26,3.73
+2013,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),Overall,2.35,1.3,3.59
+2013,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),General,3.29,2.41,4.3
+2013,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),OBC,0.0,0.0,1.26
+2013,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),SC,2.26,1.01,3.69
+2013,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),ST,7.32,5.38,9.81
+2013,Chh. Sambhaji Nagar,Secondary (IX-X),Overall,13.83,11.8,16.43
+2013,Chh. Sambhaji Nagar,Secondary (IX-X),General,14.35,12.89,16.11
+2013,Chh. Sambhaji Nagar,Secondary (IX-X),OBC,11.37,8.13,15.83
+2013,Chh. Sambhaji Nagar,Secondary (IX-X),SC,16.35,15.24,17.76
+2013,Chh. Sambhaji Nagar,Secondary (IX-X),ST,15.72,12.83,20.3
 2013,Dharashiv,Primary (I-V),Overall,3.02,3.05,2.97
 2013,Dharashiv,Primary (I-V),General,5.32,5.64,4.95
 2013,Dharashiv,Primary (I-V),OBC,0.0,0.0,0.0
@@ -254,21 +254,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2013,Latur,Secondary (IX-X),OBC,7.1,6.03,8.68
 2013,Latur,Secondary (IX-X),SC,19.82,18.69,21.28
 2013,Latur,Secondary (IX-X),ST,32.49,32.07,33.12
-2013,Mumbai City,Primary (I-V),Overall,0.0,0.0,0.0
-2013,Mumbai City,Primary (I-V),General,0.0,0.0,0.0
-2013,Mumbai City,Primary (I-V),OBC,0.0,0.0,0.0
-2013,Mumbai City,Primary (I-V),SC,0.0,0.0,0.0
-2013,Mumbai City,Primary (I-V),ST,0.0,0.0,0.0
-2013,Mumbai City,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
-2013,Mumbai City,Upper Primary (VI-VIII),General,0.0,0.0,0.0
-2013,Mumbai City,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
-2013,Mumbai City,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2013,Mumbai City,Upper Primary (VI-VIII),ST,4.45,4.91,3.9
-2013,Mumbai City,Secondary (IX-X),Overall,4.73,6.42,2.76
-2013,Mumbai City,Secondary (IX-X),General,3.57,4.99,1.91
-2013,Mumbai City,Secondary (IX-X),OBC,5.45,7.05,3.69
-2013,Mumbai City,Secondary (IX-X),SC,12.15,15.57,8.22
-2013,Mumbai City,Secondary (IX-X),ST,16.72,26.96,4.57
+2013,Mumbai,Primary (I-V),Overall,0.0,0.0,0.0
+2013,Mumbai,Primary (I-V),General,0.0,0.0,0.0
+2013,Mumbai,Primary (I-V),OBC,0.0,0.0,0.0
+2013,Mumbai,Primary (I-V),SC,0.0,0.0,0.0
+2013,Mumbai,Primary (I-V),ST,0.0,0.0,0.0
+2013,Mumbai,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
+2013,Mumbai,Upper Primary (VI-VIII),General,0.0,0.0,0.0
+2013,Mumbai,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
+2013,Mumbai,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2013,Mumbai,Upper Primary (VI-VIII),ST,4.45,4.91,3.9
+2013,Mumbai,Secondary (IX-X),Overall,4.73,6.42,2.76
+2013,Mumbai,Secondary (IX-X),General,3.57,4.99,1.91
+2013,Mumbai,Secondary (IX-X),OBC,5.45,7.05,3.69
+2013,Mumbai,Secondary (IX-X),SC,12.15,15.57,8.22
+2013,Mumbai,Secondary (IX-X),ST,16.72,26.96,4.57
 2013,Mumbai Suburban,Primary (I-V),Overall,15.39,15.4,15.38
 2013,Mumbai Suburban,Primary (I-V),General,15.03,14.9,15.17
 2013,Mumbai Suburban,Primary (I-V),OBC,21.07,22.78,19.27
@@ -614,21 +614,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2014,Chandrapur,Secondary (IX-X),OBC,10.89,12.14,9.53
 2014,Chandrapur,Secondary (IX-X),SC,8.93,10.55,7.08
 2014,Chandrapur,Secondary (IX-X),ST,15.24,16.49,13.9
-2014,Chhatrapati Sambhaji Nagar,Primary (I-V),Overall,0.0,0.0,0.0
-2014,Chhatrapati Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
-2014,Chhatrapati Sambhaji Nagar,Primary (I-V),OBC,0.0,0.0,0.0
-2014,Chhatrapati Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.0
-2014,Chhatrapati Sambhaji Nagar,Primary (I-V),ST,0.39,0.06,0.76
-2014,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),Overall,0.0,0.0,1.17
-2014,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),General,0.0,0.0,0.82
-2014,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),OBC,0.04,0.0,1.05
-2014,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),SC,0.0,0.0,1.77
-2014,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),ST,4.59,5.49,3.48
-2014,Chhatrapati Sambhaji Nagar,Secondary (IX-X),Overall,9.28,6.98,12.27
-2014,Chhatrapati Sambhaji Nagar,Secondary (IX-X),General,9.85,7.69,12.49
-2014,Chhatrapati Sambhaji Nagar,Secondary (IX-X),OBC,7.38,4.69,11.18
-2014,Chhatrapati Sambhaji Nagar,Secondary (IX-X),SC,10.37,8.42,12.84
-2014,Chhatrapati Sambhaji Nagar,Secondary (IX-X),ST,12.39,10.33,15.52
+2014,Chh. Sambhaji Nagar,Primary (I-V),Overall,0.0,0.0,0.0
+2014,Chh. Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
+2014,Chh. Sambhaji Nagar,Primary (I-V),OBC,0.0,0.0,0.0
+2014,Chh. Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.0
+2014,Chh. Sambhaji Nagar,Primary (I-V),ST,0.39,0.06,0.76
+2014,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),Overall,0.0,0.0,1.17
+2014,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),General,0.0,0.0,0.82
+2014,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),OBC,0.04,0.0,1.05
+2014,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),SC,0.0,0.0,1.77
+2014,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),ST,4.59,5.49,3.48
+2014,Chh. Sambhaji Nagar,Secondary (IX-X),Overall,9.28,6.98,12.27
+2014,Chh. Sambhaji Nagar,Secondary (IX-X),General,9.85,7.69,12.49
+2014,Chh. Sambhaji Nagar,Secondary (IX-X),OBC,7.38,4.69,11.18
+2014,Chh. Sambhaji Nagar,Secondary (IX-X),SC,10.37,8.42,12.84
+2014,Chh. Sambhaji Nagar,Secondary (IX-X),ST,12.39,10.33,15.52
 2014,Dharashiv,Primary (I-V),Overall,1.43,1.51,1.34
 2014,Dharashiv,Primary (I-V),General,1.39,1.38,1.4
 2014,Dharashiv,Primary (I-V),OBC,1.63,1.92,1.31
@@ -764,21 +764,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2014,Latur,Secondary (IX-X),OBC,9.82,9.25,10.64
 2014,Latur,Secondary (IX-X),SC,16.26,15.73,16.94
 2014,Latur,Secondary (IX-X),ST,15.99,12.8,20.33
-2014,Mumbai City,Primary (I-V),Overall,0.0,0.0,0.0
-2014,Mumbai City,Primary (I-V),General,0.0,0.0,0.0
-2014,Mumbai City,Primary (I-V),OBC,0.0,0.0,0.0
-2014,Mumbai City,Primary (I-V),SC,0.0,0.0,0.0
-2014,Mumbai City,Primary (I-V),ST,0.0,0.0,0.0
-2014,Mumbai City,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
-2014,Mumbai City,Upper Primary (VI-VIII),General,0.0,0.0,0.0
-2014,Mumbai City,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
-2014,Mumbai City,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2014,Mumbai City,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
-2014,Mumbai City,Secondary (IX-X),Overall,5.93,8.15,3.33
-2014,Mumbai City,Secondary (IX-X),General,4.91,6.82,2.68
-2014,Mumbai City,Secondary (IX-X),OBC,4.44,6.8,1.72
-2014,Mumbai City,Secondary (IX-X),SC,16.67,21.24,11.36
-2014,Mumbai City,Secondary (IX-X),ST,0.0,0.0,0.0
+2014,Mumbai,Primary (I-V),Overall,0.0,0.0,0.0
+2014,Mumbai,Primary (I-V),General,0.0,0.0,0.0
+2014,Mumbai,Primary (I-V),OBC,0.0,0.0,0.0
+2014,Mumbai,Primary (I-V),SC,0.0,0.0,0.0
+2014,Mumbai,Primary (I-V),ST,0.0,0.0,0.0
+2014,Mumbai,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
+2014,Mumbai,Upper Primary (VI-VIII),General,0.0,0.0,0.0
+2014,Mumbai,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
+2014,Mumbai,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2014,Mumbai,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
+2014,Mumbai,Secondary (IX-X),Overall,5.93,8.15,3.33
+2014,Mumbai,Secondary (IX-X),General,4.91,6.82,2.68
+2014,Mumbai,Secondary (IX-X),OBC,4.44,6.8,1.72
+2014,Mumbai,Secondary (IX-X),SC,16.67,21.24,11.36
+2014,Mumbai,Secondary (IX-X),ST,0.0,0.0,0.0
 2014,Mumbai Suburban,Primary (I-V),Overall,17.93,18.16,17.68
 2014,Mumbai Suburban,Primary (I-V),General,18.36,18.7,17.99
 2014,Mumbai Suburban,Primary (I-V),OBC,17.87,17.54,18.21
@@ -1154,21 +1154,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2015,Chandrapur,Secondary (IX-X),OBC,11.24,13.72,8.46
 2015,Chandrapur,Secondary (IX-X),SC,9.87,10.6,9.06
 2015,Chandrapur,Secondary (IX-X),ST,14.46,16.29,12.48
-2015,Chhatrapati Sambhaji Nagar,Primary (I-V),Overall,1.64,1.69,1.58
-2015,Chhatrapati Sambhaji Nagar,Primary (I-V),General,2.21,2.16,2.28
-2015,Chhatrapati Sambhaji Nagar,Primary (I-V),OBC,0.32,0.48,0.13
-2015,Chhatrapati Sambhaji Nagar,Primary (I-V),SC,2.04,2.48,1.54
-2015,Chhatrapati Sambhaji Nagar,Primary (I-V),ST,1.63,1.06,2.26
-2015,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),Overall,3.78,2.81,4.91
-2015,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),General,4.58,3.54,5.77
-2015,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),OBC,1.8,1.02,2.75
-2015,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),SC,3.86,3.5,4.29
-2015,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),ST,6.62,3.74,9.99
-2015,Chhatrapati Sambhaji Nagar,Secondary (IX-X),Overall,6.56,3.56,10.45
-2015,Chhatrapati Sambhaji Nagar,Secondary (IX-X),General,7.85,4.91,11.53
-2015,Chhatrapati Sambhaji Nagar,Secondary (IX-X),OBC,4.26,1.04,8.71
-2015,Chhatrapati Sambhaji Nagar,Secondary (IX-X),SC,6.23,4.13,8.9
-2015,Chhatrapati Sambhaji Nagar,Secondary (IX-X),ST,9.21,4.23,16.29
+2015,Chh. Sambhaji Nagar,Primary (I-V),Overall,1.64,1.69,1.58
+2015,Chh. Sambhaji Nagar,Primary (I-V),General,2.21,2.16,2.28
+2015,Chh. Sambhaji Nagar,Primary (I-V),OBC,0.32,0.48,0.13
+2015,Chh. Sambhaji Nagar,Primary (I-V),SC,2.04,2.48,1.54
+2015,Chh. Sambhaji Nagar,Primary (I-V),ST,1.63,1.06,2.26
+2015,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),Overall,3.78,2.81,4.91
+2015,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),General,4.58,3.54,5.77
+2015,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),OBC,1.8,1.02,2.75
+2015,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),SC,3.86,3.5,4.29
+2015,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),ST,6.62,3.74,9.99
+2015,Chh. Sambhaji Nagar,Secondary (IX-X),Overall,6.56,3.56,10.45
+2015,Chh. Sambhaji Nagar,Secondary (IX-X),General,7.85,4.91,11.53
+2015,Chh. Sambhaji Nagar,Secondary (IX-X),OBC,4.26,1.04,8.71
+2015,Chh. Sambhaji Nagar,Secondary (IX-X),SC,6.23,4.13,8.9
+2015,Chh. Sambhaji Nagar,Secondary (IX-X),ST,9.21,4.23,16.29
 2015,Dharashiv,Primary (I-V),Overall,3.96,4.52,3.31
 2015,Dharashiv,Primary (I-V),General,4.32,5.03,3.48
 2015,Dharashiv,Primary (I-V),OBC,2.98,3.89,1.94
@@ -1304,21 +1304,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2015,Latur,Secondary (IX-X),OBC,12.32,12.24,12.44
 2015,Latur,Secondary (IX-X),SC,15.29,13.81,17.13
 2015,Latur,Secondary (IX-X),ST,17.33,15.64,19.83
-2015,Mumbai City,Primary (I-V),Overall,0.0,0.0,0.0
-2015,Mumbai City,Primary (I-V),General,0.0,0.0,0.0
-2015,Mumbai City,Primary (I-V),OBC,0.0,0.0,0.0
-2015,Mumbai City,Primary (I-V),SC,0.0,0.0,0.0
-2015,Mumbai City,Primary (I-V),ST,0.0,0.0,0.0
-2015,Mumbai City,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
-2015,Mumbai City,Upper Primary (VI-VIII),General,0.0,0.0,0.0
-2015,Mumbai City,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
-2015,Mumbai City,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2015,Mumbai City,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
-2015,Mumbai City,Secondary (IX-X),Overall,3.83,6.06,1.24
-2015,Mumbai City,Secondary (IX-X),General,3.91,5.87,1.64
-2015,Mumbai City,Secondary (IX-X),OBC,0.0,1.19,0.0
-2015,Mumbai City,Secondary (IX-X),SC,10.23,13.61,6.3
-2015,Mumbai City,Secondary (IX-X),ST,0.0,0.0,0.0
+2015,Mumbai,Primary (I-V),Overall,0.0,0.0,0.0
+2015,Mumbai,Primary (I-V),General,0.0,0.0,0.0
+2015,Mumbai,Primary (I-V),OBC,0.0,0.0,0.0
+2015,Mumbai,Primary (I-V),SC,0.0,0.0,0.0
+2015,Mumbai,Primary (I-V),ST,0.0,0.0,0.0
+2015,Mumbai,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
+2015,Mumbai,Upper Primary (VI-VIII),General,0.0,0.0,0.0
+2015,Mumbai,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
+2015,Mumbai,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2015,Mumbai,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
+2015,Mumbai,Secondary (IX-X),Overall,3.83,6.06,1.24
+2015,Mumbai,Secondary (IX-X),General,3.91,5.87,1.64
+2015,Mumbai,Secondary (IX-X),OBC,0.0,1.19,0.0
+2015,Mumbai,Secondary (IX-X),SC,10.23,13.61,6.3
+2015,Mumbai,Secondary (IX-X),ST,0.0,0.0,0.0
 2015,Mumbai Suburban,Primary (I-V),Overall,16.34,16.47,16.19
 2015,Mumbai Suburban,Primary (I-V),General,16.97,16.99,16.96
 2015,Mumbai Suburban,Primary (I-V),OBC,13.12,13.84,12.39
@@ -1694,21 +1694,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2016,Chandrapur,Secondary (IX-X),OBC,8.92,10.47,7.16
 2016,Chandrapur,Secondary (IX-X),SC,6.46,7.91,4.77
 2016,Chandrapur,Secondary (IX-X),ST,11.95,12.63,11.18
-2016,Chhatrapati Sambhaji Nagar,Primary (I-V),Overall,0.0,0.0,0.0
-2016,Chhatrapati Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
-2016,Chhatrapati Sambhaji Nagar,Primary (I-V),OBC,1.55,1.19,1.99
-2016,Chhatrapati Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.0
-2016,Chhatrapati Sambhaji Nagar,Primary (I-V),ST,0.19,0.0,0.81
-2016,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),Overall,2.2,1.43,3.09
-2016,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),General,2.57,1.76,3.49
-2016,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),OBC,2.28,1.78,2.89
-2016,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),SC,0.0,0.0,1.0
-2016,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),ST,5.54,4.5,6.77
-2016,Chhatrapati Sambhaji Nagar,Secondary (IX-X),Overall,5.61,3.83,7.91
-2016,Chhatrapati Sambhaji Nagar,Secondary (IX-X),General,5.19,3.47,7.37
-2016,Chhatrapati Sambhaji Nagar,Secondary (IX-X),OBC,5.0,3.4,7.17
-2016,Chhatrapati Sambhaji Nagar,Secondary (IX-X),SC,7.21,6.1,8.65
-2016,Chhatrapati Sambhaji Nagar,Secondary (IX-X),ST,8.39,2.23,17.24
+2016,Chh. Sambhaji Nagar,Primary (I-V),Overall,0.0,0.0,0.0
+2016,Chh. Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
+2016,Chh. Sambhaji Nagar,Primary (I-V),OBC,1.55,1.19,1.99
+2016,Chh. Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.0
+2016,Chh. Sambhaji Nagar,Primary (I-V),ST,0.19,0.0,0.81
+2016,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),Overall,2.2,1.43,3.09
+2016,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),General,2.57,1.76,3.49
+2016,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),OBC,2.28,1.78,2.89
+2016,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),SC,0.0,0.0,1.0
+2016,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),ST,5.54,4.5,6.77
+2016,Chh. Sambhaji Nagar,Secondary (IX-X),Overall,5.61,3.83,7.91
+2016,Chh. Sambhaji Nagar,Secondary (IX-X),General,5.19,3.47,7.37
+2016,Chh. Sambhaji Nagar,Secondary (IX-X),OBC,5.0,3.4,7.17
+2016,Chh. Sambhaji Nagar,Secondary (IX-X),SC,7.21,6.1,8.65
+2016,Chh. Sambhaji Nagar,Secondary (IX-X),ST,8.39,2.23,17.24
 2016,Dharashiv,Primary (I-V),Overall,2.44,2.84,1.99
 2016,Dharashiv,Primary (I-V),General,1.46,1.73,1.14
 2016,Dharashiv,Primary (I-V),OBC,3.69,4.25,3.05
@@ -1844,21 +1844,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2016,Latur,Secondary (IX-X),OBC,12.68,14.0,10.77
 2016,Latur,Secondary (IX-X),SC,16.02,15.87,16.2
 2016,Latur,Secondary (IX-X),ST,10.96,10.54,11.64
-2016,Mumbai City,Primary (I-V),Overall,0.0,0.0,0.0
-2016,Mumbai City,Primary (I-V),General,0.0,0.0,0.0
-2016,Mumbai City,Primary (I-V),OBC,0.0,0.0,0.0
-2016,Mumbai City,Primary (I-V),SC,0.0,0.0,0.0
-2016,Mumbai City,Primary (I-V),ST,0.0,0.0,0.0
-2016,Mumbai City,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
-2016,Mumbai City,Upper Primary (VI-VIII),General,0.0,0.0,0.0
-2016,Mumbai City,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
-2016,Mumbai City,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2016,Mumbai City,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
-2016,Mumbai City,Secondary (IX-X),Overall,1.2,2.45,0.0
-2016,Mumbai City,Secondary (IX-X),General,1.08,1.72,0.33
-2016,Mumbai City,Secondary (IX-X),OBC,0.0,0.0,0.0
-2016,Mumbai City,Secondary (IX-X),SC,9.35,13.03,5.12
-2016,Mumbai City,Secondary (IX-X),ST,0.0,0.0,0.0
+2016,Mumbai,Primary (I-V),Overall,0.0,0.0,0.0
+2016,Mumbai,Primary (I-V),General,0.0,0.0,0.0
+2016,Mumbai,Primary (I-V),OBC,0.0,0.0,0.0
+2016,Mumbai,Primary (I-V),SC,0.0,0.0,0.0
+2016,Mumbai,Primary (I-V),ST,0.0,0.0,0.0
+2016,Mumbai,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
+2016,Mumbai,Upper Primary (VI-VIII),General,0.0,0.0,0.0
+2016,Mumbai,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
+2016,Mumbai,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2016,Mumbai,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
+2016,Mumbai,Secondary (IX-X),Overall,1.2,2.45,0.0
+2016,Mumbai,Secondary (IX-X),General,1.08,1.72,0.33
+2016,Mumbai,Secondary (IX-X),OBC,0.0,0.0,0.0
+2016,Mumbai,Secondary (IX-X),SC,9.35,13.03,5.12
+2016,Mumbai,Secondary (IX-X),ST,0.0,0.0,0.0
 2016,Mumbai Suburban,Primary (I-V),Overall,20.99,21.14,20.83
 2016,Mumbai Suburban,Primary (I-V),General,20.86,21.0,20.7
 2016,Mumbai Suburban,Primary (I-V),OBC,22.05,21.44,22.67
@@ -2234,21 +2234,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2017,Chandrapur,Secondary (IX-X),OBC,10.55,12.48,8.35
 2017,Chandrapur,Secondary (IX-X),SC,10.12,11.63,8.4
 2017,Chandrapur,Secondary (IX-X),ST,13.83,16.62,10.62
-2017,Chhatrapati Sambhaji Nagar,Primary (I-V),Overall,0.0,0.0,0.0
-2017,Chhatrapati Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
-2017,Chhatrapati Sambhaji Nagar,Primary (I-V),OBC,0.0,0.0,0.23
-2017,Chhatrapati Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.0
-2017,Chhatrapati Sambhaji Nagar,Primary (I-V),ST,1.88,1.39,2.43
-2017,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),Overall,3.36,2.78,4.04
-2017,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),General,4.14,3.8,4.54
-2017,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),OBC,1.75,0.64,3.07
-2017,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),SC,2.01,1.78,2.27
-2017,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),ST,8.35,7.16,9.75
-2017,Chhatrapati Sambhaji Nagar,Secondary (IX-X),Overall,9.82,8.77,11.15
-2017,Chhatrapati Sambhaji Nagar,Secondary (IX-X),General,10.84,10.2,11.63
-2017,Chhatrapati Sambhaji Nagar,Secondary (IX-X),OBC,5.71,4.22,7.69
-2017,Chhatrapati Sambhaji Nagar,Secondary (IX-X),SC,10.95,9.59,12.66
-2017,Chhatrapati Sambhaji Nagar,Secondary (IX-X),ST,20.97,19.72,22.77
+2017,Chh. Sambhaji Nagar,Primary (I-V),Overall,0.0,0.0,0.0
+2017,Chh. Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
+2017,Chh. Sambhaji Nagar,Primary (I-V),OBC,0.0,0.0,0.23
+2017,Chh. Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.0
+2017,Chh. Sambhaji Nagar,Primary (I-V),ST,1.88,1.39,2.43
+2017,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),Overall,3.36,2.78,4.04
+2017,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),General,4.14,3.8,4.54
+2017,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),OBC,1.75,0.64,3.07
+2017,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),SC,2.01,1.78,2.27
+2017,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),ST,8.35,7.16,9.75
+2017,Chh. Sambhaji Nagar,Secondary (IX-X),Overall,9.82,8.77,11.15
+2017,Chh. Sambhaji Nagar,Secondary (IX-X),General,10.84,10.2,11.63
+2017,Chh. Sambhaji Nagar,Secondary (IX-X),OBC,5.71,4.22,7.69
+2017,Chh. Sambhaji Nagar,Secondary (IX-X),SC,10.95,9.59,12.66
+2017,Chh. Sambhaji Nagar,Secondary (IX-X),ST,20.97,19.72,22.77
 2017,Dharashiv,Primary (I-V),Overall,2.3,2.52,2.05
 2017,Dharashiv,Primary (I-V),General,2.25,3.03,1.32
 2017,Dharashiv,Primary (I-V),OBC,1.75,1.15,2.42
@@ -2384,21 +2384,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2017,Latur,Secondary (IX-X),OBC,12.15,11.86,12.53
 2017,Latur,Secondary (IX-X),SC,15.8,14.99,16.78
 2017,Latur,Secondary (IX-X),ST,20.28,18.22,23.68
-2017,Mumbai City,Primary (I-V),Overall,0.0,0.0,0.0
-2017,Mumbai City,Primary (I-V),General,0.0,0.0,0.0
-2017,Mumbai City,Primary (I-V),OBC,0.0,0.0,0.0
-2017,Mumbai City,Primary (I-V),SC,0.0,0.0,0.0
-2017,Mumbai City,Primary (I-V),ST,0.0,0.0,0.0
-2017,Mumbai City,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
-2017,Mumbai City,Upper Primary (VI-VIII),General,0.0,0.0,0.0
-2017,Mumbai City,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
-2017,Mumbai City,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2017,Mumbai City,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
-2017,Mumbai City,Secondary (IX-X),Overall,3.26,5.54,0.61
-2017,Mumbai City,Secondary (IX-X),General,4.13,6.54,1.32
-2017,Mumbai City,Secondary (IX-X),OBC,0.0,0.0,0.0
-2017,Mumbai City,Secondary (IX-X),SC,8.34,10.28,6.1
-2017,Mumbai City,Secondary (IX-X),ST,0.0,0.0,0.0
+2017,Mumbai,Primary (I-V),Overall,0.0,0.0,0.0
+2017,Mumbai,Primary (I-V),General,0.0,0.0,0.0
+2017,Mumbai,Primary (I-V),OBC,0.0,0.0,0.0
+2017,Mumbai,Primary (I-V),SC,0.0,0.0,0.0
+2017,Mumbai,Primary (I-V),ST,0.0,0.0,0.0
+2017,Mumbai,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
+2017,Mumbai,Upper Primary (VI-VIII),General,0.0,0.0,0.0
+2017,Mumbai,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
+2017,Mumbai,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2017,Mumbai,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
+2017,Mumbai,Secondary (IX-X),Overall,3.26,5.54,0.61
+2017,Mumbai,Secondary (IX-X),General,4.13,6.54,1.32
+2017,Mumbai,Secondary (IX-X),OBC,0.0,0.0,0.0
+2017,Mumbai,Secondary (IX-X),SC,8.34,10.28,6.1
+2017,Mumbai,Secondary (IX-X),ST,0.0,0.0,0.0
 2017,Mumbai Suburban,Primary (I-V),Overall,17.8,17.74,17.87
 2017,Mumbai Suburban,Primary (I-V),General,17.69,17.58,17.82
 2017,Mumbai Suburban,Primary (I-V),OBC,19.31,19.31,19.3
@@ -2774,21 +2774,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2018,Chandrapur,Secondary (IX-X),OBC,10.08,12.48,7.35
 2018,Chandrapur,Secondary (IX-X),SC,9.29,11.0,7.37
 2018,Chandrapur,Secondary (IX-X),ST,11.68,13.71,9.43
-2018,Chhatrapati Sambhaji Nagar,Primary (I-V),Overall,1.19,1.16,1.23
-2018,Chhatrapati Sambhaji Nagar,Primary (I-V),General,0.41,0.36,0.47
-2018,Chhatrapati Sambhaji Nagar,Primary (I-V),OBC,2.16,2.13,2.2
-2018,Chhatrapati Sambhaji Nagar,Primary (I-V),SC,3.0,3.01,2.98
-2018,Chhatrapati Sambhaji Nagar,Primary (I-V),ST,0.0,0.0,0.0
-2018,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),Overall,3.87,3.82,3.94
-2018,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),General,3.29,3.89,2.6
-2018,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),OBC,4.29,3.36,5.42
-2018,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),SC,4.45,4.21,4.72
-2018,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),ST,5.52,4.3,6.92
-2018,Chhatrapati Sambhaji Nagar,Secondary (IX-X),Overall,9.53,7.8,11.67
-2018,Chhatrapati Sambhaji Nagar,Secondary (IX-X),General,8.4,6.5,10.68
-2018,Chhatrapati Sambhaji Nagar,Secondary (IX-X),OBC,8.65,6.24,11.72
-2018,Chhatrapati Sambhaji Nagar,Secondary (IX-X),SC,12.52,12.24,12.85
-2018,Chhatrapati Sambhaji Nagar,Secondary (IX-X),ST,16.28,15.08,17.9
+2018,Chh. Sambhaji Nagar,Primary (I-V),Overall,1.19,1.16,1.23
+2018,Chh. Sambhaji Nagar,Primary (I-V),General,0.41,0.36,0.47
+2018,Chh. Sambhaji Nagar,Primary (I-V),OBC,2.16,2.13,2.2
+2018,Chh. Sambhaji Nagar,Primary (I-V),SC,3.0,3.01,2.98
+2018,Chh. Sambhaji Nagar,Primary (I-V),ST,0.0,0.0,0.0
+2018,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),Overall,3.87,3.82,3.94
+2018,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),General,3.29,3.89,2.6
+2018,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),OBC,4.29,3.36,5.42
+2018,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),SC,4.45,4.21,4.72
+2018,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),ST,5.52,4.3,6.92
+2018,Chh. Sambhaji Nagar,Secondary (IX-X),Overall,9.53,7.8,11.67
+2018,Chh. Sambhaji Nagar,Secondary (IX-X),General,8.4,6.5,10.68
+2018,Chh. Sambhaji Nagar,Secondary (IX-X),OBC,8.65,6.24,11.72
+2018,Chh. Sambhaji Nagar,Secondary (IX-X),SC,12.52,12.24,12.85
+2018,Chh. Sambhaji Nagar,Secondary (IX-X),ST,16.28,15.08,17.9
 2018,Dharashiv,Primary (I-V),Overall,1.52,1.65,1.37
 2018,Dharashiv,Primary (I-V),General,2.32,2.42,2.2
 2018,Dharashiv,Primary (I-V),OBC,1.04,1.27,0.78
@@ -2924,21 +2924,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2018,Latur,Secondary (IX-X),OBC,13.62,13.69,13.53
 2018,Latur,Secondary (IX-X),SC,16.51,16.28,16.78
 2018,Latur,Secondary (IX-X),ST,12.41,14.27,9.59
-2018,Mumbai City,Primary (I-V),Overall,0.0,0.0,0.0
-2018,Mumbai City,Primary (I-V),General,0.0,0.0,0.0
-2018,Mumbai City,Primary (I-V),OBC,0.0,0.0,0.0
-2018,Mumbai City,Primary (I-V),SC,0.0,0.0,0.0
-2018,Mumbai City,Primary (I-V),ST,0.0,0.0,0.0
-2018,Mumbai City,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
-2018,Mumbai City,Upper Primary (VI-VIII),General,0.0,0.0,0.0
-2018,Mumbai City,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
-2018,Mumbai City,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2018,Mumbai City,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
-2018,Mumbai City,Secondary (IX-X),Overall,4.85,6.62,2.83
-2018,Mumbai City,Secondary (IX-X),General,6.03,8.1,3.65
-2018,Mumbai City,Secondary (IX-X),OBC,0.0,0.0,0.0
-2018,Mumbai City,Secondary (IX-X),SC,9.66,11.75,7.35
-2018,Mumbai City,Secondary (IX-X),ST,0.0,0.0,0.0
+2018,Mumbai,Primary (I-V),Overall,0.0,0.0,0.0
+2018,Mumbai,Primary (I-V),General,0.0,0.0,0.0
+2018,Mumbai,Primary (I-V),OBC,0.0,0.0,0.0
+2018,Mumbai,Primary (I-V),SC,0.0,0.0,0.0
+2018,Mumbai,Primary (I-V),ST,0.0,0.0,0.0
+2018,Mumbai,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
+2018,Mumbai,Upper Primary (VI-VIII),General,0.0,0.0,0.0
+2018,Mumbai,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
+2018,Mumbai,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2018,Mumbai,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
+2018,Mumbai,Secondary (IX-X),Overall,4.85,6.62,2.83
+2018,Mumbai,Secondary (IX-X),General,6.03,8.1,3.65
+2018,Mumbai,Secondary (IX-X),OBC,0.0,0.0,0.0
+2018,Mumbai,Secondary (IX-X),SC,9.66,11.75,7.35
+2018,Mumbai,Secondary (IX-X),ST,0.0,0.0,0.0
 2018,Mumbai Suburban,Primary (I-V),Overall,21.72,22.02,21.39
 2018,Mumbai Suburban,Primary (I-V),General,21.77,22.09,21.43
 2018,Mumbai Suburban,Primary (I-V),OBC,22.88,23.25,22.5
@@ -3314,21 +3314,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2019,Chandrapur,Secondary (IX-X),OBC,13.85,15.49,12.05
 2019,Chandrapur,Secondary (IX-X),SC,12.32,13.25,11.26
 2019,Chandrapur,Secondary (IX-X),ST,17.9,19.55,16.07
-2019,Chhatrapati Sambhaji Nagar,Primary (I-V),Overall,0.0,0.0,0.0
-2019,Chhatrapati Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
-2019,Chhatrapati Sambhaji Nagar,Primary (I-V),OBC,0.59,0.62,0.55
-2019,Chhatrapati Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.0
-2019,Chhatrapati Sambhaji Nagar,Primary (I-V),ST,0.08,0.25,0.0
-2019,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),Overall,2.96,2.23,3.82
-2019,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),General,3.16,2.25,4.19
-2019,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),OBC,2.44,2.26,2.67
-2019,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),SC,1.72,1.08,2.43
-2019,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),ST,7.2,5.09,9.59
-2019,Chhatrapati Sambhaji Nagar,Secondary (IX-X),Overall,16.51,17.0,15.92
-2019,Chhatrapati Sambhaji Nagar,Secondary (IX-X),General,16.32,17.44,14.98
-2019,Chhatrapati Sambhaji Nagar,Secondary (IX-X),OBC,14.1,14.36,13.78
-2019,Chhatrapati Sambhaji Nagar,Secondary (IX-X),SC,20.12,19.97,20.3
-2019,Chhatrapati Sambhaji Nagar,Secondary (IX-X),ST,20.6,18.57,23.28
+2019,Chh. Sambhaji Nagar,Primary (I-V),Overall,0.0,0.0,0.0
+2019,Chh. Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
+2019,Chh. Sambhaji Nagar,Primary (I-V),OBC,0.59,0.62,0.55
+2019,Chh. Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.0
+2019,Chh. Sambhaji Nagar,Primary (I-V),ST,0.08,0.25,0.0
+2019,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),Overall,2.96,2.23,3.82
+2019,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),General,3.16,2.25,4.19
+2019,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),OBC,2.44,2.26,2.67
+2019,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),SC,1.72,1.08,2.43
+2019,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),ST,7.2,5.09,9.59
+2019,Chh. Sambhaji Nagar,Secondary (IX-X),Overall,16.51,17.0,15.92
+2019,Chh. Sambhaji Nagar,Secondary (IX-X),General,16.32,17.44,14.98
+2019,Chh. Sambhaji Nagar,Secondary (IX-X),OBC,14.1,14.36,13.78
+2019,Chh. Sambhaji Nagar,Secondary (IX-X),SC,20.12,19.97,20.3
+2019,Chh. Sambhaji Nagar,Secondary (IX-X),ST,20.6,18.57,23.28
 2019,Dharashiv,Primary (I-V),Overall,0.91,1.05,0.74
 2019,Dharashiv,Primary (I-V),General,1.14,1.11,1.17
 2019,Dharashiv,Primary (I-V),OBC,0.65,1.21,0.03
@@ -3464,21 +3464,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2019,Latur,Secondary (IX-X),OBC,15.04,15.77,14.07
 2019,Latur,Secondary (IX-X),SC,18.49,18.17,18.88
 2019,Latur,Secondary (IX-X),ST,21.82,21.94,21.68
-2019,Mumbai City,Primary (I-V),Overall,0.0,0.0,0.0
-2019,Mumbai City,Primary (I-V),General,0.0,0.0,0.0
-2019,Mumbai City,Primary (I-V),OBC,0.0,0.0,0.0
-2019,Mumbai City,Primary (I-V),SC,0.0,0.0,0.0
-2019,Mumbai City,Primary (I-V),ST,0.0,0.0,0.0
-2019,Mumbai City,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
-2019,Mumbai City,Upper Primary (VI-VIII),General,0.0,0.0,0.0
-2019,Mumbai City,Upper Primary (VI-VIII),OBC,3.99,4.21,3.75
-2019,Mumbai City,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2019,Mumbai City,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
-2019,Mumbai City,Secondary (IX-X),Overall,7.25,9.1,5.16
-2019,Mumbai City,Secondary (IX-X),General,7.39,9.03,5.53
-2019,Mumbai City,Secondary (IX-X),OBC,0.84,2.59,0.0
-2019,Mumbai City,Secondary (IX-X),SC,12.88,16.81,8.63
-2019,Mumbai City,Secondary (IX-X),ST,6.36,10.84,1.13
+2019,Mumbai,Primary (I-V),Overall,0.0,0.0,0.0
+2019,Mumbai,Primary (I-V),General,0.0,0.0,0.0
+2019,Mumbai,Primary (I-V),OBC,0.0,0.0,0.0
+2019,Mumbai,Primary (I-V),SC,0.0,0.0,0.0
+2019,Mumbai,Primary (I-V),ST,0.0,0.0,0.0
+2019,Mumbai,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
+2019,Mumbai,Upper Primary (VI-VIII),General,0.0,0.0,0.0
+2019,Mumbai,Upper Primary (VI-VIII),OBC,3.99,4.21,3.75
+2019,Mumbai,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2019,Mumbai,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
+2019,Mumbai,Secondary (IX-X),Overall,7.25,9.1,5.16
+2019,Mumbai,Secondary (IX-X),General,7.39,9.03,5.53
+2019,Mumbai,Secondary (IX-X),OBC,0.84,2.59,0.0
+2019,Mumbai,Secondary (IX-X),SC,12.88,16.81,8.63
+2019,Mumbai,Secondary (IX-X),ST,6.36,10.84,1.13
 2019,Mumbai Suburban,Primary (I-V),Overall,18.62,18.76,18.46
 2019,Mumbai Suburban,Primary (I-V),General,18.42,18.47,18.38
 2019,Mumbai Suburban,Primary (I-V),OBC,22.9,23.99,21.74
@@ -3854,21 +3854,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2020,Chandrapur,Secondary (IX-X),OBC,7.96,9.84,5.89
 2020,Chandrapur,Secondary (IX-X),SC,7.03,8.52,5.36
 2020,Chandrapur,Secondary (IX-X),ST,10.46,12.26,8.46
-2020,Chhatrapati Sambhaji Nagar,Primary (I-V),Overall,0.0,0.08,0.0
-2020,Chhatrapati Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
-2020,Chhatrapati Sambhaji Nagar,Primary (I-V),OBC,0.82,1.34,0.18
-2020,Chhatrapati Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.14
-2020,Chhatrapati Sambhaji Nagar,Primary (I-V),ST,0.65,1.02,0.23
-2020,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),Overall,3.16,2.94,3.42
-2020,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),General,3.44,3.01,3.93
-2020,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),OBC,2.14,2.07,2.23
-2020,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),SC,3.16,3.72,2.52
-2020,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),ST,5.54,4.4,6.84
-2020,Chhatrapati Sambhaji Nagar,Secondary (IX-X),Overall,11.7,10.67,12.95
-2020,Chhatrapati Sambhaji Nagar,Secondary (IX-X),General,12.4,11.13,13.9
-2020,Chhatrapati Sambhaji Nagar,Secondary (IX-X),OBC,8.39,7.23,9.85
-2020,Chhatrapati Sambhaji Nagar,Secondary (IX-X),SC,12.82,12.87,12.74
-2020,Chhatrapati Sambhaji Nagar,Secondary (IX-X),ST,19.89,18.52,21.8
+2020,Chh. Sambhaji Nagar,Primary (I-V),Overall,0.0,0.08,0.0
+2020,Chh. Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
+2020,Chh. Sambhaji Nagar,Primary (I-V),OBC,0.82,1.34,0.18
+2020,Chh. Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.14
+2020,Chh. Sambhaji Nagar,Primary (I-V),ST,0.65,1.02,0.23
+2020,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),Overall,3.16,2.94,3.42
+2020,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),General,3.44,3.01,3.93
+2020,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),OBC,2.14,2.07,2.23
+2020,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),SC,3.16,3.72,2.52
+2020,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),ST,5.54,4.4,6.84
+2020,Chh. Sambhaji Nagar,Secondary (IX-X),Overall,11.7,10.67,12.95
+2020,Chh. Sambhaji Nagar,Secondary (IX-X),General,12.4,11.13,13.9
+2020,Chh. Sambhaji Nagar,Secondary (IX-X),OBC,8.39,7.23,9.85
+2020,Chh. Sambhaji Nagar,Secondary (IX-X),SC,12.82,12.87,12.74
+2020,Chh. Sambhaji Nagar,Secondary (IX-X),ST,19.89,18.52,21.8
 2020,Dharashiv,Primary (I-V),Overall,0.13,0.0,0.37
 2020,Dharashiv,Primary (I-V),General,0.0,0.0,0.0
 2020,Dharashiv,Primary (I-V),OBC,2.66,2.68,2.65
@@ -4004,21 +4004,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2020,Latur,Secondary (IX-X),OBC,12.86,14.32,10.92
 2020,Latur,Secondary (IX-X),SC,14.58,14.77,14.34
 2020,Latur,Secondary (IX-X),ST,14.32,15.22,13.07
-2020,Mumbai City,Primary (I-V),Overall,0.0,0.0,0.0
-2020,Mumbai City,Primary (I-V),General,0.0,0.0,0.0
-2020,Mumbai City,Primary (I-V),OBC,0.0,0.0,0.0
-2020,Mumbai City,Primary (I-V),SC,0.0,0.0,0.0
-2020,Mumbai City,Primary (I-V),ST,0.0,0.0,0.0
-2020,Mumbai City,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
-2020,Mumbai City,Upper Primary (VI-VIII),General,0.0,0.0,0.0
-2020,Mumbai City,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
-2020,Mumbai City,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2020,Mumbai City,Upper Primary (VI-VIII),ST,1.12,2.46,0.0
-2020,Mumbai City,Secondary (IX-X),Overall,0.49,1.43,0.0
-2020,Mumbai City,Secondary (IX-X),General,1.6,2.75,0.31
-2020,Mumbai City,Secondary (IX-X),OBC,0.0,0.0,0.0
-2020,Mumbai City,Secondary (IX-X),SC,4.13,2.93,5.37
-2020,Mumbai City,Secondary (IX-X),ST,0.0,0.0,0.0
+2020,Mumbai,Primary (I-V),Overall,0.0,0.0,0.0
+2020,Mumbai,Primary (I-V),General,0.0,0.0,0.0
+2020,Mumbai,Primary (I-V),OBC,0.0,0.0,0.0
+2020,Mumbai,Primary (I-V),SC,0.0,0.0,0.0
+2020,Mumbai,Primary (I-V),ST,0.0,0.0,0.0
+2020,Mumbai,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
+2020,Mumbai,Upper Primary (VI-VIII),General,0.0,0.0,0.0
+2020,Mumbai,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
+2020,Mumbai,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2020,Mumbai,Upper Primary (VI-VIII),ST,1.12,2.46,0.0
+2020,Mumbai,Secondary (IX-X),Overall,0.49,1.43,0.0
+2020,Mumbai,Secondary (IX-X),General,1.6,2.75,0.31
+2020,Mumbai,Secondary (IX-X),OBC,0.0,0.0,0.0
+2020,Mumbai,Secondary (IX-X),SC,4.13,2.93,5.37
+2020,Mumbai,Secondary (IX-X),ST,0.0,0.0,0.0
 2020,Mumbai Suburban,Primary (I-V),Overall,20.12,20.49,19.72
 2020,Mumbai Suburban,Primary (I-V),General,20.18,20.56,19.76
 2020,Mumbai Suburban,Primary (I-V),OBC,20.72,20.77,20.67
@@ -4394,21 +4394,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2021,Chandrapur,Secondary (IX-X),OBC,6.73,8.38,4.95
 2021,Chandrapur,Secondary (IX-X),SC,6.01,7.82,4.02
 2021,Chandrapur,Secondary (IX-X),ST,11.42,11.74,11.06
-2021,Chhatrapati Sambhaji Nagar,Primary (I-V),Overall,0.0,0.03,0.0
-2021,Chhatrapati Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
-2021,Chhatrapati Sambhaji Nagar,Primary (I-V),OBC,1.26,0.68,1.96
-2021,Chhatrapati Sambhaji Nagar,Primary (I-V),SC,1.31,1.39,1.21
-2021,Chhatrapati Sambhaji Nagar,Primary (I-V),ST,0.0,0.01,0.0
-2021,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),Overall,3.54,3.43,3.66
-2021,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),General,3.54,3.21,3.92
-2021,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),OBC,3.68,4.07,3.2
-2021,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),SC,3.42,3.71,3.09
-2021,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),ST,3.13,1.48,5.02
-2021,Chhatrapati Sambhaji Nagar,Secondary (IX-X),Overall,10.9,9.82,12.22
-2021,Chhatrapati Sambhaji Nagar,Secondary (IX-X),General,10.61,9.53,11.89
-2021,Chhatrapati Sambhaji Nagar,Secondary (IX-X),OBC,10.26,9.07,11.74
-2021,Chhatrapati Sambhaji Nagar,Secondary (IX-X),SC,10.77,9.85,11.8
-2021,Chhatrapati Sambhaji Nagar,Secondary (IX-X),ST,18.01,16.59,19.83
+2021,Chh. Sambhaji Nagar,Primary (I-V),Overall,0.0,0.03,0.0
+2021,Chh. Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
+2021,Chh. Sambhaji Nagar,Primary (I-V),OBC,1.26,0.68,1.96
+2021,Chh. Sambhaji Nagar,Primary (I-V),SC,1.31,1.39,1.21
+2021,Chh. Sambhaji Nagar,Primary (I-V),ST,0.0,0.01,0.0
+2021,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),Overall,3.54,3.43,3.66
+2021,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),General,3.54,3.21,3.92
+2021,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),OBC,3.68,4.07,3.2
+2021,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),SC,3.42,3.71,3.09
+2021,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),ST,3.13,1.48,5.02
+2021,Chh. Sambhaji Nagar,Secondary (IX-X),Overall,10.9,9.82,12.22
+2021,Chh. Sambhaji Nagar,Secondary (IX-X),General,10.61,9.53,11.89
+2021,Chh. Sambhaji Nagar,Secondary (IX-X),OBC,10.26,9.07,11.74
+2021,Chh. Sambhaji Nagar,Secondary (IX-X),SC,10.77,9.85,11.8
+2021,Chh. Sambhaji Nagar,Secondary (IX-X),ST,18.01,16.59,19.83
 2021,Dharashiv,Primary (I-V),Overall,0.0,0.0,0.0
 2021,Dharashiv,Primary (I-V),General,0.0,0.0,0.0
 2021,Dharashiv,Primary (I-V),OBC,2.79,3.15,2.39
@@ -4544,21 +4544,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2021,Latur,Secondary (IX-X),OBC,13.21,13.89,12.32
 2021,Latur,Secondary (IX-X),SC,11.86,11.07,12.76
 2021,Latur,Secondary (IX-X),ST,15.31,14.39,16.6
-2021,Mumbai City,Primary (I-V),Overall,0.0,0.0,0.0
-2021,Mumbai City,Primary (I-V),General,0.0,0.0,0.0
-2021,Mumbai City,Primary (I-V),OBC,0.0,0.0,0.0
-2021,Mumbai City,Primary (I-V),SC,0.0,0.0,0.0
-2021,Mumbai City,Primary (I-V),ST,0.0,0.0,0.0
-2021,Mumbai City,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
-2021,Mumbai City,Upper Primary (VI-VIII),General,0.0,0.0,0.0
-2021,Mumbai City,Upper Primary (VI-VIII),OBC,0.0,0.11,0.0
-2021,Mumbai City,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2021,Mumbai City,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
-2021,Mumbai City,Secondary (IX-X),Overall,0.0,0.0,0.0
-2021,Mumbai City,Secondary (IX-X),General,0.0,0.27,0.0
-2021,Mumbai City,Secondary (IX-X),OBC,0.0,0.0,0.0
-2021,Mumbai City,Secondary (IX-X),SC,0.0,0.0,0.0
-2021,Mumbai City,Secondary (IX-X),ST,0.0,0.0,0.0
+2021,Mumbai,Primary (I-V),Overall,0.0,0.0,0.0
+2021,Mumbai,Primary (I-V),General,0.0,0.0,0.0
+2021,Mumbai,Primary (I-V),OBC,0.0,0.0,0.0
+2021,Mumbai,Primary (I-V),SC,0.0,0.0,0.0
+2021,Mumbai,Primary (I-V),ST,0.0,0.0,0.0
+2021,Mumbai,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
+2021,Mumbai,Upper Primary (VI-VIII),General,0.0,0.0,0.0
+2021,Mumbai,Upper Primary (VI-VIII),OBC,0.0,0.11,0.0
+2021,Mumbai,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2021,Mumbai,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
+2021,Mumbai,Secondary (IX-X),Overall,0.0,0.0,0.0
+2021,Mumbai,Secondary (IX-X),General,0.0,0.27,0.0
+2021,Mumbai,Secondary (IX-X),OBC,0.0,0.0,0.0
+2021,Mumbai,Secondary (IX-X),SC,0.0,0.0,0.0
+2021,Mumbai,Secondary (IX-X),ST,0.0,0.0,0.0
 2021,Mumbai Suburban,Primary (I-V),Overall,15.76,15.94,15.57
 2021,Mumbai Suburban,Primary (I-V),General,15.59,15.81,15.33
 2021,Mumbai Suburban,Primary (I-V),OBC,21.27,20.97,21.58
@@ -4934,21 +4934,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2024,Chandrapur,Secondary (IX-X),OBC,6.2,8.0,4.2
 2024,Chandrapur,Secondary (IX-X),SC,7.9,10.6,5.2
 2024,Chandrapur,Secondary (IX-X),ST,7.4,9.1,5.5
-2024,Chhatrapati Sambhaji Nagar,Primary (I-V),Overall,0.0,0.0,0.0
-2024,Chhatrapati Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
-2024,Chhatrapati Sambhaji Nagar,Primary (I-V),OBC,0.0,0.0,0.0
-2024,Chhatrapati Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.0
-2024,Chhatrapati Sambhaji Nagar,Primary (I-V),ST,0.0,0.0,0.0
-2024,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),Overall,0.81,0.82,0.81
-2024,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),General,1.4,1.5,1.2
-2024,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
-2024,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2024,Chhatrapati Sambhaji Nagar,Upper Primary (VI-VIII),ST,3.2,2.4,4.2
-2024,Chhatrapati Sambhaji Nagar,Secondary (IX-X),Overall,11.86,11.89,11.83
-2024,Chhatrapati Sambhaji Nagar,Secondary (IX-X),General,13.5,13.5,13.5
-2024,Chhatrapati Sambhaji Nagar,Secondary (IX-X),OBC,7.1,6.7,7.6
-2024,Chhatrapati Sambhaji Nagar,Secondary (IX-X),SC,13.1,14.2,11.8
-2024,Chhatrapati Sambhaji Nagar,Secondary (IX-X),ST,16.8,16.6,17.0
+2024,Chh. Sambhaji Nagar,Primary (I-V),Overall,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Primary (I-V),General,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Primary (I-V),OBC,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Primary (I-V),SC,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Primary (I-V),ST,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),Overall,0.81,0.82,0.81
+2024,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),General,1.4,1.5,1.2
+2024,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Upper Primary (VI-VIII),ST,3.2,2.4,4.2
+2024,Chh. Sambhaji Nagar,Secondary (IX-X),Overall,11.86,11.89,11.83
+2024,Chh. Sambhaji Nagar,Secondary (IX-X),General,13.5,13.5,13.5
+2024,Chh. Sambhaji Nagar,Secondary (IX-X),OBC,7.1,6.7,7.6
+2024,Chh. Sambhaji Nagar,Secondary (IX-X),SC,13.1,14.2,11.8
+2024,Chh. Sambhaji Nagar,Secondary (IX-X),ST,16.8,16.6,17.0
 2024,Dharashiv,Primary (I-V),Overall,1.11,1.44,0.76
 2024,Dharashiv,Primary (I-V),General,1.2,1.6,0.8
 2024,Dharashiv,Primary (I-V),OBC,0.7,1.0,0.3
@@ -5084,21 +5084,21 @@ Year,District,Select Schooling Level,Social Category,Overall,Boys,Girls
 2024,Latur,Secondary (IX-X),OBC,11.6,12.8,10.1
 2024,Latur,Secondary (IX-X),SC,12.1,13.3,10.8
 2024,Latur,Secondary (IX-X),ST,8.5,9.7,6.9
-2024,Mumbai City,Primary (I-V),Overall,0.0,0.0,0.0
-2024,Mumbai City,Primary (I-V),General,0.0,0.0,0.0
-2024,Mumbai City,Primary (I-V),OBC,0.0,0.0,0.0
-2024,Mumbai City,Primary (I-V),SC,0.0,0.0,0.0
-2024,Mumbai City,Primary (I-V),ST,0.0,0.0,0.0
-2024,Mumbai City,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
-2024,Mumbai City,Upper Primary (VI-VIII),General,0.0,0.0,0.0
-2024,Mumbai City,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
-2024,Mumbai City,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
-2024,Mumbai City,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
-2024,Mumbai City,Secondary (IX-X),Overall,1.46,3.69,0.0
-2024,Mumbai City,Secondary (IX-X),General,1.5,3.6,0.0
-2024,Mumbai City,Secondary (IX-X),OBC,0.0,0.0,0.0
-2024,Mumbai City,Secondary (IX-X),SC,7.2,10.6,3.7
-2024,Mumbai City,Secondary (IX-X),ST,1.3,4.4,0.0
+2024,Mumbai,Primary (I-V),Overall,0.0,0.0,0.0
+2024,Mumbai,Primary (I-V),General,0.0,0.0,0.0
+2024,Mumbai,Primary (I-V),OBC,0.0,0.0,0.0
+2024,Mumbai,Primary (I-V),SC,0.0,0.0,0.0
+2024,Mumbai,Primary (I-V),ST,0.0,0.0,0.0
+2024,Mumbai,Upper Primary (VI-VIII),Overall,0.0,0.0,0.0
+2024,Mumbai,Upper Primary (VI-VIII),General,0.0,0.0,0.0
+2024,Mumbai,Upper Primary (VI-VIII),OBC,0.0,0.0,0.0
+2024,Mumbai,Upper Primary (VI-VIII),SC,0.0,0.0,0.0
+2024,Mumbai,Upper Primary (VI-VIII),ST,0.0,0.0,0.0
+2024,Mumbai,Secondary (IX-X),Overall,1.46,3.69,0.0
+2024,Mumbai,Secondary (IX-X),General,1.5,3.6,0.0
+2024,Mumbai,Secondary (IX-X),OBC,0.0,0.0,0.0
+2024,Mumbai,Secondary (IX-X),SC,7.2,10.6,3.7
+2024,Mumbai,Secondary (IX-X),ST,1.3,4.4,0.0
 2024,Mumbai Suburban,Primary (I-V),Overall,18.31,18.43,18.19
 2024,Mumbai Suburban,Primary (I-V),General,18.9,19.0,18.7
 2024,Mumbai Suburban,Primary (I-V),OBC,12.2,11.5,12.9

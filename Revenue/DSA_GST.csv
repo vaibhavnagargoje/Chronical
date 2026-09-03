@@ -5,7 +5,7 @@ Year,District,VAT,Central Sales Tax,Business Tax,Sugarcane purchase tax,Entry Ta
 2017,Bhandara,,,,,,,,10587.62
 2017,Buldhana,4269.0,2.0,4.0,,0.0,0.0,14006.0,18281.0
 2017,Chandrapur,24561.01,619.66,1596.78,,76.22,16.18,21919.33,48789.18
-2017,Chhatrapati Sambhaji Nagar,111766.0,,,,,,37498.0,149264.0
+2017,Chh. Sambhaji Nagar,111766.0,,,,,,37498.0,149264.0
 2017,Dharashiv,958.85,19.568,1002.0,,0.0,0.0,1536.98,3517.398
 2017,Dhule,,,,,,,,0.0
 2017,Gadchiroli,,,,,,,,4182.32
@@ -30,7 +30,7 @@ Year,District,VAT,Central Sales Tax,Business Tax,Sugarcane purchase tax,Entry Ta
 2018,Bhandara,530.78,,1052.39,,,,5243.35,6826.52
 2018,Buldhana,314.45,3.0,4.0,,0.0,0.0,5649.0,5970.45
 2018,Chandrapur,2.67,0.21,2240.41,,9.86,,23214.0,25467.15
-2018,Chhatrapati Sambhaji Nagar,557785.0,,,,,,181739.0,739524.0
+2018,Chh. Sambhaji Nagar,557785.0,,,,,,181739.0,739524.0
 2018,Dharashiv,173.74,3.55,971.0,,0.0,0.0,5147.97,6296.26
 2018,Dhule,1228.0,,918.38,,,,,2146.38
 2018,Gadchiroli,177.57,,921.0,,,,2146.51,3245.08
@@ -65,7 +65,7 @@ Year,District,VAT,Central Sales Tax,Business Tax,Sugarcane purchase tax,Entry Ta
 2019,Bhandara,474.96,,1020.36,,,,2860.97,4355.89
 2019,Buldhana,850.0,10.0,400.0,,0.0,0.0,6525.0,7785.0
 2019,Chandrapur,1.67,,1422.78,,,,26277.11,27701.56
-2019,Chhatrapati Sambhaji Nagar,88243.0,,,,,,258713.0,346956.0
+2019,Chh. Sambhaji Nagar,88243.0,,,,,,258713.0,346956.0
 2019,Dharashiv,166.47,0.1,894.42,,0.0,0.0,3382.65,4443.64
 2019,Dhule,95.38,,743.12,,,,7623.46,8461.96
 2019,Gadchiroli,100.27,,821.0,,,,3485.61,4406.88
@@ -100,7 +100,7 @@ Year,District,VAT,Central Sales Tax,Business Tax,Sugarcane purchase tax,Entry Ta
 2020,Bhandara,247.26,,701.33,,,,5783.98,6732.57
 2020,Buldhana,7630.0,800.0,5500.0,,0.0,27.0,17800.0,31757.0
 2020,Chandrapur,188.57,18.58,1310.68,,,,19789.62,21307.45
-2020,Chhatrapati Sambhaji Nagar,76121.0,,,,,,94090.0,170211.0
+2020,Chh. Sambhaji Nagar,76121.0,,,,,,94090.0,170211.0
 2020,Dharashiv,37.2,0.0,460.0,,0.0,0.0,3787.4,4284.6
 2020,Dhule,109.2,,1190.62,,,,14412.8,15712.62
 2020,Gadchiroli,,,902.0,,,,4314.15,5216.15
@@ -135,7 +135,7 @@ Year,District,VAT,Central Sales Tax,Business Tax,Sugarcane purchase tax,Entry Ta
 2021,Bhandara,259.63,,783.88,,,,2438.39,3481.9
 2021,Buldhana,101.0,0.0,1260.0,,0.0,0.0,8571.0,9932.0
 2021,Chandrapur,522.98,223.27,2210.0,,,,39565.92,42522.17
-2021,Chhatrapati Sambhaji Nagar,111274.0,1736.0,5213.0,,0.0,0.0,105426.0,223649.0
+2021,Chh. Sambhaji Nagar,111274.0,1736.0,5213.0,,0.0,0.0,105426.0,223649.0
 2021,Dharashiv,5.9,0.0,1087.0,,0.0,0.0,2139.6,3232.5
 2021,Dhule,196.09,,597.39,,,,10057.17,10850.65
 2021,Gadchiroli,,,905.0,,,,4201.12,5106.12

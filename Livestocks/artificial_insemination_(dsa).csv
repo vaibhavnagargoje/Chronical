@@ -1,4 +1,4 @@
-﻿District,Year,Taluka,Annual Target for Artificial Insemination,Actual Artificial Insemination Numbers,Percentage of Artificial Insemination Target Achieved
+District,Year,Taluka,Annual Target for Artificial Insemination,Actual Artificial Insemination Numbers,Percentage of Artificial Insemination Target Achieved
 Ahilyanagar,2012,Akole,16721.0,12206.33,73.0
 Ahilyanagar,2012,Sangamner,25000.0,18250.0,83.0
 Ahilyanagar,2012,Kopargaon,13000.0,9490.0,73.0
@@ -1247,10 +1247,10 @@ Latur,2021,Aosa,19094.0,13938.62,69.39
 Latur,2021,Nilanga,21126.0,15421.98,67.76
 Latur,2021,Devani,5054.0,3689.42,56.99999999999999
 Latur,2021,Udgir,14882.0,10863.86,75.49
-Mumbai City,2018,Mumbai City,,,0.0
-Mumbai City,2019,Mumbai City,,,0.0
-Mumbai City,2020,Mumbai City,,,0.0
-Mumbai City,2021,Mumbai City,,,0.0
+Mumbai,2018,Mumbai City,,,0.0
+Mumbai,2019,Mumbai City,,,0.0
+Mumbai,2020,Mumbai City,,,0.0
+Mumbai,2021,Mumbai City,,,0.0
 Nagpur,2012,Narkhed,4280.0,,82.1
 Nagpur,2012,Katol,3985.0,,52.400000000000006
 Nagpur,2012,Kalameshwar,2270.0,,62.5

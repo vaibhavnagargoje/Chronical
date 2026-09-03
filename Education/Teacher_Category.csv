@@ -26,10 +26,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2012,Chandrapur,Others,310.0,408.0,176.0,237.0,64.0,11.0,1206
 2012,Chandrapur,Local body,2337.0,3877.0,77.0,119.0,42.0,,6452
 2012,Chandrapur,Private Unaided,348.0,524.0,472.0,665.0,205.0,174.0,2457
-2012,Chhatrapati Sambhaji Nagar,Government Aided,541.0,1924.0,2818.0,2013.0,540.0,524.0,8550
-2012,Chhatrapati Sambhaji Nagar,Others,239.0,701.0,111.0,102.0,63.0,10.0,1226
-2012,Chhatrapati Sambhaji Nagar,Local body,3327.0,5425.0,247.0,658.0,10.0,,9667
-2012,Chhatrapati Sambhaji Nagar,Private Unaided,1231.0,1755.0,287.0,1002.0,693.0,228.0,5293
+2012,Chh. Sambhaji Nagar,Government Aided,541.0,1924.0,2818.0,2013.0,540.0,524.0,8550
+2012,Chh. Sambhaji Nagar,Others,239.0,701.0,111.0,102.0,63.0,10.0,1226
+2012,Chh. Sambhaji Nagar,Local body,3327.0,5425.0,247.0,658.0,10.0,,9667
+2012,Chh. Sambhaji Nagar,Private Unaided,1231.0,1755.0,287.0,1002.0,693.0,228.0,5293
 2012,Dharashiv,Government Aided,334.0,500.0,1521.0,1276.0,434.0,305.0,4404
 2012,Dharashiv,Others,59.0,252.0,,120.0,27.0,,458
 2012,Dharashiv,Local body,1718.0,3450.0,85.0,555.0,6.0,,5818
@@ -66,9 +66,9 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2012,Latur,Others,281.0,516.0,202.0,163.0,72.0,,1234
 2012,Latur,Local body,1842.0,4004.0,,707.0,4.0,,6557
 2012,Latur,Private Unaided,331.0,659.0,24.0,207.0,194.0,75.0,1518
-2012,Mumbai City,Government Aided,,28.0,6503.0,10881.0,807.0,2445.0,21167
-2012,Mumbai City,Others,,17.0,444.0,228.0,8.0,31.0,728
-2012,Mumbai City,Private Unaided,,224.0,3361.0,6952.0,428.0,1002.0,12182
+2012,Mumbai,Government Aided,,28.0,6503.0,10881.0,807.0,2445.0,21167
+2012,Mumbai,Others,,17.0,444.0,228.0,8.0,31.0,728
+2012,Mumbai,Private Unaided,,224.0,3361.0,6952.0,428.0,1002.0,12182
 2012,Mumbai Suburban,Government Aided,3833.0,,,,,,3833
 2012,Mumbai Suburban,Private Unaided,7186.0,37.0,,12.0,,,7235
 2012,Mumbai Suburban,Others,1262.0,10791.0,,767.0,638.0,,13458
@@ -167,11 +167,11 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2013,Chandrapur,Others,166.0,29.0,83.0,94.0,693.0,474.0,1539
 2013,Chandrapur,Local body,2405.0,3756.0,78.0,117.0,,,6356
 2013,Chandrapur,Private Unaided,428.0,575.0,491.0,827.0,,,2323
-2013,Chhatrapati Sambhaji Nagar,Government Aided,584.0,2237.0,3039.0,2187.0,5.0,,8068
-2013,Chhatrapati Sambhaji Nagar,Central Govt,,,68.0,,,,93
-2013,Chhatrapati Sambhaji Nagar,Others,51.0,31.0,21.0,81.0,1452.0,1176.0,2812
-2013,Chhatrapati Sambhaji Nagar,Local body,3350.0,5901.0,242.0,730.0,,,10223
-2013,Chhatrapati Sambhaji Nagar,Private Unaided,1594.0,1916.0,280.0,1066.0,57.0,,4914
+2013,Chh. Sambhaji Nagar,Government Aided,584.0,2237.0,3039.0,2187.0,5.0,,8068
+2013,Chh. Sambhaji Nagar,Central Govt,,,68.0,,,,93
+2013,Chh. Sambhaji Nagar,Others,51.0,31.0,21.0,81.0,1452.0,1176.0,2812
+2013,Chh. Sambhaji Nagar,Local body,3350.0,5901.0,242.0,730.0,,,10223
+2013,Chh. Sambhaji Nagar,Private Unaided,1594.0,1916.0,280.0,1066.0,57.0,,4914
 2013,Dharashiv,Government Aided,377.0,730.0,1567.0,1313.0,,,3987
 2013,Dharashiv,Central Govt,,,,,,,15
 2013,Dharashiv,Others,9.0,19.0,,12.0,706.0,396.0,1142
@@ -217,10 +217,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2013,Latur,Others,38.0,52.0,17.0,32.0,818.0,680.0,1637
 2013,Latur,Local body,1836.0,3765.0,,687.0,,,6288
 2013,Latur,Private Unaided,389.0,846.0,,233.0,17.0,,1491
-2013,Mumbai City,Government Aided,,43.0,6620.0,10843.0,94.0,,17627
-2013,Mumbai City,Central Govt,,,469.0,187.0,,,656
-2013,Mumbai City,Others,,,,11.0,1014.0,3684.0,4709
-2013,Mumbai City,Private Unaided,71.0,369.0,3548.0,7450.0,88.0,,11538
+2013,Mumbai,Government Aided,,43.0,6620.0,10843.0,94.0,,17627
+2013,Mumbai,Central Govt,,,469.0,187.0,,,656
+2013,Mumbai,Others,,,,11.0,1014.0,3684.0,4709
+2013,Mumbai,Private Unaided,71.0,369.0,3548.0,7450.0,88.0,,11538
 2013,Mumbai Suburban,Government Aided,3748.0,,,,,,3748
 2013,Mumbai Suburban,Central Govt,9.0,,,,,,9
 2013,Mumbai Suburban,Local body,1119.0,10065.0,,775.0,22.0,,11981
@@ -336,11 +336,11 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2014,Chandrapur,Others,142.0,7.0,40.0,112.0,5.0,14.0,320
 2014,Chandrapur,Local body,2455.0,3876.0,79.0,123.0,45.0,,6578
 2014,Chandrapur,Private Unaided,515.0,659.0,579.0,845.0,196.0,252.0,3140
-2014,Chhatrapati Sambhaji Nagar,Government Aided,694.0,2740.0,3216.0,2272.0,603.0,730.0,10505
-2014,Chhatrapati Sambhaji Nagar,Central Govt,,,58.0,,,,83
-2014,Chhatrapati Sambhaji Nagar,Others,25.0,17.0,,52.0,2.0,16.0,112
-2014,Chhatrapati Sambhaji Nagar,Local body,3366.0,5683.0,249.0,722.0,58.0,,10078
-2014,Chhatrapati Sambhaji Nagar,Private Unaided,1797.0,1913.0,361.0,1056.0,916.0,509.0,6788
+2014,Chh. Sambhaji Nagar,Government Aided,694.0,2740.0,3216.0,2272.0,603.0,730.0,10505
+2014,Chh. Sambhaji Nagar,Central Govt,,,58.0,,,,83
+2014,Chh. Sambhaji Nagar,Others,25.0,17.0,,52.0,2.0,16.0,112
+2014,Chh. Sambhaji Nagar,Local body,3366.0,5683.0,249.0,722.0,58.0,,10078
+2014,Chh. Sambhaji Nagar,Private Unaided,1797.0,1913.0,361.0,1056.0,916.0,509.0,6788
 2014,Dharashiv,Government Aided,370.0,735.0,1607.0,1357.0,560.0,270.0,4999
 2014,Dharashiv,Central Govt,,,,,,,15
 2014,Dharashiv,Others,8.0,35.0,,12.0,,,55
@@ -386,10 +386,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2014,Latur,Others,26.0,27.0,,3.0,,,56
 2014,Latur,Local body,1801.0,3629.0,,635.0,4.0,,6069
 2014,Latur,Private Unaided,536.0,834.0,9.0,231.0,273.0,173.0,2115
-2014,Mumbai City,Government Aided,,41.0,6573.0,10791.0,740.0,2532.0,21220
-2014,Mumbai City,Central Govt,,,473.0,169.0,,,642
-2014,Mumbai City,Others,,,,,,35.0,35
-2014,Mumbai City,Private Unaided,88.0,506.0,3794.0,8022.0,471.0,1168.0,14157
+2014,Mumbai,Government Aided,,41.0,6573.0,10791.0,740.0,2532.0,21220
+2014,Mumbai,Central Govt,,,473.0,169.0,,,642
+2014,Mumbai,Others,,,,,,35.0,35
+2014,Mumbai,Private Unaided,88.0,506.0,3794.0,8022.0,471.0,1168.0,14157
 2014,Mumbai Suburban,Government Aided,3600.0,,,,,,3600
 2014,Mumbai Suburban,Central Govt,8.0,,,,,,8
 2014,Mumbai Suburban,Local body,1212.0,9799.0,,759.0,722.0,,12496
@@ -515,11 +515,11 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2015,Chandrapur,Others,74.0,7.0,47.0,104.0,,16.0,248
 2015,Chandrapur,Local body,2370.0,3719.0,77.0,113.0,44.0,,6323
 2015,Chandrapur,Private Unaided,543.0,734.0,571.0,864.0,199.0,277.0,3258
-2015,Chhatrapati Sambhaji Nagar,Government Aided,859.0,3006.0,3434.0,2328.0,673.0,593.0,11170
-2015,Chhatrapati Sambhaji Nagar,Central Govt,2.0,,44.0,,,,71
-2015,Chhatrapati Sambhaji Nagar,Others,29.0,12.0,,53.0,,16.0,110
-2015,Chhatrapati Sambhaji Nagar,Local body,3392.0,5671.0,245.0,722.0,60.0,,10094
-2015,Chhatrapati Sambhaji Nagar,Private Unaided,1906.0,2046.0,360.0,1216.0,851.0,497.0,7200
+2015,Chh. Sambhaji Nagar,Government Aided,859.0,3006.0,3434.0,2328.0,673.0,593.0,11170
+2015,Chh. Sambhaji Nagar,Central Govt,2.0,,44.0,,,,71
+2015,Chh. Sambhaji Nagar,Others,29.0,12.0,,53.0,,16.0,110
+2015,Chh. Sambhaji Nagar,Local body,3392.0,5671.0,245.0,722.0,60.0,,10094
+2015,Chh. Sambhaji Nagar,Private Unaided,1906.0,2046.0,360.0,1216.0,851.0,497.0,7200
 2015,Dharashiv,Government Aided,370.0,726.0,1625.0,1362.0,567.0,290.0,5040
 2015,Dharashiv,Central Govt,,10.0,,,,,25
 2015,Dharashiv,Others,4.0,24.0,,11.0,,,39
@@ -565,10 +565,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2015,Latur,Others,20.0,25.0,,,11.0,,56
 2015,Latur,Local body,1785.0,3572.0,,630.0,4.0,,5991
 2015,Latur,Private Unaided,659.0,827.0,7.0,254.0,287.0,242.0,2353
-2015,Mumbai City,Government Aided,,38.0,6566.0,10584.0,711.0,2533.0,20964
-2015,Mumbai City,Central Govt,,,473.0,169.0,,,642
-2015,Mumbai City,Others,,,,,,32.0,32
-2015,Mumbai City,Private Unaided,94.0,750.0,3932.0,8578.0,540.0,1198.0,15169
+2015,Mumbai,Government Aided,,38.0,6566.0,10584.0,711.0,2533.0,20964
+2015,Mumbai,Central Govt,,,473.0,169.0,,,642
+2015,Mumbai,Others,,,,,,32.0,32
+2015,Mumbai,Private Unaided,94.0,750.0,3932.0,8578.0,540.0,1198.0,15169
 2015,Mumbai Suburban,Government Aided,3843.0,8.0,,,,,3851
 2015,Mumbai Suburban,Central Govt,7.0,,,,,,7
 2015,Mumbai Suburban,Local body,1091.0,9333.0,,745.0,694.0,,11878
@@ -694,11 +694,11 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2016,Chandrapur,Others,110.0,12.0,44.0,99.0,,7.0,272
 2016,Chandrapur,Local body,2365.0,3548.0,73.0,107.0,37.0,,6130
 2016,Chandrapur,Private Unaided,576.0,792.0,564.0,864.0,201.0,284.0,3352
-2016,Chhatrapati Sambhaji Nagar,Government Aided,982.0,3328.0,3444.0,2315.0,742.0,589.0,11697
-2016,Chhatrapati Sambhaji Nagar,Central Govt,,,42.0,,,,67
-2016,Chhatrapati Sambhaji Nagar,Others,20.0,25.0,,52.0,,13.0,110
-2016,Chhatrapati Sambhaji Nagar,Local body,3345.0,5730.0,215.0,658.0,56.0,,10011
-2016,Chhatrapati Sambhaji Nagar,Private Unaided,2130.0,2228.0,441.0,1155.0,796.0,574.0,7700
+2016,Chh. Sambhaji Nagar,Government Aided,982.0,3328.0,3444.0,2315.0,742.0,589.0,11697
+2016,Chh. Sambhaji Nagar,Central Govt,,,42.0,,,,67
+2016,Chh. Sambhaji Nagar,Others,20.0,25.0,,52.0,,13.0,110
+2016,Chh. Sambhaji Nagar,Local body,3345.0,5730.0,215.0,658.0,56.0,,10011
+2016,Chh. Sambhaji Nagar,Private Unaided,2130.0,2228.0,441.0,1155.0,796.0,574.0,7700
 2016,Dharashiv,Government Aided,357.0,718.0,1597.0,1326.0,566.0,273.0,4934
 2016,Dharashiv,Central Govt,,,,,,,19
 2016,Dharashiv,Others,11.0,33.0,,10.0,,,54
@@ -744,10 +744,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2016,Latur,Others,21.0,22.0,,10.0,6.0,,59
 2016,Latur,Local body,1792.0,3518.0,,624.0,4.0,,5938
 2016,Latur,Private Unaided,790.0,864.0,16.0,300.0,252.0,225.0,2546
-2016,Mumbai City,Government Aided,,27.0,6315.0,10170.0,594.0,2386.0,19987
-2016,Mumbai City,Central Govt,,,437.0,162.0,,,599
-2016,Mumbai City,Others,,,,,,44.0,44
-2016,Mumbai City,Private Unaided,83.0,875.0,3834.0,8918.0,543.0,1166.0,15517
+2016,Mumbai,Government Aided,,27.0,6315.0,10170.0,594.0,2386.0,19987
+2016,Mumbai,Central Govt,,,437.0,162.0,,,599
+2016,Mumbai,Others,,,,,,44.0,44
+2016,Mumbai,Private Unaided,83.0,875.0,3834.0,8918.0,543.0,1166.0,15517
 2016,Mumbai Suburban,Government Aided,3716.0,68.0,,,,,3784
 2016,Mumbai Suburban,Central Govt,6.0,,,,,,6
 2016,Mumbai Suburban,Local body,1015.0,8918.0,,726.0,691.0,,11369
@@ -866,10 +866,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2017,Chandrapur,Others,48.0,24.0,115.0,73.0,31.0,10.0,301
 2017,Chandrapur,Local body,2341.0,3491.0,72.0,96.0,42.0,,6042
 2017,Chandrapur,Private Unaided,418.0,605.0,631.0,1205.0,184.0,280.0,3475
-2017,Chhatrapati Sambhaji Nagar,Government Aided,623.0,3819.0,3565.0,2229.0,798.0,579.0,11993
-2017,Chhatrapati Sambhaji Nagar,Others,32.0,26.0,42.0,42.0,16.0,13.0,171
-2017,Chhatrapati Sambhaji Nagar,Local body,3136.0,5796.0,183.0,655.0,19.0,,9836
-2017,Chhatrapati Sambhaji Nagar,Private Unaided,1149.0,3879.0,724.0,1316.0,623.0,710.0,8900
+2017,Chh. Sambhaji Nagar,Government Aided,623.0,3819.0,3565.0,2229.0,798.0,579.0,11993
+2017,Chh. Sambhaji Nagar,Others,32.0,26.0,42.0,42.0,16.0,13.0,171
+2017,Chh. Sambhaji Nagar,Local body,3136.0,5796.0,183.0,655.0,19.0,,9836
+2017,Chh. Sambhaji Nagar,Private Unaided,1149.0,3879.0,724.0,1316.0,623.0,710.0,8900
 2017,Dharashiv,Government Aided,340.0,730.0,1584.0,1287.0,566.0,268.0,4881
 2017,Dharashiv,Others,13.0,22.0,,12.0,14.0,,61
 2017,Dharashiv,Local body,1655.0,3190.0,54.0,521.0,17.0,,5442
@@ -906,9 +906,9 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2017,Latur,Others,12.0,9.0,28.0,10.0,30.0,,89
 2017,Latur,Local body,1825.0,3507.0,,621.0,9.0,,5962
 2017,Latur,Private Unaided,633.0,970.0,228.0,367.0,254.0,804.0,3360
-2017,Mumbai City,Government Aided,,18.0,6548.0,9425.0,449.0,2274.0,19184
-2017,Mumbai City,Others,13.0,118.0,447.0,176.0,22.0,62.0,838
-2017,Mumbai City,Private Unaided,37.0,279.0,5192.0,8908.0,373.0,1173.0,16226
+2017,Mumbai,Government Aided,,18.0,6548.0,9425.0,449.0,2274.0,19184
+2017,Mumbai,Others,13.0,118.0,447.0,176.0,22.0,62.0,838
+2017,Mumbai,Private Unaided,37.0,279.0,5192.0,8908.0,373.0,1173.0,16226
 2017,Mumbai Suburban,Government Aided,3549.0,179.0,,,,,3728
 2017,Mumbai Suburban,Local body,717.0,8419.0,411.0,692.0,116.0,,10876
 2017,Mumbai Suburban,Private Unaided,6851.0,618.0,10.0,73.0,,,7552
@@ -1009,10 +1009,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2018,Chandrapur,Others,28.0,29.0,128.0,60.0,28.0,,273
 2018,Chandrapur,Local body,2267.0,3380.0,67.0,95.0,48.0,,5857
 2018,Chandrapur,Private Unaided,470.0,684.0,668.0,1409.0,170.0,312.0,3864
-2018,Chhatrapati Sambhaji Nagar,Government Aided,625.0,3874.0,3588.0,2186.0,843.0,569.0,12068
-2018,Chhatrapati Sambhaji Nagar,Others,38.0,46.0,56.0,50.0,15.0,16.0,221
-2018,Chhatrapati Sambhaji Nagar,Local body,3042.0,5826.0,172.0,633.0,17.0,,9739
-2018,Chhatrapati Sambhaji Nagar,Private Unaided,1327.0,3963.0,1200.0,1501.0,563.0,826.0,9993
+2018,Chh. Sambhaji Nagar,Government Aided,625.0,3874.0,3588.0,2186.0,843.0,569.0,12068
+2018,Chh. Sambhaji Nagar,Others,38.0,46.0,56.0,50.0,15.0,16.0,221
+2018,Chh. Sambhaji Nagar,Local body,3042.0,5826.0,172.0,633.0,17.0,,9739
+2018,Chh. Sambhaji Nagar,Private Unaided,1327.0,3963.0,1200.0,1501.0,563.0,826.0,9993
 2018,Dharashiv,Government Aided,335.0,710.0,1590.0,1288.0,598.0,259.0,4883
 2018,Dharashiv,Others,11.0,22.0,,14.0,16.0,,63
 2018,Dharashiv,Local body,1626.0,3135.0,59.0,563.0,15.0,,5403
@@ -1049,9 +1049,9 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2018,Latur,Others,9.0,,19.0,10.0,29.0,,67
 2018,Latur,Local body,1789.0,3576.0,,649.0,4.0,,6018
 2018,Latur,Private Unaided,672.0,1083.0,447.0,469.0,215.0,673.0,3664
-2018,Mumbai City,Government Aided,,19.0,6308.0,9232.0,391.0,2293.0,18663
-2018,Mumbai City,Others,3.0,10.0,450.0,199.0,15.0,76.0,753
-2018,Mumbai City,Private Unaided,110.0,564.0,6117.0,10788.0,399.0,1251.0,19498
+2018,Mumbai,Government Aided,,19.0,6308.0,9232.0,391.0,2293.0,18663
+2018,Mumbai,Others,3.0,10.0,450.0,199.0,15.0,76.0,753
+2018,Mumbai,Private Unaided,110.0,564.0,6117.0,10788.0,399.0,1251.0,19498
 2018,Mumbai Suburban,Government Aided,3423.0,176.0,,,,,3599
 2018,Mumbai Suburban,Local body,654.0,7809.0,,1130.0,171.0,,10305
 2018,Mumbai Suburban,Private Unaided,6618.0,748.0,,81.0,,,7447
@@ -1152,10 +1152,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2019,Chandrapur,Others,4.0,37.0,158.0,72.0,32.0,,303
 2019,Chandrapur,Local body,2304.0,3316.0,53.0,103.0,43.0,,5819
 2019,Chandrapur,Private Unaided,464.0,697.0,802.0,1624.0,160.0,305.0,4211
-2019,Chhatrapati Sambhaji Nagar,Government Aided,644.0,3959.0,3512.0,2208.0,858.0,564.0,12131
-2019,Chhatrapati Sambhaji Nagar,Others,39.0,50.0,86.0,51.0,17.0,9.0,252
-2019,Chhatrapati Sambhaji Nagar,Local body,3087.0,5680.0,164.0,599.0,18.0,,9597
-2019,Chhatrapati Sambhaji Nagar,Private Unaided,1333.0,4063.0,1772.0,1685.0,560.0,883.0,10905
+2019,Chh. Sambhaji Nagar,Government Aided,644.0,3959.0,3512.0,2208.0,858.0,564.0,12131
+2019,Chh. Sambhaji Nagar,Others,39.0,50.0,86.0,51.0,17.0,9.0,252
+2019,Chh. Sambhaji Nagar,Local body,3087.0,5680.0,164.0,599.0,18.0,,9597
+2019,Chh. Sambhaji Nagar,Private Unaided,1333.0,4063.0,1772.0,1685.0,560.0,883.0,10905
 2019,Dharashiv,Government Aided,331.0,693.0,1563.0,1266.0,635.0,255.0,4846
 2019,Dharashiv,Others,13.0,16.0,,14.0,16.0,,59
 2019,Dharashiv,Local body,1627.0,3116.0,59.0,531.0,11.0,,5350
@@ -1192,9 +1192,9 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2019,Latur,Others,12.0,6.0,18.0,,29.0,,65
 2019,Latur,Local body,1767.0,3560.0,,602.0,4.0,,5933
 2019,Latur,Private Unaided,669.0,1038.0,620.0,477.0,243.0,655.0,3800
-2019,Mumbai City,Government Aided,,19.0,6230.0,8971.0,390.0,2460.0,18456
-2019,Mumbai City,Others,13.0,22.0,486.0,263.0,11.0,47.0,842
-2019,Mumbai City,Private Unaided,78.0,472.0,6769.0,11473.0,414.0,1272.0,20793
+2019,Mumbai,Government Aided,,19.0,6230.0,8971.0,390.0,2460.0,18456
+2019,Mumbai,Others,13.0,22.0,486.0,263.0,11.0,47.0,842
+2019,Mumbai,Private Unaided,78.0,472.0,6769.0,11473.0,414.0,1272.0,20793
 2019,Mumbai Suburban,Government Aided,3182.0,186.0,,,,,3368
 2019,Mumbai Suburban,Local body,596.0,7594.0,,1489.0,153.0,,10420
 2019,Mumbai Suburban,Private Unaided,6620.0,770.0,,124.0,,,7514
@@ -1295,10 +1295,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2020,Chandrapur,Others,,6.0,146.0,57.0,28.0,,237
 2020,Chandrapur,Local body,2238.0,3230.0,51.0,97.0,41.0,,5657
 2020,Chandrapur,Private Unaided,411.0,665.0,814.0,1668.0,126.0,312.0,4149
-2020,Chhatrapati Sambhaji Nagar,Government Aided,632.0,3997.0,3468.0,2158.0,894.0,563.0,12107
-2020,Chhatrapati Sambhaji Nagar,Others,41.0,36.0,85.0,50.0,18.0,8.0,238
-2020,Chhatrapati Sambhaji Nagar,Local body,3050.0,5526.0,157.0,576.0,17.0,,9377
-2020,Chhatrapati Sambhaji Nagar,Private Unaided,1282.0,3991.0,2223.0,1590.0,515.0,841.0,11053
+2020,Chh. Sambhaji Nagar,Government Aided,632.0,3997.0,3468.0,2158.0,894.0,563.0,12107
+2020,Chh. Sambhaji Nagar,Others,41.0,36.0,85.0,50.0,18.0,8.0,238
+2020,Chh. Sambhaji Nagar,Local body,3050.0,5526.0,157.0,576.0,17.0,,9377
+2020,Chh. Sambhaji Nagar,Private Unaided,1282.0,3991.0,2223.0,1590.0,515.0,841.0,11053
 2020,Dharashiv,Government Aided,318.0,668.0,1506.0,1221.0,622.0,251.0,4702
 2020,Dharashiv,Others,14.0,16.0,,14.0,17.0,,61
 2020,Dharashiv,Local body,1607.0,3062.0,55.0,505.0,11.0,,5245
@@ -1335,9 +1335,9 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2020,Latur,Others,2.0,6.0,21.0,,29.0,,58
 2020,Latur,Local body,1752.0,3511.0,,589.0,3.0,,5855
 2020,Latur,Private Unaided,651.0,933.0,703.0,515.0,238.0,634.0,3773
-2020,Mumbai City,Government Aided,,17.0,5986.0,8687.0,383.0,2324.0,17752
-2020,Mumbai City,Others,19.0,22.0,463.0,252.0,11.0,40.0,807
-2020,Mumbai City,Private Unaided,92.0,361.0,6738.0,11196.0,394.0,1165.0,20222
+2020,Mumbai,Government Aided,,17.0,5986.0,8687.0,383.0,2324.0,17752
+2020,Mumbai,Others,19.0,22.0,463.0,252.0,11.0,40.0,807
+2020,Mumbai,Private Unaided,92.0,361.0,6738.0,11196.0,394.0,1165.0,20222
 2020,Mumbai Suburban,Government Aided,3036.0,175.0,,,,,3211
 2020,Mumbai Suburban,Local body,547.0,7351.0,,1622.0,136.0,,10252
 2020,Mumbai Suburban,Private Unaided,6207.0,699.0,,113.0,,,7019
@@ -1438,10 +1438,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2021,Chandrapur,Others,,,152.0,55.0,26.0,,233
 2021,Chandrapur,Local body,2152.0,3102.0,52.0,96.0,30.0,,5432
 2021,Chandrapur,Private Unaided,384.0,620.0,875.0,1596.0,125.0,310.0,4056
-2021,Chhatrapati Sambhaji Nagar,Government Aided,608.0,4035.0,3419.0,2142.0,885.0,598.0,12081
-2021,Chhatrapati Sambhaji Nagar,Others,31.0,27.0,79.0,44.0,15.0,20.0,216
-2021,Chhatrapati Sambhaji Nagar,Local body,3009.0,5414.0,149.0,546.0,22.0,,9198
-2021,Chhatrapati Sambhaji Nagar,Private Unaided,1103.0,3839.0,2315.0,1535.0,496.0,830.0,10744
+2021,Chh. Sambhaji Nagar,Government Aided,608.0,4035.0,3419.0,2142.0,885.0,598.0,12081
+2021,Chh. Sambhaji Nagar,Others,31.0,27.0,79.0,44.0,15.0,20.0,216
+2021,Chh. Sambhaji Nagar,Local body,3009.0,5414.0,149.0,546.0,22.0,,9198
+2021,Chh. Sambhaji Nagar,Private Unaided,1103.0,3839.0,2315.0,1535.0,496.0,830.0,10744
 2021,Dharashiv,Government Aided,309.0,667.0,1460.0,1186.0,615.0,247.0,4603
 2021,Dharashiv,Others,14.0,16.0,,14.0,13.0,,57
 2021,Dharashiv,Local body,1589.0,3009.0,49.0,489.0,11.0,,5154
@@ -1478,9 +1478,9 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2021,Latur,Others,2.0,5.0,21.0,,24.0,,52
 2021,Latur,Local body,1725.0,3424.0,,577.0,3.0,,5729
 2021,Latur,Private Unaided,577.0,845.0,702.0,532.0,221.0,572.0,3552
-2021,Mumbai City,Government Aided,,16.0,5750.0,8383.0,369.0,2276.0,17156
-2021,Mumbai City,Others,,,387.0,173.0,,27.0,587
-2021,Mumbai City,Private Unaided,96.0,316.0,6713.0,10981.0,405.0,1154.0,19909
+2021,Mumbai,Government Aided,,16.0,5750.0,8383.0,369.0,2276.0,17156
+2021,Mumbai,Others,,,387.0,173.0,,27.0,587
+2021,Mumbai,Private Unaided,96.0,316.0,6713.0,10981.0,405.0,1154.0,19909
 2021,Mumbai Suburban,Government Aided,2984.0,178.0,,,,,3162
 2021,Mumbai Suburban,Local body,502.0,6903.0,,1568.0,151.0,,9755
 2021,Mumbai Suburban,Private Unaided,5968.0,660.0,,100.0,,,6728
@@ -1581,10 +1581,10 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2024,Chandrapur,Others,,,170.0,48.0,31.0,19.0,268
 2024,Chandrapur,Local body,2034.0,2784.0,35.0,83.0,25.0,,4961
 2024,Chandrapur,Private Unaided,333.0,441.0,1316.0,1786.0,80.0,209.0,4249
-2024,Chhatrapati Sambhaji Nagar,Government Aided,570.0,4095.0,3264.0,2013.0,882.0,585.0,11804
-2024,Chhatrapati Sambhaji Nagar,Others,5.0,,97.0,50.0,9.0,25.0,186
-2024,Chhatrapati Sambhaji Nagar,Local body,2934.0,5275.0,147.0,717.0,16.0,,9146
-2024,Chhatrapati Sambhaji Nagar,Private Unaided,776.0,3240.0,3183.0,2237.0,450.0,673.0,11072
+2024,Chh. Sambhaji Nagar,Government Aided,570.0,4095.0,3264.0,2013.0,882.0,585.0,11804
+2024,Chh. Sambhaji Nagar,Others,5.0,,97.0,50.0,9.0,25.0,186
+2024,Chh. Sambhaji Nagar,Local body,2934.0,5275.0,147.0,717.0,16.0,,9146
+2024,Chh. Sambhaji Nagar,Private Unaided,776.0,3240.0,3183.0,2237.0,450.0,673.0,11072
 2024,Dharashiv,Government Aided,298.0,646.0,1359.0,1025.0,609.0,252.0,4317
 2024,Dharashiv,Others,2.0,,,14.0,12.0,,28
 2024,Dharashiv,Local body,1503.0,2911.0,47.0,425.0,8.0,,4901
@@ -1621,9 +1621,9 @@ Year,District,Select School Management Type,Primary School (I-V),Upper Primary S
 2024,Latur,Others,2.0,4.0,39.0,,27.0,,72
 2024,Latur,Local body,1583.0,3072.0,,490.0,3.0,,5148
 2024,Latur,Private Unaided,446.0,632.0,1287.0,720.0,184.0,292.0,3626
-2024,Mumbai City,Government Aided,,16.0,5077.0,7456.0,298.0,2250.0,15380
-2024,Mumbai City,Others,,,516.0,197.0,,15.0,728
-2024,Mumbai City,Private Unaided,66.0,187.0,8709.0,11472.0,371.0,1067.0,22080
+2024,Mumbai,Government Aided,,16.0,5077.0,7456.0,298.0,2250.0,15380
+2024,Mumbai,Others,,,516.0,197.0,,15.0,728
+2024,Mumbai,Private Unaided,66.0,187.0,8709.0,11472.0,371.0,1067.0,22080
 2024,Mumbai Suburban,Government Aided,2672.0,174.0,,,,,2846
 2024,Mumbai Suburban,Others,416.0,440.0,,94.0,,,950
 2024,Mumbai Suburban,Local body,410.0,5769.0,,1705.0,125.0,,8625

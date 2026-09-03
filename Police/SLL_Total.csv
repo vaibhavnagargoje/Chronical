@@ -2,7 +2,7 @@ District,Year,Cognizable SLL Crimes
 Ahilyanagar,2018,6838
 Akola,2018,6196
 Amravati,2018,5510
-Chhatrapati Sambhaji Nagar,2018,2824
+Chh. Sambhaji Nagar,2018,2824
 Beed,2018,4653
 Bhandara,2018,2634
 Buldhana,2018,6714
@@ -19,7 +19,7 @@ Mumbai,2018,8387
 Nagpur,2018,6639
 Nanded,2018,2929
 Nandurbar,2018,2382
-Nasik,2018,1192
+Nashik,2018,1192
 Dharashiv,2018,1926
 Palghar,2018,1670
 Parbhani,2018,6006
@@ -38,7 +38,7 @@ Total,2018,169383
 Ahilyanagar,2014,2797
 Akola,2014,2451
 Amravati,2014,5947
-Chhatrapati Sambhaji Nagar,2014,3245
+Chh. Sambhaji Nagar,2014,3245
 Beed,2014,2344
 Bhandara,2014,2847
 Buldhana,2014,4385
@@ -55,7 +55,7 @@ Mumbai,2014,19620
 Nagpur,2014,20953
 Nanded,2014,2411
 Nandurbar,2014,1029
-Nasik,2014,3276
+Nashik,2014,3276
 Dharashiv,2014,1583
 Palghar,2014,601
 Parbhani,2014,2078
@@ -74,7 +74,7 @@ Total,2014,134981
 Ahilyanagar,2019,7652
 Akola,2019,5850
 Amravati,2019,6372
-Chhatrapati Sambhaji Nagar,2019,2852
+Chh. Sambhaji Nagar,2019,2852
 Beed,2019,4498
 Bhandara,2019,2216
 Buldhana,2019,6347
@@ -91,7 +91,7 @@ Mumbai,2019,9075
 Nagpur,2019,5592
 Nanded,2019,2664
 Nandurbar,2019,3815
-Nasik,2019,1175
+Nashik,2019,1175
 Dharashiv,2019,1572
 Palghar,2019,1648
 Parbhani,2019,7067
@@ -110,7 +110,7 @@ Total,2019,168349
 Ahilyanagar,2015,3892
 Akola,2015,2662
 Amravati,2015,6378
-Chhatrapati Sambhaji Nagar,2015,2522
+Chh. Sambhaji Nagar,2015,2522
 Beed,2015,2767
 Bhandara,2015,2300
 Buldhana,2015,4524
@@ -127,7 +127,7 @@ Mumbai,2015,23836
 Nagpur,2015,26236
 Nanded,2015,2353
 Nandurbar,2015,1007
-Nasik,2015,3091
+Nashik,2015,3091
 Dharashiv,2015,1206
 Palghar,2015,613
 Parbhani,2015,1566
@@ -146,7 +146,7 @@ Total,2015,147766
 Ahilyanagar,2016,4282
 Akola,2016,3056
 Amravati,2016,7233
-Chhatrapati Sambhaji Nagar,2016,2884
+Chh. Sambhaji Nagar,2016,2884
 Beed,2016,2921
 Bhandara,2016,2448
 Buldhana,2016,4325
@@ -163,7 +163,7 @@ Mumbai,2016,19537
 Nagpur,2016,35627
 Nanded,2016,2767
 Nandurbar,2016,938
-Nasik,2016,3585
+Nashik,2016,3585
 Dharashiv,2016,1860
 Palghar,2016,602
 Parbhani,2016,2115
@@ -182,7 +182,7 @@ Total,2016,169152
 Ahilyanagar,2020,5118
 Akola,2020,4362
 Amravati,2020,7146
-Chhatrapati Sambhaji Nagar,2020,3990
+Chh. Sambhaji Nagar,2020,3990
 Beed,2020,4358
 Bhandara,2020,2088
 Buldhana,2020,6814
@@ -199,7 +199,7 @@ Mumbai,2020,8703
 Nagpur,2020,10921
 Nanded,2020,2956
 Nandurbar,2020,2102
-Nasik,2020,4254
+Nashik,2020,4254
 Dharashiv,2020,1476
 Palghar,2020,826
 Parbhani,2020,1845
@@ -218,7 +218,7 @@ Total,2020,144986
 Ahilyanagar,2021,5322
 Akola,2021,5148
 Amravati,2021,9069
-Chhatrapati Sambhaji Nagar,2021,4769
+Chh. Sambhaji Nagar,2021,4769
 Beed,2021,2550
 Bhandara,2021,2113
 Buldhana,2021,7440
@@ -235,7 +235,7 @@ Mumbai,2021,15507
 Nagpur,2021,13554
 Nanded,2021,3646
 Nandurbar,2021,2937
-Nasik,2021,4836
+Nashik,2021,4836
 Dharashiv,2021,2110
 Palghar,2021,693
 Parbhani,2021,2261
@@ -258,7 +258,7 @@ Beed,2022,2863
 Bhandara,2022,2108
 Buldhana,2022,7341
 Chandrapur,2022,3805
-Chhatrapati Sambhaji Nagar,2022,4964
+Chh. Sambhaji Nagar,2022,4964
 Dharashiv,2022,2474
 Dhule,2022,3128
 Gadchiroli,2022,2758
@@ -272,7 +272,7 @@ Mumbai,2022,19956
 Nagpur,2022,11203
 Nanded,2022,3214
 Nandurbar,2022,3356
-Nasik,2022,5725
+Nashik,2022,5725
 Palghar,2022,887
 Parbhani,2022,2696
 Pune,2022,10019
@@ -293,7 +293,7 @@ Beed,2017,5110
 Bhandara,2017,2591
 Buldhana,2017,6164
 Chandrapur,2017,13832
-Chhatrapati Sambhaji Nagar,2017,5175
+Chh. Sambhaji Nagar,2017,5175
 Dharashiv,2017,2385
 Dhule,2017,2321
 Gadchiroli,2017,2081
@@ -307,7 +307,7 @@ Mumbai,2017,20029
 Nagpur,2017,11467
 Nanded,2017,3888
 Nandurbar,2017,1616
-Nasik,2017,4795
+Nashik,2017,4795
 Palghar,2017,1619
 Parbhani,2017,2167
 Pune,2017,9371

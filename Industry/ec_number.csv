@@ -1,4 +1,4 @@
-﻿Year,District,Number of Establishments
+Year,District,Number of Establishments
 2013,Nandurbar,46787
 2013,Dhule,72618
 2013,Jalgaon,158644
@@ -17,11 +17,11 @@
 2013,Hingoli,35841
 2013,Parbhani,59812
 2013,Jalna,97618
-2013,Chhatrapati Sambhaji Nagar,143358
+2013,Chh. Sambhaji Nagar,143358
 2013,Nashik,214336
 2013,Thane,438706
 2013,Mumbai Suburban,465416
-2013,Mumbai City,261259
+2013,Mumbai,261259
 2013,Raigad,101672
 2013,Pune,514469
 2013,Ahilyanagar,246417
@@ -34,7 +34,7 @@
 2013,Sindhudurg,51216
 2013,Kolhapur,570867
 2013,Sangli,278060
-1998,Mumbai City,485492
+1998,Mumbai,485492
 1998,Thane,219871
 1998,Raigad,57213
 1998,Ratnagiri,49190
@@ -48,7 +48,7 @@
 1998,Sangli,112775
 1998,Solapur,141293
 1998,Kolhapur,236818
-1998,Chhatrapati Sambhaji Nagar,71434
+1998,Chh. Sambhaji Nagar,71434
 1998,Jalna,40477
 1998,Parbhani,52408
 1998,Beed,59045
@@ -64,13 +64,13 @@
 1998,Bhandara,98003
 1998,Chandrapur,70783
 1998,Gadchiroli,33183
-1990,Mumbai City,423419
+1990,Mumbai,423419
 1990,Pune,200061
 1990,Satara,82898
 1990,Sangli,87202
 1990,Solapur,126293
 1990,Kolhapur,188891
-1990,Chhatrapati Sambhaji Nagar,59434
+1990,Chh. Sambhaji Nagar,59434
 1990,Jalna,28427
 1990,Parbhani,46144
 1990,Beed,45996
@@ -112,11 +112,11 @@
 2005,Hingoli,21865
 2005,Parbhani,45745
 2005,Jalna,60183
-2005,Chhatrapati Sambhaji Nagar,116053
+2005,Chh. Sambhaji Nagar,116053
 2005,Nashik,159157
 2005,Thane,325004
 2005,Mumbai Suburban,572198
-2005,Mumbai City,80402
+2005,Mumbai,80402
 2005,Raigad,339621
 2005,Pune,167285
 2005,Ahilyanagar,99565

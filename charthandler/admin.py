@@ -8,6 +8,11 @@ from .models import (
     DairyByproduct,
     Fisheries,
     Veterinary,
+    # Election
+    VidhanSabhaElectionWinners,
+    VidhanSabhaNOTAResults,
+    LokSabhaElectionWinners,
+    LokSabhaNOTAResults,
 
 )
 
@@ -65,6 +70,38 @@ class VeterinaryAdmin(admin.ModelAdmin):
     list_display = ['district', 'year', 'taluka', 'veterinary_hospitals', 'first_aid_centres', 'total_facilities']
     list_filter = ['district', 'year']
     search_fields = ['district', 'taluka']
+
+
+# ============================================================================
+# ELECTION ADMIN
+# ============================================================================
+
+@admin.register(VidhanSabhaElectionWinners)
+class VidhanSabhaElectionWinnersAdmin(admin.ModelAdmin):
+    list_display = ['year', 'assembly_no', 'constituency_no', 'candidate', 'party', 'votes', 'district']
+    list_filter = ['year', 'district', 'party']
+    search_fields = ['candidate', 'party', 'district', 'select_constituency']
+
+
+@admin.register(VidhanSabhaNOTAResults)
+class VidhanSabhaNOTAResultsAdmin(admin.ModelAdmin):
+    list_display = ['year', 'assembly_no', 'constituency_no', 'candidate', 'votes', 'district']
+    list_filter = ['year', 'district']
+    search_fields = ['candidate', 'district', 'select_constituency']
+
+
+@admin.register(LokSabhaElectionWinners)
+class LokSabhaElectionWinnersAdmin(admin.ModelAdmin):
+    list_display = ['year', 'assembly_no', 'constituency_no', 'candidate', 'party', 'votes', 'district']
+    list_filter = ['year', 'district', 'party']
+    search_fields = ['candidate', 'party', 'district', 'select_constituency']
+
+
+@admin.register(LokSabhaNOTAResults)
+class LokSabhaNOTAResultsAdmin(admin.ModelAdmin):
+    list_display = ['year', 'assembly_no', 'constituency_no', 'candidate', 'votes', 'district']
+    list_filter = ['year', 'district']
+    search_fields = ['candidate', 'district', 'select_constituency']
 
 
 # ============================================================================
@@ -520,19 +557,18 @@ from .models import (
     FactoryWorkers,
     DSAElectricity,
     DSAPollutionCategory,
-    LaborWorkers,
-    LaborAgeDistribution,
-    LaborECWorkers,
-    LaborECGender,
-    LaborECReligion,
+    LaborNonWorkersYearly,
+    LaborWorkingPopulations,
+    LaborCensusAgeDistribution,
+    LaborEconomicCensusWorkers,
+    LaborEconomicCensusGender,
+    LaborDsaMsme,
+    LaborEmpByIndustry,
+    LaborGovtEmployees,
+    LaborMNREGAAccounts,
     LaborMNREGAJobCards,
     LaborMNREGAParticipation,
-    LaborMNREGAAccounts,
     LaborMNREGAScope,
-    LaborGovtEmployees,
-    LaborDSAEstablishments,
-    LaborDSAWorkers,
-    LaborIndustryType,
 )
 
 @admin.register(ECNumber)
@@ -599,35 +635,59 @@ class DSAPollutionCategoryAdmin(admin.ModelAdmin):
 # LABOR MODELS
 # ==========================================
 
-@admin.register(LaborWorkers)
-class LaborWorkersAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'rural_urban', 'male_main_workers', 'female_main_workers', 'male_marginal_workers', 'female_marginal_workers')
+@admin.register(LaborNonWorkersYearly)
+class LaborNonWorkersYearlyAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'rural_urban', 'male_non_workers', 'female_non_workers')
     list_filter = ('district', 'year', 'rural_urban')
     search_fields = ('district',)
 
-@admin.register(LaborAgeDistribution)
-class LaborAgeDistributionAdmin(admin.ModelAdmin):
+@admin.register(LaborWorkingPopulations)
+class LaborWorkingPopulationsAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'rural_urban', 'working_population', 'male_main_workers', 'female_main_workers')
+    list_filter = ('district', 'year', 'rural_urban')
+    search_fields = ('district',)
+
+@admin.register(LaborCensusAgeDistribution)
+class LaborCensusAgeDistributionAdmin(admin.ModelAdmin):
     list_display = ('district', 'year', 'rural_urban', 'age_group', 'main_workers', 'marginal_workers', 'non_workers')
     list_filter = ('district', 'year', 'rural_urban', 'age_group')
     search_fields = ('district', 'age_group')
 
-@admin.register(LaborECWorkers)
-class LaborECWorkersAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'number_of_workers', 'govt_psu_workers', 'cooperative_workers', 'private_sector_workers')
+@admin.register(LaborEconomicCensusWorkers)
+class LaborEconomicCensusWorkersAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'number_of_workers', 'number_of_establishments', 'govt_psu', 'cooperative', 'private_sector')
     list_filter = ('district', 'year')
     search_fields = ('district',)
 
-@admin.register(LaborECGender)
-class LaborECGenderAdmin(admin.ModelAdmin):
+@admin.register(LaborEconomicCensusGender)
+class LaborEconomicCensusGenderAdmin(admin.ModelAdmin):
     list_display = ('district', 'year', 'gender', 'employed_hired', 'employed_not_hired')
     list_filter = ('district', 'year', 'gender')
     search_fields = ('district', 'gender')
 
-@admin.register(LaborECReligion)
-class LaborECReligionAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'religion', 'number_of_establishments')
-    list_filter = ('district', 'year', 'religion')
-    search_fields = ('district', 'religion')
+@admin.register(LaborDsaMsme)
+class LaborDsaMsmeAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'taluka', 'number_of_msme_industries', 'number_of_employees')
+    list_filter = ('district', 'year', 'taluka')
+    search_fields = ('district', 'taluka')
+
+@admin.register(LaborEmpByIndustry)
+class LaborEmpByIndustryAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'select_industry', 'govt_employees', 'semi_govt_employees', 'private_employees')
+    list_filter = ('district', 'year', 'select_industry')
+    search_fields = ('district', 'select_industry')
+
+@admin.register(LaborGovtEmployees)
+class LaborGovtEmployeesAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'group', 'approved_posts', 'positions_filled', 'number_of_women')
+    list_filter = ('district', 'year', 'group')
+    search_fields = ('district', 'group')
+
+@admin.register(LaborMNREGAAccounts)
+class LaborMNREGAAccountsAdmin(admin.ModelAdmin):
+    list_display = ('district', 'year', 'bank_accounts', 'post_office_accounts')
+    list_filter = ('district', 'year')
+    search_fields = ('district',)
 
 @admin.register(LaborMNREGAJobCards)
 class LaborMNREGAJobCardsAdmin(admin.ModelAdmin):
@@ -641,41 +701,11 @@ class LaborMNREGAParticipationAdmin(admin.ModelAdmin):
     list_filter = ('district', 'year')
     search_fields = ('district',)
 
-@admin.register(LaborMNREGAAccounts)
-class LaborMNREGAAccountsAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'bank_accounts', 'post_office_accounts')
-    list_filter = ('district', 'year')
-    search_fields = ('district',)
-
 @admin.register(LaborMNREGAScope)
 class LaborMNREGAScopeAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'worked', 'demanded_work', 'allotted_work')
+    list_display = ('district', 'year', 'applied_for_job_card', 'worked', 'demanded_work', 'allotted_work')
     list_filter = ('district', 'year')
     search_fields = ('district',)
-
-@admin.register(LaborGovtEmployees)
-class LaborGovtEmployeesAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'group', 'approved_posts', 'positions_filled', 'number_of_women')
-    list_filter = ('district', 'year', 'group')
-    search_fields = ('district', 'group')
-
-@admin.register(LaborDSAEstablishments)
-class LaborDSAEstablishmentsAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'taluka', 'shops', 'business_organizations', 'hotels_and_restaurants', 'cinema_halls', 'organizations_without_workers')
-    list_filter = ('district', 'year', 'taluka')
-    search_fields = ('district', 'taluka')
-
-@admin.register(LaborDSAWorkers)
-class LaborDSAWorkersAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'taluka', 'shops', 'business_organizations', 'hotels_and_restaurants', 'cinema_halls')
-    list_filter = ('district', 'year', 'taluka')
-    search_fields = ('district', 'taluka')
-
-@admin.register(LaborIndustryType)
-class LaborIndustryTypeAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'type_of_industry', 'govt_employees', 'semi_govt_employees', 'private_employees', 'total_employees')
-    list_filter = ('district', 'year', 'type_of_industry')
-    search_fields = ('district', 'type_of_industry')
 
 
 # ============================================================================

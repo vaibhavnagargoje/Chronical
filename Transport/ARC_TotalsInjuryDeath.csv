@@ -1,8 +1,8 @@
 Year,District,Accidents with NO injury,Accidents,Persons Killed Or Injured
-2018,Ahmednagar,94,1604,1812
+2018,Ahilyanagar,94,1604,1812
 2018,Akola,73,499,652
 2018,Amravati,241,1097,1118
-2018,Aurangabad,124,1280,1551
+2018,Chh. Sambhaji Nagar,124,1280,1551
 2018,Beed,28,641,721
 2018,Bhandara,39,413,639
 2018,Buldhana,66,648,932
@@ -20,7 +20,7 @@ Year,District,Accidents with NO injury,Accidents,Persons Killed Or Injured
 2018,Nanded,84,711,837
 2018,Nandurbar,95,499,795
 2018,Nashik,240,2179,2903
-2018,Osmanabad,69,696,1035
+2018,Dharashiv,69,696,1035
 2018,Palghar,244,1360,1411
 2018,Parbhani,28,320,365
 2018,Pune,471,3695,4017
@@ -34,10 +34,10 @@ Year,District,Accidents with NO injury,Accidents,Persons Killed Or Injured
 2018,Wardha,40,529,739
 2018,Washim,23,290,357
 2018,Yavatmal,725,1401,900
-2020,Ahmednagar,36,774,1093
+2020,Ahilyanagar,36,774,1093
 2020,Akola,48,376,518
 2020,Amravati,81,928,1064
-2020,Aurangabad,69,1193,1392
+2020,Chh. Sambhaji Nagar,69,1193,1392
 2020,Beed,34,436,588
 2020,Bhandara,32,656,790
 2020,Buldhana,27,529,637
@@ -55,7 +55,7 @@ Year,District,Accidents with NO injury,Accidents,Persons Killed Or Injured
 2020,Nanded,19,555,694
 2020,Nandurbar,23,755,1023
 2020,Nashik,12,1042,1761
-2020,Osmanabad,13,171,176
+2020,Dharashiv,13,171,176
 2020,Palghar,14,147,227
 2020,Parbhani,54,629,711
 2020,Pune,64,939,1232

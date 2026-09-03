@@ -5,8 +5,8 @@ Year,District,Select Offense,Cases
 2014,Akola,Incidence of Rash Driving,503
 2014,Amravati,Arson,86
 2014,Amravati,Incidence of Rash Driving,1056
-2014,Chhatrapati Sambhaji Nagar,Arson,65
-2014,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,1173
+2014,Chh. Sambhaji Nagar,Arson,65
+2014,Chh. Sambhaji Nagar,Incidence of Rash Driving,1173
 2014,Beed,Arson,33
 2014,Beed,Incidence of Rash Driving,856
 2014,Bhandara,Arson,20
@@ -39,8 +39,8 @@ Year,District,Select Offense,Cases
 2014,Nanded,Incidence of Rash Driving,574
 2014,Nandurbar,Arson,6
 2014,Nandurbar,Incidence of Rash Driving,233
-2014,Nasik,Arson,31
-2014,Nasik,Incidence of Rash Driving,2088
+2014,Nashik,Arson,31
+2014,Nashik,Incidence of Rash Driving,2088
 2014,Dharashiv,Arson,19
 2014,Dharashiv,Incidence of Rash Driving,408
 2014,Palghar,Arson,12
@@ -75,8 +75,8 @@ Year,District,Select Offense,Cases
 2015,Akola,Incidence of Rash Driving,615
 2015,Amravati,Arson,79
 2015,Amravati,Incidence of Rash Driving,1512
-2015,Chhatrapati Sambhaji Nagar,Arson,101
-2015,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,2065
+2015,Chh. Sambhaji Nagar,Arson,101
+2015,Chh. Sambhaji Nagar,Incidence of Rash Driving,2065
 2015,Beed,Arson,29
 2015,Beed,Incidence of Rash Driving,992
 2015,Bhandara,Arson,31
@@ -109,8 +109,8 @@ Year,District,Select Offense,Cases
 2015,Nanded,Incidence of Rash Driving,1605
 2015,Nandurbar,Arson,6
 2015,Nandurbar,Incidence of Rash Driving,201
-2015,Nasik,Arson,40
-2015,Nasik,Incidence of Rash Driving,2524
+2015,Nashik,Arson,40
+2015,Nashik,Incidence of Rash Driving,2524
 2015,Dharashiv,Arson,17
 2015,Dharashiv,Incidence of Rash Driving,545
 2015,Palghar,Arson,10
@@ -145,8 +145,8 @@ Year,District,Select Offense,Cases
 2016,Akola,Incidence of Rash Driving,842
 2016,Amravati,Arson,103
 2016,Amravati,Incidence of Rash Driving,1527
-2016,Chhatrapati Sambhaji Nagar,Arson,53
-2016,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,2489
+2016,Chh. Sambhaji Nagar,Arson,53
+2016,Chh. Sambhaji Nagar,Incidence of Rash Driving,2489
 2016,Beed,Arson,35
 2016,Beed,Incidence of Rash Driving,713
 2016,Bhandara,Arson,25
@@ -179,8 +179,8 @@ Year,District,Select Offense,Cases
 2016,Nanded,Incidence of Rash Driving,1610
 2016,Nandurbar,Arson,13
 2016,Nandurbar,Incidence of Rash Driving,142
-2016,Nasik,Arson,55
-2016,Nasik,Incidence of Rash Driving,454
+2016,Nashik,Arson,55
+2016,Nashik,Incidence of Rash Driving,454
 2016,Dharashiv,Arson,15
 2016,Dharashiv,Incidence of Rash Driving,445
 2016,Palghar,Arson,10
@@ -236,15 +236,15 @@ Year,District,Select Offense,Cases
 2017,Amravati,Obscene Acts and Songs at Public Places,388
 2017,Amravati,Offences relating to Religion,27
 2017,Amravati,Circulate False/Fake News/Rumours,0
-2017,Chhatrapati Sambhaji Nagar,Arson,61
-2017,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,826
-2017,Chhatrapati Sambhaji Nagar,Offences relating to Elections,0
-2017,Chhatrapati Sambhaji Nagar,Disobedience to order duly promulgated by Public Servant,122
-2017,Chhatrapati Sambhaji Nagar,Offences relating to Adulteration or Sale of Food/Drugs,0
-2017,Chhatrapati Sambhaji Nagar,Sale of obscene Books/Objects,0
-2017,Chhatrapati Sambhaji Nagar,Obscene Acts and Songs at Public Places,18
-2017,Chhatrapati Sambhaji Nagar,Offences relating to Religion,24
-2017,Chhatrapati Sambhaji Nagar,Circulate False/Fake News/Rumours,0
+2017,Chh. Sambhaji Nagar,Arson,61
+2017,Chh. Sambhaji Nagar,Incidence of Rash Driving,826
+2017,Chh. Sambhaji Nagar,Offences relating to Elections,0
+2017,Chh. Sambhaji Nagar,Disobedience to order duly promulgated by Public Servant,122
+2017,Chh. Sambhaji Nagar,Offences relating to Adulteration or Sale of Food/Drugs,0
+2017,Chh. Sambhaji Nagar,Sale of obscene Books/Objects,0
+2017,Chh. Sambhaji Nagar,Obscene Acts and Songs at Public Places,18
+2017,Chh. Sambhaji Nagar,Offences relating to Religion,24
+2017,Chh. Sambhaji Nagar,Circulate False/Fake News/Rumours,0
 2017,Beed,Arson,30
 2017,Beed,Incidence of Rash Driving,320
 2017,Beed,Offences relating to Elections,0
@@ -389,15 +389,15 @@ Year,District,Select Offense,Cases
 2017,Nandurbar,Obscene Acts and Songs at Public Places,0
 2017,Nandurbar,Offences relating to Religion,2
 2017,Nandurbar,Circulate False/Fake News/Rumours,0
-2017,Nasik,Arson,50
-2017,Nasik,Incidence of Rash Driving,1002
-2017,Nasik,Offences relating to Elections,0
-2017,Nasik,Disobedience to order duly promulgated by Public Servant,100
-2017,Nasik,Offences relating to Adulteration or Sale of Food/Drugs,0
-2017,Nasik,Sale of obscene Books/Objects,0
-2017,Nasik,Obscene Acts and Songs at Public Places,8
-2017,Nasik,Offences relating to Religion,15
-2017,Nasik,Circulate False/Fake News/Rumours,0
+2017,Nashik,Arson,50
+2017,Nashik,Incidence of Rash Driving,1002
+2017,Nashik,Offences relating to Elections,0
+2017,Nashik,Disobedience to order duly promulgated by Public Servant,100
+2017,Nashik,Offences relating to Adulteration or Sale of Food/Drugs,0
+2017,Nashik,Sale of obscene Books/Objects,0
+2017,Nashik,Obscene Acts and Songs at Public Places,8
+2017,Nashik,Offences relating to Religion,15
+2017,Nashik,Circulate False/Fake News/Rumours,0
 2017,Dharashiv,Arson,12
 2017,Dharashiv,Incidence of Rash Driving,307
 2017,Dharashiv,Offences relating to Elections,0
@@ -551,15 +551,15 @@ Year,District,Select Offense,Cases
 2018,Amravati,Obscene Acts and Songs at Public Places,282
 2018,Amravati,Offences relating to Religion,24
 2018,Amravati,Circulate False/Fake News/Rumours,0
-2018,Chhatrapati Sambhaji Nagar,Arson,68
-2018,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,893
-2018,Chhatrapati Sambhaji Nagar,Offences relating to Elections,0
-2018,Chhatrapati Sambhaji Nagar,Disobedience to order duly promulgated by Public Servant,146
-2018,Chhatrapati Sambhaji Nagar,Offences relating to Adulteration or Sale of Food/Drugs,3
-2018,Chhatrapati Sambhaji Nagar,Sale of obscene Books/Objects,2
-2018,Chhatrapati Sambhaji Nagar,Obscene Acts and Songs at Public Places,72
-2018,Chhatrapati Sambhaji Nagar,Offences relating to Religion,21
-2018,Chhatrapati Sambhaji Nagar,Circulate False/Fake News/Rumours,0
+2018,Chh. Sambhaji Nagar,Arson,68
+2018,Chh. Sambhaji Nagar,Incidence of Rash Driving,893
+2018,Chh. Sambhaji Nagar,Offences relating to Elections,0
+2018,Chh. Sambhaji Nagar,Disobedience to order duly promulgated by Public Servant,146
+2018,Chh. Sambhaji Nagar,Offences relating to Adulteration or Sale of Food/Drugs,3
+2018,Chh. Sambhaji Nagar,Sale of obscene Books/Objects,2
+2018,Chh. Sambhaji Nagar,Obscene Acts and Songs at Public Places,72
+2018,Chh. Sambhaji Nagar,Offences relating to Religion,21
+2018,Chh. Sambhaji Nagar,Circulate False/Fake News/Rumours,0
 2018,Beed,Arson,24
 2018,Beed,Incidence of Rash Driving,409
 2018,Beed,Offences relating to Elections,0
@@ -704,15 +704,15 @@ Year,District,Select Offense,Cases
 2018,Nandurbar,Obscene Acts and Songs at Public Places,4
 2018,Nandurbar,Offences relating to Religion,5
 2018,Nandurbar,Circulate False/Fake News/Rumours,0
-2018,Nasik,Arson,53
-2018,Nasik,Incidence of Rash Driving,1279
-2018,Nasik,Offences relating to Elections,0
-2018,Nasik,Disobedience to order duly promulgated by Public Servant,294
-2018,Nasik,Offences relating to Adulteration or Sale of Food/Drugs,4
-2018,Nasik,Sale of obscene Books/Objects,2
-2018,Nasik,Obscene Acts and Songs at Public Places,2
-2018,Nasik,Offences relating to Religion,18
-2018,Nasik,Circulate False/Fake News/Rumours,1
+2018,Nashik,Arson,53
+2018,Nashik,Incidence of Rash Driving,1279
+2018,Nashik,Offences relating to Elections,0
+2018,Nashik,Disobedience to order duly promulgated by Public Servant,294
+2018,Nashik,Offences relating to Adulteration or Sale of Food/Drugs,4
+2018,Nashik,Sale of obscene Books/Objects,2
+2018,Nashik,Obscene Acts and Songs at Public Places,2
+2018,Nashik,Offences relating to Religion,18
+2018,Nashik,Circulate False/Fake News/Rumours,1
 2018,Dharashiv,Arson,24
 2018,Dharashiv,Incidence of Rash Driving,404
 2018,Dharashiv,Offences relating to Elections,0
@@ -866,15 +866,15 @@ Year,District,Select Offense,Cases
 2019,Amravati,Obscene Acts and Songs at Public Places,335
 2019,Amravati,Offences relating to Religion,15
 2019,Amravati,Circulate False/Fake News/Rumours,0
-2019,Chhatrapati Sambhaji Nagar,Arson,37
-2019,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,729
-2019,Chhatrapati Sambhaji Nagar,Offences relating to Elections,2
-2019,Chhatrapati Sambhaji Nagar,Disobedience to order duly promulgated by Public Servant,192
-2019,Chhatrapati Sambhaji Nagar,Offences relating to Adulteration or Sale of Food/Drugs,5
-2019,Chhatrapati Sambhaji Nagar,Sale of obscene Books/Objects,0
-2019,Chhatrapati Sambhaji Nagar,Obscene Acts and Songs at Public Places,51
-2019,Chhatrapati Sambhaji Nagar,Offences relating to Religion,12
-2019,Chhatrapati Sambhaji Nagar,Circulate False/Fake News/Rumours,2
+2019,Chh. Sambhaji Nagar,Arson,37
+2019,Chh. Sambhaji Nagar,Incidence of Rash Driving,729
+2019,Chh. Sambhaji Nagar,Offences relating to Elections,2
+2019,Chh. Sambhaji Nagar,Disobedience to order duly promulgated by Public Servant,192
+2019,Chh. Sambhaji Nagar,Offences relating to Adulteration or Sale of Food/Drugs,5
+2019,Chh. Sambhaji Nagar,Sale of obscene Books/Objects,0
+2019,Chh. Sambhaji Nagar,Obscene Acts and Songs at Public Places,51
+2019,Chh. Sambhaji Nagar,Offences relating to Religion,12
+2019,Chh. Sambhaji Nagar,Circulate False/Fake News/Rumours,2
 2019,Beed,Arson,29
 2019,Beed,Incidence of Rash Driving,328
 2019,Beed,Offences relating to Elections,0
@@ -1019,15 +1019,15 @@ Year,District,Select Offense,Cases
 2019,Nandurbar,Obscene Acts and Songs at Public Places,6
 2019,Nandurbar,Offences relating to Religion,4
 2019,Nandurbar,Circulate False/Fake News/Rumours,0
-2019,Nasik,Arson,49
-2019,Nasik,Incidence of Rash Driving,1215
-2019,Nasik,Offences relating to Elections,0
-2019,Nasik,Disobedience to order duly promulgated by Public Servant,479
-2019,Nasik,Offences relating to Adulteration or Sale of Food/Drugs,4
-2019,Nasik,Sale of obscene Books/Objects,5
-2019,Nasik,Obscene Acts and Songs at Public Places,2
-2019,Nasik,Offences relating to Religion,2
-2019,Nasik,Circulate False/Fake News/Rumours,0
+2019,Nashik,Arson,49
+2019,Nashik,Incidence of Rash Driving,1215
+2019,Nashik,Offences relating to Elections,0
+2019,Nashik,Disobedience to order duly promulgated by Public Servant,479
+2019,Nashik,Offences relating to Adulteration or Sale of Food/Drugs,4
+2019,Nashik,Sale of obscene Books/Objects,5
+2019,Nashik,Obscene Acts and Songs at Public Places,2
+2019,Nashik,Offences relating to Religion,2
+2019,Nashik,Circulate False/Fake News/Rumours,0
 2019,Dharashiv,Arson,21
 2019,Dharashiv,Incidence of Rash Driving,482
 2019,Dharashiv,Offences relating to Elections,0
@@ -1181,15 +1181,15 @@ Year,District,Select Offense,Cases
 2020,Amravati,Obscene Acts and Songs at Public Places,291
 2020,Amravati,Offences relating to Religion,22
 2020,Amravati,Circulate False/Fake News/Rumours,1
-2020,Chhatrapati Sambhaji Nagar,Arson,37
-2020,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,572
-2020,Chhatrapati Sambhaji Nagar,Offences relating to Elections,0
-2020,Chhatrapati Sambhaji Nagar,Disobedience to order duly promulgated by Public Servant,2768
-2020,Chhatrapati Sambhaji Nagar,Offences relating to Adulteration or Sale of Food/Drugs,7
-2020,Chhatrapati Sambhaji Nagar,Sale of obscene Books/Objects,0
-2020,Chhatrapati Sambhaji Nagar,Obscene Acts and Songs at Public Places,20
-2020,Chhatrapati Sambhaji Nagar,Offences relating to Religion,18
-2020,Chhatrapati Sambhaji Nagar,Circulate False/Fake News/Rumours,2
+2020,Chh. Sambhaji Nagar,Arson,37
+2020,Chh. Sambhaji Nagar,Incidence of Rash Driving,572
+2020,Chh. Sambhaji Nagar,Offences relating to Elections,0
+2020,Chh. Sambhaji Nagar,Disobedience to order duly promulgated by Public Servant,2768
+2020,Chh. Sambhaji Nagar,Offences relating to Adulteration or Sale of Food/Drugs,7
+2020,Chh. Sambhaji Nagar,Sale of obscene Books/Objects,0
+2020,Chh. Sambhaji Nagar,Obscene Acts and Songs at Public Places,20
+2020,Chh. Sambhaji Nagar,Offences relating to Religion,18
+2020,Chh. Sambhaji Nagar,Circulate False/Fake News/Rumours,2
 2020,Beed,Arson,27
 2020,Beed,Incidence of Rash Driving,264
 2020,Beed,Offences relating to Elections,0
@@ -1334,15 +1334,15 @@ Year,District,Select Offense,Cases
 2020,Nandurbar,Obscene Acts and Songs at Public Places,4
 2020,Nandurbar,Offences relating to Religion,3
 2020,Nandurbar,Circulate False/Fake News/Rumours,0
-2020,Nasik,Arson,55
-2020,Nasik,Incidence of Rash Driving,871
-2020,Nasik,Offences relating to Elections,0
-2020,Nasik,Disobedience to order duly promulgated by Public Servant,16027
-2020,Nasik,Offences relating to Adulteration or Sale of Food/Drugs,8
-2020,Nasik,Sale of obscene Books/Objects,0
-2020,Nasik,Obscene Acts and Songs at Public Places,9
-2020,Nasik,Offences relating to Religion,2
-2020,Nasik,Circulate False/Fake News/Rumours,1
+2020,Nashik,Arson,55
+2020,Nashik,Incidence of Rash Driving,871
+2020,Nashik,Offences relating to Elections,0
+2020,Nashik,Disobedience to order duly promulgated by Public Servant,16027
+2020,Nashik,Offences relating to Adulteration or Sale of Food/Drugs,8
+2020,Nashik,Sale of obscene Books/Objects,0
+2020,Nashik,Obscene Acts and Songs at Public Places,9
+2020,Nashik,Offences relating to Religion,2
+2020,Nashik,Circulate False/Fake News/Rumours,1
 2020,Dharashiv,Arson,15
 2020,Dharashiv,Incidence of Rash Driving,299
 2020,Dharashiv,Offences relating to Elections,1
@@ -1496,15 +1496,15 @@ Year,District,Select Offense,Cases
 2021,Amravati,Obscene Acts and Songs at Public Places,291
 2021,Amravati,Offences relating to Religion,22
 2021,Amravati,Circulate False/Fake News/Rumours,32
-2021,Chhatrapati Sambhaji Nagar,Arson,35
-2021,Chhatrapati Sambhaji Nagar,Incidence of Rash Driving,624
-2021,Chhatrapati Sambhaji Nagar,Offences relating to Elections,1
-2021,Chhatrapati Sambhaji Nagar,Disobedience to order duly promulgated by Public Servant,3091
-2021,Chhatrapati Sambhaji Nagar,Offences relating to Adulteration or Sale of Food/Drugs,0
-2021,Chhatrapati Sambhaji Nagar,Sale of obscene Books/Objects,1
-2021,Chhatrapati Sambhaji Nagar,Obscene Acts and Songs at Public Places,35
-2021,Chhatrapati Sambhaji Nagar,Offences relating to Religion,17
-2021,Chhatrapati Sambhaji Nagar,Circulate False/Fake News/Rumours,0
+2021,Chh. Sambhaji Nagar,Arson,35
+2021,Chh. Sambhaji Nagar,Incidence of Rash Driving,624
+2021,Chh. Sambhaji Nagar,Offences relating to Elections,1
+2021,Chh. Sambhaji Nagar,Disobedience to order duly promulgated by Public Servant,3091
+2021,Chh. Sambhaji Nagar,Offences relating to Adulteration or Sale of Food/Drugs,0
+2021,Chh. Sambhaji Nagar,Sale of obscene Books/Objects,1
+2021,Chh. Sambhaji Nagar,Obscene Acts and Songs at Public Places,35
+2021,Chh. Sambhaji Nagar,Offences relating to Religion,17
+2021,Chh. Sambhaji Nagar,Circulate False/Fake News/Rumours,0
 2021,Beed,Arson,35
 2021,Beed,Incidence of Rash Driving,305
 2021,Beed,Offences relating to Elections,0
@@ -1649,15 +1649,15 @@ Year,District,Select Offense,Cases
 2021,Nandurbar,Obscene Acts and Songs at Public Places,0
 2021,Nandurbar,Offences relating to Religion,3
 2021,Nandurbar,Circulate False/Fake News/Rumours,1
-2021,Nasik,Arson,34
-2021,Nasik,Incidence of Rash Driving,965
-2021,Nasik,Offences relating to Elections,2
-2021,Nasik,Disobedience to order duly promulgated by Public Servant,13920
-2021,Nasik,Offences relating to Adulteration or Sale of Food/Drugs,0
-2021,Nasik,Sale of obscene Books/Objects,1
-2021,Nasik,Obscene Acts and Songs at Public Places,16
-2021,Nasik,Offences relating to Religion,7
-2021,Nasik,Circulate False/Fake News/Rumours,0
+2021,Nashik,Arson,34
+2021,Nashik,Incidence of Rash Driving,965
+2021,Nashik,Offences relating to Elections,2
+2021,Nashik,Disobedience to order duly promulgated by Public Servant,13920
+2021,Nashik,Offences relating to Adulteration or Sale of Food/Drugs,0
+2021,Nashik,Sale of obscene Books/Objects,1
+2021,Nashik,Obscene Acts and Songs at Public Places,16
+2021,Nashik,Offences relating to Religion,7
+2021,Nashik,Circulate False/Fake News/Rumours,0
 2021,Dharashiv,Arson,19
 2021,Dharashiv,Incidence of Rash Driving,371
 2021,Dharashiv,Offences relating to Elections,0

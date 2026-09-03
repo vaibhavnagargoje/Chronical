@@ -2,7 +2,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Rape/Attempt to Rape,104.0
 2014,Akola,Rape/Attempt to Rape,53.0
 2014,Amravati,Rape/Attempt to Rape,130.0
-2014,Chhatrapati Sambhaji Nagar,Rape/Attempt to Rape,58.0
+2014,Chh. Sambhaji Nagar,Rape/Attempt to Rape,58.0
 2014,Beed,Rape/Attempt to Rape,70.0
 2014,Bhandara,Rape/Attempt to Rape,28.0
 2014,Buldhana,Rape/Attempt to Rape,57.0
@@ -15,11 +15,11 @@ Year,District,Crime,Cases
 2014,Jalna,Rape/Attempt to Rape,33.0
 2014,Kolhapur,Rape/Attempt to Rape,84.0
 2014,Latur,Rape/Attempt to Rape,57.0
-2014,Mumbai City,Rape/Attempt to Rape,610.0
+2014,Mumbai,Rape/Attempt to Rape,610.0
 2014,Nagpur,Rape/Attempt to Rape,183.0
 2014,Nanded,Rape/Attempt to Rape,43.0
 2014,Nandurbar,Rape/Attempt to Rape,25.0
-2014,Nasik,Rape/Attempt to Rape,115.0
+2014,Nashik,Rape/Attempt to Rape,115.0
 2014,Dharashiv,Rape/Attempt to Rape,43.0
 2014,Palghar,Rape/Attempt to Rape,98.0
 2014,Parbhani,Rape/Attempt to Rape,38.0
@@ -37,7 +37,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Rape/Attempt to Rape,
 2015,Akola,Rape/Attempt to Rape,
 2015,Amravati,Rape/Attempt to Rape,
-2015,Chhatrapati Sambhaji Nagar,Rape/Attempt to Rape,
+2015,Chh. Sambhaji Nagar,Rape/Attempt to Rape,
 2015,Beed,Rape/Attempt to Rape,
 2015,Bhandara,Rape/Attempt to Rape,
 2015,Buldhana,Rape/Attempt to Rape,
@@ -50,11 +50,11 @@ Year,District,Crime,Cases
 2015,Jalna,Rape/Attempt to Rape,
 2015,Kolhapur,Rape/Attempt to Rape,
 2015,Latur,Rape/Attempt to Rape,
-2015,Mumbai City,Rape/Attempt to Rape,
+2015,Mumbai,Rape/Attempt to Rape,
 2015,Nagpur,Rape/Attempt to Rape,
 2015,Nanded,Rape/Attempt to Rape,
 2015,Nandurbar,Rape/Attempt to Rape,
-2015,Nasik,Rape/Attempt to Rape,
+2015,Nashik,Rape/Attempt to Rape,
 2015,Dharashiv,Rape/Attempt to Rape,
 2015,Palghar,Rape/Attempt to Rape,
 2015,Parbhani,Rape/Attempt to Rape,
@@ -72,7 +72,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Rape/Attempt to Rape,
 2016,Akola,Rape/Attempt to Rape,
 2016,Amravati,Rape/Attempt to Rape,
-2016,Chhatrapati Sambhaji Nagar,Rape/Attempt to Rape,
+2016,Chh. Sambhaji Nagar,Rape/Attempt to Rape,
 2016,Beed,Rape/Attempt to Rape,
 2016,Bhandara,Rape/Attempt to Rape,
 2016,Buldhana,Rape/Attempt to Rape,
@@ -85,11 +85,11 @@ Year,District,Crime,Cases
 2016,Jalna,Rape/Attempt to Rape,
 2016,Kolhapur,Rape/Attempt to Rape,
 2016,Latur,Rape/Attempt to Rape,
-2016,Mumbai City,Rape/Attempt to Rape,
+2016,Mumbai,Rape/Attempt to Rape,
 2016,Nagpur,Rape/Attempt to Rape,
 2016,Nanded,Rape/Attempt to Rape,
 2016,Nandurbar,Rape/Attempt to Rape,
-2016,Nasik,Rape/Attempt to Rape,
+2016,Nashik,Rape/Attempt to Rape,
 2016,Dharashiv,Rape/Attempt to Rape,
 2016,Palghar,Rape/Attempt to Rape,
 2016,Parbhani,Rape/Attempt to Rape,
@@ -107,7 +107,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Rape/Attempt to Rape,
 2017,Akola,Rape/Attempt to Rape,
 2017,Amravati,Rape/Attempt to Rape,
-2017,Chhatrapati Sambhaji Nagar,Rape/Attempt to Rape,
+2017,Chh. Sambhaji Nagar,Rape/Attempt to Rape,
 2017,Beed,Rape/Attempt to Rape,
 2017,Bhandara,Rape/Attempt to Rape,
 2017,Buldhana,Rape/Attempt to Rape,
@@ -120,11 +120,11 @@ Year,District,Crime,Cases
 2017,Jalna,Rape/Attempt to Rape,
 2017,Kolhapur,Rape/Attempt to Rape,
 2017,Latur,Rape/Attempt to Rape,
-2017,Mumbai City,Rape/Attempt to Rape,
+2017,Mumbai,Rape/Attempt to Rape,
 2017,Nagpur,Rape/Attempt to Rape,
 2017,Nanded,Rape/Attempt to Rape,
 2017,Nandurbar,Rape/Attempt to Rape,
-2017,Nasik,Rape/Attempt to Rape,
+2017,Nashik,Rape/Attempt to Rape,
 2017,Dharashiv,Rape/Attempt to Rape,
 2017,Palghar,Rape/Attempt to Rape,
 2017,Parbhani,Rape/Attempt to Rape,
@@ -142,7 +142,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Rape/Attempt to Rape,
 2019,Akola,Rape/Attempt to Rape,
 2019,Amravati,Rape/Attempt to Rape,
-2019,Chhatrapati Sambhaji Nagar,Rape/Attempt to Rape,
+2019,Chh. Sambhaji Nagar,Rape/Attempt to Rape,
 2019,Beed,Rape/Attempt to Rape,
 2019,Bhandara,Rape/Attempt to Rape,
 2019,Buldhana,Rape/Attempt to Rape,
@@ -155,11 +155,11 @@ Year,District,Crime,Cases
 2019,Jalna,Rape/Attempt to Rape,
 2019,Kolhapur,Rape/Attempt to Rape,
 2019,Latur,Rape/Attempt to Rape,
-2019,Mumbai City,Rape/Attempt to Rape,
+2019,Mumbai,Rape/Attempt to Rape,
 2019,Nagpur,Rape/Attempt to Rape,
 2019,Nanded,Rape/Attempt to Rape,
 2019,Nandurbar,Rape/Attempt to Rape,
-2019,Nasik,Rape/Attempt to Rape,
+2019,Nashik,Rape/Attempt to Rape,
 2019,Dharashiv,Rape/Attempt to Rape,
 2019,Palghar,Rape/Attempt to Rape,
 2019,Parbhani,Rape/Attempt to Rape,
@@ -177,7 +177,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Rape/Attempt to Rape,
 2018,Akola,Rape/Attempt to Rape,
 2018,Amravati,Rape/Attempt to Rape,
-2018,Chhatrapati Sambhaji Nagar,Rape/Attempt to Rape,
+2018,Chh. Sambhaji Nagar,Rape/Attempt to Rape,
 2018,Beed,Rape/Attempt to Rape,
 2018,Bhandara,Rape/Attempt to Rape,
 2018,Buldhana,Rape/Attempt to Rape,
@@ -190,11 +190,11 @@ Year,District,Crime,Cases
 2018,Jalna,Rape/Attempt to Rape,
 2018,Kolhapur,Rape/Attempt to Rape,
 2018,Latur,Rape/Attempt to Rape,
-2018,Mumbai City,Rape/Attempt to Rape,
+2018,Mumbai,Rape/Attempt to Rape,
 2018,Nagpur,Rape/Attempt to Rape,
 2018,Nanded,Rape/Attempt to Rape,
 2018,Nandurbar,Rape/Attempt to Rape,
-2018,Nasik,Rape/Attempt to Rape,
+2018,Nashik,Rape/Attempt to Rape,
 2018,Dharashiv,Rape/Attempt to Rape,
 2018,Palghar,Rape/Attempt to Rape,
 2018,Parbhani,Rape/Attempt to Rape,
@@ -212,7 +212,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Rape/Attempt to Rape,
 2020,Akola,Rape/Attempt to Rape,
 2020,Amravati,Rape/Attempt to Rape,
-2020,Chhatrapati Sambhaji Nagar,Rape/Attempt to Rape,
+2020,Chh. Sambhaji Nagar,Rape/Attempt to Rape,
 2020,Beed,Rape/Attempt to Rape,
 2020,Bhandara,Rape/Attempt to Rape,
 2020,Buldhana,Rape/Attempt to Rape,
@@ -225,11 +225,11 @@ Year,District,Crime,Cases
 2020,Jalna,Rape/Attempt to Rape,
 2020,Kolhapur,Rape/Attempt to Rape,
 2020,Latur,Rape/Attempt to Rape,
-2020,Mumbai City,Rape/Attempt to Rape,
+2020,Mumbai,Rape/Attempt to Rape,
 2020,Nagpur,Rape/Attempt to Rape,
 2020,Nanded,Rape/Attempt to Rape,
 2020,Nandurbar,Rape/Attempt to Rape,
-2020,Nasik,Rape/Attempt to Rape,
+2020,Nashik,Rape/Attempt to Rape,
 2020,Dharashiv,Rape/Attempt to Rape,
 2020,Palghar,Rape/Attempt to Rape,
 2020,Parbhani,Rape/Attempt to Rape,
@@ -247,7 +247,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Rape/Attempt to Rape,
 2021,Akola,Rape/Attempt to Rape,
 2021,Amravati,Rape/Attempt to Rape,
-2021,Chhatrapati Sambhaji Nagar,Rape/Attempt to Rape,
+2021,Chh. Sambhaji Nagar,Rape/Attempt to Rape,
 2021,Beed,Rape/Attempt to Rape,
 2021,Bhandara,Rape/Attempt to Rape,
 2021,Buldhana,Rape/Attempt to Rape,
@@ -260,11 +260,11 @@ Year,District,Crime,Cases
 2021,Jalna,Rape/Attempt to Rape,
 2021,Kolhapur,Rape/Attempt to Rape,
 2021,Latur,Rape/Attempt to Rape,
-2021,Mumbai City,Rape/Attempt to Rape,
+2021,Mumbai,Rape/Attempt to Rape,
 2021,Nagpur,Rape/Attempt to Rape,
 2021,Nanded,Rape/Attempt to Rape,
 2021,Nandurbar,Rape/Attempt to Rape,
-2021,Nasik,Rape/Attempt to Rape,
+2021,Nashik,Rape/Attempt to Rape,
 2021,Dharashiv,Rape/Attempt to Rape,
 2021,Palghar,Rape/Attempt to Rape,
 2021,Parbhani,Rape/Attempt to Rape,
@@ -282,7 +282,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Kidnapping & Abduction,85.0
 2014,Akola,Kidnapping & Abduction,32.0
 2014,Amravati,Kidnapping & Abduction,83.0
-2014,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,63.0
+2014,Chh. Sambhaji Nagar,Kidnapping & Abduction,63.0
 2014,Beed,Kidnapping & Abduction,49.0
 2014,Bhandara,Kidnapping & Abduction,18.0
 2014,Buldhana,Kidnapping & Abduction,33.0
@@ -295,11 +295,11 @@ Year,District,Crime,Cases
 2014,Jalna,Kidnapping & Abduction,31.0
 2014,Kolhapur,Kidnapping & Abduction,47.0
 2014,Latur,Kidnapping & Abduction,84.0
-2014,Mumbai City,Kidnapping & Abduction,290.0
+2014,Mumbai,Kidnapping & Abduction,290.0
 2014,Nagpur,Kidnapping & Abduction,125.0
 2014,Nanded,Kidnapping & Abduction,53.0
 2014,Nandurbar,Kidnapping & Abduction,17.0
-2014,Nasik,Kidnapping & Abduction,118.0
+2014,Nashik,Kidnapping & Abduction,118.0
 2014,Dharashiv,Kidnapping & Abduction,21.0
 2014,Palghar,Kidnapping & Abduction,65.0
 2014,Parbhani,Kidnapping & Abduction,27.0
@@ -317,7 +317,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Kidnapping & Abduction,148.0
 2015,Akola,Kidnapping & Abduction,47.0
 2015,Amravati,Kidnapping & Abduction,178.0
-2015,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,133.0
+2015,Chh. Sambhaji Nagar,Kidnapping & Abduction,133.0
 2015,Beed,Kidnapping & Abduction,60.0
 2015,Bhandara,Kidnapping & Abduction,52.0
 2015,Buldhana,Kidnapping & Abduction,21.0
@@ -330,11 +330,11 @@ Year,District,Crime,Cases
 2015,Jalna,Kidnapping & Abduction,69.0
 2015,Kolhapur,Kidnapping & Abduction,158.0
 2015,Latur,Kidnapping & Abduction,68.0
-2015,Mumbai City,Kidnapping & Abduction,920.0
+2015,Mumbai,Kidnapping & Abduction,920.0
 2015,Nagpur,Kidnapping & Abduction,296.0
 2015,Nanded,Kidnapping & Abduction,61.0
 2015,Nandurbar,Kidnapping & Abduction,22.0
-2015,Nasik,Kidnapping & Abduction,226.0
+2015,Nashik,Kidnapping & Abduction,226.0
 2015,Dharashiv,Kidnapping & Abduction,46.0
 2015,Palghar,Kidnapping & Abduction,249.0
 2015,Parbhani,Kidnapping & Abduction,40.0
@@ -352,7 +352,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Kidnapping & Abduction,179.0
 2016,Akola,Kidnapping & Abduction,56.0
 2016,Amravati,Kidnapping & Abduction,161.0
-2016,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,167.0
+2016,Chh. Sambhaji Nagar,Kidnapping & Abduction,167.0
 2016,Beed,Kidnapping & Abduction,74.0
 2016,Bhandara,Kidnapping & Abduction,51.0
 2016,Buldhana,Kidnapping & Abduction,50.0
@@ -365,11 +365,11 @@ Year,District,Crime,Cases
 2016,Jalna,Kidnapping & Abduction,46.0
 2016,Kolhapur,Kidnapping & Abduction,133.0
 2016,Latur,Kidnapping & Abduction,102.0
-2016,Mumbai City,Kidnapping & Abduction,1159.0
+2016,Mumbai,Kidnapping & Abduction,1159.0
 2016,Nagpur,Kidnapping & Abduction,459.0
 2016,Nanded,Kidnapping & Abduction,76.0
 2016,Nandurbar,Kidnapping & Abduction,31.0
-2016,Nasik,Kidnapping & Abduction,300.0
+2016,Nashik,Kidnapping & Abduction,300.0
 2016,Dharashiv,Kidnapping & Abduction,41.0
 2016,Palghar,Kidnapping & Abduction,279.0
 2016,Parbhani,Kidnapping & Abduction,49.0
@@ -387,7 +387,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Kidnapping & Abduction,148.0
 2017,Akola,Kidnapping & Abduction,47.0
 2017,Amravati,Kidnapping & Abduction,178.0
-2017,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,133.0
+2017,Chh. Sambhaji Nagar,Kidnapping & Abduction,133.0
 2017,Beed,Kidnapping & Abduction,60.0
 2017,Bhandara,Kidnapping & Abduction,52.0
 2017,Buldhana,Kidnapping & Abduction,21.0
@@ -400,11 +400,11 @@ Year,District,Crime,Cases
 2017,Jalna,Kidnapping & Abduction,69.0
 2017,Kolhapur,Kidnapping & Abduction,158.0
 2017,Latur,Kidnapping & Abduction,68.0
-2017,Mumbai City,Kidnapping & Abduction,920.0
+2017,Mumbai,Kidnapping & Abduction,920.0
 2017,Nagpur,Kidnapping & Abduction,296.0
 2017,Nanded,Kidnapping & Abduction,61.0
 2017,Nandurbar,Kidnapping & Abduction,22.0
-2017,Nasik,Kidnapping & Abduction,226.0
+2017,Nashik,Kidnapping & Abduction,226.0
 2017,Dharashiv,Kidnapping & Abduction,46.0
 2017,Palghar,Kidnapping & Abduction,249.0
 2017,Parbhani,Kidnapping & Abduction,40.0
@@ -422,7 +422,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Kidnapping & Abduction,332.0
 2019,Akola,Kidnapping & Abduction,95.0
 2019,Amravati,Kidnapping & Abduction,212.0
-2019,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,186.0
+2019,Chh. Sambhaji Nagar,Kidnapping & Abduction,186.0
 2019,Beed,Kidnapping & Abduction,85.0
 2019,Bhandara,Kidnapping & Abduction,73.0
 2019,Buldhana,Kidnapping & Abduction,91.0
@@ -435,11 +435,11 @@ Year,District,Crime,Cases
 2019,Jalna,Kidnapping & Abduction,45.0
 2019,Kolhapur,Kidnapping & Abduction,217.0
 2019,Latur,Kidnapping & Abduction,96.0
-2019,Mumbai City,Kidnapping & Abduction,1329.0
+2019,Mumbai,Kidnapping & Abduction,1329.0
 2019,Nagpur,Kidnapping & Abduction,408.0
 2019,Nanded,Kidnapping & Abduction,110.0
 2019,Nandurbar,Kidnapping & Abduction,6.0
-2019,Nasik,Kidnapping & Abduction,448.0
+2019,Nashik,Kidnapping & Abduction,448.0
 2019,Dharashiv,Kidnapping & Abduction,51.0
 2019,Palghar,Kidnapping & Abduction,392.0
 2019,Parbhani,Kidnapping & Abduction,61.0
@@ -457,7 +457,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Kidnapping & Abduction,320.0
 2018,Akola,Kidnapping & Abduction,96.0
 2018,Amravati,Kidnapping & Abduction,110.0
-2018,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,156.0
+2018,Chh. Sambhaji Nagar,Kidnapping & Abduction,156.0
 2018,Beed,Kidnapping & Abduction,28.0
 2018,Bhandara,Kidnapping & Abduction,95.0
 2018,Buldhana,Kidnapping & Abduction,77.0
@@ -470,11 +470,11 @@ Year,District,Crime,Cases
 2018,Jalna,Kidnapping & Abduction,44.0
 2018,Kolhapur,Kidnapping & Abduction,157.0
 2018,Latur,Kidnapping & Abduction,129.0
-2018,Mumbai City,Kidnapping & Abduction,1352.0
+2018,Mumbai,Kidnapping & Abduction,1352.0
 2018,Nagpur,Kidnapping & Abduction,344.0
 2018,Nanded,Kidnapping & Abduction,91.0
 2018,Nandurbar,Kidnapping & Abduction,48.0
-2018,Nasik,Kidnapping & Abduction,369.0
+2018,Nashik,Kidnapping & Abduction,369.0
 2018,Dharashiv,Kidnapping & Abduction,61.0
 2018,Palghar,Kidnapping & Abduction,318.0
 2018,Parbhani,Kidnapping & Abduction,43.0
@@ -492,7 +492,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Kidnapping & Abduction,313.0
 2020,Akola,Kidnapping & Abduction,56.0
 2020,Amravati,Kidnapping & Abduction,160.0
-2020,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,104.0
+2020,Chh. Sambhaji Nagar,Kidnapping & Abduction,104.0
 2020,Beed,Kidnapping & Abduction,25.0
 2020,Bhandara,Kidnapping & Abduction,63.0
 2020,Buldhana,Kidnapping & Abduction,86.0
@@ -505,11 +505,11 @@ Year,District,Crime,Cases
 2020,Jalna,Kidnapping & Abduction,68.0
 2020,Kolhapur,Kidnapping & Abduction,133.0
 2020,Latur,Kidnapping & Abduction,86.0
-2020,Mumbai City,Kidnapping & Abduction,770.0
+2020,Mumbai,Kidnapping & Abduction,770.0
 2020,Nagpur,Kidnapping & Abduction,249.0
 2020,Nanded,Kidnapping & Abduction,89.0
 2020,Nandurbar,Kidnapping & Abduction,10.0
-2020,Nasik,Kidnapping & Abduction,237.0
+2020,Nashik,Kidnapping & Abduction,237.0
 2020,Dharashiv,Kidnapping & Abduction,76.0
 2020,Palghar,Kidnapping & Abduction,0.0
 2020,Parbhani,Kidnapping & Abduction,37.0
@@ -527,7 +527,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Kidnapping & Abduction,287.0
 2021,Akola,Kidnapping & Abduction,86.0
 2021,Amravati,Kidnapping & Abduction,235.0
-2021,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,204.0
+2021,Chh. Sambhaji Nagar,Kidnapping & Abduction,204.0
 2021,Beed,Kidnapping & Abduction,91.0
 2021,Bhandara,Kidnapping & Abduction,68.0
 2021,Buldhana,Kidnapping & Abduction,109.0
@@ -540,11 +540,11 @@ Year,District,Crime,Cases
 2021,Jalna,Kidnapping & Abduction,77.0
 2021,Kolhapur,Kidnapping & Abduction,102.0
 2021,Latur,Kidnapping & Abduction,116.0
-2021,Mumbai City,Kidnapping & Abduction,1103.0
+2021,Mumbai,Kidnapping & Abduction,1103.0
 2021,Nagpur,Kidnapping & Abduction,428.0
 2021,Nanded,Kidnapping & Abduction,94.0
 2021,Nandurbar,Kidnapping & Abduction,67.0
-2021,Nasik,Kidnapping & Abduction,340.0
+2021,Nashik,Kidnapping & Abduction,340.0
 2021,Dharashiv,Kidnapping & Abduction,81.0
 2021,Palghar,Kidnapping & Abduction,71.0
 2021,Parbhani,Kidnapping & Abduction,52.0
@@ -562,7 +562,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Dowry Deaths,13.0
 2014,Akola,Dowry Deaths,5.0
 2014,Amravati,Dowry Deaths,9.0
-2014,Chhatrapati Sambhaji Nagar,Dowry Deaths,9.0
+2014,Chh. Sambhaji Nagar,Dowry Deaths,9.0
 2014,Beed,Dowry Deaths,3.0
 2014,Bhandara,Dowry Deaths,3.0
 2014,Buldhana,Dowry Deaths,22.0
@@ -575,11 +575,11 @@ Year,District,Crime,Cases
 2014,Jalna,Dowry Deaths,13.0
 2014,Kolhapur,Dowry Deaths,8.0
 2014,Latur,Dowry Deaths,4.0
-2014,Mumbai City,Dowry Deaths,22.0
+2014,Mumbai,Dowry Deaths,22.0
 2014,Nagpur,Dowry Deaths,14.0
 2014,Nanded,Dowry Deaths,6.0
 2014,Nandurbar,Dowry Deaths,2.0
-2014,Nasik,Dowry Deaths,20.0
+2014,Nashik,Dowry Deaths,20.0
 2014,Dharashiv,Dowry Deaths,5.0
 2014,Palghar,Dowry Deaths,1.0
 2014,Parbhani,Dowry Deaths,5.0
@@ -597,7 +597,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Dowry Deaths,14.0
 2015,Akola,Dowry Deaths,4.0
 2015,Amravati,Dowry Deaths,4.0
-2015,Chhatrapati Sambhaji Nagar,Dowry Deaths,21.0
+2015,Chh. Sambhaji Nagar,Dowry Deaths,21.0
 2015,Beed,Dowry Deaths,5.0
 2015,Bhandara,Dowry Deaths,0.0
 2015,Buldhana,Dowry Deaths,14.0
@@ -610,11 +610,11 @@ Year,District,Crime,Cases
 2015,Jalna,Dowry Deaths,11.0
 2015,Kolhapur,Dowry Deaths,7.0
 2015,Latur,Dowry Deaths,8.0
-2015,Mumbai City,Dowry Deaths,9.0
+2015,Mumbai,Dowry Deaths,9.0
 2015,Nagpur,Dowry Deaths,10.0
 2015,Nanded,Dowry Deaths,12.0
 2015,Nandurbar,Dowry Deaths,0.0
-2015,Nasik,Dowry Deaths,15.0
+2015,Nashik,Dowry Deaths,15.0
 2015,Dharashiv,Dowry Deaths,6.0
 2015,Palghar,Dowry Deaths,2.0
 2015,Parbhani,Dowry Deaths,11.0
@@ -632,7 +632,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Dowry Deaths,4.0
 2016,Akola,Dowry Deaths,4.0
 2016,Amravati,Dowry Deaths,4.0
-2016,Chhatrapati Sambhaji Nagar,Dowry Deaths,23.0
+2016,Chh. Sambhaji Nagar,Dowry Deaths,23.0
 2016,Beed,Dowry Deaths,12.0
 2016,Bhandara,Dowry Deaths,2.0
 2016,Buldhana,Dowry Deaths,10.0
@@ -645,11 +645,11 @@ Year,District,Crime,Cases
 2016,Jalna,Dowry Deaths,14.0
 2016,Kolhapur,Dowry Deaths,7.0
 2016,Latur,Dowry Deaths,5.0
-2016,Mumbai City,Dowry Deaths,12.0
+2016,Mumbai,Dowry Deaths,12.0
 2016,Nagpur,Dowry Deaths,7.0
 2016,Nanded,Dowry Deaths,17.0
 2016,Nandurbar,Dowry Deaths,0.0
-2016,Nasik,Dowry Deaths,17.0
+2016,Nashik,Dowry Deaths,17.0
 2016,Dharashiv,Dowry Deaths,22.0
 2016,Palghar,Dowry Deaths,1.0
 2016,Parbhani,Dowry Deaths,9.0
@@ -667,7 +667,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Dowry Deaths,14.0
 2017,Akola,Dowry Deaths,4.0
 2017,Amravati,Dowry Deaths,4.0
-2017,Chhatrapati Sambhaji Nagar,Dowry Deaths,21.0
+2017,Chh. Sambhaji Nagar,Dowry Deaths,21.0
 2017,Beed,Dowry Deaths,5.0
 2017,Bhandara,Dowry Deaths,0.0
 2017,Buldhana,Dowry Deaths,14.0
@@ -680,11 +680,11 @@ Year,District,Crime,Cases
 2017,Jalna,Dowry Deaths,11.0
 2017,Kolhapur,Dowry Deaths,7.0
 2017,Latur,Dowry Deaths,8.0
-2017,Mumbai City,Dowry Deaths,9.0
+2017,Mumbai,Dowry Deaths,9.0
 2017,Nagpur,Dowry Deaths,10.0
 2017,Nanded,Dowry Deaths,12.0
 2017,Nandurbar,Dowry Deaths,0.0
-2017,Nasik,Dowry Deaths,15.0
+2017,Nashik,Dowry Deaths,15.0
 2017,Dharashiv,Dowry Deaths,6.0
 2017,Palghar,Dowry Deaths,2.0
 2017,Parbhani,Dowry Deaths,11.0
@@ -702,7 +702,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Dowry Deaths,7.0
 2019,Akola,Dowry Deaths,3.0
 2019,Amravati,Dowry Deaths,2.0
-2019,Chhatrapati Sambhaji Nagar,Dowry Deaths,13.0
+2019,Chh. Sambhaji Nagar,Dowry Deaths,13.0
 2019,Beed,Dowry Deaths,11.0
 2019,Bhandara,Dowry Deaths,2.0
 2019,Buldhana,Dowry Deaths,11.0
@@ -715,11 +715,11 @@ Year,District,Crime,Cases
 2019,Jalna,Dowry Deaths,2.0
 2019,Kolhapur,Dowry Deaths,7.0
 2019,Latur,Dowry Deaths,5.0
-2019,Mumbai City,Dowry Deaths,17.0
+2019,Mumbai,Dowry Deaths,17.0
 2019,Nagpur,Dowry Deaths,5.0
 2019,Nanded,Dowry Deaths,9.0
 2019,Nandurbar,Dowry Deaths,0.0
-2019,Nasik,Dowry Deaths,8.0
+2019,Nashik,Dowry Deaths,8.0
 2019,Dharashiv,Dowry Deaths,3.0
 2019,Palghar,Dowry Deaths,4.0
 2019,Parbhani,Dowry Deaths,6.0
@@ -737,7 +737,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Dowry Deaths,18.0
 2018,Akola,Dowry Deaths,4.0
 2018,Amravati,Dowry Deaths,2.0
-2018,Chhatrapati Sambhaji Nagar,Dowry Deaths,7.0
+2018,Chh. Sambhaji Nagar,Dowry Deaths,7.0
 2018,Beed,Dowry Deaths,14.0
 2018,Bhandara,Dowry Deaths,1.0
 2018,Buldhana,Dowry Deaths,9.0
@@ -750,11 +750,11 @@ Year,District,Crime,Cases
 2018,Jalna,Dowry Deaths,8.0
 2018,Kolhapur,Dowry Deaths,6.0
 2018,Latur,Dowry Deaths,4.0
-2018,Mumbai City,Dowry Deaths,8.0
+2018,Mumbai,Dowry Deaths,8.0
 2018,Nagpur,Dowry Deaths,8.0
 2018,Nanded,Dowry Deaths,2.0
 2018,Nandurbar,Dowry Deaths,0.0
-2018,Nasik,Dowry Deaths,12.0
+2018,Nashik,Dowry Deaths,12.0
 2018,Dharashiv,Dowry Deaths,4.0
 2018,Palghar,Dowry Deaths,4.0
 2018,Parbhani,Dowry Deaths,9.0
@@ -772,7 +772,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Dowry Deaths,7.0
 2020,Akola,Dowry Deaths,7.0
 2020,Amravati,Dowry Deaths,1.0
-2020,Chhatrapati Sambhaji Nagar,Dowry Deaths,13.0
+2020,Chh. Sambhaji Nagar,Dowry Deaths,13.0
 2020,Beed,Dowry Deaths,11.0
 2020,Bhandara,Dowry Deaths,1.0
 2020,Buldhana,Dowry Deaths,8.0
@@ -785,11 +785,11 @@ Year,District,Crime,Cases
 2020,Jalna,Dowry Deaths,12.0
 2020,Kolhapur,Dowry Deaths,6.0
 2020,Latur,Dowry Deaths,7.0
-2020,Mumbai City,Dowry Deaths,12.0
+2020,Mumbai,Dowry Deaths,12.0
 2020,Nagpur,Dowry Deaths,11.0
 2020,Nanded,Dowry Deaths,6.0
 2020,Nandurbar,Dowry Deaths,1.0
-2020,Nasik,Dowry Deaths,7.0
+2020,Nashik,Dowry Deaths,7.0
 2020,Dharashiv,Dowry Deaths,6.0
 2020,Palghar,Dowry Deaths,0.0
 2020,Parbhani,Dowry Deaths,3.0
@@ -807,7 +807,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Dowry Deaths,15.0
 2021,Akola,Dowry Deaths,5.0
 2021,Amravati,Dowry Deaths,2.0
-2021,Chhatrapati Sambhaji Nagar,Dowry Deaths,16.0
+2021,Chh. Sambhaji Nagar,Dowry Deaths,16.0
 2021,Beed,Dowry Deaths,9.0
 2021,Bhandara,Dowry Deaths,0.0
 2021,Buldhana,Dowry Deaths,12.0
@@ -820,11 +820,11 @@ Year,District,Crime,Cases
 2021,Jalna,Dowry Deaths,3.0
 2021,Kolhapur,Dowry Deaths,6.0
 2021,Latur,Dowry Deaths,3.0
-2021,Mumbai City,Dowry Deaths,12.0
+2021,Mumbai,Dowry Deaths,12.0
 2021,Nagpur,Dowry Deaths,2.0
 2021,Nanded,Dowry Deaths,6.0
 2021,Nandurbar,Dowry Deaths,2.0
-2021,Nasik,Dowry Deaths,5.0
+2021,Nashik,Dowry Deaths,5.0
 2021,Dharashiv,Dowry Deaths,5.0
 2021,Palghar,Dowry Deaths,0.0
 2021,Parbhani,Dowry Deaths,9.0
@@ -842,7 +842,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Assault on Women with intent to outrage her Modesty,269.0
 2014,Akola,Assault on Women with intent to outrage her Modesty,219.0
 2014,Amravati,Assault on Women with intent to outrage her Modesty,547.0
-2014,Chhatrapati Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,404.0
+2014,Chh. Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,404.0
 2014,Beed,Assault on Women with intent to outrage her Modesty,273.0
 2014,Bhandara,Assault on Women with intent to outrage her Modesty,73.0
 2014,Buldhana,Assault on Women with intent to outrage her Modesty,253.0
@@ -855,11 +855,11 @@ Year,District,Crime,Cases
 2014,Jalna,Assault on Women with intent to outrage her Modesty,185.0
 2014,Kolhapur,Assault on Women with intent to outrage her Modesty,176.0
 2014,Latur,Assault on Women with intent to outrage her Modesty,174.0
-2014,Mumbai City,Assault on Women with intent to outrage her Modesty,1681.0
+2014,Mumbai,Assault on Women with intent to outrage her Modesty,1681.0
 2014,Nagpur,Assault on Women with intent to outrage her Modesty,486.0
 2014,Nanded,Assault on Women with intent to outrage her Modesty,147.0
 2014,Nandurbar,Assault on Women with intent to outrage her Modesty,36.0
-2014,Nasik,Assault on Women with intent to outrage her Modesty,325.0
+2014,Nashik,Assault on Women with intent to outrage her Modesty,325.0
 2014,Dharashiv,Assault on Women with intent to outrage her Modesty,126.0
 2014,Palghar,Assault on Women with intent to outrage her Modesty,183.0
 2014,Parbhani,Assault on Women with intent to outrage her Modesty,140.0
@@ -877,7 +877,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Assault on Women with intent to outrage her Modesty,376.0
 2015,Akola,Assault on Women with intent to outrage her Modesty,222.0
 2015,Amravati,Assault on Women with intent to outrage her Modesty,646.0
-2015,Chhatrapati Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,625.0
+2015,Chh. Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,625.0
 2015,Beed,Assault on Women with intent to outrage her Modesty,263.0
 2015,Bhandara,Assault on Women with intent to outrage her Modesty,92.0
 2015,Buldhana,Assault on Women with intent to outrage her Modesty,266.0
@@ -890,11 +890,11 @@ Year,District,Crime,Cases
 2015,Jalna,Assault on Women with intent to outrage her Modesty,191.0
 2015,Kolhapur,Assault on Women with intent to outrage her Modesty,219.0
 2015,Latur,Assault on Women with intent to outrage her Modesty,155.0
-2015,Mumbai City,Assault on Women with intent to outrage her Modesty,2097.0
+2015,Mumbai,Assault on Women with intent to outrage her Modesty,2097.0
 2015,Nagpur,Assault on Women with intent to outrage her Modesty,579.0
 2015,Nanded,Assault on Women with intent to outrage her Modesty,165.0
 2015,Nandurbar,Assault on Women with intent to outrage her Modesty,41.0
-2015,Nasik,Assault on Women with intent to outrage her Modesty,358.0
+2015,Nashik,Assault on Women with intent to outrage her Modesty,358.0
 2015,Dharashiv,Assault on Women with intent to outrage her Modesty,106.0
 2015,Palghar,Assault on Women with intent to outrage her Modesty,226.0
 2015,Parbhani,Assault on Women with intent to outrage her Modesty,153.0
@@ -912,7 +912,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Assault on Women with intent to outrage her Modesty,429.0
 2016,Akola,Assault on Women with intent to outrage her Modesty,177.0
 2016,Amravati,Assault on Women with intent to outrage her Modesty,584.0
-2016,Chhatrapati Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,684.0
+2016,Chh. Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,684.0
 2016,Beed,Assault on Women with intent to outrage her Modesty,225.0
 2016,Bhandara,Assault on Women with intent to outrage her Modesty,98.0
 2016,Buldhana,Assault on Women with intent to outrage her Modesty,266.0
@@ -925,11 +925,11 @@ Year,District,Crime,Cases
 2016,Jalna,Assault on Women with intent to outrage her Modesty,219.0
 2016,Kolhapur,Assault on Women with intent to outrage her Modesty,177.0
 2016,Latur,Assault on Women with intent to outrage her Modesty,138.0
-2016,Mumbai City,Assault on Women with intent to outrage her Modesty,2257.0
+2016,Mumbai,Assault on Women with intent to outrage her Modesty,2257.0
 2016,Nagpur,Assault on Women with intent to outrage her Modesty,608.0
 2016,Nanded,Assault on Women with intent to outrage her Modesty,191.0
 2016,Nandurbar,Assault on Women with intent to outrage her Modesty,55.0
-2016,Nasik,Assault on Women with intent to outrage her Modesty,370.0
+2016,Nashik,Assault on Women with intent to outrage her Modesty,370.0
 2016,Dharashiv,Assault on Women with intent to outrage her Modesty,118.0
 2016,Palghar,Assault on Women with intent to outrage her Modesty,190.0
 2016,Parbhani,Assault on Women with intent to outrage her Modesty,156.0
@@ -947,7 +947,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Assault on Women with intent to outrage her Modesty,376.0
 2017,Akola,Assault on Women with intent to outrage her Modesty,222.0
 2017,Amravati,Assault on Women with intent to outrage her Modesty,646.0
-2017,Chhatrapati Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,625.0
+2017,Chh. Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,625.0
 2017,Beed,Assault on Women with intent to outrage her Modesty,263.0
 2017,Bhandara,Assault on Women with intent to outrage her Modesty,92.0
 2017,Buldhana,Assault on Women with intent to outrage her Modesty,266.0
@@ -960,11 +960,11 @@ Year,District,Crime,Cases
 2017,Jalna,Assault on Women with intent to outrage her Modesty,191.0
 2017,Kolhapur,Assault on Women with intent to outrage her Modesty,219.0
 2017,Latur,Assault on Women with intent to outrage her Modesty,155.0
-2017,Mumbai City,Assault on Women with intent to outrage her Modesty,2097.0
+2017,Mumbai,Assault on Women with intent to outrage her Modesty,2097.0
 2017,Nagpur,Assault on Women with intent to outrage her Modesty,579.0
 2017,Nanded,Assault on Women with intent to outrage her Modesty,165.0
 2017,Nandurbar,Assault on Women with intent to outrage her Modesty,41.0
-2017,Nasik,Assault on Women with intent to outrage her Modesty,358.0
+2017,Nashik,Assault on Women with intent to outrage her Modesty,358.0
 2017,Dharashiv,Assault on Women with intent to outrage her Modesty,106.0
 2017,Palghar,Assault on Women with intent to outrage her Modesty,226.0
 2017,Parbhani,Assault on Women with intent to outrage her Modesty,153.0
@@ -982,7 +982,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Assault on Women with intent to outrage her Modesty,486.0
 2019,Akola,Assault on Women with intent to outrage her Modesty,197.0
 2019,Amravati,Assault on Women with intent to outrage her Modesty,400.0
-2019,Chhatrapati Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,344.0
+2019,Chh. Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,344.0
 2019,Beed,Assault on Women with intent to outrage her Modesty,204.0
 2019,Bhandara,Assault on Women with intent to outrage her Modesty,85.0
 2019,Buldhana,Assault on Women with intent to outrage her Modesty,258.0
@@ -995,11 +995,11 @@ Year,District,Crime,Cases
 2019,Jalna,Assault on Women with intent to outrage her Modesty,280.0
 2019,Kolhapur,Assault on Women with intent to outrage her Modesty,184.0
 2019,Latur,Assault on Women with intent to outrage her Modesty,145.0
-2019,Mumbai City,Assault on Women with intent to outrage her Modesty,2209.0
+2019,Mumbai,Assault on Women with intent to outrage her Modesty,2209.0
 2019,Nagpur,Assault on Women with intent to outrage her Modesty,393.0
 2019,Nanded,Assault on Women with intent to outrage her Modesty,167.0
 2019,Nandurbar,Assault on Women with intent to outrage her Modesty,61.0
-2019,Nasik,Assault on Women with intent to outrage her Modesty,349.0
+2019,Nashik,Assault on Women with intent to outrage her Modesty,349.0
 2019,Dharashiv,Assault on Women with intent to outrage her Modesty,144.0
 2019,Palghar,Assault on Women with intent to outrage her Modesty,234.0
 2019,Parbhani,Assault on Women with intent to outrage her Modesty,93.0
@@ -1017,7 +1017,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Assault on Women with intent to outrage her Modesty,476.0
 2018,Akola,Assault on Women with intent to outrage her Modesty,202.0
 2018,Amravati,Assault on Women with intent to outrage her Modesty,419.0
-2018,Chhatrapati Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,419.0
+2018,Chh. Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,419.0
 2018,Beed,Assault on Women with intent to outrage her Modesty,249.0
 2018,Bhandara,Assault on Women with intent to outrage her Modesty,96.0
 2018,Buldhana,Assault on Women with intent to outrage her Modesty,275.0
@@ -1030,11 +1030,11 @@ Year,District,Crime,Cases
 2018,Jalna,Assault on Women with intent to outrage her Modesty,215.0
 2018,Kolhapur,Assault on Women with intent to outrage her Modesty,184.0
 2018,Latur,Assault on Women with intent to outrage her Modesty,149.0
-2018,Mumbai City,Assault on Women with intent to outrage her Modesty,2179.0
+2018,Mumbai,Assault on Women with intent to outrage her Modesty,2179.0
 2018,Nagpur,Assault on Women with intent to outrage her Modesty,459.0
 2018,Nanded,Assault on Women with intent to outrage her Modesty,140.0
 2018,Nandurbar,Assault on Women with intent to outrage her Modesty,45.0
-2018,Nasik,Assault on Women with intent to outrage her Modesty,349.0
+2018,Nashik,Assault on Women with intent to outrage her Modesty,349.0
 2018,Dharashiv,Assault on Women with intent to outrage her Modesty,134.0
 2018,Palghar,Assault on Women with intent to outrage her Modesty,227.0
 2018,Parbhani,Assault on Women with intent to outrage her Modesty,142.0
@@ -1052,7 +1052,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Assault on Women with intent to outrage her Modesty,543.0
 2020,Akola,Assault on Women with intent to outrage her Modesty,245.0
 2020,Amravati,Assault on Women with intent to outrage her Modesty,461.0
-2020,Chhatrapati Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,335.0
+2020,Chh. Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,335.0
 2020,Beed,Assault on Women with intent to outrage her Modesty,248.0
 2020,Bhandara,Assault on Women with intent to outrage her Modesty,88.0
 2020,Buldhana,Assault on Women with intent to outrage her Modesty,313.0
@@ -1065,11 +1065,11 @@ Year,District,Crime,Cases
 2020,Jalna,Assault on Women with intent to outrage her Modesty,208.0
 2020,Kolhapur,Assault on Women with intent to outrage her Modesty,263.0
 2020,Latur,Assault on Women with intent to outrage her Modesty,138.0
-2020,Mumbai City,Assault on Women with intent to outrage her Modesty,1553.0
+2020,Mumbai,Assault on Women with intent to outrage her Modesty,1553.0
 2020,Nagpur,Assault on Women with intent to outrage her Modesty,386.0
 2020,Nanded,Assault on Women with intent to outrage her Modesty,232.0
 2020,Nandurbar,Assault on Women with intent to outrage her Modesty,44.0
-2020,Nasik,Assault on Women with intent to outrage her Modesty,384.0
+2020,Nashik,Assault on Women with intent to outrage her Modesty,384.0
 2020,Dharashiv,Assault on Women with intent to outrage her Modesty,123.0
 2020,Palghar,Assault on Women with intent to outrage her Modesty,83.0
 2020,Parbhani,Assault on Women with intent to outrage her Modesty,139.0
@@ -1087,7 +1087,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Assault on Women with intent to outrage her Modesty,668.0
 2021,Akola,Assault on Women with intent to outrage her Modesty,202.0
 2021,Amravati,Assault on Women with intent to outrage her Modesty,396.0
-2021,Chhatrapati Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,371.0
+2021,Chh. Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,371.0
 2021,Beed,Assault on Women with intent to outrage her Modesty,339.0
 2021,Bhandara,Assault on Women with intent to outrage her Modesty,78.0
 2021,Buldhana,Assault on Women with intent to outrage her Modesty,325.0
@@ -1100,11 +1100,11 @@ Year,District,Crime,Cases
 2021,Jalna,Assault on Women with intent to outrage her Modesty,313.0
 2021,Kolhapur,Assault on Women with intent to outrage her Modesty,273.0
 2021,Latur,Assault on Women with intent to outrage her Modesty,133.0
-2021,Mumbai City,Assault on Women with intent to outrage her Modesty,1660.0
+2021,Mumbai,Assault on Women with intent to outrage her Modesty,1660.0
 2021,Nagpur,Assault on Women with intent to outrage her Modesty,371.0
 2021,Nanded,Assault on Women with intent to outrage her Modesty,205.0
 2021,Nandurbar,Assault on Women with intent to outrage her Modesty,35.0
-2021,Nasik,Assault on Women with intent to outrage her Modesty,275.0
+2021,Nashik,Assault on Women with intent to outrage her Modesty,275.0
 2021,Dharashiv,Assault on Women with intent to outrage her Modesty,147.0
 2021,Palghar,Assault on Women with intent to outrage her Modesty,58.0
 2021,Parbhani,Assault on Women with intent to outrage her Modesty,122.0
@@ -1122,7 +1122,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Insult to the Modesty of Women,8.0
 2014,Akola,Insult to the Modesty of Women,20.0
 2014,Amravati,Insult to the Modesty of Women,29.0
-2014,Chhatrapati Sambhaji Nagar,Insult to the Modesty of Women,8.0
+2014,Chh. Sambhaji Nagar,Insult to the Modesty of Women,8.0
 2014,Beed,Insult to the Modesty of Women,1.0
 2014,Bhandara,Insult to the Modesty of Women,14.0
 2014,Buldhana,Insult to the Modesty of Women,36.0
@@ -1135,11 +1135,11 @@ Year,District,Crime,Cases
 2014,Jalna,Insult to the Modesty of Women,8.0
 2014,Kolhapur,Insult to the Modesty of Women,7.0
 2014,Latur,Insult to the Modesty of Women,2.0
-2014,Mumbai City,Insult to the Modesty of Women,367.0
+2014,Mumbai,Insult to the Modesty of Women,367.0
 2014,Nagpur,Insult to the Modesty of Women,50.0
 2014,Nanded,Insult to the Modesty of Women,3.0
 2014,Nandurbar,Insult to the Modesty of Women,4.0
-2014,Nasik,Insult to the Modesty of Women,8.0
+2014,Nashik,Insult to the Modesty of Women,8.0
 2014,Dharashiv,Insult to the Modesty of Women,5.0
 2014,Palghar,Insult to the Modesty of Women,22.0
 2014,Parbhani,Insult to the Modesty of Women,2.0
@@ -1157,7 +1157,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Insult to the Modesty of Women,7.0
 2015,Akola,Insult to the Modesty of Women,6.0
 2015,Amravati,Insult to the Modesty of Women,16.0
-2015,Chhatrapati Sambhaji Nagar,Insult to the Modesty of Women,9.0
+2015,Chh. Sambhaji Nagar,Insult to the Modesty of Women,9.0
 2015,Beed,Insult to the Modesty of Women,3.0
 2015,Bhandara,Insult to the Modesty of Women,8.0
 2015,Buldhana,Insult to the Modesty of Women,24.0
@@ -1170,11 +1170,11 @@ Year,District,Crime,Cases
 2015,Jalna,Insult to the Modesty of Women,12.0
 2015,Kolhapur,Insult to the Modesty of Women,2.0
 2015,Latur,Insult to the Modesty of Women,1.0
-2015,Mumbai City,Insult to the Modesty of Women,419.0
+2015,Mumbai,Insult to the Modesty of Women,419.0
 2015,Nagpur,Insult to the Modesty of Women,41.0
 2015,Nanded,Insult to the Modesty of Women,4.0
 2015,Nandurbar,Insult to the Modesty of Women,4.0
-2015,Nasik,Insult to the Modesty of Women,9.0
+2015,Nashik,Insult to the Modesty of Women,9.0
 2015,Dharashiv,Insult to the Modesty of Women,1.0
 2015,Palghar,Insult to the Modesty of Women,13.0
 2015,Parbhani,Insult to the Modesty of Women,1.0
@@ -1192,7 +1192,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Insult to the Modesty of Women,11.0
 2016,Akola,Insult to the Modesty of Women,2.0
 2016,Amravati,Insult to the Modesty of Women,12.0
-2016,Chhatrapati Sambhaji Nagar,Insult to the Modesty of Women,13.0
+2016,Chh. Sambhaji Nagar,Insult to the Modesty of Women,13.0
 2016,Beed,Insult to the Modesty of Women,2.0
 2016,Bhandara,Insult to the Modesty of Women,15.0
 2016,Buldhana,Insult to the Modesty of Women,15.0
@@ -1205,11 +1205,11 @@ Year,District,Crime,Cases
 2016,Jalna,Insult to the Modesty of Women,0.0
 2016,Kolhapur,Insult to the Modesty of Women,8.0
 2016,Latur,Insult to the Modesty of Women,1.0
-2016,Mumbai City,Insult to the Modesty of Women,431.0
+2016,Mumbai,Insult to the Modesty of Women,431.0
 2016,Nagpur,Insult to the Modesty of Women,18.0
 2016,Nanded,Insult to the Modesty of Women,5.0
 2016,Nandurbar,Insult to the Modesty of Women,6.0
-2016,Nasik,Insult to the Modesty of Women,8.0
+2016,Nashik,Insult to the Modesty of Women,8.0
 2016,Dharashiv,Insult to the Modesty of Women,0.0
 2016,Palghar,Insult to the Modesty of Women,19.0
 2016,Parbhani,Insult to the Modesty of Women,0.0
@@ -1227,7 +1227,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Insult to the Modesty of Women,7.0
 2017,Akola,Insult to the Modesty of Women,6.0
 2017,Amravati,Insult to the Modesty of Women,16.0
-2017,Chhatrapati Sambhaji Nagar,Insult to the Modesty of Women,9.0
+2017,Chh. Sambhaji Nagar,Insult to the Modesty of Women,9.0
 2017,Beed,Insult to the Modesty of Women,3.0
 2017,Bhandara,Insult to the Modesty of Women,8.0
 2017,Buldhana,Insult to the Modesty of Women,24.0
@@ -1240,11 +1240,11 @@ Year,District,Crime,Cases
 2017,Jalna,Insult to the Modesty of Women,12.0
 2017,Kolhapur,Insult to the Modesty of Women,2.0
 2017,Latur,Insult to the Modesty of Women,1.0
-2017,Mumbai City,Insult to the Modesty of Women,419.0
+2017,Mumbai,Insult to the Modesty of Women,419.0
 2017,Nagpur,Insult to the Modesty of Women,41.0
 2017,Nanded,Insult to the Modesty of Women,4.0
 2017,Nandurbar,Insult to the Modesty of Women,4.0
-2017,Nasik,Insult to the Modesty of Women,9.0
+2017,Nashik,Insult to the Modesty of Women,9.0
 2017,Dharashiv,Insult to the Modesty of Women,1.0
 2017,Palghar,Insult to the Modesty of Women,13.0
 2017,Parbhani,Insult to the Modesty of Women,1.0
@@ -1262,7 +1262,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Insult to the Modesty of Women,24.0
 2019,Akola,Insult to the Modesty of Women,3.0
 2019,Amravati,Insult to the Modesty of Women,6.0
-2019,Chhatrapati Sambhaji Nagar,Insult to the Modesty of Women,15.0
+2019,Chh. Sambhaji Nagar,Insult to the Modesty of Women,15.0
 2019,Beed,Insult to the Modesty of Women,2.0
 2019,Bhandara,Insult to the Modesty of Women,12.0
 2019,Buldhana,Insult to the Modesty of Women,13.0
@@ -1275,11 +1275,11 @@ Year,District,Crime,Cases
 2019,Jalna,Insult to the Modesty of Women,0.0
 2019,Kolhapur,Insult to the Modesty of Women,8.0
 2019,Latur,Insult to the Modesty of Women,0.0
-2019,Mumbai City,Insult to the Modesty of Women,586.0
+2019,Mumbai,Insult to the Modesty of Women,586.0
 2019,Nagpur,Insult to the Modesty of Women,17.0
 2019,Nanded,Insult to the Modesty of Women,11.0
 2019,Nandurbar,Insult to the Modesty of Women,3.0
-2019,Nasik,Insult to the Modesty of Women,32.0
+2019,Nashik,Insult to the Modesty of Women,32.0
 2019,Dharashiv,Insult to the Modesty of Women,5.0
 2019,Palghar,Insult to the Modesty of Women,23.0
 2019,Parbhani,Insult to the Modesty of Women,1.0
@@ -1297,7 +1297,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Insult to the Modesty of Women,8.0
 2018,Akola,Insult to the Modesty of Women,2.0
 2018,Amravati,Insult to the Modesty of Women,10.0
-2018,Chhatrapati Sambhaji Nagar,Insult to the Modesty of Women,8.0
+2018,Chh. Sambhaji Nagar,Insult to the Modesty of Women,8.0
 2018,Beed,Insult to the Modesty of Women,6.0
 2018,Bhandara,Insult to the Modesty of Women,20.0
 2018,Buldhana,Insult to the Modesty of Women,11.0
@@ -1310,11 +1310,11 @@ Year,District,Crime,Cases
 2018,Jalna,Insult to the Modesty of Women,0.0
 2018,Kolhapur,Insult to the Modesty of Women,8.0
 2018,Latur,Insult to the Modesty of Women,1.0
-2018,Mumbai City,Insult to the Modesty of Women,541.0
+2018,Mumbai,Insult to the Modesty of Women,541.0
 2018,Nagpur,Insult to the Modesty of Women,21.0
 2018,Nanded,Insult to the Modesty of Women,13.0
 2018,Nandurbar,Insult to the Modesty of Women,3.0
-2018,Nasik,Insult to the Modesty of Women,10.0
+2018,Nashik,Insult to the Modesty of Women,10.0
 2018,Dharashiv,Insult to the Modesty of Women,6.0
 2018,Palghar,Insult to the Modesty of Women,25.0
 2018,Parbhani,Insult to the Modesty of Women,0.0
@@ -1332,7 +1332,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Insult to the Modesty of Women,14.0
 2020,Akola,Insult to the Modesty of Women,5.0
 2020,Amravati,Insult to the Modesty of Women,9.0
-2020,Chhatrapati Sambhaji Nagar,Insult to the Modesty of Women,13.0
+2020,Chh. Sambhaji Nagar,Insult to the Modesty of Women,13.0
 2020,Beed,Insult to the Modesty of Women,16.0
 2020,Bhandara,Insult to the Modesty of Women,12.0
 2020,Buldhana,Insult to the Modesty of Women,9.0
@@ -1345,11 +1345,11 @@ Year,District,Crime,Cases
 2020,Jalna,Insult to the Modesty of Women,0.0
 2020,Kolhapur,Insult to the Modesty of Women,15.0
 2020,Latur,Insult to the Modesty of Women,0.0
-2020,Mumbai City,Insult to the Modesty of Women,459.0
+2020,Mumbai,Insult to the Modesty of Women,459.0
 2020,Nagpur,Insult to the Modesty of Women,32.0
 2020,Nanded,Insult to the Modesty of Women,9.0
 2020,Nandurbar,Insult to the Modesty of Women,5.0
-2020,Nasik,Insult to the Modesty of Women,20.0
+2020,Nashik,Insult to the Modesty of Women,20.0
 2020,Dharashiv,Insult to the Modesty of Women,2.0
 2020,Palghar,Insult to the Modesty of Women,7.0
 2020,Parbhani,Insult to the Modesty of Women,4.0
@@ -1367,7 +1367,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Insult to the Modesty of Women,20.0
 2021,Akola,Insult to the Modesty of Women,2.0
 2021,Amravati,Insult to the Modesty of Women,12.0
-2021,Chhatrapati Sambhaji Nagar,Insult to the Modesty of Women,12.0
+2021,Chh. Sambhaji Nagar,Insult to the Modesty of Women,12.0
 2021,Beed,Insult to the Modesty of Women,12.0
 2021,Bhandara,Insult to the Modesty of Women,15.0
 2021,Buldhana,Insult to the Modesty of Women,15.0
@@ -1380,11 +1380,11 @@ Year,District,Crime,Cases
 2021,Jalna,Insult to the Modesty of Women,2.0
 2021,Kolhapur,Insult to the Modesty of Women,13.0
 2021,Latur,Insult to the Modesty of Women,4.0
-2021,Mumbai City,Insult to the Modesty of Women,486.0
+2021,Mumbai,Insult to the Modesty of Women,486.0
 2021,Nagpur,Insult to the Modesty of Women,19.0
 2021,Nanded,Insult to the Modesty of Women,5.0
 2021,Nandurbar,Insult to the Modesty of Women,5.0
-2021,Nasik,Insult to the Modesty of Women,26.0
+2021,Nashik,Insult to the Modesty of Women,26.0
 2021,Dharashiv,Insult to the Modesty of Women,3.0
 2021,Palghar,Insult to the Modesty of Women,10.0
 2021,Parbhani,Insult to the Modesty of Women,4.0
@@ -1402,7 +1402,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Cruelty by Husband or his Relatives,264.0
 2014,Akola,Cruelty by Husband or his Relatives,136.0
 2014,Amravati,Cruelty by Husband or his Relatives,321.0
-2014,Chhatrapati Sambhaji Nagar,Cruelty by Husband or his Relatives,382.0
+2014,Chh. Sambhaji Nagar,Cruelty by Husband or his Relatives,382.0
 2014,Beed,Cruelty by Husband or his Relatives,316.0
 2014,Bhandara,Cruelty by Husband or his Relatives,40.0
 2014,Buldhana,Cruelty by Husband or his Relatives,152.0
@@ -1415,11 +1415,11 @@ Year,District,Crime,Cases
 2014,Jalna,Cruelty by Husband or his Relatives,289.0
 2014,Kolhapur,Cruelty by Husband or his Relatives,150.0
 2014,Latur,Cruelty by Husband or his Relatives,323.0
-2014,Mumbai City,Cruelty by Husband or his Relatives,563.0
+2014,Mumbai,Cruelty by Husband or his Relatives,563.0
 2014,Nagpur,Cruelty by Husband or his Relatives,319.0
 2014,Nanded,Cruelty by Husband or his Relatives,180.0
 2014,Nandurbar,Cruelty by Husband or his Relatives,47.0
-2014,Nasik,Cruelty by Husband or his Relatives,583.0
+2014,Nashik,Cruelty by Husband or his Relatives,583.0
 2014,Dharashiv,Cruelty by Husband or his Relatives,117.0
 2014,Palghar,Cruelty by Husband or his Relatives,73.0
 2014,Parbhani,Cruelty by Husband or his Relatives,251.0
@@ -1437,7 +1437,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Cruelty by Husband or his Relatives,243.0
 2015,Akola,Cruelty by Husband or his Relatives,144.0
 2015,Amravati,Cruelty by Husband or his Relatives,396.0
-2015,Chhatrapati Sambhaji Nagar,Cruelty by Husband or his Relatives,499.0
+2015,Chh. Sambhaji Nagar,Cruelty by Husband or his Relatives,499.0
 2015,Beed,Cruelty by Husband or his Relatives,362.0
 2015,Bhandara,Cruelty by Husband or his Relatives,41.0
 2015,Buldhana,Cruelty by Husband or his Relatives,140.0
@@ -1450,11 +1450,11 @@ Year,District,Crime,Cases
 2015,Jalna,Cruelty by Husband or his Relatives,263.0
 2015,Kolhapur,Cruelty by Husband or his Relatives,128.0
 2015,Latur,Cruelty by Husband or his Relatives,205.0
-2015,Mumbai City,Cruelty by Husband or his Relatives,658.0
+2015,Mumbai,Cruelty by Husband or his Relatives,658.0
 2015,Nagpur,Cruelty by Husband or his Relatives,370.0
 2015,Nanded,Cruelty by Husband or his Relatives,213.0
 2015,Nandurbar,Cruelty by Husband or his Relatives,38.0
-2015,Nasik,Cruelty by Husband or his Relatives,643.0
+2015,Nashik,Cruelty by Husband or his Relatives,643.0
 2015,Dharashiv,Cruelty by Husband or his Relatives,109.0
 2015,Palghar,Cruelty by Husband or his Relatives,51.0
 2015,Parbhani,Cruelty by Husband or his Relatives,205.0
@@ -1472,7 +1472,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Cruelty by Husband or his Relatives,213.0
 2016,Akola,Cruelty by Husband or his Relatives,147.0
 2016,Amravati,Cruelty by Husband or his Relatives,404.0
-2016,Chhatrapati Sambhaji Nagar,Cruelty by Husband or his Relatives,534.0
+2016,Chh. Sambhaji Nagar,Cruelty by Husband or his Relatives,534.0
 2016,Beed,Cruelty by Husband or his Relatives,343.0
 2016,Bhandara,Cruelty by Husband or his Relatives,35.0
 2016,Buldhana,Cruelty by Husband or his Relatives,89.0
@@ -1485,11 +1485,11 @@ Year,District,Crime,Cases
 2016,Jalna,Cruelty by Husband or his Relatives,216.0
 2016,Kolhapur,Cruelty by Husband or his Relatives,100.0
 2016,Latur,Cruelty by Husband or his Relatives,204.0
-2016,Mumbai City,Cruelty by Husband or his Relatives,587.0
+2016,Mumbai,Cruelty by Husband or his Relatives,587.0
 2016,Nagpur,Cruelty by Husband or his Relatives,309.0
 2016,Nanded,Cruelty by Husband or his Relatives,245.0
 2016,Nandurbar,Cruelty by Husband or his Relatives,66.0
-2016,Nasik,Cruelty by Husband or his Relatives,481.0
+2016,Nashik,Cruelty by Husband or his Relatives,481.0
 2016,Dharashiv,Cruelty by Husband or his Relatives,95.0
 2016,Palghar,Cruelty by Husband or his Relatives,58.0
 2016,Parbhani,Cruelty by Husband or his Relatives,184.0
@@ -1507,7 +1507,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Cruelty by Husband or his Relatives,243.0
 2017,Akola,Cruelty by Husband or his Relatives,144.0
 2017,Amravati,Cruelty by Husband or his Relatives,396.0
-2017,Chhatrapati Sambhaji Nagar,Cruelty by Husband or his Relatives,499.0
+2017,Chh. Sambhaji Nagar,Cruelty by Husband or his Relatives,499.0
 2017,Beed,Cruelty by Husband or his Relatives,362.0
 2017,Bhandara,Cruelty by Husband or his Relatives,41.0
 2017,Buldhana,Cruelty by Husband or his Relatives,140.0
@@ -1520,11 +1520,11 @@ Year,District,Crime,Cases
 2017,Jalna,Cruelty by Husband or his Relatives,263.0
 2017,Kolhapur,Cruelty by Husband or his Relatives,128.0
 2017,Latur,Cruelty by Husband or his Relatives,205.0
-2017,Mumbai City,Cruelty by Husband or his Relatives,658.0
+2017,Mumbai,Cruelty by Husband or his Relatives,658.0
 2017,Nagpur,Cruelty by Husband or his Relatives,370.0
 2017,Nanded,Cruelty by Husband or his Relatives,213.0
 2017,Nandurbar,Cruelty by Husband or his Relatives,38.0
-2017,Nasik,Cruelty by Husband or his Relatives,643.0
+2017,Nashik,Cruelty by Husband or his Relatives,643.0
 2017,Dharashiv,Cruelty by Husband or his Relatives,109.0
 2017,Palghar,Cruelty by Husband or his Relatives,51.0
 2017,Parbhani,Cruelty by Husband or his Relatives,205.0
@@ -1542,7 +1542,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Cruelty by Husband or his Relatives,491.0
 2019,Akola,Cruelty by Husband or his Relatives,254.0
 2019,Amravati,Cruelty by Husband or his Relatives,292.0
-2019,Chhatrapati Sambhaji Nagar,Cruelty by Husband or his Relatives,447.0
+2019,Chh. Sambhaji Nagar,Cruelty by Husband or his Relatives,447.0
 2019,Beed,Cruelty by Husband or his Relatives,263.0
 2019,Bhandara,Cruelty by Husband or his Relatives,45.0
 2019,Buldhana,Cruelty by Husband or his Relatives,187.0
@@ -1555,11 +1555,11 @@ Year,District,Crime,Cases
 2019,Jalna,Cruelty by Husband or his Relatives,396.0
 2019,Kolhapur,Cruelty by Husband or his Relatives,139.0
 2019,Latur,Cruelty by Husband or his Relatives,210.0
-2019,Mumbai City,Cruelty by Husband or his Relatives,699.0
+2019,Mumbai,Cruelty by Husband or his Relatives,699.0
 2019,Nagpur,Cruelty by Husband or his Relatives,165.0
 2019,Nanded,Cruelty by Husband or his Relatives,314.0
 2019,Nandurbar,Cruelty by Husband or his Relatives,70.0
-2019,Nasik,Cruelty by Husband or his Relatives,704.0
+2019,Nashik,Cruelty by Husband or his Relatives,704.0
 2019,Dharashiv,Cruelty by Husband or his Relatives,73.0
 2019,Palghar,Cruelty by Husband or his Relatives,99.0
 2019,Parbhani,Cruelty by Husband or his Relatives,208.0
@@ -1577,7 +1577,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Cruelty by Husband or his Relatives,252.0
 2018,Akola,Cruelty by Husband or his Relatives,272.0
 2018,Amravati,Cruelty by Husband or his Relatives,337.0
-2018,Chhatrapati Sambhaji Nagar,Cruelty by Husband or his Relatives,420.0
+2018,Chh. Sambhaji Nagar,Cruelty by Husband or his Relatives,420.0
 2018,Beed,Cruelty by Husband or his Relatives,295.0
 2018,Bhandara,Cruelty by Husband or his Relatives,50.0
 2018,Buldhana,Cruelty by Husband or his Relatives,164.0
@@ -1590,11 +1590,11 @@ Year,District,Crime,Cases
 2018,Jalna,Cruelty by Husband or his Relatives,275.0
 2018,Kolhapur,Cruelty by Husband or his Relatives,98.0
 2018,Latur,Cruelty by Husband or his Relatives,157.0
-2018,Mumbai City,Cruelty by Husband or his Relatives,520.0
+2018,Mumbai,Cruelty by Husband or his Relatives,520.0
 2018,Nagpur,Cruelty by Husband or his Relatives,159.0
 2018,Nanded,Cruelty by Husband or his Relatives,243.0
 2018,Nandurbar,Cruelty by Husband or his Relatives,53.0
-2018,Nasik,Cruelty by Husband or his Relatives,415.0
+2018,Nashik,Cruelty by Husband or his Relatives,415.0
 2018,Dharashiv,Cruelty by Husband or his Relatives,71.0
 2018,Palghar,Cruelty by Husband or his Relatives,63.0
 2018,Parbhani,Cruelty by Husband or his Relatives,227.0
@@ -1612,7 +1612,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Cruelty by Husband or his Relatives,486.0
 2020,Akola,Cruelty by Husband or his Relatives,261.0
 2020,Amravati,Cruelty by Husband or his Relatives,233.0
-2020,Chhatrapati Sambhaji Nagar,Cruelty by Husband or his Relatives,327.0
+2020,Chh. Sambhaji Nagar,Cruelty by Husband or his Relatives,327.0
 2020,Beed,Cruelty by Husband or his Relatives,255.0
 2020,Bhandara,Cruelty by Husband or his Relatives,38.0
 2020,Buldhana,Cruelty by Husband or his Relatives,144.0
@@ -1625,11 +1625,11 @@ Year,District,Crime,Cases
 2020,Jalna,Cruelty by Husband or his Relatives,191.0
 2020,Kolhapur,Cruelty by Husband or his Relatives,194.0
 2020,Latur,Cruelty by Husband or his Relatives,131.0
-2020,Mumbai City,Cruelty by Husband or his Relatives,501.0
+2020,Mumbai,Cruelty by Husband or his Relatives,501.0
 2020,Nagpur,Cruelty by Husband or his Relatives,134.0
 2020,Nanded,Cruelty by Husband or his Relatives,242.0
 2020,Nandurbar,Cruelty by Husband or his Relatives,50.0
-2020,Nasik,Cruelty by Husband or his Relatives,526.0
+2020,Nashik,Cruelty by Husband or his Relatives,526.0
 2020,Dharashiv,Cruelty by Husband or his Relatives,67.0
 2020,Palghar,Cruelty by Husband or his Relatives,22.0
 2020,Parbhani,Cruelty by Husband or his Relatives,115.0
@@ -1647,7 +1647,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Cruelty by Husband or his Relatives,567.0
 2021,Akola,Cruelty by Husband or his Relatives,268.0
 2021,Amravati,Cruelty by Husband or his Relatives,329.0
-2021,Chhatrapati Sambhaji Nagar,Cruelty by Husband or his Relatives,514.0
+2021,Chh. Sambhaji Nagar,Cruelty by Husband or his Relatives,514.0
 2021,Beed,Cruelty by Husband or his Relatives,473.0
 2021,Bhandara,Cruelty by Husband or his Relatives,34.0
 2021,Buldhana,Cruelty by Husband or his Relatives,217.0
@@ -1660,11 +1660,11 @@ Year,District,Crime,Cases
 2021,Jalna,Cruelty by Husband or his Relatives,443.0
 2021,Kolhapur,Cruelty by Husband or his Relatives,249.0
 2021,Latur,Cruelty by Husband or his Relatives,289.0
-2021,Mumbai City,Cruelty by Husband or his Relatives,826.0
+2021,Mumbai,Cruelty by Husband or his Relatives,826.0
 2021,Nagpur,Cruelty by Husband or his Relatives,207.0
 2021,Nanded,Cruelty by Husband or his Relatives,281.0
 2021,Nandurbar,Cruelty by Husband or his Relatives,99.0
-2021,Nasik,Cruelty by Husband or his Relatives,590.0
+2021,Nashik,Cruelty by Husband or his Relatives,590.0
 2021,Dharashiv,Cruelty by Husband or his Relatives,138.0
 2021,Palghar,Cruelty by Husband or his Relatives,27.0
 2021,Parbhani,Cruelty by Husband or his Relatives,226.0
@@ -1682,7 +1682,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Abetment of Suicides of Women,73.0
 2014,Akola,Abetment of Suicides of Women,13.0
 2014,Amravati,Abetment of Suicides of Women,32.0
-2014,Chhatrapati Sambhaji Nagar,Abetment of Suicides of Women,15.0
+2014,Chh. Sambhaji Nagar,Abetment of Suicides of Women,15.0
 2014,Beed,Abetment of Suicides of Women,31.0
 2014,Bhandara,Abetment of Suicides of Women,11.0
 2014,Buldhana,Abetment of Suicides of Women,9.0
@@ -1695,11 +1695,11 @@ Year,District,Crime,Cases
 2014,Jalna,Abetment of Suicides of Women,0.0
 2014,Kolhapur,Abetment of Suicides of Women,0.0
 2014,Latur,Abetment of Suicides of Women,0.0
-2014,Mumbai City,Abetment of Suicides of Women,380.0
+2014,Mumbai,Abetment of Suicides of Women,380.0
 2014,Nagpur,Abetment of Suicides of Women,50.0
 2014,Nanded,Abetment of Suicides of Women,32.0
 2014,Nandurbar,Abetment of Suicides of Women,0.0
-2014,Nasik,Abetment of Suicides of Women,28.0
+2014,Nashik,Abetment of Suicides of Women,28.0
 2014,Dharashiv,Abetment of Suicides of Women,1.0
 2014,Palghar,Abetment of Suicides of Women,16.0
 2014,Parbhani,Abetment of Suicides of Women,25.0
@@ -1717,7 +1717,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Abetment of Suicides of Women,54.0
 2015,Akola,Abetment of Suicides of Women,19.0
 2015,Amravati,Abetment of Suicides of Women,47.0
-2015,Chhatrapati Sambhaji Nagar,Abetment of Suicides of Women,20.0
+2015,Chh. Sambhaji Nagar,Abetment of Suicides of Women,20.0
 2015,Beed,Abetment of Suicides of Women,49.0
 2015,Bhandara,Abetment of Suicides of Women,4.0
 2015,Buldhana,Abetment of Suicides of Women,37.0
@@ -1730,11 +1730,11 @@ Year,District,Crime,Cases
 2015,Jalna,Abetment of Suicides of Women,12.0
 2015,Kolhapur,Abetment of Suicides of Women,10.0
 2015,Latur,Abetment of Suicides of Women,15.0
-2015,Mumbai City,Abetment of Suicides of Women,20.0
+2015,Mumbai,Abetment of Suicides of Women,20.0
 2015,Nagpur,Abetment of Suicides of Women,52.0
 2015,Nanded,Abetment of Suicides of Women,27.0
 2015,Nandurbar,Abetment of Suicides of Women,11.0
-2015,Nasik,Abetment of Suicides of Women,26.0
+2015,Nashik,Abetment of Suicides of Women,26.0
 2015,Dharashiv,Abetment of Suicides of Women,6.0
 2015,Palghar,Abetment of Suicides of Women,11.0
 2015,Parbhani,Abetment of Suicides of Women,18.0
@@ -1752,7 +1752,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Abetment of Suicides of Women,60.0
 2016,Akola,Abetment of Suicides of Women,13.0
 2016,Amravati,Abetment of Suicides of Women,38.0
-2016,Chhatrapati Sambhaji Nagar,Abetment of Suicides of Women,20.0
+2016,Chh. Sambhaji Nagar,Abetment of Suicides of Women,20.0
 2016,Beed,Abetment of Suicides of Women,25.0
 2016,Bhandara,Abetment of Suicides of Women,8.0
 2016,Buldhana,Abetment of Suicides of Women,30.0
@@ -1765,11 +1765,11 @@ Year,District,Crime,Cases
 2016,Jalna,Abetment of Suicides of Women,12.0
 2016,Kolhapur,Abetment of Suicides of Women,13.0
 2016,Latur,Abetment of Suicides of Women,23.0
-2016,Mumbai City,Abetment of Suicides of Women,27.0
+2016,Mumbai,Abetment of Suicides of Women,27.0
 2016,Nagpur,Abetment of Suicides of Women,60.0
 2016,Nanded,Abetment of Suicides of Women,35.0
 2016,Nandurbar,Abetment of Suicides of Women,11.0
-2016,Nasik,Abetment of Suicides of Women,30.0
+2016,Nashik,Abetment of Suicides of Women,30.0
 2016,Dharashiv,Abetment of Suicides of Women,7.0
 2016,Palghar,Abetment of Suicides of Women,17.0
 2016,Parbhani,Abetment of Suicides of Women,13.0
@@ -1787,7 +1787,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Abetment of Suicides of Women,54.0
 2017,Akola,Abetment of Suicides of Women,19.0
 2017,Amravati,Abetment of Suicides of Women,47.0
-2017,Chhatrapati Sambhaji Nagar,Abetment of Suicides of Women,20.0
+2017,Chh. Sambhaji Nagar,Abetment of Suicides of Women,20.0
 2017,Beed,Abetment of Suicides of Women,49.0
 2017,Bhandara,Abetment of Suicides of Women,4.0
 2017,Buldhana,Abetment of Suicides of Women,37.0
@@ -1800,11 +1800,11 @@ Year,District,Crime,Cases
 2017,Jalna,Abetment of Suicides of Women,12.0
 2017,Kolhapur,Abetment of Suicides of Women,10.0
 2017,Latur,Abetment of Suicides of Women,15.0
-2017,Mumbai City,Abetment of Suicides of Women,20.0
+2017,Mumbai,Abetment of Suicides of Women,20.0
 2017,Nagpur,Abetment of Suicides of Women,52.0
 2017,Nanded,Abetment of Suicides of Women,27.0
 2017,Nandurbar,Abetment of Suicides of Women,11.0
-2017,Nasik,Abetment of Suicides of Women,26.0
+2017,Nashik,Abetment of Suicides of Women,26.0
 2017,Dharashiv,Abetment of Suicides of Women,6.0
 2017,Palghar,Abetment of Suicides of Women,11.0
 2017,Parbhani,Abetment of Suicides of Women,18.0
@@ -1822,7 +1822,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Abetment of Suicides of Women,55.0
 2019,Akola,Abetment of Suicides of Women,15.0
 2019,Amravati,Abetment of Suicides of Women,35.0
-2019,Chhatrapati Sambhaji Nagar,Abetment of Suicides of Women,45.0
+2019,Chh. Sambhaji Nagar,Abetment of Suicides of Women,45.0
 2019,Beed,Abetment of Suicides of Women,34.0
 2019,Bhandara,Abetment of Suicides of Women,3.0
 2019,Buldhana,Abetment of Suicides of Women,21.0
@@ -1835,11 +1835,11 @@ Year,District,Crime,Cases
 2019,Jalna,Abetment of Suicides of Women,5.0
 2019,Kolhapur,Abetment of Suicides of Women,17.0
 2019,Latur,Abetment of Suicides of Women,7.0
-2019,Mumbai City,Abetment of Suicides of Women,42.0
+2019,Mumbai,Abetment of Suicides of Women,42.0
 2019,Nagpur,Abetment of Suicides of Women,38.0
 2019,Nanded,Abetment of Suicides of Women,10.0
 2019,Nandurbar,Abetment of Suicides of Women,7.0
-2019,Nasik,Abetment of Suicides of Women,65.0
+2019,Nashik,Abetment of Suicides of Women,65.0
 2019,Dharashiv,Abetment of Suicides of Women,23.0
 2019,Palghar,Abetment of Suicides of Women,26.0
 2019,Parbhani,Abetment of Suicides of Women,13.0
@@ -1857,7 +1857,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Abetment of Suicides of Women,47.0
 2018,Akola,Abetment of Suicides of Women,21.0
 2018,Amravati,Abetment of Suicides of Women,30.0
-2018,Chhatrapati Sambhaji Nagar,Abetment of Suicides of Women,56.0
+2018,Chh. Sambhaji Nagar,Abetment of Suicides of Women,56.0
 2018,Beed,Abetment of Suicides of Women,34.0
 2018,Bhandara,Abetment of Suicides of Women,12.0
 2018,Buldhana,Abetment of Suicides of Women,29.0
@@ -1870,11 +1870,11 @@ Year,District,Crime,Cases
 2018,Jalna,Abetment of Suicides of Women,6.0
 2018,Kolhapur,Abetment of Suicides of Women,17.0
 2018,Latur,Abetment of Suicides of Women,15.0
-2018,Mumbai City,Abetment of Suicides of Women,43.0
+2018,Mumbai,Abetment of Suicides of Women,43.0
 2018,Nagpur,Abetment of Suicides of Women,36.0
 2018,Nanded,Abetment of Suicides of Women,29.0
 2018,Nandurbar,Abetment of Suicides of Women,8.0
-2018,Nasik,Abetment of Suicides of Women,48.0
+2018,Nashik,Abetment of Suicides of Women,48.0
 2018,Dharashiv,Abetment of Suicides of Women,15.0
 2018,Palghar,Abetment of Suicides of Women,23.0
 2018,Parbhani,Abetment of Suicides of Women,19.0
@@ -1892,7 +1892,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Abetment of Suicides of Women,55.0
 2020,Akola,Abetment of Suicides of Women,12.0
 2020,Amravati,Abetment of Suicides of Women,33.0
-2020,Chhatrapati Sambhaji Nagar,Abetment of Suicides of Women,28.0
+2020,Chh. Sambhaji Nagar,Abetment of Suicides of Women,28.0
 2020,Beed,Abetment of Suicides of Women,38.0
 2020,Bhandara,Abetment of Suicides of Women,7.0
 2020,Buldhana,Abetment of Suicides of Women,28.0
@@ -1905,11 +1905,11 @@ Year,District,Crime,Cases
 2020,Jalna,Abetment of Suicides of Women,34.0
 2020,Kolhapur,Abetment of Suicides of Women,13.0
 2020,Latur,Abetment of Suicides of Women,14.0
-2020,Mumbai City,Abetment of Suicides of Women,39.0
+2020,Mumbai,Abetment of Suicides of Women,39.0
 2020,Nagpur,Abetment of Suicides of Women,23.0
 2020,Nanded,Abetment of Suicides of Women,17.0
 2020,Nandurbar,Abetment of Suicides of Women,3.0
-2020,Nasik,Abetment of Suicides of Women,64.0
+2020,Nashik,Abetment of Suicides of Women,64.0
 2020,Dharashiv,Abetment of Suicides of Women,19.0
 2020,Palghar,Abetment of Suicides of Women,7.0
 2020,Parbhani,Abetment of Suicides of Women,14.0
@@ -1927,7 +1927,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Abetment of Suicides of Women,120.0
 2021,Akola,Abetment of Suicides of Women,15.0
 2021,Amravati,Abetment of Suicides of Women,27.0
-2021,Chhatrapati Sambhaji Nagar,Abetment of Suicides of Women,22.0
+2021,Chh. Sambhaji Nagar,Abetment of Suicides of Women,22.0
 2021,Beed,Abetment of Suicides of Women,42.0
 2021,Bhandara,Abetment of Suicides of Women,5.0
 2021,Buldhana,Abetment of Suicides of Women,25.0
@@ -1940,11 +1940,11 @@ Year,District,Crime,Cases
 2021,Jalna,Abetment of Suicides of Women,50.0
 2021,Kolhapur,Abetment of Suicides of Women,28.0
 2021,Latur,Abetment of Suicides of Women,26.0
-2021,Mumbai City,Abetment of Suicides of Women,39.0
+2021,Mumbai,Abetment of Suicides of Women,39.0
 2021,Nagpur,Abetment of Suicides of Women,15.0
 2021,Nanded,Abetment of Suicides of Women,15.0
 2021,Nandurbar,Abetment of Suicides of Women,3.0
-2021,Nasik,Abetment of Suicides of Women,65.0
+2021,Nashik,Abetment of Suicides of Women,65.0
 2021,Dharashiv,Abetment of Suicides of Women,15.0
 2021,Palghar,Abetment of Suicides of Women,5.0
 2021,Parbhani,Abetment of Suicides of Women,12.0
@@ -1962,7 +1962,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,"Dowry Prohibition Act, 1961",0.0
 2014,Akola,"Dowry Prohibition Act, 1961",1.0
 2014,Amravati,"Dowry Prohibition Act, 1961",8.0
-2014,Chhatrapati Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
+2014,Chh. Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
 2014,Beed,"Dowry Prohibition Act, 1961",0.0
 2014,Bhandara,"Dowry Prohibition Act, 1961",5.0
 2014,Buldhana,"Dowry Prohibition Act, 1961",0.0
@@ -1975,11 +1975,11 @@ Year,District,Crime,Cases
 2014,Jalna,"Dowry Prohibition Act, 1961",0.0
 2014,Kolhapur,"Dowry Prohibition Act, 1961",0.0
 2014,Latur,"Dowry Prohibition Act, 1961",0.0
-2014,Mumbai City,"Dowry Prohibition Act, 1961",2.0
+2014,Mumbai,"Dowry Prohibition Act, 1961",2.0
 2014,Nagpur,"Dowry Prohibition Act, 1961",11.0
 2014,Nanded,"Dowry Prohibition Act, 1961",0.0
 2014,Nandurbar,"Dowry Prohibition Act, 1961",0.0
-2014,Nasik,"Dowry Prohibition Act, 1961",0.0
+2014,Nashik,"Dowry Prohibition Act, 1961",0.0
 2014,Dharashiv,"Dowry Prohibition Act, 1961",0.0
 2014,Palghar,"Dowry Prohibition Act, 1961",0.0
 2014,Parbhani,"Dowry Prohibition Act, 1961",0.0
@@ -1997,7 +1997,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,"Dowry Prohibition Act, 1961",0.0
 2015,Akola,"Dowry Prohibition Act, 1961",3.0
 2015,Amravati,"Dowry Prohibition Act, 1961",1.0
-2015,Chhatrapati Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
+2015,Chh. Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
 2015,Beed,"Dowry Prohibition Act, 1961",0.0
 2015,Bhandara,"Dowry Prohibition Act, 1961",0.0
 2015,Buldhana,"Dowry Prohibition Act, 1961",2.0
@@ -2010,11 +2010,11 @@ Year,District,Crime,Cases
 2015,Jalna,"Dowry Prohibition Act, 1961",0.0
 2015,Kolhapur,"Dowry Prohibition Act, 1961",0.0
 2015,Latur,"Dowry Prohibition Act, 1961",0.0
-2015,Mumbai City,"Dowry Prohibition Act, 1961",0.0
+2015,Mumbai,"Dowry Prohibition Act, 1961",0.0
 2015,Nagpur,"Dowry Prohibition Act, 1961",14.0
 2015,Nanded,"Dowry Prohibition Act, 1961",0.0
 2015,Nandurbar,"Dowry Prohibition Act, 1961",0.0
-2015,Nasik,"Dowry Prohibition Act, 1961",0.0
+2015,Nashik,"Dowry Prohibition Act, 1961",0.0
 2015,Dharashiv,"Dowry Prohibition Act, 1961",0.0
 2015,Palghar,"Dowry Prohibition Act, 1961",0.0
 2015,Parbhani,"Dowry Prohibition Act, 1961",1.0
@@ -2032,7 +2032,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,"Dowry Prohibition Act, 1961",0.0
 2016,Akola,"Dowry Prohibition Act, 1961",0.0
 2016,Amravati,"Dowry Prohibition Act, 1961",1.0
-2016,Chhatrapati Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
+2016,Chh. Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
 2016,Beed,"Dowry Prohibition Act, 1961",0.0
 2016,Bhandara,"Dowry Prohibition Act, 1961",7.0
 2016,Buldhana,"Dowry Prohibition Act, 1961",1.0
@@ -2045,11 +2045,11 @@ Year,District,Crime,Cases
 2016,Jalna,"Dowry Prohibition Act, 1961",0.0
 2016,Kolhapur,"Dowry Prohibition Act, 1961",0.0
 2016,Latur,"Dowry Prohibition Act, 1961",0.0
-2016,Mumbai City,"Dowry Prohibition Act, 1961",2.0
+2016,Mumbai,"Dowry Prohibition Act, 1961",2.0
 2016,Nagpur,"Dowry Prohibition Act, 1961",6.0
 2016,Nanded,"Dowry Prohibition Act, 1961",0.0
 2016,Nandurbar,"Dowry Prohibition Act, 1961",0.0
-2016,Nasik,"Dowry Prohibition Act, 1961",0.0
+2016,Nashik,"Dowry Prohibition Act, 1961",0.0
 2016,Dharashiv,"Dowry Prohibition Act, 1961",0.0
 2016,Palghar,"Dowry Prohibition Act, 1961",0.0
 2016,Parbhani,"Dowry Prohibition Act, 1961",1.0
@@ -2067,7 +2067,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,"Dowry Prohibition Act, 1961",0.0
 2017,Akola,"Dowry Prohibition Act, 1961",3.0
 2017,Amravati,"Dowry Prohibition Act, 1961",1.0
-2017,Chhatrapati Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
+2017,Chh. Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
 2017,Beed,"Dowry Prohibition Act, 1961",0.0
 2017,Bhandara,"Dowry Prohibition Act, 1961",0.0
 2017,Buldhana,"Dowry Prohibition Act, 1961",2.0
@@ -2080,11 +2080,11 @@ Year,District,Crime,Cases
 2017,Jalna,"Dowry Prohibition Act, 1961",0.0
 2017,Kolhapur,"Dowry Prohibition Act, 1961",0.0
 2017,Latur,"Dowry Prohibition Act, 1961",0.0
-2017,Mumbai City,"Dowry Prohibition Act, 1961",0.0
+2017,Mumbai,"Dowry Prohibition Act, 1961",0.0
 2017,Nagpur,"Dowry Prohibition Act, 1961",14.0
 2017,Nanded,"Dowry Prohibition Act, 1961",0.0
 2017,Nandurbar,"Dowry Prohibition Act, 1961",0.0
-2017,Nasik,"Dowry Prohibition Act, 1961",0.0
+2017,Nashik,"Dowry Prohibition Act, 1961",0.0
 2017,Dharashiv,"Dowry Prohibition Act, 1961",0.0
 2017,Palghar,"Dowry Prohibition Act, 1961",0.0
 2017,Parbhani,"Dowry Prohibition Act, 1961",1.0
@@ -2102,7 +2102,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,"Dowry Prohibition Act, 1961",0.0
 2019,Akola,"Dowry Prohibition Act, 1961",1.0
 2019,Amravati,"Dowry Prohibition Act, 1961",4.0
-2019,Chhatrapati Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
+2019,Chh. Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
 2019,Beed,"Dowry Prohibition Act, 1961",0.0
 2019,Bhandara,"Dowry Prohibition Act, 1961",2.0
 2019,Buldhana,"Dowry Prohibition Act, 1961",2.0
@@ -2115,11 +2115,11 @@ Year,District,Crime,Cases
 2019,Jalna,"Dowry Prohibition Act, 1961",0.0
 2019,Kolhapur,"Dowry Prohibition Act, 1961",0.0
 2019,Latur,"Dowry Prohibition Act, 1961",0.0
-2019,Mumbai City,"Dowry Prohibition Act, 1961",0.0
+2019,Mumbai,"Dowry Prohibition Act, 1961",0.0
 2019,Nagpur,"Dowry Prohibition Act, 1961",2.0
 2019,Nanded,"Dowry Prohibition Act, 1961",1.0
 2019,Nandurbar,"Dowry Prohibition Act, 1961",0.0
-2019,Nasik,"Dowry Prohibition Act, 1961",0.0
+2019,Nashik,"Dowry Prohibition Act, 1961",0.0
 2019,Dharashiv,"Dowry Prohibition Act, 1961",0.0
 2019,Palghar,"Dowry Prohibition Act, 1961",0.0
 2019,Parbhani,"Dowry Prohibition Act, 1961",0.0
@@ -2137,7 +2137,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,"Dowry Prohibition Act, 1961",0.0
 2018,Akola,"Dowry Prohibition Act, 1961",2.0
 2018,Amravati,"Dowry Prohibition Act, 1961",4.0
-2018,Chhatrapati Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
+2018,Chh. Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
 2018,Beed,"Dowry Prohibition Act, 1961",0.0
 2018,Bhandara,"Dowry Prohibition Act, 1961",3.0
 2018,Buldhana,"Dowry Prohibition Act, 1961",0.0
@@ -2150,11 +2150,11 @@ Year,District,Crime,Cases
 2018,Jalna,"Dowry Prohibition Act, 1961",0.0
 2018,Kolhapur,"Dowry Prohibition Act, 1961",0.0
 2018,Latur,"Dowry Prohibition Act, 1961",0.0
-2018,Mumbai City,"Dowry Prohibition Act, 1961",7.0
+2018,Mumbai,"Dowry Prohibition Act, 1961",7.0
 2018,Nagpur,"Dowry Prohibition Act, 1961",7.0
 2018,Nanded,"Dowry Prohibition Act, 1961",0.0
 2018,Nandurbar,"Dowry Prohibition Act, 1961",0.0
-2018,Nasik,"Dowry Prohibition Act, 1961",0.0
+2018,Nashik,"Dowry Prohibition Act, 1961",0.0
 2018,Dharashiv,"Dowry Prohibition Act, 1961",1.0
 2018,Palghar,"Dowry Prohibition Act, 1961",0.0
 2018,Parbhani,"Dowry Prohibition Act, 1961",0.0
@@ -2172,7 +2172,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,"Dowry Prohibition Act, 1961",0.0
 2020,Akola,"Dowry Prohibition Act, 1961",1.0
 2020,Amravati,"Dowry Prohibition Act, 1961",4.0
-2020,Chhatrapati Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
+2020,Chh. Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
 2020,Beed,"Dowry Prohibition Act, 1961",0.0
 2020,Bhandara,"Dowry Prohibition Act, 1961",4.0
 2020,Buldhana,"Dowry Prohibition Act, 1961",0.0
@@ -2185,11 +2185,11 @@ Year,District,Crime,Cases
 2020,Jalna,"Dowry Prohibition Act, 1961",0.0
 2020,Kolhapur,"Dowry Prohibition Act, 1961",0.0
 2020,Latur,"Dowry Prohibition Act, 1961",0.0
-2020,Mumbai City,"Dowry Prohibition Act, 1961",0.0
+2020,Mumbai,"Dowry Prohibition Act, 1961",0.0
 2020,Nagpur,"Dowry Prohibition Act, 1961",3.0
 2020,Nanded,"Dowry Prohibition Act, 1961",0.0
 2020,Nandurbar,"Dowry Prohibition Act, 1961",0.0
-2020,Nasik,"Dowry Prohibition Act, 1961",0.0
+2020,Nashik,"Dowry Prohibition Act, 1961",0.0
 2020,Dharashiv,"Dowry Prohibition Act, 1961",0.0
 2020,Palghar,"Dowry Prohibition Act, 1961",0.0
 2020,Parbhani,"Dowry Prohibition Act, 1961",0.0
@@ -2207,7 +2207,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,"Dowry Prohibition Act, 1961",0.0
 2021,Akola,"Dowry Prohibition Act, 1961",2.0
 2021,Amravati,"Dowry Prohibition Act, 1961",9.0
-2021,Chhatrapati Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
+2021,Chh. Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
 2021,Beed,"Dowry Prohibition Act, 1961",0.0
 2021,Bhandara,"Dowry Prohibition Act, 1961",3.0
 2021,Buldhana,"Dowry Prohibition Act, 1961",0.0
@@ -2220,11 +2220,11 @@ Year,District,Crime,Cases
 2021,Jalna,"Dowry Prohibition Act, 1961",1.0
 2021,Kolhapur,"Dowry Prohibition Act, 1961",0.0
 2021,Latur,"Dowry Prohibition Act, 1961",0.0
-2021,Mumbai City,"Dowry Prohibition Act, 1961",8.0
+2021,Mumbai,"Dowry Prohibition Act, 1961",8.0
 2021,Nagpur,"Dowry Prohibition Act, 1961",0.0
 2021,Nanded,"Dowry Prohibition Act, 1961",0.0
 2021,Nandurbar,"Dowry Prohibition Act, 1961",0.0
-2021,Nasik,"Dowry Prohibition Act, 1961",0.0
+2021,Nashik,"Dowry Prohibition Act, 1961",0.0
 2021,Dharashiv,"Dowry Prohibition Act, 1961",0.0
 2021,Palghar,"Dowry Prohibition Act, 1961",0.0
 2021,Parbhani,"Dowry Prohibition Act, 1961",0.0
@@ -2242,7 +2242,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Immoral Traffic Prevention Act,4.0
 2014,Akola,Immoral Traffic Prevention Act,0.0
 2014,Amravati,Immoral Traffic Prevention Act,0.0
-2014,Chhatrapati Sambhaji Nagar,Immoral Traffic Prevention Act,5.0
+2014,Chh. Sambhaji Nagar,Immoral Traffic Prevention Act,5.0
 2014,Beed,Immoral Traffic Prevention Act,1.0
 2014,Bhandara,Immoral Traffic Prevention Act,0.0
 2014,Buldhana,Immoral Traffic Prevention Act,0.0
@@ -2255,11 +2255,11 @@ Year,District,Crime,Cases
 2014,Jalna,Immoral Traffic Prevention Act,1.0
 2014,Kolhapur,Immoral Traffic Prevention Act,5.0
 2014,Latur,Immoral Traffic Prevention Act,2.0
-2014,Mumbai City,Immoral Traffic Prevention Act,50.0
+2014,Mumbai,Immoral Traffic Prevention Act,50.0
 2014,Nagpur,Immoral Traffic Prevention Act,25.0
 2014,Nanded,Immoral Traffic Prevention Act,0.0
 2014,Nandurbar,Immoral Traffic Prevention Act,1.0
-2014,Nasik,Immoral Traffic Prevention Act,2.0
+2014,Nashik,Immoral Traffic Prevention Act,2.0
 2014,Dharashiv,Immoral Traffic Prevention Act,1.0
 2014,Palghar,Immoral Traffic Prevention Act,0.0
 2014,Parbhani,Immoral Traffic Prevention Act,0.0
@@ -2277,7 +2277,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Immoral Traffic Prevention Act,4.0
 2015,Akola,Immoral Traffic Prevention Act,0.0
 2015,Amravati,Immoral Traffic Prevention Act,0.0
-2015,Chhatrapati Sambhaji Nagar,Immoral Traffic Prevention Act,4.0
+2015,Chh. Sambhaji Nagar,Immoral Traffic Prevention Act,4.0
 2015,Beed,Immoral Traffic Prevention Act,3.0
 2015,Bhandara,Immoral Traffic Prevention Act,3.0
 2015,Buldhana,Immoral Traffic Prevention Act,0.0
@@ -2290,11 +2290,11 @@ Year,District,Crime,Cases
 2015,Jalna,Immoral Traffic Prevention Act,2.0
 2015,Kolhapur,Immoral Traffic Prevention Act,16.0
 2015,Latur,Immoral Traffic Prevention Act,6.0
-2015,Mumbai City,Immoral Traffic Prevention Act,75.0
+2015,Mumbai,Immoral Traffic Prevention Act,75.0
 2015,Nagpur,Immoral Traffic Prevention Act,135.0
 2015,Nanded,Immoral Traffic Prevention Act,2.0
 2015,Nandurbar,Immoral Traffic Prevention Act,1.0
-2015,Nasik,Immoral Traffic Prevention Act,6.0
+2015,Nashik,Immoral Traffic Prevention Act,6.0
 2015,Dharashiv,Immoral Traffic Prevention Act,0.0
 2015,Palghar,Immoral Traffic Prevention Act,3.0
 2015,Parbhani,Immoral Traffic Prevention Act,0.0
@@ -2312,7 +2312,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Immoral Traffic Prevention Act,2.0
 2016,Akola,Immoral Traffic Prevention Act,0.0
 2016,Amravati,Immoral Traffic Prevention Act,0.0
-2016,Chhatrapati Sambhaji Nagar,Immoral Traffic Prevention Act,3.0
+2016,Chh. Sambhaji Nagar,Immoral Traffic Prevention Act,3.0
 2016,Beed,Immoral Traffic Prevention Act,3.0
 2016,Bhandara,Immoral Traffic Prevention Act,1.0
 2016,Buldhana,Immoral Traffic Prevention Act,0.0
@@ -2325,11 +2325,11 @@ Year,District,Crime,Cases
 2016,Jalna,Immoral Traffic Prevention Act,1.0
 2016,Kolhapur,Immoral Traffic Prevention Act,8.0
 2016,Latur,Immoral Traffic Prevention Act,2.0
-2016,Mumbai City,Immoral Traffic Prevention Act,26.0
+2016,Mumbai,Immoral Traffic Prevention Act,26.0
 2016,Nagpur,Immoral Traffic Prevention Act,125.0
 2016,Nanded,Immoral Traffic Prevention Act,2.0
 2016,Nandurbar,Immoral Traffic Prevention Act,1.0
-2016,Nasik,Immoral Traffic Prevention Act,14.0
+2016,Nashik,Immoral Traffic Prevention Act,14.0
 2016,Dharashiv,Immoral Traffic Prevention Act,2.0
 2016,Palghar,Immoral Traffic Prevention Act,2.0
 2016,Parbhani,Immoral Traffic Prevention Act,0.0
@@ -2347,7 +2347,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Immoral Traffic Prevention Act,4.0
 2017,Akola,Immoral Traffic Prevention Act,0.0
 2017,Amravati,Immoral Traffic Prevention Act,0.0
-2017,Chhatrapati Sambhaji Nagar,Immoral Traffic Prevention Act,4.0
+2017,Chh. Sambhaji Nagar,Immoral Traffic Prevention Act,4.0
 2017,Beed,Immoral Traffic Prevention Act,3.0
 2017,Bhandara,Immoral Traffic Prevention Act,3.0
 2017,Buldhana,Immoral Traffic Prevention Act,0.0
@@ -2360,11 +2360,11 @@ Year,District,Crime,Cases
 2017,Jalna,Immoral Traffic Prevention Act,2.0
 2017,Kolhapur,Immoral Traffic Prevention Act,16.0
 2017,Latur,Immoral Traffic Prevention Act,6.0
-2017,Mumbai City,Immoral Traffic Prevention Act,75.0
+2017,Mumbai,Immoral Traffic Prevention Act,75.0
 2017,Nagpur,Immoral Traffic Prevention Act,135.0
 2017,Nanded,Immoral Traffic Prevention Act,2.0
 2017,Nandurbar,Immoral Traffic Prevention Act,1.0
-2017,Nasik,Immoral Traffic Prevention Act,6.0
+2017,Nashik,Immoral Traffic Prevention Act,6.0
 2017,Dharashiv,Immoral Traffic Prevention Act,0.0
 2017,Palghar,Immoral Traffic Prevention Act,3.0
 2017,Parbhani,Immoral Traffic Prevention Act,0.0
@@ -2382,7 +2382,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Immoral Traffic Prevention Act,7.0
 2019,Akola,Immoral Traffic Prevention Act,0.0
 2019,Amravati,Immoral Traffic Prevention Act,0.0
-2019,Chhatrapati Sambhaji Nagar,Immoral Traffic Prevention Act,5.0
+2019,Chh. Sambhaji Nagar,Immoral Traffic Prevention Act,5.0
 2019,Beed,Immoral Traffic Prevention Act,0.0
 2019,Bhandara,Immoral Traffic Prevention Act,0.0
 2019,Buldhana,Immoral Traffic Prevention Act,3.0
@@ -2395,11 +2395,11 @@ Year,District,Crime,Cases
 2019,Jalna,Immoral Traffic Prevention Act,0.0
 2019,Kolhapur,Immoral Traffic Prevention Act,1.0
 2019,Latur,Immoral Traffic Prevention Act,1.0
-2019,Mumbai City,Immoral Traffic Prevention Act,37.0
+2019,Mumbai,Immoral Traffic Prevention Act,37.0
 2019,Nagpur,Immoral Traffic Prevention Act,25.0
 2019,Nanded,Immoral Traffic Prevention Act,0.0
 2019,Nandurbar,Immoral Traffic Prevention Act,0.0
-2019,Nasik,Immoral Traffic Prevention Act,16.0
+2019,Nashik,Immoral Traffic Prevention Act,16.0
 2019,Dharashiv,Immoral Traffic Prevention Act,0.0
 2019,Palghar,Immoral Traffic Prevention Act,4.0
 2019,Parbhani,Immoral Traffic Prevention Act,0.0
@@ -2417,7 +2417,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Immoral Traffic Prevention Act,5.0
 2018,Akola,Immoral Traffic Prevention Act,0.0
 2018,Amravati,Immoral Traffic Prevention Act,0.0
-2018,Chhatrapati Sambhaji Nagar,Immoral Traffic Prevention Act,6.0
+2018,Chh. Sambhaji Nagar,Immoral Traffic Prevention Act,6.0
 2018,Beed,Immoral Traffic Prevention Act,4.0
 2018,Bhandara,Immoral Traffic Prevention Act,2.0
 2018,Buldhana,Immoral Traffic Prevention Act,0.0
@@ -2430,11 +2430,11 @@ Year,District,Crime,Cases
 2018,Jalna,Immoral Traffic Prevention Act,0.0
 2018,Kolhapur,Immoral Traffic Prevention Act,9.0
 2018,Latur,Immoral Traffic Prevention Act,7.0
-2018,Mumbai City,Immoral Traffic Prevention Act,65.0
+2018,Mumbai,Immoral Traffic Prevention Act,65.0
 2018,Nagpur,Immoral Traffic Prevention Act,19.0
 2018,Nanded,Immoral Traffic Prevention Act,1.0
 2018,Nandurbar,Immoral Traffic Prevention Act,0.0
-2018,Nasik,Immoral Traffic Prevention Act,9.0
+2018,Nashik,Immoral Traffic Prevention Act,9.0
 2018,Dharashiv,Immoral Traffic Prevention Act,0.0
 2018,Palghar,Immoral Traffic Prevention Act,5.0
 2018,Parbhani,Immoral Traffic Prevention Act,0.0
@@ -2452,7 +2452,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Immoral Traffic Prevention Act,2.0
 2020,Akola,Immoral Traffic Prevention Act,0.0
 2020,Amravati,Immoral Traffic Prevention Act,0.0
-2020,Chhatrapati Sambhaji Nagar,Immoral Traffic Prevention Act,8.0
+2020,Chh. Sambhaji Nagar,Immoral Traffic Prevention Act,8.0
 2020,Beed,Immoral Traffic Prevention Act,0.0
 2020,Bhandara,Immoral Traffic Prevention Act,1.0
 2020,Buldhana,Immoral Traffic Prevention Act,0.0
@@ -2465,11 +2465,11 @@ Year,District,Crime,Cases
 2020,Jalna,Immoral Traffic Prevention Act,2.0
 2020,Kolhapur,Immoral Traffic Prevention Act,2.0
 2020,Latur,Immoral Traffic Prevention Act,0.0
-2020,Mumbai City,Immoral Traffic Prevention Act,5.0
+2020,Mumbai,Immoral Traffic Prevention Act,5.0
 2020,Nagpur,Immoral Traffic Prevention Act,14.0
 2020,Nanded,Immoral Traffic Prevention Act,1.0
 2020,Nandurbar,Immoral Traffic Prevention Act,0.0
-2020,Nasik,Immoral Traffic Prevention Act,2.0
+2020,Nashik,Immoral Traffic Prevention Act,2.0
 2020,Dharashiv,Immoral Traffic Prevention Act,0.0
 2020,Palghar,Immoral Traffic Prevention Act,0.0
 2020,Parbhani,Immoral Traffic Prevention Act,0.0
@@ -2487,7 +2487,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Immoral Traffic Prevention Act,8.0
 2021,Akola,Immoral Traffic Prevention Act,0.0
 2021,Amravati,Immoral Traffic Prevention Act,0.0
-2021,Chhatrapati Sambhaji Nagar,Immoral Traffic Prevention Act,2.0
+2021,Chh. Sambhaji Nagar,Immoral Traffic Prevention Act,2.0
 2021,Beed,Immoral Traffic Prevention Act,7.0
 2021,Bhandara,Immoral Traffic Prevention Act,0.0
 2021,Buldhana,Immoral Traffic Prevention Act,1.0
@@ -2500,11 +2500,11 @@ Year,District,Crime,Cases
 2021,Jalna,Immoral Traffic Prevention Act,1.0
 2021,Kolhapur,Immoral Traffic Prevention Act,0.0
 2021,Latur,Immoral Traffic Prevention Act,1.0
-2021,Mumbai City,Immoral Traffic Prevention Act,5.0
+2021,Mumbai,Immoral Traffic Prevention Act,5.0
 2021,Nagpur,Immoral Traffic Prevention Act,12.0
 2021,Nanded,Immoral Traffic Prevention Act,0.0
 2021,Nandurbar,Immoral Traffic Prevention Act,0.0
-2021,Nasik,Immoral Traffic Prevention Act,2.0
+2021,Nashik,Immoral Traffic Prevention Act,2.0
 2021,Dharashiv,Immoral Traffic Prevention Act,4.0
 2021,Palghar,Immoral Traffic Prevention Act,0.0
 2021,Parbhani,Immoral Traffic Prevention Act,0.0
@@ -2522,7 +2522,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,HumanTrafficking,0.0
 2014,Akola,HumanTrafficking,0.0
 2014,Amravati,HumanTrafficking,0.0
-2014,Chhatrapati Sambhaji Nagar,HumanTrafficking,0.0
+2014,Chh. Sambhaji Nagar,HumanTrafficking,0.0
 2014,Beed,HumanTrafficking,0.0
 2014,Bhandara,HumanTrafficking,0.0
 2014,Buldhana,HumanTrafficking,0.0
@@ -2535,11 +2535,11 @@ Year,District,Crime,Cases
 2014,Jalna,HumanTrafficking,0.0
 2014,Kolhapur,HumanTrafficking,0.0
 2014,Latur,HumanTrafficking,0.0
-2014,Mumbai City,HumanTrafficking,74.0
+2014,Mumbai,HumanTrafficking,74.0
 2014,Nagpur,HumanTrafficking,1.0
 2014,Nanded,HumanTrafficking,0.0
 2014,Nandurbar,HumanTrafficking,0.0
-2014,Nasik,HumanTrafficking,0.0
+2014,Nashik,HumanTrafficking,0.0
 2014,Dharashiv,HumanTrafficking,0.0
 2014,Palghar,HumanTrafficking,0.0
 2014,Parbhani,HumanTrafficking,0.0
@@ -2557,7 +2557,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,HumanTrafficking,0.0
 2015,Akola,HumanTrafficking,0.0
 2015,Amravati,HumanTrafficking,0.0
-2015,Chhatrapati Sambhaji Nagar,HumanTrafficking,0.0
+2015,Chh. Sambhaji Nagar,HumanTrafficking,0.0
 2015,Beed,HumanTrafficking,0.0
 2015,Bhandara,HumanTrafficking,0.0
 2015,Buldhana,HumanTrafficking,0.0
@@ -2570,11 +2570,11 @@ Year,District,Crime,Cases
 2015,Jalna,HumanTrafficking,0.0
 2015,Kolhapur,HumanTrafficking,0.0
 2015,Latur,HumanTrafficking,0.0
-2015,Mumbai City,HumanTrafficking,1.0
+2015,Mumbai,HumanTrafficking,1.0
 2015,Nagpur,HumanTrafficking,1.0
 2015,Nanded,HumanTrafficking,1.0
 2015,Nandurbar,HumanTrafficking,0.0
-2015,Nasik,HumanTrafficking,0.0
+2015,Nashik,HumanTrafficking,0.0
 2015,Dharashiv,HumanTrafficking,0.0
 2015,Palghar,HumanTrafficking,0.0
 2015,Parbhani,HumanTrafficking,0.0
@@ -2592,7 +2592,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,HumanTrafficking,0.0
 2016,Akola,HumanTrafficking,0.0
 2016,Amravati,HumanTrafficking,0.0
-2016,Chhatrapati Sambhaji Nagar,HumanTrafficking,1.0
+2016,Chh. Sambhaji Nagar,HumanTrafficking,1.0
 2016,Beed,HumanTrafficking,0.0
 2016,Bhandara,HumanTrafficking,0.0
 2016,Buldhana,HumanTrafficking,0.0
@@ -2605,11 +2605,11 @@ Year,District,Crime,Cases
 2016,Jalna,HumanTrafficking,0.0
 2016,Kolhapur,HumanTrafficking,0.0
 2016,Latur,HumanTrafficking,0.0
-2016,Mumbai City,HumanTrafficking,0.0
+2016,Mumbai,HumanTrafficking,0.0
 2016,Nagpur,HumanTrafficking,3.0
 2016,Nanded,HumanTrafficking,1.0
 2016,Nandurbar,HumanTrafficking,0.0
-2016,Nasik,HumanTrafficking,0.0
+2016,Nashik,HumanTrafficking,0.0
 2016,Dharashiv,HumanTrafficking,0.0
 2016,Palghar,HumanTrafficking,1.0
 2016,Parbhani,HumanTrafficking,0.0
@@ -2627,7 +2627,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,HumanTrafficking,0.0
 2017,Akola,HumanTrafficking,0.0
 2017,Amravati,HumanTrafficking,0.0
-2017,Chhatrapati Sambhaji Nagar,HumanTrafficking,0.0
+2017,Chh. Sambhaji Nagar,HumanTrafficking,0.0
 2017,Beed,HumanTrafficking,0.0
 2017,Bhandara,HumanTrafficking,1.0
 2017,Buldhana,HumanTrafficking,1.0
@@ -2640,11 +2640,11 @@ Year,District,Crime,Cases
 2017,Jalna,HumanTrafficking,0.0
 2017,Kolhapur,HumanTrafficking,0.0
 2017,Latur,HumanTrafficking,0.0
-2017,Mumbai City,HumanTrafficking,1.0
+2017,Mumbai,HumanTrafficking,1.0
 2017,Nagpur,HumanTrafficking,0.0
 2017,Nanded,HumanTrafficking,1.0
 2017,Nandurbar,HumanTrafficking,0.0
-2017,Nasik,HumanTrafficking,0.0
+2017,Nashik,HumanTrafficking,0.0
 2017,Dharashiv,HumanTrafficking,0.0
 2017,Palghar,HumanTrafficking,0.0
 2017,Parbhani,HumanTrafficking,0.0
@@ -2662,7 +2662,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,HumanTrafficking,0.0
 2019,Akola,HumanTrafficking,0.0
 2019,Amravati,HumanTrafficking,2.0
-2019,Chhatrapati Sambhaji Nagar,HumanTrafficking,0.0
+2019,Chh. Sambhaji Nagar,HumanTrafficking,0.0
 2019,Beed,HumanTrafficking,4.0
 2019,Bhandara,HumanTrafficking,0.0
 2019,Buldhana,HumanTrafficking,0.0
@@ -2675,11 +2675,11 @@ Year,District,Crime,Cases
 2019,Jalna,HumanTrafficking,0.0
 2019,Kolhapur,HumanTrafficking,16.0
 2019,Latur,HumanTrafficking,0.0
-2019,Mumbai City,HumanTrafficking,67.0
+2019,Mumbai,HumanTrafficking,67.0
 2019,Nagpur,HumanTrafficking,14.0
 2019,Nanded,HumanTrafficking,0.0
 2019,Nandurbar,HumanTrafficking,0.0
-2019,Nasik,HumanTrafficking,0.0
+2019,Nashik,HumanTrafficking,0.0
 2019,Dharashiv,HumanTrafficking,0.0
 2019,Palghar,HumanTrafficking,16.0
 2019,Parbhani,HumanTrafficking,0.0
@@ -2697,7 +2697,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,HumanTrafficking,0.0
 2018,Akola,HumanTrafficking,0.0
 2018,Amravati,HumanTrafficking,1.0
-2018,Chhatrapati Sambhaji Nagar,HumanTrafficking,0.0
+2018,Chh. Sambhaji Nagar,HumanTrafficking,0.0
 2018,Beed,HumanTrafficking,7.0
 2018,Bhandara,HumanTrafficking,0.0
 2018,Buldhana,HumanTrafficking,0.0
@@ -2710,11 +2710,11 @@ Year,District,Crime,Cases
 2018,Jalna,HumanTrafficking,0.0
 2018,Kolhapur,HumanTrafficking,15.0
 2018,Latur,HumanTrafficking,0.0
-2018,Mumbai City,HumanTrafficking,28.0
+2018,Mumbai,HumanTrafficking,28.0
 2018,Nagpur,HumanTrafficking,19.0
 2018,Nanded,HumanTrafficking,1.0
 2018,Nandurbar,HumanTrafficking,0.0
-2018,Nasik,HumanTrafficking,0.0
+2018,Nashik,HumanTrafficking,0.0
 2018,Dharashiv,HumanTrafficking,0.0
 2018,Palghar,HumanTrafficking,9.0
 2018,Parbhani,HumanTrafficking,0.0
@@ -2732,7 +2732,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,HumanTrafficking,0.0
 2020,Akola,HumanTrafficking,0.0
 2020,Amravati,HumanTrafficking,0.0
-2020,Chhatrapati Sambhaji Nagar,HumanTrafficking,0.0
+2020,Chh. Sambhaji Nagar,HumanTrafficking,0.0
 2020,Beed,HumanTrafficking,0.0
 2020,Bhandara,HumanTrafficking,0.0
 2020,Buldhana,HumanTrafficking,0.0
@@ -2745,11 +2745,11 @@ Year,District,Crime,Cases
 2020,Jalna,HumanTrafficking,0.0
 2020,Kolhapur,HumanTrafficking,15.0
 2020,Latur,HumanTrafficking,3.0
-2020,Mumbai City,HumanTrafficking,30.0
+2020,Mumbai,HumanTrafficking,30.0
 2020,Nagpur,HumanTrafficking,8.0
 2020,Nanded,HumanTrafficking,0.0
 2020,Nandurbar,HumanTrafficking,0.0
-2020,Nasik,HumanTrafficking,1.0
+2020,Nashik,HumanTrafficking,1.0
 2020,Dharashiv,HumanTrafficking,0.0
 2020,Palghar,HumanTrafficking,1.0
 2020,Parbhani,HumanTrafficking,0.0
@@ -2767,7 +2767,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,HumanTrafficking,1.0
 2021,Akola,HumanTrafficking,1.0
 2021,Amravati,HumanTrafficking,3.0
-2021,Chhatrapati Sambhaji Nagar,HumanTrafficking,0.0
+2021,Chh. Sambhaji Nagar,HumanTrafficking,0.0
 2021,Beed,HumanTrafficking,0.0
 2021,Bhandara,HumanTrafficking,0.0
 2021,Buldhana,HumanTrafficking,0.0
@@ -2780,11 +2780,11 @@ Year,District,Crime,Cases
 2021,Jalna,HumanTrafficking,0.0
 2021,Kolhapur,HumanTrafficking,17.0
 2021,Latur,HumanTrafficking,5.0
-2021,Mumbai City,HumanTrafficking,42.0
+2021,Mumbai,HumanTrafficking,42.0
 2021,Nagpur,HumanTrafficking,12.0
 2021,Nanded,HumanTrafficking,0.0
 2021,Nandurbar,HumanTrafficking,1.0
-2021,Nasik,HumanTrafficking,1.0
+2021,Nashik,HumanTrafficking,1.0
 2021,Dharashiv,HumanTrafficking,0.0
 2021,Palghar,HumanTrafficking,0.0
 2021,Parbhani,HumanTrafficking,0.0
@@ -2802,7 +2802,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Akola,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Amravati,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
-2014,Chhatrapati Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
+2014,Chh. Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Beed,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Bhandara,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Buldhana,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
@@ -2815,11 +2815,11 @@ Year,District,Crime,Cases
 2014,Jalna,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Kolhapur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Latur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
-2014,Mumbai City,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
+2014,Mumbai,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Nagpur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Nanded,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Nandurbar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
-2014,Nasik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
+2014,Nashik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Dharashiv,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Palghar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2014,Parbhani,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
@@ -2837,7 +2837,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Akola,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Amravati,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
-2015,Chhatrapati Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
+2015,Chh. Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Beed,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Bhandara,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Buldhana,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
@@ -2850,11 +2850,11 @@ Year,District,Crime,Cases
 2015,Jalna,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Kolhapur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Latur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
-2015,Mumbai City,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
+2015,Mumbai,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Nagpur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Nanded,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Nandurbar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
-2015,Nasik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
+2015,Nashik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Dharashiv,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Palghar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2015,Parbhani,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
@@ -2872,7 +2872,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Akola,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Amravati,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
-2016,Chhatrapati Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
+2016,Chh. Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Beed,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Bhandara,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Buldhana,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
@@ -2885,11 +2885,11 @@ Year,District,Crime,Cases
 2016,Jalna,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Kolhapur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Latur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
-2016,Mumbai City,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
+2016,Mumbai,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Nagpur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Nanded,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Nandurbar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
-2016,Nasik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
+2016,Nashik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Dharashiv,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Palghar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
 2016,Parbhani,Cyber Crimes/Information Technology Act (Women Centric Crimes only),
@@ -2907,7 +2907,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2017,Akola,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2017,Amravati,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2017,Chhatrapati Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
+2017,Chh. Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2017,Beed,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2017,Bhandara,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2017,Buldhana,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
@@ -2920,11 +2920,11 @@ Year,District,Crime,Cases
 2017,Jalna,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2017,Kolhapur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2017,Latur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2017,Mumbai City,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
+2017,Mumbai,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2017,Nagpur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2017,Nanded,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2017,Nandurbar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2017,Nasik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
+2017,Nashik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2017,Dharashiv,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2017,Palghar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2017,Parbhani,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
@@ -2942,7 +2942,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),3.0
 2019,Akola,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2019,Amravati,Cyber Crimes/Information Technology Act (Women Centric Crimes only),11.0
-2019,Chhatrapati Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
+2019,Chh. Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2019,Beed,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2019,Bhandara,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2019,Buldhana,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
@@ -2955,11 +2955,11 @@ Year,District,Crime,Cases
 2019,Jalna,Cyber Crimes/Information Technology Act (Women Centric Crimes only),5.0
 2019,Kolhapur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2019,Latur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2019,Mumbai City,Cyber Crimes/Information Technology Act (Women Centric Crimes only),17.0
+2019,Mumbai,Cyber Crimes/Information Technology Act (Women Centric Crimes only),17.0
 2019,Nagpur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),5.0
 2019,Nanded,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2019,Nandurbar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2019,Nasik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),2.0
+2019,Nashik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),2.0
 2019,Dharashiv,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2019,Palghar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),10.0
 2019,Parbhani,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
@@ -2977,7 +2977,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),5.0
 2018,Akola,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2018,Amravati,Cyber Crimes/Information Technology Act (Women Centric Crimes only),3.0
-2018,Chhatrapati Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
+2018,Chh. Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2018,Beed,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2018,Bhandara,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2018,Buldhana,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
@@ -2990,11 +2990,11 @@ Year,District,Crime,Cases
 2018,Jalna,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2018,Kolhapur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2018,Latur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2018,Mumbai City,Cyber Crimes/Information Technology Act (Women Centric Crimes only),6.0
+2018,Mumbai,Cyber Crimes/Information Technology Act (Women Centric Crimes only),6.0
 2018,Nagpur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),7.0
 2018,Nanded,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2018,Nandurbar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2018,Nasik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
+2018,Nashik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2018,Dharashiv,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2018,Palghar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),3.0
 2018,Parbhani,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
@@ -3012,7 +3012,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),5.0
 2020,Akola,Cyber Crimes/Information Technology Act (Women Centric Crimes only),4.0
 2020,Amravati,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2020,Chhatrapati Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),10.0
+2020,Chh. Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),10.0
 2020,Beed,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2020,Bhandara,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2020,Buldhana,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
@@ -3025,11 +3025,11 @@ Year,District,Crime,Cases
 2020,Jalna,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2020,Kolhapur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2020,Latur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2020,Mumbai City,Cyber Crimes/Information Technology Act (Women Centric Crimes only),17.0
+2020,Mumbai,Cyber Crimes/Information Technology Act (Women Centric Crimes only),17.0
 2020,Nagpur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2020,Nanded,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2020,Nandurbar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),2.0
-2020,Nasik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),6.0
+2020,Nashik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),6.0
 2020,Dharashiv,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2020,Palghar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2020,Parbhani,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
@@ -3047,7 +3047,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),6.0
 2021,Akola,Cyber Crimes/Information Technology Act (Women Centric Crimes only),3.0
 2021,Amravati,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
-2021,Chhatrapati Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),4.0
+2021,Chh. Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),4.0
 2021,Beed,Cyber Crimes/Information Technology Act (Women Centric Crimes only),2.0
 2021,Bhandara,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2021,Buldhana,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
@@ -3060,11 +3060,11 @@ Year,District,Crime,Cases
 2021,Jalna,Cyber Crimes/Information Technology Act (Women Centric Crimes only),10.0
 2021,Kolhapur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2021,Latur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2021,Mumbai City,Cyber Crimes/Information Technology Act (Women Centric Crimes only),16.0
+2021,Mumbai,Cyber Crimes/Information Technology Act (Women Centric Crimes only),16.0
 2021,Nagpur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2021,Nanded,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2021,Nandurbar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
-2021,Nasik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),5.0
+2021,Nashik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),5.0
 2021,Dharashiv,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2021,Palghar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2021,Parbhani,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
@@ -3082,7 +3082,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,Protection of Children from Sexual Violence Act,
 2014,Akola,Protection of Children from Sexual Violence Act,
 2014,Amravati,Protection of Children from Sexual Violence Act,
-2014,Chhatrapati Sambhaji Nagar,Protection of Children from Sexual Violence Act,
+2014,Chh. Sambhaji Nagar,Protection of Children from Sexual Violence Act,
 2014,Beed,Protection of Children from Sexual Violence Act,
 2014,Bhandara,Protection of Children from Sexual Violence Act,
 2014,Buldhana,Protection of Children from Sexual Violence Act,
@@ -3095,11 +3095,11 @@ Year,District,Crime,Cases
 2014,Jalna,Protection of Children from Sexual Violence Act,
 2014,Kolhapur,Protection of Children from Sexual Violence Act,
 2014,Latur,Protection of Children from Sexual Violence Act,
-2014,Mumbai City,Protection of Children from Sexual Violence Act,
+2014,Mumbai,Protection of Children from Sexual Violence Act,
 2014,Nagpur,Protection of Children from Sexual Violence Act,
 2014,Nanded,Protection of Children from Sexual Violence Act,
 2014,Nandurbar,Protection of Children from Sexual Violence Act,
-2014,Nasik,Protection of Children from Sexual Violence Act,
+2014,Nashik,Protection of Children from Sexual Violence Act,
 2014,Dharashiv,Protection of Children from Sexual Violence Act,
 2014,Palghar,Protection of Children from Sexual Violence Act,
 2014,Parbhani,Protection of Children from Sexual Violence Act,
@@ -3117,7 +3117,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,Protection of Children from Sexual Violence Act,
 2015,Akola,Protection of Children from Sexual Violence Act,
 2015,Amravati,Protection of Children from Sexual Violence Act,
-2015,Chhatrapati Sambhaji Nagar,Protection of Children from Sexual Violence Act,
+2015,Chh. Sambhaji Nagar,Protection of Children from Sexual Violence Act,
 2015,Beed,Protection of Children from Sexual Violence Act,
 2015,Bhandara,Protection of Children from Sexual Violence Act,
 2015,Buldhana,Protection of Children from Sexual Violence Act,
@@ -3130,11 +3130,11 @@ Year,District,Crime,Cases
 2015,Jalna,Protection of Children from Sexual Violence Act,
 2015,Kolhapur,Protection of Children from Sexual Violence Act,
 2015,Latur,Protection of Children from Sexual Violence Act,
-2015,Mumbai City,Protection of Children from Sexual Violence Act,
+2015,Mumbai,Protection of Children from Sexual Violence Act,
 2015,Nagpur,Protection of Children from Sexual Violence Act,
 2015,Nanded,Protection of Children from Sexual Violence Act,
 2015,Nandurbar,Protection of Children from Sexual Violence Act,
-2015,Nasik,Protection of Children from Sexual Violence Act,
+2015,Nashik,Protection of Children from Sexual Violence Act,
 2015,Dharashiv,Protection of Children from Sexual Violence Act,
 2015,Palghar,Protection of Children from Sexual Violence Act,
 2015,Parbhani,Protection of Children from Sexual Violence Act,
@@ -3152,7 +3152,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,Protection of Children from Sexual Violence Act,
 2016,Akola,Protection of Children from Sexual Violence Act,
 2016,Amravati,Protection of Children from Sexual Violence Act,
-2016,Chhatrapati Sambhaji Nagar,Protection of Children from Sexual Violence Act,
+2016,Chh. Sambhaji Nagar,Protection of Children from Sexual Violence Act,
 2016,Beed,Protection of Children from Sexual Violence Act,
 2016,Bhandara,Protection of Children from Sexual Violence Act,
 2016,Buldhana,Protection of Children from Sexual Violence Act,
@@ -3165,11 +3165,11 @@ Year,District,Crime,Cases
 2016,Jalna,Protection of Children from Sexual Violence Act,
 2016,Kolhapur,Protection of Children from Sexual Violence Act,
 2016,Latur,Protection of Children from Sexual Violence Act,
-2016,Mumbai City,Protection of Children from Sexual Violence Act,
+2016,Mumbai,Protection of Children from Sexual Violence Act,
 2016,Nagpur,Protection of Children from Sexual Violence Act,
 2016,Nanded,Protection of Children from Sexual Violence Act,
 2016,Nandurbar,Protection of Children from Sexual Violence Act,
-2016,Nasik,Protection of Children from Sexual Violence Act,
+2016,Nashik,Protection of Children from Sexual Violence Act,
 2016,Dharashiv,Protection of Children from Sexual Violence Act,
 2016,Palghar,Protection of Children from Sexual Violence Act,
 2016,Parbhani,Protection of Children from Sexual Violence Act,
@@ -3187,7 +3187,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Protection of Children from Sexual Violence Act,715.0
 2017,Akola,Protection of Children from Sexual Violence Act,143.0
 2017,Amravati,Protection of Children from Sexual Violence Act,273.0
-2017,Chhatrapati Sambhaji Nagar,Protection of Children from Sexual Violence Act,515.0
+2017,Chh. Sambhaji Nagar,Protection of Children from Sexual Violence Act,515.0
 2017,Beed,Protection of Children from Sexual Violence Act,292.0
 2017,Bhandara,Protection of Children from Sexual Violence Act,168.0
 2017,Buldhana,Protection of Children from Sexual Violence Act,248.0
@@ -3200,11 +3200,11 @@ Year,District,Crime,Cases
 2017,Jalna,Protection of Children from Sexual Violence Act,199.0
 2017,Kolhapur,Protection of Children from Sexual Violence Act,368.0
 2017,Latur,Protection of Children from Sexual Violence Act,241.0
-2017,Mumbai City,Protection of Children from Sexual Violence Act,604.0
+2017,Mumbai,Protection of Children from Sexual Violence Act,604.0
 2017,Nagpur,Protection of Children from Sexual Violence Act,630.0
 2017,Nanded,Protection of Children from Sexual Violence Act,265.0
 2017,Nandurbar,Protection of Children from Sexual Violence Act,129.0
-2017,Nasik,Protection of Children from Sexual Violence Act,848.0
+2017,Nashik,Protection of Children from Sexual Violence Act,848.0
 2017,Dharashiv,Protection of Children from Sexual Violence Act,246.0
 2017,Palghar,Protection of Children from Sexual Violence Act,481.0
 2017,Parbhani,Protection of Children from Sexual Violence Act,103.0
@@ -3222,7 +3222,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Protection of Children from Sexual Violence Act,205.0
 2019,Akola,Protection of Children from Sexual Violence Act,124.0
 2019,Amravati,Protection of Children from Sexual Violence Act,240.0
-2019,Chhatrapati Sambhaji Nagar,Protection of Children from Sexual Violence Act,184.0
+2019,Chh. Sambhaji Nagar,Protection of Children from Sexual Violence Act,184.0
 2019,Beed,Protection of Children from Sexual Violence Act,113.0
 2019,Bhandara,Protection of Children from Sexual Violence Act,44.0
 2019,Buldhana,Protection of Children from Sexual Violence Act,121.0
@@ -3235,11 +3235,11 @@ Year,District,Crime,Cases
 2019,Jalna,Protection of Children from Sexual Violence Act,22.0
 2019,Kolhapur,Protection of Children from Sexual Violence Act,135.0
 2019,Latur,Protection of Children from Sexual Violence Act,52.0
-2019,Mumbai City,Protection of Children from Sexual Violence Act,1285.0
+2019,Mumbai,Protection of Children from Sexual Violence Act,1285.0
 2019,Nagpur,Protection of Children from Sexual Violence Act,331.0
 2019,Nanded,Protection of Children from Sexual Violence Act,104.0
 2019,Nandurbar,Protection of Children from Sexual Violence Act,45.0
-2019,Nasik,Protection of Children from Sexual Violence Act,213.0
+2019,Nashik,Protection of Children from Sexual Violence Act,213.0
 2019,Dharashiv,Protection of Children from Sexual Violence Act,75.0
 2019,Palghar,Protection of Children from Sexual Violence Act,225.0
 2019,Parbhani,Protection of Children from Sexual Violence Act,77.0
@@ -3257,7 +3257,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Protection of Children from Sexual Violence Act,234.0
 2018,Akola,Protection of Children from Sexual Violence Act,115.0
 2018,Amravati,Protection of Children from Sexual Violence Act,291.0
-2018,Chhatrapati Sambhaji Nagar,Protection of Children from Sexual Violence Act,162.0
+2018,Chh. Sambhaji Nagar,Protection of Children from Sexual Violence Act,162.0
 2018,Beed,Protection of Children from Sexual Violence Act,99.0
 2018,Bhandara,Protection of Children from Sexual Violence Act,50.0
 2018,Buldhana,Protection of Children from Sexual Violence Act,163.0
@@ -3270,11 +3270,11 @@ Year,District,Crime,Cases
 2018,Jalna,Protection of Children from Sexual Violence Act,28.0
 2018,Kolhapur,Protection of Children from Sexual Violence Act,141.0
 2018,Latur,Protection of Children from Sexual Violence Act,60.0
-2018,Mumbai City,Protection of Children from Sexual Violence Act,1171.0
+2018,Mumbai,Protection of Children from Sexual Violence Act,1171.0
 2018,Nagpur,Protection of Children from Sexual Violence Act,325.0
 2018,Nanded,Protection of Children from Sexual Violence Act,99.0
 2018,Nandurbar,Protection of Children from Sexual Violence Act,35.0
-2018,Nasik,Protection of Children from Sexual Violence Act,210.0
+2018,Nashik,Protection of Children from Sexual Violence Act,210.0
 2018,Dharashiv,Protection of Children from Sexual Violence Act,78.0
 2018,Palghar,Protection of Children from Sexual Violence Act,223.0
 2018,Parbhani,Protection of Children from Sexual Violence Act,59.0
@@ -3292,7 +3292,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Protection of Children from Sexual Violence Act,127.0
 2020,Akola,Protection of Children from Sexual Violence Act,102.0
 2020,Amravati,Protection of Children from Sexual Violence Act,230.0
-2020,Chhatrapati Sambhaji Nagar,Protection of Children from Sexual Violence Act,141.0
+2020,Chh. Sambhaji Nagar,Protection of Children from Sexual Violence Act,141.0
 2020,Beed,Protection of Children from Sexual Violence Act,136.0
 2020,Bhandara,Protection of Children from Sexual Violence Act,64.0
 2020,Buldhana,Protection of Children from Sexual Violence Act,132.0
@@ -3305,11 +3305,11 @@ Year,District,Crime,Cases
 2020,Jalna,Protection of Children from Sexual Violence Act,191.0
 2020,Kolhapur,Protection of Children from Sexual Violence Act,121.0
 2020,Latur,Protection of Children from Sexual Violence Act,49.0
-2020,Mumbai City,Protection of Children from Sexual Violence Act,928.0
+2020,Mumbai,Protection of Children from Sexual Violence Act,928.0
 2020,Nagpur,Protection of Children from Sexual Violence Act,349.0
 2020,Nanded,Protection of Children from Sexual Violence Act,116.0
 2020,Nandurbar,Protection of Children from Sexual Violence Act,35.0
-2020,Nasik,Protection of Children from Sexual Violence Act,187.0
+2020,Nashik,Protection of Children from Sexual Violence Act,187.0
 2020,Dharashiv,Protection of Children from Sexual Violence Act,51.0
 2020,Palghar,Protection of Children from Sexual Violence Act,54.0
 2020,Parbhani,Protection of Children from Sexual Violence Act,77.0
@@ -3327,7 +3327,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Protection of Children from Sexual Violence Act,156.0
 2021,Akola,Protection of Children from Sexual Violence Act,106.0
 2021,Amravati,Protection of Children from Sexual Violence Act,213.0
-2021,Chhatrapati Sambhaji Nagar,Protection of Children from Sexual Violence Act,189.0
+2021,Chh. Sambhaji Nagar,Protection of Children from Sexual Violence Act,189.0
 2021,Beed,Protection of Children from Sexual Violence Act,127.0
 2021,Bhandara,Protection of Children from Sexual Violence Act,41.0
 2021,Buldhana,Protection of Children from Sexual Violence Act,152.0
@@ -3340,11 +3340,11 @@ Year,District,Crime,Cases
 2021,Jalna,Protection of Children from Sexual Violence Act,67.0
 2021,Kolhapur,Protection of Children from Sexual Violence Act,188.0
 2021,Latur,Protection of Children from Sexual Violence Act,69.0
-2021,Mumbai City,Protection of Children from Sexual Violence Act,1027.0
+2021,Mumbai,Protection of Children from Sexual Violence Act,1027.0
 2021,Nagpur,Protection of Children from Sexual Violence Act,327.0
 2021,Nanded,Protection of Children from Sexual Violence Act,109.0
 2021,Nandurbar,Protection of Children from Sexual Violence Act,38.0
-2021,Nasik,Protection of Children from Sexual Violence Act,195.0
+2021,Nashik,Protection of Children from Sexual Violence Act,195.0
 2021,Dharashiv,Protection of Children from Sexual Violence Act,62.0
 2021,Palghar,Protection of Children from Sexual Violence Act,46.0
 2021,Parbhani,Protection of Children from Sexual Violence Act,71.0
@@ -3362,7 +3362,7 @@ Year,District,Crime,Cases
 2014,Ahilyanagar,All Crimes against Women,822.0
 2014,Akola,All Crimes against Women,479.0
 2014,Amravati,All Crimes against Women,1159.0
-2014,Chhatrapati Sambhaji Nagar,All Crimes against Women,944.0
+2014,Chh. Sambhaji Nagar,All Crimes against Women,944.0
 2014,Beed,All Crimes against Women,744.0
 2014,Bhandara,All Crimes against Women,192.0
 2014,Buldhana,All Crimes against Women,562.0
@@ -3375,11 +3375,11 @@ Year,District,Crime,Cases
 2014,Jalna,All Crimes against Women,560.0
 2014,Kolhapur,All Crimes against Women,477.0
 2014,Latur,All Crimes against Women,646.0
-2014,Mumbai City,All Crimes against Women,3965.0
+2014,Mumbai,All Crimes against Women,3965.0
 2014,Nagpur,All Crimes against Women,1263.0
 2014,Nanded,All Crimes against Women,464.0
 2014,Nandurbar,All Crimes against Women,132.0
-2014,Nasik,All Crimes against Women,1200.0
+2014,Nashik,All Crimes against Women,1200.0
 2014,Dharashiv,All Crimes against Women,321.0
 2014,Palghar,All Crimes against Women,458.0
 2014,Parbhani,All Crimes against Women,488.0
@@ -3397,7 +3397,7 @@ Year,District,Crime,Cases
 2015,Ahilyanagar,All Crimes against Women,953.0
 2015,Akola,All Crimes against Women,489.0
 2015,Amravati,All Crimes against Women,1449.0
-2015,Chhatrapati Sambhaji Nagar,All Crimes against Women,1421.0
+2015,Chh. Sambhaji Nagar,All Crimes against Women,1421.0
 2015,Beed,All Crimes against Women,823.0
 2015,Bhandara,All Crimes against Women,225.0
 2015,Buldhana,All Crimes against Women,567.0
@@ -3410,11 +3410,11 @@ Year,District,Crime,Cases
 2015,Jalna,All Crimes against Women,607.0
 2015,Kolhapur,All Crimes against Women,633.0
 2015,Latur,All Crimes against Women,512.0
-2015,Mumbai City,All Crimes against Women,4920.0
+2015,Mumbai,All Crimes against Women,4920.0
 2015,Nagpur,All Crimes against Women,1754.0
 2015,Nanded,All Crimes against Women,554.0
 2015,Nandurbar,All Crimes against Women,142.0
-2015,Nasik,All Crimes against Women,1416.0
+2015,Nashik,All Crimes against Women,1416.0
 2015,Dharashiv,All Crimes against Women,329.0
 2015,Palghar,All Crimes against Women,691.0
 2015,Parbhani,All Crimes against Women,473.0
@@ -3432,7 +3432,7 @@ Year,District,Crime,Cases
 2016,Ahilyanagar,All Crimes against Women,1037.0
 2016,Akola,All Crimes against Women,469.0
 2016,Amravati,All Crimes against Women,1370.0
-2016,Chhatrapati Sambhaji Nagar,All Crimes against Women,1597.0
+2016,Chh. Sambhaji Nagar,All Crimes against Women,1597.0
 2016,Beed,All Crimes against Women,742.0
 2016,Bhandara,All Crimes against Women,266.0
 2016,Buldhana,All Crimes against Women,515.0
@@ -3445,11 +3445,11 @@ Year,District,Crime,Cases
 2016,Jalna,All Crimes against Women,559.0
 2016,Kolhapur,All Crimes against Women,543.0
 2016,Latur,All Crimes against Women,525.0
-2016,Mumbai City,All Crimes against Women,5234.0
+2016,Mumbai,All Crimes against Women,5234.0
 2016,Nagpur,All Crimes against Women,1837.0
 2016,Nanded,All Crimes against Women,638.0
 2016,Nandurbar,All Crimes against Women,203.0
-2016,Nasik,All Crimes against Women,1339.0
+2016,Nashik,All Crimes against Women,1339.0
 2016,Dharashiv,All Crimes against Women,330.0
 2016,Palghar,All Crimes against Women,724.0
 2016,Parbhani,All Crimes against Women,450.0
@@ -3467,7 +3467,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,All Crimes against Women,953.0
 2017,Akola,All Crimes against Women,489.0
 2017,Amravati,All Crimes against Women,1449.0
-2017,Chhatrapati Sambhaji Nagar,All Crimes against Women,1421.0
+2017,Chh. Sambhaji Nagar,All Crimes against Women,1421.0
 2017,Beed,All Crimes against Women,823.0
 2017,Bhandara,All Crimes against Women,225.0
 2017,Buldhana,All Crimes against Women,567.0
@@ -3480,11 +3480,11 @@ Year,District,Crime,Cases
 2017,Jalna,All Crimes against Women,607.0
 2017,Kolhapur,All Crimes against Women,633.0
 2017,Latur,All Crimes against Women,512.0
-2017,Mumbai City,All Crimes against Women,4920.0
+2017,Mumbai,All Crimes against Women,4920.0
 2017,Nagpur,All Crimes against Women,1754.0
 2017,Nanded,All Crimes against Women,554.0
 2017,Nandurbar,All Crimes against Women,142.0
-2017,Nasik,All Crimes against Women,1416.0
+2017,Nashik,All Crimes against Women,1416.0
 2017,Dharashiv,All Crimes against Women,329.0
 2017,Palghar,All Crimes against Women,691.0
 2017,Parbhani,All Crimes against Women,473.0
@@ -3502,7 +3502,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,All Crimes against Women,1670.0
 2019,Akola,All Crimes against Women,724.0
 2019,Amravati,All Crimes against Women,1290.0
-2019,Chhatrapati Sambhaji Nagar,All Crimes against Women,1304.0
+2019,Chh. Sambhaji Nagar,All Crimes against Women,1304.0
 2019,Beed,All Crimes against Women,764.0
 2019,Bhandara,All Crimes against Women,301.0
 2019,Buldhana,All Crimes against Women,750.0
@@ -3515,11 +3515,11 @@ Year,District,Crime,Cases
 2019,Jalna,All Crimes against Women,794.0
 2019,Kolhapur,All Crimes against Women,773.0
 2019,Latur,All Crimes against Women,566.0
-2019,Mumbai City,All Crimes against Women,6690.0
+2019,Mumbai,All Crimes against Women,6690.0
 2019,Nagpur,All Crimes against Women,1521.0
 2019,Nanded,All Crimes against Women,773.0
 2019,Nandurbar,All Crimes against Women,214.0
-2019,Nasik,All Crimes against Women,1906.0
+2019,Nashik,All Crimes against Women,1906.0
 2019,Dharashiv,All Crimes against Women,398.0
 2019,Palghar,All Crimes against Women,1139.0
 2019,Parbhani,All Crimes against Women,487.0
@@ -3537,7 +3537,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,All Crimes against Women,1454.0
 2018,Akola,All Crimes against Women,752.0
 2018,Amravati,All Crimes against Women,1288.0
-2018,Chhatrapati Sambhaji Nagar,All Crimes against Women,1293.0
+2018,Chh. Sambhaji Nagar,All Crimes against Women,1293.0
 2018,Beed,All Crimes against Women,771.0
 2018,Bhandara,All Crimes against Women,355.0
 2018,Buldhana,All Crimes against Women,755.0
@@ -3550,11 +3550,11 @@ Year,District,Crime,Cases
 2018,Jalna,All Crimes against Women,608.0
 2018,Kolhapur,All Crimes against Women,681.0
 2018,Latur,All Crimes against Women,538.0
-2018,Mumbai City,All Crimes against Women,6242.0
+2018,Mumbai,All Crimes against Women,6242.0
 2018,Nagpur,All Crimes against Women,1529.0
 2018,Nanded,All Crimes against Women,642.0
 2018,Nandurbar,All Crimes against Women,208.0
-2018,Nasik,All Crimes against Women,1486.0
+2018,Nashik,All Crimes against Women,1486.0
 2018,Dharashiv,All Crimes against Women,386.0
 2018,Palghar,All Crimes against Women,1005.0
 2018,Parbhani,All Crimes against Women,523.0
@@ -3572,7 +3572,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,All Crimes against Women,1645.0
 2020,Akola,All Crimes against Women,721.0
 2020,Amravati,All Crimes against Women,1229.0
-2020,Chhatrapati Sambhaji Nagar,All Crimes against Women,1059.0
+2020,Chh. Sambhaji Nagar,All Crimes against Women,1059.0
 2020,Beed,All Crimes against Women,780.0
 2020,Bhandara,All Crimes against Women,295.0
 2020,Buldhana,All Crimes against Women,754.0
@@ -3585,11 +3585,11 @@ Year,District,Crime,Cases
 2020,Jalna,All Crimes against Women,742.0
 2020,Kolhapur,All Crimes against Women,815.0
 2020,Latur,All Crimes against Women,454.0
-2020,Mumbai City,All Crimes against Women,4641.0
+2020,Mumbai,All Crimes against Women,4641.0
 2020,Nagpur,All Crimes against Women,1326.0
 2020,Nanded,All Crimes against Women,752.0
 2020,Nandurbar,All Crimes against Women,167.0
-2020,Nasik,All Crimes against Women,1494.0
+2020,Nashik,All Crimes against Women,1494.0
 2020,Dharashiv,All Crimes against Women,364.0
 2020,Palghar,All Crimes against Women,207.0
 2020,Parbhani,All Crimes against Women,421.0
@@ -3607,7 +3607,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,All Crimes against Women,1936.0
 2021,Akola,All Crimes against Women,731.0
 2021,Amravati,All Crimes against Women,1324.0
-2021,Chhatrapati Sambhaji Nagar,All Crimes against Women,1419.0
+2021,Chh. Sambhaji Nagar,All Crimes against Women,1419.0
 2021,Beed,All Crimes against Women,1163.0
 2021,Bhandara,All Crimes against Women,275.0
 2021,Buldhana,All Crimes against Women,899.0
@@ -3620,11 +3620,11 @@ Year,District,Crime,Cases
 2021,Jalna,All Crimes against Women,1002.0
 2021,Kolhapur,All Crimes against Women,952.0
 2021,Latur,All Crimes against Women,673.0
-2021,Mumbai City,All Crimes against Women,5599.0
+2021,Mumbai,All Crimes against Women,5599.0
 2021,Nagpur,All Crimes against Women,1539.0
 2021,Nanded,All Crimes against Women,772.0
 2021,Nandurbar,All Crimes against Women,257.0
-2021,Nasik,All Crimes against Women,1569.0
+2021,Nashik,All Crimes against Women,1569.0
 2021,Dharashiv,All Crimes against Women,491.0
 2021,Palghar,All Crimes against Women,246.0
 2021,Parbhani,All Crimes against Women,521.0
@@ -3730,19 +3730,19 @@ Year,District,Crime,Cases
 2022,Chandrapur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),1.0
 2022,Chandrapur,Abetment of Suicides of Women,7.0
 2022,Chandrapur,All Crimes against Women,885.0
-2022,Chhatrapati Sambhaji Nagar,Rape/Attempt to Rape,81.0
-2022,Chhatrapati Sambhaji Nagar,Kidnapping & Abduction,277.0
-2022,Chhatrapati Sambhaji Nagar,Dowry Deaths,9.0
-2022,Chhatrapati Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,465.0
-2022,Chhatrapati Sambhaji Nagar,Insult to the Modesty of Women,15.0
-2022,Chhatrapati Sambhaji Nagar,Cruelty by Husband or his Relatives,563.0
-2022,Chhatrapati Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
-2022,Chhatrapati Sambhaji Nagar,Immoral Traffic Prevention Act,3.0
-2022,Chhatrapati Sambhaji Nagar,HumanTrafficking,0.0
-2022,Chhatrapati Sambhaji Nagar,Protection of Children from Sexual Violence Act,209.0
-2022,Chhatrapati Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),5.0
-2022,Chhatrapati Sambhaji Nagar,Abetment of Suicides of Women,32.0
-2022,Chhatrapati Sambhaji Nagar,All Crimes against Women,1663.0
+2022,Chh. Sambhaji Nagar,Rape/Attempt to Rape,81.0
+2022,Chh. Sambhaji Nagar,Kidnapping & Abduction,277.0
+2022,Chh. Sambhaji Nagar,Dowry Deaths,9.0
+2022,Chh. Sambhaji Nagar,Assault on Women with intent to outrage her Modesty,465.0
+2022,Chh. Sambhaji Nagar,Insult to the Modesty of Women,15.0
+2022,Chh. Sambhaji Nagar,Cruelty by Husband or his Relatives,563.0
+2022,Chh. Sambhaji Nagar,"Dowry Prohibition Act, 1961",0.0
+2022,Chh. Sambhaji Nagar,Immoral Traffic Prevention Act,3.0
+2022,Chh. Sambhaji Nagar,HumanTrafficking,0.0
+2022,Chh. Sambhaji Nagar,Protection of Children from Sexual Violence Act,209.0
+2022,Chh. Sambhaji Nagar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),5.0
+2022,Chh. Sambhaji Nagar,Abetment of Suicides of Women,32.0
+2022,Chh. Sambhaji Nagar,All Crimes against Women,1663.0
 2022,Dharashiv,Rape/Attempt to Rape,43.0
 2022,Dharashiv,Kidnapping & Abduction,73.0
 2022,Dharashiv,Dowry Deaths,7.0
@@ -3860,19 +3860,19 @@ Year,District,Crime,Cases
 2022,Latur,Cyber Crimes/Information Technology Act (Women Centric Crimes only),2.0
 2022,Latur,Abetment of Suicides of Women,17.0
 2022,Latur,All Crimes against Women,781.0
-2022,Mumbai City,Rape/Attempt to Rape,372.0
-2022,Mumbai City,Kidnapping & Abduction,1174.0
-2022,Mumbai City,Dowry Deaths,6.0
-2022,Mumbai City,Assault on Women with intent to outrage her Modesty,1937.0
-2022,Mumbai City,Insult to the Modesty of Women,656.0
-2022,Mumbai City,Cruelty by Husband or his Relatives,901.0
-2022,Mumbai City,"Dowry Prohibition Act, 1961",0.0
-2022,Mumbai City,Immoral Traffic Prevention Act,1.0
-2022,Mumbai City,HumanTrafficking,37.0
-2022,Mumbai City,Protection of Children from Sexual Violence Act,1152.0
-2022,Mumbai City,Cyber Crimes/Information Technology Act (Women Centric Crimes only),12.0
-2022,Mumbai City,Abetment of Suicides of Women,39.0
-2022,Mumbai City,All Crimes against Women,6293.0
+2022,Mumbai,Rape/Attempt to Rape,372.0
+2022,Mumbai,Kidnapping & Abduction,1174.0
+2022,Mumbai,Dowry Deaths,6.0
+2022,Mumbai,Assault on Women with intent to outrage her Modesty,1937.0
+2022,Mumbai,Insult to the Modesty of Women,656.0
+2022,Mumbai,Cruelty by Husband or his Relatives,901.0
+2022,Mumbai,"Dowry Prohibition Act, 1961",0.0
+2022,Mumbai,Immoral Traffic Prevention Act,1.0
+2022,Mumbai,HumanTrafficking,37.0
+2022,Mumbai,Protection of Children from Sexual Violence Act,1152.0
+2022,Mumbai,Cyber Crimes/Information Technology Act (Women Centric Crimes only),12.0
+2022,Mumbai,Abetment of Suicides of Women,39.0
+2022,Mumbai,All Crimes against Women,6293.0
 2022,Nagpur,Rape/Attempt to Rape,150.0
 2022,Nagpur,Kidnapping & Abduction,499.0
 2022,Nagpur,Dowry Deaths,3.0
@@ -3912,19 +3912,19 @@ Year,District,Crime,Cases
 2022,Nandurbar,Cyber Crimes/Information Technology Act (Women Centric Crimes only),0.0
 2022,Nandurbar,Abetment of Suicides of Women,5.0
 2022,Nandurbar,All Crimes against Women,334.0
-2022,Nasik,Rape/Attempt to Rape,66.0
-2022,Nasik,Kidnapping & Abduction,620.0
-2022,Nasik,Dowry Deaths,10.0
-2022,Nasik,Assault on Women with intent to outrage her Modesty,324.0
-2022,Nasik,Insult to the Modesty of Women,18.0
-2022,Nasik,Cruelty by Husband or his Relatives,705.0
-2022,Nasik,"Dowry Prohibition Act, 1961",0.0
-2022,Nasik,Immoral Traffic Prevention Act,0.0
-2022,Nasik,HumanTrafficking,0.0
-2022,Nasik,Protection of Children from Sexual Violence Act,246.0
-2022,Nasik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),10.0
-2022,Nasik,Abetment of Suicides of Women,49.0
-2022,Nasik,All Crimes against Women,2048.0
+2022,Nashik,Rape/Attempt to Rape,66.0
+2022,Nashik,Kidnapping & Abduction,620.0
+2022,Nashik,Dowry Deaths,10.0
+2022,Nashik,Assault on Women with intent to outrage her Modesty,324.0
+2022,Nashik,Insult to the Modesty of Women,18.0
+2022,Nashik,Cruelty by Husband or his Relatives,705.0
+2022,Nashik,"Dowry Prohibition Act, 1961",0.0
+2022,Nashik,Immoral Traffic Prevention Act,0.0
+2022,Nashik,HumanTrafficking,0.0
+2022,Nashik,Protection of Children from Sexual Violence Act,246.0
+2022,Nashik,Cyber Crimes/Information Technology Act (Women Centric Crimes only),10.0
+2022,Nashik,Abetment of Suicides of Women,49.0
+2022,Nashik,All Crimes against Women,2048.0
 2022,Palghar,Rape/Attempt to Rape,35.0
 2022,Palghar,Kidnapping & Abduction,120.0
 2022,Palghar,Dowry Deaths,3.0

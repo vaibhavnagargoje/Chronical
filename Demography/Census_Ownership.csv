@@ -27,10 +27,10 @@ Year,District,Rural/Urban,Owned,Rented,Other
 2001,Chandrapur,Urban,82416,38538,20067
 2011,Chandrapur,Rural,321197,19675,11771
 2011,Chandrapur,Urban,119170,48019,9780
-2001,Chhatrapati Sambhaji Nagar,Rural,302425,24814,7584
-2001,Chhatrapati Sambhaji Nagar,Urban,123051,62736,5545
-2011,Chhatrapati Sambhaji Nagar,Rural,380417,28349,10354
-2011,Chhatrapati Sambhaji Nagar,Urban,200274,109861,7332
+2001,Chh. Sambhaji Nagar,Rural,302425,24814,7584
+2001,Chh. Sambhaji Nagar,Urban,123051,62736,5545
+2011,Chh. Sambhaji Nagar,Rural,380417,28349,10354
+2011,Chh. Sambhaji Nagar,Urban,200274,109861,7332
 2001,Dharashiv,Rural,237003,7969,7111
 2001,Dharashiv,Urban,28058,11131,1837
 2011,Dharashiv,Rural,276695,10335,7786
@@ -67,10 +67,10 @@ Year,District,Rural/Urban,Owned,Rented,Other
 2001,Latur,Urban,54487,22658,2023
 2011,Latur,Rural,340992,12116,6750
 2011,Latur,Urban,80148,31958,2185
-2001,Mumbai City,Rural,0,0,0
-2001,Mumbai City,Urban,329687,287323,31580
-2011,Mumbai City,Rural,0,0,0
-2011,Mumbai City,Urban,428162,185170,24406
+2001,Mumbai,Rural,0,0,0
+2001,Mumbai,Urban,329687,287323,31580
+2011,Mumbai,Rural,0,0,0
+2011,Mumbai,Urban,428162,185170,24406
 2001,Mumbai Suburban,Rural,0,0,0
 2001,Mumbai Suburban,Urban,1333364,382578,58390
 2011,Mumbai Suburban,Rural,0,0,0

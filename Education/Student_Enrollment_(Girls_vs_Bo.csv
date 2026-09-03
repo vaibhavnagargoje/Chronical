@@ -13,8 +13,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2012,Buldhana,Girls,,103206,109689.0,4854,25251
 2012,Chandrapur,Boys,,91476,64828.0,17225,39989
 2012,Chandrapur,Girls,,90631,64414.0,12944,31269
-2012,Chhatrapati Sambhaji Nagar,Boys,,186150,130015.0,22963,106617
-2012,Chhatrapati Sambhaji Nagar,Girls,,162980,124423.0,16538,68552
+2012,Chh. Sambhaji Nagar,Boys,,186150,130015.0,22963,106617
+2012,Chh. Sambhaji Nagar,Girls,,162980,124423.0,16538,68552
 2012,Dharashiv,Boys,,79545,65311.0,7827,12076
 2012,Dharashiv,Girls,,66881,65762.0,3803,8043
 2012,Dhule,Boys,,138490,54226.0,19156,15565
@@ -33,8 +33,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2012,Kolhapur,Girls,,173760,108303.0,9824,27037
 2012,Latur,Boys,,183755,74198.0,19647,26077
 2012,Latur,Girls,,147296,79264.0,8444,17741
-2012,Mumbai City,Boys,,411514,,11533,249688
-2012,Mumbai City,Girls,,393474,,8962,175697
+2012,Mumbai,Boys,,411514,,11533,249688
+2012,Mumbai,Girls,,393474,,8962,175697
 2012,Mumbai Suburban,Boys,,82490,,212917,173828
 2012,Mumbai Suburban,Girls,,83918,,215197,139471
 2012,Nagpur,Boys,,245554,60779.0,37704,127459
@@ -81,8 +81,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2013,Buldhana,Girls,181.0,101446,104569.0,14308,23154
 2013,Chandrapur,Boys,1535.0,83518,62744.0,27917,36963
 2013,Chandrapur,Girls,1112.0,82405,62644.0,23928,28534
-2013,Chhatrapati Sambhaji Nagar,Boys,1880.0,169087,133778.0,64156,94819
-2013,Chhatrapati Sambhaji Nagar,Girls,1021.0,148259,130025.0,44801,61330
+2013,Chh. Sambhaji Nagar,Boys,1880.0,169087,133778.0,64156,94819
+2013,Chh. Sambhaji Nagar,Girls,1021.0,148259,130025.0,44801,61330
 2013,Dharashiv,Boys,219.0,71353,63182.0,19451,10876
 2013,Dharashiv,Girls,177.0,59039,63915.0,15949,5325
 2013,Dhule,Boys,375.0,149848,54528.0,9754,18337
@@ -101,8 +101,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2013,Kolhapur,Girls,194.0,158825,109820.0,38941,11613
 2013,Latur,Boys,834.0,177651,73077.0,31823,24775
 2013,Latur,Girls,165.0,137104,77529.0,23574,15470
-2013,Mumbai City,Boys,10003.0,332098,,119416,220103
-2013,Mumbai City,Girls,8437.0,310658,,108327,161449
+2013,Mumbai,Boys,10003.0,332098,,119416,220103
+2013,Mumbai,Girls,8437.0,310658,,108327,161449
 2013,Mumbai Suburban,Boys,131.0,77220,186665.0,28335,173839
 2013,Mumbai Suburban,Girls,127.0,81024,187406.0,23114,141092
 2013,Nagpur,Boys,4530.0,216298,75637.0,49934,122175
@@ -149,8 +149,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2014,Buldhana,Girls,189.0,111099,104186.0,897,29345
 2014,Chandrapur,Boys,1430.0,98524,62062.0,2703,47570
 2014,Chandrapur,Girls,1155.0,93019,62693.0,2570,37148
-2014,Chhatrapati Sambhaji Nagar,Boys,1477.0,226494,134241.0,2050,128700
-2014,Chhatrapati Sambhaji Nagar,Girls,1008.0,189042,131806.0,1100,83048
+2014,Chh. Sambhaji Nagar,Boys,1477.0,226494,134241.0,2050,128700
+2014,Chh. Sambhaji Nagar,Girls,1008.0,189042,131806.0,1100,83048
 2014,Dharashiv,Boys,221.0,88925,61671.0,691,16139
 2014,Dharashiv,Girls,176.0,72216,63496.0,520,9299
 2014,Dhule,Boys,333.0,159428,52371.0,4699,21457
@@ -169,8 +169,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2014,Kolhapur,Girls,187.0,176856,107331.0,922,32952
 2014,Latur,Boys,510.0,211018,72461.0,672,33795
 2014,Latur,Girls,281.0,161676,76958.0,573,22017
-2014,Mumbai City,Boys,10181.0,392243,,2011,273988
-2014,Mumbai City,Girls,8564.0,381581,,981,198601
+2014,Mumbai,Boys,10181.0,392243,,2011,273988
+2014,Mumbai,Girls,8564.0,381581,,981,198601
 2014,Mumbai Suburban,Boys,126.0,75288,196245.0,7758,174691
 2014,Mumbai Suburban,Girls,110.0,77770,195527.0,6643,141186
 2014,Nagpur,Boys,4903.0,246247,73350.0,4184,147733
@@ -221,8 +221,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2015,Buldhana,Girls,203.0,111247,100441.0,844,32090
 2015,Chandrapur,Boys,1866.0,97017,59455.0,2323,50079
 2015,Chandrapur,Girls,1387.0,91701,60018.0,2158,39322
-2015,Chhatrapati Sambhaji Nagar,Boys,1566.0,238217,128709.0,2107,135925
-2015,Chhatrapati Sambhaji Nagar,Girls,1056.0,198959,126931.0,969,85321
+2015,Chh. Sambhaji Nagar,Boys,1566.0,238217,128709.0,2107,135925
+2015,Chh. Sambhaji Nagar,Girls,1056.0,198959,126931.0,969,85321
 2015,Dharashiv,Boys,353.0,89554,58083.0,716,17655
 2015,Dharashiv,Girls,339.0,71588,60415.0,469,10488
 2015,Dhule,Boys,422.0,161570,51939.0,4164,25473
@@ -241,8 +241,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2015,Kolhapur,Girls,190.0,179732,102754.0,684,35722
 2015,Latur,Boys,542.0,208254,67690.0,588,36193
 2015,Latur,Girls,365.0,160646,71874.0,433,23144
-2015,Mumbai City,Boys,10044.0,382175,,1923,282660
-2015,Mumbai City,Girls,8516.0,377596,,967,206548
+2015,Mumbai,Boys,10044.0,382175,,1923,282660
+2015,Mumbai,Girls,8516.0,377596,,967,206548
 2015,Mumbai Suburban,Boys,110.0,72407,189164.0,8930,178152
 2015,Mumbai Suburban,Girls,89.0,75278,187627.0,7738,144518
 2015,Nagpur,Boys,4913.0,241149,66682.0,4007,156505
@@ -293,8 +293,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2016,Buldhana,Girls,201.0,111032,98554.0,768,35136
 2016,Chandrapur,Boys,1527.0,96133,57327.0,2802,52254
 2016,Chandrapur,Girls,1227.0,91327,57828.0,2415,41606
-2016,Chhatrapati Sambhaji Nagar,Boys,1587.0,248949,125953.0,2143,143052
-2016,Chhatrapati Sambhaji Nagar,Girls,1105.0,209889,123758.0,1186,89865
+2016,Chh. Sambhaji Nagar,Boys,1587.0,248949,125953.0,2143,143052
+2016,Chh. Sambhaji Nagar,Girls,1105.0,209889,123758.0,1186,89865
 2016,Dharashiv,Boys,261.0,88592,56262.0,777,18828
 2016,Dharashiv,Girls,191.0,71910,58318.0,545,11546
 2016,Dhule,Boys,392.0,163354,51893.0,4254,28154
@@ -313,8 +313,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2016,Kolhapur,Girls,186.0,177927,100217.0,802,39429
 2016,Latur,Boys,502.0,206552,64733.0,789,39649
 2016,Latur,Girls,293.0,162239,68200.0,464,26121
-2016,Mumbai City,Boys,9602.0,375505,,2960,295466
-2016,Mumbai City,Girls,8015.0,369540,,2039,219060
+2016,Mumbai,Boys,9602.0,375505,,2960,295466
+2016,Mumbai,Girls,8015.0,369540,,2039,219060
 2016,Mumbai Suburban,Boys,69.0,69547,162203.0,10102,179074
 2016,Mumbai Suburban,Girls,64.0,71371,161696.0,9141,146782
 2016,Nagpur,Boys,4622.0,238480,62295.0,4041,166137
@@ -365,8 +365,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2017,Buldhana,Girls,,110889,96538.0,939,34831
 2017,Chandrapur,Boys,,92794,55359.0,3770,53235
 2017,Chandrapur,Girls,,88884,55527.0,3487,43017
-2017,Chhatrapati Sambhaji Nagar,Boys,,247494,122079.0,3708,153746
-2017,Chhatrapati Sambhaji Nagar,Girls,,213147,119723.0,2362,97077
+2017,Chh. Sambhaji Nagar,Boys,,247494,122079.0,3708,153746
+2017,Chh. Sambhaji Nagar,Girls,,213147,119723.0,2362,97077
 2017,Dharashiv,Boys,,85024,54101.0,1091,19620
 2017,Dharashiv,Girls,,70562,55835.0,864,12230
 2017,Dhule,Boys,,159810,50127.0,5126,31831
@@ -385,8 +385,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2017,Kolhapur,Girls,,175742,97635.0,841,42089
 2017,Latur,Boys,,187572,61352.0,1743,57536
 2017,Latur,Girls,,149798,64294.0,963,39023
-2017,Mumbai City,Boys,,357329,,15005,306184
-2017,Mumbai City,Girls,,360539,,11765,229261
+2017,Mumbai,Boys,,357329,,15005,306184
+2017,Mumbai,Girls,,360539,,11765,229261
 2017,Mumbai Suburban,Boys,,65464,148893.0,21686,179698
 2017,Mumbai Suburban,Girls,,67672,147922.0,18670,146809
 2017,Nagpur,Boys,,229200,58291.0,8789,174799
@@ -437,8 +437,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2018,Buldhana,Girls,,109947,93938.0,962,35282
 2018,Chandrapur,Boys,,89392,54288.0,3705,52208
 2018,Chandrapur,Girls,,86541,53840.0,3669,43667
-2018,Chhatrapati Sambhaji Nagar,Boys,,242397,119161.0,5599,159069
-2018,Chhatrapati Sambhaji Nagar,Girls,,212230,117263.0,3853,100920
+2018,Chh. Sambhaji Nagar,Boys,,242397,119161.0,5599,159069
+2018,Chh. Sambhaji Nagar,Girls,,212230,117263.0,3853,100920
 2018,Dharashiv,Boys,,82049,53864.0,1111,19590
 2018,Dharashiv,Girls,,69338,55017.0,791,12985
 2018,Dhule,Boys,,157713,49824.0,5644,32889
@@ -457,8 +457,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2018,Kolhapur,Girls,,174882,95395.0,693,44945
 2018,Latur,Boys,,186479,59939.0,1398,57097
 2018,Latur,Girls,,151045,62717.0,812,38663
-2018,Mumbai City,Boys,,344213,,13291,311956
-2018,Mumbai City,Girls,,347802,,10220,235912
+2018,Mumbai,Boys,,344213,,13291,311956
+2018,Mumbai,Girls,,347802,,10220,235912
 2018,Mumbai Suburban,Boys,,59991,136005.0,21757,169107
 2018,Mumbai Suburban,Girls,,61926,135213.0,19127,140617
 2018,Nagpur,Boys,,217632,53983.0,11572,179434
@@ -509,8 +509,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2019,Buldhana,Girls,,107888,91020.0,982,38140
 2019,Chandrapur,Boys,,86406,52653.0,3835,53306
 2019,Chandrapur,Girls,,83092,52056.0,3872,45093
-2019,Chhatrapati Sambhaji Nagar,Boys,,236432,116494.0,5559,164556
-2019,Chhatrapati Sambhaji Nagar,Girls,,210948,115944.0,3702,106768
+2019,Chh. Sambhaji Nagar,Boys,,236432,116494.0,5559,164556
+2019,Chh. Sambhaji Nagar,Girls,,210948,115944.0,3702,106768
 2019,Dharashiv,Boys,,78951,52774.0,1126,20219
 2019,Dharashiv,Girls,,67762,54244.0,768,13419
 2019,Dhule,Boys,,154968,49451.0,5678,34120
@@ -529,8 +529,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2019,Kolhapur,Girls,,172222,94126.0,615,46681
 2019,Latur,Boys,,185152,58142.0,1278,54784
 2019,Latur,Girls,,151915,61058.0,833,37072
-2019,Mumbai City,Boys,,330853,,13867,311315
-2019,Mumbai City,Girls,,335315,,11089,239293
+2019,Mumbai,Boys,,330853,,13867,311315
+2019,Mumbai,Girls,,335315,,11089,239293
 2019,Mumbai Suburban,Boys,,56902,136627.0,21397,163374
 2019,Mumbai Suburban,Girls,,57560,134869.0,19152,137444
 2019,Nagpur,Boys,,208839,50365.0,11939,182905
@@ -581,8 +581,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2020,Buldhana,Girls,,105813,90985.0,986,39454
 2020,Chandrapur,Boys,,83879,52341.0,3664,52611
 2020,Chandrapur,Girls,,81172,51779.0,3588,45489
-2020,Chhatrapati Sambhaji Nagar,Boys,,228223,117264.0,5468,164352
-2020,Chhatrapati Sambhaji Nagar,Girls,,206537,114940.0,3674,111006
+2020,Chh. Sambhaji Nagar,Boys,,228223,117264.0,5468,164352
+2020,Chh. Sambhaji Nagar,Girls,,206537,114940.0,3674,111006
 2020,Dharashiv,Boys,,76640,54511.0,1017,20560
 2020,Dharashiv,Girls,,66340,54839.0,760,14134
 2020,Dhule,Boys,,151987,49072.0,5832,35398
@@ -601,8 +601,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2020,Kolhapur,Girls,,168459,94499.0,627,48056
 2020,Latur,Boys,,175347,59381.0,1095,55996
 2020,Latur,Girls,,147387,61330.0,715,38692
-2020,Mumbai City,Boys,,320805,,14371,313131
-2020,Mumbai City,Girls,,325905,,11453,243051
+2020,Mumbai,Boys,,320805,,14371,313131
+2020,Mumbai,Girls,,325905,,11453,243051
 2020,Mumbai Suburban,Boys,,52858,132636.0,19633,154498
 2020,Mumbai Suburban,Girls,,53892,130724.0,17834,131669
 2020,Nagpur,Boys,,199693,49703.0,12000,185660
@@ -653,8 +653,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2021,Buldhana,Girls,,106314,94501.0,935,39787
 2021,Chandrapur,Boys,,84127,55206.0,3797,51591
 2021,Chandrapur,Girls,,81489,54119.0,3538,45353
-2021,Chhatrapati Sambhaji Nagar,Boys,,233687,123727.0,5370,156792
-2021,Chhatrapati Sambhaji Nagar,Girls,,209998,119311.0,3714,108401
+2021,Chh. Sambhaji Nagar,Boys,,233687,123727.0,5370,156792
+2021,Chh. Sambhaji Nagar,Girls,,209998,119311.0,3714,108401
 2021,Dharashiv,Boys,,78608,58608.0,939,18791
 2021,Dharashiv,Girls,,67305,57605.0,699,13153
 2021,Dhule,Boys,,152853,50802.0,5520,34450
@@ -673,8 +673,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2021,Kolhapur,Girls,,167605,97921.0,706,46485
 2021,Latur,Boys,,173051,62615.0,1163,52991
 2021,Latur,Girls,,148802,62430.0,767,37879
-2021,Mumbai City,Boys,,317100,,13011,312015
-2021,Mumbai City,Girls,,320837,,10974,245071
+2021,Mumbai,Boys,,317100,,13011,312015
+2021,Mumbai,Girls,,320837,,10974,245071
 2021,Mumbai Suburban,Boys,,52463,148704.0,17398,145640
 2021,Mumbai Suburban,Girls,,53215,144121.0,15950,125798
 2021,Nagpur,Boys,,202346,53525.0,11087,184196
@@ -725,8 +725,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2024,Buldhana,Girls,,105848,81787.0,954,44258
 2024,Chandrapur,Boys,,78828,48534.0,4249,49256
 2024,Chandrapur,Girls,,76104,47600.0,3993,45111
-2024,Chhatrapati Sambhaji Nagar,Boys,,213740,102084.0,3074,143940
-2024,Chhatrapati Sambhaji Nagar,Girls,,197477,105352.0,2082,103826
+2024,Chh. Sambhaji Nagar,Boys,,213740,102084.0,3074,143940
+2024,Chh. Sambhaji Nagar,Girls,,197477,105352.0,2082,103826
 2024,Dharashiv,Boys,,71196,46731.0,622,20686
 2024,Dharashiv,Girls,,63402,49987.0,406,14676
 2024,Dhule,Boys,,144536,44160.0,5084,36009
@@ -745,8 +745,8 @@ Year,District,Gender,Central Govt,Government Aided,Local Body,Others,Private Una
 2024,Kolhapur,Girls,,162093,84087.0,665,51908
 2024,Latur,Boys,,163805,45201.0,1356,46637
 2024,Latur,Girls,,139906,49028.0,845,33322
-2024,Mumbai City,Boys,,273360,,11250,289605
-2024,Mumbai City,Girls,,283211,,9747,236854
+2024,Mumbai,Boys,,273360,,11250,289605
+2024,Mumbai,Girls,,283211,,9747,236854
 2024,Mumbai Suburban,Boys,,51655,143185.0,13113,138445
 2024,Mumbai Suburban,Girls,,52141,137968.0,11641,122304
 2024,Nagpur,Boys,,181826,46875.0,6904,191966

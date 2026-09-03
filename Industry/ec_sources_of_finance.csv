@@ -1,4 +1,4 @@
-﻿Year,District,Self-Financed,Borrowings and Other Assistance
+Year,District,Self-Financed,Borrowings and Other Assistance
 2013,Nandurbar,36417,10370
 2013,Dhule,59771,12847
 2013,Jalgaon,125611,33033
@@ -17,11 +17,11 @@
 2013,Hingoli,25691,10150
 2013,Parbhani,46261,13551
 2013,Jalna,79537,18081
-2013,Chhatrapati Sambhaji Nagar,114945,28413
+2013,Chh. Sambhaji Nagar,114945,28413
 2013,Nashik,172471,41865
 2013,Thane,370697,68009
 2013,Mumbai Suburban,403623,61793
-2013,Mumbai City,234552,26707
+2013,Mumbai,234552,26707
 2013,Raigad,70771,30901
 2013,Pune,431115,83354
 2013,Ahilyanagar,196895,49522
@@ -34,7 +34,7 @@
 2013,Sindhudurg,34044,17172
 2013,Kolhapur,483616,87251
 2013,Sangli,224263,53797
-1998,Mumbai City,425356,60136
+1998,Mumbai,425356,60136
 1998,Thane,176307,43564
 1998,Raigad,35133,22080
 1998,Ratnagiri,28056,21134
@@ -48,7 +48,7 @@
 1998,Sangli,72234,40541
 1998,Solapur,109957,31336
 1998,Kolhapur,147649,89169
-1998,Chhatrapati Sambhaji Nagar,55897,15537
+1998,Chh. Sambhaji Nagar,55897,15537
 1998,Jalna,33838,6639
 1998,Parbhani,38507,13901
 1998,Beed,46545,12500
@@ -82,11 +82,11 @@
 2005,Hingoli,19496,2373
 2005,Parbhani,41755,3992
 2005,Jalna,52428,7785
-2005,Chhatrapati Sambhaji Nagar,108038,8015
+2005,Chh. Sambhaji Nagar,108038,8015
 2005,Nashik,136014,23400
 2005,Thane,291332,35820
 2005,Mumbai Suburban,528145,44949
-2005,Mumbai City,69134,11270
+2005,Mumbai,69134,11270
 2005,Raigad,295882,43816
 2005,Pune,145775,21620
 2005,Ahilyanagar,94709,4857

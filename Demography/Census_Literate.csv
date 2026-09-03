@@ -2,7 +2,7 @@ Year,District,Rural/Urban,Literate Population,Male,Female
 1991,Ahilyanagar,Rural,1336114,861172,474942
 1991,Akola,Rural,789158,495916,293242
 1991,Amravati,Rural,801325,473016,328309
-1991,Chhatrapati Sambhaji Nagar,Rural,564570,402394,162176
+1991,Chh. Sambhaji Nagar,Rural,564570,402394,162176
 1991,Beed,Rural,533958,378050,155908
 1991,Bhandara,Rural,951595,590102,361493
 1991,Buldhana,Rural,700610,456038,244572
@@ -31,7 +31,7 @@ Year,District,Rural/Urban,Literate Population,Male,Female
 1991,Ahilyanagar,Urban,347051,204389,142662
 1991,Akola,Urban,404784,229911,174873
 1991,Amravati,Urban,488400,273468,214932
-1991,Chhatrapati Sambhaji Nagar,Urban,440882,267974,172908
+1991,Chh. Sambhaji Nagar,Urban,440882,267974,172908
 1991,Beed,Urban,185554,114530,71024
 1991,Bhandara,Urban,192320,109844,82476
 1991,Buldhana,Urban,239499,140727,98772
@@ -41,7 +41,7 @@ Year,District,Rural/Urban,Literate Population,Male,Female
 1991,Jalna,Urban,122777,74887,47890
 1991,Kolhapur,Urban,533072,308793,224279
 1991,Latur,Urban,194230,120106,74124
-1991,Mumbai City,Urban,7114311,4212469,2901842
+1991,Mumbai,Urban,7114311,4212469,2901842
 1991,Nanded,Urban,278531,171884,106647
 1991,Nashik,Urban,882739,508266,374473
 1991,Dharashiv,Urban,112353,68888,43465
@@ -63,8 +63,8 @@ Year,District,Rural/Urban,Literate Population,Male,Female
 2001,Akola,Urban,463158,252750,210408
 2001,Amravati,Rural,1156625,653768,502857
 2001,Amravati,Urban,698985,378142,320843
-2001,Chhatrapati Sambhaji Nagar,Rural,1017413,637181,380232
-2001,Chhatrapati Sambhaji Nagar,Urban,759047,433803,325244
+2001,Chh. Sambhaji Nagar,Rural,1017413,637181,380232
+2001,Chh. Sambhaji Nagar,Urban,759047,433803,325244
 2001,Beed,Rural,976591,605611,370980
 2001,Beed,Urban,264148,151949,112199
 2001,Bhandara,Rural,632659,364572,268087
@@ -89,7 +89,7 @@ Year,District,Rural/Urban,Literate Population,Male,Female
 2001,Kolhapur,Urban,795480,443854,351626
 2001,Latur,Rural,921899,558811,363088
 2001,Latur,Urban,332635,191644,140991
-2001,Mumbai City,Urban,6617264,3853376,2763888
+2001,Mumbai,Urban,6617264,3853376,2763888
 2001,Nanded,Rural,1162061,724664,437397
 2001,Nanded,Urban,452082,261356,190726
 2001,Nandurbar,Rural,462988,282498,180490
@@ -128,8 +128,8 @@ Year,District,Rural/Urban,Literate Population,Male,Female
 2011,Akola,Urban,581926,305833,276093
 2011,Amravati,Rural,1399212,760794,638418
 2011,Amravati,Urban,851180,445439,405741
-2011,Chhatrapati Sambhaji Nagar,Rural,1296601,770398,526203
-2011,Chhatrapati Sambhaji Nagar,Urban,1210507,662525,547982
+2011,Chh. Sambhaji Nagar,Rural,1296601,770398,526203
+2011,Chh. Sambhaji Nagar,Urban,1210507,662525,547982
 2011,Beed,Rural,1334586,777246,557340
 2011,Beed,Urban,382918,209348,173570
 2011,Bhandara,Rural,708328,388442,319886

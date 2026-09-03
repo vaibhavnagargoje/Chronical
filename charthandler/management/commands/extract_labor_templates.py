@@ -38,12 +38,15 @@ class Command(BaseCommand):
         ChartTemplate.objects.filter(chapter_type='labour').update(chapter_type='labor')
 
         templates = [
+            # ──────────────────────────────────────────────────────────────────
             # SECTION 1: WORKFORCE COMPOSITION
+            # Source: Labour Working Populations sheet (LaborWorkingPopulations)
+            # ──────────────────────────────────────────────────────────────────
             {
                 'title': 'A. Main Worker Population',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'LaborWorkers',
+                'data_source_table': 'LaborWorkingPopulations',
                 'x_column': 'year',
                 'y_columns': ['male_main_workers', 'female_main_workers'],
                 'dataset_config': [
@@ -63,7 +66,7 @@ class Command(BaseCommand):
                 'title': 'B. Marginal Worker Population',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'LaborWorkers',
+                'data_source_table': 'LaborWorkingPopulations',
                 'x_column': 'year',
                 'y_columns': ['male_marginal_workers', 'female_marginal_workers'],
                 'dataset_config': [
@@ -79,12 +82,37 @@ class Command(BaseCommand):
                 'additional_info': 'Marginal workers are those who had not worked for at least 6 months during the year.',
                 'display_order': 2,
             },
-            # Skipping C. Non-Worker Population since we didn't extract gender splits for Non-Workers
+            {
+                # Source: Non Workers Yearly sheet (LaborNonWorkersYearly)
+                'title': 'C. Non-Worker Population',
+                'chapter_type': 'labor',
+                'chart_type': 'bar',
+                'data_source_table': 'LaborNonWorkersYearly',
+                'x_column': 'year',
+                'y_columns': ['male_non_workers', 'female_non_workers'],
+                'dataset_config': [
+                    {'label': 'Male Non-Workers', 'backgroundColor': '#1a4570'},
+                    {'label': 'Female Non-Workers', 'backgroundColor': '#E5A93B'},
+                ],
+                'main_filter_column': 'district',
+                'filter1_column': 'rural_urban',
+                'filter2_column': '',
+                'show_filters': True,
+                'chart_options': build_chart_options('Number of Workers'),
+                'description': CENSUS_SOURCE,
+                'additional_info': 'Those who had not worked at all during a year are considered non-workers.',
+                'display_order': 3,
+            },
+
+            # ──────────────────────────────────────────────────────────────────
+            # SECTION 1 (continued): AGE DISTRIBUTION
+            # Source: Census Age Distribution sheet (LaborCensusAgeDistribution)
+            # ──────────────────────────────────────────────────────────────────
             {
                 'title': 'D. Age Composition of Main Workers',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'LaborAgeDistribution',
+                'data_source_table': 'LaborCensusAgeDistribution',
                 'x_column': 'age_group',
                 'y_columns': ['main_workers'],
                 'dataset_config': [
@@ -94,7 +122,7 @@ class Command(BaseCommand):
                 'filter1_column': 'year',
                 'filter2_column': 'rural_urban',
                 'show_filters': True,
-                'chart_options': build_chart_options('No. of People', x_axis_title='Age Group', disable_all_filter1=True),
+                'chart_options': build_chart_options('No. of People', x_axis_title='Age Group', disable_all_filter1=True,disable_all_filter2=True),
                 'description': CENSUS_SOURCE,
                 'additional_info': 'Main workers are defined as those who worked for 6 months or more during the year.',
                 'display_order': 4,
@@ -103,7 +131,7 @@ class Command(BaseCommand):
                 'title': 'E. Age Composition of Marginal Workers',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'LaborAgeDistribution',
+                'data_source_table': 'LaborCensusAgeDistribution',
                 'x_column': 'age_group',
                 'y_columns': ['marginal_workers'],
                 'dataset_config': [
@@ -113,7 +141,7 @@ class Command(BaseCommand):
                 'filter1_column': 'year',
                 'filter2_column': 'rural_urban',
                 'show_filters': True,
-                'chart_options': build_chart_options('No. of People', x_axis_title='Age Group', disable_all_filter1=True),
+                'chart_options': build_chart_options('No. of People', x_axis_title='Age Group', disable_all_filter1=True,disable_all_filter2=True),
                 'description': CENSUS_SOURCE,
                 'additional_info': 'Marginal workers are those who had not worked for at least 6 months during the year.',
                 'display_order': 5,
@@ -122,7 +150,7 @@ class Command(BaseCommand):
                 'title': 'F. Age Composition of Non-Workers',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'LaborAgeDistribution',
+                'data_source_table': 'LaborCensusAgeDistribution',
                 'x_column': 'age_group',
                 'y_columns': ['non_workers'],
                 'dataset_config': [
@@ -132,18 +160,21 @@ class Command(BaseCommand):
                 'filter1_column': 'year',
                 'filter2_column': 'rural_urban',
                 'show_filters': True,
-                'chart_options': build_chart_options('No. of People', x_axis_title='Age Group', disable_all_filter1=True),
+                'chart_options': build_chart_options('No. of People', x_axis_title='Age Group', disable_all_filter1=True,disable_all_filter2=True),
                 'description': CENSUS_SOURCE,
                 'additional_info': 'Those who had not worked at all during a year are considered non-workers.',
                 'display_order': 6,
             },
-            
+
+            # ──────────────────────────────────────────────────────────────────
             # SECTION 2: EMPLOYMENT CHARACTERISTICS
+            # Source: Economic Census Workers sheet (LaborEconomicCensusWorkers)
+            # ──────────────────────────────────────────────────────────────────
             {
                 'title': 'A. Number of Workers',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'LaborECWorkers',
+                'data_source_table': 'LaborEconomicCensusWorkers',
                 'x_column': 'year',
                 'y_columns': ['number_of_workers'],
                 'dataset_config': [
@@ -159,10 +190,11 @@ class Command(BaseCommand):
                 'display_order': 7,
             },
             {
+                # Source: Economic Census Gender sheet (LaborEconomicCensusGender)
                 'title': 'B. Workers: Hired vs Not-Hired',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'LaborECGender',
+                'data_source_table': 'LaborEconomicCensusGender',
                 'x_column': 'year',
                 'y_columns': ['employed_hired', 'employed_not_hired'],
                 'dataset_config': [
@@ -175,16 +207,17 @@ class Command(BaseCommand):
                 'show_filters': True,
                 'chart_options': build_chart_options('Number of Workers'),
                 'description': EC_SOURCE,
-                'additional_info':  'People who were paid employees on the last working day of the census period are counted as Employed (Hired). People who worked without pay (such as self-employed or volunteers) are counted as Employed (Not Hired).',
+                'additional_info': 'People who were paid employees on the last working day of the census period are counted as Employed (Hired). People who worked without pay (such as self-employed or volunteers) are counted as Employed (Not Hired).',
                 'display_order': 8,
             },
             {
+                # Source: Economic Census Workers sheet — Govt / PSU column
                 'title': 'C. People Working in Govt Sector/PSUs',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'LaborECWorkers',
+                'data_source_table': 'LaborEconomicCensusWorkers',
                 'x_column': 'year',
-                'y_columns': ['govt_psu_workers'],
+                'y_columns': ['govt_psu'],
                 'dataset_config': [
                     {'label': 'Govt/PSU Workers', 'backgroundColor': '#1a4570'},
                 ],
@@ -198,12 +231,13 @@ class Command(BaseCommand):
                 'display_order': 9,
             },
             {
+                # Source: Economic Census Workers sheet — Co-operative column
                 'title': 'D. People Working in Cooperatives',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'LaborECWorkers',
+                'data_source_table': 'LaborEconomicCensusWorkers',
                 'x_column': 'year',
-                'y_columns': ['cooperative_workers'],
+                'y_columns': ['cooperative'],
                 'dataset_config': [
                     {'label': 'Cooperative Workers', 'backgroundColor': '#1a4570'},
                 ],
@@ -217,12 +251,13 @@ class Command(BaseCommand):
                 'display_order': 10,
             },
             {
+                # Source: Economic Census Workers sheet — Private Sector column
                 'title': 'E. People Working in Private Sector',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'LaborECWorkers',
+                'data_source_table': 'LaborEconomicCensusWorkers',
                 'x_column': 'year',
-                'y_columns': ['private_sector_workers'],
+                'y_columns': ['private_sector'],
                 'dataset_config': [
                     {'label': 'Private Sector Workers', 'backgroundColor': '#1a4570'},
                 ],
@@ -236,14 +271,15 @@ class Command(BaseCommand):
                 'display_order': 11,
             },
             {
+                # Source: DSA_MSME sheet (LaborDsaMsme) — Number of Employees column
                 'title': 'F. People Working in MSMEs',
                 'chapter_type': 'labor',
                 'chart_type': 'bar',
-                'data_source_table': 'Unknown', # found in Industry sheet but refrence says is it in Labour
+                'data_source_table': 'LaborDsaMsme',
                 'x_column': 'year',
-                'y_columns': ['number_of_msme_industries'], # Wait, is this workers or industries? The reference says: "F: Number of Employees" for the Excel sheet, but the DB model DSAMsme has `number_of_msme_industries`. I will use what's there and point out if it's incorrect. Let's use `number_of_msme_industries`.
+                'y_columns': ['number_of_employees'],
                 'dataset_config': [
-                    {'label': 'MSME Workers', 'backgroundColor': '#1a4570'},
+                    {'label': 'MSME Employees', 'backgroundColor': '#1a4570'},
                 ],
                 'main_filter_column': 'district',
                 'filter1_column': 'taluka',
@@ -255,10 +291,11 @@ class Command(BaseCommand):
                 'display_order': 12,
             },
             {
+                # Source: Emp by Industry sheet (LaborEmpByIndustry)
                 'title': 'G. Govt, Semi-Govt, and Private Employees',
                 'chapter_type': 'labor',
                 'chart_type': 'line',
-                'data_source_table': 'LaborIndustryType',    
+                'data_source_table': 'LaborEmpByIndustry',
                 'x_column': 'year',
                 'y_columns': ['govt_employees', 'semi_govt_employees', 'private_employees'],
                 'dataset_config': [
@@ -267,15 +304,16 @@ class Command(BaseCommand):
                     {'label': 'Private Employees', 'borderColor': '#C84B31', 'backgroundColor': '#C84B31'},
                 ],
                 'main_filter_column': 'district',
-                'filter1_column': 'type_of_industry',
+                'filter1_column': 'select_industry',
                 'filter2_column': '',
                 'show_filters': True,
-                'chart_options': build_chart_options('Number',disable_all_filter1=True),
+                'chart_options': build_chart_options('Number', disable_all_filter1=True),
                 'description': DSA_SOURCE,
                 'additional_info': '',
                 'display_order': 13,
             },
             {
+                # Source: Govt Employees sheet (LaborGovtEmployees)
                 'title': 'H. Government Employment',
                 'chapter_type': 'labor',
                 'chart_type': 'line',
@@ -295,9 +333,12 @@ class Command(BaseCommand):
                 'additional_info': '',
                 'display_order': 14,
             },
-            
+
+            # ──────────────────────────────────────────────────────────────────
             # SECTION 3: MNREGA
+            # ──────────────────────────────────────────────────────────────────
             {
+                # Source: MNREGA Participation sheet (LaborMNREGAParticipation)
                 'title': 'A. Participation in MNREGA',
                 'chapter_type': 'labor',
                 'chart_type': 'line',
@@ -319,6 +360,7 @@ class Command(BaseCommand):
                 'display_order': 15,
             },
             {
+                # Source: MNREGA Scope sheet (LaborMNREGAScope)
                 'title': 'B. MNREGA Household Scope',
                 'chapter_type': 'labor',
                 'chart_type': 'line',
@@ -340,6 +382,7 @@ class Command(BaseCommand):
                 'display_order': 16,
             },
             {
+                # Source: MNREGA Job Cards sheet (LaborMNREGAJobCards)
                 'title': 'C. Job Cards Issued',
                 'chapter_type': 'labor',
                 'chart_type': 'line',
@@ -359,6 +402,7 @@ class Command(BaseCommand):
                 'display_order': 17,
             },
             {
+                # Source: MNREGA Job Cards sheet (LaborMNREGAJobCards)
                 'title': 'D. Job Cards Issued for SC and ST',
                 'chapter_type': 'labor',
                 'chart_type': 'line',
@@ -379,6 +423,7 @@ class Command(BaseCommand):
                 'display_order': 18,
             },
             {
+                # Source: MNREGA Accounts sheet (LaborMNREGAAccounts)
                 'title': 'E. MNREGA Accounts',
                 'chapter_type': 'labor',
                 'chart_type': 'line',
@@ -400,7 +445,6 @@ class Command(BaseCommand):
             },
         ]
 
-        # In a real scenario, this matches health and industry template scripts
         count = 0
         updated = 0
         for config in templates:

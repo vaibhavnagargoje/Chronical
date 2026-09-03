@@ -1,8 +1,8 @@
 Year,District,No. of accidents,Males Killed,Females Killed,Total Killed
-2018,Ahmednagar,799,739,116,855
+2018,Ahilyanagar,799,739,116,855
 2018,Akola,146,149,12,161
 2018,Amravati,284,285,18,303
-2018,Aurangabad,507,498,46,544
+2018,Chh. Sambhaji Nagar,507,498,46,544
 2018,Beed,313,303,35,338
 2018,Bhandara,137,129,22,151
 2018,Buldhana,277,270,34,304
@@ -20,7 +20,7 @@ Year,District,No. of accidents,Males Killed,Females Killed,Total Killed
 2018,Nanded,240,235,35,270
 2018,Nandurbar,162,177,0,177
 2018,Nashik,973,920,121,1041
-2018,Osmanabad,291,263,54,317
+2018,Dharashiv,291,263,54,317
 2018,Palghar,471,449,56,505
 2018,Parbhani,114,114,9,123
 2018,Pune,1332,1249,201,1450
@@ -34,10 +34,10 @@ Year,District,No. of accidents,Males Killed,Females Killed,Total Killed
 2018,Wardha,198,197,16,213
 2018,Washim,128,127,15,142
 2018,Yavatmal,299,308,42,350
-2020,Ahmednagar,352,344,38,382
+2020,Ahilyanagar,352,344,38,382
 2020,Akola,110,114,13,127
 2020,Amravati,402,382,46,428
-2020,Aurangabad,428,389,56,445
+2020,Chh. Sambhaji Nagar,428,389,56,445
 2020,Beed,206,203,10,213
 2020,Bhandara,333,319,40,359
 2020,Buldhana,275,265,34,299
@@ -55,7 +55,7 @@ Year,District,No. of accidents,Males Killed,Females Killed,Total Killed
 2020,Nanded,301,306,23,329
 2020,Nandurbar,430,420,52,472
 2020,Nashik,512,497,59,556
-2020,Osmanabad,65,60,7,67
+2020,Dharashiv,65,60,7,67
 2020,Palghar,46,43,8,51
 2020,Parbhani,249,233,35,268
 2020,Pune,485,469,55,524

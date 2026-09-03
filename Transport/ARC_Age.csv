@@ -1,11 +1,11 @@
 Year,District,Age,Male,Female
-2018,Ahmednagar,19-25 Y,90,24
-2018,Ahmednagar,26-35 Y,169,25
-2018,Ahmednagar,36-45 Y,177,22
-2018,Ahmednagar,46-60 Y,186,13
-2018,Ahmednagar,0-18 Y,20,9
-2018,Ahmednagar,60 Y or more,66,18
-2018,Ahmednagar,Unknown,31,5
+2018,Ahilyanagar,19-25 Y,90,24
+2018,Ahilyanagar,26-35 Y,169,25
+2018,Ahilyanagar,36-45 Y,177,22
+2018,Ahilyanagar,46-60 Y,186,13
+2018,Ahilyanagar,0-18 Y,20,9
+2018,Ahilyanagar,60 Y or more,66,18
+2018,Ahilyanagar,Unknown,31,5
 2018,Akola,19-25 Y,29,2
 2018,Akola,26-35 Y,50,4
 2018,Akola,36-45 Y,50,5
@@ -20,13 +20,13 @@ Year,District,Age,Male,Female
 2018,Amravati,0-18 Y,0,0
 2018,Amravati,60 Y or more,0,0
 2018,Amravati,Unknown,0,0
-2018,Aurangabad,19-25 Y,149,8
-2018,Aurangabad,26-35 Y,127,13
-2018,Aurangabad,36-45 Y,118,11
-2018,Aurangabad,46-60 Y,69,12
-2018,Aurangabad,0-18 Y,2,2
-2018,Aurangabad,60 Y or more,28,0
-2018,Aurangabad,Unknown,5,0
+2018,Chh. Sambhaji Nagar,19-25 Y,149,8
+2018,Chh. Sambhaji Nagar,26-35 Y,127,13
+2018,Chh. Sambhaji Nagar,36-45 Y,118,11
+2018,Chh. Sambhaji Nagar,46-60 Y,69,12
+2018,Chh. Sambhaji Nagar,0-18 Y,2,2
+2018,Chh. Sambhaji Nagar,60 Y or more,28,0
+2018,Chh. Sambhaji Nagar,Unknown,5,0
 2018,Beed,19-25 Y,71,6
 2018,Beed,26-35 Y,59,12
 2018,Beed,36-45 Y,75,3
@@ -146,13 +146,13 @@ Year,District,Age,Male,Female
 2018,Nashik,0-18 Y,37,13
 2018,Nashik,60 Y or more,112,8
 2018,Nashik,Unknown,9,0
-2018,Osmanabad,19-25 Y,42,3
-2018,Osmanabad,26-35 Y,63,10
-2018,Osmanabad,36-45 Y,47,9
-2018,Osmanabad,46-60 Y,54,11
-2018,Osmanabad,0-18 Y,10,6
-2018,Osmanabad,60 Y or more,29,13
-2018,Osmanabad,Unknown,18,2
+2018,Dharashiv,19-25 Y,42,3
+2018,Dharashiv,26-35 Y,63,10
+2018,Dharashiv,36-45 Y,47,9
+2018,Dharashiv,46-60 Y,54,11
+2018,Dharashiv,0-18 Y,10,6
+2018,Dharashiv,60 Y or more,29,13
+2018,Dharashiv,Unknown,18,2
 2018,Palghar,19-25 Y,70,0
 2018,Palghar,26-35 Y,117,10
 2018,Palghar,36-45 Y,157,24

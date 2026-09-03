@@ -1,8 +1,8 @@
 Year,District,Sex,Fatalities,Grievous Injuries,Minor Injuries
-2018,Ahmednagar,Male,739,624,212
+2018,Ahilyanagar,Male,739,624,212
 2018,Akola,Male,149,101,338
 2018,Amravati,Male,285,224,431
-2018,Aurangabad,Male,498,706,145
+2018,Chh. Sambhaji Nagar,Male,498,706,145
 2018,Beed,Male,303,282,58
 2018,Bhandara,Male,129,181,207
 2018,Buldhana,Male,270,196,300
@@ -20,7 +20,7 @@ Year,District,Sex,Fatalities,Grievous Injuries,Minor Injuries
 2018,Nanded,Male,235,375,100
 2018,Nandurbar,Male,177,294,262
 2018,Nashik,Male,920,1078,431
-2018,Osmanabad,Male,263,520,68
+2018,Dharashiv,Male,263,520,68
 2018,Palghar,Male,449,447,317
 2018,Parbhani,Male,114,185,36
 2018,Pune,Male,1249,1573,502
@@ -34,10 +34,10 @@ Year,District,Sex,Fatalities,Grievous Injuries,Minor Injuries
 2018,Wardha,Male,197,227,247
 2018,Washim,Male,127,67,119
 2018,Yavatmal,Male,308,195,271
-2020,Ahmednagar,Male,344,314,278
+2020,Ahilyanagar,Male,344,314,278
 2020,Akola,Male,114,126,213
 2020,Amravati,Male,382,311,230
-2020,Aurangabad,Male,389,568,223
+2020,Chh. Sambhaji Nagar,Male,389,568,223
 2020,Beed,Male,203,316,59
 2020,Bhandara,Male,319,309,42
 2020,Buldhana,Male,265,135,176
@@ -55,7 +55,7 @@ Year,District,Sex,Fatalities,Grievous Injuries,Minor Injuries
 2020,Nanded,Male,306,284,33
 2020,Nandurbar,Male,420,352,134
 2020,Nashik,Male,497,649,302
-2020,Osmanabad,Male,60,89,5
+2020,Dharashiv,Male,60,89,5
 2020,Palghar,Male,43,68,84
 2020,Parbhani,Male,233,269,123
 2020,Pune,Male,469,514,89
@@ -69,10 +69,10 @@ Year,District,Sex,Fatalities,Grievous Injuries,Minor Injuries
 2020,Wardha,Male,124,95,95
 2020,Washim,Male,113,68,85
 2020,Yavatmal,Male,306,148,201
-2018,Ahmednagar,Female,116,92,29
+2018,Ahilyanagar,Female,116,92,29
 2018,Akola,Female,12,12,40
 2018,Amravati,Female,18,60,100
-2018,Aurangabad,Female,46,124,32
+2018,Chh. Sambhaji Nagar,Female,46,124,32
 2018,Beed,Female,35,28,15
 2018,Bhandara,Female,22,38,62
 2018,Buldhana,Female,34,42,90
@@ -90,7 +90,7 @@ Year,District,Sex,Fatalities,Grievous Injuries,Minor Injuries
 2018,Nanded,Female,35,82,10
 2018,Nandurbar,Female,0,36,26
 2018,Nashik,Female,121,240,113
-2018,Osmanabad,Female,54,103,27
+2018,Dharashiv,Female,54,103,27
 2018,Palghar,Female,56,89,53
 2018,Parbhani,Female,9,19,2
 2018,Pune,Female,201,363,129
@@ -104,10 +104,10 @@ Year,District,Sex,Fatalities,Grievous Injuries,Minor Injuries
 2018,Wardha,Female,16,24,28
 2018,Washim,Female,15,11,18
 2018,Yavatmal,Female,42,37,47
-2020,Ahmednagar,Female,38,37,82
+2020,Ahilyanagar,Female,38,37,82
 2020,Akola,Female,13,11,41
 2020,Amravati,Female,46,50,45
-2020,Aurangabad,Female,56,102,54
+2020,Chh. Sambhaji Nagar,Female,56,102,54
 2020,Beed,Female,10,0,0
 2020,Bhandara,Female,40,72,8
 2020,Buldhana,Female,34,15,12
@@ -125,7 +125,7 @@ Year,District,Sex,Fatalities,Grievous Injuries,Minor Injuries
 2020,Nanded,Female,23,43,5
 2020,Nandurbar,Female,52,37,28
 2020,Nashik,Female,59,178,76
-2020,Osmanabad,Female,7,12,3
+2020,Dharashiv,Female,7,12,3
 2020,Palghar,Female,8,10,14
 2020,Parbhani,Female,35,40,11
 2020,Pune,Female,55,87,18

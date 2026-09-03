@@ -2,7 +2,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Violation of Privacy,
 2017,Akola,Violation of Privacy,
 2017,Amravati,Violation of Privacy,10.0
-2017,Chhatrapati Sambhaji Nagar,Violation of Privacy,
+2017,Chh. Sambhaji Nagar,Violation of Privacy,
 2017,Beed,Violation of Privacy,
 2017,Bhandara,Violation of Privacy,1.0
 2017,Buldhana,Violation of Privacy,
@@ -15,11 +15,11 @@ Year,District,Crime,Cases
 2017,Jalna,Violation of Privacy,
 2017,Kolhapur,Violation of Privacy,
 2017,Latur,Violation of Privacy,
-2017,Mumbai City,Violation of Privacy,2.0
+2017,Mumbai,Violation of Privacy,2.0
 2017,Nagpur,Violation of Privacy,
 2017,Nanded,Violation of Privacy,
 2017,Nandurbar,Violation of Privacy,1.0
-2017,Nasik,Violation of Privacy,1.0
+2017,Nashik,Violation of Privacy,1.0
 2017,Dharashiv,Violation of Privacy,
 2017,Palghar,Violation of Privacy,
 2017,Parbhani,Violation of Privacy,
@@ -37,7 +37,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Violation of Privacy,
 2018,Akola,Violation of Privacy,
 2018,Amravati,Violation of Privacy,1.0
-2018,Chhatrapati Sambhaji Nagar,Violation of Privacy,
+2018,Chh. Sambhaji Nagar,Violation of Privacy,
 2018,Beed,Violation of Privacy,
 2018,Bhandara,Violation of Privacy,
 2018,Buldhana,Violation of Privacy,
@@ -50,11 +50,11 @@ Year,District,Crime,Cases
 2018,Jalna,Violation of Privacy,
 2018,Kolhapur,Violation of Privacy,
 2018,Latur,Violation of Privacy,1.0
-2018,Mumbai City,Violation of Privacy,1.0
+2018,Mumbai,Violation of Privacy,1.0
 2018,Nagpur,Violation of Privacy,1.0
 2018,Nanded,Violation of Privacy,1.0
 2018,Nandurbar,Violation of Privacy,
-2018,Nasik,Violation of Privacy,
+2018,Nashik,Violation of Privacy,
 2018,Dharashiv,Violation of Privacy,
 2018,Palghar,Violation of Privacy,3.0
 2018,Parbhani,Violation of Privacy,
@@ -72,7 +72,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Violation of Privacy,
 2019,Akola,Violation of Privacy,
 2019,Amravati,Violation of Privacy,
-2019,Chhatrapati Sambhaji Nagar,Violation of Privacy,
+2019,Chh. Sambhaji Nagar,Violation of Privacy,
 2019,Beed,Violation of Privacy,
 2019,Bhandara,Violation of Privacy,
 2019,Buldhana,Violation of Privacy,
@@ -85,11 +85,11 @@ Year,District,Crime,Cases
 2019,Jalna,Violation of Privacy,
 2019,Kolhapur,Violation of Privacy,
 2019,Latur,Violation of Privacy,
-2019,Mumbai City,Violation of Privacy,
+2019,Mumbai,Violation of Privacy,
 2019,Nagpur,Violation of Privacy,
 2019,Nanded,Violation of Privacy,
 2019,Nandurbar,Violation of Privacy,
-2019,Nasik,Violation of Privacy,
+2019,Nashik,Violation of Privacy,
 2019,Dharashiv,Violation of Privacy,
 2019,Palghar,Violation of Privacy,2.0
 2019,Parbhani,Violation of Privacy,
@@ -107,7 +107,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Violation of Privacy,
 2020,Akola,Violation of Privacy,1.0
 2020,Amravati,Violation of Privacy,
-2020,Chhatrapati Sambhaji Nagar,Violation of Privacy,
+2020,Chh. Sambhaji Nagar,Violation of Privacy,
 2020,Beed,Violation of Privacy,
 2020,Bhandara,Violation of Privacy,
 2020,Buldhana,Violation of Privacy,
@@ -120,11 +120,11 @@ Year,District,Crime,Cases
 2020,Jalna,Violation of Privacy,1.0
 2020,Kolhapur,Violation of Privacy,
 2020,Latur,Violation of Privacy,
-2020,Mumbai City,Violation of Privacy,2.0
+2020,Mumbai,Violation of Privacy,2.0
 2020,Nagpur,Violation of Privacy,1.0
 2020,Nanded,Violation of Privacy,
 2020,Nandurbar,Violation of Privacy,
-2020,Nasik,Violation of Privacy,
+2020,Nashik,Violation of Privacy,
 2020,Dharashiv,Violation of Privacy,
 2020,Palghar,Violation of Privacy,
 2020,Parbhani,Violation of Privacy,
@@ -142,7 +142,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Violation of Privacy,
 2021,Akola,Violation of Privacy,
 2021,Amravati,Violation of Privacy,
-2021,Chhatrapati Sambhaji Nagar,Violation of Privacy,
+2021,Chh. Sambhaji Nagar,Violation of Privacy,
 2021,Beed,Violation of Privacy,
 2021,Bhandara,Violation of Privacy,
 2021,Buldhana,Violation of Privacy,
@@ -155,11 +155,11 @@ Year,District,Crime,Cases
 2021,Jalna,Violation of Privacy,
 2021,Kolhapur,Violation of Privacy,
 2021,Latur,Violation of Privacy,
-2021,Mumbai City,Violation of Privacy,
+2021,Mumbai,Violation of Privacy,
 2021,Nagpur,Violation of Privacy,
 2021,Nanded,Violation of Privacy,
 2021,Nandurbar,Violation of Privacy,
-2021,Nasik,Violation of Privacy,3.0
+2021,Nashik,Violation of Privacy,3.0
 2021,Dharashiv,Violation of Privacy,
 2021,Palghar,Violation of Privacy,
 2021,Parbhani,Violation of Privacy,
@@ -177,7 +177,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Offences under IT Act,3.0
 2017,Akola,Offences under IT Act,
 2017,Amravati,Offences under IT Act,39.0
-2017,Chhatrapati Sambhaji Nagar,Offences under IT Act,30.0
+2017,Chh. Sambhaji Nagar,Offences under IT Act,30.0
 2017,Beed,Offences under IT Act,3.0
 2017,Bhandara,Offences under IT Act,1.0
 2017,Buldhana,Offences under IT Act,4.0
@@ -190,11 +190,11 @@ Year,District,Crime,Cases
 2017,Jalna,Offences under IT Act,5.0
 2017,Kolhapur,Offences under IT Act,1.0
 2017,Latur,Offences under IT Act,2.0
-2017,Mumbai City,Offences under IT Act,40.0
+2017,Mumbai,Offences under IT Act,40.0
 2017,Nagpur,Offences under IT Act,22.0
 2017,Nanded,Offences under IT Act,1.0
 2017,Nandurbar,Offences under IT Act,1.0
-2017,Nasik,Offences under IT Act,41.0
+2017,Nashik,Offences under IT Act,41.0
 2017,Dharashiv,Offences under IT Act,1.0
 2017,Palghar,Offences under IT Act,12.0
 2017,Parbhani,Offences under IT Act,1.0
@@ -212,7 +212,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Offences under IT Act,6.0
 2018,Akola,Offences under IT Act,
 2018,Amravati,Offences under IT Act,34.0
-2018,Chhatrapati Sambhaji Nagar,Offences under IT Act,17.0
+2018,Chh. Sambhaji Nagar,Offences under IT Act,17.0
 2018,Beed,Offences under IT Act,2.0
 2018,Bhandara,Offences under IT Act,7.0
 2018,Buldhana,Offences under IT Act,2.0
@@ -225,11 +225,11 @@ Year,District,Crime,Cases
 2018,Jalna,Offences under IT Act,1.0
 2018,Kolhapur,Offences under IT Act,5.0
 2018,Latur,Offences under IT Act,6.0
-2018,Mumbai City,Offences under IT Act,45.0
+2018,Mumbai,Offences under IT Act,45.0
 2018,Nagpur,Offences under IT Act,18.0
 2018,Nanded,Offences under IT Act,4.0
 2018,Nandurbar,Offences under IT Act,
-2018,Nasik,Offences under IT Act,14.0
+2018,Nashik,Offences under IT Act,14.0
 2018,Dharashiv,Offences under IT Act,4.0
 2018,Palghar,Offences under IT Act,17.0
 2018,Parbhani,Offences under IT Act,
@@ -247,7 +247,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Offences under IT Act,7.0
 2019,Akola,Offences under IT Act,4.0
 2019,Amravati,Offences under IT Act,20.0
-2019,Chhatrapati Sambhaji Nagar,Offences under IT Act,5.0
+2019,Chh. Sambhaji Nagar,Offences under IT Act,5.0
 2019,Beed,Offences under IT Act,3.0
 2019,Bhandara,Offences under IT Act,3.0
 2019,Buldhana,Offences under IT Act,2.0
@@ -260,11 +260,11 @@ Year,District,Crime,Cases
 2019,Jalna,Offences under IT Act,4.0
 2019,Kolhapur,Offences under IT Act,6.0
 2019,Latur,Offences under IT Act,9.0
-2019,Mumbai City,Offences under IT Act,40.0
+2019,Mumbai,Offences under IT Act,40.0
 2019,Nagpur,Offences under IT Act,24.0
 2019,Nanded,Offences under IT Act,4.0
 2019,Nandurbar,Offences under IT Act,1.0
-2019,Nasik,Offences under IT Act,16.0
+2019,Nashik,Offences under IT Act,16.0
 2019,Dharashiv,Offences under IT Act,2.0
 2019,Palghar,Offences under IT Act,48.0
 2019,Parbhani,Offences under IT Act,
@@ -282,7 +282,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Offences under IT Act,13.0
 2020,Akola,Offences under IT Act,2.0
 2020,Amravati,Offences under IT Act,16.0
-2020,Chhatrapati Sambhaji Nagar,Offences under IT Act,18.0
+2020,Chh. Sambhaji Nagar,Offences under IT Act,18.0
 2020,Beed,Offences under IT Act,3.0
 2020,Bhandara,Offences under IT Act,7.0
 2020,Buldhana,Offences under IT Act,14.0
@@ -295,11 +295,11 @@ Year,District,Crime,Cases
 2020,Jalna,Offences under IT Act,3.0
 2020,Kolhapur,Offences under IT Act,9.0
 2020,Latur,Offences under IT Act,18.0
-2020,Mumbai City,Offences under IT Act,69.0
+2020,Mumbai,Offences under IT Act,69.0
 2020,Nagpur,Offences under IT Act,74.0
 2020,Nanded,Offences under IT Act,8.0
 2020,Nandurbar,Offences under IT Act,2.0
-2020,Nasik,Offences under IT Act,24.0
+2020,Nashik,Offences under IT Act,24.0
 2020,Dharashiv,Offences under IT Act,6.0
 2020,Palghar,Offences under IT Act,9.0
 2020,Parbhani,Offences under IT Act,5.0
@@ -317,7 +317,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Offences under IT Act,11.0
 2021,Akola,Offences under IT Act,5.0
 2021,Amravati,Offences under IT Act,10.0
-2021,Chhatrapati Sambhaji Nagar,Offences under IT Act,21.0
+2021,Chh. Sambhaji Nagar,Offences under IT Act,21.0
 2021,Beed,Offences under IT Act,6.0
 2021,Bhandara,Offences under IT Act,5.0
 2021,Buldhana,Offences under IT Act,24.0
@@ -330,11 +330,11 @@ Year,District,Crime,Cases
 2021,Jalna,Offences under IT Act,12.0
 2021,Kolhapur,Offences under IT Act,4.0
 2021,Latur,Offences under IT Act,12.0
-2021,Mumbai City,Offences under IT Act,19.0
+2021,Mumbai,Offences under IT Act,19.0
 2021,Nagpur,Offences under IT Act,30.0
 2021,Nanded,Offences under IT Act,4.0
 2021,Nandurbar,Offences under IT Act,3.0
-2021,Nasik,Offences under IT Act,25.0
+2021,Nashik,Offences under IT Act,25.0
 2021,Dharashiv,Offences under IT Act,4.0
 2021,Palghar,Offences under IT Act,7.0
 2021,Parbhani,Offences under IT Act,8.0
@@ -352,7 +352,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Cyber-Stalking/Bullying of Women/Children,
 2017,Akola,Cyber-Stalking/Bullying of Women/Children,4.0
 2017,Amravati,Cyber-Stalking/Bullying of Women/Children,8.0
-2017,Chhatrapati Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,28.0
+2017,Chh. Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,28.0
 2017,Beed,Cyber-Stalking/Bullying of Women/Children,1.0
 2017,Bhandara,Cyber-Stalking/Bullying of Women/Children,2.0
 2017,Buldhana,Cyber-Stalking/Bullying of Women/Children,
@@ -365,11 +365,11 @@ Year,District,Crime,Cases
 2017,Jalna,Cyber-Stalking/Bullying of Women/Children,
 2017,Kolhapur,Cyber-Stalking/Bullying of Women/Children,1.0
 2017,Latur,Cyber-Stalking/Bullying of Women/Children,1.0
-2017,Mumbai City,Cyber-Stalking/Bullying of Women/Children,133.0
+2017,Mumbai,Cyber-Stalking/Bullying of Women/Children,133.0
 2017,Nagpur,Cyber-Stalking/Bullying of Women/Children,20.0
 2017,Nanded,Cyber-Stalking/Bullying of Women/Children,
 2017,Nandurbar,Cyber-Stalking/Bullying of Women/Children,
-2017,Nasik,Cyber-Stalking/Bullying of Women/Children,11.0
+2017,Nashik,Cyber-Stalking/Bullying of Women/Children,11.0
 2017,Dharashiv,Cyber-Stalking/Bullying of Women/Children,1.0
 2017,Palghar,Cyber-Stalking/Bullying of Women/Children,6.0
 2017,Parbhani,Cyber-Stalking/Bullying of Women/Children,4.0
@@ -387,7 +387,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Cyber-Stalking/Bullying of Women/Children,1.0
 2018,Akola,Cyber-Stalking/Bullying of Women/Children,6.0
 2018,Amravati,Cyber-Stalking/Bullying of Women/Children,16.0
-2018,Chhatrapati Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,14.0
+2018,Chh. Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,14.0
 2018,Beed,Cyber-Stalking/Bullying of Women/Children,5.0
 2018,Bhandara,Cyber-Stalking/Bullying of Women/Children,7.0
 2018,Buldhana,Cyber-Stalking/Bullying of Women/Children,3.0
@@ -400,11 +400,11 @@ Year,District,Crime,Cases
 2018,Jalna,Cyber-Stalking/Bullying of Women/Children,
 2018,Kolhapur,Cyber-Stalking/Bullying of Women/Children,3.0
 2018,Latur,Cyber-Stalking/Bullying of Women/Children,2.0
-2018,Mumbai City,Cyber-Stalking/Bullying of Women/Children,171.0
+2018,Mumbai,Cyber-Stalking/Bullying of Women/Children,171.0
 2018,Nagpur,Cyber-Stalking/Bullying of Women/Children,11.0
 2018,Nanded,Cyber-Stalking/Bullying of Women/Children,
 2018,Nandurbar,Cyber-Stalking/Bullying of Women/Children,2.0
-2018,Nasik,Cyber-Stalking/Bullying of Women/Children,10.0
+2018,Nashik,Cyber-Stalking/Bullying of Women/Children,10.0
 2018,Dharashiv,Cyber-Stalking/Bullying of Women/Children,3.0
 2018,Palghar,Cyber-Stalking/Bullying of Women/Children,5.0
 2018,Parbhani,Cyber-Stalking/Bullying of Women/Children,2.0
@@ -422,7 +422,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Cyber-Stalking/Bullying of Women/Children,1.0
 2019,Akola,Cyber-Stalking/Bullying of Women/Children,2.0
 2019,Amravati,Cyber-Stalking/Bullying of Women/Children,9.0
-2019,Chhatrapati Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,22.0
+2019,Chh. Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,22.0
 2019,Beed,Cyber-Stalking/Bullying of Women/Children,4.0
 2019,Bhandara,Cyber-Stalking/Bullying of Women/Children,8.0
 2019,Buldhana,Cyber-Stalking/Bullying of Women/Children,4.0
@@ -435,11 +435,11 @@ Year,District,Crime,Cases
 2019,Jalna,Cyber-Stalking/Bullying of Women/Children,
 2019,Kolhapur,Cyber-Stalking/Bullying of Women/Children,3.0
 2019,Latur,Cyber-Stalking/Bullying of Women/Children,2.0
-2019,Mumbai City,Cyber-Stalking/Bullying of Women/Children,147.0
+2019,Mumbai,Cyber-Stalking/Bullying of Women/Children,147.0
 2019,Nagpur,Cyber-Stalking/Bullying of Women/Children,31.0
 2019,Nanded,Cyber-Stalking/Bullying of Women/Children,
 2019,Nandurbar,Cyber-Stalking/Bullying of Women/Children,3.0
-2019,Nasik,Cyber-Stalking/Bullying of Women/Children,15.0
+2019,Nashik,Cyber-Stalking/Bullying of Women/Children,15.0
 2019,Dharashiv,Cyber-Stalking/Bullying of Women/Children,3.0
 2019,Palghar,Cyber-Stalking/Bullying of Women/Children,12.0
 2019,Parbhani,Cyber-Stalking/Bullying of Women/Children,2.0
@@ -457,7 +457,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Cyber-Stalking/Bullying of Women/Children,3.0
 2020,Akola,Cyber-Stalking/Bullying of Women/Children,4.0
 2020,Amravati,Cyber-Stalking/Bullying of Women/Children,19.0
-2020,Chhatrapati Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,16.0
+2020,Chh. Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,16.0
 2020,Beed,Cyber-Stalking/Bullying of Women/Children,7.0
 2020,Bhandara,Cyber-Stalking/Bullying of Women/Children,6.0
 2020,Buldhana,Cyber-Stalking/Bullying of Women/Children,
@@ -470,11 +470,11 @@ Year,District,Crime,Cases
 2020,Jalna,Cyber-Stalking/Bullying of Women/Children,1.0
 2020,Kolhapur,Cyber-Stalking/Bullying of Women/Children,8.0
 2020,Latur,Cyber-Stalking/Bullying of Women/Children,6.0
-2020,Mumbai City,Cyber-Stalking/Bullying of Women/Children,105.0
+2020,Mumbai,Cyber-Stalking/Bullying of Women/Children,105.0
 2020,Nagpur,Cyber-Stalking/Bullying of Women/Children,31.0
 2020,Nanded,Cyber-Stalking/Bullying of Women/Children,1.0
 2020,Nandurbar,Cyber-Stalking/Bullying of Women/Children,3.0
-2020,Nasik,Cyber-Stalking/Bullying of Women/Children,23.0
+2020,Nashik,Cyber-Stalking/Bullying of Women/Children,23.0
 2020,Dharashiv,Cyber-Stalking/Bullying of Women/Children,3.0
 2020,Palghar,Cyber-Stalking/Bullying of Women/Children,5.0
 2020,Parbhani,Cyber-Stalking/Bullying of Women/Children,8.0
@@ -492,7 +492,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Cyber-Stalking/Bullying of Women/Children,
 2021,Akola,Cyber-Stalking/Bullying of Women/Children,4.0
 2021,Amravati,Cyber-Stalking/Bullying of Women/Children,9.0
-2021,Chhatrapati Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,26.0
+2021,Chh. Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,26.0
 2021,Beed,Cyber-Stalking/Bullying of Women/Children,8.0
 2021,Bhandara,Cyber-Stalking/Bullying of Women/Children,3.0
 2021,Buldhana,Cyber-Stalking/Bullying of Women/Children,5.0
@@ -505,11 +505,11 @@ Year,District,Crime,Cases
 2021,Jalna,Cyber-Stalking/Bullying of Women/Children,8.0
 2021,Kolhapur,Cyber-Stalking/Bullying of Women/Children,13.0
 2021,Latur,Cyber-Stalking/Bullying of Women/Children,6.0
-2021,Mumbai City,Cyber-Stalking/Bullying of Women/Children,178.0
+2021,Mumbai,Cyber-Stalking/Bullying of Women/Children,178.0
 2021,Nagpur,Cyber-Stalking/Bullying of Women/Children,35.0
 2021,Nanded,Cyber-Stalking/Bullying of Women/Children,
 2021,Nandurbar,Cyber-Stalking/Bullying of Women/Children,1.0
-2021,Nasik,Cyber-Stalking/Bullying of Women/Children,5.0
+2021,Nashik,Cyber-Stalking/Bullying of Women/Children,5.0
 2021,Dharashiv,Cyber-Stalking/Bullying of Women/Children,1.0
 2021,Palghar,Cyber-Stalking/Bullying of Women/Children,2.0
 2021,Parbhani,Cyber-Stalking/Bullying of Women/Children,6.0
@@ -527,7 +527,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,Fraud,1.0
 2017,Akola,Fraud,
 2017,Amravati,Fraud,55.0
-2017,Chhatrapati Sambhaji Nagar,Fraud,128.0
+2017,Chh. Sambhaji Nagar,Fraud,128.0
 2017,Beed,Fraud,4.0
 2017,Bhandara,Fraud,25.0
 2017,Buldhana,Fraud,10.0
@@ -540,11 +540,11 @@ Year,District,Crime,Cases
 2017,Jalna,Fraud,5.0
 2017,Kolhapur,Fraud,8.0
 2017,Latur,Fraud,10.0
-2017,Mumbai City,Fraud,446.0
+2017,Mumbai,Fraud,446.0
 2017,Nagpur,Fraud,29.0
 2017,Nanded,Fraud,1.0
 2017,Nandurbar,Fraud,1.0
-2017,Nasik,Fraud,46.0
+2017,Nashik,Fraud,46.0
 2017,Dharashiv,Fraud,9.0
 2017,Palghar,Fraud,32.0
 2017,Parbhani,Fraud,
@@ -562,7 +562,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,Fraud,12.0
 2018,Akola,Fraud,
 2018,Amravati,Fraud,49.0
-2018,Chhatrapati Sambhaji Nagar,Fraud,50.0
+2018,Chh. Sambhaji Nagar,Fraud,50.0
 2018,Beed,Fraud,7.0
 2018,Bhandara,Fraud,17.0
 2018,Buldhana,Fraud,11.0
@@ -575,11 +575,11 @@ Year,District,Crime,Cases
 2018,Jalna,Fraud,21.0
 2018,Kolhapur,Fraud,7.0
 2018,Latur,Fraud,8.0
-2018,Mumbai City,Fraud,349.0
+2018,Mumbai,Fraud,349.0
 2018,Nagpur,Fraud,31.0
 2018,Nanded,Fraud,2.0
 2018,Nandurbar,Fraud,3.0
-2018,Nasik,Fraud,30.0
+2018,Nashik,Fraud,30.0
 2018,Dharashiv,Fraud,8.0
 2018,Palghar,Fraud,5.0
 2018,Parbhani,Fraud,
@@ -597,7 +597,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,Fraud,
 2019,Akola,Fraud,7.0
 2019,Amravati,Fraud,43.0
-2019,Chhatrapati Sambhaji Nagar,Fraud,30.0
+2019,Chh. Sambhaji Nagar,Fraud,30.0
 2019,Beed,Fraud,11.0
 2019,Bhandara,Fraud,9.0
 2019,Buldhana,Fraud,21.0
@@ -610,11 +610,11 @@ Year,District,Crime,Cases
 2019,Jalna,Fraud,6.0
 2019,Kolhapur,Fraud,15.0
 2019,Latur,Fraud,5.0
-2019,Mumbai City,Fraud,878.0
+2019,Mumbai,Fraud,878.0
 2019,Nagpur,Fraud,28.0
 2019,Nanded,Fraud,14.0
 2019,Nandurbar,Fraud,6.0
-2019,Nasik,Fraud,59.0
+2019,Nashik,Fraud,59.0
 2019,Dharashiv,Fraud,6.0
 2019,Palghar,Fraud,9.0
 2019,Parbhani,Fraud,
@@ -632,7 +632,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,Fraud,
 2020,Akola,Fraud,11.0
 2020,Amravati,Fraud,127.0
-2020,Chhatrapati Sambhaji Nagar,Fraud,30.0
+2020,Chh. Sambhaji Nagar,Fraud,30.0
 2020,Beed,Fraud,15.0
 2020,Bhandara,Fraud,30.0
 2020,Buldhana,Fraud,30.0
@@ -645,11 +645,11 @@ Year,District,Crime,Cases
 2020,Jalna,Fraud,23.0
 2020,Kolhapur,Fraud,17.0
 2020,Latur,Fraud,21.0
-2020,Mumbai City,Fraud,865.0
+2020,Mumbai,Fraud,865.0
 2020,Nagpur,Fraud,14.0
 2020,Nanded,Fraud,
 2020,Nandurbar,Fraud,13.0
-2020,Nasik,Fraud,9.0
+2020,Nashik,Fraud,9.0
 2020,Dharashiv,Fraud,33.0
 2020,Palghar,Fraud,5.0
 2020,Parbhani,Fraud,36.0
@@ -667,7 +667,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,Fraud,
 2021,Akola,Fraud,13.0
 2021,Amravati,Fraud,52.0
-2021,Chhatrapati Sambhaji Nagar,Fraud,24.0
+2021,Chh. Sambhaji Nagar,Fraud,24.0
 2021,Beed,Fraud,96.0
 2021,Bhandara,Fraud,23.0
 2021,Buldhana,Fraud,23.0
@@ -680,11 +680,11 @@ Year,District,Crime,Cases
 2021,Jalna,Fraud,25.0
 2021,Kolhapur,Fraud,15.0
 2021,Latur,Fraud,18.0
-2021,Mumbai City,Fraud,783.0
+2021,Mumbai,Fraud,783.0
 2021,Nagpur,Fraud,27.0
 2021,Nanded,Fraud,1.0
 2021,Nandurbar,Fraud,3.0
-2021,Nasik,Fraud,
+2021,Nashik,Fraud,
 2021,Dharashiv,Fraud,16.0
 2021,Palghar,Fraud,
 2021,Parbhani,Fraud,14.0
@@ -702,7 +702,7 @@ Year,District,Crime,Cases
 2017,Ahilyanagar,All Cyber Crimes,6.0
 2017,Akola,All Cyber Crimes,12.0
 2017,Amravati,All Cyber Crimes,116.0
-2017,Chhatrapati Sambhaji Nagar,All Cyber Crimes,201.0
+2017,Chh. Sambhaji Nagar,All Cyber Crimes,201.0
 2017,Beed,All Cyber Crimes,18.0
 2017,Bhandara,All Cyber Crimes,46.0
 2017,Buldhana,All Cyber Crimes,18.0
@@ -715,11 +715,11 @@ Year,District,Crime,Cases
 2017,Jalna,All Cyber Crimes,15.0
 2017,Kolhapur,All Cyber Crimes,36.0
 2017,Latur,All Cyber Crimes,19.0
-2017,Mumbai City,All Cyber Crimes,1382.0
+2017,Mumbai,All Cyber Crimes,1382.0
 2017,Nagpur,All Cyber Crimes,122.0
 2017,Nanded,All Cyber Crimes,9.0
 2017,Nandurbar,All Cyber Crimes,3.0
-2017,Nasik,All Cyber Crimes,132.0
+2017,Nashik,All Cyber Crimes,132.0
 2017,Dharashiv,All Cyber Crimes,13.0
 2017,Palghar,All Cyber Crimes,62.0
 2017,Parbhani,All Cyber Crimes,13.0
@@ -737,7 +737,7 @@ Year,District,Crime,Cases
 2018,Ahilyanagar,All Cyber Crimes,21.0
 2018,Akola,All Cyber Crimes,23.0
 2018,Amravati,All Cyber Crimes,107.0
-2018,Chhatrapati Sambhaji Nagar,All Cyber Crimes,99.0
+2018,Chh. Sambhaji Nagar,All Cyber Crimes,99.0
 2018,Beed,All Cyber Crimes,34.0
 2018,Bhandara,All Cyber Crimes,52.0
 2018,Buldhana,All Cyber Crimes,22.0
@@ -750,11 +750,11 @@ Year,District,Crime,Cases
 2018,Jalna,All Cyber Crimes,23.0
 2018,Kolhapur,All Cyber Crimes,27.0
 2018,Latur,All Cyber Crimes,21.0
-2018,Mumbai City,All Cyber Crimes,1497.0
+2018,Mumbai,All Cyber Crimes,1497.0
 2018,Nagpur,All Cyber Crimes,136.0
 2018,Nanded,All Cyber Crimes,17.0
 2018,Nandurbar,All Cyber Crimes,12.0
-2018,Nasik,All Cyber Crimes,72.0
+2018,Nashik,All Cyber Crimes,72.0
 2018,Dharashiv,All Cyber Crimes,17.0
 2018,Palghar,All Cyber Crimes,62.0
 2018,Parbhani,All Cyber Crimes,10.0
@@ -772,7 +772,7 @@ Year,District,Crime,Cases
 2019,Ahilyanagar,All Cyber Crimes,21.0
 2019,Akola,All Cyber Crimes,22.0
 2019,Amravati,All Cyber Crimes,80.0
-2019,Chhatrapati Sambhaji Nagar,All Cyber Crimes,90.0
+2019,Chh. Sambhaji Nagar,All Cyber Crimes,90.0
 2019,Beed,All Cyber Crimes,27.0
 2019,Bhandara,All Cyber Crimes,32.0
 2019,Buldhana,All Cyber Crimes,38.0
@@ -785,11 +785,11 @@ Year,District,Crime,Cases
 2019,Jalna,All Cyber Crimes,10.0
 2019,Kolhapur,All Cyber Crimes,31.0
 2019,Latur,All Cyber Crimes,25.0
-2019,Mumbai City,All Cyber Crimes,2548.0
+2019,Mumbai,All Cyber Crimes,2548.0
 2019,Nagpur,All Cyber Crimes,158.0
 2019,Nanded,All Cyber Crimes,33.0
 2019,Nandurbar,All Cyber Crimes,16.0
-2019,Nasik,All Cyber Crimes,94.0
+2019,Nashik,All Cyber Crimes,94.0
 2019,Dharashiv,All Cyber Crimes,17.0
 2019,Palghar,All Cyber Crimes,89.0
 2019,Parbhani,All Cyber Crimes,20.0
@@ -807,7 +807,7 @@ Year,District,Crime,Cases
 2020,Ahilyanagar,All Cyber Crimes,23.0
 2020,Akola,All Cyber Crimes,30.0
 2020,Amravati,All Cyber Crimes,191.0
-2020,Chhatrapati Sambhaji Nagar,All Cyber Crimes,92.0
+2020,Chh. Sambhaji Nagar,All Cyber Crimes,92.0
 2020,Beed,All Cyber Crimes,39.0
 2020,Bhandara,All Cyber Crimes,45.0
 2020,Buldhana,All Cyber Crimes,62.0
@@ -820,11 +820,11 @@ Year,District,Crime,Cases
 2020,Jalna,All Cyber Crimes,31.0
 2020,Kolhapur,All Cyber Crimes,40.0
 2020,Latur,All Cyber Crimes,49.0
-2020,Mumbai City,All Cyber Crimes,2455.0
+2020,Mumbai,All Cyber Crimes,2455.0
 2020,Nagpur,All Cyber Crimes,307.0
 2020,Nanded,All Cyber Crimes,27.0
 2020,Nandurbar,All Cyber Crimes,21.0
-2020,Nasik,All Cyber Crimes,136.0
+2020,Nashik,All Cyber Crimes,136.0
 2020,Dharashiv,All Cyber Crimes,43.0
 2020,Palghar,All Cyber Crimes,24.0
 2020,Parbhani,All Cyber Crimes,61.0
@@ -842,7 +842,7 @@ Year,District,Crime,Cases
 2021,Ahilyanagar,All Cyber Crimes,19.0
 2021,Akola,All Cyber Crimes,34.0
 2021,Amravati,All Cyber Crimes,129.0
-2021,Chhatrapati Sambhaji Nagar,All Cyber Crimes,97.0
+2021,Chh. Sambhaji Nagar,All Cyber Crimes,97.0
 2021,Beed,All Cyber Crimes,119.0
 2021,Bhandara,All Cyber Crimes,47.0
 2021,Buldhana,All Cyber Crimes,61.0
@@ -855,11 +855,11 @@ Year,District,Crime,Cases
 2021,Jalna,All Cyber Crimes,51.0
 2021,Kolhapur,All Cyber Crimes,55.0
 2021,Latur,All Cyber Crimes,40.0
-2021,Mumbai City,All Cyber Crimes,2915.0
+2021,Mumbai,All Cyber Crimes,2915.0
 2021,Nagpur,All Cyber Crimes,242.0
 2021,Nanded,All Cyber Crimes,15.0
 2021,Nandurbar,All Cyber Crimes,9.0
-2021,Nasik,All Cyber Crimes,66.0
+2021,Nashik,All Cyber Crimes,66.0
 2021,Dharashiv,All Cyber Crimes,41.0
 2021,Palghar,All Cyber Crimes,16.0
 2021,Parbhani,All Cyber Crimes,35.0
@@ -909,11 +909,11 @@ Year,District,Crime,Cases
 2022,Chandrapur,Fraud,46.0
 2022,Chandrapur,Offences under IT Act,12.0
 2022,Chandrapur,All Cyber Crimes,78.0
-2022,Chhatrapati Sambhaji Nagar,Violation of Privacy,0.0
-2022,Chhatrapati Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,27.0
-2022,Chhatrapati Sambhaji Nagar,Fraud,26.0
-2022,Chhatrapati Sambhaji Nagar,Offences under IT Act,28.0
-2022,Chhatrapati Sambhaji Nagar,All Cyber Crimes,153.0
+2022,Chh. Sambhaji Nagar,Violation of Privacy,0.0
+2022,Chh. Sambhaji Nagar,Cyber-Stalking/Bullying of Women/Children,27.0
+2022,Chh. Sambhaji Nagar,Fraud,26.0
+2022,Chh. Sambhaji Nagar,Offences under IT Act,28.0
+2022,Chh. Sambhaji Nagar,All Cyber Crimes,153.0
 2022,Dharashiv,Violation of Privacy,0.0
 2022,Dharashiv,Cyber-Stalking/Bullying of Women/Children,1.0
 2022,Dharashiv,Fraud,6.0
@@ -959,11 +959,11 @@ Year,District,Crime,Cases
 2022,Latur,Fraud,23.0
 2022,Latur,Offences under IT Act,11.0
 2022,Latur,All Cyber Crimes,47.0
-2022,Mumbai City,Violation of Privacy,1.0
-2022,Mumbai City,Cyber-Stalking/Bullying of Women/Children,234.0
-2022,Mumbai City,Fraud,1073.0
-2022,Mumbai City,Offences under IT Act,31.0
-2022,Mumbai City,All Cyber Crimes,4752.0
+2022,Mumbai,Violation of Privacy,1.0
+2022,Mumbai,Cyber-Stalking/Bullying of Women/Children,234.0
+2022,Mumbai,Fraud,1073.0
+2022,Mumbai,Offences under IT Act,31.0
+2022,Mumbai,All Cyber Crimes,4752.0
 2022,Nagpur,Violation of Privacy,0.0
 2022,Nagpur,Cyber-Stalking/Bullying of Women/Children,22.0
 2022,Nagpur,Fraud,40.0
@@ -979,11 +979,11 @@ Year,District,Crime,Cases
 2022,Nandurbar,Fraud,6.0
 2022,Nandurbar,Offences under IT Act,0.0
 2022,Nandurbar,All Cyber Crimes,21.0
-2022,Nasik,Violation of Privacy,1.0
-2022,Nasik,Cyber-Stalking/Bullying of Women/Children,8.0
-2022,Nasik,Fraud,22.0
-2022,Nasik,Offences under IT Act,4.0
-2022,Nasik,All Cyber Crimes,81.0
+2022,Nashik,Violation of Privacy,1.0
+2022,Nashik,Cyber-Stalking/Bullying of Women/Children,8.0
+2022,Nashik,Fraud,22.0
+2022,Nashik,Offences under IT Act,4.0
+2022,Nashik,All Cyber Crimes,81.0
 2022,Palghar,Violation of Privacy,0.0
 2022,Palghar,Cyber-Stalking/Bullying of Women/Children,3.0
 2022,Palghar,Fraud,3.0

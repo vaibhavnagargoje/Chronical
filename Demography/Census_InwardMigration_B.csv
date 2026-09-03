@@ -1,6 +1,6 @@
 Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rural Female,Urban Population,Urban Male,Urban Female
-1991,Greater Bombay,Within the state of enumeration,7746044,4186545,3559499,0,0,0,7746044,4186545,3559499
-1991,Greater Bombay,States in India beyond the state of enumeration,2095697,1228610,867087,0,0,0,2095697,1228610,867087
+1991,Mumbai,Within the state of enumeration,7746044,4186545,3559499,0,0,0,7746044,4186545,3559499
+1991,Mumbai,States in India beyond the state of enumeration,2095697,1228610,867087,0,0,0,2095697,1228610,867087
 1991,Thane,Within the state of enumeration,4684814,2447539,2237275,1803764,918824,884940,2881050,1528715,1352335
 1991,Thane,States in India beyond the state of enumeration,540302,332935,207367,49545,29585,19960,490757,303350,187407
 1991,Raigad,Within the state of enumeration,1749492,863129,886363,1457758,712230,745528,291734,150899,140835
@@ -27,8 +27,8 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 1991,Solapur,States in India beyond the state of enumeration,112533,41538,70995,49420,15300,34120,63113,26238,36875
 1991,Kolhapur,Within the state of enumeration,2777143,1439984,1337159,2085635,1074968,1010667,691508,365016,326492
 1991,Kolhapur,States in India beyond the state of enumeration,209914,83468,126446,116750,38530,78220,93164,44938,48226
-1991,Chhatrapati Sambhaji Nagar,Within the state of enumeration,2194689,1142313,1052376,1484896,764936,719960,709793,377377,332416
-1991,Chhatrapati Sambhaji Nagar,States in India beyond the state of enumeration,18210,8890,9320,3580,1810,1770,14630,7080,7550
+1991,Chh. Sambhaji Nagar,Within the state of enumeration,2194689,1142313,1052376,1484896,764936,719960,709793,377377,332416
+1991,Chh. Sambhaji Nagar,States in India beyond the state of enumeration,18210,8890,9320,3580,1810,1770,14630,7080,7550
 1991,Jalna,Within the state of enumeration,1358097,693828,664269,1132489,576880,555609,225608,116948,108660
 1991,Jalna,States in India beyond the state of enumeration,6040,2830,3210,1120,390,730,4920,2440,2480
 1991,Parbhani,Within the state of enumeration,2103995,1078254,1025741,1637066,834946,802120,466929,243308,223621
@@ -41,8 +41,8 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 1991,Dharashiv,States in India beyond the state of enumeration,16810,4710,12100,10460,1870,8590,6350,2840,3510
 1991,Latur,Within the state of enumeration,1638131,853583,784548,1311404,679797,631607,326727,173786,152941
 1991,Latur,States in India beyond the state of enumeration,37969,9329,28640,23069,3119,19950,14900,6210,8690
-1991,Buldana,Within the state of enumeration,1864269,956387,907882,1485924,759667,726257,378345,196720,181625
-1991,Buldana,States in India beyond the state of enumeration,19970,8630,11340,11040,4980,6060,8930,3650,5280
+1991,Buldhana,Within the state of enumeration,1864269,956387,907882,1485924,759667,726257,378345,196720,181625
+1991,Buldhana,States in India beyond the state of enumeration,19970,8630,11340,11040,4980,6060,8930,3650,5280
 1991,Akola,Within the state of enumeration,2185890,1129328,1056562,1572760,809677,763083,613130,319651,293479
 1991,Akola,States in India beyond the state of enumeration,24991,11110,13881,6520,2870,3650,18471,8240,10231
 1991,Amravati,Within the state of enumeration,2150047,1115554,1034493,1450988,750824,700164,699059,364730,334329
@@ -95,16 +95,16 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 2001,Parbhani,States in India beyond the state of enumeration,7283,3259,4024,1116,455,661,6167,2804,3363
 2001,Jalna,Within the state of enumeration,1606158,823965,782193,1301907,666104,635803,304251,157861,146390
 2001,Jalna,States in India beyond the state of enumeration,6658,2833,3825,3154,1300,1854,3504,1533,1971
-2001,Chhatrapati Sambhaji Nagar,Within the state of enumeration,2845347,1477405,1367942,1800060,929094,870966,1045287,548311,496976
-2001,Chhatrapati Sambhaji Nagar,States in India beyond the state of enumeration,50476,27261,23215,9585,5586,3999,40891,21675,19216
+2001,Chh. Sambhaji Nagar,Within the state of enumeration,2845347,1477405,1367942,1800060,929094,870966,1045287,548311,496976
+2001,Chh. Sambhaji Nagar,States in India beyond the state of enumeration,50476,27261,23215,9585,5586,3999,40891,21675,19216
 2001,Nashik,Within the state of enumeration,4827475,2496162,2331313,3027691,1555384,1472307,1799784,940778,859006
 2001,Nashik,States in India beyond the state of enumeration,161677,91980,69697,28120,15525,12595,133557,76455,57102
 2001,Thane,Within the state of enumeration,6339847,3269262,3070585,2108551,1066723,1041828,4231296,2202539,2028757
 2001,Thane,States in India beyond the state of enumeration,1745551,1082485,663066,118778,79927,38851,1626773,1002558,624215
 2001,Mumbai Suburban,Within the state of enumeration,6175101,3236589,2938512,0,0,0,6175101,3236589,2938512
 2001,Mumbai Suburban,States in India beyond the state of enumeration,2409402,1473720,935682,0,0,0,2409402,1473720,935682
-2001,Mumbai City,Within the state of enumeration,2557406,1377625,1179781,0,0,0,2557406,1377625,1179781
-2001,Mumbai City,States in India beyond the state of enumeration,762326,490830,271496,0,0,0,762326,490830,271496
+2001,Mumbai,Within the state of enumeration,2557406,1377625,1179781,0,0,0,2557406,1377625,1179781
+2001,Mumbai,States in India beyond the state of enumeration,762326,490830,271496,0,0,0,762326,490830,271496
 2001,Raigad,Within the state of enumeration,2059144,1024924,1034220,1611092,793183,817909,448052,231741,216311
 2001,Raigad,States in India beyond the state of enumeration,145690,90572,55118,60536,39733,20803,85154,50839,34315
 2001,Pune,Within the state of enumeration,6641678,3431546,3210132,2972979,1519671,1453308,3668699,1911875,1756824
@@ -135,8 +135,8 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 2011,Dhule,States in India beyond the state of enumeration,70855,26952,43903,45170,16137,29033,25685,10815,14870
 2011,Jalgaon,Within the state of enumeration,4059491,2127365,1932126,2792357,1462929,1329428,1267134,664436,602698
 2011,Jalgaon,States in India beyond the state of enumeration,166079,67832,98247,93069,36748,56321,73010,31084,41926
-2011,Buldana,Within the state of enumeration,2557013,1325287,1231726,2021104,1048214,972890,535909,277073,258836
-2011,Buldana,States in India beyond the state of enumeration,28333,11891,16442,15781,6823,8958,12552,5068,7484
+2011,Buldhana,Within the state of enumeration,2557013,1325287,1231726,2021104,1048214,972890,535909,277073,258836
+2011,Buldhana,States in India beyond the state of enumeration,28333,11891,16442,15781,6823,8958,12552,5068,7484
 2011,Akola,Within the state of enumeration,1784540,920572,863968,1087051,560971,526080,697489,359601,337888
 2011,Akola,States in India beyond the state of enumeration,28175,11214,16961,6716,2780,3936,21459,8434,13025
 2011,Washim,Within the state of enumeration,1190426,617310,573116,982217,510010,472207,208209,107300,100909
@@ -165,8 +165,8 @@ Year,District,Birth Place,Population,Male,Female,Rural Population,Rural Male,Rur
 2011,Parbhani,States in India beyond the state of enumeration,8603,3383,5220,1395,438,957,7208,2945,4263
 2011,Jalna,Within the state of enumeration,1946219,1005362,940857,1578554,815808,762746,367665,189554,178111
 2011,Jalna,States in India beyond the state of enumeration,12146,5827,6319,2685,1342,1343,9461,4485,4976
-2011,Chhatrapati Sambhaji Nagar,Within the state of enumeration,3632207,1888989,1743218,2072575,1077527,995048,1559632,811462,748170
-2011,Chhatrapati Sambhaji Nagar,States in India beyond the state of enumeration,66674,34253,32421,7851,3976,3875,58823,30277,28546
+2011,Chh. Sambhaji Nagar,Within the state of enumeration,3632207,1888989,1743218,2072575,1077527,995048,1559632,811462,748170
+2011,Chh. Sambhaji Nagar,States in India beyond the state of enumeration,66674,34253,32421,7851,3976,3875,58823,30277,28546
 2011,Nashik,Within the state of enumeration,5884117,3038331,2845786,3473291,1788206,1685085,2410826,1250125,1160701
 2011,Nashik,States in India beyond the state of enumeration,216074,115188,100886,34524,15545,18979,181550,99643,81907
 2011,Thane,Within the state of enumeration,8488311,4362993,4125318,2393727,1208593,1185134,6094584,3154400,2940184

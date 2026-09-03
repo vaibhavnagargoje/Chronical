@@ -1,16 +1,16 @@
 Year,District,Month,Crash Type,Number of Crashes
-2018,Ahmednagar,January,Fatal Crashes,77
-2018,Ahmednagar,February,Fatal Crashes,73
-2018,Ahmednagar,March,Fatal Crashes,61
-2018,Ahmednagar,April,Fatal Crashes,68
-2018,Ahmednagar,May,Fatal Crashes,88
-2018,Ahmednagar,June,Fatal Crashes,69
-2018,Ahmednagar,July,Fatal Crashes,65
-2018,Ahmednagar,August,Fatal Crashes,57
-2018,Ahmednagar,September,Fatal Crashes,59
-2018,Ahmednagar,October,Fatal Crashes,72
-2018,Ahmednagar,November,Fatal Crashes,72
-2018,Ahmednagar,December,Fatal Crashes,94
+2018,Ahilyanagar,January,Fatal Crashes,77
+2018,Ahilyanagar,February,Fatal Crashes,73
+2018,Ahilyanagar,March,Fatal Crashes,61
+2018,Ahilyanagar,April,Fatal Crashes,68
+2018,Ahilyanagar,May,Fatal Crashes,88
+2018,Ahilyanagar,June,Fatal Crashes,69
+2018,Ahilyanagar,July,Fatal Crashes,65
+2018,Ahilyanagar,August,Fatal Crashes,57
+2018,Ahilyanagar,September,Fatal Crashes,59
+2018,Ahilyanagar,October,Fatal Crashes,72
+2018,Ahilyanagar,November,Fatal Crashes,72
+2018,Ahilyanagar,December,Fatal Crashes,94
 2018,Akola,January,Fatal Crashes,15
 2018,Akola,February,Fatal Crashes,24
 2018,Akola,March,Fatal Crashes,13
@@ -35,18 +35,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2018,Amravati,October,Fatal Crashes,22
 2018,Amravati,November,Fatal Crashes,36
 2018,Amravati,December,Fatal Crashes,34
-2018,Aurangabad,January,Fatal Crashes,53
-2018,Aurangabad,February,Fatal Crashes,51
-2018,Aurangabad,March,Fatal Crashes,44
-2018,Aurangabad,April,Fatal Crashes,43
-2018,Aurangabad,May,Fatal Crashes,57
-2018,Aurangabad,June,Fatal Crashes,56
-2018,Aurangabad,July,Fatal Crashes,44
-2018,Aurangabad,August,Fatal Crashes,29
-2018,Aurangabad,September,Fatal Crashes,39
-2018,Aurangabad,October,Fatal Crashes,40
-2018,Aurangabad,November,Fatal Crashes,50
-2018,Aurangabad,December,Fatal Crashes,38
+2018,Chh. Sambhaji Nagar,January,Fatal Crashes,53
+2018,Chh. Sambhaji Nagar,February,Fatal Crashes,51
+2018,Chh. Sambhaji Nagar,March,Fatal Crashes,44
+2018,Chh. Sambhaji Nagar,April,Fatal Crashes,43
+2018,Chh. Sambhaji Nagar,May,Fatal Crashes,57
+2018,Chh. Sambhaji Nagar,June,Fatal Crashes,56
+2018,Chh. Sambhaji Nagar,July,Fatal Crashes,44
+2018,Chh. Sambhaji Nagar,August,Fatal Crashes,29
+2018,Chh. Sambhaji Nagar,September,Fatal Crashes,39
+2018,Chh. Sambhaji Nagar,October,Fatal Crashes,40
+2018,Chh. Sambhaji Nagar,November,Fatal Crashes,50
+2018,Chh. Sambhaji Nagar,December,Fatal Crashes,38
 2018,Beed,January,Fatal Crashes,35
 2018,Beed,February,Fatal Crashes,29
 2018,Beed,March,Fatal Crashes,26
@@ -251,18 +251,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2018,Nashik,October,Fatal Crashes,74
 2018,Nashik,November,Fatal Crashes,86
 2018,Nashik,December,Fatal Crashes,86
-2018,Osmanabad,January,Fatal Crashes,26
-2018,Osmanabad,February,Fatal Crashes,27
-2018,Osmanabad,March,Fatal Crashes,27
-2018,Osmanabad,April,Fatal Crashes,30
-2018,Osmanabad,May,Fatal Crashes,33
-2018,Osmanabad,June,Fatal Crashes,29
-2018,Osmanabad,July,Fatal Crashes,24
-2018,Osmanabad,August,Fatal Crashes,23
-2018,Osmanabad,September,Fatal Crashes,18
-2018,Osmanabad,October,Fatal Crashes,27
-2018,Osmanabad,November,Fatal Crashes,20
-2018,Osmanabad,December,Fatal Crashes,33
+2018,Dharashiv,January,Fatal Crashes,26
+2018,Dharashiv,February,Fatal Crashes,27
+2018,Dharashiv,March,Fatal Crashes,27
+2018,Dharashiv,April,Fatal Crashes,30
+2018,Dharashiv,May,Fatal Crashes,33
+2018,Dharashiv,June,Fatal Crashes,29
+2018,Dharashiv,July,Fatal Crashes,24
+2018,Dharashiv,August,Fatal Crashes,23
+2018,Dharashiv,September,Fatal Crashes,18
+2018,Dharashiv,October,Fatal Crashes,27
+2018,Dharashiv,November,Fatal Crashes,20
+2018,Dharashiv,December,Fatal Crashes,33
 2018,Palghar,January,Fatal Crashes,49
 2018,Palghar,February,Fatal Crashes,53
 2018,Palghar,March,Fatal Crashes,37
@@ -419,18 +419,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2018,Yavatmal,October,Fatal Crashes,31
 2018,Yavatmal,November,Fatal Crashes,21
 2018,Yavatmal,December,Fatal Crashes,43
-2020,Ahmednagar,January,Fatal Crashes,58
-2020,Ahmednagar,February,Fatal Crashes,76
-2020,Ahmednagar,March,Fatal Crashes,58
-2020,Ahmednagar,April,Fatal Crashes,22
-2020,Ahmednagar,May,Fatal Crashes,34
-2020,Ahmednagar,June,Fatal Crashes,60
-2020,Ahmednagar,July,Fatal Crashes,48
-2020,Ahmednagar,August,Fatal Crashes,41
-2020,Ahmednagar,September,Fatal Crashes,55
-2020,Ahmednagar,October,Fatal Crashes,47
-2020,Ahmednagar,November,Fatal Crashes,58
-2020,Ahmednagar,December,Fatal Crashes,54
+2020,Ahilyanagar,January,Fatal Crashes,58
+2020,Ahilyanagar,February,Fatal Crashes,76
+2020,Ahilyanagar,March,Fatal Crashes,58
+2020,Ahilyanagar,April,Fatal Crashes,22
+2020,Ahilyanagar,May,Fatal Crashes,34
+2020,Ahilyanagar,June,Fatal Crashes,60
+2020,Ahilyanagar,July,Fatal Crashes,48
+2020,Ahilyanagar,August,Fatal Crashes,41
+2020,Ahilyanagar,September,Fatal Crashes,55
+2020,Ahilyanagar,October,Fatal Crashes,47
+2020,Ahilyanagar,November,Fatal Crashes,58
+2020,Ahilyanagar,December,Fatal Crashes,54
 2020,Akola,January,Fatal Crashes,7
 2020,Akola,February,Fatal Crashes,8
 2020,Akola,March,Fatal Crashes,16
@@ -455,18 +455,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2020,Amravati,October,Fatal Crashes,39
 2020,Amravati,November,Fatal Crashes,37
 2020,Amravati,December,Fatal Crashes,60
-2020,Aurangabad,January,Fatal Crashes,45
-2020,Aurangabad,February,Fatal Crashes,32
-2020,Aurangabad,March,Fatal Crashes,31
-2020,Aurangabad,April,Fatal Crashes,10
-2020,Aurangabad,May,Fatal Crashes,13
-2020,Aurangabad,June,Fatal Crashes,32
-2020,Aurangabad,July,Fatal Crashes,22
-2020,Aurangabad,August,Fatal Crashes,33
-2020,Aurangabad,September,Fatal Crashes,36
-2020,Aurangabad,October,Fatal Crashes,46
-2020,Aurangabad,November,Fatal Crashes,34
-2020,Aurangabad,December,Fatal Crashes,41
+2020,Chh. Sambhaji Nagar,January,Fatal Crashes,45
+2020,Chh. Sambhaji Nagar,February,Fatal Crashes,32
+2020,Chh. Sambhaji Nagar,March,Fatal Crashes,31
+2020,Chh. Sambhaji Nagar,April,Fatal Crashes,10
+2020,Chh. Sambhaji Nagar,May,Fatal Crashes,13
+2020,Chh. Sambhaji Nagar,June,Fatal Crashes,32
+2020,Chh. Sambhaji Nagar,July,Fatal Crashes,22
+2020,Chh. Sambhaji Nagar,August,Fatal Crashes,33
+2020,Chh. Sambhaji Nagar,September,Fatal Crashes,36
+2020,Chh. Sambhaji Nagar,October,Fatal Crashes,46
+2020,Chh. Sambhaji Nagar,November,Fatal Crashes,34
+2020,Chh. Sambhaji Nagar,December,Fatal Crashes,41
 2020,Beed,January,Fatal Crashes,33
 2020,Beed,February,Fatal Crashes,16
 2020,Beed,March,Fatal Crashes,20
@@ -671,18 +671,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2020,Nashik,October,Fatal Crashes,94
 2020,Nashik,November,Fatal Crashes,92
 2020,Nashik,December,Fatal Crashes,126
-2020,Osmanabad,January,Fatal Crashes,26
-2020,Osmanabad,February,Fatal Crashes,24
-2020,Osmanabad,March,Fatal Crashes,32
-2020,Osmanabad,April,Fatal Crashes,32
-2020,Osmanabad,May,Fatal Crashes,6
-2020,Osmanabad,June,Fatal Crashes,13
-2020,Osmanabad,July,Fatal Crashes,15
-2020,Osmanabad,August,Fatal Crashes,14
-2020,Osmanabad,September,Fatal Crashes,22
-2020,Osmanabad,October,Fatal Crashes,19
-2020,Osmanabad,November,Fatal Crashes,37
-2020,Osmanabad,December,Fatal Crashes,29
+2020,Dharashiv,January,Fatal Crashes,26
+2020,Dharashiv,February,Fatal Crashes,24
+2020,Dharashiv,March,Fatal Crashes,32
+2020,Dharashiv,April,Fatal Crashes,32
+2020,Dharashiv,May,Fatal Crashes,6
+2020,Dharashiv,June,Fatal Crashes,13
+2020,Dharashiv,July,Fatal Crashes,15
+2020,Dharashiv,August,Fatal Crashes,14
+2020,Dharashiv,September,Fatal Crashes,22
+2020,Dharashiv,October,Fatal Crashes,19
+2020,Dharashiv,November,Fatal Crashes,37
+2020,Dharashiv,December,Fatal Crashes,29
 2020,Palghar,January,Fatal Crashes,45
 2020,Palghar,February,Fatal Crashes,38
 2020,Palghar,March,Fatal Crashes,37
@@ -839,18 +839,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2020,Yavatmal,October,Fatal Crashes,30
 2020,Yavatmal,November,Fatal Crashes,34
 2020,Yavatmal,December,Fatal Crashes,41
-2018,Ahmednagar,January,Grievous Crashes,66
-2018,Ahmednagar,February,Grievous Crashes,82
-2018,Ahmednagar,March,Grievous Crashes,58
-2018,Ahmednagar,April,Grievous Crashes,41
-2018,Ahmednagar,May,Grievous Crashes,59
-2018,Ahmednagar,June,Grievous Crashes,68
-2018,Ahmednagar,July,Grievous Crashes,43
-2018,Ahmednagar,August,Grievous Crashes,44
-2018,Ahmednagar,September,Grievous Crashes,48
-2018,Ahmednagar,October,Grievous Crashes,81
-2018,Ahmednagar,November,Grievous Crashes,66
-2018,Ahmednagar,December,Grievous Crashes,60
+2018,Ahilyanagar,January,Grievous Crashes,66
+2018,Ahilyanagar,February,Grievous Crashes,82
+2018,Ahilyanagar,March,Grievous Crashes,58
+2018,Ahilyanagar,April,Grievous Crashes,41
+2018,Ahilyanagar,May,Grievous Crashes,59
+2018,Ahilyanagar,June,Grievous Crashes,68
+2018,Ahilyanagar,July,Grievous Crashes,43
+2018,Ahilyanagar,August,Grievous Crashes,44
+2018,Ahilyanagar,September,Grievous Crashes,48
+2018,Ahilyanagar,October,Grievous Crashes,81
+2018,Ahilyanagar,November,Grievous Crashes,66
+2018,Ahilyanagar,December,Grievous Crashes,60
 2018,Akola,January,Grievous Crashes,6
 2018,Akola,February,Grievous Crashes,11
 2018,Akola,March,Grievous Crashes,12
@@ -875,18 +875,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2018,Amravati,October,Grievous Crashes,33
 2018,Amravati,November,Grievous Crashes,18
 2018,Amravati,December,Grievous Crashes,29
-2018,Aurangabad,January,Grievous Crashes,72
-2018,Aurangabad,February,Grievous Crashes,63
-2018,Aurangabad,March,Grievous Crashes,75
-2018,Aurangabad,April,Grievous Crashes,67
-2018,Aurangabad,May,Grievous Crashes,89
-2018,Aurangabad,June,Grievous Crashes,59
-2018,Aurangabad,July,Grievous Crashes,47
-2018,Aurangabad,August,Grievous Crashes,90
-2018,Aurangabad,September,Grievous Crashes,54
-2018,Aurangabad,October,Grievous Crashes,81
-2018,Aurangabad,November,Grievous Crashes,60
-2018,Aurangabad,December,Grievous Crashes,73
+2018,Chh. Sambhaji Nagar,January,Grievous Crashes,72
+2018,Chh. Sambhaji Nagar,February,Grievous Crashes,63
+2018,Chh. Sambhaji Nagar,March,Grievous Crashes,75
+2018,Chh. Sambhaji Nagar,April,Grievous Crashes,67
+2018,Chh. Sambhaji Nagar,May,Grievous Crashes,89
+2018,Chh. Sambhaji Nagar,June,Grievous Crashes,59
+2018,Chh. Sambhaji Nagar,July,Grievous Crashes,47
+2018,Chh. Sambhaji Nagar,August,Grievous Crashes,90
+2018,Chh. Sambhaji Nagar,September,Grievous Crashes,54
+2018,Chh. Sambhaji Nagar,October,Grievous Crashes,81
+2018,Chh. Sambhaji Nagar,November,Grievous Crashes,60
+2018,Chh. Sambhaji Nagar,December,Grievous Crashes,73
 2018,Beed,January,Grievous Crashes,45
 2018,Beed,February,Grievous Crashes,20
 2018,Beed,March,Grievous Crashes,18
@@ -1091,18 +1091,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2018,Nashik,October,Grievous Crashes,93
 2018,Nashik,November,Grievous Crashes,75
 2018,Nashik,December,Grievous Crashes,80
-2018,Osmanabad,January,Grievous Crashes,31
-2018,Osmanabad,February,Grievous Crashes,60
-2018,Osmanabad,March,Grievous Crashes,63
-2018,Osmanabad,April,Grievous Crashes,74
-2018,Osmanabad,May,Grievous Crashes,55
-2018,Osmanabad,June,Grievous Crashes,42
-2018,Osmanabad,July,Grievous Crashes,35
-2018,Osmanabad,August,Grievous Crashes,67
-2018,Osmanabad,September,Grievous Crashes,37
-2018,Osmanabad,October,Grievous Crashes,67
-2018,Osmanabad,November,Grievous Crashes,49
-2018,Osmanabad,December,Grievous Crashes,43
+2018,Dharashiv,January,Grievous Crashes,31
+2018,Dharashiv,February,Grievous Crashes,60
+2018,Dharashiv,March,Grievous Crashes,63
+2018,Dharashiv,April,Grievous Crashes,74
+2018,Dharashiv,May,Grievous Crashes,55
+2018,Dharashiv,June,Grievous Crashes,42
+2018,Dharashiv,July,Grievous Crashes,35
+2018,Dharashiv,August,Grievous Crashes,67
+2018,Dharashiv,September,Grievous Crashes,37
+2018,Dharashiv,October,Grievous Crashes,67
+2018,Dharashiv,November,Grievous Crashes,49
+2018,Dharashiv,December,Grievous Crashes,43
 2018,Palghar,January,Grievous Crashes,40
 2018,Palghar,February,Grievous Crashes,52
 2018,Palghar,March,Grievous Crashes,39
@@ -1259,18 +1259,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2018,Yavatmal,October,Grievous Crashes,19
 2018,Yavatmal,November,Grievous Crashes,24
 2018,Yavatmal,December,Grievous Crashes,17
-2020,Ahmednagar,January,Grievous Crashes,59
-2020,Ahmednagar,February,Grievous Crashes,58
-2020,Ahmednagar,March,Grievous Crashes,46
-2020,Ahmednagar,April,Grievous Crashes,12
-2020,Ahmednagar,May,Grievous Crashes,28
-2020,Ahmednagar,June,Grievous Crashes,36
-2020,Ahmednagar,July,Grievous Crashes,45
-2020,Ahmednagar,August,Grievous Crashes,29
-2020,Ahmednagar,September,Grievous Crashes,45
-2020,Ahmednagar,October,Grievous Crashes,42
-2020,Ahmednagar,November,Grievous Crashes,43
-2020,Ahmednagar,December,Grievous Crashes,46
+2020,Ahilyanagar,January,Grievous Crashes,59
+2020,Ahilyanagar,February,Grievous Crashes,58
+2020,Ahilyanagar,March,Grievous Crashes,46
+2020,Ahilyanagar,April,Grievous Crashes,12
+2020,Ahilyanagar,May,Grievous Crashes,28
+2020,Ahilyanagar,June,Grievous Crashes,36
+2020,Ahilyanagar,July,Grievous Crashes,45
+2020,Ahilyanagar,August,Grievous Crashes,29
+2020,Ahilyanagar,September,Grievous Crashes,45
+2020,Ahilyanagar,October,Grievous Crashes,42
+2020,Ahilyanagar,November,Grievous Crashes,43
+2020,Ahilyanagar,December,Grievous Crashes,46
 2020,Akola,January,Grievous Crashes,9
 2020,Akola,February,Grievous Crashes,7
 2020,Akola,March,Grievous Crashes,8
@@ -1295,18 +1295,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2020,Amravati,October,Grievous Crashes,23
 2020,Amravati,November,Grievous Crashes,21
 2020,Amravati,December,Grievous Crashes,17
-2020,Aurangabad,January,Grievous Crashes,50
-2020,Aurangabad,February,Grievous Crashes,40
-2020,Aurangabad,March,Grievous Crashes,22
-2020,Aurangabad,April,Grievous Crashes,4
-2020,Aurangabad,May,Grievous Crashes,5
-2020,Aurangabad,June,Grievous Crashes,15
-2020,Aurangabad,July,Grievous Crashes,14
-2020,Aurangabad,August,Grievous Crashes,28
-2020,Aurangabad,September,Grievous Crashes,40
-2020,Aurangabad,October,Grievous Crashes,43
-2020,Aurangabad,November,Grievous Crashes,30
-2020,Aurangabad,December,Grievous Crashes,49
+2020,Chh. Sambhaji Nagar,January,Grievous Crashes,50
+2020,Chh. Sambhaji Nagar,February,Grievous Crashes,40
+2020,Chh. Sambhaji Nagar,March,Grievous Crashes,22
+2020,Chh. Sambhaji Nagar,April,Grievous Crashes,4
+2020,Chh. Sambhaji Nagar,May,Grievous Crashes,5
+2020,Chh. Sambhaji Nagar,June,Grievous Crashes,15
+2020,Chh. Sambhaji Nagar,July,Grievous Crashes,14
+2020,Chh. Sambhaji Nagar,August,Grievous Crashes,28
+2020,Chh. Sambhaji Nagar,September,Grievous Crashes,40
+2020,Chh. Sambhaji Nagar,October,Grievous Crashes,43
+2020,Chh. Sambhaji Nagar,November,Grievous Crashes,30
+2020,Chh. Sambhaji Nagar,December,Grievous Crashes,49
 2020,Beed,January,Grievous Crashes,23
 2020,Beed,February,Grievous Crashes,27
 2020,Beed,March,Grievous Crashes,18
@@ -1511,18 +1511,18 @@ Year,District,Month,Crash Type,Number of Crashes
 2020,Nashik,October,Grievous Crashes,65
 2020,Nashik,November,Grievous Crashes,77
 2020,Nashik,December,Grievous Crashes,62
-2020,Osmanabad,January,Grievous Crashes,20
-2020,Osmanabad,February,Grievous Crashes,29
-2020,Osmanabad,March,Grievous Crashes,14
-2020,Osmanabad,April,Grievous Crashes,14
-2020,Osmanabad,May,Grievous Crashes,3
-2020,Osmanabad,June,Grievous Crashes,7
-2020,Osmanabad,July,Grievous Crashes,15
-2020,Osmanabad,August,Grievous Crashes,9
-2020,Osmanabad,September,Grievous Crashes,11
-2020,Osmanabad,October,Grievous Crashes,6
-2020,Osmanabad,November,Grievous Crashes,27
-2020,Osmanabad,December,Grievous Crashes,31
+2020,Dharashiv,January,Grievous Crashes,20
+2020,Dharashiv,February,Grievous Crashes,29
+2020,Dharashiv,March,Grievous Crashes,14
+2020,Dharashiv,April,Grievous Crashes,14
+2020,Dharashiv,May,Grievous Crashes,3
+2020,Dharashiv,June,Grievous Crashes,7
+2020,Dharashiv,July,Grievous Crashes,15
+2020,Dharashiv,August,Grievous Crashes,9
+2020,Dharashiv,September,Grievous Crashes,11
+2020,Dharashiv,October,Grievous Crashes,6
+2020,Dharashiv,November,Grievous Crashes,27
+2020,Dharashiv,December,Grievous Crashes,31
 2020,Palghar,January,Grievous Crashes,33
 2020,Palghar,February,Grievous Crashes,29
 2020,Palghar,March,Grievous Crashes,26

@@ -1,8 +1,8 @@
 Year,District,No. of accidents,Males Grievously Injured,Females Grievously Injured,Total Grievously Injured
-2018,Ahmednagar,523,624,92,716
+2018,Ahilyanagar,523,624,92,716
 2018,Akola,70,101,12,113
 2018,Amravati,188,224,60,284
-2018,Aurangabad,517,706,124,830
+2018,Chh. Sambhaji Nagar,517,706,124,830
 2018,Beed,244,282,28,310
 2018,Bhandara,113,181,38,219
 2018,Buldhana,124,196,42,238
@@ -20,7 +20,7 @@ Year,District,No. of accidents,Males Grievously Injured,Females Grievously Injur
 2018,Nanded,295,375,82,457
 2018,Nandurbar,110,294,36,330
 2018,Nashik,740,1078,240,1318
-2018,Osmanabad,274,520,103,623
+2018,Dharashiv,274,520,103,623
 2018,Palghar,349,447,89,536
 2018,Parbhani,145,185,19,204
 2018,Pune,1403,1573,363,1936
@@ -34,10 +34,10 @@ Year,District,No. of accidents,Males Grievously Injured,Females Grievously Injur
 2018,Wardha,105,227,24,251
 2018,Washim,52,67,11,78
 2018,Yavatmal,147,195,37,232
-2020,Ahmednagar,192,314,37,351
+2020,Ahilyanagar,192,314,37,351
 2020,Akola,82,126,11,137
 2020,Amravati,242,311,50,361
-2020,Aurangabad,518,568,102,670
+2020,Chh. Sambhaji Nagar,518,568,102,670
 2020,Beed,158,316,0,316
 2020,Bhandara,251,309,72,381
 2020,Buldhana,116,135,15,150
@@ -55,7 +55,7 @@ Year,District,No. of accidents,Males Grievously Injured,Females Grievously Injur
 2020,Nanded,204,284,43,327
 2020,Nandurbar,219,352,37,389
 2020,Nashik,427,649,178,827
-2020,Osmanabad,89,89,12,101
+2020,Dharashiv,89,89,12,101
 2020,Palghar,54,68,10,78
 2020,Parbhani,234,269,40,309
 2020,Pune,353,514,87,601

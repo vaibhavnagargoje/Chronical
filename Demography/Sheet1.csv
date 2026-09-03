@@ -215,18 +215,18 @@ Year,District,Rural/Urban,Location,Tap,Handpump,Tubewell,Well,All Others
 2001,Jalna,Urban,Within Premises,25504,2264,4588,310,209
 2001,Jalna,Urban,Near Premises,4016,3440,456,728,615
 2001,Jalna,Urban,Away,1785,2250,735,527,1697
-2001,Chhatrapati Sambhaji Nagar,Total,Total,326990,80650,11988,95885,10642
-2001,Chhatrapati Sambhaji Nagar,Total,Within Premises,240371,20689,5191,25214,965
-2001,Chhatrapati Sambhaji Nagar,Total,Near Premises,72118,47356,4185,41715,3978
-2001,Chhatrapati Sambhaji Nagar,Total,Away,14501,12605,2612,28956,5699
-2001,Chhatrapati Sambhaji Nagar,Rural,Total,164787,64071,8536,92842,4587
-2001,Chhatrapati Sambhaji Nagar,Rural,Within Premises,99094,12631,2543,24138,348
-2001,Chhatrapati Sambhaji Nagar,Rural,Near Premises,55633,41390,3746,40847,1865
-2001,Chhatrapati Sambhaji Nagar,Rural,Away,10060,10050,2247,27857,2374
-2001,Chhatrapati Sambhaji Nagar,Urban,Total,162203,16579,3452,3043,6055
-2001,Chhatrapati Sambhaji Nagar,Urban,Within Premises,141277,8058,2648,1076,617
-2001,Chhatrapati Sambhaji Nagar,Urban,Near Premises,16485,5966,439,868,2113
-2001,Chhatrapati Sambhaji Nagar,Urban,Away,4441,2555,365,1099,3325
+2001,Chh. Sambhaji Nagar,Total,Total,326990,80650,11988,95885,10642
+2001,Chh. Sambhaji Nagar,Total,Within Premises,240371,20689,5191,25214,965
+2001,Chh. Sambhaji Nagar,Total,Near Premises,72118,47356,4185,41715,3978
+2001,Chh. Sambhaji Nagar,Total,Away,14501,12605,2612,28956,5699
+2001,Chh. Sambhaji Nagar,Rural,Total,164787,64071,8536,92842,4587
+2001,Chh. Sambhaji Nagar,Rural,Within Premises,99094,12631,2543,24138,348
+2001,Chh. Sambhaji Nagar,Rural,Near Premises,55633,41390,3746,40847,1865
+2001,Chh. Sambhaji Nagar,Rural,Away,10060,10050,2247,27857,2374
+2001,Chh. Sambhaji Nagar,Urban,Total,162203,16579,3452,3043,6055
+2001,Chh. Sambhaji Nagar,Urban,Within Premises,141277,8058,2648,1076,617
+2001,Chh. Sambhaji Nagar,Urban,Near Premises,16485,5966,439,868,2113
+2001,Chh. Sambhaji Nagar,Urban,Away,4441,2555,365,1099,3325
 2001,Nashik,Total,Total,519734,76964,19430,235581,25049
 2001,Nashik,Total,Within Premises,387679,17711,7666,82090,2153
 2001,Nashik,Total,Near Premises,111283,46718,7951,100584,11257
@@ -263,18 +263,18 @@ Year,District,Rural/Urban,Location,Tap,Handpump,Tubewell,Well,All Others
 2001,Mumbai Suburban,Urban,Within Premises,1248091,3785,586,310,439
 2001,Mumbai Suburban,Urban,Near Premises,451842,9566,949,2568,2968
 2001,Mumbai Suburban,Urban,Away,43031,1921,1357,2517,4402
-2001,Mumbai City,Total,Total,626569,13494,437,1382,6708
-2001,Mumbai City,Total,Within Premises,489554,2732,89,39,495
-2001,Mumbai City,Total,Near Premises,125834,10188,181,426,2724
-2001,Mumbai City,Total,Away,11181,574,167,917,3489
-2001,Mumbai City,Rural,Total,0,0,0,0,0
-2001,Mumbai City,Rural,Within Premises,0,0,0,0,0
-2001,Mumbai City,Rural,Near Premises,0,0,0,0,0
-2001,Mumbai City,Rural,Away,0,0,0,0,0
-2001,Mumbai City,Urban,Total,626569,13494,437,1382,6708
-2001,Mumbai City,Urban,Within Premises,489554,2732,89,39,495
-2001,Mumbai City,Urban,Near Premises,125834,10188,181,426,2724
-2001,Mumbai City,Urban,Away,11181,574,167,917,3489
+2001,Mumbai,Total,Total,626569,13494,437,1382,6708
+2001,Mumbai,Total,Within Premises,489554,2732,89,39,495
+2001,Mumbai,Total,Near Premises,125834,10188,181,426,2724
+2001,Mumbai,Total,Away,11181,574,167,917,3489
+2001,Mumbai,Rural,Total,0,0,0,0,0
+2001,Mumbai,Rural,Within Premises,0,0,0,0,0
+2001,Mumbai,Rural,Near Premises,0,0,0,0,0
+2001,Mumbai,Rural,Away,0,0,0,0,0
+2001,Mumbai,Urban,Total,626569,13494,437,1382,6708
+2001,Mumbai,Urban,Within Premises,489554,2732,89,39,495
+2001,Mumbai,Urban,Near Premises,125834,10188,181,426,2724
+2001,Mumbai,Urban,Away,11181,574,167,917,3489
 2001,Raigad,Total,Total,267408,37489,18858,130079,17794
 2001,Raigad,Total,Within Premises,147863,6849,7990,13813,300
 2001,Raigad,Total,Near Premises,95763,22596,7212,61761,6834
@@ -446,15 +446,15 @@ Year,District,Rural/Urban,Location,Tap,Handpump,Tubewell,Well,All Others
 2011,Amravati,Urban,Away,10169,4901,529,1223,633
 2011,Amravati,Urban,Near premises,31315,10265,882,2730,1187
 2011,Amravati,Urban,Within premises,135056,1067,5002,7924,0
-2011,Chhatrapati Sambhaji Nagar,Rural,Away,15605,13283,3122,50394,5703
-2011,Chhatrapati Sambhaji Nagar,Rural,Near premises,66276,26221,6155,59649,5698
-2011,Chhatrapati Sambhaji Nagar,Rural,Within premises,118176,7719,9162,31957,0
-2011,Chhatrapati Sambhaji Nagar,Total,Away,27794,16554,6379,52272,13411
-2011,Chhatrapati Sambhaji Nagar,Total,Near premises,85414,31091,10141,62004,9361
-2011,Chhatrapati Sambhaji Nagar,Total,Within premises,346639,11136,31094,33297,0
-2011,Chhatrapati Sambhaji Nagar,Urban,Away,12189,3271,3257,1878,7708
-2011,Chhatrapati Sambhaji Nagar,Urban,Near premises,19138,4870,3986,2355,3663
-2011,Chhatrapati Sambhaji Nagar,Urban,Within premises,228463,3417,21932,1340,0
+2011,Chh. Sambhaji Nagar,Rural,Away,15605,13283,3122,50394,5703
+2011,Chh. Sambhaji Nagar,Rural,Near premises,66276,26221,6155,59649,5698
+2011,Chh. Sambhaji Nagar,Rural,Within premises,118176,7719,9162,31957,0
+2011,Chh. Sambhaji Nagar,Total,Away,27794,16554,6379,52272,13411
+2011,Chh. Sambhaji Nagar,Total,Near premises,85414,31091,10141,62004,9361
+2011,Chh. Sambhaji Nagar,Total,Within premises,346639,11136,31094,33297,0
+2011,Chh. Sambhaji Nagar,Urban,Away,12189,3271,3257,1878,7708
+2011,Chh. Sambhaji Nagar,Urban,Near premises,19138,4870,3986,2355,3663
+2011,Chh. Sambhaji Nagar,Urban,Within premises,228463,3417,21932,1340,0
 2011,Bhandara,Rural,Away,6402,24588,3492,15768,421
 2011,Bhandara,Rural,Near premises,22457,47248,5745,23933,616
 2011,Bhandara,Rural,Within premises,41553,6129,2983,21964,0
@@ -473,15 +473,15 @@ Year,District,Rural/Urban,Location,Tap,Handpump,Tubewell,Well,All Others
 2011,Beed,Urban,Away,3259,1050,2529,1149,842
 2011,Beed,Urban,Near premises,11470,1413,3118,627,1339
 2011,Beed,Urban,Within premises,62493,1098,7703,869,0
-2011,Buldana,Rural,Away,19648,26340,2483,58073,4479
-2011,Buldana,Rural,Near premises,59040,42121,3728,46994,2336
-2011,Buldana,Rural,Within premises,143937,7594,7950,20524,0
-2011,Buldana,Total,Away,25418,31240,3531,60482,6502
-2011,Buldana,Total,Near premises,72612,48774,4844,48839,3121
-2011,Buldana,Total,Within premises,201400,8527,13564,24177,0
-2011,Buldana,Urban,Away,5770,4900,1048,2409,2023
-2011,Buldana,Urban,Near premises,13572,6653,1116,1845,785
-2011,Buldana,Urban,Within premises,57463,933,5614,3653,0
+2011,Buldhana,Rural,Away,19648,26340,2483,58073,4479
+2011,Buldhana,Rural,Near premises,59040,42121,3728,46994,2336
+2011,Buldhana,Rural,Within premises,143937,7594,7950,20524,0
+2011,Buldhana,Total,Away,25418,31240,3531,60482,6502
+2011,Buldhana,Total,Near premises,72612,48774,4844,48839,3121
+2011,Buldhana,Total,Within premises,201400,8527,13564,24177,0
+2011,Buldhana,Urban,Away,5770,4900,1048,2409,2023
+2011,Buldhana,Urban,Near premises,13572,6653,1116,1845,785
+2011,Buldhana,Urban,Within premises,57463,933,5614,3653,0
 2011,Chandrapur,Rural,Away,11066,41941,5212,39189,1406
 2011,Chandrapur,Rural,Near premises,30569,74455,8347,46900,722
 2011,Chandrapur,Rural,Within premises,57131,10504,11821,13380,0

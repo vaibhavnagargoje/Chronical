@@ -1,8 +1,8 @@
 Year,District,Fatal Accidents,Grievous Accidents,Minor Accidents,Accidents with No Injury
-2018,Ahmednagar,799,523,188,94
+2018,Ahilyanagar,799,523,188,94
 2018,Akola,146,70,210,73
 2018,Amravati,284,188,384,241
-2018,Aurangabad,507,517,132,124
+2018,Chh. Sambhaji Nagar,507,517,132,124
 2018,Beed,313,244,56,28
 2018,Bhandara,137,113,124,39
 2018,Buldhana,277,124,181,66
@@ -20,7 +20,7 @@ Year,District,Fatal Accidents,Grievous Accidents,Minor Accidents,Accidents with 
 2018,Nanded,240,295,92,84
 2018,Nandurbar,162,110,132,95
 2018,Nashik,973,740,226,240
-2018,Osmanabad,291,274,62,69
+2018,Dharashiv,291,274,62,69
 2018,Palghar,471,349,296,244
 2018,Parbhani,114,145,33,28
 2018,Pune,1332,1403,489,471
@@ -34,10 +34,10 @@ Year,District,Fatal Accidents,Grievous Accidents,Minor Accidents,Accidents with 
 2018,Wardha,198,105,186,40
 2018,Washim,128,52,87,23
 2018,Yavatmal,299,147,230,725
-2020,Ahmednagar,352,192,194,36
+2020,Ahilyanagar,352,192,194,36
 2020,Akola,110,82,136,48
 2020,Amravati,402,242,203,81
-2020,Aurangabad,428,518,178,69
+2020,Chh. Sambhaji Nagar,428,518,178,69
 2020,Beed,206,158,38,34
 2020,Bhandara,333,251,40,32
 2020,Buldhana,275,116,111,27
@@ -55,7 +55,7 @@ Year,District,Fatal Accidents,Grievous Accidents,Minor Accidents,Accidents with 
 2020,Nanded,301,204,31,19
 2020,Nandurbar,430,219,83,23
 2020,Nashik,512,427,91,12
-2020,Osmanabad,65,89,4,13
+2020,Dharashiv,65,89,4,13
 2020,Palghar,46,54,33,14
 2020,Parbhani,249,234,92,54
 2020,Pune,485,353,37,64
