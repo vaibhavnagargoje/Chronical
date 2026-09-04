@@ -525,7 +525,7 @@ class Command(BaseCommand):
                 'chart_options': build_chart_options('Population', disable_all_filter1=True),
                 'description': 'Census Tables',
                 'additional_info': '',
-                'display_order': 18,
+                'display_order': 20,
             },
 
             # Chart 21 — Population from Other States (Census_InwardMigration_D)
@@ -548,7 +548,7 @@ class Command(BaseCommand):
                 'chart_options': build_chart_options('Population', disable_all_filter1=True),
                 'description': 'Census Tables',
                 'additional_info': '',
-                'display_order': 19,
+                'display_order': 21,
             },
 
             # Chart 22 — Population from Other Countries (Census_InwardMigration_E)
@@ -571,7 +571,7 @@ class Command(BaseCommand):
                 'chart_options': build_chart_options('Population', disable_all_filter1=True),
                 'description': 'Census Tables',
                 'additional_info': '',
-                'display_order': 20,
+                'display_order': 22,
             },
         ]
 
