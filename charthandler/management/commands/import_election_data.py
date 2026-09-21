@@ -124,10 +124,10 @@ class Command(BaseCommand):
             self.stdout.write(self.style.SUCCESS("All election data cleared.\n"))
 
         csv_importers = [
-            ("LokSabha_Election_Winners.csv", self._import_lok_sabha_winners),
-            ("LokSabha_NOTA_Results.csv", self._import_lok_sabha_nota),
-            ("VidhanSabha_Election_Winners.csv", self._import_vidhan_sabha_winners),
-            ("VidhanSabha_NOTA_Results.csv", self._import_vidhan_sabha_nota),
+            ("Lok Sabha MH Election Winners.csv", self._import_lok_sabha_winners),
+            ("Lok Sabha MH NOTA Results.csv", self._import_lok_sabha_nota),
+            ("Vidhan Sabha MH  Election Winners.csv", self._import_vidhan_sabha_winners),
+            ("Vidhan Sabha MH NOTA Results.csv", self._import_vidhan_sabha_nota),
         ]
 
         total_records = 0
