@@ -49,23 +49,13 @@ class EnvNightLightIntensity(models.Model):
 class EnvRunoff(models.Model):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
-    january = models.FloatField(null=True, blank=True)
-    february = models.FloatField(null=True, blank=True)
-    march = models.FloatField(null=True, blank=True)
-    april = models.FloatField(null=True, blank=True)
-    may = models.FloatField(null=True, blank=True)
-    june = models.FloatField(null=True, blank=True)
-    july = models.FloatField(null=True, blank=True)
-    august = models.FloatField(null=True, blank=True)
-    september = models.FloatField(null=True, blank=True)
-    october = models.FloatField(null=True, blank=True)
-    november = models.FloatField(null=True, blank=True)
-    december = models.FloatField(null=True, blank=True)
+    month = models.CharField(max_length=20)
+    runoff = models.FloatField(null=True, blank=True)
     yearly_runoff = models.FloatField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Env Runoff"
-        ordering = ['year', 'district']
+        ordering = ['year', 'district', 'month']
 
 
 class EnvRainyDays(models.Model):
@@ -84,110 +74,61 @@ class EnvRainyDays(models.Model):
 class EnvRainfall(models.Model):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
-    january = models.FloatField(null=True, blank=True)
-    february = models.FloatField(null=True, blank=True)
-    march = models.FloatField(null=True, blank=True)
-    april = models.FloatField(null=True, blank=True)
-    may = models.FloatField(null=True, blank=True)
-    june = models.FloatField(null=True, blank=True)
-    july = models.FloatField(null=True, blank=True)
-    august = models.FloatField(null=True, blank=True)
-    september = models.FloatField(null=True, blank=True)
-    october = models.FloatField(null=True, blank=True)
-    november = models.FloatField(null=True, blank=True)
-    december = models.FloatField(null=True, blank=True)
+    month = models.CharField(max_length=20)
+    rainfall = models.FloatField(null=True, blank=True)
     total = models.FloatField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Env Rainfall"
-        ordering = ['year', 'district']
+        ordering = ['year', 'district', 'month']
 
 
 class EnvMinTemperature(models.Model):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
-    january = models.FloatField(null=True, blank=True)
-    february = models.FloatField(null=True, blank=True)
-    march = models.FloatField(null=True, blank=True)
-    april = models.FloatField(null=True, blank=True)
-    may = models.FloatField(null=True, blank=True)
-    june = models.FloatField(null=True, blank=True)
-    july = models.FloatField(null=True, blank=True)
-    august = models.FloatField(null=True, blank=True)
-    september = models.FloatField(null=True, blank=True)
-    october = models.FloatField(null=True, blank=True)
-    november = models.FloatField(null=True, blank=True)
-    december = models.FloatField(null=True, blank=True)
+    month = models.CharField(max_length=20)
+    min_temperature = models.FloatField(null=True, blank=True)
     min = models.FloatField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Env Min Temperature"
-        ordering = ['year', 'district']
+        ordering = ['year', 'district', 'month']
 
 
 class EnvMaxTemperature(models.Model):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
-    january = models.FloatField(null=True, blank=True)
-    february = models.FloatField(null=True, blank=True)
-    march = models.FloatField(null=True, blank=True)
-    april = models.FloatField(null=True, blank=True)
-    may = models.FloatField(null=True, blank=True)
-    june = models.FloatField(null=True, blank=True)
-    july = models.FloatField(null=True, blank=True)
-    august = models.FloatField(null=True, blank=True)
-    september = models.FloatField(null=True, blank=True)
-    october = models.FloatField(null=True, blank=True)
-    november = models.FloatField(null=True, blank=True)
-    december = models.FloatField(null=True, blank=True)
+    month = models.CharField(max_length=20)
+    max_temperature = models.FloatField(null=True, blank=True)
     max = models.FloatField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Env Max Temperature"
-        ordering = ['year', 'district']
+        ordering = ['year', 'district', 'month']
 
 
 class EnvWindSpeed(models.Model):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
-    january = models.FloatField(null=True, blank=True)
-    february = models.FloatField(null=True, blank=True)
-    march = models.FloatField(null=True, blank=True)
-    april = models.FloatField(null=True, blank=True)
-    may = models.FloatField(null=True, blank=True)
-    june = models.FloatField(null=True, blank=True)
-    july = models.FloatField(null=True, blank=True)
-    august = models.FloatField(null=True, blank=True)
-    september = models.FloatField(null=True, blank=True)
-    october = models.FloatField(null=True, blank=True)
-    november = models.FloatField(null=True, blank=True)
-    december = models.FloatField(null=True, blank=True)
+    month = models.CharField(max_length=20)
+    wind_speed = models.FloatField(null=True, blank=True)
     average = models.FloatField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Env Wind Speed"
-        ordering = ['year', 'district']
+        ordering = ['year', 'district', 'month']
 
 
 class EnvWaterDeficit(models.Model):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
-    january = models.FloatField(null=True, blank=True)
-    february = models.FloatField(null=True, blank=True)
-    march = models.FloatField(null=True, blank=True)
-    april = models.FloatField(null=True, blank=True)
-    may = models.FloatField(null=True, blank=True)
-    june = models.FloatField(null=True, blank=True)
-    july = models.FloatField(null=True, blank=True)
-    august = models.FloatField(null=True, blank=True)
-    october = models.FloatField(null=True, blank=True)
-    november = models.FloatField(null=True, blank=True)
-    december = models.FloatField(null=True, blank=True)
+    month = models.CharField(max_length=20)
+    water_deficit = models.FloatField(null=True, blank=True)
     yearly_water_deficit = models.FloatField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Env Water Deficit"
-        ordering = ['year', 'district']
+        ordering = ['year', 'district', 'month']
 
 
 class EnvHumidity(models.Model):
@@ -225,34 +166,13 @@ class EnvEvapotranspirationYearly(models.Model):
 class EnvEvapotranspirationMonthly(models.Model):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
-    actual_january = models.FloatField(null=True, blank=True)
-    actual_february = models.FloatField(null=True, blank=True)
-    actual_march = models.FloatField(null=True, blank=True)
-    actual_april = models.FloatField(null=True, blank=True)
-    actual_may = models.FloatField(null=True, blank=True)
-    actual_june = models.FloatField(null=True, blank=True)
-    actual_july = models.FloatField(null=True, blank=True)
-    actual_august = models.FloatField(null=True, blank=True)
-    actual_september = models.FloatField(null=True, blank=True)
-    actual_october = models.FloatField(null=True, blank=True)
-    actual_november = models.FloatField(null=True, blank=True)
-    actual_december = models.FloatField(null=True, blank=True)
-    potential_january = models.FloatField(null=True, blank=True)
-    potential_february = models.FloatField(null=True, blank=True)
-    potential_march = models.FloatField(null=True, blank=True)
-    potential_april = models.FloatField(null=True, blank=True)
-    potential_may = models.FloatField(null=True, blank=True)
-    potential_june = models.FloatField(null=True, blank=True)
-    potential_july = models.FloatField(null=True, blank=True)
-    potential_august = models.FloatField(null=True, blank=True)
-    potential_september = models.FloatField(null=True, blank=True)
-    potential_october = models.FloatField(null=True, blank=True)
-    potential_november = models.FloatField(null=True, blank=True)
-    potential_december = models.FloatField(null=True, blank=True)
+    month = models.CharField(max_length=20)
+    actual_et = models.FloatField(null=True, blank=True)
+    potential_et = models.FloatField(null=True, blank=True)
 
     class Meta:
         verbose_name_plural = "Env Evapotranspiration Monthly"
-        ordering = ['year', 'district']
+        ordering = ['year', 'district', 'month']
 
 
 class EnvBorewells(models.Model):

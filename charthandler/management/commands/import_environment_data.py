@@ -236,27 +236,18 @@ class Command(BaseCommand):
         return len(records)
 
     def _import_runoff(self, filepath):
-        """runoff_(icrisat).xlsx → EnvRunoff"""
+        """runoff_(icrisat).xlsx → EnvRunoff (long format: District, Year, Month, Runoff, Yearly Runoff)"""
         records = []
         for row in self._read_xlsx(filepath):
             year = _safe_int(row.get('Year'))
-            if year is None:
+            month = _str(row.get('Month'))
+            if year is None or not month:
                 continue
             records.append(EnvRunoff(
                 year=year,
                 district=_str(row.get('District')),
-                january=_safe_float(row.get('January')),
-                february=_safe_float(row.get('February')),
-                march=_safe_float(row.get('March')),
-                april=_safe_float(row.get('April')),
-                may=_safe_float(row.get('May')),
-                june=_safe_float(row.get('June')),
-                july=_safe_float(row.get('July')),
-                august=_safe_float(row.get('August')),
-                september=_safe_float(row.get('September')),
-                october=_safe_float(row.get('October')),
-                november=_safe_float(row.get('November')),
-                december=_safe_float(row.get('December')),
+                month=month,
+                runoff=_safe_float(row.get('Runoff')),
                 yearly_runoff=_safe_float(row.get('Yearly Runoff')),
             ))
         EnvRunoff.objects.bulk_create(records, ignore_conflicts=True)
@@ -281,134 +272,90 @@ class Command(BaseCommand):
         return len(records)
 
     def _import_rainfall(self, filepath):
-        """rainfall_(icrisat).xlsx → EnvRainfall"""
+        """rainfall_(icrisat).xlsx → EnvRainfall (long format: District, Year, Month, Rainfall, Total)"""
         records = []
         for row in self._read_xlsx(filepath):
             year = _safe_int(row.get('Year'))
-            if year is None:
+            month = _str(row.get('Month'))
+            if year is None or not month:
                 continue
             records.append(EnvRainfall(
                 year=year,
                 district=_str(row.get('District')),
-                january=_safe_float(row.get('January')),
-                february=_safe_float(row.get('February')),
-                march=_safe_float(row.get('March')),
-                april=_safe_float(row.get('April')),
-                may=_safe_float(row.get('May')),
-                june=_safe_float(row.get('June')),
-                july=_safe_float(row.get('July')),
-                august=_safe_float(row.get('August')),
-                september=_safe_float(row.get('September')),
-                october=_safe_float(row.get('October')),
-                november=_safe_float(row.get('November')),
-                december=_safe_float(row.get('December')),
+                month=month,
+                rainfall=_safe_float(row.get('Rainfall')),
                 total=_safe_float(row.get('Total')),
             ))
         EnvRainfall.objects.bulk_create(records, ignore_conflicts=True)
         return len(records)
 
     def _import_min_temperature(self, filepath):
-        """min_temperature_(icrisat.xlsx → EnvMinTemperature"""
+        """min_temperature_(icrisat.xlsx → EnvMinTemperature (long format: District, Year, Month, Min Temperature, Min)"""
         records = []
         for row in self._read_xlsx(filepath):
             year = _safe_int(row.get('Year'))
-            if year is None:
+            month = _str(row.get('Month'))
+            if year is None or not month:
                 continue
             records.append(EnvMinTemperature(
                 year=year,
                 district=_str(row.get('District')),
-                january=_safe_float(row.get('January')),
-                february=_safe_float(row.get('February')),
-                march=_safe_float(row.get('March')),
-                april=_safe_float(row.get('April')),
-                may=_safe_float(row.get('May')),
-                june=_safe_float(row.get('June')),
-                july=_safe_float(row.get('July')),
-                august=_safe_float(row.get('August')),
-                september=_safe_float(row.get('September')),
-                october=_safe_float(row.get('October')),
-                november=_safe_float(row.get('November')),
-                december=_safe_float(row.get('December')),
+                month=month,
+                min_temperature=_safe_float(row.get('Min Temperature')),
                 min=_safe_float(row.get('Min')),
             ))
         EnvMinTemperature.objects.bulk_create(records, ignore_conflicts=True)
         return len(records)
 
     def _import_max_temperature(self, filepath):
-        """max_temperature_(icrisat).xlsx → EnvMaxTemperature"""
+        """max_temperature_(icrisat).xlsx → EnvMaxTemperature (long format: District, Year, Month, Max Temperature, Max)"""
         records = []
         for row in self._read_xlsx(filepath):
             year = _safe_int(row.get('Year'))
-            if year is None:
+            month = _str(row.get('Month'))
+            if year is None or not month:
                 continue
             records.append(EnvMaxTemperature(
                 year=year,
                 district=_str(row.get('District')),
-                january=_safe_float(row.get('January')),
-                february=_safe_float(row.get('February')),
-                march=_safe_float(row.get('March')),
-                april=_safe_float(row.get('April')),
-                may=_safe_float(row.get('May')),
-                june=_safe_float(row.get('June')),
-                july=_safe_float(row.get('July')),
-                august=_safe_float(row.get('August')),
-                september=_safe_float(row.get('September')),
-                october=_safe_float(row.get('October')),
-                november=_safe_float(row.get('November')),
-                december=_safe_float(row.get('December')),
+                month=month,
+                max_temperature=_safe_float(row.get('Max Temperature')),
                 max=_safe_float(row.get('Max')),
             ))
         EnvMaxTemperature.objects.bulk_create(records, ignore_conflicts=True)
         return len(records)
 
     def _import_wind_speed(self, filepath):
-        """wind_speed_(icrisat).xlsx → EnvWindSpeed"""
+        """wind_speed_(icrisat).xlsx → EnvWindSpeed (long format: District, Year, Month, Wind Speed, Average)"""
         records = []
         for row in self._read_xlsx(filepath):
             year = _safe_int(row.get('Year'))
-            if year is None:
+            month = _str(row.get('Month'))
+            if year is None or not month:
                 continue
             records.append(EnvWindSpeed(
                 year=year,
                 district=_str(row.get('District')),
-                january=_safe_float(row.get('January')),
-                february=_safe_float(row.get('February')),
-                march=_safe_float(row.get('March')),
-                april=_safe_float(row.get('April')),
-                may=_safe_float(row.get('May')),
-                june=_safe_float(row.get('June')),
-                july=_safe_float(row.get('July')),
-                august=_safe_float(row.get('August')),
-                september=_safe_float(row.get('September')),
-                october=_safe_float(row.get('October')),
-                november=_safe_float(row.get('November')),
-                december=_safe_float(row.get('December')),
+                month=month,
+                wind_speed=_safe_float(row.get('Wind Speed')),
                 average=_safe_float(row.get('Average')),
             ))
         EnvWindSpeed.objects.bulk_create(records, ignore_conflicts=True)
         return len(records)
 
     def _import_water_deficit(self, filepath):
-        """water_deficit_(icrisat).xlsx → EnvWaterDeficit (no September column in data)"""
+        """water_deficit_(icrisat).xlsx → EnvWaterDeficit (long format: District, Year, Month, Water Deficit, Yearly Water Deficit)"""
         records = []
         for row in self._read_xlsx(filepath):
             year = _safe_int(row.get('Year'))
-            if year is None:
+            month = _str(row.get('Month'))
+            if year is None or not month:
                 continue
             records.append(EnvWaterDeficit(
                 year=year,
                 district=_str(row.get('District')),
-                january=_safe_float(row.get('January')),
-                february=_safe_float(row.get('February')),
-                march=_safe_float(row.get('March')),
-                april=_safe_float(row.get('April')),
-                may=_safe_float(row.get('May')),
-                june=_safe_float(row.get('June')),
-                july=_safe_float(row.get('July')),
-                august=_safe_float(row.get('August')),
-                october=_safe_float(row.get('October')),
-                november=_safe_float(row.get('November')),
-                december=_safe_float(row.get('December')),
+                month=month,
+                water_deficit=_safe_float(row.get('Water Deficit')),
                 yearly_water_deficit=_safe_float(row.get('Yearly Water Deficit')),
             ))
         EnvWaterDeficit.objects.bulk_create(records, ignore_conflicts=True)
@@ -463,27 +410,21 @@ class Command(BaseCommand):
 
     def _import_evapotranspiration_monthly(self, filepath):
         """evapotranspiration_monthly.xlsx → EnvEvapotranspirationMonthly
-        Columns 2-13 are Actual monthly values, columns 14-25 are Potential monthly values.
-        We read by position to avoid the .1 suffix pandas adds for duplicate column names.
+        Long format: District, Year, Month, Actual ET, Potential ET
         """
-        months = ['january', 'february', 'march', 'april', 'may', 'june',
-                  'july', 'august', 'september', 'october', 'november', 'december']
-
-        df = pd.read_excel(filepath, header=None, skiprows=1, dtype=str)
-        df = df.fillna('')
-
         records = []
-        for _, row in df.iterrows():
-            year = _safe_int(row.iloc[0])
-            if year is None:
+        for row in self._read_xlsx(filepath):
+            year = _safe_int(row.get('Year'))
+            month = _str(row.get('Month'))
+            if year is None or not month:
                 continue
-            district = _str(row.iloc[1])
-            kwargs = {'year': year, 'district': district}
-            for i, month in enumerate(months):
-                kwargs[f'actual_{month}'] = _safe_float(row.iloc[2 + i])
-                kwargs[f'potential_{month}'] = _safe_float(row.iloc[14 + i])
-            records.append(EnvEvapotranspirationMonthly(**kwargs))
-
+            records.append(EnvEvapotranspirationMonthly(
+                year=year,
+                district=_str(row.get('District')),
+                month=month,
+                actual_et=_safe_float(row.get('Actual ET')),
+                potential_et=_safe_float(row.get('Potential ET')),
+            ))
         EnvEvapotranspirationMonthly.objects.bulk_create(records, ignore_conflicts=True)
         return len(records)
 

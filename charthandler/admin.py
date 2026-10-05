@@ -1471,8 +1471,8 @@ class EnvNightLightIntensityAdmin(admin.ModelAdmin):
 
 @admin.register(EnvRunoff)
 class EnvRunoffAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'yearly_runoff', 'june', 'july', 'august', 'september')
-    list_filter = ('district', 'year')
+    list_display = ('district', 'year', 'month', 'runoff', 'yearly_runoff')
+    list_filter = ('district', 'year', 'month')
     search_fields = ('district',)
 
 @admin.register(EnvRainyDays)
@@ -1483,32 +1483,32 @@ class EnvRainyDaysAdmin(admin.ModelAdmin):
 
 @admin.register(EnvRainfall)
 class EnvRainfallAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'total', 'june', 'july', 'august', 'september')
-    list_filter = ('district', 'year')
+    list_display = ('district', 'year', 'month', 'rainfall', 'total')
+    list_filter = ('district', 'year', 'month')
     search_fields = ('district',)
 
 @admin.register(EnvMinTemperature)
 class EnvMinTemperatureAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'min', 'january', 'april', 'july', 'october')
-    list_filter = ('district', 'year')
+    list_display = ('district', 'year', 'month', 'min_temperature', 'min')
+    list_filter = ('district', 'year', 'month')
     search_fields = ('district',)
 
 @admin.register(EnvMaxTemperature)
 class EnvMaxTemperatureAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'max', 'january', 'april', 'july', 'october')
-    list_filter = ('district', 'year')
+    list_display = ('district', 'year', 'month', 'max_temperature', 'max')
+    list_filter = ('district', 'year', 'month')
     search_fields = ('district',)
 
 @admin.register(EnvWindSpeed)
 class EnvWindSpeedAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'average', 'june', 'july', 'august')
-    list_filter = ('district', 'year')
+    list_display = ('district', 'year', 'month', 'wind_speed', 'average')
+    list_filter = ('district', 'year', 'month')
     search_fields = ('district',)
 
 @admin.register(EnvWaterDeficit)
 class EnvWaterDeficitAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'yearly_water_deficit', 'january', 'april', 'july')
-    list_filter = ('district', 'year')
+    list_display = ('district', 'year', 'month', 'water_deficit', 'yearly_water_deficit')
+    list_filter = ('district', 'year', 'month')
     search_fields = ('district',)
 
 @admin.register(EnvHumidity)
@@ -1531,8 +1531,8 @@ class EnvEvapotranspirationYearlyAdmin(admin.ModelAdmin):
 
 @admin.register(EnvEvapotranspirationMonthly)
 class EnvEvapotranspirationMonthlyAdmin(admin.ModelAdmin):
-    list_display = ('district', 'year', 'actual_june', 'actual_july', 'actual_august', 'potential_june', 'potential_july')
-    list_filter = ('district', 'year')
+    list_display = ('district', 'year', 'month', 'actual_et', 'potential_et')
+    list_filter = ('district', 'year', 'month')
     search_fields = ('district',)
 
 @admin.register(EnvBorewells)
