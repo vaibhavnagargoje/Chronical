@@ -139,6 +139,48 @@ Ahilyanagar,2021,Parner,Outpatient,3057200,2677000,475500
 Ahilyanagar,2021,Srigonda,Outpatient,2590100,3430300,492900
 Ahilyanagar,2021,Karjat,Outpatient,3354900,2490200,320400
 Ahilyanagar,2021,Jamkhed,Outpatient,3577500,3042900,348200
+Ahilyanagar,2022,Akole,Outpatient,103876,113342,18150
+Ahilyanagar,2022,Sangamner,Outpatient,100755,111102,29562
+Ahilyanagar,2022,Kopargaon,Outpatient,36043,35158,17393
+Ahilyanagar,2022,Rahata,Outpatient,20790,29070,48594
+Ahilyanagar,2022,Srirampur,Outpatient,12420,10597,17396
+Ahilyanagar,2022,Nevasa,Outpatient,38546,58860,26755
+Ahilyanagar,2022,Shevgaon,Outpatient,24358,13546,38943
+Ahilyanagar,2022,Pathardi,Outpatient,9435,12677,48015
+Ahilyanagar,2022,Nagar,Outpatient,93598,167371,80850
+Ahilyanagar,2022,Rahuri,Outpatient,42857,40503,24891
+Ahilyanagar,2022,Parner,Outpatient,36407,35287,16073
+Ahilyanagar,2022,Srigonda,Outpatient,39877,43648,18767
+Ahilyanagar,2022,Karjat,Outpatient,21384,18816,22829
+Ahilyanagar,2022,Jamkhed,Outpatient,15485,17593,22935
+Ahilyanagar,2023,Akole,Outpatient,109324,135185,41820
+Ahilyanagar,2023,Sangamner,Outpatient,165911,199047,89660
+Ahilyanagar,2023,Kopargaon,Outpatient,63743,61494,33102
+Ahilyanagar,2023,Rahata,Outpatient,66955,63338,35950
+Ahilyanagar,2023,Srirampur,Outpatient,50965,52182,7377
+Ahilyanagar,2023,Nevasa,Outpatient,104678,113505,6386
+Ahilyanagar,2023,Shevgaon,Outpatient,69398,62902,34999
+Ahilyanagar,2023,Pathardi,Outpatient,59487,46674,10167
+Ahilyanagar,2023,Nagar,Outpatient,154202,146409,49084
+Ahilyanagar,2023,Rahuri,Outpatient,58102,58855,27238
+Ahilyanagar,2023,Parner,Outpatient,72123,63712,10176
+Ahilyanagar,2023,Srigonda,Outpatient,68968,68070,16740
+Ahilyanagar,2023,Karjat,Outpatient,71841,52857,6868
+Ahilyanagar,2023,Jamkhed,Outpatient,64960,76944,2776
+Ahilyanagar,2024,Akole,Outpatient,113882,146868,47782
+Ahilyanagar,2024,Sangamner,Outpatient,147323,148331,46691
+Ahilyanagar,2024,Kopargaon,Outpatient,79576,73406,11856
+Ahilyanagar,2024,Rahata,Outpatient,88568,94105,20850
+Ahilyanagar,2024,Srirampur,Outpatient,56419,3329656,24429
+Ahilyanagar,2024,Nevasa,Outpatient,110047,7162436,6387
+Ahilyanagar,2024,Shevgaon,Outpatient,70022,2991200,31817
+Ahilyanagar,2024,Pathardi,Outpatient,146261,10005862,21118
+Ahilyanagar,2024,Nagar,Outpatient,241999,12814360,62472
+Ahilyanagar,2024,Rahuri,Outpatient,138907,6902244,7461
+Ahilyanagar,2024,Parner,Outpatient,81217,3785532,11016
+Ahilyanagar,2024,Srigonda,Outpatient,84720,5841625,14648
+Ahilyanagar,2024,Karjat,Outpatient,71142,3665549,16239
+Ahilyanagar,2024,Jamkhed,Outpatient,55123,2292895,7328
 Akola,2019,Telhara,Outpatient,49800,78000,34200
 Akola,2019,Akot,Outpatient,78200,82800,64800
 Akola,2019,Balapur,Outpatient,85200,64700,36200
@@ -160,6 +202,27 @@ Akola,2021,Akola,Outpatient,9636300,20429800,2607000
 Akola,2021,Murtijapur,Outpatient,9830600,9229100,887000
 Akola,2021,Patur,Outpatient,5640700,6101100,42500
 Akola,2021,Barshitakali,Outpatient,3798800,3745800,712700
+Akola,2022,Telhara,Outpatient,7151100,9765300,1690700
+Akola,2022,Akot,Outpatient,9290900,12283600,1421300
+Akola,2022,Balapur,Outpatient,7737300,10812300,1409800
+Akola,2022,Akola,Outpatient,11245800,14242200,628900
+Akola,2022,Murtijapur,Outpatient,10679700,13573300,1825600
+Akola,2022,Patur,Outpatient,6128400,8727500,275400
+Akola,2022,Barshitakali,Outpatient,9023100,12658100,88800
+Akola,2023,Telhara,Outpatient,3349100,3699100,3006000
+Akola,2023,Akot,Outpatient,5328200,5701200,1560800
+Akola,2023,Balapur,Outpatient,612400,918600,0
+Akola,2023,Akola,Outpatient,2368700,9962900,1678300
+Akola,2023,Murtijapur,Outpatient,6647000,7269300,2969200
+Akola,2023,Patur,Outpatient,1534000,1808300,397700
+Akola,2023,Barshitakali,Outpatient,2765600,3835800,852600
+Akola,2024,Telhara,Outpatient,11948200,11565700,1925500
+Akola,2024,Akot,Outpatient,16173100,14100000,1041400
+Akola,2024,Balapur,Outpatient,9934300,7862900,917200
+Akola,2024,Akola,Outpatient,14672400,17597100,1852700
+Akola,2024,Murtijapur,Outpatient,17042500,15649700,203300
+Akola,2024,Patur,Outpatient,9404200,8248500,653200
+Akola,2024,Barshitakali,Outpatient,13688000,12563500,541600
 Amravati,2012,Dharani,Outpatient,54500,50400,35500
 Amravati,2012,Chikhraldara,Outpatient,37400,30200,21100
 Amravati,2012,Anjangaon Su,Outpatient,46300,46700,23500
@@ -300,6 +363,75 @@ Amravati,2021,Daryapur,Outpatient,37269,40012,7173
 Amravati,2021,Nandgaon Kh,Outpatient,31666,34815,4449
 Amravati,2021,Chandur Railway,Outpatient,35722,35408,8032
 Amravati,2021,Dhamangaon Re,Outpatient,35757,37211,5669
+Amravati,2022,Dharani,Outpatient,122180,155072,6854
+Amravati,2022,Chikhraldara,Outpatient,108320,126271,4915
+Amravati,2022,Anjangaon Su,Outpatient,80379,78072,2179
+Amravati,2022,Achalpur,Outpatient,135396,166457,11474
+Amravati,2022,Chandurbazar,Outpatient,114865,144867,4214
+Amravati,2022,Morshi,Outpatient,119774,136043,4821
+Amravati,2022,Warud,Outpatient,121714,141556,2603
+Amravati,2022,Tivas,Outpatient,65310,69681,3191
+Amravati,2022,Amravati,Outpatient,538326,500365,64158
+Amravati,2022,Bhatkuli,Outpatient,64804,83344,3313
+Amravati,2022,Daryapur,Outpatient,117967,145390,5326
+Amravati,2022,Nandgaon Kh,Outpatient,84045,88004,3626
+Amravati,2022,Chandur Railway,Outpatient,71731,85739,4248
+Amravati,2022,Dhamangaon Re,Outpatient,82672,97923,4693
+Amravati,2023,Dharani,Outpatient,35535,42733,9883
+Amravati,2023,Chikhraldara,Outpatient,35535,68511,5948
+Amravati,2023,Anjangaon Su,Outpatient,57058,112510,3280
+Amravati,2023,Achalpur,Outpatient,86578,129719,16690
+Amravati,2023,Chandurbazar,Outpatient,45287,62324,5635
+Amravati,2023,Morshi,Outpatient,56468,83057,5910
+Amravati,2023,Warud,Outpatient,40010,58139,2954
+Amravati,2023,Tivas,Outpatient,30667,50810,2534
+Amravati,2023,Amravati,Outpatient,605588,520003,66590
+Amravati,2023,Bhatkuli,Outpatient,28571,40027,3804
+Amravati,2023,Daryapur,Outpatient,50438,63720,6325
+Amravati,2023,Nandgaon Kh,Outpatient,38894,56779,4306
+Amravati,2023,Chandur Railway,Outpatient,45774,70135,5121
+Amravati,2023,Dhamangaon Re,Outpatient,43336,56309,6465
+Amravati,2024,Dharani,Outpatient,156654,140921,62147
+Amravati,2024,Chikhraldara,Outpatient,131519,138684,44866
+Amravati,2024,Anjangaon Su,Outpatient,116870,182715,24033
+Amravati,2024,Achalpur,Outpatient,169256,200916,49298
+Amravati,2024,Chandurbazar,Outpatient,143202,141595,45147
+Amravati,2024,Morshi,Outpatient,135456,148843,39074
+Amravati,2024,Warud,Outpatient,155716,151936,52179
+Amravati,2024,Tivas,Outpatient,74555,85755,20647
+Amravati,2024,Amravati,Outpatient,731834,609847,98478
+Amravati,2024,Bhatkuli,Outpatient,83982,82567,26633
+Amravati,2024,Daryapur,Outpatient,133029,118135,26927
+Amravati,2024,Nandgaon Kh,Outpatient,87802,91183,26824
+Amravati,2024,Chandur Railway,Outpatient,80209,93734,20165
+Amravati,2024,Dhamangaon Re,Outpatient,125268,119462,41350
+Chh. Sambhaji Nagar,2022,Kannad,Outpatient,118234,125400,83100
+Chh. Sambhaji Nagar,2022,Soyegaon,Outpatient,31400,34500,23147
+Chh. Sambhaji Nagar,2022,Sillod,Outpatient,103286,110700,73600
+Chh. Sambhaji Nagar,2022,Phulambri,Outpatient,56400,62900,42400
+Chh. Sambhaji Nagar,2022,Chh. Sambhaji Nagar,Outpatient,493100,543700,584500
+Chh. Sambhaji Nagar,2022,Khultabad,Outpatient,41100,44200,28500
+Chh. Sambhaji Nagar,2022,Vaijapur,Outpatient,90900,99000,66200
+Chh. Sambhaji Nagar,2022,Gangapur,Outpatient,108900,120500,81000
+Chh. Sambhaji Nagar,2022,Paithan,Outpatient,106900,118900,80100
+Chh. Sambhaji Nagar,2023,Kannad,Outpatient,188801,201000,133300
+Chh. Sambhaji Nagar,2023,Soyegaon,Outpatient,49300,55500,37537
+Chh. Sambhaji Nagar,2023,Sillod,Outpatient,157388,165700,109400
+Chh. Sambhaji Nagar,2023,Phulambri,Outpatient,114300,120900,80000
+Chh. Sambhaji Nagar,2023,Chh. Sambhaji Nagar,Outpatient,1579300,1687700,794800
+Chh. Sambhaji Nagar,2023,Khultabad,Outpatient,63700,68500,45600
+Chh. Sambhaji Nagar,2023,Vaijapur,Outpatient,138700,150900,101000
+Chh. Sambhaji Nagar,2023,Gangapur,Outpatient,148200,163300,109600
+Chh. Sambhaji Nagar,2023,Paithan,Outpatient,192600,208300,138900
+Chh. Sambhaji Nagar,2024,Kannad,Outpatient,200402,335230,283973
+Chh. Sambhaji Nagar,2024,Soyegaon,Outpatient,51951,89080,77522
+Chh. Sambhaji Nagar,2024,Sillod,Outpatient,211005,347521,289190
+Chh. Sambhaji Nagar,2024,Phulambri,Outpatient,92707,155709,132505
+Chh. Sambhaji Nagar,2024,Chh. Sambhaji Nagar,Outpatient,1099721,1946095,1624713
+Chh. Sambhaji Nagar,2024,Khultabad,Outpatient,70936,120332,103540
+Chh. Sambhaji Nagar,2024,Vaijapur,Outpatient,158957,269202,231112
+Chh. Sambhaji Nagar,2024,Gangapur,Outpatient,173050,295178,255522
+Chh. Sambhaji Nagar,2024,Paithan,Outpatient,193089,338883,287491
 Beed,2013,Ashti,Outpatient,18800,19600,12200
 Beed,2013,Patoda,Outpatient,14400,15800,6400
 Beed,2013,Shirur Kasar,Outpatient,19400,21300,14500
@@ -399,6 +531,39 @@ Beed,2021,Cage,Outpatient,80500,133200,53300
 Beed,2021,Dharur,Outpatient,41900,69100,27600
 Beed,2021,Parli,Outpatient,74100,124200,49400
 Beed,2021,Ambajogai,Outpatient,115600,166400,66500
+Beed,2022,Ashti,Outpatient,97100,107500,43000
+Beed,2022,Patoda,Outpatient,67600,64600,25900
+Beed,2022,Shirur Kasar,Outpatient,81800,86600,34700
+Beed,2022,Gevrai,Outpatient,212700,210600,84200
+Beed,2022,Majalgaon,Outpatient,166300,149600,59800
+Beed,2022,Wadwani,Outpatient,66900,65000,26000
+Beed,2022,Beed,Outpatient,626100,417100,166900
+Beed,2022,Cage,Outpatient,247200,198500,79400
+Beed,2022,Dharur,Outpatient,110200,87100,34800
+Beed,2022,Parli,Outpatient,263300,193900,77500
+Beed,2022,Ambajogai,Outpatient,232800,228200,91300
+Beed,2023,Ashti,Outpatient,127807,127826,51131
+Beed,2023,Patoda,Outpatient,109276,93986,37596
+Beed,2023,Shirur Kasar,Outpatient,93447,90497,36200
+Beed,2023,Gevrai,Outpatient,248341,252251,100901
+Beed,2023,Majalgaon,Outpatient,224428,176697,70680
+Beed,2023,Wadwani,Outpatient,78189,72116,28848
+Beed,2023,Beed,Outpatient,924730,534175,213671
+Beed,2023,Cage,Outpatient,319759,237984,95194
+Beed,2023,Dharur,Outpatient,138036,93677,37471
+Beed,2023,Parli,Outpatient,298162,228284,91314
+Beed,2023,Ambajogai,Outpatient,269135,252176,100871
+Beed,2024,Ashti,Outpatient,180022,166685,284827
+Beed,2024,Patoda,Outpatient,142625,108285,189974
+Beed,2024,Shirur Kasar,Outpatient,108847,107958,179915
+Beed,2024,Gevrai,Outpatient,337966,329681,545648
+Beed,2024,Majalgaon,Outpatient,300421,232482,394303
+Beed,2024,Wadwani,Outpatient,99097,86002,148654
+Beed,2024,Beed,Outpatient,1062819,696833,1148300
+Beed,2024,Cage,Outpatient,398269,303125,513771
+Beed,2024,Dharur,Outpatient,157672,109420,192471
+Beed,2024,Parli,Outpatient,401430,305535,515671
+Beed,2024,Ambajogai,Outpatient,360069,332778,565277
 Bhandara,2012,Tumsar,Outpatient,79400,65600,67700
 Bhandara,2012,Mohadi,Outpatient,38200,50400,39200
 Bhandara,2012,Bhandara,Outpatient,93500,102300,50800
@@ -469,6 +634,27 @@ Bhandara,2021,Sakoli,Outpatient,16300,20900,18700
 Bhandara,2021,Lakhani,Outpatient,24000,22200,19700
 Bhandara,2021,Pavani,Outpatient,28800,33000,18100
 Bhandara,2021,Lakhandur,Outpatient,14000,16000,15000
+Bhandara,2022,Tumsar,Outpatient,79100,115300,39400
+Bhandara,2022,Mohadi,Outpatient,21600,22900,27000
+Bhandara,2022,Bhandara,Outpatient,109900,117800,42100
+Bhandara,2022,Sakoli,Outpatient,19500,27100,21000
+Bhandara,2022,Lakhani,Outpatient,41100,43300,23200
+Bhandara,2022,Pavani,Outpatient,43800,53600,25700
+Bhandara,2022,Lakhandur,Outpatient,18300,19600,17500
+Bhandara,2023,Tumsar,Outpatient,28400,18900,47300
+Bhandara,2023,Mohadi,Outpatient,17600,11700,29300
+Bhandara,2023,Bhandara,Outpatient,31600,21100,52700
+Bhandara,2023,Sakoli,Outpatient,13300,8800,22100
+Bhandara,2023,Lakhani,Outpatient,17700,11800,29500
+Bhandara,2023,Pavani,Outpatient,16200,10800,27000
+Bhandara,2023,Lakhandur,Outpatient,12100,8100,20200
+Bhandara,2024,Tumsar,Outpatient,197500,254700,67600
+Bhandara,2024,Mohadi,Outpatient,129600,143300,68200
+Bhandara,2024,Bhandara,Outpatient,254100,304900,76200
+Bhandara,2024,Sakoli,Outpatient,94700,124500,51400
+Bhandara,2024,Lakhani,Outpatient,95400,126100,86100
+Bhandara,2024,Pavani,Outpatient,110300,158500,75800
+Bhandara,2024,Lakhandur,Outpatient,69200,90900,37600
 Buldhana,2013,Jalgaon Jamod,Outpatient,18800,2500,6400
 Buldhana,2013,Sangrampur,Outpatient,0,0,0
 Buldhana,2013,Shegaon,Outpatient,36800,47500,12600
@@ -586,6 +772,45 @@ Buldhana,2021,Buldhana,Outpatient,101500,123200,28600
 Buldhana,2021,Deulgaon Raja,Outpatient,23000,28700,3500
 Buldhana,2021,Sindkhed Raja,Outpatient,27500,28100,9900
 Buldhana,2021,Lonar,Outpatient,20900,25000,6900
+Buldhana,2022,Jalgaon Jamod,Outpatient,45300,39100,4800
+Buldhana,2022,Sangrampur,Outpatient,38500,31200,3900
+Buldhana,2022,Shegaon,Outpatient,85300,83600,10100
+Buldhana,2022,Nandura,Outpatient,57600,38400,5100
+Buldhana,2022,Malkapur,Outpatient,57000,57900,6900
+Buldhana,2022,Motala,Outpatient,43000,34800,4400
+Buldhana,2022,Khamgaon,Outpatient,182900,185000,22100
+Buldhana,2022,Mehkar,Outpatient,58200,48900,6100
+Buldhana,2022,Chikhali,Outpatient,79700,69300,8500
+Buldhana,2022,Buldhana,Outpatient,140200,147600,17500
+Buldhana,2022,Deulgaon Raja,Outpatient,24400,25500,3000
+Buldhana,2022,Sindkhed Raja,Outpatient,60400,53000,6500
+Buldhana,2022,Lonar,Outpatient,29200,26100,3200
+Buldhana,2023,Jalgaon Jamod,Outpatient,47084,49600,12500
+Buldhana,2023,Sangrampur,Outpatient,53998,60800,15800
+Buldhana,2023,Shegaon,Outpatient,74194,86400,21200
+Buldhana,2023,Nandura,Outpatient,44746,49100,31100
+Buldhana,2023,Malkapur,Outpatient,57731,75200,9200
+Buldhana,2023,Motala,Outpatient,64074,60400,13700
+Buldhana,2023,Khamgaon,Outpatient,173471,213200,45300
+Buldhana,2023,Mehkar,Outpatient,59106,59700,18600
+Buldhana,2023,Chikhali,Outpatient,69676,84100,21400
+Buldhana,2023,Buldhana,Outpatient,163506,193300,39800
+Buldhana,2023,Deulgaon Raja,Outpatient,53535,65500,10700
+Buldhana,2023,Sindkhed Raja,Outpatient,64910,73100,31600
+Buldhana,2023,Lonar,Outpatient,35197,42000,11400
+Buldhana,2024,Jalgaon Jamod,Outpatient,36542,44558,7174
+Buldhana,2024,Sangrampur,Outpatient,43570,49464,16716
+Buldhana,2024,Shegaon,Outpatient,83823,104168,13566
+Buldhana,2024,Nandura,Outpatient,36510,32110,18930
+Buldhana,2024,Malkapur,Outpatient,58140,69949,8368
+Buldhana,2024,Motala,Outpatient,22000,53887,18534
+Buldhana,2024,Khamgaon,Outpatient,159081,194857,57446
+Buldhana,2024,Mehkar,Outpatient,98735,99091,30226
+Buldhana,2024,Chikhali,Outpatient,80139,93789,23481
+Buldhana,2024,Buldhana,Outpatient,319620,395720,40611
+Buldhana,2024,Deulgaon Raja,Outpatient,56911,69087,7271
+Buldhana,2024,Sindkhed Raja,Outpatient,65247,73358,20066
+Buldhana,2024,Lonar,Outpatient,60176,67926,7789
 Chandrapur,2012,Varora,Outpatient,4353600,5148300,3639100
 Chandrapur,2012,Chimur,Outpatient,5660100,5953100,3950100
 Chandrapur,2012,Nagbhid,Outpatient,3541000,3873700,2691200
@@ -736,6 +961,51 @@ Chandrapur,2021,Korpana,Outpatient,60200,75500,24000
 Chandrapur,2021,Rajura,Outpatient,73100,101000,20900
 Chandrapur,2021,Gondpipari,Outpatient,33400,36100,21300
 Chandrapur,2021,Jivati,Outpatient,16400,18900,3900
+Chandrapur,2022,Varora,Outpatient,10462300,14946100,4483800
+Chandrapur,2022,Chimur,Outpatient,11512600,16446600,4934000
+Chandrapur,2022,Nagbhid,Outpatient,10016100,14308700,4292600
+Chandrapur,2022,Bramhapuri,Outpatient,12490900,17844200,5353300
+Chandrapur,2022,Savali,Outpatient,7376700,10538200,3161500
+Chandrapur,2022,Sindevahi,Outpatient,8489300,12127500,3638300
+Chandrapur,2022,Bhadravati,Outpatient,7835400,11193500,3358000
+Chandrapur,2022,Chandrapur,Outpatient,18281700,26116700,7835000
+Chandrapur,2022,Mul,Outpatient,8449700,12071000,3621300
+Chandrapur,2022,Ponbhurna,Outpatient,2531600,3616600,1085000
+Chandrapur,2022,Ballarpur,Outpatient,6805800,9722600,2916800
+Chandrapur,2022,Korpana,Outpatient,7719500,11027900,3308400
+Chandrapur,2022,Rajura,Outpatient,10416400,14880600,4464200
+Chandrapur,2022,Gondpipari,Outpatient,5109500,7299300,2189800
+Chandrapur,2022,Jivati,Outpatient,1902900,2718400,815500
+Chandrapur,2023,Varora,Outpatient,5699700,9402700,3765500
+Chandrapur,2023,Chimur,Outpatient,11718500,19490700,7784200
+Chandrapur,2023,Nagbhid,Outpatient,9602900,15988000,6391000
+Chandrapur,2023,Bramhapuri,Outpatient,7971000,13268400,5312000
+Chandrapur,2023,Savali,Outpatient,6537600,10880100,4352800
+Chandrapur,2023,Sindevahi,Outpatient,8461000,14133000,5642100
+Chandrapur,2023,Bhadravati,Outpatient,4452000,7406300,2963600
+Chandrapur,2023,Chandrapur,Outpatient,23277300,35437900,7439300
+Chandrapur,2023,Mul,Outpatient,4930500,8186600,3264000
+Chandrapur,2023,Ponbhurna,Outpatient,3360500,5593600,2234900
+Chandrapur,2023,Ballarpur,Outpatient,3152200,5184400,2060400
+Chandrapur,2023,Korpana,Outpatient,7565800,12604000,5033700
+Chandrapur,2023,Rajura,Outpatient,4965700,8260100,3291500
+Chandrapur,2023,Gondpipari,Outpatient,5553800,9233800,3681300
+Chandrapur,2023,Jivati,Outpatient,3110500,5204600,2066300
+Chandrapur,2024,Varora,Outpatient,12256900,15758800,7003900
+Chandrapur,2024,Chimur,Outpatient,15042500,19340400,8595700
+Chandrapur,2024,Nagbhid,Outpatient,12070600,15519400,6897500
+Chandrapur,2024,Bramhapuri,Outpatient,13779200,17716100,7873800
+Chandrapur,2024,Savali,Outpatient,7770500,9990600,4440300
+Chandrapur,2024,Sindevahi,Outpatient,8925400,11475500,5100200
+Chandrapur,2024,Bhadravati,Outpatient,7879600,10130900,4502600
+Chandrapur,2024,Chandrapur,Outpatient,29175200,37510900,16671500
+Chandrapur,2024,Mul,Outpatient,10840200,13937400,6194400
+Chandrapur,2024,Ponbhurna,Outpatient,3498800,4498400,1999300
+Chandrapur,2024,Ballarpur,Outpatient,10527200,13535000,6015500
+Chandrapur,2024,Korpana,Outpatient,11269100,14488900,6439500
+Chandrapur,2024,Rajura,Outpatient,13332100,17141200,7618300
+Chandrapur,2024,Gondpipari,Outpatient,6235300,8016800,3563000
+Chandrapur,2024,Jivati,Outpatient,4357800,5602900,2490200
 Dhule,2012,Shirpur,Outpatient,5039200,5931300,3555100
 Dhule,2012,Shindkheda,Outpatient,3311700,3011500,3418400
 Dhule,2012,Sakri,Outpatient,7394600,7413700,5065700
@@ -776,6 +1046,14 @@ Dhule,2021,Shirpur,Outpatient,65600,69300,12500
 Dhule,2021,Shindkheda,Outpatient,62700,71100,21500
 Dhule,2021,Sakri,Outpatient,67200,70800,13000
 Dhule,2021,Dhule,Outpatient,150900,175400,51500
+Dhule,2023,Shirpur,Outpatient,149315,166770,106013
+Dhule,2023,Shindkheda,Outpatient,127474,136094,86766
+Dhule,2023,Sakri,Outpatient,215158,239224,145417
+Dhule,2023,Dhule,Outpatient,371831,445450,179315
+Dhule,2024,Shirpur,Outpatient,222410,253762,134446
+Dhule,2024,Shindkheda,Outpatient,196820,185185,117403
+Dhule,2024,Sakri,Outpatient,342710,376420,228473
+Dhule,2024,Dhule,Outpatient,562408,620969,242356
 Gadchiroli,2012,Desaiganj,Outpatient,27200,33600,22800
 Gadchiroli,2012,Aarmori,Outpatient,26800,29700,23500
 Gadchiroli,2012,Kurkheda,Outpatient,31800,37700,22500
@@ -896,6 +1174,42 @@ Gadchiroli,2021,Etapalli,Outpatient,89200,89200,89200
 Gadchiroli,2021,Bhamragad,Outpatient,44400,44400,44400
 Gadchiroli,2021,Aheri,Outpatient,109900,109900,109900
 Gadchiroli,2021,Sironcha,Outpatient,68900,68900,68900
+Gadchiroli,2022,Desaiganj,Outpatient,,,
+Gadchiroli,2022,Aarmori,Outpatient,,,
+Gadchiroli,2022,Kurkheda,Outpatient,,,
+Gadchiroli,2022,Korachi,Outpatient,,,
+Gadchiroli,2022,Dhanora,Outpatient,,,
+Gadchiroli,2022,Gadchiroli,Outpatient,,,
+Gadchiroli,2022,Chomoshi,Outpatient,,,
+Gadchiroli,2022,Mulchera,Outpatient,,,
+Gadchiroli,2022,Etapalli,Outpatient,,,
+Gadchiroli,2022,Bhamragad,Outpatient,,,
+Gadchiroli,2022,Aheri,Outpatient,,,
+Gadchiroli,2022,Sironcha,Outpatient,,,
+Gadchiroli,2023,Desaiganj,Outpatient,,,
+Gadchiroli,2023,Aarmori,Outpatient,,,
+Gadchiroli,2023,Kurkheda,Outpatient,,,
+Gadchiroli,2023,Korachi,Outpatient,,,
+Gadchiroli,2023,Dhanora,Outpatient,,,
+Gadchiroli,2023,Gadchiroli,Outpatient,,,
+Gadchiroli,2023,Chomoshi,Outpatient,,,
+Gadchiroli,2023,Mulchera,Outpatient,,,
+Gadchiroli,2023,Etapalli,Outpatient,,,
+Gadchiroli,2023,Bhamragad,Outpatient,,,
+Gadchiroli,2023,Aheri,Outpatient,,,
+Gadchiroli,2023,Sironcha,Outpatient,,,
+Gadchiroli,2024,Desaiganj,Outpatient,78241,68461,48900
+Gadchiroli,2024,Aarmori,Outpatient,109307,95643,68316
+Gadchiroli,2024,Kurkheda,Outpatient,984116,86110,61507
+Gadchiroli,2024,Korachi,Outpatient,30756,29611,19222
+Gadchiroli,2024,Dhanora,Outpatient,76532,66965,47832
+Gadchiroli,2024,Gadchiroli,Outpatient,213109,186471,133193
+Gadchiroli,2024,Chomoshi,Outpatient,165131,144489,103207
+Gadchiroli,2024,Mulchera,Outpatient,39621,34668,24763
+Gadchiroli,2024,Etapalli,Outpatient,65150,57007,40719
+Gadchiroli,2024,Bhamragad,Outpatient,45690,39978,28556
+Gadchiroli,2024,Aheri,Outpatient,99598,87148,62248
+Gadchiroli,2024,Sironcha,Outpatient,60393,52844,37746
 Gondia,2012,Tiroda,Outpatient,5718900,4666400,2403700
 Gondia,2012,Goregaon,Outpatient,3968900,3167400,2540500
 Gondia,2012,Gondia,Outpatient,17966100,22547300,8241700
@@ -976,6 +1290,30 @@ Gondia,2021,Salekasa,Outpatient,65000,45500,19500
 Gondia,2021,Sadak Arjuni,Outpatient,72800,50900,21800
 Gondia,2021,Arjuni Morgaon,Outpatient,101100,70800,30300
 Gondia,2021,Devari,Outpatient,50300,35200,15100
+Gondia,2022,Tiroda,Outpatient,22200,19300,12600
+Gondia,2022,Goregaon,Outpatient,16700,14000,26900
+Gondia,2022,Gondia,Outpatient,81900,89400,20100
+Gondia,2022,Aamgaon,Outpatient,29200,19800,10900
+Gondia,2022,Salekasa,Outpatient,19500,13400,16700
+Gondia,2022,Sadak Arjuni,Outpatient,23800,20100,28100
+Gondia,2022,Arjuni Morgaon,Outpatient,43400,37600,7100
+Gondia,2022,Devari,Outpatient,23900,20300,60400
+Gondia,2023,Tiroda,Outpatient,31100,34600,10200
+Gondia,2023,Goregaon,Outpatient,29800,34800,6300
+Gondia,2023,Gondia,Outpatient,146400,67000,119300
+Gondia,2023,Aamgaon,Outpatient,28300,28000,10400
+Gondia,2023,Salekasa,Outpatient,38200,44600,6400
+Gondia,2023,Sadak Arjuni,Outpatient,27600,14900,6800
+Gondia,2023,Arjuni Morgaon,Outpatient,41100,43400,21600
+Gondia,2023,Devari,Outpatient,15100,3000,1300
+Gondia,2024,Tiroda,Outpatient,29800,22200,400
+Gondia,2024,Goregaon,Outpatient,26200,5400,400
+Gondia,2024,Gondia,Outpatient,213400,112900,1900
+Gondia,2024,Aamgaon,Outpatient,19900,16800,200
+Gondia,2024,Salekasa,Outpatient,25000,21100,200
+Gondia,2024,Sadak Arjuni,Outpatient,45800,20400,400
+Gondia,2024,Arjuni Morgaon,Outpatient,39200,28400,400
+Gondia,2024,Devari,Outpatient,54500,12500,300
 Hingoli,2012,Sengaon,Outpatient,1684200,568700,1002500
 Hingoli,2012,Hingoli,Outpatient,4099900,5024500,3689500
 Hingoli,2012,Aundha Na,Outpatient,2287400,2846800,1824500
@@ -1026,6 +1364,66 @@ Hingoli,2021,Hingoli,Outpatient,40800,44100,22400
 Hingoli,2021,Aundha Na,Outpatient,11200,11700,10200
 Hingoli,2021,Kalamanuri,Outpatient,20300,23900,9800
 Hingoli,2021,Vasamat,Outpatient,21000,33200,28100
+Hingoli,2022,Sengaon,Outpatient,12700,14600,7800
+Hingoli,2022,Hingoli,Outpatient,58200,68100,38000
+Hingoli,2022,Aundha Na,Outpatient,28800,32200,26700
+Hingoli,2022,Kalamanuri,Outpatient,58600,61500,25500
+Hingoli,2022,Vasamat,Outpatient,67900,66600,47300
+Hingoli,2023,Sengaon,Outpatient,30800,30300,13000
+Hingoli,2023,Hingoli,Outpatient,95000,100100,43900
+Hingoli,2023,Aundha Na,Outpatient,37600,43300,42300
+Hingoli,2023,Kalamanuri,Outpatient,82400,89300,50400
+Hingoli,2023,Vasamat,Outpatient,86100,94300,43600
+Hingoli,2024,Sengaon,Outpatient,23000,20300,5700
+Hingoli,2024,Hingoli,Outpatient,106700,103400,39900
+Hingoli,2024,Aundha Na,Outpatient,22300,29300,16300
+Hingoli,2024,Kalamanuri,Outpatient,67200,760000,38400
+Hingoli,2024,Vasamat,Outpatient,66900,64600,25900
+Jalgaon,2022,Chopda,Outpatient,52600,147600,45800
+Jalgaon,2022,Yawal,Outpatient,56100,75500,23300
+Jalgaon,2022,Raver,Outpatient,46300,83500,23500
+Jalgaon,2022,Muktainagar,Outpatient,32400,38600,21700
+Jalgaon,2022,Bodvad,Outpatient,16800,33600,17400
+Jalgaon,2022,Bhusawal,Outpatient,33300,50900,15300
+Jalgaon,2022,Jalgaon,Outpatient,144200,1898600,227900
+Jalgaon,2022,Erandol,Outpatient,19600,23700,18400
+Jalgaon,2022,Dharangoan,Outpatient,34100,76400,9900
+Jalgaon,2022,Amalner,Outpatient,24700,55100,22500
+Jalgaon,2022,Parola,Outpatient,27200,39200,4900
+Jalgaon,2022,Bhadgoan,Outpatient,22200,18000,25400
+Jalgaon,2022,Chalisgoan,Outpatient,73000,90300,46000
+Jalgaon,2022,Pachora,Outpatient,59700,49400,33100
+Jalgaon,2022,Jamner,Outpatient,71700,163700,29100
+Jalgaon,2023,Chopda,Outpatient,436499,48648,7171
+Jalgaon,2023,Yawal,Outpatient,339719,35862,12384
+Jalgaon,2023,Raver,Outpatient,458129,35037,9657
+Jalgaon,2023,Muktainagar,Outpatient,240778,33760,24332
+Jalgaon,2023,Bodvad,Outpatient,110708,12347,8562
+Jalgaon,2023,Bhusawal,Outpatient,282241,28120,3237
+Jalgaon,2023,Jalgaon,Outpatient,653029,3658,637
+Jalgaon,2023,Erandol,Outpatient,162264,24899,600
+Jalgaon,2023,Dharangoan,Outpatient,234750,30099,19739
+Jalgaon,2023,Amalner,Outpatient,332039,5675,2940
+Jalgaon,2023,Parola,Outpatient,234462,17560,9609
+Jalgaon,2023,Bhadgoan,Outpatient,190715,13129,5569
+Jalgaon,2023,Chalisgoan,Outpatient,416047,22176,14353
+Jalgaon,2023,Pachora,Outpatient,292034,33155,14704
+Jalgaon,2023,Jamner,Outpatient,488141,47924,15694
+Jalgaon,2024,Chopda,Outpatient,584900,83200,33300
+Jalgaon,2024,Yawal,Outpatient,424100,65800,26200
+Jalgaon,2024,Raver,Outpatient,510900,72400,29000
+Jalgaon,2024,Muktainagar,Outpatient,356700,55400,22200
+Jalgaon,2024,Bodvad,Outpatient,135300,22800,9100
+Jalgaon,2024,Bhusawal,Outpatient,399400,91400,36600
+Jalgaon,2024,Jalgaon,Outpatient,1698000,169700,67900
+Jalgaon,2024,Erandol,Outpatient,209500,28400,11400
+Jalgaon,2024,Dharangoan,Outpatient,287400,45000,18000
+Jalgaon,2024,Amalner,Outpatient,522400,53800,21500
+Jalgaon,2024,Parola,Outpatient,295900,40000,16000
+Jalgaon,2024,Bhadgoan,Outpatient,220600,19300,7700
+Jalgaon,2024,Chalisgoan,Outpatient,521300,51000,20400
+Jalgaon,2024,Pachora,Outpatient,424300,68000,27200
+Jalgaon,2024,Jamner,Outpatient,636800,90400,36100
 Jalna,2013,Bhokardan,Outpatient,12000,16500,8900
 Jalna,2013,Jaffrabad,Outpatient,16600,11900,11400
 Jalna,2013,Jalna,Outpatient,90600,99900,36300
@@ -1098,6 +1496,30 @@ Jalna,2021,Ambad,Outpatient,82382,106097,97095
 Jalna,2021,Ghansawangi,Outpatient,40206,51927,47462
 Jalna,2021,Partur,Outpatient,40237,51660,47341
 Jalna,2021,Mantha,Outpatient,28317,36387,33332
+Jalna,2022,Bhokardan,Outpatient,36282,58346,36961
+Jalna,2022,Jaffrabad,Outpatient,15688,26252,15265
+Jalna,2022,Jalna,Outpatient,73348,105592,83353
+Jalna,2022,Badnapur,Outpatient,18690,29410,19492
+Jalna,2022,Ambad,Outpatient,36223,54731,39359
+Jalna,2022,Ghansawangi,Outpatient,27319,41790,29324
+Jalna,2022,Partur,Outpatient,19364,30827,19946
+Jalna,2022,Mantha,Outpatient,14874,23451,15477
+Jalna,2023,Bhokardan,Outpatient,34844,39811,30924
+Jalna,2023,Jaffrabad,Outpatient,25347,20950,8293
+Jalna,2023,Jalna,Outpatient,160388,167403,114917
+Jalna,2023,Badnapur,Outpatient,19071,20631,14419
+Jalna,2023,Ambad,Outpatient,55188,54598,33457
+Jalna,2023,Ghansawangi,Outpatient,31982,35181,26246
+Jalna,2023,Partur,Outpatient,40384,35760,16623
+Jalna,2023,Mantha,Outpatient,33518,33863,22155
+Jalna,2024,Bhokardan,Outpatient,93510.75,80269.86,54255.4
+Jalna,2024,Jaffrabad,Outpatient,50983.57,47843.81,27547.6
+Jalna,2024,Jalna,Outpatient,184890.14,149922.42,114519.4
+Jalna,2024,Badnapur,Outpatient,35864.94,34109.39,15915.67
+Jalna,2024,Ambad,Outpatient,65825.37,67709.37,44576.3
+Jalna,2024,Ghansawangi,Outpatient,55578.74,52832.24,38058
+Jalna,2024,Partur,Outpatient,43203.12,38463.25,39329.6
+Jalna,2024,Mantha,Outpatient,41807.09,38764.76,29963.1
 Kolhapur,2012,Shahuwadi,Outpatient,91330,99940,
 Kolhapur,2012,Panhala,Outpatient,86010,99200,
 Kolhapur,2012,Hatkanangale,Outpatient,204200,204900,
@@ -1218,6 +1640,42 @@ Kolhapur,2021,Bhudargad,Outpatient,72500,71400,15200
 Kolhapur,2021,Ajara,Outpatient,65400,61500,15700
 Kolhapur,2021,Gadhinglaj,Outpatient,107200,110300,20200
 Kolhapur,2021,Chandgad,Outpatient,85000,79100,58300
+Kolhapur,2022,Shahuwadi,Outpatient,98600,103400,37900
+Kolhapur,2022,Panhala,Outpatient,141800,140400,39300
+Kolhapur,2022,Hatkanangale,Outpatient,377900,373600,160100
+Kolhapur,2022,Shirol,Outpatient,174600,169900,56800
+Kolhapur,2022,Karveer,Outpatient,526200,514900,183800
+Kolhapur,2022,Gaganbavada,Outpatient,24500,25000,8500
+Kolhapur,2022,Radhanagari,Outpatient,119800,111600,41300
+Kolhapur,2022,Kagal,Outpatient,145400,146300,44900
+Kolhapur,2022,Bhudargad,Outpatient,78800,79000,16500
+Kolhapur,2022,Ajara,Outpatient,71300,69300,17000
+Kolhapur,2022,Gadhinglaj,Outpatient,121800,132200,25400
+Kolhapur,2022,Chandgad,Outpatient,88100,84000,66400
+Kolhapur,2023,Shahuwadi,Outpatient,103800,106000,36400
+Kolhapur,2023,Panhala,Outpatient,147600,147300,37400
+Kolhapur,2023,Hatkanangale,Outpatient,408000,411700,173900
+Kolhapur,2023,Shirol,Outpatient,184400,184100,59900
+Kolhapur,2023,Karveer,Outpatient,543700,539300,199100
+Kolhapur,2023,Gaganbavada,Outpatient,24400,25700,8700
+Kolhapur,2023,Radhanagari,Outpatient,129000,125600,36900
+Kolhapur,2023,Kagal,Outpatient,154400,157900,51400
+Kolhapur,2023,Bhudargad,Outpatient,85200,88100,16800
+Kolhapur,2023,Ajara,Outpatient,74300,73100,17600
+Kolhapur,2023,Gadhinglaj,Outpatient,138600,141600,28400
+Kolhapur,2023,Chandgad,Outpatient,88700,91000,61000
+Kolhapur,2024,Shahuwadi,Outpatient,121844,122685,43601
+Kolhapur,2024,Panhala,Outpatient,165980,169643,75248
+Kolhapur,2024,Hatkanangale,Outpatient,389554,391328,137560
+Kolhapur,2024,Shirol,Outpatient,209454,206834,70767
+Kolhapur,2024,Karveer,Outpatient,452738,455425,161819
+Kolhapur,2024,Gaganbavada,Outpatient,32121,32911,13252
+Kolhapur,2024,Radhanagari,Outpatient,172143,166497,57055
+Kolhapur,2024,Kagal,Outpatient,171752,173542,60923
+Kolhapur,2024,Bhudargad,Outpatient,113546,114042,36050
+Kolhapur,2024,Ajara,Outpatient,87285,85584,27117
+Kolhapur,2024,Gadhinglaj,Outpatient,169425,168562,51475
+Kolhapur,2024,Chandgad,Outpatient,119754,104267,37376
 Latur,2012,Latur,Outpatient,173300,215800,62300
 Latur,2012,Renapur,Outpatient,75300,48600,16300
 Latur,2012,Ahamadpur,Outpatient,68000,90500,19900
@@ -1318,6 +1776,36 @@ Latur,2021,Aosa,Outpatient,287800,,
 Latur,2021,Nilanga,Outpatient,299200,,
 Latur,2021,Devani,Outpatient,101300,,
 Latur,2021,Udgir,Outpatient,214300,,
+Latur,2022,Latur,Outpatient,,,
+Latur,2022,Renapur,Outpatient,,,
+Latur,2022,Ahamadpur,Outpatient,,,
+Latur,2022,Jalkot,Outpatient,,,
+Latur,2022,Chakur,Outpatient,,,
+Latur,2022,Shirur-Anantpal,Outpatient,,,
+Latur,2022,Aosa,Outpatient,,,
+Latur,2022,Nilanga,Outpatient,,,
+Latur,2022,Devani,Outpatient,,,
+Latur,2022,Udgir,Outpatient,,,
+Latur,2023,Latur,Outpatient,,952300,
+Latur,2023,Renapur,Outpatient,,229800,
+Latur,2023,Ahamadpur,Outpatient,,263100,
+Latur,2023,Jalkot,Outpatient,,134700,
+Latur,2023,Chakur,Outpatient,,350300,
+Latur,2023,Shirur-Anantpal,Outpatient,,88800,
+Latur,2023,Aosa,Outpatient,,358000,
+Latur,2023,Nilanga,Outpatient,,365700,
+Latur,2023,Devani,Outpatient,,144900,
+Latur,2023,Udgir,Outpatient,,249700,
+Latur,2024,Latur,Outpatient,133300,0,0
+Latur,2024,Renapur,Outpatient,31400,0,0
+Latur,2024,Ahamadpur,Outpatient,41600,0,0
+Latur,2024,Jalkot,Outpatient,19200,0,0
+Latur,2024,Chakur,Outpatient,45200,0,0
+Latur,2024,Shirur-Anantpal,Outpatient,11400,0,0
+Latur,2024,Aosa,Outpatient,54700,0,0
+Latur,2024,Nilanga,Outpatient,55400,0,0
+Latur,2024,Devani,Outpatient,22400,0,0
+Latur,2024,Udgir,Outpatient,51800,0,0
 Mumbai Suburban,2016,Adheri,Outpatient,77062900,67951800,37401100
 Mumbai Suburban,2016,Borivali,Outpatient,29696300,29396000,14313900
 Mumbai Suburban,2016,Kurla,Outpatient,153021700,167025800,107520000
@@ -1336,6 +1824,15 @@ Mumbai Suburban,2020,Kurla,Outpatient,1117200,1173000,484700
 Mumbai Suburban,2021,Adheri,Outpatient,525000,496200,156700
 Mumbai Suburban,2021,Borivali,Outpatient,245700,278900,71700
 Mumbai Suburban,2021,Kurla,Outpatient,277300,278600,85700
+Mumbai Suburban,2022,Adheri,Outpatient,500000,538200,246400
+Mumbai Suburban,2022,Borivali,Outpatient,222600,267300,68700
+Mumbai Suburban,2022,Kurla,Outpatient,1405800,608900,95700
+Mumbai Suburban,2023,Adheri,Outpatient,534500,428600,195900
+Mumbai Suburban,2023,Borivali,Outpatient,595900,752500,339800
+Mumbai Suburban,2023,Kurla,Outpatient,692600,852400,366200
+Mumbai Suburban,2024,Adheri,Outpatient,534500,428600,195100
+Mumbai Suburban,2024,Borivali,Outpatient,595900,752500,284200
+Mumbai Suburban,2024,Kurla,Outpatient,693400,852400,428300
 Mumbai,2013,Mumbai City,Outpatient,116351700,104208700,67645600
 Mumbai,2014,Mumbai City,Outpatient,436181100,,
 Mumbai,2015,Mumbai City,Outpatient,188893300,185984300,191174000
@@ -1345,6 +1842,9 @@ Mumbai,2018,Mumbai City,Outpatient,2023904,1949929,1781694
 Mumbai,2019,Mumbai City,Outpatient,1419475,2860249,1379639
 Mumbai,2020,Mumbai City,Outpatient,1212003,948258,1411860
 Mumbai,2021,Mumbai City,Outpatient,1903235,1667328,644427
+Mumbai,2022,Mumbai City,Outpatient,1883593,1041203,198893
+Mumbai,2023,Mumbai City,Outpatient,1125100,947100,670000
+Mumbai,2024,Mumbai City,Outpatient,1634000,1523000,874400
 Nagpur,2012,Narkhed,Outpatient,4880000,5125300,1557300
 Nagpur,2012,Katol,Outpatient,5094200,4964400,2869600
 Nagpur,2012,Kalameshwar,Outpatient,6080700,6819600,3621000
@@ -1485,6 +1985,48 @@ Nagpur,2021,Hingana,Outpatient,100300,90400,26900
 Nagpur,2021,Umred,Outpatient,149900,128400,40500
 Nagpur,2021,Kuhi,Outpatient,99400,82000,24000
 Nagpur,2021,Bhiwapur,Outpatient,70800,62700,20000
+Nagpur,2022,Narkhed,Outpatient,115400,91600,29900
+Nagpur,2022,Katol,Outpatient,109500,90300,28400
+Nagpur,2022,Kalameshwar,Outpatient,105800,87400,28900
+Nagpur,2022,Sawner,Outpatient,138500,85600,27700
+Nagpur,2022,Parashivani,Outpatient,127200,98000,31500
+Nagpur,2022,Ramtech,Outpatient,136000,122600,37300
+Nagpur,2022,Mauda,Outpatient,117800,85800,26600
+Nagpur,2022,Kamathi,Outpatient,216100,197600,62800
+Nagpur,2022,Nagpur (Gra),Outpatient,54500,33700,10900
+Nagpur,2022,Nagpur (Sh),Outpatient,630400,1072100,392000
+Nagpur,2022,Hingana,Outpatient,132500,115500,34000
+Nagpur,2022,Umred,Outpatient,157800,141100,43100
+Nagpur,2022,Kuhi,Outpatient,114800,96700,27700
+Nagpur,2022,Bhiwapur,Outpatient,82700,73600,22800
+Nagpur,2023,Narkhed,Outpatient,119900,79200,27200
+Nagpur,2023,Katol,Outpatient,125300,82700,28400
+Nagpur,2023,Kalameshwar,Outpatient,117300,77500,26600
+Nagpur,2023,Sawner,Outpatient,142600,94200,32300
+Nagpur,2023,Parashivani,Outpatient,140900,93000,31900
+Nagpur,2023,Ramtech,Outpatient,150100,99100,34000
+Nagpur,2023,Mauda,Outpatient,126100,83300,28500
+Nagpur,2023,Kamathi,Outpatient,243300,160700,55100
+Nagpur,2023,Nagpur (Gra),Outpatient,61800,40800,14000
+Nagpur,2023,Nagpur (Sh),Outpatient,773900,1041800,414700
+Nagpur,2023,Hingana,Outpatient,148400,98000,33600
+Nagpur,2023,Umred,Outpatient,167300,110500,37900
+Nagpur,2023,Kuhi,Outpatient,117000,77300,26500
+Nagpur,2023,Bhiwapur,Outpatient,83700,55300,19000
+Nagpur,2024,Narkhed,Outpatient,137300,113500,30800
+Nagpur,2024,Katol,Outpatient,156500,122100,34400
+Nagpur,2024,Kalameshwar,Outpatient,154700,126200,35800
+Nagpur,2024,Sawner,Outpatient,168700,116800,38900
+Nagpur,2024,Parashivani,Outpatient,150100,117100,36400
+Nagpur,2024,Ramtech,Outpatient,183200,177100,55800
+Nagpur,2024,Mauda,Outpatient,148600,120600,66700
+Nagpur,2024,Kamathi,Outpatient,222400,210900,62200
+Nagpur,2024,Nagpur (Gra),Outpatient,143700,99500,33200
+Nagpur,2024,Nagpur (Sh),Outpatient,1430400,2043900,533600
+Nagpur,2024,Hingana,Outpatient,468100,347200,103400
+Nagpur,2024,Umred,Outpatient,157400,140200,40600
+Nagpur,2024,Kuhi,Outpatient,137300,111600,31300
+Nagpur,2024,Bhiwapur,Outpatient,85700,73700,20800
 Nanded,2014,Mahur,Outpatient,800,1700,1100
 Nanded,2014,Kinvat,Outpatient,2500,3400,4400
 Nanded,2014,Himalay Nagar,Outpatient,700,1000,700
@@ -1613,6 +2155,54 @@ Nanded,2021,Loha,Outpatient,171400,171400,171400
 Nanded,2021,Kandhar,Outpatient,215900,215900,215900
 Nanded,2021,Mukhed,Outpatient,192400,192400,192400
 Nanded,2021,Deglur,Outpatient,136200,136200,136200
+Nanded,2022,Mahur,Outpatient,,181800,
+Nanded,2022,Kinvat,Outpatient,,416200,
+Nanded,2022,Himalay Nagar,Outpatient,,125300,
+Nanded,2022,Hadgaon,Outpatient,,297600,
+Nanded,2022,Andhrapur,Outpatient,,90000,
+Nanded,2022,Nanded,Outpatient,,1062200,
+Nanded,2022,Mudkhed,Outpatient,,146500,
+Nanded,2022,Bhokar,Outpatient,,175300,
+Nanded,2022,Umari,Outpatient,,114100,
+Nanded,2022,Dharmabad,Outpatient,,112800,
+Nanded,2022,Biloli,Outpatient,,225800,
+Nanded,2022,Naygaon,Outpatient,,205900,
+Nanded,2022,Loha,Outpatient,,245600,
+Nanded,2022,Kandhar,Outpatient,,270500,
+Nanded,2022,Mukhed,Outpatient,,303100,
+Nanded,2022,Deglur,Outpatient,,184900,
+Nanded,2023,Mahur,Outpatient,,198900,
+Nanded,2023,Kinvat,Outpatient,,372500,
+Nanded,2023,Himalay Nagar,Outpatient,,136000,
+Nanded,2023,Hadgaon,Outpatient,,311700,
+Nanded,2023,Andhrapur,Outpatient,,139000,
+Nanded,2023,Nanded,Outpatient,,961500,
+Nanded,2023,Mudkhed,Outpatient,,211400,
+Nanded,2023,Bhokar,Outpatient,,199400,
+Nanded,2023,Umari,Outpatient,,147400,
+Nanded,2023,Dharmabad,Outpatient,,140500,
+Nanded,2023,Biloli,Outpatient,,260400,
+Nanded,2023,Naygaon,Outpatient,,279200,
+Nanded,2023,Loha,Outpatient,,248500,
+Nanded,2023,Kandhar,Outpatient,,298000,
+Nanded,2023,Mukhed,Outpatient,,351000,
+Nanded,2023,Deglur,Outpatient,,222600,
+Nanded,2024,Mahur,Outpatient,9408300,9189500,3282000
+Nanded,2024,Kinvat,Outpatient,17619600,17209800,6146400
+Nanded,2024,Himalay Nagar,Outpatient,6428600,6279100,2242500
+Nanded,2024,Hadgaon,Outpatient,14747800,14404800,5144600
+Nanded,2024,Andhrapur,Outpatient,6574000,6421100,2293300
+Nanded,2024,Nanded,Outpatient,45479000,44421300,15864800
+Nanded,2024,Mudkhed,Outpatient,10000200,9767600,3488400
+Nanded,2024,Bhokar,Outpatient,9432300,9212900,3290300
+Nanded,2024,Umari,Outpatient,6976200,6814000,2433600
+Nanded,2024,Dharmabad,Outpatient,6648000,6493400,2319100
+Nanded,2024,Biloli,Outpatient,12318900,12032400,4297300
+Nanded,2024,Naygaon,Outpatient,13201800,12894800,4605300
+Nanded,2024,Loha,Outpatient,11753700,11480400,4100100
+Nanded,2024,Kandhar,Outpatient,14092000,13764300,4915800
+Nanded,2024,Mukhed,Outpatient,16606300,16220100,5792900
+Nanded,2024,Deglur,Outpatient,10530300,10285400,3673400
 Nandurbar,2012,Akkalkuva,Outpatient,233900,668000,346300
 Nandurbar,2012,Akrani,Outpatient,1365800,1085200,820800
 Nandurbar,2012,Taloda,Outpatient,1128600,1192700,604900
@@ -1673,6 +2263,24 @@ Nandurbar,2021,Taloda,Outpatient,4099600,3677100,3137300
 Nandurbar,2021,Shahada,Outpatient,10096100,9607600,9007500
 Nandurbar,2021,Nandurbar,Outpatient,11274400,11551000,10698100
 Nandurbar,2021,Navapur,Outpatient,6971900,7221000,6800700
+Nandurbar,2022,Akkalkuva,Outpatient,9994400,10733900,8833900
+Nandurbar,2022,Akrani,Outpatient,8016800,8096500,7622400
+Nandurbar,2022,Taloda,Outpatient,6406200,5983800,5443900
+Nandurbar,2022,Shahada,Outpatient,13748500,13260100,12659900
+Nandurbar,2022,Nandurbar,Outpatient,14112400,14389100,13536100
+Nandurbar,2022,Navapur,Outpatient,9654100,9903100,9482800
+Nandurbar,2023,Akkalkuva,Outpatient,11648800,12510700,10296200
+Nandurbar,2023,Akrani,Outpatient,9096400,9186800,8648900
+Nandurbar,2023,Taloda,Outpatient,7331700,6848300,6230400
+Nandurbar,2023,Shahada,Outpatient,15189300,14649700,13986600
+Nandurbar,2023,Nandurbar,Outpatient,17628300,17973900,16908400
+Nandurbar,2023,Navapur,Outpatient,10868500,11148800,10675600
+Nandurbar,2024,Akkalkuva,Outpatient,132124,141900,116782
+Nandurbar,2024,Akrani,Outpatient,102158,103174,97132
+Nandurbar,2024,Taloda,Outpatient,213353,199286,181305
+Nandurbar,2024,Shahada,Outpatient,135200,130400,124500
+Nandurbar,2024,Nandurbar,Outpatient,168700,172000,161800
+Nandurbar,2024,Navapur,Outpatient,77200,79200,75800
 Nashik,2012,Surgana,Outpatient,4753400,5662000,17782800
 Nashik,2012,Kalwan,Outpatient,4840500,5289900,14935200
 Nashik,2012,Devala,Outpatient,2415000,2157200,7281700
@@ -1823,6 +2431,51 @@ Nashik,2021,Igatpuri,Outpatient,26228900,0,0
 Nashik,2021,Sinner,Outpatient,34086600,0,0
 Nashik,2021,Nifad,Outpatient,37773400,0,0
 Nashik,2021,Yewala,Outpatient,16839500,0,0
+Nashik,2022,Surgana,Outpatient,25234700,0,0
+Nashik,2022,Kalwan,Outpatient,29274800,0,0
+Nashik,2022,Devala,Outpatient,16335900,0,0
+Nashik,2022,Baglan,Outpatient,36922600,0,0
+Nashik,2022,Malegaon,Outpatient,88714100,19051200,8802700
+Nashik,2022,Nandgaon,Outpatient,22804200,0,0
+Nashik,2022,Chandwad,Outpatient,25457300,0,0
+Nashik,2022,Dindori,Outpatient,43196600,0,0
+Nashik,2022,Peth,Outpatient,20792000,0,0
+Nashik,2022,Trimbak,Outpatient,32342600,0,0
+Nashik,2022,Nashik,Outpatient,105516200,49225100,413800
+Nashik,2022,Igatpuri,Outpatient,33923600,0,0
+Nashik,2022,Sinner,Outpatient,37257500,0,0
+Nashik,2022,Nifad,Outpatient,47925400,0,0
+Nashik,2022,Yewala,Outpatient,25659400,0,0
+Nashik,2023,Surgana,Outpatient,0,0,29392200
+Nashik,2023,Kalwan,Outpatient,0,0,31921100
+Nashik,2023,Devala,Outpatient,0,0,18575300
+Nashik,2023,Baglan,Outpatient,0,0,40377800
+Nashik,2023,Malegaon,Outpatient,8599600,9430900,76902200
+Nashik,2023,Nandgaon,Outpatient,0,0,26274600
+Nashik,2023,Chandwad,Outpatient,0,0,25726500
+Nashik,2023,Dindori,Outpatient,0,0,48132900
+Nashik,2023,Peth,Outpatient,0,0,24615900
+Nashik,2023,Trimbak,Outpatient,0,0,32959900
+Nashik,2023,Nashik,Outpatient,49086300,61569800,77931700
+Nashik,2023,Igatpuri,Outpatient,0,0,40636300
+Nashik,2023,Sinner,Outpatient,0,0,36087900
+Nashik,2023,Nifad,Outpatient,0,0,50883600
+Nashik,2023,Yewala,Outpatient,0,0,31282500
+Nashik,2024,Surgana,Outpatient,0,0,34603900
+Nashik,2024,Kalwan,Outpatient,0,0,39279800
+Nashik,2024,Devala,Outpatient,0,0,22248900
+Nashik,2024,Baglan,Outpatient,0,0,44394200
+Nashik,2024,Malegaon,Outpatient,24245600,20820200,82010100
+Nashik,2024,Nandgaon,Outpatient,0,0,31707500
+Nashik,2024,Chandwad,Outpatient,0,0,27727900
+Nashik,2024,Dindori,Outpatient,0,0,49590900
+Nashik,2024,Peth,Outpatient,0,0,28344500
+Nashik,2024,Trimbak,Outpatient,0,0,35391700
+Nashik,2024,Nashik,Outpatient,33191600,39772200,82358800
+Nashik,2024,Igatpuri,Outpatient,0,0,43961500
+Nashik,2024,Sinner,Outpatient,0,0,41512400
+Nashik,2024,Nifad,Outpatient,0,0,56429200
+Nashik,2024,Yewala,Outpatient,0,0,33444000
 Dharashiv,2012,Paranda,Outpatient,1922500,1994000,1032600
 Dharashiv,2012,Bhum,Outpatient,2380500,2595200,970200
 Dharashiv,2012,Washi,Outpatient,1443800,1602400,1037000
@@ -1903,6 +2556,30 @@ Dharashiv,2021,Dharashiv,Outpatient,273800,182500,114100
 Dharashiv,2021,Tuljapur,Outpatient,161500,88100,44100
 Dharashiv,2021,Lohara,Outpatient,98700,52000,22500
 Dharashiv,2021,Umaraga,Outpatient,113700,90500,27800
+Dharashiv,2022,Paranda,Outpatient,83500,57200,13900
+Dharashiv,2022,Bhum,Outpatient,85600,63000,12900
+Dharashiv,2022,Washi,Outpatient,81500,55400,16900
+Dharashiv,2022,Kalamb,Outpatient,157700,126100,19500
+Dharashiv,2022,Dharashiv,Outpatient,383500,317800,25200
+Dharashiv,2022,Tuljapur,Outpatient,199900,172500,20400
+Dharashiv,2022,Lohara,Outpatient,109700,102600,17300
+Dharashiv,2022,Umaraga,Outpatient,193600,113500,22400
+Dharashiv,2023,Paranda,Outpatient,,,
+Dharashiv,2023,Bhum,Outpatient,,,
+Dharashiv,2023,Washi,Outpatient,,,
+Dharashiv,2023,Kalamb,Outpatient,,,
+Dharashiv,2023,Dharashiv,Outpatient,,,
+Dharashiv,2023,Tuljapur,Outpatient,,,
+Dharashiv,2023,Lohara,Outpatient,,,
+Dharashiv,2023,Umaraga,Outpatient,,,
+Dharashiv,2024,Paranda,Outpatient,,,
+Dharashiv,2024,Bhum,Outpatient,,,
+Dharashiv,2024,Washi,Outpatient,,,
+Dharashiv,2024,Kalamb,Outpatient,,,
+Dharashiv,2024,Dharashiv,Outpatient,,,
+Dharashiv,2024,Tuljapur,Outpatient,,,
+Dharashiv,2024,Lohara,Outpatient,,,
+Dharashiv,2024,Umaraga,Outpatient,,,
 Palghar,2014,Talasari,Outpatient,13854100,16181200,9597900
 Palghar,2014,Dahanu,Outpatient,29668100,31808600,17981700
 Palghar,2014,Vikramgad,Outpatient,11713900,13517900,7902300
@@ -1967,6 +2644,30 @@ Palghar,2021,Mokhada,Outpatient,87468,74937,27468
 Palghar,2021,Wada,Outpatient,128019,98053,24010
 Palghar,2021,Palghar,Outpatient,256829,108415,98415
 Palghar,2021,Vasai,Outpatient,321963,258085,8843
+Palghar,2022,Talasari,Outpatient,92636,61757,13724
+Palghar,2022,Dahanu,Outpatient,361278,100355,80284
+Palghar,2022,Vikramgad,Outpatient,112324,87286,25037
+Palghar,2022,Javhar,Outpatient,170035,130427,39635
+Palghar,2022,Mokhada,Outpatient,96790,82923,30395
+Palghar,2022,Wada,Outpatient,173142,132614,32473
+Palghar,2022,Palghar,Outpatient,343725,145096,131713
+Palghar,2022,Vasai,Outpatient,577247,462720,15855
+Palghar,2023,Talasari,Outpatient,116090,72477,22235
+Palghar,2023,Dahanu,Outpatient,355086,221688,68010
+Palghar,2023,Vikramgad,Outpatient,152699,95333,29247
+Palghar,2023,Javhar,Outpatient,212096,132416,40623
+Palghar,2023,Mokhada,Outpatient,131415,82045,25170
+Palghar,2023,Wada,Outpatient,232392,145087,44510
+Palghar,2023,Palghar,Outpatient,397367,248085,76109
+Palghar,2023,Vasai,Outpatient,681790,425656,130585
+Palghar,2024,Talasari,Outpatient,131487,82090,25184
+Palghar,2024,Dahanu,Outpatient,421484,263142,80727
+Palghar,2024,Vikramgad,Outpatient,156331,97601,29943
+Palghar,2024,Javhar,Outpatient,244359,152558,46802
+Palghar,2024,Mokhada,Outpatient,153437,95794,29388
+Palghar,2024,Wada,Outpatient,236392,147584,45276
+Palghar,2024,Palghar,Outpatient,465655,290719,89189
+Palghar,2024,Vasai,Outpatient,898155,560738,172026
 Parbhani,2013,Selu,Outpatient,13947,13858,7137
 Parbhani,2013,Jintur,Outpatient,45158,47894,30584
 Parbhani,2013,Parbhani,Outpatient,30554,34513,18073
@@ -2048,6 +2749,33 @@ Parbhani,2021,Sonpeth,Outpatient,12607,7564,5043
 Parbhani,2021,Gangakhed,Outpatient,26668,22380,6037
 Parbhani,2021,Palam,Outpatient,7155,7337,1795
 Parbhani,2021,Purna,Outpatient,2823,6691,1226
+Parbhani,2022,Selu,Outpatient,28596,34016,19360
+Parbhani,2022,Jintur,Outpatient,52648,59963,36942
+Parbhani,2022,Parbhani,Outpatient,122930,142600,90572
+Parbhani,2022,Manvat,Outpatient,29042,33407,24759
+Parbhani,2022,Pathari,Outpatient,28798,32102,18159
+Parbhani,2022,Sonpeth,Outpatient,23786,25514,10837
+Parbhani,2022,Gangakhed,Outpatient,48823,52263,36844
+Parbhani,2022,Palam,Outpatient,16937,20613,11505
+Parbhani,2022,Purna,Outpatient,27023,31220,21276
+Parbhani,2023,Selu,Outpatient,30619,43742,13123
+Parbhani,2023,Jintur,Outpatient,54200,77428,22228
+Parbhani,2023,Parbhani,Outpatient,141040,201480,60445
+Parbhani,2023,Manvat,Outpatient,22174,31777,9503
+Parbhani,2023,Pathari,Outpatient,32345,46207,13862
+Parbhani,2023,Sonpeth,Outpatient,0,0,0
+Parbhani,2023,Gangakhed,Outpatient,37066,52951,15885
+Parbhani,2023,Palam,Outpatient,20423,29176,8753
+Parbhani,2023,Purna,Outpatient,23753,33933,10180
+Parbhani,2024,Selu,Outpatient,46768,61938,19753
+Parbhani,2024,Jintur,Outpatient,100217,127997,51520
+Parbhani,2024,Parbhani,Outpatient,232723,319158,108876
+Parbhani,2024,Manvat,Outpatient,32525,46857,13276
+Parbhani,2024,Pathari,Outpatient,40761,58977,15427
+Parbhani,2024,Sonpeth,Outpatient,33669,42098,13237
+Parbhani,2024,Gangakhed,Outpatient,67748,91891,60110
+Parbhani,2024,Palam,Outpatient,32230,45912,14212
+Parbhani,2024,Purna,Outpatient,40555,56494,21969
 Pune,2011,Junnar,Outpatient,43900,38800,14100
 Pune,2011,Aambegaon,Outpatient,37600,45500,19600
 Pune,2011,Shirur,Outpatient,24100,25500,25800
@@ -2202,6 +2930,48 @@ Pune,2021,Welhe,Outpatient,12500,23000,7600
 Pune,2021,Bhor,Outpatient,36900,79500,36600
 Pune,2021,Baramati,Outpatient,81000,150900,37300
 Pune,2021,Indapur,Outpatient,85100,125200,20500
+Pune,2022,Junnar,Outpatient,113850,382950,66461
+Pune,2022,Aambegaon,Outpatient,100400,366000,50320
+Pune,2022,Shirur,Outpatient,77905,378610,53883
+Pune,2022,Khed,Outpatient,206880,317440,103910
+Pune,2022,Maval,Outpatient,45095,294720,98336
+Pune,2022,Mulashi,Outpatient,73151,126320,37217
+Pune,2022,Haveli,Outpatient,652280,1558400,303360
+Pune,2022,Pune City,Outpatient,414680,508160,212380
+Pune,2022,Daund,Outpatient,104900,267770,163990
+Pune,2022,Purandar,Outpatient,52015,273050,31655
+Pune,2022,Welhe,Outpatient,21009,53280,19818
+Pune,2022,Bhor,Outpatient,27837,201620,34650
+Pune,2022,Baramati,Outpatient,177520,374990,93566
+Pune,2022,Indapur,Outpatient,165080,213800,17372
+Pune,2023,Junnar,Outpatient,4723900,4897400,0
+Pune,2023,Aambegaon,Outpatient,9859000,10859400,0
+Pune,2023,Shirur,Outpatient,9108300,8590700,0
+Pune,2023,Khed,Outpatient,15198800,11816600,0
+Pune,2023,Maval,Outpatient,3638700,3652100,0
+Pune,2023,Mulashi,Outpatient,2739600,2691100,0
+Pune,2023,Haveli,Outpatient,203016800,14732300,123800
+Pune,2023,Pune City,Outpatient,1883804200,1895341800,14368700
+Pune,2023,Daund,Outpatient,5983600,5486700,0
+Pune,2023,Purandar,Outpatient,6890200,6458800,0
+Pune,2023,Welhe,Outpatient,2104100,2056100,0
+Pune,2023,Bhor,Outpatient,3521300,3107300,0
+Pune,2023,Baramati,Outpatient,9256500,11912900,0
+Pune,2023,Indapur,Outpatient,7850500,7061300,0
+Pune,2024,Junnar,Outpatient,55679200,5747900,0
+Pune,2024,Aambegaon,Outpatient,51201400,12546300,0
+Pune,2024,Shirur,Outpatient,65065000,10485200,0
+Pune,2024,Khed,Outpatient,71254200,21243400,0
+Pune,2024,Maval,Outpatient,48862300,6313900,0
+Pune,2024,Mulashi,Outpatient,37804200,3044500,0
+Pune,2024,Haveli,Outpatient,268894600,18298000,577100
+Pune,2024,Pune City,Outpatient,117552900,122754300,66950400
+Pune,2024,Daund,Outpatient,53353200,6503400,0
+Pune,2024,Purandar,Outpatient,34551700,6986200,0
+Pune,2024,Welhe,Outpatient,8723000,1801700,0
+Pune,2024,Bhor,Outpatient,23381100,3587200,0
+Pune,2024,Baramati,Outpatient,61620500,12336700,0
+Pune,2024,Indapur,Outpatient,44938100,7838800,0
 Raigad,2012,Uran,Outpatient,28300,26400,10400
 Raigad,2012,Panwel,Outpatient,45500,45000,16600
 Raigad,2012,Karjat,Outpatient,59800,65200,24100
@@ -2352,6 +3122,36 @@ Raigad,2021,Shreevardhan,Outpatient,17100,29200,27900
 Raigad,2021,Mhasala,Outpatient,13700,24400,23300
 Raigad,2021,Mahad,Outpatient,41700,73400,70200
 Raigad,2021,Poladpur,Outpatient,7100,12400,11900
+Raigad,2023,Uran,Outpatient,56400,58000,44000
+Raigad,2023,Panwel,Outpatient,95100,122200,149000
+Raigad,2023,Karjat,Outpatient,58900,71100,172600
+Raigad,2023,Khalapur,Outpatient,53500,55000,132700
+Raigad,2023,Pen,Outpatient,78200,88100,134000
+Raigad,2023,Alibag,Outpatient,111400,67200,155800
+Raigad,2023,Murud,Outpatient,24700,27800,39500
+Raigad,2023,Roha,Outpatient,45200,53500,86200
+Raigad,2023,Sudhagad,Outpatient,11300,9000,36800
+Raigad,2023,Mangaon,Outpatient,65400,75400,147100
+Raigad,2023,Tala,Outpatient,9300,12900,32300
+Raigad,2023,Shreevardhan,Outpatient,4900,51800,44700
+Raigad,2023,Mhasala,Outpatient,1300,17800,66100
+Raigad,2023,Mahad,Outpatient,8200,76800,123300
+Raigad,2023,Poladpur,Outpatient,13800,16400,51300
+Raigad,2024,Uran,Outpatient,36700,50900,5600
+Raigad,2024,Panwel,Outpatient,91900,83000,32000
+Raigad,2024,Karjat,Outpatient,86100,118800,30800
+Raigad,2024,Khalapur,Outpatient,58200,56900,17900
+Raigad,2024,Pen,Outpatient,77300,91800,23700
+Raigad,2024,Alibag,Outpatient,120300,91200,16900
+Raigad,2024,Murud,Outpatient,16900,20300,4200
+Raigad,2024,Roha,Outpatient,41400,50200,12500
+Raigad,2024,Sudhagad,Outpatient,11400,13800,9200
+Raigad,2024,Mangaon,Outpatient,67500,75800,16100
+Raigad,2024,Tala,Outpatient,6200,7100,1700
+Raigad,2024,Shreevardhan,Outpatient,52600,72100,10800
+Raigad,2024,Mhasala,Outpatient,21500,21000,14800
+Raigad,2024,Mahad,Outpatient,62000,60900,17800
+Raigad,2024,Poladpur,Outpatient,13800,16300,5100
 Ratnagiri,2012,Mandangad,Outpatient,14800,19000,7000
 Ratnagiri,2012,Dapoli,Outpatient,31800,47000,26600
 Ratnagiri,2012,Khed,Outpatient,50200,57500,31700
@@ -2442,6 +3242,33 @@ Ratnagiri,2021,Ratnagiri,Outpatient,83300,108000,33800
 Ratnagiri,2021,Sangameshwar,Outpatient,50200,65100,20300
 Ratnagiri,2021,Lanja,Outpatient,25500,33100,10400
 Ratnagiri,2021,Rajapur,Outpatient,40100,52100,16300
+Ratnagiri,2022,Mandangad,Outpatient,,51400,
+Ratnagiri,2022,Dapoli,Outpatient,,169200,
+Ratnagiri,2022,Khed,Outpatient,,200900,
+Ratnagiri,2022,Chiplun,Outpatient,,262100,
+Ratnagiri,2022,Guhagar,Outpatient,,128200,
+Ratnagiri,2022,Ratnagiri,Outpatient,,371200,
+Ratnagiri,2022,Sangameshwar,Outpatient,,236800,
+Ratnagiri,2022,Lanja,Outpatient,,102900,
+Ratnagiri,2022,Rajapur,Outpatient,,164100,
+Ratnagiri,2023,Mandangad,Outpatient,,64500,
+Ratnagiri,2023,Dapoli,Outpatient,,235800,
+Ratnagiri,2023,Khed,Outpatient,,246500,
+Ratnagiri,2023,Chiplun,Outpatient,,698300,
+Ratnagiri,2023,Guhagar,Outpatient,,132200,
+Ratnagiri,2023,Ratnagiri,Outpatient,,433700,
+Ratnagiri,2023,Sangameshwar,Outpatient,,266200,
+Ratnagiri,2023,Lanja,Outpatient,,114900,
+Ratnagiri,2023,Rajapur,Outpatient,,180700,
+Ratnagiri,2024,Mandangad,Outpatient,105600,0,0
+Ratnagiri,2024,Dapoli,Outpatient,347100,0,0
+Ratnagiri,2024,Khed,Outpatient,314400,0,0
+Ratnagiri,2024,Chiplun,Outpatient,832400,0,0
+Ratnagiri,2024,Guhagar,Outpatient,203800,0,0
+Ratnagiri,2024,Ratnagiri,Outpatient,704100,0,0
+Ratnagiri,2024,Sangameshwar,Outpatient,344100,0,0
+Ratnagiri,2024,Lanja,Outpatient,167200,0,0
+Ratnagiri,2024,Rajapur,Outpatient,238300,0,0
 Sangli,2012,Shirala,Outpatient,,,
 Sangli,2012,Valava,Outpatient,,,
 Sangli,2012,Palus,Outpatient,,,
@@ -2542,6 +3369,36 @@ Sangli,2021,Tasgaon,Outpatient,,,16039100
 Sangli,2021,Miraj,Outpatient,,,66125200
 Sangli,2021,Ku. Mahakal,Outpatient,,,12487400
 Sangli,2021,Jat,Outpatient,,,11399300
+Sangli,2022,Shirala,Outpatient,99300,96300,79500
+Sangli,2022,Valava,Outpatient,155400,150000,85000
+Sangli,2022,Palus,Outpatient,90500,86100,77000
+Sangli,2022,Kadegaon,Outpatient,94100,94600,76600
+Sangli,2022,Khanapur,Outpatient,100300,102800,80000
+Sangli,2022,Aatpadi,Outpatient,89000,87700,79600
+Sangli,2022,Tasgaon,Outpatient,86800,82000,76900
+Sangli,2022,Miraj,Outpatient,255800,273000,121100
+Sangli,2022,Ku. Mahakal,Outpatient,91000,87500,77000
+Sangli,2022,Jat,Outpatient,94900,91800,78600
+Sangli,2023,Shirala,Outpatient,24879,21818,5010
+Sangli,2023,Valava,Outpatient,80955,75499,10560
+Sangli,2023,Palus,Outpatient,15999,11619,2556
+Sangli,2023,Kadegaon,Outpatient,19614,20138,2147
+Sangli,2023,Khanapur,Outpatient,25867,28385,5492
+Sangli,2023,Aatpadi,Outpatient,14584,13186,5137
+Sangli,2023,Tasgaon,Outpatient,12342,7504,2410
+Sangli,2023,Miraj,Outpatient,217254,229533,42064
+Sangli,2023,Ku. Mahakal,Outpatient,16520,13025,2507
+Sangli,2023,Jat,Outpatient,20395,17374,4176
+Sangli,2024,Shirala,Outpatient,90000,80000,30000
+Sangli,2024,Valava,Outpatient,217200,188900,66100
+Sangli,2024,Palus,Outpatient,57400,58700,14400
+Sangli,2024,Kadegaon,Outpatient,65400,63900,22800
+Sangli,2024,Khanapur,Outpatient,66200,64700,19600
+Sangli,2024,Aatpadi,Outpatient,74700,68200,19500
+Sangli,2024,Tasgaon,Outpatient,88400,84500,19200
+Sangli,2024,Miraj,Outpatient,272700,270200,91900
+Sangli,2024,Ku. Mahakal,Outpatient,77100,61000,22500
+Sangli,2024,Jat,Outpatient,104200,99200,44600
 Satara,2012,Mahableshwar,Outpatient,17200,13700,9000
 Satara,2012,Vai,Outpatient,25800,28500,17500
 Satara,2012,Khandala,Outpatient,39600,43100,20300
@@ -2652,6 +3509,39 @@ Satara,2021,Satara,Outpatient,139500,291100,106600
 Satara,2021,Javali,Outpatient,56300,85000,23100
 Satara,2021,Patan,Outpatient,59800,137000,80300
 Satara,2021,Karad,Outpatient,74100,213500,107900
+Satara,2022,Mahableshwar,Outpatient,36500,63200,6200
+Satara,2022,Vai,Outpatient,89400,94400,35300
+Satara,2022,Khandala,Outpatient,82900,99100,21300
+Satara,2022,Faltan,Outpatient,95900,126400,44400
+Satara,2022,Man,Outpatient,75900,98000,21300
+Satara,2022,Khatav,Outpatient,113900,154600,45500
+Satara,2022,Koregaon,Outpatient,59600,93100,38000
+Satara,2022,Satara,Outpatient,141900,294100,107700
+Satara,2022,Javali,Outpatient,56900,85900,23400
+Satara,2022,Patan,Outpatient,60400,138300,81100
+Satara,2022,Karad,Outpatient,75900,215600,109000
+Satara,2023,Mahableshwar,Outpatient,27400,31700,6800
+Satara,2023,Vai,Outpatient,83400,85400,22600
+Satara,2023,Khandala,Outpatient,65000,64300,20500
+Satara,2023,Faltan,Outpatient,91700,88400,36000
+Satara,2023,Man,Outpatient,68800,52600,26500
+Satara,2023,Khatav,Outpatient,75500,80300,42800
+Satara,2023,Koregaon,Outpatient,58700,82300,30400
+Satara,2023,Satara,Outpatient,156800,196000,108600
+Satara,2023,Javali,Outpatient,51100,81100,18800
+Satara,2023,Patan,Outpatient,70500,121600,75500
+Satara,2023,Karad,Outpatient,89600,213500,102900
+Satara,2024,Mahableshwar,Outpatient,52200,64600,20600
+Satara,2024,Vai,Outpatient,108100,133700,42700
+Satara,2024,Khandala,Outpatient,97000,119900,38300
+Satara,2024,Faltan,Outpatient,141900,175500,56000
+Satara,2024,Man,Outpatient,114400,141500,45200
+Satara,2024,Khatav,Outpatient,159800,197700,63100
+Satara,2024,Koregaon,Outpatient,135900,168100,53700
+Satara,2024,Satara,Outpatient,250400,309700,98800
+Satara,2024,Javali,Outpatient,81900,101300,32300
+Satara,2024,Patan,Outpatient,154600,191200,61000
+Satara,2024,Karad,Outpatient,255600,316100,100900
 Sindhudurg,2012,Devgad,Outpatient,36000,43700,18000
 Sindhudurg,2012,Vaibhavwadi,Outpatient,11300,15100,6900
 Sindhudurg,2012,Kankavali,Outpatient,47800,63000,30500
@@ -2732,6 +3622,63 @@ Sindhudurg,2021,Vengurla,Outpatient,41500,48200,2600
 Sindhudurg,2021,Kudal,Outpatient,37900,82000,38200
 Sindhudurg,2021,Savantwadi,Outpatient,65500,84200,14900
 Sindhudurg,2021,Dodamarg,Outpatient,31800,41200,7500
+Sindhudurg,2022,Devgad,Outpatient,46900,70100,25900
+Sindhudurg,2022,Vaibhavwadi,Outpatient,45000,65700,12300
+Sindhudurg,2022,Kankawali,Outpatient,79600,87000,16200
+Sindhudurg,2022,Malwan,Outpatient,105100,95600,23500
+Sindhudurg,2022,Vengurla,Outpatient,47700,64000,15200
+Sindhudurg,2022,Kudal,Outpatient,50100,122900,52600
+Sindhudurg,2022,Savantwadi,Outpatient,18700,35600,3400
+Sindhudurg,2022,Dodamarg,Outpatient,39500,69500,17400
+Sindhudurg,2023,Devgad,Outpatient,,158100,
+Sindhudurg,2023,Vaibhavwadi,Outpatient,,253500,
+Sindhudurg,2023,Kankawali,Outpatient,,206500,
+Sindhudurg,2023,Malwan,Outpatient,,129900,
+Sindhudurg,2023,Vengurla,Outpatient,,132100,
+Sindhudurg,2023,Kudal,Outpatient,,139200,
+Sindhudurg,2023,Savantwadi,Outpatient,,268200,
+Sindhudurg,2023,Dodamarg,Outpatient,,60400,
+Sindhudurg,2024,Devgad,Outpatient,,,
+Sindhudurg,2024,Vaibhavwadi,Outpatient,,,
+Sindhudurg,2024,Kankawali,Outpatient,,,
+Sindhudurg,2024,Malwan,Outpatient,,,
+Sindhudurg,2024,Vengurla,Outpatient,,,
+Sindhudurg,2024,Kudal,Outpatient,,,
+Sindhudurg,2024,Savantwadi,Outpatient,,,
+Sindhudurg,2024,Dodamarg,Outpatient,,,
+Solapur,2022,Karmala,Outpatient,,,
+Solapur,2022,Madha,Outpatient,,,
+Solapur,2022,Barsi,Outpatient,,,
+Solapur,2022,North Solapur,Outpatient,,,
+Solapur,2022,Mohol,Outpatient,,,
+Solapur,2022,Pandharpur,Outpatient,,,
+Solapur,2022,Malsiras,Outpatient,,,
+Solapur,2022,Sangola,Outpatient,,,
+Solapur,2022,Mangalvedha,Outpatient,,,
+Solapur,2022,South Solapur,Outpatient,,,
+Solapur,2022,Akkalkot,Outpatient,,,
+Solapur,2023,Karmala,Outpatient,,6930600,
+Solapur,2023,Madha,Outpatient,,12182500,
+Solapur,2023,Barsi,Outpatient,,15392800,
+Solapur,2023,North Solapur,Outpatient,,13156800,
+Solapur,2023,Mohol,Outpatient,,8790900,
+Solapur,2023,Pandharpur,Outpatient,,24699500,
+Solapur,2023,Malsiras,Outpatient,,23144100,
+Solapur,2023,Sangola,Outpatient,,7194500,
+Solapur,2023,Mangalvedha,Outpatient,,6938000,
+Solapur,2023,South Solapur,Outpatient,,6518900,
+Solapur,2023,Akkalkot,Outpatient,,8355500,
+Solapur,2024,Karmala,Outpatient,16743700,,
+Solapur,2024,Madha,Outpatient,27531000,,
+Solapur,2024,Barsi,Outpatient,27174100,,
+Solapur,2024,North Solapur,Outpatient,85523200,,
+Solapur,2024,Mohol,Outpatient,22877200,,
+Solapur,2024,Pandharpur,Outpatient,33079500,,
+Solapur,2024,Malsiras,Outpatient,31826700,,
+Solapur,2024,Sangola,Outpatient,21293200,,
+Solapur,2024,Mangalvedha,Outpatient,13814500,,
+Solapur,2024,South Solapur,Outpatient,21420800,,
+Solapur,2024,Akkalkot,Outpatient,24296400,,
 Thane,2012,Thane,Outpatient,432300,443000,319700
 Thane,2012,Bhivandi,Outpatient,135000,143800,77600
 Thane,2012,Shahapur,Outpatient,102300,117100,58100
@@ -2802,6 +3749,27 @@ Thane,2021,Kalyan,Outpatient,253400,170500,63300
 Thane,2021,Ulhasnagar,Outpatient,184500,124200,46100
 Thane,2021,Ambarnath,Outpatient,122500,82500,30600
 Thane,2021,Murbad,Outpatient,101400,68200,25300
+Thane,2022,Thane,Outpatient,1522500,1024700,380600
+Thane,2022,Bhivandi,Outpatient,424500,285700,106100
+Thane,2022,Shahapur,Outpatient,318500,214400,79600
+Thane,2022,Kalyan,Outpatient,356200,239700,89000
+Thane,2022,Ulhasnagar,Outpatient,207100,139400,51800
+Thane,2022,Ambarnath,Outpatient,173500,116800,43400
+Thane,2022,Murbad,Outpatient,159600,107400,39900
+Thane,2023,Thane,Outpatient,797800,145200,53900
+Thane,2023,Bhivandi,Outpatient,1541700,280600,104200
+Thane,2023,Shahapur,Outpatient,1131800,206000,76500
+Thane,2023,Kalyan,Outpatient,646500,117700,43700
+Thane,2023,Ulhasnagar,Outpatient,1255700,228500,84900
+Thane,2023,Ambarnath,Outpatient,6490100,1181200,438700
+Thane,2023,Murbad,Outpatient,874800,159200,59100
+Thane,2024,Thane,Outpatient,11097300,2019700,750200
+Thane,2024,Bhivandi,Outpatient,1993800,362900,134800
+Thane,2024,Shahapur,Outpatient,1346500,245100,91000
+Thane,2024,Kalyan,Outpatient,1777900,323600,120200
+Thane,2024,Ulhasnagar,Outpatient,1482600,269800,100200
+Thane,2024,Ambarnath,Outpatient,1073300,195300,72600
+Thane,2024,Murbad,Outpatient,871100,158500,58900
 Wardha,2012,Ashti,Outpatient,11600,10600,17400
 Wardha,2012,Karanja,Outpatient,19500,22300,22600
 Wardha,2012,Aarvi,Outpatient,27400,31600,29500
@@ -2882,6 +3850,30 @@ Wardha,2021,Wardha,Outpatient,115200,206600,150000
 Wardha,2021,Devali,Outpatient,79600,132800,29500
 Wardha,2021,Hinganghat,Outpatient,123100,185400,95700
 Wardha,2021,Samudrapur,Outpatient,42000,111300,9700
+Wardha,2022,Ashti,Outpatient,46800,86200,14500
+Wardha,2022,Karanja,Outpatient,33700,99100,45600
+Wardha,2022,Aarvi,Outpatient,67900,133300,44400
+Wardha,2022,Selu,Outpatient,89000,143500,18500
+Wardha,2022,Wardha,Outpatient,174200,312400,226800
+Wardha,2022,Devali,Outpatient,100300,167300,37100
+Wardha,2022,Hinganghat,Outpatient,148200,223300,115300
+Wardha,2022,Samudrapur,Outpatient,55900,147900,12800
+Wardha,2023,Ashti,Outpatient,58000,94300,15700
+Wardha,2023,Karanja,Outpatient,43400,108200,47500
+Wardha,2023,Aarvi,Outpatient,74700,137200,45000
+Wardha,2023,Selu,Outpatient,126400,155100,19200
+Wardha,2023,Wardha,Outpatient,211700,331900,234800
+Wardha,2023,Devali,Outpatient,156800,185400,39200
+Wardha,2023,Hinganghat,Outpatient,201100,241600,120700
+Wardha,2023,Samudrapur,Outpatient,75500,161500,13200
+Wardha,2024,Ashti,Outpatient,55000,49800,19900
+Wardha,2024,Karanja,Outpatient,50300,45700,23600
+Wardha,2024,Aarvi,Outpatient,73900,69600,27600
+Wardha,2024,Selu,Outpatient,82000,43200,24200
+Wardha,2024,Wardha,Outpatient,255300,279500,137600
+Wardha,2024,Devali,Outpatient,146200,153400,74800
+Wardha,2024,Hinganghat,Outpatient,151800,168800,84500
+Wardha,2024,Samudrapur,Outpatient,67000,68200,24600
 Washim,2012,Malegaon,Outpatient,3063200,2015400,2196900
 Washim,2012,Mangrulpir,Outpatient,6951500,4305600,3229900
 Washim,2012,Karanja,Outpatient,9082300,8535500,4554100
@@ -2942,6 +3934,24 @@ Washim,2021,Karanja,Outpatient,2192900,2139400,1136900
 Washim,2021,Manora,Outpatient,648900,641100,359900
 Washim,2021,Washim,Outpatient,6323200,3129700,2063000
 Washim,2021,Resod,Outpatient,1066100,785900,342300
+Washim,2022,Malegaon,Outpatient,69537,104306,43462
+Washim,2022,Mangrulpir,Outpatient,75321,112981,47077
+Washim,2022,Karanja,Outpatient,78792,118189,49247
+Washim,2022,Manora,Outpatient,23488,35233,14682
+Washim,2022,Washim,Outpatient,131514,197271,82197
+Washim,2022,Resod,Outpatient,59903,89855,37440
+Washim,2023,Malegaon,Outpatient,14321,17191,23500
+Washim,2023,Mangrulpir,Outpatient,34594,36011,25966
+Washim,2023,Karanja,Outpatient,67392,68013,21974
+Washim,2023,Manora,Outpatient,22301,22817,3877
+Washim,2023,Washim,Outpatient,116407,113321,59260
+Washim,2023,Resod,Outpatient,16105,15467,4877
+Washim,2024,Malegaon,Outpatient,201501,102894,124330
+Washim,2024,Mangrulpir,Outpatient,192129,98109,118548
+Washim,2024,Karanja,Outpatient,252365,128867,155715
+Washim,2024,Manora,Outpatient,112428,57410,69371
+Washim,2024,Washim,Outpatient,315191,160949,194480
+Washim,2024,Resod,Outpatient,149875,76532,92476
 Yavatmal,2012,Ner,Outpatient,17900,22000,5000
 Yavatmal,2012,Babhulgaon,Outpatient,13500,19900,5100
 Yavatmal,2012,Kalamb,Outpatient,10300,16600,3300
@@ -3102,6 +4112,54 @@ Yavatmal,2021,Ralegaon,Outpatient,152400,,
 Yavatmal,2021,Maregaon,Outpatient,51000,,
 Yavatmal,2021,Zari Jamani,Outpatient,65200,,
 Yavatmal,2021,Vani,Outpatient,146700,,
+Yavatmal,2022,Ner,Outpatient,,145000,
+Yavatmal,2022,Babhulgaon,Outpatient,,149300,
+Yavatmal,2022,Kalamb,Outpatient,,163700,
+Yavatmal,2022,Yavatmal,Outpatient,,356600,
+Yavatmal,2022,Darvha,Outpatient,,278600,
+Yavatmal,2022,Digras,Outpatient,,153700,
+Yavatmal,2022,Pusad,Outpatient,,315200,
+Yavatmal,2022,Umarkhed,Outpatient,,239900,
+Yavatmal,2022,Mahagaon,Outpatient,,192200,
+Yavatmal,2022,Aarni,Outpatient,,160500,
+Yavatmal,2022,Ghantaji,Outpatient,,151500,
+Yavatmal,2022,Kelapur,Outpatient,,246700,
+Yavatmal,2022,Ralegaon,Outpatient,,159000,
+Yavatmal,2022,Maregaon,Outpatient,,83000,
+Yavatmal,2022,Zari Jamani,Outpatient,,69000,
+Yavatmal,2022,Vani,Outpatient,,157800,
+Yavatmal,2023,Ner,Outpatient,121300,28500,2100
+Yavatmal,2023,Babhulgaon,Outpatient,196900,19800,9800
+Yavatmal,2023,Kalamb,Outpatient,193800,24000,16400
+Yavatmal,2023,Yavatmal,Outpatient,343400,70100,45300
+Yavatmal,2023,Darvha,Outpatient,265200,49000,18700
+Yavatmal,2023,Digras,Outpatient,102900,27600,19100
+Yavatmal,2023,Pusad,Outpatient,257900,35400,17700
+Yavatmal,2023,Umarkhed,Outpatient,248300,46400,18600
+Yavatmal,2023,Mahagaon,Outpatient,252200,17600,3500
+Yavatmal,2023,Aarni,Outpatient,117800,46900,11800
+Yavatmal,2023,Ghantaji,Outpatient,134600,18400,4500
+Yavatmal,2023,Kelapur,Outpatient,229600,33300,19200
+Yavatmal,2023,Ralegaon,Outpatient,138500,22800,6800
+Yavatmal,2023,Maregaon,Outpatient,129700,11000,1100
+Yavatmal,2023,Zari Jamani,Outpatient,90000,10900,2800
+Yavatmal,2023,Vani,Outpatient,140900,36500,16400
+Yavatmal,2024,Ner,Outpatient,243900,22500,2300
+Yavatmal,2024,Babhulgaon,Outpatient,202300,24300,2400
+Yavatmal,2024,Kalamb,Outpatient,217500,17100,1700
+Yavatmal,2024,Yavatmal,Outpatient,472900,116700,68900
+Yavatmal,2024,Darvha,Outpatient,452300,59100,5900
+Yavatmal,2024,Digras,Outpatient,224500,31300,3100
+Yavatmal,2024,Pusad,Outpatient,495400,38500,3900
+Yavatmal,2024,Umarkhed,Outpatient,396300,30400,18600
+Yavatmal,2024,Mahagaon,Outpatient,249700,16700,1700
+Yavatmal,2024,Aarni,Outpatient,339800,50300,5000
+Yavatmal,2024,Ghantaji,Outpatient,262800,22600,2300
+Yavatmal,2024,Kelapur,Outpatient,372100,44800,4500
+Yavatmal,2024,Ralegaon,Outpatient,236800,24000,2400
+Yavatmal,2024,Maregaon,Outpatient,147900,20400,2000
+Yavatmal,2024,Zari Jamani,Outpatient,96100,12100,1200
+Yavatmal,2024,Vani,Outpatient,226500,20700,16400
 Ahilyanagar,2012,Akole,Inpatient,205900,300900,23900
 Ahilyanagar,2012,Sangamner,Inpatient,82900,164000,7800
 Ahilyanagar,2012,Kopargaon,Inpatient,143800,215700,14700
@@ -3242,6 +4300,48 @@ Ahilyanagar,2021,Parner,Inpatient,61700,173600,12100
 Ahilyanagar,2021,Srigonda,Inpatient,93800,133000,11300
 Ahilyanagar,2021,Karjat,Inpatient,179800,350300,33200
 Ahilyanagar,2021,Jamkhed,Inpatient,40800,96500,20300
+Ahilyanagar,2022,Akole,Inpatient,5505,9402,601
+Ahilyanagar,2022,Sangamner,Inpatient,3330,4741,472
+Ahilyanagar,2022,Kopargaon,Inpatient,1094,1642,467
+Ahilyanagar,2022,Rahata,Inpatient,2608,4194,460
+Ahilyanagar,2022,Srirampur,Inpatient,524,2670,671
+Ahilyanagar,2022,Nevasa,Inpatient,1756,3815,438
+Ahilyanagar,2022,Shevgaon,Inpatient,1096,1938,510
+Ahilyanagar,2022,Pathardi,Inpatient,850,2603,244
+Ahilyanagar,2022,Nagar,Inpatient,26979,39164,5658
+Ahilyanagar,2022,Rahuri,Inpatient,1601,2035,421
+Ahilyanagar,2022,Parner,Inpatient,8921,9402,5313
+Ahilyanagar,2022,Srigonda,Inpatient,1621,664,351
+Ahilyanagar,2022,Karjat,Inpatient,1545,3745,210
+Ahilyanagar,2022,Jamkhed,Inpatient,1034,1138,156
+Ahilyanagar,2023,Akole,Inpatient,3724,9334,3796
+Ahilyanagar,2023,Sangamner,Inpatient,2525,6032,2337
+Ahilyanagar,2023,Kopargaon,Inpatient,1068,2258,952
+Ahilyanagar,2023,Rahata,Inpatient,5473,8732,2144
+Ahilyanagar,2023,Srirampur,Inpatient,595,3396,2072
+Ahilyanagar,2023,Nevasa,Inpatient,1888,4120,1315
+Ahilyanagar,2023,Shevgaon,Inpatient,1203,3466,1462
+Ahilyanagar,2023,Pathardi,Inpatient,3029,9127,1202
+Ahilyanagar,2023,Nagar,Inpatient,21508,38096,18134
+Ahilyanagar,2023,Rahuri,Inpatient,2687,4649,965
+Ahilyanagar,2023,Parner,Inpatient,2134,3875,691
+Ahilyanagar,2023,Srigonda,Inpatient,1421,2271,700
+Ahilyanagar,2023,Karjat,Inpatient,1771,1901,755
+Ahilyanagar,2023,Jamkhed,Inpatient,1233,1549,213
+Ahilyanagar,2024,Akole,Inpatient,4993,11484,4485
+Ahilyanagar,2024,Sangamner,Inpatient,2786,6379,1993
+Ahilyanagar,2024,Kopargaon,Inpatient,1360,1648,884
+Ahilyanagar,2024,Rahata,Inpatient,8319,12051,1853
+Ahilyanagar,2024,Srirampur,Inpatient,622,4730,1711
+Ahilyanagar,2024,Nevasa,Inpatient,2413,4153,1544
+Ahilyanagar,2024,Shevgaon,Inpatient,1214,3713,1752
+Ahilyanagar,2024,Pathardi,Inpatient,3598,10492,1044
+Ahilyanagar,2024,Nagar,Inpatient,26977,38025,20494
+Ahilyanagar,2024,Rahuri,Inpatient,6244,7130,981
+Ahilyanagar,2024,Parner,Inpatient,2567,4851,1111
+Ahilyanagar,2024,Srigonda,Inpatient,2051,2907,961
+Ahilyanagar,2024,Karjat,Inpatient,1602,2868,709
+Ahilyanagar,2024,Jamkhed,Inpatient,1066,1342,233
 Akola,2019,Telhara,Inpatient,35600,6800,5500
 Akola,2019,Akot,Inpatient,34900,55400,15200
 Akola,2019,Balapur,Inpatient,25300,60200,10400
@@ -3263,6 +4363,27 @@ Akola,2021,Akola,Inpatient,116700,3628100,478000
 Akola,2021,Murtijapur,Inpatient,1158100,729700,118800
 Akola,2021,Patur,Inpatient,146600,227800,40700
 Akola,2021,Barshitakali,Inpatient,13900,79600,33100
+Akola,2022,Telhara,Inpatient,168300,268600,98900
+Akola,2022,Akot,Inpatient,153700,268100,58600
+Akola,2022,Balapur,Inpatient,182300,444900,90100
+Akola,2022,Akola,Inpatient,169800,4883800,451600
+Akola,2022,Murtijapur,Inpatient,460800,916500,404400
+Akola,2022,Patur,Inpatient,590000,625600,251700
+Akola,2022,Barshitakali,Inpatient,125100,263000,71400
+Akola,2023,Telhara,Inpatient,72300,85600,48300
+Akola,2023,Akot,Inpatient,94700,172600,30500
+Akola,2023,Balapur,Inpatient,19700,22700,11800
+Akola,2023,Akola,Inpatient,8000,3293300,789000
+Akola,2023,Murtijapur,Inpatient,525500,970700,366900
+Akola,2023,Patur,Inpatient,129700,203200,24900
+Akola,2023,Barshitakali,Inpatient,52500,136500,46400
+Akola,2024,Telhara,Inpatient,233900,268400,59200
+Akola,2024,Akot,Inpatient,187100,491900,52100
+Akola,2024,Balapur,Inpatient,4091700,4345500,956300
+Akola,2024,Akola,Inpatient,162900,2825300,1236300
+Akola,2024,Murtijapur,Inpatient,605100,1065200,385000
+Akola,2024,Patur,Inpatient,2797700,3794700,778900
+Akola,2024,Barshitakali,Inpatient,140100,255300,65300
 Amravati,2012,Dharani,Inpatient,3600,6300,3700
 Amravati,2012,Chikhraldara,Inpatient,1400,2000,1600
 Amravati,2012,Anjangaon Su,Inpatient,2400,3100,1000
@@ -3403,6 +4524,75 @@ Amravati,2021,Daryapur,Inpatient,2047,5448,2103
 Amravati,2021,Nandgaon Kh,Inpatient,1078,2190,455
 Amravati,2021,Chandur Railway,Inpatient,1443,2086,590
 Amravati,2021,Dhamangaon Re,Inpatient,3711,3504,1323
+Amravati,2022,Dharani,Inpatient,1966,5297,3162
+Amravati,2022,Chikhraldara,Inpatient,4141,6794,4321
+Amravati,2022,Anjangaon Su,Inpatient,2738,4882,891
+Amravati,2022,Achalpur,Inpatient,4152,9746,8026
+Amravati,2022,Chandurbazar,Inpatient,3391,3060,1089
+Amravati,2022,Morshi,Inpatient,2209,3342,1633
+Amravati,2022,Warud,Inpatient,2169,5852,882
+Amravati,2022,Tivas,Inpatient,1364,2077,650
+Amravati,2022,Amravati,Inpatient,48565,48983,13785
+Amravati,2022,Bhatkuli,Inpatient,1264,1784,620
+Amravati,2022,Daryapur,Inpatient,1636,2831,1354
+Amravati,2022,Nandgaon Kh,Inpatient,1283,2233,716
+Amravati,2022,Chandur Railway,Inpatient,1312,1752,520
+Amravati,2022,Dhamangaon Re,Inpatient,2999,3272,303
+Amravati,2023,Dharani,Inpatient,3177,6437,5476
+Amravati,2023,Chikhraldara,Inpatient,3455,5074,3073
+Amravati,2023,Anjangaon Su,Inpatient,3345,4578,1592
+Amravati,2023,Achalpur,Inpatient,6057,11477,9215
+Amravati,2023,Chandurbazar,Inpatient,6777,4846,3085
+Amravati,2023,Morshi,Inpatient,4036,5572,3037
+Amravati,2023,Warud,Inpatient,1731,4572,1026
+Amravati,2023,Tivas,Inpatient,2759,3651,1695
+Amravati,2023,Amravati,Inpatient,58408,52745,17778
+Amravati,2023,Bhatkuli,Inpatient,1976,2350,748
+Amravati,2023,Daryapur,Inpatient,2490,6946,2658
+Amravati,2023,Nandgaon Kh,Inpatient,1111,1761,511
+Amravati,2023,Chandur Railway,Inpatient,2099,2386,848
+Amravati,2023,Dhamangaon Re,Inpatient,5587,4689,1326
+Amravati,2024,Dharani,Inpatient,3185,7355,4800
+Amravati,2024,Chikhraldara,Inpatient,3020,5154,2160
+Amravati,2024,Anjangaon Su,Inpatient,3253,3803,1454
+Amravati,2024,Achalpur,Inpatient,6145,11282,7899
+Amravati,2024,Chandurbazar,Inpatient,4961,3590,1349
+Amravati,2024,Morshi,Inpatient,2981,4386,1747
+Amravati,2024,Warud,Inpatient,1667,4896,678
+Amravati,2024,Tivas,Inpatient,3226,3118,387
+Amravati,2024,Amravati,Inpatient,40824,39822,14118
+Amravati,2024,Bhatkuli,Inpatient,1463,1370,439
+Amravati,2024,Daryapur,Inpatient,1652,2180,1011
+Amravati,2024,Nandgaon Kh,Inpatient,1434,1942,400
+Amravati,2024,Chandur Railway,Inpatient,1713,1663,794
+Amravati,2024,Dhamangaon Re,Inpatient,4755,4212,465
+Chh. Sambhaji Nagar,2022,Kannad,Inpatient,2100,8500,3500
+Chh. Sambhaji Nagar,2022,Soyegaon,Inpatient,900,1800,900
+Chh. Sambhaji Nagar,2022,Sillod,Inpatient,4200,5300,7600
+Chh. Sambhaji Nagar,2022,Phulambri,Inpatient,1000,2700,1000
+Chh. Sambhaji Nagar,2022,Chh. Sambhaji Nagar,Inpatient,129800,197200,54700
+Chh. Sambhaji Nagar,2022,Khultabad,Inpatient,400,1600,600
+Chh. Sambhaji Nagar,2022,Vaijapur,Inpatient,1600,1500,1300
+Chh. Sambhaji Nagar,2022,Gangapur,Inpatient,1500,1200,1400
+Chh. Sambhaji Nagar,2022,Paithan,Inpatient,7100,11600,5200
+Chh. Sambhaji Nagar,2023,Kannad,Inpatient,6000,6900,3100
+Chh. Sambhaji Nagar,2023,Soyegaon,Inpatient,1700,1800,1000
+Chh. Sambhaji Nagar,2023,Sillod,Inpatient,5900,5600,3600
+Chh. Sambhaji Nagar,2023,Phulambri,Inpatient,2800,3600,1500
+Chh. Sambhaji Nagar,2023,Chh. Sambhaji Nagar,Inpatient,389200,338000,169700
+Chh. Sambhaji Nagar,2023,Khultabad,Inpatient,1100,1400,500
+Chh. Sambhaji Nagar,2023,Vaijapur,Inpatient,2900,3100,1200
+Chh. Sambhaji Nagar,2023,Gangapur,Inpatient,2100,2000,1200
+Chh. Sambhaji Nagar,2023,Paithan,Inpatient,10500,11000,5100
+Chh. Sambhaji Nagar,2024,Kannad,Inpatient,4328,10408,6760
+Chh. Sambhaji Nagar,2024,Soyegaon,Inpatient,3364,4364,1437
+Chh. Sambhaji Nagar,2024,Sillod,Inpatient,7194,10004,5589
+Chh. Sambhaji Nagar,2024,Phulambri,Inpatient,2040,3930,1498
+Chh. Sambhaji Nagar,2024,Chh. Sambhaji Nagar,Inpatient,54382,145528,61224
+Chh. Sambhaji Nagar,2024,Khultabad,Inpatient,854,2512,1300
+Chh. Sambhaji Nagar,2024,Vaijapur,Inpatient,4438,8177,2997
+Chh. Sambhaji Nagar,2024,Gangapur,Inpatient,1950,4473,2742
+Chh. Sambhaji Nagar,2024,Paithan,Inpatient,5920,10604,5841
 Beed,2013,Ashti,Inpatient,3500,4000,6400
 Beed,2013,Patoda,Inpatient,3900,7300,7600
 Beed,2013,Shirur Kasar,Inpatient,2000,2800,3800
@@ -3502,6 +4692,39 @@ Beed,2021,Cage,Inpatient,7800,5500,2100
 Beed,2021,Dharur,Inpatient,1000,900,200
 Beed,2021,Parli,Inpatient,7000,4000,2000
 Beed,2021,Ambajogai,Inpatient,2900,3100,900
+Beed,2022,Ashti,Inpatient,5800,4600,1300
+Beed,2022,Patoda,Inpatient,4500,3100,500
+Beed,2022,Shirur Kasar,Inpatient,4700,3100,200
+Beed,2022,Gevrai,Inpatient,8200,5700,1900
+Beed,2022,Majalgaon,Inpatient,6900,5600,1000
+Beed,2022,Wadwani,Inpatient,2100,700,300
+Beed,2022,Beed,Inpatient,66400,30400,15700
+Beed,2022,Cage,Inpatient,12600,9000,2400
+Beed,2022,Dharur,Inpatient,1400,1000,400
+Beed,2022,Parli,Inpatient,8400,4900,2300
+Beed,2022,Ambajogai,Inpatient,8900,5100,2000
+Beed,2023,Ashti,Inpatient,6341,3146,1380
+Beed,2023,Patoda,Inpatient,4373,2731,566
+Beed,2023,Shirur Kasar,Inpatient,4336,2697,273
+Beed,2023,Gevrai,Inpatient,8422,4891,1906
+Beed,2023,Majalgaon,Inpatient,6770,5559,571
+Beed,2023,Wadwani,Inpatient,2221,1182,572
+Beed,2023,Beed,Inpatient,,33657,19042
+Beed,2023,Cage,Inpatient,11816,6776,2760
+Beed,2023,Dharur,Inpatient,1364,880,280
+Beed,2023,Parli,Inpatient,8316,5030,2250
+Beed,2023,Ambajogai,Inpatient,7526,6933,1504
+Beed,2024,Ashti,Inpatient,8061,4122,1551
+Beed,2024,Patoda,Inpatient,4128,2315,876
+Beed,2024,Shirur Kasar,Inpatient,4011,1465,300
+Beed,2024,Gevrai,Inpatient,6872,4322,1957
+Beed,2024,Majalgaon,Inpatient,10292,6852,1054
+Beed,2024,Wadwani,Inpatient,2030,1781,156
+Beed,2024,Beed,Inpatient,79167,35121,20154
+Beed,2024,Cage,Inpatient,13307,6111,2678
+Beed,2024,Dharur,Inpatient,2678,1538,239
+Beed,2024,Parli,Inpatient,9764,4339,1854
+Beed,2024,Ambajogai,Inpatient,9488,4105,1701
 Bhandara,2012,Tumsar,Inpatient,4800,7500,4200
 Bhandara,2012,Mohadi,Inpatient,1100,2900,700
 Bhandara,2012,Bhandara,Inpatient,8700,16300,11500
@@ -3572,6 +4795,27 @@ Bhandara,2021,Sakoli,Inpatient,1300,4500,1000
 Bhandara,2021,Lakhani,Inpatient,1300,1900,600
 Bhandara,2021,Pavani,Inpatient,2000,4900,1300
 Bhandara,2021,Lakhandur,Inpatient,800,2900,800
+Bhandara,2022,Tumsar,Inpatient,5400,9400,3900
+Bhandara,2022,Mohadi,Inpatient,1300,3700,1000
+Bhandara,2022,Bhandara,Inpatient,14800,23800,14700
+Bhandara,2022,Sakoli,Inpatient,1800,4800,1300
+Bhandara,2022,Lakhani,Inpatient,2900,3500,1200
+Bhandara,2022,Pavani,Inpatient,3100,5900,1400
+Bhandara,2022,Lakhandur,Inpatient,1000,2600,800
+Bhandara,2023,Tumsar,Inpatient,5200,7700,2900
+Bhandara,2023,Mohadi,Inpatient,2300,2900,500
+Bhandara,2023,Bhandara,Inpatient,16800,16700,10000
+Bhandara,2023,Sakoli,Inpatient,2000,3500,700
+Bhandara,2023,Lakhani,Inpatient,1800,2100,700
+Bhandara,2023,Pavani,Inpatient,2700,4700,1200
+Bhandara,2023,Lakhandur,Inpatient,1300,1900,700
+Bhandara,2024,Tumsar,Inpatient,5400,7400,2400
+Bhandara,2024,Mohadi,Inpatient,2100,3600,500
+Bhandara,2024,Bhandara,Inpatient,17200,14600,9300
+Bhandara,2024,Sakoli,Inpatient,2600,2900,1100
+Bhandara,2024,Lakhani,Inpatient,2000,2300,1100
+Bhandara,2024,Pavani,Inpatient,3700,4400,1700
+Bhandara,2024,Lakhandur,Inpatient,1600,1900,700
 Buldhana,2013,Jalgaon Jamod,Inpatient,2300,4300,900
 Buldhana,2013,Sangrampur,Inpatient,700,2300,600
 Buldhana,2013,Shegaon,Inpatient,7100,10000,2400
@@ -3689,6 +4933,45 @@ Buldhana,2021,Buldhana,Inpatient,15900,20400,2400
 Buldhana,2021,Deulgaon Raja,Inpatient,2000,2500,300
 Buldhana,2021,Sindkhed Raja,Inpatient,1600,2900,200
 Buldhana,2021,Lonar,Inpatient,1700,2100,400
+Buldhana,2022,Jalgaon Jamod,Inpatient,2900,3700,800
+Buldhana,2022,Sangrampur,Inpatient,1800,2700,400
+Buldhana,2022,Shegaon,Inpatient,7800,9600,1200
+Buldhana,2022,Nandura,Inpatient,2600,3400,2200
+Buldhana,2022,Malkapur,Inpatient,2500,3100,400
+Buldhana,2022,Motala,Inpatient,2400,2900,800
+Buldhana,2022,Khamgaon,Inpatient,12400,15200,3200
+Buldhana,2022,Mehkar,Inpatient,3100,5200,900
+Buldhana,2022,Chikhali,Inpatient,2300,3400,900
+Buldhana,2022,Buldhana,Inpatient,14000,17700,2200
+Buldhana,2022,Deulgaon Raja,Inpatient,1600,2000,200
+Buldhana,2022,Sindkhed Raja,Inpatient,2600,4600,500
+Buldhana,2022,Lonar,Inpatient,2400,3400,600
+Buldhana,2023,Jalgaon Jamod,Inpatient,2500,2941,342
+Buldhana,2023,Sangrampur,Inpatient,3910,4765,846
+Buldhana,2023,Shegaon,Inpatient,7788,9554,1168
+Buldhana,2023,Nandura,Inpatient,1796,2409,1758
+Buldhana,2023,Malkapur,Inpatient,1767,2434,287
+Buldhana,2023,Motala,Inpatient,2069,3041,1574
+Buldhana,2023,Khamgaon,Inpatient,15868,21080,3070
+Buldhana,2023,Mehkar,Inpatient,1897,2595,312
+Buldhana,2023,Chikhali,Inpatient,2181,2784,529
+Buldhana,2023,Buldhana,Inpatient,16474,20829,2320
+Buldhana,2023,Deulgaon Raja,Inpatient,2589,3273,352
+Buldhana,2023,Sindkhed Raja,Inpatient,2344,4403,316
+Buldhana,2023,Lonar,Inpatient,3379,4300,1032
+Buldhana,2024,Jalgaon Jamod,Inpatient,2578,2956,733
+Buldhana,2024,Sangrampur,Inpatient,3913,4766,967
+Buldhana,2024,Shegaon,Inpatient,8364,10494,1244
+Buldhana,2024,Nandura,Inpatient,1490,1753,903
+Buldhana,2024,Malkapur,Inpatient,3846,5179,333
+Buldhana,2024,Motala,Inpatient,2394,2975,705
+Buldhana,2024,Khamgaon,Inpatient,15107,19001,2709
+Buldhana,2024,Mehkar,Inpatient,3727,4503,627
+Buldhana,2024,Chikhali,Inpatient,2305,3463,307
+Buldhana,2024,Buldhana,Inpatient,17361,21132,2516
+Buldhana,2024,Deulgaon Raja,Inpatient,3085,3695,377
+Buldhana,2024,Sindkhed Raja,Inpatient,2962,4370,637
+Buldhana,2024,Lonar,Inpatient,5748,6396,959
 Chandrapur,2012,Varora,Inpatient,214500,393200,182100
 Chandrapur,2012,Chimur,Inpatient,72700,251400,65800
 Chandrapur,2012,Nagbhid,Inpatient,89400,212900,32700
@@ -3839,6 +5122,51 @@ Chandrapur,2021,Korpana,Inpatient,2900,5000,1300
 Chandrapur,2021,Rajura,Inpatient,3100,4700,1100
 Chandrapur,2021,Gondpipari,Inpatient,3600,3700,3200
 Chandrapur,2021,Jivati,Inpatient,300,400,200
+Chandrapur,2022,Varora,Inpatient,472600,649800,460700
+Chandrapur,2022,Chimur,Inpatient,222900,433000,112800
+Chandrapur,2022,Nagbhid,Inpatient,104400,239200,18000
+Chandrapur,2022,Bramhapuri,Inpatient,121900,263400,104500
+Chandrapur,2022,Savali,Inpatient,102500,212500,29100
+Chandrapur,2022,Sindevahi,Inpatient,44000,238500,15800
+Chandrapur,2022,Bhadravati,Inpatient,83300,212100,44700
+Chandrapur,2022,Chandrapur,Inpatient,1899200,2409400,1639900
+Chandrapur,2022,Mul,Inpatient,161000,273600,137700
+Chandrapur,2022,Ponbhurna,Inpatient,44700,129600,19100
+Chandrapur,2022,Ballarpur,Inpatient,219600,360100,100300
+Chandrapur,2022,Korpana,Inpatient,188600,451300,160000
+Chandrapur,2022,Rajura,Inpatient,313600,631700,180900
+Chandrapur,2022,Gondpipari,Inpatient,173100,240800,55900
+Chandrapur,2022,Jivati,Inpatient,42500,69300,36300
+Chandrapur,2023,Varora,Inpatient,219400,345300,155000
+Chandrapur,2023,Chimur,Inpatient,405900,770700,207600
+Chandrapur,2023,Nagbhid,Inpatient,152800,298500,39300
+Chandrapur,2023,Bramhapuri,Inpatient,106500,258800,147800
+Chandrapur,2023,Savali,Inpatient,145500,222300,56100
+Chandrapur,2023,Sindevahi,Inpatient,82700,347400,29400
+Chandrapur,2023,Bhadravati,Inpatient,102400,208900,41400
+Chandrapur,2023,Chandrapur,Inpatient,3555000,4135200,2920400
+Chandrapur,2023,Mul,Inpatient,147700,265000,140400
+Chandrapur,2023,Ponbhurna,Inpatient,147600,240700,58700
+Chandrapur,2023,Ballarpur,Inpatient,220900,333300,84600
+Chandrapur,2023,Korpana,Inpatient,275300,638400,189200
+Chandrapur,2023,Rajura,Inpatient,431000,644100,330700
+Chandrapur,2023,Gondpipari,Inpatient,209200,329500,76800
+Chandrapur,2023,Jivati,Inpatient,165200,356100,153100
+Chandrapur,2024,Varora,Inpatient,214000,367300,169000
+Chandrapur,2024,Chimur,Inpatient,309900,520900,130900
+Chandrapur,2024,Nagbhid,Inpatient,135100,205400,19900
+Chandrapur,2024,Bramhapuri,Inpatient,184000,307700,152400
+Chandrapur,2024,Savali,Inpatient,74800,162600,47000
+Chandrapur,2024,Sindevahi,Inpatient,60600,188100,64800
+Chandrapur,2024,Bhadravati,Inpatient,135200,188100,83700
+Chandrapur,2024,Chandrapur,Inpatient,1462200,2388900,1524700
+Chandrapur,2024,Mul,Inpatient,207400,296000,165200
+Chandrapur,2024,Ponbhurna,Inpatient,79600,139200,33500
+Chandrapur,2024,Ballarpur,Inpatient,178800,355400,93200
+Chandrapur,2024,Korpana,Inpatient,214300,490700,161900
+Chandrapur,2024,Rajura,Inpatient,553200,723500,377400
+Chandrapur,2024,Gondpipari,Inpatient,208400,270600,69800
+Chandrapur,2024,Jivati,Inpatient,58100,96900,60300
 Dhule,2012,Shirpur,Inpatient,392800,576200,181900
 Dhule,2012,Shindkheda,Inpatient,249500,494800,103400
 Dhule,2012,Sakri,Inpatient,353900,405700,164600
@@ -3879,6 +5207,14 @@ Dhule,2021,Shirpur,Inpatient,5500,6500,1900
 Dhule,2021,Shindkheda,Inpatient,4500,4800,3500
 Dhule,2021,Sakri,Inpatient,8500,6100,4600
 Dhule,2021,Dhule,Inpatient,16600,24200,42500
+Dhule,2023,Shirpur,Inpatient,3351,5865,2280
+Dhule,2023,Shindkheda,Inpatient,2966,4690,1275
+Dhule,2023,Sakri,Inpatient,5293,9680,4960
+Dhule,2023,Dhule,Inpatient,19947,39092,8821
+Dhule,2024,Shirpur,Inpatient,6583,9500,3965
+Dhule,2024,Shindkheda,Inpatient,4347,6276,2446
+Dhule,2024,Sakri,Inpatient,5425,12360,4426
+Dhule,2024,Dhule,Inpatient,21503,30277,10455
 Gadchiroli,2012,Desaiganj,Inpatient,300,1100,200
 Gadchiroli,2012,Aarmori,Inpatient,1400,2800,1200
 Gadchiroli,2012,Kurkheda,Inpatient,1600,3200,1200
@@ -3999,6 +5335,42 @@ Gadchiroli,2021,Etapalli,Inpatient,1300,1600,1000
 Gadchiroli,2021,Bhamragad,Inpatient,1100,1600,2300
 Gadchiroli,2021,Aheri,Inpatient,2200,4700,2800
 Gadchiroli,2021,Sironcha,Inpatient,1400,2200,800
+Gadchiroli,2022,Desaiganj,Inpatient,700,2100,300
+Gadchiroli,2022,Aarmori,Inpatient,1800,3500,1900
+Gadchiroli,2022,Kurkheda,Inpatient,1300,3200,1400
+Gadchiroli,2022,Korachi,Inpatient,800,1700,700
+Gadchiroli,2022,Dhanora,Inpatient,1600,3300,1200
+Gadchiroli,2022,Gadchiroli,Inpatient,15300,19200,5900
+Gadchiroli,2022,Chomoshi,Inpatient,3500,5600,2600
+Gadchiroli,2022,Mulchera,Inpatient,900,2500,700
+Gadchiroli,2022,Etapalli,Inpatient,1200,1600,1200
+Gadchiroli,2022,Bhamragad,Inpatient,1400,1500,2100
+Gadchiroli,2022,Aheri,Inpatient,2200,5300,3100
+Gadchiroli,2022,Sironcha,Inpatient,1600,2400,800
+Gadchiroli,2023,Desaiganj,Inpatient,900,2000,300
+Gadchiroli,2023,Aarmori,Inpatient,2200,4000,1500
+Gadchiroli,2023,Kurkheda,Inpatient,2300,4600,1000
+Gadchiroli,2023,Korachi,Inpatient,1100,2100,600
+Gadchiroli,2023,Dhanora,Inpatient,2100,3200,1500
+Gadchiroli,2023,Gadchiroli,Inpatient,18700,19800,7200
+Gadchiroli,2023,Chomoshi,Inpatient,3800,6800,1600
+Gadchiroli,2023,Mulchera,Inpatient,1500,2600,500
+Gadchiroli,2023,Etapalli,Inpatient,1100,1700,600
+Gadchiroli,2023,Bhamragad,Inpatient,1500,2000,1500
+Gadchiroli,2023,Aheri,Inpatient,3900,6300,3800
+Gadchiroli,2023,Sironcha,Inpatient,1900,2500,900
+Gadchiroli,2024,Desaiganj,Inpatient,1259,2143,374
+Gadchiroli,2024,Aarmori,Inpatient,1398,3039,1405
+Gadchiroli,2024,Kurkheda,Inpatient,1827,4146,1231
+Gadchiroli,2024,Korachi,Inpatient,879,1829,699
+Gadchiroli,2024,Dhanora,Inpatient,1537,2135,1714
+Gadchiroli,2024,Gadchiroli,Inpatient,16157,16876,6715
+Gadchiroli,2024,Chomoshi,Inpatient,3937,5974,2023
+Gadchiroli,2024,Mulchera,Inpatient,1114,2401,853
+Gadchiroli,2024,Etapalli,Inpatient,943,1504,965
+Gadchiroli,2024,Bhamragad,Inpatient,658,1270,1764
+Gadchiroli,2024,Aheri,Inpatient,2533,4972,4436
+Gadchiroli,2024,Sironcha,Inpatient,1375,2113,916
 Gondia,2012,Tiroda,Inpatient,399600,362600,161400
 Gondia,2012,Goregaon,Inpatient,87200,190000,25700
 Gondia,2012,Gondia,Inpatient,1397600,2911700,1167600
@@ -4079,6 +5451,30 @@ Gondia,2021,Salekasa,Inpatient,600,1100,600
 Gondia,2021,Sadak Arjuni,Inpatient,1600,2500,900
 Gondia,2021,Arjuni Morgaon,Inpatient,2200,4900,1100
 Gondia,2021,Devari,Inpatient,1600,4400,1700
+Gondia,2022,Tiroda,Inpatient,1000,500,900
+Gondia,2022,Goregaon,Inpatient,200,100,500
+Gondia,2022,Gondia,Inpatient,2800,1400,200
+Gondia,2022,Aamgaon,Inpatient,2400,1900,200
+Gondia,2022,Salekasa,Inpatient,2700,1700,200
+Gondia,2022,Sadak Arjuni,Inpatient,3200,1900,400
+Gondia,2022,Arjuni Morgaon,Inpatient,1100,6800,1200
+Gondia,2022,Devari,Inpatient,2300,1600,2000
+Gondia,2023,Tiroda,Inpatient,1600,2100,800
+Gondia,2023,Goregaon,Inpatient,700,1800,300
+Gondia,2023,Gondia,Inpatient,9800,16300,1500
+Gondia,2023,Aamgaon,Inpatient,1700,1600,500
+Gondia,2023,Salekasa,Inpatient,900,1000,500
+Gondia,2023,Sadak Arjuni,Inpatient,400,1100,200
+Gondia,2023,Arjuni Morgaon,Inpatient,2600,3700,1300
+Gondia,2023,Devari,Inpatient,800,1200,600
+Gondia,2024,Tiroda,Inpatient,800,400,300
+Gondia,2024,Goregaon,Inpatient,500,400,100
+Gondia,2024,Gondia,Inpatient,11600,44300,2000
+Gondia,2024,Aamgaon,Inpatient,400,500,100
+Gondia,2024,Salekasa,Inpatient,400,300,100
+Gondia,2024,Sadak Arjuni,Inpatient,500,400,100
+Gondia,2024,Arjuni Morgaon,Inpatient,1900,1700,300
+Gondia,2024,Devari,Inpatient,2100,1900,200
 Hingoli,2012,Sengaon,Inpatient,91000,142100,38700
 Hingoli,2012,Hingoli,Inpatient,536100,742300,390400
 Hingoli,2012,Aundha Na,Inpatient,253800,374200,180600
@@ -4129,6 +5525,66 @@ Hingoli,2021,Hingoli,Inpatient,6700,11700,7000
 Hingoli,2021,Aundha Na,Inpatient,1800,2400,600
 Hingoli,2021,Kalamanuri,Inpatient,3300,5200,2100
 Hingoli,2021,Vasamat,Inpatient,1600,5900,1900
+Hingoli,2022,Sengaon,Inpatient,1600,2700,900
+Hingoli,2022,Hingoli,Inpatient,7400,13100,8300
+Hingoli,2022,Aundha Na,Inpatient,2800,4700,900
+Hingoli,2022,Kalamanuri,Inpatient,4800,9200,2900
+Hingoli,2022,Vasamat,Inpatient,3300,8700,4100
+Hingoli,2023,Sengaon,Inpatient,2500,3500,600
+Hingoli,2023,Hingoli,Inpatient,8100,12800,9100
+Hingoli,2023,Aundha Na,Inpatient,2100,4500,1100
+Hingoli,2023,Kalamanuri,Inpatient,5000,8700,4000
+Hingoli,2023,Vasamat,Inpatient,3900,9400,4200
+Hingoli,2024,Sengaon,Inpatient,6000,6100,1000
+Hingoli,2024,Hingoli,Inpatient,18900,26000,17900
+Hingoli,2024,Aundha Na,Inpatient,2400,5700,2000
+Hingoli,2024,Kalamanuri,Inpatient,9200,14100,5200
+Hingoli,2024,Vasamat,Inpatient,4500,10500,5700
+Jalgaon,2022,Chopda,Inpatient,5700,10100,3800
+Jalgaon,2022,Yawal,Inpatient,3200,5800,7000
+Jalgaon,2022,Raver,Inpatient,5400,7500,1800
+Jalgaon,2022,Muktainagar,Inpatient,32300,5400,2300
+Jalgaon,2022,Bodvad,Inpatient,5300,8600,600
+Jalgaon,2022,Bhusawal,Inpatient,2800,4800,900
+Jalgaon,2022,Jalgaon,Inpatient,11800,228200,11800
+Jalgaon,2022,Erandol,Inpatient,3200,3600,1900
+Jalgaon,2022,Dharangoan,Inpatient,4000,5700,1300
+Jalgaon,2022,Amalner,Inpatient,4300,7000,3000
+Jalgaon,2022,Parola,Inpatient,2200,4600,2100
+Jalgaon,2022,Bhadgoan,Inpatient,2100,4100,1700
+Jalgaon,2022,Chalisgoan,Inpatient,2300,6400,3000
+Jalgaon,2022,Pachora,Inpatient,4200,6600,4800
+Jalgaon,2022,Jamner,Inpatient,4500,10500,3700
+Jalgaon,2023,Chopda,Inpatient,4870,7762,3076
+Jalgaon,2023,Yawal,Inpatient,2974,4769,931
+Jalgaon,2023,Raver,Inpatient,3781,5086,2325
+Jalgaon,2023,Muktainagar,Inpatient,9166,3852,3114
+Jalgaon,2023,Bodvad,Inpatient,4939,1311,773
+Jalgaon,2023,Bhusawal,Inpatient,6431,3124,895
+Jalgaon,2023,Jalgaon,Inpatient,59165,48125,1850.1
+Jalgaon,2023,Erandol,Inpatient,1808,2390,1257
+Jalgaon,2023,Dharangoan,Inpatient,1329,2030,793
+Jalgaon,2023,Amalner,Inpatient,2272,5335,6306
+Jalgaon,2023,Parola,Inpatient,1462,3535,757
+Jalgaon,2023,Bhadgoan,Inpatient,2990,4075,1608
+Jalgaon,2023,Chalisgoan,Inpatient,2409,6267,2361
+Jalgaon,2023,Pachora,Inpatient,2050,3743,1702
+Jalgaon,2023,Jamner,Inpatient,3500,8092,2977
+Jalgaon,2024,Chopda,Inpatient,5500,7800,4200
+Jalgaon,2024,Yawal,Inpatient,3700,6500,1400
+Jalgaon,2024,Raver,Inpatient,5000,7400,2000
+Jalgaon,2024,Muktainagar,Inpatient,3100,4900,4200
+Jalgaon,2024,Bodvad,Inpatient,1500,6900,500
+Jalgaon,2024,Bhusawal,Inpatient,3500,5100,1600
+Jalgaon,2024,Jalgaon,Inpatient,74000,63100,33800
+Jalgaon,2024,Erandol,Inpatient,2100,3000,1100
+Jalgaon,2024,Dharangoan,Inpatient,1400,2700,1100
+Jalgaon,2024,Amalner,Inpatient,2900,7900,7900
+Jalgaon,2024,Parola,Inpatient,2400,5000,1200
+Jalgaon,2024,Bhadgoan,Inpatient,1900,3400,1600
+Jalgaon,2024,Chalisgoan,Inpatient,7000,8600,3300
+Jalgaon,2024,Pachora,Inpatient,3400,4800,2400
+Jalgaon,2024,Jamner,Inpatient,7000,9200,2300
 Jalna,2013,Bhokardan,Inpatient,1100,2400,500
 Jalna,2013,Jaffrabad,Inpatient,1500,1900,500
 Jalna,2013,Jalna,Inpatient,9000,20600,5900
@@ -4201,6 +5657,30 @@ Jalna,2021,Ambad,Inpatient,2804,5758,4085
 Jalna,2021,Ghansawangi,Inpatient,1448,2487,1822
 Jalna,2021,Partur,Inpatient,1472,2423,1251
 Jalna,2021,Mantha,Inpatient,1966,3609,2047
+Jalna,2022,Bhokardan,Inpatient,6016,9470,4001
+Jalna,2022,Jaffrabad,Inpatient,5059,6406,2231
+Jalna,2022,Jalna,Inpatient,3931,13165,6213
+Jalna,2022,Badnapur,Inpatient,4035,6347,3719
+Jalna,2022,Ambad,Inpatient,12654,25541,15923
+Jalna,2022,Ghansawangi,Inpatient,2862,5024,2434
+Jalna,2022,Partur,Inpatient,2734,4225,2020
+Jalna,2022,Mantha,Inpatient,3472,7345,1737
+Jalna,2023,Bhokardan,Inpatient,7652,9225,4885
+Jalna,2023,Jaffrabad,Inpatient,3694,4345,1895
+Jalna,2023,Jalna,Inpatient,31727,50434,30099
+Jalna,2023,Badnapur,Inpatient,2420,2730,1270
+Jalna,2023,Ambad,Inpatient,4334,6906,3981
+Jalna,2023,Ghansawangi,Inpatient,3884,4933,3344
+Jalna,2023,Partur,Inpatient,5109,5554,3432
+Jalna,2023,Mantha,Inpatient,7123,7330,4803
+Jalna,2024,Bhokardan,Inpatient,7651,7813,3712
+Jalna,2024,Jaffrabad,Inpatient,3920,3988,1765
+Jalna,2024,Jalna,Inpatient,33929,39581,19850
+Jalna,2024,Badnapur,Inpatient,2209,2182,764
+Jalna,2024,Ambad,Inpatient,4554,6263,3061
+Jalna,2024,Ghansawangi,Inpatient,4077,4360,2690
+Jalna,2024,Partur,Inpatient,4861,5202,5395
+Jalna,2024,Mantha,Inpatient,5625,6473,4180
 Kolhapur,2012,Shahuwadi,Inpatient,2620,5445,6900
 Kolhapur,2012,Panhala,Inpatient,3790,6498,7990
 Kolhapur,2012,Hatkanangale,Inpatient,16100,17800,23200
@@ -4321,6 +5801,42 @@ Kolhapur,2021,Bhudargad,Inpatient,1900,3800,1400
 Kolhapur,2021,Ajara,Inpatient,1500,3300,300
 Kolhapur,2021,Gadhinglaj,Inpatient,4100,10300,4100
 Kolhapur,2021,Chandgad,Inpatient,2800,4100,1100
+Kolhapur,2022,Shahuwadi,Inpatient,3500,6900,1000
+Kolhapur,2022,Panhala,Inpatient,3200,7400,1100
+Kolhapur,2022,Hatkanangale,Inpatient,8800,13500,6700
+Kolhapur,2022,Shirol,Inpatient,3400,5200,5000
+Kolhapur,2022,Karveer,Inpatient,27700,30100,6200
+Kolhapur,2022,Gaganbavada,Inpatient,700,2300,200
+Kolhapur,2022,Radhanagari,Inpatient,4700,7500,10000
+Kolhapur,2022,Kagal,Inpatient,2300,5800,800
+Kolhapur,2022,Bhudargad,Inpatient,2200,4500,1300
+Kolhapur,2022,Ajara,Inpatient,1900,4600,400
+Kolhapur,2022,Gadhinglaj,Inpatient,3300,8000,2300
+Kolhapur,2022,Chandgad,Inpatient,5600,7600,1300
+Kolhapur,2023,Shahuwadi,Inpatient,3600,7000,800
+Kolhapur,2023,Panhala,Inpatient,3100,7300,1000
+Kolhapur,2023,Hatkanangale,Inpatient,12000,16700,8200
+Kolhapur,2023,Shirol,Inpatient,3300,5400,5000
+Kolhapur,2023,Karveer,Inpatient,28400,29700,6000
+Kolhapur,2023,Gaganbavada,Inpatient,900,2200,200
+Kolhapur,2023,Radhanagari,Inpatient,4800,7600,10000
+Kolhapur,2023,Kagal,Inpatient,2300,5700,800
+Kolhapur,2023,Bhudargad,Inpatient,2400,4600,1300
+Kolhapur,2023,Ajara,Inpatient,2000,5000,400
+Kolhapur,2023,Gadhinglaj,Inpatient,4400,9600,3000
+Kolhapur,2023,Chandgad,Inpatient,5900,7300,1300
+Kolhapur,2024,Shahuwadi,Inpatient,5832,7967,951
+Kolhapur,2024,Panhala,Inpatient,4791,6425,1301
+Kolhapur,2024,Hatkanangale,Inpatient,13083,16231,5871
+Kolhapur,2024,Shirol,Inpatient,3101,4179,1405
+Kolhapur,2024,Karveer,Inpatient,39228,36319,9751
+Kolhapur,2024,Gaganbavada,Inpatient,765,2638,210
+Kolhapur,2024,Radhanagari,Inpatient,5013,5330,2229
+Kolhapur,2024,Kagal,Inpatient,2806,5471,1618
+Kolhapur,2024,Bhudargad,Inpatient,2954,4748,1376
+Kolhapur,2024,Ajara,Inpatient,3566,3854,472
+Kolhapur,2024,Gadhinglaj,Inpatient,6102,10823,3337
+Kolhapur,2024,Chandgad,Inpatient,9274,7467,4607
 Latur,2012,Latur,Inpatient,13800,20900,5400
 Latur,2012,Renapur,Inpatient,700,2100,300
 Latur,2012,Ahamadpur,Inpatient,3900,7500,1000
@@ -4421,6 +5937,36 @@ Latur,2021,Aosa,Inpatient,5200,,
 Latur,2021,Nilanga,Inpatient,17000,,
 Latur,2021,Devani,Inpatient,11200,,
 Latur,2021,Udgir,Inpatient,14800,,
+Latur,2022,Latur,Inpatient,,,
+Latur,2022,Renapur,Inpatient,,,
+Latur,2022,Ahamadpur,Inpatient,,,
+Latur,2022,Jalkot,Inpatient,,,
+Latur,2022,Chakur,Inpatient,,,
+Latur,2022,Shirur-Anantpal,Inpatient,,,
+Latur,2022,Aosa,Inpatient,,,
+Latur,2022,Nilanga,Inpatient,,,
+Latur,2022,Devani,Inpatient,,,
+Latur,2022,Udgir,Inpatient,,,
+Latur,2023,Latur,Inpatient,,267800,
+Latur,2023,Renapur,Inpatient,,69700,
+Latur,2023,Ahamadpur,Inpatient,,158100,
+Latur,2023,Jalkot,Inpatient,,43300,
+Latur,2023,Chakur,Inpatient,,115500,
+Latur,2023,Shirur-Anantpal,Inpatient,,18300,
+Latur,2023,Aosa,Inpatient,,181600,
+Latur,2023,Nilanga,Inpatient,,168300,
+Latur,2023,Devani,Inpatient,,54200,
+Latur,2023,Udgir,Inpatient,,229600,
+Latur,2024,Latur,Inpatient,71200,0,0
+Latur,2024,Renapur,Inpatient,10200,0,0
+Latur,2024,Ahamadpur,Inpatient,10100,0,0
+Latur,2024,Jalkot,Inpatient,6800,0,0
+Latur,2024,Chakur,Inpatient,7500,0,0
+Latur,2024,Shirur-Anantpal,Inpatient,4500,0,0
+Latur,2024,Aosa,Inpatient,9800,0,0
+Latur,2024,Nilanga,Inpatient,15900,0,0
+Latur,2024,Devani,Inpatient,3600,0,0
+Latur,2024,Udgir,Inpatient,20100,0,0
 Mumbai Suburban,2016,Adheri,Inpatient,3077300,3924400,1027500
 Mumbai Suburban,2016,Borivali,Inpatient,3355700,3711400,1537400
 Mumbai Suburban,2016,Kurla,Inpatient,3534500,6504100,2660500
@@ -4439,6 +5985,15 @@ Mumbai Suburban,2020,Kurla,Inpatient,33600,67000,13500
 Mumbai Suburban,2021,Adheri,Inpatient,81700,90000,36200
 Mumbai Suburban,2021,Borivali,Inpatient,23400,34300,3900
 Mumbai Suburban,2021,Kurla,Inpatient,784900,769000,914800
+Mumbai Suburban,2022,Adheri,Inpatient,88900,117300,42300
+Mumbai Suburban,2022,Borivali,Inpatient,23000,38800,3600
+Mumbai Suburban,2022,Kurla,Inpatient,464400,384300,206600
+Mumbai Suburban,2023,Adheri,Inpatient,76300,86200,33400
+Mumbai Suburban,2023,Borivali,Inpatient,40100,63100,17200
+Mumbai Suburban,2023,Kurla,Inpatient,541100,418100,224100
+Mumbai Suburban,2024,Adheri,Inpatient,74900,91800,34800
+Mumbai Suburban,2024,Borivali,Inpatient,41000,59700,14100
+Mumbai Suburban,2024,Kurla,Inpatient,552400,419800,213900
 Mumbai,2013,Mumbai City,Inpatient,9626900,8936400,4173400
 Mumbai,2014,Mumbai City,Inpatient,26389900,,
 Mumbai,2015,Mumbai City,Inpatient,47946800,37390400,17967400
@@ -4448,6 +6003,9 @@ Mumbai,2018,Mumbai City,Inpatient,524099,360406,164497
 Mumbai,2019,Mumbai City,Inpatient,510034,346112,153427
 Mumbai,2020,Mumbai City,Inpatient,510757,340700,159999
 Mumbai,2021,Mumbai City,Inpatient,516433,314600,53550
+Mumbai,2022,Mumbai City,Inpatient,401823,314753,54662
+Mumbai,2023,Mumbai City,Inpatient,74300,80200,28300
+Mumbai,2024,Mumbai City,Inpatient,78400,81100,28900
 Nagpur,2012,Narkhed,Inpatient,166800,296400,41500
 Nagpur,2012,Katol,Inpatient,707900,707200,600700
 Nagpur,2012,Kalameshwar,Inpatient,94200,279100,106600
@@ -4588,6 +6146,48 @@ Nagpur,2021,Hingana,Inpatient,1700,1600,500
 Nagpur,2021,Umred,Inpatient,2800,2400,1200
 Nagpur,2021,Kuhi,Inpatient,3300,2600,1100
 Nagpur,2021,Bhiwapur,Inpatient,2300,2500,900
+Nagpur,2022,Narkhed,Inpatient,2600,4600,900
+Nagpur,2022,Katol,Inpatient,4200,7100,2200
+Nagpur,2022,Kalameshwar,Inpatient,1600,3400,1400
+Nagpur,2022,Sawner,Inpatient,700,3000,300
+Nagpur,2022,Parashivani,Inpatient,1300,2700,1000
+Nagpur,2022,Ramtech,Inpatient,2900,7300,1600
+Nagpur,2022,Mauda,Inpatient,3200,3300,500
+Nagpur,2022,Kamathi,Inpatient,1600,4400,1300
+Nagpur,2022,Nagpur (Gra),Inpatient,300,700,200
+Nagpur,2022,Nagpur (Sh),Inpatient,42000,117300,28900
+Nagpur,2022,Hingana,Inpatient,1100,2500,1000
+Nagpur,2022,Umred,Inpatient,1900,4700,1500
+Nagpur,2022,Kuhi,Inpatient,1800,3500,1400
+Nagpur,2022,Bhiwapur,Inpatient,1400,3100,800
+Nagpur,2023,Narkhed,Inpatient,2400,3300,800
+Nagpur,2023,Katol,Inpatient,1700,3300,900
+Nagpur,2023,Kalameshwar,Inpatient,1000,2500,1100
+Nagpur,2023,Sawner,Inpatient,500,1400,400
+Nagpur,2023,Parashivani,Inpatient,900,1600,500
+Nagpur,2023,Ramtech,Inpatient,1100,3500,1300
+Nagpur,2023,Mauda,Inpatient,1200,2600,400
+Nagpur,2023,Kamathi,Inpatient,4600,4000,3400
+Nagpur,2023,Nagpur (Gra),Inpatient,300,500,100
+Nagpur,2023,Nagpur (Sh),Inpatient,160500,185500,121100
+Nagpur,2023,Hingana,Inpatient,800,1500,800
+Nagpur,2023,Umred,Inpatient,1100,3000,700
+Nagpur,2023,Kuhi,Inpatient,900,1500,700
+Nagpur,2023,Bhiwapur,Inpatient,800,1800,300
+Nagpur,2024,Narkhed,Inpatient,3400,3800,1000
+Nagpur,2024,Katol,Inpatient,3300,4200,1400
+Nagpur,2024,Kalameshwar,Inpatient,2000,4100,1500
+Nagpur,2024,Sawner,Inpatient,700,1400,200
+Nagpur,2024,Parashivani,Inpatient,1500,2800,800
+Nagpur,2024,Ramtech,Inpatient,2700,6300,3000
+Nagpur,2024,Mauda,Inpatient,2000,3900,900
+Nagpur,2024,Kamathi,Inpatient,1900,5900,2600
+Nagpur,2024,Nagpur (Gra),Inpatient,500,1100,300
+Nagpur,2024,Nagpur (Sh),Inpatient,165200,181800,113700
+Nagpur,2024,Hingana,Inpatient,1100,2400,1100
+Nagpur,2024,Umred,Inpatient,2200,5900,1900
+Nagpur,2024,Kuhi,Inpatient,1800,2800,1300
+Nagpur,2024,Bhiwapur,Inpatient,1200,2800,500
 Nanded,2014,Mahur,Inpatient,18400,21000,15800
 Nanded,2014,Kinvat,Inpatient,20800,21600,16900
 Nanded,2014,Himalay Nagar,Inpatient,81900,81700,65400
@@ -4716,6 +6316,54 @@ Nanded,2021,Loha,Inpatient,1700,3200,600
 Nanded,2021,Kandhar,Inpatient,2500,3800,2300
 Nanded,2021,Mukhed,Inpatient,4100,7200,1900
 Nanded,2021,Deglur,Inpatient,1800,4200,1700
+Nanded,2022,Mahur,Inpatient,1800,3500,7600
+Nanded,2022,Kinvat,Inpatient,3300,5800,4000
+Nanded,2022,Himalay Nagar,Inpatient,2300,5300,1200
+Nanded,2022,Hadgaon,Inpatient,2900,6000,2500
+Nanded,2022,Andhrapur,Inpatient,400,1200,400
+Nanded,2022,Nanded,Inpatient,35200,54200,35300
+Nanded,2022,Mudkhed,Inpatient,1100,3000,800
+Nanded,2022,Bhokar,Inpatient,2800,4000,1400
+Nanded,2022,Umari,Inpatient,2800,4200,1800
+Nanded,2022,Dharmabad,Inpatient,2800,3900,1200
+Nanded,2022,Biloli,Inpatient,3900,6300,2000
+Nanded,2022,Naygaon,Inpatient,1600,3100,1600
+Nanded,2022,Loha,Inpatient,2500,4600,800
+Nanded,2022,Kandhar,Inpatient,3700,5700,3200
+Nanded,2022,Mukhed,Inpatient,4800,7700,3100
+Nanded,2022,Deglur,Inpatient,2900,5600,2200
+Nanded,2023,Mahur,Inpatient,1200,2300,1600
+Nanded,2023,Kinvat,Inpatient,2900,4300,2900
+Nanded,2023,Himalay Nagar,Inpatient,1900,2900,1400
+Nanded,2023,Hadgaon,Inpatient,2500,4900,2300
+Nanded,2023,Andhrapur,Inpatient,900,1900,600
+Nanded,2023,Nanded,Inpatient,20500,29300,29400
+Nanded,2023,Mudkhed,Inpatient,1000,2600,800
+Nanded,2023,Bhokar,Inpatient,2400,3300,1300
+Nanded,2023,Umari,Inpatient,3200,4100,1000
+Nanded,2023,Dharmabad,Inpatient,3900,4200,1400
+Nanded,2023,Biloli,Inpatient,3500,4400,2000
+Nanded,2023,Naygaon,Inpatient,2000,4000,1700
+Nanded,2023,Loha,Inpatient,2100,3200,1600
+Nanded,2023,Kandhar,Inpatient,2200,3600,1800
+Nanded,2023,Mukhed,Inpatient,5900,8100,3000
+Nanded,2023,Deglur,Inpatient,2400,4700,2200
+Nanded,2024,Mahur,Inpatient,1400,2500,1600
+Nanded,2024,Kinvat,Inpatient,3100,4700,2800
+Nanded,2024,Himalay Nagar,Inpatient,2000,3100,1500
+Nanded,2024,Hadgaon,Inpatient,2800,5200,2500
+Nanded,2024,Andhrapur,Inpatient,900,1900,600
+Nanded,2024,Nanded,Inpatient,22600,31700,30700
+Nanded,2024,Mudkhed,Inpatient,1200,2900,800
+Nanded,2024,Bhokar,Inpatient,2700,3500,1400
+Nanded,2024,Umari,Inpatient,3500,4500,1100
+Nanded,2024,Dharmabad,Inpatient,4300,4500,1500
+Nanded,2024,Biloli,Inpatient,3900,4800,2000
+Nanded,2024,Naygaon,Inpatient,2100,4300,1800
+Nanded,2024,Loha,Inpatient,2300,3500,1600
+Nanded,2024,Kandhar,Inpatient,2500,3900,1900
+Nanded,2024,Mukhed,Inpatient,6400,8800,3200
+Nanded,2024,Deglur,Inpatient,2700,4700,2300
 Nandurbar,2012,Akkalkuva,Inpatient,46300,71200,76700
 Nandurbar,2012,Akrani,Inpatient,68800,226500,66700
 Nandurbar,2012,Taloda,Inpatient,118000,196700,56700
@@ -4776,6 +6424,24 @@ Nandurbar,2021,Taloda,Inpatient,137300,293100,738400
 Nandurbar,2021,Shahada,Inpatient,583800,898100,225600
 Nandurbar,2021,Nandurbar,Inpatient,997700,1651200,914500
 Nandurbar,2021,Navapur,Inpatient,364400,872400,406000
+Nandurbar,2022,Akkalkuva,Inpatient,462400,1212000,487600
+Nandurbar,2022,Akrani,Inpatient,267900,743900,409200
+Nandurbar,2022,Taloda,Inpatient,136300,407900,235200
+Nandurbar,2022,Shahada,Inpatient,339500,922800,251000
+Nandurbar,2022,Nandurbar,Inpatient,1101800,2077800,1242600
+Nandurbar,2022,Navapur,Inpatient,360600,1044600,445800
+Nandurbar,2023,Akkalkuva,Inpatient,699000,1962200,1189800
+Nandurbar,2023,Akrani,Inpatient,233100,936600,739400
+Nandurbar,2023,Taloda,Inpatient,254000,761000,508600
+Nandurbar,2023,Shahada,Inpatient,385400,1210900,492900
+Nandurbar,2023,Nandurbar,Inpatient,2166100,4666700,2730700
+Nandurbar,2023,Navapur,Inpatient,796300,1902200,942400
+Nandurbar,2024,Akkalkuva,Inpatient,4546,19909,8226
+Nandurbar,2024,Akrani,Inpatient,1858,8217,6786
+Nandurbar,2024,Taloda,Inpatient,13201,24978,14016
+Nandurbar,2024,Shahada,Inpatient,5500,12100,5700
+Nandurbar,2024,Nandurbar,Inpatient,3200,9400,2900
+Nandurbar,2024,Navapur,Inpatient,1900,5100,3100
 Nashik,2012,Surgana,Inpatient,432600,708900,1488900
 Nashik,2012,Kalwan,Inpatient,437000,687200,1403600
 Nashik,2012,Devala,Inpatient,163700,285300,500500
@@ -4926,6 +6592,51 @@ Nashik,2021,Igatpuri,Inpatient,182400,388300,121700
 Nashik,2021,Sinner,Inpatient,275300,368800,49500
 Nashik,2021,Nifad,Inpatient,231400,741500,253500
 Nashik,2021,Yewala,Inpatient,345100,453800,178100
+Nashik,2022,Surgana,Inpatient,329500,758300,327100
+Nashik,2022,Kalwan,Inpatient,495700,1192000,447600
+Nashik,2022,Devala,Inpatient,182300,553400,90300
+Nashik,2022,Baglan,Inpatient,268200,813200,179400
+Nashik,2022,Malegaon,Inpatient,1088600,3836500,1342800
+Nashik,2022,Nandgaon,Inpatient,650300,558700,267700
+Nashik,2022,Chandwad,Inpatient,145100,410900,87600
+Nashik,2022,Dindori,Inpatient,219800,687800,266700
+Nashik,2022,Peth,Inpatient,205300,415600,368300
+Nashik,2022,Trimbak,Inpatient,287300,903300,348300
+Nashik,2022,Nashik,Inpatient,2652500,5025900,3082100
+Nashik,2022,Igatpuri,Inpatient,238400,541000,174700
+Nashik,2022,Sinner,Inpatient,169900,470500,121700
+Nashik,2022,Nifad,Inpatient,334800,938300,281400
+Nashik,2022,Yewala,Inpatient,190600,541400,159800
+Nashik,2023,Surgana,Inpatient,372700,609700,290200
+Nashik,2023,Kalwan,Inpatient,563700,941200,452300
+Nashik,2023,Devala,Inpatient,279200,510400,120600
+Nashik,2023,Baglan,Inpatient,324600,736000,203100
+Nashik,2023,Malegaon,Inpatient,1777200,4190100,1473500
+Nashik,2023,Nandgaon,Inpatient,220400,509400,298200
+Nashik,2023,Chandwad,Inpatient,179800,353800,114600
+Nashik,2023,Dindori,Inpatient,246500,633300,285400
+Nashik,2023,Peth,Inpatient,198300,284800,298500
+Nashik,2023,Trimbak,Inpatient,217500,545400,326000
+Nashik,2023,Nashik,Inpatient,3722600,3232100,3722000
+Nashik,2023,Igatpuri,Inpatient,258400,489300,157000
+Nashik,2023,Sinner,Inpatient,206200,466200,106600
+Nashik,2023,Nifad,Inpatient,246600,711800,238300
+Nashik,2023,Yewala,Inpatient,245200,496500,176400
+Nashik,2024,Surgana,Inpatient,297700,729900,306500
+Nashik,2024,Kalwan,Inpatient,446800,1056200,530300
+Nashik,2024,Devala,Inpatient,145500,325200,161500
+Nashik,2024,Baglan,Inpatient,290800,754200,185300
+Nashik,2024,Malegaon,Inpatient,1672200,4336100,1735400
+Nashik,2024,Nandgaon,Inpatient,320200,582500,263300
+Nashik,2024,Chandwad,Inpatient,167700,354300,96500
+Nashik,2024,Dindori,Inpatient,295200,736800,331900
+Nashik,2024,Peth,Inpatient,159500,325900,301500
+Nashik,2024,Trimbak,Inpatient,156900,623700,391300
+Nashik,2024,Nashik,Inpatient,2446300,4887900,2080400
+Nashik,2024,Igatpuri,Inpatient,230100,503500,190400
+Nashik,2024,Sinner,Inpatient,199800,525200,127400
+Nashik,2024,Nifad,Inpatient,247100,730700,255000
+Nashik,2024,Yewala,Inpatient,176600,528100,179000
 Dharashiv,2012,Paranda,Inpatient,156100,186800,98400
 Dharashiv,2012,Bhum,Inpatient,82700,215200,88400
 Dharashiv,2012,Washi,Inpatient,183700,103100,64600
@@ -5006,6 +6717,30 @@ Dharashiv,2021,Dharashiv,Inpatient,18100,24000,10700
 Dharashiv,2021,Tuljapur,Inpatient,2300,4000,900
 Dharashiv,2021,Lohara,Inpatient,1200,5400,2900
 Dharashiv,2021,Umaraga,Inpatient,3000,4400,1700
+Dharashiv,2022,Paranda,Inpatient,1300,3100,1600
+Dharashiv,2022,Bhum,Inpatient,2100,4300,1000
+Dharashiv,2022,Washi,Inpatient,2500,3500,1300
+Dharashiv,2022,Kalamb,Inpatient,2300,5400,1200
+Dharashiv,2022,Dharashiv,Inpatient,19800,26700,13000
+Dharashiv,2022,Tuljapur,Inpatient,5200,8900,3900
+Dharashiv,2022,Lohara,Inpatient,1600,5900,1300
+Dharashiv,2022,Umaraga,Inpatient,2400,5800,1900
+Dharashiv,2023,Paranda,Inpatient,1802,3061,1493
+Dharashiv,2023,Bhum,Inpatient,2031,3830,389
+Dharashiv,2023,Washi,Inpatient,1691,2003,788
+Dharashiv,2023,Kalamb,Inpatient,2103,5002,1163
+Dharashiv,2023,Dharashiv,Inpatient,21506,26009,16820
+Dharashiv,2023,Tuljapur,Inpatient,41360,7948,2652
+Dharashiv,2023,Lohara,Inpatient,15410,5235,934
+Dharashiv,2023,Umaraga,Inpatient,4443,10257,2624
+Dharashiv,2024,Paranda,Inpatient,2704,2565,1324
+Dharashiv,2024,Bhum,Inpatient,1585,2580,537
+Dharashiv,2024,Washi,Inpatient,2231,2217,936
+Dharashiv,2024,Kalamb,Inpatient,3614,5287,1763
+Dharashiv,2024,Dharashiv,Inpatient,25944,23241,13398
+Dharashiv,2024,Tuljapur,Inpatient,5696,8081,2647
+Dharashiv,2024,Lohara,Inpatient,2203,5113,1429
+Dharashiv,2024,Umaraga,Inpatient,4509,8677,2528
 Palghar,2014,Talasari,Inpatient,619900,1191800,524700
 Palghar,2014,Dahanu,Inpatient,385000,1434600,431200
 Palghar,2014,Vikramgad,Inpatient,479900,1506400,686000
@@ -5070,6 +6805,30 @@ Palghar,2021,Mokhada,Inpatient,1911,3529,2174
 Palghar,2021,Wada,Inpatient,2104,4356,2053
 Palghar,2021,Palghar,Inpatient,2358,7146,2184
 Palghar,2021,Vasai,Inpatient,3210,10226,2865
+Palghar,2022,Talasari,Inpatient,777,3356,2466
+Palghar,2022,Dahanu,Inpatient,4259,13274,7392
+Palghar,2022,Vikramgad,Inpatient,1417,5193,2463
+Palghar,2022,Javhar,Inpatient,6241,11602,8269
+Palghar,2022,Mokhada,Inpatient,2716,5252,2559
+Palghar,2022,Wada,Inpatient,4545,7969,4984
+Palghar,2022,Palghar,Inpatient,5506,11624,4718
+Palghar,2022,Vasai,Inpatient,7311,18269,5085
+Palghar,2023,Talasari,Inpatient,903,3302,2026
+Palghar,2023,Dahanu,Inpatient,4845,13436,8853
+Palghar,2023,Vikramgad,Inpatient,1490,4868,2281
+Palghar,2023,Javhar,Inpatient,6789,12348,8399
+Palghar,2023,Mokhada,Inpatient,3562,5647,3737
+Palghar,2023,Wada,Inpatient,2997,5826,2701
+Palghar,2023,Palghar,Inpatient,3996,11427,4989
+Palghar,2023,Vasai,Inpatient,6533,17412,4172
+Palghar,2024,Talasari,Inpatient,1007,3991,2138
+Palghar,2024,Dahanu,Inpatient,5727,14315,9211
+Palghar,2024,Vikramgad,Inpatient,1502,5795,1919
+Palghar,2024,Javhar,Inpatient,6584,11557,7640
+Palghar,2024,Mokhada,Inpatient,3565,5228,3274
+Palghar,2024,Wada,Inpatient,2882,5224,2509
+Palghar,2024,Palghar,Inpatient,4324,13227,4367
+Palghar,2024,Vasai,Inpatient,6816,17855,5476
 Parbhani,2013,Selu,Inpatient,2513,2009,1190
 Parbhani,2013,Jintur,Inpatient,1366,2563,750
 Parbhani,2013,Parbhani,Inpatient,2396,3817,1083
@@ -5151,6 +6910,33 @@ Parbhani,2021,Sonpeth,Inpatient,1129,677,451
 Parbhani,2021,Gangakhed,Inpatient,2267,2876,971
 Parbhani,2021,Palam,Inpatient,884,1498,326
 Parbhani,2021,Purna,Inpatient,1706,1651,136
+Parbhani,2022,Selu,Inpatient,1826,4839,2424
+Parbhani,2022,Jintur,Inpatient,5054,7916,2939
+Parbhani,2022,Parbhani,Inpatient,15312,23650,17607
+Parbhani,2022,Manvat,Inpatient,1016,1610,630
+Parbhani,2022,Pathari,Inpatient,1096,2321,1259
+Parbhani,2022,Sonpeth,Inpatient,1203,875,484
+Parbhani,2022,Gangakhed,Inpatient,3770,5752,1789
+Parbhani,2022,Palam,Inpatient,1494,2912,587
+Parbhani,2022,Purna,Inpatient,1628,3806,732
+Parbhani,2023,Selu,Inpatient,1366,4711,2534
+Parbhani,2023,Jintur,Inpatient,4979,7116,3870
+Parbhani,2023,Parbhani,Inpatient,13600,18133,12370
+Parbhani,2023,Manvat,Inpatient,1045,1623,267
+Parbhani,2023,Pathari,Inpatient,797,1584,791
+Parbhani,2023,Sonpeth,Inpatient,0,0,0
+Parbhani,2023,Gangakhed,Inpatient,1500,2000,940
+Parbhani,2023,Palam,Inpatient,1194,2483,607
+Parbhani,2023,Purna,Inpatient,2249,5084,622
+Parbhani,2024,Selu,Inpatient,1684,4551,1703
+Parbhani,2024,Jintur,Inpatient,8323,13964,4831
+Parbhani,2024,Parbhani,Inpatient,20942,25970,15429
+Parbhani,2024,Manvat,Inpatient,2649,3836,882
+Parbhani,2024,Pathari,Inpatient,1275,2360,949
+Parbhani,2024,Sonpeth,Inpatient,1768,1853,481
+Parbhani,2024,Gangakhed,Inpatient,3554,6065,2144
+Parbhani,2024,Palam,Inpatient,1870,3556,984
+Parbhani,2024,Purna,Inpatient,3116,5319,1398
 Pune,2011,Junnar,Inpatient,1500,3000,700
 Pune,2011,Aambegaon,Inpatient,1000,4100,1600
 Pune,2011,Shirur,Inpatient,800,1100,1500
@@ -5305,6 +7091,48 @@ Pune,2021,Welhe,Inpatient,17700,32600,10800
 Pune,2021,Bhor,Inpatient,45700,98400,45300
 Pune,2021,Baramati,Inpatient,105300,196100,48400
 Pune,2021,Indapur,Inpatient,89100,131100,21400
+Pune,2022,Junnar,Inpatient,3617.5,12168,2111.7
+Pune,2022,Aambegaon,Inpatient,3229.4,11772,1618.5
+Pune,2022,Shirur,Inpatient,1802.3,8759.1,1246.6
+Pune,2022,Khed,Inpatient,8431.2,12937,4234.7
+Pune,2022,Maval,Inpatient,744.95,486860,1624.5
+Pune,2022,Mulashi,Inpatient,1049.6,1812.4,534
+Pune,2022,Haveli,Inpatient,24604,46208,8826
+Pune,2022,Pune City,Inpatient,206640,250190,151900
+Pune,2022,Daund,Inpatient,3626.1,9256,5668.8
+Pune,2022,Purandar,Inpatient,880.88,4624,536.09
+Pune,2022,Welhe,Inpatient,583.56,1480,550.47
+Pune,2022,Bhor,Inpatient,815.07,5903.4,1014.5
+Pune,2022,Baramati,Inpatient,8328.7,17593,4389.8
+Pune,2022,Indapur,Inpatient,5690.3,7369.9,598.82
+Pune,2023,Junnar,Inpatient,540500,1358600,130900
+Pune,2023,Aambegaon,Inpatient,1005200,1660900,91000
+Pune,2023,Shirur,Inpatient,331800,902100,95600
+Pune,2023,Khed,Inpatient,866900,1342300,103100
+Pune,2023,Maval,Inpatient,209900,484800,70900
+Pune,2023,Mulashi,Inpatient,198400,391300,65200
+Pune,2023,Haveli,Inpatient,7684700,2618600,1760200
+Pune,2023,Pune City,Inpatient,26531200,25749100,17538900
+Pune,2023,Daund,Inpatient,542300,1028400,94200
+Pune,2023,Purandar,Inpatient,354200,589100,19400
+Pune,2023,Welhe,Inpatient,142100,183400,12400
+Pune,2023,Bhor,Inpatient,216000,441700,12000
+Pune,2023,Baramati,Inpatient,1312200,3078600,96000
+Pune,2023,Indapur,Inpatient,731400,853600,32400
+Pune,2024,Junnar,Inpatient,783700,1540200,264300
+Pune,2024,Aambegaon,Inpatient,891700,1397600,86400
+Pune,2024,Shirur,Inpatient,716700,1410900,346100
+Pune,2024,Khed,Inpatient,794100,1295300,106700
+Pune,2024,Maval,Inpatient,320000,659300,233100
+Pune,2024,Mulashi,Inpatient,1080700,1296800,551700
+Pune,2024,Haveli,Inpatient,7871300,2552900,1612400
+Pune,2024,Pune City,Inpatient,18821500,15384500,6997300
+Pune,2024,Daund,Inpatient,945400,1624600,270900
+Pune,2024,Purandar,Inpatient,476300,742100,37100
+Pune,2024,Welhe,Inpatient,177800,302800,24800
+Pune,2024,Bhor,Inpatient,294300,426700,37900
+Pune,2024,Baramati,Inpatient,1557200,4094700,94400
+Pune,2024,Indapur,Inpatient,792300,1265800,68700
 Raigad,2012,Uran,Inpatient,1400,1100,300
 Raigad,2012,Panwel,Inpatient,1400,1300,200
 Raigad,2012,Karjat,Inpatient,3900,3600,1000
@@ -5455,6 +7283,36 @@ Raigad,2021,Shreevardhan,Inpatient,400,700,3100
 Raigad,2021,Mhasala,Inpatient,100,200,1700
 Raigad,2021,Mahad,Inpatient,300,700,5900
 Raigad,2021,Poladpur,Inpatient,200,500,1200
+Raigad,2023,Uran,Inpatient,4100,3900,1600
+Raigad,2023,Panwel,Inpatient,2600,4100,400
+Raigad,2023,Karjat,Inpatient,2330,4500,1200
+Raigad,2023,Khalapur,Inpatient,2300,3700,1200
+Raigad,2023,Pen,Inpatient,2240,3400,300
+Raigad,2023,Alibag,Inpatient,7300,8900,5400
+Raigad,2023,Murud,Inpatient,1020,1100,100
+Raigad,2023,Roha,Inpatient,1890,3200,300
+Raigad,2023,Sudhagad,Inpatient,243,200,100
+Raigad,2023,Mangaon,Inpatient,5760,7900,1900
+Raigad,2023,Tala,Inpatient,119,100,100
+Raigad,2023,Shreevardhan,Inpatient,1630,2600,900
+Raigad,2023,Mhasala,Inpatient,1130,1800,300
+Raigad,2023,Mahad,Inpatient,3400,3800,1200
+Raigad,2023,Poladpur,Inpatient,1160,1500,800
+Raigad,2024,Uran,Inpatient,1200,1500,0
+Raigad,2024,Panwel,Inpatient,3900,4100,1700
+Raigad,2024,Karjat,Inpatient,4600,4900,1200
+Raigad,2024,Khalapur,Inpatient,3200,4200,900
+Raigad,2024,Pen,Inpatient,1900,2600,800
+Raigad,2024,Alibag,Inpatient,10000,11300,6100
+Raigad,2024,Murud,Inpatient,1100,1900,200
+Raigad,2024,Roha,Inpatient,1700,2800,700
+Raigad,2024,Sudhagad,Inpatient,200,100,100
+Raigad,2024,Mangaon,Inpatient,4000,5000,1300
+Raigad,2024,Tala,Inpatient,200,200,0
+Raigad,2024,Shreevardhan,Inpatient,1900,2400,700
+Raigad,2024,Mhasala,Inpatient,500,800,200
+Raigad,2024,Mahad,Inpatient,3700,3300,5800
+Raigad,2024,Poladpur,Inpatient,900,900,600
 Ratnagiri,2012,Mandangad,Inpatient,900,1800,300
 Ratnagiri,2012,Dapoli,Inpatient,1500,4000,1700
 Ratnagiri,2012,Khed,Inpatient,2700,4500,700
@@ -5545,6 +7403,33 @@ Ratnagiri,2021,Ratnagiri,Inpatient,8900,10600,4100
 Ratnagiri,2021,Sangameshwar,Inpatient,2300,3500,500
 Ratnagiri,2021,Lanja,Inpatient,700,1400,300
 Ratnagiri,2021,Rajapur,Inpatient,1300,2100,400
+Ratnagiri,2022,Mandangad,Inpatient,900,1600,300
+Ratnagiri,2022,Dapoli,Inpatient,2300,3200,900
+Ratnagiri,2022,Khed,Inpatient,7800,10600,1100
+Ratnagiri,2022,Chiplun,Inpatient,3900,5000,900
+Ratnagiri,2022,Guhagar,Inpatient,800,2000,400
+Ratnagiri,2022,Ratnagiri,Inpatient,10500,13300,5600
+Ratnagiri,2022,Sangameshwar,Inpatient,3600,6200,500
+Ratnagiri,2022,Lanja,Inpatient,1300,3000,800
+Ratnagiri,2022,Rajapur,Inpatient,2300,4400,600
+Ratnagiri,2023,Mandangad,Inpatient,1400,2400,500
+Ratnagiri,2023,Dapoli,Inpatient,3500,4600,1200
+Ratnagiri,2023,Khed,Inpatient,4700,6300,1600
+Ratnagiri,2023,Chiplun,Inpatient,25800,27600,6300
+Ratnagiri,2023,Guhagar,Inpatient,800,1600,300
+Ratnagiri,2023,Ratnagiri,Inpatient,11900,13900,5800
+Ratnagiri,2023,Sangameshwar,Inpatient,2400,4000,700
+Ratnagiri,2023,Lanja,Inpatient,1600,3000,1100
+Ratnagiri,2023,Rajapur,Inpatient,2200,3500,700
+Ratnagiri,2024,Mandangad,Inpatient,1339,1952,564
+Ratnagiri,2024,Dapoli,Inpatient,3952,5481,2048
+Ratnagiri,2024,Khed,Inpatient,5390,6497,1904
+Ratnagiri,2024,Chiplun,Inpatient,20105,29241,9590
+Ratnagiri,2024,Guhagar,Inpatient,1733,2880,786
+Ratnagiri,2024,Ratnagiri,Inpatient,22721,23966,12703
+Ratnagiri,2024,Sangameshwar,Inpatient,3313,5110,1195
+Ratnagiri,2024,Lanja,Inpatient,1042,1832,499
+Ratnagiri,2024,Rajapur,Inpatient,2373,3595,1329
 Sangli,2012,Shirala,Inpatient,,,
 Sangli,2012,Valava,Inpatient,,,
 Sangli,2012,Palus,Inpatient,,,
@@ -5645,6 +7530,36 @@ Sangli,2021,Tasgaon,Inpatient,168800,340700,
 Sangli,2021,Miraj,Inpatient,22491800,52172500,
 Sangli,2021,Ku. Mahakal,Inpatient,67600,146400,
 Sangli,2021,Jat,Inpatient,318500,559700,
+Sangli,2022,Shirala,Inpatient,1700,2800,1000
+Sangli,2022,Valava,Inpatient,2400,2500,1200
+Sangli,2022,Palus,Inpatient,1000,1200,800
+Sangli,2022,Kadegaon,Inpatient,1500,2000,900
+Sangli,2022,Khanapur,Inpatient,1200,1900,1000
+Sangli,2022,Aatpadi,Inpatient,900,1100,800
+Sangli,2022,Tasgaon,Inpatient,1500,1300,700
+Sangli,2022,Miraj,Inpatient,22100,24900,16300
+Sangli,2022,Ku. Mahakal,Inpatient,1400,1800,1200
+Sangli,2022,Jat,Inpatient,1200,1100,800
+Sangli,2023,Shirala,Inpatient,972,2096,240
+Sangli,2023,Valava,Inpatient,1638,1822,507
+Sangli,2023,Palus,Inpatient,264,498,60
+Sangli,2023,Kadegaon,Inpatient,784,1265,192
+Sangli,2023,Khanapur,Inpatient,445,1211,286
+Sangli,2023,Aatpadi,Inpatient,180,358,106
+Sangli,2023,Tasgaon,Inpatient,751,534,17
+Sangli,2023,Miraj,Inpatient,25054,37303,4408
+Sangli,2023,Ku. Mahakal,Inpatient,705,1093,465
+Sangli,2023,Jat,Inpatient,523,409,32
+Sangli,2024,Shirala,Inpatient,1400,3300,500
+Sangli,2024,Valava,Inpatient,2600,5700,1500
+Sangli,2024,Palus,Inpatient,600,1700,200
+Sangli,2024,Kadegaon,Inpatient,600,1700,300
+Sangli,2024,Khanapur,Inpatient,1100,2200,400
+Sangli,2024,Aatpadi,Inpatient,1300,1800,700
+Sangli,2024,Tasgaon,Inpatient,1100,2500,400
+Sangli,2024,Miraj,Inpatient,26500,34400,11100
+Sangli,2024,Ku. Mahakal,Inpatient,1000,1800,600
+Sangli,2024,Jat,Inpatient,2200,1700,500
 Satara,2012,Mahableshwar,Inpatient,400,1000,200
 Satara,2012,Vai,Inpatient,1400,2100,100
 Satara,2012,Khandala,Inpatient,1100,2100,300
@@ -5755,6 +7670,39 @@ Satara,2021,Satara,Inpatient,12900,18500,12500
 Satara,2021,Javali,Inpatient,1600,2800,300
 Satara,2021,Patan,Inpatient,6600,1100,2100
 Satara,2021,Karad,Inpatient,4800,16300,5800
+Satara,2022,Mahableshwar,Inpatient,1600,2100,900
+Satara,2022,Vai,Inpatient,1500,3000,500
+Satara,2022,Khandala,Inpatient,1100,2700,300
+Satara,2022,Faltan,Inpatient,2200,5000,900
+Satara,2022,Man,Inpatient,2100,3000,500
+Satara,2022,Khatav,Inpatient,3800,9300,700
+Satara,2022,Koregaon,Inpatient,3500,7800,1400
+Satara,2022,Satara,Inpatient,13000,18900,12700
+Satara,2022,Javali,Inpatient,1600,2800,300
+Satara,2022,Patan,Inpatient,6600,1100,2100
+Satara,2022,Karad,Inpatient,4800,16700,5800
+Satara,2023,Mahableshwar,Inpatient,1200,2100,500
+Satara,2023,Vai,Inpatient,1400,3600,800
+Satara,2023,Khandala,Inpatient,1100,2700,300
+Satara,2023,Faltan,Inpatient,2100,4700,900
+Satara,2023,Man,Inpatient,2600,2700,500
+Satara,2023,Khatav,Inpatient,3500,7200,700
+Satara,2023,Koregaon,Inpatient,3400,6400,1200
+Satara,2023,Satara,Inpatient,11700,17400,13400
+Satara,2023,Javali,Inpatient,1700,2100,2100
+Satara,2023,Patan,Inpatient,6700,5200,1900
+Satara,2023,Karad,Inpatient,4900,14800,4800
+Satara,2024,Mahableshwar,Inpatient,1200,1900,500
+Satara,2024,Vai,Inpatient,1800,4100,1300
+Satara,2024,Khandala,Inpatient,1500,3200,800
+Satara,2024,Faltan,Inpatient,1600,5100,2900
+Satara,2024,Man,Inpatient,2000,4200,900
+Satara,2024,Khatav,Inpatient,3100,5400,1700
+Satara,2024,Koregaon,Inpatient,4300,7500,1300
+Satara,2024,Satara,Inpatient,13100,16300,9300
+Satara,2024,Javali,Inpatient,1100,1800,900
+Satara,2024,Patan,Inpatient,2800,5600,2300
+Satara,2024,Karad,Inpatient,3900,14700,4800
 Sindhudurg,2012,Devgad,Inpatient,800,2000,1000
 Sindhudurg,2012,Vaibhavwadi,Inpatient,400,700,200
 Sindhudurg,2012,Kankavali,Inpatient,1800,3900,2300
@@ -5835,6 +7783,63 @@ Sindhudurg,2021,Vengurla,Inpatient,1200,1500,300
 Sindhudurg,2021,Kudal,Inpatient,4800,4700,1500
 Sindhudurg,2021,Savantwadi,Inpatient,3000,5700,2600
 Sindhudurg,2021,Dodamarg,Inpatient,1000,1700,300
+Sindhudurg,2022,Devgad,Inpatient,1300,1900,700
+Sindhudurg,2022,Vaibhavwadi,Inpatient,600,1100,100
+Sindhudurg,2022,Kankawali,Inpatient,3700,4000,700
+Sindhudurg,2022,Malwan,Inpatient,1100,1400,300
+Sindhudurg,2022,Vengurla,Inpatient,1000,1700,400
+Sindhudurg,2022,Kudal,Inpatient,6700,6000,1500
+Sindhudurg,2022,Savantwadi,Inpatient,2900,7100,3100
+Sindhudurg,2022,Dodamarg,Inpatient,2100,3000,600
+Sindhudurg,2023,Devgad,Inpatient,1300,2000,700
+Sindhudurg,2023,Vaibhavwadi,Inpatient,2700,6200,2200
+Sindhudurg,2023,Kankawali,Inpatient,3700,4000,1100
+Sindhudurg,2023,Malwan,Inpatient,1200,1700,500
+Sindhudurg,2023,Vengurla,Inpatient,1400,1900,400
+Sindhudurg,2023,Kudal,Inpatient,1700,2000,200
+Sindhudurg,2023,Savantwadi,Inpatient,6100,8000,2800
+Sindhudurg,2023,Dodamarg,Inpatient,1000,1600,300
+Sindhudurg,2024,Devgad,Inpatient,1500,2100,659
+Sindhudurg,2024,Vaibhavwadi,Inpatient,1100,1600,300
+Sindhudurg,2024,Kankawali,Inpatient,3000,3500,800
+Sindhudurg,2024,Malwan,Inpatient,1800,1715,300
+Sindhudurg,2024,Vengurla,Inpatient,1385,1600,500
+Sindhudurg,2024,Kudal,Inpatient,5800,6500,2300
+Sindhudurg,2024,Savantwadi,Inpatient,3000,5400,1800
+Sindhudurg,2024,Dodamarg,Inpatient,1034,1200,257
+Solapur,2022,Karmala,Inpatient,,,
+Solapur,2022,Madha,Inpatient,,,
+Solapur,2022,Barsi,Inpatient,,,
+Solapur,2022,North Solapur,Inpatient,,,
+Solapur,2022,Mohol,Inpatient,,,
+Solapur,2022,Pandharpur,Inpatient,,,
+Solapur,2022,Malsiras,Inpatient,,,
+Solapur,2022,Sangola,Inpatient,,,
+Solapur,2022,Mangalvedha,Inpatient,,,
+Solapur,2022,South Solapur,Inpatient,,,
+Solapur,2022,Akkalkot,Inpatient,,,
+Solapur,2023,Karmala,Inpatient,,412900,
+Solapur,2023,Madha,Inpatient,,606600,
+Solapur,2023,Barsi,Inpatient,,830700,
+Solapur,2023,North Solapur,Inpatient,,1587400,
+Solapur,2023,Mohol,Inpatient,,649400,
+Solapur,2023,Pandharpur,Inpatient,,1572000,
+Solapur,2023,Malsiras,Inpatient,,893900,
+Solapur,2023,Sangola,Inpatient,,261100,
+Solapur,2023,Mangalvedha,Inpatient,,174500,
+Solapur,2023,South Solapur,Inpatient,,271100,
+Solapur,2023,Akkalkot,Inpatient,,454500,
+Solapur,2024,Karmala,Inpatient,57100,118100,14700
+Solapur,2024,Madha,Inpatient,34500,120100,17800
+Solapur,2024,Barsi,Inpatient,135400,152600,40700
+Solapur,2024,North Solapur,Inpatient,7105200,1325000,1600
+Solapur,2024,Mohol,Inpatient,49200,166800,3200
+Solapur,2024,Pandharpur,Inpatient,70400,127400,44100
+Solapur,2024,Malsiras,Inpatient,129100,237700,61400
+Solapur,2024,Sangola,Inpatient,30200,180000,109500
+Solapur,2024,Mangalvedha,Inpatient,27100,139700,6700
+Solapur,2024,South Solapur,Inpatient,11000,180100,4400
+Solapur,2024,Akkalkot,Inpatient,53100,203100,29600
 Thane,2012,Thane,Inpatient,18600,27500,11500
 Thane,2012,Bhivandi,Inpatient,8600,10100,2700
 Thane,2012,Shahapur,Inpatient,8200,9200,2100
@@ -5905,6 +7910,27 @@ Thane,2021,Kalyan,Inpatient,2400,3500,600
 Thane,2021,Ulhasnagar,Inpatient,8200,12800,6800
 Thane,2021,Ambarnath,Inpatient,1000,2600,700
 Thane,2021,Murbad,Inpatient,1500,3400,600
+Thane,2022,Thane,Inpatient,27000,60500,25100
+Thane,2022,Bhivandi,Inpatient,3000,10300,6200
+Thane,2022,Shahapur,Inpatient,5000,9800,6000
+Thane,2022,Kalyan,Inpatient,4100,4800,1400
+Thane,2022,Ulhasnagar,Inpatient,11100,16400,10100
+Thane,2022,Ambarnath,Inpatient,1400,4500,1500
+Thane,2022,Murbad,Inpatient,3100,5600,2200
+Thane,2023,Thane,Inpatient,26500,56300,29400
+Thane,2023,Bhivandi,Inpatient,2300,8000,5800
+Thane,2023,Shahapur,Inpatient,5100,9500,6300
+Thane,2023,Kalyan,Inpatient,4400,4300,1900
+Thane,2023,Ulhasnagar,Inpatient,8000,13700,6100
+Thane,2023,Ambarnath,Inpatient,1700,4200,1700
+Thane,2023,Murbad,Inpatient,2600,4900,2100
+Thane,2024,Thane,Inpatient,106600,152700,67400
+Thane,2024,Bhivandi,Inpatient,4700,12100,6100
+Thane,2024,Shahapur,Inpatient,5500,10700,5600
+Thane,2024,Kalyan,Inpatient,7900,11000,5000
+Thane,2024,Ulhasnagar,Inpatient,10600,18900,9000
+Thane,2024,Ambarnath,Inpatient,3600,8200,2600
+Thane,2024,Murbad,Inpatient,3500,6100,2100
 Wardha,2012,Ashti,Inpatient,200,700,100
 Wardha,2012,Karanja,Inpatient,1100,1500,6300
 Wardha,2012,Aarvi,Inpatient,2200,3000,2900
@@ -5985,6 +8011,30 @@ Wardha,2021,Wardha,Inpatient,3600,7300,5400
 Wardha,2021,Devali,Inpatient,3100,4800,1300
 Wardha,2021,Hinganghat,Inpatient,2600,3700,2100
 Wardha,2021,Samudrapur,Inpatient,1300,1700,1100
+Wardha,2022,Ashti,Inpatient,1600,2900,700
+Wardha,2022,Karanja,Inpatient,800,1600,500
+Wardha,2022,Aarvi,Inpatient,2000,4900,1300
+Wardha,2022,Selu,Inpatient,1000,2000,500
+Wardha,2022,Wardha,Inpatient,5600,9800,5700
+Wardha,2022,Devali,Inpatient,3700,5700,1400
+Wardha,2022,Hinganghat,Inpatient,2500,4700,2200
+Wardha,2022,Samudrapur,Inpatient,1100,2200,800
+Wardha,2023,Ashti,Inpatient,2500,3100,900
+Wardha,2023,Karanja,Inpatient,1900,3300,1100
+Wardha,2023,Aarvi,Inpatient,3200,7000,2100
+Wardha,2023,Selu,Inpatient,2200,3300,700
+Wardha,2023,Wardha,Inpatient,9100,15800,9800
+Wardha,2023,Devali,Inpatient,7400,9100,2200
+Wardha,2023,Hinganghat,Inpatient,6500,10600,4900
+Wardha,2023,Samudrapur,Inpatient,1600,2800,1100
+Wardha,2024,Ashti,Inpatient,1100,1600,300
+Wardha,2024,Karanja,Inpatient,700,1200,500
+Wardha,2024,Aarvi,Inpatient,2000,3500,1000
+Wardha,2024,Selu,Inpatient,1100,1600,200
+Wardha,2024,Wardha,Inpatient,4100,7400,5100
+Wardha,2024,Devali,Inpatient,4000,4400,1100
+Wardha,2024,Hinganghat,Inpatient,3100,4700,1800
+Wardha,2024,Samudrapur,Inpatient,700,1000,300
 Washim,2012,Malegaon,Inpatient,1079300,815100,108700
 Washim,2012,Mangrulpir,Inpatient,2591700,1566500,582600
 Washim,2012,Karanja,Inpatient,3980700,2133600,356000
@@ -6045,6 +8095,24 @@ Washim,2021,Karanja,Inpatient,324300,271400,134800
 Washim,2021,Manora,Inpatient,91000,139900,51600
 Washim,2021,Washim,Inpatient,506900,1057800,535000
 Washim,2021,Resod,Inpatient,38400,76500,22800
+Washim,2022,Malegaon,Inpatient,1326,3302,502
+Washim,2022,Mangrulpir,Inpatient,2717,7076,1543
+Washim,2022,Karanja,Inpatient,3142,5748,3354
+Washim,2022,Manora,Inpatient,1534,2142,1790
+Washim,2022,Washim,Inpatient,1383,14900,8750
+Washim,2022,Resod,Inpatient,6675,3082,284
+Washim,2023,Malegaon,Inpatient,3862,2053,604
+Washim,2023,Mangrulpir,Inpatient,7221,3347,1708
+Washim,2023,Karanja,Inpatient,5315,3180,2593
+Washim,2023,Manora,Inpatient,1853,1351,1098
+Washim,2023,Washim,Inpatient,16556,7522,10344
+Washim,2023,Resod,Inpatient,3219,1671,1899
+Washim,2024,Malegaon,Inpatient,26984,1453,2117
+Washim,2024,Mangrulpir,Inpatient,31071,2598,5727
+Washim,2024,Karanja,Inpatient,26041,3192,5478
+Washim,2024,Manora,Inpatient,14473,1520,2556
+Washim,2024,Washim,Inpatient,59799,10380,22596
+Washim,2024,Resod,Inpatient,15061,987,1238
 Yavatmal,2012,Ner,Inpatient,9000,11600,3600
 Yavatmal,2012,Babhulgaon,Inpatient,8400,11000,7200
 Yavatmal,2012,Kalamb,Inpatient,13100,20100,5900
@@ -6205,3 +8273,51 @@ Yavatmal,2021,Ralegaon,Inpatient,1900,2200,1000
 Yavatmal,2021,Maregaon,Inpatient,3800,2800,2900
 Yavatmal,2021,Zari Jamani,Inpatient,2100,2500,2400
 Yavatmal,2021,Vani,Inpatient,3400,3800,2600
+Yavatmal,2022,Ner,Inpatient,,7500,
+Yavatmal,2022,Babhulgaon,Inpatient,,6500,
+Yavatmal,2022,Kalamb,Inpatient,,2700,
+Yavatmal,2022,Yavatmal,Inpatient,,40000,
+Yavatmal,2022,Darvha,Inpatient,,13100,
+Yavatmal,2022,Digras,Inpatient,,13300,
+Yavatmal,2022,Pusad,Inpatient,,11300,
+Yavatmal,2022,Umarkhed,Inpatient,,25200,
+Yavatmal,2022,Mahagaon,Inpatient,,9300,
+Yavatmal,2022,Aarni,Inpatient,,13400,
+Yavatmal,2022,Ghantaji,Inpatient,,6200,
+Yavatmal,2022,Kelapur,Inpatient,,18300,
+Yavatmal,2022,Ralegaon,Inpatient,,2600,
+Yavatmal,2022,Maregaon,Inpatient,,7200,
+Yavatmal,2022,Zari Jamani,Inpatient,,2800,
+Yavatmal,2022,Vani,Inpatient,,5500,
+Yavatmal,2023,Ner,Inpatient,2000,2900,600
+Yavatmal,2023,Babhulgaon,Inpatient,2800,3300,700
+Yavatmal,2023,Kalamb,Inpatient,2100,3300,1000
+Yavatmal,2023,Yavatmal,Inpatient,34400,34200,14200
+Yavatmal,2023,Darvha,Inpatient,3700,4600,4800
+Yavatmal,2023,Digras,Inpatient,2200,6200,1700
+Yavatmal,2023,Pusad,Inpatient,1100,5100,2300
+Yavatmal,2023,Umarkhed,Inpatient,2600,3700,2100
+Yavatmal,2023,Mahagaon,Inpatient,3100,4600,1600
+Yavatmal,2023,Aarni,Inpatient,2900,3600,800
+Yavatmal,2023,Ghantaji,Inpatient,2300,2800,600
+Yavatmal,2023,Kelapur,Inpatient,6800,8700,4400
+Yavatmal,2023,Ralegaon,Inpatient,900,1300,200
+Yavatmal,2023,Maregaon,Inpatient,3100,3000,800
+Yavatmal,2023,Zari Jamani,Inpatient,400,1700,500
+Yavatmal,2023,Vani,Inpatient,2300,3100,2100
+Yavatmal,2024,Ner,Inpatient,2600,3300,900
+Yavatmal,2024,Babhulgaon,Inpatient,2400,3200,900
+Yavatmal,2024,Kalamb,Inpatient,2100,2700,600
+Yavatmal,2024,Yavatmal,Inpatient,41200,30100,19400
+Yavatmal,2024,Darvha,Inpatient,3600,4700,2800
+Yavatmal,2024,Digras,Inpatient,4600,8200,5200
+Yavatmal,2024,Pusad,Inpatient,6700,16800,6000
+Yavatmal,2024,Umarkhed,Inpatient,4100,6300,2800
+Yavatmal,2024,Mahagaon,Inpatient,4100,6200,1900
+Yavatmal,2024,Aarni,Inpatient,4500,3600,3300
+Yavatmal,2024,Ghantaji,Inpatient,6000,6200,1700
+Yavatmal,2024,Kelapur,Inpatient,5100,7000,3900
+Yavatmal,2024,Ralegaon,Inpatient,3100,2700,1500
+Yavatmal,2024,Maregaon,Inpatient,3700,3400,700
+Yavatmal,2024,Zari Jamani,Inpatient,600,1800,500
+Yavatmal,2024,Vani,Inpatient,4700,4500,2100
