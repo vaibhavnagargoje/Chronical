@@ -4,6 +4,7 @@ Charts matching https://indiandistricts.in/statistics/maharashtra/<district>/lab
 """
 from django.core.management.base import BaseCommand
 from charthandler.models import ChartTemplate
+from charthandler.importing import StateScopedCommandMixin
 
 
 CENSUS_SOURCE = 'Census Tables'
@@ -28,14 +29,18 @@ def build_chart_options(y_axis_title, is_percent=False, disable_all_filter1=Fals
     return options
 
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Creates/Updates Chart Templates for the Labor chapter.'
 
+    def add_arguments(self, parser):
+        self.add_state_argument(parser)
+
     def handle(self, *args, **options):
+        state = self.resolve_state(options)
         self.stdout.write('Creating Chart Templates for Labor...')
 
         # Fix previous misspellings of chapter_type from 'labour' to 'labor'
-        ChartTemplate.objects.filter(chapter_type='labour').update(chapter_type='labor')
+        ChartTemplate.objects.filter(state=state, chapter_type='labour').update(chapter_type='labor')
 
         templates = [
             # ──────────────────────────────────────────────────────────────────
@@ -449,6 +454,7 @@ class Command(BaseCommand):
         updated = 0
         for config in templates:
             obj, created = ChartTemplate.objects.update_or_create(
+                state=state,
                 title=config['title'],
                 chapter_type=config['chapter_type'],
                 defaults=config
@@ -463,7 +469,7 @@ class Command(BaseCommand):
         expected_titles = {config['title'] for config in templates}
         stale_titles = list(
             ChartTemplate.objects
-            .filter(chapter_type='labor')
+            .filter(state=state, chapter_type='labor')
             .exclude(title__in=expected_titles)
             .values_list('title', flat=True)
         )

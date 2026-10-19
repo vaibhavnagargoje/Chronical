@@ -2,14 +2,15 @@
 Management command to import education CSV data into the database.
 
 Usage:
-    python manage.py import_education_data [--data-dir PATH] [--clear]
+    python manage.py import_education_data [--state SLUG] [--data-dir PATH] [--clear]
 
-Default data directory: Education/ in the project root.
+Default data directory: <State>/Education/ (see charthandler/chapters.py).
 """
 import csv
 import os
 from django.core.management.base import BaseCommand, CommandError
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
+from charthandler.importing import StateScopedCommandMixin
 
 from charthandler.models.education import (
     DropOutRateByGender,
@@ -76,15 +77,16 @@ ALL_MODELS = [
 # Command
 # ---------------------------------------------------------------------------
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Import education CSV data into charthandler models'
 
     def add_arguments(self, parser):
+        self.add_state_argument(parser)
         parser.add_argument(
             '--data-dir',
             type=str,
-            default=os.path.join(settings.BASE_DIR, 'Education'),
-            help='Path to the directory containing education CSV files (default: Education/)',
+            default=None,
+            help='Path to the directory containing education CSV files (default: <State>/Education/)',
         )
         parser.add_argument(
             '--clear',
@@ -93,7 +95,8 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = options['data_dir']
+        state = self.resolve_state(options)
+        data_dir = options['data_dir'] or get_chapter_data_dir('education', state)
 
         if not os.path.exists(data_dir):
             raise CommandError(f'Data directory not found: {data_dir}')
@@ -103,7 +106,7 @@ class Command(BaseCommand):
         if options['clear']:
             self.stdout.write('Clearing existing education data...')
             for ModelClass in ALL_MODELS:
-                deleted, _ = ModelClass.objects.all().delete()
+                deleted, _ = ModelClass.objects.filter(state=self.state).delete()
                 self.stdout.write(f'  Cleared {deleted:>6} rows from {ModelClass.__name__}')
             self.stdout.write(self.style.SUCCESS('All education data cleared.\n'))
 
@@ -158,7 +161,7 @@ class Command(BaseCommand):
                     boys=_safe_float(row.get('Boys')),
                     girls=_safe_float(row.get('Girls')),
                 ))
-        DropOutRateByGender.objects.bulk_create(records, ignore_conflicts=True)
+        DropOutRateByGender.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_drop_out_rate_schooling_stage(self, filepath):
@@ -177,7 +180,7 @@ class Command(BaseCommand):
                     upper_primary_vi_viii=_safe_float(row.get('Upper Primary (VI-VIII)')),
                     secondary_ix_x=_safe_float(row.get('Secondary (IX-X)')),
                 ))
-        DropOutRateSchoolingStage.objects.bulk_create(records, ignore_conflicts=True)
+        DropOutRateSchoolingStage.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_education_levels(self, filepath):
@@ -200,7 +203,7 @@ class Command(BaseCommand):
                     technical_diploma_or_certificate_not_equal_to_degree=_safe_float(row.get('Technical diploma or certificate not equal to degree')),
                     graduate_and_above=_safe_float(row.get('Graduate and above')),
                 ))
-        EducationLevels.objects.bulk_create(records, ignore_conflicts=True)
+        EducationLevels.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_no_of_schools(self, filepath):
@@ -220,7 +223,7 @@ class Command(BaseCommand):
                     secondary_school_i_x=_safe_float(row.get('Secondary School (I-X)')),
                     secondary_school_vi_x=_safe_float(row.get('Secondary School (VI-X)')),
                 ))
-        NoOfSchools.objects.bulk_create(records, ignore_conflicts=True)
+        NoOfSchools.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_no_of_schools_type(self, filepath):
@@ -241,7 +244,7 @@ class Command(BaseCommand):
                     secondary_school_i_x=_safe_float(row.get('Secondary School (I-X)')),
                     secondary_school_vi_x=_safe_float(row.get('Secondary School (VI-X)')),
                 ))
-        NoOfSchoolsType.objects.bulk_create(records, ignore_conflicts=True)
+        NoOfSchoolsType.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_no_of_schools_management_type(self, filepath):
@@ -262,7 +265,7 @@ class Command(BaseCommand):
                     others=_safe_float(row.get('Others')),
                     private_unaided_recognized=_safe_float(row.get('Private Unaided (Recognized)')),
                 ))
-        NoOfSchoolsManagementType.objects.bulk_create(records, ignore_conflicts=True)
+        NoOfSchoolsManagementType.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_no_of_teachers_by_type_of_sch(self, filepath):
@@ -282,7 +285,7 @@ class Command(BaseCommand):
                     others=_safe_float(row.get('Others')),
                     private_unaided=_safe_float(row.get('Private Unaided')),
                 ))
-        NoOfTeachersByType.objects.bulk_create(records, ignore_conflicts=True)
+        NoOfTeachersByType.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_student_enrollment_boys_vs_gir(self, filepath):
@@ -300,7 +303,7 @@ class Command(BaseCommand):
                     boys=_safe_float(row.get('Boys')),
                     girls=_safe_float(row.get('Girls')),
                 ))
-        StudentEnrollmentBoysVsGirls.objects.bulk_create(records, ignore_conflicts=True)
+        StudentEnrollmentBoysVsGirls.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_student_enrollment_class_wise(self, filepath):
@@ -329,7 +332,7 @@ class Command(BaseCommand):
                     class_11=_safe_float(row.get('Class 11')),
                     class_12=_safe_float(row.get('Class 12')),
                 ))
-        StudentEnrollmentClassWise.objects.bulk_create(records, ignore_conflicts=True)
+        StudentEnrollmentClassWise.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_student_enrollment_girls_vs_bo(self, filepath):
@@ -349,7 +352,7 @@ class Command(BaseCommand):
                     others=_safe_float(row.get('Others')),
                     private_unaided_recognized=_safe_float(row.get('Private Unaided (Recognized)')),
                 ))
-        StudentEnrollmentGirlsVsBoys.objects.bulk_create(records, ignore_conflicts=True)
+        StudentEnrollmentGirlsVsBoys.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_student_enrollment_numbers(self, filepath):
@@ -368,7 +371,7 @@ class Command(BaseCommand):
                     secondary_school_ix_x=_safe_float(row.get('Secondary School (IX-X)')),
                     higher_secondary_school_xi_xii=_safe_float(row.get('Higher Secondary School (XI-XII)')),
                 ))
-        StudentEnrollmentNumbers.objects.bulk_create(records, ignore_conflicts=True)
+        StudentEnrollmentNumbers.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_teacher_category(self, filepath):
@@ -390,7 +393,7 @@ class Command(BaseCommand):
                     higher_secondary_school_xi_xii=_safe_float(row.get('Higher Secondary School (XI-XII)')),
                     total=_safe_float(row.get('Total')),
                 ))
-        TeacherCategory.objects.bulk_create(records, ignore_conflicts=True)
+        TeacherCategory.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_teacher_social_category(self, filepath):
@@ -408,5 +411,5 @@ class Command(BaseCommand):
                     female=_safe_float(row.get('Female')),
                     male=_safe_float(row.get('Male')),
                 ))
-        TeacherSocialCategory.objects.bulk_create(records, ignore_conflicts=True)
+        TeacherSocialCategory.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)

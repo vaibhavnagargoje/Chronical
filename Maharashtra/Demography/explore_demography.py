@@ -8,8 +8,9 @@ import os
 import re
 import pandas as pd
 
-EXCEL_PATH = r"c:\Users\vaibh\Desktop\CKA Projects\Chronical\Demography\Original Data\Demography.xlsx"
-CSV_OUT_DIR = r"c:\Users\vaibh\Desktop\CKA Projects\Chronical\Demography"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+EXCEL_PATH = os.path.join(SCRIPT_DIR, "Original Data", "Demography.xlsx")
+CSV_OUT_DIR = SCRIPT_DIR
 
 os.makedirs(CSV_OUT_DIR, exist_ok=True)
 

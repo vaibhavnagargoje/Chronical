@@ -19,10 +19,11 @@ from .models import (
 
 @admin.register(ChartTemplate)
 class ChartTemplateAdmin(admin.ModelAdmin):
-    list_display = ['title', 'chapter_type', 'chart_type', 'data_source_table', 'display_order']
-    list_filter = ['chapter_type', 'chart_type']
+    list_display = ['title', 'state', 'chapter_type', 'chart_type', 'data_source_table', 'display_order']
+    list_filter = ['state', 'chapter_type', 'chart_type']
+    list_select_related = ['state']
     search_fields = ['title', 'slug']
-    prepopulated_fields = {'slug': ('title',)}
+    # No prepopulated slug: ChartTemplate.save() generates a unique, state-aware slug when left empty
     ordering = ['chapter_type', 'display_order']
 
 
@@ -1546,3 +1547,17 @@ class EnvDugwellsAdmin(admin.ModelAdmin):
     list_display = ('district', 'year', 'season', 'values')
     list_filter = ('district', 'year', 'season')
     search_fields = ('district',)
+
+
+# ============================================================================
+# STATE FILTER — added to every chart data admin registered above
+# ============================================================================
+
+from django.apps import apps
+from .models import StateScopedData
+
+for _model in apps.get_app_config('charthandler').get_models():
+    if issubclass(_model, StateScopedData) and admin.site.is_registered(_model):
+        _model_admin = admin.site.get_model_admin(_model)
+        if 'state' not in _model_admin.list_filter:
+            _model_admin.list_filter = ('state', *_model_admin.list_filter)

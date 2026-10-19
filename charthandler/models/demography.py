@@ -1,5 +1,7 @@
 from django.db import models
 
+from .base import StateScopedData
+
 
 # ============================================================================
 # DEMOGRAPHY DATA MODELS  — One model per CSV / Excel sheet
@@ -7,7 +9,7 @@ from django.db import models
 # ============================================================================
 
 
-class CensusPopulation(models.Model):
+class CensusPopulation(StateScopedData):
     """Census_Population sheet — Total, Male, Female population by district & Rural/Urban."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -19,13 +21,13 @@ class CensusPopulation(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Population'
-        unique_together = ['year', 'district', 'rural_urban']
+        unique_together = ['state', 'year', 'district', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.year}"
 
 
-class CensusSC(models.Model):
+class CensusSC(StateScopedData):
     """Census_SC sheet — Scheduled Caste population by district & Rural/Urban."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -37,13 +39,13 @@ class CensusSC(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census SC Population'
-        unique_together = ['year', 'district', 'rural_urban']
+        unique_together = ['state', 'year', 'district', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.year}"
 
 
-class CensusST(models.Model):
+class CensusST(StateScopedData):
     """Census_ST sheet — Scheduled Tribe population by district & Rural/Urban."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -55,13 +57,13 @@ class CensusST(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census ST Population'
-        unique_together = ['year', 'district', 'rural_urban']
+        unique_together = ['state', 'year', 'district', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.year}"
 
 
-class CensusAgeDistribution(models.Model):
+class CensusAgeDistribution(StateScopedData):
     """Census_AgeDist sheet — Population by age group, Rural/Urban, Male/Female."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -74,13 +76,13 @@ class CensusAgeDistribution(models.Model):
     class Meta:
         ordering = ['district', 'year', 'age_group']
         verbose_name = 'Demography Census Age Distribution'
-        unique_together = ['year', 'district', 'rural_urban', 'age_group']
+        unique_together = ['state', 'year', 'district', 'rural_urban', 'age_group']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.age_group} - {self.year}"
 
 
-class CensusLiterate(models.Model):
+class CensusLiterate(StateScopedData):
     """Census_Literate sheet — Literate population by district & Rural/Urban."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -92,13 +94,13 @@ class CensusLiterate(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Literate Population'
-        unique_together = ['year', 'district', 'rural_urban']
+        unique_together = ['state', 'year', 'district', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.year}"
 
 
-class CensusWorking(models.Model):
+class CensusWorking(StateScopedData):
     """Census_Working sheet — Working population breakdown (main & marginal workers)."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -116,13 +118,13 @@ class CensusWorking(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Working Population'
-        unique_together = ['year', 'district', 'rural_urban']
+        unique_together = ['state', 'year', 'district', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.year}"
 
 
-class CensusInwardMigrationA(models.Model):
+class CensusInwardMigrationA(StateScopedData):
     """Census_InwardMigration_A — Inward migration by birth place (set A)."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -140,13 +142,13 @@ class CensusInwardMigrationA(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Inward Migration (A)'
-        unique_together = ['year', 'district', 'birth_place']
+        unique_together = ['state', 'year', 'district', 'birth_place']
 
     def __str__(self):
         return f"{self.district} - {self.birth_place} - {self.year}"
 
 
-class CensusInwardMigrationB(models.Model):
+class CensusInwardMigrationB(StateScopedData):
     """Census_InwardMigration_B — Inward migration by birth place (set B)."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -164,13 +166,13 @@ class CensusInwardMigrationB(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Inward Migration (B)'
-        unique_together = ['year', 'district', 'birth_place']
+        unique_together = ['state', 'year', 'district', 'birth_place']
 
     def __str__(self):
         return f"{self.district} - {self.birth_place} - {self.year}"
 
 
-class CensusInwardMigrationC(models.Model):
+class CensusInwardMigrationC(StateScopedData):
     """Census_InwardMigrationC — Inward migration by birth place (set C)."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -188,13 +190,13 @@ class CensusInwardMigrationC(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Inward Migration (C)'
-        unique_together = ['year', 'district', 'birth_place']
+        unique_together = ['state', 'year', 'district', 'birth_place']
 
     def __str__(self):
         return f"{self.district} - {self.birth_place} - {self.year}"
 
 
-class CensusInwardMigrationD(models.Model):
+class CensusInwardMigrationD(StateScopedData):
     """Census_InwardMigrationD — Inward migration by birth place (set D)."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -212,13 +214,13 @@ class CensusInwardMigrationD(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Inward Migration (D)'
-        unique_together = ['year', 'district', 'birth_place']
+        unique_together = ['state', 'year', 'district', 'birth_place']
 
     def __str__(self):
         return f"{self.district} - {self.birth_place} - {self.year}"
 
 
-class CensusInwardMigrationE(models.Model):
+class CensusInwardMigrationE(StateScopedData):
     """Census_InwardMigration_E — Inward migration by birth place (set E)."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -236,13 +238,13 @@ class CensusInwardMigrationE(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Inward Migration (E)'
-        unique_together = ['year', 'district', 'birth_place']
+        unique_together = ['state', 'year', 'district', 'birth_place']
 
     def __str__(self):
         return f"{self.district} - {self.birth_place} - {self.year}"
 
 
-class CensusMotherTongue(models.Model):
+class CensusMotherTongue(StateScopedData):
     """Census_MotherTongue sheet — Population by mother tongue, Male/Female."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -253,13 +255,13 @@ class CensusMotherTongue(models.Model):
     class Meta:
         ordering = ['district', 'year', 'mother_tongue']
         verbose_name = 'Demography Census Mother Tongue'
-        unique_together = ['year', 'district', 'mother_tongue']
+        unique_together = ['state', 'year', 'district', 'mother_tongue']
 
     def __str__(self):
         return f"{self.district} - {self.mother_tongue} - {self.year}"
 
 
-class CensusReligion(models.Model):
+class CensusReligion(StateScopedData):
     """Census_Religion sheet — Population by religion, Rural/Urban & Gender."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -277,13 +279,13 @@ class CensusReligion(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Religion'
-        unique_together = ['year', 'district', 'rural_urban', 'gender']
+        unique_together = ['state', 'year', 'district', 'rural_urban', 'gender']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.gender} - {self.year}"
 
 
-class CensusSexRatio(models.Model):
+class CensusSexRatio(StateScopedData):
     """Census_SexRatio sheet — Sex ratio per district."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -292,13 +294,13 @@ class CensusSexRatio(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Sex Ratio'
-        unique_together = ['year', 'district']
+        unique_together = ['state', 'year', 'district']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class CensusToiletFacility(models.Model):
+class CensusToiletFacility(StateScopedData):
     """Census_ToiletFacility sheet — Household toilet access by type."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -311,13 +313,13 @@ class CensusToiletFacility(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Toilet Facility'
-        unique_together = ['year', 'district', 'rural_urban']
+        unique_together = ['state', 'year', 'district', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.year}"
 
 
-class CensusCooking(models.Model):
+class CensusCooking(StateScopedData):
     """Census_Cooking sheet — Household cooking fuel type."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -336,13 +338,13 @@ class CensusCooking(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Cooking Fuel'
-        unique_together = ['year', 'district', 'rural_urban']
+        unique_together = ['state', 'year', 'district', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.year}"
 
 
-class CensusWater(models.Model):
+class CensusWater(StateScopedData):
     """Census_Water sheet — Household drinking water source by location."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -357,13 +359,13 @@ class CensusWater(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Water Source'
-        unique_together = ['year', 'district', 'rural_urban', 'location']
+        unique_together = ['state', 'year', 'district', 'rural_urban', 'location']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.location} - {self.year}"
 
 
-class CensusElectricity(models.Model):
+class CensusElectricity(StateScopedData):
     """Census_Electricity sheet — Household access to electricity."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -374,13 +376,13 @@ class CensusElectricity(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Electricity Access'
-        unique_together = ['year', 'district', 'rural_urban']
+        unique_together = ['state', 'year', 'district', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.year}"
 
 
-class CensusTCAssets(models.Model):
+class CensusTCAssets(StateScopedData):
     """Census_T&C sheet — Household ownership of transport, communication & consumer assets."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -403,13 +405,13 @@ class CensusTCAssets(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census Transport & Communication Assets'
-        unique_together = ['year', 'district', 'rural_urban']
+        unique_together = ['state', 'year', 'district', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.year}"
 
 
-class CensusOwnership(models.Model):
+class CensusOwnership(StateScopedData):
     """Census_Ownership sheet — Household ownership status (Owned/Rented/Other)."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -421,7 +423,7 @@ class CensusOwnership(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Demography Census House Ownership'
-        unique_together = ['year', 'district', 'rural_urban']
+        unique_together = ['state', 'year', 'district', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.rural_urban} - {self.year}"

@@ -1,5 +1,7 @@
 from django.db import models
 
+from .base import StateScopedData
+
 
 # ============================================================================
 # HEALTH DATA MODELS  One model per CSV data source
@@ -7,7 +9,7 @@ from django.db import models
 
 # ---------- DSA (District Statistical Abstracts) ----------
 
-class DSAFamilyWelfarePrograms(models.Model):
+class DSAFamilyWelfarePrograms(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     taluka = models.CharField(max_length=100, db_index=True)
@@ -22,13 +24,13 @@ class DSAFamilyWelfarePrograms(models.Model):
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Family Welfare Programs'
-        unique_together = ['district', 'year', 'taluka', 'rural_urban']
+        unique_together = ['state', 'district', 'year', 'taluka', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DSAVaccines(models.Model):
+class DSAVaccines(StateScopedData):
     """Long-format vaccines data with Select Vaccine dropdown."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -40,13 +42,13 @@ class DSAVaccines(models.Model):
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Vaccines'
-        unique_together = ['district', 'year', 'taluka', 'rural_urban', 'select_vaccine']
+        unique_together = ['state', 'district', 'year', 'taluka', 'rural_urban', 'select_vaccine']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year} - {self.select_vaccine}"
 
 
-class DSAMalnutrition(models.Model):
+class DSAMalnutrition(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     taluka = models.CharField(max_length=100, db_index=True)
@@ -58,13 +60,13 @@ class DSAMalnutrition(models.Model):
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Malnutrition'
-        unique_together = ['district', 'year', 'taluka', 'rural_urban']
+        unique_together = ['state', 'district', 'year', 'taluka', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DSAMalnutrition2(models.Model):
+class DSAMalnutrition2(StateScopedData):
     """Long-format malnutrition data with Select Variable dropdown."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -75,13 +77,13 @@ class DSAMalnutrition2(models.Model):
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Malnutrition (2)'
-        unique_together = ['district', 'year', 'taluka', 'select_variable']
+        unique_together = ['state', 'district', 'year', 'taluka', 'select_variable']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DSARegisteredBirths(models.Model):
+class DSARegisteredBirths(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     taluka = models.CharField(max_length=100, db_index=True)
@@ -93,13 +95,13 @@ class DSARegisteredBirths(models.Model):
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Registered Births'
-        unique_together = ['district', 'year', 'taluka', 'rural_urban']
+        unique_together = ['state', 'district', 'year', 'taluka', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DSAReportedDeaths(models.Model):
+class DSAReportedDeaths(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     taluka = models.CharField(max_length=100, db_index=True)
@@ -111,13 +113,13 @@ class DSAReportedDeaths(models.Model):
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Reported Deaths'
-        unique_together = ['district', 'year', 'taluka', 'rural_urban']
+        unique_together = ['state', 'district', 'year', 'taluka', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DSADeathCause(models.Model):
+class DSADeathCause(StateScopedData):
     """Long-format death cause data with Sex and Select Cause dropdowns."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -128,13 +130,13 @@ class DSADeathCause(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'DSA Death Causes'
-        unique_together = ['district', 'year', 'sex', 'select_cause']
+        unique_together = ['state', 'district', 'year', 'sex', 'select_cause']
 
     def __str__(self):
         return f"{self.district} - {self.year} - {self.select_cause}"
 
 
-class DSAPublicHospitals2(models.Model):
+class DSAPublicHospitals2(StateScopedData):
     """Long-format public hospital data with Select Facility dropdown."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -145,13 +147,13 @@ class DSAPublicHospitals2(models.Model):
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Public Hospitals (2)'
-        unique_together = ['district', 'year', 'taluka', 'select_facility']
+        unique_together = ['state', 'district', 'year', 'taluka', 'select_facility']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DSAPrivateHealth2(models.Model):
+class DSAPrivateHealth2(StateScopedData):
     """Long-format private health data with Select Facility dropdown."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -162,13 +164,13 @@ class DSAPrivateHealth2(models.Model):
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Private Health (2)'
-        unique_together = ['district', 'year', 'taluka', 'select_facility']
+        unique_together = ['state', 'district', 'year', 'taluka', 'select_facility']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DSAAnganwadis(models.Model):
+class DSAAnganwadis(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     taluka = models.CharField(max_length=100, db_index=True)
@@ -184,13 +186,13 @@ class DSAAnganwadis(models.Model):
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Anganwadis'
-        unique_together = ['district', 'year', 'taluka', 'rural_urban']
+        unique_together = ['state', 'district', 'year', 'taluka', 'rural_urban']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DSAPublicOutPatients(models.Model):
+class DSAPublicOutPatients(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     taluka = models.CharField(max_length=100, db_index=True)
@@ -202,14 +204,14 @@ class DSAPublicOutPatients(models.Model):
     class Meta:
         ordering = ['district', 'year', 'taluka']
         verbose_name_plural = 'DSA Public Out-Patients'
-        unique_together = ['district', 'year', 'taluka', 'type']
+        unique_together = ['state', 'district', 'year', 'taluka', 'type']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 # ---------- HMIS (Health Management Information System) ----------
 
-class HMISFamilyPlanning(models.Model):
+class HMISFamilyPlanning(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     vasectomies = models.FloatField(null=True, blank=True)
@@ -222,13 +224,13 @@ class HMISFamilyPlanning(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Family Planning'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISContraceptives(models.Model):
+class HMISContraceptives(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     select_contraceptive = models.CharField(max_length=200, db_index=True)
@@ -237,13 +239,13 @@ class HMISContraceptives(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Contraceptives'
-        unique_together = ['district', 'year', 'select_contraceptive']
+        unique_together = ['state', 'district', 'year', 'select_contraceptive']
 
     def __str__(self):
         return f"{self.district} - {self.year} - {self.select_contraceptive}"
 
 
-class HMISInfantVaccinations(models.Model):
+class HMISInfantVaccinations(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     oral_polio_vaccine = models.FloatField(null=True, blank=True)
@@ -265,13 +267,13 @@ class HMISInfantVaccinations(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Infant Vaccinations'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISIV2(models.Model):
+class HMISIV2(StateScopedData):
     """Long-format adverse effects of immunization."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -281,13 +283,13 @@ class HMISIV2(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS IV (2)'
-        unique_together = ['district', 'year', 'select_effect']
+        unique_together = ['state', 'district', 'year', 'select_effect']
 
     def __str__(self):
         return f"{self.district} - {self.year} - {self.select_effect}"
 
 
-class HMISIV(models.Model):
+class HMISIV(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     abscess_cases = models.FloatField(null=True, blank=True)
@@ -297,13 +299,13 @@ class HMISIV(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS IV'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISAnaemia(models.Model):
+class HMISAnaemia(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     moderately_anaemic_women = models.FloatField(null=True, blank=True)
@@ -312,13 +314,13 @@ class HMISAnaemia(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Anaemia'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISAntenatalCare(models.Model):
+class HMISAntenatalCare(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     registered_for_antenatal_care = models.FloatField(null=True, blank=True)
@@ -328,13 +330,13 @@ class HMISAntenatalCare(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Antenatal Care'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISDeliveries(models.Model):
+class HMISDeliveries(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     home_deliveries = models.FloatField(null=True, blank=True)
@@ -355,13 +357,13 @@ class HMISDeliveries(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Deliveries'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISMDeaths(models.Model):
+class HMISMDeaths(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     maternal_deaths = models.FloatField(null=True, blank=True)
@@ -369,13 +371,13 @@ class HMISMDeaths(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Maternal Deaths'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISCSection(models.Model):
+class HMISCSection(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     public = models.FloatField(null=True, blank=True)
@@ -387,13 +389,13 @@ class HMISCSection(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS C-Section'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISSexRatio(models.Model):
+class HMISSexRatio(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     sex_ratio_at_birth = models.FloatField(null=True, blank=True)
@@ -401,13 +403,13 @@ class HMISSexRatio(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Sex Ratio'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISAbortion(models.Model):
+class HMISAbortion(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     abortions_reported = models.FloatField(null=True, blank=True)
@@ -422,13 +424,13 @@ class HMISAbortion(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Abortion'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISInfantDeaths2(models.Model):
+class HMISInfantDeaths2(StateScopedData):
     """Long-format infant death causes."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -438,13 +440,13 @@ class HMISInfantDeaths2(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Infant Deaths (2)'
-        unique_together = ['district', 'year', 'select_cause']
+        unique_together = ['state', 'district', 'year', 'select_cause']
 
     def __str__(self):
         return f"{self.district} - {self.year} - {self.select_cause}"
 
 
-class HMISInfantDeaths(models.Model):
+class HMISInfantDeaths(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     infant_deaths_reported = models.FloatField(null=True, blank=True)
@@ -466,13 +468,13 @@ class HMISInfantDeaths(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Infant Deaths'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISChildDisease2(models.Model):
+class HMISChildDisease2(StateScopedData):
     """Long-format child disease data."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -482,13 +484,13 @@ class HMISChildDisease2(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Child Disease (2)'
-        unique_together = ['district', 'year', 'select_disease']
+        unique_together = ['state', 'district', 'year', 'select_disease']
 
     def __str__(self):
         return f"{self.district} - {self.year} - {self.select_disease}"
 
 
-class HMISChildDisease(models.Model):
+class HMISChildDisease(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     pneumonia = models.FloatField(null=True, blank=True)
@@ -506,13 +508,13 @@ class HMISChildDisease(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Child Disease'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class HMISPatients(models.Model):
+class HMISPatients(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     inpatients = models.FloatField(null=True, blank=True)
@@ -527,14 +529,14 @@ class HMISPatients(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'HMIS Patients'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 # ---------- NFHS (National Family Health Survey) ----------
 
-class NFHSFamilyPlanning(models.Model):
+class NFHSFamilyPlanning(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     use_of_any_family_planning_methods = models.FloatField(null=True, blank=True)
@@ -550,13 +552,13 @@ class NFHSFamilyPlanning(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Family Planning'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSVaccinations(models.Model):
+class NFHSVaccinations(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     fully_immunized = models.FloatField(null=True, blank=True)
@@ -572,13 +574,13 @@ class NFHSVaccinations(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Vaccinations'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSOverweight(models.Model):
+class NFHSOverweight(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     women = models.FloatField(null=True, blank=True)
@@ -587,13 +589,13 @@ class NFHSOverweight(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Overweight'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSMalnutrition(models.Model):
+class NFHSMalnutrition(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     stunted = models.FloatField(null=True, blank=True)
@@ -609,13 +611,13 @@ class NFHSMalnutrition(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Malnutrition'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSLowBMI(models.Model):
+class NFHSLowBMI(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     women = models.FloatField(null=True, blank=True)
@@ -624,13 +626,13 @@ class NFHSLowBMI(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Low BMI'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSAnaemia(models.Model):
+class NFHSAnaemia(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     children = models.FloatField(null=True, blank=True)
@@ -642,13 +644,13 @@ class NFHSAnaemia(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Anaemia'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSDeliveryExpenditure(models.Model):
+class NFHSDeliveryExpenditure(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     avg_delivery_expenditure_in_public_facility = models.FloatField(null=True, blank=True)
@@ -656,13 +658,13 @@ class NFHSDeliveryExpenditure(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Delivery Expenditure'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSIFAConsumption(models.Model):
+class NFHSIFAConsumption(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     hundred_days_or_more = models.FloatField(null=True, blank=True)
@@ -670,13 +672,13 @@ class NFHSIFAConsumption(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS IFA Consumption'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSPostnatalCare(models.Model):
+class NFHSPostnatalCare(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     mothers = models.FloatField(null=True, blank=True)
@@ -685,13 +687,13 @@ class NFHSPostnatalCare(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Postnatal Care'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSSexRatio(models.Model):
+class NFHSSexRatio(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     at_birth = models.FloatField(null=True, blank=True)
@@ -700,13 +702,13 @@ class NFHSSexRatio(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Sex Ratio'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSBirths(models.Model):
+class NFHSBirths(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     births_registered_with_civil_authority = models.FloatField(null=True, blank=True)
@@ -714,13 +716,13 @@ class NFHSBirths(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Births'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSCSection(models.Model):
+class NFHSCSection(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     births_delivered_by_caesarean_section = models.FloatField(null=True, blank=True)
@@ -730,13 +732,13 @@ class NFHSCSection(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS C-Section'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSDiet(models.Model):
+class NFHSDiet(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     breastfed_within_one_hour_of_birth = models.FloatField(null=True, blank=True)
@@ -745,13 +747,13 @@ class NFHSDiet(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Diet'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSHighBloodSugar(models.Model):
+class NFHSHighBloodSugar(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     women_high = models.FloatField(null=True, blank=True)
@@ -762,13 +764,13 @@ class NFHSHighBloodSugar(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS High Blood Sugar'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSCancerScreening2(models.Model):
+class NFHSCancerScreening2(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     select_examination = models.CharField(max_length=200, db_index=True)
@@ -777,13 +779,13 @@ class NFHSCancerScreening2(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Cancer Screening (2)'
-        unique_together = ['district', 'year', 'select_examination']
+        unique_together = ['state', 'district', 'year', 'select_examination']
 
     def __str__(self):
         return f"{self.district} - {self.year} - {self.select_examination}"
 
 
-class NFHSCancerScreening(models.Model):
+class NFHSCancerScreening(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     cervix_examination = models.FloatField(null=True, blank=True)
@@ -793,13 +795,13 @@ class NFHSCancerScreening(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Cancer Screening'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSHypertension(models.Model):
+class NFHSHypertension(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     women_with_mildly_elevated_blood_pressure = models.FloatField(null=True, blank=True)
@@ -810,13 +812,13 @@ class NFHSHypertension(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Hypertension'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSTobaccoAlcohol(models.Model):
+class NFHSTobaccoAlcohol(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     women_tobacco = models.FloatField(null=True, blank=True)
@@ -827,13 +829,13 @@ class NFHSTobaccoAlcohol(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Tobacco & Alcohol'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class NFHSFacilities(models.Model):
+class NFHSFacilities(StateScopedData):
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
     iodized_salt = models.FloatField(null=True, blank=True)
@@ -845,7 +847,7 @@ class NFHSFacilities(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name_plural = 'NFHS Facilities'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"

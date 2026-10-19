@@ -2,14 +2,15 @@
 Management command to import industry CSV data into the database.
 
 Usage:
-    python manage.py import_industry_data [--data-dir PATH]
+    python manage.py import_industry_data [--state SLUG] [--data-dir PATH]
 
-Default data directory: Industry/ in the project root.
+Default data directory: <State>/Industry/ (see charthandler/chapters.py).
 """
 import csv
 import os
 from django.core.management.base import BaseCommand, CommandError
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
+from charthandler.importing import StateScopedCommandMixin
 
 from charthandler.models import (
     ECNumber,
@@ -43,14 +44,15 @@ def _safe_int(value):
     return int(f)
 
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Import industry CSV data into charthandler models'
 
     def add_arguments(self, parser):
+        self.add_state_argument(parser)
         parser.add_argument(
             '--data-dir',
             type=str,
-            default=os.path.join(settings.BASE_DIR, 'Industry'),
+            default=None,
             help='Path to the directory containing industry CSV files'
         )
         parser.add_argument(
@@ -60,7 +62,8 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = options['data_dir']
+        state = self.resolve_state(options)
+        data_dir = options['data_dir'] or get_chapter_data_dir('industry', state)
         clear = options['clear']
 
         if not os.path.exists(data_dir):
@@ -70,16 +73,16 @@ class Command(BaseCommand):
 
         if clear:
             self.stdout.write('Clearing existing industry data...')
-            ECNumber.objects.all().delete()
-            ECSocialGroup.objects.all().delete()
-            ECSourcesOfFinance.objects.all().delete()
-            ECSourcesOfBorrowings.objects.all().delete()
-            ECType.objects.all().delete()
-            ECBroadActivity.objects.all().delete()
-            DSAMsme.objects.all().delete()
-            FactoryWorkers.objects.all().delete()
-            DSAElectricity.objects.all().delete()
-            DSAPollutionCategory.objects.all().delete()
+            ECNumber.objects.filter(state=self.state).delete()
+            ECSocialGroup.objects.filter(state=self.state).delete()
+            ECSourcesOfFinance.objects.filter(state=self.state).delete()
+            ECSourcesOfBorrowings.objects.filter(state=self.state).delete()
+            ECType.objects.filter(state=self.state).delete()
+            ECBroadActivity.objects.filter(state=self.state).delete()
+            DSAMsme.objects.filter(state=self.state).delete()
+            FactoryWorkers.objects.filter(state=self.state).delete()
+            DSAElectricity.objects.filter(state=self.state).delete()
+            DSAPollutionCategory.objects.filter(state=self.state).delete()
             self.stdout.write(self.style.SUCCESS('Existing data cleared.'))
 
         csv_files = {
@@ -125,7 +128,7 @@ class Command(BaseCommand):
                     district=row.get('District', '').strip(),
                     number_of_establishments=_safe_float(row.get('Number of Establishments')),
                 ))
-        ECNumber.objects.bulk_create(records, ignore_conflicts=True)
+        ECNumber.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ec_social_group(self, filepath):
@@ -145,7 +148,7 @@ class Command(BaseCommand):
                     obc=_safe_float(row.get('OBC')),
                     others=_safe_float(row.get('Others')),
                 ))
-        ECSocialGroup.objects.bulk_create(records, ignore_conflicts=True)
+        ECSocialGroup.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ec_sources_of_finance(self, filepath):
@@ -163,7 +166,7 @@ class Command(BaseCommand):
                     self_financed=_safe_float(row.get('Self-Financed')),
                     borrowings_and_other_assistance=_safe_float(row.get('Borrowings and Other Assistance')),
                 ))
-        ECSourcesOfFinance.objects.bulk_create(records, ignore_conflicts=True)
+        ECSourcesOfFinance.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ec_sources_of_borrowings(self, filepath):
@@ -186,7 +189,7 @@ class Command(BaseCommand):
                     donations_transfers=_safe_float(row.get('Donations/Transfers')),
                     others=_safe_float(row.get('Others')),
                 ))
-        ECSourcesOfBorrowings.objects.bulk_create(records, ignore_conflicts=True)
+        ECSourcesOfBorrowings.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ec_type(self, filepath):
@@ -205,7 +208,7 @@ class Command(BaseCommand):
                     cooperative=_safe_float(row.get('Cooperative')),
                     private_sector=_safe_float(row.get('Private Sector')),
                 ))
-        ECType.objects.bulk_create(records, ignore_conflicts=True)
+        ECType.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ec_broad_activity(self, filepath):
@@ -224,7 +227,7 @@ class Command(BaseCommand):
                     industry=_safe_float(row.get('Industry')),
                     services=_safe_float(row.get('Services')),
                 ))
-        ECBroadActivity.objects.bulk_create(records, ignore_conflicts=True)
+        ECBroadActivity.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_msme(self, filepath):
@@ -242,7 +245,7 @@ class Command(BaseCommand):
                     taluka=row.get('Taluka', '').strip(),
                     number_of_msme_industries=_safe_float(row.get('Number of MSME Industries')),
                 ))
-        DSAMsme.objects.bulk_create(records, ignore_conflicts=True)
+        DSAMsme.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_factory_workers(self, filepath):
@@ -275,7 +278,7 @@ class Command(BaseCommand):
             )
             for k, v in agg.items()
         ]
-        FactoryWorkers.objects.bulk_create(records, ignore_conflicts=True)
+        FactoryWorkers.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_electricity(self, filepath):
@@ -293,7 +296,7 @@ class Command(BaseCommand):
                     taluka=row.get('Taluka', '').strip(),
                     industrial_power_consumption=_safe_float(row.get('Industrial Power Consumption')),
                 ))
-        DSAElectricity.objects.bulk_create(records, ignore_conflicts=True)
+        DSAElectricity.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_pollution_cat(self, filepath):
@@ -312,5 +315,5 @@ class Command(BaseCommand):
                     pollution_category=row.get('Pollution Category ', '').strip(),
                     number_of_industries=_safe_float(row.get('Number of Industries ')),
                 ))
-        DSAPollutionCategory.objects.bulk_create(records, ignore_conflicts=True)
+        DSAPollutionCategory.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)

@@ -2,14 +2,15 @@
 Management command to import livestock CSV data into the database.
 
 Usage:
-    python manage.py import_livestock_data [--data-dir PATH]
+    python manage.py import_livestock_data [--state SLUG] [--data-dir PATH]
 
-Default data directory: Livestocks/ in the project root.
+Default data directory: <State>/Livestock/ (see charthandler/chapters.py).
 """
 import csv
 import os
 from django.core.management.base import BaseCommand, CommandError
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
+from charthandler.importing import StateScopedCommandMixin
 
 from charthandler.models import (
     LivestockNumbers,
@@ -39,14 +40,15 @@ def _safe_int(value):
     return int(f)
 
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Import livestock CSV data into charthandler models'
 
     def add_arguments(self, parser):
+        self.add_state_argument(parser)
         parser.add_argument(
             '--data-dir',
             type=str,
-            default=os.path.join(settings.BASE_DIR, 'Livestocks'),
+            default=None,
             help='Path to the directory containing livestock CSV files'
         )
         parser.add_argument(
@@ -56,7 +58,8 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = options['data_dir']
+        state = self.resolve_state(options)
+        data_dir = options['data_dir'] or get_chapter_data_dir('livestock-fisheries', state)
         clear = options['clear']
 
         if not os.path.exists(data_dir):
@@ -66,12 +69,12 @@ class Command(BaseCommand):
 
         if clear:
             self.stdout.write('Clearing existing data...')
-            LivestockNumbers.objects.all().delete()
-            ArtificialInsemination.objects.all().delete()
-            DairyCooperative.objects.all().delete()
-            DairyByproduct.objects.all().delete()
-            Fisheries.objects.all().delete()
-            Veterinary.objects.all().delete()
+            LivestockNumbers.objects.filter(state=self.state).delete()
+            ArtificialInsemination.objects.filter(state=self.state).delete()
+            DairyCooperative.objects.filter(state=self.state).delete()
+            DairyByproduct.objects.filter(state=self.state).delete()
+            Fisheries.objects.filter(state=self.state).delete()
+            Veterinary.objects.filter(state=self.state).delete()
             self.stdout.write(self.style.SUCCESS('Existing data cleared.'))
 
         # Import each CSV file
@@ -115,7 +118,7 @@ class Command(BaseCommand):
                     buffalo=_safe_float(row.get('Buffalo')),
                 ))
 
-        LivestockNumbers.objects.bulk_create(records, ignore_conflicts=True)
+        LivestockNumbers.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_artificial_insemination(self, filepath):
@@ -136,7 +139,7 @@ class Command(BaseCommand):
                     percentage_achieved=_safe_float(row.get('Percentage of Artificial Insemination Target Achieved')),
                 ))
 
-        ArtificialInsemination.objects.bulk_create(records, ignore_conflicts=True)
+        ArtificialInsemination.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dairy_cooperative(self, filepath):
@@ -160,7 +163,7 @@ class Command(BaseCommand):
                     cold_storage_capacity=_safe_float(row.get('Cold Storage Capacity')),
                 ))
 
-        DairyCooperative.objects.bulk_create(records, ignore_conflicts=True)
+        DairyCooperative.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dairy_byproducts(self, filepath):
@@ -182,7 +185,7 @@ class Command(BaseCommand):
                     units=_safe_float(row.get('Units')),
                 ))
 
-        DairyByproduct.objects.bulk_create(records, ignore_conflicts=True)
+        DairyByproduct.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_fisheries(self, filepath):
@@ -209,7 +212,7 @@ class Command(BaseCommand):
                     members_in_cooperatives=_safe_float(row.get('Members in Fish Business Cooperatives')),
                 ))
 
-        Fisheries.objects.bulk_create(records, ignore_conflicts=True)
+        Fisheries.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_veterinary(self, filepath):
@@ -231,5 +234,5 @@ class Command(BaseCommand):
                     total_facilities=_safe_int(row.get('Total Veterinary Facilities')),
                 ))
 
-        Veterinary.objects.bulk_create(records, ignore_conflicts=True)
+        Veterinary.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)

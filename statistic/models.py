@@ -11,6 +11,7 @@ import uuid
 from imagekit.models import ImageSpecField
 from imagekit.processors import ResizeToFit
 from django.core.validators import FileExtensionValidator
+from django.core.exceptions import ValidationError
 
 def get_seo_image_path(instance, filename):
     """
@@ -247,6 +248,15 @@ class DynamicChartBlock(StatisticContentBlock):
 
     def get_chart_title(self):
         return self.title_override or self.chart_template.title
+
+    def clean(self):
+        super().clean()
+        # A chapter may only use chart templates of its own state
+        if self.chart_template_id and self.chapter_id:
+            if self.chart_template.state_id != self.chapter.district.state_id:
+                raise ValidationError({
+                    'chart_template': 'This chart template belongs to a different state than the chapter.'
+                })
 
 
 

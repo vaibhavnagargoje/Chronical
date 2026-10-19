@@ -4,6 +4,7 @@ Charts Aâ€“N matching https://indiandistricts.in/statistics/maharashtra/<di
 """
 from django.core.management.base import BaseCommand
 from charthandler.models import ChartTemplate
+from charthandler.importing import StateScopedCommandMixin
 
 
 EC_SOURCE = 'Economic Census, MoSPI'
@@ -27,10 +28,14 @@ def build_chart_options(y_axis_title, is_percent=False, disable_all_filter1=Fals
     return options
 
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Creates/Updates Chart Templates for the Industry chapter.'
 
+    def add_arguments(self, parser):
+        self.add_state_argument(parser)
+
     def handle(self, *args, **options):
+        state = self.resolve_state(options)
         self.stdout.write('Creating Chart Templates for Industry...')
 
         templates = [
@@ -328,6 +333,7 @@ class Command(BaseCommand):
         updated = 0
         for config in templates:
             obj, created = ChartTemplate.objects.update_or_create(
+                state=state,
                 title=config['title'],
                 chapter_type=config['chapter_type'],
                 defaults=config
@@ -342,7 +348,7 @@ class Command(BaseCommand):
         expected_titles = {config['title'] for config in templates}
         stale_titles = list(
             ChartTemplate.objects
-            .filter(chapter_type='industry')
+            .filter(state=state, chapter_type='industry')
             .exclude(title__in=expected_titles)
             .values_list('title', flat=True)
         )

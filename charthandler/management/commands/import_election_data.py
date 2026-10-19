@@ -2,11 +2,11 @@
 Management command to import election CSV data into the database.
 
 Usage:
-    python manage.py import_election_data [--data-dir PATH] [--clear]
+    python manage.py import_election_data [--state SLUG] [--data-dir PATH] [--clear]
 
-Default data directory: Election/ in the project root.
+Default data directory: <State>/Election/ (see charthandler/chapters.py).
 
-CSV files expected (exported from Election/Original Data):
+CSV files expected (exported from Maharashtra/Election/Original Data):
     LokSabha_Election_Winners.csv
     LokSabha_NOTA_Results.csv
     VidhanSabha_Election_Winners.csv
@@ -20,7 +20,8 @@ Note:
 import csv
 import os
 
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
+from charthandler.importing import StateScopedCommandMixin
 from django.core.management.base import BaseCommand, CommandError
 
 from charthandler.models import (
@@ -85,7 +86,7 @@ def _str(row, col):
 # Command
 # ---------------------------------------------------------------------------
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = "Import election CSV data into charthandler election models"
 
     ALL_MODELS = [
@@ -96,11 +97,12 @@ class Command(BaseCommand):
     ]
 
     def add_arguments(self, parser):
+        self.add_state_argument(parser)
         parser.add_argument(
             "--data-dir",
             type=str,
-            default=os.path.join(settings.BASE_DIR, "Election"),
-            help="Path to directory containing election CSV files (default: Election/)",
+            default=None,
+            help="Path to directory containing election CSV files (default: <State>/Election/)",
         )
         parser.add_argument(
             "--clear",
@@ -109,7 +111,8 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = options["data_dir"]
+        state = self.resolve_state(options)
+        data_dir = options["data_dir"] or get_chapter_data_dir("elections", state)
 
         if not os.path.exists(data_dir):
             raise CommandError(f"Data directory not found: {data_dir}")
@@ -119,7 +122,7 @@ class Command(BaseCommand):
         if options["clear"]:
             self.stdout.write("Clearing existing election data...")
             for model_class in self.ALL_MODELS:
-                deleted, _ = model_class.objects.all().delete()
+                deleted, _ = model_class.objects.filter(state=self.state).delete()
                 self.stdout.write(f"  Cleared {deleted:>6} rows from {model_class.__name__}")
             self.stdout.write(self.style.SUCCESS("All election data cleared.\n"))
 
@@ -215,7 +218,7 @@ class Command(BaseCommand):
                     tcpd_prof_second_desc=_str(row, "TCPD Prof Second Desc") or None,
                 ))
 
-        VidhanSabhaElectionWinners.objects.bulk_create(records, ignore_conflicts=True)
+        VidhanSabhaElectionWinners.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_vidhan_sabha_nota(self, filepath):
@@ -283,7 +286,7 @@ class Command(BaseCommand):
                     tcpd_prof_second_desc=_str(row, "TCPD Prof Second Desc") or None,
                 ))
 
-        VidhanSabhaNOTAResults.objects.bulk_create(records, ignore_conflicts=True)
+        VidhanSabhaNOTAResults.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_lok_sabha_winners(self, filepath):
@@ -349,7 +352,7 @@ class Command(BaseCommand):
                     tcpd_prof_second_desc=_str(row, "TCPD Prof Second Desc") or None,
                 ))
 
-        LokSabhaElectionWinners.objects.bulk_create(records, ignore_conflicts=True)
+        LokSabhaElectionWinners.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_lok_sabha_nota(self, filepath):
@@ -411,5 +414,5 @@ class Command(BaseCommand):
                     tcpd_prof_second_desc=_str(row, "TCPD Prof Second Desc") or None,
                 ))
 
-        LokSabhaNOTAResults.objects.bulk_create(records, ignore_conflicts=True)
+        LokSabhaNOTAResults.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)

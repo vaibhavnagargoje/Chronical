@@ -2,10 +2,11 @@
 Management command to create/update Chart Templates for the Police chapter.
 Charts matching http://127.0.0.1:8000/statistics/maharashtra/<district>/police-judiciary/
 
-Reference mapping: Police/Original Data/police_reference.xlsx
+Reference mapping: Maharashtra/Police/Original Data/police_reference.xlsx
 """
 from django.core.management.base import BaseCommand
 from charthandler.models import ChartTemplate
+from charthandler.importing import StateScopedCommandMixin
 
 
 def build_chart_options(
@@ -30,10 +31,14 @@ def build_chart_options(
     return options
 
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Creates/Updates Chart Templates for the Police chapter.'
 
+    def add_arguments(self, parser):
+        self.add_state_argument(parser)
+
     def handle(self, *args, **options):
+        state = self.resolve_state(options)
         self.stdout.write('Creating Chart Templates for Police...\n')
 
         templates = [
@@ -467,6 +472,7 @@ class Command(BaseCommand):
 
         for config in templates:
             obj, created = ChartTemplate.objects.update_or_create(
+                state=state,
                 title=config['title'],
                 chapter_type=config['chapter_type'],
                 defaults=config,
@@ -484,7 +490,7 @@ class Command(BaseCommand):
         expected_titles = {config['title'] for config in templates}
         stale = list(
             ChartTemplate.objects
-            .filter(chapter_type='police-judiciary')
+            .filter(state=state, chapter_type='police-judiciary')
             .exclude(title__in=expected_titles)
             .values_list('title', flat=True)
         )

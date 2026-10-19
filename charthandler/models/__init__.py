@@ -1,6 +1,7 @@
 # charthandler/models/__init__.py
 # Re-export all models so existing imports (e.g. from charthandler.models import X) keep working.
 
+from .base import StateScopedData
 from .chart_template import ChartTemplate
 
 from .livestock import (

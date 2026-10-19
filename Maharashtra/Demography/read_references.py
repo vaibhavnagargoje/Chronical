@@ -1,7 +1,8 @@
 """Read Demography_Refrences.xlsx using openpyxl (no pandas needed)."""
+import os
 import openpyxl
 
-REF_PATH = r"c:\Users\vaibh\Desktop\CKA Projects\Chronical\Demography\Original Data\Demography_Refrences.xlsx"
+REF_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Original Data", "Demography_Refrences.xlsx")
 
 wb = openpyxl.load_workbook(REF_PATH)
 print("Sheets:", wb.sheetnames)

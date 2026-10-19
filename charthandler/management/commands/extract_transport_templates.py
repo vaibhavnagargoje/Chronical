@@ -1,7 +1,7 @@
 """
 Management command to create/update Chart Templates for the Transport & Communication chapter.
 
-Reference: Transport/Original Data/transport_reference_sheet.xlsx  (Graph_Index sheet)
+Reference: Maharashtra/Transport/Original Data/transport_reference_sheet.xlsx  (Graph_Index sheet)
 
 Section mapping from reference sheet:
   Road Safety and Violations → ARC data (Seq 1–10)
@@ -29,6 +29,7 @@ DB Model → SourceSheet mapping:
 """
 from django.core.management.base import BaseCommand
 from charthandler.models import ChartTemplate
+from charthandler.importing import StateScopedCommandMixin
 
 
 ARC_SOURCE = 'Accident Research Cell (ARC), Maharashtra Police'
@@ -58,10 +59,14 @@ def build_chart_options(
     return options
 
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Creates/Updates Chart Templates for the Transport & Communication chapter.'
 
+    def add_arguments(self, parser):
+        self.add_state_argument(parser)
+
     def handle(self, *args, **options):
+        state = self.resolve_state(options)
         self.stdout.write('Creating Chart Templates for Transport & Communication...\n')
 
         templates = [
@@ -704,6 +709,7 @@ class Command(BaseCommand):
 
         for config in templates:
             obj, created = ChartTemplate.objects.update_or_create(
+                state=state,
                 title=config['title'],
                 chapter_type=config['chapter_type'],
                 defaults=config,
@@ -721,7 +727,7 @@ class Command(BaseCommand):
         expected_titles = {config['title'] for config in templates}
         stale = list(
             ChartTemplate.objects
-            .filter(chapter_type='transport-communication')
+            .filter(state=state, chapter_type='transport-communication')
             .exclude(title__in=expected_titles)
             .values_list('title', flat=True)
         )

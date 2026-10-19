@@ -2,14 +2,15 @@
 Management command to import environment data into the database.
 
 Usage:
-    python manage.py import_environment_data [--data-dir PATH] [--clear]
+    python manage.py import_environment_data [--state SLUG] [--data-dir PATH] [--clear]
 
-Default data directory: Environment/ in the project root.
+Default data directory: <State>/Environment/ (see charthandler/chapters.py).
 """
 import os
 import pandas as pd
 from django.core.management.base import BaseCommand, CommandError
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
+from charthandler.importing import StateScopedCommandMixin
 
 from charthandler.models import (
     EnvWildlifeProjects,
@@ -94,15 +95,16 @@ ALL_MODELS = [
 # Command
 # ---------------------------------------------------------------------------
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Import environment data into charthandler models'
 
     def add_arguments(self, parser):
+        self.add_state_argument(parser)
         parser.add_argument(
             '--data-dir',
             type=str,
-            default=os.path.join(settings.BASE_DIR, 'Environment'),
-            help='Path to the directory containing environment xlsx files (default: Environment/)',
+            default=None,
+            help='Path to the directory containing environment xlsx files (default: <State>/Environment/)',
         )
         parser.add_argument(
             '--clear',
@@ -111,7 +113,8 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = options['data_dir']
+        state = self.resolve_state(options)
+        data_dir = options['data_dir'] or get_chapter_data_dir('environment', state)
 
         if not os.path.exists(data_dir):
             raise CommandError(f'Data directory not found: {data_dir}')
@@ -121,7 +124,7 @@ class Command(BaseCommand):
         if options['clear']:
             self.stdout.write('Clearing existing environment data...')
             for ModelClass in ALL_MODELS:
-                deleted, _ = ModelClass.objects.all().delete()
+                deleted, _ = ModelClass.objects.filter(state=self.state).delete()
                 self.stdout.write(f'  Cleared {deleted:>6} rows from {ModelClass.__name__}')
             self.stdout.write(self.style.SUCCESS('All environment data cleared.\n'))
 
@@ -184,7 +187,7 @@ class Command(BaseCommand):
                 project_area_expenses=_str(row.get('Project Area/Expenses')),
                 value=_safe_float(row.get('Value')),
             ))
-        EnvWildlifeProjects.objects.bulk_create(records, ignore_conflicts=True)
+        EnvWildlifeProjects.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_forest_area(self, filepath):
@@ -201,7 +204,7 @@ class Command(BaseCommand):
                 jurisdiction=_str(row.get('Jurisdiction')),
                 forest_area=_safe_float(row.get('Forest Area')),
             ))
-        EnvForestArea.objects.bulk_create(records, ignore_conflicts=True)
+        EnvForestArea.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_forest_density(self, filepath):
@@ -217,7 +220,7 @@ class Command(BaseCommand):
                 type=_str(row.get('Type')),
                 forest_area=_safe_float(row.get('Forest Area')),
             ))
-        EnvForestDensity.objects.bulk_create(records, ignore_conflicts=True)
+        EnvForestDensity.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_night_light_intensity(self, filepath):
@@ -232,7 +235,7 @@ class Command(BaseCommand):
                 district=_str(row.get('District')),
                 night_light_intensity=_safe_float(row.get('Night Light Intensity')),
             ))
-        EnvNightLightIntensity.objects.bulk_create(records, ignore_conflicts=True)
+        EnvNightLightIntensity.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_runoff(self, filepath):
@@ -250,7 +253,7 @@ class Command(BaseCommand):
                 runoff=_safe_float(row.get('Runoff')),
                 yearly_runoff=_safe_float(row.get('Yearly Runoff')),
             ))
-        EnvRunoff.objects.bulk_create(records, ignore_conflicts=True)
+        EnvRunoff.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_rainy_days(self, filepath):
@@ -268,7 +271,7 @@ class Command(BaseCommand):
                 rainy_days_in_year=_safe_float(row.get('Number of rainy days in the given year')),
                 precipitation_in_year=_safe_float(row.get('Percipitation in the given year')),
             ))
-        EnvRainyDays.objects.bulk_create(records, ignore_conflicts=True)
+        EnvRainyDays.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_rainfall(self, filepath):
@@ -286,7 +289,7 @@ class Command(BaseCommand):
                 rainfall=_safe_float(row.get('Rainfall')),
                 total=_safe_float(row.get('Total')),
             ))
-        EnvRainfall.objects.bulk_create(records, ignore_conflicts=True)
+        EnvRainfall.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_min_temperature(self, filepath):
@@ -304,7 +307,7 @@ class Command(BaseCommand):
                 min_temperature=_safe_float(row.get('Min Temperature')),
                 min=_safe_float(row.get('Min')),
             ))
-        EnvMinTemperature.objects.bulk_create(records, ignore_conflicts=True)
+        EnvMinTemperature.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_max_temperature(self, filepath):
@@ -322,7 +325,7 @@ class Command(BaseCommand):
                 max_temperature=_safe_float(row.get('Max Temperature')),
                 max=_safe_float(row.get('Max')),
             ))
-        EnvMaxTemperature.objects.bulk_create(records, ignore_conflicts=True)
+        EnvMaxTemperature.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_wind_speed(self, filepath):
@@ -340,7 +343,7 @@ class Command(BaseCommand):
                 wind_speed=_safe_float(row.get('Wind Speed')),
                 average=_safe_float(row.get('Average')),
             ))
-        EnvWindSpeed.objects.bulk_create(records, ignore_conflicts=True)
+        EnvWindSpeed.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_water_deficit(self, filepath):
@@ -358,7 +361,7 @@ class Command(BaseCommand):
                 water_deficit=_safe_float(row.get('Water Deficit')),
                 yearly_water_deficit=_safe_float(row.get('Yearly Water Deficit')),
             ))
-        EnvWaterDeficit.objects.bulk_create(records, ignore_conflicts=True)
+        EnvWaterDeficit.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_humidity(self, filepath):
@@ -373,7 +376,7 @@ class Command(BaseCommand):
                 district=_str(row.get('District')),
                 relative_humidity=_safe_float(row.get('Relative Humidity')),
             ))
-        EnvHumidity.objects.bulk_create(records, ignore_conflicts=True)
+        EnvHumidity.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_soil_moisture(self, filepath):
@@ -389,7 +392,7 @@ class Command(BaseCommand):
                 moisture_1mm_2mm=_safe_float(row.get('1 mm - 2mm')),
                 moisture_04mm_1mm=_safe_float(row.get('0.4 mm - 1 mm')),
             ))
-        EnvSoilMoisture.objects.bulk_create(records, ignore_conflicts=True)
+        EnvSoilMoisture.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_evapotranspiration_yearly(self, filepath):
@@ -405,7 +408,7 @@ class Command(BaseCommand):
                 actual_numbers=_safe_float(row.get('Actual Numbers')),
                 potential=_safe_float(row.get('Potential')),
             ))
-        EnvEvapotranspirationYearly.objects.bulk_create(records, ignore_conflicts=True)
+        EnvEvapotranspirationYearly.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_evapotranspiration_monthly(self, filepath):
@@ -425,7 +428,7 @@ class Command(BaseCommand):
                 actual_et=_safe_float(row.get('Actual ET')),
                 potential_et=_safe_float(row.get('Potential ET')),
             ))
-        EnvEvapotranspirationMonthly.objects.bulk_create(records, ignore_conflicts=True)
+        EnvEvapotranspirationMonthly.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_borewells(self, filepath):
@@ -441,7 +444,7 @@ class Command(BaseCommand):
                 season=_str(row.get('Season')),
                 values=_safe_float(row.get('values')),
             ))
-        EnvBorewells.objects.bulk_create(records, ignore_conflicts=True)
+        EnvBorewells.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dugwells(self, filepath):
@@ -457,5 +460,5 @@ class Command(BaseCommand):
                 season=_str(row.get('Season')),
                 values=_safe_float(row.get('values')),
             ))
-        EnvDugwells.objects.bulk_create(records, ignore_conflicts=True)
+        EnvDugwells.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)

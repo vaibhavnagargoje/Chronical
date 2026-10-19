@@ -1,7 +1,7 @@
 import os
 import glob
 from django.core.management.base import BaseCommand
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
 
 class Command(BaseCommand):
     help = 'Bulk replace text in all CSV files in a specified directory'
@@ -10,7 +10,7 @@ class Command(BaseCommand):
         parser.add_argument(
             '--data-dir',
             type=str,
-            default=os.path.join(settings.BASE_DIR, 'Livestocks'),
+            default=get_chapter_data_dir('livestock-fisheries'),
             help='Path to the directory containing CSV files'
         )
         parser.add_argument(

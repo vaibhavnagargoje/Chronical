@@ -28,6 +28,7 @@ from statistic.models import (
     ChartBlock as StatChartBlock, DynamicChartBlock as StatDynamicChartBlock
 )
 from charthandler.models import ChartTemplate
+from charthandler.chapters import CHAPTER_NAME_TO_SLUG
 
 # Import review models
 from home.models import DeveloperCheck, FinalCheck, District, DistrictQuickFact
@@ -57,21 +58,6 @@ APP_CONFIG = {
     }
 }
 
-
-CHAPTER_NAME_TO_SLUG = {
-    'Agriculture': 'agriculture',
-    'Demography': 'demography',
-    'Education': 'education',
-    'Elections': 'elections',
-    'Environment': 'environment',
-    'Health': 'health',
-    'Industry': 'industry',
-    'Labor': 'labor',
-    'Livestock & Fisheries': 'livestock-fisheries',
-    'Police & Judiciary': 'police-judiciary',
-    'Revenue & Expenditure': 'revenue-expenditure',
-    'Transport & Communication': 'transport-communication',
-}
 
 def get_app_config(app_label):
     """Helper function to get the config or raise a 404 error."""
@@ -142,7 +128,10 @@ def chapter_editor_view(request, app_label, chapter_id):
         chapter_slug = CHAPTER_NAME_TO_SLUG.get(chapter.name, '')
         if chapter_slug:
             available_chart_templates = list(
-                ChartTemplate.objects.filter(chapter_type=chapter_slug)
+                ChartTemplate.objects.filter(
+                    state_id=chapter.district.state_id,
+                    chapter_type=chapter_slug,
+                )
                 .order_by('display_order', 'title')
             )
             allowed_template_ids = {template.id for template in available_chart_templates}

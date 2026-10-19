@@ -1,6 +1,8 @@
 from django.db import models
 
-class AgcGrosscroppedarea(models.Model):
+from .base import StateScopedData
+
+class AgcGrosscroppedarea(StateScopedData):
     """AGC_GrossCroppedArea.csv sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -24,7 +26,7 @@ class AgcGrosscroppedarea(models.Model):
         return f"{self.year} - {self.district}"
 
 
-class AgcHoldingsarea(models.Model):
+class AgcHoldingsarea(StateScopedData):
     """AGC_HoldingsArea.csv sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -44,7 +46,7 @@ class AgcHoldingsarea(models.Model):
         return f"{self.year} - {self.district}"
 
 
-class AgcHoldingsnumber(models.Model):
+class AgcHoldingsnumber(StateScopedData):
     """AGC_HoldingsNumber.csv sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -64,7 +66,7 @@ class AgcHoldingsnumber(models.Model):
         return f"{self.year} - {self.district}"
 
 
-class AgcLanduse(models.Model):
+class AgcLanduse(StateScopedData):
     """AGC_LandUse.csv sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -90,7 +92,7 @@ class AgcLanduse(models.Model):
         return f"{self.year} - {self.district}"
 
 
-class DsaChemicalfertilizer(models.Model):
+class DsaChemicalfertilizer(StateScopedData):
     """DSA_ChemicalFertilizer.csv sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -107,7 +109,7 @@ class DsaChemicalfertilizer(models.Model):
         return f"{self.year} - {self.district}"
 
 
-class DsaIrrigationbeneficiary(models.Model):
+class DsaIrrigationbeneficiary(StateScopedData):
     """DSA_IrrigationBeneficiary.csv sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -126,7 +128,7 @@ class DsaIrrigationbeneficiary(models.Model):
         return f"{self.year} - {self.district}"
 
 
-class DsaIrrigationfacilities(models.Model):
+class DsaIrrigationfacilities(StateScopedData):
     """DSA_IrrigationFacilities.csv sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -146,7 +148,7 @@ class DsaIrrigationfacilities(models.Model):
         return f"{self.year} - {self.district}"
 
 
-class DsaIrrigationprojects(models.Model):
+class DsaIrrigationprojects(StateScopedData):
     """DSA_IrrigationProjects.csv sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -165,7 +167,7 @@ class DsaIrrigationprojects(models.Model):
         return f"{self.year} - {self.district}"
 
 
-class DsaIrrigationwells(models.Model):
+class DsaIrrigationwells(StateScopedData):
     """DSA_IrrigationWells.csv sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -184,7 +186,7 @@ class DsaIrrigationwells(models.Model):
         return f"{self.year} - {self.district}"
 
 
-class DsaTubewellshandpumps(models.Model):
+class DsaTubewellshandpumps(StateScopedData):
     """DSA_TubewellsHandpumps.csv sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)

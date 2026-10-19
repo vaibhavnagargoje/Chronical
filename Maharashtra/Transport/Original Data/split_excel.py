@@ -1,8 +1,8 @@
 import pandas as pd
 import os
 
-file_path = r"c:\Users\vaibh\Desktop\CKA Projects\Chronical\Transport\Original Data\transport_data.xlsx"
-out_dir = r"c:\Users\vaibh\Desktop\CKA Projects\Chronical\Transport\Original Data"
+out_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(out_dir, "transport_data.xlsx")
 
 print("Loading excel file...")
 try:

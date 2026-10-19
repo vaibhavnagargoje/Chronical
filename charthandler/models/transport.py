@@ -1,6 +1,8 @@
 from django.db import models
 
-class TransportARCAccidents(models.Model):
+from .base import StateScopedData
+
+class TransportARCAccidents(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     fatal_accidents = models.FloatField(null=True, blank=True)
@@ -17,7 +19,7 @@ class TransportARCAccidents(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year}"
 
-class TransportARCAge(models.Model):
+class TransportARCAge(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     age = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -33,7 +35,7 @@ class TransportARCAge(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.age}"
 
-class TransportARCCaseFine(models.Model):
+class TransportARCCaseFine(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     violation = models.CharField(max_length=500, db_index=True, null=True, blank=True)
@@ -49,7 +51,7 @@ class TransportARCCaseFine(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.violation}"
 
-class TransportARCFatalities(models.Model):
+class TransportARCFatalities(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     no_of_accidents = models.FloatField(null=True, blank=True)
@@ -66,7 +68,7 @@ class TransportARCFatalities(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year}"
 
-class TransportARCGrievousInjuries(models.Model):
+class TransportARCGrievousInjuries(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     no_of_accidents = models.FloatField(null=True, blank=True)
@@ -83,7 +85,7 @@ class TransportARCGrievousInjuries(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year}"
 
-class TransportARCInjuries(models.Model):
+class TransportARCInjuries(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     sex = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -100,7 +102,7 @@ class TransportARCInjuries(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.sex}"
 
-class TransportARCMinorInjuries(models.Model):
+class TransportARCMinorInjuries(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     no_of_accidents = models.FloatField(null=True, blank=True)
@@ -117,7 +119,7 @@ class TransportARCMinorInjuries(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year}"
 
-class TransportARCModeTransport(models.Model):
+class TransportARCModeTransport(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     fatalities = models.FloatField(null=True, blank=True)
@@ -140,7 +142,7 @@ class TransportARCModeTransport(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year}"
 
-class TransportARCMonth(models.Model):
+class TransportARCMonth(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     month = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -156,7 +158,7 @@ class TransportARCMonth(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.month} - {self.crash_type}"
 
-class TransportARCRoadType(models.Model):
+class TransportARCRoadType(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     road_type = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -171,7 +173,7 @@ class TransportARCRoadType(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.road_type}"
 
-class TransportARCTime(models.Model):
+class TransportARCTime(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     time_of_day = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -187,7 +189,7 @@ class TransportARCTime(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.time_of_day}"
 
-class TransportARCTotalsInjuryDeath(models.Model):
+class TransportARCTotalsInjuryDeath(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     accidents_no_injury = models.FloatField(null=True, blank=True)
@@ -203,7 +205,7 @@ class TransportARCTotalsInjuryDeath(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year}"
 
-class TransportDSA100sqkm(models.Model):
+class TransportDSA100sqkm(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -217,7 +219,7 @@ class TransportDSA100sqkm(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.taluka}"
 
-class TransportDSABus(models.Model):
+class TransportDSABus(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     routes = models.FloatField(null=True, blank=True)
@@ -240,7 +242,7 @@ class TransportDSABus(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year}"
 
-class TransportDSAMagazine(models.Model):
+class TransportDSAMagazine(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -259,7 +261,7 @@ class TransportDSAMagazine(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.taluka}"
 
-class TransportDSARoadMaterial(models.Model):
+class TransportDSARoadMaterial(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -273,7 +275,7 @@ class TransportDSARoadMaterial(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.taluka} - {self.road_material}"
 
-class TransportDSARoadType(models.Model):
+class TransportDSARoadType(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -288,7 +290,7 @@ class TransportDSARoadType(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.taluka} - {self.road_type}"
 
-class TransportTCAssets(models.Model):
+class TransportTCAssets(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     rural_urban = models.CharField(max_length=255, db_index=True, null=True, blank=True)

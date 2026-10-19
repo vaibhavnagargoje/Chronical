@@ -1,12 +1,14 @@
 from django.db import models
 
+from .base import StateScopedData
+
 
 # ============================================================================
 # INDUSTRY DATA MODELS — One model per CSV data source
 # ============================================================================
 
 
-class ECNumber(models.Model):
+class ECNumber(StateScopedData):
     """Number of establishments — Economic Census, district-level."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -16,13 +18,13 @@ class ECNumber(models.Model):
         ordering = ['district', 'year']
         verbose_name = 'EC Number of Establishments'
         verbose_name_plural = 'EC Number of Establishments'
-        unique_together = ['year', 'district']
+        unique_together = ['state', 'year', 'district']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class ECSocialGroup(models.Model):
+class ECSocialGroup(StateScopedData):
     """Social group of establishment owner — Economic Census, district-level."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -35,13 +37,13 @@ class ECSocialGroup(models.Model):
         ordering = ['district', 'year']
         verbose_name = 'EC Social Group'
         verbose_name_plural = 'EC Social Groups'
-        unique_together = ['year', 'district']
+        unique_together = ['state', 'year', 'district']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class ECSourcesOfFinance(models.Model):
+class ECSourcesOfFinance(StateScopedData):
     """Sources of finance (self-financed vs borrowings) — Economic Census, district-level."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -52,13 +54,13 @@ class ECSourcesOfFinance(models.Model):
         ordering = ['district', 'year']
         verbose_name = 'EC Sources of Finance'
         verbose_name_plural = 'EC Sources of Finance'
-        unique_together = ['year', 'district']
+        unique_together = ['state', 'year', 'district']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class ECSourcesOfBorrowings(models.Model):
+class ECSourcesOfBorrowings(StateScopedData):
     """Sources of borrowings breakdown — Economic Census, district-level."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -74,13 +76,13 @@ class ECSourcesOfBorrowings(models.Model):
         ordering = ['district', 'year']
         verbose_name = 'EC Sources of Borrowings'
         verbose_name_plural = 'EC Sources of Borrowings'
-        unique_together = ['year', 'district']
+        unique_together = ['state', 'year', 'district']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class ECType(models.Model):
+class ECType(StateScopedData):
     """Establishment type (Govt/PSU, Cooperative, Private Sector) — Economic Census, district-level."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -92,13 +94,13 @@ class ECType(models.Model):
         ordering = ['district', 'year']
         verbose_name = 'EC Establishment Type'
         verbose_name_plural = 'EC Establishment Types'
-        unique_together = ['year', 'district']
+        unique_together = ['state', 'year', 'district']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class ECBroadActivity(models.Model):
+class ECBroadActivity(StateScopedData):
     """Broad activity categories (Agriculture, Industry, Services) — Economic Census, district-level."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -110,13 +112,13 @@ class ECBroadActivity(models.Model):
         ordering = ['district', 'year']
         verbose_name = 'EC Broad Activity'
         verbose_name_plural = 'EC Broad Activities'
-        unique_together = ['year', 'district']
+        unique_together = ['state', 'year', 'district']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class DSAMsme(models.Model):
+class DSAMsme(StateScopedData):
     """MSME industries — District Statistical Abstracts, taluka-level."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -127,13 +129,13 @@ class DSAMsme(models.Model):
         ordering = ['district', 'year', 'taluka']
         verbose_name = 'DSA MSME'
         verbose_name_plural = 'DSA MSMEs'
-        unique_together = ['district', 'year', 'taluka']
+        unique_together = ['state', 'district', 'year', 'taluka']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class FactoryWorkers(models.Model):
+class FactoryWorkers(StateScopedData):
     """Number of factory workers in registered factories — taluka & manufacturing category level."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -145,13 +147,13 @@ class FactoryWorkers(models.Model):
         ordering = ['district', 'year', 'taluka', 'manufacturing_category']
         verbose_name = 'Factory Workers'
         verbose_name_plural = 'Factory Workers'
-        unique_together = ['district', 'year', 'taluka', 'manufacturing_category']
+        unique_together = ['state', 'district', 'year', 'taluka', 'manufacturing_category']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.manufacturing_category} - {self.year}"
 
 
-class DSAElectricity(models.Model):
+class DSAElectricity(StateScopedData):
     """Industrial power consumption — District Statistical Abstracts, taluka-level."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -162,13 +164,13 @@ class DSAElectricity(models.Model):
         ordering = ['district', 'year', 'taluka']
         verbose_name = 'DSA Electricity'
         verbose_name_plural = 'DSA Electricity Records'
-        unique_together = ['district', 'year', 'taluka']
+        unique_together = ['state', 'district', 'year', 'taluka']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DSAPollutionCategory(models.Model):
+class DSAPollutionCategory(StateScopedData):
     """Industries by pollution category — District Statistical Abstracts, taluka-level."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -180,7 +182,7 @@ class DSAPollutionCategory(models.Model):
         ordering = ['district', 'year', 'taluka', 'pollution_category']
         verbose_name = 'DSA Pollution Category'
         verbose_name_plural = 'DSA Pollution Categories'
-        unique_together = ['district', 'year', 'taluka', 'pollution_category']
+        unique_together = ['state', 'district', 'year', 'taluka', 'pollution_category']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.pollution_category} - {self.year}"

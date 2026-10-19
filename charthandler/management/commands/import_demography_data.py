@@ -2,9 +2,9 @@
 Management command to import demography CSV data into the database.
 
 Usage:
-    python manage.py import_demography_data [--data-dir PATH] [--clear]
+    python manage.py import_demography_data [--state SLUG] [--data-dir PATH] [--clear]
 
-Default data directory: Demography/ in the project root.
+Default data directory: <State>/Demography/ (see charthandler/chapters.py).
 
 CSV files expected (matching sheet names from Demography.xlsx):
     Census_Population.csv
@@ -31,7 +31,8 @@ CSV files expected (matching sheet names from Demography.xlsx):
 import csv
 import os
 from django.core.management.base import BaseCommand, CommandError
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
+from charthandler.importing import StateScopedCommandMixin
 
 from charthandler.models import (
     CensusPopulation,
@@ -115,15 +116,16 @@ ALL_MODELS = [
 # Command
 # ---------------------------------------------------------------------------
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Import demography CSV data into charthandler models'
 
     def add_arguments(self, parser):
+        self.add_state_argument(parser)
         parser.add_argument(
             '--data-dir',
             type=str,
-            default=os.path.join(settings.BASE_DIR, 'Demography'),
-            help='Path to the directory containing demography CSV files (default: Demography/)',
+            default=None,
+            help='Path to the directory containing demography CSV files (default: <State>/Demography/)',
         )
         parser.add_argument(
             '--clear',
@@ -132,7 +134,8 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = options['data_dir']
+        state = self.resolve_state(options)
+        data_dir = options['data_dir'] or get_chapter_data_dir('demography', state)
 
         if not os.path.exists(data_dir):
             raise CommandError(f'Data directory not found: {data_dir}')
@@ -143,7 +146,7 @@ class Command(BaseCommand):
         if options['clear']:
             self.stdout.write('Clearing existing demography data...')
             for ModelClass in ALL_MODELS:
-                deleted, _ = ModelClass.objects.all().delete()
+                deleted, _ = ModelClass.objects.filter(state=self.state).delete()
                 self.stdout.write(f'  Cleared {deleted:>6} rows from {ModelClass.__name__}')
             self.stdout.write(self.style.SUCCESS('All demography data cleared.\n'))
 
@@ -206,7 +209,7 @@ class Command(BaseCommand):
                     male=_safe_float(row.get('Male')),
                     female=_safe_float(row.get('Female')),
                 ))
-        CensusPopulation.objects.bulk_create(records, ignore_conflicts=True)
+        CensusPopulation.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_sc(self, filepath):
@@ -225,7 +228,7 @@ class Command(BaseCommand):
                     male=_safe_float(row.get('Male')),
                     female=_safe_float(row.get('Female')),
                 ))
-        CensusSC.objects.bulk_create(records, ignore_conflicts=True)
+        CensusSC.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_st(self, filepath):
@@ -244,7 +247,7 @@ class Command(BaseCommand):
                     male=_safe_float(row.get('Male')),
                     female=_safe_float(row.get('Female')),
                 ))
-        CensusST.objects.bulk_create(records, ignore_conflicts=True)
+        CensusST.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_age_dist(self, filepath):
@@ -264,7 +267,7 @@ class Command(BaseCommand):
                     male=_safe_float(row.get('Male')),
                     female=_safe_float(row.get('Female')),
                 ))
-        CensusAgeDistribution.objects.bulk_create(records, ignore_conflicts=True)
+        CensusAgeDistribution.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_literate(self, filepath):
@@ -283,7 +286,7 @@ class Command(BaseCommand):
                     male=_safe_float(row.get('Male')),
                     female=_safe_float(row.get('Female')),
                 ))
-        CensusLiterate.objects.bulk_create(records, ignore_conflicts=True)
+        CensusLiterate.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_working(self, filepath):
@@ -308,7 +311,7 @@ class Command(BaseCommand):
                     male_marginal_workers=_safe_float(row.get('Male Marginal Workers')),
                     female_marginal_workers=_safe_float(row.get('Female Marginal Workers')),
                 ))
-        CensusWorking.objects.bulk_create(records, ignore_conflicts=True)
+        CensusWorking.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_migration(self, filepath, ModelClass):
@@ -333,7 +336,7 @@ class Command(BaseCommand):
                     urban_male=_safe_float(row.get('Urban Male')),
                     urban_female=_safe_float(row.get('Urban Female')),
                 ))
-        ModelClass.objects.bulk_create(records, ignore_conflicts=True)
+        ModelClass.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_migration_a(self, filepath):
@@ -371,7 +374,7 @@ class Command(BaseCommand):
                     male=_safe_float(row.get('Male')),
                     female=_safe_float(row.get('Female')),
                 ))
-        CensusMotherTongue.objects.bulk_create(records, ignore_conflicts=True)
+        CensusMotherTongue.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_religion(self, filepath):
@@ -396,7 +399,7 @@ class Command(BaseCommand):
                     other=_safe_float(row.get('Other')),
                     not_stated=_safe_float(row.get('Not Stated')),
                 ))
-        CensusReligion.objects.bulk_create(records, ignore_conflicts=True)
+        CensusReligion.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_sex_ratio(self, filepath):
@@ -412,7 +415,7 @@ class Command(BaseCommand):
                     district=_str(row, 'District'),
                     sex_ratio=_safe_float(row.get('Sex Ratio')),
                 ))
-        CensusSexRatio.objects.bulk_create(records, ignore_conflicts=True)
+        CensusSexRatio.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_toilet_facility(self, filepath):
@@ -432,7 +435,7 @@ class Command(BaseCommand):
                     other=_safe_float(row.get('Other')),
                     no_latrine=_safe_float(row.get('No Latrine')),
                 ))
-        CensusToiletFacility.objects.bulk_create(records, ignore_conflicts=True)
+        CensusToiletFacility.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_cooking(self, filepath):
@@ -458,7 +461,7 @@ class Command(BaseCommand):
                     other=_safe_float(row.get('Other')),
                     no_cooking=_safe_float(row.get('No cooking')),
                 ))
-        CensusCooking.objects.bulk_create(records, ignore_conflicts=True)
+        CensusCooking.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_water(self, filepath):
@@ -480,7 +483,7 @@ class Command(BaseCommand):
                     well=_safe_float(row.get('Well')),
                     all_others=_safe_float(row.get('All Others')),
                 ))
-        CensusWater.objects.bulk_create(records, ignore_conflicts=True)
+        CensusWater.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_electricity(self, filepath):
@@ -498,7 +501,7 @@ class Command(BaseCommand):
                     access_to_electricity=_safe_float(row.get('Access to Electricity')),
                     no_access_to_electricity=_safe_float(row.get('No Access to Electricity')),
                 ))
-        CensusElectricity.objects.bulk_create(records, ignore_conflicts=True)
+        CensusElectricity.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_tc_assets(self, filepath):
@@ -528,7 +531,7 @@ class Command(BaseCommand):
                     access_to_any_asset=_safe_float(row.get('Access to Any Asset')),
                     none_of_the_specified_assets=_safe_float(row.get('None of the Specified Assets')),
                 ))
-        CensusTCAssets.objects.bulk_create(records, ignore_conflicts=True)
+        CensusTCAssets.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ownership(self, filepath):
@@ -547,5 +550,5 @@ class Command(BaseCommand):
                     rented=_safe_float(row.get('Rented')),
                     other=_safe_float(row.get('Other')),
                 ))
-        CensusOwnership.objects.bulk_create(records, ignore_conflicts=True)
+        CensusOwnership.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)

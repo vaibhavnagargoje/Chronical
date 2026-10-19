@@ -1,8 +1,10 @@
 from django.db import models
 
+from .base import StateScopedData
+
 
 # ─── Non Workers Yearly (labor_non_workers_yearly.csv) ────────────────────────
-class LaborNonWorkersYearly(models.Model):
+class LaborNonWorkersYearly(StateScopedData):
     """
     Source: Non Workers Yearly sheet → labor_non_workers_yearly.csv
     Cols: Year, District, Rural/Urban, Male Non Workers, Female Non Workers
@@ -19,7 +21,7 @@ class LaborNonWorkersYearly(models.Model):
 
 
 # ─── Labour Working Populations (labor_working_populations.csv) ───────────────
-class LaborWorkingPopulations(models.Model):
+class LaborWorkingPopulations(StateScopedData):
     """
     Source: Labour Working Populations sheet → labor_working_populations.csv
     Cols: Year, District, Rural/Urban, Working Population,
@@ -46,7 +48,7 @@ class LaborWorkingPopulations(models.Model):
 
 
 # ─── Census Age Distribution (labor_census_age_distribution.csv) ──────────────
-class LaborCensusAgeDistribution(models.Model):
+class LaborCensusAgeDistribution(StateScopedData):
     """
     Source: Census Age Distribution sheet → labor_census_age_distribution.csv
     Cols: Year, District, Rural/Urban, Age Group,
@@ -69,7 +71,7 @@ class LaborCensusAgeDistribution(models.Model):
 
 
 # ─── Economic Census Workers (labor_economic_census_workers.csv) ──────────────
-class LaborEconomicCensusWorkers(models.Model):
+class LaborEconomicCensusWorkers(StateScopedData):
     """
     Source: Economic Census Workers sheet → labor_economic_census_workers.csv
     Cols: Year, District, Number of Workers, Number of Establishments,
@@ -131,7 +133,7 @@ class LaborEconomicCensusWorkers(models.Model):
 
 
 # ─── Economic Census Gender (labor_economic_census_gender.csv) ────────────────
-class LaborEconomicCensusGender(models.Model):
+class LaborEconomicCensusGender(StateScopedData):
     """
     Source: Economic Census Gender sheet → labor_economic_census_gender.csv
     Cols: Year, District, Gender, Employed (Hired), Employed (Not Hired)
@@ -148,7 +150,7 @@ class LaborEconomicCensusGender(models.Model):
 
 
 # ─── DSA MSME (labor_dsa_msme.csv) ────────────────────────────────────────────
-class LaborDsaMsme(models.Model):
+class LaborDsaMsme(StateScopedData):
     """
     Source: DSA_MSME sheet → labor_dsa_msme.csv
     Cols: District, Year, Taluka, Number of MSME Industries,
@@ -167,7 +169,7 @@ class LaborDsaMsme(models.Model):
 
 
 # ─── Employment by Industry (labor_emp_by_industry.csv) ───────────────────────
-class LaborEmpByIndustry(models.Model):
+class LaborEmpByIndustry(StateScopedData):
     """
     Source: Emp by Industry sheet → labor_emp_by_industry.csv
     Cols: District, Year, Select Industry, Govt. Employees,
@@ -186,7 +188,7 @@ class LaborEmpByIndustry(models.Model):
 
 
 # ─── Govt Employees (labor_govt_employees.csv) ────────────────────────────────
-class LaborGovtEmployees(models.Model):
+class LaborGovtEmployees(StateScopedData):
     """
     Source: Govt Employees sheet → labor_govt_employees.csv
     Cols: District, Year, Group, Approved Posts, Positions Filled, Number of women
@@ -204,7 +206,7 @@ class LaborGovtEmployees(models.Model):
 
 
 # ─── MNREGA Accounts (labor_mnrega_accounts.csv) ──────────────────────────────
-class LaborMNREGAAccounts(models.Model):
+class LaborMNREGAAccounts(StateScopedData):
     """
     Source: MNREGA Accounts sheet → labor_mnrega_accounts.csv
     Cols: District, Year, Bank Accounts, Post Office Accounts
@@ -220,7 +222,7 @@ class LaborMNREGAAccounts(models.Model):
 
 
 # ─── MNREGA Job Cards (labor_mnrega_job_cards.csv) ────────────────────────────
-class LaborMNREGAJobCards(models.Model):
+class LaborMNREGAJobCards(StateScopedData):
     """
     Source: MNREGA Job Cards sheet → labor_mnrega_job_cards.csv
     Cols: District, Year, Job Cards Issued, SC, ST, Issued for either SC or ST
@@ -238,7 +240,7 @@ class LaborMNREGAJobCards(models.Model):
 
 
 # ─── MNREGA Participation (labor_mnrega_participation.csv) ────────────────────
-class LaborMNREGAParticipation(models.Model):
+class LaborMNREGAParticipation(StateScopedData):
     """
     Source: MNREGA Participation sheet → labor_mnrega_participation.csv
     Cols: District, Year, Worked, Demanded Work, Allotted Work
@@ -255,7 +257,7 @@ class LaborMNREGAParticipation(models.Model):
 
 
 # ─── MNREGA Scope (labor_mnrega_scope.csv) ────────────────────────────────────
-class LaborMNREGAScope(models.Model):
+class LaborMNREGAScope(StateScopedData):
     """
     Source: MNREGA Scope sheet → labor_mnrega_scope.csv
     Cols: District, Year, Applied for a Job Card, Worked, Demanded Work, Allotted Work

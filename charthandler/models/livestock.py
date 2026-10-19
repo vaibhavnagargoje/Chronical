@@ -1,11 +1,13 @@
 from django.db import models
 
+from .base import StateScopedData
+
 
 # ============================================================================
 # LIVESTOCK DATA MODELS — One model per CSV data source
 # ============================================================================
 
-class LivestockNumbers(models.Model):
+class LivestockNumbers(StateScopedData):
     """Number of livestock by type — district-level only (no taluka)."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -17,13 +19,13 @@ class LivestockNumbers(models.Model):
         ordering = ['district', 'year']
         verbose_name = 'Numbers'
         verbose_name_plural = 'Numbers'
-        unique_together = ['district', 'year']
+        unique_together = ['state', 'district', 'year']
 
     def __str__(self):
         return f"{self.district} - {self.year}"
 
 
-class ArtificialInsemination(models.Model):
+class ArtificialInsemination(StateScopedData):
     """Artificial insemination data — taluka-level."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -36,13 +38,13 @@ class ArtificialInsemination(models.Model):
         ordering = ['district', 'year', 'taluka']
         verbose_name = 'Artificial Insemination'
         verbose_name_plural = 'Artificial Insemination Records'
-        unique_together = ['district', 'year', 'taluka']
+        unique_together = ['state', 'district', 'year', 'taluka']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DairyCooperative(models.Model):
+class DairyCooperative(StateScopedData):
     """Dairy cooperative societies data — taluka-level."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -58,13 +60,13 @@ class DairyCooperative(models.Model):
         ordering = ['district', 'year', 'taluka']
         verbose_name = 'Dairy Cooperative'
         verbose_name_plural = 'Dairy Cooperatives'
-        unique_together = ['district', 'year', 'taluka']
+        unique_together = ['state', 'district', 'year', 'taluka']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class DairyByproduct(models.Model):
+class DairyByproduct(StateScopedData):
     """Dairy byproducts data — district-level, pivoted by item."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -75,13 +77,13 @@ class DairyByproduct(models.Model):
         ordering = ['district', 'year', 'item']
         verbose_name = 'Dairy Byproduct'
         verbose_name_plural = 'Dairy Byproducts'
-        unique_together = ['district', 'year', 'item']
+        unique_together = ['state', 'district', 'year', 'item']
 
     def __str__(self):
         return f"{self.district} - {self.year} - {self.item}"
 
 
-class Fisheries(models.Model):
+class Fisheries(StateScopedData):
     """Fisheries data — taluka-level."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -100,13 +102,13 @@ class Fisheries(models.Model):
         ordering = ['district', 'year', 'taluka']
         verbose_name = 'Fisheries'
         verbose_name_plural = 'Fisheries'
-        unique_together = ['district', 'year', 'taluka']
+        unique_together = ['state', 'district', 'year', 'taluka']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"
 
 
-class Veterinary(models.Model):
+class Veterinary(StateScopedData):
     """Veterinary facilities data — taluka-level."""
     district = models.CharField(max_length=100, db_index=True)
     year = models.IntegerField(db_index=True)
@@ -120,7 +122,7 @@ class Veterinary(models.Model):
         ordering = ['district', 'year', 'taluka']
         verbose_name = 'Veterinary'
         verbose_name_plural = 'Veterinary Records'
-        unique_together = ['district', 'year', 'taluka']
+        unique_together = ['state', 'district', 'year', 'taluka']
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.year}"

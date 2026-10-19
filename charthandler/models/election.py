@@ -1,7 +1,9 @@
 from django.db import models
 
+from .base import StateScopedData
 
-class VidhanSabhaElectionWinners(models.Model):
+
+class VidhanSabhaElectionWinners(StateScopedData):
     """Vidhan Sabha winners data (sheet: first)."""
 
     assembly_no = models.IntegerField(db_index=True)
@@ -58,13 +60,13 @@ class VidhanSabhaElectionWinners(models.Model):
     class Meta:
         ordering = ['district', 'year', 'assembly_no', 'constituency_no', 'position']
         verbose_name = 'Election Vidhan Sabha Winners'
-        unique_together = ['year', 'assembly_no', 'constituency_no', 'poll_no', 'position', 'candidate']
+        unique_together = ['state', 'year', 'assembly_no', 'constituency_no', 'poll_no', 'position', 'candidate']
 
     def __str__(self):
         return f"Vidhan Sabha Election Winners - {self.year} - {self.assembly_no}/{self.constituency_no} - {self.candidate}"
 
 
-class VidhanSabhaNOTAResults(models.Model):
+class VidhanSabhaNOTAResults(StateScopedData):
     """Vidhan Sabha NOTA data (sheet: nota)."""
 
     assembly_no = models.IntegerField(db_index=True)
@@ -121,13 +123,13 @@ class VidhanSabhaNOTAResults(models.Model):
     class Meta:
         ordering = ['district', 'year', 'assembly_no', 'constituency_no', 'position']
         verbose_name = 'Election Vidhan Sabha NOTA Results'
-        unique_together = ['year', 'assembly_no', 'constituency_no', 'poll_no', 'position', 'candidate']
+        unique_together = ['state', 'year', 'assembly_no', 'constituency_no', 'poll_no', 'position', 'candidate']
 
     def __str__(self):
         return f"Vidhan Sabha NOTA Results - {self.year} - {self.assembly_no}/{self.constituency_no}"
 
 
-class LokSabhaElectionWinners(models.Model):
+class LokSabhaElectionWinners(StateScopedData):
     """Lok Sabha winners data (sheet: First)."""
 
     assembly_no = models.IntegerField(db_index=True)
@@ -182,13 +184,13 @@ class LokSabhaElectionWinners(models.Model):
     class Meta:
         ordering = ['district', 'year', 'assembly_no', 'constituency_no', 'position']
         verbose_name = 'Election Lok Sabha Winners'
-        unique_together = ['year', 'assembly_no', 'constituency_no', 'poll_no', 'position', 'candidate']
+        unique_together = ['state', 'year', 'assembly_no', 'constituency_no', 'poll_no', 'position', 'candidate']
 
     def __str__(self):
         return f"Lok Sabha Election Winners - {self.year} - {self.assembly_no}/{self.constituency_no} - {self.candidate}"
 
 
-class LokSabhaNOTAResults(models.Model):
+class LokSabhaNOTAResults(StateScopedData):
     """Lok Sabha NOTA data (sheet: NOTA)."""
 
     assembly_no = models.IntegerField(db_index=True)
@@ -239,7 +241,7 @@ class LokSabhaNOTAResults(models.Model):
     class Meta:
         ordering = ['district', 'year', 'assembly_no', 'constituency_no', 'position']
         verbose_name = 'Election Lok Sabha NOTA Results'
-        unique_together = ['year', 'assembly_no', 'constituency_no', 'poll_no', 'position', 'candidate']
+        unique_together = ['state', 'year', 'assembly_no', 'constituency_no', 'poll_no', 'position', 'candidate']
 
     def __str__(self):
         return f"Lok Sabha NOTA Results - {self.year} - {self.assembly_no}/{self.constituency_no}"

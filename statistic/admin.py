@@ -14,22 +14,7 @@ from .models import (
     DynamicChartBlock
 )
 from charthandler.models import ChartTemplate
-
-# Maps StatisticalChapter.name → ChartTemplate.chapter_type slug
-CHAPTER_NAME_TO_SLUG = {
-    'Agriculture': 'agriculture',
-    'Demography': 'demography',
-    'Education': 'education',
-    'Elections': 'elections',
-    'Environment': 'environment',
-    'Health': 'health',
-    'Industry': 'industry',
-    'Labor': 'labor',
-    'Livestock & Fisheries': 'livestock-fisheries',
-    'Police & Judiciary': 'police-judiciary',
-    'Revenue & Expenditure': 'revenue-expenditure',
-    'Transport & Communication': 'transport-communication',
-}
+from charthandler.chapters import CHAPTER_NAME_TO_SLUG
 
 # This inline manager is the key to the admin interface.
 # It tells the admin how to display forms for each type of content block.
@@ -68,10 +53,13 @@ class StatisticContentBlockInline(StackedPolymorphicInline):
                 match = re.search(r'/statisticalchapter/(\d+)/change/', request.path)
                 if match:
                     try:
-                        chapter = StatisticalChapter.objects.get(pk=match.group(1))
+                        chapter = StatisticalChapter.objects.select_related('district').get(pk=match.group(1))
                         slug = CHAPTER_NAME_TO_SLUG.get(chapter.name, '')
                         if slug:
-                            kwargs['queryset'] = ChartTemplate.objects.filter(chapter_type=slug)
+                            kwargs['queryset'] = ChartTemplate.objects.filter(
+                                state_id=chapter.district.state_id,
+                                chapter_type=slug,
+                            )
                     except StatisticalChapter.DoesNotExist:
                         pass
             return super().formfield_for_foreignkey(db_field, request, **kwargs)

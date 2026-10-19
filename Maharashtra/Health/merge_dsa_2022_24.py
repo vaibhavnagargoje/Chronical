@@ -13,8 +13,8 @@ are left untouched. The written file is then re-opened and verified against
 the pre-merge master.
 
 Usage:
-    python Helth/merge_dsa_2022_24.py --out PATH [--report PATH]
-    python Helth/merge_dsa_2022_24.py --verify-only --out PATH [--report PATH]
+    python Maharashtra/Health/merge_dsa_2022_24.py --out PATH [--report PATH]
+    python Maharashtra/Health/merge_dsa_2022_24.py --verify-only --out PATH [--report PATH]
 
 --master must point to the PRE-merge workbook (default: Original_data/MH_health.xlsx).
 """

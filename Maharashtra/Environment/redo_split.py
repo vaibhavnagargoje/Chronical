@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 def main():
-    base_dir = r"c:\Users\vaibh\Desktop\CKA Projects\Chronical\Environment"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
     original_data_dir = os.path.join(base_dir, "Original Data")
     excel_file = os.path.join(original_data_dir, "Environment.xlsx")
 

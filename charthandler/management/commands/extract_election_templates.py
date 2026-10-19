@@ -4,11 +4,12 @@ Charts matching:
 https://indiandistricts.in/statistics/maharashtra/<district>/local-politics/
 
 Reference mapping:
-Election/Original Data/elections_reference_sheet.xlsx (Graph_Index)
+Maharashtra/Election/Original Data/elections_reference_sheet.xlsx (Graph_Index)
 """
 
 from django.core.management.base import BaseCommand
 from charthandler.models import ChartTemplate
+from charthandler.importing import StateScopedCommandMixin
 
 
 ELECTION_SOURCE = "Election Commission of India (ECI) and Trivedi Centre for Political Data"
@@ -39,10 +40,14 @@ def build_chart_options(
     return options
 
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = "Creates/Updates Chart Templates for the Elections chapter."
 
+    def add_arguments(self, parser):
+        self.add_state_argument(parser)
+
     def handle(self, *args, **options):
+        state = self.resolve_state(options)
         self.stdout.write("Creating Chart Templates for Elections...\n")
 
         winners_fixed = {"poll_no": 0, "position": 1}
@@ -603,6 +608,7 @@ class Command(BaseCommand):
 
         for config in templates:
             obj, created = ChartTemplate.objects.update_or_create(
+                state=state,
                 title=config["title"],
                 chapter_type=config["chapter_type"],
                 defaults=config,
@@ -617,7 +623,7 @@ class Command(BaseCommand):
         expected_titles = {config["title"] for config in templates}
         stale = list(
             ChartTemplate.objects
-            .filter(chapter_type="elections")
+            .filter(state=state, chapter_type="elections")
             .exclude(title__in=expected_titles)
             .values_list("title", flat=True)
         )

@@ -20,6 +20,7 @@ Sections from TOC:
 """
 from django.core.management.base import BaseCommand
 from charthandler.models import ChartTemplate
+from charthandler.importing import StateScopedCommandMixin
 
 DSA_SOURCE = 'District Statistical Abstract (DSA), Directorate of Economics and Statistics, Maharashtra'
 GDDP_SOURCE = 'District Domestic Product Statistics, Directorate of Economics and Statistics, Maharashtra'
@@ -34,10 +35,14 @@ def opts(y_label, x_label='Year'):
     }
 
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Creates Chart Templates for Revenue & Expenditure — titles from live site.'
 
+    def add_arguments(self, parser):
+        self.add_state_argument(parser)
+
     def handle(self, *args, **options):
+        state = self.resolve_state(options)
         self.stdout.write('Creating Chart Templates for Revenue & Expenditure...\n')
 
         templates = [
@@ -1524,6 +1529,7 @@ class Command(BaseCommand):
 
         for config in templates:
             obj, created = ChartTemplate.objects.update_or_create(
+                state=state,
                 title=config['title'],
                 chapter_type=config['chapter_type'],
                 defaults=config,

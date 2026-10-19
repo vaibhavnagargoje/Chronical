@@ -3,6 +3,7 @@ Management command to create the default Chart Templates for Livestock & Fisheri
 """
 from django.core.management.base import BaseCommand
 from charthandler.models import ChartTemplate
+from charthandler.importing import StateScopedCommandMixin
 
 
 SOURCE_TEXT = 'Source: District Statistical Abstracts'
@@ -28,10 +29,14 @@ def build_line_chart_options(y_axis_title):
     }
 
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Creates/Updates Chart Templates for Livestock & Fisheries.'
 
+    def add_arguments(self, parser):
+        self.add_state_argument(parser)
+
     def handle(self, *args, **options):
+        state = self.resolve_state(options)
         self.stdout.write('Creating Chart Templates for Livestock & Fisheries...')
         templates = [
             {
@@ -424,6 +429,7 @@ class Command(BaseCommand):
         updated = 0
         for config in templates:
             obj, created = ChartTemplate.objects.update_or_create(
+                state=state,
                 title=config['title'],
                 chapter_type=config['chapter_type'],
                 defaults=config
@@ -438,7 +444,7 @@ class Command(BaseCommand):
         expected_titles = {config['title'] for config in templates}
         stale_titles = list(
             ChartTemplate.objects
-            .filter(chapter_type='livestock-fisheries')
+            .filter(state=state, chapter_type='livestock-fisheries')
             .exclude(title__in=expected_titles)
             .values_list('title', flat=True)
         )

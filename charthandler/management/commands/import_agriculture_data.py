@@ -4,7 +4,8 @@ Management command to import agriculture CSV data into the database.
 import csv
 import os
 from django.core.management.base import BaseCommand, CommandError
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
+from charthandler.importing import StateScopedCommandMixin
 
 from charthandler.models.agriculture import (
     AgcGrosscroppedarea,
@@ -49,15 +50,16 @@ ALL_MODELS = [
     DsaTubewellshandpumps,
 ]
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Import agriculture CSV data into charthandler models'
 
     def add_arguments(self, parser):
+        self.add_state_argument(parser)
         parser.add_argument(
             '--data-dir',
             type=str,
-            default=os.path.join(settings.BASE_DIR, 'Agriculture'),
-            help='Path to the directory containing agriculture CSV files (default: Agriculture/)',
+            default=None,
+            help='Path to the directory containing agriculture CSV files (default: <State>/Agriculture/)',
         )
         parser.add_argument(
             '--clear',
@@ -66,7 +68,8 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = options['data_dir']
+        state = self.resolve_state(options)
+        data_dir = options['data_dir'] or get_chapter_data_dir('agriculture', state)
 
         if not os.path.exists(data_dir):
             raise CommandError(f'Data directory not found: {data_dir}')
@@ -76,7 +79,7 @@ class Command(BaseCommand):
         if options['clear']:
             self.stdout.write('Clearing existing agriculture data...')
             for ModelClass in ALL_MODELS:
-                deleted, _ = ModelClass.objects.all().delete()
+                deleted, _ = ModelClass.objects.filter(state=self.state).delete()
                 self.stdout.write(f'  Cleared {deleted:>6} rows from {ModelClass.__name__}')
             self.stdout.write(self.style.SUCCESS('All agriculture data cleared.\n'))
 
@@ -129,7 +132,7 @@ class Command(BaseCommand):
                     total_holding_number=_safe_float(row.get('Total Holding Number')),
                     total_holding_area=_safe_float(row.get('Total Holding Area')),
                 ))
-        AgcGrosscroppedarea.objects.bulk_create(records, ignore_conflicts=True)
+        AgcGrosscroppedarea.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_agc_holdingsarea(self, filepath):
@@ -149,7 +152,7 @@ class Command(BaseCommand):
                     medium_4_to_10_ha=_safe_float(row.get('Medium (4 to 10 ha)')),
                     large_10_ha=_safe_float(row.get('Large (>10 ha)')),
                 ))
-        AgcHoldingsarea.objects.bulk_create(records, ignore_conflicts=True)
+        AgcHoldingsarea.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_agc_holdingsnumber(self, filepath):
@@ -169,7 +172,7 @@ class Command(BaseCommand):
                     medium_4_to_10_ha=_safe_float(row.get('Medium (4 to 10 ha)')),
                     large_10_ha=_safe_float(row.get('Large (>10 ha)')),
                 ))
-        AgcHoldingsnumber.objects.bulk_create(records, ignore_conflicts=True)
+        AgcHoldingsnumber.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_agc_landuse(self, filepath):
@@ -195,7 +198,7 @@ class Command(BaseCommand):
                     other_fallow_land=_safe_float(row.get('Other Fallow Land')),
                     cultivable_waste_land=_safe_float(row.get('Cultivable Waste Land')),
                 ))
-        AgcLanduse.objects.bulk_create(records, ignore_conflicts=True)
+        AgcLanduse.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_chemicalfertilizer(self, filepath):
@@ -212,7 +215,7 @@ class Command(BaseCommand):
                     kharif=_safe_float(row.get('Kharif')),
                     rabi=_safe_float(row.get('Rabi')),
                 ))
-        DsaChemicalfertilizer.objects.bulk_create(records, ignore_conflicts=True)
+        DsaChemicalfertilizer.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_irrigationbeneficiary(self, filepath):
@@ -242,7 +245,7 @@ class Command(BaseCommand):
                     irrigated_area=irr_area,
                     share_of_beneficiary_area_irrigated=share,
                 ))
-        DsaIrrigationbeneficiary.objects.bulk_create(records, ignore_conflicts=True)
+        DsaIrrigationbeneficiary.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_irrigationfacilities(self, filepath):
@@ -262,7 +265,7 @@ class Command(BaseCommand):
                     diesel_pumps=_safe_float(row.get('Diesel Pumps')),
                     electric_pumps=_safe_float(row.get('Electric Pumps')),
                 ))
-        DsaIrrigationfacilities.objects.bulk_create(records, ignore_conflicts=True)
+        DsaIrrigationfacilities.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_irrigationprojects(self, filepath):
@@ -281,7 +284,7 @@ class Command(BaseCommand):
                     medium=_safe_float(row.get('Medium')),
                     big=_safe_float(row.get('Big')),
                 ))
-        DsaIrrigationprojects.objects.bulk_create(records, ignore_conflicts=True)
+        DsaIrrigationprojects.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_irrigationwells(self, filepath):
@@ -300,7 +303,7 @@ class Command(BaseCommand):
                     wells_in_use_with_electric_pump=_safe_float(row.get('Wells In Use With Electric Pump')),
                     irrigation_wells_not_in_use=_safe_float(row.get('Irrigation Wells Not in Use')),
                 ))
-        DsaIrrigationwells.objects.bulk_create(records, ignore_conflicts=True)
+        DsaIrrigationwells.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_tubewellshandpumps(self, filepath):
@@ -320,7 +323,7 @@ class Command(BaseCommand):
                     hand_pumps=_safe_float(row.get('Hand Pumps')),
                     electric_pumps=_safe_float(row.get('Electric Pumps')),
                 ))
-        DsaTubewellshandpumps.objects.bulk_create(records, ignore_conflicts=True)
+        DsaTubewellshandpumps.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
 

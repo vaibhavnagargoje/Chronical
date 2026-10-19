@@ -673,6 +673,9 @@ function fetchAndRenderChart(container, templateSlug, district, filter1Value, fi
     clearChartInlineError(container);
 
     let url = `/api/chart-data/${templateSlug}/?district=${encodeURIComponent(district)}`;
+    if (container.dataset.state) {
+        url += `&state=${encodeURIComponent(container.dataset.state)}`;
+    }
     if (filter1Value !== null && filter1Value !== undefined && filter1Value !== '') {
         url += `&filter1=${encodeURIComponent(filter1Value)}`;
     }

@@ -2,14 +2,15 @@
 Management command to import revenue CSV data into the database.
 
 Usage:
-    python manage.py import_revenue_data [--data-dir PATH]
+    python manage.py import_revenue_data [--state SLUG] [--data-dir PATH]
 
-Default data directory: Revenue/ in the project root.
+Default data directory: <State>/Revenue/ (see charthandler/chapters.py).
 """
 import csv
 import os
 from django.core.management.base import BaseCommand, CommandError
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
+from charthandler.importing import StateScopedCommandMixin
 
 from charthandler.models.revenue import (
     RevenueDSABanking,
@@ -56,14 +57,15 @@ def _safe_int(value):
         return None
     return int(f)
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Import revenue CSV data into charthandler models'
 
     def add_arguments(self, parser):
+        self.add_state_argument(parser)
         parser.add_argument(
             '--data-dir',
             type=str,
-            default=os.path.join(settings.BASE_DIR, 'Revenue'),
+            default=None,
             help='Path to the directory containing revenue CSV files'
         )
         parser.add_argument(
@@ -73,7 +75,8 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = options['data_dir']
+        state = self.resolve_state(options)
+        data_dir = options['data_dir'] or get_chapter_data_dir('revenue-expenditure', state)
         clear = options['clear']
 
         if not os.path.exists(data_dir):
@@ -83,34 +86,34 @@ class Command(BaseCommand):
 
         if clear:
             self.stdout.write('Clearing existing revenue data...')
-            RevenueDSABanking.objects.all().delete()
-            RevenueDSABanking2.objects.all().delete()
-            RevenueDSABankingN.objects.all().delete()
-            RevenueDSADepositsN.objects.all().delete()
-            RevenueDSAGramPanchayat.objects.all().delete()
-            RevenueDSAGramPanchayatN.objects.all().delete()
-            RevenueDSAGST.objects.all().delete()
-            RevenueDSAJillaParishadExp.objects.all().delete()
-            RevenueDSAJillaParishadInc.objects.all().delete()
-            RevenueDSAJillaParishadN.objects.all().delete()
-            RevenueDSALandRevenue.objects.all().delete()
-            RevenueDSALandRevenueN.objects.all().delete()
-            RevenueDSALoansN.objects.all().delete()
-            RevenueDSAMunCorpN.objects.all().delete()
-            RevenueDSAMunicipalCorpExp.objects.all().delete()
-            RevenueDSAMunicipalCorpInc.objects.all().delete()
-            RevenueDSAMunicipalCounExp.objects.all().delete()
-            RevenueDSAMunicipalCounInc.objects.all().delete()
-            RevenueDSAMunicipalCounN.objects.all().delete()
-            RevenueDSANagarPanchayatExp.objects.all().delete()
-            RevenueDSANagarPanchayatInc.objects.all().delete()
-            RevenueDSANagarPanchayatN.objects.all().delete()
-            RevenueDSATaxRevenue.objects.all().delete()
-            RevenueDSATaxRevenueN.objects.all().delete()
-            RevenueGDDPGDVA.objects.all().delete()
-            RevenueGDDPGDVAN.objects.all().delete()
-            RevenueNDDPNDVA.objects.all().delete()
-            RevenueNDDPNDVAN.objects.all().delete()
+            RevenueDSABanking.objects.filter(state=self.state).delete()
+            RevenueDSABanking2.objects.filter(state=self.state).delete()
+            RevenueDSABankingN.objects.filter(state=self.state).delete()
+            RevenueDSADepositsN.objects.filter(state=self.state).delete()
+            RevenueDSAGramPanchayat.objects.filter(state=self.state).delete()
+            RevenueDSAGramPanchayatN.objects.filter(state=self.state).delete()
+            RevenueDSAGST.objects.filter(state=self.state).delete()
+            RevenueDSAJillaParishadExp.objects.filter(state=self.state).delete()
+            RevenueDSAJillaParishadInc.objects.filter(state=self.state).delete()
+            RevenueDSAJillaParishadN.objects.filter(state=self.state).delete()
+            RevenueDSALandRevenue.objects.filter(state=self.state).delete()
+            RevenueDSALandRevenueN.objects.filter(state=self.state).delete()
+            RevenueDSALoansN.objects.filter(state=self.state).delete()
+            RevenueDSAMunCorpN.objects.filter(state=self.state).delete()
+            RevenueDSAMunicipalCorpExp.objects.filter(state=self.state).delete()
+            RevenueDSAMunicipalCorpInc.objects.filter(state=self.state).delete()
+            RevenueDSAMunicipalCounExp.objects.filter(state=self.state).delete()
+            RevenueDSAMunicipalCounInc.objects.filter(state=self.state).delete()
+            RevenueDSAMunicipalCounN.objects.filter(state=self.state).delete()
+            RevenueDSANagarPanchayatExp.objects.filter(state=self.state).delete()
+            RevenueDSANagarPanchayatInc.objects.filter(state=self.state).delete()
+            RevenueDSANagarPanchayatN.objects.filter(state=self.state).delete()
+            RevenueDSATaxRevenue.objects.filter(state=self.state).delete()
+            RevenueDSATaxRevenueN.objects.filter(state=self.state).delete()
+            RevenueGDDPGDVA.objects.filter(state=self.state).delete()
+            RevenueGDDPGDVAN.objects.filter(state=self.state).delete()
+            RevenueNDDPNDVA.objects.filter(state=self.state).delete()
+            RevenueNDDPNDVAN.objects.filter(state=self.state).delete()
             self.stdout.write(self.style.SUCCESS('Existing data cleared.'))
 
         csv_files = {
@@ -180,7 +183,7 @@ class Command(BaseCommand):
                     non_agriculture_loans=_safe_float(row.get('Non-Agriculture Loans')),
                     total_loans=_safe_float(row.get('Total Loans')),
                 ))
-        RevenueDSABanking.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSABanking.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_banking_n(self, filepath):
@@ -199,7 +202,7 @@ class Command(BaseCommand):
                     classified_banks=_safe_float(row.get('Classified Banks')),
                     branch_offices_of_classified_banks=_safe_float(row.get('Branch Offices of Classified Banks')),
                 ))
-        RevenueDSABankingN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSABankingN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_banking_2(self, filepath):
@@ -216,7 +219,7 @@ class Command(BaseCommand):
                     select_bank=row.get('Select Banks/ Bank Branches', '').strip() if row.get('Select Banks/ Bank Branches') else None,
                     number=_safe_float(row.get('Number')),
                 ))
-        RevenueDSABanking2.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSABanking2.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_deposits_n(self, filepath):
@@ -234,7 +237,7 @@ class Command(BaseCommand):
                     taluka=row.get('Taluka', '').strip() if row.get('Taluka') else None,
                     deposits=_safe_float(row.get('Deposits')),
                 ))
-        RevenueDSADepositsN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSADepositsN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_grampanchayat(self, filepath):
@@ -268,7 +271,7 @@ class Command(BaseCommand):
                     expenditure=_safe_float(row.get('Expenditure')),
                     total_deposit=_safe_float(row.get('Total Deposit')),
                 ))
-        RevenueDSAGramPanchayat.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAGramPanchayat.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_grampanchayat_n(self, filepath):
@@ -302,7 +305,7 @@ class Command(BaseCommand):
                     expenditure=_safe_float(row.get('Expenditure')),
                     total_deposit=_safe_float(row.get('Total Deposit')),
                 ))
-        RevenueDSAGramPanchayatN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAGramPanchayatN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_gst(self, filepath):
@@ -325,7 +328,7 @@ class Command(BaseCommand):
                     gst=_safe_float(row.get('GST')),
                     total=_safe_float(row.get('Total')),
                 ))
-        RevenueDSAGST.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAGST.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_jillaparishad_exp(self, filepath):
@@ -353,7 +356,7 @@ class Command(BaseCommand):
                     capital_account=_safe_float(row.get('Capital Account')),
                     total_expenditure=_safe_float(row.get('Total Expenditure')),
                 ))
-        RevenueDSAJillaParishadExp.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAJillaParishadExp.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_jillaparishad_inc(self, filepath):
@@ -398,7 +401,7 @@ class Command(BaseCommand):
                     social_services=_safe_float(row.get('Social Services')),
                     non_developmental=_safe_float(row.get('Non-Developmental')),
                 ))
-        RevenueDSAJillaParishadInc.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAJillaParishadInc.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_jillaparishad_n(self, filepath):
@@ -443,7 +446,7 @@ class Command(BaseCommand):
                     social_services=_safe_float(row.get('Social Services')),
                     non_developmental=_safe_float(row.get('Non-Developmental')),
                 ))
-        RevenueDSAJillaParishadN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAJillaParishadN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_landrevenue(self, filepath):
@@ -467,7 +470,7 @@ class Command(BaseCommand):
                     value_recovery=_safe_float(row.get('Value Recovery')),
                     number_of_account_holders=_safe_float(row.get('Number of Account Holders')),
                 ))
-        RevenueDSALandRevenue.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSALandRevenue.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_landrevenue_n(self, filepath):
@@ -491,7 +494,7 @@ class Command(BaseCommand):
                     value_recovery=_safe_float(row.get('Value Recovery')),
                     number_of_account_holders=_safe_float(row.get('Number of Account Holders')),
                 ))
-        RevenueDSALandRevenueN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSALandRevenueN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_loans_n(self, filepath):
@@ -511,7 +514,7 @@ class Command(BaseCommand):
                     non_agriculture_loans=_safe_float(row.get('Non-Agriculture Loans')),
                     total_loans=_safe_float(row.get('Total Loans')),
                 ))
-        RevenueDSALoansN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSALoansN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_muncorp_n(self, filepath):
@@ -551,7 +554,7 @@ class Command(BaseCommand):
                     developmental=_safe_float(row.get('Developmental')),
                     non_developmental=_safe_float(row.get('Non-Developmental')),
                 ))
-        RevenueDSAMunCorpN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAMunCorpN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_municipalcorp_exp(self, filepath):
@@ -581,7 +584,7 @@ class Command(BaseCommand):
                     water_supply=_safe_float(row.get('Water Supply')),
                     total_expenditure=_safe_float(row.get('Total Expenditure')),
                 ))
-        RevenueDSAMunicipalCorpExp.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAMunicipalCorpExp.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_municipalcorp_inc(self, filepath):
@@ -621,7 +624,7 @@ class Command(BaseCommand):
                     developmental=_safe_float(row.get('Developmental')),
                     non_developmental=_safe_float(row.get('Non-Developmental')),
                 ))
-        RevenueDSAMunicipalCorpInc.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAMunicipalCorpInc.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_municipalcoun_exp(self, filepath):
@@ -651,7 +654,7 @@ class Command(BaseCommand):
                     water_supply=_safe_float(row.get('Water Supply')),
                     total_expenditure=_safe_float(row.get('Total Expenditure')),
                 ))
-        RevenueDSAMunicipalCounExp.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAMunicipalCounExp.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_municipalcoun_inc(self, filepath):
@@ -690,7 +693,7 @@ class Command(BaseCommand):
                     economic_services=_safe_float(row.get('Economic Services')),
                     non_developmental=_safe_float(row.get('Non-Developmental')),
                 ))
-        RevenueDSAMunicipalCounInc.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAMunicipalCounInc.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_municipalcoun_n(self, filepath):
@@ -729,7 +732,7 @@ class Command(BaseCommand):
                     economic_services=_safe_float(row.get('Economic Services')),
                     non_developmental=_safe_float(row.get('Non-Developmental')),
                 ))
-        RevenueDSAMunicipalCounN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSAMunicipalCounN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_nagarpanchayat_exp(self, filepath):
@@ -759,7 +762,7 @@ class Command(BaseCommand):
                     water_supply=_safe_float(row.get('Water Supply')),
                     total_expenditure=_safe_float(row.get('Total Expenditure')),
                 ))
-        RevenueDSANagarPanchayatExp.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSANagarPanchayatExp.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_nagarpanchayat_inc(self, filepath):
@@ -798,7 +801,7 @@ class Command(BaseCommand):
                     economic_services=_safe_float(row.get('Economic Services')),
                     non_developmental=_safe_float(row.get('Non-Developmental')),
                 ))
-        RevenueDSANagarPanchayatInc.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSANagarPanchayatInc.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_nagarpanchayat_n(self, filepath):
@@ -837,7 +840,7 @@ class Command(BaseCommand):
                     economic_services=_safe_float(row.get('Economic Services')),
                     non_developmental=_safe_float(row.get('Non-Developmental')),
                 ))
-        RevenueDSANagarPanchayatN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSANagarPanchayatN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_taxrevenue(self, filepath):
@@ -862,7 +865,7 @@ class Command(BaseCommand):
                     other_revenue=_safe_float(row.get('Other Revenue')),
                     total_tax_revenue=_safe_float(row.get('Total Tax Revenue')),
                 ))
-        RevenueDSATaxRevenue.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSATaxRevenue.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_taxrevenue_n(self, filepath):
@@ -887,7 +890,7 @@ class Command(BaseCommand):
                     other_revenue=_safe_float(row.get('Other Revenue')),
                     total_tax_revenue=_safe_float(row.get('Total Tax Revenue')),
                 ))
-        RevenueDSATaxRevenueN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueDSATaxRevenueN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_gddp_gdva(self, filepath):
@@ -930,7 +933,7 @@ class Command(BaseCommand):
                     population_000=_safe_float(row.get("Population ('000)")),
                     per_capita_district_domestic_product=_safe_float(row.get('Per capita District Domestic Product')),
                 ))
-        RevenueGDDPGDVA.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueGDDPGDVA.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_gddp_gdva_n(self, filepath):
@@ -973,7 +976,7 @@ class Command(BaseCommand):
                     population_000=_safe_float(row.get("Population ('000)")),
                     per_capita_district_domestic_product=_safe_float(row.get('Per capita District Domestic Product')),
                 ))
-        RevenueGDDPGDVAN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueGDDPGDVAN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_nddp_ndva(self, filepath):
@@ -1016,7 +1019,7 @@ class Command(BaseCommand):
                     popula_tion_000=_safe_float(row.get("Popula- tion ('000)")),
                     per_capita_district_domestic_product=_safe_float(row.get('Per capita District Domestic\nProduct  (  )')),
                 ))
-        RevenueNDDPNDVA.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueNDDPNDVA.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_nddp_ndva_n(self, filepath):
@@ -1059,6 +1062,6 @@ class Command(BaseCommand):
                     population_000=_safe_float(row.get("Population ('000)")),
                     per_capita_district_domestic_product=_safe_float(row.get('Per capita District Domestic Product')),
                 ))
-        RevenueNDDPNDVAN.objects.bulk_create(records, ignore_conflicts=True)
+        RevenueNDDPNDVAN.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 

@@ -1,6 +1,8 @@
 from django.db import models
 
-class RevenueDSABanking(models.Model):
+from .base import StateScopedData
+
+class RevenueDSABanking(StateScopedData):
     year = models.IntegerField(db_index=True, null=True, blank=True)
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -20,7 +22,7 @@ class RevenueDSABanking(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSABankingN(models.Model):
+class RevenueDSABankingN(StateScopedData):
     year = models.IntegerField(db_index=True, null=True, blank=True)
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -36,7 +38,7 @@ class RevenueDSABankingN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSADepositsN(models.Model):
+class RevenueDSADepositsN(StateScopedData):
     year = models.IntegerField(db_index=True, null=True, blank=True)
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     taluka_old = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -51,7 +53,7 @@ class RevenueDSADepositsN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAGramPanchayat(models.Model):
+class RevenueDSAGramPanchayat(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     land_and_property_taxes = models.FloatField(null=True, blank=True)
@@ -82,7 +84,7 @@ class RevenueDSAGramPanchayat(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAGramPanchayatN(models.Model):
+class RevenueDSAGramPanchayatN(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     land_and_property_taxes = models.FloatField(null=True, blank=True)
@@ -113,7 +115,7 @@ class RevenueDSAGramPanchayatN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAGST(models.Model):
+class RevenueDSAGST(StateScopedData):
     year = models.IntegerField(db_index=True, null=True, blank=True)
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     vat = models.FloatField(null=True, blank=True)
@@ -133,7 +135,7 @@ class RevenueDSAGST(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAJillaParishadExp(models.Model):
+class RevenueDSAJillaParishadExp(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     general_administration = models.FloatField(null=True, blank=True)
@@ -158,7 +160,7 @@ class RevenueDSAJillaParishadExp(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAJillaParishadInc(models.Model):
+class RevenueDSAJillaParishadInc(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     opening_balance = models.FloatField(null=True, blank=True)
@@ -200,7 +202,7 @@ class RevenueDSAJillaParishadInc(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAJillaParishadN(models.Model):
+class RevenueDSAJillaParishadN(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     opening_balance = models.FloatField(null=True, blank=True)
@@ -242,7 +244,7 @@ class RevenueDSAJillaParishadN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSALandRevenue(models.Model):
+class RevenueDSALandRevenue(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -263,7 +265,7 @@ class RevenueDSALandRevenue(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSALandRevenueN(models.Model):
+class RevenueDSALandRevenueN(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -284,7 +286,7 @@ class RevenueDSALandRevenueN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSALoansN(models.Model):
+class RevenueDSALoansN(StateScopedData):
     year = models.IntegerField(db_index=True, null=True, blank=True)
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     taluka_old = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -301,7 +303,7 @@ class RevenueDSALoansN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAMunCorpN(models.Model):
+class RevenueDSAMunCorpN(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     receipts_and_loans = models.FloatField(null=True, blank=True)
@@ -338,7 +340,7 @@ class RevenueDSAMunCorpN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAMunicipalCorpExp(models.Model):
+class RevenueDSAMunicipalCorpExp(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     administration_establishment = models.FloatField(null=True, blank=True)
@@ -365,7 +367,7 @@ class RevenueDSAMunicipalCorpExp(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAMunicipalCorpInc(models.Model):
+class RevenueDSAMunicipalCorpInc(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     receipts_and_loans = models.FloatField(null=True, blank=True)
@@ -402,7 +404,7 @@ class RevenueDSAMunicipalCorpInc(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAMunicipalCounExp(models.Model):
+class RevenueDSAMunicipalCounExp(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     administration_establishment = models.FloatField(null=True, blank=True)
@@ -429,7 +431,7 @@ class RevenueDSAMunicipalCounExp(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAMunicipalCounInc(models.Model):
+class RevenueDSAMunicipalCounInc(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     receipts_and_loans = models.FloatField(null=True, blank=True)
@@ -465,7 +467,7 @@ class RevenueDSAMunicipalCounInc(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSAMunicipalCounN(models.Model):
+class RevenueDSAMunicipalCounN(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     receipts_and_loans = models.FloatField(null=True, blank=True)
@@ -501,7 +503,7 @@ class RevenueDSAMunicipalCounN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSANagarPanchayatExp(models.Model):
+class RevenueDSANagarPanchayatExp(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     administration_establishment = models.FloatField(null=True, blank=True)
@@ -528,7 +530,7 @@ class RevenueDSANagarPanchayatExp(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSANagarPanchayatInc(models.Model):
+class RevenueDSANagarPanchayatInc(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     receipts_and_loans = models.FloatField(null=True, blank=True)
@@ -564,7 +566,7 @@ class RevenueDSANagarPanchayatInc(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSANagarPanchayatN(models.Model):
+class RevenueDSANagarPanchayatN(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     receipts_and_loans = models.FloatField(null=True, blank=True)
@@ -600,7 +602,7 @@ class RevenueDSANagarPanchayatN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSATaxRevenue(models.Model):
+class RevenueDSATaxRevenue(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     value_added_tax_vat = models.FloatField(null=True, blank=True)
@@ -622,7 +624,7 @@ class RevenueDSATaxRevenue(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSATaxRevenueN(models.Model):
+class RevenueDSATaxRevenueN(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     value_added_tax_vat = models.FloatField(null=True, blank=True)
@@ -644,7 +646,7 @@ class RevenueDSATaxRevenueN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueGDDPGDVA(models.Model):
+class RevenueGDDPGDVA(StateScopedData):
     year = models.IntegerField(db_index=True, null=True, blank=True)
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     crops = models.FloatField(null=True, blank=True)
@@ -684,7 +686,7 @@ class RevenueGDDPGDVA(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueGDDPGDVAN(models.Model):
+class RevenueGDDPGDVAN(StateScopedData):
     year = models.IntegerField(db_index=True, null=True, blank=True)
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     crops = models.FloatField(null=True, blank=True)
@@ -724,7 +726,7 @@ class RevenueGDDPGDVAN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueNDDPNDVA(models.Model):
+class RevenueNDDPNDVA(StateScopedData):
     year = models.IntegerField(db_index=True, null=True, blank=True)
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     crops = models.FloatField(null=True, blank=True)
@@ -764,7 +766,7 @@ class RevenueNDDPNDVA(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueNDDPNDVAN(models.Model):
+class RevenueNDDPNDVAN(StateScopedData):
     year = models.IntegerField(db_index=True, null=True, blank=True)
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     crops = models.FloatField(null=True, blank=True)
@@ -804,7 +806,7 @@ class RevenueNDDPNDVAN(models.Model):
         return f"{self.district} - {self.year}"
 
 
-class RevenueDSABanking2(models.Model):
+class RevenueDSABanking2(StateScopedData):
     year = models.IntegerField(db_index=True, null=True, blank=True)
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)

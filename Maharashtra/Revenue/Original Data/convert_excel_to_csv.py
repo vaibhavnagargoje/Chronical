@@ -2,8 +2,9 @@ import pandas as pd
 import os
 
 def convert_excel_to_csv():
-    excel_file = r"c:\Users\vaibh\Desktop\CKA Projects\Chronical\Revenue\Original Data\revenue_data.xlsx"
-    output_dir = r"c:\Users\vaibh\Desktop\CKA Projects\Chronical\Revenue"
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    excel_file = os.path.join(script_dir, "revenue_data.xlsx")
+    output_dir = os.path.dirname(script_dir)  # CSVs go to the chapter folder (Revenue/)
 
     try:
         # Load the spreadsheet

@@ -1,7 +1,9 @@
 from django.db import models
 
+from .base import StateScopedData
 
-class EnvWildlifeProjects(models.Model):
+
+class EnvWildlifeProjects(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     select_wildlife_project = models.CharField(max_length=255)
@@ -13,7 +15,7 @@ class EnvWildlifeProjects(models.Model):
         ordering = ['year', 'district']
 
 
-class EnvForestArea(models.Model):
+class EnvForestArea(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     area_classification = models.CharField(max_length=255)
@@ -25,7 +27,7 @@ class EnvForestArea(models.Model):
         ordering = ['year', 'district']
 
 
-class EnvForestDensity(models.Model):
+class EnvForestDensity(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     type = models.CharField(max_length=255)
@@ -36,7 +38,7 @@ class EnvForestDensity(models.Model):
         ordering = ['year', 'district']
 
 
-class EnvNightLightIntensity(models.Model):
+class EnvNightLightIntensity(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     night_light_intensity = models.FloatField(null=True, blank=True)
@@ -46,7 +48,7 @@ class EnvNightLightIntensity(models.Model):
         ordering = ['year', 'district']
 
 
-class EnvRunoff(models.Model):
+class EnvRunoff(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     month = models.CharField(max_length=20)
@@ -58,7 +60,7 @@ class EnvRunoff(models.Model):
         ordering = ['year', 'district', 'month']
 
 
-class EnvRainyDays(models.Model):
+class EnvRainyDays(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     taluka = models.CharField(max_length=255)
@@ -71,7 +73,7 @@ class EnvRainyDays(models.Model):
         ordering = ['year', 'district', 'taluka']
 
 
-class EnvRainfall(models.Model):
+class EnvRainfall(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     month = models.CharField(max_length=20)
@@ -83,7 +85,7 @@ class EnvRainfall(models.Model):
         ordering = ['year', 'district', 'month']
 
 
-class EnvMinTemperature(models.Model):
+class EnvMinTemperature(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     month = models.CharField(max_length=20)
@@ -95,7 +97,7 @@ class EnvMinTemperature(models.Model):
         ordering = ['year', 'district', 'month']
 
 
-class EnvMaxTemperature(models.Model):
+class EnvMaxTemperature(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     month = models.CharField(max_length=20)
@@ -107,7 +109,7 @@ class EnvMaxTemperature(models.Model):
         ordering = ['year', 'district', 'month']
 
 
-class EnvWindSpeed(models.Model):
+class EnvWindSpeed(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     month = models.CharField(max_length=20)
@@ -119,7 +121,7 @@ class EnvWindSpeed(models.Model):
         ordering = ['year', 'district', 'month']
 
 
-class EnvWaterDeficit(models.Model):
+class EnvWaterDeficit(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     month = models.CharField(max_length=20)
@@ -131,7 +133,7 @@ class EnvWaterDeficit(models.Model):
         ordering = ['year', 'district', 'month']
 
 
-class EnvHumidity(models.Model):
+class EnvHumidity(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     relative_humidity = models.FloatField(null=True, blank=True)
@@ -141,7 +143,7 @@ class EnvHumidity(models.Model):
         ordering = ['year', 'district']
 
 
-class EnvSoilMoisture(models.Model):
+class EnvSoilMoisture(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     moisture_1mm_2mm = models.FloatField(null=True, blank=True)
@@ -152,7 +154,7 @@ class EnvSoilMoisture(models.Model):
         ordering = ['year', 'district']
 
 
-class EnvEvapotranspirationYearly(models.Model):
+class EnvEvapotranspirationYearly(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     actual_numbers = models.FloatField(null=True, blank=True)
@@ -163,7 +165,7 @@ class EnvEvapotranspirationYearly(models.Model):
         ordering = ['year', 'district']
 
 
-class EnvEvapotranspirationMonthly(models.Model):
+class EnvEvapotranspirationMonthly(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     month = models.CharField(max_length=20)
@@ -175,7 +177,7 @@ class EnvEvapotranspirationMonthly(models.Model):
         ordering = ['year', 'district', 'month']
 
 
-class EnvBorewells(models.Model):
+class EnvBorewells(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     season = models.CharField(max_length=255)
@@ -186,7 +188,7 @@ class EnvBorewells(models.Model):
         ordering = ['year', 'district', 'season']
 
 
-class EnvDugwells(models.Model):
+class EnvDugwells(StateScopedData):
     year = models.IntegerField()
     district = models.CharField(max_length=255)
     season = models.CharField(max_length=255)

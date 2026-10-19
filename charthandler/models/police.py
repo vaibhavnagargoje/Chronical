@@ -1,6 +1,8 @@
 from django.db import models
 
-class PoliceCourtsAppealCases(models.Model):
+from .base import StateScopedData
+
+class PoliceCourtsAppealCases(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     type_of_court = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -16,7 +18,7 @@ class PoliceCourtsAppealCases(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.type_of_court}"
 
-class PoliceCourtsFunctioning(models.Model):
+class PoliceCourtsFunctioning(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     type_of_court = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -30,7 +32,7 @@ class PoliceCourtsFunctioning(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.type_of_court}"
 
-class PoliceCourtsJudgesCases(models.Model):
+class PoliceCourtsJudgesCases(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     type_of_court = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -51,7 +53,7 @@ class PoliceCourtsJudgesCases(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.type_of_court}"
 
-class PoliceCourtsOriginalCases(models.Model):
+class PoliceCourtsOriginalCases(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     type_of_court = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -67,7 +69,7 @@ class PoliceCourtsOriginalCases(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.type_of_court}"
 
-class PoliceCyberCrimeTypes(models.Model):
+class PoliceCyberCrimeTypes(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     crime = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -81,7 +83,7 @@ class PoliceCyberCrimeTypes(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.crime}"
 
-class PoliceCyberFraudTypes(models.Model):
+class PoliceCyberFraudTypes(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     select_offense = models.CharField(max_length=500, db_index=True, null=True, blank=True)
@@ -95,7 +97,7 @@ class PoliceCyberFraudTypes(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.select_offense}"
 
-class PoliceCyberTotals(models.Model):
+class PoliceCyberTotals(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     offenses_under_it_act = models.FloatField(null=True, blank=True)
@@ -112,7 +114,7 @@ class PoliceCyberTotals(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year}"
 
-class PoliceDSAWomenChildrenTaluka(models.Model):
+class PoliceDSAWomenChildrenTaluka(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -137,7 +139,7 @@ class PoliceDSAWomenChildrenTaluka(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.taluka}"
 
-class PoliceIPCDocPropertyMarks(models.Model):
+class PoliceIPCDocPropertyMarks(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     select_offense = models.CharField(max_length=500, db_index=True, null=True, blank=True)
@@ -151,7 +153,7 @@ class PoliceIPCDocPropertyMarks(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.select_offense}"
 
-class PoliceIPCHumanBody(models.Model):
+class PoliceIPCHumanBody(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     crime = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -165,7 +167,7 @@ class PoliceIPCHumanBody(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.crime}"
 
-class PoliceIPCMisc(models.Model):
+class PoliceIPCMisc(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     select_offense = models.CharField(max_length=500, db_index=True, null=True, blank=True)
@@ -179,7 +181,7 @@ class PoliceIPCMisc(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.select_offense}"
 
-class PoliceIPCProperty(models.Model):
+class PoliceIPCProperty(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     crime = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -193,7 +195,7 @@ class PoliceIPCProperty(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.crime}"
 
-class PoliceIPCPublicTranquility(models.Model):
+class PoliceIPCPublicTranquility(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     crime = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -207,7 +209,7 @@ class PoliceIPCPublicTranquility(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.crime}"
 
-class PoliceIPCTotal(models.Model):
+class PoliceIPCTotal(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     cognizable_ipc_crimes = models.FloatField(null=True, blank=True)
@@ -220,7 +222,7 @@ class PoliceIPCTotal(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year}"
 
-class PoliceEmployees(models.Model):
+class PoliceEmployees(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -235,7 +237,7 @@ class PoliceEmployees(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.taluka} - {self.establishment}"
 
-class PoliceInfrastructure(models.Model):
+class PoliceInfrastructure(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     taluka = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -250,7 +252,7 @@ class PoliceInfrastructure(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.taluka} - {self.select_type_of_police_establishment}"
 
-class PoliceSLLOffenseTypes(models.Model):
+class PoliceSLLOffenseTypes(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     select_offense_under = models.CharField(max_length=500, db_index=True, null=True, blank=True)
@@ -264,7 +266,7 @@ class PoliceSLLOffenseTypes(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.select_offense_under}"
 
-class PoliceSLLTotal(models.Model):
+class PoliceSLLTotal(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     cognizable_sll_crimes = models.FloatField(null=True, blank=True)
@@ -277,7 +279,7 @@ class PoliceSLLTotal(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year}"
 
-class PoliceWomenCrimeTypes(models.Model):
+class PoliceWomenCrimeTypes(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     crime = models.CharField(max_length=255, db_index=True, null=True, blank=True)
@@ -291,7 +293,7 @@ class PoliceWomenCrimeTypes(models.Model):
     def __str__(self):
         return f"{self.district} - {self.year} - {self.crime}"
 
-class PoliceWomenTotal(models.Model):
+class PoliceWomenTotal(StateScopedData):
     district = models.CharField(max_length=255, db_index=True, null=True, blank=True)
     year = models.IntegerField(db_index=True, null=True, blank=True)
     cases = models.FloatField(null=True, blank=True)

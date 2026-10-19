@@ -8,9 +8,9 @@ from django.utils.text import slugify
 
 class ChartTemplate(models.Model):
     """
-    Defines the blueprint for a chart (shared across all districts).
-    One ChartTemplate can serve all 36 districts — the district context
-    comes from the URL at runtime.
+    Defines the blueprint for a chart (shared across all districts of one state).
+    One ChartTemplate can serve all districts of its state — the district context
+    comes from the URL at runtime, and data rows are filtered by the template's state.
     """
 
     CHART_TYPE_CHOICES = [
@@ -37,7 +37,16 @@ class ChartTemplate(models.Model):
     ]
 
     # Identity
-    slug = models.SlugField(max_length=200, unique=True, db_index=True)
+    state = models.ForeignKey(
+        'home.State',
+        on_delete=models.PROTECT,
+        related_name='chart_templates',
+        help_text="State whose data this template charts (e.g. Maharashtra)"
+    )
+    slug = models.SlugField(
+        max_length=200, unique=True, db_index=True, blank=True,
+        help_text="Leave empty to generate from the title"
+    )
     title = models.CharField(max_length=500)
     chapter_type = models.CharField(max_length=50, choices=CHAPTER_TYPE_CHOICES, db_index=True)
 
@@ -98,11 +107,31 @@ class ChartTemplate(models.Model):
         ordering = ['chapter_type', 'display_order']
         verbose_name = 'Chart Template'
         verbose_name_plural = 'Chart Templates'
+        unique_together = [('state', 'chapter_type', 'title')]
 
     def __str__(self):
         return f"{self.title} ({self.get_chapter_type_display()})"
 
     def save(self, *args, **kwargs):
         if not self.slug:
-            self.slug = slugify(self.title)[:200]
+            self.slug = self._generate_unique_slug()
         super().save(*args, **kwargs)
+
+    def _generate_unique_slug(self):
+        """
+        slugify(title) when it is free; otherwise prefix the state slug
+        (e.g. 'kerala-a-livestock-numbers'), then add -2, -3, ... if still taken.
+        Existing slugs are never regenerated — live chart URLs depend on them.
+        """
+        taken = ChartTemplate.objects.exclude(pk=self.pk)
+        slug = slugify(self.title)[:200]
+        if not taken.filter(slug=slug).exists():
+            return slug
+
+        base = slugify(f"{self.state.slug} {self.title}")[:200]
+        slug, n = base, 2
+        while taken.filter(slug=slug).exists():
+            suffix = f'-{n}'
+            slug = f'{base[:200 - len(suffix)]}{suffix}'
+            n += 1
+        return slug

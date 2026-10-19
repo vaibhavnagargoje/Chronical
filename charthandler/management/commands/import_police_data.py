@@ -2,14 +2,15 @@
 Management command to import police CSV data into the database.
 
 Usage:
-    python manage.py import_police_data [--data-dir PATH] [--clear]
+    python manage.py import_police_data [--state SLUG] [--data-dir PATH] [--clear]
 
-Default data directory: Police/ in the project root.
+Default data directory: <State>/Police/ (see charthandler/chapters.py).
 """
 import csv
 import os
 from django.core.management.base import BaseCommand, CommandError
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
+from charthandler.importing import StateScopedCommandMixin
 
 from charthandler.models.police import (
     PoliceCourtsAppealCases,
@@ -93,15 +94,16 @@ ALL_MODELS = [
 # Command
 # ---------------------------------------------------------------------------
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Import police CSV data into charthandler models'
 
     def add_arguments(self, parser):
+        self.add_state_argument(parser)
         parser.add_argument(
             '--data-dir',
             type=str,
-            default=os.path.join(settings.BASE_DIR, 'Police'),
-            help='Path to the directory containing police CSV files (default: Police/)',
+            default=None,
+            help='Path to the directory containing police CSV files (default: <State>/Police/)',
         )
         parser.add_argument(
             '--clear',
@@ -110,7 +112,8 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = options['data_dir']
+        state = self.resolve_state(options)
+        data_dir = options['data_dir'] or get_chapter_data_dir('police-judiciary', state)
 
         if not os.path.exists(data_dir):
             raise CommandError(f'Data directory not found: {data_dir}')
@@ -121,7 +124,7 @@ class Command(BaseCommand):
         if options['clear']:
             self.stdout.write('Clearing existing police data...')
             for ModelClass in ALL_MODELS:
-                deleted, _ = ModelClass.objects.all().delete()
+                deleted, _ = ModelClass.objects.filter(state=self.state).delete()
                 self.stdout.write(f'  Cleared {deleted:>6} rows from {ModelClass.__name__}')
             self.stdout.write(self.style.SUCCESS('All police data cleared.\n'))
 
@@ -182,7 +185,7 @@ class Command(BaseCommand):
                     miscellaneous=_safe_float(row.get('Miscellaneous')),
                     all_appeal_cases=_safe_float(row.get('All Appeal Cases')),
                 ))
-        PoliceCourtsAppealCases.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceCourtsAppealCases.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_courts_functioning(self, filepath):
@@ -198,7 +201,7 @@ class Command(BaseCommand):
                     type_of_court=_str(row, 'Type of Court'),
                     functioning_courts=_safe_float(row.get('Functioning Courts')),
                 ))
-        PoliceCourtsFunctioning.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceCourtsFunctioning.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_courts_judges(self, filepath):
@@ -221,7 +224,7 @@ class Command(BaseCommand):
                     number_of_regular_appeal_cases=_safe_float(row.get('Number of Regular Appeal Cases')),
                     number_of_miscellaneous_appeal_cases=_safe_float(row.get('Number of Miscellaneous Appeal Cases')),
                 ))
-        PoliceCourtsJudgesCases.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceCourtsJudgesCases.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_courts_original(self, filepath):
@@ -239,7 +242,7 @@ class Command(BaseCommand):
                     miscellaneous=_safe_float(row.get('Miscellaneous')),
                     all_original_cases=_safe_float(row.get('All Original Cases')),
                 ))
-        PoliceCourtsOriginalCases.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceCourtsOriginalCases.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_cyber_crime_types(self, filepath):
@@ -255,7 +258,7 @@ class Command(BaseCommand):
                     crime=_str(row, 'Crime'),
                     cases=_safe_float(row.get('Cases')),
                 ))
-        PoliceCyberCrimeTypes.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceCyberCrimeTypes.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_cyber_fraud_types(self, filepath):
@@ -271,7 +274,7 @@ class Command(BaseCommand):
                     select_offense=_str(row, 'Select Offense'),
                     cases=_safe_float(row.get('Cases')),
                 ))
-        PoliceCyberFraudTypes.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceCyberFraudTypes.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_cyber_totals(self, filepath):
@@ -290,7 +293,7 @@ class Command(BaseCommand):
                     offenses_under_ipc_wrt_it_act=_safe_float(row.get('Offenses under IPC wrt IT Act')),
                     offenses_under_sll_wrt_it_act=_safe_float(row.get('Offenses under SLL wrt IT Act')),
                 ))
-        PoliceCyberTotals.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceCyberTotals.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_dsa_women_children(self, filepath):
@@ -317,7 +320,7 @@ class Command(BaseCommand):
                     abandonment=_safe_float(row.get('Abandonment')),
                     other_crimes_against_children=_safe_float(row.get('Other Crimes against Children')),
                 ))
-        PoliceDSAWomenChildrenTaluka.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceDSAWomenChildrenTaluka.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ipc_doc_property(self, filepath):
@@ -333,7 +336,7 @@ class Command(BaseCommand):
                     select_offense=_str(row, 'Select Offense'),
                     cases=_safe_float(row.get('Cases')),
                 ))
-        PoliceIPCDocPropertyMarks.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceIPCDocPropertyMarks.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ipc_human_body(self, filepath):
@@ -349,7 +352,7 @@ class Command(BaseCommand):
                     crime=_str(row, 'Crime'),
                     cases=_safe_float(row.get('Cases')),
                 ))
-        PoliceIPCHumanBody.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceIPCHumanBody.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ipc_misc(self, filepath):
@@ -365,7 +368,7 @@ class Command(BaseCommand):
                     select_offense=_str(row, 'Select Offense'),
                     cases=_safe_float(row.get('Cases')),
                 ))
-        PoliceIPCMisc.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceIPCMisc.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ipc_property(self, filepath):
@@ -381,7 +384,7 @@ class Command(BaseCommand):
                     crime=_str(row, 'Crime'),
                     cases=_safe_float(row.get('Cases')),
                 ))
-        PoliceIPCProperty.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceIPCProperty.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ipc_public_tranq(self, filepath):
@@ -397,7 +400,7 @@ class Command(BaseCommand):
                     crime=_str(row, 'Crime'),
                     cases=_safe_float(row.get('Cases')),
                 ))
-        PoliceIPCPublicTranquility.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceIPCPublicTranquility.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ipc_total(self, filepath):
@@ -412,7 +415,7 @@ class Command(BaseCommand):
                     district=_str(row, 'District'),
                     cognizable_ipc_crimes=_safe_float(row.get('Cognizable IPC crimes')),
                 ))
-        PoliceIPCTotal.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceIPCTotal.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_police_employees(self, filepath):
@@ -429,7 +432,7 @@ class Command(BaseCommand):
                     establishment=_str(row, 'Establishment'),
                     number_of_officers_employees=_safe_float(row.get('Number of Officers/Employees')),
                 ))
-        PoliceEmployees.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceEmployees.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_police_infrastructure(self, filepath):
@@ -446,7 +449,7 @@ class Command(BaseCommand):
                     select_type_of_police_establishment=_str(row, 'Select Type of Police Establishment'),
                     number=_safe_float(row.get('Number')),
                 ))
-        PoliceInfrastructure.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceInfrastructure.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_sll_offense_types(self, filepath):
@@ -462,7 +465,7 @@ class Command(BaseCommand):
                     select_offense_under=_str(row, 'Select Offense Under'),
                     cases=_safe_float(row.get('Cases')),
                 ))
-        PoliceSLLOffenseTypes.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceSLLOffenseTypes.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_sll_total(self, filepath):
@@ -477,7 +480,7 @@ class Command(BaseCommand):
                     district=_str(row, 'District'),
                     cognizable_sll_crimes=_safe_float(row.get('Cognizable SLL Crimes')),
                 ))
-        PoliceSLLTotal.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceSLLTotal.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_women_crime_types(self, filepath):
@@ -493,7 +496,7 @@ class Command(BaseCommand):
                     crime=_str(row, 'Crime'),
                     cases=_safe_float(row.get('Cases')),
                 ))
-        PoliceWomenCrimeTypes.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceWomenCrimeTypes.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_women_total(self, filepath):
@@ -508,5 +511,5 @@ class Command(BaseCommand):
                     district=_str(row, 'District'),
                     cases=_safe_float(row.get('Cases')),
                 ))
-        PoliceWomenTotal.objects.bulk_create(records, ignore_conflicts=True)
+        PoliceWomenTotal.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)

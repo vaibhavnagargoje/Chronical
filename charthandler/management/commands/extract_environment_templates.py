@@ -4,6 +4,7 @@ Charts matching https://indiandistricts.in/statistics/maharashtra/<district>/env
 """
 from django.core.management.base import BaseCommand
 from charthandler.models import ChartTemplate
+from charthandler.importing import StateScopedCommandMixin
 
 ICRISAT_SOURCE = 'International Crops Research Institute for the Semi-Arid Tropics (ICRISAT)'
 DSA_SOURCE = 'District Statistical Abstracts'
@@ -30,10 +31,14 @@ def build_chart_options(
         options['disable_all_filter2'] = True
     return options
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Creates/Updates Chart Templates for the Environment chapter.'
 
+    def add_arguments(self, parser):
+        self.add_state_argument(parser)
+
     def handle(self, *args, **options):
+        state = self.resolve_state(options)
         self.stdout.write('Creating Chart Templates for Environment...\n')
 
         templates = [
@@ -495,6 +500,7 @@ class Command(BaseCommand):
 
         for config in templates:
             obj, created = ChartTemplate.objects.update_or_create(
+                state=state,
                 title=config['title'],
                 chapter_type=config['chapter_type'],
                 defaults=config,
@@ -509,7 +515,7 @@ class Command(BaseCommand):
         expected_titles = {config['title'] for config in templates}
         stale = list(
             ChartTemplate.objects
-            .filter(chapter_type='environment')
+            .filter(state=state, chapter_type='environment')
             .exclude(title__in=expected_titles)
             .values_list('title', flat=True)
         )

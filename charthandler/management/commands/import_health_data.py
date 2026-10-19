@@ -2,14 +2,15 @@
 Management command to import health CSV data into the database.
 
 Usage:
-    python manage.py import_health_data [--data-dir PATH] [--clear]
+    python manage.py import_health_data [--state SLUG] [--data-dir PATH] [--clear]
 
-Default data directory: Helth/ in the project root.
+Default data directory: <State>/Health/ (see charthandler/chapters.py).
 """
 import csv
 import os
 from django.core.management.base import BaseCommand, CommandError
-from django.conf import settings
+from charthandler.chapters import get_chapter_data_dir
+from charthandler.importing import StateScopedCommandMixin
 from django.apps import apps
 
 
@@ -297,13 +298,14 @@ STRING_FIELDS = {
 }
 
 
-class Command(BaseCommand):
+class Command(StateScopedCommandMixin, BaseCommand):
     help = 'Import health CSV data into charthandler models'
 
     def add_arguments(self, parser):
+        self.add_state_argument(parser)
         parser.add_argument(
             '--data-dir', type=str,
-            default=os.path.join(settings.BASE_DIR, 'Helth'),
+            default=None,
             help='Path to the directory containing health CSV files',
         )
         parser.add_argument(
@@ -312,7 +314,8 @@ class Command(BaseCommand):
         )
 
     def handle(self, *args, **options):
-        data_dir = options['data_dir']
+        state = self.resolve_state(options)
+        data_dir = options['data_dir'] or get_chapter_data_dir('health', state)
         if not os.path.exists(data_dir):
             raise CommandError(f'Data directory not found: {data_dir}')
 
@@ -327,7 +330,7 @@ class Command(BaseCommand):
         if options['clear']:
             self.stdout.write('Clearing existing health data...')
             for csv_file, ModelClass in model_cache.items():
-                ModelClass.objects.all().delete()
+                ModelClass.objects.filter(state=self.state).delete()
             self.stdout.write(self.style.SUCCESS('Existing data cleared.'))
 
         for csv_file, (model_path, col_map) in CSV_MAP.items():
@@ -368,5 +371,5 @@ class Command(BaseCommand):
 
                 records.append(ModelClass(**kwargs))
 
-        ModelClass.objects.bulk_create(records, ignore_conflicts=True)
+        ModelClass.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)

@@ -1,12 +1,14 @@
 from django.db import models
 
+from .base import StateScopedData
+
 
 # ============================================================================
 # EDUCATION DATA MODELS
 # ============================================================================
 
 
-class DropOutRateByGender(models.Model):
+class DropOutRateByGender(StateScopedData):
     """Drop_Out_Rate_(By_Gender) sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -19,13 +21,13 @@ class DropOutRateByGender(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education Drop Out Rate (By Gender)'
-        unique_together = ['year', 'district', 'select_schooling_level', 'social_category']
+        unique_together = ['state', 'year', 'district', 'select_schooling_level', 'social_category']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.select_schooling_level} - {self.social_category}"
 
 
-class DropOutRateSchoolingStage(models.Model):
+class DropOutRateSchoolingStage(StateScopedData):
     """Drop_Out_Rate_(Schooling_Stage_ sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -38,13 +40,13 @@ class DropOutRateSchoolingStage(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education Drop Out Rate (Schooling Stage '
-        unique_together = ['year', 'district', 'social_category', 'gender']
+        unique_together = ['state', 'year', 'district', 'social_category', 'gender']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.social_category} - {self.gender}"
 
 
-class EducationLevels(models.Model):
+class EducationLevels(StateScopedData):
     """Education_Levels sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -61,13 +63,13 @@ class EducationLevels(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education Education Levels'
-        unique_together = ['year', 'district', 'age_group', 'gender']
+        unique_together = ['state', 'year', 'district', 'age_group', 'gender']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.age_group} - {self.gender}"
 
 
-class NoOfSchools(models.Model):
+class NoOfSchools(StateScopedData):
     """No._of_Schools sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -81,13 +83,13 @@ class NoOfSchools(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education No. of Schools'
-        unique_together = ['year', 'district', 'gender_mix']
+        unique_together = ['state', 'year', 'district', 'gender_mix']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.gender_mix}"
 
 
-class NoOfSchoolsType(models.Model):
+class NoOfSchoolsType(StateScopedData):
     """No._of_Schools_(Type_of_School) sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -102,13 +104,13 @@ class NoOfSchoolsType(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education No. of School Type '
-        unique_together = ['year', 'district', 'rural_urban', 'select_school_management_type']
+        unique_together = ['state', 'year', 'district', 'rural_urban', 'select_school_management_type']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.rural_urban} - {self.select_school_management_type}"
 
 
-class NoOfSchoolsManagementType(models.Model):
+class NoOfSchoolsManagementType(StateScopedData):
     """No._of_Schools_(Type_of_School_ sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -123,13 +125,13 @@ class NoOfSchoolsManagementType(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education No. of School Management Type'
-        unique_together = ['year', 'district', 'rural_urban', 'type_of_school']
+        unique_together = ['state', 'year', 'district', 'rural_urban', 'type_of_school']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.rural_urban} - {self.type_of_school}"
 
 
-class NoOfTeachersByType(models.Model):
+class NoOfTeachersByType(StateScopedData):
     """No._of_Teachers_(By_Type_of_Sch sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -143,13 +145,13 @@ class NoOfTeachersByType(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education No. of Teachers (By Type of Sch'
-        unique_together = ['year', 'district', 'type_of_school']
+        unique_together = ['state', 'year', 'district', 'type_of_school']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.type_of_school}"
 
 
-class StudentEnrollmentBoysVsGirls(models.Model):
+class StudentEnrollmentBoysVsGirls(StateScopedData):
     """Student_Enrollment_(Boys_vs_Gir sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -161,13 +163,13 @@ class StudentEnrollmentBoysVsGirls(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education Student Enrollment (Boys vs Gir'
-        unique_together = ['year', 'district', 'select_class', 'social_category']
+        unique_together = ['state', 'year', 'district', 'select_class', 'social_category']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.select_class} - {self.social_category}"
 
 
-class StudentEnrollmentClassWise(models.Model):
+class StudentEnrollmentClassWise(StateScopedData):
     """Student_Enrollment_(Class_Wise) sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -190,13 +192,13 @@ class StudentEnrollmentClassWise(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education Student Enrollment (Class Wise)'
-        unique_together = ['year', 'district', 'social_category', 'gender']
+        unique_together = ['state', 'year', 'district', 'social_category', 'gender']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.social_category} - {self.gender}"
 
 
-class StudentEnrollmentGirlsVsBoys(models.Model):
+class StudentEnrollmentGirlsVsBoys(StateScopedData):
     """Student_Enrollment_(Girls_vs_Bo sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -210,13 +212,13 @@ class StudentEnrollmentGirlsVsBoys(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education Student Enrollment (Girls vs Bo'
-        unique_together = ['year', 'district', 'gender']
+        unique_together = ['state', 'year', 'district', 'gender']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.gender}"
 
 
-class StudentEnrollmentNumbers(models.Model):
+class StudentEnrollmentNumbers(StateScopedData):
     """Student_Enrollment_Numbers sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -229,13 +231,13 @@ class StudentEnrollmentNumbers(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education Student Enrollment Numbers'
-        unique_together = ['year', 'district', 'social_category']
+        unique_together = ['state', 'year', 'district', 'social_category']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.social_category}"
 
 
-class TeacherCategory(models.Model):
+class TeacherCategory(StateScopedData):
     """Teacher_Category sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -251,13 +253,13 @@ class TeacherCategory(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education Teacher Category'
-        unique_together = ['year', 'district', 'select_school_management_type']
+        unique_together = ['state', 'year', 'district', 'select_school_management_type']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.select_school_management_type}"
 
 
-class TeacherSocialCategory(models.Model):
+class TeacherSocialCategory(StateScopedData):
     """Teacher_Social_Category sheet."""
     year = models.IntegerField(db_index=True)
     district = models.CharField(max_length=100, db_index=True)
@@ -269,7 +271,7 @@ class TeacherSocialCategory(models.Model):
     class Meta:
         ordering = ['district', 'year']
         verbose_name = 'Education Teacher Social Category'
-        unique_together = ['year', 'district', 'select_school_management_type', 'social_category']
+        unique_together = ['state', 'year', 'district', 'select_school_management_type', 'social_category']
 
     def __str__(self):
         return f"{self.year} - {self.district} - {self.select_school_management_type} - {self.social_category}"

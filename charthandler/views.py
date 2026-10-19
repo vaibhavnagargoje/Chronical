@@ -276,22 +276,30 @@ def chart_data_api(request, template_slug):
 
     Query parameters:
       - district: (required) District name to filter by
+      - state: (optional) State slug of the page; must match the template's state
       - filter1: (optional) Secondary filter value (e.g. taluka)
       - filter2: (optional) Tertiary filter value (e.g. size_class)
+
+    Data rows are always scoped to the template's state.
 
     Returns Chart.js-compatible JSON response.
     """
     try:
-        template = ChartTemplate.objects.get(slug=template_slug)
+        template = ChartTemplate.objects.select_related('state').get(slug=template_slug)
     except ChartTemplate.DoesNotExist:
         return JsonResponse({'error': 'Chart template not found'}, status=404)
 
     district = request.GET.get('district', '')
+    state_slug = request.GET.get('state', '')
     filter1_value = request.GET.get('filter1', '')
     filter2_value = request.GET.get('filter2', '')
 
     if not district:
         return JsonResponse({'error': 'district parameter is required'}, status=400)
+
+    # A page must only render templates of its own state
+    if state_slug and state_slug != template.state.slug:
+        return JsonResponse({'error': 'Chart template not found for this state'}, status=404)
 
     # Resolve the data model
     ModelClass = _get_model_class(template.data_source_table)
@@ -305,10 +313,11 @@ def chart_data_api(request, template_slug):
     disable_all_filter1 = template.chart_options.get('disable_all_filter1', template.chart_options.get('disable_aggregation', False))
     disable_all_filter2 = template.chart_options.get('disable_all_filter2', template.chart_options.get('disable_aggregation', False))
     
-    # Build base queryset for filter options (district-scoped)
-    base_district_qs = ModelClass.objects.filter(
+    # Build base queryset for filter options (state- and district-scoped)
+    state_qs = ModelClass.objects.filter(state_id=template.state_id)
+    base_district_qs = state_qs.filter(
         **{f'{template.main_filter_column}__iexact': district}
-    ) if template.main_filter_column else ModelClass.objects.all()
+    ) if template.main_filter_column else state_qs
 
     # Apply any fixed filters defined in the template's chart_options
     fixed_filters = template.chart_options.get('fixed_filters', {})
