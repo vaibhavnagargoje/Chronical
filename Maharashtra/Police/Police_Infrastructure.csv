@@ -55,6 +55,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Ahilyanagar,Srigonda,Police Stations,7
 2021,Ahilyanagar,Karjat,Police Stations,4
 2021,Ahilyanagar,Jamkhed,Police Stations,4
+2022,Ahilyanagar,Akole,Police Stations,3
+2022,Ahilyanagar,Sangamner,Police Stations,7
+2022,Ahilyanagar,Kopargaon,Police Stations,10
+2022,Ahilyanagar,Rahata,Police Stations,2
+2022,Ahilyanagar,Srirampur,Police Stations,10
+2022,Ahilyanagar,Nevasa,Police Stations,9
+2022,Ahilyanagar,Shevgaon,Police Stations,4
+2022,Ahilyanagar,Pathardi,Police Stations,7
+2022,Ahilyanagar,Nagar,Police Stations,20
+2022,Ahilyanagar,Rahuri,Police Stations,7
+2022,Ahilyanagar,Parner,Police Stations,10
+2022,Ahilyanagar,Srigonda,Police Stations,8
+2022,Ahilyanagar,Karjat,Police Stations,4
+2022,Ahilyanagar,Jamkhed,Police Stations,4
+2023,Ahilyanagar,Akole,Police Stations,2
+2023,Ahilyanagar,Sangamner,Police Stations,4
+2023,Ahilyanagar,Kopargaon,Police Stations,2
+2023,Ahilyanagar,Rahata,Police Stations,3
+2023,Ahilyanagar,Srirampur,Police Stations,2
+2023,Ahilyanagar,Nevasa,Police Stations,3
+2023,Ahilyanagar,Shevgaon,Police Stations,1
+2023,Ahilyanagar,Pathardi,Police Stations,1
+2023,Ahilyanagar,Nagar,Police Stations,5
+2023,Ahilyanagar,Rahuri,Police Stations,1
+2023,Ahilyanagar,Parner,Police Stations,2
+2023,Ahilyanagar,Srigonda,Police Stations,2
+2023,Ahilyanagar,Karjat,Police Stations,2
+2023,Ahilyanagar,Jamkhed,Police Stations,2
+2024,Ahilyanagar,Akole,Police Stations,2
+2024,Ahilyanagar,Sangamner,Police Stations,4
+2024,Ahilyanagar,Kopargaon,Police Stations,2
+2024,Ahilyanagar,Rahata,Police Stations,3
+2024,Ahilyanagar,Srirampur,Police Stations,2
+2024,Ahilyanagar,Nevasa,Police Stations,3
+2024,Ahilyanagar,Shevgaon,Police Stations,1
+2024,Ahilyanagar,Pathardi,Police Stations,1
+2024,Ahilyanagar,Nagar,Police Stations,5
+2024,Ahilyanagar,Rahuri,Police Stations,1
+2024,Ahilyanagar,Parner,Police Stations,2
+2024,Ahilyanagar,Srigonda,Police Stations,2
+2024,Ahilyanagar,Karjat,Police Stations,2
+2024,Ahilyanagar,Jamkhed,Police Stations,2
 2018,Akola,Telhara,Police Stations,2
 2018,Akola,Akot,Police Stations,3
 2018,Akola,Balapur,Police Stations,2
@@ -83,6 +125,27 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Akola,Murtijapur,Police Stations,3
 2021,Akola,Patur,Police Stations,2
 2021,Akola,Barshitakali,Police Stations,2
+2022,Akola,Telhara,Police Stations,2
+2022,Akola,Akot,Police Stations,2
+2022,Akola,Balapur,Police Stations,3
+2022,Akola,Akola,Police Stations,10
+2022,Akola,Murtijapur,Police Stations,3
+2022,Akola,Patur,Police Stations,2
+2022,Akola,Barshitakali,Police Stations,2
+2023,Akola,Telhara,Police Stations,2
+2023,Akola,Akot,Police Stations,3
+2023,Akola,Balapur,Police Stations,2
+2023,Akola,Akola,Police Stations,9
+2023,Akola,Murtijapur,Police Stations,3
+2023,Akola,Patur,Police Stations,2
+2023,Akola,Barshitakali,Police Stations,2
+2024,Akola,Telhara,Police Stations,2
+2024,Akola,Akot,Police Stations,3
+2024,Akola,Balapur,Police Stations,2
+2024,Akola,Akola,Police Stations,9
+2024,Akola,Murtijapur,Police Stations,3
+2024,Akola,Patur,Police Stations,2
+2024,Akola,Barshitakali,Police Stations,2
 2018,Amravati,Dharani,Police Stations,1
 2018,Amravati,Chikhraldara,Police Stations,1
 2018,Amravati,Anjangaon Su,Police Stations,2
@@ -139,6 +202,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Amravati,Nandgaon Kh,Police Stations,2
 2021,Amravati,Chandur Railway,Police Stations,1
 2021,Amravati,Dhamangaon Re,Police Stations,3
+2022,Amravati,Dharani,Police Stations,1
+2022,Amravati,Chikhraldara,Police Stations,1
+2022,Amravati,Anjangaon Su,Police Stations,2
+2022,Amravati,Achalpur,Police Stations,4
+2022,Amravati,Chandurbazar,Police Stations,4
+2022,Amravati,Morshi,Police Stations,2
+2022,Amravati,Warud,Police Stations,3
+2022,Amravati,Tivas,Police Stations,2
+2022,Amravati,Amravati,Police Stations,13
+2022,Amravati,Bhatkuli,Police Stations,2
+2022,Amravati,Daryapur,Police Stations,3
+2022,Amravati,Nandgaon Kh,Police Stations,2
+2022,Amravati,Chandur Railway,Police Stations,1
+2022,Amravati,Dhamangaon Re,Police Stations,3
+2023,Amravati,Dharani,Police Stations,1
+2023,Amravati,Chikhraldara,Police Stations,1
+2023,Amravati,Anjangaon Su,Police Stations,2
+2023,Amravati,Achalpur,Police Stations,4
+2023,Amravati,Chandurbazar,Police Stations,4
+2023,Amravati,Morshi,Police Stations,2
+2023,Amravati,Warud,Police Stations,3
+2023,Amravati,Tivas,Police Stations,2
+2023,Amravati,Amravati,Police Stations,13
+2023,Amravati,Bhatkuli,Police Stations,2
+2023,Amravati,Daryapur,Police Stations,3
+2023,Amravati,Nandgaon Kh,Police Stations,2
+2023,Amravati,Chandur Railway,Police Stations,1
+2023,Amravati,Dhamangaon Re,Police Stations,3
+2024,Amravati,Dharani,Police Stations,1
+2024,Amravati,Chikhraldara,Police Stations,1
+2024,Amravati,Anjangaon Su,Police Stations,2
+2024,Amravati,Achalpur,Police Stations,4
+2024,Amravati,Chandurbazar,Police Stations,4
+2024,Amravati,Morshi,Police Stations,2
+2024,Amravati,Warud,Police Stations,3
+2024,Amravati,Tivas,Police Stations,2
+2024,Amravati,Amravati,Police Stations,11
+2024,Amravati,Bhatkuli,Police Stations,2
+2024,Amravati,Daryapur,Police Stations,3
+2024,Amravati,Nandgaon Kh,Police Stations,3
+2024,Amravati,Chandur Railway,Police Stations,2
+2024,Amravati,Dhamangaon Re,Police Stations,3
 2018,Beed,Ashti,Police Stations,2
 2018,Beed,Patoda,Police Stations,2
 2018,Beed,Shirur Kasar,Police Stations,1
@@ -183,6 +288,39 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Beed,Dharur,Police Stations,1
 2021,Beed,Parli,Police Stations,4
 2021,Beed,Ambajogai,Police Stations,3
+2022,Beed,Ashti,Police Stations,3
+2022,Beed,Patoda,Police Stations,1
+2022,Beed,Shirur Kasar,Police Stations,1
+2022,Beed,Gevrai,Police Stations,3
+2022,Beed,Majalgaon,Police Stations,3
+2022,Beed,Wadwani,Police Stations,1
+2022,Beed,Beed,Police Stations,5
+2022,Beed,Cage,Police Stations,3
+2022,Beed,Dharur,Police Stations,1
+2022,Beed,Parli,Police Stations,4
+2022,Beed,Ambajogai,Police Stations,3
+2023,Beed,Ashti,Police Stations,3
+2023,Beed,Patoda,Police Stations,1
+2023,Beed,Shirur Kasar,Police Stations,1
+2023,Beed,Gevrai,Police Stations,3
+2023,Beed,Majalgaon,Police Stations,4
+2023,Beed,Wadwani,Police Stations,1
+2023,Beed,Beed,Police Stations,5
+2023,Beed,Cage,Police Stations,3
+2023,Beed,Dharur,Police Stations,1
+2023,Beed,Parli,Police Stations,3
+2023,Beed,Ambajogai,Police Stations,3
+2024,Beed,Ashti,Police Stations,3
+2024,Beed,Patoda,Police Stations,1
+2024,Beed,Shirur Kasar,Police Stations,1
+2024,Beed,Gevrai,Police Stations,3
+2024,Beed,Majalgaon,Police Stations,3
+2024,Beed,Wadwani,Police Stations,1
+2024,Beed,Beed,Police Stations,5
+2024,Beed,Cage,Police Stations,3
+2024,Beed,Dharur,Police Stations,1
+2024,Beed,Parli,Police Stations,4
+2024,Beed,Ambajogai,Police Stations,3
 2018,Bhandara,Tumsar,Police Stations,3
 2018,Bhandara,Mohadi,Police Stations,4
 2018,Bhandara,Bhandara,Police Stations,3
@@ -211,6 +349,27 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Bhandara,Lakhani,Police Stations,2
 2021,Bhandara,Pavani,Police Stations,2
 2021,Bhandara,Lakhandur,Police Stations,2
+2022,Bhandara,Tumsar,Police Stations,3
+2022,Bhandara,Mohadi,Police Stations,4
+2022,Bhandara,Bhandara,Police Stations,3
+2022,Bhandara,Sakoli,Police Stations,1
+2022,Bhandara,Lakhani,Police Stations,2
+2022,Bhandara,Pavani,Police Stations,2
+2022,Bhandara,Lakhandur,Police Stations,2
+2023,Bhandara,Tumsar,Police Stations,4
+2023,Bhandara,Mohadi,Police Stations,2
+2023,Bhandara,Bhandara,Police Stations,4
+2023,Bhandara,Sakoli,Police Stations,1
+2023,Bhandara,Lakhani,Police Stations,2
+2023,Bhandara,Pavani,Police Stations,2
+2023,Bhandara,Lakhandur,Police Stations,2
+2024,Bhandara,Tumsar,Police Stations,4
+2024,Bhandara,Mohadi,Police Stations,2
+2024,Bhandara,Bhandara,Police Stations,4
+2024,Bhandara,Sakoli,Police Stations,1
+2024,Bhandara,Lakhani,Police Stations,2
+2024,Bhandara,Pavani,Police Stations,2
+2024,Bhandara,Lakhandur,Police Stations,2
 2018,Buldhana,Jalgaon Jamod,Police Stations,1
 2018,Buldhana,Sangrampur,Police Stations,2
 2018,Buldhana,Shegaon,Police Stations,3
@@ -263,6 +422,45 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Buldhana,Deulgaon Raja,Police Stations,2
 2021,Buldhana,Sindkhed Raja,Police Stations,2
 2021,Buldhana,Lonar,Police Stations,2
+2022,Buldhana,Jalgaon Jamod,Police Stations,1
+2022,Buldhana,Sangrampur,Police Stations,2
+2022,Buldhana,Shegaon,Police Stations,3
+2022,Buldhana,Nandura,Police Stations,1
+2022,Buldhana,Malkapur,Police Stations,3
+2022,Buldhana,Motala,Police Stations,2
+2022,Buldhana,Khamgaon,Police Stations,5
+2022,Buldhana,Mehkar,Police Stations,3
+2022,Buldhana,Chikhali,Police Stations,3
+2022,Buldhana,Buldhana,Police Stations,4
+2022,Buldhana,Deulgaon Raja,Police Stations,1
+2022,Buldhana,Sindkhed Raja,Police Stations,3
+2022,Buldhana,Lonar,Police Stations,2
+2023,Buldhana,Jalgaon Jamod,Police Stations,1
+2023,Buldhana,Sangrampur,Police Stations,2
+2023,Buldhana,Shegaon,Police Stations,3
+2023,Buldhana,Nandura,Police Stations,1
+2023,Buldhana,Malkapur,Police Stations,3
+2023,Buldhana,Motala,Police Stations,2
+2023,Buldhana,Khamgaon,Police Stations,5
+2023,Buldhana,Mehkar,Police Stations,4
+2023,Buldhana,Chikhali,Police Stations,3
+2023,Buldhana,Buldhana,Police Stations,3
+2023,Buldhana,Deulgaon Raja,Police Stations,2
+2023,Buldhana,Sindkhed Raja,Police Stations,2
+2023,Buldhana,Lonar,Police Stations,2
+2024,Buldhana,Jalgaon Jamod,Police Stations,1
+2024,Buldhana,Sangrampur,Police Stations,2
+2024,Buldhana,Shegaon,Police Stations,3
+2024,Buldhana,Nandura,Police Stations,1
+2024,Buldhana,Malkapur,Police Stations,3
+2024,Buldhana,Motala,Police Stations,2
+2024,Buldhana,Khamgaon,Police Stations,5
+2024,Buldhana,Mehkar,Police Stations,3
+2024,Buldhana,Chikhali,Police Stations,2
+2024,Buldhana,Buldhana,Police Stations,4
+2024,Buldhana,Deulgaon Raja,Police Stations,2
+2024,Buldhana,Sindkhed Raja,Police Stations,3
+2024,Buldhana,Lonar,Police Stations,2
 2018,Chandrapur,Varora,Police Stations,2
 2018,Chandrapur,Chimur,Police Stations,2
 2018,Chandrapur,Nagbhid,Police Stations,2
@@ -323,6 +521,78 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Chandrapur,Rajura,Police Stations,3
 2021,Chandrapur,Gondpipari,Police Stations,3
 2021,Chandrapur,Jivati,Police Stations,5
+2022,Chandrapur,Varora,Police Stations,2
+2022,Chandrapur,Chimur,Police Stations,2
+2022,Chandrapur,Nagbhid,Police Stations,2
+2022,Chandrapur,Bramhapuri,Police Stations,1
+2022,Chandrapur,Savali,Police Stations,2
+2022,Chandrapur,Sindevahi,Police Stations,1
+2022,Chandrapur,Bhadravati,Police Stations,2
+2022,Chandrapur,Chandrapur,Police Stations,5
+2022,Chandrapur,Mul,Police Stations,1
+2022,Chandrapur,Ponbhurna,Police Stations,1
+2022,Chandrapur,Ballarpur,Police Stations,2
+2022,Chandrapur,Korpana,Police Stations,2
+2022,Chandrapur,Rajura,Police Stations,3
+2022,Chandrapur,Gondpipari,Police Stations,3
+2022,Chandrapur,Jivati,Police Stations,5
+2023,Chandrapur,Varora,Police Stations,2
+2023,Chandrapur,Chimur,Police Stations,2
+2023,Chandrapur,Nagbhid,Police Stations,2
+2023,Chandrapur,Bramhapuri,Police Stations,1
+2023,Chandrapur,Savali,Police Stations,2
+2023,Chandrapur,Sindevahi,Police Stations,1
+2023,Chandrapur,Bhadravati,Police Stations,2
+2023,Chandrapur,Chandrapur,Police Stations,5
+2023,Chandrapur,Mul,Police Stations,1
+2023,Chandrapur,Ponbhurna,Police Stations,1
+2023,Chandrapur,Ballarpur,Police Stations,2
+2023,Chandrapur,Korpana,Police Stations,2
+2023,Chandrapur,Rajura,Police Stations,3
+2023,Chandrapur,Gondpipari,Police Stations,3
+2023,Chandrapur,Jivati,Police Stations,5
+2024,Chandrapur,Varora,Police Stations,3
+2024,Chandrapur,Chimur,Police Stations,2
+2024,Chandrapur,Nagbhid,Police Stations,2
+2024,Chandrapur,Bramhapuri,Police Stations,1
+2024,Chandrapur,Savali,Police Stations,2
+2024,Chandrapur,Sindevahi,Police Stations,1
+2024,Chandrapur,Bhadravati,Police Stations,1
+2024,Chandrapur,Chandrapur,Police Stations,5
+2024,Chandrapur,Mul,Police Stations,1
+2024,Chandrapur,Ponbhurna,Police Stations,2
+2024,Chandrapur,Ballarpur,Police Stations,2
+2024,Chandrapur,Korpana,Police Stations,2
+2024,Chandrapur,Rajura,Police Stations,3
+2024,Chandrapur,Gondpipari,Police Stations,2
+2024,Chandrapur,Jivati,Police Stations,5
+2022,Chh. Sambhaji Nagar,Kannad,Police Stations,4
+2022,Chh. Sambhaji Nagar,Soegaon,Police Stations,2
+2022,Chh. Sambhaji Nagar,Sillod,Police Stations,3
+2022,Chh. Sambhaji Nagar,Phulambri,Police Stations,2
+2022,Chh. Sambhaji Nagar,Chhatrapati Sambhajinagar,Police Stations,20
+2022,Chh. Sambhaji Nagar,Khuldabad,Police Stations,1
+2022,Chh. Sambhaji Nagar,Vaijapur,Police Stations,3
+2022,Chh. Sambhaji Nagar,Gangapur,Police Stations,2
+2022,Chh. Sambhaji Nagar,Paithan,Police Stations,4
+2023,Chh. Sambhaji Nagar,Kannad,Police Stations,3
+2023,Chh. Sambhaji Nagar,Soegaon,Police Stations,2
+2023,Chh. Sambhaji Nagar,Sillod,Police Stations,3
+2023,Chh. Sambhaji Nagar,Phulambri,Police Stations,1
+2023,Chh. Sambhaji Nagar,Chhatrapati Sambhajinagar,Police Stations,20
+2023,Chh. Sambhaji Nagar,Khuldabad,Police Stations,1
+2023,Chh. Sambhaji Nagar,Vaijapur,Police Stations,3
+2023,Chh. Sambhaji Nagar,Gangapur,Police Stations,2
+2023,Chh. Sambhaji Nagar,Paithan,Police Stations,4
+2024,Chh. Sambhaji Nagar,Kannad,Police Stations,3
+2024,Chh. Sambhaji Nagar,Soegaon,Police Stations,2
+2024,Chh. Sambhaji Nagar,Sillod,Police Stations,3
+2024,Chh. Sambhaji Nagar,Phulambri,Police Stations,1
+2024,Chh. Sambhaji Nagar,Chhatrapati Sambhajinagar,Police Stations,19
+2024,Chh. Sambhaji Nagar,Khuldabad,Police Stations,1
+2024,Chh. Sambhaji Nagar,Vaijapur,Police Stations,3
+2024,Chh. Sambhaji Nagar,Gangapur,Police Stations,2
+2024,Chh. Sambhaji Nagar,Paithan,Police Stations,4
 2018,Dhule,Shirpur,Police Stations,
 2018,Dhule,Shindkheda,Police Stations,2
 2018,Dhule,Sakri,Police Stations,2
@@ -339,6 +609,18 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Dhule,Shindkheda,Police Stations,3
 2021,Dhule,Sakri,Police Stations,3
 2021,Dhule,Dhule,Police Stations,8
+2022,Dhule,Shirpur,Police Stations,3
+2022,Dhule,Shindkheda,Police Stations,3
+2022,Dhule,Sakri,Police Stations,3
+2022,Dhule,Dhule,Police Stations,8
+2023,Dhule,Shirpur,Police Stations,3
+2023,Dhule,Shindkheda,Police Stations,3
+2023,Dhule,Sakri,Police Stations,3
+2023,Dhule,Dhule,Police Stations,9
+2024,Dhule,Shirpur,Police Stations,3
+2024,Dhule,Shindkheda,Police Stations,3
+2024,Dhule,Sakri,Police Stations,3
+2024,Dhule,Dhule,Police Stations,9
 2018,Gadchiroli,Desaiganj,Police Stations,1
 2018,Gadchiroli,Aarmori,Police Stations,1
 2018,Gadchiroli,Kurkheda,Police Stations,2
@@ -387,6 +669,42 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Gadchiroli,Bhamragad,Police Stations,1
 2021,Gadchiroli,Aheri,Police Stations,2
 2021,Gadchiroli,Sironcha,Police Stations,2
+2022,Gadchiroli,Desaiganj,Police Stations,1
+2022,Gadchiroli,Aarmori,Police Stations,1
+2022,Gadchiroli,Kurkheda,Police Stations,2
+2022,Gadchiroli,Korachi,Police Stations,1
+2022,Gadchiroli,Dhanora,Police Stations,2
+2022,Gadchiroli,Gadchiroli,Police Stations,2
+2022,Gadchiroli,Chomoshi,Police Stations,1
+2022,Gadchiroli,Mulchera,Police Stations,1
+2022,Gadchiroli,Etapalli,Police Stations,1
+2022,Gadchiroli,Bhamragad,Police Stations,1
+2022,Gadchiroli,Aheri,Police Stations,2
+2022,Gadchiroli,Sironcha,Police Stations,2
+2023,Gadchiroli,Desaiganj,Police Stations,1
+2023,Gadchiroli,Aarmori,Police Stations,1
+2023,Gadchiroli,Kurkheda,Police Stations,2
+2023,Gadchiroli,Korachi,Police Stations,4
+2023,Gadchiroli,Dhanora,Police Stations,4
+2023,Gadchiroli,Gadchiroli,Police Stations,2
+2023,Gadchiroli,Chomoshi,Police Stations,2
+2023,Gadchiroli,Mulchera,Police Stations,1
+2023,Gadchiroli,Etapalli,Police Stations,6
+2023,Gadchiroli,Bhamragad,Police Stations,7
+2023,Gadchiroli,Aheri,Police Stations,6
+2023,Gadchiroli,Sironcha,Police Stations,9
+2024,Gadchiroli,Desaiganj,Police Stations,1
+2024,Gadchiroli,Aarmori,Police Stations,1
+2024,Gadchiroli,Kurkheda,Police Stations,2
+2024,Gadchiroli,Korachi,Police Stations,4
+2024,Gadchiroli,Dhanora,Police Stations,4
+2024,Gadchiroli,Gadchiroli,Police Stations,2
+2024,Gadchiroli,Chomoshi,Police Stations,2
+2024,Gadchiroli,Mulchera,Police Stations,1
+2024,Gadchiroli,Etapalli,Police Stations,8
+2024,Gadchiroli,Bhamragad,Police Stations,9
+2024,Gadchiroli,Aheri,Police Stations,7
+2024,Gadchiroli,Sironcha,Police Stations,9
 2018,Gondia,Tiroda,Police Stations,3
 2018,Gondia,Goregaon,Police Stations,1
 2018,Gondia,Gondia,Police Stations,4
@@ -400,25 +718,49 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2019,Gondia,Gondia,Police Stations,4
 2019,Gondia,Aamgaon,Police Stations,1
 2019,Gondia,Salekasa,Police Stations,1
-2019,Gondia,Sa/Arguni,Police Stations,1
-2019,Gondia,Arguni/Mor,Police Stations,3
+2019,Gondia,Sadak Arjuni,Police Stations,1
+2019,Gondia,Arjuni Morgaon,Police Stations,3
 2019,Gondia,Devari,Police Stations,2
 2020,Gondia,Tiroda,Police Stations,3
 2020,Gondia,Goregaon,Police Stations,1
 2020,Gondia,Gondia,Police Stations,4
 2020,Gondia,Aamgaon,Police Stations,1
 2020,Gondia,Salekasa,Police Stations,1
-2020,Gondia,Sa/Arguni,Police Stations,1
-2020,Gondia,Arguni/Mor,Police Stations,3
+2020,Gondia,Sadak Arjuni,Police Stations,1
+2020,Gondia,Arjuni Morgaon,Police Stations,3
 2020,Gondia,Devari,Police Stations,2
 2021,Gondia,Tiroda,Police Stations,3
 2021,Gondia,Goregaon,Police Stations,1
 2021,Gondia,Gondia,Police Stations,4
 2021,Gondia,Aamgaon,Police Stations,1
 2021,Gondia,Salekasa,Police Stations,1
-2021,Gondia,Sa/Arguni,Police Stations,1
-2021,Gondia,Arguni/Mor,Police Stations,3
+2021,Gondia,Sadak Arjuni,Police Stations,1
+2021,Gondia,Arjuni Morgaon,Police Stations,3
 2021,Gondia,Devari,Police Stations,2
+2022,Gondia,Tiroda,Police Stations,3
+2022,Gondia,Goregaon,Police Stations,1
+2022,Gondia,Gondia,Police Stations,4
+2022,Gondia,Aamgaon,Police Stations,1
+2022,Gondia,Salekasa,Police Stations,1
+2022,Gondia,Sadak Arjuni,Police Stations,1
+2022,Gondia,Arjuni Morgaon,Police Stations,3
+2022,Gondia,Devari,Police Stations,2
+2023,Gondia,Tiroda,Police Stations,3
+2023,Gondia,Goregaon,Police Stations,1
+2023,Gondia,Gondia,Police Stations,4
+2023,Gondia,Aamgaon,Police Stations,1
+2023,Gondia,Salekasa,Police Stations,1
+2023,Gondia,Sadak Arjuni,Police Stations,1
+2023,Gondia,Arjuni Morgaon,Police Stations,3
+2023,Gondia,Devari,Police Stations,2
+2024,Gondia,Tiroda,Police Stations,2
+2024,Gondia,Goregaon,Police Stations,1
+2024,Gondia,Gondia,Police Stations,5
+2024,Gondia,Aamgaon,Police Stations,1
+2024,Gondia,Salekasa,Police Stations,1
+2024,Gondia,Sadak Arjuni,Police Stations,1
+2024,Gondia,Arjuni Morgaon,Police Stations,3
+2024,Gondia,Devari,Police Stations,2
 2018,Hingoli,Sengaon,Police Stations,2
 2018,Hingoli,Hingoli,Police Stations,4
 2018,Hingoli,Aundha Na,Police Stations,1
@@ -439,6 +781,66 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Hingoli,Aundha Na,Police Stations,1
 2021,Hingoli,Kalamanuri,Police Stations,2
 2021,Hingoli,Vasamat,Police Stations,4
+2022,Hingoli,Sengaon,Police Stations,2
+2022,Hingoli,Hingoli,Police Stations,4
+2022,Hingoli,Aundha Na,Police Stations,1
+2022,Hingoli,Kalamanuri,Police Stations,2
+2022,Hingoli,Vasamat,Police Stations,4
+2023,Hingoli,Sengaon,Police Stations,2
+2023,Hingoli,Hingoli,Police Stations,4
+2023,Hingoli,Aundha Na,Police Stations,1
+2023,Hingoli,Kalamanuri,Police Stations,2
+2023,Hingoli,Vasamat,Police Stations,4
+2024,Hingoli,Sengaon,Police Stations,2
+2024,Hingoli,Hingoli,Police Stations,4
+2024,Hingoli,Aundha Na,Police Stations,1
+2024,Hingoli,Kalamanuri,Police Stations,2
+2024,Hingoli,Vasamat,Police Stations,4
+2022,Jalgaon,Chopda,Police Stations,3
+2022,Jalgaon,Yawal,Police Stations,2
+2022,Jalgaon,Raver,Police Stations,3
+2022,Jalgaon,Muktainagar,Police Stations,1
+2022,Jalgaon,Bodwad,Police Stations,1
+2022,Jalgaon,Bhusawal,Police Stations,4
+2022,Jalgaon,Jalgaon,Police Stations,7
+2022,Jalgaon,Erandol,Police Stations,2
+2022,Jalgaon,Dharangaon,Police Stations,1
+2022,Jalgaon,Amalner,Police Stations,2
+2022,Jalgaon,Parola,Police Stations,1
+2022,Jalgaon,Bhadgaon,Police Stations,1
+2022,Jalgaon,Chalisgaon,Police Stations,3
+2022,Jalgaon,Pachora,Police Stations,2
+2022,Jalgaon,Jamner,Police Stations,2
+2023,Jalgaon,Chopda,Police Stations,3
+2023,Jalgaon,Yawal,Police Stations,2
+2023,Jalgaon,Raver,Police Stations,3
+2023,Jalgaon,Muktainagar,Police Stations,1
+2023,Jalgaon,Bodwad,Police Stations,1
+2023,Jalgaon,Bhusawal,Police Stations,4
+2023,Jalgaon,Jalgaon,Police Stations,7
+2023,Jalgaon,Erandol,Police Stations,2
+2023,Jalgaon,Dharangaon,Police Stations,1
+2023,Jalgaon,Amalner,Police Stations,2
+2023,Jalgaon,Parola,Police Stations,1
+2023,Jalgaon,Bhadgaon,Police Stations,1
+2023,Jalgaon,Chalisgaon,Police Stations,3
+2023,Jalgaon,Pachora,Police Stations,2
+2023,Jalgaon,Jamner,Police Stations,3
+2024,Jalgaon,Chopda,Police Stations,3
+2024,Jalgaon,Yawal,Police Stations,2
+2024,Jalgaon,Raver,Police Stations,3
+2024,Jalgaon,Muktainagar,Police Stations,1
+2024,Jalgaon,Bodwad,Police Stations,1
+2024,Jalgaon,Bhusawal,Police Stations,5
+2024,Jalgaon,Jalgaon,Police Stations,7
+2024,Jalgaon,Erandol,Police Stations,2
+2024,Jalgaon,Dharangaon,Police Stations,1
+2024,Jalgaon,Amalner,Police Stations,2
+2024,Jalgaon,Parola,Police Stations,1
+2024,Jalgaon,Bhadgaon,Police Stations,1
+2024,Jalgaon,Chalisgaon,Police Stations,3
+2024,Jalgaon,Pachora,Police Stations,2
+2024,Jalgaon,Jamner,Police Stations,3
 2018,Jalna,Bhokardan,Police Stations,
 2018,Jalna,Jaffrabad,Police Stations,
 2018,Jalna,Jalna,Police Stations,
@@ -471,6 +873,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Jalna,Ghansawangi,Police Stations,1
 2021,Jalna,Partur,Police Stations,2
 2021,Jalna,Mantha,Police Stations,1
+2022,Jalna,Bhokardan,Police Stations,3
+2022,Jalna,Jaffrabad,Police Stations,2
+2022,Jalna,Jalna,Police Stations,7
+2022,Jalna,Badnapur,Police Stations,1
+2022,Jalna,Ambad,Police Stations,2
+2022,Jalna,Ghansawangi,Police Stations,1
+2022,Jalna,Partur,Police Stations,2
+2022,Jalna,Mantha,Police Stations,1
+2023,Jalna,Bhokardan,Police Stations,3
+2023,Jalna,Jaffrabad,Police Stations,2
+2023,Jalna,Jalna,Police Stations,7
+2023,Jalna,Badnapur,Police Stations,1
+2023,Jalna,Ambad,Police Stations,2
+2023,Jalna,Ghansawangi,Police Stations,2
+2023,Jalna,Partur,Police Stations,2
+2023,Jalna,Mantha,Police Stations,1
+2024,Jalna,Bhokardan,Police Stations,3
+2024,Jalna,Jaffrabad,Police Stations,2
+2024,Jalna,Jalna,Police Stations,7
+2024,Jalna,Badnapur,Police Stations,1
+2024,Jalna,Ambad,Police Stations,2
+2024,Jalna,Ghansawangi,Police Stations,2
+2024,Jalna,Partur,Police Stations,2
+2024,Jalna,Mantha,Police Stations,1
 2018,Kolhapur,Shahuwadi,Police Stations,1
 2018,Kolhapur,Panhala,Police Stations,3
 2018,Kolhapur,Hatkanangale,Police Stations,7
@@ -519,6 +945,42 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Kolhapur,Ajara,Police Stations,1
 2021,Kolhapur,Gadhinglaj,Police Stations,2
 2021,Kolhapur,Chandgad,Police Stations,1
+2022,Kolhapur,Shahuwadi,Police Stations,1
+2022,Kolhapur,Panhala,Police Stations,3
+2022,Kolhapur,Hatkanangale,Police Stations,7
+2022,Kolhapur,Shirol,Police Stations,3
+2022,Kolhapur,Karveer,Police Stations,8
+2022,Kolhapur,Gaganbavada,Police Stations,1
+2022,Kolhapur,Radhanagari,Police Stations,1
+2022,Kolhapur,Kagal,Police Stations,2
+2022,Kolhapur,Bhudargad,Police Stations,1
+2022,Kolhapur,Ajara,Police Stations,1
+2022,Kolhapur,Gadhinglaj,Police Stations,2
+2022,Kolhapur,Chandgad,Police Stations,1
+2023,Kolhapur,Shahuwadi,Police Stations,1
+2023,Kolhapur,Panhala,Police Stations,3
+2023,Kolhapur,Hatkanangale,Police Stations,7
+2023,Kolhapur,Shirol,Police Stations,3
+2023,Kolhapur,Karveer,Police Stations,8
+2023,Kolhapur,Gaganbavada,Police Stations,1
+2023,Kolhapur,Radhanagari,Police Stations,1
+2023,Kolhapur,Kagal,Police Stations,2
+2023,Kolhapur,Bhudargad,Police Stations,1
+2023,Kolhapur,Ajara,Police Stations,1
+2023,Kolhapur,Gadhinglaj,Police Stations,2
+2023,Kolhapur,Chandgad,Police Stations,1
+2024,Kolhapur,Shahuwadi,Police Stations,1
+2024,Kolhapur,Panhala,Police Stations,3
+2024,Kolhapur,Hatkanangale,Police Stations,7
+2024,Kolhapur,Shirol,Police Stations,3
+2024,Kolhapur,Karveer,Police Stations,8
+2024,Kolhapur,Gaganbavada,Police Stations,1
+2024,Kolhapur,Radhanagari,Police Stations,1
+2024,Kolhapur,Kagal,Police Stations,2
+2024,Kolhapur,Bhudargad,Police Stations,1
+2024,Kolhapur,Ajara,Police Stations,1
+2024,Kolhapur,Gadhinglaj,Police Stations,2
+2024,Kolhapur,Chandgad,Police Stations,1
 2018,Latur,Latur,Police Stations,7
 2018,Latur,Renapur,Police Stations,1
 2018,Latur,Ahamadpur,Police Stations,3
@@ -559,22 +1021,64 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Latur,Nilanga,Police Stations,3
 2021,Latur,Devani,Police Stations,1
 2021,Latur,Udgir,Police Stations,2
+2022,Latur,Latur,Police Stations,22
+2022,Latur,Renapur,Police Stations,1
+2022,Latur,Ahamadpur,Police Stations,2
+2022,Latur,Jalkot,Police Stations,1
+2022,Latur,Chakur,Police Stations,1
+2022,Latur,Shirur-Anantpal,Police Stations,1
+2022,Latur,Aosa,Police Stations,3
+2022,Latur,Nilanga,Police Stations,3
+2022,Latur,Devani,Police Stations,1
+2022,Latur,Udgir,Police Stations,3
+2023,Latur,Latur,Police Stations,22
+2023,Latur,Renapur,Police Stations,1
+2023,Latur,Ahamadpur,Police Stations,2
+2023,Latur,Jalkot,Police Stations,1
+2023,Latur,Chakur,Police Stations,1
+2023,Latur,Shirur-Anantpal,Police Stations,1
+2023,Latur,Aosa,Police Stations,3
+2023,Latur,Nilanga,Police Stations,3
+2023,Latur,Devani,Police Stations,1
+2023,Latur,Udgir,Police Stations,3
+2024,Latur,Latur,Police Stations,7
+2024,Latur,Renapur,Police Stations,1
+2024,Latur,Ahamadpur,Police Stations,2
+2024,Latur,Jalkot,Police Stations,1
+2024,Latur,Chakur,Police Stations,1
+2024,Latur,Shirur-Anantpal,Police Stations,1
+2024,Latur,Aosa,Police Stations,3
+2024,Latur,Nilanga,Police Stations,3
+2024,Latur,Devani,Police Stations,1
+2024,Latur,Udgir,Police Stations,3
 2018,Mumbai,Mumbai City,Police Stations,94
 2019,Mumbai,Mumbai City,Police Stations,94
 2020,Mumbai,Mumbai City,Police Stations,94
 2021,Mumbai,Mumbai City,Police Stations,94
-2018,Mumbai Suburban,Adheri,Police Stations,
+2022,Mumbai,Mumbai City,Police Stations,94
+2023,Mumbai,Mumbai City,Police Stations,94
+2024,Mumbai,Mumbai City,Police Stations,94
+2018,Mumbai Suburban,Andheri,Police Stations,
 2018,Mumbai Suburban,Borivali,Police Stations,
 2018,Mumbai Suburban,Kurla,Police Stations,
-2019,Mumbai Suburban,Adheri,Police Stations,
+2019,Mumbai Suburban,Andheri,Police Stations,
 2019,Mumbai Suburban,Borivali,Police Stations,
 2019,Mumbai Suburban,Kurla,Police Stations,
-2020,Mumbai Suburban,Adheri,Police Stations,
+2020,Mumbai Suburban,Andheri,Police Stations,
 2020,Mumbai Suburban,Borivali,Police Stations,
 2020,Mumbai Suburban,Kurla,Police Stations,
-2021,Mumbai Suburban,Adheri,Police Stations,
+2021,Mumbai Suburban,Andheri,Police Stations,
 2021,Mumbai Suburban,Borivali,Police Stations,
 2021,Mumbai Suburban,Kurla,Police Stations,
+2022,Mumbai Suburban,Andheri,Police Stations,
+2022,Mumbai Suburban,Borivali,Police Stations,
+2022,Mumbai Suburban,Kurla,Police Stations,
+2023,Mumbai Suburban,Andheri,Police Stations,
+2023,Mumbai Suburban,Borivali,Police Stations,
+2023,Mumbai Suburban,Kurla,Police Stations,
+2024,Mumbai Suburban,Andheri,Police Stations,
+2024,Mumbai Suburban,Borivali,Police Stations,
+2024,Mumbai Suburban,Kurla,Police Stations,
 2018,Nagpur,Narkhed,Police Stations,2
 2018,Nagpur,Katol,Police Stations,2
 2018,Nagpur,Kalameshwar,Police Stations,1
@@ -631,6 +1135,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nagpur,Umred,Police Stations,2
 2021,Nagpur,Kuhi,Police Stations,2
 2021,Nagpur,Bhiwapur,Police Stations,1
+2022,Nagpur,Narkhed,Police Stations,2
+2022,Nagpur,Katol,Police Stations,2
+2022,Nagpur,Kalameshwar,Police Stations,1
+2022,Nagpur,Sawner,Police Stations,4
+2022,Nagpur,Parashivani,Police Stations,2
+2022,Nagpur,Ramtech,Police Stations,2
+2022,Nagpur,Mauda,Police Stations,2
+2022,Nagpur,Kamathi,Police Stations,2
+2022,Nagpur,Nagpur (Sh),Police Stations,1
+2022,Nagpur,Nagpur (Gra),Police Stations,31
+2022,Nagpur,Hingana,Police Stations,2
+2022,Nagpur,Umred,Police Stations,2
+2022,Nagpur,Kuhi,Police Stations,2
+2022,Nagpur,Bhiwapur,Police Stations,1
+2023,Nagpur,Narkhed,Police Stations,2
+2023,Nagpur,Katol,Police Stations,2
+2023,Nagpur,Kalameshwar,Police Stations,1
+2023,Nagpur,Sawner,Police Stations,4
+2023,Nagpur,Parashivani,Police Stations,2
+2023,Nagpur,Ramtech,Police Stations,2
+2023,Nagpur,Mauda,Police Stations,2
+2023,Nagpur,Kamathi,Police Stations,2
+2023,Nagpur,Nagpur (Sh),Police Stations,1
+2023,Nagpur,Nagpur (Gra),Police Stations,31
+2023,Nagpur,Hingana,Police Stations,2
+2023,Nagpur,Umred,Police Stations,2
+2023,Nagpur,Kuhi,Police Stations,2
+2023,Nagpur,Bhiwapur,Police Stations,1
+2024,Nagpur,Narkhed,Police Stations,2
+2024,Nagpur,Katol,Police Stations,2
+2024,Nagpur,Kalameshwar,Police Stations,1
+2024,Nagpur,Sawner,Police Stations,4
+2024,Nagpur,Parashivani,Police Stations,2
+2024,Nagpur,Ramtech,Police Stations,2
+2024,Nagpur,Mauda,Police Stations,2
+2024,Nagpur,Kamathi,Police Stations,2
+2024,Nagpur,Nagpur (Sh),Police Stations,1
+2024,Nagpur,Nagpur (Gra),Police Stations,36
+2024,Nagpur,Hingana,Police Stations,3
+2024,Nagpur,Umred,Police Stations,2
+2024,Nagpur,Kuhi,Police Stations,2
+2024,Nagpur,Bhiwapur,Police Stations,1
 2018,Nanded,Mahur,Police Stations,2
 2018,Nanded,Kinvat,Police Stations,3
 2018,Nanded,Himalay Nagar,Police Stations,1
@@ -695,6 +1241,54 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nanded,Kandhar,Police Stations,2
 2021,Nanded,Mukhed,Police Stations,2
 2021,Nanded,Deglur,Police Stations,2
+2022,Nanded,Mahur,Police Stations,2
+2022,Nanded,Kinvat,Police Stations,3
+2022,Nanded,Himalay Nagar,Police Stations,1
+2022,Nanded,Hadgaon,Police Stations,3
+2022,Nanded,Andhrapur,Police Stations,1
+2022,Nanded,Nanded,Police Stations,7
+2022,Nanded,Mudkhed,Police Stations,2
+2022,Nanded,Bhokar,Police Stations,1
+2022,Nanded,Umari,Police Stations,1
+2022,Nanded,Dharmabad,Police Stations,1
+2022,Nanded,Biloli,Police Stations,2
+2022,Nanded,Naygaon,Police Stations,3
+2022,Nanded,Loha,Police Stations,3
+2022,Nanded,Kandhar,Police Stations,2
+2022,Nanded,Mukhed,Police Stations,2
+2022,Nanded,Deglur,Police Stations,2
+2023,Nanded,Mahur,Police Stations,2
+2023,Nanded,Kinvat,Police Stations,3
+2023,Nanded,Himalay Nagar,Police Stations,1
+2023,Nanded,Hadgaon,Police Stations,3
+2023,Nanded,Andhrapur,Police Stations,1
+2023,Nanded,Nanded,Police Stations,7
+2023,Nanded,Mudkhed,Police Stations,2
+2023,Nanded,Bhokar,Police Stations,1
+2023,Nanded,Umari,Police Stations,1
+2023,Nanded,Dharmabad,Police Stations,1
+2023,Nanded,Biloli,Police Stations,2
+2023,Nanded,Naygaon,Police Stations,3
+2023,Nanded,Loha,Police Stations,3
+2023,Nanded,Kandhar,Police Stations,2
+2023,Nanded,Mukhed,Police Stations,2
+2023,Nanded,Deglur,Police Stations,2
+2024,Nanded,Mahur,Police Stations,2
+2024,Nanded,Kinvat,Police Stations,3
+2024,Nanded,Himalay Nagar,Police Stations,1
+2024,Nanded,Hadgaon,Police Stations,3
+2024,Nanded,Andhrapur,Police Stations,1
+2024,Nanded,Nanded,Police Stations,7
+2024,Nanded,Mudkhed,Police Stations,2
+2024,Nanded,Bhokar,Police Stations,1
+2024,Nanded,Umari,Police Stations,1
+2024,Nanded,Dharmabad,Police Stations,1
+2024,Nanded,Biloli,Police Stations,3
+2024,Nanded,Naygaon,Police Stations,2
+2024,Nanded,Loha,Police Stations,3
+2024,Nanded,Kandhar,Police Stations,2
+2024,Nanded,Mukhed,Police Stations,2
+2024,Nanded,Deglur,Police Stations,2
 2018,Nandurbar,Akkalkuva,Police Stations,2
 2018,Nandurbar,Akrani,Police Stations,1
 2018,Nandurbar,Taloda,Police Stations,1
@@ -719,6 +1313,24 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nandurbar,Shahada,Police Stations,
 2021,Nandurbar,Nandurbar,Police Stations,
 2021,Nandurbar,Navapur,Police Stations,
+2022,Nandurbar,Akkalkuva,Police Stations,2
+2022,Nandurbar,Akrani,Police Stations,1
+2022,Nandurbar,Taloda,Police Stations,1
+2022,Nandurbar,Shahada,Police Stations,3
+2022,Nandurbar,Nandurbar,Police Stations,3
+2022,Nandurbar,Navapur,Police Stations,2
+2023,Nandurbar,Akkalkuva,Police Stations,2
+2023,Nandurbar,Akrani,Police Stations,1
+2023,Nandurbar,Taloda,Police Stations,1
+2023,Nandurbar,Shahada,Police Stations,3
+2023,Nandurbar,Nandurbar,Police Stations,3
+2023,Nandurbar,Navapur,Police Stations,2
+2024,Nandurbar,Akkalkuva,Police Stations,2
+2024,Nandurbar,Akrani,Police Stations,1
+2024,Nandurbar,Taloda,Police Stations,1
+2024,Nandurbar,Shahada,Police Stations,3
+2024,Nandurbar,Nandurbar,Police Stations,3
+2024,Nandurbar,Navapur,Police Stations,2
 2018,Nashik,Surgana,Police Stations,2
 2018,Nashik,Kalwan,Police Stations,2
 2018,Nashik,Devala,Police Stations,1
@@ -779,6 +1391,51 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nashik,Sinner,Police Stations,3
 2021,Nashik,Nifad,Police Stations,5
 2021,Nashik,Yewala,Police Stations,2
+2022,Nashik,Surgana,Police Stations,2
+2022,Nashik,Kalwan,Police Stations,2
+2022,Nashik,Devala,Police Stations,1
+2022,Nashik,Baglan,Police Stations,2
+2022,Nashik,Malegaon,Police Stations,10
+2022,Nashik,Nandgaon,Police Stations,2
+2022,Nashik,Chandwad,Police Stations,2
+2022,Nashik,Dindori,Police Stations,2
+2022,Nashik,Peth,Police Stations,1
+2022,Nashik,Trimbak,Police Stations,2
+2022,Nashik,Nashik,Police Stations,14
+2022,Nashik,Igatpuri,Police Stations,3
+2022,Nashik,Sinner,Police Stations,3
+2022,Nashik,Nifad,Police Stations,5
+2022,Nashik,Yewala,Police Stations,2
+2023,Nashik,Surgana,Police Stations,2
+2023,Nashik,Kalwan,Police Stations,2
+2023,Nashik,Devala,Police Stations,1
+2023,Nashik,Baglan,Police Stations,2
+2023,Nashik,Malegaon,Police Stations,10
+2023,Nashik,Nandgaon,Police Stations,2
+2023,Nashik,Chandwad,Police Stations,2
+2023,Nashik,Dindori,Police Stations,2
+2023,Nashik,Peth,Police Stations,1
+2023,Nashik,Trimbak,Police Stations,2
+2023,Nashik,Nashik,Police Stations,15
+2023,Nashik,Igatpuri,Police Stations,3
+2023,Nashik,Sinner,Police Stations,3
+2023,Nashik,Nifad,Police Stations,5
+2023,Nashik,Yewala,Police Stations,2
+2024,Nashik,Surgana,Police Stations,2
+2024,Nashik,Kalwan,Police Stations,2
+2024,Nashik,Devala,Police Stations,1
+2024,Nashik,Baglan,Police Stations,2
+2024,Nashik,Malegaon,Police Stations,10
+2024,Nashik,Nandgaon,Police Stations,2
+2024,Nashik,Chandwad,Police Stations,2
+2024,Nashik,Dindori,Police Stations,2
+2024,Nashik,Peth,Police Stations,1
+2024,Nashik,Trimbak,Police Stations,2
+2024,Nashik,Nashik,Police Stations,15
+2024,Nashik,Igatpuri,Police Stations,3
+2024,Nashik,Sinner,Police Stations,3
+2024,Nashik,Nifad,Police Stations,5
+2024,Nashik,Yewala,Police Stations,2
 2018,Dharashiv,Paranda,Police Stations,2
 2018,Dharashiv,Bhum,Police Stations,1
 2018,Dharashiv,Washi,Police Stations,1
@@ -811,6 +1468,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Dharashiv,Tuljapur,Police Stations,3
 2021,Dharashiv,Lohara,Police Stations,1
 2021,Dharashiv,Umaraga,Police Stations,2
+2022,Dharashiv,Paranda,Police Stations,2
+2022,Dharashiv,Bhum,Police Stations,1
+2022,Dharashiv,Washi,Police Stations,1
+2022,Dharashiv,Kalamb,Police Stations,3
+2022,Dharashiv,Dharashiv,Police Stations,5
+2022,Dharashiv,Tuljapur,Police Stations,3
+2022,Dharashiv,Lohara,Police Stations,1
+2022,Dharashiv,Umaraga,Police Stations,2
+2023,Dharashiv,Paranda,Police Stations,2
+2023,Dharashiv,Bhum,Police Stations,1
+2023,Dharashiv,Washi,Police Stations,1
+2023,Dharashiv,Kalamb,Police Stations,3
+2023,Dharashiv,Dharashiv,Police Stations,5
+2023,Dharashiv,Tuljapur,Police Stations,3
+2023,Dharashiv,Lohara,Police Stations,1
+2023,Dharashiv,Umaraga,Police Stations,2
+2024,Dharashiv,Paranda,Police Stations,2
+2024,Dharashiv,Bhum,Police Stations,1
+2024,Dharashiv,Washi,Police Stations,1
+2024,Dharashiv,Kalamb,Police Stations,3
+2024,Dharashiv,Dharashiv,Police Stations,5
+2024,Dharashiv,Tuljapur,Police Stations,3
+2024,Dharashiv,Lohara,Police Stations,1
+2024,Dharashiv,Umaraga,Police Stations,2
 2018,Palghar,Talasari,Police Stations,1
 2018,Palghar,Dahanu,Police Stations,4
 2018,Palghar,Vikramgad,Police Stations,1
@@ -843,6 +1524,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Palghar,Wada,Police Stations,1
 2021,Palghar,Palghar,Police Stations,7
 2021,Palghar,Vasai,Police Stations,8
+2022,Palghar,Talasari,Police Stations,1
+2022,Palghar,Dahanu,Police Stations,4
+2022,Palghar,Vikramgad,Police Stations,1
+2022,Palghar,Javhar,Police Stations,1
+2022,Palghar,Mokhada,Police Stations,1
+2022,Palghar,Wada,Police Stations,1
+2022,Palghar,Palghar,Police Stations,7
+2022,Palghar,Vasai,Police Stations,11
+2023,Palghar,Talasari,Police Stations,1
+2023,Palghar,Dahanu,Police Stations,4
+2023,Palghar,Vikramgad,Police Stations,1
+2023,Palghar,Javhar,Police Stations,1
+2023,Palghar,Mokhada,Police Stations,1
+2023,Palghar,Wada,Police Stations,1
+2023,Palghar,Palghar,Police Stations,7
+2023,Palghar,Vasai,Police Stations,11
+2024,Palghar,Talasari,Police Stations,1
+2024,Palghar,Dahanu,Police Stations,4
+2024,Palghar,Vikramgad,Police Stations,1
+2024,Palghar,Javhar,Police Stations,1
+2024,Palghar,Mokhada,Police Stations,1
+2024,Palghar,Wada,Police Stations,1
+2024,Palghar,Palghar,Police Stations,7
+2024,Palghar,Vasai,Police Stations,12
 2018,Parbhani,Selu,Police Stations,1
 2018,Parbhani,Jintur,Police Stations,4
 2018,Parbhani,Parbhani,Police Stations,6
@@ -879,6 +1584,33 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Parbhani,Gangakhed,Police Stations,2
 2021,Parbhani,Palam,Police Stations,1
 2021,Parbhani,Purna,Police Stations,2
+2022,Parbhani,Selu,Police Stations,1
+2022,Parbhani,Jintur,Police Stations,4
+2022,Parbhani,Parbhani,Police Stations,6
+2022,Parbhani,Manvat,Police Stations,1
+2022,Parbhani,Pathari,Police Stations,1
+2022,Parbhani,Sonpeth,Police Stations,1
+2022,Parbhani,Gangakhed,Police Stations,2
+2022,Parbhani,Palam,Police Stations,1
+2022,Parbhani,Purna,Police Stations,2
+2023,Parbhani,Selu,Police Stations,1
+2023,Parbhani,Jintur,Police Stations,4
+2023,Parbhani,Parbhani,Police Stations,6
+2023,Parbhani,Manvat,Police Stations,1
+2023,Parbhani,Pathari,Police Stations,1
+2023,Parbhani,Sonpeth,Police Stations,1
+2023,Parbhani,Gangakhed,Police Stations,2
+2023,Parbhani,Palam,Police Stations,1
+2023,Parbhani,Purna,Police Stations,2
+2024,Parbhani,Selu,Police Stations,1
+2024,Parbhani,Jintur,Police Stations,4
+2024,Parbhani,Parbhani,Police Stations,6
+2024,Parbhani,Manvat,Police Stations,1
+2024,Parbhani,Pathari,Police Stations,1
+2024,Parbhani,Sonpeth,Police Stations,1
+2024,Parbhani,Gangakhed,Police Stations,2
+2024,Parbhani,Palam,Police Stations,1
+2024,Parbhani,Purna,Police Stations,2
 2018,Pune,Junnar,Police Stations,4
 2018,Pune,Aambegaon,Police Stations,2
 2018,Pune,Shirur,Police Stations,3
@@ -935,6 +1667,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Pune,Bhor,Police Stations,1
 2021,Pune,Baramati,Police Stations,1
 2021,Pune,Indapur,Police Stations,1
+2022,Pune,Junnar,Police Stations,4
+2022,Pune,Aambegaon,Police Stations,3
+2022,Pune,Shirur,Police Stations,3
+2022,Pune,Khed,Police Stations,4
+2022,Pune,Maval,Police Stations,8
+2022,Pune,Mulashi,Police Stations,3
+2022,Pune,Haveli,Police Stations,11
+2022,Pune,Pune City,Police Stations,33
+2022,Pune,Daund,Police Stations,2
+2022,Pune,Purandar,Police Stations,2
+2022,Pune,Welhe,Police Stations,1
+2022,Pune,Bhor,Police Stations,2
+2022,Pune,Baramati,Police Stations,5
+2022,Pune,Indapur,Police Stations,4
+2023,Pune,Junnar,Police Stations,4
+2023,Pune,Aambegaon,Police Stations,3
+2023,Pune,Shirur,Police Stations,3
+2023,Pune,Khed,Police Stations,4
+2023,Pune,Maval,Police Stations,8
+2023,Pune,Mulashi,Police Stations,3
+2023,Pune,Haveli,Police Stations,11
+2023,Pune,Pune City,Police Stations,33
+2023,Pune,Daund,Police Stations,2
+2023,Pune,Purandar,Police Stations,2
+2023,Pune,Welhe,Police Stations,1
+2023,Pune,Bhor,Police Stations,2
+2023,Pune,Baramati,Police Stations,5
+2023,Pune,Indapur,Police Stations,4
+2024,Pune,Junnar,Police Stations,4
+2024,Pune,Aambegaon,Police Stations,1
+2024,Pune,Shirur,Police Stations,3
+2024,Pune,Khed,Police Stations,3
+2024,Pune,Maval,Police Stations,4
+2024,Pune,Mulashi,Police Stations,5
+2024,Pune,Haveli,Police Stations,12
+2024,Pune,Pune City,Police Stations,40
+2024,Pune,Daund,Police Stations,3
+2024,Pune,Purandar,Police Stations,2
+2024,Pune,Welhe,Police Stations,1
+2024,Pune,Bhor,Police Stations,2
+2024,Pune,Baramati,Police Stations,5
+2024,Pune,Indapur,Police Stations,3
 2018,Raigad,Uran,Police Stations,3
 2018,Raigad,Panwel,Police Stations,3
 2018,Raigad,Karjat,Police Stations,3
@@ -995,6 +1769,36 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Raigad,Mhasala,Police Stations,1
 2021,Raigad,Mahad,Police Stations,3
 2021,Raigad,Poladpur,Police Stations,1
+2023,Raigad,Uran,Police Stations,3
+2023,Raigad,Panwel,Police Stations,7
+2023,Raigad,Karjat,Police Stations,3
+2023,Raigad,Khalapur,Police Stations,3
+2023,Raigad,Pen,Police Stations,3
+2023,Raigad,Alibag,Police Stations,4
+2023,Raigad,Murud,Police Stations,1
+2023,Raigad,Roha,Police Stations,3
+2023,Raigad,Sudhagad,Police Stations,1
+2023,Raigad,Mangaon,Police Stations,2
+2023,Raigad,Tala,Police Stations,1
+2023,Raigad,Shreevardhan,Police Stations,2
+2023,Raigad,Mhasala,Police Stations,1
+2023,Raigad,Mahad,Police Stations,3
+2023,Raigad,Poladpur,Police Stations,1
+2024,Raigad,Uran,Police Stations,1
+2024,Raigad,Panwel,Police Stations,9
+2024,Raigad,Karjat,Police Stations,3
+2024,Raigad,Khalapur,Police Stations,3
+2024,Raigad,Pen,Police Stations,3
+2024,Raigad,Alibag,Police Stations,4
+2024,Raigad,Murud,Police Stations,1
+2024,Raigad,Roha,Police Stations,3
+2024,Raigad,Sudhagad,Police Stations,1
+2024,Raigad,Mangaon,Police Stations,2
+2024,Raigad,Tala,Police Stations,1
+2024,Raigad,Shreevardhan,Police Stations,2
+2024,Raigad,Mhasala,Police Stations,1
+2024,Raigad,Mahad,Police Stations,3
+2024,Raigad,Poladpur,Police Stations,1
 2018,Ratnagiri,Mandangad,Police Stations,2
 2018,Ratnagiri,Dapoli,Police Stations,2
 2018,Ratnagiri,Khed,Police Stations,1
@@ -1031,6 +1835,33 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Ratnagiri,Sangameshwar,Police Stations,2
 2021,Ratnagiri,Lanja,Police Stations,1
 2021,Ratnagiri,Rajapur,Police Stations,2
+2022,Ratnagiri,Mandangad,Police Stations,2
+2022,Ratnagiri,Dapoli,Police Stations,2
+2022,Ratnagiri,Khed,Police Stations,1
+2022,Ratnagiri,Chiplun,Police Stations,3
+2022,Ratnagiri,Guhagar,Police Stations,1
+2022,Ratnagiri,Ratnagiri,Police Stations,4
+2022,Ratnagiri,Sangameshwar,Police Stations,2
+2022,Ratnagiri,Lanja,Police Stations,1
+2022,Ratnagiri,Rajapur,Police Stations,2
+2023,Ratnagiri,Mandangad,Police Stations,2
+2023,Ratnagiri,Dapoli,Police Stations,2
+2023,Ratnagiri,Khed,Police Stations,1
+2023,Ratnagiri,Chiplun,Police Stations,3
+2023,Ratnagiri,Guhagar,Police Stations,1
+2023,Ratnagiri,Ratnagiri,Police Stations,5
+2023,Ratnagiri,Sangameshwar,Police Stations,2
+2023,Ratnagiri,Lanja,Police Stations,1
+2023,Ratnagiri,Rajapur,Police Stations,2
+2024,Ratnagiri,Mandangad,Police Stations,2
+2024,Ratnagiri,Dapoli,Police Stations,2
+2024,Ratnagiri,Khed,Police Stations,1
+2024,Ratnagiri,Chiplun,Police Stations,3
+2024,Ratnagiri,Guhagar,Police Stations,1
+2024,Ratnagiri,Ratnagiri,Police Stations,5
+2024,Ratnagiri,Sangameshwar,Police Stations,2
+2024,Ratnagiri,Lanja,Police Stations,1
+2024,Ratnagiri,Rajapur,Police Stations,2
 2018,Sangli,Shirala,Police Stations,2
 2018,Sangli,Valava,Police Stations,4
 2018,Sangli,Palus,Police Stations,3
@@ -1071,6 +1902,36 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Sangli,Miraj,Police Stations,9
 2021,Sangli,Ku. Mahakal,Police Stations,1
 2021,Sangli,Jat,Police Stations,2
+2022,Sangli,Shirala,Police Stations,2
+2022,Sangli,Valava,Police Stations,4
+2022,Sangli,Palus,Police Stations,3
+2022,Sangli,Kadegaon,Police Stations,2
+2022,Sangli,Khanapur,Police Stations,1
+2022,Sangli,Aatpadi,Police Stations,1
+2022,Sangli,Tasgaon,Police Stations,1
+2022,Sangli,Miraj,Police Stations,9
+2022,Sangli,Ku. Mahakal,Police Stations,1
+2022,Sangli,Jat,Police Stations,2
+2023,Sangli,Shirala,Police Stations,2
+2023,Sangli,Valava,Police Stations,4
+2023,Sangli,Palus,Police Stations,3
+2023,Sangli,Kadegaon,Police Stations,2
+2023,Sangli,Khanapur,Police Stations,1
+2023,Sangli,Aatpadi,Police Stations,1
+2023,Sangli,Tasgaon,Police Stations,1
+2023,Sangli,Miraj,Police Stations,9
+2023,Sangli,Ku. Mahakal,Police Stations,1
+2023,Sangli,Jat,Police Stations,2
+2024,Sangli,Shirala,Police Stations,2
+2024,Sangli,Valava,Police Stations,4
+2024,Sangli,Palus,Police Stations,3
+2024,Sangli,Kadegaon,Police Stations,2
+2024,Sangli,Khanapur,Police Stations,1
+2024,Sangli,Aatpadi,Police Stations,1
+2024,Sangli,Tasgaon,Police Stations,1
+2024,Sangli,Miraj,Police Stations,9
+2024,Sangli,Ku. Mahakal,Police Stations,1
+2024,Sangli,Jat,Police Stations,2
 2018,Satara,Mahableshwar,Police Stations,2
 2018,Satara,Vai,Police Stations,2
 2018,Satara,Khandala,Police Stations,3
@@ -1115,6 +1976,39 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Satara,Javali,Police Stations,1
 2021,Satara,Patan,Police Stations,4
 2021,Satara,Karad,Police Stations,4
+2022,Satara,Mahableshwar,Police Stations,2
+2022,Satara,Vai,Police Stations,2
+2022,Satara,Khandala,Police Stations,3
+2022,Satara,Faltan,Police Stations,2
+2022,Satara,Man,Police Stations,2
+2022,Satara,Khatav,Police Stations,3
+2022,Satara,Koregaon,Police Stations,3
+2022,Satara,Satara,Police Stations,4
+2022,Satara,Javali,Police Stations,1
+2022,Satara,Patan,Police Stations,4
+2022,Satara,Karad,Police Stations,4
+2023,Satara,Mahableshwar,Police Stations,2
+2023,Satara,Vai,Police Stations,2
+2023,Satara,Khandala,Police Stations,3
+2023,Satara,Faltan,Police Stations,2
+2023,Satara,Man,Police Stations,2
+2023,Satara,Khatav,Police Stations,3
+2023,Satara,Koregaon,Police Stations,3
+2023,Satara,Satara,Police Stations,5
+2023,Satara,Javali,Police Stations,1
+2023,Satara,Patan,Police Stations,4
+2023,Satara,Karad,Police Stations,5
+2024,Satara,Mahableshwar,Police Stations,2
+2024,Satara,Vai,Police Stations,2
+2024,Satara,Khandala,Police Stations,3
+2024,Satara,Faltan,Police Stations,2
+2024,Satara,Man,Police Stations,2
+2024,Satara,Khatav,Police Stations,3
+2024,Satara,Koregaon,Police Stations,3
+2024,Satara,Satara,Police Stations,5
+2024,Satara,Javali,Police Stations,1
+2024,Satara,Patan,Police Stations,4
+2024,Satara,Karad,Police Stations,5
 2018,Sindhudurg,Devgad,Police Stations,2
 2018,Sindhudurg,Vaibhavwadi,Police Stations,1
 2018,Sindhudurg,Kankavali,Police Stations,1
@@ -1125,28 +2019,85 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2018,Sindhudurg,Dodamarg,Police Stations,1
 2019,Sindhudurg,Devgad,Police Stations,2
 2019,Sindhudurg,Vaibhavwadi,Police Stations,1
-2019,Sindhudurg,Kankawali,Police Stations,1
-2019,Sindhudurg,Malwan,Police Stations,2
-2019,Sindhudurg,Vengurli,Police Stations,2
-2019,Sindhudurg,Kulad,Police Stations,2
-2019,Sindhudurg,Savantwadi,Police Stations,2
+2019,Sindhudurg,Kankavali,Police Stations,1
+2019,Sindhudurg,Malvan,Police Stations,2
+2019,Sindhudurg,Vengurla,Police Stations,2
+2019,Sindhudurg,Kudal,Police Stations,2
+2019,Sindhudurg,Sawantwadi,Police Stations,2
 2019,Sindhudurg,Dodamarg,Police Stations,1
 2020,Sindhudurg,Devgad,Police Stations,2
 2020,Sindhudurg,Vaibhavwadi,Police Stations,1
-2020,Sindhudurg,Kankawali,Police Stations,1
-2020,Sindhudurg,Malwan,Police Stations,2
-2020,Sindhudurg,Vengurli,Police Stations,2
-2020,Sindhudurg,Kulad,Police Stations,2
-2020,Sindhudurg,Savantwadi,Police Stations,2
+2020,Sindhudurg,Kankavali,Police Stations,1
+2020,Sindhudurg,Malvan,Police Stations,2
+2020,Sindhudurg,Vengurla,Police Stations,2
+2020,Sindhudurg,Kudal,Police Stations,2
+2020,Sindhudurg,Sawantwadi,Police Stations,2
 2020,Sindhudurg,Dodamarg,Police Stations,1
 2021,Sindhudurg,Devgad,Police Stations,2
 2021,Sindhudurg,Vaibhavwadi,Police Stations,1
-2021,Sindhudurg,Kankawali,Police Stations,1
-2021,Sindhudurg,Malwan,Police Stations,2
-2021,Sindhudurg,Vengurli,Police Stations,2
-2021,Sindhudurg,Kulad,Police Stations,2
-2021,Sindhudurg,Savantwadi,Police Stations,2
+2021,Sindhudurg,Kankavali,Police Stations,1
+2021,Sindhudurg,Malvan,Police Stations,2
+2021,Sindhudurg,Vengurla,Police Stations,2
+2021,Sindhudurg,Kudal,Police Stations,2
+2021,Sindhudurg,Sawantwadi,Police Stations,2
 2021,Sindhudurg,Dodamarg,Police Stations,1
+2022,Sindhudurg,Devgad,Police Stations,2
+2022,Sindhudurg,Vaibhavwadi,Police Stations,1
+2022,Sindhudurg,Kankavali,Police Stations,1
+2022,Sindhudurg,Malvan,Police Stations,2
+2022,Sindhudurg,Vengurla,Police Stations,2
+2022,Sindhudurg,Kudal,Police Stations,2
+2022,Sindhudurg,Sawantwadi,Police Stations,2
+2022,Sindhudurg,Dodamarg,Police Stations,1
+2023,Sindhudurg,Devgad,Police Stations,2
+2023,Sindhudurg,Vaibhavwadi,Police Stations,1
+2023,Sindhudurg,Kankavali,Police Stations,1
+2023,Sindhudurg,Malvan,Police Stations,2
+2023,Sindhudurg,Vengurla,Police Stations,2
+2023,Sindhudurg,Kudal,Police Stations,2
+2023,Sindhudurg,Sawantwadi,Police Stations,2
+2023,Sindhudurg,Dodamarg,Police Stations,1
+2024,Sindhudurg,Devgad,Police Stations,2
+2024,Sindhudurg,Vaibhavwadi,Police Stations,1
+2024,Sindhudurg,Kankavali,Police Stations,1
+2024,Sindhudurg,Malvan,Police Stations,2
+2024,Sindhudurg,Vengurla,Police Stations,2
+2024,Sindhudurg,Kudal,Police Stations,2
+2024,Sindhudurg,Sawantwadi,Police Stations,2
+2024,Sindhudurg,Dodamarg,Police Stations,1
+2022,Solapur,Karmala,Police Stations,1
+2022,Solapur,Madha,Police Stations,3
+2022,Solapur,Barshi,Police Stations,4
+2022,Solapur,North Solapur,Police Stations,26
+2022,Solapur,Mohol,Police Stations,2
+2022,Solapur,Pandharpur,Police Stations,5
+2022,Solapur,Malshiras,Police Stations,4
+2022,Solapur,Sangole,Police Stations,1
+2022,Solapur,Mangalwedha,Police Stations,1
+2022,Solapur,South Solapur,Police Stations,2
+2022,Solapur,Akkalkot,Police Stations,2
+2023,Solapur,Karmala,Police Stations,3
+2023,Solapur,Madha,Police Stations,1
+2023,Solapur,Barshi,Police Stations,4
+2023,Solapur,North Solapur,Police Stations,26
+2023,Solapur,Mohol,Police Stations,2
+2023,Solapur,Pandharpur,Police Stations,5
+2023,Solapur,Malshiras,Police Stations,4
+2023,Solapur,Sangole,Police Stations,1
+2023,Solapur,Mangalwedha,Police Stations,1
+2023,Solapur,South Solapur,Police Stations,1
+2023,Solapur,Akkalkot,Police Stations,3
+2024,Solapur,Karmala,Police Stations,3
+2024,Solapur,Madha,Police Stations,1
+2024,Solapur,Barshi,Police Stations,4
+2024,Solapur,North Solapur,Police Stations,9
+2024,Solapur,Mohol,Police Stations,2
+2024,Solapur,Pandharpur,Police Stations,5
+2024,Solapur,Malshiras,Police Stations,4
+2024,Solapur,Sangole,Police Stations,1
+2024,Solapur,Mangalwedha,Police Stations,1
+2024,Solapur,South Solapur,Police Stations,1
+2024,Solapur,Akkalkot,Police Stations,3
 2018,Thane,Thane,Police Stations,51
 2018,Thane,Bhivandi,Police Stations,3
 2018,Thane,Shahapur,Police Stations,4
@@ -1175,6 +2126,27 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Thane,Ulhasnagar,Police Stations,7
 2021,Thane,Ambarnath,Police Stations,1
 2021,Thane,Murbad,Police Stations,4
+2022,Thane,Thane,Police Stations,23
+2022,Thane,Bhivandi,Police Stations,9
+2022,Thane,Shahapur,Police Stations,3
+2022,Thane,Kalyan,Police Stations,8
+2022,Thane,Ulhasnagar,Police Stations,7
+2022,Thane,Ambarnath,Police Stations,1
+2022,Thane,Murbad,Police Stations,4
+2023,Thane,Thane,Police Stations,23
+2023,Thane,Bhivandi,Police Stations,7
+2023,Thane,Shahapur,Police Stations,1
+2023,Thane,Kalyan,Police Stations,9
+2023,Thane,Ulhasnagar,Police Stations,7
+2023,Thane,Ambarnath,Police Stations,1
+2023,Thane,Murbad,Police Stations,1
+2024,Thane,Thane,Police Stations,30
+2024,Thane,Bhivandi,Police Stations,7
+2024,Thane,Shahapur,Police Stations,1
+2024,Thane,Kalyan,Police Stations,9
+2024,Thane,Ulhasnagar,Police Stations,8
+2024,Thane,Ambarnath,Police Stations,0
+2024,Thane,Murbad,Police Stations,1
 2018,Wardha,Ashti,Police Stations,1
 2018,Wardha,Karanja,Police Stations,1
 2018,Wardha,Aarvi,Police Stations,2
@@ -1207,6 +2179,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Wardha,Devali,Police Stations,2
 2021,Wardha,Hinganghat,Police Stations,3
 2021,Wardha,Samudrapur,Police Stations,2
+2022,Wardha,Ashti,Police Stations,2
+2022,Wardha,Karanja,Police Stations,1
+2022,Wardha,Aarvi,Police Stations,2
+2022,Wardha,Selu,Police Stations,3
+2022,Wardha,Wardha,Police Stations,4
+2022,Wardha,Devali,Police Stations,2
+2022,Wardha,Hinganghat,Police Stations,3
+2022,Wardha,Samudrapur,Police Stations,2
+2023,Wardha,Ashti,Police Stations,2
+2023,Wardha,Karanja,Police Stations,1
+2023,Wardha,Aarvi,Police Stations,2
+2023,Wardha,Selu,Police Stations,3
+2023,Wardha,Wardha,Police Stations,4
+2023,Wardha,Devali,Police Stations,2
+2023,Wardha,Hinganghat,Police Stations,3
+2023,Wardha,Samudrapur,Police Stations,2
+2024,Wardha,Ashti,Police Stations,2
+2024,Wardha,Karanja,Police Stations,1
+2024,Wardha,Aarvi,Police Stations,2
+2024,Wardha,Selu,Police Stations,3
+2024,Wardha,Wardha,Police Stations,4
+2024,Wardha,Devali,Police Stations,2
+2024,Wardha,Hinganghat,Police Stations,3
+2024,Wardha,Samudrapur,Police Stations,2
 2018,Washim,Malegaon,Police Stations,
 2018,Washim,Mangrulpir,Police Stations,
 2018,Washim,Karanja,Police Stations,
@@ -1231,6 +2227,24 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Washim,Manora,Police Stations,1
 2021,Washim,Washim,Police Stations,3
 2021,Washim,Resod,Police Stations,1
+2022,Washim,Malegaon,Police Stations,3
+2022,Washim,Mangrulpir,Police Stations,2
+2022,Washim,Karanja,Police Stations,3
+2022,Washim,Manora,Police Stations,1
+2022,Washim,Washim,Police Stations,3
+2022,Washim,Resod,Police Stations,1
+2023,Washim,Malegaon,Police Stations,3
+2023,Washim,Mangrulpir,Police Stations,2
+2023,Washim,Karanja,Police Stations,3
+2023,Washim,Manora,Police Stations,1
+2023,Washim,Washim,Police Stations,3
+2023,Washim,Resod,Police Stations,1
+2024,Washim,Malegaon,Police Stations,3
+2024,Washim,Mangrulpir,Police Stations,2
+2024,Washim,Karanja,Police Stations,3
+2024,Washim,Manora,Police Stations,1
+2024,Washim,Washim,Police Stations,3
+2024,Washim,Resod,Police Stations,1
 2018,Yavatmal,Ner,Police Stations,1
 2018,Yavatmal,Babhulgaon,Police Stations,1
 2018,Yavatmal,Kalamb,Police Stations,1
@@ -1295,6 +2309,54 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Yavatmal,Maregaon,Police Stations,1
 2021,Yavatmal,Zari Jamani,Police Stations,2
 2021,Yavatmal,Vani,Police Stations,2
+2022,Yavatmal,Ner,Police Stations,1
+2022,Yavatmal,Babhulgaon,Police Stations,1
+2022,Yavatmal,Kalamb,Police Stations,1
+2022,Yavatmal,Yavatmal,Police Stations,5
+2022,Yavatmal,Darvha,Police Stations,2
+2022,Yavatmal,Digras,Police Stations,1
+2022,Yavatmal,Pusad,Police Stations,4
+2022,Yavatmal,Umarkhed,Police Stations,4
+2022,Yavatmal,Mahagaon,Police Stations,1
+2022,Yavatmal,Aarni,Police Stations,1
+2022,Yavatmal,Ghantaji,Police Stations,2
+2022,Yavatmal,Kelapur,Police Stations,1
+2022,Yavatmal,Ralegaon,Police Stations,2
+2022,Yavatmal,Maregaon,Police Stations,1
+2022,Yavatmal,Zari Jamani,Police Stations,2
+2022,Yavatmal,Vani,Police Stations,2
+2023,Yavatmal,Ner,Police Stations,1
+2023,Yavatmal,Babhulgaon,Police Stations,1
+2023,Yavatmal,Kalamb,Police Stations,1
+2023,Yavatmal,Yavatmal,Police Stations,5
+2023,Yavatmal,Darvha,Police Stations,2
+2023,Yavatmal,Digras,Police Stations,1
+2023,Yavatmal,Pusad,Police Stations,4
+2023,Yavatmal,Umarkhed,Police Stations,4
+2023,Yavatmal,Mahagaon,Police Stations,1
+2023,Yavatmal,Aarni,Police Stations,1
+2023,Yavatmal,Ghantaji,Police Stations,2
+2023,Yavatmal,Kelapur,Police Stations,1
+2023,Yavatmal,Ralegaon,Police Stations,2
+2023,Yavatmal,Maregaon,Police Stations,1
+2023,Yavatmal,Zari Jamani,Police Stations,2
+2023,Yavatmal,Vani,Police Stations,2
+2024,Yavatmal,Ner,Police Stations,1
+2024,Yavatmal,Babhulgaon,Police Stations,1
+2024,Yavatmal,Kalamb,Police Stations,1
+2024,Yavatmal,Yavatmal,Police Stations,5
+2024,Yavatmal,Darvha,Police Stations,2
+2024,Yavatmal,Digras,Police Stations,1
+2024,Yavatmal,Pusad,Police Stations,4
+2024,Yavatmal,Umarkhed,Police Stations,4
+2024,Yavatmal,Mahagaon,Police Stations,1
+2024,Yavatmal,Aarni,Police Stations,1
+2024,Yavatmal,Ghantaji,Police Stations,2
+2024,Yavatmal,Kelapur,Police Stations,1
+2024,Yavatmal,Ralegaon,Police Stations,2
+2024,Yavatmal,Maregaon,Police Stations,1
+2024,Yavatmal,Zari Jamani,Police Stations,2
+2024,Yavatmal,Vani,Police Stations,2
 2018,Ahilyanagar,Akole,Outposts,3
 2018,Ahilyanagar,Sangamner,Outposts,3
 2018,Ahilyanagar,Kopargaon,Outposts,2
@@ -1351,6 +2413,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Ahilyanagar,Srigonda,Outposts,2
 2021,Ahilyanagar,Karjat,Outposts,2
 2021,Ahilyanagar,Jamkhed,Outposts,2
+2022,Ahilyanagar,Akole,Outposts,7
+2022,Ahilyanagar,Sangamner,Outposts,3
+2022,Ahilyanagar,Kopargaon,Outposts,8
+2022,Ahilyanagar,Rahata,Outposts,1
+2022,Ahilyanagar,Srirampur,Outposts,4
+2022,Ahilyanagar,Nevasa,Outposts,2
+2022,Ahilyanagar,Shevgaon,Outposts,2
+2022,Ahilyanagar,Pathardi,Outposts,4
+2022,Ahilyanagar,Nagar,Outposts,0
+2022,Ahilyanagar,Rahuri,Outposts,2
+2022,Ahilyanagar,Parner,Outposts,5
+2022,Ahilyanagar,Srigonda,Outposts,2
+2022,Ahilyanagar,Karjat,Outposts,3
+2022,Ahilyanagar,Jamkhed,Outposts,3
+2023,Ahilyanagar,Akole,Outposts,1
+2023,Ahilyanagar,Sangamner,Outposts,3
+2023,Ahilyanagar,Kopargaon,Outposts,2
+2023,Ahilyanagar,Rahata,Outposts,4
+2023,Ahilyanagar,Srirampur,Outposts,4
+2023,Ahilyanagar,Nevasa,Outposts,2
+2023,Ahilyanagar,Shevgaon,Outposts,2
+2023,Ahilyanagar,Pathardi,Outposts,4
+2023,Ahilyanagar,Nagar,Outposts,9
+2023,Ahilyanagar,Rahuri,Outposts,2
+2023,Ahilyanagar,Parner,Outposts,2
+2023,Ahilyanagar,Srigonda,Outposts,2
+2023,Ahilyanagar,Karjat,Outposts,2
+2023,Ahilyanagar,Jamkhed,Outposts,2
+2024,Ahilyanagar,Akole,Outposts,3
+2024,Ahilyanagar,Sangamner,Outposts,3
+2024,Ahilyanagar,Kopargaon,Outposts,2
+2024,Ahilyanagar,Rahata,Outposts,4
+2024,Ahilyanagar,Srirampur,Outposts,4
+2024,Ahilyanagar,Nevasa,Outposts,2
+2024,Ahilyanagar,Shevgaon,Outposts,2
+2024,Ahilyanagar,Pathardi,Outposts,4
+2024,Ahilyanagar,Nagar,Outposts,3
+2024,Ahilyanagar,Rahuri,Outposts,2
+2024,Ahilyanagar,Parner,Outposts,2
+2024,Ahilyanagar,Srigonda,Outposts,2
+2024,Ahilyanagar,Karjat,Outposts,1
+2024,Ahilyanagar,Jamkhed,Outposts,1
 2018,Akola,Telhara,Outposts,2
 2018,Akola,Akot,Outposts,3
 2018,Akola,Balapur,Outposts,5
@@ -1379,6 +2483,27 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Akola,Murtijapur,Outposts,1
 2021,Akola,Patur,Outposts,2
 2021,Akola,Barshitakali,Outposts,2
+2022,Akola,Telhara,Outposts,3
+2022,Akola,Akot,Outposts,1
+2022,Akola,Balapur,Outposts,3
+2022,Akola,Akola,Outposts,2
+2022,Akola,Murtijapur,Outposts,1
+2022,Akola,Patur,Outposts,2
+2022,Akola,Barshitakali,Outposts,2
+2023,Akola,Telhara,Outposts,2
+2023,Akola,Akot,Outposts,3
+2023,Akola,Balapur,Outposts,4
+2023,Akola,Akola,Outposts,0
+2023,Akola,Murtijapur,Outposts,1
+2023,Akola,Patur,Outposts,1
+2023,Akola,Barshitakali,Outposts,2
+2024,Akola,Telhara,Outposts,2
+2024,Akola,Akot,Outposts,3
+2024,Akola,Balapur,Outposts,4
+2024,Akola,Akola,Outposts,0
+2024,Akola,Murtijapur,Outposts,1
+2024,Akola,Patur,Outposts,1
+2024,Akola,Barshitakali,Outposts,2
 2018,Amravati,Dharani,Outposts,2
 2018,Amravati,Chikhraldara,Outposts,2
 2018,Amravati,Anjangaon Su,Outposts,1
@@ -1435,6 +2560,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Amravati,Nandgaon Kh,Outposts,
 2021,Amravati,Chandur Railway,Outposts,1
 2021,Amravati,Dhamangaon Re,Outposts,
+2022,Amravati,Dharani,Outposts,1
+2022,Amravati,Chikhraldara,Outposts,4
+2022,Amravati,Anjangaon Su,Outposts,1
+2022,Amravati,Achalpur,Outposts,1
+2022,Amravati,Chandurbazar,Outposts,0
+2022,Amravati,Morshi,Outposts,1
+2022,Amravati,Warud,Outposts,0
+2022,Amravati,Tivas,Outposts,1
+2022,Amravati,Amravati,Outposts,0
+2022,Amravati,Bhatkuli,Outposts,0
+2022,Amravati,Daryapur,Outposts,2
+2022,Amravati,Nandgaon Kh,Outposts,0
+2022,Amravati,Chandur Railway,Outposts,1
+2022,Amravati,Dhamangaon Re,Outposts,0
+2023,Amravati,Dharani,Outposts,1
+2023,Amravati,Chikhraldara,Outposts,4
+2023,Amravati,Anjangaon Su,Outposts,1
+2023,Amravati,Achalpur,Outposts,1
+2023,Amravati,Chandurbazar,Outposts,0
+2023,Amravati,Morshi,Outposts,1
+2023,Amravati,Warud,Outposts,0
+2023,Amravati,Tivas,Outposts,1
+2023,Amravati,Amravati,Outposts,0
+2023,Amravati,Bhatkuli,Outposts,0
+2023,Amravati,Daryapur,Outposts,2
+2023,Amravati,Nandgaon Kh,Outposts,0
+2023,Amravati,Chandur Railway,Outposts,1
+2023,Amravati,Dhamangaon Re,Outposts,0
+2024,Amravati,Dharani,Outposts,0
+2024,Amravati,Chikhraldara,Outposts,2
+2024,Amravati,Anjangaon Su,Outposts,1
+2024,Amravati,Achalpur,Outposts,0
+2024,Amravati,Chandurbazar,Outposts,0
+2024,Amravati,Morshi,Outposts,2
+2024,Amravati,Warud,Outposts,0
+2024,Amravati,Tivas,Outposts,0
+2024,Amravati,Amravati,Outposts,0
+2024,Amravati,Bhatkuli,Outposts,0
+2024,Amravati,Daryapur,Outposts,1
+2024,Amravati,Nandgaon Kh,Outposts,0
+2024,Amravati,Chandur Railway,Outposts,0
+2024,Amravati,Dhamangaon Re,Outposts,0
 2018,Beed,Ashti,Outposts,1
 2018,Beed,Patoda,Outposts,1
 2018,Beed,Shirur Kasar,Outposts,
@@ -1479,6 +2646,39 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Beed,Dharur,Outposts,1
 2021,Beed,Parli,Outposts,
 2021,Beed,Ambajogai,Outposts,1
+2022,Beed,Ashti,Outposts,0
+2022,Beed,Patoda,Outposts,0
+2022,Beed,Shirur Kasar,Outposts,0
+2022,Beed,Gevrai,Outposts,2
+2022,Beed,Majalgaon,Outposts,0
+2022,Beed,Wadwani,Outposts,0
+2022,Beed,Beed,Outposts,0
+2022,Beed,Cage,Outposts,1
+2022,Beed,Dharur,Outposts,1
+2022,Beed,Parli,Outposts,0
+2022,Beed,Ambajogai,Outposts,4
+2023,Beed,Ashti,Outposts,2
+2023,Beed,Patoda,Outposts,1
+2023,Beed,Shirur Kasar,Outposts,0
+2023,Beed,Gevrai,Outposts,2
+2023,Beed,Majalgaon,Outposts,0
+2023,Beed,Wadwani,Outposts,0
+2023,Beed,Beed,Outposts,0
+2023,Beed,Cage,Outposts,2
+2023,Beed,Dharur,Outposts,1
+2023,Beed,Parli,Outposts,0
+2023,Beed,Ambajogai,Outposts,4
+2024,Beed,Ashti,Outposts,2
+2024,Beed,Patoda,Outposts,1
+2024,Beed,Shirur Kasar,Outposts,0
+2024,Beed,Gevrai,Outposts,2
+2024,Beed,Majalgaon,Outposts,0
+2024,Beed,Wadwani,Outposts,0
+2024,Beed,Beed,Outposts,0
+2024,Beed,Cage,Outposts,1
+2024,Beed,Dharur,Outposts,1
+2024,Beed,Parli,Outposts,0
+2024,Beed,Ambajogai,Outposts,3
 2018,Bhandara,Tumsar,Outposts,3
 2018,Bhandara,Mohadi,Outposts,1
 2018,Bhandara,Bhandara,Outposts,1
@@ -1507,6 +2707,27 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Bhandara,Lakhani,Outposts,
 2021,Bhandara,Pavani,Outposts,
 2021,Bhandara,Lakhandur,Outposts,
+2022,Bhandara,Tumsar,Outposts,3
+2022,Bhandara,Mohadi,Outposts,0
+2022,Bhandara,Bhandara,Outposts,1
+2022,Bhandara,Sakoli,Outposts,3
+2022,Bhandara,Lakhani,Outposts,0
+2022,Bhandara,Pavani,Outposts,0
+2022,Bhandara,Lakhandur,Outposts,0
+2023,Bhandara,Tumsar,Outposts,3
+2023,Bhandara,Mohadi,Outposts,0
+2023,Bhandara,Bhandara,Outposts,1
+2023,Bhandara,Sakoli,Outposts,3
+2023,Bhandara,Lakhani,Outposts,0
+2023,Bhandara,Pavani,Outposts,0
+2023,Bhandara,Lakhandur,Outposts,0
+2024,Bhandara,Tumsar,Outposts,3
+2024,Bhandara,Mohadi,Outposts,1
+2024,Bhandara,Bhandara,Outposts,1
+2024,Bhandara,Sakoli,Outposts,3
+2024,Bhandara,Lakhani,Outposts,1
+2024,Bhandara,Pavani,Outposts,0
+2024,Bhandara,Lakhandur,Outposts,0
 2018,Buldhana,Jalgaon Jamod,Outposts,1
 2018,Buldhana,Sangrampur,Outposts,1
 2018,Buldhana,Shegaon,Outposts,
@@ -1559,6 +2780,45 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Buldhana,Deulgaon Raja,Outposts,1
 2021,Buldhana,Sindkhed Raja,Outposts,
 2021,Buldhana,Lonar,Outposts,
+2022,Buldhana,Jalgaon Jamod,Outposts,1
+2022,Buldhana,Sangrampur,Outposts,1
+2022,Buldhana,Shegaon,Outposts,0
+2022,Buldhana,Nandura,Outposts,2
+2022,Buldhana,Malkapur,Outposts,1
+2022,Buldhana,Motala,Outposts,1
+2022,Buldhana,Khamgaon,Outposts,0
+2022,Buldhana,Mehkar,Outposts,0
+2022,Buldhana,Chikhali,Outposts,1
+2022,Buldhana,Buldhana,Outposts,1
+2022,Buldhana,Deulgaon Raja,Outposts,0
+2022,Buldhana,Sindkhed Raja,Outposts,0
+2022,Buldhana,Lonar,Outposts,0
+2023,Buldhana,Jalgaon Jamod,Outposts,1
+2023,Buldhana,Sangrampur,Outposts,1
+2023,Buldhana,Shegaon,Outposts,0
+2023,Buldhana,Nandura,Outposts,2
+2023,Buldhana,Malkapur,Outposts,1
+2023,Buldhana,Motala,Outposts,1
+2023,Buldhana,Khamgaon,Outposts,0
+2023,Buldhana,Mehkar,Outposts,0
+2023,Buldhana,Chikhali,Outposts,1
+2023,Buldhana,Buldhana,Outposts,1
+2023,Buldhana,Deulgaon Raja,Outposts,0
+2023,Buldhana,Sindkhed Raja,Outposts,0
+2023,Buldhana,Lonar,Outposts,0
+2024,Buldhana,Jalgaon Jamod,Outposts,1
+2024,Buldhana,Sangrampur,Outposts,1
+2024,Buldhana,Shegaon,Outposts,0
+2024,Buldhana,Nandura,Outposts,2
+2024,Buldhana,Malkapur,Outposts,1
+2024,Buldhana,Motala,Outposts,1
+2024,Buldhana,Khamgaon,Outposts,0
+2024,Buldhana,Mehkar,Outposts,0
+2024,Buldhana,Chikhali,Outposts,1
+2024,Buldhana,Buldhana,Outposts,1
+2024,Buldhana,Deulgaon Raja,Outposts,1
+2024,Buldhana,Sindkhed Raja,Outposts,0
+2024,Buldhana,Lonar,Outposts,0
 2018,Chandrapur,Varora,Outposts,2
 2018,Chandrapur,Chimur,Outposts,2
 2018,Chandrapur,Nagbhid,Outposts,
@@ -1619,6 +2879,78 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Chandrapur,Rajura,Outposts,
 2021,Chandrapur,Gondpipari,Outposts,1
 2021,Chandrapur,Jivati,Outposts,
+2022,Chandrapur,Varora,Outposts,2
+2022,Chandrapur,Chimur,Outposts,2
+2022,Chandrapur,Nagbhid,Outposts,0
+2022,Chandrapur,Bramhapuri,Outposts,1
+2022,Chandrapur,Savali,Outposts,3
+2022,Chandrapur,Sindevahi,Outposts,1
+2022,Chandrapur,Bhadravati,Outposts,2
+2022,Chandrapur,Chandrapur,Outposts,1
+2022,Chandrapur,Mul,Outposts,1
+2022,Chandrapur,Ponbhurna,Outposts,0
+2022,Chandrapur,Ballarpur,Outposts,2
+2022,Chandrapur,Korpana,Outposts,0
+2022,Chandrapur,Rajura,Outposts,0
+2022,Chandrapur,Gondpipari,Outposts,1
+2022,Chandrapur,Jivati,Outposts,0
+2023,Chandrapur,Varora,Outposts,2
+2023,Chandrapur,Chimur,Outposts,2
+2023,Chandrapur,Nagbhid,Outposts,0
+2023,Chandrapur,Bramhapuri,Outposts,1
+2023,Chandrapur,Savali,Outposts,3
+2023,Chandrapur,Sindevahi,Outposts,1
+2023,Chandrapur,Bhadravati,Outposts,2
+2023,Chandrapur,Chandrapur,Outposts,1
+2023,Chandrapur,Mul,Outposts,1
+2023,Chandrapur,Ponbhurna,Outposts,0
+2023,Chandrapur,Ballarpur,Outposts,2
+2023,Chandrapur,Korpana,Outposts,0
+2023,Chandrapur,Rajura,Outposts,0
+2023,Chandrapur,Gondpipari,Outposts,1
+2023,Chandrapur,Jivati,Outposts,0
+2024,Chandrapur,Varora,Outposts,2
+2024,Chandrapur,Chimur,Outposts,2
+2024,Chandrapur,Nagbhid,Outposts,0
+2024,Chandrapur,Bramhapuri,Outposts,1
+2024,Chandrapur,Savali,Outposts,3
+2024,Chandrapur,Sindevahi,Outposts,1
+2024,Chandrapur,Bhadravati,Outposts,1
+2024,Chandrapur,Chandrapur,Outposts,1
+2024,Chandrapur,Mul,Outposts,2
+2024,Chandrapur,Ponbhurna,Outposts,0
+2024,Chandrapur,Ballarpur,Outposts,1
+2024,Chandrapur,Korpana,Outposts,1
+2024,Chandrapur,Rajura,Outposts,1
+2024,Chandrapur,Gondpipari,Outposts,1
+2024,Chandrapur,Jivati,Outposts,0
+2022,Chh. Sambhaji Nagar,Kannad,Outposts,3
+2022,Chh. Sambhaji Nagar,Soegaon,Outposts,2
+2022,Chh. Sambhaji Nagar,Sillod,Outposts,1
+2022,Chh. Sambhaji Nagar,Phulambri,Outposts,0
+2022,Chh. Sambhaji Nagar,Chhatrapati Sambhajinagar,Outposts,4
+2022,Chh. Sambhaji Nagar,Khuldabad,Outposts,1
+2022,Chh. Sambhaji Nagar,Vaijapur,Outposts,0
+2022,Chh. Sambhaji Nagar,Gangapur,Outposts,1
+2022,Chh. Sambhaji Nagar,Paithan,Outposts,1
+2023,Chh. Sambhaji Nagar,Kannad,Outposts,2
+2023,Chh. Sambhaji Nagar,Soegaon,Outposts,1
+2023,Chh. Sambhaji Nagar,Sillod,Outposts,1
+2023,Chh. Sambhaji Nagar,Phulambri,Outposts,0
+2023,Chh. Sambhaji Nagar,Chhatrapati Sambhajinagar,Outposts,1
+2023,Chh. Sambhaji Nagar,Khuldabad,Outposts,1
+2023,Chh. Sambhaji Nagar,Vaijapur,Outposts,0
+2023,Chh. Sambhaji Nagar,Gangapur,Outposts,0
+2023,Chh. Sambhaji Nagar,Paithan,Outposts,1
+2024,Chh. Sambhaji Nagar,Kannad,Outposts,2
+2024,Chh. Sambhaji Nagar,Soegaon,Outposts,2
+2024,Chh. Sambhaji Nagar,Sillod,Outposts,1
+2024,Chh. Sambhaji Nagar,Phulambri,Outposts,0
+2024,Chh. Sambhaji Nagar,Chhatrapati Sambhajinagar,Outposts,1
+2024,Chh. Sambhaji Nagar,Khuldabad,Outposts,1
+2024,Chh. Sambhaji Nagar,Vaijapur,Outposts,0
+2024,Chh. Sambhaji Nagar,Gangapur,Outposts,0
+2024,Chh. Sambhaji Nagar,Paithan,Outposts,1
 2018,Dhule,Shirpur,Outposts,
 2018,Dhule,Shindkheda,Outposts,
 2018,Dhule,Sakri,Outposts,
@@ -1635,6 +2967,18 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Dhule,Shindkheda,Outposts,1
 2021,Dhule,Sakri,Outposts,2
 2021,Dhule,Dhule,Outposts,5
+2022,Dhule,Shirpur,Outposts,0
+2022,Dhule,Shindkheda,Outposts,2
+2022,Dhule,Sakri,Outposts,2
+2022,Dhule,Dhule,Outposts,5
+2023,Dhule,Shirpur,Outposts,1
+2023,Dhule,Shindkheda,Outposts,1
+2023,Dhule,Sakri,Outposts,2
+2023,Dhule,Dhule,Outposts,5
+2024,Dhule,Shirpur,Outposts,1
+2024,Dhule,Shindkheda,Outposts,1
+2024,Dhule,Sakri,Outposts,2
+2024,Dhule,Dhule,Outposts,5
 2018,Gadchiroli,Desaiganj,Outposts,
 2018,Gadchiroli,Aarmori,Outposts,
 2018,Gadchiroli,Kurkheda,Outposts,2
@@ -1683,6 +3027,42 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Gadchiroli,Bhamragad,Outposts,4
 2021,Gadchiroli,Aheri,Outposts,2
 2021,Gadchiroli,Sironcha,Outposts,1
+2022,Gadchiroli,Desaiganj,Outposts,0
+2022,Gadchiroli,Aarmori,Outposts,0
+2022,Gadchiroli,Kurkheda,Outposts,1
+2022,Gadchiroli,Korachi,Outposts,3
+2022,Gadchiroli,Dhanora,Outposts,8
+2022,Gadchiroli,Gadchiroli,Outposts,1
+2022,Gadchiroli,Chomoshi,Outposts,2
+2022,Gadchiroli,Mulchera,Outposts,0
+2022,Gadchiroli,Etapalli,Outposts,8
+2022,Gadchiroli,Bhamragad,Outposts,4
+2022,Gadchiroli,Aheri,Outposts,3
+2022,Gadchiroli,Sironcha,Outposts,1
+2023,Gadchiroli,Desaiganj,Outposts,0
+2023,Gadchiroli,Aarmori,Outposts,0
+2023,Gadchiroli,Kurkheda,Outposts,0
+2023,Gadchiroli,Korachi,Outposts,2
+2023,Gadchiroli,Dhanora,Outposts,6
+2023,Gadchiroli,Gadchiroli,Outposts,0
+2023,Gadchiroli,Chomoshi,Outposts,2
+2023,Gadchiroli,Mulchera,Outposts,1
+2023,Gadchiroli,Etapalli,Outposts,5
+2023,Gadchiroli,Bhamragad,Outposts,0
+2023,Gadchiroli,Aheri,Outposts,1
+2023,Gadchiroli,Sironcha,Outposts,1
+2024,Gadchiroli,Desaiganj,Outposts,0
+2024,Gadchiroli,Aarmori,Outposts,0
+2024,Gadchiroli,Kurkheda,Outposts,0
+2024,Gadchiroli,Korachi,Outposts,2
+2024,Gadchiroli,Dhanora,Outposts,6
+2024,Gadchiroli,Gadchiroli,Outposts,0
+2024,Gadchiroli,Chomoshi,Outposts,2
+2024,Gadchiroli,Mulchera,Outposts,1
+2024,Gadchiroli,Etapalli,Outposts,4
+2024,Gadchiroli,Bhamragad,Outposts,0
+2024,Gadchiroli,Aheri,Outposts,1
+2024,Gadchiroli,Sironcha,Outposts,1
 2018,Gondia,Tiroda,Outposts,
 2018,Gondia,Goregaon,Outposts,
 2018,Gondia,Gondia,Outposts,
@@ -1696,25 +3076,49 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2019,Gondia,Gondia,Outposts,
 2019,Gondia,Aamgaon,Outposts,
 2019,Gondia,Salekasa,Outposts,3
-2019,Gondia,Sa/Arguni,Outposts,
-2019,Gondia,Arguni/Mor,Outposts,3
+2019,Gondia,Sadak Arjuni,Outposts,
+2019,Gondia,Arjuni Morgaon,Outposts,3
 2019,Gondia,Devari,Outposts,3
 2020,Gondia,Tiroda,Outposts,
 2020,Gondia,Goregaon,Outposts,
 2020,Gondia,Gondia,Outposts,
 2020,Gondia,Aamgaon,Outposts,
 2020,Gondia,Salekasa,Outposts,4
-2020,Gondia,Sa/Arguni,Outposts,
-2020,Gondia,Arguni/Mor,Outposts,3
+2020,Gondia,Sadak Arjuni,Outposts,
+2020,Gondia,Arjuni Morgaon,Outposts,3
 2020,Gondia,Devari,Outposts,3
 2021,Gondia,Tiroda,Outposts,
 2021,Gondia,Goregaon,Outposts,
 2021,Gondia,Gondia,Outposts,
 2021,Gondia,Aamgaon,Outposts,
 2021,Gondia,Salekasa,Outposts,4
-2021,Gondia,Sa/Arguni,Outposts,
-2021,Gondia,Arguni/Mor,Outposts,3
+2021,Gondia,Sadak Arjuni,Outposts,
+2021,Gondia,Arjuni Morgaon,Outposts,3
 2021,Gondia,Devari,Outposts,3
+2022,Gondia,Tiroda,Outposts,0
+2022,Gondia,Goregaon,Outposts,0
+2022,Gondia,Gondia,Outposts,0
+2022,Gondia,Aamgaon,Outposts,0
+2022,Gondia,Salekasa,Outposts,4
+2022,Gondia,Sadak Arjuni,Outposts,0
+2022,Gondia,Arjuni Morgaon,Outposts,3
+2022,Gondia,Devari,Outposts,4
+2023,Gondia,Tiroda,Outposts,0
+2023,Gondia,Goregaon,Outposts,0
+2023,Gondia,Gondia,Outposts,0
+2023,Gondia,Aamgaon,Outposts,0
+2023,Gondia,Salekasa,Outposts,4
+2023,Gondia,Sadak Arjuni,Outposts,0
+2023,Gondia,Arjuni Morgaon,Outposts,3
+2023,Gondia,Devari,Outposts,4
+2024,Gondia,Tiroda,Outposts,0
+2024,Gondia,Goregaon,Outposts,0
+2024,Gondia,Gondia,Outposts,0
+2024,Gondia,Aamgaon,Outposts,0
+2024,Gondia,Salekasa,Outposts,4
+2024,Gondia,Sadak Arjuni,Outposts,0
+2024,Gondia,Arjuni Morgaon,Outposts,3
+2024,Gondia,Devari,Outposts,4
 2018,Hingoli,Sengaon,Outposts,1
 2018,Hingoli,Hingoli,Outposts,1
 2018,Hingoli,Aundha Na,Outposts,2
@@ -1735,6 +3139,66 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Hingoli,Aundha Na,Outposts,2
 2021,Hingoli,Kalamanuri,Outposts,3
 2021,Hingoli,Vasamat,Outposts,1
+2022,Hingoli,Sengaon,Outposts,1
+2022,Hingoli,Hingoli,Outposts,1
+2022,Hingoli,Aundha Na,Outposts,2
+2022,Hingoli,Kalamanuri,Outposts,3
+2022,Hingoli,Vasamat,Outposts,1
+2023,Hingoli,Sengaon,Outposts,1
+2023,Hingoli,Hingoli,Outposts,1
+2023,Hingoli,Aundha Na,Outposts,2
+2023,Hingoli,Kalamanuri,Outposts,3
+2023,Hingoli,Vasamat,Outposts,1
+2024,Hingoli,Sengaon,Outposts,1
+2024,Hingoli,Hingoli,Outposts,1
+2024,Hingoli,Aundha Na,Outposts,2
+2024,Hingoli,Kalamanuri,Outposts,3
+2024,Hingoli,Vasamat,Outposts,1
+2022,Jalgaon,Chopda,Outposts,9
+2022,Jalgaon,Yawal,Outposts,3
+2022,Jalgaon,Raver,Outposts,2
+2022,Jalgaon,Muktainagar,Outposts,2
+2022,Jalgaon,Bodwad,Outposts,0
+2022,Jalgaon,Bhusawal,Outposts,2
+2022,Jalgaon,Jalgaon,Outposts,3
+2022,Jalgaon,Erandol,Outposts,0
+2022,Jalgaon,Dharangaon,Outposts,1
+2022,Jalgaon,Amalner,Outposts,1
+2022,Jalgaon,Parola,Outposts,1
+2022,Jalgaon,Bhadgaon,Outposts,1
+2022,Jalgaon,Chalisgaon,Outposts,3
+2022,Jalgaon,Pachora,Outposts,2
+2022,Jalgaon,Jamner,Outposts,4
+2023,Jalgaon,Chopda,Outposts,9
+2023,Jalgaon,Yawal,Outposts,3
+2023,Jalgaon,Raver,Outposts,2
+2023,Jalgaon,Muktainagar,Outposts,2
+2023,Jalgaon,Bodwad,Outposts,0
+2023,Jalgaon,Bhusawal,Outposts,2
+2023,Jalgaon,Jalgaon,Outposts,2
+2023,Jalgaon,Erandol,Outposts,0
+2023,Jalgaon,Dharangaon,Outposts,1
+2023,Jalgaon,Amalner,Outposts,2
+2023,Jalgaon,Parola,Outposts,1
+2023,Jalgaon,Bhadgaon,Outposts,1
+2023,Jalgaon,Chalisgaon,Outposts,2
+2023,Jalgaon,Pachora,Outposts,2
+2023,Jalgaon,Jamner,Outposts,3
+2024,Jalgaon,Chopda,Outposts,9
+2024,Jalgaon,Yawal,Outposts,3
+2024,Jalgaon,Raver,Outposts,2
+2024,Jalgaon,Muktainagar,Outposts,2
+2024,Jalgaon,Bodwad,Outposts,0
+2024,Jalgaon,Bhusawal,Outposts,2
+2024,Jalgaon,Jalgaon,Outposts,3
+2024,Jalgaon,Erandol,Outposts,0
+2024,Jalgaon,Dharangaon,Outposts,1
+2024,Jalgaon,Amalner,Outposts,1
+2024,Jalgaon,Parola,Outposts,1
+2024,Jalgaon,Bhadgaon,Outposts,1
+2024,Jalgaon,Chalisgaon,Outposts,3
+2024,Jalgaon,Pachora,Outposts,2
+2024,Jalgaon,Jamner,Outposts,4
 2018,Jalna,Bhokardan,Outposts,
 2018,Jalna,Jaffrabad,Outposts,
 2018,Jalna,Jalna,Outposts,
@@ -1767,6 +3231,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Jalna,Ghansawangi,Outposts,
 2021,Jalna,Partur,Outposts,1
 2021,Jalna,Mantha,Outposts,1
+2022,Jalna,Bhokardan,Outposts,1
+2022,Jalna,Jaffrabad,Outposts,0
+2022,Jalna,Jalna,Outposts,1
+2022,Jalna,Badnapur,Outposts,1
+2022,Jalna,Ambad,Outposts,3
+2022,Jalna,Ghansawangi,Outposts,2
+2022,Jalna,Partur,Outposts,1
+2022,Jalna,Mantha,Outposts,0
+2023,Jalna,Bhokardan,Outposts,1
+2023,Jalna,Jaffrabad,Outposts,0
+2023,Jalna,Jalna,Outposts,1
+2023,Jalna,Badnapur,Outposts,1
+2023,Jalna,Ambad,Outposts,2
+2023,Jalna,Ghansawangi,Outposts,2
+2023,Jalna,Partur,Outposts,1
+2023,Jalna,Mantha,Outposts,0
+2024,Jalna,Bhokardan,Outposts,1
+2024,Jalna,Jaffrabad,Outposts,0
+2024,Jalna,Jalna,Outposts,1
+2024,Jalna,Badnapur,Outposts,0
+2024,Jalna,Ambad,Outposts,3
+2024,Jalna,Ghansawangi,Outposts,2
+2024,Jalna,Partur,Outposts,1
+2024,Jalna,Mantha,Outposts,1
 2018,Kolhapur,Shahuwadi,Outposts,3
 2018,Kolhapur,Panhala,Outposts,
 2018,Kolhapur,Hatkanangale,Outposts,
@@ -1815,6 +3303,42 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Kolhapur,Ajara,Outposts,2
 2021,Kolhapur,Gadhinglaj,Outposts,1
 2021,Kolhapur,Chandgad,Outposts,1
+2022,Kolhapur,Shahuwadi,Outposts,3
+2022,Kolhapur,Panhala,Outposts,0
+2022,Kolhapur,Hatkanangale,Outposts,0
+2022,Kolhapur,Shirol,Outposts,1
+2022,Kolhapur,Karveer,Outposts,2
+2022,Kolhapur,Gaganbavada,Outposts,1
+2022,Kolhapur,Radhanagari,Outposts,2
+2022,Kolhapur,Kagal,Outposts,2
+2022,Kolhapur,Bhudargad,Outposts,1
+2022,Kolhapur,Ajara,Outposts,2
+2022,Kolhapur,Gadhinglaj,Outposts,1
+2022,Kolhapur,Chandgad,Outposts,1
+2023,Kolhapur,Shahuwadi,Outposts,3
+2023,Kolhapur,Panhala,Outposts,0
+2023,Kolhapur,Hatkanangale,Outposts,0
+2023,Kolhapur,Shirol,Outposts,1
+2023,Kolhapur,Karveer,Outposts,2
+2023,Kolhapur,Gaganbavada,Outposts,1
+2023,Kolhapur,Radhanagari,Outposts,2
+2023,Kolhapur,Kagal,Outposts,2
+2023,Kolhapur,Bhudargad,Outposts,1
+2023,Kolhapur,Ajara,Outposts,2
+2023,Kolhapur,Gadhinglaj,Outposts,1
+2023,Kolhapur,Chandgad,Outposts,1
+2024,Kolhapur,Shahuwadi,Outposts,0
+2024,Kolhapur,Panhala,Outposts,0
+2024,Kolhapur,Hatkanangale,Outposts,0
+2024,Kolhapur,Shirol,Outposts,0
+2024,Kolhapur,Karveer,Outposts,0
+2024,Kolhapur,Gaganbavada,Outposts,0
+2024,Kolhapur,Radhanagari,Outposts,1
+2024,Kolhapur,Kagal,Outposts,2
+2024,Kolhapur,Bhudargad,Outposts,1
+2024,Kolhapur,Ajara,Outposts,2
+2024,Kolhapur,Gadhinglaj,Outposts,1
+2024,Kolhapur,Chandgad,Outposts,2
 2018,Latur,Latur,Outposts,2
 2018,Latur,Renapur,Outposts,1
 2018,Latur,Ahamadpur,Outposts,4
@@ -1855,22 +3379,64 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Latur,Nilanga,Outposts,2
 2021,Latur,Devani,Outposts,1
 2021,Latur,Udgir,Outposts,1
+2022,Latur,Latur,Outposts,2
+2022,Latur,Renapur,Outposts,1
+2022,Latur,Ahamadpur,Outposts,2
+2022,Latur,Jalkot,Outposts,0
+2022,Latur,Chakur,Outposts,1
+2022,Latur,Shirur-Anantpal,Outposts,1
+2022,Latur,Aosa,Outposts,2
+2022,Latur,Nilanga,Outposts,1
+2022,Latur,Devani,Outposts,1
+2022,Latur,Udgir,Outposts,3
+2023,Latur,Latur,Outposts,2
+2023,Latur,Renapur,Outposts,1
+2023,Latur,Ahamadpur,Outposts,2
+2023,Latur,Jalkot,Outposts,0
+2023,Latur,Chakur,Outposts,1
+2023,Latur,Shirur-Anantpal,Outposts,1
+2023,Latur,Aosa,Outposts,2
+2023,Latur,Nilanga,Outposts,1
+2023,Latur,Devani,Outposts,1
+2023,Latur,Udgir,Outposts,1
+2024,Latur,Latur,Outposts,2
+2024,Latur,Renapur,Outposts,1
+2024,Latur,Ahamadpur,Outposts,2
+2024,Latur,Jalkot,Outposts,0
+2024,Latur,Chakur,Outposts,1
+2024,Latur,Shirur-Anantpal,Outposts,1
+2024,Latur,Aosa,Outposts,2
+2024,Latur,Nilanga,Outposts,1
+2024,Latur,Devani,Outposts,1
+2024,Latur,Udgir,Outposts,3
 2018,Mumbai,Mumbai City,Outposts,
 2019,Mumbai,Mumbai City,Outposts,
 2020,Mumbai,Mumbai City,Outposts,
 2021,Mumbai,Mumbai City,Outposts,
-2018,Mumbai Suburban,Adheri,Outposts,
+2022,Mumbai,Mumbai City,Outposts,0
+2023,Mumbai,Mumbai City,Outposts,1
+2024,Mumbai,Mumbai City,Outposts,0
+2018,Mumbai Suburban,Andheri,Outposts,
 2018,Mumbai Suburban,Borivali,Outposts,
 2018,Mumbai Suburban,Kurla,Outposts,
-2019,Mumbai Suburban,Adheri,Outposts,
+2019,Mumbai Suburban,Andheri,Outposts,
 2019,Mumbai Suburban,Borivali,Outposts,
 2019,Mumbai Suburban,Kurla,Outposts,
-2020,Mumbai Suburban,Adheri,Outposts,
+2020,Mumbai Suburban,Andheri,Outposts,
 2020,Mumbai Suburban,Borivali,Outposts,
 2020,Mumbai Suburban,Kurla,Outposts,
-2021,Mumbai Suburban,Adheri,Outposts,
+2021,Mumbai Suburban,Andheri,Outposts,
 2021,Mumbai Suburban,Borivali,Outposts,
 2021,Mumbai Suburban,Kurla,Outposts,
+2022,Mumbai Suburban,Andheri,Outposts,
+2022,Mumbai Suburban,Borivali,Outposts,
+2022,Mumbai Suburban,Kurla,Outposts,
+2023,Mumbai Suburban,Andheri,Outposts,
+2023,Mumbai Suburban,Borivali,Outposts,
+2023,Mumbai Suburban,Kurla,Outposts,
+2024,Mumbai Suburban,Andheri,Outposts,
+2024,Mumbai Suburban,Borivali,Outposts,
+2024,Mumbai Suburban,Kurla,Outposts,
 2018,Nagpur,Narkhed,Outposts,3
 2018,Nagpur,Katol,Outposts,
 2018,Nagpur,Kalameshwar,Outposts,1
@@ -1927,6 +3493,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nagpur,Umred,Outposts,2
 2021,Nagpur,Kuhi,Outposts,1
 2021,Nagpur,Bhiwapur,Outposts,1
+2022,Nagpur,Narkhed,Outposts,3
+2022,Nagpur,Katol,Outposts,0
+2022,Nagpur,Kalameshwar,Outposts,1
+2022,Nagpur,Sawner,Outposts,2
+2022,Nagpur,Parashivani,Outposts,1
+2022,Nagpur,Ramtech,Outposts,2
+2022,Nagpur,Mauda,Outposts,0
+2022,Nagpur,Kamathi,Outposts,0
+2022,Nagpur,Nagpur (Sh),Outposts,0
+2022,Nagpur,Nagpur (Gra),Outposts,0
+2022,Nagpur,Hingana,Outposts,1
+2022,Nagpur,Umred,Outposts,2
+2022,Nagpur,Kuhi,Outposts,1
+2022,Nagpur,Bhiwapur,Outposts,1
+2023,Nagpur,Narkhed,Outposts,3
+2023,Nagpur,Katol,Outposts,0
+2023,Nagpur,Kalameshwar,Outposts,1
+2023,Nagpur,Sawner,Outposts,3
+2023,Nagpur,Parashivani,Outposts,1
+2023,Nagpur,Ramtech,Outposts,2
+2023,Nagpur,Mauda,Outposts,1
+2023,Nagpur,Kamathi,Outposts,0
+2023,Nagpur,Nagpur (Sh),Outposts,0
+2023,Nagpur,Nagpur (Gra),Outposts,0
+2023,Nagpur,Hingana,Outposts,1
+2023,Nagpur,Umred,Outposts,2
+2023,Nagpur,Kuhi,Outposts,1
+2023,Nagpur,Bhiwapur,Outposts,1
+2024,Nagpur,Narkhed,Outposts,3
+2024,Nagpur,Katol,Outposts,0
+2024,Nagpur,Kalameshwar,Outposts,1
+2024,Nagpur,Sawner,Outposts,3
+2024,Nagpur,Parashivani,Outposts,1
+2024,Nagpur,Ramtech,Outposts,2
+2024,Nagpur,Mauda,Outposts,1
+2024,Nagpur,Kamathi,Outposts,0
+2024,Nagpur,Nagpur (Sh),Outposts,0
+2024,Nagpur,Nagpur (Gra),Outposts,0
+2024,Nagpur,Hingana,Outposts,1
+2024,Nagpur,Umred,Outposts,2
+2024,Nagpur,Kuhi,Outposts,1
+2024,Nagpur,Bhiwapur,Outposts,1
 2018,Nanded,Mahur,Outposts,
 2018,Nanded,Kinvat,Outposts,1
 2018,Nanded,Himalay Nagar,Outposts,
@@ -1991,6 +3599,54 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nanded,Kandhar,Outposts,4
 2021,Nanded,Mukhed,Outposts,2
 2021,Nanded,Deglur,Outposts,3
+2022,Nanded,Mahur,Outposts,0
+2022,Nanded,Kinvat,Outposts,1
+2022,Nanded,Himalay Nagar,Outposts,0
+2022,Nanded,Hadgaon,Outposts,1
+2022,Nanded,Andhrapur,Outposts,0
+2022,Nanded,Nanded,Outposts,2
+2022,Nanded,Mudkhed,Outposts,0
+2022,Nanded,Bhokar,Outposts,2
+2022,Nanded,Umari,Outposts,1
+2022,Nanded,Dharmabad,Outposts,1
+2022,Nanded,Biloli,Outposts,1
+2022,Nanded,Naygaon,Outposts,3
+2022,Nanded,Loha,Outposts,0
+2022,Nanded,Kandhar,Outposts,4
+2022,Nanded,Mukhed,Outposts,1
+2022,Nanded,Deglur,Outposts,4
+2023,Nanded,Mahur,Outposts,0
+2023,Nanded,Kinvat,Outposts,1
+2023,Nanded,Himalay Nagar,Outposts,0
+2023,Nanded,Hadgaon,Outposts,2
+2023,Nanded,Andhrapur,Outposts,1
+2023,Nanded,Nanded,Outposts,1
+2023,Nanded,Mudkhed,Outposts,1
+2023,Nanded,Bhokar,Outposts,1
+2023,Nanded,Umari,Outposts,1
+2023,Nanded,Dharmabad,Outposts,1
+2023,Nanded,Biloli,Outposts,3
+2023,Nanded,Naygaon,Outposts,1
+2023,Nanded,Loha,Outposts,2
+2023,Nanded,Kandhar,Outposts,2
+2023,Nanded,Mukhed,Outposts,2
+2023,Nanded,Deglur,Outposts,3
+2024,Nanded,Mahur,Outposts,0
+2024,Nanded,Kinvat,Outposts,1
+2024,Nanded,Himalay Nagar,Outposts,0
+2024,Nanded,Hadgaon,Outposts,1
+2024,Nanded,Andhrapur,Outposts,1
+2024,Nanded,Nanded,Outposts,2
+2024,Nanded,Mudkhed,Outposts,1
+2024,Nanded,Bhokar,Outposts,1
+2024,Nanded,Umari,Outposts,1
+2024,Nanded,Dharmabad,Outposts,1
+2024,Nanded,Biloli,Outposts,1
+2024,Nanded,Naygaon,Outposts,3
+2024,Nanded,Loha,Outposts,2
+2024,Nanded,Kandhar,Outposts,2
+2024,Nanded,Mukhed,Outposts,2
+2024,Nanded,Deglur,Outposts,3
 2018,Nandurbar,Akkalkuva,Outposts,1
 2018,Nandurbar,Akrani,Outposts,3
 2018,Nandurbar,Taloda,Outposts,3
@@ -2015,6 +3671,24 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nandurbar,Shahada,Outposts,
 2021,Nandurbar,Nandurbar,Outposts,
 2021,Nandurbar,Navapur,Outposts,
+2022,Nandurbar,Akkalkuva,Outposts,4
+2022,Nandurbar,Akrani,Outposts,3
+2022,Nandurbar,Taloda,Outposts,3
+2022,Nandurbar,Shahada,Outposts,5
+2022,Nandurbar,Nandurbar,Outposts,4
+2022,Nandurbar,Navapur,Outposts,4
+2023,Nandurbar,Akkalkuva,Outposts,4
+2023,Nandurbar,Akrani,Outposts,3
+2023,Nandurbar,Taloda,Outposts,3
+2023,Nandurbar,Shahada,Outposts,5
+2023,Nandurbar,Nandurbar,Outposts,4
+2023,Nandurbar,Navapur,Outposts,4
+2024,Nandurbar,Akkalkuva,Outposts,4
+2024,Nandurbar,Akrani,Outposts,3
+2024,Nandurbar,Taloda,Outposts,3
+2024,Nandurbar,Shahada,Outposts,5
+2024,Nandurbar,Nandurbar,Outposts,4
+2024,Nandurbar,Navapur,Outposts,4
 2018,Nashik,Surgana,Outposts,2
 2018,Nashik,Kalwan,Outposts,1
 2018,Nashik,Devala,Outposts,
@@ -2075,6 +3749,51 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nashik,Sinner,Outposts,2
 2021,Nashik,Nifad,Outposts,2
 2021,Nashik,Yewala,Outposts,3
+2022,Nashik,Surgana,Outposts,2
+2022,Nashik,Kalwan,Outposts,1
+2022,Nashik,Devala,Outposts,0
+2022,Nashik,Baglan,Outposts,5
+2022,Nashik,Malegaon,Outposts,6
+2022,Nashik,Nandgaon,Outposts,2
+2022,Nashik,Chandwad,Outposts,2
+2022,Nashik,Dindori,Outposts,4
+2022,Nashik,Peth,Outposts,1
+2022,Nashik,Trimbak,Outposts,0
+2022,Nashik,Nashik,Outposts,1
+2022,Nashik,Igatpuri,Outposts,6
+2022,Nashik,Sinner,Outposts,2
+2022,Nashik,Nifad,Outposts,2
+2022,Nashik,Yewala,Outposts,3
+2023,Nashik,Surgana,Outposts,2
+2023,Nashik,Kalwan,Outposts,1
+2023,Nashik,Devala,Outposts,0
+2023,Nashik,Baglan,Outposts,4
+2023,Nashik,Malegaon,Outposts,6
+2023,Nashik,Nandgaon,Outposts,2
+2023,Nashik,Chandwad,Outposts,2
+2023,Nashik,Dindori,Outposts,3
+2023,Nashik,Peth,Outposts,1
+2023,Nashik,Trimbak,Outposts,0
+2023,Nashik,Nashik,Outposts,1
+2023,Nashik,Igatpuri,Outposts,4
+2023,Nashik,Sinner,Outposts,2
+2023,Nashik,Nifad,Outposts,3
+2023,Nashik,Yewala,Outposts,3
+2024,Nashik,Surgana,Outposts,2
+2024,Nashik,Kalwan,Outposts,1
+2024,Nashik,Devala,Outposts,0
+2024,Nashik,Baglan,Outposts,5
+2024,Nashik,Malegaon,Outposts,6
+2024,Nashik,Nandgaon,Outposts,2
+2024,Nashik,Chandwad,Outposts,1
+2024,Nashik,Dindori,Outposts,4
+2024,Nashik,Peth,Outposts,1
+2024,Nashik,Trimbak,Outposts,0
+2024,Nashik,Nashik,Outposts,0
+2024,Nashik,Igatpuri,Outposts,3
+2024,Nashik,Sinner,Outposts,2
+2024,Nashik,Nifad,Outposts,1
+2024,Nashik,Yewala,Outposts,3
 2018,Dharashiv,Paranda,Outposts,2
 2018,Dharashiv,Bhum,Outposts,1
 2018,Dharashiv,Washi,Outposts,2
@@ -2107,6 +3826,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Dharashiv,Tuljapur,Outposts,2
 2021,Dharashiv,Lohara,Outposts,1
 2021,Dharashiv,Umaraga,Outposts,3
+2022,Dharashiv,Paranda,Outposts,2
+2022,Dharashiv,Bhum,Outposts,1
+2022,Dharashiv,Washi,Outposts,2
+2022,Dharashiv,Kalamb,Outposts,0
+2022,Dharashiv,Dharashiv,Outposts,3
+2022,Dharashiv,Tuljapur,Outposts,2
+2022,Dharashiv,Lohara,Outposts,1
+2022,Dharashiv,Umaraga,Outposts,3
+2023,Dharashiv,Paranda,Outposts,1
+2023,Dharashiv,Bhum,Outposts,2
+2023,Dharashiv,Washi,Outposts,2
+2023,Dharashiv,Kalamb,Outposts,0
+2023,Dharashiv,Dharashiv,Outposts,3
+2023,Dharashiv,Tuljapur,Outposts,2
+2023,Dharashiv,Lohara,Outposts,1
+2023,Dharashiv,Umaraga,Outposts,3
+2024,Dharashiv,Paranda,Outposts,1
+2024,Dharashiv,Bhum,Outposts,2
+2024,Dharashiv,Washi,Outposts,2
+2024,Dharashiv,Kalamb,Outposts,0
+2024,Dharashiv,Dharashiv,Outposts,3
+2024,Dharashiv,Tuljapur,Outposts,2
+2024,Dharashiv,Lohara,Outposts,1
+2024,Dharashiv,Umaraga,Outposts,3
 2018,Palghar,Talasari,Outposts,2
 2018,Palghar,Dahanu,Outposts,4
 2018,Palghar,Vikramgad,Outposts,1
@@ -2139,6 +3882,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Palghar,Wada,Outposts,4
 2021,Palghar,Palghar,Outposts,1
 2021,Palghar,Vasai,Outposts,
+2022,Palghar,Talasari,Outposts,2
+2022,Palghar,Dahanu,Outposts,4
+2022,Palghar,Vikramgad,Outposts,1
+2022,Palghar,Javhar,Outposts,1
+2022,Palghar,Mokhada,Outposts,1
+2022,Palghar,Wada,Outposts,4
+2022,Palghar,Palghar,Outposts,1
+2022,Palghar,Vasai,Outposts,0
+2023,Palghar,Talasari,Outposts,2
+2023,Palghar,Dahanu,Outposts,4
+2023,Palghar,Vikramgad,Outposts,1
+2023,Palghar,Javhar,Outposts,1
+2023,Palghar,Mokhada,Outposts,1
+2023,Palghar,Wada,Outposts,4
+2023,Palghar,Palghar,Outposts,1
+2023,Palghar,Vasai,Outposts,0
+2024,Palghar,Talasari,Outposts,2
+2024,Palghar,Dahanu,Outposts,3
+2024,Palghar,Vikramgad,Outposts,1
+2024,Palghar,Javhar,Outposts,1
+2024,Palghar,Mokhada,Outposts,1
+2024,Palghar,Wada,Outposts,4
+2024,Palghar,Palghar,Outposts,6
+2024,Palghar,Vasai,Outposts,0
 2018,Parbhani,Selu,Outposts,1
 2018,Parbhani,Jintur,Outposts,1
 2018,Parbhani,Parbhani,Outposts,1
@@ -2175,6 +3942,33 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Parbhani,Gangakhed,Outposts,2
 2021,Parbhani,Palam,Outposts,1
 2021,Parbhani,Purna,Outposts,1
+2022,Parbhani,Selu,Outposts,1
+2022,Parbhani,Jintur,Outposts,1
+2022,Parbhani,Parbhani,Outposts,1
+2022,Parbhani,Manvat,Outposts,0
+2022,Parbhani,Pathari,Outposts,1
+2022,Parbhani,Sonpeth,Outposts,0
+2022,Parbhani,Gangakhed,Outposts,2
+2022,Parbhani,Palam,Outposts,1
+2022,Parbhani,Purna,Outposts,1
+2023,Parbhani,Selu,Outposts,1
+2023,Parbhani,Jintur,Outposts,1
+2023,Parbhani,Parbhani,Outposts,1
+2023,Parbhani,Manvat,Outposts,0
+2023,Parbhani,Pathari,Outposts,1
+2023,Parbhani,Sonpeth,Outposts,0
+2023,Parbhani,Gangakhed,Outposts,2
+2023,Parbhani,Palam,Outposts,1
+2023,Parbhani,Purna,Outposts,1
+2024,Parbhani,Selu,Outposts,1
+2024,Parbhani,Jintur,Outposts,1
+2024,Parbhani,Parbhani,Outposts,1
+2024,Parbhani,Manvat,Outposts,0
+2024,Parbhani,Pathari,Outposts,1
+2024,Parbhani,Sonpeth,Outposts,0
+2024,Parbhani,Gangakhed,Outposts,2
+2024,Parbhani,Palam,Outposts,1
+2024,Parbhani,Purna,Outposts,1
 2018,Pune,Junnar,Outposts,6
 2018,Pune,Aambegaon,Outposts,4
 2018,Pune,Shirur,Outposts,
@@ -2231,6 +4025,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Pune,Bhor,Outposts,2
 2021,Pune,Baramati,Outposts,
 2021,Pune,Indapur,Outposts,
+2022,Pune,Junnar,Outposts,6
+2022,Pune,Aambegaon,Outposts,3
+2022,Pune,Shirur,Outposts,1
+2022,Pune,Khed,Outposts,2
+2022,Pune,Maval,Outposts,1
+2022,Pune,Mulashi,Outposts,0
+2022,Pune,Haveli,Outposts,2
+2022,Pune,Pune City,Outposts,0
+2022,Pune,Daund,Outposts,1
+2022,Pune,Purandar,Outposts,3
+2022,Pune,Welhe,Outposts,0
+2022,Pune,Bhor,Outposts,5
+2022,Pune,Baramati,Outposts,4
+2022,Pune,Indapur,Outposts,2
+2023,Pune,Junnar,Outposts,6
+2023,Pune,Aambegaon,Outposts,3
+2023,Pune,Shirur,Outposts,1
+2023,Pune,Khed,Outposts,2
+2023,Pune,Maval,Outposts,1
+2023,Pune,Mulashi,Outposts,0
+2023,Pune,Haveli,Outposts,2
+2023,Pune,Pune City,Outposts,0
+2023,Pune,Daund,Outposts,1
+2023,Pune,Purandar,Outposts,3
+2023,Pune,Welhe,Outposts,3
+2023,Pune,Bhor,Outposts,5
+2023,Pune,Baramati,Outposts,4
+2023,Pune,Indapur,Outposts,2
+2024,Pune,Junnar,Outposts,6
+2024,Pune,Aambegaon,Outposts,3
+2024,Pune,Shirur,Outposts,4
+2024,Pune,Khed,Outposts,2
+2024,Pune,Maval,Outposts,2
+2024,Pune,Mulashi,Outposts,2
+2024,Pune,Haveli,Outposts,2
+2024,Pune,Pune City,Outposts,0
+2024,Pune,Daund,Outposts,3
+2024,Pune,Purandar,Outposts,3
+2024,Pune,Welhe,Outposts,3
+2024,Pune,Bhor,Outposts,5
+2024,Pune,Baramati,Outposts,2
+2024,Pune,Indapur,Outposts,2
 2018,Raigad,Uran,Outposts,3
 2018,Raigad,Panwel,Outposts,
 2018,Raigad,Karjat,Outposts,2
@@ -2291,6 +4127,36 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Raigad,Mhasala,Outposts,1
 2021,Raigad,Mahad,Outposts,3
 2021,Raigad,Poladpur,Outposts,
+2023,Raigad,Uran,Outposts,3
+2023,Raigad,Panwel,Outposts,0
+2023,Raigad,Karjat,Outposts,2
+2023,Raigad,Khalapur,Outposts,2
+2023,Raigad,Pen,Outposts,1
+2023,Raigad,Alibag,Outposts,2
+2023,Raigad,Murud,Outposts,0
+2023,Raigad,Roha,Outposts,2
+2023,Raigad,Sudhagad,Outposts,1
+2023,Raigad,Mangaon,Outposts,3
+2023,Raigad,Tala,Outposts,0
+2023,Raigad,Shreevardhan,Outposts,0
+2023,Raigad,Mhasala,Outposts,1
+2023,Raigad,Mahad,Outposts,2
+2023,Raigad,Poladpur,Outposts,0
+2024,Raigad,Uran,Outposts,2
+2024,Raigad,Panwel,Outposts,2
+2024,Raigad,Karjat,Outposts,2
+2024,Raigad,Khalapur,Outposts,2
+2024,Raigad,Pen,Outposts,1
+2024,Raigad,Alibag,Outposts,2
+2024,Raigad,Murud,Outposts,0
+2024,Raigad,Roha,Outposts,2
+2024,Raigad,Sudhagad,Outposts,1
+2024,Raigad,Mangaon,Outposts,3
+2024,Raigad,Tala,Outposts,0
+2024,Raigad,Shreevardhan,Outposts,0
+2024,Raigad,Mhasala,Outposts,1
+2024,Raigad,Mahad,Outposts,2
+2024,Raigad,Poladpur,Outposts,0
 2018,Ratnagiri,Mandangad,Outposts,2
 2018,Ratnagiri,Dapoli,Outposts,6
 2018,Ratnagiri,Khed,Outposts,3
@@ -2327,6 +4193,33 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Ratnagiri,Sangameshwar,Outposts,3
 2021,Ratnagiri,Lanja,Outposts,2
 2021,Ratnagiri,Rajapur,Outposts,3
+2022,Ratnagiri,Mandangad,Outposts,1
+2022,Ratnagiri,Dapoli,Outposts,6
+2022,Ratnagiri,Khed,Outposts,3
+2022,Ratnagiri,Chiplun,Outposts,4
+2022,Ratnagiri,Guhagar,Outposts,0
+2022,Ratnagiri,Ratnagiri,Outposts,4
+2022,Ratnagiri,Sangameshwar,Outposts,3
+2022,Ratnagiri,Lanja,Outposts,2
+2022,Ratnagiri,Rajapur,Outposts,3
+2023,Ratnagiri,Mandangad,Outposts,2
+2023,Ratnagiri,Dapoli,Outposts,6
+2023,Ratnagiri,Khed,Outposts,3
+2023,Ratnagiri,Chiplun,Outposts,4
+2023,Ratnagiri,Guhagar,Outposts,0
+2023,Ratnagiri,Ratnagiri,Outposts,4
+2023,Ratnagiri,Sangameshwar,Outposts,2
+2023,Ratnagiri,Lanja,Outposts,1
+2023,Ratnagiri,Rajapur,Outposts,3
+2024,Ratnagiri,Mandangad,Outposts,2
+2024,Ratnagiri,Dapoli,Outposts,6
+2024,Ratnagiri,Khed,Outposts,3
+2024,Ratnagiri,Chiplun,Outposts,4
+2024,Ratnagiri,Guhagar,Outposts,1
+2024,Ratnagiri,Ratnagiri,Outposts,6
+2024,Ratnagiri,Sangameshwar,Outposts,3
+2024,Ratnagiri,Lanja,Outposts,1
+2024,Ratnagiri,Rajapur,Outposts,4
 2018,Sangli,Shirala,Outposts,2
 2018,Sangli,Valava,Outposts,4
 2018,Sangli,Palus,Outposts,1
@@ -2367,6 +4260,36 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Sangli,Miraj,Outposts,4
 2021,Sangli,Ku. Mahakal,Outposts,2
 2021,Sangli,Jat,Outposts,5
+2022,Sangli,Shirala,Outposts,2
+2022,Sangli,Valava,Outposts,3
+2022,Sangli,Palus,Outposts,1
+2022,Sangli,Kadegaon,Outposts,3
+2022,Sangli,Khanapur,Outposts,1
+2022,Sangli,Aatpadi,Outposts,3
+2022,Sangli,Tasgaon,Outposts,3
+2022,Sangli,Miraj,Outposts,4
+2022,Sangli,Ku. Mahakal,Outposts,2
+2022,Sangli,Jat,Outposts,5
+2023,Sangli,Shirala,Outposts,2
+2023,Sangli,Valava,Outposts,3
+2023,Sangli,Palus,Outposts,1
+2023,Sangli,Kadegaon,Outposts,3
+2023,Sangli,Khanapur,Outposts,1
+2023,Sangli,Aatpadi,Outposts,3
+2023,Sangli,Tasgaon,Outposts,3
+2023,Sangli,Miraj,Outposts,4
+2023,Sangli,Ku. Mahakal,Outposts,2
+2023,Sangli,Jat,Outposts,5
+2024,Sangli,Shirala,Outposts,2
+2024,Sangli,Valava,Outposts,4
+2024,Sangli,Palus,Outposts,0
+2024,Sangli,Kadegaon,Outposts,3
+2024,Sangli,Khanapur,Outposts,1
+2024,Sangli,Aatpadi,Outposts,3
+2024,Sangli,Tasgaon,Outposts,3
+2024,Sangli,Miraj,Outposts,0
+2024,Sangli,Ku. Mahakal,Outposts,2
+2024,Sangli,Jat,Outposts,6
 2018,Satara,Mahableshwar,Outposts,1
 2018,Satara,Vai,Outposts,
 2018,Satara,Khandala,Outposts,1
@@ -2411,6 +4334,39 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Satara,Javali,Outposts,2
 2021,Satara,Patan,Outposts,2
 2021,Satara,Karad,Outposts,8
+2022,Satara,Mahableshwar,Outposts,2
+2022,Satara,Vai,Outposts,0
+2022,Satara,Khandala,Outposts,1
+2022,Satara,Faltan,Outposts,3
+2022,Satara,Man,Outposts,1
+2022,Satara,Khatav,Outposts,2
+2022,Satara,Koregaon,Outposts,1
+2022,Satara,Satara,Outposts,4
+2022,Satara,Javali,Outposts,2
+2022,Satara,Patan,Outposts,2
+2022,Satara,Karad,Outposts,8
+2023,Satara,Mahableshwar,Outposts,2
+2023,Satara,Vai,Outposts,0
+2023,Satara,Khandala,Outposts,1
+2023,Satara,Faltan,Outposts,3
+2023,Satara,Man,Outposts,1
+2023,Satara,Khatav,Outposts,2
+2023,Satara,Koregaon,Outposts,1
+2023,Satara,Satara,Outposts,4
+2023,Satara,Javali,Outposts,2
+2023,Satara,Patan,Outposts,2
+2023,Satara,Karad,Outposts,8
+2024,Satara,Mahableshwar,Outposts,0
+2024,Satara,Vai,Outposts,1
+2024,Satara,Khandala,Outposts,3
+2024,Satara,Faltan,Outposts,2
+2024,Satara,Man,Outposts,2
+2024,Satara,Khatav,Outposts,1
+2024,Satara,Koregaon,Outposts,5
+2024,Satara,Satara,Outposts,2
+2024,Satara,Javali,Outposts,2
+2024,Satara,Patan,Outposts,7
+2024,Satara,Karad,Outposts,2
 2018,Sindhudurg,Devgad,Outposts,3
 2018,Sindhudurg,Vaibhavwadi,Outposts,1
 2018,Sindhudurg,Kankavali,Outposts,4
@@ -2421,28 +4377,85 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2018,Sindhudurg,Dodamarg,Outposts,2
 2019,Sindhudurg,Devgad,Outposts,3
 2019,Sindhudurg,Vaibhavwadi,Outposts,1
-2019,Sindhudurg,Kankawali,Outposts,4
-2019,Sindhudurg,Malwan,Outposts,3
-2019,Sindhudurg,Vengurli,Outposts,3
-2019,Sindhudurg,Kulad,Outposts,3
-2019,Sindhudurg,Savantwadi,Outposts,3
+2019,Sindhudurg,Kankavali,Outposts,4
+2019,Sindhudurg,Malvan,Outposts,3
+2019,Sindhudurg,Vengurla,Outposts,3
+2019,Sindhudurg,Kudal,Outposts,3
+2019,Sindhudurg,Sawantwadi,Outposts,3
 2019,Sindhudurg,Dodamarg,Outposts,3
 2020,Sindhudurg,Devgad,Outposts,3
 2020,Sindhudurg,Vaibhavwadi,Outposts,1
-2020,Sindhudurg,Kankawali,Outposts,4
-2020,Sindhudurg,Malwan,Outposts,3
-2020,Sindhudurg,Vengurli,Outposts,3
-2020,Sindhudurg,Kulad,Outposts,3
-2020,Sindhudurg,Savantwadi,Outposts,3
+2020,Sindhudurg,Kankavali,Outposts,4
+2020,Sindhudurg,Malvan,Outposts,3
+2020,Sindhudurg,Vengurla,Outposts,3
+2020,Sindhudurg,Kudal,Outposts,3
+2020,Sindhudurg,Sawantwadi,Outposts,3
 2020,Sindhudurg,Dodamarg,Outposts,3
 2021,Sindhudurg,Devgad,Outposts,3
 2021,Sindhudurg,Vaibhavwadi,Outposts,1
-2021,Sindhudurg,Kankawali,Outposts,4
-2021,Sindhudurg,Malwan,Outposts,3
-2021,Sindhudurg,Vengurli,Outposts,2
-2021,Sindhudurg,Kulad,Outposts,4
-2021,Sindhudurg,Savantwadi,Outposts,3
+2021,Sindhudurg,Kankavali,Outposts,4
+2021,Sindhudurg,Malvan,Outposts,3
+2021,Sindhudurg,Vengurla,Outposts,2
+2021,Sindhudurg,Kudal,Outposts,4
+2021,Sindhudurg,Sawantwadi,Outposts,3
 2021,Sindhudurg,Dodamarg,Outposts,3
+2022,Sindhudurg,Devgad,Outposts,3
+2022,Sindhudurg,Vaibhavwadi,Outposts,1
+2022,Sindhudurg,Kankavali,Outposts,4
+2022,Sindhudurg,Malvan,Outposts,3
+2022,Sindhudurg,Vengurla,Outposts,2
+2022,Sindhudurg,Kudal,Outposts,2
+2022,Sindhudurg,Sawantwadi,Outposts,3
+2022,Sindhudurg,Dodamarg,Outposts,2
+2023,Sindhudurg,Devgad,Outposts,3
+2023,Sindhudurg,Vaibhavwadi,Outposts,1
+2023,Sindhudurg,Kankavali,Outposts,4
+2023,Sindhudurg,Malvan,Outposts,3
+2023,Sindhudurg,Vengurla,Outposts,2
+2023,Sindhudurg,Kudal,Outposts,2
+2023,Sindhudurg,Sawantwadi,Outposts,3
+2023,Sindhudurg,Dodamarg,Outposts,2
+2024,Sindhudurg,Devgad,Outposts,3
+2024,Sindhudurg,Vaibhavwadi,Outposts,1
+2024,Sindhudurg,Kankavali,Outposts,4
+2024,Sindhudurg,Malvan,Outposts,3
+2024,Sindhudurg,Vengurla,Outposts,2
+2024,Sindhudurg,Kudal,Outposts,3
+2024,Sindhudurg,Sawantwadi,Outposts,3
+2024,Sindhudurg,Dodamarg,Outposts,2
+2022,Solapur,Karmala,Outposts,3
+2022,Solapur,Madha,Outposts,2
+2022,Solapur,Barshi,Outposts,4
+2022,Solapur,North Solapur,Outposts,5
+2022,Solapur,Mohol,Outposts,2
+2022,Solapur,Pandharpur,Outposts,4
+2022,Solapur,Malshiras,Outposts,2
+2022,Solapur,Sangole,Outposts,1
+2022,Solapur,Mangalwedha,Outposts,4
+2022,Solapur,South Solapur,Outposts,3
+2022,Solapur,Akkalkot,Outposts,6
+2023,Solapur,Karmala,Outposts,4
+2023,Solapur,Madha,Outposts,2
+2023,Solapur,Barshi,Outposts,4
+2023,Solapur,North Solapur,Outposts,5
+2023,Solapur,Mohol,Outposts,2
+2023,Solapur,Pandharpur,Outposts,4
+2023,Solapur,Malshiras,Outposts,1
+2023,Solapur,Sangole,Outposts,1
+2023,Solapur,Mangalwedha,Outposts,4
+2023,Solapur,South Solapur,Outposts,3
+2023,Solapur,Akkalkot,Outposts,7
+2024,Solapur,Karmala,Outposts,4
+2024,Solapur,Madha,Outposts,2
+2024,Solapur,Barshi,Outposts,4
+2024,Solapur,North Solapur,Outposts,5
+2024,Solapur,Mohol,Outposts,2
+2024,Solapur,Pandharpur,Outposts,4
+2024,Solapur,Malshiras,Outposts,1
+2024,Solapur,Sangole,Outposts,1
+2024,Solapur,Mangalwedha,Outposts,4
+2024,Solapur,South Solapur,Outposts,2
+2024,Solapur,Akkalkot,Outposts,7
 2018,Thane,Thane,Outposts,5
 2018,Thane,Bhivandi,Outposts,3
 2018,Thane,Shahapur,Outposts,5
@@ -2471,6 +4484,27 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Thane,Ulhasnagar,Outposts,1
 2021,Thane,Ambarnath,Outposts,
 2021,Thane,Murbad,Outposts,3
+2022,Thane,Thane,Outposts,4
+2022,Thane,Bhivandi,Outposts,2
+2022,Thane,Shahapur,Outposts,2
+2022,Thane,Kalyan,Outposts,0
+2022,Thane,Ulhasnagar,Outposts,0
+2022,Thane,Ambarnath,Outposts,0
+2022,Thane,Murbad,Outposts,3
+2023,Thane,Thane,Outposts,4
+2023,Thane,Bhivandi,Outposts,1
+2023,Thane,Shahapur,Outposts,1
+2023,Thane,Kalyan,Outposts,0
+2023,Thane,Ulhasnagar,Outposts,0
+2023,Thane,Ambarnath,Outposts,0
+2023,Thane,Murbad,Outposts,1
+2024,Thane,Thane,Outposts,0
+2024,Thane,Bhivandi,Outposts,1
+2024,Thane,Shahapur,Outposts,1
+2024,Thane,Kalyan,Outposts,0
+2024,Thane,Ulhasnagar,Outposts,0
+2024,Thane,Ambarnath,Outposts,0
+2024,Thane,Murbad,Outposts,1
 2018,Wardha,Ashti,Outposts,
 2018,Wardha,Karanja,Outposts,
 2018,Wardha,Aarvi,Outposts,
@@ -2503,6 +4537,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Wardha,Devali,Outposts,4
 2021,Wardha,Hinganghat,Outposts,
 2021,Wardha,Samudrapur,Outposts,
+2022,Wardha,Ashti,Outposts,0
+2022,Wardha,Karanja,Outposts,0
+2022,Wardha,Aarvi,Outposts,1
+2022,Wardha,Selu,Outposts,0
+2022,Wardha,Wardha,Outposts,0
+2022,Wardha,Devali,Outposts,3
+2022,Wardha,Hinganghat,Outposts,0
+2022,Wardha,Samudrapur,Outposts,0
+2023,Wardha,Ashti,Outposts,0
+2023,Wardha,Karanja,Outposts,0
+2023,Wardha,Aarvi,Outposts,1
+2023,Wardha,Selu,Outposts,0
+2023,Wardha,Wardha,Outposts,0
+2023,Wardha,Devali,Outposts,4
+2023,Wardha,Hinganghat,Outposts,0
+2023,Wardha,Samudrapur,Outposts,0
+2024,Wardha,Ashti,Outposts,0
+2024,Wardha,Karanja,Outposts,0
+2024,Wardha,Aarvi,Outposts,1
+2024,Wardha,Selu,Outposts,0
+2024,Wardha,Wardha,Outposts,0
+2024,Wardha,Devali,Outposts,4
+2024,Wardha,Hinganghat,Outposts,0
+2024,Wardha,Samudrapur,Outposts,0
 2018,Washim,Malegaon,Outposts,
 2018,Washim,Mangrulpir,Outposts,
 2018,Washim,Karanja,Outposts,
@@ -2527,6 +4585,24 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Washim,Manora,Outposts,
 2021,Washim,Washim,Outposts,2
 2021,Washim,Resod,Outposts,
+2022,Washim,Malegaon,Outposts,3
+2022,Washim,Mangrulpir,Outposts,2
+2022,Washim,Karanja,Outposts,2
+2022,Washim,Manora,Outposts,1
+2022,Washim,Washim,Outposts,2
+2022,Washim,Resod,Outposts,1
+2023,Washim,Malegaon,Outposts,3
+2023,Washim,Mangrulpir,Outposts,1
+2023,Washim,Karanja,Outposts,2
+2023,Washim,Manora,Outposts,1
+2023,Washim,Washim,Outposts,2
+2023,Washim,Resod,Outposts,1
+2024,Washim,Malegaon,Outposts,3
+2024,Washim,Mangrulpir,Outposts,1
+2024,Washim,Karanja,Outposts,2
+2024,Washim,Manora,Outposts,1
+2024,Washim,Washim,Outposts,2
+2024,Washim,Resod,Outposts,1
 2018,Yavatmal,Ner,Outposts,
 2018,Yavatmal,Babhulgaon,Outposts,
 2018,Yavatmal,Kalamb,Outposts,1
@@ -2591,6 +4667,54 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Yavatmal,Maregaon,Outposts,
 2021,Yavatmal,Zari Jamani,Outposts,
 2021,Yavatmal,Vani,Outposts,2
+2022,Yavatmal,Ner,Outposts,0
+2022,Yavatmal,Babhulgaon,Outposts,0
+2022,Yavatmal,Kalamb,Outposts,1
+2022,Yavatmal,Yavatmal,Outposts,0
+2022,Yavatmal,Darvha,Outposts,3
+2022,Yavatmal,Digras,Outposts,1
+2022,Yavatmal,Pusad,Outposts,2
+2022,Yavatmal,Umarkhed,Outposts,1
+2022,Yavatmal,Mahagaon,Outposts,0
+2022,Yavatmal,Aarni,Outposts,2
+2022,Yavatmal,Ghantaji,Outposts,2
+2022,Yavatmal,Kelapur,Outposts,3
+2022,Yavatmal,Ralegaon,Outposts,0
+2022,Yavatmal,Maregaon,Outposts,0
+2022,Yavatmal,Zari Jamani,Outposts,0
+2022,Yavatmal,Vani,Outposts,2
+2023,Yavatmal,Ner,Outposts,0
+2023,Yavatmal,Babhulgaon,Outposts,0
+2023,Yavatmal,Kalamb,Outposts,1
+2023,Yavatmal,Yavatmal,Outposts,0
+2023,Yavatmal,Darvha,Outposts,3
+2023,Yavatmal,Digras,Outposts,1
+2023,Yavatmal,Pusad,Outposts,2
+2023,Yavatmal,Umarkhed,Outposts,1
+2023,Yavatmal,Mahagaon,Outposts,0
+2023,Yavatmal,Aarni,Outposts,2
+2023,Yavatmal,Ghantaji,Outposts,2
+2023,Yavatmal,Kelapur,Outposts,2
+2023,Yavatmal,Ralegaon,Outposts,0
+2023,Yavatmal,Maregaon,Outposts,0
+2023,Yavatmal,Zari Jamani,Outposts,0
+2023,Yavatmal,Vani,Outposts,2
+2024,Yavatmal,Ner,Outposts,0
+2024,Yavatmal,Babhulgaon,Outposts,0
+2024,Yavatmal,Kalamb,Outposts,1
+2024,Yavatmal,Yavatmal,Outposts,0
+2024,Yavatmal,Darvha,Outposts,3
+2024,Yavatmal,Digras,Outposts,1
+2024,Yavatmal,Pusad,Outposts,2
+2024,Yavatmal,Umarkhed,Outposts,1
+2024,Yavatmal,Mahagaon,Outposts,0
+2024,Yavatmal,Aarni,Outposts,2
+2024,Yavatmal,Ghantaji,Outposts,2
+2024,Yavatmal,Kelapur,Outposts,2
+2024,Yavatmal,Ralegaon,Outposts,0
+2024,Yavatmal,Maregaon,Outposts,0
+2024,Yavatmal,Zari Jamani,Outposts,0
+2024,Yavatmal,Vani,Outposts,2
 2018,Ahilyanagar,Akole,Police Chowkis,
 2018,Ahilyanagar,Sangamner,Police Chowkis,5
 2018,Ahilyanagar,Kopargaon,Police Chowkis,
@@ -2647,6 +4771,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Ahilyanagar,Srigonda,Police Chowkis,3
 2021,Ahilyanagar,Karjat,Police Chowkis,1
 2021,Ahilyanagar,Jamkhed,Police Chowkis,5
+2022,Ahilyanagar,Akole,Police Chowkis,4
+2022,Ahilyanagar,Sangamner,Police Chowkis,4
+2022,Ahilyanagar,Kopargaon,Police Chowkis,3
+2022,Ahilyanagar,Rahata,Police Chowkis,0
+2022,Ahilyanagar,Srirampur,Police Chowkis,6
+2022,Ahilyanagar,Nevasa,Police Chowkis,0
+2022,Ahilyanagar,Shevgaon,Police Chowkis,0
+2022,Ahilyanagar,Pathardi,Police Chowkis,1
+2022,Ahilyanagar,Nagar,Police Chowkis,13
+2022,Ahilyanagar,Rahuri,Police Chowkis,8
+2022,Ahilyanagar,Parner,Police Chowkis,0
+2022,Ahilyanagar,Srigonda,Police Chowkis,3
+2022,Ahilyanagar,Karjat,Police Chowkis,2
+2022,Ahilyanagar,Jamkhed,Police Chowkis,6
+2023,Ahilyanagar,Akole,Police Chowkis,4
+2023,Ahilyanagar,Sangamner,Police Chowkis,0
+2023,Ahilyanagar,Kopargaon,Police Chowkis,0
+2023,Ahilyanagar,Rahata,Police Chowkis,4
+2023,Ahilyanagar,Srirampur,Police Chowkis,6
+2023,Ahilyanagar,Nevasa,Police Chowkis,0
+2023,Ahilyanagar,Shevgaon,Police Chowkis,4
+2023,Ahilyanagar,Pathardi,Police Chowkis,0
+2023,Ahilyanagar,Nagar,Police Chowkis,15
+2023,Ahilyanagar,Rahuri,Police Chowkis,0
+2023,Ahilyanagar,Parner,Police Chowkis,0
+2023,Ahilyanagar,Srigonda,Police Chowkis,0
+2023,Ahilyanagar,Karjat,Police Chowkis,0
+2023,Ahilyanagar,Jamkhed,Police Chowkis,0
+2024,Ahilyanagar,Akole,Police Chowkis,0
+2024,Ahilyanagar,Sangamner,Police Chowkis,5
+2024,Ahilyanagar,Kopargaon,Police Chowkis,0
+2024,Ahilyanagar,Rahata,Police Chowkis,0
+2024,Ahilyanagar,Srirampur,Police Chowkis,3
+2024,Ahilyanagar,Nevasa,Police Chowkis,1
+2024,Ahilyanagar,Shevgaon,Police Chowkis,0
+2024,Ahilyanagar,Pathardi,Police Chowkis,0
+2024,Ahilyanagar,Nagar,Police Chowkis,15
+2024,Ahilyanagar,Rahuri,Police Chowkis,0
+2024,Ahilyanagar,Parner,Police Chowkis,0
+2024,Ahilyanagar,Srigonda,Police Chowkis,0
+2024,Ahilyanagar,Karjat,Police Chowkis,1
+2024,Ahilyanagar,Jamkhed,Police Chowkis,0
 2018,Akola,Telhara,Police Chowkis,
 2018,Akola,Akot,Police Chowkis,5
 2018,Akola,Balapur,Police Chowkis,3
@@ -2675,6 +4841,27 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Akola,Murtijapur,Police Chowkis,2
 2021,Akola,Patur,Police Chowkis,
 2021,Akola,Barshitakali,Police Chowkis,
+2022,Akola,Telhara,Police Chowkis,0
+2022,Akola,Akot,Police Chowkis,4
+2022,Akola,Balapur,Police Chowkis,0
+2022,Akola,Akola,Police Chowkis,15
+2022,Akola,Murtijapur,Police Chowkis,2
+2022,Akola,Patur,Police Chowkis,0
+2022,Akola,Barshitakali,Police Chowkis,0
+2023,Akola,Telhara,Police Chowkis,0
+2023,Akola,Akot,Police Chowkis,5
+2023,Akola,Balapur,Police Chowkis,1
+2023,Akola,Akola,Police Chowkis,18
+2023,Akola,Murtijapur,Police Chowkis,0
+2023,Akola,Patur,Police Chowkis,0
+2023,Akola,Barshitakali,Police Chowkis,0
+2024,Akola,Telhara,Police Chowkis,0
+2024,Akola,Akot,Police Chowkis,5
+2024,Akola,Balapur,Police Chowkis,1
+2024,Akola,Akola,Police Chowkis,18
+2024,Akola,Murtijapur,Police Chowkis,0
+2024,Akola,Patur,Police Chowkis,0
+2024,Akola,Barshitakali,Police Chowkis,0
 2018,Amravati,Dharani,Police Chowkis,
 2018,Amravati,Chikhraldara,Police Chowkis,
 2018,Amravati,Anjangaon Su,Police Chowkis,
@@ -2731,6 +4918,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Amravati,Nandgaon Kh,Police Chowkis,2
 2021,Amravati,Chandur Railway,Police Chowkis,1
 2021,Amravati,Dhamangaon Re,Police Chowkis,
+2022,Amravati,Dharani,Police Chowkis,0
+2022,Amravati,Chikhraldara,Police Chowkis,0
+2022,Amravati,Anjangaon Su,Police Chowkis,0
+2022,Amravati,Achalpur,Police Chowkis,0
+2022,Amravati,Chandurbazar,Police Chowkis,0
+2022,Amravati,Morshi,Police Chowkis,1
+2022,Amravati,Warud,Police Chowkis,1
+2022,Amravati,Tivas,Police Chowkis,0
+2022,Amravati,Amravati,Police Chowkis,8
+2022,Amravati,Bhatkuli,Police Chowkis,0
+2022,Amravati,Daryapur,Police Chowkis,0
+2022,Amravati,Nandgaon Kh,Police Chowkis,2
+2022,Amravati,Chandur Railway,Police Chowkis,1
+2022,Amravati,Dhamangaon Re,Police Chowkis,0
+2023,Amravati,Dharani,Police Chowkis,0
+2023,Amravati,Chikhraldara,Police Chowkis,0
+2023,Amravati,Anjangaon Su,Police Chowkis,0
+2023,Amravati,Achalpur,Police Chowkis,0
+2023,Amravati,Chandurbazar,Police Chowkis,0
+2023,Amravati,Morshi,Police Chowkis,1
+2023,Amravati,Warud,Police Chowkis,1
+2023,Amravati,Tivas,Police Chowkis,0
+2023,Amravati,Amravati,Police Chowkis,8
+2023,Amravati,Bhatkuli,Police Chowkis,0
+2023,Amravati,Daryapur,Police Chowkis,0
+2023,Amravati,Nandgaon Kh,Police Chowkis,2
+2023,Amravati,Chandur Railway,Police Chowkis,1
+2023,Amravati,Dhamangaon Re,Police Chowkis,0
+2024,Amravati,Dharani,Police Chowkis,2
+2024,Amravati,Chikhraldara,Police Chowkis,0
+2024,Amravati,Anjangaon Su,Police Chowkis,0
+2024,Amravati,Achalpur,Police Chowkis,2
+2024,Amravati,Chandurbazar,Police Chowkis,2
+2024,Amravati,Morshi,Police Chowkis,1
+2024,Amravati,Warud,Police Chowkis,1
+2024,Amravati,Tivas,Police Chowkis,1
+2024,Amravati,Amravati,Police Chowkis,0
+2024,Amravati,Bhatkuli,Police Chowkis,0
+2024,Amravati,Daryapur,Police Chowkis,0
+2024,Amravati,Nandgaon Kh,Police Chowkis,0
+2024,Amravati,Chandur Railway,Police Chowkis,0
+2024,Amravati,Dhamangaon Re,Police Chowkis,1
 2018,Beed,Ashti,Police Chowkis,
 2018,Beed,Patoda,Police Chowkis,
 2018,Beed,Shirur Kasar,Police Chowkis,
@@ -2775,6 +5004,39 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Beed,Dharur,Police Chowkis,
 2021,Beed,Parli,Police Chowkis,
 2021,Beed,Ambajogai,Police Chowkis,3
+2022,Beed,Ashti,Police Chowkis,1
+2022,Beed,Patoda,Police Chowkis,1
+2022,Beed,Shirur Kasar,Police Chowkis,0
+2022,Beed,Gevrai,Police Chowkis,0
+2022,Beed,Majalgaon,Police Chowkis,1
+2022,Beed,Wadwani,Police Chowkis,0
+2022,Beed,Beed,Police Chowkis,5
+2022,Beed,Cage,Police Chowkis,3
+2022,Beed,Dharur,Police Chowkis,0
+2022,Beed,Parli,Police Chowkis,0
+2022,Beed,Ambajogai,Police Chowkis,0
+2023,Beed,Ashti,Police Chowkis,2
+2023,Beed,Patoda,Police Chowkis,1
+2023,Beed,Shirur Kasar,Police Chowkis,0
+2023,Beed,Gevrai,Police Chowkis,2
+2023,Beed,Majalgaon,Police Chowkis,5
+2023,Beed,Wadwani,Police Chowkis,1
+2023,Beed,Beed,Police Chowkis,5
+2023,Beed,Cage,Police Chowkis,4
+2023,Beed,Dharur,Police Chowkis,1
+2023,Beed,Parli,Police Chowkis,4
+2023,Beed,Ambajogai,Police Chowkis,3
+2024,Beed,Ashti,Police Chowkis,0
+2024,Beed,Patoda,Police Chowkis,0
+2024,Beed,Shirur Kasar,Police Chowkis,0
+2024,Beed,Gevrai,Police Chowkis,2
+2024,Beed,Majalgaon,Police Chowkis,2
+2024,Beed,Wadwani,Police Chowkis,0
+2024,Beed,Beed,Police Chowkis,7
+2024,Beed,Cage,Police Chowkis,4
+2024,Beed,Dharur,Police Chowkis,1
+2024,Beed,Parli,Police Chowkis,2
+2024,Beed,Ambajogai,Police Chowkis,1
 2018,Bhandara,Tumsar,Police Chowkis,
 2018,Bhandara,Mohadi,Police Chowkis,
 2018,Bhandara,Bhandara,Police Chowkis,1
@@ -2803,6 +5065,27 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Bhandara,Lakhani,Police Chowkis,
 2021,Bhandara,Pavani,Police Chowkis,1
 2021,Bhandara,Lakhandur,Police Chowkis,
+2022,Bhandara,Tumsar,Police Chowkis,0
+2022,Bhandara,Mohadi,Police Chowkis,0
+2022,Bhandara,Bhandara,Police Chowkis,0
+2022,Bhandara,Sakoli,Police Chowkis,0
+2022,Bhandara,Lakhani,Police Chowkis,0
+2022,Bhandara,Pavani,Police Chowkis,0
+2022,Bhandara,Lakhandur,Police Chowkis,0
+2023,Bhandara,Tumsar,Police Chowkis,0
+2023,Bhandara,Mohadi,Police Chowkis,0
+2023,Bhandara,Bhandara,Police Chowkis,1
+2023,Bhandara,Sakoli,Police Chowkis,0
+2023,Bhandara,Lakhani,Police Chowkis,0
+2023,Bhandara,Pavani,Police Chowkis,1
+2023,Bhandara,Lakhandur,Police Chowkis,1
+2024,Bhandara,Tumsar,Police Chowkis,0
+2024,Bhandara,Mohadi,Police Chowkis,0
+2024,Bhandara,Bhandara,Police Chowkis,1
+2024,Bhandara,Sakoli,Police Chowkis,0
+2024,Bhandara,Lakhani,Police Chowkis,0
+2024,Bhandara,Pavani,Police Chowkis,1
+2024,Bhandara,Lakhandur,Police Chowkis,1
 2018,Buldhana,Jalgaon Jamod,Police Chowkis,
 2018,Buldhana,Sangrampur,Police Chowkis,
 2018,Buldhana,Shegaon,Police Chowkis,1
@@ -2855,6 +5138,45 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Buldhana,Deulgaon Raja,Police Chowkis,1
 2021,Buldhana,Sindkhed Raja,Police Chowkis,
 2021,Buldhana,Lonar,Police Chowkis,2
+2022,Buldhana,Jalgaon Jamod,Police Chowkis,1
+2022,Buldhana,Sangrampur,Police Chowkis,0
+2022,Buldhana,Shegaon,Police Chowkis,3
+2022,Buldhana,Nandura,Police Chowkis,0
+2022,Buldhana,Malkapur,Police Chowkis,5
+2022,Buldhana,Motala,Police Chowkis,0
+2022,Buldhana,Khamgaon,Police Chowkis,10
+2022,Buldhana,Mehkar,Police Chowkis,1
+2022,Buldhana,Chikhali,Police Chowkis,2
+2022,Buldhana,Buldhana,Police Chowkis,5
+2022,Buldhana,Deulgaon Raja,Police Chowkis,1
+2022,Buldhana,Sindkhed Raja,Police Chowkis,5
+2022,Buldhana,Lonar,Police Chowkis,0
+2023,Buldhana,Jalgaon Jamod,Police Chowkis,1
+2023,Buldhana,Sangrampur,Police Chowkis,0
+2023,Buldhana,Shegaon,Police Chowkis,2
+2023,Buldhana,Nandura,Police Chowkis,0
+2023,Buldhana,Malkapur,Police Chowkis,5
+2023,Buldhana,Motala,Police Chowkis,0
+2023,Buldhana,Khamgaon,Police Chowkis,10
+2023,Buldhana,Mehkar,Police Chowkis,4
+2023,Buldhana,Chikhali,Police Chowkis,1
+2023,Buldhana,Buldhana,Police Chowkis,3
+2023,Buldhana,Deulgaon Raja,Police Chowkis,1
+2023,Buldhana,Sindkhed Raja,Police Chowkis,1
+2023,Buldhana,Lonar,Police Chowkis,0
+2024,Buldhana,Jalgaon Jamod,Police Chowkis,0
+2024,Buldhana,Sangrampur,Police Chowkis,0
+2024,Buldhana,Shegaon,Police Chowkis,0
+2024,Buldhana,Nandura,Police Chowkis,0
+2024,Buldhana,Malkapur,Police Chowkis,0
+2024,Buldhana,Motala,Police Chowkis,0
+2024,Buldhana,Khamgaon,Police Chowkis,0
+2024,Buldhana,Mehkar,Police Chowkis,0
+2024,Buldhana,Chikhali,Police Chowkis,0
+2024,Buldhana,Buldhana,Police Chowkis,0
+2024,Buldhana,Deulgaon Raja,Police Chowkis,0
+2024,Buldhana,Sindkhed Raja,Police Chowkis,0
+2024,Buldhana,Lonar,Police Chowkis,0
 2018,Chandrapur,Varora,Police Chowkis,
 2018,Chandrapur,Chimur,Police Chowkis,
 2018,Chandrapur,Nagbhid,Police Chowkis,
@@ -2915,6 +5237,78 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Chandrapur,Rajura,Police Chowkis,1
 2021,Chandrapur,Gondpipari,Police Chowkis,
 2021,Chandrapur,Jivati,Police Chowkis,
+2022,Chandrapur,Varora,Police Chowkis,0
+2022,Chandrapur,Chimur,Police Chowkis,0
+2022,Chandrapur,Nagbhid,Police Chowkis,0
+2022,Chandrapur,Bramhapuri,Police Chowkis,0
+2022,Chandrapur,Savali,Police Chowkis,0
+2022,Chandrapur,Sindevahi,Police Chowkis,0
+2022,Chandrapur,Bhadravati,Police Chowkis,0
+2022,Chandrapur,Chandrapur,Police Chowkis,9
+2022,Chandrapur,Mul,Police Chowkis,1
+2022,Chandrapur,Ponbhurna,Police Chowkis,0
+2022,Chandrapur,Ballarpur,Police Chowkis,1
+2022,Chandrapur,Korpana,Police Chowkis,1
+2022,Chandrapur,Rajura,Police Chowkis,1
+2022,Chandrapur,Gondpipari,Police Chowkis,0
+2022,Chandrapur,Jivati,Police Chowkis,0
+2023,Chandrapur,Varora,Police Chowkis,0
+2023,Chandrapur,Chimur,Police Chowkis,0
+2023,Chandrapur,Nagbhid,Police Chowkis,0
+2023,Chandrapur,Bramhapuri,Police Chowkis,0
+2023,Chandrapur,Savali,Police Chowkis,0
+2023,Chandrapur,Sindevahi,Police Chowkis,0
+2023,Chandrapur,Bhadravati,Police Chowkis,0
+2023,Chandrapur,Chandrapur,Police Chowkis,9
+2023,Chandrapur,Mul,Police Chowkis,1
+2023,Chandrapur,Ponbhurna,Police Chowkis,0
+2023,Chandrapur,Ballarpur,Police Chowkis,1
+2023,Chandrapur,Korpana,Police Chowkis,1
+2023,Chandrapur,Rajura,Police Chowkis,1
+2023,Chandrapur,Gondpipari,Police Chowkis,0
+2023,Chandrapur,Jivati,Police Chowkis,0
+2024,Chandrapur,Varora,Police Chowkis,1
+2024,Chandrapur,Chimur,Police Chowkis,0
+2024,Chandrapur,Nagbhid,Police Chowkis,0
+2024,Chandrapur,Bramhapuri,Police Chowkis,0
+2024,Chandrapur,Savali,Police Chowkis,0
+2024,Chandrapur,Sindevahi,Police Chowkis,0
+2024,Chandrapur,Bhadravati,Police Chowkis,0
+2024,Chandrapur,Chandrapur,Police Chowkis,8
+2024,Chandrapur,Mul,Police Chowkis,0
+2024,Chandrapur,Ponbhurna,Police Chowkis,0
+2024,Chandrapur,Ballarpur,Police Chowkis,2
+2024,Chandrapur,Korpana,Police Chowkis,0
+2024,Chandrapur,Rajura,Police Chowkis,0
+2024,Chandrapur,Gondpipari,Police Chowkis,0
+2024,Chandrapur,Jivati,Police Chowkis,1
+2022,Chh. Sambhaji Nagar,Kannad,Police Chowkis,0
+2022,Chh. Sambhaji Nagar,Soegaon,Police Chowkis,0
+2022,Chh. Sambhaji Nagar,Sillod,Police Chowkis,0
+2022,Chh. Sambhaji Nagar,Phulambri,Police Chowkis,0
+2022,Chh. Sambhaji Nagar,Chhatrapati Sambhajinagar,Police Chowkis,44
+2022,Chh. Sambhaji Nagar,Khuldabad,Police Chowkis,0
+2022,Chh. Sambhaji Nagar,Vaijapur,Police Chowkis,0
+2022,Chh. Sambhaji Nagar,Gangapur,Police Chowkis,0
+2022,Chh. Sambhaji Nagar,Paithan,Police Chowkis,3
+2023,Chh. Sambhaji Nagar,Kannad,Police Chowkis,1
+2023,Chh. Sambhaji Nagar,Soegaon,Police Chowkis,0
+2023,Chh. Sambhaji Nagar,Sillod,Police Chowkis,0
+2023,Chh. Sambhaji Nagar,Phulambri,Police Chowkis,0
+2023,Chh. Sambhaji Nagar,Chhatrapati Sambhajinagar,Police Chowkis,40
+2023,Chh. Sambhaji Nagar,Khuldabad,Police Chowkis,0
+2023,Chh. Sambhaji Nagar,Vaijapur,Police Chowkis,0
+2023,Chh. Sambhaji Nagar,Gangapur,Police Chowkis,1
+2023,Chh. Sambhaji Nagar,Paithan,Police Chowkis,0
+2024,Chh. Sambhaji Nagar,Kannad,Police Chowkis,2
+2024,Chh. Sambhaji Nagar,Soegaon,Police Chowkis,0
+2024,Chh. Sambhaji Nagar,Sillod,Police Chowkis,2
+2024,Chh. Sambhaji Nagar,Phulambri,Police Chowkis,2
+2024,Chh. Sambhaji Nagar,Chhatrapati Sambhajinagar,Police Chowkis,39
+2024,Chh. Sambhaji Nagar,Khuldabad,Police Chowkis,0
+2024,Chh. Sambhaji Nagar,Vaijapur,Police Chowkis,0
+2024,Chh. Sambhaji Nagar,Gangapur,Police Chowkis,1
+2024,Chh. Sambhaji Nagar,Paithan,Police Chowkis,0
 2018,Dhule,Shirpur,Police Chowkis,
 2018,Dhule,Shindkheda,Police Chowkis,
 2018,Dhule,Sakri,Police Chowkis,
@@ -2931,6 +5325,18 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Dhule,Shindkheda,Police Chowkis,
 2021,Dhule,Sakri,Police Chowkis,
 2021,Dhule,Dhule,Police Chowkis,11
+2022,Dhule,Shirpur,Police Chowkis,0
+2022,Dhule,Shindkheda,Police Chowkis,0
+2022,Dhule,Sakri,Police Chowkis,0
+2022,Dhule,Dhule,Police Chowkis,8
+2023,Dhule,Shirpur,Police Chowkis,4
+2023,Dhule,Shindkheda,Police Chowkis,0
+2023,Dhule,Sakri,Police Chowkis,0
+2023,Dhule,Dhule,Police Chowkis,11
+2024,Dhule,Shirpur,Police Chowkis,4
+2024,Dhule,Shindkheda,Police Chowkis,0
+2024,Dhule,Sakri,Police Chowkis,0
+2024,Dhule,Dhule,Police Chowkis,11
 2018,Gadchiroli,Desaiganj,Police Chowkis,
 2018,Gadchiroli,Aarmori,Police Chowkis,
 2018,Gadchiroli,Kurkheda,Police Chowkis,
@@ -2979,6 +5385,42 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Gadchiroli,Bhamragad,Police Chowkis,
 2021,Gadchiroli,Aheri,Police Chowkis,1
 2021,Gadchiroli,Sironcha,Police Chowkis,
+2022,Gadchiroli,Desaiganj,Police Chowkis,0
+2022,Gadchiroli,Aarmori,Police Chowkis,0
+2022,Gadchiroli,Kurkheda,Police Chowkis,0
+2022,Gadchiroli,Korachi,Police Chowkis,0
+2022,Gadchiroli,Dhanora,Police Chowkis,0
+2022,Gadchiroli,Gadchiroli,Police Chowkis,1
+2022,Gadchiroli,Chomoshi,Police Chowkis,0
+2022,Gadchiroli,Mulchera,Police Chowkis,0
+2022,Gadchiroli,Etapalli,Police Chowkis,0
+2022,Gadchiroli,Bhamragad,Police Chowkis,0
+2022,Gadchiroli,Aheri,Police Chowkis,1
+2022,Gadchiroli,Sironcha,Police Chowkis,0
+2023,Gadchiroli,Desaiganj,Police Chowkis,0
+2023,Gadchiroli,Aarmori,Police Chowkis,0
+2023,Gadchiroli,Kurkheda,Police Chowkis,0
+2023,Gadchiroli,Korachi,Police Chowkis,0
+2023,Gadchiroli,Dhanora,Police Chowkis,0
+2023,Gadchiroli,Gadchiroli,Police Chowkis,1
+2023,Gadchiroli,Chomoshi,Police Chowkis,0
+2023,Gadchiroli,Mulchera,Police Chowkis,0
+2023,Gadchiroli,Etapalli,Police Chowkis,0
+2023,Gadchiroli,Bhamragad,Police Chowkis,0
+2023,Gadchiroli,Aheri,Police Chowkis,1
+2023,Gadchiroli,Sironcha,Police Chowkis,0
+2024,Gadchiroli,Desaiganj,Police Chowkis,0
+2024,Gadchiroli,Aarmori,Police Chowkis,0
+2024,Gadchiroli,Kurkheda,Police Chowkis,0
+2024,Gadchiroli,Korachi,Police Chowkis,0
+2024,Gadchiroli,Dhanora,Police Chowkis,0
+2024,Gadchiroli,Gadchiroli,Police Chowkis,1
+2024,Gadchiroli,Chomoshi,Police Chowkis,0
+2024,Gadchiroli,Mulchera,Police Chowkis,0
+2024,Gadchiroli,Etapalli,Police Chowkis,0
+2024,Gadchiroli,Bhamragad,Police Chowkis,0
+2024,Gadchiroli,Aheri,Police Chowkis,1
+2024,Gadchiroli,Sironcha,Police Chowkis,0
 2018,Gondia,Tiroda,Police Chowkis,2
 2018,Gondia,Goregaon,Police Chowkis,
 2018,Gondia,Gondia,Police Chowkis,2
@@ -2992,25 +5434,49 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2019,Gondia,Gondia,Police Chowkis,2
 2019,Gondia,Aamgaon,Police Chowkis,
 2019,Gondia,Salekasa,Police Chowkis,1
-2019,Gondia,Sa/Arguni,Police Chowkis,
-2019,Gondia,Arguni/Mor,Police Chowkis,
+2019,Gondia,Sadak Arjuni,Police Chowkis,
+2019,Gondia,Arjuni Morgaon,Police Chowkis,
 2019,Gondia,Devari,Police Chowkis,
 2020,Gondia,Tiroda,Police Chowkis,2
 2020,Gondia,Goregaon,Police Chowkis,
 2020,Gondia,Gondia,Police Chowkis,1
 2020,Gondia,Aamgaon,Police Chowkis,
 2020,Gondia,Salekasa,Police Chowkis,1
-2020,Gondia,Sa/Arguni,Police Chowkis,
-2020,Gondia,Arguni/Mor,Police Chowkis,
+2020,Gondia,Sadak Arjuni,Police Chowkis,
+2020,Gondia,Arjuni Morgaon,Police Chowkis,
 2020,Gondia,Devari,Police Chowkis,
 2021,Gondia,Tiroda,Police Chowkis,2
 2021,Gondia,Goregaon,Police Chowkis,
 2021,Gondia,Gondia,Police Chowkis,1
 2021,Gondia,Aamgaon,Police Chowkis,
 2021,Gondia,Salekasa,Police Chowkis,1
-2021,Gondia,Sa/Arguni,Police Chowkis,
-2021,Gondia,Arguni/Mor,Police Chowkis,
+2021,Gondia,Sadak Arjuni,Police Chowkis,
+2021,Gondia,Arjuni Morgaon,Police Chowkis,
 2021,Gondia,Devari,Police Chowkis,
+2022,Gondia,Tiroda,Police Chowkis,2
+2022,Gondia,Goregaon,Police Chowkis,0
+2022,Gondia,Gondia,Police Chowkis,1
+2022,Gondia,Aamgaon,Police Chowkis,0
+2022,Gondia,Salekasa,Police Chowkis,1
+2022,Gondia,Sadak Arjuni,Police Chowkis,0
+2022,Gondia,Arjuni Morgaon,Police Chowkis,0
+2022,Gondia,Devari,Police Chowkis,0
+2023,Gondia,Tiroda,Police Chowkis,2
+2023,Gondia,Goregaon,Police Chowkis,0
+2023,Gondia,Gondia,Police Chowkis,1
+2023,Gondia,Aamgaon,Police Chowkis,0
+2023,Gondia,Salekasa,Police Chowkis,1
+2023,Gondia,Sadak Arjuni,Police Chowkis,0
+2023,Gondia,Arjuni Morgaon,Police Chowkis,0
+2023,Gondia,Devari,Police Chowkis,0
+2024,Gondia,Tiroda,Police Chowkis,2
+2024,Gondia,Goregaon,Police Chowkis,0
+2024,Gondia,Gondia,Police Chowkis,1
+2024,Gondia,Aamgaon,Police Chowkis,0
+2024,Gondia,Salekasa,Police Chowkis,1
+2024,Gondia,Sadak Arjuni,Police Chowkis,0
+2024,Gondia,Arjuni Morgaon,Police Chowkis,0
+2024,Gondia,Devari,Police Chowkis,0
 2018,Hingoli,Sengaon,Police Chowkis,
 2018,Hingoli,Hingoli,Police Chowkis,
 2018,Hingoli,Aundha Na,Police Chowkis,
@@ -3031,6 +5497,66 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Hingoli,Aundha Na,Police Chowkis,
 2021,Hingoli,Kalamanuri,Police Chowkis,1
 2021,Hingoli,Vasamat,Police Chowkis,
+2022,Hingoli,Sengaon,Police Chowkis,0
+2022,Hingoli,Hingoli,Police Chowkis,0
+2022,Hingoli,Aundha Na,Police Chowkis,0
+2022,Hingoli,Kalamanuri,Police Chowkis,1
+2022,Hingoli,Vasamat,Police Chowkis,0
+2023,Hingoli,Sengaon,Police Chowkis,0
+2023,Hingoli,Hingoli,Police Chowkis,0
+2023,Hingoli,Aundha Na,Police Chowkis,0
+2023,Hingoli,Kalamanuri,Police Chowkis,1
+2023,Hingoli,Vasamat,Police Chowkis,0
+2024,Hingoli,Sengaon,Police Chowkis,0
+2024,Hingoli,Hingoli,Police Chowkis,0
+2024,Hingoli,Aundha Na,Police Chowkis,0
+2024,Hingoli,Kalamanuri,Police Chowkis,1
+2024,Hingoli,Vasamat,Police Chowkis,0
+2022,Jalgaon,Chopda,Police Chowkis,3
+2022,Jalgaon,Yawal,Police Chowkis,2
+2022,Jalgaon,Raver,Police Chowkis,3
+2022,Jalgaon,Muktainagar,Police Chowkis,0
+2022,Jalgaon,Bodwad,Police Chowkis,0
+2022,Jalgaon,Bhusawal,Police Chowkis,8
+2022,Jalgaon,Jalgaon,Police Chowkis,16
+2022,Jalgaon,Erandol,Police Chowkis,0
+2022,Jalgaon,Dharangaon,Police Chowkis,0
+2022,Jalgaon,Amalner,Police Chowkis,3
+2022,Jalgaon,Parola,Police Chowkis,0
+2022,Jalgaon,Bhadgaon,Police Chowkis,0
+2022,Jalgaon,Chalisgaon,Police Chowkis,1
+2022,Jalgaon,Pachora,Police Chowkis,4
+2022,Jalgaon,Jamner,Police Chowkis,0
+2023,Jalgaon,Chopda,Police Chowkis,3
+2023,Jalgaon,Yawal,Police Chowkis,2
+2023,Jalgaon,Raver,Police Chowkis,3
+2023,Jalgaon,Muktainagar,Police Chowkis,0
+2023,Jalgaon,Bodwad,Police Chowkis,0
+2023,Jalgaon,Bhusawal,Police Chowkis,8
+2023,Jalgaon,Jalgaon,Police Chowkis,16
+2023,Jalgaon,Erandol,Police Chowkis,0
+2023,Jalgaon,Dharangaon,Police Chowkis,0
+2023,Jalgaon,Amalner,Police Chowkis,3
+2023,Jalgaon,Parola,Police Chowkis,0
+2023,Jalgaon,Bhadgaon,Police Chowkis,0
+2023,Jalgaon,Chalisgaon,Police Chowkis,1
+2023,Jalgaon,Pachora,Police Chowkis,4
+2023,Jalgaon,Jamner,Police Chowkis,0
+2024,Jalgaon,Chopda,Police Chowkis,3
+2024,Jalgaon,Yawal,Police Chowkis,2
+2024,Jalgaon,Raver,Police Chowkis,3
+2024,Jalgaon,Muktainagar,Police Chowkis,0
+2024,Jalgaon,Bodwad,Police Chowkis,0
+2024,Jalgaon,Bhusawal,Police Chowkis,8
+2024,Jalgaon,Jalgaon,Police Chowkis,16
+2024,Jalgaon,Erandol,Police Chowkis,0
+2024,Jalgaon,Dharangaon,Police Chowkis,0
+2024,Jalgaon,Amalner,Police Chowkis,3
+2024,Jalgaon,Parola,Police Chowkis,0
+2024,Jalgaon,Bhadgaon,Police Chowkis,0
+2024,Jalgaon,Chalisgaon,Police Chowkis,1
+2024,Jalgaon,Pachora,Police Chowkis,4
+2024,Jalgaon,Jamner,Police Chowkis,0
 2018,Jalna,Bhokardan,Police Chowkis,
 2018,Jalna,Jaffrabad,Police Chowkis,
 2018,Jalna,Jalna,Police Chowkis,
@@ -3063,6 +5589,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Jalna,Ghansawangi,Police Chowkis,2
 2021,Jalna,Partur,Police Chowkis,2
 2021,Jalna,Mantha,Police Chowkis,
+2022,Jalna,Bhokardan,Police Chowkis,0
+2022,Jalna,Jaffrabad,Police Chowkis,0
+2022,Jalna,Jalna,Police Chowkis,8
+2022,Jalna,Badnapur,Police Chowkis,0
+2022,Jalna,Ambad,Police Chowkis,0
+2022,Jalna,Ghansawangi,Police Chowkis,0
+2022,Jalna,Partur,Police Chowkis,1
+2022,Jalna,Mantha,Police Chowkis,1
+2023,Jalna,Bhokardan,Police Chowkis,0
+2023,Jalna,Jaffrabad,Police Chowkis,0
+2023,Jalna,Jalna,Police Chowkis,9
+2023,Jalna,Badnapur,Police Chowkis,0
+2023,Jalna,Ambad,Police Chowkis,0
+2023,Jalna,Ghansawangi,Police Chowkis,0
+2023,Jalna,Partur,Police Chowkis,1
+2023,Jalna,Mantha,Police Chowkis,1
+2024,Jalna,Bhokardan,Police Chowkis,0
+2024,Jalna,Jaffrabad,Police Chowkis,0
+2024,Jalna,Jalna,Police Chowkis,11
+2024,Jalna,Badnapur,Police Chowkis,0
+2024,Jalna,Ambad,Police Chowkis,0
+2024,Jalna,Ghansawangi,Police Chowkis,0
+2024,Jalna,Partur,Police Chowkis,1
+2024,Jalna,Mantha,Police Chowkis,0
 2018,Kolhapur,Shahuwadi,Police Chowkis,1
 2018,Kolhapur,Panhala,Police Chowkis,
 2018,Kolhapur,Hatkanangale,Police Chowkis,9
@@ -3111,6 +5661,42 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Kolhapur,Ajara,Police Chowkis,
 2021,Kolhapur,Gadhinglaj,Police Chowkis,
 2021,Kolhapur,Chandgad,Police Chowkis,
+2022,Kolhapur,Shahuwadi,Police Chowkis,1
+2022,Kolhapur,Panhala,Police Chowkis,0
+2022,Kolhapur,Hatkanangale,Police Chowkis,9
+2022,Kolhapur,Shirol,Police Chowkis,0
+2022,Kolhapur,Karveer,Police Chowkis,23
+2022,Kolhapur,Gaganbavada,Police Chowkis,0
+2022,Kolhapur,Radhanagari,Police Chowkis,0
+2022,Kolhapur,Kagal,Police Chowkis,0
+2022,Kolhapur,Bhudargad,Police Chowkis,0
+2022,Kolhapur,Ajara,Police Chowkis,0
+2022,Kolhapur,Gadhinglaj,Police Chowkis,0
+2022,Kolhapur,Chandgad,Police Chowkis,0
+2023,Kolhapur,Shahuwadi,Police Chowkis,1
+2023,Kolhapur,Panhala,Police Chowkis,0
+2023,Kolhapur,Hatkanangale,Police Chowkis,9
+2023,Kolhapur,Shirol,Police Chowkis,0
+2023,Kolhapur,Karveer,Police Chowkis,23
+2023,Kolhapur,Gaganbavada,Police Chowkis,0
+2023,Kolhapur,Radhanagari,Police Chowkis,0
+2023,Kolhapur,Kagal,Police Chowkis,0
+2023,Kolhapur,Bhudargad,Police Chowkis,0
+2023,Kolhapur,Ajara,Police Chowkis,0
+2023,Kolhapur,Gadhinglaj,Police Chowkis,0
+2023,Kolhapur,Chandgad,Police Chowkis,0
+2024,Kolhapur,Shahuwadi,Police Chowkis,0
+2024,Kolhapur,Panhala,Police Chowkis,0
+2024,Kolhapur,Hatkanangale,Police Chowkis,1
+2024,Kolhapur,Shirol,Police Chowkis,1
+2024,Kolhapur,Karveer,Police Chowkis,12
+2024,Kolhapur,Gaganbavada,Police Chowkis,0
+2024,Kolhapur,Radhanagari,Police Chowkis,0
+2024,Kolhapur,Kagal,Police Chowkis,1
+2024,Kolhapur,Bhudargad,Police Chowkis,0
+2024,Kolhapur,Ajara,Police Chowkis,0
+2024,Kolhapur,Gadhinglaj,Police Chowkis,0
+2024,Kolhapur,Chandgad,Police Chowkis,2
 2018,Latur,Latur,Police Chowkis,
 2018,Latur,Renapur,Police Chowkis,
 2018,Latur,Ahamadpur,Police Chowkis,
@@ -3151,22 +5737,64 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Latur,Nilanga,Police Chowkis,1
 2021,Latur,Devani,Police Chowkis,
 2021,Latur,Udgir,Police Chowkis,
+2022,Latur,Latur,Police Chowkis,2
+2022,Latur,Renapur,Police Chowkis,0
+2022,Latur,Ahamadpur,Police Chowkis,0
+2022,Latur,Jalkot,Police Chowkis,0
+2022,Latur,Chakur,Police Chowkis,0
+2022,Latur,Shirur-Anantpal,Police Chowkis,0
+2022,Latur,Aosa,Police Chowkis,0
+2022,Latur,Nilanga,Police Chowkis,1
+2022,Latur,Devani,Police Chowkis,0
+2022,Latur,Udgir,Police Chowkis,0
+2023,Latur,Latur,Police Chowkis,7
+2023,Latur,Renapur,Police Chowkis,1
+2023,Latur,Ahamadpur,Police Chowkis,1
+2023,Latur,Jalkot,Police Chowkis,0
+2023,Latur,Chakur,Police Chowkis,0
+2023,Latur,Shirur-Anantpal,Police Chowkis,0
+2023,Latur,Aosa,Police Chowkis,1
+2023,Latur,Nilanga,Police Chowkis,1
+2023,Latur,Devani,Police Chowkis,0
+2023,Latur,Udgir,Police Chowkis,2
+2024,Latur,Latur,Police Chowkis,2
+2024,Latur,Renapur,Police Chowkis,0
+2024,Latur,Ahamadpur,Police Chowkis,0
+2024,Latur,Jalkot,Police Chowkis,0
+2024,Latur,Chakur,Police Chowkis,0
+2024,Latur,Shirur-Anantpal,Police Chowkis,0
+2024,Latur,Aosa,Police Chowkis,0
+2024,Latur,Nilanga,Police Chowkis,1
+2024,Latur,Devani,Police Chowkis,0
+2024,Latur,Udgir,Police Chowkis,0
 2018,Mumbai,Mumbai City,Police Chowkis,182
 2019,Mumbai,Mumbai City,Police Chowkis,182
 2020,Mumbai,Mumbai City,Police Chowkis,182
 2021,Mumbai,Mumbai City,Police Chowkis,351
-2018,Mumbai Suburban,Adheri,Police Chowkis,
+2022,Mumbai,Mumbai City,Police Chowkis,351
+2023,Mumbai,Mumbai City,Police Chowkis,337
+2024,Mumbai,Mumbai City,Police Chowkis,335
+2018,Mumbai Suburban,Andheri,Police Chowkis,
 2018,Mumbai Suburban,Borivali,Police Chowkis,
 2018,Mumbai Suburban,Kurla,Police Chowkis,
-2019,Mumbai Suburban,Adheri,Police Chowkis,
+2019,Mumbai Suburban,Andheri,Police Chowkis,
 2019,Mumbai Suburban,Borivali,Police Chowkis,
 2019,Mumbai Suburban,Kurla,Police Chowkis,
-2020,Mumbai Suburban,Adheri,Police Chowkis,
+2020,Mumbai Suburban,Andheri,Police Chowkis,
 2020,Mumbai Suburban,Borivali,Police Chowkis,
 2020,Mumbai Suburban,Kurla,Police Chowkis,
-2021,Mumbai Suburban,Adheri,Police Chowkis,
+2021,Mumbai Suburban,Andheri,Police Chowkis,
 2021,Mumbai Suburban,Borivali,Police Chowkis,
 2021,Mumbai Suburban,Kurla,Police Chowkis,
+2022,Mumbai Suburban,Andheri,Police Chowkis,
+2022,Mumbai Suburban,Borivali,Police Chowkis,
+2022,Mumbai Suburban,Kurla,Police Chowkis,
+2023,Mumbai Suburban,Andheri,Police Chowkis,
+2023,Mumbai Suburban,Borivali,Police Chowkis,
+2023,Mumbai Suburban,Kurla,Police Chowkis,
+2024,Mumbai Suburban,Andheri,Police Chowkis,
+2024,Mumbai Suburban,Borivali,Police Chowkis,
+2024,Mumbai Suburban,Kurla,Police Chowkis,
 2018,Nagpur,Narkhed,Police Chowkis,
 2018,Nagpur,Katol,Police Chowkis,
 2018,Nagpur,Kalameshwar,Police Chowkis,
@@ -3223,6 +5851,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nagpur,Umred,Police Chowkis,
 2021,Nagpur,Kuhi,Police Chowkis,1
 2021,Nagpur,Bhiwapur,Police Chowkis,
+2022,Nagpur,Narkhed,Police Chowkis,0
+2022,Nagpur,Katol,Police Chowkis,0
+2022,Nagpur,Kalameshwar,Police Chowkis,0
+2022,Nagpur,Sawner,Police Chowkis,0
+2022,Nagpur,Parashivani,Police Chowkis,0
+2022,Nagpur,Ramtech,Police Chowkis,1
+2022,Nagpur,Mauda,Police Chowkis,0
+2022,Nagpur,Kamathi,Police Chowkis,4
+2022,Nagpur,Nagpur (Sh),Police Chowkis,0
+2022,Nagpur,Nagpur (Gra),Police Chowkis,68
+2022,Nagpur,Hingana,Police Chowkis,4
+2022,Nagpur,Umred,Police Chowkis,0
+2022,Nagpur,Kuhi,Police Chowkis,1
+2022,Nagpur,Bhiwapur,Police Chowkis,0
+2023,Nagpur,Narkhed,Police Chowkis,0
+2023,Nagpur,Katol,Police Chowkis,0
+2023,Nagpur,Kalameshwar,Police Chowkis,0
+2023,Nagpur,Sawner,Police Chowkis,0
+2023,Nagpur,Parashivani,Police Chowkis,0
+2023,Nagpur,Ramtech,Police Chowkis,1
+2023,Nagpur,Mauda,Police Chowkis,0
+2023,Nagpur,Kamathi,Police Chowkis,4
+2023,Nagpur,Nagpur (Sh),Police Chowkis,0
+2023,Nagpur,Nagpur (Gra),Police Chowkis,73
+2023,Nagpur,Hingana,Police Chowkis,4
+2023,Nagpur,Umred,Police Chowkis,0
+2023,Nagpur,Kuhi,Police Chowkis,1
+2023,Nagpur,Bhiwapur,Police Chowkis,0
+2024,Nagpur,Narkhed,Police Chowkis,0
+2024,Nagpur,Katol,Police Chowkis,0
+2024,Nagpur,Kalameshwar,Police Chowkis,0
+2024,Nagpur,Sawner,Police Chowkis,0
+2024,Nagpur,Parashivani,Police Chowkis,0
+2024,Nagpur,Ramtech,Police Chowkis,1
+2024,Nagpur,Mauda,Police Chowkis,0
+2024,Nagpur,Kamathi,Police Chowkis,4
+2024,Nagpur,Nagpur (Sh),Police Chowkis,0
+2024,Nagpur,Nagpur (Gra),Police Chowkis,73
+2024,Nagpur,Hingana,Police Chowkis,4
+2024,Nagpur,Umred,Police Chowkis,0
+2024,Nagpur,Kuhi,Police Chowkis,1
+2024,Nagpur,Bhiwapur,Police Chowkis,0
 2018,Nanded,Mahur,Police Chowkis,
 2018,Nanded,Kinvat,Police Chowkis,
 2018,Nanded,Himalay Nagar,Police Chowkis,
@@ -3287,6 +5957,54 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nanded,Kandhar,Police Chowkis,
 2021,Nanded,Mukhed,Police Chowkis,
 2021,Nanded,Deglur,Police Chowkis,
+2022,Nanded,Mahur,Police Chowkis,0
+2022,Nanded,Kinvat,Police Chowkis,0
+2022,Nanded,Himalay Nagar,Police Chowkis,0
+2022,Nanded,Hadgaon,Police Chowkis,0
+2022,Nanded,Andhrapur,Police Chowkis,0
+2022,Nanded,Nanded,Police Chowkis,1
+2022,Nanded,Mudkhed,Police Chowkis,0
+2022,Nanded,Bhokar,Police Chowkis,0
+2022,Nanded,Umari,Police Chowkis,0
+2022,Nanded,Dharmabad,Police Chowkis,0
+2022,Nanded,Biloli,Police Chowkis,0
+2022,Nanded,Naygaon,Police Chowkis,0
+2022,Nanded,Loha,Police Chowkis,0
+2022,Nanded,Kandhar,Police Chowkis,0
+2022,Nanded,Mukhed,Police Chowkis,0
+2022,Nanded,Deglur,Police Chowkis,0
+2023,Nanded,Mahur,Police Chowkis,0
+2023,Nanded,Kinvat,Police Chowkis,0
+2023,Nanded,Himalay Nagar,Police Chowkis,0
+2023,Nanded,Hadgaon,Police Chowkis,0
+2023,Nanded,Andhrapur,Police Chowkis,0
+2023,Nanded,Nanded,Police Chowkis,1
+2023,Nanded,Mudkhed,Police Chowkis,0
+2023,Nanded,Bhokar,Police Chowkis,0
+2023,Nanded,Umari,Police Chowkis,0
+2023,Nanded,Dharmabad,Police Chowkis,0
+2023,Nanded,Biloli,Police Chowkis,0
+2023,Nanded,Naygaon,Police Chowkis,0
+2023,Nanded,Loha,Police Chowkis,0
+2023,Nanded,Kandhar,Police Chowkis,0
+2023,Nanded,Mukhed,Police Chowkis,0
+2023,Nanded,Deglur,Police Chowkis,0
+2024,Nanded,Mahur,Police Chowkis,0
+2024,Nanded,Kinvat,Police Chowkis,0
+2024,Nanded,Himalay Nagar,Police Chowkis,0
+2024,Nanded,Hadgaon,Police Chowkis,0
+2024,Nanded,Andhrapur,Police Chowkis,0
+2024,Nanded,Nanded,Police Chowkis,1
+2024,Nanded,Mudkhed,Police Chowkis,0
+2024,Nanded,Bhokar,Police Chowkis,0
+2024,Nanded,Umari,Police Chowkis,1
+2024,Nanded,Dharmabad,Police Chowkis,1
+2024,Nanded,Biloli,Police Chowkis,0
+2024,Nanded,Naygaon,Police Chowkis,0
+2024,Nanded,Loha,Police Chowkis,0
+2024,Nanded,Kandhar,Police Chowkis,0
+2024,Nanded,Mukhed,Police Chowkis,1
+2024,Nanded,Deglur,Police Chowkis,0
 2018,Nandurbar,Akkalkuva,Police Chowkis,
 2018,Nandurbar,Akrani,Police Chowkis,
 2018,Nandurbar,Taloda,Police Chowkis,
@@ -3311,6 +6029,24 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nandurbar,Shahada,Police Chowkis,
 2021,Nandurbar,Nandurbar,Police Chowkis,
 2021,Nandurbar,Navapur,Police Chowkis,
+2022,Nandurbar,Akkalkuva,Police Chowkis,5
+2022,Nandurbar,Akrani,Police Chowkis,1
+2022,Nandurbar,Taloda,Police Chowkis,0
+2022,Nandurbar,Shahada,Police Chowkis,4
+2022,Nandurbar,Nandurbar,Police Chowkis,6
+2022,Nandurbar,Navapur,Police Chowkis,3
+2023,Nandurbar,Akkalkuva,Police Chowkis,0
+2023,Nandurbar,Akrani,Police Chowkis,0
+2023,Nandurbar,Taloda,Police Chowkis,0
+2023,Nandurbar,Shahada,Police Chowkis,4
+2023,Nandurbar,Nandurbar,Police Chowkis,0
+2023,Nandurbar,Navapur,Police Chowkis,0
+2024,Nandurbar,Akkalkuva,Police Chowkis,0
+2024,Nandurbar,Akrani,Police Chowkis,0
+2024,Nandurbar,Taloda,Police Chowkis,0
+2024,Nandurbar,Shahada,Police Chowkis,0
+2024,Nandurbar,Nandurbar,Police Chowkis,4
+2024,Nandurbar,Navapur,Police Chowkis,0
 2018,Nashik,Surgana,Police Chowkis,
 2018,Nashik,Kalwan,Police Chowkis,1
 2018,Nashik,Devala,Police Chowkis,
@@ -3371,6 +6107,51 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Nashik,Sinner,Police Chowkis,1
 2021,Nashik,Nifad,Police Chowkis,1
 2021,Nashik,Yewala,Police Chowkis,3
+2022,Nashik,Surgana,Police Chowkis,0
+2022,Nashik,Kalwan,Police Chowkis,0
+2022,Nashik,Devala,Police Chowkis,0
+2022,Nashik,Baglan,Police Chowkis,5
+2022,Nashik,Malegaon,Police Chowkis,1
+2022,Nashik,Nandgaon,Police Chowkis,1
+2022,Nashik,Chandwad,Police Chowkis,6
+2022,Nashik,Dindori,Police Chowkis,0
+2022,Nashik,Peth,Police Chowkis,1
+2022,Nashik,Trimbak,Police Chowkis,9
+2022,Nashik,Nashik,Police Chowkis,56
+2022,Nashik,Igatpuri,Police Chowkis,0
+2022,Nashik,Sinner,Police Chowkis,1
+2022,Nashik,Nifad,Police Chowkis,1
+2022,Nashik,Yewala,Police Chowkis,3
+2023,Nashik,Surgana,Police Chowkis,0
+2023,Nashik,Kalwan,Police Chowkis,1
+2023,Nashik,Devala,Police Chowkis,1
+2023,Nashik,Baglan,Police Chowkis,1
+2023,Nashik,Malegaon,Police Chowkis,0
+2023,Nashik,Nandgaon,Police Chowkis,0
+2023,Nashik,Chandwad,Police Chowkis,0
+2023,Nashik,Dindori,Police Chowkis,0
+2023,Nashik,Peth,Police Chowkis,0
+2023,Nashik,Trimbak,Police Chowkis,0
+2023,Nashik,Nashik,Police Chowkis,56
+2023,Nashik,Igatpuri,Police Chowkis,0
+2023,Nashik,Sinner,Police Chowkis,0
+2023,Nashik,Nifad,Police Chowkis,1
+2023,Nashik,Yewala,Police Chowkis,1
+2024,Nashik,Surgana,Police Chowkis,0
+2024,Nashik,Kalwan,Police Chowkis,0
+2024,Nashik,Devala,Police Chowkis,1
+2024,Nashik,Baglan,Police Chowkis,1
+2024,Nashik,Malegaon,Police Chowkis,5
+2024,Nashik,Nandgaon,Police Chowkis,2
+2024,Nashik,Chandwad,Police Chowkis,0
+2024,Nashik,Dindori,Police Chowkis,0
+2024,Nashik,Peth,Police Chowkis,0
+2024,Nashik,Trimbak,Police Chowkis,0
+2024,Nashik,Nashik,Police Chowkis,58
+2024,Nashik,Igatpuri,Police Chowkis,0
+2024,Nashik,Sinner,Police Chowkis,1
+2024,Nashik,Nifad,Police Chowkis,2
+2024,Nashik,Yewala,Police Chowkis,3
 2018,Dharashiv,Paranda,Police Chowkis,
 2018,Dharashiv,Bhum,Police Chowkis,
 2018,Dharashiv,Washi,Police Chowkis,
@@ -3403,6 +6184,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Dharashiv,Tuljapur,Police Chowkis,1
 2021,Dharashiv,Lohara,Police Chowkis,1
 2021,Dharashiv,Umaraga,Police Chowkis,
+2022,Dharashiv,Paranda,Police Chowkis,0
+2022,Dharashiv,Bhum,Police Chowkis,0
+2022,Dharashiv,Washi,Police Chowkis,0
+2022,Dharashiv,Kalamb,Police Chowkis,0
+2022,Dharashiv,Dharashiv,Police Chowkis,2
+2022,Dharashiv,Tuljapur,Police Chowkis,1
+2022,Dharashiv,Lohara,Police Chowkis,1
+2022,Dharashiv,Umaraga,Police Chowkis,0
+2023,Dharashiv,Paranda,Police Chowkis,0
+2023,Dharashiv,Bhum,Police Chowkis,0
+2023,Dharashiv,Washi,Police Chowkis,0
+2023,Dharashiv,Kalamb,Police Chowkis,0
+2023,Dharashiv,Dharashiv,Police Chowkis,2
+2023,Dharashiv,Tuljapur,Police Chowkis,1
+2023,Dharashiv,Lohara,Police Chowkis,1
+2023,Dharashiv,Umaraga,Police Chowkis,0
+2024,Dharashiv,Paranda,Police Chowkis,0
+2024,Dharashiv,Bhum,Police Chowkis,0
+2024,Dharashiv,Washi,Police Chowkis,0
+2024,Dharashiv,Kalamb,Police Chowkis,0
+2024,Dharashiv,Dharashiv,Police Chowkis,2
+2024,Dharashiv,Tuljapur,Police Chowkis,1
+2024,Dharashiv,Lohara,Police Chowkis,1
+2024,Dharashiv,Umaraga,Police Chowkis,0
 2018,Palghar,Talasari,Police Chowkis,4
 2018,Palghar,Dahanu,Police Chowkis,7
 2018,Palghar,Vikramgad,Police Chowkis,
@@ -3435,6 +6240,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Palghar,Wada,Police Chowkis,2
 2021,Palghar,Palghar,Police Chowkis,22
 2021,Palghar,Vasai,Police Chowkis,31
+2022,Palghar,Talasari,Police Chowkis,4
+2022,Palghar,Dahanu,Police Chowkis,11
+2022,Palghar,Vikramgad,Police Chowkis,0
+2022,Palghar,Javhar,Police Chowkis,0
+2022,Palghar,Mokhada,Police Chowkis,1
+2022,Palghar,Wada,Police Chowkis,2
+2022,Palghar,Palghar,Police Chowkis,20
+2022,Palghar,Vasai,Police Chowkis,31
+2023,Palghar,Talasari,Police Chowkis,4
+2023,Palghar,Dahanu,Police Chowkis,11
+2023,Palghar,Vikramgad,Police Chowkis,0
+2023,Palghar,Javhar,Police Chowkis,0
+2023,Palghar,Mokhada,Police Chowkis,1
+2023,Palghar,Wada,Police Chowkis,2
+2023,Palghar,Palghar,Police Chowkis,20
+2023,Palghar,Vasai,Police Chowkis,42
+2024,Palghar,Talasari,Police Chowkis,4
+2024,Palghar,Dahanu,Police Chowkis,10
+2024,Palghar,Vikramgad,Police Chowkis,0
+2024,Palghar,Javhar,Police Chowkis,0
+2024,Palghar,Mokhada,Police Chowkis,1
+2024,Palghar,Wada,Police Chowkis,0
+2024,Palghar,Palghar,Police Chowkis,17
+2024,Palghar,Vasai,Police Chowkis,47
 2018,Parbhani,Selu,Police Chowkis, 
 2018,Parbhani,Jintur,Police Chowkis, 
 2018,Parbhani,Parbhani,Police Chowkis,3
@@ -3471,6 +6300,33 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Parbhani,Gangakhed,Police Chowkis,
 2021,Parbhani,Palam,Police Chowkis,
 2021,Parbhani,Purna,Police Chowkis,
+2022,Parbhani,Selu,Police Chowkis,0
+2022,Parbhani,Jintur,Police Chowkis,0
+2022,Parbhani,Parbhani,Police Chowkis,0
+2022,Parbhani,Manvat,Police Chowkis,0
+2022,Parbhani,Pathari,Police Chowkis,0
+2022,Parbhani,Sonpeth,Police Chowkis,0
+2022,Parbhani,Gangakhed,Police Chowkis,0
+2022,Parbhani,Palam,Police Chowkis,0
+2022,Parbhani,Purna,Police Chowkis,0
+2023,Parbhani,Selu,Police Chowkis,0
+2023,Parbhani,Jintur,Police Chowkis,0
+2023,Parbhani,Parbhani,Police Chowkis,2
+2023,Parbhani,Manvat,Police Chowkis,0
+2023,Parbhani,Pathari,Police Chowkis,0
+2023,Parbhani,Sonpeth,Police Chowkis,0
+2023,Parbhani,Gangakhed,Police Chowkis,1
+2023,Parbhani,Palam,Police Chowkis,0
+2023,Parbhani,Purna,Police Chowkis,0
+2024,Parbhani,Selu,Police Chowkis,0
+2024,Parbhani,Jintur,Police Chowkis,0
+2024,Parbhani,Parbhani,Police Chowkis,2
+2024,Parbhani,Manvat,Police Chowkis,0
+2024,Parbhani,Pathari,Police Chowkis,0
+2024,Parbhani,Sonpeth,Police Chowkis,0
+2024,Parbhani,Gangakhed,Police Chowkis,1
+2024,Parbhani,Palam,Police Chowkis,0
+2024,Parbhani,Purna,Police Chowkis,0
 2018,Pune,Junnar,Police Chowkis,
 2018,Pune,Aambegaon,Police Chowkis,
 2018,Pune,Shirur,Police Chowkis,4
@@ -3527,6 +6383,48 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Pune,Bhor,Police Chowkis,
 2021,Pune,Baramati,Police Chowkis,2
 2021,Pune,Indapur,Police Chowkis,
+2022,Pune,Junnar,Police Chowkis,0
+2022,Pune,Aambegaon,Police Chowkis,1
+2022,Pune,Shirur,Police Chowkis,4
+2022,Pune,Khed,Police Chowkis,0
+2022,Pune,Maval,Police Chowkis,2
+2022,Pune,Mulashi,Police Chowkis,6
+2022,Pune,Haveli,Police Chowkis,22
+2022,Pune,Pune City,Police Chowkis,0
+2022,Pune,Daund,Police Chowkis,4
+2022,Pune,Purandar,Police Chowkis,0
+2022,Pune,Welhe,Police Chowkis,0
+2022,Pune,Bhor,Police Chowkis,0
+2022,Pune,Baramati,Police Chowkis,3
+2022,Pune,Indapur,Police Chowkis,3
+2023,Pune,Junnar,Police Chowkis,0
+2023,Pune,Aambegaon,Police Chowkis,1
+2023,Pune,Shirur,Police Chowkis,4
+2023,Pune,Khed,Police Chowkis,0
+2023,Pune,Maval,Police Chowkis,1
+2023,Pune,Mulashi,Police Chowkis,5
+2023,Pune,Haveli,Police Chowkis,21
+2023,Pune,Pune City,Police Chowkis,110
+2023,Pune,Daund,Police Chowkis,4
+2023,Pune,Purandar,Police Chowkis,0
+2023,Pune,Welhe,Police Chowkis,0
+2023,Pune,Bhor,Police Chowkis,0
+2023,Pune,Baramati,Police Chowkis,3
+2023,Pune,Indapur,Police Chowkis,3
+2024,Pune,Junnar,Police Chowkis,0
+2024,Pune,Aambegaon,Police Chowkis,1
+2024,Pune,Shirur,Police Chowkis,1
+2024,Pune,Khed,Police Chowkis,0
+2024,Pune,Maval,Police Chowkis,4
+2024,Pune,Mulashi,Police Chowkis,2
+2024,Pune,Haveli,Police Chowkis,21
+2024,Pune,Pune City,Police Chowkis,114
+2024,Pune,Daund,Police Chowkis,1
+2024,Pune,Purandar,Police Chowkis,0
+2024,Pune,Welhe,Police Chowkis,0
+2024,Pune,Bhor,Police Chowkis,0
+2024,Pune,Baramati,Police Chowkis,0
+2024,Pune,Indapur,Police Chowkis,2
 2018,Raigad,Uran,Police Chowkis,3
 2018,Raigad,Panwel,Police Chowkis,16
 2018,Raigad,Karjat,Police Chowkis,
@@ -3587,6 +6485,36 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Raigad,Mhasala,Police Chowkis,
 2021,Raigad,Mahad,Police Chowkis,1
 2021,Raigad,Poladpur,Police Chowkis,
+2023,Raigad,Uran,Police Chowkis,5
+2023,Raigad,Panwel,Police Chowkis,24
+2023,Raigad,Karjat,Police Chowkis,0
+2023,Raigad,Khalapur,Police Chowkis,5
+2023,Raigad,Pen,Police Chowkis,0
+2023,Raigad,Alibag,Police Chowkis,1
+2023,Raigad,Murud,Police Chowkis,1
+2023,Raigad,Roha,Police Chowkis,1
+2023,Raigad,Sudhagad,Police Chowkis,1
+2023,Raigad,Mangaon,Police Chowkis,0
+2023,Raigad,Tala,Police Chowkis,0
+2023,Raigad,Shreevardhan,Police Chowkis,0
+2023,Raigad,Mhasala,Police Chowkis,0
+2023,Raigad,Mahad,Police Chowkis,2
+2023,Raigad,Poladpur,Police Chowkis,0
+2024,Raigad,Uran,Police Chowkis,0
+2024,Raigad,Panwel,Police Chowkis,20
+2024,Raigad,Karjat,Police Chowkis,0
+2024,Raigad,Khalapur,Police Chowkis,5
+2024,Raigad,Pen,Police Chowkis,0
+2024,Raigad,Alibag,Police Chowkis,1
+2024,Raigad,Murud,Police Chowkis,1
+2024,Raigad,Roha,Police Chowkis,1
+2024,Raigad,Sudhagad,Police Chowkis,1
+2024,Raigad,Mangaon,Police Chowkis,0
+2024,Raigad,Tala,Police Chowkis,0
+2024,Raigad,Shreevardhan,Police Chowkis,0
+2024,Raigad,Mhasala,Police Chowkis,0
+2024,Raigad,Mahad,Police Chowkis,2
+2024,Raigad,Poladpur,Police Chowkis,0
 2018,Ratnagiri,Mandangad,Police Chowkis,
 2018,Ratnagiri,Dapoli,Police Chowkis,
 2018,Ratnagiri,Khed,Police Chowkis,1
@@ -3623,6 +6551,33 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Ratnagiri,Sangameshwar,Police Chowkis,1
 2021,Ratnagiri,Lanja,Police Chowkis,
 2021,Ratnagiri,Rajapur,Police Chowkis,
+2022,Ratnagiri,Mandangad,Police Chowkis,4
+2022,Ratnagiri,Dapoli,Police Chowkis,0
+2022,Ratnagiri,Khed,Police Chowkis,0
+2022,Ratnagiri,Chiplun,Police Chowkis,2
+2022,Ratnagiri,Guhagar,Police Chowkis,0
+2022,Ratnagiri,Ratnagiri,Police Chowkis,5
+2022,Ratnagiri,Sangameshwar,Police Chowkis,1
+2022,Ratnagiri,Lanja,Police Chowkis,0
+2022,Ratnagiri,Rajapur,Police Chowkis,0
+2023,Ratnagiri,Mandangad,Police Chowkis,5
+2023,Ratnagiri,Dapoli,Police Chowkis,0
+2023,Ratnagiri,Khed,Police Chowkis,0
+2023,Ratnagiri,Chiplun,Police Chowkis,0
+2023,Ratnagiri,Guhagar,Police Chowkis,1
+2023,Ratnagiri,Ratnagiri,Police Chowkis,1
+2023,Ratnagiri,Sangameshwar,Police Chowkis,1
+2023,Ratnagiri,Lanja,Police Chowkis,0
+2023,Ratnagiri,Rajapur,Police Chowkis,2
+2024,Ratnagiri,Mandangad,Police Chowkis,5
+2024,Ratnagiri,Dapoli,Police Chowkis,0
+2024,Ratnagiri,Khed,Police Chowkis,0
+2024,Ratnagiri,Chiplun,Police Chowkis,0
+2024,Ratnagiri,Guhagar,Police Chowkis,1
+2024,Ratnagiri,Ratnagiri,Police Chowkis,1
+2024,Ratnagiri,Sangameshwar,Police Chowkis,1
+2024,Ratnagiri,Lanja,Police Chowkis,0
+2024,Ratnagiri,Rajapur,Police Chowkis,2
 2018,Sangli,Shirala,Police Chowkis,
 2018,Sangli,Valava,Police Chowkis,3
 2018,Sangli,Palus,Police Chowkis,
@@ -3663,6 +6618,36 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Sangli,Miraj,Police Chowkis,11
 2021,Sangli,Ku. Mahakal,Police Chowkis,
 2021,Sangli,Jat,Police Chowkis,
+2022,Sangli,Shirala,Police Chowkis,0
+2022,Sangli,Valava,Police Chowkis,3
+2022,Sangli,Palus,Police Chowkis,0
+2022,Sangli,Kadegaon,Police Chowkis,0
+2022,Sangli,Khanapur,Police Chowkis,0
+2022,Sangli,Aatpadi,Police Chowkis,0
+2022,Sangli,Tasgaon,Police Chowkis,1
+2022,Sangli,Miraj,Police Chowkis,11
+2022,Sangli,Ku. Mahakal,Police Chowkis,0
+2022,Sangli,Jat,Police Chowkis,0
+2023,Sangli,Shirala,Police Chowkis,0
+2023,Sangli,Valava,Police Chowkis,3
+2023,Sangli,Palus,Police Chowkis,0
+2023,Sangli,Kadegaon,Police Chowkis,0
+2023,Sangli,Khanapur,Police Chowkis,0
+2023,Sangli,Aatpadi,Police Chowkis,0
+2023,Sangli,Tasgaon,Police Chowkis,1
+2023,Sangli,Miraj,Police Chowkis,11
+2023,Sangli,Ku. Mahakal,Police Chowkis,0
+2023,Sangli,Jat,Police Chowkis,0
+2024,Sangli,Shirala,Police Chowkis,0
+2024,Sangli,Valava,Police Chowkis,1
+2024,Sangli,Palus,Police Chowkis,0
+2024,Sangli,Kadegaon,Police Chowkis,0
+2024,Sangli,Khanapur,Police Chowkis,0
+2024,Sangli,Aatpadi,Police Chowkis,0
+2024,Sangli,Tasgaon,Police Chowkis,1
+2024,Sangli,Miraj,Police Chowkis,11
+2024,Sangli,Ku. Mahakal,Police Chowkis,0
+2024,Sangli,Jat,Police Chowkis,0
 2018,Satara,Mahableshwar,Police Chowkis,
 2018,Satara,Vai,Police Chowkis,1
 2018,Satara,Khandala,Police Chowkis,
@@ -3707,6 +6692,39 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Satara,Javali,Police Chowkis,
 2021,Satara,Patan,Police Chowkis,
 2021,Satara,Karad,Police Chowkis,5
+2022,Satara,Mahableshwar,Police Chowkis,0
+2022,Satara,Vai,Police Chowkis,3
+2022,Satara,Khandala,Police Chowkis,0
+2022,Satara,Faltan,Police Chowkis,0
+2022,Satara,Man,Police Chowkis,1
+2022,Satara,Khatav,Police Chowkis,0
+2022,Satara,Koregaon,Police Chowkis,0
+2022,Satara,Satara,Police Chowkis,7
+2022,Satara,Javali,Police Chowkis,0
+2022,Satara,Patan,Police Chowkis,0
+2022,Satara,Karad,Police Chowkis,7
+2023,Satara,Mahableshwar,Police Chowkis,0
+2023,Satara,Vai,Police Chowkis,3
+2023,Satara,Khandala,Police Chowkis,0
+2023,Satara,Faltan,Police Chowkis,0
+2023,Satara,Man,Police Chowkis,1
+2023,Satara,Khatav,Police Chowkis,0
+2023,Satara,Koregaon,Police Chowkis,0
+2023,Satara,Satara,Police Chowkis,7
+2023,Satara,Javali,Police Chowkis,0
+2023,Satara,Patan,Police Chowkis,0
+2023,Satara,Karad,Police Chowkis,7
+2024,Satara,Mahableshwar,Police Chowkis,0
+2024,Satara,Vai,Police Chowkis,0
+2024,Satara,Khandala,Police Chowkis,0
+2024,Satara,Faltan,Police Chowkis,3
+2024,Satara,Man,Police Chowkis,1
+2024,Satara,Khatav,Police Chowkis,0
+2024,Satara,Koregaon,Police Chowkis,0
+2024,Satara,Satara,Police Chowkis,2
+2024,Satara,Javali,Police Chowkis,0
+2024,Satara,Patan,Police Chowkis,0
+2024,Satara,Karad,Police Chowkis,2
 2018,Sindhudurg,Devgad,Police Chowkis,
 2018,Sindhudurg,Vaibhavwadi,Police Chowkis,
 2018,Sindhudurg,Kankavali,Police Chowkis,
@@ -3717,28 +6735,85 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2018,Sindhudurg,Dodamarg,Police Chowkis,
 2019,Sindhudurg,Devgad,Police Chowkis,
 2019,Sindhudurg,Vaibhavwadi,Police Chowkis,
-2019,Sindhudurg,Kankawali,Police Chowkis,
-2019,Sindhudurg,Malwan,Police Chowkis,
-2019,Sindhudurg,Vengurli,Police Chowkis,1
-2019,Sindhudurg,Kulad,Police Chowkis,3
-2019,Sindhudurg,Savantwadi,Police Chowkis,
+2019,Sindhudurg,Kankavali,Police Chowkis,
+2019,Sindhudurg,Malvan,Police Chowkis,
+2019,Sindhudurg,Vengurla,Police Chowkis,1
+2019,Sindhudurg,Kudal,Police Chowkis,3
+2019,Sindhudurg,Sawantwadi,Police Chowkis,
 2019,Sindhudurg,Dodamarg,Police Chowkis,
 2020,Sindhudurg,Devgad,Police Chowkis,
 2020,Sindhudurg,Vaibhavwadi,Police Chowkis,
-2020,Sindhudurg,Kankawali,Police Chowkis,
-2020,Sindhudurg,Malwan,Police Chowkis,
-2020,Sindhudurg,Vengurli,Police Chowkis,3
-2020,Sindhudurg,Kulad,Police Chowkis,1
-2020,Sindhudurg,Savantwadi,Police Chowkis,
+2020,Sindhudurg,Kankavali,Police Chowkis,
+2020,Sindhudurg,Malvan,Police Chowkis,
+2020,Sindhudurg,Vengurla,Police Chowkis,3
+2020,Sindhudurg,Kudal,Police Chowkis,1
+2020,Sindhudurg,Sawantwadi,Police Chowkis,
 2020,Sindhudurg,Dodamarg,Police Chowkis,
 2021,Sindhudurg,Devgad,Police Chowkis,
 2021,Sindhudurg,Vaibhavwadi,Police Chowkis,
-2021,Sindhudurg,Kankawali,Police Chowkis,
-2021,Sindhudurg,Malwan,Police Chowkis,
-2021,Sindhudurg,Vengurli,Police Chowkis,3
-2021,Sindhudurg,Kulad,Police Chowkis,1
-2021,Sindhudurg,Savantwadi,Police Chowkis,
+2021,Sindhudurg,Kankavali,Police Chowkis,
+2021,Sindhudurg,Malvan,Police Chowkis,
+2021,Sindhudurg,Vengurla,Police Chowkis,3
+2021,Sindhudurg,Kudal,Police Chowkis,1
+2021,Sindhudurg,Sawantwadi,Police Chowkis,
 2021,Sindhudurg,Dodamarg,Police Chowkis,
+2022,Sindhudurg,Devgad,Police Chowkis,0
+2022,Sindhudurg,Vaibhavwadi,Police Chowkis,0
+2022,Sindhudurg,Kankavali,Police Chowkis,0
+2022,Sindhudurg,Malvan,Police Chowkis,0
+2022,Sindhudurg,Vengurla,Police Chowkis,0
+2022,Sindhudurg,Kudal,Police Chowkis,0
+2022,Sindhudurg,Sawantwadi,Police Chowkis,0
+2022,Sindhudurg,Dodamarg,Police Chowkis,0
+2023,Sindhudurg,Devgad,Police Chowkis,0
+2023,Sindhudurg,Vaibhavwadi,Police Chowkis,0
+2023,Sindhudurg,Kankavali,Police Chowkis,0
+2023,Sindhudurg,Malvan,Police Chowkis,0
+2023,Sindhudurg,Vengurla,Police Chowkis,0
+2023,Sindhudurg,Kudal,Police Chowkis,0
+2023,Sindhudurg,Sawantwadi,Police Chowkis,0
+2023,Sindhudurg,Dodamarg,Police Chowkis,0
+2024,Sindhudurg,Devgad,Police Chowkis,0
+2024,Sindhudurg,Vaibhavwadi,Police Chowkis,0
+2024,Sindhudurg,Kankavali,Police Chowkis,0
+2024,Sindhudurg,Malvan,Police Chowkis,0
+2024,Sindhudurg,Vengurla,Police Chowkis,0
+2024,Sindhudurg,Kudal,Police Chowkis,0
+2024,Sindhudurg,Sawantwadi,Police Chowkis,0
+2024,Sindhudurg,Dodamarg,Police Chowkis,0
+2022,Solapur,Karmala,Police Chowkis,0
+2022,Solapur,Madha,Police Chowkis,0
+2022,Solapur,Barshi,Police Chowkis,0
+2022,Solapur,North Solapur,Police Chowkis,0
+2022,Solapur,Mohol,Police Chowkis,2
+2022,Solapur,Pandharpur,Police Chowkis,5
+2022,Solapur,Malshiras,Police Chowkis,0
+2022,Solapur,Sangole,Police Chowkis,0
+2022,Solapur,Mangalwedha,Police Chowkis,0
+2022,Solapur,South Solapur,Police Chowkis,1
+2022,Solapur,Akkalkot,Police Chowkis,2
+2023,Solapur,Karmala,Police Chowkis,0
+2023,Solapur,Madha,Police Chowkis,0
+2023,Solapur,Barshi,Police Chowkis,0
+2023,Solapur,North Solapur,Police Chowkis,0
+2023,Solapur,Mohol,Police Chowkis,2
+2023,Solapur,Pandharpur,Police Chowkis,5
+2023,Solapur,Malshiras,Police Chowkis,0
+2023,Solapur,Sangole,Police Chowkis,0
+2023,Solapur,Mangalwedha,Police Chowkis,1
+2023,Solapur,South Solapur,Police Chowkis,1
+2023,Solapur,Akkalkot,Police Chowkis,3
+2024,Solapur,Karmala,Police Chowkis,0
+2024,Solapur,Madha,Police Chowkis,0
+2024,Solapur,Barshi,Police Chowkis,0
+2024,Solapur,North Solapur,Police Chowkis,29
+2024,Solapur,Mohol,Police Chowkis,2
+2024,Solapur,Pandharpur,Police Chowkis,5
+2024,Solapur,Malshiras,Police Chowkis,0
+2024,Solapur,Sangole,Police Chowkis,0
+2024,Solapur,Mangalwedha,Police Chowkis,1
+2024,Solapur,South Solapur,Police Chowkis,0
+2024,Solapur,Akkalkot,Police Chowkis,3
 2018,Thane,Thane,Police Chowkis,231
 2018,Thane,Bhivandi,Police Chowkis,2
 2018,Thane,Shahapur,Police Chowkis,4
@@ -3767,6 +6842,27 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Thane,Ulhasnagar,Police Chowkis,9
 2021,Thane,Ambarnath,Police Chowkis,
 2021,Thane,Murbad,Police Chowkis,6
+2022,Thane,Thane,Police Chowkis,69
+2022,Thane,Bhivandi,Police Chowkis,30
+2022,Thane,Shahapur,Police Chowkis,0
+2022,Thane,Kalyan,Police Chowkis,31
+2022,Thane,Ulhasnagar,Police Chowkis,23
+2022,Thane,Ambarnath,Police Chowkis,4
+2022,Thane,Murbad,Police Chowkis,6
+2023,Thane,Thane,Police Chowkis,72
+2023,Thane,Bhivandi,Police Chowkis,23
+2023,Thane,Shahapur,Police Chowkis,0
+2023,Thane,Kalyan,Police Chowkis,36
+2023,Thane,Ulhasnagar,Police Chowkis,27
+2023,Thane,Ambarnath,Police Chowkis,4
+2023,Thane,Murbad,Police Chowkis,2
+2024,Thane,Thane,Police Chowkis,60
+2024,Thane,Bhivandi,Police Chowkis,22
+2024,Thane,Shahapur,Police Chowkis,0
+2024,Thane,Kalyan,Police Chowkis,40
+2024,Thane,Ulhasnagar,Police Chowkis,3
+2024,Thane,Ambarnath,Police Chowkis,0
+2024,Thane,Murbad,Police Chowkis,2
 2018,Wardha,Ashti,Police Chowkis,
 2018,Wardha,Karanja,Police Chowkis,
 2018,Wardha,Aarvi,Police Chowkis,
@@ -3799,6 +6895,30 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Wardha,Devali,Police Chowkis,
 2021,Wardha,Hinganghat,Police Chowkis,
 2021,Wardha,Samudrapur,Police Chowkis,
+2022,Wardha,Ashti,Police Chowkis,0
+2022,Wardha,Karanja,Police Chowkis,0
+2022,Wardha,Aarvi,Police Chowkis,0
+2022,Wardha,Selu,Police Chowkis,0
+2022,Wardha,Wardha,Police Chowkis,0
+2022,Wardha,Devali,Police Chowkis,0
+2022,Wardha,Hinganghat,Police Chowkis,0
+2022,Wardha,Samudrapur,Police Chowkis,0
+2023,Wardha,Ashti,Police Chowkis,0
+2023,Wardha,Karanja,Police Chowkis,0
+2023,Wardha,Aarvi,Police Chowkis,0
+2023,Wardha,Selu,Police Chowkis,0
+2023,Wardha,Wardha,Police Chowkis,0
+2023,Wardha,Devali,Police Chowkis,0
+2023,Wardha,Hinganghat,Police Chowkis,0
+2023,Wardha,Samudrapur,Police Chowkis,0
+2024,Wardha,Ashti,Police Chowkis,0
+2024,Wardha,Karanja,Police Chowkis,0
+2024,Wardha,Aarvi,Police Chowkis,0
+2024,Wardha,Selu,Police Chowkis,0
+2024,Wardha,Wardha,Police Chowkis,0
+2024,Wardha,Devali,Police Chowkis,0
+2024,Wardha,Hinganghat,Police Chowkis,0
+2024,Wardha,Samudrapur,Police Chowkis,0
 2018,Washim,Malegaon,Police Chowkis,
 2018,Washim,Mangrulpir,Police Chowkis,
 2018,Washim,Karanja,Police Chowkis,
@@ -3823,6 +6943,24 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Washim,Manora,Police Chowkis,1
 2021,Washim,Washim,Police Chowkis,2
 2021,Washim,Resod,Police Chowkis,1
+2022,Washim,Malegaon,Police Chowkis,0
+2022,Washim,Mangrulpir,Police Chowkis,1
+2022,Washim,Karanja,Police Chowkis,3
+2022,Washim,Manora,Police Chowkis,0
+2022,Washim,Washim,Police Chowkis,3
+2022,Washim,Resod,Police Chowkis,0
+2023,Washim,Malegaon,Police Chowkis,0
+2023,Washim,Mangrulpir,Police Chowkis,1
+2023,Washim,Karanja,Police Chowkis,4
+2023,Washim,Manora,Police Chowkis,0
+2023,Washim,Washim,Police Chowkis,4
+2023,Washim,Resod,Police Chowkis,0
+2024,Washim,Malegaon,Police Chowkis,0
+2024,Washim,Mangrulpir,Police Chowkis,1
+2024,Washim,Karanja,Police Chowkis,4
+2024,Washim,Manora,Police Chowkis,0
+2024,Washim,Washim,Police Chowkis,4
+2024,Washim,Resod,Police Chowkis,0
 2018,Yavatmal,Ner,Police Chowkis,
 2018,Yavatmal,Babhulgaon,Police Chowkis,
 2018,Yavatmal,Kalamb,Police Chowkis,
@@ -3887,3 +7025,51 @@ Year,District,Taluka,Select Type of Police Establishment,Number
 2021,Yavatmal,Maregaon,Police Chowkis,
 2021,Yavatmal,Zari Jamani,Police Chowkis,
 2021,Yavatmal,Vani,Police Chowkis,
+2022,Yavatmal,Ner,Police Chowkis,0
+2022,Yavatmal,Babhulgaon,Police Chowkis,0
+2022,Yavatmal,Kalamb,Police Chowkis,0
+2022,Yavatmal,Yavatmal,Police Chowkis,3
+2022,Yavatmal,Darvha,Police Chowkis,0
+2022,Yavatmal,Digras,Police Chowkis,0
+2022,Yavatmal,Pusad,Police Chowkis,2
+2022,Yavatmal,Umarkhed,Police Chowkis,0
+2022,Yavatmal,Mahagaon,Police Chowkis,0
+2022,Yavatmal,Aarni,Police Chowkis,0
+2022,Yavatmal,Ghantaji,Police Chowkis,0
+2022,Yavatmal,Kelapur,Police Chowkis,0
+2022,Yavatmal,Ralegaon,Police Chowkis,0
+2022,Yavatmal,Maregaon,Police Chowkis,0
+2022,Yavatmal,Zari Jamani,Police Chowkis,0
+2022,Yavatmal,Vani,Police Chowkis,0
+2023,Yavatmal,Ner,Police Chowkis,0
+2023,Yavatmal,Babhulgaon,Police Chowkis,0
+2023,Yavatmal,Kalamb,Police Chowkis,0
+2023,Yavatmal,Yavatmal,Police Chowkis,3
+2023,Yavatmal,Darvha,Police Chowkis,0
+2023,Yavatmal,Digras,Police Chowkis,0
+2023,Yavatmal,Pusad,Police Chowkis,2
+2023,Yavatmal,Umarkhed,Police Chowkis,0
+2023,Yavatmal,Mahagaon,Police Chowkis,0
+2023,Yavatmal,Aarni,Police Chowkis,0
+2023,Yavatmal,Ghantaji,Police Chowkis,0
+2023,Yavatmal,Kelapur,Police Chowkis,0
+2023,Yavatmal,Ralegaon,Police Chowkis,0
+2023,Yavatmal,Maregaon,Police Chowkis,0
+2023,Yavatmal,Zari Jamani,Police Chowkis,0
+2023,Yavatmal,Vani,Police Chowkis,0
+2024,Yavatmal,Ner,Police Chowkis,0
+2024,Yavatmal,Babhulgaon,Police Chowkis,0
+2024,Yavatmal,Kalamb,Police Chowkis,0
+2024,Yavatmal,Yavatmal,Police Chowkis,3
+2024,Yavatmal,Darvha,Police Chowkis,0
+2024,Yavatmal,Digras,Police Chowkis,0
+2024,Yavatmal,Pusad,Police Chowkis,2
+2024,Yavatmal,Umarkhed,Police Chowkis,0
+2024,Yavatmal,Mahagaon,Police Chowkis,0
+2024,Yavatmal,Aarni,Police Chowkis,0
+2024,Yavatmal,Ghantaji,Police Chowkis,0
+2024,Yavatmal,Kelapur,Police Chowkis,0
+2024,Yavatmal,Ralegaon,Police Chowkis,0
+2024,Yavatmal,Maregaon,Police Chowkis,0
+2024,Yavatmal,Zari Jamani,Police Chowkis,0
+2024,Yavatmal,Vani,Police Chowkis,0
