@@ -39,6 +39,21 @@ Ahilyanagar,2021,Class A,1040.0,664.0,155.0
 Ahilyanagar,2021,Class B,1527.0,1019.0,187.0
 Ahilyanagar,2021,Class C,12433.0,8855.0,1918.0
 Ahilyanagar,2021,Class D,4245.0,2557.0,393.0
+Ahilyanagar,2022,Class A,1116.0,834.0,178.0
+Ahilyanagar,2022,Class B,1561.0,1039.0,199.0
+Ahilyanagar,2022,Class C,12855.0,8826.0,1922.0
+Ahilyanagar,2022,Class D,4100.0,2302.0,376.0
+Ahilyanagar,2022,Class E,12053.0,12053.0,10201.0
+Ahilyanagar,2023,Class A,1135.0,800.0,169.0
+Ahilyanagar,2023,Class B,1665.0,1102.0,237.0
+Ahilyanagar,2023,Class C,13130.0,8850.0,1958.0
+Ahilyanagar,2023,Class D,3919.0,2100.0,349.0
+Ahilyanagar,2023,Class E,11921.0,11921.0,10081.0
+Ahilyanagar,2024,Class A,1153.0,817.0,186.0
+Ahilyanagar,2024,Class B,1645.0,1146.0,240.0
+Ahilyanagar,2024,Class C,13733.0,9240.0,2095.0
+Ahilyanagar,2024,Class D,3896.0,1906.0,345.0
+Ahilyanagar,2024,Class E,12505.0,12505.0,10688.0
 Akola,2012,Class A,506.0,427.0,49.0
 Akola,2012,Class B,1029.0,816.0,156.0
 Akola,2012,Class C,6813.0,5773.0,668.0
@@ -79,6 +94,21 @@ Akola,2021,Class A,564.0,337.0,62.0
 Akola,2021,Class B,1253.0,720.0,169.0
 Akola,2021,Class C,7731.0,6033.0,1378.0
 Akola,2021,Class D,1937.0,1117.0,178.0
+Akola,2022,Class A,654.0,388.0,82.0
+Akola,2022,Class B,1258.0,678.0,156.0
+Akola,2022,Class C,7856.0,5861.0,1381.0
+Akola,2022,Class D,1833.0,1037.0,164.0
+Akola,2022,Class E,3076.0,3076.0,2853.0
+Akola,2023,Class A,654.0,374.0,85.0
+Akola,2023,Class B,1278.0,674.0,162.0
+Akola,2023,Class C,7798.0,5633.0,1341.0
+Akola,2023,Class D,1719.0,971.0,153.0
+Akola,2023,Class E,2916.0,2916.0,2734.0
+Akola,2024,Class A,678.0,379.0,97.0
+Akola,2024,Class B,1307.0,700.0,167.0
+Akola,2024,Class C,7836.0,5887.0,1533.0
+Akola,2024,Class D,1700.0,912.0,157.0
+Akola,2024,Class E,716.0,716.0,525.0
 Amravati,2012,Class A,1182.0,872.0,113.0
 Amravati,2012,Class B,1849.0,1437.0,262.0
 Amravati,2012,Class C,13121.0,10863.0,1325.0
@@ -119,6 +149,36 @@ Amravati,2021,Class A,1514.0,942.0,225.0
 Amravati,2021,Class B,1968.0,1317.0,273.0
 Amravati,2021,Class C,15093.0,11880.0,2791.0
 Amravati,2021,Class D,4015.0,2463.0,403.0
+Amravati,2022,Class A,1550.0,982.0,239.0
+Amravati,2022,Class B,1997.0,1312.0,290.0
+Amravati,2022,Class C,14803.0,11613.0,2793.0
+Amravati,2022,Class D,3739.0,2245.0,380.0
+Amravati,2022,Class E,8510.0,8510.0,6065.0
+Amravati,2023,Class A,1570.0,931.0,232.0
+Amravati,2023,Class B,2053.0,1315.0,301.0
+Amravati,2023,Class C,14881.0,11327.0,2811.0
+Amravati,2023,Class D,3541.0,2095.0,372.0
+Amravati,2023,Class E,8534.0,8534.0,6115.0
+Amravati,2024,Class A,1632.0,934.0,251.0
+Amravati,2024,Class B,2136.0,1280.0,313.0
+Amravati,2024,Class C,14622.0,10986.0,2849.0
+Amravati,2024,Class D,3426.0,1950.0,356.0
+Amravati,2024,Class E,4646.0,4646.0,2278.0
+Chh. Sambhaji Nagar,2022,Class A,2115.0,1465.0,409.0
+Chh. Sambhaji Nagar,2022,Class B,3049.0,1800.0,362.0
+Chh. Sambhaji Nagar,2022,Class C,18452.0,13617.0,2889.0
+Chh. Sambhaji Nagar,2022,Class D,4969.0,2925.0,561.0
+Chh. Sambhaji Nagar,2022,Class E,8897.0,8897.0,6581.0
+Chh. Sambhaji Nagar,2023,Class A,2167.0,1371.0,403.0
+Chh. Sambhaji Nagar,2023,Class B,3034.0,1798.0,380.0
+Chh. Sambhaji Nagar,2023,Class C,18498.0,13256.0,2872.0
+Chh. Sambhaji Nagar,2023,Class D,4944.0,2725.0,518.0
+Chh. Sambhaji Nagar,2023,Class E,8701.0,8701.0,6459.0
+Chh. Sambhaji Nagar,2024,Class A,2181.0,1370.0,405.0
+Chh. Sambhaji Nagar,2024,Class B,2963.0,1839.0,425.0
+Chh. Sambhaji Nagar,2024,Class C,18650.0,13318.0,3070.0
+Chh. Sambhaji Nagar,2024,Class D,4960.0,2614.0,520.0
+Chh. Sambhaji Nagar,2024,Class E,8660.0,8660.0,6477.0
 Beed,2013,Class A,471.0,376.0,31.0
 Beed,2013,Class B,1189.0,957.0,232.0
 Beed,2013,Class C,7681.0,6167.0,717.0
@@ -155,6 +215,21 @@ Beed,2021,Class A,840.0,530.0,98.0
 Beed,2021,Class B,1387.0,590.0,79.0
 Beed,2021,Class C,8462.0,6141.0,1456.0
 Beed,2021,Class D,2537.0,1509.0,233.0
+Beed,2022,Class A,861.0,605.0,125.0
+Beed,2022,Class B,1371.0,600.0,71.0
+Beed,2022,Class C,8349.0,6097.0,1471.0
+Beed,2022,Class D,2377.0,1379.0,211.0
+Beed,2022,Class E,6730.0,6730.0,5532.0
+Beed,2023,Class A,866.0,551.0,110.0
+Beed,2023,Class B,1175.0,608.0,83.0
+Beed,2023,Class C,8378.0,5784.0,1415.0
+Beed,2023,Class D,2170.0,1222.0,191.0
+Beed,2023,Class E,3818.0,3818.0,2663.0
+Beed,2024,Class A,860.0,564.0,126.0
+Beed,2024,Class B,1161.0,640.0,94.0
+Beed,2024,Class C,8605.0,5929.0,1547.0
+Beed,2024,Class D,2087.0,1202.0,211.0
+Beed,2024,Class E,6467.0,6467.0,5331.0
 Bhandara,2012,Class A,284.0,218.0,22.0
 Bhandara,2012,Class B,633.0,492.0,95.0
 Bhandara,2012,Class C,4389.0,3585.0,466.0
@@ -195,6 +270,21 @@ Bhandara,2021,Class A,518.0,335.0,74.0
 Bhandara,2021,Class B,773.0,433.0,103.0
 Bhandara,2021,Class C,5486.0,4142.0,1092.0
 Bhandara,2021,Class D,1537.0,912.0,196.0
+Bhandara,2022,Class A,532.0,357.0,77.0
+Bhandara,2022,Class B,775.0,411.0,93.0
+Bhandara,2022,Class C,5538.0,4093.0,1095.0
+Bhandara,2022,Class D,1486.0,836.0,183.0
+Bhandara,2022,Class E,3967.0,3967.0,2710.0
+Bhandara,2023,Class A,525.0,323.0,67.0
+Bhandara,2023,Class B,816.0,442.0,98.0
+Bhandara,2023,Class C,5545.0,3909.0,1077.0
+Bhandara,2023,Class D,1409.0,780.0,175.0
+Bhandara,2023,Class E,3894.0,3894.0,2638.0
+Bhandara,2024,Class A,566.0,329.0,76.0
+Bhandara,2024,Class B,841.0,479.0,124.0
+Bhandara,2024,Class C,5809.0,4151.0,1221.0
+Bhandara,2024,Class D,1374.0,783.0,191.0
+Bhandara,2024,Class E,3955.0,3955.0,2723.0
 Buldhana,2013,Class A,395.0,318.0,40.0
 Buldhana,2013,Class B,1071.0,799.0,112.0
 Buldhana,2013,Class C,7299.0,6023.0,705.0
@@ -231,6 +321,21 @@ Buldhana,2021,Class A,734.0,429.0,92.0
 Buldhana,2021,Class B,1264.0,679.0,95.0
 Buldhana,2021,Class C,8924.0,6590.0,1252.0
 Buldhana,2021,Class D,2140.0,1158.0,213.0
+Buldhana,2022,Class A,745.0,510.0,110.0
+Buldhana,2022,Class B,1188.0,631.0,82.0
+Buldhana,2022,Class C,8928.0,6551.0,1261.0
+Buldhana,2022,Class D,2063.0,1079.0,200.0
+Buldhana,2022,Class E,7171.0,7171.0,5571.0
+Buldhana,2023,Class A,771.0,489.0,103.0
+Buldhana,2023,Class B,1284.0,708.0,100.0
+Buldhana,2023,Class C,8971.0,6404.0,1297.0
+Buldhana,2023,Class D,2007.0,994.0,192.0
+Buldhana,2023,Class E,7186.0,7186.0,5612.0
+Buldhana,2024,Class A,795.0,458.0,95.0
+Buldhana,2024,Class B,1319.0,686.0,104.0
+Buldhana,2024,Class C,9177.0,6494.0,1376.0
+Buldhana,2024,Class D,1961.0,1002.0,197.0
+Buldhana,2024,Class E,7372.0,7372.0,5792.0
 Chandrapur,2012,Class A,556.0,431.0,40.0
 Chandrapur,2012,Class B,1197.0,875.0,99.0
 Chandrapur,2012,Class C,8719.0,7000.0,823.0
@@ -271,6 +376,21 @@ Chandrapur,2021,Class A,768.0,403.0,68.0
 Chandrapur,2021,Class B,1690.0,938.0,210.0
 Chandrapur,2021,Class C,10789.0,7946.0,1852.0
 Chandrapur,2021,Class D,3301.0,1842.0,339.0
+Chandrapur,2022,Class A,794.0,440.0,91.0
+Chandrapur,2022,Class B,1660.0,928.0,211.0
+Chandrapur,2022,Class C,10370.0,7362.0,1729.0
+Chandrapur,2022,Class D,2897.0,1376.0,255.0
+Chandrapur,2022,Class E,6163.0,6163.0,5255.0
+Chandrapur,2023,Class A,847.0,431.0,92.0
+Chandrapur,2023,Class B,1748.0,1006.0,227.0
+Chandrapur,2023,Class C,11237.0,7309.0,1764.0
+Chandrapur,2023,Class D,2690.0,1257.0,248.0
+Chandrapur,2023,Class E,6096.0,6096.0,5091.0
+Chandrapur,2024,Class A,896.0,459.0,110.0
+Chandrapur,2024,Class B,1691.0,1035.0,245.0
+Chandrapur,2024,Class C,11261.0,7685.0,2018.0
+Chandrapur,2024,Class D,2662.0,1289.0,272.0
+Chandrapur,2024,Class E,6123.0,6123.0,5148.0
 Dhule,2012,Class A,525.0,443.0,49.0
 Dhule,2012,Class B,970.0,750.0,82.0
 Dhule,2012,Class C,7391.0,6127.0,483.0
@@ -311,6 +431,21 @@ Dhule,2021,Class A,666.0,355.0,58.0
 Dhule,2021,Class B,1156.0,701.0,126.0
 Dhule,2021,Class C,8196.0,6071.0,992.0
 Dhule,2021,Class D,2533.0,1376.0,235.0
+Dhule,2022,Class A,664.0,405.0,66.0
+Dhule,2022,Class B,1101.0,656.0,119.0
+Dhule,2022,Class C,8245.0,6002.0,989.0
+Dhule,2022,Class D,2606.0,1268.0,234.0
+Dhule,2022,Class E,5495.0,5495.0,4066.0
+Dhule,2023,Class A,687.0,414.0,67.0
+Dhule,2023,Class B,1101.0,700.0,120.0
+Dhule,2023,Class C,8432.0,5833.0,994.0
+Dhule,2023,Class D,2496.0,1206.0,239.0
+Dhule,2023,Class E,5396.0,5396.0,4000.0
+Dhule,2024,Class A,708.0,406.0,78.0
+Dhule,2024,Class B,1143.0,684.0,115.0
+Dhule,2024,Class C,8469.0,5972.0,1124.0
+Dhule,2024,Class D,2419.0,1161.0,246.0
+Dhule,2024,Class E,5471.0,5471.0,4105.0
 Gadchiroli,2012,Class A,374.0,292.0,25.0
 Gadchiroli,2012,Class B,1216.0,1002.0,84.0
 Gadchiroli,2012,Class C,8279.0,6682.0,688.0
@@ -351,6 +486,21 @@ Gadchiroli,2021,Class A,675.0,381.0,43.0
 Gadchiroli,2021,Class B,1404.0,833.0,141.0
 Gadchiroli,2021,Class C,12471.0,9857.0,1825.0
 Gadchiroli,2021,Class D,2634.0,1725.0,364.0
+Gadchiroli,2022,Class A,697.0,395.0,44.0
+Gadchiroli,2022,Class B,1423.0,746.0,123.0
+Gadchiroli,2022,Class C,12536.0,9581.0,1832.0
+Gadchiroli,2022,Class D,2592.0,1612.0,352.0
+Gadchiroli,2022,Class E,5995.0,5995.0,4247.0
+Gadchiroli,2023,Class A,677.0,373.0,39.0
+Gadchiroli,2023,Class B,1500.0,804.0,129.0
+Gadchiroli,2023,Class C,12598.0,9860.0,1953.0
+Gadchiroli,2023,Class D,2551.0,1474.0,341.0
+Gadchiroli,2023,Class E,6211.0,6211.0,4500.0
+Gadchiroli,2024,Class A,751.0,393.0,57.0
+Gadchiroli,2024,Class B,1577.0,767.0,125.0
+Gadchiroli,2024,Class C,13257.0,9804.0,2058.0
+Gadchiroli,2024,Class D,2531.0,1439.0,344.0
+Gadchiroli,2024,Class E,6216.0,6216.0,4517.0
 Gondia,2012,Class A,323.0,260.0,15.0
 Gondia,2012,Class B,747.0,562.0,72.0
 Gondia,2012,Class C,5479.0,4129.0,423.0
@@ -391,6 +541,21 @@ Gondia,2021,Class A,604.0,344.0,73.0
 Gondia,2021,Class B,900.0,595.0,104.0
 Gondia,2021,Class C,8373.0,5803.0,1204.0
 Gondia,2021,Class D,2164.0,1034.0,171.0
+Gondia,2022,Class A,593.0,345.0,69.0
+Gondia,2022,Class B,944.0,572.0,103.0
+Gondia,2022,Class C,8395.0,5739.0,1214.0
+Gondia,2022,Class D,2095.0,927.0,160.0
+Gondia,2022,Class E,4752.0,4752.0,3593.0
+Gondia,2023,Class A,605.0,328.0,71.0
+Gondia,2023,Class B,888.0,495.0,102.0
+Gondia,2023,Class C,8529.0,5570.0,1200.0
+Gondia,2023,Class D,2010.0,880.0,157.0
+Gondia,2023,Class E,4343.0,4343.0,3202.0
+Gondia,2024,Class A,629.0,359.0,85.0
+Gondia,2024,Class B,911.0,510.0,101.0
+Gondia,2024,Class C,8387.0,5688.0,1342.0
+Gondia,2024,Class D,1976.0,862.0,166.0
+Gondia,2024,Class E,4857.0,4857.0,3709.0
 Hingoli,2012,Class A,225.0,187.0,13.0
 Hingoli,2012,Class B,434.0,314.0,17.0
 Hingoli,2012,Class C,4197.0,3495.0,182.0
@@ -431,6 +596,36 @@ Hingoli,2021,Class A,411.0,239.0,21.0
 Hingoli,2021,Class B,542.0,336.0,40.0
 Hingoli,2021,Class C,4931.0,3500.0,466.0
 Hingoli,2021,Class D,1195.0,623.0,100.0
+Hingoli,2022,Class A,419.0,299.0,35.0
+Hingoli,2022,Class B,562.0,347.0,44.0
+Hingoli,2022,Class C,4972.0,3674.0,530.0
+Hingoli,2022,Class D,1135.0,559.0,96.0
+Hingoli,2022,Class E,2222.0,2222.0,2129.0
+Hingoli,2023,Class A,417.0,272.0,41.0
+Hingoli,2023,Class B,609.0,334.0,38.0
+Hingoli,2023,Class C,5005.0,3642.0,527.0
+Hingoli,2023,Class D,1048.0,520.0,89.0
+Hingoli,2023,Class E,2187.0,2187.0,2097.0
+Hingoli,2024,Class A,448.0,273.0,54.0
+Hingoli,2024,Class B,651.0,355.0,55.0
+Hingoli,2024,Class C,5256.0,3601.0,554.0
+Hingoli,2024,Class D,1031.0,542.0,101.0
+Hingoli,2024,Class E,2299.0,2299.0,2170.0
+Jalgaon,2022,Class A,1141.0,619.0,119.0
+Jalgaon,2022,Class B,1580.0,852.0,131.0
+Jalgaon,2022,Class C,12322.0,8206.0,1423.0
+Jalgaon,2022,Class D,3284.0,1724.0,238.0
+Jalgaon,2022,Class E,8615.0,8615.0,7183.0
+Jalgaon,2023,Class A,1200.0,632.0,123.0
+Jalgaon,2023,Class B,1591.0,842.0,149.0
+Jalgaon,2023,Class C,12400.0,7942.0,1376.0
+Jalgaon,2023,Class D,3193.0,1646.0,239.0
+Jalgaon,2023,Class E,8454.0,8454.0,7117.0
+Jalgaon,2024,Class A,1179.0,647.0,143.0
+Jalgaon,2024,Class B,1600.0,896.0,155.0
+Jalgaon,2024,Class C,12502.0,8109.0,1506.0
+Jalgaon,2024,Class D,3179.0,1542.0,232.0
+Jalgaon,2024,Class E,8168.0,8168.0,6852.0
 Jalna,2013,Class A,295.0,226.0,20.0
 Jalna,2013,Class B,730.0,610.0,45.0
 Jalna,2013,Class C,5477.0,4689.0,383.0
@@ -467,6 +662,36 @@ Jalna,2021,Class A,615.0,397.0,86.0
 Jalna,2021,Class B,986.0,567.0,93.0
 Jalna,2021,Class C,6904.0,5154.0,754.0
 Jalna,2021,Class D,1629.0,914.0,160.0
+Jalna,2022,Class A,615.0,411.0,109.0
+Jalna,2022,Class B,959.0,578.0,101.0
+Jalna,2022,Class C,6876.0,5280.0,773.0
+Jalna,2022,Class D,1570.0,819.0,154.0
+Jalna,2022,Class E,4437.0,4437.0,3692.0
+Jalna,2023,Class A,623.0,393.0,110.0
+Jalna,2023,Class B,965.0,552.0,102.0
+Jalna,2023,Class C,6932.0,5125.0,773.0
+Jalna,2023,Class D,1586.0,747.0,151.0
+Jalna,2023,Class E,4339.0,4339.0,3616.0
+Jalna,2024,Class A,664.0,418.0,113.0
+Jalna,2024,Class B,970.0,552.0,104.0
+Jalna,2024,Class C,6996.0,5055.0,838.0
+Jalna,2024,Class D,1548.0,728.0,159.0
+Jalna,2024,Class E,4258.0,4258.0,3568.0
+Kolhapur,2022,Class A,1376.0,840.0,227.0
+Kolhapur,2022,Class B,1837.0,1141.0,328.0
+Kolhapur,2022,Class C,12393.0,9401.0,2284.0
+Kolhapur,2022,Class D,3585.0,1877.0,310.0
+Kolhapur,2022,Class E,9560.0,9560.0,8304.0
+Kolhapur,2023,Class A,1382.0,844.0,236.0
+Kolhapur,2023,Class B,1765.0,1216.0,346.0
+Kolhapur,2023,Class C,12376.0,9296.0,2296.0
+Kolhapur,2023,Class D,3379.0,1708.0,297.0
+Kolhapur,2023,Class E,9355.0,9355.0,8210.0
+Kolhapur,2024,Class A,1386.0,887.0,250.0
+Kolhapur,2024,Class B,1800.0,1255.0,353.0
+Kolhapur,2024,Class C,12452.0,9388.0,2398.0
+Kolhapur,2024,Class D,3278.0,1614.0,298.0
+Kolhapur,2024,Class E,9834.0,9834.0,8705.0
 Latur,2012,Class A,718.0,628.0,50.0
 Latur,2012,Class B,1072.0,921.0,106.0
 Latur,2012,Class C,6255.0,5358.0,500.0
@@ -507,42 +732,72 @@ Latur,2021,Class A,831.0,623.0,144.0
 Latur,2021,Class B,1108.0,703.0,111.0
 Latur,2021,Class C,7194.0,5426.0,1107.0
 Latur,2021,Class D,2133.0,1114.0,187.0
-Mumbai City,2013,Class A,3665.0,3000.0,537.0
-Mumbai City,2013,Class B,10850.0,8299.0,2289.0
-Mumbai City,2013,Class C,55060.0,45834.0,7983.0
-Mumbai City,2013,Class D,14691.0,12668.0,2223.0
-Mumbai City,2014,Class A,6174.0,4463.0,793.0
-Mumbai City,2014,Class B,15224.0,10375.0,3263.0
-Mumbai City,2014,Class C,82384.0,67379.0,13182.0
-Mumbai City,2014,Class D,18555.0,13766.0,2504.0
-Mumbai City,2015,Class A,4659.0,2687.0,563.0
-Mumbai City,2015,Class B,11987.0,8919.0,2840.0
-Mumbai City,2015,Class C,47290.0,35869.0,7996.0
-Mumbai City,2015,Class D,13788.0,10715.0,1847.0
-Mumbai City,2016,Class A,4659.0,2686.0,563.0
-Mumbai City,2016,Class B,11987.0,8889.0,2831.0
-Mumbai City,2016,Class C,47290.0,35894.0,8005.0
-Mumbai City,2016,Class D,13788.0,10715.0,1847.0
-Mumbai City,2017,Class A,4673.0,3284.0,645.0
-Mumbai City,2017,Class B,12052.0,8572.0,2823.0
-Mumbai City,2017,Class C,57994.0,45778.0,9741.0
-Mumbai City,2017,Class D,13540.0,10108.0,1811.0
-Mumbai City,2018,Class A,5352.0,3599.0,698.0
-Mumbai City,2018,Class B,11600.0,7597.0,2606.0
-Mumbai City,2018,Class C,58099.0,43687.0,9673.0
-Mumbai City,2018,Class D,13498.0,9051.0,1612.0
-Mumbai City,2019,Class A,5345.0,3266.0,705.0
-Mumbai City,2019,Class B,11771.0,7371.0,2531.0
-Mumbai City,2019,Class C,58683.0,43379.0,10026.0
-Mumbai City,2019,Class D,13346.0,8768.0,1558.0
-Mumbai City,2020,Class A,5450.0,3379.0,724.0
-Mumbai City,2020,Class B,12587.0,7390.0,2557.0
-Mumbai City,2020,Class C,57270.0,42293.0,9959.0
-Mumbai City,2020,Class D,13192.0,8440.0,1524.0
-Mumbai City,2021,Class A,5487.0,3341.0,762.0
-Mumbai City,2021,Class B,12704.0,7165.0,2480.0
-Mumbai City,2021,Class C,58157.0,41269.0,9929.0
-Mumbai City,2021,Class D,12892.0,7990.0,1424.0
+Latur,2022,Class A,939.0,668.0,147.0
+Latur,2022,Class B,1110.0,685.0,115.0
+Latur,2022,Class C,7455.0,5430.0,1126.0
+Latur,2022,Class D,2079.0,1025.0,182.0
+Latur,2022,Class E,1698.0,1698.0,495.0
+Latur,2023,Class A,944.0,650.0,153.0
+Latur,2023,Class B,1144.0,685.0,124.0
+Latur,2023,Class C,7558.0,5463.0,1210.0
+Latur,2023,Class D,1967.0,944.0,179.0
+Latur,2023,Class E,2887.0,2887.0,1722.0
+Latur,2024,Class A,950.0,656.0,174.0
+Latur,2024,Class B,1242.0,834.0,177.0
+Latur,2024,Class C,7819.0,5457.0,1249.0
+Latur,2024,Class D,1918.0,918.0,185.0
+Latur,2024,Class E,2884.0,2884.0,1701.0
+Mumbai,2013,Class A,3665.0,3000.0,537.0
+Mumbai,2013,Class B,10850.0,8299.0,2289.0
+Mumbai,2013,Class C,55060.0,45834.0,7983.0
+Mumbai,2013,Class D,14691.0,12668.0,2223.0
+Mumbai,2014,Class A,6174.0,4463.0,793.0
+Mumbai,2014,Class B,15224.0,10375.0,3263.0
+Mumbai,2014,Class C,82384.0,67379.0,13182.0
+Mumbai,2014,Class D,18555.0,13766.0,2504.0
+Mumbai,2015,Class A,4659.0,2687.0,563.0
+Mumbai,2015,Class B,11987.0,8919.0,2840.0
+Mumbai,2015,Class C,47290.0,35869.0,7996.0
+Mumbai,2015,Class D,13788.0,10715.0,1847.0
+Mumbai,2016,Class A,4659.0,2686.0,563.0
+Mumbai,2016,Class B,11987.0,8889.0,2831.0
+Mumbai,2016,Class C,47290.0,35894.0,8005.0
+Mumbai,2016,Class D,13788.0,10715.0,1847.0
+Mumbai,2017,Class A,4673.0,3284.0,645.0
+Mumbai,2017,Class B,12052.0,8572.0,2823.0
+Mumbai,2017,Class C,57994.0,45778.0,9741.0
+Mumbai,2017,Class D,13540.0,10108.0,1811.0
+Mumbai,2018,Class A,5352.0,3599.0,698.0
+Mumbai,2018,Class B,11600.0,7597.0,2606.0
+Mumbai,2018,Class C,58099.0,43687.0,9673.0
+Mumbai,2018,Class D,13498.0,9051.0,1612.0
+Mumbai,2019,Class A,5345.0,3266.0,705.0
+Mumbai,2019,Class B,11771.0,7371.0,2531.0
+Mumbai,2019,Class C,58683.0,43379.0,10026.0
+Mumbai,2019,Class D,13346.0,8768.0,1558.0
+Mumbai,2020,Class A,5450.0,3379.0,724.0
+Mumbai,2020,Class B,12587.0,7390.0,2557.0
+Mumbai,2020,Class C,57270.0,42293.0,9959.0
+Mumbai,2020,Class D,13192.0,8440.0,1524.0
+Mumbai,2021,Class A,5487.0,3341.0,762.0
+Mumbai,2021,Class B,12704.0,7165.0,2480.0
+Mumbai,2021,Class C,58157.0,41269.0,9929.0
+Mumbai,2021,Class D,12892.0,7990.0,1424.0
+Mumbai,2022,Class A,5550.0,3247.0,766.0
+Mumbai,2022,Class B,11963.0,7348.0,2649.0
+Mumbai,2022,Class C,58603.0,39876.0,9965.0
+Mumbai,2022,Class D,12656.0,7747.0,1429.0
+Mumbai,2022,Class E,2277.0,2277.0,1817.0
+Mumbai,2023,Class A,5102.0,3260.0,804.0
+Mumbai,2023,Class B,12202.0,7703.0,2650.0
+Mumbai,2023,Class C,57946.0,38754.0,9911.0
+Mumbai,2023,Class D,12345.0,7283.0,1360.0
+Mumbai,2023,Class E,2222.0,2222.0,1760.0
+Mumbai,2024,Class A,5251.0,3419.0,875.0
+Mumbai,2024,Class B,12542.0,7925.0,2721.0
+Mumbai,2024,Class C,57914.0,43426.0,12613.0
+Mumbai,2024,Class D,12116.0,6753.0,1269.0
+Mumbai,2024,Class E,2373.0,2373.0,1975.0
 Mumbai Suburban,2016,Class A,1216.0,763.0,160.0
 Mumbai Suburban,2016,Class B,4110.0,2988.0,573.0
 Mumbai Suburban,2016,Class C,23664.0,19349.0,3528.0
@@ -567,6 +822,21 @@ Mumbai Suburban,2021,Class A,1224.0,683.0,192.0
 Mumbai Suburban,2021,Class B,4313.0,2280.0,563.0
 Mumbai Suburban,2021,Class C,24051.0,16858.0,3643.0
 Mumbai Suburban,2021,Class D,3996.0,1789.0,448.0
+Mumbai Suburban,2022,Class A,1295.0,731.0,196.0
+Mumbai Suburban,2022,Class B,4241.0,2485.0,633.0
+Mumbai Suburban,2022,Class C,23988.0,17087.0,3629.0
+Mumbai Suburban,2022,Class D,3874.0,1659.0,403.0
+Mumbai Suburban,2022,Class E,7365.0,7365.0,7309.0
+Mumbai Suburban,2023,Class A,1291.0,877.0,205.0
+Mumbai Suburban,2023,Class B,3465.0,2233.0,649.0
+Mumbai Suburban,2023,Class C,24190.0,16570.0,3762.0
+Mumbai Suburban,2023,Class D,3688.0,1553.0,388.0
+Mumbai Suburban,2023,Class E,7265.0,7265.0,7184.0
+Mumbai Suburban,2024,Class A,1279.0,786.0,184.0
+Mumbai Suburban,2024,Class B,3296.0,2174.0,655.0
+Mumbai Suburban,2024,Class C,24111.0,17885.0,3643.0
+Mumbai Suburban,2024,Class D,3605.0,1409.0,369.0
+Mumbai Suburban,2024,Class E,8304.0,8304.0,8217.0
 Nagpur,2012,Class A,2149.0,1760.0,380.0
 Nagpur,2012,Class B,3864.0,3041.0,843.0
 Nagpur,2012,Class C,26252.0,22067.0,3542.0
@@ -607,6 +877,21 @@ Nagpur,2021,Class A,2626.0,1690.0,529.0
 Nagpur,2021,Class B,4550.0,2784.0,810.0
 Nagpur,2021,Class C,30562.0,22266.0,6250.0
 Nagpur,2021,Class D,7808.0,4692.0,911.0
+Nagpur,2022,Class A,2729.0,1753.0,541.0
+Nagpur,2022,Class B,4535.0,2547.0,767.0
+Nagpur,2022,Class C,31521.0,21774.0,6222.0
+Nagpur,2022,Class D,7693.0,4400.0,876.0
+Nagpur,2022,Class E,9225.0,9225.0,6492.0
+Nagpur,2023,Class A,2757.0,1744.0,496.0
+Nagpur,2023,Class B,4560.0,2717.0,875.0
+Nagpur,2023,Class C,31212.0,22004.0,6372.0
+Nagpur,2023,Class D,7409.0,4090.0,859.0
+Nagpur,2023,Class E,8976.0,8976.0,6257.0
+Nagpur,2024,Class A,2775.0,1860.0,521.0
+Nagpur,2024,Class B,4719.0,3168.0,1016.0
+Nagpur,2024,Class C,30335.0,22301.0,6730.0
+Nagpur,2024,Class D,7247.0,3890.0,845.0
+Nagpur,2024,Class E,9097.0,9097.0,6379.0
 Nanded,2014,,,,
 Nanded,2014,,,,
 Nanded,2014,,,,
@@ -639,6 +924,21 @@ Nanded,2021,,,,
 Nanded,2021,,,,
 Nanded,2021,,,,
 Nanded,2021,,,,
+Nanded,2022,Class A,1054.0,757.0,126.0
+Nanded,2022,Class B,1917.0,1218.0,189.0
+Nanded,2022,Class C,11957.0,8840.0,1939.0
+Nanded,2022,Class D,3734.0,2036.0,368.0
+Nanded,2022,Class E,9063.0,9063.0,6818.0
+Nanded,2023,Class A,1081.0,738.0,128.0
+Nanded,2023,Class B,1952.0,1173.0,184.0
+Nanded,2023,Class C,11935.0,8813.0,1979.0
+Nanded,2023,Class D,3647.0,1860.0,347.0
+Nanded,2023,Class E,8743.0,8743.0,6538.0
+Nanded,2024,Class A,1079.0,748.0,140.0
+Nanded,2024,Class B,1935.0,1129.0,200.0
+Nanded,2024,Class C,12028.0,8956.0,2035.0
+Nanded,2024,Class D,3518.0,1770.0,348.0
+Nanded,2024,Class E,9080.0,9080.0,6900.0
 Nandurbar,2006,Class A,211.0,180.0,8.0
 Nandurbar,2006,Class B,1163.0,1018.0,85.0
 Nandurbar,2006,Class C,3523.0,3089.0,462.0
@@ -699,6 +999,21 @@ Nandurbar,2021,Class A,,,
 Nandurbar,2021,Class B,,,
 Nandurbar,2021,Class C,,,
 Nandurbar,2021,Class D,,,
+Nandurbar,2022,Class A,527.0,331.0,37.0
+Nandurbar,2022,Class B,1321.0,661.0,89.0
+Nandurbar,2022,Class C,5915.0,3858.0,732.0
+Nandurbar,2022,Class D,2597.0,1042.0,252.0
+Nandurbar,2022,Class E,6816.0,6816.0,4988.0
+Nandurbar,2023,Class A,577.0,327.0,41.0
+Nandurbar,2023,Class B,1323.0,758.0,114.0
+Nandurbar,2023,Class C,6489.0,3925.0,763.0
+Nandurbar,2023,Class D,2537.0,1305.0,372.0
+Nandurbar,2023,Class E,6455.0,6455.0,4841.0
+Nandurbar,2024,Class A,593.0,349.0,42.0
+Nandurbar,2024,Class B,1341.0,778.0,118.0
+Nandurbar,2024,Class C,6471.0,3958.0,802.0
+Nandurbar,2024,Class D,2507.0,1293.0,383.0
+Nandurbar,2024,Class E,6153.0,6153.0,4547.0
 Nashik,2012,Class A,1844.0,1559.0,164.0
 Nashik,2012,Class B,2610.0,2188.0,239.0
 Nashik,2012,Class C,17628.0,14664.0,2124.0
@@ -739,6 +1054,21 @@ Nashik,2021,Class A,2117.0,1380.0,278.0
 Nashik,2021,Class B,3547.0,2452.0,566.0
 Nashik,2021,Class C,19851.0,15231.0,3612.0
 Nashik,2021,Class D,6820.0,3211.0,552.0
+Nashik,2022,Class A,2141.0,1507.0,334.0
+Nashik,2022,Class B,3651.0,2423.0,582.0
+Nashik,2022,Class C,19775.0,14946.0,3595.0
+Nashik,2022,Class D,6673.0,3003.0,521.0
+Nashik,2022,Class E,11932.0,11932.0,9940.0
+Nashik,2023,Class A,2183.0,1548.0,357.0
+Nashik,2023,Class B,3929.0,2775.0,644.0
+Nashik,2023,Class C,19444.0,14930.0,3632.0
+Nashik,2023,Class D,6410.0,2833.0,494.0
+Nashik,2023,Class E,11667.0,11667.0,9728.0
+Nashik,2024,Class A,2372.0,1665.0,407.0
+Nashik,2024,Class B,3981.0,2864.0,696.0
+Nashik,2024,Class C,19857.0,14851.0,3780.0
+Nashik,2024,Class D,6380.0,2849.0,535.0
+Nashik,2024,Class E,12284.0,12284.0,10341.0
 Dharashiv,2012,Class A,337.0,265.0,35.0
 Dharashiv,2012,Class B,1028.0,791.0,118.0
 Dharashiv,2012,Class C,4971.0,3997.0,363.0
@@ -779,6 +1109,21 @@ Dharashiv,2021,Class A,574.0,405.0,78.0
 Dharashiv,2021,Class B,883.0,535.0,85.0
 Dharashiv,2021,Class C,5760.0,4372.0,901.0
 Dharashiv,2021,Class D,1572.0,973.0,176.0
+Dharashiv,2022,Class A,644.0,449.0,99.0
+Dharashiv,2022,Class B,960.0,542.0,84.0
+Dharashiv,2022,Class C,5899.0,4327.0,897.0
+Dharashiv,2022,Class D,1596.0,909.0,174.0
+Dharashiv,2022,Class E,4443.0,4443.0,3746.0
+Dharashiv,2023,Class A,643.0,438.0,94.0
+Dharashiv,2023,Class B,1052.0,585.0,104.0
+Dharashiv,2023,Class C,6196.0,4270.0,896.0
+Dharashiv,2023,Class D,1569.0,856.0,170.0
+Dharashiv,2023,Class E,4475.0,4475.0,3768.0
+Dharashiv,2024,Class A,647.0,413.0,98.0
+Dharashiv,2024,Class B,1055.0,625.0,123.0
+Dharashiv,2024,Class C,6857.0,4384.0,968.0
+Dharashiv,2024,Class D,1666.0,857.0,168.0
+Dharashiv,2024,Class E,4556.0,4556.0,3808.0
 Palghar,2014,Class A,304.0,214.0,28.0
 Palghar,2014,Class B,914.0,659.0,131.0
 Palghar,2014,Class C,3942.0,2829.0,650.0
@@ -811,6 +1156,21 @@ Palghar,2021,Class A,588.0,318.0,56.0
 Palghar,2021,Class B,1306.0,791.0,171.0
 Palghar,2021,Class C,7640.0,5524.0,1199.0
 Palghar,2021,Class D,2265.0,1069.0,191.0
+Palghar,2022,Class A,593.0,362.0,79.0
+Palghar,2022,Class B,1285.0,804.0,172.0
+Palghar,2022,Class C,6631.0,4604.0,1056.0
+Palghar,2022,Class D,2233.0,979.0,176.0
+Palghar,2022,Class E,5577.0,5577.0,5396.0
+Palghar,2023,Class A,607.0,355.0,79.0
+Palghar,2023,Class B,1356.0,837.0,189.0
+Palghar,2023,Class C,6788.0,4539.0,1065.0
+Palghar,2023,Class D,2264.0,937.0,169.0
+Palghar,2023,Class E,6188.0,6188.0,6068.0
+Palghar,2024,Class A,614.0,358.0,89.0
+Palghar,2024,Class B,1368.0,894.0,191.0
+Palghar,2024,Class C,6764.0,4646.0,1178.0
+Palghar,2024,Class D,2187.0,960.0,180.0
+Palghar,2024,Class E,6596.0,6596.0,6285.0
 Parbhani,2013,Class A,358.0,276.0,25.0
 Parbhani,2013,Class B,873.0,61.0,87.0
 Parbhani,2013,Class C,5128.0,3957.0,358.0
@@ -847,6 +1207,36 @@ Parbhani,2021,Class A,420.0,263.0,55.0
 Parbhani,2021,Class B,910.0,518.0,69.0
 Parbhani,2021,Class C,5828.0,4102.0,780.0
 Parbhani,2021,Class D,1639.0,903.0,159.0
+Parbhani,2022,Class A,439.0,299.0,66.0
+Parbhani,2022,Class B,874.0,495.0,57.0
+Parbhani,2022,Class C,5871.0,4035.0,785.0
+Parbhani,2022,Class D,1599.0,866.0,151.0
+Parbhani,2022,Class E,4642.0,4642.0,3476.0
+Parbhani,2023,Class A,451.0,290.0,68.0
+Parbhani,2023,Class B,893.0,493.0,63.0
+Parbhani,2023,Class C,5928.0,3975.0,781.0
+Parbhani,2023,Class D,1443.0,808.0,143.0
+Parbhani,2023,Class E,4607.0,4607.0,3470.0
+Parbhani,2024,Class A,513.0,321.0,73.0
+Parbhani,2024,Class B,889.0,555.0,68.0
+Parbhani,2024,Class C,5904.0,4090.0,882.0
+Parbhani,2024,Class D,1425.0,774.0,144.0
+Parbhani,2024,Class E,4842.0,4842.0,3506.0
+Pune,2022,Class A,4031.0,2794.0,824.0
+Pune,2022,Class B,6480.0,4342.0,1356.0
+Pune,2022,Class C,44554.0,32891.0,8647.0
+Pune,2022,Class D,11340.0,5761.0,1196.0
+Pune,2022,Class E,12402.0,12402.0,10276.0
+Pune,2023,Class A,4013.0,2789.0,834.0
+Pune,2023,Class B,6617.0,4495.0,1424.0
+Pune,2023,Class C,44315.0,33197.0,8943.0
+Pune,2023,Class D,10563.0,5407.0,1149.0
+Pune,2023,Class E,12253.0,12253.0,10214.0
+Pune,2024,Class A,4084.0,2808.0,856.0
+Pune,2024,Class B,6837.0,4679.0,1540.0
+Pune,2024,Class C,45127.0,33940.0,9466.0
+Pune,2024,Class D,10302.0,5326.0,1194.0
+Pune,2024,Class E,12908.0,12908.0,10908.0
 Raigad,2012,Class A,489.0,362.0,47.0
 Raigad,2012,Class B,1478.0,1122.0,197.0
 Raigad,2012,Class C,6996.0,5647.0,962.0
@@ -887,6 +1277,16 @@ Raigad,2021,Class A,731.0,450.0,118.0
 Raigad,2021,Class B,1155.0,658.0,158.0
 Raigad,2021,Class C,9059.0,6254.0,1540.0
 Raigad,2021,Class D,3046.0,1259.0,201.0
+Raigad,2023,Class A,865.0,521.0,144.0
+Raigad,2023,Class B,1209.0,647.0,158.0
+Raigad,2023,Class C,9791.0,5782.0,1491.0
+Raigad,2023,Class D,2876.0,1081.0,187.0
+Raigad,2023,Class E,7226.0,7226.0,5690.0
+Raigad,2024,Class A,851.0,558.0,159.0
+Raigad,2024,Class B,1245.0,732.0,182.0
+Raigad,2024,Class C,10074.0,6309.0,1826.0
+Raigad,2024,Class D,2840.0,1091.0,203.0
+Raigad,2024,Class E,7753.0,7753.0,6205.0
 Ratnagiri,2006,Class A,490.0,382.0,32.0
 Ratnagiri,2006,Class B,1208.0,827.0,150.0
 Ratnagiri,2006,Class C,6235.0,5071.0,708.0
@@ -947,6 +1347,51 @@ Ratnagiri,2021,Class A,708.0,332.0,72.0
 Ratnagiri,2021,Class B,973.0,476.0,102.0
 Ratnagiri,2021,Class C,6785.0,4330.0,1163.0
 Ratnagiri,2021,Class D,2466.0,1167.0,158.0
+Ratnagiri,2022,Class A,748.0,386.0,99.0
+Ratnagiri,2022,Class B,987.0,482.0,106.0
+Ratnagiri,2022,Class C,6812.0,4313.0,1168.0
+Ratnagiri,2022,Class D,2470.0,1068.0,142.0
+Ratnagiri,2022,Class E,6447.0,6447.0,5128.0
+Ratnagiri,2023,Class A,774.0,359.0,90.0
+Ratnagiri,2023,Class B,997.0,515.0,129.0
+Ratnagiri,2023,Class C,6834.0,4173.0,1149.0
+Ratnagiri,2023,Class D,2393.0,953.0,133.0
+Ratnagiri,2023,Class E,6113.0,6113.0,4900.0
+Ratnagiri,2024,Class A,853.0,372.0,96.0
+Ratnagiri,2024,Class B,1040.0,533.0,141.0
+Ratnagiri,2024,Class C,7162.0,4313.0,1234.0
+Ratnagiri,2024,Class D,2283.0,908.0,143.0
+Ratnagiri,2024,Class E,6366.0,6366.0,5140.0
+Sangli,2022,Class A,945.0,668.0,168.0
+Sangli,2022,Class B,1311.0,773.0,186.0
+Sangli,2022,Class C,10016.0,7372.0,1998.0
+Sangli,2022,Class D,2740.0,1266.0,231.0
+Sangli,2022,Class E,6280.0,6280.0,5421.0
+Sangli,2023,Class A,976.0,640.0,161.0
+Sangli,2023,Class B,1327.0,837.0,240.0
+Sangli,2023,Class C,10091.0,7110.0,1943.0
+Sangli,2023,Class D,2670.0,1197.0,215.0
+Sangli,2023,Class E,5889.0,5889.0,5074.0
+Sangli,2024,Class A,927.0,642.0,179.0
+Sangli,2024,Class B,1464.0,852.0,254.0
+Sangli,2024,Class C,9892.0,7253.0,2107.0
+Sangli,2024,Class D,2627.0,1126.0,218.0
+Sangli,2024,Class E,6126.0,6126.0,5321.0
+Satara,2022,Class A,1145.0,697.0,183.0
+Satara,2022,Class B,1412.0,770.0,181.0
+Satara,2022,Class C,11072.0,7478.0,1812.0
+Satara,2022,Class D,3107.0,1550.0,234.0
+Satara,2022,Class E,9606.0,9606.0,8457.0
+Satara,2023,Class A,1059.0,655.0,172.0
+Satara,2023,Class B,1488.0,857.0,215.0
+Satara,2023,Class C,11254.0,7465.0,1882.0
+Satara,2023,Class D,3019.0,1404.0,221.0
+Satara,2023,Class E,9308.0,9308.0,8243.0
+Satara,2024,Class A,1079.0,670.0,191.0
+Satara,2024,Class B,1515.0,881.0,215.0
+Satara,2024,Class C,11585.0,7651.0,2082.0
+Satara,2024,Class D,2865.0,1345.0,227.0
+Satara,2024,Class E,9961.0,9961.0,8844.0
 Sindhudurg,2012,Class A,262.0,153.0,13.0
 Sindhudurg,2012,Class B,644.0,404.0,77.0
 Sindhudurg,2012,Class C,4215.0,3227.0,627.0
@@ -987,6 +1432,36 @@ Sindhudurg,2021,Class A,553.0,221.0,44.0
 Sindhudurg,2021,Class B,690.0,321.0,94.0
 Sindhudurg,2021,Class C,4713.0,3159.0,909.0
 Sindhudurg,2021,Class D,1493.0,734.0,93.0
+Sindhudurg,2022,Class A,612.0,240.0,55.0
+Sindhudurg,2022,Class B,752.0,336.0,110.0
+Sindhudurg,2022,Class C,4859.0,2992.0,886.0
+Sindhudurg,2022,Class D,1438.0,664.0,82.0
+Sindhudurg,2022,Class E,3821.0,3821.0,2803.0
+Sindhudurg,2023,Class A,638.0,254.0,60.0
+Sindhudurg,2023,Class B,772.0,364.0,124.0
+Sindhudurg,2023,Class C,5636.0,2867.0,881.0
+Sindhudurg,2023,Class D,1906.0,594.0,77.0
+Sindhudurg,2023,Class E,3743.0,3743.0,2767.0
+Sindhudurg,2024,Class A,640.0,254.0,56.0
+Sindhudurg,2024,Class B,803.0,390.0,129.0
+Sindhudurg,2024,Class C,5540.0,2941.0,960.0
+Sindhudurg,2024,Class D,1873.0,596.0,88.0
+Sindhudurg,2024,Class E,3738.0,3738.0,2770.0
+Solapur,2022,Class A,1162.0,797.0,171.0
+Solapur,2022,Class B,1512.0,962.0,166.0
+Solapur,2022,Class C,13834.0,10692.0,1998.0
+Solapur,2022,Class D,3426.0,1762.0,294.0
+Solapur,2022,Class E,9421.0,9421.0,7956.0
+Solapur,2023,Class A,1165.0,750.0,162.0
+Solapur,2023,Class B,1538.0,1095.0,236.0
+Solapur,2023,Class C,13874.0,10564.0,1952.0
+Solapur,2023,Class D,3291.0,1591.0,284.0
+Solapur,2023,Class E,9249.0,9249.0,7855.0
+Solapur,2024,Class A,1241.0,780.0,174.0
+Solapur,2024,Class B,1661.0,1158.0,248.0
+Solapur,2024,Class C,14151.0,10712.0,2114.0
+Solapur,2024,Class D,3190.0,1514.0,292.0
+Solapur,2024,Class E,9965.0,9965.0,8605.0
 Thane,2012,Class A,1609.0,1282.0,176.0
 Thane,2012,Class B,3774.0,3130.0,570.0
 Thane,2012,Class C,27924.0,23367.0,4194.0
@@ -1027,6 +1502,21 @@ Thane,2021,Class A,1961.0,1249.0,345.0
 Thane,2021,Class B,4062.0,2469.0,723.0
 Thane,2021,Class C,31689.0,23887.0,5769.0
 Thane,2021,Class D,5623.0,3155.0,640.0
+Thane,2022,Class A,2045.0,1379.0,391.0
+Thane,2022,Class B,4199.0,2587.0,724.0
+Thane,2022,Class C,31541.0,24003.0,5822.0
+Thane,2022,Class D,5392.0,2966.0,612.0
+Thane,2022,Class E,7582.0,7582.0,6370.0
+Thane,2023,Class A,2071.0,1342.0,389.0
+Thane,2023,Class B,4252.0,2769.0,805.0
+Thane,2023,Class C,31512.0,24704.0,6150.0
+Thane,2023,Class D,5215.0,2807.0,582.0
+Thane,2023,Class E,6924.0,6924.0,5775.0
+Thane,2024,Class A,2141.0,1393.0,412.0
+Thane,2024,Class B,4281.0,2856.0,849.0
+Thane,2024,Class C,31667.0,24796.0,6358.0
+Thane,2024,Class D,5165.0,2831.0,606.0
+Thane,2024,Class E,6933.0,6933.0,5782.0
 Wardha,2012,Class A,377.0,304.0,47.0
 Wardha,2012,Class B,816.0,677.0,156.0
 Wardha,2012,Class C,4720.0,4148.0,606.0
@@ -1067,6 +1557,21 @@ Wardha,2021,Class A,549.0,340.0,77.0
 Wardha,2021,Class B,733.0,489.0,128.0
 Wardha,2021,Class C,5989.0,4524.0,1121.0
 Wardha,2021,Class D,1541.0,867.0,162.0
+Wardha,2022,Class A,533.0,359.0,100.0
+Wardha,2022,Class B,761.0,443.0,123.0
+Wardha,2022,Class C,5979.0,4371.0,1098.0
+Wardha,2022,Class D,1514.0,813.0,158.0
+Wardha,2022,Class E,4589.0,4589.0,3114.0
+Wardha,2023,Class A,536.0,331.0,92.0
+Wardha,2023,Class B,787.0,456.0,133.0
+Wardha,2023,Class C,6027.0,4288.0,1104.0
+Wardha,2023,Class D,1451.0,759.0,156.0
+Wardha,2023,Class E,4517.0,4517.0,2994.0
+Wardha,2024,Class A,524.0,332.0,103.0
+Wardha,2024,Class B,797.0,494.0,130.0
+Wardha,2024,Class C,6133.0,4509.0,1241.0
+Wardha,2024,Class D,1445.0,750.0,163.0
+Wardha,2024,Class E,4966.0,4966.0,3276.0
 Washim,2008,Class A,,,
 Washim,2008,Class B,,,
 Washim,2008,Class C,,,
@@ -1123,6 +1628,21 @@ Washim,2021,Class A,293.0,198.0,25.0
 Washim,2021,Class B,700.0,418.0,57.0
 Washim,2021,Class C,4184.0,3251.0,570.0
 Washim,2021,Class D,859.0,479.0,74.0
+Washim,2022,Class A,315.0,224.0,33.0
+Washim,2022,Class B,707.0,415.0,63.0
+Washim,2022,Class C,4144.0,3184.0,582.0
+Washim,2022,Class D,821.0,443.0,71.0
+Washim,2022,Class E,2851.0,2851.0,2226.0
+Washim,2023,Class A,398.0,262.0,44.0
+Washim,2023,Class B,640.0,362.0,57.0
+Washim,2023,Class C,4203.0,3133.0,586.0
+Washim,2023,Class D,790.0,418.0,70.0
+Washim,2023,Class E,2948.0,2948.0,2340.0
+Washim,2024,Class A,410.0,249.0,55.0
+Washim,2024,Class B,659.0,394.0,60.0
+Washim,2024,Class C,4201.0,3205.0,642.0
+Washim,2024,Class D,862.0,450.0,82.0
+Washim,2024,Class E,3035.0,3035.0,2402.0
 Yavatmal,2012,Class A,552.0,442.0,65.0
 Yavatmal,2012,Class B,1254.0,1010.0,182.0
 Yavatmal,2012,Class C,8728.0,7176.0,745.0
@@ -1163,3 +1683,18 @@ Yavatmal,2021,Class A,1113.0,521.0,102.0
 Yavatmal,2021,Class B,1527.0,965.0,175.0
 Yavatmal,2021,Class C,11008.0,8295.0,1936.0
 Yavatmal,2021,Class D,3135.0,1918.0,352.0
+Yavatmal,2022,Class A,1162.0,594.0,118.0
+Yavatmal,2022,Class B,1651.0,905.0,195.0
+Yavatmal,2022,Class C,11313.0,8168.0,1928.0
+Yavatmal,2022,Class D,3273.0,1766.0,338.0
+Yavatmal,2022,Class E,5958.0,5958.0,4768.0
+Yavatmal,2023,Class A,918.0,507.0,110.0
+Yavatmal,2023,Class B,1833.0,1057.0,239.0
+Yavatmal,2023,Class C,11114.0,8022.0,1960.0
+Yavatmal,2023,Class D,2881.0,1617.0,333.0
+Yavatmal,2023,Class E,5920.0,5920.0,4717.0
+Yavatmal,2024,Class A,813.0,475.0,98.0
+Yavatmal,2024,Class B,1875.0,1109.0,273.0
+Yavatmal,2024,Class C,11061.0,8218.0,2168.0
+Yavatmal,2024,Class D,2857.0,1500.0,319.0
+Yavatmal,2024,Class E,4992.0,4992.0,3803.0
