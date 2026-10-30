@@ -550,6 +550,7 @@ class NFHSFacilitiesAdmin(admin.ModelAdmin):
 from .models import (
     ECNumber,
     ECSocialGroup,
+    ECReligion,
     ECSourcesOfFinance,
     ECSourcesOfBorrowings,
     ECType,
@@ -558,6 +559,9 @@ from .models import (
     FactoryWorkers,
     DSAElectricity,
     DSAPollutionCategory,
+    DSAEstablishments,
+    DSAWorkers,
+    DSAIndustryType,
     LaborNonWorkersYearly,
     LaborWorkingPopulations,
     LaborCensusAgeDistribution,
@@ -583,6 +587,12 @@ class ECSocialGroupAdmin(admin.ModelAdmin):
     list_display = ['district', 'year', 'sc', 'st', 'obc', 'others']
     list_filter = ['district', 'year']
     search_fields = ['district']
+
+@admin.register(ECReligion)
+class ECReligionAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'religion', 'number_of_establishments']
+    list_filter = ['district', 'year', 'religion']
+    search_fields = ['district', 'religion']
 
 @admin.register(ECSourcesOfFinance)
 class ECSourcesOfFinanceAdmin(admin.ModelAdmin):
@@ -631,6 +641,24 @@ class DSAPollutionCategoryAdmin(admin.ModelAdmin):
     list_display = ('district', 'year', 'taluka', 'pollution_category', 'number_of_industries')
     list_filter = ('district', 'year', 'taluka', 'pollution_category')
     search_fields = ('district', 'taluka', 'pollution_category')
+
+@admin.register(DSAEstablishments)
+class DSAEstablishmentsAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka', 'shops', 'business_organizations', 'hotels_and_restaurants', 'cinema_halls', 'organizations_without_workers']
+    list_filter = ['district', 'year', 'taluka']
+    search_fields = ['district', 'taluka']
+
+@admin.register(DSAWorkers)
+class DSAWorkersAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'taluka', 'shops', 'business_organizations', 'hotels_and_restaurants', 'cinema_halls']
+    list_filter = ['district', 'year', 'taluka']
+    search_fields = ['district', 'taluka']
+
+@admin.register(DSAIndustryType)
+class DSAIndustryTypeAdmin(admin.ModelAdmin):
+    list_display = ['district', 'year', 'type_of_industry', 'govt_employees', 'semi_govt_employees', 'private_employees', 'total_employees']
+    list_filter = ['district', 'year', 'type_of_industry']
+    search_fields = ['district', 'type_of_industry']
 
 # ==========================================
 # LABOR MODELS

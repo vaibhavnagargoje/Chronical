@@ -82,6 +82,7 @@ from .health import (
 from .industry import (
     ECNumber,
     ECSocialGroup,
+    ECReligion,
     ECSourcesOfFinance,
     ECSourcesOfBorrowings,
     ECType,
@@ -90,6 +91,9 @@ from .industry import (
     FactoryWorkers,
     DSAElectricity,
     DSAPollutionCategory,
+    DSAEstablishments,
+    DSAWorkers,
+    DSAIndustryType,
 )
 
 from .labor import (

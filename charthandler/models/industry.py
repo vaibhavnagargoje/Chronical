@@ -43,6 +43,23 @@ class ECSocialGroup(StateScopedData):
         return f"{self.district} - {self.year}"
 
 
+class ECReligion(StateScopedData):
+    """Religion of establishment owner — Economic Census, district-level."""
+    year = models.IntegerField(db_index=True)
+    district = models.CharField(max_length=100, db_index=True)
+    religion = models.CharField(max_length=50, db_index=True)
+    number_of_establishments = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        ordering = ['district', 'year', 'religion']
+        verbose_name = 'EC Religion'
+        verbose_name_plural = 'EC Religions'
+        unique_together = ['state', 'year', 'district', 'religion']
+
+    def __str__(self):
+        return f"{self.district} - {self.religion} - {self.year}"
+
+
 class ECSourcesOfFinance(StateScopedData):
     """Sources of finance (self-financed vs borrowings) — Economic Census, district-level."""
     year = models.IntegerField(db_index=True)
@@ -186,3 +203,64 @@ class DSAPollutionCategory(StateScopedData):
 
     def __str__(self):
         return f"{self.district} - {self.taluka} - {self.pollution_category} - {self.year}"
+
+
+class DSAEstablishments(StateScopedData):
+    """Number of shops & establishments by type — District Statistical Abstracts, taluka-level."""
+    district = models.CharField(max_length=100, db_index=True)
+    year = models.IntegerField(db_index=True)
+    taluka = models.CharField(max_length=100, db_index=True)
+    shops = models.FloatField(null=True, blank=True)
+    business_organizations = models.FloatField(null=True, blank=True)
+    hotels_and_restaurants = models.FloatField(null=True, blank=True)
+    cinema_halls = models.FloatField(null=True, blank=True)
+    organizations_without_workers = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        ordering = ['district', 'year', 'taluka']
+        verbose_name = 'DSA Establishments'
+        verbose_name_plural = 'DSA Establishments'
+        unique_together = ['state', 'district', 'year', 'taluka']
+
+    def __str__(self):
+        return f"{self.district} - {self.taluka} - {self.year}"
+
+
+class DSAWorkers(StateScopedData):
+    """Workers in shops & establishments by type — District Statistical Abstracts, taluka-level."""
+    district = models.CharField(max_length=100, db_index=True)
+    year = models.IntegerField(db_index=True)
+    taluka = models.CharField(max_length=100, db_index=True)
+    shops = models.FloatField(null=True, blank=True)
+    business_organizations = models.FloatField(null=True, blank=True)
+    hotels_and_restaurants = models.FloatField(null=True, blank=True)
+    cinema_halls = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        ordering = ['district', 'year', 'taluka']
+        verbose_name = 'DSA Workers'
+        verbose_name_plural = 'DSA Workers'
+        unique_together = ['state', 'district', 'year', 'taluka']
+
+    def __str__(self):
+        return f"{self.district} - {self.taluka} - {self.year}"
+
+
+class DSAIndustryType(StateScopedData):
+    """Govt / semi-govt / private employees by type of industry — District Statistical Abstracts, district-level."""
+    district = models.CharField(max_length=100, db_index=True)
+    year = models.IntegerField(db_index=True)
+    type_of_industry = models.CharField(max_length=200, db_index=True)
+    govt_employees = models.FloatField(null=True, blank=True)
+    semi_govt_employees = models.FloatField(null=True, blank=True)
+    private_employees = models.FloatField(null=True, blank=True)
+    total_employees = models.FloatField(null=True, blank=True)
+
+    class Meta:
+        ordering = ['district', 'year', 'type_of_industry']
+        verbose_name = 'DSA Industry Type'
+        verbose_name_plural = 'DSA Industry Types'
+        unique_together = ['state', 'district', 'year', 'type_of_industry']
+
+    def __str__(self):
+        return f"{self.district} - {self.type_of_industry} - {self.year}"

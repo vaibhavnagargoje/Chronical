@@ -73,6 +73,7 @@ DATA_MODEL_REGISTRY = {
     # Industry
     'ECNumber': 'charthandler.ECNumber',
     'ECSocialGroup': 'charthandler.ECSocialGroup',
+    'ECReligion': 'charthandler.ECReligion',
     'ECSourcesOfFinance': 'charthandler.ECSourcesOfFinance',
     'ECSourcesOfBorrowings': 'charthandler.ECSourcesOfBorrowings',
     'ECType': 'charthandler.ECType',
@@ -81,6 +82,9 @@ DATA_MODEL_REGISTRY = {
     'FactoryWorkers': 'charthandler.FactoryWorkers',
     'DSAElectricity': 'charthandler.DSAElectricity',
     'DSAPollutionCategory': 'charthandler.DSAPollutionCategory',
+    'DSAEstablishments': 'charthandler.DSAEstablishments',
+    'DSAWorkers': 'charthandler.DSAWorkers',
+    'DSAIndustryType': 'charthandler.DSAIndustryType',
     # Labor
     'LaborNonWorkersYearly':         'charthandler.LaborNonWorkersYearly',
     'LaborWorkingPopulations':       'charthandler.LaborWorkingPopulations',

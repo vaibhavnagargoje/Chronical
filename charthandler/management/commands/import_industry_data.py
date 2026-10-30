@@ -15,6 +15,7 @@ from charthandler.importing import StateScopedCommandMixin
 from charthandler.models import (
     ECNumber,
     ECSocialGroup,
+    ECReligion,
     ECSourcesOfFinance,
     ECSourcesOfBorrowings,
     ECType,
@@ -23,6 +24,9 @@ from charthandler.models import (
     FactoryWorkers,
     DSAElectricity,
     DSAPollutionCategory,
+    DSAEstablishments,
+    DSAWorkers,
+    DSAIndustryType,
 )
 
 
@@ -75,6 +79,7 @@ class Command(StateScopedCommandMixin, BaseCommand):
             self.stdout.write('Clearing existing industry data...')
             ECNumber.objects.filter(state=self.state).delete()
             ECSocialGroup.objects.filter(state=self.state).delete()
+            ECReligion.objects.filter(state=self.state).delete()
             ECSourcesOfFinance.objects.filter(state=self.state).delete()
             ECSourcesOfBorrowings.objects.filter(state=self.state).delete()
             ECType.objects.filter(state=self.state).delete()
@@ -83,11 +88,16 @@ class Command(StateScopedCommandMixin, BaseCommand):
             FactoryWorkers.objects.filter(state=self.state).delete()
             DSAElectricity.objects.filter(state=self.state).delete()
             DSAPollutionCategory.objects.filter(state=self.state).delete()
+            DSAEstablishments.objects.filter(state=self.state).delete()
+            DSAWorkers.objects.filter(state=self.state).delete()
+            DSAIndustryType.objects.filter(state=self.state).delete()
             self.stdout.write(self.style.SUCCESS('Existing data cleared.'))
 
+        # dsa_emp_by_industry.csv is not imported: it duplicates dsa_industry_type.csv (minus Total Employees)
         csv_files = {
             'ec_number.csv': self._import_ec_number,
             'ec_social_group.csv': self._import_ec_social_group,
+            'ec_religion.csv': self._import_ec_religion,
             'ec_sources_of_finance.csv': self._import_ec_sources_of_finance,
             'ec_sources_of_borrowings.csv': self._import_ec_sources_of_borrowings,
             'ec_type.csv': self._import_ec_type,
@@ -96,6 +106,9 @@ class Command(StateScopedCommandMixin, BaseCommand):
             'mahadish_factory_workers.csv': self._import_factory_workers,
             'dsa_electricity.csv': self._import_dsa_electricity,
             'dsa_pollution_cat.csv': self._import_dsa_pollution_cat,
+            'dsa_establishments.csv': self._import_dsa_establishments,
+            'dsa_workers.csv': self._import_dsa_workers,
+            'dsa_industry_type.csv': self._import_dsa_industry_type,
         }
 
         for filename, importer in csv_files.items():
@@ -149,6 +162,24 @@ class Command(StateScopedCommandMixin, BaseCommand):
                     others=_safe_float(row.get('Others')),
                 ))
         ECSocialGroup.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
+        return len(records)
+
+    def _import_ec_religion(self, filepath):
+        """Import ec_religion.csv → ECReligion"""
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(ECReligion(
+                    year=year,
+                    district=row.get('District', '').strip(),
+                    religion=row.get('Religion', '').strip(),
+                    number_of_establishments=_safe_float(row.get('Number of Establishments')),
+                ))
+        ECReligion.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)
 
     def _import_ec_sources_of_finance(self, filepath):
@@ -316,4 +347,68 @@ class Command(StateScopedCommandMixin, BaseCommand):
                     number_of_industries=_safe_float(row.get('Number of Industries ')),
                 ))
         DSAPollutionCategory.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
+        return len(records)
+
+    def _import_dsa_establishments(self, filepath):
+        """Import dsa_establishments.csv → DSAEstablishments"""
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(DSAEstablishments(
+                    district=row.get('District', '').strip(),
+                    year=year,
+                    taluka=row.get('Taluka', '').strip(),
+                    shops=_safe_float(row.get('Shops')),
+                    business_organizations=_safe_float(row.get('Business Organizations')),
+                    hotels_and_restaurants=_safe_float(row.get('Hotels and Restaurants')),
+                    cinema_halls=_safe_float(row.get('Cinema Halls')),
+                    organizations_without_workers=_safe_float(row.get('Organizations without Workers')),
+                ))
+        DSAEstablishments.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
+        return len(records)
+
+    def _import_dsa_workers(self, filepath):
+        """Import dsa_workers.csv → DSAWorkers"""
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(DSAWorkers(
+                    district=row.get('District', '').strip(),
+                    year=year,
+                    taluka=row.get('Taluka', '').strip(),
+                    shops=_safe_float(row.get('Shops')),
+                    business_organizations=_safe_float(row.get('Business Organizations')),
+                    hotels_and_restaurants=_safe_float(row.get('Hotels and Restaurants')),
+                    cinema_halls=_safe_float(row.get('Cinema Halls')),
+                ))
+        DSAWorkers.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
+        return len(records)
+
+    def _import_dsa_industry_type(self, filepath):
+        """Import dsa_industry_type.csv → DSAIndustryType"""
+        records = []
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                year = _safe_int(row.get('Year'))
+                if year is None:
+                    continue
+                records.append(DSAIndustryType(
+                    district=row.get('District', '').strip(),
+                    year=year,
+                    type_of_industry=row.get('Type of Industry', '').strip(),
+                    govt_employees=_safe_float(row.get('Govt. Employees')),
+                    semi_govt_employees=_safe_float(row.get('Semi-Govt. Employees')),
+                    private_employees=_safe_float(row.get('Private Employees')),
+                    total_employees=_safe_float(row.get('Total Employees')),
+                ))
+        DSAIndustryType.objects.bulk_create(self.with_state(records), ignore_conflicts=True)
         return len(records)

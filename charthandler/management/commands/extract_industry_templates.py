@@ -1,6 +1,7 @@
 ﻿"""
 Management command to create the default Chart Templates for Industry.
-Charts Aâ€“N matching https://indiandistricts.in/statistics/maharashtra/<district>/industry/
+Charts A–N matching https://indiandistricts.in/statistics/maharashtra/<district>/industry/,
+plus O–Q from the DSA establishments / workers / industry-type sheets.
 """
 from django.core.management.base import BaseCommand
 from charthandler.models import ChartTemplate
@@ -204,8 +205,28 @@ class Command(StateScopedCommandMixin, BaseCommand):
                 'display_order': 7,
             },
 
+            # H. Religion of Establishment Owner (EC_Religion sheet; 2013 Economic Census only)
+            {
+                'title': 'H. Religion of Establishment Owner',
+                'chapter_type': 'industry',
+                'chart_type': 'bar',
+                'data_source_table': 'ECReligion',
+                'x_column': 'religion',
+                'y_columns': ['number_of_establishments'],
+                'dataset_config': [
+                    {'label': 'Number of Establishments', 'backgroundColor': '#1E3D59'},
+                ],
+                'main_filter_column': 'district',
+                'filter1_column': '',
+                'filter2_column': '',
+                'show_filters': False,
+                'chart_options': build_chart_options('No. of Establishments', x_axis_title='Religion'),
+                'description': EC_SOURCE,
+                'additional_info': 'Values are as of the 2013 Economic Census.',
+                'display_order': 8,
+            },
 
-            # J. MSME Industries  (H = Religion, I = Night Lights â€” external data)
+            # J. MSME Industries  (I = Night Lights — external data)
             {
                 'title': 'J. MSME Industries',
                 'chapter_type': 'industry',
@@ -326,6 +347,89 @@ class Command(StateScopedCommandMixin, BaseCommand):
                     'Personal Services, and Other Service Activities Not Elsewhere Classified.'
                 ),
                 'display_order': 14,
+            },
+
+            # O. Establishments (DSA_Establishments sheet)
+            {
+                'title': 'O. Establishments',
+                'chapter_type': 'industry',
+                'chart_type': 'line',
+                'data_source_table': 'DSAEstablishments',
+                'x_column': 'year',
+                'y_columns': [
+                    'shops',
+                    'business_organizations',
+                    'hotels_and_restaurants',
+                    'cinema_halls',
+                    'organizations_without_workers',
+                ],
+                'dataset_config': [
+                    {'label': 'Shops', 'borderColor': '#1E3D59'},
+                    {'label': 'Business Organizations', 'borderColor': '#E5A93B'},
+                    {'label': 'Hotels and Restaurants', 'borderColor': '#C84B31'},
+                    {'label': 'Cinema Halls', 'borderColor': '#8D6240'},
+                    {'label': 'Organizations without Workers', 'borderColor': '#808080'},
+                ],
+                'main_filter_column': 'district',
+                'filter1_column': 'taluka',
+                'filter2_column': '',
+                'show_filters': True,
+                'chart_options': build_chart_options('No. of Establishments'),
+                'description': DSA_SOURCE,
+                'additional_info': '',
+                'display_order': 15,
+            },
+
+            # P. Workers in Establishments (DSA_Workers sheet)
+            {
+                'title': 'P. Workers in Establishments',
+                'chapter_type': 'industry',
+                'chart_type': 'line',
+                'data_source_table': 'DSAWorkers',
+                'x_column': 'year',
+                'y_columns': [
+                    'shops',
+                    'business_organizations',
+                    'hotels_and_restaurants',
+                    'cinema_halls',
+                ],
+                'dataset_config': [
+                    {'label': 'Shops', 'borderColor': '#1E3D59'},
+                    {'label': 'Business Organizations', 'borderColor': '#E5A93B'},
+                    {'label': 'Hotels and Restaurants', 'borderColor': '#C84B31'},
+                    {'label': 'Cinema Halls', 'borderColor': '#8D6240'},
+                ],
+                'main_filter_column': 'district',
+                'filter1_column': 'taluka',
+                'filter2_column': '',
+                'show_filters': True,
+                'chart_options': build_chart_options('No. of Workers'),
+                'description': DSA_SOURCE,
+                'additional_info': '',
+                'display_order': 16,
+            },
+
+            # Q. Employees by Type of Industry (DSA_IndustryType sheet)
+            {
+                'title': 'Q. Employees by Type of Industry',
+                'chapter_type': 'industry',
+                'chart_type': 'line',
+                'data_source_table': 'DSAIndustryType',
+                'x_column': 'year',
+                'y_columns': ['govt_employees', 'semi_govt_employees', 'private_employees'],
+                'dataset_config': [
+                    {'label': 'Govt. Employees', 'borderColor': '#1E3D59'},
+                    {'label': 'Semi-Govt. Employees', 'borderColor': '#E5A93B'},
+                    {'label': 'Private Employees', 'borderColor': '#C84B31'},
+                ],
+                'main_filter_column': 'district',
+                'filter1_column': 'type_of_industry',
+                'filter2_column': '',
+                'show_filters': True,
+                'chart_options': build_chart_options('No. of Employees'),
+                'description': DSA_SOURCE,
+                'additional_info': '',
+                'display_order': 17,
             },
         ]
 
