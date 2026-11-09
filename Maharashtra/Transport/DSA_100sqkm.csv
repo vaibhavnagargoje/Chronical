@@ -1,32 +1,32 @@
 Year,District,Taluka,Length of roads per 100 sq.km
-2012,Ahilyanagar,Akole,403.63
-2012,Ahilyanagar,Sangamner,359.59
-2012,Ahilyanagar,Kopargaon,189.5
-2012,Ahilyanagar,Rahata,151.96
-2012,Ahilyanagar,Srirampur,195.88
-2012,Ahilyanagar,Nevasa,735.65
-2012,Ahilyanagar,Shevgaon,176.46
-2012,Ahilyanagar,Pathardi,502.01
-2012,Ahilyanagar,Nagar,379.32
-2012,Ahilyanagar,Rahuri,544.09
-2012,Ahilyanagar,Parner,371.91
-2012,Ahilyanagar,Srigonda,449.03
-2012,Ahilyanagar,Karjat,314.98
-2012,Ahilyanagar,Jamkhed,238.69
-2013,Ahilyanagar,Akole,873.63
-2013,Ahilyanagar,Sangamner,845.16
-2013,Ahilyanagar,Kopargaon,126.89
-2013,Ahilyanagar,Rahata,135.27
-2013,Ahilyanagar,Srirampur,296.94
-2013,Ahilyanagar,Nevasa,820.35
-2013,Ahilyanagar,Shevgaon,809.1
-2013,Ahilyanagar,Pathardi,542.52
-2013,Ahilyanagar,Nagar,402.64
-2013,Ahilyanagar,Rahuri,547.84
-2013,Ahilyanagar,Parner,328.41
-2013,Ahilyanagar,Srigonda,349.02
-2013,Ahilyanagar,Karjat,130.05
-2013,Ahilyanagar,Jamkhed,99.92
+2012,Ahilyanagar,Akole,
+2012,Ahilyanagar,Sangamner,
+2012,Ahilyanagar,Kopargaon,
+2012,Ahilyanagar,Rahata,
+2012,Ahilyanagar,Srirampur,
+2012,Ahilyanagar,Nevasa,
+2012,Ahilyanagar,Shevgaon,
+2012,Ahilyanagar,Pathardi,
+2012,Ahilyanagar,Nagar,
+2012,Ahilyanagar,Rahuri,
+2012,Ahilyanagar,Parner,
+2012,Ahilyanagar,Srigonda,
+2012,Ahilyanagar,Karjat,
+2012,Ahilyanagar,Jamkhed,
+2013,Ahilyanagar,Akole,
+2013,Ahilyanagar,Sangamner,
+2013,Ahilyanagar,Kopargaon,
+2013,Ahilyanagar,Rahata,
+2013,Ahilyanagar,Srirampur,
+2013,Ahilyanagar,Nevasa,
+2013,Ahilyanagar,Shevgaon,
+2013,Ahilyanagar,Pathardi,
+2013,Ahilyanagar,Nagar,
+2013,Ahilyanagar,Rahuri,
+2013,Ahilyanagar,Parner,
+2013,Ahilyanagar,Srigonda,
+2013,Ahilyanagar,Karjat,
+2013,Ahilyanagar,Jamkhed,
 2014,Ahilyanagar,Akole,187.0
 2014,Ahilyanagar,Sangamner,171.33
 2014,Ahilyanagar,Kopargaon,260.48
@@ -139,6 +139,48 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Ahilyanagar,Srigonda,333.87
 2021,Ahilyanagar,Karjat,117.12
 2021,Ahilyanagar,Jamkhed,158.76
+2022,Ahilyanagar,Akole,117.5
+2022,Ahilyanagar,Sangamner,104.52
+2022,Ahilyanagar,Kopargaon,66.67
+2022,Ahilyanagar,Rahata,90.14
+2022,Ahilyanagar,Srirampur,92.03
+2022,Ahilyanagar,Nevasa,168.53
+2022,Ahilyanagar,Shevgaon,138.51
+2022,Ahilyanagar,Pathardi,105.35
+2022,Ahilyanagar,Nagar,179.61
+2022,Ahilyanagar,Rahuri,93.07
+2022,Ahilyanagar,Parner,287.39
+2022,Ahilyanagar,Srigonda,396.63
+2022,Ahilyanagar,Karjat,115.42
+2022,Ahilyanagar,Jamkhed,161.41
+2023,Ahilyanagar,Akole,120.17
+2023,Ahilyanagar,Sangamner,124.81
+2023,Ahilyanagar,Kopargaon,144.32
+2023,Ahilyanagar,Rahata,194.3
+2023,Ahilyanagar,Srirampur,209.46
+2023,Ahilyanagar,Nevasa,143.4
+2023,Ahilyanagar,Shevgaon,113.63
+2023,Ahilyanagar,Pathardi,115.98
+2023,Ahilyanagar,Nagar,124.84
+2023,Ahilyanagar,Rahuri,164.27
+2023,Ahilyanagar,Parner,111.28
+2023,Ahilyanagar,Srigonda,141.51
+2023,Ahilyanagar,Karjat,113.61
+2023,Ahilyanagar,Jamkhed,108.05
+2024,Ahilyanagar,Akole,118.81
+2024,Ahilyanagar,Sangamner,124.03
+2024,Ahilyanagar,Kopargaon,141.13
+2024,Ahilyanagar,Rahata,207.35
+2024,Ahilyanagar,Srirampur,209.46
+2024,Ahilyanagar,Nevasa,141.27
+2024,Ahilyanagar,Shevgaon,114.09
+2024,Ahilyanagar,Pathardi,132.38
+2024,Ahilyanagar,Nagar,123.59
+2024,Ahilyanagar,Rahuri,160.6
+2024,Ahilyanagar,Parner,110.03
+2024,Ahilyanagar,Srigonda,118.91
+2024,Ahilyanagar,Karjat,111.43
+2024,Ahilyanagar,Jamkhed,106.69
 2012,Akola,Telhara,31.2
 2012,Akola,Akot,32.41
 2012,Akola,Balapur,23.54
@@ -157,7 +199,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2014,Akola,Akot,15.54
 2014,Akola,Balapur,14.17
 2014,Akola,Akola,74.23
-2014,Akola,Murtijapur,437.29
+2014,Akola,Murtijapur,
 2014,Akola,Patur,14.03
 2014,Akola,Barshitakali,15.8
 2015,Akola,Telhara,8.37
@@ -209,6 +251,27 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Akola,Murtijapur,23.52
 2021,Akola,Patur,17.91
 2021,Akola,Barshitakali,18.02
+2022,Akola,Telhara,10.2
+2022,Akola,Akot,11.73
+2022,Akola,Balapur,7.74
+2022,Akola,Akola,39.38
+2022,Akola,Murtijapur,13.08
+2022,Akola,Patur,8.44
+2022,Akola,Barshitakali,11.74
+2023,Akola,Telhara,97.48
+2023,Akola,Akot,81.08
+2023,Akola,Balapur,67.29
+2023,Akola,Akola,179.22
+2023,Akola,Murtijapur,90.46
+2023,Akola,Patur,66.96
+2023,Akola,Barshitakali,85.96
+2024,Akola,Telhara,97.48
+2024,Akola,Akot,81.13
+2024,Akola,Balapur,68.93
+2024,Akola,Akola,205.95
+2024,Akola,Murtijapur,90.46
+2024,Akola,Patur,66.96
+2024,Akola,Barshitakali,86.53
 2012,Amravati,Dharani,59.99
 2012,Amravati,Chikhraldara,39.93
 2012,Amravati,Anjangaon Su,69.34
@@ -349,8 +412,50 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Amravati,Nandgaon Kh,93.87
 2021,Amravati,Chandur Railway,90.08
 2021,Amravati,Dhamangaon Re,70.44
+2022,Amravati,Dharani,56.54
+2022,Amravati,Chikhraldara,36.61
+2022,Amravati,Anjangaon Su,73.36
+2022,Amravati,Achalpur,97.77
+2022,Amravati,Chandurbazar,74.88
+2022,Amravati,Morshi,77.64
+2022,Amravati,Warud,96.32
+2022,Amravati,Tivas,64.88
+2022,Amravati,Amravati,85.74
+2022,Amravati,Bhatkuli,89.59
+2022,Amravati,Daryapur,73.09
+2022,Amravati,Nandgaon Kh,94.09
+2022,Amravati,Chandur Railway,92.08
+2022,Amravati,Dhamangaon Re,70.55
+2023,Amravati,Dharani,59.99
+2023,Amravati,Chikhraldara,37.11
+2023,Amravati,Anjangaon Su,70.53
+2023,Amravati,Achalpur,87.98
+2023,Amravati,Chandurbazar,81.36
+2023,Amravati,Morshi,77.68
+2023,Amravati,Warud,91.63
+2023,Amravati,Tivas,67.84
+2023,Amravati,Amravati,90.58
+2023,Amravati,Bhatkuli,90.49
+2023,Amravati,Daryapur,72.7
+2023,Amravati,Nandgaon Kh,93.06
+2023,Amravati,Chandur Railway,85.49
+2023,Amravati,Dhamangaon Re,67.49
+2024,Amravati,Dharani,60.11
+2024,Amravati,Chikhraldara,36.68
+2024,Amravati,Anjangaon Su,70.35
+2024,Amravati,Achalpur,79.08
+2024,Amravati,Chandurbazar,81.32
+2024,Amravati,Morshi,77.67
+2024,Amravati,Warud,91.74
+2024,Amravati,Tivas,68.28
+2024,Amravati,Amravati,96.54
+2024,Amravati,Bhatkuli,102.26
+2024,Amravati,Daryapur,73.54
+2024,Amravati,Nandgaon Kh,93.57
+2024,Amravati,Chandur Railway,90.4
+2024,Amravati,Dhamangaon Re,67.21
 2012,Chh. Sambhaji Nagar,Kannad,57.09
-2012,Chh. Sambhaji Nagar,Soyegaon ,67.79
+2012,Chh. Sambhaji Nagar,Soyegaon,67.79
 2012,Chh. Sambhaji Nagar,Sillod,78.51
 2012,Chh. Sambhaji Nagar,Phulambri,103.41
 2012,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,125.74
@@ -359,7 +464,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2012,Chh. Sambhaji Nagar,Gangapur,91.58
 2012,Chh. Sambhaji Nagar,Paithan,79.22
 2013,Chh. Sambhaji Nagar,Kannad,79.8
-2013,Chh. Sambhaji Nagar,Soyegaon ,68.73
+2013,Chh. Sambhaji Nagar,Soyegaon,68.73
 2013,Chh. Sambhaji Nagar,Sillod,82.13
 2013,Chh. Sambhaji Nagar,Phulambri,104.8
 2013,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,167.92
@@ -368,7 +473,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2013,Chh. Sambhaji Nagar,Gangapur,90.12
 2013,Chh. Sambhaji Nagar,Paithan,86.61
 2014,Chh. Sambhaji Nagar,Kannad,79.51
-2014,Chh. Sambhaji Nagar,Soyegaon ,94.49
+2014,Chh. Sambhaji Nagar,Soyegaon,94.49
 2014,Chh. Sambhaji Nagar,Sillod,105.55
 2014,Chh. Sambhaji Nagar,Phulambri,116.85
 2014,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,182.48
@@ -377,7 +482,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2014,Chh. Sambhaji Nagar,Gangapur,82.35
 2014,Chh. Sambhaji Nagar,Paithan,83.48
 2015,Chh. Sambhaji Nagar,Kannad,85.8
-2015,Chh. Sambhaji Nagar,Soyegaon ,97.75
+2015,Chh. Sambhaji Nagar,Soyegaon,97.75
 2015,Chh. Sambhaji Nagar,Sillod,92.75
 2015,Chh. Sambhaji Nagar,Phulambri,140.51
 2015,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,129.97
@@ -386,7 +491,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2015,Chh. Sambhaji Nagar,Gangapur,94.26
 2015,Chh. Sambhaji Nagar,Paithan,117.9
 2016,Chh. Sambhaji Nagar,Kannad,83.08
-2016,Chh. Sambhaji Nagar,Soyegaon ,80.75
+2016,Chh. Sambhaji Nagar,Soyegaon,80.75
 2016,Chh. Sambhaji Nagar,Sillod,93.25
 2016,Chh. Sambhaji Nagar,Phulambri,135.06
 2016,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,229.25
@@ -395,7 +500,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2016,Chh. Sambhaji Nagar,Gangapur,89.19
 2016,Chh. Sambhaji Nagar,Paithan,114.62
 2017,Chh. Sambhaji Nagar,Kannad,84.15
-2017,Chh. Sambhaji Nagar,Soyegaon ,87.41
+2017,Chh. Sambhaji Nagar,Soyegaon,87.41
 2017,Chh. Sambhaji Nagar,Sillod,96.51
 2017,Chh. Sambhaji Nagar,Phulambri,148.11
 2017,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,227.63
@@ -404,7 +509,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2017,Chh. Sambhaji Nagar,Gangapur,91.19
 2017,Chh. Sambhaji Nagar,Paithan,114.38
 2018,Chh. Sambhaji Nagar,Kannad,74.42
-2018,Chh. Sambhaji Nagar,Soyegaon ,87.1
+2018,Chh. Sambhaji Nagar,Soyegaon,87.1
 2018,Chh. Sambhaji Nagar,Sillod,82.99
 2018,Chh. Sambhaji Nagar,Phulambri,143.24
 2018,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,107.3
@@ -413,7 +518,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2018,Chh. Sambhaji Nagar,Gangapur,87.89
 2018,Chh. Sambhaji Nagar,Paithan,115.92
 2019,Chh. Sambhaji Nagar,Kannad,74.42
-2019,Chh. Sambhaji Nagar,Soyegaon ,87.1
+2019,Chh. Sambhaji Nagar,Soyegaon,87.1
 2019,Chh. Sambhaji Nagar,Sillod,82.99
 2019,Chh. Sambhaji Nagar,Phulambri,143.24
 2019,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,104.22
@@ -422,7 +527,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2019,Chh. Sambhaji Nagar,Gangapur,89.2
 2019,Chh. Sambhaji Nagar,Paithan,115.92
 2020,Chh. Sambhaji Nagar,Kannad,74.42
-2020,Chh. Sambhaji Nagar,Soyegaon ,87.1
+2020,Chh. Sambhaji Nagar,Soyegaon,87.1
 2020,Chh. Sambhaji Nagar,Sillod,82.99
 2020,Chh. Sambhaji Nagar,Phulambri,143.24
 2020,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,231.69
@@ -431,7 +536,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2020,Chh. Sambhaji Nagar,Gangapur,89.2
 2020,Chh. Sambhaji Nagar,Paithan,115.92
 2021,Chh. Sambhaji Nagar,Kannad,74.42
-2021,Chh. Sambhaji Nagar,Soyegaon ,92.29
+2021,Chh. Sambhaji Nagar,Soyegaon,92.29
 2021,Chh. Sambhaji Nagar,Sillod,82.99
 2021,Chh. Sambhaji Nagar,Phulambri,143.24
 2021,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,231.69
@@ -439,6 +544,33 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Chh. Sambhaji Nagar,Vaijapur,88.47
 2021,Chh. Sambhaji Nagar,Gangapur,89.2
 2021,Chh. Sambhaji Nagar,Paithan,115.92
+2022,Chh. Sambhaji Nagar,Kannad,74.42
+2022,Chh. Sambhaji Nagar,Soyegaon,87.1
+2022,Chh. Sambhaji Nagar,Sillod,82.99
+2022,Chh. Sambhaji Nagar,Phulambri,143.24
+2022,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,234.25
+2022,Chh. Sambhaji Nagar,Khultabad,102.91
+2022,Chh. Sambhaji Nagar,Vaijapur,88.47
+2022,Chh. Sambhaji Nagar,Gangapur,89.2
+2022,Chh. Sambhaji Nagar,Paithan,115.92
+2023,Chh. Sambhaji Nagar,Kannad,74.42
+2023,Chh. Sambhaji Nagar,Soyegaon,87.1
+2023,Chh. Sambhaji Nagar,Sillod,82.99
+2023,Chh. Sambhaji Nagar,Phulambri,143.24
+2023,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,234.25
+2023,Chh. Sambhaji Nagar,Khultabad,102.91
+2023,Chh. Sambhaji Nagar,Vaijapur,88.47
+2023,Chh. Sambhaji Nagar,Gangapur,89.2
+2023,Chh. Sambhaji Nagar,Paithan,115.92
+2024,Chh. Sambhaji Nagar,Kannad,76.13
+2024,Chh. Sambhaji Nagar,Soyegaon,87.1
+2024,Chh. Sambhaji Nagar,Sillod,82.99
+2024,Chh. Sambhaji Nagar,Phulambri,143.24
+2024,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,234.25
+2024,Chh. Sambhaji Nagar,Khultabad,104.73
+2024,Chh. Sambhaji Nagar,Vaijapur,89.36
+2024,Chh. Sambhaji Nagar,Gangapur,86.18
+2024,Chh. Sambhaji Nagar,Paithan,115.92
 2013,Beed,Ashti,101.53
 2013,Beed,Patoda,93.39
 2013,Beed,Shirur Kasar,89.39
@@ -538,6 +670,39 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Beed,Dharur,119.13
 2021,Beed,Parli,166.31
 2021,Beed,Ambajogai,86.96
+2022,Beed,Ashti,119.07
+2022,Beed,Patoda,83.95
+2022,Beed,Shirur Kasar,176.87
+2022,Beed,Gevrai,90.87
+2022,Beed,Majalgaon,176.52
+2022,Beed,Wadwani,429.88
+2022,Beed,Beed,156.04
+2022,Beed,Cage,126.39
+2022,Beed,Dharur,120.93
+2022,Beed,Parli,167.48
+2022,Beed,Ambajogai,86.89
+2023,Beed,Ashti,119.07
+2023,Beed,Patoda,83.95
+2023,Beed,Shirur Kasar,176.87
+2023,Beed,Gevrai,93.98
+2023,Beed,Majalgaon,176.52
+2023,Beed,Wadwani,442.85
+2023,Beed,Beed,156.43
+2023,Beed,Cage,144.22
+2023,Beed,Dharur,121.31
+2023,Beed,Parli,167.79
+2023,Beed,Ambajogai,87.56
+2024,Beed,Ashti,108.19
+2024,Beed,Patoda,53.42
+2024,Beed,Shirur Kasar,51.58
+2024,Beed,Gevrai,97.38
+2024,Beed,Majalgaon,95.55
+2024,Beed,Wadwani,31.55
+2024,Beed,Beed,130.39
+2024,Beed,Cage,101.83
+2024,Beed,Dharur,50.88
+2024,Beed,Parli,73.62
+2024,Beed,Ambajogai,82.96
 2012,Bhandara,Tumsar,110.88
 2012,Bhandara,Mohadi,98.03
 2012,Bhandara,Bhandara,151.31
@@ -608,6 +773,27 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Bhandara,Lakhani,243.5
 2021,Bhandara,Pavani,158.81
 2021,Bhandara,Lakhandur,156.13
+2022,Bhandara,Tumsar,161.17
+2022,Bhandara,Mohadi,220.84
+2022,Bhandara,Bhandara,149.4
+2022,Bhandara,Sakoli,112.97
+2022,Bhandara,Lakhani,249.18
+2022,Bhandara,Pavani,157.22
+2022,Bhandara,Lakhandur,149.17
+2023,Bhandara,Tumsar,163.11
+2023,Bhandara,Mohadi,215.85
+2023,Bhandara,Bhandara,168.53
+2023,Bhandara,Sakoli,127.32
+2023,Bhandara,Lakhani,243.5
+2023,Bhandara,Pavani,156.53
+2023,Bhandara,Lakhandur,149.1
+2024,Bhandara,Tumsar,164.49
+2024,Bhandara,Mohadi,217.61
+2024,Bhandara,Bhandara,173.84
+2024,Bhandara,Sakoli,128.99
+2024,Bhandara,Lakhani,247.35
+2024,Bhandara,Pavani,158.01
+2024,Bhandara,Lakhandur,157.81
 2013,Buldhana,Jalgaon Jamod,74.44
 2013,Buldhana,Sangrampur,98.26
 2013,Buldhana,Shegaon,101.97
@@ -725,6 +911,45 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Buldhana,Deulgaon Raja,96.15
 2021,Buldhana,Sindkhed Raja,88.72
 2021,Buldhana,Lonar,73.17
+2022,Buldhana,Jalgaon Jamod,98.64
+2022,Buldhana,Sangrampur,95.53
+2022,Buldhana,Shegaon,103.55
+2022,Buldhana,Nandura,117.6
+2022,Buldhana,Malkapur,120.77
+2022,Buldhana,Motala,97.61
+2022,Buldhana,Khamgaon,72.3
+2022,Buldhana,Mehkar,96.37
+2022,Buldhana,Chikhali,95.95
+2022,Buldhana,Buldhana,96.14
+2022,Buldhana,Deulgaon Raja,102.6
+2022,Buldhana,Sindkhed Raja,89.84
+2022,Buldhana,Lonar,87.31
+2023,Buldhana,Jalgaon Jamod,129.44
+2023,Buldhana,Sangrampur,94.89
+2023,Buldhana,Shegaon,97.63
+2023,Buldhana,Nandura,131.8
+2023,Buldhana,Malkapur,144.49
+2023,Buldhana,Motala,71.93
+2023,Buldhana,Khamgaon,89.68
+2023,Buldhana,Mehkar,96.26
+2023,Buldhana,Chikhali,92.08
+2023,Buldhana,Buldhana,137.33
+2023,Buldhana,Deulgaon Raja,151.53
+2023,Buldhana,Sindkhed Raja,73.07
+2023,Buldhana,Lonar,99.02
+2024,Buldhana,Jalgaon Jamod,115.72
+2024,Buldhana,Sangrampur,99.33
+2024,Buldhana,Shegaon,104.6
+2024,Buldhana,Nandura,141.21
+2024,Buldhana,Malkapur,122.03
+2024,Buldhana,Motala,123.15
+2024,Buldhana,Khamgaon,90.18
+2024,Buldhana,Mehkar,96.38
+2024,Buldhana,Chikhali,105.33
+2024,Buldhana,Buldhana,123.77
+2024,Buldhana,Deulgaon Raja,90.82
+2024,Buldhana,Sindkhed Raja,92.19
+2024,Buldhana,Lonar,102.14
 2012,Chandrapur,Varora,6.1
 2012,Chandrapur,Chimur,8.4
 2012,Chandrapur,Nagbhid,5.8
@@ -875,6 +1100,51 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Chandrapur,Rajura,64.4
 2021,Chandrapur,Gondpipari,77.9
 2021,Chandrapur,Jivati,82.0
+2022,Chandrapur,Varora,91.4
+2022,Chandrapur,Chimur,87.55
+2022,Chandrapur,Nagbhid,138.08
+2022,Chandrapur,Bramhapuri,95.78
+2022,Chandrapur,Savali,76.16
+2022,Chandrapur,Sindevahi,63.12
+2022,Chandrapur,Bhadravati,67.5
+2022,Chandrapur,Chandrapur,57.85
+2022,Chandrapur,Mul,96.99
+2022,Chandrapur,Ponbhurna,77.13
+2022,Chandrapur,Ballarpur,80.25
+2022,Chandrapur,Korpana,116.4
+2022,Chandrapur,Rajura,64.41
+2022,Chandrapur,Gondpipari,81.44
+2022,Chandrapur,Jivati,81.98
+2023,Chandrapur,Varora,91.4
+2023,Chandrapur,Chimur,91.8
+2023,Chandrapur,Nagbhid,139.07
+2023,Chandrapur,Bramhapuri,96.08
+2023,Chandrapur,Savali,78.03
+2023,Chandrapur,Sindevahi,64.71
+2023,Chandrapur,Bhadravati,67.5
+2023,Chandrapur,Chandrapur,57.85
+2023,Chandrapur,Mul,96.99
+2023,Chandrapur,Ponbhurna,77.13
+2023,Chandrapur,Ballarpur,80.25
+2023,Chandrapur,Korpana,116.41
+2023,Chandrapur,Rajura,64.41
+2023,Chandrapur,Gondpipari,81.44
+2023,Chandrapur,Jivati,81.98
+2024,Chandrapur,Varora,91.92
+2024,Chandrapur,Chimur,91.8
+2024,Chandrapur,Nagbhid,139.07
+2024,Chandrapur,Bramhapuri,95.8
+2024,Chandrapur,Savali,78.03
+2024,Chandrapur,Sindevahi,64.71
+2024,Chandrapur,Bhadravati,67.22
+2024,Chandrapur,Chandrapur,114.23
+2024,Chandrapur,Mul,103.5
+2024,Chandrapur,Ponbhurna,81.55
+2024,Chandrapur,Ballarpur,80.19
+2024,Chandrapur,Korpana,123.18
+2024,Chandrapur,Rajura,67.95
+2024,Chandrapur,Gondpipari,79.73
+2024,Chandrapur,Jivati,70.67
 2012,Dhule,Shirpur,42.44
 2012,Dhule,Shindkheda,103.54
 2012,Dhule,Sakri,58.54
@@ -915,8 +1185,20 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Dhule,Shindkheda,115.52
 2021,Dhule,Sakri,85.19
 2021,Dhule,Dhule,100.64
+2022,Dhule,Shirpur,103.88
+2022,Dhule,Shindkheda,115.52
+2022,Dhule,Sakri,85.19
+2022,Dhule,Dhule,100.64
+2023,Dhule,Shirpur,103.87
+2023,Dhule,Shindkheda,142.57
+2023,Dhule,Sakri,84.24
+2023,Dhule,Dhule,93.25
+2024,Dhule,Shirpur,90.32
+2024,Dhule,Shindkheda,137.23
+2024,Dhule,Sakri,84.72
+2024,Dhule,Dhule,90.15
 2012,Gadchiroli,Desaiganj,0.0
-2012,Gadchiroli,rmori,355.3
+2012,Gadchiroli,Aarmori,355.3
 2012,Gadchiroli,Kurkheda,61.23
 2012,Gadchiroli,Korachi,144.07
 2012,Gadchiroli,Dhanora,79.88
@@ -928,7 +1210,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2012,Gadchiroli,Aheri,46.19
 2012,Gadchiroli,Sironcha,110.97
 2013,Gadchiroli,Desaiganj,347.0
-2013,Gadchiroli,rmori,76.7
+2013,Gadchiroli,Aarmori,76.7
 2013,Gadchiroli,Kurkheda,63.7
 2013,Gadchiroli,Korachi,150.7
 2013,Gadchiroli,Dhanora,81.8
@@ -940,7 +1222,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2013,Gadchiroli,Aheri,47.5
 2013,Gadchiroli,Sironcha,116.1
 2014,Gadchiroli,Desaiganj,258.4
-2014,Gadchiroli,rmori,137.8
+2014,Gadchiroli,Aarmori,137.8
 2014,Gadchiroli,Kurkheda,114.8
 2014,Gadchiroli,Korachi,124.5
 2014,Gadchiroli,Dhanora,92.5
@@ -952,7 +1234,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2014,Gadchiroli,Aheri,57.2
 2014,Gadchiroli,Sironcha,81.7
 2015,Gadchiroli,Desaiganj,212.8
-2015,Gadchiroli,rmori,94.12
+2015,Gadchiroli,Aarmori,94.12
 2015,Gadchiroli,Kurkheda,76.23
 2015,Gadchiroli,Korachi,76.34
 2015,Gadchiroli,Dhanora,71.71
@@ -964,7 +1246,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2015,Gadchiroli,Aheri,42.57
 2015,Gadchiroli,Sironcha,48.25
 2016,Gadchiroli,Desaiganj,207.99
-2016,Gadchiroli,rmori,91.3
+2016,Gadchiroli,Aarmori,91.3
 2016,Gadchiroli,Kurkheda,76.69
 2016,Gadchiroli,Korachi,76.37
 2016,Gadchiroli,Dhanora,71.12
@@ -976,7 +1258,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2016,Gadchiroli,Aheri,41.92
 2016,Gadchiroli,Sironcha,48.38
 2017,Gadchiroli,Desaiganj,208.37
-2017,Gadchiroli,rmori,91.16
+2017,Gadchiroli,Aarmori,91.16
 2017,Gadchiroli,Kurkheda,76.69
 2017,Gadchiroli,Korachi,76.37
 2017,Gadchiroli,Dhanora,71.12
@@ -988,7 +1270,7 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2017,Gadchiroli,Aheri,41.92
 2017,Gadchiroli,Sironcha,48.38
 2018,Gadchiroli,Desaiganj,210.87
-2018,Gadchiroli,rmori,93.77
+2018,Gadchiroli,Aarmori,93.77
 2018,Gadchiroli,Kurkheda,76.87
 2018,Gadchiroli,Korachi,76.23
 2018,Gadchiroli,Dhanora,73.2
@@ -1035,6 +1317,42 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Gadchiroli,Bhamragad,44.14
 2021,Gadchiroli,Aheri,41.75
 2021,Gadchiroli,Sironcha,49.28
+2022,Gadchiroli,Desaiganj,163.47
+2022,Gadchiroli,Aarmori,105.91
+2022,Gadchiroli,Kurkheda,76.63
+2022,Gadchiroli,Korachi,76.55
+2022,Gadchiroli,Dhanora,71.04
+2022,Gadchiroli,Gadchiroli,168.07
+2022,Gadchiroli,Chomoshi,70.59
+2022,Gadchiroli,Mulchera,55.11
+2022,Gadchiroli,Etapalli,53.38
+2022,Gadchiroli,Bhamragad,44.15
+2022,Gadchiroli,Aheri,41.75
+2022,Gadchiroli,Sironcha,49.28
+2023,Gadchiroli,Desaiganj,174.22
+2023,Gadchiroli,Aarmori,116.54
+2023,Gadchiroli,Kurkheda,81.26
+2023,Gadchiroli,Korachi,76.55
+2023,Gadchiroli,Dhanora,71.72
+2023,Gadchiroli,Gadchiroli,169.96
+2023,Gadchiroli,Chomoshi,77.24
+2023,Gadchiroli,Mulchera,48.13
+2023,Gadchiroli,Etapalli,56.07
+2023,Gadchiroli,Bhamragad,44.56
+2023,Gadchiroli,Aheri,41.44
+2023,Gadchiroli,Sironcha,49.28
+2024,Gadchiroli,Desaiganj,179.04
+2024,Gadchiroli,Aarmori,111.65
+2024,Gadchiroli,Kurkheda,80.91
+2024,Gadchiroli,Korachi,76.55
+2024,Gadchiroli,Dhanora,71.72
+2024,Gadchiroli,Gadchiroli,111.1
+2024,Gadchiroli,Chomoshi,77.24
+2024,Gadchiroli,Mulchera,47.45
+2024,Gadchiroli,Etapalli,56.2
+2024,Gadchiroli,Bhamragad,44.98
+2024,Gadchiroli,Aheri,41.79
+2024,Gadchiroli,Sironcha,48.61
 2012,Gondia,Tiroda,
 2012,Gondia,Goregaon,
 2012,Gondia,Gondia,
@@ -1115,206 +1433,290 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Gondia,Sadak Arjuni,141.41
 2021,Gondia,Arjuni Morgaon,104.19
 2021,Gondia,Devari,99.93
+2022,Gondia,Tiroda,154.11
+2022,Gondia,Goregaon,139.74
+2022,Gondia,Gondia,229.52
+2022,Gondia,Aamgaon,237.18
+2022,Gondia,Salekasa,138.62
+2022,Gondia,Sadak Arjuni,138.19
+2022,Gondia,Arjuni Morgaon,104.19
+2022,Gondia,Devari,98.08
+2023,Gondia,Tiroda,179.65
+2023,Gondia,Goregaon,144.09
+2023,Gondia,Gondia,236.89
+2023,Gondia,Aamgaon,222.17
+2023,Gondia,Salekasa,136.62
+2023,Gondia,Sadak Arjuni,138.21
+2023,Gondia,Arjuni Morgaon,105.46
+2023,Gondia,Devari,95.85
+2024,Gondia,Tiroda,198.19
+2024,Gondia,Goregaon,152.58
+2024,Gondia,Gondia,247.42
+2024,Gondia,Aamgaon,239.19
+2024,Gondia,Salekasa,144.85
+2024,Gondia,Sadak Arjuni,147.77
+2024,Gondia,Arjuni Morgaon,104.75
+2024,Gondia,Devari,100.72
 2012,Hingoli,Sengaon,15.28
 2012,Hingoli,Hingoli,14.59
 2012,Hingoli,Aundha na,9.78
 2012,Hingoli,Kalamanuri,18.89
-2012,Hingoli,vasamat,17.36
+2012,Hingoli,Vasamat,17.36
 2013,Hingoli,Sengaon,70.42
 2013,Hingoli,Hingoli,102.16
 2013,Hingoli,Aundha na,86.35
 2013,Hingoli,Kalamanuri,77.42
-2013,Hingoli,vasamat,93.32
+2013,Hingoli,Vasamat,93.32
 2014,Hingoli,Sengaon,78.31
 2014,Hingoli,Hingoli,87.49
 2014,Hingoli,Aundha na,81.9
 2014,Hingoli,Kalamanuri,88.35
-2014,Hingoli,vasamat,92.92
+2014,Hingoli,Vasamat,92.92
 2015,Hingoli,Sengaon,87.66
 2015,Hingoli,Hingoli,102.28
 2015,Hingoli,Aundha na,92.95
 2015,Hingoli,Kalamanuri,101.99
-2015,Hingoli,vasamat,100.01
+2015,Hingoli,Vasamat,100.01
 2016,Hingoli,Sengaon,80.09
 2016,Hingoli,Hingoli,88.0
 2016,Hingoli,Aundha na,84.3
 2016,Hingoli,Kalamanuri,89.64
-2016,Hingoli,vasamat,91.54
+2016,Hingoli,Vasamat,91.54
 2017,Hingoli,Sengaon,80.09
 2017,Hingoli,Hingoli,88.0
 2017,Hingoli,Aundha na,84.3
 2017,Hingoli,Kalamanuri,90.17
-2017,Hingoli,vasamat,102.07
+2017,Hingoli,Vasamat,102.07
 2018,Hingoli,Sengaon,81.19
 2018,Hingoli,Hingoli,93.82
 2018,Hingoli,Aundha na,85.74
 2018,Hingoli,Kalamanuri,89.85
-2018,Hingoli,vasamat,117.84
+2018,Hingoli,Vasamat,117.84
 2019,Hingoli,Sengaon,81.19
 2019,Hingoli,Hingoli,94.95
 2019,Hingoli,Aundha na,85.98
 2019,Hingoli,Kalamanuri,90.17
-2019,Hingoli,vasamat,118.4
+2019,Hingoli,Vasamat,118.4
 2020,Hingoli,Sengaon,81.33
 2020,Hingoli,Hingoli,99.31
 2020,Hingoli,Aundha na,86.16
 2020,Hingoli,Kalamanuri,90.38
-2020,Hingoli,vasamat,118.69
+2020,Hingoli,Vasamat,118.69
 2021,Hingoli,Sengaon,85.06
 2021,Hingoli,Hingoli,100.45
 2021,Hingoli,Aundha na,86.16
 2021,Hingoli,Kalamanuri,101.45
-2021,Hingoli,vasamat,121.6
-2012,Jalgaon,Chopda ,117.31
+2021,Hingoli,Vasamat,121.6
+2022,Hingoli,Sengaon,87.55
+2022,Hingoli,Hingoli,101.58
+2022,Hingoli,Aundha na,86.16
+2022,Hingoli,Kalamanuri,108.41
+2022,Hingoli,Vasamat,123.41
+2023,Hingoli,Sengaon,87.55
+2023,Hingoli,Hingoli,101.58
+2023,Hingoli,Aundha na,86.16
+2023,Hingoli,Kalamanuri,108.41
+2023,Hingoli,Vasamat,123.41
+2024,Hingoli,Sengaon,66.73
+2024,Hingoli,Hingoli,145.42
+2024,Hingoli,Aundha na,76.53
+2024,Hingoli,Kalamanuri,85.42
+2024,Hingoli,Vasamat,99.72
+2012,Jalgaon,Chopda,117.31
 2012,Jalgaon,Yawal,143.53
 2012,Jalgaon,Raver,127.55
-2012,Jalgaon,Muktainagar ,102.73
+2012,Jalgaon,Muktainagar,102.73
 2012,Jalgaon,Bodvad,95.63
 2012,Jalgaon,Bhusawal,125.13
-2012,Jalgaon,Jalgaon ,104.05
-2012,Jalgaon,Erandol ,126.72
-2012,Jalgaon,Dharangoan ,88.06
-2012,Jalgaon,Amalner ,120.34
+2012,Jalgaon,Jalgaon,104.05
+2012,Jalgaon,Erandol,126.72
+2012,Jalgaon,Dharangaon,88.06
+2012,Jalgaon,Amalner,120.34
 2012,Jalgaon,Parola,76.83
-2012,Jalgaon,Bhadgoan,102.44
-2012,Jalgaon,Chalisgoan ,86.79
-2012,Jalgaon,Pachora ,92.5
-2012,Jalgaon,Jamner ,75.82
-2013,Jalgaon,Chopda ,102.42
+2012,Jalgaon,Bhadgaon,102.44
+2012,Jalgaon,Chalisgaon,86.79
+2012,Jalgaon,Pachora,92.5
+2012,Jalgaon,Jamner,75.82
+2013,Jalgaon,Chopda,102.42
 2013,Jalgaon,Yawal,121.55
 2013,Jalgaon,Raver,106.44
-2013,Jalgaon,Muktainagar ,107.92
+2013,Jalgaon,Muktainagar,107.92
 2013,Jalgaon,Bodvad,131.77
 2013,Jalgaon,Bhusawal,132.94
-2013,Jalgaon,Jalgaon ,186.5
-2013,Jalgaon,Erandol ,119.59
-2013,Jalgaon,Dharangoan ,134.07
-2013,Jalgaon,Amalner ,128.77
+2013,Jalgaon,Jalgaon,186.5
+2013,Jalgaon,Erandol,119.59
+2013,Jalgaon,Dharangaon,134.07
+2013,Jalgaon,Amalner,128.77
 2013,Jalgaon,Parola,110.48
-2013,Jalgaon,Bhadgoan,144.65
-2013,Jalgaon,Chalisgoan ,124.24
-2013,Jalgaon,Pachora ,121.03
-2013,Jalgaon,Jamner ,91.68
-2014,Jalgaon,Chopda ,97.16
+2013,Jalgaon,Bhadgaon,144.65
+2013,Jalgaon,Chalisgaon,124.24
+2013,Jalgaon,Pachora,121.03
+2013,Jalgaon,Jamner,91.68
+2014,Jalgaon,Chopda,97.16
 2014,Jalgaon,Yawal,120.87
 2014,Jalgaon,Raver,103.59
-2014,Jalgaon,Muktainagar ,108.05
+2014,Jalgaon,Muktainagar,108.05
 2014,Jalgaon,Bodvad,130.54
 2014,Jalgaon,Bhusawal,108.01
-2014,Jalgaon,Jalgaon ,123.27
-2014,Jalgaon,Erandol ,115.89
-2014,Jalgaon,Dharangoan ,134.22
-2014,Jalgaon,Amalner ,120.73
+2014,Jalgaon,Jalgaon,123.27
+2014,Jalgaon,Erandol,115.89
+2014,Jalgaon,Dharangaon,134.22
+2014,Jalgaon,Amalner,120.73
 2014,Jalgaon,Parola,112.27
-2014,Jalgaon,Bhadgoan,137.5
-2014,Jalgaon,Chalisgoan ,111.13
-2014,Jalgaon,Pachora ,117.43
-2014,Jalgaon,Jamner ,85.59
-2015,Jalgaon,Chopda ,101.94
+2014,Jalgaon,Bhadgaon,137.5
+2014,Jalgaon,Chalisgaon,111.13
+2014,Jalgaon,Pachora,117.43
+2014,Jalgaon,Jamner,85.59
+2015,Jalgaon,Chopda,101.94
 2015,Jalgaon,Yawal,132.2
 2015,Jalgaon,Raver,105.94
-2015,Jalgaon,Muktainagar ,108.43
+2015,Jalgaon,Muktainagar,108.43
 2015,Jalgaon,Bodvad,124.56
 2015,Jalgaon,Bhusawal,142.85
-2015,Jalgaon,Jalgaon ,182.41
-2015,Jalgaon,Erandol ,122.37
-2015,Jalgaon,Dharangoan ,134.15
-2015,Jalgaon,Amalner ,132.92
+2015,Jalgaon,Jalgaon,182.41
+2015,Jalgaon,Erandol,122.37
+2015,Jalgaon,Dharangaon,134.15
+2015,Jalgaon,Amalner,132.92
 2015,Jalgaon,Parola,117.12
-2015,Jalgaon,Bhadgoan,145.01
-2015,Jalgaon,Chalisgoan ,122.66
-2015,Jalgaon,Pachora ,121.18
-2015,Jalgaon,Jamner ,92.74
-2016,Jalgaon,Chopda ,103.44
+2015,Jalgaon,Bhadgaon,145.01
+2015,Jalgaon,Chalisgaon,122.66
+2015,Jalgaon,Pachora,121.18
+2015,Jalgaon,Jamner,92.74
+2016,Jalgaon,Chopda,103.44
 2016,Jalgaon,Yawal,138.59
 2016,Jalgaon,Raver,108.17
-2016,Jalgaon,Muktainagar ,110.92
+2016,Jalgaon,Muktainagar,110.92
 2016,Jalgaon,Bodvad,125.67
 2016,Jalgaon,Bhusawal,143.9
-2016,Jalgaon,Jalgaon ,181.03
-2016,Jalgaon,Erandol ,124.32
-2016,Jalgaon,Dharangoan ,146.23
-2016,Jalgaon,Amalner ,135.49
+2016,Jalgaon,Jalgaon,181.03
+2016,Jalgaon,Erandol,124.32
+2016,Jalgaon,Dharangaon,146.23
+2016,Jalgaon,Amalner,135.49
 2016,Jalgaon,Parola,117.35
-2016,Jalgaon,Bhadgoan,143.38
-2016,Jalgaon,Chalisgoan ,122.02
-2016,Jalgaon,Pachora ,124.66
-2016,Jalgaon,Jamner ,95.27
-2017,Jalgaon,Chopda ,104.41
+2016,Jalgaon,Bhadgaon,143.38
+2016,Jalgaon,Chalisgaon,122.02
+2016,Jalgaon,Pachora,124.66
+2016,Jalgaon,Jamner,95.27
+2017,Jalgaon,Chopda,104.41
 2017,Jalgaon,Yawal,139.48
 2017,Jalgaon,Raver,108.21
-2017,Jalgaon,Muktainagar ,109.56
+2017,Jalgaon,Muktainagar,109.56
 2017,Jalgaon,Bodvad,129.09
 2017,Jalgaon,Bhusawal,151.52
-2017,Jalgaon,Jalgaon ,191.7
-2017,Jalgaon,Erandol ,150.01
-2017,Jalgaon,Dharangoan ,144.53
-2017,Jalgaon,Amalner ,143.5
+2017,Jalgaon,Jalgaon,191.7
+2017,Jalgaon,Erandol,150.01
+2017,Jalgaon,Dharangaon,144.53
+2017,Jalgaon,Amalner,143.5
 2017,Jalgaon,Parola,118.99
-2017,Jalgaon,Bhadgoan,147.76
-2017,Jalgaon,Chalisgoan ,124.15
-2017,Jalgaon,Pachora ,123.33
-2017,Jalgaon,Jamner ,95.9
-2018,Jalgaon,Chopda ,93.09
+2017,Jalgaon,Bhadgaon,147.76
+2017,Jalgaon,Chalisgaon,124.15
+2017,Jalgaon,Pachora,123.33
+2017,Jalgaon,Jamner,95.9
+2018,Jalgaon,Chopda,93.09
 2018,Jalgaon,Yawal,142.49
 2018,Jalgaon,Raver,95.41
-2018,Jalgaon,Muktainagar ,192.6
+2018,Jalgaon,Muktainagar,192.6
 2018,Jalgaon,Bodvad,154.34
 2018,Jalgaon,Bhusawal,196.14
-2018,Jalgaon,Jalgaon ,193.93
-2018,Jalgaon,Erandol ,139.4
-2018,Jalgaon,Dharangoan ,139.51
-2018,Jalgaon,Amalner ,98.7
+2018,Jalgaon,Jalgaon,193.93
+2018,Jalgaon,Erandol,139.4
+2018,Jalgaon,Dharangaon,139.51
+2018,Jalgaon,Amalner,98.7
 2018,Jalgaon,Parola,146.17
-2018,Jalgaon,Bhadgoan,168.6
-2018,Jalgaon,Chalisgoan ,102.47
-2018,Jalgaon,Pachora ,129.54
-2018,Jalgaon,Jamner ,87.72
-2019,Jalgaon,Chopda ,104.41
+2018,Jalgaon,Bhadgaon,168.6
+2018,Jalgaon,Chalisgaon,102.47
+2018,Jalgaon,Pachora,129.54
+2018,Jalgaon,Jamner,87.72
+2019,Jalgaon,Chopda,104.41
 2019,Jalgaon,Yawal,137.55
 2019,Jalgaon,Raver,113.65
-2019,Jalgaon,Muktainagar ,117.69
+2019,Jalgaon,Muktainagar,117.69
 2019,Jalgaon,Bodvad,140.24
 2019,Jalgaon,Bhusawal,201.24
-2019,Jalgaon,Jalgaon ,199.38
-2019,Jalgaon,Erandol ,145.14
-2019,Jalgaon,Dharangoan ,150.83
-2019,Jalgaon,Amalner ,143.25
+2019,Jalgaon,Jalgaon,199.38
+2019,Jalgaon,Erandol,145.14
+2019,Jalgaon,Dharangaon,150.83
+2019,Jalgaon,Amalner,143.25
 2019,Jalgaon,Parola,117.46
-2019,Jalgaon,Bhadgoan,135.75
-2019,Jalgaon,Chalisgoan ,122.54
-2019,Jalgaon,Pachora ,118.93
-2019,Jalgaon,Jamner ,101.86
-2020,Jalgaon,Chopda ,104.53
+2019,Jalgaon,Bhadgaon,135.75
+2019,Jalgaon,Chalisgaon,122.54
+2019,Jalgaon,Pachora,118.93
+2019,Jalgaon,Jamner,101.86
+2020,Jalgaon,Chopda,104.53
 2020,Jalgaon,Yawal,138.53
 2020,Jalgaon,Raver,113.53
-2020,Jalgaon,Muktainagar ,131.71
+2020,Jalgaon,Muktainagar,131.71
 2020,Jalgaon,Bodvad,140.24
 2020,Jalgaon,Bhusawal,171.03
-2020,Jalgaon,Jalgaon ,214.0
-2020,Jalgaon,Erandol ,143.39
-2020,Jalgaon,Dharangoan ,173.23
-2020,Jalgaon,Amalner ,147.7
+2020,Jalgaon,Jalgaon,214.0
+2020,Jalgaon,Erandol,143.39
+2020,Jalgaon,Dharangaon,173.23
+2020,Jalgaon,Amalner,147.7
 2020,Jalgaon,Parola,118.81
-2020,Jalgaon,Bhadgoan,162.07
-2020,Jalgaon,Chalisgoan ,124.17
-2020,Jalgaon,Pachora ,129.14
-2020,Jalgaon,Jamner ,105.16
-2021,Jalgaon,Chopda ,104.53
+2020,Jalgaon,Bhadgaon,162.07
+2020,Jalgaon,Chalisgaon,124.17
+2020,Jalgaon,Pachora,129.14
+2020,Jalgaon,Jamner,105.16
+2021,Jalgaon,Chopda,104.53
 2021,Jalgaon,Yawal,138.53
 2021,Jalgaon,Raver,113.53
-2021,Jalgaon,Muktainagar ,131.71
+2021,Jalgaon,Muktainagar,131.71
 2021,Jalgaon,Bodvad,140.24
 2021,Jalgaon,Bhusawal,171.03
-2021,Jalgaon,Jalgaon ,214.0
-2021,Jalgaon,Erandol ,143.39
-2021,Jalgaon,Dharangoan ,173.23
-2021,Jalgaon,Amalner ,147.7
+2021,Jalgaon,Jalgaon,214.0
+2021,Jalgaon,Erandol,143.39
+2021,Jalgaon,Dharangaon,173.23
+2021,Jalgaon,Amalner,147.7
 2021,Jalgaon,Parola,118.81
-2021,Jalgaon,Bhadgoan,162.07
-2021,Jalgaon,Chalisgoan ,124.17
-2021,Jalgaon,Pachora ,129.14
-2021,Jalgaon,Jamner ,105.16
+2021,Jalgaon,Bhadgaon,162.07
+2021,Jalgaon,Chalisgaon,124.17
+2021,Jalgaon,Pachora,129.14
+2021,Jalgaon,Jamner,105.16
+2022,Jalgaon,Chopda,104.53
+2022,Jalgaon,Yawal,138.53
+2022,Jalgaon,Raver,113.53
+2022,Jalgaon,Muktainagar,131.71
+2022,Jalgaon,Bodvad,140.24
+2022,Jalgaon,Bhusawal,171.03
+2022,Jalgaon,Jalgaon,214.0
+2022,Jalgaon,Erandol,143.39
+2022,Jalgaon,Dharangaon,173.23
+2022,Jalgaon,Amalner,147.7
+2022,Jalgaon,Parola,118.81
+2022,Jalgaon,Bhadgaon,162.07
+2022,Jalgaon,Chalisgaon,124.17
+2022,Jalgaon,Pachora,129.14
+2022,Jalgaon,Jamner,105.16
+2023,Jalgaon,Chopda,96.08
+2023,Jalgaon,Yawal,96.31
+2023,Jalgaon,Raver,96.36
+2023,Jalgaon,Muktainagar,101.67
+2023,Jalgaon,Bodvad,107.54
+2023,Jalgaon,Bhusawal,100.0
+2023,Jalgaon,Jalgaon,102.48
+2023,Jalgaon,Erandol,100.0
+2023,Jalgaon,Dharangaon,100.0
+2023,Jalgaon,Amalner,100.0
+2023,Jalgaon,Parola,100.0
+2023,Jalgaon,Bhadgaon,103.17
+2023,Jalgaon,Chalisgaon,105.46
+2023,Jalgaon,Pachora,102.96
+2023,Jalgaon,Jamner,103.39
+2024,Jalgaon,Chopda,100.04
+2024,Jalgaon,Yawal,109.48
+2024,Jalgaon,Raver,106.37
+2024,Jalgaon,Muktainagar,105.39
+2024,Jalgaon,Bodvad,116.64
+2024,Jalgaon,Bhusawal,107.11
+2024,Jalgaon,Jalgaon,231.66
+2024,Jalgaon,Erandol,110.56
+2024,Jalgaon,Dharangaon,207.27
+2024,Jalgaon,Amalner,121.22
+2024,Jalgaon,Parola,118.53
+2024,Jalgaon,Bhadgaon,128.57
+2024,Jalgaon,Chalisgaon,113.81
+2024,Jalgaon,Pachora,146.97
+2024,Jalgaon,Jamner,129.05
 2012,Jalna,Bhokardan,109.2
 2012,Jalna,Jaffrabad,98.6
 2012,Jalna,Jalna,84.2
@@ -1395,6 +1797,30 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Jalna,Ghansawangi,110.19
 2021,Jalna,Partur,81.75
 2021,Jalna,Mantha,89.58
+2022,Jalna,Bhokardan,105.41
+2022,Jalna,Jaffrabad,82.53
+2022,Jalna,Jalna,124.51
+2022,Jalna,Badnapur,92.94
+2022,Jalna,Ambad,107.91
+2022,Jalna,Ghansawangi,127.5
+2022,Jalna,Partur,90.36
+2022,Jalna,Mantha,98.65
+2023,Jalna,Bhokardan,121.73
+2023,Jalna,Jaffrabad,95.87
+2023,Jalna,Jalna,135.6
+2023,Jalna,Badnapur,101.88
+2023,Jalna,Ambad,111.55
+2023,Jalna,Ghansawangi,127.95
+2023,Jalna,Partur,91.17
+2023,Jalna,Mantha,99.75
+2024,Jalna,Bhokardan,126.39
+2024,Jalna,Jaffrabad,98.25
+2024,Jalna,Jalna,136.44
+2024,Jalna,Badnapur,103.77
+2024,Jalna,Ambad,55.43
+2024,Jalna,Ghansawangi,128.33
+2024,Jalna,Partur,82.81
+2024,Jalna,Mantha,100.14
 2017,Kolhapur,Shahuwadi,78.0
 2017,Kolhapur,Panhala,116.67
 2017,Kolhapur,Hatkanangale,152.42
@@ -1455,6 +1881,42 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Kolhapur,Ajra,107.5
 2021,Kolhapur,Gadhinglaj,156.33
 2021,Kolhapur,Chandgad,87.22
+2022,Kolhapur,Shahuwadi,76.96
+2022,Kolhapur,Panhala,123.45
+2022,Kolhapur,Hatkanangale,150.04
+2022,Kolhapur,Shirol,135.89
+2022,Kolhapur,Karveer,135.51
+2022,Kolhapur,Gaganbawda,59.9
+2022,Kolhapur,Radhanagari,97.66
+2022,Kolhapur,Kagal,131.98
+2022,Kolhapur,Bhudargad,87.44
+2022,Kolhapur,Ajra,100.82
+2022,Kolhapur,Gadhinglaj,151.54
+2022,Kolhapur,Chandgad,86.74
+2023,Kolhapur,Shahuwadi,77.58
+2023,Kolhapur,Panhala,124.17
+2023,Kolhapur,Hatkanangale,154.72
+2023,Kolhapur,Shirol,141.68
+2023,Kolhapur,Karveer,139.71
+2023,Kolhapur,Gaganbawda,71.92
+2023,Kolhapur,Radhanagari,97.66
+2023,Kolhapur,Kagal,132.28
+2023,Kolhapur,Bhudargad,109.84
+2023,Kolhapur,Ajra,107.91
+2023,Kolhapur,Gadhinglaj,155.47
+2023,Kolhapur,Chandgad,86.74
+2024,Kolhapur,Shahuwadi,77.72
+2024,Kolhapur,Panhala,122.92
+2024,Kolhapur,Hatkanangale,153.38
+2024,Kolhapur,Shirol,138.89
+2024,Kolhapur,Karveer,138.24
+2024,Kolhapur,Gaganbawda,73.48
+2024,Kolhapur,Radhanagari,97.63
+2024,Kolhapur,Kagal,132.7
+2024,Kolhapur,Bhudargad,109.77
+2024,Kolhapur,Ajra,107.91
+2024,Kolhapur,Gadhinglaj,155.64
+2024,Kolhapur,Chandgad,87.3
 2012,Latur,Latur,88.61
 2012,Latur,Renapur,76.3
 2012,Latur,Ahamadpur,80.79
@@ -1505,16 +1967,16 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2016,Latur,Nilanga,99.63
 2016,Latur,Devani,135.15
 2016,Latur,Udgir,137.36
-2017,Latur,Latur,892.18
-2017,Latur,Renapur,586.98
-2017,Latur,Ahamadpur,773.81
-2017,Latur,Jalkot,291.65
-2017,Latur,Chakur,580.0
-2017,Latur,Shirur Anantpal,312.0
-2017,Latur,Aosa,934.59
-2017,Latur,Nilanga,856.97
-2017,Latur,Devani,415.47
-2017,Latur,Udgir,880.96
+2017,Latur,Latur,
+2017,Latur,Renapur,
+2017,Latur,Ahamadpur,
+2017,Latur,Jalkot,
+2017,Latur,Chakur,
+2017,Latur,Shirur Anantpal,
+2017,Latur,Aosa,
+2017,Latur,Nilanga,
+2017,Latur,Devani,
+2017,Latur,Udgir,
 2018,Latur,Latur,176.18
 2018,Latur,Renapur,117.61
 2018,Latur,Ahamadpur,102.37
@@ -1555,6 +2017,36 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Latur,Nilanga,116.77
 2021,Latur,Devani,138.08
 2021,Latur,Udgir,138.39
+2022,Latur,Latur,200.54
+2022,Latur,Renapur,138.45
+2022,Latur,Ahamadpur,111.43
+2022,Latur,Jalkot,102.11
+2022,Latur,Chakur,105.78
+2022,Latur,Shirur Anantpal,102.53
+2022,Latur,Aosa,100.26
+2022,Latur,Nilanga,120.71
+2022,Latur,Devani,132.97
+2022,Latur,Udgir,144.24
+2023,Latur,Latur,205.34
+2023,Latur,Renapur,141.8
+2023,Latur,Ahamadpur,111.79
+2023,Latur,Jalkot,102.97
+2023,Latur,Chakur,102.81
+2023,Latur,Shirur Anantpal,107.54
+2023,Latur,Aosa,111.02
+2023,Latur,Nilanga,93.96
+2023,Latur,Devani,138.0
+2023,Latur,Udgir,139.45
+2024,Latur,Latur,215.81
+2024,Latur,Renapur,149.25
+2024,Latur,Ahamadpur,107.24
+2024,Latur,Jalkot,97.8
+2024,Latur,Chakur,102.48
+2024,Latur,Shirur Anantpal,107.96
+2024,Latur,Aosa,113.31
+2024,Latur,Nilanga,94.49
+2024,Latur,Devani,144.12
+2024,Latur,Udgir,139.93
 2013,Mumbai,Mumbai City,312.63
 2014,Mumbai,Mumbai City,322.59
 2015,Mumbai,Mumbai City,322.59
@@ -1564,24 +2056,36 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2019,Mumbai,Mumbai City,322.6
 2020,Mumbai,Mumbai City,368.18
 2021,Mumbai,Mumbai City,368.19
-2016,Mumbai Suburban,Adheri,0.0
+2022,Mumbai,Mumbai City,353.94
+2023,Mumbai,Mumbai City,354.58
+2024,Mumbai,Mumbai City,354.58
+2016,Mumbai Suburban,Andheri,0.0
 2016,Mumbai Suburban,Borivali,0.0
 2016,Mumbai Suburban,Kurla,0.0
-2017,Mumbai Suburban,Adheri,264.11
+2017,Mumbai Suburban,Andheri,264.11
 2017,Mumbai Suburban,Borivali,173.47
 2017,Mumbai Suburban,Kurla,86.85
-2018,Mumbai Suburban,Adheri,
+2018,Mumbai Suburban,Andheri,
 2018,Mumbai Suburban,Borivali,
 2018,Mumbai Suburban,Kurla,
-2019,Mumbai Suburban,Adheri,0.0
+2019,Mumbai Suburban,Andheri,0.0
 2019,Mumbai Suburban,Borivali,0.0
 2019,Mumbai Suburban,Kurla,0.0
-2020,Mumbai Suburban,Adheri,
+2020,Mumbai Suburban,Andheri,
 2020,Mumbai Suburban,Borivali,
 2020,Mumbai Suburban,Kurla,
-2021,Mumbai Suburban,Adheri,
+2021,Mumbai Suburban,Andheri,
 2021,Mumbai Suburban,Borivali,
 2021,Mumbai Suburban,Kurla,
+2022,Mumbai Suburban,Andheri,
+2022,Mumbai Suburban,Borivali,
+2022,Mumbai Suburban,Kurla,
+2023,Mumbai Suburban,Andheri,
+2023,Mumbai Suburban,Borivali,
+2023,Mumbai Suburban,Kurla,
+2024,Mumbai Suburban,Andheri,
+2024,Mumbai Suburban,Borivali,
+2024,Mumbai Suburban,Kurla,
 2012,Nagpur,Narkhed,129.0
 2012,Nagpur,Katol,132.0
 2012,Nagpur,Kalameshwar,121.0
@@ -1722,152 +2226,242 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Nagpur,Umred,142.0
 2021,Nagpur,Kuhi,169.0
 2021,Nagpur,Bhiwapur,139.0
+2022,Nagpur,Narkhed,190.0
+2022,Nagpur,Katol,163.0
+2022,Nagpur,Kalameshwar,181.0
+2022,Nagpur,Sawner,149.0
+2022,Nagpur,Parashivani,136.0
+2022,Nagpur,Ramtech,100.0
+2022,Nagpur,Mauda,221.0
+2022,Nagpur,Kamathi,275.0
+2022,Nagpur,Nagpur (Gra),212.0
+2022,Nagpur,Nagpur (Sh),1176.0
+2022,Nagpur,Hingana,128.0
+2022,Nagpur,Umred,143.0
+2022,Nagpur,Kuhi,170.0
+2022,Nagpur,Bhiwapur,135.0
+2023,Nagpur,Narkhed,194.0
+2023,Nagpur,Katol,163.0
+2023,Nagpur,Kalameshwar,180.0
+2023,Nagpur,Sawner,153.0
+2023,Nagpur,Parashivani,164.0
+2023,Nagpur,Ramtech,101.0
+2023,Nagpur,Mauda,221.0
+2023,Nagpur,Kamathi,306.0
+2023,Nagpur,Nagpur (Gra),240.0
+2023,Nagpur,Nagpur (Sh),1209.0
+2023,Nagpur,Hingana,124.0
+2023,Nagpur,Umred,144.0
+2023,Nagpur,Kuhi,173.0
+2023,Nagpur,Bhiwapur,132.0
+2024,Nagpur,Narkhed,179.66
+2024,Nagpur,Katol,166.47
+2024,Nagpur,Kalameshwar,180.83
+2024,Nagpur,Sawner,140.83
+2024,Nagpur,Parashivani,139.35
+2024,Nagpur,Ramtech,101.16
+2024,Nagpur,Mauda,220.83
+2024,Nagpur,Kamathi,316.36
+2024,Nagpur,Nagpur (Gra),263.78
+2024,Nagpur,Nagpur (Sh),2183.01
+2024,Nagpur,Hingana,133.82
+2024,Nagpur,Umred,140.04
+2024,Nagpur,Kuhi,172.57
+2024,Nagpur,Bhiwapur,127.02
 2014,Nanded,Mahur,58.29
 2014,Nanded,Kinvat,48.86
 2014,Nanded,Himalay nagar,97.38
-2014,Nanded,hadgaon,74.42
-2014,Nanded,andhrapur,97.38
+2014,Nanded,Hadgaon,74.42
+2014,Nanded,Andhrapur,97.38
 2014,Nanded,Nanded,122.73
 2014,Nanded,Mudkhed,98.97
-2014,Nanded,bhokar,89.25
-2014,Nanded,umari,112.77
-2014,Nanded,dharmabad,115.59
-2014,Nanded,biloli,64.46
-2014,Nanded,naygaon,101.51
-2014,Nanded,loha,105.48
-2014,Nanded,kandhar,113.55
+2014,Nanded,Bhokar,89.25
+2014,Nanded,Umari,112.77
+2014,Nanded,Dharmabad,115.59
+2014,Nanded,Biloli,64.46
+2014,Nanded,Naygaon,101.51
+2014,Nanded,Loha,105.48
+2014,Nanded,Kandhar,113.55
 2014,Nanded,Mukhed,100.32
-2014,Nanded,deglur,98.65
+2014,Nanded,Deglur,98.65
 2015,Nanded,Mahur,58.29
 2015,Nanded,Kinvat,48.86
 2015,Nanded,Himalay nagar,73.61
-2015,Nanded,hadgaon,74.42
-2015,Nanded,andhrapur,97.38
+2015,Nanded,Hadgaon,74.42
+2015,Nanded,Andhrapur,97.38
 2015,Nanded,Nanded,122.73
 2015,Nanded,Mudkhed,98.97
-2015,Nanded,bhokar,89.25
-2015,Nanded,umari,112.77
-2015,Nanded,dharmabad,115.59
-2015,Nanded,biloli,64.46
-2015,Nanded,naygaon,101.51
-2015,Nanded,loha,105.48
-2015,Nanded,kandhar,113.55
+2015,Nanded,Bhokar,89.25
+2015,Nanded,Umari,112.77
+2015,Nanded,Dharmabad,115.59
+2015,Nanded,Biloli,64.46
+2015,Nanded,Naygaon,101.51
+2015,Nanded,Loha,105.48
+2015,Nanded,Kandhar,113.55
 2015,Nanded,Mukhed,100.32
-2015,Nanded,deglur,98.65
+2015,Nanded,Deglur,98.65
 2016,Nanded,Mahur,296.04
 2016,Nanded,Kinvat,504.0
 2016,Nanded,Himalay nagar,96.65
-2016,Nanded,hadgaon,143.04
-2016,Nanded,andhrapur,272.62
+2016,Nanded,Hadgaon,143.04
+2016,Nanded,Andhrapur,272.62
 2016,Nanded,Nanded,184.17
 2016,Nanded,Mudkhed,125.38
-2016,Nanded,bhokar,109.57
-2016,Nanded,umari,124.51
-2016,Nanded,dharmabad,150.77
-2016,Nanded,biloli,177.12
-2016,Nanded,naygaon,204.92
-2016,Nanded,loha,192.78
-2016,Nanded,kandhar,212.65
+2016,Nanded,Bhokar,109.57
+2016,Nanded,Umari,124.51
+2016,Nanded,Dharmabad,150.77
+2016,Nanded,Biloli,177.12
+2016,Nanded,Naygaon,204.92
+2016,Nanded,Loha,192.78
+2016,Nanded,Kandhar,212.65
 2016,Nanded,Mukhed,183.37
-2016,Nanded,deglur,406.91
+2016,Nanded,Deglur,406.91
 2017,Nanded,Mahur,100.09
 2017,Nanded,Kinvat,74.59
 2017,Nanded,Himalay nagar,41.18
-2017,Nanded,hadgaon,203.14
-2017,Nanded,andhrapur,50.5
+2017,Nanded,Hadgaon,203.14
+2017,Nanded,Andhrapur,50.5
 2017,Nanded,Nanded,173.15
 2017,Nanded,Mudkhed,87.04
-2017,Nanded,bhokar,216.33
-2017,Nanded,umari,61.37
-2017,Nanded,dharmabad,46.74
-2017,Nanded,biloli,191.15
-2017,Nanded,naygaon,70.48
-2017,Nanded,loha,163.37
-2017,Nanded,kandhar,151.55
+2017,Nanded,Bhokar,216.33
+2017,Nanded,Umari,61.37
+2017,Nanded,Dharmabad,46.74
+2017,Nanded,Biloli,191.15
+2017,Nanded,Naygaon,70.48
+2017,Nanded,Loha,163.37
+2017,Nanded,Kandhar,151.55
 2017,Nanded,Mukhed,218.64
-2017,Nanded,deglur,199.03
+2017,Nanded,Deglur,199.03
 2018,Nanded,Mahur,91.75
 2018,Nanded,Kinvat,71.05
 2018,Nanded,Himalay nagar,85.55
-2018,Nanded,hadgaon,89.53
-2018,Nanded,andhrapur,112.34
+2018,Nanded,Hadgaon,89.53
+2018,Nanded,Andhrapur,112.34
 2018,Nanded,Nanded,138.94
 2018,Nanded,Mudkhed,111.26
-2018,Nanded,bhokar,90.69
-2018,Nanded,umari,115.08
-2018,Nanded,dharmabad,130.37
-2018,Nanded,biloli,114.59
-2018,Nanded,naygaon,119.45
-2018,Nanded,loha,110.0
-2018,Nanded,kandhar,123.02
+2018,Nanded,Bhokar,90.69
+2018,Nanded,Umari,115.08
+2018,Nanded,Dharmabad,130.37
+2018,Nanded,Biloli,114.59
+2018,Nanded,Naygaon,119.45
+2018,Nanded,Loha,110.0
+2018,Nanded,Kandhar,123.02
 2018,Nanded,Mukhed,114.13
-2018,Nanded,deglur,129.2
+2018,Nanded,Deglur,129.2
 2019,Nanded,Mahur,91.75
 2019,Nanded,Kinvat,71.05
 2019,Nanded,Himalay nagar,85.55
-2019,Nanded,hadgaon,89.53
-2019,Nanded,andhrapur,112.34
+2019,Nanded,Hadgaon,89.53
+2019,Nanded,Andhrapur,112.34
 2019,Nanded,Nanded,138.94
 2019,Nanded,Mudkhed,111.26
-2019,Nanded,bhokar,90.69
-2019,Nanded,umari,115.08
-2019,Nanded,dharmabad,130.37
-2019,Nanded,biloli,114.59
-2019,Nanded,naygaon,119.45
-2019,Nanded,loha,110.0
-2019,Nanded,kandhar,123.02
+2019,Nanded,Bhokar,90.69
+2019,Nanded,Umari,115.08
+2019,Nanded,Dharmabad,130.37
+2019,Nanded,Biloli,114.59
+2019,Nanded,Naygaon,119.45
+2019,Nanded,Loha,110.0
+2019,Nanded,Kandhar,123.02
 2019,Nanded,Mukhed,114.13
-2019,Nanded,deglur,129.2
+2019,Nanded,Deglur,129.2
 2020,Nanded,Mahur,95.84
 2020,Nanded,Kinvat,75.63
 2020,Nanded,Himalay nagar,89.32
-2020,Nanded,hadgaon,87.85
-2020,Nanded,andhrapur,146.32
+2020,Nanded,Hadgaon,87.85
+2020,Nanded,Andhrapur,146.32
 2020,Nanded,Nanded,153.66
 2020,Nanded,Mudkhed,127.06
-2020,Nanded,bhokar,91.78
-2020,Nanded,umari,119.83
-2020,Nanded,dharmabad,134.71
-2020,Nanded,biloli,112.9
-2020,Nanded,naygaon,117.48
-2020,Nanded,loha,108.96
-2020,Nanded,kandhar,135.73
+2020,Nanded,Bhokar,91.78
+2020,Nanded,Umari,119.83
+2020,Nanded,Dharmabad,134.71
+2020,Nanded,Biloli,112.9
+2020,Nanded,Naygaon,117.48
+2020,Nanded,Loha,108.96
+2020,Nanded,Kandhar,135.73
 2020,Nanded,Mukhed,125.84
-2020,Nanded,deglur,136.56
+2020,Nanded,Deglur,136.56
 2021,Nanded,Mahur,111.58
 2021,Nanded,Kinvat,88.2
 2021,Nanded,Himalay nagar,98.62
-2021,Nanded,hadgaon,109.86
-2021,Nanded,andhrapur,196.64
+2021,Nanded,Hadgaon,109.86
+2021,Nanded,Andhrapur,196.64
 2021,Nanded,Nanded,180.3
 2021,Nanded,Mudkhed,153.9
-2021,Nanded,bhokar,106.48
-2021,Nanded,umari,149.33
-2021,Nanded,dharmabad,168.33
-2021,Nanded,biloli,130.48
-2021,Nanded,naygaon,128.86
-2021,Nanded,loha,115.1
-2021,Nanded,kandhar,156.08
+2021,Nanded,Bhokar,106.48
+2021,Nanded,Umari,149.33
+2021,Nanded,Dharmabad,168.33
+2021,Nanded,Biloli,130.48
+2021,Nanded,Naygaon,128.86
+2021,Nanded,Loha,115.1
+2021,Nanded,Kandhar,156.08
 2021,Nanded,Mukhed,159.29
-2021,Nanded,deglur,162.9
-2009,Nandurbar,Akkalkuva,269.16
-2009,Nandurbar,Akrani,334.4
-2009,Nandurbar,Taloda,319.89
-2009,Nandurbar,Shahada,715.25
-2009,Nandurbar,Nandurbar,733.18
-2009,Nandurbar,Navapur,723.44
-2010,Nandurbar,Akkalkuva,362.19
-2010,Nandurbar,Akrani,387.8
-2010,Nandurbar,Taloda,351.78
-2010,Nandurbar,Shahada,887.72
-2010,Nandurbar,Nandurbar,884.68
-2010,Nandurbar,Navapur,891.37
-2011,Nandurbar,Akkalkuva,372.03
-2011,Nandurbar,Akrani,422.76
-2011,Nandurbar,Taloda,368.23
-2011,Nandurbar,Shahada,976.56
-2011,Nandurbar,Nandurbar,884.68
-2011,Nandurbar,Navapur,826.03
+2021,Nanded,Deglur,162.9
+2022,Nanded,Mahur,111.58
+2022,Nanded,Kinvat,88.2
+2022,Nanded,Himalay nagar,98.62
+2022,Nanded,Hadgaon,109.86
+2022,Nanded,Andhrapur,196.64
+2022,Nanded,Nanded,180.3
+2022,Nanded,Mudkhed,153.9
+2022,Nanded,Bhokar,106.48
+2022,Nanded,Umari,149.33
+2022,Nanded,Dharmabad,168.33
+2022,Nanded,Biloli,130.48
+2022,Nanded,Naygaon,128.86
+2022,Nanded,Loha,115.1
+2022,Nanded,Kandhar,156.08
+2022,Nanded,Mukhed,159.29
+2022,Nanded,Deglur,162.9
+2023,Nanded,Mahur,103.76
+2023,Nanded,Kinvat,77.6
+2023,Nanded,Himalay nagar,92.32
+2023,Nanded,Hadgaon,100.49
+2023,Nanded,Andhrapur,157.22
+2023,Nanded,Nanded,170.54
+2023,Nanded,Mudkhed,125.99
+2023,Nanded,Bhokar,96.34
+2023,Nanded,Umari,154.24
+2023,Nanded,Dharmabad,136.94
+2023,Nanded,Biloli,112.92
+2023,Nanded,Naygaon,116.9
+2023,Nanded,Loha,106.37
+2023,Nanded,Kandhar,143.69
+2023,Nanded,Mukhed,158.92
+2023,Nanded,Deglur,142.46
+2024,Nanded,Mahur,95.84
+2024,Nanded,Kinvat,75.63
+2024,Nanded,Himalay nagar,85.92
+2024,Nanded,Hadgaon,94.85
+2024,Nanded,Andhrapur,158.73
+2024,Nanded,Nanded,165.68
+2024,Nanded,Mudkhed,127.72
+2024,Nanded,Bhokar,97.84
+2024,Nanded,Umari,132.15
+2024,Nanded,Dharmabad,151.19
+2024,Nanded,Biloli,118.41
+2024,Nanded,Naygaon,120.11
+2024,Nanded,Loha,107.07
+2024,Nanded,Kandhar,135.73
+2024,Nanded,Mukhed,140.12
+2024,Nanded,Deglur,142.23
+2009,Nandurbar,Akkalkuva,
+2009,Nandurbar,Akrani,
+2009,Nandurbar,Taloda,
+2009,Nandurbar,Shahada,
+2009,Nandurbar,Nandurbar,
+2009,Nandurbar,Navapur,
+2010,Nandurbar,Akkalkuva,
+2010,Nandurbar,Akrani,
+2010,Nandurbar,Taloda,
+2010,Nandurbar,Shahada,
+2010,Nandurbar,Nandurbar,
+2010,Nandurbar,Navapur,
+2011,Nandurbar,Akkalkuva,
+2011,Nandurbar,Akrani,
+2011,Nandurbar,Taloda,
+2011,Nandurbar,Shahada,
+2011,Nandurbar,Nandurbar,
+2011,Nandurbar,Navapur,
 2012,Nandurbar,Akkalkuva,175.71
 2012,Nandurbar,Akrani,200.92
 2012,Nandurbar,Taloda,125.76
@@ -1928,6 +2522,24 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Nandurbar,Shahada,122.28
 2021,Nandurbar,Nandurbar,127.24
 2021,Nandurbar,Navapur,121.46
+2022,Nandurbar,Akkalkuva,122.37
+2022,Nandurbar,Akrani,347.15
+2022,Nandurbar,Taloda,148.38
+2022,Nandurbar,Shahada,122.28
+2022,Nandurbar,Nandurbar,127.24
+2022,Nandurbar,Navapur,121.46
+2023,Nandurbar,Akkalkuva,133.11
+2023,Nandurbar,Akrani,137.88
+2023,Nandurbar,Taloda,112.57
+2023,Nandurbar,Shahada,113.43
+2023,Nandurbar,Nandurbar,143.05
+2023,Nandurbar,Navapur,114.08
+2024,Nandurbar,Akkalkuva,131.69
+2024,Nandurbar,Akrani,133.89
+2024,Nandurbar,Taloda,112.48
+2024,Nandurbar,Shahada,116.87
+2024,Nandurbar,Nandurbar,147.9
+2024,Nandurbar,Navapur,113.92
 2012,Nashik,Surgana,111.98
 2012,Nashik,Kalwan,103.35
 2012,Nashik,Devala,114.79
@@ -2078,6 +2690,51 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Nashik,Sinner,126.38
 2021,Nashik,Nifad,174.02
 2021,Nashik,Yewala,153.65
+2022,Nashik,Surgana,120.19
+2022,Nashik,Kalwan,103.96
+2022,Nashik,Devala,267.07
+2022,Nashik,Baglan,122.28
+2022,Nashik,Malegaon,109.59
+2022,Nashik,Nandgaon,113.08
+2022,Nashik,Chandwad,139.3
+2022,Nashik,Dindori,141.21
+2022,Nashik,Peth,154.48
+2022,Nashik,Trimbak,110.48
+2022,Nashik,Nashik,401.05
+2022,Nashik,Igatpuri,97.25
+2022,Nashik,Sinner,125.44
+2022,Nashik,Nifad,176.22
+2022,Nashik,Yewala,175.93
+2023,Nashik,Surgana,145.05
+2023,Nashik,Kalwan,107.53
+2023,Nashik,Devala,255.51
+2023,Nashik,Baglan,137.23
+2023,Nashik,Malegaon,135.69
+2023,Nashik,Nandgaon,107.16
+2023,Nashik,Chandwad,139.23
+2023,Nashik,Dindori,139.87
+2023,Nashik,Peth,143.86
+2023,Nashik,Trimbak,122.14
+2023,Nashik,Nashik,351.07
+2023,Nashik,Igatpuri,95.7
+2023,Nashik,Sinner,125.44
+2023,Nashik,Nifad,170.62
+2023,Nashik,Yewala,159.64
+2024,Nashik,Surgana,145.04
+2024,Nashik,Kalwan,107.53
+2024,Nashik,Devala,255.51
+2024,Nashik,Baglan,137.23
+2024,Nashik,Malegaon,135.07
+2024,Nashik,Nandgaon,107.16
+2024,Nashik,Chandwad,139.23
+2024,Nashik,Dindori,141.24
+2024,Nashik,Peth,143.94
+2024,Nashik,Trimbak,122.14
+2024,Nashik,Nashik,352.72
+2024,Nashik,Igatpuri,95.7
+2024,Nashik,Sinner,125.44
+2024,Nashik,Nifad,170.62
+2024,Nashik,Yewala,159.64
 2012,Dharashiv,Paranda,76.37
 2012,Dharashiv,Bhum,80.64
 2012,Dharashiv,Washi,80.75
@@ -2158,6 +2815,30 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Dharashiv,Tuljapur,0.0
 2021,Dharashiv,Lohara,0.0
 2021,Dharashiv,Umaraga,0.0
+2022,Dharashiv,Paranda,107.04
+2022,Dharashiv,Bhum,98.27
+2022,Dharashiv,Washi,100.69
+2022,Dharashiv,Kalamb,96.68
+2022,Dharashiv,Dharashiv,123.87
+2022,Dharashiv,Tuljapur,102.25
+2022,Dharashiv,Lohara,103.81
+2022,Dharashiv,Umaraga,113.8
+2023,Dharashiv,Paranda,97.32
+2023,Dharashiv,Bhum,91.99
+2023,Dharashiv,Washi,110.52
+2023,Dharashiv,Kalamb,102.09
+2023,Dharashiv,Dharashiv,125.66
+2023,Dharashiv,Tuljapur,93.41
+2023,Dharashiv,Lohara,118.67
+2023,Dharashiv,Umaraga,129.83
+2024,Dharashiv,Paranda,97.32
+2024,Dharashiv,Bhum,91.94
+2024,Dharashiv,Washi,108.14
+2024,Dharashiv,Kalamb,101.6
+2024,Dharashiv,Dharashiv,128.26
+2024,Dharashiv,Tuljapur,93.44
+2024,Dharashiv,Lohara,118.43
+2024,Dharashiv,Umaraga,129.24
 2014,Palghar,Talasari,107.27
 2014,Palghar,Dahanu,150.16
 2014,Palghar,Vikramgad,168.11
@@ -2222,6 +2903,30 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Palghar,Wada,149.91
 2021,Palghar,Palghar,93.96
 2021,Palghar,Vasai,99.94
+2022,Palghar,Talasari,247.68
+2022,Palghar,Dahanu,143.91
+2022,Palghar,Vikramgad,141.35
+2022,Palghar,Javhar,144.54
+2022,Palghar,Mokhada,110.59
+2022,Palghar,Wada,148.47
+2022,Palghar,Palghar,101.27
+2022,Palghar,Vasai,114.62
+2023,Palghar,Talasari,245.57
+2023,Palghar,Dahanu,143.85
+2023,Palghar,Vikramgad,135.65
+2023,Palghar,Javhar,145.39
+2023,Palghar,Mokhada,108.05
+2023,Palghar,Wada,142.67
+2023,Palghar,Palghar,97.18
+2023,Palghar,Vasai,95.77
+2024,Palghar,Talasari,245.57
+2024,Palghar,Dahanu,143.85
+2024,Palghar,Vikramgad,135.65
+2024,Palghar,Javhar,145.88
+2024,Palghar,Mokhada,108.05
+2024,Palghar,Wada,145.2
+2024,Palghar,Palghar,97.15
+2024,Palghar,Vasai,92.21
 2013,Parbhani,Selu,83.62
 2013,Parbhani,Jintur,88.38
 2013,Parbhani,Parbhani,80.75
@@ -2303,6 +3008,33 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Parbhani,Gangakhed,101.88
 2021,Parbhani,Palam,97.31
 2021,Parbhani,Purna,92.2
+2022,Parbhani,Selu,95.0
+2022,Parbhani,Jintur,83.0
+2022,Parbhani,Parbhani,136.0
+2022,Parbhani,Manvat,76.0
+2022,Parbhani,Pathari,83.0
+2022,Parbhani,Sonpeth,90.0
+2022,Parbhani,Gangakhed,99.0
+2022,Parbhani,Palam,112.0
+2022,Parbhani,Purna,106.0
+2023,Parbhani,Selu,94.91
+2023,Parbhani,Jintur,82.76
+2023,Parbhani,Parbhani,135.2
+2023,Parbhani,Manvat,75.99
+2023,Parbhani,Pathari,84.08
+2023,Parbhani,Sonpeth,89.53
+2023,Parbhani,Gangakhed,102.12
+2023,Parbhani,Palam,113.82
+2023,Parbhani,Purna,101.61
+2024,Parbhani,Selu,95.98
+2024,Parbhani,Jintur,84.15
+2024,Parbhani,Parbhani,135.51
+2024,Parbhani,Manvat,77.87
+2024,Parbhani,Pathari,87.02
+2024,Parbhani,Sonpeth,89.53
+2024,Parbhani,Gangakhed,102.16
+2024,Parbhani,Palam,113.82
+2024,Parbhani,Purna,104.96
 2017,Pune,Junnar,121.19
 2017,Pune,Ambegaon,131.97
 2017,Pune,Shirur,111.51
@@ -2373,183 +3105,255 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Pune,Bhor,74.19
 2021,Pune,Baramati,149.33
 2021,Pune,Indapur,144.16
+2022,Pune,Junnar,116.83
+2022,Pune,Ambegaon,131.97
+2022,Pune,Shirur,131.47
+2022,Pune,Khed,96.57
+2022,Pune,Maval,91.93
+2022,Pune,Mulshi,92.65
+2022,Pune,Haveli,105.59
+2022,Pune,Pune,0.0
+2022,Pune,Daund,121.55
+2022,Pune,Purandar,131.35
+2022,Pune,Velhe,119.26
+2022,Pune,Bhor,115.16
+2022,Pune,Baramati,151.35
+2022,Pune,Indapur,135.99
+2023,Pune,Junnar,117.62
+2023,Pune,Ambegaon,133.01
+2023,Pune,Shirur,125.31
+2023,Pune,Khed,100.98
+2023,Pune,Maval,99.78
+2023,Pune,Mulshi,93.58
+2023,Pune,Haveli,106.26
+2023,Pune,Pune,0.0
+2023,Pune,Daund,119.89
+2023,Pune,Purandar,127.5
+2023,Pune,Velhe,123.07
+2023,Pune,Bhor,123.78
+2023,Pune,Baramati,144.81
+2023,Pune,Indapur,138.13
+2024,Pune,Junnar,118.5
+2024,Pune,Ambegaon,143.04
+2024,Pune,Shirur,124.29
+2024,Pune,Khed,105.57
+2024,Pune,Maval,95.02
+2024,Pune,Mulshi,93.59
+2024,Pune,Haveli,116.42
+2024,Pune,Pune,2.1
+2024,Pune,Daund,175.12
+2024,Pune,Purandar,127.57
+2024,Pune,Velhe,123.02
+2024,Pune,Bhor,123.78
+2024,Pune,Baramati,141.63
+2024,Pune,Indapur,138.12
 2012,Raigad,Uran,83.82
 2012,Raigad,Panwel,64.25
-2012,Raigad,karjat,84.29
-2012,Raigad,khalapur,159.91
-2012,Raigad,pen,58.75
-2012,Raigad,alibag,120.84
-2012,Raigad,murud,105.17
-2012,Raigad,roha,73.1
-2012,Raigad,sudhagad,67.09
-2012,Raigad,mangaon,63.52
-2012,Raigad,tala,59.93
-2012,Raigad,shreevardhan,228.0
-2012,Raigad,mhasala,318.7
-2012,Raigad,mahad,63.53
-2012,Raigad,poladpur,93.38
+2012,Raigad,Karjat,84.29
+2012,Raigad,Khalapur,159.91
+2012,Raigad,Pen,58.75
+2012,Raigad,Alibag,120.84
+2012,Raigad,Murud,105.17
+2012,Raigad,Roha,73.1
+2012,Raigad,Sudhagad,67.09
+2012,Raigad,Mangaon,63.52
+2012,Raigad,Tala,59.93
+2012,Raigad,Shreevardhan,228.0
+2012,Raigad,Mhasala,
+2012,Raigad,Mahad,63.53
+2012,Raigad,Poladpur,93.38
 2013,Raigad,Uran,102.95
 2013,Raigad,Panwel,64.42
-2013,Raigad,karjat,108.6
-2013,Raigad,khalapur,154.69
-2013,Raigad,pen,69.92
-2013,Raigad,alibag,124.98
-2013,Raigad,murud,99.61
-2013,Raigad,roha,84.62
-2013,Raigad,sudhagad,73.06
-2013,Raigad,mangaon,93.84
-2013,Raigad,tala,62.87
-2013,Raigad,shreevardhan,246.78
-2013,Raigad,mhasala,149.67
-2013,Raigad,mahad,71.72
-2013,Raigad,poladpur,106.1
+2013,Raigad,Karjat,108.6
+2013,Raigad,Khalapur,154.69
+2013,Raigad,Pen,69.92
+2013,Raigad,Alibag,124.98
+2013,Raigad,Murud,99.61
+2013,Raigad,Roha,84.62
+2013,Raigad,Sudhagad,73.06
+2013,Raigad,Mangaon,93.84
+2013,Raigad,Tala,62.87
+2013,Raigad,Shreevardhan,246.78
+2013,Raigad,Mhasala,149.67
+2013,Raigad,Mahad,71.72
+2013,Raigad,Poladpur,106.1
 2014,Raigad,Uran,111.31
 2014,Raigad,Panwel,72.03
-2014,Raigad,karjat,121.36
-2014,Raigad,khalapur,196.95
-2014,Raigad,pen,82.24
-2014,Raigad,alibag,130.03
-2014,Raigad,murud,111.29
-2014,Raigad,roha,83.43
-2014,Raigad,sudhagad,73.06
-2014,Raigad,mangaon,87.37
-2014,Raigad,tala,57.83
-2014,Raigad,shreevardhan,263.85
-2014,Raigad,mhasala,146.64
-2014,Raigad,mahad,72.82
-2014,Raigad,poladpur,106.1
+2014,Raigad,Karjat,121.36
+2014,Raigad,Khalapur,196.95
+2014,Raigad,Pen,82.24
+2014,Raigad,Alibag,130.03
+2014,Raigad,Murud,111.29
+2014,Raigad,Roha,83.43
+2014,Raigad,Sudhagad,73.06
+2014,Raigad,Mangaon,87.37
+2014,Raigad,Tala,57.83
+2014,Raigad,Shreevardhan,263.85
+2014,Raigad,Mhasala,146.64
+2014,Raigad,Mahad,72.82
+2014,Raigad,Poladpur,106.1
 2015,Raigad,Uran,107.27
 2015,Raigad,Panwel,75.08
-2015,Raigad,karjat,115.07
-2015,Raigad,khalapur,221.2
-2015,Raigad,pen,81.96
-2015,Raigad,alibag,135.76
-2015,Raigad,murud,95.19
-2015,Raigad,roha,86.06
-2015,Raigad,sudhagad,71.21
-2015,Raigad,mangaon,92.37
-2015,Raigad,tala,59.43
-2015,Raigad,shreevardhan,246.5
-2015,Raigad,mhasala,135.77
-2015,Raigad,mahad,75.47
-2015,Raigad,poladpur,106.19
+2015,Raigad,Karjat,115.07
+2015,Raigad,Khalapur,221.2
+2015,Raigad,Pen,81.96
+2015,Raigad,Alibag,135.76
+2015,Raigad,Murud,95.19
+2015,Raigad,Roha,86.06
+2015,Raigad,Sudhagad,71.21
+2015,Raigad,Mangaon,92.37
+2015,Raigad,Tala,59.43
+2015,Raigad,Shreevardhan,246.5
+2015,Raigad,Mhasala,135.77
+2015,Raigad,Mahad,75.47
+2015,Raigad,Poladpur,106.19
 2016,Raigad,Uran,98.08
 2016,Raigad,Panwel,73.2
-2016,Raigad,karjat,110.55
-2016,Raigad,khalapur,213.36
-2016,Raigad,pen,84.91
-2016,Raigad,alibag,132.76
-2016,Raigad,murud,88.6
-2016,Raigad,roha,85.34
-2016,Raigad,sudhagad,70.87
-2016,Raigad,mangaon,91.23
-2016,Raigad,tala,56.97
-2016,Raigad,shreevardhan,240.62
-2016,Raigad,mhasala,132.36
-2016,Raigad,mahad,74.92
-2016,Raigad,poladpur,111.38
+2016,Raigad,Karjat,110.55
+2016,Raigad,Khalapur,213.36
+2016,Raigad,Pen,84.91
+2016,Raigad,Alibag,132.76
+2016,Raigad,Murud,88.6
+2016,Raigad,Roha,85.34
+2016,Raigad,Sudhagad,70.87
+2016,Raigad,Mangaon,91.23
+2016,Raigad,Tala,56.97
+2016,Raigad,Shreevardhan,240.62
+2016,Raigad,Mhasala,132.36
+2016,Raigad,Mahad,74.92
+2016,Raigad,Poladpur,111.38
 2017,Raigad,Uran,99.35
 2017,Raigad,Panwel,97.88
-2017,Raigad,karjat,117.77
-2017,Raigad,khalapur,113.66
-2017,Raigad,pen,89.13
-2017,Raigad,alibag,132.15
-2017,Raigad,murud,84.15
-2017,Raigad,roha,103.69
-2017,Raigad,sudhagad,75.11
-2017,Raigad,mangaon,95.94
-2017,Raigad,tala,58.04
-2017,Raigad,shreevardhan,114.37
-2017,Raigad,mhasala,114.98
-2017,Raigad,mahad,115.85
-2017,Raigad,poladpur,117.36
+2017,Raigad,Karjat,117.77
+2017,Raigad,Khalapur,113.66
+2017,Raigad,Pen,89.13
+2017,Raigad,Alibag,132.15
+2017,Raigad,Murud,84.15
+2017,Raigad,Roha,103.69
+2017,Raigad,Sudhagad,75.11
+2017,Raigad,Mangaon,95.94
+2017,Raigad,Tala,58.04
+2017,Raigad,Shreevardhan,114.37
+2017,Raigad,Mhasala,114.98
+2017,Raigad,Mahad,115.85
+2017,Raigad,Poladpur,117.36
 2018,Raigad,Uran,102.39
 2018,Raigad,Panwel,103.69
-2018,Raigad,karjat,119.68
-2018,Raigad,khalapur,105.45
-2018,Raigad,pen,88.68
-2018,Raigad,alibag,118.77
-2018,Raigad,murud,89.03
-2018,Raigad,roha,88.6
-2018,Raigad,sudhagad,102.69
-2018,Raigad,mangaon,100.08
-2018,Raigad,tala,75.86
-2018,Raigad,shreevardhan,141.31
-2018,Raigad,mhasala,107.2
-2018,Raigad,mahad,119.74
-2018,Raigad,poladpur,128.2
+2018,Raigad,Karjat,119.68
+2018,Raigad,Khalapur,105.45
+2018,Raigad,Pen,88.68
+2018,Raigad,Alibag,118.77
+2018,Raigad,Murud,89.03
+2018,Raigad,Roha,88.6
+2018,Raigad,Sudhagad,102.69
+2018,Raigad,Mangaon,100.08
+2018,Raigad,Tala,75.86
+2018,Raigad,Shreevardhan,141.31
+2018,Raigad,Mhasala,107.2
+2018,Raigad,Mahad,119.74
+2018,Raigad,Poladpur,128.2
 2019,Raigad,Uran,63.1
 2019,Raigad,Panwel,100.4
-2019,Raigad,karjat,122.18
-2019,Raigad,khalapur,106.82
-2019,Raigad,pen,86.25
-2019,Raigad,alibag,118.1
-2019,Raigad,murud,97.29
-2019,Raigad,roha,87.92
-2019,Raigad,sudhagad,102.86
-2019,Raigad,mangaon,100.24
-2019,Raigad,tala,79.77
-2019,Raigad,shreevardhan,148.97
-2019,Raigad,mhasala,103.4
-2019,Raigad,mahad,120.98
-2019,Raigad,poladpur,128.88
+2019,Raigad,Karjat,122.18
+2019,Raigad,Khalapur,106.82
+2019,Raigad,Pen,86.25
+2019,Raigad,Alibag,118.1
+2019,Raigad,Murud,97.29
+2019,Raigad,Roha,87.92
+2019,Raigad,Sudhagad,102.86
+2019,Raigad,Mangaon,100.24
+2019,Raigad,Tala,79.77
+2019,Raigad,Shreevardhan,148.97
+2019,Raigad,Mhasala,103.4
+2019,Raigad,Mahad,120.98
+2019,Raigad,Poladpur,128.88
 2020,Raigad,Uran,67.39
 2020,Raigad,Panwel,103.21
-2020,Raigad,karjat,127.15
-2020,Raigad,khalapur,110.88
-2020,Raigad,pen,88.92
-2020,Raigad,alibag,122.47
-2020,Raigad,murud,100.1
-2020,Raigad,roha,91.01
-2020,Raigad,sudhagad,105.43
-2020,Raigad,mangaon,103.6
-2020,Raigad,tala,83.18
-2020,Raigad,shreevardhan,152.3
-2020,Raigad,mhasala,107.67
-2020,Raigad,mahad,125.85
-2020,Raigad,poladpur,134.82
+2020,Raigad,Karjat,127.15
+2020,Raigad,Khalapur,110.88
+2020,Raigad,Pen,88.92
+2020,Raigad,Alibag,122.47
+2020,Raigad,Murud,100.1
+2020,Raigad,Roha,91.01
+2020,Raigad,Sudhagad,105.43
+2020,Raigad,Mangaon,103.6
+2020,Raigad,Tala,83.18
+2020,Raigad,Shreevardhan,152.3
+2020,Raigad,Mhasala,107.67
+2020,Raigad,Mahad,125.85
+2020,Raigad,Poladpur,134.82
 2021,Raigad,Uran,54.45
 2021,Raigad,Panwel,102.53
-2021,Raigad,karjat,150.0
-2021,Raigad,khalapur,109.12
-2021,Raigad,pen,88.42
-2021,Raigad,alibag,129.52
-2021,Raigad,murud,119.69
-2021,Raigad,roha,114.03
-2021,Raigad,sudhagad,67.43
-2021,Raigad,mangaon,103.7
-2021,Raigad,tala,73.44
-2021,Raigad,shreevardhan,137.55
-2021,Raigad,mhasala,119.91
-2021,Raigad,mahad,132.5
-2021,Raigad,poladpur,160.67
-2009,Ratnagiri,Mandangad,374.0
-2009,Ratnagiri,Dapoli,760.0
-2009,Ratnagiri,Khed,784.0
-2009,Ratnagiri,Chiplun,674.0
-2009,Ratnagiri,Guhagar,771.0
-2009,Ratnagiri,Ratnagiri,1026.0
-2009,Ratnagiri,Sangameshwar,1021.0
-2009,Ratnagiri,Lanja,616.0
-2009,Ratnagiri,Rajapur,974.0
-2010,Ratnagiri,Mandangad,375.0
-2010,Ratnagiri,Dapoli,759.0
-2010,Ratnagiri,Khed,789.0
-2010,Ratnagiri,Chiplun,890.0
-2010,Ratnagiri,Guhagar,578.0
-2010,Ratnagiri,Ratnagiri,1031.0
-2010,Ratnagiri,Sangameshwar,1034.0
-2010,Ratnagiri,Lanja,614.0
-2010,Ratnagiri,Rajapur,986.0
-2011,Ratnagiri,Mandangad,359.0
-2011,Ratnagiri,Dapoli,739.0
-2011,Ratnagiri,Khed,779.0
-2011,Ratnagiri,Chiplun,994.0
-2011,Ratnagiri,Guhagar,616.0
-2011,Ratnagiri,Ratnagiri,1123.0
-2011,Ratnagiri,Sangameshwar,1039.0
-2011,Ratnagiri,Lanja,618.0
-2011,Ratnagiri,Rajapur,1048.0
+2021,Raigad,Karjat,150.0
+2021,Raigad,Khalapur,109.12
+2021,Raigad,Pen,88.42
+2021,Raigad,Alibag,129.52
+2021,Raigad,Murud,119.69
+2021,Raigad,Roha,114.03
+2021,Raigad,Sudhagad,67.43
+2021,Raigad,Mangaon,103.7
+2021,Raigad,Tala,73.44
+2021,Raigad,Shreevardhan,137.55
+2021,Raigad,Mhasala,119.91
+2021,Raigad,Mahad,132.5
+2021,Raigad,Poladpur,160.67
+2023,Raigad,Uran,59.66
+2023,Raigad,Panwel,144.48
+2023,Raigad,Karjat,156.66
+2023,Raigad,Khalapur,134.78
+2023,Raigad,Pen,109.29
+2023,Raigad,Alibag,130.21
+2023,Raigad,Murud,123.78
+2023,Raigad,Roha,109.13
+2023,Raigad,Sudhagad,71.92
+2023,Raigad,Mangaon,99.4
+2023,Raigad,Tala,93.77
+2023,Raigad,Shreevardhan,138.18
+2023,Raigad,Mhasala,115.95
+2023,Raigad,Mahad,137.96
+2023,Raigad,Poladpur,168.97
+2024,Raigad,Uran,61.72
+2024,Raigad,Panwel,165.35
+2024,Raigad,Karjat,139.98
+2024,Raigad,Khalapur,165.88
+2024,Raigad,Pen,108.0
+2024,Raigad,Alibag,125.63
+2024,Raigad,Murud,97.8
+2024,Raigad,Roha,87.13
+2024,Raigad,Sudhagad,108.85
+2024,Raigad,Mangaon,94.98
+2024,Raigad,Tala,112.13
+2024,Raigad,Shreevardhan,125.2
+2024,Raigad,Mhasala,121.67
+2024,Raigad,Mahad,142.63
+2024,Raigad,Poladpur,156.65
+2009,Ratnagiri,Mandangad,
+2009,Ratnagiri,Dapoli,
+2009,Ratnagiri,Khed,
+2009,Ratnagiri,Chiplun,
+2009,Ratnagiri,Guhagar,
+2009,Ratnagiri,Ratnagiri,
+2009,Ratnagiri,Sangameshwar,
+2009,Ratnagiri,Lanja,
+2009,Ratnagiri,Rajapur,
+2010,Ratnagiri,Mandangad,
+2010,Ratnagiri,Dapoli,
+2010,Ratnagiri,Khed,
+2010,Ratnagiri,Chiplun,
+2010,Ratnagiri,Guhagar,
+2010,Ratnagiri,Ratnagiri,
+2010,Ratnagiri,Sangameshwar,
+2010,Ratnagiri,Lanja,
+2010,Ratnagiri,Rajapur,
+2011,Ratnagiri,Mandangad,
+2011,Ratnagiri,Dapoli,
+2011,Ratnagiri,Khed,
+2011,Ratnagiri,Chiplun,
+2011,Ratnagiri,Guhagar,
+2011,Ratnagiri,Ratnagiri,
+2011,Ratnagiri,Sangameshwar,
+2011,Ratnagiri,Lanja,
+2011,Ratnagiri,Rajapur,
 2012,Ratnagiri,Mandangad,83.95
 2012,Ratnagiri,Dapoli,87.61
 2012,Ratnagiri,Khed,79.48
@@ -2640,116 +3444,173 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Ratnagiri,Sangameshwar,130.3
 2021,Ratnagiri,Lanja,122.03
 2021,Ratnagiri,Rajapur,118.18
-2011,Sangli ,Shirala,132.88
-2011,Sangli ,Walwa,150.05
-2011,Sangli ,Palus,132.53
-2011,Sangli ,Kadegaon,104.5
-2011,Sangli ,Khapur,106.36
-2011,Sangli ,Atpadi,96.43
-2011,Sangli ,Tasgaon,97.74
-2011,Sangli ,Miraj,177.19
-2011,Sangli ,Kavathe Mahankal,141.41
-2011,Sangli ,Jath,81.12
-2012,Sangli ,Shirala,155.58
-2012,Sangli ,Walwa,203.83
-2012,Sangli ,Palus,201.5
-2012,Sangli ,Kadegaon,166.47
-2012,Sangli ,Khapur,141.25
-2012,Sangli ,Atpadi,130.12
-2012,Sangli ,Tasgaon,152.94
-2012,Sangli ,Miraj,236.54
-2012,Sangli ,Kavathe Mahankal,162.47
-2012,Sangli ,Jath,98.5
-2013,Sangli ,Shirala,228.0
-2013,Sangli ,Walwa,219.0
-2013,Sangli ,Palus,224.0
-2013,Sangli ,Kadegaon,179.0
-2013,Sangli ,Khapur,169.0
-2013,Sangli ,Atpadi,137.0
-2013,Sangli ,Tasgaon,199.0
-2013,Sangli ,Miraj,244.0
-2013,Sangli ,Kavathe Mahankal,268.0
-2013,Sangli ,Jath,105.0
-2014,Sangli ,Shirala,195.51
-2014,Sangli ,Walwa,175.66
-2014,Sangli ,Palus,187.22
-2014,Sangli ,Kadegaon,157.6
-2014,Sangli ,Khapur,119.46
-2014,Sangli ,Atpadi,124.43
-2014,Sangli ,Tasgaon,143.29
-2014,Sangli ,Miraj,177.74
-2014,Sangli ,Kavathe Mahankal,127.19
-2014,Sangli ,Jath,95.51
-2015,Sangli ,Shirala,195.51
-2015,Sangli ,Walwa,174.65
-2015,Sangli ,Palus,187.22
-2015,Sangli ,Kadegaon,157.6
-2015,Sangli ,Khapur,119.46
-2015,Sangli ,Atpadi,124.43
-2015,Sangli ,Tasgaon,143.29
-2015,Sangli ,Miraj,177.98
-2015,Sangli ,Kavathe Mahankal,127.19
-2015,Sangli ,Jath,95.51
-2016,Sangli ,Shirala,187.65
-2016,Sangli ,Walwa,171.73
-2016,Sangli ,Palus,190.93
-2016,Sangli ,Kadegaon,159.49
-2016,Sangli ,Khapur,116.78
-2016,Sangli ,Atpadi,112.4
-2016,Sangli ,Tasgaon,167.52
-2016,Sangli ,Miraj,157.9
-2016,Sangli ,Kavathe Mahankal,124.24
-2016,Sangli ,Jath,96.34
-2017,Sangli ,Shirala,187.65
-2017,Sangli ,Walwa,171.99
-2017,Sangli ,Palus,189.9
-2017,Sangli ,Kadegaon,157.29
-2017,Sangli ,Khapur,121.04
-2017,Sangli ,Atpadi,112.4
-2017,Sangli ,Tasgaon,166.42
-2017,Sangli ,Miraj,157.64
-2017,Sangli ,Kavathe Mahankal,123.48
-2017,Sangli ,Jath,95.98
-2018,Sangli ,Shirala,186.91
-2018,Sangli ,Walwa,172.35
-2018,Sangli ,Palus,187.29
-2018,Sangli ,Kadegaon,156.7
-2018,Sangli ,Khapur,122.08
-2018,Sangli ,Atpadi,112.4
-2018,Sangli ,Tasgaon,166.58
-2018,Sangli ,Miraj,180.56
-2018,Sangli ,Kavathe Mahankal,124.14
-2018,Sangli ,Jath,96.02
-2019,Sangli ,Shirala,187.45
-2019,Sangli ,Walwa,169.3
-2019,Sangli ,Palus,186.81
-2019,Sangli ,Kadegaon,161.22
-2019,Sangli ,Khapur,116.2
-2019,Sangli ,Atpadi,122.86
-2019,Sangli ,Tasgaon,159.73
-2019,Sangli ,Miraj,177.14
-2019,Sangli ,Kavathe Mahankal,123.46
-2019,Sangli ,Jath,91.05
-2020,Sangli ,Shirala,184.96
-2020,Sangli ,Walwa,162.34
-2020,Sangli ,Palus,172.72
-2020,Sangli ,Kadegaon,155.28
-2020,Sangli ,Khapur,111.08
-2020,Sangli ,Atpadi,112.08
-2020,Sangli ,Tasgaon,161.1
-2020,Sangli ,Miraj,177.48
-2020,Sangli ,Kavathe Mahankal,115.8
-2020,Sangli ,Jath,90.09
-2021,Sangli ,Shirala,184.96
-2021,Sangli ,Walwa,187.5
-2021,Sangli ,Palus,175.29
-2021,Sangli ,Kadegaon,159.86
-2021,Sangli ,Khapur,110.95
-2021,Sangli ,Atpadi,112.2
-2021,Sangli ,Tasgaon,168.29
-2021,Sangli ,Miraj,194.21
-2021,Sangli ,Kavathe Mahankal,116.9
-2021,Sangli ,Jath,95.45
+2022,Ratnagiri,Mandangad,112.7
+2022,Ratnagiri,Dapoli,129.38
+2022,Ratnagiri,Khed,131.59
+2022,Ratnagiri,Chiplun,116.32
+2022,Ratnagiri,Guhagar,144.48
+2022,Ratnagiri,Ratnagiri,147.5
+2022,Ratnagiri,Sangameshwar,140.36
+2022,Ratnagiri,Lanja,115.17
+2022,Ratnagiri,Rajapur,119.17
+2023,Ratnagiri,Mandangad,108.0
+2023,Ratnagiri,Dapoli,129.0
+2023,Ratnagiri,Khed,123.0
+2023,Ratnagiri,Chiplun,121.0
+2023,Ratnagiri,Guhagar,141.0
+2023,Ratnagiri,Ratnagiri,157.0
+2023,Ratnagiri,Sangameshwar,127.0
+2023,Ratnagiri,Lanja,126.0
+2023,Ratnagiri,Rajapur,118.0
+2024,Ratnagiri,Mandangad,112.42
+2024,Ratnagiri,Dapoli,128.72
+2024,Ratnagiri,Khed,123.74
+2024,Ratnagiri,Chiplun,117.9
+2024,Ratnagiri,Guhagar,140.19
+2024,Ratnagiri,Ratnagiri,157.21
+2024,Ratnagiri,Sangameshwar,126.89
+2024,Ratnagiri,Lanja,128.43
+2024,Ratnagiri,Rajapur,115.77
+2011,Sangli,Shirala,132.88
+2011,Sangli,Walwa,150.05
+2011,Sangli,Palus,132.53
+2011,Sangli,Kadegaon,104.5
+2011,Sangli,Khanapur,106.36
+2011,Sangli,Atpadi,96.43
+2011,Sangli,Tasgaon,97.74
+2011,Sangli,Miraj,177.19
+2011,Sangli,Kavathe Mahankal,141.41
+2011,Sangli,Jath,81.12
+2012,Sangli,Shirala,155.58
+2012,Sangli,Walwa,203.83
+2012,Sangli,Palus,201.5
+2012,Sangli,Kadegaon,166.47
+2012,Sangli,Khanapur,141.25
+2012,Sangli,Atpadi,130.12
+2012,Sangli,Tasgaon,152.94
+2012,Sangli,Miraj,236.54
+2012,Sangli,Kavathe Mahankal,162.47
+2012,Sangli,Jath,98.5
+2013,Sangli,Shirala,228.0
+2013,Sangli,Walwa,219.0
+2013,Sangli,Palus,224.0
+2013,Sangli,Kadegaon,179.0
+2013,Sangli,Khanapur,169.0
+2013,Sangli,Atpadi,137.0
+2013,Sangli,Tasgaon,199.0
+2013,Sangli,Miraj,244.0
+2013,Sangli,Kavathe Mahankal,268.0
+2013,Sangli,Jath,105.0
+2014,Sangli,Shirala,195.51
+2014,Sangli,Walwa,175.66
+2014,Sangli,Palus,187.22
+2014,Sangli,Kadegaon,157.6
+2014,Sangli,Khanapur,119.46
+2014,Sangli,Atpadi,124.43
+2014,Sangli,Tasgaon,143.29
+2014,Sangli,Miraj,177.74
+2014,Sangli,Kavathe Mahankal,127.19
+2014,Sangli,Jath,95.51
+2015,Sangli,Shirala,195.51
+2015,Sangli,Walwa,174.65
+2015,Sangli,Palus,187.22
+2015,Sangli,Kadegaon,157.6
+2015,Sangli,Khanapur,119.46
+2015,Sangli,Atpadi,124.43
+2015,Sangli,Tasgaon,143.29
+2015,Sangli,Miraj,177.98
+2015,Sangli,Kavathe Mahankal,127.19
+2015,Sangli,Jath,95.51
+2016,Sangli,Shirala,187.65
+2016,Sangli,Walwa,171.73
+2016,Sangli,Palus,190.93
+2016,Sangli,Kadegaon,159.49
+2016,Sangli,Khanapur,116.78
+2016,Sangli,Atpadi,112.4
+2016,Sangli,Tasgaon,167.52
+2016,Sangli,Miraj,157.9
+2016,Sangli,Kavathe Mahankal,124.24
+2016,Sangli,Jath,96.34
+2017,Sangli,Shirala,187.65
+2017,Sangli,Walwa,171.99
+2017,Sangli,Palus,189.9
+2017,Sangli,Kadegaon,157.29
+2017,Sangli,Khanapur,121.04
+2017,Sangli,Atpadi,112.4
+2017,Sangli,Tasgaon,166.42
+2017,Sangli,Miraj,157.64
+2017,Sangli,Kavathe Mahankal,123.48
+2017,Sangli,Jath,95.98
+2018,Sangli,Shirala,186.91
+2018,Sangli,Walwa,172.35
+2018,Sangli,Palus,187.29
+2018,Sangli,Kadegaon,156.7
+2018,Sangli,Khanapur,122.08
+2018,Sangli,Atpadi,112.4
+2018,Sangli,Tasgaon,166.58
+2018,Sangli,Miraj,180.56
+2018,Sangli,Kavathe Mahankal,124.14
+2018,Sangli,Jath,96.02
+2019,Sangli,Shirala,187.45
+2019,Sangli,Walwa,169.3
+2019,Sangli,Palus,186.81
+2019,Sangli,Kadegaon,161.22
+2019,Sangli,Khanapur,116.2
+2019,Sangli,Atpadi,122.86
+2019,Sangli,Tasgaon,159.73
+2019,Sangli,Miraj,177.14
+2019,Sangli,Kavathe Mahankal,123.46
+2019,Sangli,Jath,91.05
+2020,Sangli,Shirala,184.96
+2020,Sangli,Walwa,162.34
+2020,Sangli,Palus,172.72
+2020,Sangli,Kadegaon,155.28
+2020,Sangli,Khanapur,111.08
+2020,Sangli,Atpadi,112.08
+2020,Sangli,Tasgaon,161.1
+2020,Sangli,Miraj,177.48
+2020,Sangli,Kavathe Mahankal,115.8
+2020,Sangli,Jath,90.09
+2021,Sangli,Shirala,184.96
+2021,Sangli,Walwa,187.5
+2021,Sangli,Palus,175.29
+2021,Sangli,Kadegaon,159.86
+2021,Sangli,Khanapur,110.95
+2021,Sangli,Atpadi,112.2
+2021,Sangli,Tasgaon,168.29
+2021,Sangli,Miraj,194.21
+2021,Sangli,Kavathe Mahankal,116.9
+2021,Sangli,Jath,95.45
+2022,Sangli,Shirala,183.65
+2022,Sangli,Walwa,143.75
+2022,Sangli,Palus,189.05
+2022,Sangli,Kadegaon,182.45
+2022,Sangli,Khanapur,110.95
+2022,Sangli,Atpadi,112.37
+2022,Sangli,Tasgaon,158.54
+2022,Sangli,Miraj,179.78
+2022,Sangli,Kavathe Mahankal,116.44
+2022,Sangli,Jath,88.19
+2023,Sangli,Shirala,188.84
+2023,Sangli,Walwa,159.09
+2023,Sangli,Palus,189.04
+2023,Sangli,Kadegaon,182.57
+2023,Sangli,Khanapur,126.8
+2023,Sangli,Atpadi,109.89
+2023,Sangli,Tasgaon,158.66
+2023,Sangli,Miraj,179.81
+2023,Sangli,Kavathe Mahankal,116.46
+2023,Sangli,Jath,88.23
+2024,Sangli,Shirala,189.6
+2024,Sangli,Walwa,159.67
+2024,Sangli,Palus,189.05
+2024,Sangli,Kadegaon,182.04
+2024,Sangli,Khanapur,127.57
+2024,Sangli,Atpadi,109.88
+2024,Sangli,Tasgaon,159.14
+2024,Sangli,Miraj,177.65
+2024,Sangli,Kavathe Mahankal,114.65
+2024,Sangli,Jath,88.35
 2012,Satara,Mahableshwar,107.92
 2012,Satara,Wai,127.43
 2012,Satara,Khandala,116.28
@@ -2860,6 +3721,39 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Satara,Javli,133.62
 2021,Satara,Patan,127.15
 2021,Satara,Karad,125.52
+2022,Satara,Mahableshwar,41.63
+2022,Satara,Wai,57.49
+2022,Satara,Khandala,62.57
+2022,Satara,Phaltan,70.8
+2022,Satara,Man,58.69
+2022,Satara,Khatav,68.18
+2022,Satara,Koregaon,68.54
+2022,Satara,Satara,78.97
+2022,Satara,Javli,63.73
+2022,Satara,Patan,77.45
+2022,Satara,Karad,67.57
+2023,Satara,Mahableshwar,41.63
+2023,Satara,Wai,57.49
+2023,Satara,Khandala,62.57
+2023,Satara,Phaltan,70.8
+2023,Satara,Man,58.69
+2023,Satara,Khatav,68.18
+2023,Satara,Koregaon,68.54
+2023,Satara,Satara,78.97
+2023,Satara,Javli,68.24
+2023,Satara,Patan,76.96
+2023,Satara,Karad,69.9
+2024,Satara,Mahableshwar,148.38
+2024,Satara,Wai,170.02
+2024,Satara,Khandala,115.06
+2024,Satara,Phaltan,137.27
+2024,Satara,Man,101.42
+2024,Satara,Khatav,128.45
+2024,Satara,Koregaon,123.06
+2024,Satara,Satara,141.05
+2024,Satara,Javli,160.12
+2024,Satara,Patan,168.2
+2024,Satara,Karad,198.17
 2012,Sindhudurg,Devgad,98.39
 2012,Sindhudurg,Vaibhavwadi,89.4
 2012,Sindhudurg,Kankavali,121.56
@@ -2918,28 +3812,52 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2018,Sindhudurg,Dodamarg,176.3
 2019,Sindhudurg,Devgad,147.0
 2019,Sindhudurg,Vaibhavwadi,145.0
-2019,Sindhudurg,Kankawali,153.0
-2019,Sindhudurg,Malwan,202.0
-2019,Sindhudurg,Vengurli,197.0
-2019,Sindhudurg,Kulad,181.0
-2019,Sindhudurg,Savantwadi,139.0
+2019,Sindhudurg,Kankavali,153.0
+2019,Sindhudurg,Malvan,202.0
+2019,Sindhudurg,Vengurla,197.0
+2019,Sindhudurg,Kudal,181.0
+2019,Sindhudurg,Sawantwadi,139.0
 2019,Sindhudurg,Dodamarg,116.0
 2020,Sindhudurg,Devgad,148.0
 2020,Sindhudurg,Vaibhavwadi,136.0
-2020,Sindhudurg,Kankawali,152.0
-2020,Sindhudurg,Malwan,212.0
-2020,Sindhudurg,Vengurli,200.0
-2020,Sindhudurg,Kulad,178.0
-2020,Sindhudurg,Savantwadi,141.0
+2020,Sindhudurg,Kankavali,152.0
+2020,Sindhudurg,Malvan,212.0
+2020,Sindhudurg,Vengurla,200.0
+2020,Sindhudurg,Kudal,178.0
+2020,Sindhudurg,Sawantwadi,141.0
 2020,Sindhudurg,Dodamarg,119.0
 2021,Sindhudurg,Devgad,148.0
 2021,Sindhudurg,Vaibhavwadi,137.0
-2021,Sindhudurg,Kankawali,152.0
-2021,Sindhudurg,Malwan,215.0
-2021,Sindhudurg,Vengurli,198.0
-2021,Sindhudurg,Kulad,174.0
-2021,Sindhudurg,Savantwadi,144.0
+2021,Sindhudurg,Kankavali,152.0
+2021,Sindhudurg,Malvan,215.0
+2021,Sindhudurg,Vengurla,198.0
+2021,Sindhudurg,Kudal,174.0
+2021,Sindhudurg,Sawantwadi,144.0
 2021,Sindhudurg,Dodamarg,116.0
+2022,Sindhudurg,Devgad,142.0
+2022,Sindhudurg,Vaibhavwadi,130.0
+2022,Sindhudurg,Kankavali,154.0
+2022,Sindhudurg,Malvan,213.0
+2022,Sindhudurg,Vengurla,185.0
+2022,Sindhudurg,Kudal,177.0
+2022,Sindhudurg,Sawantwadi,144.0
+2022,Sindhudurg,Dodamarg,114.0
+2023,Sindhudurg,Devgad,144.0
+2023,Sindhudurg,Vaibhavwadi,130.0
+2023,Sindhudurg,Kankavali,156.0
+2023,Sindhudurg,Malvan,214.0
+2023,Sindhudurg,Vengurla,187.0
+2023,Sindhudurg,Kudal,176.0
+2023,Sindhudurg,Sawantwadi,144.0
+2023,Sindhudurg,Dodamarg,125.0
+2024,Sindhudurg,Devgad,129.02
+2024,Sindhudurg,Vaibhavwadi,136.12
+2024,Sindhudurg,Kankavali,168.98
+2024,Sindhudurg,Malvan,200.71
+2024,Sindhudurg,Vengurla,188.72
+2024,Sindhudurg,Kudal,176.8
+2024,Sindhudurg,Sawantwadi,144.45
+2024,Sindhudurg,Dodamarg,124.33
 2012,Solapur,Karmala,76.68
 2012,Solapur,Madha,90.83
 2012,Solapur,Barsi,99.88
@@ -3050,6 +3968,39 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Solapur,Mangal Vedha,127.92
 2021,Solapur,South Solapur,115.41
 2021,Solapur,Akalkot,120.83
+2022,Solapur,Karmala,95.49
+2022,Solapur,Madha,131.66
+2022,Solapur,Barsi,134.74
+2022,Solapur,North Solapur,366.15
+2022,Solapur,Mohol,114.65
+2022,Solapur,Pandharpur,134.32
+2022,Solapur,Malsiras,166.53
+2022,Solapur,Sangola,146.18
+2022,Solapur,Mangal Vedha,130.22
+2022,Solapur,South Solapur,116.61
+2022,Solapur,Akalkot,120.39
+2023,Solapur,Karmala,95.34
+2023,Solapur,Madha,131.7
+2023,Solapur,Barsi,134.74
+2023,Solapur,North Solapur,360.52
+2023,Solapur,Mohol,118.95
+2023,Solapur,Pandharpur,134.86
+2023,Solapur,Malsiras,169.75
+2023,Solapur,Sangola,140.18
+2023,Solapur,Mangal Vedha,130.04
+2023,Solapur,South Solapur,117.37
+2023,Solapur,Akalkot,119.62
+2024,Solapur,Karmala,96.46
+2024,Solapur,Madha,132.82
+2024,Solapur,Barsi,135.02
+2024,Solapur,North Solapur,367.33
+2024,Solapur,Mohol,115.28
+2024,Solapur,Pandharpur,127.19
+2024,Solapur,Malsiras,174.45
+2024,Solapur,Sangola,138.52
+2024,Solapur,Mangal Vedha,121.03
+2024,Solapur,South Solapur,128.09
+2024,Solapur,Akalkot,125.39
 2014,Thane,Thane,390.98
 2014,Thane,Bhivandi,119.85
 2014,Thane,Shahapur,85.93
@@ -3106,6 +4057,27 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Thane,Ulhasnagar,11.15
 2021,Thane,Ambarnath,132.81
 2021,Thane,Murbad,6.92
+2022,Thane,Thane,0.0
+2022,Thane,Bhivandi,77.96
+2022,Thane,Shahapur,50.35
+2022,Thane,Kalyan,70.47
+2022,Thane,Ulhasnagar,11.15
+2022,Thane,Ambarnath,59.19
+2022,Thane,Murbad,61.39
+2023,Thane,Thane,8.54
+2023,Thane,Bhivandi,108.16
+2023,Thane,Shahapur,70.36
+2023,Thane,Kalyan,128.16
+2023,Thane,Ulhasnagar,3.85
+2023,Thane,Ambarnath,102.51
+2023,Thane,Murbad,92.79
+2024,Thane,Thane,8.54
+2024,Thane,Bhivandi,108.16
+2024,Thane,Shahapur,70.36
+2024,Thane,Kalyan,128.68
+2024,Thane,Ulhasnagar,3.85
+2024,Thane,Ambarnath,102.51
+2024,Thane,Murbad,93.2
 2012,Wardha,Ashti,
 2012,Wardha,Karanja,
 2012,Wardha,Aarvi,
@@ -3114,14 +4086,14 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2012,Wardha,Devali,
 2012,Wardha,Hinganghat,
 2012,Wardha,Samudrapur,
-2013,Wardha,Ashti,6.0
-2013,Wardha,Karanja,7.0
-2013,Wardha,Aarvi,7.0
-2013,Wardha,Selu,8.0
-2013,Wardha,Wardha,10.0
-2013,Wardha,Devali,9.0
-2013,Wardha,Hinganghat,11.0
-2013,Wardha,Samudrapur,10.0
+2013,Wardha,Ashti,
+2013,Wardha,Karanja,
+2013,Wardha,Aarvi,
+2013,Wardha,Selu,
+2013,Wardha,Wardha,
+2013,Wardha,Devali,
+2013,Wardha,Hinganghat,
+2013,Wardha,Samudrapur,
 2014,Wardha,Ashti,67.88
 2014,Wardha,Karanja,69.74
 2014,Wardha,Aarvi,69.92
@@ -3186,24 +4158,48 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Wardha,Devali,118.68
 2021,Wardha,Hinganghat,108.56
 2021,Wardha,Samudrapur,90.3
-2009,Washim,Malegaon,391.12
-2009,Washim,Mangrulpir,492.02
-2009,Washim,Karanja,480.2
-2009,Washim,Manora,387.5
-2009,Washim,Washim,513.74
-2009,Washim,Resod,404.17
-2010,Washim,Malegaon,402.62
-2010,Washim,Mangrulpir,415.51
-2010,Washim,Karanja,474.25
-2010,Washim,Manora,390.0
-2010,Washim,Washim,457.82
-2010,Washim,Resod,496.87
-2011,Washim,Malegaon,482.42
-2011,Washim,Mangrulpir,420.01
-2011,Washim,Karanja,458.75
-2011,Washim,Manora,428.85
-2011,Washim,Washim,546.04
-2011,Washim,Resod,437.37
+2022,Wardha,Ashti,104.37
+2022,Wardha,Karanja,70.05
+2022,Wardha,Aarvi,105.26
+2022,Wardha,Selu,108.01
+2022,Wardha,Wardha,143.32
+2022,Wardha,Devali,118.68
+2022,Wardha,Hinganghat,108.56
+2022,Wardha,Samudrapur,90.3
+2023,Wardha,Ashti,104.37
+2023,Wardha,Karanja,70.05
+2023,Wardha,Aarvi,105.26
+2023,Wardha,Selu,108.01
+2023,Wardha,Wardha,143.32
+2023,Wardha,Devali,118.68
+2023,Wardha,Hinganghat,108.56
+2023,Wardha,Samudrapur,90.3
+2024,Wardha,Ashti,71.1
+2024,Wardha,Karanja,82.22
+2024,Wardha,Aarvi,115.73
+2024,Wardha,Selu,105.99
+2024,Wardha,Wardha,142.95
+2024,Wardha,Devali,137.09
+2024,Wardha,Hinganghat,128.15
+2024,Wardha,Samudrapur,82.43
+2009,Washim,Malegaon,
+2009,Washim,Mangrulpir,
+2009,Washim,Karanja,
+2009,Washim,Manora,
+2009,Washim,Washim,
+2009,Washim,Resod,
+2010,Washim,Malegaon,
+2010,Washim,Mangrulpir,
+2010,Washim,Karanja,
+2010,Washim,Manora,
+2010,Washim,Washim,
+2010,Washim,Resod,
+2011,Washim,Malegaon,
+2011,Washim,Mangrulpir,
+2011,Washim,Karanja,
+2011,Washim,Manora,
+2011,Washim,Washim,
+2011,Washim,Resod,
 2012,Washim,Malegaon,55.9
 2012,Washim,Mangrulpir,64.15
 2012,Washim,Karanja,60.01
@@ -3264,6 +4260,24 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Washim,Manora,58.14
 2021,Washim,Washim,79.69
 2021,Washim,Resod,74.85
+2022,Washim,Malegaon,69.11
+2022,Washim,Mangrulpir,69.22
+2022,Washim,Karanja,79.38
+2022,Washim,Manora,57.23
+2022,Washim,Washim,86.85
+2022,Washim,Resod,75.36
+2023,Washim,Malegaon,73.06
+2023,Washim,Mangrulpir,70.07
+2023,Washim,Karanja,80.69
+2023,Washim,Manora,55.23
+2023,Washim,Washim,83.31
+2023,Washim,Resod,77.23
+2024,Washim,Malegaon,72.98
+2024,Washim,Mangrulpir,74.33
+2024,Washim,Karanja,73.76
+2024,Washim,Manora,66.21
+2024,Washim,Washim,85.84
+2024,Washim,Resod,78.06
 2012,Yavatmal,Ner,60.13
 2012,Yavatmal,Babhulgaon,63.76
 2012,Yavatmal,Kalamb,59.28
@@ -3424,3 +4438,51 @@ Year,District,Taluka,Length of roads per 100 sq.km
 2021,Yavatmal,Maregaon,106.58
 2021,Yavatmal,Zari Jamani,92.77
 2021,Yavatmal,Vani,106.86
+2022,Yavatmal,Ner,136.66
+2022,Yavatmal,Babhulgaon,94.53
+2022,Yavatmal,Kalamb,119.18
+2022,Yavatmal,Yavatmal,121.68
+2022,Yavatmal,Darvha,125.6
+2022,Yavatmal,Digras,117.2
+2022,Yavatmal,Pusad,117.33
+2022,Yavatmal,Umarkhed,82.36
+2022,Yavatmal,Mahagaon,83.85
+2022,Yavatmal,Aarni,105.43
+2022,Yavatmal,Ghantaji,105.43
+2022,Yavatmal,Kelapur,100.27
+2022,Yavatmal,Ralegaon,115.39
+2022,Yavatmal,Maregaon,108.2
+2022,Yavatmal,Zari Jamani,95.59
+2022,Yavatmal,Vani,104.36
+2023,Yavatmal,Ner,138.56
+2023,Yavatmal,Babhulgaon,95.01
+2023,Yavatmal,Kalamb,111.59
+2023,Yavatmal,Yavatmal,142.91
+2023,Yavatmal,Darvha,125.83
+2023,Yavatmal,Digras,114.61
+2023,Yavatmal,Pusad,117.27
+2023,Yavatmal,Umarkhed,83.66
+2023,Yavatmal,Mahagaon,83.64
+2023,Yavatmal,Aarni,106.35
+2023,Yavatmal,Ghantaji,104.27
+2023,Yavatmal,Kelapur,97.36
+2023,Yavatmal,Ralegaon,114.99
+2023,Yavatmal,Maregaon,108.56
+2023,Yavatmal,Zari Jamani,95.74
+2023,Yavatmal,Vani,105.16
+2024,Yavatmal,Ner,136.92
+2024,Yavatmal,Babhulgaon,94.93
+2024,Yavatmal,Kalamb,112.33
+2024,Yavatmal,Yavatmal,148.09
+2024,Yavatmal,Darvha,126.74
+2024,Yavatmal,Digras,114.61
+2024,Yavatmal,Pusad,118.24
+2024,Yavatmal,Umarkhed,81.57
+2024,Yavatmal,Mahagaon,86.92
+2024,Yavatmal,Aarni,104.44
+2024,Yavatmal,Ghantaji,104.56
+2024,Yavatmal,Kelapur,97.47
+2024,Yavatmal,Ralegaon,115.02
+2024,Yavatmal,Maregaon,108.34
+2024,Yavatmal,Zari Jamani,97.28
+2024,Yavatmal,Vani,110.37

@@ -139,6 +139,48 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Ahilyanagar,Srigonda,1.0,1.0,0.0,0.0,0.0,0.0
 2021,Ahilyanagar,Karjat,0.0,0.0,0.0,0.0,0.0,1.0
 2021,Ahilyanagar,Jamkhed,1.0,2.0,0.0,0.0,0.0,0.0
+2022,Ahilyanagar,Akole,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Ahilyanagar,Sangamner,2.0,0.0,0.0,0.0,0.0,0.0
+2022,Ahilyanagar,Kopargaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Ahilyanagar,Rahata,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Ahilyanagar,Srirampur,2.0,0.0,0.0,1.0,0.0,0.0
+2022,Ahilyanagar,Nevasa,0.0,3.0,0.0,0.0,0.0,0.0
+2022,Ahilyanagar,Shevgaon,0.0,0.0,0.0,1.0,0.0,0.0
+2022,Ahilyanagar,Pathardi,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Ahilyanagar,Nagar,20.0,1.0,0.0,0.0,1.0,0.0
+2022,Ahilyanagar,Rahuri,0.0,7.0,0.0,0.0,0.0,0.0
+2022,Ahilyanagar,Parner,0.0,1.0,0.0,1.0,0.0,0.0
+2022,Ahilyanagar,Srigonda,1.0,0.0,0.0,0.0,0.0,0.0
+2022,Ahilyanagar,Karjat,0.0,0.0,0.0,0.0,0.0,1.0
+2022,Ahilyanagar,Jamkhed,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Akole,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Sangamner,2.0,1.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Kopargaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Rahata,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Srirampur,2.0,3.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Nevasa,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Shevgaon,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Pathardi,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Nagar,11.0,10.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Rahuri,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Parner,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Srigonda,1.0,0.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ahilyanagar,Jamkhed,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Ahilyanagar,Akole,5.0,2.0,1.0,1.0,0.0,0.0
+2024,Ahilyanagar,Sangamner,7.0,4.0,1.0,1.0,0.0,0.0
+2024,Ahilyanagar,Kopargaon,1.0,1.0,0.0,0.0,0.0,0.0
+2024,Ahilyanagar,Rahata,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Ahilyanagar,Srirampur,7.0,7.0,0.0,1.0,0.0,0.0
+2024,Ahilyanagar,Nevasa,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Ahilyanagar,Shevgaon,1.0,2.0,0.0,1.0,0.0,0.0
+2024,Ahilyanagar,Pathardi,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Ahilyanagar,Nagar,19.0,18.0,0.0,2.0,0.0,0.0
+2024,Ahilyanagar,Rahuri,0.0,3.0,0.0,1.0,0.0,0.0
+2024,Ahilyanagar,Parner,0.0,1.0,0.0,1.0,0.0,0.0
+2024,Ahilyanagar,Srigonda,2.0,1.0,0.0,0.0,0.0,0.0
+2024,Ahilyanagar,Karjat,0.0,0.0,0.0,0.0,1.0,0.0
+2024,Ahilyanagar,Jamkhed,0.0,1.0,0.0,0.0,0.0,0.0
 2012,Akola,Telhara,4.0,0.0,0.0,0.0,0.0,0.0
 2012,Akola,Akot,10.0,1.0,3.0,0.0,0.0,0.0
 2012,Akola,Balapur,2.0,0.0,0.0,0.0,0.0,0.0
@@ -209,6 +251,27 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Akola,Murtijapur,0.0,2.0,0.0,0.0,0.0,0.0
 2021,Akola,Patur,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Akola,Barshitakali,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Akola,Telhara,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Akola,Akot,1.0,4.0,0.0,0.0,0.0,0.0
+2022,Akola,Balapur,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Akola,Akola,21.0,39.0,0.0,0.0,0.0,0.0
+2022,Akola,Murtijapur,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Akola,Patur,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Akola,Barshitakali,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Akola,Telhara,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Akola,Akot,1.0,3.0,0.0,0.0,0.0,0.0
+2023,Akola,Balapur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Akola,Akola,23.0,39.0,0.0,0.0,0.0,0.0
+2023,Akola,Murtijapur,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Akola,Patur,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Akola,Barshitakali,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Akola,Telhara,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Akola,Akot,1.0,3.0,0.0,0.0,0.0,0.0
+2024,Akola,Balapur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Akola,Akola,24.0,39.0,1.0,0.0,0.0,0.0
+2024,Akola,Murtijapur,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Akola,Patur,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Akola,Barshitakali,0.0,1.0,0.0,0.0,0.0,0.0
 2012,Amravati,Dharani,,,,,,
 2012,Amravati,Chikhraldara,,,,,,
 2012,Amravati,Anjangaon Su,,1.0,,,,
@@ -349,6 +412,48 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Amravati,Nandgaon Kh,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Amravati,Chandur Railway,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Amravati,Dhamangaon Re,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Amravati,Dharani,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Amravati,Chikhraldara,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Amravati,Anjangaon Su,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Amravati,Achalpur,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Amravati,Chandurbazar,0.0,3.0,0.0,0.0,0.0,0.0
+2022,Amravati,Morshi,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Amravati,Warud,1.0,1.0,0.0,0.0,0.0,0.0
+2022,Amravati,Tivas,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Amravati,Amravati,37.0,95.0,0.0,3.0,0.0,0.0
+2022,Amravati,Bhatkuli,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Amravati,Daryapur,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Amravati,Nandgaon Kh,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Amravati,Chandur Railway,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Amravati,Dhamangaon Re,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Amravati,Dharani,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Amravati,Chikhraldara,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Amravati,Anjangaon Su,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Amravati,Achalpur,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Amravati,Chandurbazar,0.0,3.0,0.0,0.0,0.0,0.0
+2023,Amravati,Morshi,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Amravati,Warud,1.0,1.0,0.0,0.0,0.0,0.0
+2023,Amravati,Tivas,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Amravati,Amravati,35.0,95.0,0.0,0.0,0.0,0.0
+2023,Amravati,Bhatkuli,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Amravati,Daryapur,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Amravati,Nandgaon Kh,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Amravati,Chandur Railway,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Amravati,Dhamangaon Re,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Amravati,Dharani,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Amravati,Chikhraldara,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Amravati,Anjangaon Su,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Amravati,Achalpur,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Amravati,Chandurbazar,0.0,3.0,0.0,0.0,0.0,0.0
+2024,Amravati,Morshi,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Amravati,Warud,1.0,1.0,0.0,0.0,0.0,0.0
+2024,Amravati,Tivas,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Amravati,Amravati,39.0,97.0,0.0,0.0,0.0,0.0
+2024,Amravati,Bhatkuli,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Amravati,Daryapur,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Amravati,Nandgaon Kh,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Amravati,Chandur Railway,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Amravati,Dhamangaon Re,0.0,1.0,0.0,0.0,0.0,0.0
 2012,Chh. Sambhaji Nagar,Kannad,0.0,1.0,,,,
 2012,Chh. Sambhaji Nagar,Soyegaon,0.0,0.0,,,,
 2012,Chh. Sambhaji Nagar,Sillod,0.0,0.0,,,,
@@ -439,6 +544,33 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Chh. Sambhaji Nagar,Vaijapur,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Chh. Sambhaji Nagar,Gangapur,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Chh. Sambhaji Nagar,Paithan,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Chh. Sambhaji Nagar,Kannad,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Chh. Sambhaji Nagar,Soyegaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chh. Sambhaji Nagar,Sillod,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chh. Sambhaji Nagar,Phulambri,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,37.0,72.0,0.0,0.0,0.0,0.0
+2022,Chh. Sambhaji Nagar,Khultabad,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chh. Sambhaji Nagar,Vaijapur,0.0,3.0,0.0,0.0,0.0,0.0
+2022,Chh. Sambhaji Nagar,Gangapur,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Chh. Sambhaji Nagar,Paithan,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Chh. Sambhaji Nagar,Kannad,1.0,1.0,0.0,0.0,0.0,0.0
+2023,Chh. Sambhaji Nagar,Soyegaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chh. Sambhaji Nagar,Sillod,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chh. Sambhaji Nagar,Phulambri,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,36.0,77.0,0.0,0.0,0.0,0.0
+2023,Chh. Sambhaji Nagar,Khultabad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chh. Sambhaji Nagar,Vaijapur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chh. Sambhaji Nagar,Gangapur,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Chh. Sambhaji Nagar,Paithan,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Kannad,1.0,1.0,0.0,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Soyegaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Sillod,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Phulambri,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Chhatrapati Sambhaji Nagar,39.0,80.0,0.0,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Khultabad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Vaijapur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Gangapur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Chh. Sambhaji Nagar,Paithan,0.0,1.0,0.0,0.0,0.0,0.0
 2013,Beed,Ashti,0.0,0.0,0.0,1.0,0.0,0.0
 2013,Beed,Patoda,0.0,1.0,0.0,1.0,1.0,0.0
 2013,Beed,Shirur Kasar,0.0,1.0,0.0,1.0,0.0,0.0
@@ -538,6 +670,39 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Beed,Dharur,0.0,2.0,0.0,0.0,0.0,0.0
 2021,Beed,Parli,7.0,7.0,0.0,0.0,0.0,0.0
 2021,Beed,Ambajogai,4.0,2.0,0.0,0.0,0.0,0.0
+2022,Beed,Ashti,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Beed,Patoda,1.0,0.0,0.0,0.0,0.0,0.0
+2022,Beed,Shirur Kasar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Beed,Gevrai,0.0,6.0,0.0,0.0,0.0,0.0
+2022,Beed,Majalgaon,1.0,4.0,0.0,0.0,0.0,0.0
+2022,Beed,Wadwani,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Beed,Beed,21.0,24.0,0.0,0.0,0.0,0.0
+2022,Beed,Cage,1.0,1.0,0.0,0.0,0.0,0.0
+2022,Beed,Dharur,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Beed,Parli,7.0,8.0,0.0,0.0,0.0,0.0
+2022,Beed,Ambajogai,4.0,2.0,0.0,0.0,0.0,0.0
+2023,Beed,Ashti,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Beed,Patoda,1.0,0.0,0.0,0.0,0.0,0.0
+2023,Beed,Shirur Kasar,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Beed,Gevrai,0.0,7.0,0.0,0.0,0.0,0.0
+2023,Beed,Majalgaon,1.0,4.0,0.0,0.0,0.0,0.0
+2023,Beed,Wadwani,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Beed,Beed,25.0,24.0,0.0,0.0,0.0,0.0
+2023,Beed,Cage,1.0,2.0,0.0,0.0,0.0,0.0
+2023,Beed,Dharur,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Beed,Parli,6.0,5.0,0.0,0.0,0.0,0.0
+2023,Beed,Ambajogai,4.0,3.0,0.0,0.0,0.0,0.0
+2024,Beed,Ashti,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Beed,Patoda,1.0,0.0,0.0,0.0,0.0,0.0
+2024,Beed,Shirur Kasar,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Beed,Gevrai,0.0,6.0,0.0,0.0,0.0,0.0
+2024,Beed,Majalgaon,1.0,4.0,0.0,0.0,0.0,0.0
+2024,Beed,Wadwani,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Beed,Beed,27.0,26.0,0.0,0.0,0.0,0.0
+2024,Beed,Cage,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Beed,Dharur,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Beed,Parli,6.0,8.0,0.0,0.0,0.0,0.0
+2024,Beed,Ambajogai,4.0,2.0,0.0,0.0,0.0,0.0
 2012,Bhandara,Tumsar,,1.0,,,,
 2012,Bhandara,Mohadi,,,,,,
 2012,Bhandara,Bhandara,6.0,10.0,,,1.0,
@@ -608,6 +773,27 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Bhandara,Lakhani,1.0,2.0,,,,
 2021,Bhandara,Pavani,1.0,2.0,,,,
 2021,Bhandara,Lakhandur,0.0,0.0,,,,
+2022,Bhandara,Tumsar,0.0,1.0,,,,
+2022,Bhandara,Mohadi,0.0,0.0,,,,
+2022,Bhandara,Bhandara,6.0,5.0,,,,
+2022,Bhandara,Sakoli,0.0,1.0,,,,
+2022,Bhandara,Lakhani,1.0,2.0,,,,
+2022,Bhandara,Pavani,1.0,2.0,,,,
+2022,Bhandara,Lakhandur,0.0,0.0,,,,
+2023,Bhandara,Tumsar,0.0,1.0,,,,
+2023,Bhandara,Mohadi,0.0,0.0,,,,
+2023,Bhandara,Bhandara,6.0,6.0,,,,
+2023,Bhandara,Sakoli,0.0,1.0,,,,
+2023,Bhandara,Lakhani,1.0,2.0,,,,
+2023,Bhandara,Pavani,1.0,2.0,,,,
+2023,Bhandara,Lakhandur,0.0,0.0,,,,
+2024,Bhandara,Tumsar,0.0,1.0,,,,
+2024,Bhandara,Mohadi,0.0,0.0,,,,
+2024,Bhandara,Bhandara,6.0,6.0,,,,
+2024,Bhandara,Sakoli,0.0,1.0,,,,
+2024,Bhandara,Lakhani,1.0,2.0,,,,
+2024,Bhandara,Pavani,1.0,2.0,,,,
+2024,Bhandara,Lakhandur,0.0,0.0,,,,
 2013,Buldhana,Jalgaon Jamod,0.0,4.0,2.0,1.0,0.0,0.0
 2013,Buldhana,Sangrampur,0.0,0.0,0.0,0.0,0.0,0.0
 2013,Buldhana,Shegaon,6.0,25.0,1.0,3.0,2.0,0.0
@@ -725,6 +911,45 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Buldhana,Deulgaon Raja,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Buldhana,Sindkhed Raja,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Buldhana,Lonar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Jalgaon Jamod,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Sangrampur,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Shegaon,2.0,3.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Nandura,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Malkapur,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Motala,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Khamgaon,5.0,0.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Mehkar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Chikhali,1.0,1.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Buldhana,11.0,19.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Deulgaon Raja,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Sindkhed Raja,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Buldhana,Lonar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Jalgaon Jamod,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Sangrampur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Shegaon,2.0,3.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Nandura,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Malkapur,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Motala,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Khamgaon,3.0,0.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Mehkar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Chikhali,1.0,1.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Buldhana,14.0,21.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Deulgaon Raja,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Sindkhed Raja,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Buldhana,Lonar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Jalgaon Jamod,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Sangrampur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Shegaon,2.0,3.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Nandura,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Malkapur,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Motala,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Khamgaon,5.0,0.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Mehkar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Chikhali,1.0,1.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Buldhana,13.0,20.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Deulgaon Raja,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Sindkhed Raja,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Buldhana,Lonar,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Chandrapur,Varora,,1.0,,,,
 2012,Chandrapur,Chimur,,1.0,,,,
 2012,Chandrapur,Nagbhid,,2.0,,,,
@@ -875,6 +1100,51 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Chandrapur,Rajura,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Chandrapur,Gondpipari,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Chandrapur,Jivati,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Varora,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Chimur,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Nagbhid,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Bramhapuri,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Savali,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Sindevahi,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Bhadravati,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Chandrapur,14.0,33.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Mul,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Ponbhurna,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Ballarpur,1.0,1.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Korpana,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Rajura,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Gondpipari,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Chandrapur,Jivati,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Varora,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Chimur,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Nagbhid,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Bramhapuri,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Savali,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Sindevahi,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Bhadravati,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Chandrapur,13.0,35.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Mul,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Ponbhurna,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Ballarpur,1.0,1.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Korpana,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Rajura,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Gondpipari,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Chandrapur,Jivati,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Chandrapur,Varora,,,,,,
+2024,Chandrapur,Chimur,,1.0,,,,
+2024,Chandrapur,Nagbhid,,2.0,,,,
+2024,Chandrapur,Bramhapuri,,2.0,,,,
+2024,Chandrapur,Savali,,,,,,
+2024,Chandrapur,Sindevahi,,,,,,
+2024,Chandrapur,Bhadravati,,,,,,
+2024,Chandrapur,Chandrapur,14.0,33.0,,,,
+2024,Chandrapur,Mul,,1.0,,,,
+2024,Chandrapur,Ponbhurna,,,,,,
+2024,Chandrapur,Ballarpur,1.0,1.0,,,,
+2024,Chandrapur,Korpana,,,,,,
+2024,Chandrapur,Rajura,,1.0,,,,
+2024,Chandrapur,Gondpipari,,,,,,
+2024,Chandrapur,Jivati,,,,,,
 2012,Dhule,Shirpur,1.0,17.0,0.0,0.0,0.0,0.0
 2012,Dhule,Shindkheda,0.0,15.0,0.0,0.0,0.0,0.0
 2012,Dhule,Sakri,0.0,1.0,0.0,0.0,0.0,0.0
@@ -955,8 +1225,20 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Dhule,Shindkheda,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Dhule,Sakri,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Dhule,Dhule,16.0,10.0,0.0,0.0,0.0,0.0
+2022,Dhule,Shirpur,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Dhule,Shindkheda,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Dhule,Sakri,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Dhule,Dhule,16.0,10.0,0.0,0.0,0.0,0.0
+2023,Dhule,Shirpur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Dhule,Shindkheda,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Dhule,Sakri,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Dhule,Dhule,14.0,11.0,0.0,0.0,0.0,0.0
+2024,Dhule,Shirpur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Dhule,Shindkheda,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Dhule,Sakri,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Dhule,Dhule,14.0,10.0,0.0,0.0,0.0,0.0
 2012,Gadchiroli,Desaiganj,,2.0,,,,
-2012,Gadchiroli,rmori,,,,,,
+2012,Gadchiroli,Aarmori,,,,,,
 2012,Gadchiroli,Kurkheda,,,,,,
 2012,Gadchiroli,Korachi,,,,,,
 2012,Gadchiroli,Dhanora,,,,,,
@@ -968,7 +1250,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2012,Gadchiroli,Aheri,,1.0,,,,
 2012,Gadchiroli,Sironcha,,,,,,
 2013,Gadchiroli,Desaiganj,,2.0,,,,
-2013,Gadchiroli,rmori,,,,,,
+2013,Gadchiroli,Aarmori,,,,,,
 2013,Gadchiroli,Kurkheda,,,,,,
 2013,Gadchiroli,Korachi,,,,,,
 2013,Gadchiroli,Dhanora,,,,,,
@@ -980,7 +1262,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2013,Gadchiroli,Aheri,,1.0,,,,
 2013,Gadchiroli,Sironcha,,,,,,
 2014,Gadchiroli,Desaiganj,,2.0,,,,
-2014,Gadchiroli,rmori,,,,,,
+2014,Gadchiroli,Aarmori,,,,,,
 2014,Gadchiroli,Kurkheda,,,,,,
 2014,Gadchiroli,Korachi,,,,,,
 2014,Gadchiroli,Dhanora,,,,,,
@@ -992,7 +1274,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2014,Gadchiroli,Aheri,,1.0,,,,
 2014,Gadchiroli,Sironcha,,,,,,
 2015,Gadchiroli,Desaiganj,,2.0,,,,
-2015,Gadchiroli,rmori,,,,,,
+2015,Gadchiroli,Aarmori,,,,,,
 2015,Gadchiroli,Kurkheda,,,,,,
 2015,Gadchiroli,Korachi,,,,,,
 2015,Gadchiroli,Dhanora,,,,,,
@@ -1004,7 +1286,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2015,Gadchiroli,Aheri,,1.0,,,,
 2015,Gadchiroli,Sironcha,,,,,,
 2016,Gadchiroli,Desaiganj,,2.0,,,,
-2016,Gadchiroli,rmori,,,,,,
+2016,Gadchiroli,Aarmori,,,,,,
 2016,Gadchiroli,Kurkheda,,,,,,
 2016,Gadchiroli,Korachi,,,,,,
 2016,Gadchiroli,Dhanora,,,,,,
@@ -1016,7 +1298,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2016,Gadchiroli,Aheri,,1.0,,,,
 2016,Gadchiroli,Sironcha,,,,,,
 2017,Gadchiroli,Desaiganj,,2.0,,,,
-2017,Gadchiroli,rmori,,,,,,
+2017,Gadchiroli,Aarmori,,,,,,
 2017,Gadchiroli,Kurkheda,,,,,,
 2017,Gadchiroli,Korachi,,,,,,
 2017,Gadchiroli,Dhanora,,,,,,
@@ -1028,7 +1310,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2017,Gadchiroli,Aheri,,1.0,,,,
 2017,Gadchiroli,Sironcha,,,,,,
 2018,Gadchiroli,Desaiganj,,2.0,,,,
-2018,Gadchiroli,rmori,,,,,,
+2018,Gadchiroli,Aarmori,,,,,,
 2018,Gadchiroli,Kurkheda,,,,,,
 2018,Gadchiroli,Korachi,,,,,,
 2018,Gadchiroli,Dhanora,,,,,,
@@ -1075,6 +1357,42 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Gadchiroli,Bhamragad,,,,,,
 2021,Gadchiroli,Aheri,,1.0,,,,
 2021,Gadchiroli,Sironcha,,,,,,
+2022,Gadchiroli,Desaiganj,,3.0,,,,
+2022,Gadchiroli,Aarmori,,,,,,
+2022,Gadchiroli,Kurkheda,,,,,,
+2022,Gadchiroli,Korachi,,,,,,
+2022,Gadchiroli,Dhanora,,,,,,
+2022,Gadchiroli,Gadchiroli,5.0,12.0,,,,
+2022,Gadchiroli,Chomoshi,,1.0,,,,
+2022,Gadchiroli,Mulchera,,,,,,
+2022,Gadchiroli,Etapalli,,,,,,
+2022,Gadchiroli,Bhamragad,,,,,,
+2022,Gadchiroli,Aheri,,1.0,,,,
+2022,Gadchiroli,Sironcha,,,,,,
+2023,Gadchiroli,Desaiganj,,3.0,,,,
+2023,Gadchiroli,Aarmori,,,,,,
+2023,Gadchiroli,Kurkheda,,,,,,
+2023,Gadchiroli,Korachi,,,,,,
+2023,Gadchiroli,Dhanora,,,,,,
+2023,Gadchiroli,Gadchiroli,5.0,12.0,,,,
+2023,Gadchiroli,Chomoshi,,1.0,,,,
+2023,Gadchiroli,Mulchera,,,,,,
+2023,Gadchiroli,Etapalli,,,,,,
+2023,Gadchiroli,Bhamragad,,,,,,
+2023,Gadchiroli,Aheri,,1.0,,,,
+2023,Gadchiroli,Sironcha,,,,,,
+2024,Gadchiroli,Desaiganj,,3.0,,,,
+2024,Gadchiroli,Aarmori,,,,,,
+2024,Gadchiroli,Kurkheda,,,,,,
+2024,Gadchiroli,Korachi,,,,,,
+2024,Gadchiroli,Dhanora,,,,,,
+2024,Gadchiroli,Gadchiroli,5.0,12.0,,,,
+2024,Gadchiroli,Chomoshi,,1.0,,,,
+2024,Gadchiroli,Mulchera,,,,,,
+2024,Gadchiroli,Etapalli,,,,,,
+2024,Gadchiroli,Bhamragad,,,,,,
+2024,Gadchiroli,Aheri,,1.0,,,,
+2024,Gadchiroli,Sironcha,,,,,,
 2012,Gondia,Tiroda,0.0,1.0,0.0,0.0,0.0,0.0
 2012,Gondia,Goregaon,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Gondia,Gondia,8.0,11.0,0.0,0.0,0.0,0.0
@@ -1155,56 +1473,95 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Gondia,Sadak Arjuni,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Gondia,Arjuni Morgaon,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Gondia,Devari,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Gondia,Tiroda,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Gondia,Goregaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Gondia,Gondia,8.0,11.0,0.0,0.0,0.0,0.0
+2022,Gondia,Aamgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Gondia,Salekasa,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Gondia,Sadak Arjuni,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Gondia,Arjuni Morgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Gondia,Devari,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Gondia,Tiroda,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Gondia,Goregaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Gondia,Gondia,8.0,11.0,0.0,0.0,0.0,0.0
+2023,Gondia,Aamgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Gondia,Salekasa,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Gondia,Sadak Arjuni,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Gondia,Arjuni Morgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Gondia,Devari,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Gondia,Tiroda,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Gondia,Goregaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Gondia,Gondia,8.0,10.0,0.0,0.0,0.0,0.0
+2024,Gondia,Aamgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Gondia,Salekasa,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Gondia,Sadak Arjuni,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Gondia,Arjuni Morgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Gondia,Devari,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Hingoli,Sengaon,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Hingoli,Hingoli,7.0,6.0,0.0,0.0,0.0,0.0
 2012,Hingoli,Aundha na,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Hingoli,Kalamanuri,0.0,1.0,0.0,0.0,0.0,0.0
-2012,Hingoli,vasamat,3.0,2.0,0.0,0.0,0.0,0.0
+2012,Hingoli,Vasamat,3.0,2.0,0.0,0.0,0.0,0.0
 2013,Hingoli,Sengaon,,,,,,
 2013,Hingoli,Hingoli,8.0,7.0,,,,
 2013,Hingoli,Aundha na,,,,,,
 2013,Hingoli,Kalamanuri,,1.0,,,,
-2013,Hingoli,vasamat,3.0,2.0,,,,
+2013,Hingoli,Vasamat,3.0,2.0,,,,
 2014,Hingoli,Sengaon,,,,,,
 2014,Hingoli,Hingoli,10.0,8.0,,,,
 2014,Hingoli,Aundha na,,,,,,
 2014,Hingoli,Kalamanuri,,1.0,,,,
-2014,Hingoli,vasamat,2.0,3.0,,,,
+2014,Hingoli,Vasamat,2.0,3.0,,,,
 2015,Hingoli,Sengaon,,,,,,
 2015,Hingoli,Hingoli,10.0,8.0,,,,
 2015,Hingoli,Aundha na,,,,,,
 2015,Hingoli,Kalamanuri,,1.0,,,,
-2015,Hingoli,vasamat,2.0,3.0,,,,
+2015,Hingoli,Vasamat,2.0,3.0,,,,
 2016,Hingoli,Sengaon,,,,,,
 2016,Hingoli,Hingoli,10.0,9.0,,,,
 2016,Hingoli,Aundha na,,,,,,
 2016,Hingoli,Kalamanuri,,1.0,,,,
-2016,Hingoli,vasamat,2.0,3.0,,,,
+2016,Hingoli,Vasamat,2.0,3.0,,,,
 2017,Hingoli,Sengaon,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Hingoli,Hingoli,6.0,7.0,0.0,0.0,0.0,0.0
 2017,Hingoli,Aundha na,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Hingoli,Kalamanuri,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Hingoli,vasamat,2.0,4.0,0.0,0.0,0.0,0.0
+2017,Hingoli,Vasamat,2.0,4.0,0.0,0.0,0.0,0.0
 2018,Hingoli,Sengaon,0.0,0.0,0.0,0.0,0.0,0.0
 2018,Hingoli,Hingoli,6.0,6.0,0.0,0.0,0.0,0.0
 2018,Hingoli,Aundha na,0.0,0.0,0.0,0.0,0.0,0.0
 2018,Hingoli,Kalamanuri,0.0,1.0,0.0,0.0,0.0,0.0
-2018,Hingoli,vasamat,2.0,4.0,0.0,0.0,0.0,0.0
+2018,Hingoli,Vasamat,2.0,4.0,0.0,0.0,0.0,0.0
 2019,Hingoli,Sengaon,0.0,0.0,0.0,0.0,0.0,0.0
 2019,Hingoli,Hingoli,6.0,7.0,0.0,0.0,0.0,0.0
 2019,Hingoli,Aundha na,0.0,0.0,0.0,0.0,0.0,0.0
 2019,Hingoli,Kalamanuri,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Hingoli,vasamat,2.0,4.0,0.0,0.0,0.0,0.0
+2019,Hingoli,Vasamat,2.0,4.0,0.0,0.0,0.0,0.0
 2020,Hingoli,Sengaon,0.0,0.0,0.0,0.0,0.0,0.0
 2020,Hingoli,Hingoli,6.0,7.0,0.0,0.0,0.0,0.0
 2020,Hingoli,Aundha na,0.0,0.0,0.0,0.0,0.0,0.0
 2020,Hingoli,Kalamanuri,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Hingoli,vasamat,2.0,4.0,0.0,0.0,0.0,0.0
+2020,Hingoli,Vasamat,2.0,4.0,0.0,0.0,0.0,0.0
 2021,Hingoli,Sengaon,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Hingoli,Hingoli,6.0,7.0,0.0,0.0,0.0,0.0
 2021,Hingoli,Aundha na,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Hingoli,Kalamanuri,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Hingoli,vasamat,2.0,4.0,0.0,0.0,0.0,0.0
+2021,Hingoli,Vasamat,2.0,4.0,0.0,0.0,0.0,0.0
+2022,Hingoli,Sengaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Hingoli,Hingoli,7.0,7.0,0.0,0.0,0.0,0.0
+2022,Hingoli,Aundha na,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Hingoli,Kalamanuri,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Hingoli,Vasamat,2.0,5.0,0.0,0.0,0.0,0.0
+2023,Hingoli,Sengaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Hingoli,Hingoli,5.0,7.0,0.0,0.0,0.0,0.0
+2023,Hingoli,Aundha na,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Hingoli,Kalamanuri,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Hingoli,Vasamat,2.0,5.0,0.0,0.0,0.0,0.0
+2024,Hingoli,Sengaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Hingoli,Hingoli,5.0,7.0,0.0,0.0,0.0,0.0
+2024,Hingoli,Aundha na,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Hingoli,Kalamanuri,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Hingoli,Vasamat,2.0,5.0,0.0,0.0,0.0,0.0
 2010,Jalgaon,Chopda,0.0,2.0,0.0,0.0,0.0,0.0
 2010,Jalgaon,Yawal,1.0,3.0,0.0,0.0,0.0,0.0
 2010,Jalgaon,Raver,0.0,0.0,0.0,0.0,0.0,0.0
@@ -1213,11 +1570,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2010,Jalgaon,Bhusawal,1.0,7.0,0.0,0.0,0.0,0.0
 2010,Jalgaon,Jalgaon,9.0,23.0,2.0,3.0,0.0,0.0
 2010,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2010,Jalgaon,Dharangoan,0.0,1.0,0.0,0.0,0.0,0.0
+2010,Jalgaon,Dharangaon,0.0,1.0,0.0,0.0,0.0,0.0
 2010,Jalgaon,Amalner,1.0,0.0,0.0,0.0,0.0,0.0
 2010,Jalgaon,Parola,0.0,1.0,0.0,0.0,0.0,0.0
-2010,Jalgaon,Bhadgoan,0.0,0.0,0.0,0.0,0.0,0.0
-2010,Jalgaon,Chalisgoan,3.0,3.0,0.0,0.0,0.0,0.0
+2010,Jalgaon,Bhadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2010,Jalgaon,Chalisgaon,3.0,3.0,0.0,0.0,0.0,0.0
 2010,Jalgaon,Pachora,0.0,3.0,0.0,0.0,0.0,0.0
 2010,Jalgaon,Jamner,0.0,2.0,0.0,0.0,0.0,0.0
 2011,Jalgaon,Chopda,12.0,0.0,2.0,0.0,0.0,0.0
@@ -1228,11 +1585,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2011,Jalgaon,Bhusawal,39.0,1.0,7.0,0.0,0.0,0.0
 2011,Jalgaon,Jalgaon,120.0,9.0,23.0,2.0,2.0,2.0
 2011,Jalgaon,Erandol,8.0,1.0,1.0,0.0,0.0,0.0
-2011,Jalgaon,Dharangoan,5.0,0.0,1.0,0.0,0.0,0.0
+2011,Jalgaon,Dharangaon,5.0,0.0,1.0,0.0,0.0,0.0
 2011,Jalgaon,Amalner,17.0,1.0,0.0,0.0,0.0,0.0
 2011,Jalgaon,Parola,10.0,0.0,1.0,0.0,0.0,0.0
-2011,Jalgaon,Bhadgoan,8.0,0.0,0.0,0.0,0.0,0.0
-2011,Jalgaon,Chalisgoan,49.0,3.0,3.0,0.0,0.0,0.0
+2011,Jalgaon,Bhadgaon,8.0,0.0,0.0,0.0,0.0,0.0
+2011,Jalgaon,Chalisgaon,49.0,3.0,3.0,0.0,0.0,0.0
 2011,Jalgaon,Pachora,21.0,0.0,3.0,0.0,0.0,0.0
 2011,Jalgaon,Jamner,19.0,0.0,2.0,0.0,0.0,0.0
 2012,Jalgaon,Chopda,,1.0,0.0,0.0,0.0,0.0
@@ -1243,11 +1600,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2012,Jalgaon,Bhusawal,1.0,6.0,0.0,0.0,0.0,0.0
 2012,Jalgaon,Jalgaon,12.0,20.0,0.0,0.0,0.0,0.0
 2012,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2012,Jalgaon,Dharangoan,,1.0,0.0,0.0,0.0,0.0
+2012,Jalgaon,Dharangaon,,1.0,0.0,0.0,0.0,0.0
 2012,Jalgaon,Amalner,,,0.0,0.0,0.0,0.0
 2012,Jalgaon,Parola,,2.0,0.0,0.0,0.0,0.0
-2012,Jalgaon,Bhadgoan,,,0.0,0.0,0.0,0.0
-2012,Jalgaon,Chalisgoan,3.0,3.0,0.0,0.0,0.0,0.0
+2012,Jalgaon,Bhadgaon,,,0.0,0.0,0.0,0.0
+2012,Jalgaon,Chalisgaon,3.0,3.0,0.0,0.0,0.0,0.0
 2012,Jalgaon,Pachora,,3.0,0.0,0.0,0.0,0.0
 2012,Jalgaon,Jamner,,1.0,0.0,0.0,0.0,0.0
 2013,Jalgaon,Chopda,,1.0,0.0,0.0,0.0,0.0
@@ -1258,11 +1615,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2013,Jalgaon,Bhusawal,1.0,6.0,0.0,0.0,0.0,0.0
 2013,Jalgaon,Jalgaon,12.0,21.0,0.0,0.0,0.0,0.0
 2013,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2013,Jalgaon,Dharangoan,,,0.0,0.0,0.0,0.0
+2013,Jalgaon,Dharangaon,,,0.0,0.0,0.0,0.0
 2013,Jalgaon,Amalner,,,0.0,0.0,0.0,0.0
 2013,Jalgaon,Parola,,2.0,0.0,0.0,0.0,0.0
-2013,Jalgaon,Bhadgoan,,,0.0,0.0,0.0,0.0
-2013,Jalgaon,Chalisgoan,2.0,3.0,0.0,0.0,0.0,0.0
+2013,Jalgaon,Bhadgaon,,,0.0,0.0,0.0,0.0
+2013,Jalgaon,Chalisgaon,2.0,3.0,0.0,0.0,0.0,0.0
 2013,Jalgaon,Pachora,,3.0,0.0,0.0,0.0,0.0
 2013,Jalgaon,Jamner,,1.0,0.0,0.0,0.0,0.0
 2014,Jalgaon,Chopda,,1.0,0.0,0.0,0.0,0.0
@@ -1273,11 +1630,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2014,Jalgaon,Bhusawal,1.0,6.0,0.0,0.0,0.0,0.0
 2014,Jalgaon,Jalgaon,14.0,29.0,0.0,0.0,0.0,0.0
 2014,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2014,Jalgaon,Dharangoan,,,0.0,0.0,0.0,0.0
+2014,Jalgaon,Dharangaon,,,0.0,0.0,0.0,0.0
 2014,Jalgaon,Amalner,,,0.0,0.0,0.0,0.0
 2014,Jalgaon,Parola,,2.0,0.0,0.0,0.0,0.0
-2014,Jalgaon,Bhadgoan,,,0.0,0.0,0.0,0.0
-2014,Jalgaon,Chalisgoan,2.0,3.0,0.0,0.0,0.0,0.0
+2014,Jalgaon,Bhadgaon,,,0.0,0.0,0.0,0.0
+2014,Jalgaon,Chalisgaon,2.0,3.0,0.0,0.0,0.0,0.0
 2014,Jalgaon,Pachora,,1.0,0.0,0.0,0.0,0.0
 2014,Jalgaon,Jamner,,1.0,0.0,0.0,0.0,0.0
 2015,Jalgaon,Chopda,,1.0,0.0,0.0,0.0,0.0
@@ -1288,11 +1645,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2015,Jalgaon,Bhusawal,1.0,6.0,0.0,0.0,0.0,0.0
 2015,Jalgaon,Jalgaon,11.0,22.0,0.0,0.0,0.0,0.0
 2015,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2015,Jalgaon,Dharangoan,,,0.0,0.0,0.0,0.0
+2015,Jalgaon,Dharangaon,,,0.0,0.0,0.0,0.0
 2015,Jalgaon,Amalner,,,0.0,0.0,0.0,0.0
 2015,Jalgaon,Parola,,1.0,0.0,0.0,0.0,0.0
-2015,Jalgaon,Bhadgoan,,,0.0,0.0,0.0,0.0
-2015,Jalgaon,Chalisgoan,2.0,3.0,0.0,0.0,0.0,0.0
+2015,Jalgaon,Bhadgaon,,,0.0,0.0,0.0,0.0
+2015,Jalgaon,Chalisgaon,2.0,3.0,0.0,0.0,0.0,0.0
 2015,Jalgaon,Pachora,,4.0,0.0,0.0,0.0,0.0
 2015,Jalgaon,Jamner,,1.0,0.0,0.0,0.0,0.0
 2016,Jalgaon,Chopda,,1.0,0.0,0.0,0.0,0.0
@@ -1303,11 +1660,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2016,Jalgaon,Bhusawal,1.0,6.0,0.0,0.0,0.0,0.0
 2016,Jalgaon,Jalgaon,13.0,23.0,0.0,0.0,0.0,0.0
 2016,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2016,Jalgaon,Dharangoan,,,0.0,0.0,0.0,0.0
+2016,Jalgaon,Dharangaon,,,0.0,0.0,0.0,0.0
 2016,Jalgaon,Amalner,,,0.0,0.0,0.0,0.0
 2016,Jalgaon,Parola,,1.0,0.0,0.0,0.0,0.0
-2016,Jalgaon,Bhadgoan,,,0.0,0.0,0.0,0.0
-2016,Jalgaon,Chalisgoan,2.0,3.0,0.0,0.0,0.0,0.0
+2016,Jalgaon,Bhadgaon,,,0.0,0.0,0.0,0.0
+2016,Jalgaon,Chalisgaon,2.0,3.0,0.0,0.0,0.0,0.0
 2016,Jalgaon,Pachora,,2.0,0.0,0.0,0.0,0.0
 2016,Jalgaon,Jamner,,1.0,0.0,0.0,0.0,0.0
 2017,Jalgaon,Chopda,0.0,1.0,0.0,0.0,0.0,0.0
@@ -1318,11 +1675,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2017,Jalgaon,Bhusawal,1.0,5.0,0.0,0.0,0.0,0.0
 2017,Jalgaon,Jalgaon,12.0,19.0,0.0,0.0,0.0,0.0
 2017,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2017,Jalgaon,Dharangoan,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Jalgaon,Dharangaon,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Jalgaon,Amalner,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Jalgaon,Parola,0.0,1.0,0.0,0.0,0.0,0.0
-2017,Jalgaon,Bhadgoan,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Jalgaon,Chalisgoan,2.0,3.0,0.0,0.0,0.0,0.0
+2017,Jalgaon,Bhadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Jalgaon,Chalisgaon,2.0,3.0,0.0,0.0,0.0,0.0
 2017,Jalgaon,Pachora,0.0,2.0,0.0,0.0,0.0,0.0
 2017,Jalgaon,Jamner,0.0,1.0,0.0,0.0,0.0,0.0
 2018,Jalgaon,Chopda,0.0,1.0,0.0,0.0,0.0,0.0
@@ -1333,11 +1690,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2018,Jalgaon,Bhusawal,1.0,5.0,0.0,0.0,0.0,0.0
 2018,Jalgaon,Jalgaon,12.0,19.0,0.0,0.0,0.0,0.0
 2018,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2018,Jalgaon,Dharangoan,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Jalgaon,Dharangaon,0.0,0.0,0.0,0.0,0.0,0.0
 2018,Jalgaon,Amalner,0.0,0.0,0.0,0.0,0.0,0.0
 2018,Jalgaon,Parola,0.0,1.0,0.0,0.0,0.0,0.0
-2018,Jalgaon,Bhadgoan,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Jalgaon,Chalisgoan,2.0,3.0,0.0,0.0,0.0,0.0
+2018,Jalgaon,Bhadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Jalgaon,Chalisgaon,2.0,3.0,0.0,0.0,0.0,0.0
 2018,Jalgaon,Pachora,0.0,2.0,0.0,0.0,0.0,0.0
 2018,Jalgaon,Jamner,0.0,1.0,0.0,0.0,0.0,0.0
 2019,Jalgaon,Chopda,0.0,1.0,0.0,0.0,0.0,0.0
@@ -1348,11 +1705,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2019,Jalgaon,Bhusawal,1.0,5.0,0.0,0.0,0.0,0.0
 2019,Jalgaon,Jalgaon,12.0,19.0,0.0,0.0,0.0,0.0
 2019,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2019,Jalgaon,Dharangoan,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Jalgaon,Dharangaon,0.0,0.0,0.0,0.0,0.0,0.0
 2019,Jalgaon,Amalner,0.0,0.0,0.0,0.0,0.0,0.0
 2019,Jalgaon,Parola,0.0,1.0,0.0,0.0,0.0,0.0
-2019,Jalgaon,Bhadgoan,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Jalgaon,Chalisgoan,2.0,3.0,0.0,0.0,0.0,0.0
+2019,Jalgaon,Bhadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Jalgaon,Chalisgaon,2.0,3.0,0.0,0.0,0.0,0.0
 2019,Jalgaon,Pachora,0.0,2.0,0.0,0.0,0.0,0.0
 2019,Jalgaon,Jamner,0.0,1.0,0.0,0.0,0.0,0.0
 2020,Jalgaon,Chopda,0.0,0.0,0.0,0.0,0.0,0.0
@@ -1363,11 +1720,11 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2020,Jalgaon,Bhusawal,1.0,4.0,0.0,0.0,0.0,0.0
 2020,Jalgaon,Jalgaon,12.0,16.0,0.0,0.0,0.0,0.0
 2020,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2020,Jalgaon,Dharangoan,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Jalgaon,Dharangaon,0.0,0.0,0.0,0.0,0.0,0.0
 2020,Jalgaon,Amalner,0.0,0.0,0.0,0.0,0.0,0.0
 2020,Jalgaon,Parola,0.0,1.0,0.0,0.0,0.0,0.0
-2020,Jalgaon,Bhadgoan,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Jalgaon,Chalisgoan,2.0,3.0,0.0,0.0,0.0,0.0
+2020,Jalgaon,Bhadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Jalgaon,Chalisgaon,2.0,3.0,0.0,0.0,0.0,0.0
 2020,Jalgaon,Pachora,0.0,2.0,0.0,0.0,0.0,0.0
 2020,Jalgaon,Jamner,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Jalgaon,Chopda,0.0,0.0,0.0,0.0,0.0,0.0
@@ -1378,13 +1735,58 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Jalgaon,Bhusawal,1.0,4.0,0.0,0.0,0.0,0.0
 2021,Jalgaon,Jalgaon,13.0,16.0,0.0,0.0,0.0,0.0
 2021,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
-2021,Jalgaon,Dharangoan,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Jalgaon,Dharangaon,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Jalgaon,Amalner,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Jalgaon,Parola,0.0,1.0,0.0,0.0,0.0,0.0
-2021,Jalgaon,Bhadgoan,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Jalgaon,Chalisgoan,2.0,3.0,0.0,0.0,0.0,0.0
+2021,Jalgaon,Bhadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Jalgaon,Chalisgaon,2.0,3.0,0.0,0.0,0.0,0.0
 2021,Jalgaon,Pachora,0.0,2.0,0.0,0.0,0.0,0.0
 2021,Jalgaon,Jamner,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Chopda,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Yawal,1.0,3.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Raver,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Muktainagar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Bodvad,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Bhusawal,1.0,3.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Jalgaon,13.0,16.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Dharangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Amalner,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Parola,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Bhadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Chalisgaon,2.0,3.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Pachora,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Jalgaon,Jamner,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Chopda,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Yawal,1.0,1.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Raver,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Muktainagar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Bodvad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Bhusawal,1.0,2.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Jalgaon,13.0,17.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Dharangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Amalner,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Parola,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Bhadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Chalisgaon,1.0,3.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Pachora,0.0,3.0,0.0,0.0,0.0,0.0
+2023,Jalgaon,Jamner,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Chopda,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Yawal,1.0,1.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Raver,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Muktainagar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Bodvad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Bhusawal,1.0,2.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Jalgaon,13.0,17.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Erandol,1.0,1.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Dharangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Amalner,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Parola,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Bhadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Chalisgaon,1.0,3.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Pachora,0.0,3.0,0.0,0.0,0.0,0.0
+2024,Jalgaon,Jamner,0.0,0.0,0.0,0.0,0.0,0.0
 2013,Jalna,Bhokardan,0.0,0.0,0.0,0.0,0.0,0.0
 2013,Jalna,Jaffrabad,0.0,0.0,0.0,0.0,0.0,0.0
 2013,Jalna,Jalna,14.0,22.0,0.0,0.0,0.0,0.0
@@ -1457,6 +1859,30 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Jalna,Ghansawangi,,,,,,
 2021,Jalna,Partur,,,,,,
 2021,Jalna,Mantha,,,,,,
+2022,Jalna,Bhokardan,,,,,,
+2022,Jalna,Jaffrabad,,1.0,,,,
+2022,Jalna,Jalna,12.0,28.0,,,,
+2022,Jalna,Badnapur,1.0,5.0,,,,
+2022,Jalna,Ambad,,2.0,,,,
+2022,Jalna,Ghansawangi,,1.0,,,,
+2022,Jalna,Partur,,,,,,
+2022,Jalna,Mantha,,,,,,
+2023,Jalna,Bhokardan,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalna,Jaffrabad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalna,Jalna,11.0,42.0,0.0,0.0,0.0,0.0
+2023,Jalna,Badnapur,1.0,6.0,0.0,0.0,0.0,0.0
+2023,Jalna,Ambad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalna,Ghansawangi,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalna,Partur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Jalna,Mantha,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalna,Bhokardan,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalna,Jaffrabad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalna,Jalna,11.0,44.0,0.0,0.0,0.0,0.0
+2024,Jalna,Badnapur,1.0,6.0,0.0,0.0,0.0,0.0
+2024,Jalna,Ambad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalna,Ghansawangi,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalna,Partur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Jalna,Mantha,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Kolhapur,Shahuwadi,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Kolhapur,Panhala,0.0,1.0,0.0,2.0,0.0,1.0
 2017,Kolhapur,Hatkanangale,6.0,8.0,0.0,1.0,1.0,1.0
@@ -1517,6 +1943,42 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Kolhapur,Ajra,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Kolhapur,Gadhinglaj,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Kolhapur,Chandgad,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Shahuwadi,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Panhala,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Hatkanangale,1.0,0.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Shirol,0.0,4.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Karveer,1.0,1.0,0.0,1.0,0.0,0.0
+2022,Kolhapur,Gaganbawda,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Radhanagari,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Kagal,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Bhudargad,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Ajra,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Gadhinglaj,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Kolhapur,Chandgad,0.0,0.0,0.0,1.0,0.0,0.0
+2023,Kolhapur,Shahuwadi,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Kolhapur,Panhala,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Kolhapur,Hatkanangale,2.0,3.0,0.0,1.0,0.0,0.0
+2023,Kolhapur,Shirol,1.0,4.0,0.0,1.0,0.0,0.0
+2023,Kolhapur,Karveer,2.0,2.0,0.0,0.0,0.0,0.0
+2023,Kolhapur,Gaganbawda,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Kolhapur,Radhanagari,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Kolhapur,Kagal,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Kolhapur,Bhudargad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Kolhapur,Ajra,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Kolhapur,Gadhinglaj,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Kolhapur,Chandgad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Kolhapur,Shahuwadi,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Kolhapur,Panhala,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Kolhapur,Hatkanangale,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Kolhapur,Shirol,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Kolhapur,Karveer,1.0,0.0,0.0,1.0,0.0,0.0
+2024,Kolhapur,Gaganbawda,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Kolhapur,Radhanagari,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Kolhapur,Kagal,0.0,0.0,0.0,1.0,1.0,0.0
+2024,Kolhapur,Bhudargad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Kolhapur,Ajra,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Kolhapur,Gadhinglaj,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Kolhapur,Chandgad,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Latur,Latur,25.0,42.0,,,,
 2012,Latur,Renapur,,2.0,,,,
 2012,Latur,Ahamadpur,,2.0,,,,
@@ -1617,6 +2079,36 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Latur,Nilanga,,2.0,,,,
 2021,Latur,Devani,,,,,,
 2021,Latur,Udgir,1.0,3.0,,,,
+2022,Latur,Latur,27.0,43.0,,,,
+2022,Latur,Renapur,,1.0,,,,
+2022,Latur,Ahamadpur,,,,,,
+2022,Latur,Jalkot,,,,,,
+2022,Latur,Chakur,,,,,,
+2022,Latur,Shirur Anantpal,,1.0,,,,
+2022,Latur,Aosa,1.0,1.0,,,,
+2022,Latur,Nilanga,,5.0,,,,
+2022,Latur,Devani,,,,,,
+2022,Latur,Udgir,1.0,2.0,,,,
+2023,Latur,Latur,27.0,43.0,,,,
+2023,Latur,Renapur,,1.0,,,,
+2023,Latur,Ahamadpur,,,,,,
+2023,Latur,Jalkot,,,,,,
+2023,Latur,Chakur,,,,,,
+2023,Latur,Shirur Anantpal,,1.0,,,,
+2023,Latur,Aosa,1.0,1.0,,,,
+2023,Latur,Nilanga,,5.0,,,,
+2023,Latur,Devani,,,,,,
+2023,Latur,Udgir,1.0,2.0,,,,
+2024,Latur,Latur,25.0,38.0,,,,
+2024,Latur,Renapur,,2.0,,,,
+2024,Latur,Ahamadpur,,1.0,,,,
+2024,Latur,Jalkot,,,,,,
+2024,Latur,Chakur,,,,,,
+2024,Latur,Shirur Anantpal,,1.0,,,,
+2024,Latur,Aosa,1.0,1.0,,,,
+2024,Latur,Nilanga,,4.0,,,,
+2024,Latur,Devani,,,,,,
+2024,Latur,Udgir,1.0,2.0,,,,
 2013,Mumbai,Mumbai City,184.0,202.0,36.0,301.0,56.0,93.0
 2014,Mumbai,Mumbai City,117.0,129.0,19.0,221.0,41.0,60.0
 2015,Mumbai,Mumbai City,122.0,133.0,21.0,229.0,43.0,62.0
@@ -1626,24 +2118,36 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2019,Mumbai,Mumbai City,91.0,99.0,30.0,125.0,40.0,45.0
 2020,Mumbai,Mumbai City,99.0,105.0,26.0,120.0,36.0,40.0
 2021,Mumbai,Mumbai City,93.0,106.0,26.0,115.0,40.0,35.0
-2016,Mumbai Suburban,Adheri,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Mumbai,Mumbai City,95.0,107.0,23.0,102.0,35.0,30.0
+2023,Mumbai,Mumbai City,96.0,106.0,25.0,95.0,37.0,33.0
+2024,Mumbai,Mumbai City,89.0,79.0,20.0,40.0,18.0,9.0
+2016,Mumbai Suburban,Andheri,0.0,0.0,0.0,0.0,0.0,0.0
 2016,Mumbai Suburban,Borivali,0.0,0.0,0.0,0.0,0.0,0.0
 2016,Mumbai Suburban,Kurla,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Mumbai Suburban,Adheri,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Mumbai Suburban,Andheri,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Mumbai Suburban,Borivali,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Mumbai Suburban,Kurla,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Mumbai Suburban,Adheri,,,,,,
+2018,Mumbai Suburban,Andheri,,,,,,
 2018,Mumbai Suburban,Borivali,,,,,,
 2018,Mumbai Suburban,Kurla,,,,,,
-2019,Mumbai Suburban,Adheri,,,,,,
+2019,Mumbai Suburban,Andheri,,,,,,
 2019,Mumbai Suburban,Borivali,,,,,,
 2019,Mumbai Suburban,Kurla,,,,,,
-2020,Mumbai Suburban,Adheri,,,,,,
+2020,Mumbai Suburban,Andheri,,,,,,
 2020,Mumbai Suburban,Borivali,,,,,,
 2020,Mumbai Suburban,Kurla,,,,,,
-2021,Mumbai Suburban,Adheri,,,,,,
+2021,Mumbai Suburban,Andheri,,,,,,
 2021,Mumbai Suburban,Borivali,,,,,,
 2021,Mumbai Suburban,Kurla,,,,,,
+2022,Mumbai Suburban,Andheri,,,,,,
+2022,Mumbai Suburban,Borivali,,,,,,
+2022,Mumbai Suburban,Kurla,,,,,,
+2023,Mumbai Suburban,Andheri,,,,,,
+2023,Mumbai Suburban,Borivali,,,,,,
+2023,Mumbai Suburban,Kurla,,,,,,
+2024,Mumbai Suburban,Andheri,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Mumbai Suburban,Borivali,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Mumbai Suburban,Kurla,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Nagpur,Narkhed,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Nagpur,Katol,0.0,1.0,0.0,0.0,0.0,0.0
 2012,Nagpur,Kalameshwar,0.0,0.0,0.0,0.0,0.0,0.0
@@ -1784,134 +2288,224 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Nagpur,Umred,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Nagpur,Kuhi,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Nagpur,Bhiwapur,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Narkhed,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Katol,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Kalameshwar,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Sawner,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Parashivani,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Ramtech,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Mauda,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Kamathi,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Nagpur (Gra),0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Nagpur (Sh),47.0,70.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Hingana,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Umred,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Kuhi,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nagpur,Bhiwapur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Narkhed,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Katol,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Kalameshwar,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Sawner,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Parashivani,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Ramtech,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Mauda,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Kamathi,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Nagpur (Gra),0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Nagpur (Sh),47.0,67.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Hingana,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Umred,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Kuhi,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nagpur,Bhiwapur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Narkhed,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Katol,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Kalameshwar,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Sawner,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Parashivani,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Ramtech,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Mauda,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Kamathi,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Nagpur (Gra),0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Nagpur (Sh),47.0,67.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Hingana,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Umred,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Kuhi,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nagpur,Bhiwapur,0.0,0.0,0.0,0.0,0.0,0.0
 2014,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
 2014,Nanded,Kinvat,0.0,0.0,0.0,0.0,0.0,0.0
 2014,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Nanded,hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Nanded,andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Nanded,Hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
 2014,Nanded,Nanded,0.0,0.0,0.0,0.0,0.0,0.0
 2014,Nanded,Mudkhed,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Nanded,bhokar,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Nanded,umari,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Nanded,dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Nanded,biloli,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Nanded,naygaon,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Nanded,loha,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Nanded,kandhar,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Nanded,Biloli,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Nanded,Kandhar,0.0,0.0,0.0,0.0,0.0,0.0
 2014,Nanded,Mukhed,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Nanded,deglur,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Nanded,Deglur,0.0,0.0,0.0,0.0,0.0,0.0
 2015,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
 2015,Nanded,Kinvat,0.0,1.0,0.0,0.0,0.0,0.0
 2015,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Nanded,hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Nanded,andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Nanded,Hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
 2015,Nanded,Nanded,39.0,34.0,0.0,0.0,0.0,0.0
 2015,Nanded,Mudkhed,0.0,1.0,0.0,0.0,0.0,0.0
-2015,Nanded,bhokar,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Nanded,umari,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Nanded,dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Nanded,biloli,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Nanded,naygaon,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Nanded,loha,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Nanded,kandhar,0.0,1.0,0.0,0.0,0.0,0.0
+2015,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Nanded,Biloli,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Nanded,Kandhar,0.0,1.0,0.0,0.0,0.0,0.0
 2015,Nanded,Mukhed,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Nanded,deglur,0.0,1.0,0.0,0.0,0.0,0.0
+2015,Nanded,Deglur,0.0,1.0,0.0,0.0,0.0,0.0
 2016,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
 2016,Nanded,Kinvat,0.0,1.0,0.0,0.0,0.0,0.0
 2016,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Nanded,hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Nanded,andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Nanded,Hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
 2016,Nanded,Nanded,39.0,34.0,0.0,0.0,0.0,0.0
 2016,Nanded,Mudkhed,0.0,1.0,0.0,0.0,0.0,0.0
-2016,Nanded,bhokar,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Nanded,umari,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Nanded,dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Nanded,biloli,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Nanded,naygaon,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Nanded,loha,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Nanded,kandhar,0.0,1.0,0.0,0.0,0.0,0.0
+2016,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Nanded,Biloli,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Nanded,Kandhar,0.0,1.0,0.0,0.0,0.0,0.0
 2016,Nanded,Mukhed,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Nanded,deglur,0.0,1.0,0.0,0.0,0.0,0.0
+2016,Nanded,Deglur,0.0,1.0,0.0,0.0,0.0,0.0
 2017,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Nanded,Kinvat,0.0,1.0,0.0,0.0,0.0,0.0
 2017,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Nanded,hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Nanded,andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Nanded,Hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Nanded,Nanded,33.0,27.0,0.0,0.0,0.0,0.0
 2017,Nanded,Mudkhed,0.0,1.0,0.0,0.0,0.0,0.0
-2017,Nanded,bhokar,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Nanded,umari,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Nanded,dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Nanded,biloli,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Nanded,naygaon,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Nanded,loha,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Nanded,kandhar,0.0,1.0,0.0,0.0,0.0,0.0
+2017,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Nanded,Biloli,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Nanded,Kandhar,0.0,1.0,0.0,0.0,0.0,0.0
 2017,Nanded,Mukhed,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Nanded,deglur,0.0,1.0,0.0,0.0,0.0,0.0
+2017,Nanded,Deglur,0.0,1.0,0.0,0.0,0.0,0.0
 2018,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
 2018,Nanded,Kinvat,0.0,1.0,0.0,0.0,0.0,0.0
 2018,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Nanded,hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Nanded,andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Nanded,Hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
 2018,Nanded,Nanded,34.0,27.0,0.0,0.0,0.0,0.0
 2018,Nanded,Mudkhed,0.0,1.0,0.0,0.0,0.0,0.0
-2018,Nanded,bhokar,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Nanded,umari,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Nanded,dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Nanded,biloli,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Nanded,naygaon,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Nanded,loha,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Nanded,kandhar,0.0,1.0,0.0,0.0,0.0,0.0
+2018,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Nanded,Biloli,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Nanded,Kandhar,0.0,1.0,0.0,0.0,0.0,0.0
 2018,Nanded,Mukhed,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Nanded,deglur,0.0,1.0,0.0,0.0,0.0,0.0
+2018,Nanded,Deglur,0.0,1.0,0.0,0.0,0.0,0.0
 2019,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
 2019,Nanded,Kinvat,0.0,1.0,0.0,0.0,0.0,0.0
 2019,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Nanded,hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Nanded,andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Nanded,Hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
 2019,Nanded,Nanded,34.0,27.0,0.0,0.0,0.0,0.0
 2019,Nanded,Mudkhed,0.0,1.0,0.0,0.0,0.0,0.0
-2019,Nanded,bhokar,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Nanded,umari,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Nanded,dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Nanded,biloli,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Nanded,naygaon,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Nanded,loha,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Nanded,kandhar,0.0,1.0,0.0,0.0,0.0,0.0
+2019,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Nanded,Biloli,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Nanded,Kandhar,0.0,1.0,0.0,0.0,0.0,0.0
 2019,Nanded,Mukhed,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Nanded,deglur,0.0,1.0,0.0,0.0,0.0,0.0
+2019,Nanded,Deglur,0.0,1.0,0.0,0.0,0.0,0.0
 2020,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
 2020,Nanded,Kinvat,0.0,1.0,0.0,0.0,0.0,0.0
 2020,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Nanded,hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Nanded,andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Nanded,Hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
 2020,Nanded,Nanded,34.0,27.0,0.0,0.0,0.0,0.0
 2020,Nanded,Mudkhed,0.0,1.0,0.0,0.0,0.0,0.0
-2020,Nanded,bhokar,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Nanded,umari,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Nanded,dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Nanded,biloli,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Nanded,naygaon,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Nanded,loha,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Nanded,kandhar,0.0,1.0,0.0,0.0,0.0,0.0
+2020,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Nanded,Biloli,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Nanded,Kandhar,0.0,1.0,0.0,0.0,0.0,0.0
 2020,Nanded,Mukhed,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Nanded,deglur,0.0,1.0,0.0,0.0,0.0,0.0
+2020,Nanded,Deglur,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Nanded,Kinvat,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Nanded,hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Nanded,andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Nanded,Hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Nanded,Nanded,35.0,27.0,0.0,0.0,0.0,0.0
 2021,Nanded,Mudkhed,0.0,1.0,0.0,0.0,0.0,0.0
-2021,Nanded,bhokar,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Nanded,umari,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Nanded,dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Nanded,biloli,0.0,1.0,0.0,0.0,0.0,0.0
-2021,Nanded,naygaon,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Nanded,loha,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Nanded,kandhar,0.0,1.0,0.0,0.0,0.0,0.0
+2021,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Nanded,Biloli,0.0,1.0,0.0,0.0,0.0,0.0
+2021,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Nanded,Kandhar,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Nanded,Mukhed,0.0,1.0,0.0,0.0,0.0,0.0
-2021,Nanded,deglur,0.0,1.0,0.0,0.0,0.0,0.0
+2021,Nanded,Deglur,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nanded,Kinvat,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nanded,Hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nanded,Nanded,35.0,27.0,0.0,0.0,0.0,0.0
+2022,Nanded,Mudkhed,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nanded,Biloli,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nanded,Kandhar,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nanded,Mukhed,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nanded,Deglur,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nanded,Kinvat,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nanded,Hadgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nanded,Nanded,32.0,27.0,0.0,0.0,0.0,0.0
+2023,Nanded,Mudkhed,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nanded,Biloli,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nanded,Kandhar,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nanded,Mukhed,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nanded,Deglur,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nanded,Mahur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nanded,Kinvat,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nanded,Himalay nagar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nanded,Hadgaon,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nanded,Andhrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nanded,Nanded,33.0,28.0,0.0,0.0,0.0,0.0
+2024,Nanded,Mudkhed,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nanded,Bhokar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nanded,Umari,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nanded,Dharmabad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nanded,Biloli,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nanded,Naygaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nanded,Loha,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nanded,Kandhar,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nanded,Mukhed,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nanded,Deglur,0.0,1.0,0.0,0.0,0.0,0.0
 2006,Nandurbar,Akkalkuva,0.0,0.0,0.0,0.0,0.0,0.0
 2006,Nandurbar,Akrani,0.0,0.0,0.0,0.0,0.0,0.0
 2006,Nandurbar,Taloda,0.0,2.0,0.0,0.0,0.0,0.0
@@ -2002,6 +2596,24 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Nandurbar,Shahada,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Nandurbar,Nandurbar,7.0,4.0,0.0,0.0,0.0,0.0
 2021,Nandurbar,Navapur,0.0,4.0,0.0,0.0,0.0,0.0
+2022,Nandurbar,Akkalkuva,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nandurbar,Akrani,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nandurbar,Taloda,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nandurbar,Shahada,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nandurbar,Nandurbar,7.0,4.0,0.0,0.0,0.0,0.0
+2022,Nandurbar,Navapur,0.0,4.0,0.0,0.0,0.0,0.0
+2023,Nandurbar,Akkalkuva,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nandurbar,Akrani,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nandurbar,Taloda,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nandurbar,Shahada,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nandurbar,Nandurbar,5.0,4.0,0.0,0.0,0.0,0.0
+2023,Nandurbar,Navapur,0.0,5.0,0.0,0.0,0.0,0.0
+2024,Nandurbar,Akkalkuva,,,,,,
+2024,Nandurbar,Akrani,,,,,,
+2024,Nandurbar,Taloda,,,,,,
+2024,Nandurbar,Shahada,,,,,,
+2024,Nandurbar,Nandurbar,5.0,4.0,,,,
+2024,Nandurbar,Navapur,,5.0,,,,
 2012,Nashik,Surgana,,1.0,,,,
 2012,Nashik,Kalwan,1.0,7.0,,,,
 2012,Nashik,Devala,,2.0,,,2.0,
@@ -2152,6 +2764,51 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Nashik,Sinner,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Nashik,Nifad,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Nashik,Yewala,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nashik,Surgana,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nashik,Kalwan,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nashik,Devala,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nashik,Baglan,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nashik,Malegaon,7.0,9.0,0.0,0.0,0.0,0.0
+2022,Nashik,Nandgaon,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nashik,Chandwad,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nashik,Dindori,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Nashik,Peth,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nashik,Trimbak,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nashik,Nashik,18.0,8.0,0.0,0.0,0.0,0.0
+2022,Nashik,Igatpuri,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nashik,Sinner,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nashik,Nifad,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Nashik,Yewala,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Surgana,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Kalwan,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Devala,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Baglan,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nashik,Malegaon,7.0,9.0,0.0,0.0,0.0,0.0
+2023,Nashik,Nandgaon,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Nashik,Chandwad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Dindori,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Peth,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Trimbak,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Nashik,17.0,8.0,0.0,0.0,0.0,0.0
+2023,Nashik,Igatpuri,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Sinner,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Nifad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Nashik,Yewala,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Surgana,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Kalwan,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Devala,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Baglan,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Nashik,Malegaon,7.0,9.0,0.0,0.0,0.0,0.0
+2024,Nashik,Nandgaon,1.0,2.0,0.0,0.0,0.0,0.0
+2024,Nashik,Chandwad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Dindori,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Peth,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Trimbak,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Nashik,18.0,8.0,0.0,0.0,0.0,0.0
+2024,Nashik,Igatpuri,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Sinner,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Nifad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Nashik,Yewala,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Dharashiv,Paranda,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Dharashiv,Bhum,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Dharashiv,Washi,0.0,0.0,0.0,0.0,0.0,0.0
@@ -2232,6 +2889,30 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Dharashiv,Tuljapur,1.0,1.0,,,,
 2021,Dharashiv,Lohara,0.0,0.0,,,,
 2021,Dharashiv,Umaraga,0.0,1.0,,,,
+2022,Dharashiv,Paranda,0.0,1.0,,,,
+2022,Dharashiv,Bhum,0.0,0.0,,,,
+2022,Dharashiv,Washi,0.0,0.0,,,,
+2022,Dharashiv,Kalamb,0.0,3.0,,,,
+2022,Dharashiv,Dharashiv,10.0,15.0,,,5.0,
+2022,Dharashiv,Tuljapur,1.0,1.0,,,,
+2022,Dharashiv,Lohara,0.0,0.0,,,,
+2022,Dharashiv,Umaraga,0.0,1.0,,,,
+2023,Dharashiv,Paranda,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Dharashiv,Bhum,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Dharashiv,Washi,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Dharashiv,Kalamb,0.0,3.0,0.0,0.0,0.0,0.0
+2023,Dharashiv,Dharashiv,9.0,11.0,0.0,0.0,0.0,0.0
+2023,Dharashiv,Tuljapur,1.0,1.0,0.0,0.0,0.0,0.0
+2023,Dharashiv,Lohara,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Dharashiv,Umaraga,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Dharashiv,Paranda,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Dharashiv,Bhum,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Dharashiv,Washi,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Dharashiv,Kalamb,0.0,5.0,0.0,0.0,0.0,0.0
+2024,Dharashiv,Dharashiv,7.0,14.0,0.0,0.0,0.0,0.0
+2024,Dharashiv,Tuljapur,1.0,1.0,0.0,0.0,0.0,0.0
+2024,Dharashiv,Lohara,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Dharashiv,Umaraga,0.0,2.0,0.0,0.0,0.0,0.0
 2014,Palghar,Talasari,2.0,27.0,2.0,2.0,0.0,0.0
 2014,Palghar,Dahanu,5.0,12.0,0.0,5.0,0.0,1.0
 2014,Palghar,Vikramgad,2.0,10.0,0.0,0.0,0.0,0.0
@@ -2296,6 +2977,30 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Palghar,Wada,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Palghar,Palghar,1.0,3.0,0.0,0.0,0.0,0.0
 2021,Palghar,Vasai,6.0,5.0,0.0,0.0,0.0,0.0
+2022,Palghar,Talasari,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Palghar,Dahanu,2.0,0.0,0.0,0.0,0.0,0.0
+2022,Palghar,Vikramgad,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Palghar,Javhar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Palghar,Mokhada,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Palghar,Wada,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Palghar,Palghar,1.0,3.0,0.0,0.0,0.0,0.0
+2022,Palghar,Vasai,6.0,5.0,0.0,0.0,0.0,0.0
+2023,Palghar,Talasari,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Palghar,Dahanu,2.0,0.0,0.0,0.0,0.0,0.0
+2023,Palghar,Vikramgad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Palghar,Javhar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Palghar,Mokhada,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Palghar,Wada,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Palghar,Palghar,2.0,4.0,0.0,0.0,0.0,0.0
+2023,Palghar,Vasai,6.0,7.0,0.0,0.0,0.0,0.0
+2024,Palghar,Talasari,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Palghar,Dahanu,2.0,0.0,0.0,0.0,0.0,0.0
+2024,Palghar,Vikramgad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Palghar,Javhar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Palghar,Mokhada,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Palghar,Wada,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Palghar,Palghar,3.0,4.0,0.0,0.0,0.0,0.0
+2024,Palghar,Vasai,6.0,7.0,0.0,0.0,0.0,0.0
 2013,Parbhani,Selu,0.0,1.0,0.0,0.0,0.0,0.0
 2013,Parbhani,Jintur,0.0,2.0,0.0,0.0,0.0,0.0
 2013,Parbhani,Parbhani,15.0,20.0,0.0,0.0,0.0,0.0
@@ -2377,6 +3082,33 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Parbhani,Gangakhed,1.0,4.0,0.0,0.0,0.0,0.0
 2021,Parbhani,Palam,0.0,2.0,0.0,0.0,0.0,0.0
 2021,Parbhani,Purna,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Parbhani,Selu,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Parbhani,Jintur,0.0,4.0,0.0,0.0,0.0,0.0
+2022,Parbhani,Parbhani,13.0,24.0,0.0,0.0,0.0,0.0
+2022,Parbhani,Manvat,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Parbhani,Pathari,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Parbhani,Sonpeth,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Parbhani,Gangakhed,1.0,4.0,0.0,0.0,0.0,0.0
+2022,Parbhani,Palam,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Parbhani,Purna,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Parbhani,Selu,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Parbhani,Jintur,0.0,4.0,0.0,0.0,0.0,0.0
+2023,Parbhani,Parbhani,13.0,25.0,0.0,0.0,0.0,0.0
+2023,Parbhani,Manvat,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Parbhani,Pathari,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Parbhani,Sonpeth,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Parbhani,Gangakhed,1.0,4.0,0.0,0.0,0.0,0.0
+2023,Parbhani,Palam,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Parbhani,Purna,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Parbhani,Selu,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Parbhani,Jintur,0.0,4.0,0.0,0.0,0.0,0.0
+2024,Parbhani,Parbhani,13.0,25.0,0.0,0.0,0.0,0.0
+2024,Parbhani,Manvat,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Parbhani,Pathari,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Parbhani,Sonpeth,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Parbhani,Gangakhed,1.0,4.0,0.0,0.0,0.0,0.0
+2024,Parbhani,Palam,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Parbhani,Purna,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Pune,Junnar,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Pune,Ambegaon,0.0,0.0,0.0,0.0,0.0,0.0
 2017,Pune,Shirur,0.0,0.0,0.0,0.0,0.0,0.0
@@ -2447,156 +3179,228 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Pune,Bhor,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Pune,Baramati,0.0,8.0,0.0,0.0,0.0,0.0
 2021,Pune,Indapur,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Pune,Junnar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Pune,Ambegaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Pune,Shirur,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Pune,Khed,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Pune,Maval,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Pune,Mulshi,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Pune,Haveli,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Pune,Pune,28.0,42.0,0.0,0.0,0.0,0.0
+2022,Pune,Daund,,2.0,0.0,0.0,0.0,0.0
+2022,Pune,Purandar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Pune,Velhe,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Pune,Bhor,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Pune,Baramati,0.0,8.0,0.0,0.0,0.0,0.0
+2022,Pune,Indapur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Pune,Junnar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Pune,Ambegaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Pune,Shirur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Pune,Khed,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Pune,Maval,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Pune,Mulshi,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Pune,Haveli,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Pune,Pune,26.0,35.0,0.0,0.0,0.0,0.0
+2023,Pune,Daund,,2.0,0.0,0.0,0.0,0.0
+2023,Pune,Purandar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Pune,Velhe,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Pune,Bhor,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Pune,Baramati,0.0,8.0,0.0,0.0,0.0,0.0
+2023,Pune,Indapur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Pune,Junnar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Pune,Ambegaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Pune,Shirur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Pune,Khed,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Pune,Maval,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Pune,Mulshi,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Pune,Haveli,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Pune,Pune,27.0,35.0,0.0,0.0,0.0,0.0
+2024,Pune,Daund,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Pune,Purandar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Pune,Velhe,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Pune,Bhor,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Pune,Baramati,0.0,9.0,0.0,0.0,0.0,0.0
+2024,Pune,Indapur,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Raigad,Uran,1.0,5.0,1.0,1.0,0.0,0.0
 2012,Raigad,Panwel,7.0,13.0,0.0,0.0,0.0,0.0
-2012,Raigad,karjat,0.0,0.0,0.0,0.0,0.0,0.0
-2012,Raigad,khalapur,0.0,3.0,0.0,0.0,0.0,0.0
-2012,Raigad,pen,2.0,5.0,0.0,0.0,0.0,0.0
-2012,Raigad,alibag,5.0,5.0,2.0,1.0,0.0,0.0
-2012,Raigad,murud,0.0,1.0,0.0,0.0,0.0,0.0
-2012,Raigad,roha,0.0,1.0,0.0,1.0,0.0,0.0
-2012,Raigad,sudhagad,0.0,2.0,0.0,0.0,0.0,0.0
-2012,Raigad,mangaon,0.0,1.0,0.0,0.0,0.0,0.0
-2012,Raigad,tala,0.0,0.0,0.0,0.0,0.0,0.0
-2012,Raigad,shreevardhan,0.0,1.0,0.0,0.0,0.0,0.0
-2012,Raigad,mhasala,0.0,4.0,0.0,0.0,0.0,0.0
-2012,Raigad,mahad,1.0,1.0,0.0,0.0,0.0,0.0
-2012,Raigad,poladpur,0.0,0.0,0.0,0.0,0.0,0.0
+2012,Raigad,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2012,Raigad,Khalapur,0.0,3.0,0.0,0.0,0.0,0.0
+2012,Raigad,Pen,2.0,5.0,0.0,0.0,0.0,0.0
+2012,Raigad,Alibag,5.0,5.0,2.0,1.0,0.0,0.0
+2012,Raigad,Murud,0.0,1.0,0.0,0.0,0.0,0.0
+2012,Raigad,Roha,0.0,1.0,0.0,1.0,0.0,0.0
+2012,Raigad,Sudhagad,0.0,2.0,0.0,0.0,0.0,0.0
+2012,Raigad,Mangaon,0.0,1.0,0.0,0.0,0.0,0.0
+2012,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2012,Raigad,Shreevardhan,0.0,1.0,0.0,0.0,0.0,0.0
+2012,Raigad,Mhasala,0.0,4.0,0.0,0.0,0.0,0.0
+2012,Raigad,Mahad,1.0,1.0,0.0,0.0,0.0,0.0
+2012,Raigad,Poladpur,0.0,0.0,0.0,0.0,0.0,0.0
 2013,Raigad,Uran,1.0,5.0,1.0,1.0,0.0,0.0
 2013,Raigad,Panwel,8.0,14.0,0.0,0.0,0.0,0.0
-2013,Raigad,karjat,0.0,0.0,0.0,0.0,0.0,0.0
-2013,Raigad,khalapur,0.0,3.0,0.0,0.0,0.0,0.0
-2013,Raigad,pen,2.0,5.0,0.0,0.0,0.0,0.0
-2013,Raigad,alibag,6.0,6.0,2.0,2.0,0.0,0.0
-2013,Raigad,murud,0.0,1.0,0.0,0.0,0.0,0.0
-2013,Raigad,roha,0.0,1.0,0.0,1.0,0.0,0.0
-2013,Raigad,sudhagad,0.0,2.0,0.0,0.0,0.0,0.0
-2013,Raigad,mangaon,0.0,3.0,0.0,0.0,0.0,0.0
-2013,Raigad,tala,0.0,0.0,0.0,0.0,0.0,0.0
-2013,Raigad,shreevardhan,0.0,1.0,0.0,0.0,0.0,0.0
-2013,Raigad,mhasala,0.0,4.0,0.0,0.0,0.0,0.0
-2013,Raigad,mahad,1.0,2.0,0.0,0.0,0.0,0.0
-2013,Raigad,poladpur,0.0,0.0,0.0,0.0,0.0,0.0
+2013,Raigad,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2013,Raigad,Khalapur,0.0,3.0,0.0,0.0,0.0,0.0
+2013,Raigad,Pen,2.0,5.0,0.0,0.0,0.0,0.0
+2013,Raigad,Alibag,6.0,6.0,2.0,2.0,0.0,0.0
+2013,Raigad,Murud,0.0,1.0,0.0,0.0,0.0,0.0
+2013,Raigad,Roha,0.0,1.0,0.0,1.0,0.0,0.0
+2013,Raigad,Sudhagad,0.0,2.0,0.0,0.0,0.0,0.0
+2013,Raigad,Mangaon,0.0,3.0,0.0,0.0,0.0,0.0
+2013,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2013,Raigad,Shreevardhan,0.0,1.0,0.0,0.0,0.0,0.0
+2013,Raigad,Mhasala,0.0,4.0,0.0,0.0,0.0,0.0
+2013,Raigad,Mahad,1.0,2.0,0.0,0.0,0.0,0.0
+2013,Raigad,Poladpur,0.0,0.0,0.0,0.0,0.0,0.0
 2014,Raigad,Uran,3.0,6.0,1.0,1.0,0.0,0.0
 2014,Raigad,Panwel,10.0,16.0,1.0,1.0,0.0,0.0
-2014,Raigad,karjat,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Raigad,khalapur,1.0,4.0,0.0,1.0,0.0,0.0
-2014,Raigad,pen,3.0,4.0,1.0,0.0,0.0,0.0
-2014,Raigad,alibag,8.0,7.0,3.0,2.0,0.0,0.0
-2014,Raigad,murud,0.0,1.0,0.0,0.0,0.0,0.0
-2014,Raigad,roha,0.0,2.0,0.0,2.0,0.0,0.0
-2014,Raigad,sudhagad,0.0,3.0,0.0,0.0,0.0,0.0
-2014,Raigad,mangaon,0.0,3.0,1.0,0.0,0.0,0.0
-2014,Raigad,tala,0.0,0.0,1.0,0.0,0.0,0.0
-2014,Raigad,shreevardhan,1.0,1.0,0.0,0.0,0.0,0.0
-2014,Raigad,mhasala,0.0,2.0,0.0,0.0,0.0,0.0
-2014,Raigad,mahad,1.0,3.0,0.0,0.0,0.0,0.0
-2014,Raigad,poladpur,0.0,1.0,0.0,0.0,0.0,0.0
+2014,Raigad,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2014,Raigad,Khalapur,1.0,4.0,0.0,1.0,0.0,0.0
+2014,Raigad,Pen,3.0,4.0,1.0,0.0,0.0,0.0
+2014,Raigad,Alibag,8.0,7.0,3.0,2.0,0.0,0.0
+2014,Raigad,Murud,0.0,1.0,0.0,0.0,0.0,0.0
+2014,Raigad,Roha,0.0,2.0,0.0,2.0,0.0,0.0
+2014,Raigad,Sudhagad,0.0,3.0,0.0,0.0,0.0,0.0
+2014,Raigad,Mangaon,0.0,3.0,1.0,0.0,0.0,0.0
+2014,Raigad,Tala,0.0,0.0,1.0,0.0,0.0,0.0
+2014,Raigad,Shreevardhan,1.0,1.0,0.0,0.0,0.0,0.0
+2014,Raigad,Mhasala,0.0,2.0,0.0,0.0,0.0,0.0
+2014,Raigad,Mahad,1.0,3.0,0.0,0.0,0.0,0.0
+2014,Raigad,Poladpur,0.0,1.0,0.0,0.0,0.0,0.0
 2015,Raigad,Uran,1.0,4.0,0.0,0.0,0.0,0.0
 2015,Raigad,Panwel,6.0,5.0,0.0,0.0,0.0,0.0
-2015,Raigad,karjat,0.0,3.0,0.0,0.0,0.0,0.0
-2015,Raigad,khalapur,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Raigad,pen,2.0,2.0,0.0,0.0,0.0,0.0
-2015,Raigad,alibag,4.0,4.0,0.0,0.0,0.0,0.0
-2015,Raigad,murud,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Raigad,roha,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Raigad,sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Raigad,mangaon,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Raigad,tala,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Raigad,shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Raigad,mhasala,0.0,0.0,0.0,0.0,0.0,0.0
-2015,Raigad,mahad,1.0,4.0,0.0,0.0,0.0,0.0
-2015,Raigad,poladpur,0.0,1.0,0.0,0.0,0.0,0.0
+2015,Raigad,Karjat,0.0,3.0,0.0,0.0,0.0,0.0
+2015,Raigad,Khalapur,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Raigad,Pen,2.0,2.0,0.0,0.0,0.0,0.0
+2015,Raigad,Alibag,4.0,4.0,0.0,0.0,0.0,0.0
+2015,Raigad,Murud,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Raigad,Roha,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Raigad,Sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Raigad,Mangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Raigad,Shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Raigad,Mhasala,0.0,0.0,0.0,0.0,0.0,0.0
+2015,Raigad,Mahad,1.0,4.0,0.0,0.0,0.0,0.0
+2015,Raigad,Poladpur,0.0,1.0,0.0,0.0,0.0,0.0
 2016,Raigad,Uran,1.0,4.0,0.0,0.0,0.0,0.0
 2016,Raigad,Panwel,6.0,5.0,0.0,0.0,0.0,0.0
-2016,Raigad,karjat,0.0,3.0,0.0,0.0,0.0,0.0
-2016,Raigad,khalapur,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Raigad,pen,2.0,2.0,0.0,0.0,0.0,0.0
-2016,Raigad,alibag,4.0,4.0,0.0,0.0,0.0,0.0
-2016,Raigad,murud,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Raigad,roha,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Raigad,sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Raigad,mangaon,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Raigad,tala,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Raigad,shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Raigad,mhasala,0.0,0.0,0.0,0.0,0.0,0.0
-2016,Raigad,mahad,1.0,4.0,0.0,0.0,0.0,0.0
-2016,Raigad,poladpur,0.0,1.0,0.0,0.0,0.0,0.0
+2016,Raigad,Karjat,0.0,3.0,0.0,0.0,0.0,0.0
+2016,Raigad,Khalapur,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Raigad,Pen,2.0,2.0,0.0,0.0,0.0,0.0
+2016,Raigad,Alibag,4.0,4.0,0.0,0.0,0.0,0.0
+2016,Raigad,Murud,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Raigad,Roha,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Raigad,Sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Raigad,Mangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Raigad,Shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Raigad,Mhasala,0.0,0.0,0.0,0.0,0.0,0.0
+2016,Raigad,Mahad,1.0,4.0,0.0,0.0,0.0,0.0
+2016,Raigad,Poladpur,0.0,1.0,0.0,0.0,0.0,0.0
 2017,Raigad,Uran,1.0,2.0,0.0,0.0,0.0,0.0
 2017,Raigad,Panwel,7.0,3.0,0.0,0.0,0.0,0.0
-2017,Raigad,karjat,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Raigad,khalapur,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Raigad,pen,2.0,2.0,0.0,0.0,0.0,0.0
-2017,Raigad,alibag,4.0,3.0,0.0,0.0,0.0,0.0
-2017,Raigad,murud,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Raigad,roha,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Raigad,sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Raigad,mangaon,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Raigad,tala,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Raigad,shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Raigad,mhasala,0.0,0.0,0.0,0.0,0.0,0.0
-2017,Raigad,mahad,1.0,3.0,0.0,0.0,0.0,0.0
-2017,Raigad,poladpur,0.0,1.0,0.0,0.0,0.0,0.0
+2017,Raigad,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Raigad,Khalapur,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Raigad,Pen,2.0,2.0,0.0,0.0,0.0,0.0
+2017,Raigad,Alibag,4.0,3.0,0.0,0.0,0.0,0.0
+2017,Raigad,Murud,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Raigad,Roha,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Raigad,Sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Raigad,Mangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Raigad,Shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Raigad,Mhasala,0.0,0.0,0.0,0.0,0.0,0.0
+2017,Raigad,Mahad,1.0,3.0,0.0,0.0,0.0,0.0
+2017,Raigad,Poladpur,0.0,1.0,0.0,0.0,0.0,0.0
 2018,Raigad,Uran,1.0,2.0,0.0,0.0,0.0,0.0
 2018,Raigad,Panwel,5.0,4.0,0.0,0.0,0.0,0.0
-2018,Raigad,karjat,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Raigad,khalapur,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Raigad,pen,2.0,2.0,0.0,0.0,0.0,0.0
-2018,Raigad,alibag,4.0,3.0,0.0,0.0,0.0,0.0
-2018,Raigad,murud,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Raigad,roha,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Raigad,sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Raigad,mangaon,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Raigad,tala,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Raigad,shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Raigad,mhasala,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Raigad,mahad,1.0,3.0,0.0,0.0,0.0,0.0
-2018,Raigad,poladpur,1.0,1.0,0.0,0.0,0.0,0.0
+2018,Raigad,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Raigad,Khalapur,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Raigad,Pen,2.0,2.0,0.0,0.0,0.0,0.0
+2018,Raigad,Alibag,4.0,3.0,0.0,0.0,0.0,0.0
+2018,Raigad,Murud,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Raigad,Roha,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Raigad,Sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Raigad,Mangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Raigad,Shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Raigad,Mhasala,0.0,0.0,0.0,0.0,0.0,0.0
+2018,Raigad,Mahad,1.0,3.0,0.0,0.0,0.0,0.0
+2018,Raigad,Poladpur,1.0,1.0,0.0,0.0,0.0,0.0
 2019,Raigad,Uran,1.0,2.0,0.0,0.0,0.0,0.0
 2019,Raigad,Panwel,5.0,4.0,0.0,0.0,0.0,0.0
-2019,Raigad,karjat,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Raigad,khalapur,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Raigad,pen,2.0,2.0,0.0,0.0,0.0,0.0
-2019,Raigad,alibag,4.0,3.0,0.0,0.0,0.0,0.0
-2019,Raigad,murud,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Raigad,roha,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Raigad,sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Raigad,mangaon,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Raigad,tala,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Raigad,shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Raigad,mhasala,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Raigad,mahad,1.0,3.0,0.0,0.0,0.0,0.0
-2019,Raigad,poladpur,1.0,1.0,0.0,0.0,0.0,0.0
+2019,Raigad,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Raigad,Khalapur,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Raigad,Pen,2.0,2.0,0.0,0.0,0.0,0.0
+2019,Raigad,Alibag,4.0,3.0,0.0,0.0,0.0,0.0
+2019,Raigad,Murud,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Raigad,Roha,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Raigad,Sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Raigad,Mangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Raigad,Shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Raigad,Mhasala,0.0,0.0,0.0,0.0,0.0,0.0
+2019,Raigad,Mahad,1.0,3.0,0.0,0.0,0.0,0.0
+2019,Raigad,Poladpur,1.0,1.0,0.0,0.0,0.0,0.0
 2020,Raigad,Uran,1.0,2.0,0.0,0.0,0.0,0.0
 2020,Raigad,Panwel,5.0,4.0,0.0,0.0,0.0,0.0
-2020,Raigad,karjat,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Raigad,khalapur,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Raigad,pen,1.0,2.0,0.0,0.0,0.0,0.0
-2020,Raigad,alibag,4.0,3.0,0.0,0.0,0.0,0.0
-2020,Raigad,murud,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Raigad,roha,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Raigad,sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Raigad,mangaon,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Raigad,tala,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Raigad,shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Raigad,mhasala,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Raigad,mahad,1.0,3.0,0.0,0.0,0.0,0.0
-2020,Raigad,poladpur,1.0,1.0,0.0,0.0,0.0,0.0
+2020,Raigad,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Raigad,Khalapur,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Raigad,Pen,1.0,2.0,0.0,0.0,0.0,0.0
+2020,Raigad,Alibag,4.0,3.0,0.0,0.0,0.0,0.0
+2020,Raigad,Murud,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Raigad,Roha,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Raigad,Sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Raigad,Mangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Raigad,Shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Raigad,Mhasala,0.0,0.0,0.0,0.0,0.0,0.0
+2020,Raigad,Mahad,1.0,3.0,0.0,0.0,0.0,0.0
+2020,Raigad,Poladpur,1.0,1.0,0.0,0.0,0.0,0.0
 2021,Raigad,Uran,1.0,2.0,0.0,0.0,0.0,0.0
 2021,Raigad,Panwel,5.0,5.0,0.0,0.0,0.0,0.0
-2021,Raigad,karjat,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Raigad,khalapur,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Raigad,pen,1.0,1.0,0.0,0.0,0.0,0.0
-2021,Raigad,alibag,5.0,2.0,0.0,0.0,0.0,0.0
-2021,Raigad,murud,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Raigad,roha,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Raigad,sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Raigad,mangaon,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Raigad,tala,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Raigad,shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Raigad,mhasala,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Raigad,mahad,1.0,4.0,0.0,0.0,0.0,0.0
-2021,Raigad,poladpur,1.0,1.0,0.0,0.0,0.0,0.0
+2021,Raigad,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Raigad,Khalapur,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Raigad,Pen,1.0,1.0,0.0,0.0,0.0,0.0
+2021,Raigad,Alibag,5.0,2.0,0.0,0.0,0.0,0.0
+2021,Raigad,Murud,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Raigad,Roha,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Raigad,Sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Raigad,Mangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Raigad,Shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Raigad,Mhasala,0.0,0.0,0.0,0.0,0.0,0.0
+2021,Raigad,Mahad,1.0,4.0,0.0,0.0,0.0,0.0
+2021,Raigad,Poladpur,1.0,1.0,0.0,0.0,0.0,0.0
+2023,Raigad,Uran,1.0,2.0,0.0,0.0,0.0,0.0
+2023,Raigad,Panwel,5.0,6.0,0.0,0.0,0.0,0.0
+2023,Raigad,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Raigad,Khalapur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Raigad,Pen,1.0,4.0,0.0,0.0,0.0,0.0
+2023,Raigad,Alibag,5.0,2.0,0.0,0.0,0.0,0.0
+2023,Raigad,Murud,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Raigad,Roha,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Raigad,Sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Raigad,Mangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Raigad,Shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Raigad,Mhasala,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Raigad,Mahad,1.0,3.0,0.0,0.0,0.0,0.0
+2023,Raigad,Poladpur,1.0,1.0,0.0,0.0,0.0,0.0
+2024,Raigad,Uran,1.0,2.0,0.0,0.0,0.0,0.0
+2024,Raigad,Panwel,6.0,7.0,0.0,0.0,0.0,0.0
+2024,Raigad,Karjat,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Raigad,Khalapur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Raigad,Pen,1.0,4.0,0.0,0.0,0.0,0.0
+2024,Raigad,Alibag,5.0,2.0,0.0,0.0,0.0,0.0
+2024,Raigad,Murud,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Raigad,Roha,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Raigad,Sudhagad,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Raigad,Mangaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Raigad,Tala,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Raigad,Shreevardhan,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Raigad,Mhasala,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Raigad,Mahad,1.0,3.0,0.0,0.0,0.0,0.0
+2024,Raigad,Poladpur,1.0,1.0,0.0,0.0,0.0,0.0
 2006,Ratnagiri,Mandangad,,,,,,
 2006,Ratnagiri,Dapoli,,2.0,,2.0,,
 2006,Ratnagiri,Khed,1.0,3.0,,,,1.0
@@ -2732,11 +3536,38 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Ratnagiri,Sangameshwar,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Ratnagiri,Lanja,0.0,2.0,0.0,0.0,0.0,0.0
 2021,Ratnagiri,Rajapur,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Ratnagiri,Mandangad,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Ratnagiri,Dapoli,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Ratnagiri,Khed,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Ratnagiri,Chiplun,1.0,3.0,0.0,0.0,0.0,0.0
+2022,Ratnagiri,Guhagar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Ratnagiri,Ratnagiri,11.0,10.0,0.0,1.0,0.0,1.0
+2022,Ratnagiri,Sangameshwar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Ratnagiri,Lanja,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Ratnagiri,Rajapur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ratnagiri,Mandangad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ratnagiri,Dapoli,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Ratnagiri,Khed,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ratnagiri,Chiplun,1.0,3.0,0.0,0.0,0.0,0.0
+2023,Ratnagiri,Guhagar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ratnagiri,Ratnagiri,11.0,10.0,0.0,1.0,0.0,1.0
+2023,Ratnagiri,Sangameshwar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Ratnagiri,Lanja,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Ratnagiri,Rajapur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Ratnagiri,Mandangad,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Ratnagiri,Dapoli,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Ratnagiri,Khed,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Ratnagiri,Chiplun,1.0,1.0,0.0,0.0,0.0,0.0
+2024,Ratnagiri,Guhagar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Ratnagiri,Ratnagiri,11.0,19.0,0.0,1.0,0.0,0.0
+2024,Ratnagiri,Sangameshwar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Ratnagiri,Lanja,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Ratnagiri,Rajapur,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Sangli,Shirala,0.0,1.0,0.0,0.0,0.0,0.0
 2012,Sangli,Walwa,0.0,3.0,0.0,0.0,0.0,0.0
 2012,Sangli,Palus,0.0,3.0,0.0,0.0,0.0,0.0
 2012,Sangli,Kadegaon,0.0,0.0,0.0,0.0,0.0,0.0
-2012,Sangli,Khapur,0.0,3.0,0.0,0.0,0.0,0.0
+2012,Sangli,Khanapur,0.0,3.0,0.0,0.0,0.0,0.0
 2012,Sangli,Atpadi,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Sangli,Tasgaon,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Sangli,Miraj,15.0,36.0,0.0,0.0,1.0,0.0
@@ -2746,7 +3577,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2013,Sangli,Walwa,,3.0,,,,
 2013,Sangli,Palus,,3.0,,,,
 2013,Sangli,Kadegaon,,,,,,
-2013,Sangli,Khapur,,5.0,,,,
+2013,Sangli,Khanapur,,5.0,,,,
 2013,Sangli,Atpadi,,1.0,,,,
 2013,Sangli,Tasgaon,,,,,,
 2013,Sangli,Miraj,15.0,37.0,,5.0,1.0,
@@ -2756,7 +3587,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2014,Sangli,Walwa,,2.0,,,,
 2014,Sangli,Palus,,2.0,,,,
 2014,Sangli,Kadegaon,,,,,,
-2014,Sangli,Khapur,,,,,,
+2014,Sangli,Khanapur,,,,,,
 2014,Sangli,Atpadi,,,,,,
 2014,Sangli,Tasgaon,,,,,,
 2014,Sangli,Miraj,11.0,14.0,,,,
@@ -2766,7 +3597,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2015,Sangli,Walwa,,,,,,
 2015,Sangli,Palus,,,,,,
 2015,Sangli,Kadegaon,,2.0,,,,
-2015,Sangli,Khapur,,2.0,,,,
+2015,Sangli,Khanapur,,2.0,,,,
 2015,Sangli,Atpadi,,,,,,
 2015,Sangli,Tasgaon,,1.0,,,,
 2015,Sangli,Miraj,11.0,15.0,,,,
@@ -2776,7 +3607,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2016,Sangli,Walwa,,,,,,
 2016,Sangli,Palus,,,,,,
 2016,Sangli,Kadegaon,,2.0,,,,
-2016,Sangli,Khapur,,2.0,,,,
+2016,Sangli,Khanapur,,2.0,,,,
 2016,Sangli,Atpadi,,,,,,
 2016,Sangli,Tasgaon,,1.0,,,,
 2016,Sangli,Miraj,11.0,14.0,,,,
@@ -2786,7 +3617,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2017,Sangli,Walwa,,,,,,
 2017,Sangli,Palus,,2.0,,,,
 2017,Sangli,Kadegaon,,,,,,
-2017,Sangli,Khapur,,2.0,,,,
+2017,Sangli,Khanapur,,2.0,,,,
 2017,Sangli,Atpadi,,,,,,
 2017,Sangli,Tasgaon,,1.0,,,,
 2017,Sangli,Miraj,8.0,13.0,,,,
@@ -2796,7 +3627,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2018,Sangli,Walwa,,,,,,
 2018,Sangli,Palus,,2.0,,,,
 2018,Sangli,Kadegaon,,,,,,
-2018,Sangli,Khapur,,2.0,,,,
+2018,Sangli,Khanapur,,2.0,,,,
 2018,Sangli,Atpadi,,,,,,
 2018,Sangli,Tasgaon,,1.0,,,,
 2018,Sangli,Miraj,8.0,13.0,,,,
@@ -2806,7 +3637,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2019,Sangli,Walwa,,,,,,
 2019,Sangli,Palus,,2.0,,,,
 2019,Sangli,Kadegaon,,,,,,
-2019,Sangli,Khapur,,2.0,,,,
+2019,Sangli,Khanapur,,2.0,,,,
 2019,Sangli,Atpadi,,,,,,
 2019,Sangli,Tasgaon,,1.0,,,,
 2019,Sangli,Miraj,9.0,13.0,,,,
@@ -2816,7 +3647,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2020,Sangli,Walwa,,,,,,
 2020,Sangli,Palus,,2.0,,,,
 2020,Sangli,Kadegaon,,,,,,
-2020,Sangli,Khapur,,2.0,,,,
+2020,Sangli,Khanapur,,2.0,,,,
 2020,Sangli,Atpadi,,1.0,,,,
 2020,Sangli,Tasgaon,6.0,13.0,,,,
 2020,Sangli,Miraj,,,,,,
@@ -2826,19 +3657,49 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Sangli,Walwa,,,,,,
 2021,Sangli,Palus,,2.0,,,,
 2021,Sangli,Kadegaon,,,,,,
-2021,Sangli,Khapur,,2.0,,,,
+2021,Sangli,Khanapur,,2.0,,,,
 2021,Sangli,Atpadi,,,,,,
 2021,Sangli,Tasgaon,,1.0,,,,
 2021,Sangli,Miraj,6.0,13.0,,,,
 2021,Sangli,Kavathe Mahankal,,,,,,
 2021,Sangli,Jath,,,,,,
+2022,Sangli,Shirala,,,,,,
+2022,Sangli,Walwa,,,,,,
+2022,Sangli,Palus,,2.0,,,,
+2022,Sangli,Kadegaon,,,,,,
+2022,Sangli,Khanapur,,2.0,,,,
+2022,Sangli,Atpadi,,,,,,
+2022,Sangli,Tasgaon,,1.0,,,,
+2022,Sangli,Miraj,8.0,12.0,,,,
+2022,Sangli,Kavathe Mahankal,,,,,,
+2022,Sangli,Jath,,,,,,
+2023,Sangli,Shirala,,,,,,
+2023,Sangli,Walwa,,,,,,
+2023,Sangli,Palus,,1.0,,,,
+2023,Sangli,Kadegaon,,,,,,
+2023,Sangli,Khanapur,,1.0,,,,
+2023,Sangli,Atpadi,,,,,,
+2023,Sangli,Tasgaon,,1.0,,,,
+2023,Sangli,Miraj,8.0,10.0,,,,
+2023,Sangli,Kavathe Mahankal,,,,,,
+2023,Sangli,Jath,,,,,,
+2024,Sangli,Shirala,,,,,,
+2024,Sangli,Walwa,,,,,,
+2024,Sangli,Palus,,1.0,,,,
+2024,Sangli,Kadegaon,,,,,,
+2024,Sangli,Khanapur,,,,,,
+2024,Sangli,Atpadi,,,,,,
+2024,Sangli,Tasgaon,,1.0,,,,
+2024,Sangli,Miraj,7.0,3.0,,,,
+2024,Sangli,Kavathe Mahankal,,,,,,
+2024,Sangli,Jath,,,,,,
 2011,Satara,Mahabaleshwar,,,,,,
 2011,Satara,Wai,,2.0,,,,
 2011,Satara,Khandala,,,,,,
 2011,Satara,Phaltan,3.0,8.0,,,,
 2011,Satara,Man,,,,,,
 2011,Satara,Khatav,,,,,,
-2011,Satara,Koreagaon,,2.0,,,,
+2011,Satara,Koregaon,,2.0,,,,
 2011,Satara,Satara,12.0,29.0,,0.0,,
 2011,Satara,Javli,,,,,,
 2011,Satara,Patan,,,,1.0,,
@@ -2849,7 +3710,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2012,Satara,Phaltan,3.0,10.0,,,,
 2012,Satara,Man,,,,,,
 2012,Satara,Khatav,,,,,,
-2012,Satara,Koreagaon,,2.0,,,,1.0
+2012,Satara,Koregaon,,2.0,,,,1.0
 2012,Satara,Satara,12.0,29.0,,,,
 2012,Satara,Javli,,,,,,
 2012,Satara,Patan,,,,1.0,,
@@ -2860,7 +3721,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2013,Satara,Phaltan,2.0,10.0,1.0,,,
 2013,Satara,Man,,,,,,
 2013,Satara,Khatav,,,,,,
-2013,Satara,Koreagaon,,1.0,,,,1.0
+2013,Satara,Koregaon,,1.0,,,,1.0
 2013,Satara,Satara,10.0,8.0,,1.0,,
 2013,Satara,Javli,,,,,,
 2013,Satara,Patan,,,,1.0,,
@@ -2871,7 +3732,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2014,Satara,Phaltan,2.0,10.0,1.0,0.0,0.0,0.0
 2014,Satara,Man,0.0,0.0,0.0,0.0,0.0,0.0
 2014,Satara,Khatav,0.0,0.0,0.0,0.0,0.0,0.0
-2014,Satara,Koreagaon,0.0,1.0,0.0,0.0,0.0,1.0
+2014,Satara,Koregaon,0.0,1.0,0.0,0.0,0.0,1.0
 2014,Satara,Satara,10.0,8.0,0.0,1.0,0.0,0.0
 2014,Satara,Javli,0.0,0.0,0.0,0.0,0.0,0.0
 2014,Satara,Patan,0.0,0.0,0.0,1.0,0.0,0.0
@@ -2882,7 +3743,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2015,Satara,Phaltan,2.0,10.0,1.0,0.0,0.0,0.0
 2015,Satara,Man,0.0,1.0,0.0,0.0,0.0,0.0
 2015,Satara,Khatav,0.0,1.0,0.0,0.0,0.0,0.0
-2015,Satara,Koreagaon,0.0,2.0,0.0,0.0,0.0,1.0
+2015,Satara,Koregaon,0.0,2.0,0.0,0.0,0.0,1.0
 2015,Satara,Satara,10.0,8.0,0.0,1.0,0.0,0.0
 2015,Satara,Javli,0.0,0.0,0.0,0.0,0.0,0.0
 2015,Satara,Patan,0.0,0.0,0.0,1.0,0.0,0.0
@@ -2893,7 +3754,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2016,Satara,Phaltan,2.0,10.0,0.0,0.0,0.0,
 2016,Satara,Man,0.0,0.0,0.0,0.0,0.0,
 2016,Satara,Khatav,0.0,0.0,0.0,0.0,0.0,
-2016,Satara,Koreagaon,0.0,1.0,0.0,0.0,0.0,
+2016,Satara,Koregaon,0.0,1.0,0.0,0.0,0.0,
 2016,Satara,Satara,11.0,21.0,0.0,0.0,0.0,
 2016,Satara,Javli,0.0,0.0,0.0,0.0,0.0,
 2016,Satara,Patan,0.0,0.0,0.0,1.0,0.0,
@@ -2904,7 +3765,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2017,Satara,Phaltan,2.0,10.0,1.0,0.0,0.0,
 2017,Satara,Man,0.0,0.0,0.0,0.0,0.0,
 2017,Satara,Khatav,0.0,0.0,0.0,0.0,0.0,
-2017,Satara,Koreagaon,0.0,3.0,0.0,0.0,0.0,
+2017,Satara,Koregaon,0.0,3.0,0.0,0.0,0.0,
 2017,Satara,Satara,15.0,18.0,0.0,0.0,0.0,
 2017,Satara,Javli,0.0,0.0,0.0,0.0,0.0,
 2017,Satara,Patan,0.0,0.0,0.0,1.0,0.0,
@@ -2915,7 +3776,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2018,Satara,Phaltan,2.0,10.0,1.0,0.0,0.0,0.0
 2018,Satara,Man,0.0,0.0,0.0,0.0,0.0,0.0
 2018,Satara,Khatav,0.0,0.0,0.0,0.0,0.0,0.0
-2018,Satara,Koreagaon,0.0,3.0,0.0,0.0,0.0,0.0
+2018,Satara,Koregaon,0.0,3.0,0.0,0.0,0.0,0.0
 2018,Satara,Satara,15.0,19.0,0.0,0.0,0.0,0.0
 2018,Satara,Javli,0.0,0.0,0.0,0.0,0.0,0.0
 2018,Satara,Patan,0.0,0.0,0.0,1.0,0.0,0.0
@@ -2926,7 +3787,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2019,Satara,Phaltan,2.0,9.0,1.0,0.0,0.0,0.0
 2019,Satara,Man,0.0,0.0,0.0,0.0,0.0,0.0
 2019,Satara,Khatav,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Satara,Koreagaon,0.0,3.0,0.0,0.0,0.0,0.0
+2019,Satara,Koregaon,0.0,3.0,0.0,0.0,0.0,0.0
 2019,Satara,Satara,16.0,21.0,0.0,0.0,0.0,0.0
 2019,Satara,Javli,0.0,0.0,0.0,0.0,0.0,0.0
 2019,Satara,Patan,0.0,0.0,0.0,1.0,0.0,0.0
@@ -2937,7 +3798,7 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2020,Satara,Phaltan,1.0,8.0,0.0,0.0,0.0,0.0
 2020,Satara,Man,0.0,0.0,0.0,0.0,0.0,0.0
 2020,Satara,Khatav,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Satara,Koreagaon,0.0,2.0,0.0,0.0,0.0,0.0
+2020,Satara,Koregaon,0.0,2.0,0.0,0.0,0.0,0.0
 2020,Satara,Satara,7.0,4.0,0.0,0.0,0.0,0.0
 2020,Satara,Javli,0.0,0.0,0.0,0.0,0.0,0.0
 2020,Satara,Patan,0.0,0.0,0.0,0.0,0.0,0.0
@@ -2948,11 +3809,44 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Satara,Phaltan,1.0,8.0,0.0,0.0,0.0,0.0
 2021,Satara,Man,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Satara,Khatav,0.0,1.0,0.0,0.0,0.0,0.0
-2021,Satara,Koreagaon,0.0,2.0,0.0,0.0,0.0,0.0
+2021,Satara,Koregaon,0.0,2.0,0.0,0.0,0.0,0.0
 2021,Satara,Satara,8.0,8.0,0.0,0.0,0.0,0.0
 2021,Satara,Javli,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Satara,Patan,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Satara,Karad,3.0,9.0,0.0,0.0,0.0,0.0
+2022,Satara,Mahabaleshwar,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Satara,Wai,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Satara,Khandala,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Satara,Phaltan,1.0,8.0,0.0,0.0,0.0,0.0
+2022,Satara,Man,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Satara,Khatav,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Satara,Koregaon,0.0,3.0,0.0,0.0,0.0,0.0
+2022,Satara,Satara,8.0,8.0,0.0,0.0,0.0,0.0
+2022,Satara,Javli,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Satara,Patan,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Satara,Karad,3.0,9.0,0.0,0.0,0.0,0.0
+2023,Satara,Mahabaleshwar,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Satara,Wai,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Satara,Khandala,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Satara,Phaltan,1.0,8.0,0.0,0.0,0.0,0.0
+2023,Satara,Man,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Satara,Khatav,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Satara,Koregaon,0.0,3.0,0.0,0.0,0.0,0.0
+2023,Satara,Satara,8.0,8.0,0.0,0.0,0.0,0.0
+2023,Satara,Javli,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Satara,Patan,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Satara,Karad,3.0,9.0,0.0,0.0,0.0,0.0
+2024,Satara,Mahabaleshwar,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Satara,Wai,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Satara,Khandala,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Satara,Phaltan,1.0,8.0,0.0,0.0,0.0,0.0
+2024,Satara,Man,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Satara,Khatav,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Satara,Koregaon,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Satara,Satara,12.0,9.0,0.0,0.0,0.0,0.0
+2024,Satara,Javli,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Satara,Patan,1.0,0.0,0.0,0.0,0.0,0.0
+2024,Satara,Karad,2.0,7.0,0.0,0.0,0.0,0.0
 2012,Sindhudurg,Devgad,0.0,2.0,0.0,0.0,0.0,0.0
 2012,Sindhudurg,Vaibhavwadi,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Sindhudurg,Kankavali,3.0,3.0,0.0,0.0,0.0,0.0
@@ -3011,28 +3905,52 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2018,Sindhudurg,Dodamarg,0.0,0.0,0.0,0.0,0.0,0.0
 2019,Sindhudurg,Devgad,0.0,2.0,0.0,0.0,0.0,0.0
 2019,Sindhudurg,Vaibhavwadi,0.0,0.0,0.0,0.0,0.0,0.0
-2019,Sindhudurg,Kankawali,2.0,1.0,0.0,0.0,0.0,0.0
-2019,Sindhudurg,Malwan,0.0,2.0,0.0,0.0,0.0,0.0
-2019,Sindhudurg,Vengurli,0.0,1.0,0.0,0.0,0.0,0.0
-2019,Sindhudurg,Kulad,1.0,1.0,0.0,0.0,0.0,0.0
-2019,Sindhudurg,Savantwadi,4.0,4.0,0.0,0.0,0.0,0.0
+2019,Sindhudurg,Kankavali,2.0,1.0,0.0,0.0,0.0,0.0
+2019,Sindhudurg,Malvan,0.0,2.0,0.0,0.0,0.0,0.0
+2019,Sindhudurg,Vengurla,0.0,1.0,0.0,0.0,0.0,0.0
+2019,Sindhudurg,Kudal,1.0,1.0,0.0,0.0,0.0,0.0
+2019,Sindhudurg,Sawantwadi,4.0,4.0,0.0,0.0,0.0,0.0
 2019,Sindhudurg,Dodamarg,0.0,0.0,0.0,0.0,0.0,0.0
 2020,Sindhudurg,Devgad,0.0,2.0,0.0,0.0,0.0,0.0
 2020,Sindhudurg,Vaibhavwadi,0.0,0.0,0.0,0.0,0.0,0.0
-2020,Sindhudurg,Kankawali,1.0,1.0,0.0,0.0,0.0,0.0
-2020,Sindhudurg,Malwan,0.0,2.0,0.0,0.0,0.0,0.0
-2020,Sindhudurg,Vengurli,0.0,1.0,0.0,0.0,0.0,0.0
-2020,Sindhudurg,Kulad,1.0,1.0,0.0,0.0,0.0,0.0
-2020,Sindhudurg,Savantwadi,2.0,4.0,0.0,0.0,0.0,0.0
+2020,Sindhudurg,Kankavali,1.0,1.0,0.0,0.0,0.0,0.0
+2020,Sindhudurg,Malvan,0.0,2.0,0.0,0.0,0.0,0.0
+2020,Sindhudurg,Vengurla,0.0,1.0,0.0,0.0,0.0,0.0
+2020,Sindhudurg,Kudal,1.0,1.0,0.0,0.0,0.0,0.0
+2020,Sindhudurg,Sawantwadi,2.0,4.0,0.0,0.0,0.0,0.0
 2020,Sindhudurg,Dodamarg,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Sindhudurg,Devgad,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Sindhudurg,Vaibhavwadi,0.0,0.0,0.0,0.0,0.0,0.0
-2021,Sindhudurg,Kankawali,1.0,2.0,0.0,0.0,0.0,0.0
-2021,Sindhudurg,Malwan,0.0,2.0,0.0,0.0,0.0,0.0
-2021,Sindhudurg,Vengurli,0.0,1.0,0.0,0.0,0.0,0.0
-2021,Sindhudurg,Kulad,1.0,1.0,0.0,0.0,0.0,0.0
-2021,Sindhudurg,Savantwadi,2.0,4.0,0.0,0.0,0.0,0.0
+2021,Sindhudurg,Kankavali,1.0,2.0,0.0,0.0,0.0,0.0
+2021,Sindhudurg,Malvan,0.0,2.0,0.0,0.0,0.0,0.0
+2021,Sindhudurg,Vengurla,0.0,1.0,0.0,0.0,0.0,0.0
+2021,Sindhudurg,Kudal,1.0,1.0,0.0,0.0,0.0,0.0
+2021,Sindhudurg,Sawantwadi,2.0,4.0,0.0,0.0,0.0,0.0
 2021,Sindhudurg,Dodamarg,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Sindhudurg,Devgad,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Sindhudurg,Vaibhavwadi,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Sindhudurg,Kankavali,2.0,3.0,0.0,0.0,0.0,0.0
+2022,Sindhudurg,Malvan,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Sindhudurg,Vengurla,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Sindhudurg,Kudal,1.0,1.0,0.0,0.0,0.0,0.0
+2022,Sindhudurg,Sawantwadi,2.0,5.0,0.0,0.0,0.0,0.0
+2022,Sindhudurg,Dodamarg,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Sindhudurg,Devgad,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Sindhudurg,Vaibhavwadi,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Sindhudurg,Kankavali,2.0,3.0,0.0,0.0,0.0,0.0
+2023,Sindhudurg,Malvan,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Sindhudurg,Vengurla,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Sindhudurg,Kudal,2.0,1.0,0.0,0.0,0.0,0.0
+2023,Sindhudurg,Sawantwadi,1.0,5.0,0.0,0.0,0.0,0.0
+2023,Sindhudurg,Dodamarg,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Sindhudurg,Devgad,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Sindhudurg,Vaibhavwadi,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Sindhudurg,Kankavali,2.0,3.0,0.0,0.0,0.0,0.0
+2024,Sindhudurg,Malvan,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Sindhudurg,Vengurla,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Sindhudurg,Kudal,2.0,1.0,0.0,0.0,0.0,0.0
+2024,Sindhudurg,Sawantwadi,1.0,4.0,0.0,0.0,0.0,0.0
+2024,Sindhudurg,Dodamarg,0.0,0.0,0.0,0.0,0.0,0.0
 2012,Solapur,Karmala,0.0,0.0,,,,
 2012,Solapur,Madha,0.0,0.0,,,,
 2012,Solapur,Barsi,0.0,4.0,,,,
@@ -3154,6 +4072,28 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2022,Solapur,Mangal Vedha,0.0,1.0,,,,
 2022,Solapur,South Solapur,0.0,1.0,,,,
 2022,Solapur,Akalkot,1.0,3.0,,,,
+2023,Solapur,Karmala,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Solapur,Madha,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Solapur,Barsi,0.0,4.0,0.0,0.0,0.0,0.0
+2023,Solapur,North Solapur,5.0,18.0,0.0,0.0,0.0,0.0
+2023,Solapur,Mohol,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Solapur,Pandharpur,1.0,3.0,0.0,0.0,0.0,0.0
+2023,Solapur,Malsiras,0.0,3.0,0.0,0.0,0.0,0.0
+2023,Solapur,Sangola,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Solapur,Mangal Vedha,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Solapur,South Solapur,18.0,17.0,0.0,0.0,0.0,0.0
+2023,Solapur,Akalkot,1.0,4.0,0.0,0.0,0.0,0.0
+2024,Solapur,Karmala,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Solapur,Madha,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Solapur,Barsi,0.0,4.0,0.0,0.0,0.0,0.0
+2024,Solapur,North Solapur,5.0,18.0,0.0,0.0,0.0,0.0
+2024,Solapur,Mohol,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Solapur,Pandharpur,1.0,3.0,0.0,0.0,0.0,0.0
+2024,Solapur,Malsiras,0.0,3.0,0.0,0.0,0.0,0.0
+2024,Solapur,Sangola,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Solapur,Mangal Vedha,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Solapur,South Solapur,18.0,17.0,0.0,0.0,0.0,0.0
+2024,Solapur,Akalkot,1.0,4.0,0.0,0.0,0.0,0.0
 2014,Thane,Thane,33.0,96.0,15.0,63.0,12.0,30.0
 2014,Thane,Bhivandi,0.0,7.0,0.0,1.0,0.0,0.0
 2014,Thane,Shahapur,1.0,4.0,0.0,0.0,0.0,0.0
@@ -3210,6 +4150,27 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Thane,Ulhasnagar,12.0,14.0,2.0,3.0,1.0,0.0
 2021,Thane,Ambarnath,,,,,,
 2021,Thane,Murbad,2.0,0.0,0.0,0.0,0.0,0.0
+2022,Thane,Thane,32.0,65.0,10.0,20.0,7.0,17.0
+2022,Thane,Bhivandi,2.0,3.0,0.0,1.0,0.0,0.0
+2022,Thane,Shahapur,1.0,0.0,0.0,0.0,0.0,0.0
+2022,Thane,Kalyan,1.0,13.0,0.0,1.0,0.0,0.0
+2022,Thane,Ulhasnagar,4.0,20.0,0.0,1.0,0.0,0.0
+2022,Thane,Ambarnath,,,,,,
+2022,Thane,Murbad,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Thane,Thane,30.0,51.0,6.0,14.0,1.0,8.0
+2023,Thane,Bhivandi,1.0,2.0,0.0,0.0,0.0,0.0
+2023,Thane,Shahapur,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Thane,Kalyan,2.0,13.0,0.0,0.0,0.0,0.0
+2023,Thane,Ulhasnagar,5.0,26.0,0.0,3.0,0.0,0.0
+2023,Thane,Ambarnath,,,,,,
+2023,Thane,Murbad,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Thane,Thane,23.0,42.0,,3.0,,
+2024,Thane,Bhivandi,1.0,3.0,,,,
+2024,Thane,Shahapur,1.0,0.0,,,,
+2024,Thane,Kalyan,2.0,8.0,,,,
+2024,Thane,Ulhasnagar,7.0,2.0,,,,
+2024,Thane,Ambarnath,6.0,13.0,,,,
+2024,Thane,Murbad,0.0,2.0,,,,
 2012,Wardha,Ashti,,,,,,
 2012,Wardha,Karanja,,,,,,
 2012,Wardha,Aarvi,1.0,4.0,,,,
@@ -3290,6 +4251,30 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Wardha,Devali,0.0,7.0,0.0,0.0,0.0,0.0
 2021,Wardha,Hinganghat,0.0,2.0,0.0,0.0,0.0,0.0
 2021,Wardha,Samudrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Wardha,Ashti,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Wardha,Karanja,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Wardha,Aarvi,3.0,4.0,0.0,0.0,0.0,0.0
+2022,Wardha,Selu,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Wardha,Wardha,11.0,16.0,0.0,0.0,0.0,0.0
+2022,Wardha,Devali,0.0,10.0,0.0,0.0,0.0,0.0
+2022,Wardha,Hinganghat,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Wardha,Samudrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Wardha,Ashti,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Wardha,Karanja,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Wardha,Aarvi,3.0,4.0,0.0,0.0,0.0,0.0
+2023,Wardha,Selu,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Wardha,Wardha,11.0,16.0,0.0,0.0,0.0,0.0
+2023,Wardha,Devali,0.0,10.0,0.0,0.0,0.0,0.0
+2023,Wardha,Hinganghat,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Wardha,Samudrapur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Wardha,Ashti,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Wardha,Karanja,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Wardha,Aarvi,3.0,4.0,0.0,0.0,0.0,0.0
+2024,Wardha,Selu,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Wardha,Wardha,12.0,16.0,0.0,0.0,0.0,0.0
+2024,Wardha,Devali,0.0,10.0,0.0,0.0,0.0,0.0
+2024,Wardha,Hinganghat,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Wardha,Samudrapur,0.0,0.0,0.0,0.0,0.0,0.0
 2008,Washim,Malegaon,,,,,,
 2008,Washim,Mangrulpir,,,,,,
 2008,Washim,Karanja,,2.0,,,,
@@ -3374,6 +4359,24 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Washim,Manora,0.0,1.0,0.0,0.0,0.0,0.0
 2021,Washim,Washim,9.0,9.0,0.0,0.0,0.0,0.0
 2021,Washim,Resod,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Washim,Malegaon,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Washim,Mangrulpir,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Washim,Karanja,0.0,2.0,0.0,0.0,0.0,0.0
+2022,Washim,Manora,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Washim,Washim,8.0,9.0,0.0,0.0,0.0,0.0
+2022,Washim,Resod,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Washim,Malegaon,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Washim,Mangrulpir,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Washim,Karanja,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Washim,Manora,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Washim,Washim,8.0,9.0,0.0,0.0,0.0,0.0
+2023,Washim,Resod,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Washim,Malegaon,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Washim,Mangrulpir,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Washim,Karanja,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Washim,Manora,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Washim,Washim,8.0,9.0,0.0,0.0,0.0,0.0
+2024,Washim,Resod,0.0,2.0,0.0,0.0,0.0,0.0
 2012,Yavatmal,Ner,,,,,,
 2012,Yavatmal,Babhulgaon,,,,,,
 2012,Yavatmal,Kalamb,,,,,,
@@ -3534,3 +4537,51 @@ Year,District,Taluka,Daily,Weekly,Fortnightly,Monthly,Quarterly,Yearly
 2021,Yavatmal,Maregaon,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Yavatmal,Zari Jamani,0.0,0.0,0.0,0.0,0.0,0.0
 2021,Yavatmal,Vani,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Ner,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Babhulgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Kalamb,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Yavatmal,6.0,9.0,0.0,0.0,1.0,0.0
+2022,Yavatmal,Darvha,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Digras,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Pusad,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Umarkhed,0.0,3.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Mahagaon,0.0,1.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Aarni,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Ghantaji,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Kelapur,1.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Ralegaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Maregaon,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Zari Jamani,0.0,0.0,0.0,0.0,0.0,0.0
+2022,Yavatmal,Vani,0.0,1.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Ner,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Babhulgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Kalamb,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Yavatmal,20.0,29.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Darvha,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Digras,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Pusad,0.0,5.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Umarkhed,0.0,3.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Mahagaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Aarni,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Ghantaji,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Kelapur,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Ralegaon,0.0,2.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Maregaon,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Zari Jamani,0.0,0.0,0.0,0.0,0.0,0.0
+2023,Yavatmal,Vani,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Ner,0.0,1.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Babhulgaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Kalamb,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Yavatmal,21.0,28.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Darvha,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Digras,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Pusad,0.0,5.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Umarkhed,0.0,3.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Mahagaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Aarni,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Ghantaji,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Kelapur,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Ralegaon,0.0,2.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Maregaon,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Zari Jamani,0.0,0.0,0.0,0.0,0.0,0.0
+2024,Yavatmal,Vani,0.0,1.0,0.0,0.0,0.0,0.0
